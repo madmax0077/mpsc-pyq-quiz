@@ -2,7 +2,7 @@
   {
     "id": "2aei7ehmnrrb55f",
     "title": "Maharashtra Group B Combined Preliminary Examination 2025",
-    "createdAt": "2026-04-09T18:20:13.936Z",
+    "createdAt": "2026-04-09T18:30:49.375Z",
     "questions": [
       {
         "id": "o45cqa8mnrqhdio",
@@ -136,39 +136,42 @@
       },
       {
         "id": "tz3cikgmnrqhdio",
-        "text": "Consider the following statements : (a) The range extending from Raireshwar to Shingnapur is called Shambhu-Mahadev mountain range. (b) The river basins of Narmada and Tapi are separated by the Satpura mountain range. (c) The Godavari and Bhima river basins are separated by the Harishchandra-Balaghat mountain range. (d) The Satmala-Ajantha mountain range separates the Godavari and Tapi river basins. Which of the statements given above is/are correct ? (",
+        "text": "Consider the following statements : \n(a) The range extending from Raireshwar to Shingnapur is called Shambhu-Mahadev mountain range. \n(b) The river basins of Narmada and Tapi are separated by the Satpura mountain range. \n(c) The Godavari and Bhima river basins are separated by the Harishchandra-Balaghat mountain range. \n(d) The Satmala-Ajantha mountain range separates the Godavari and Tapi river basins. Which of the statements given above is/are correct ?",
         "options": {
-          "A": "Only Statement (a) is true. (",
-          "B": "Statements (a) and (b) both are true. (",
-          "C": "Statements (a), (b) and (c) are true. (",
+          "A": "Only Statement (a) is true. ",
+          "B": "Statements (a) and (b) both are true. ",
+          "C": "Statements (a), (b) and (c) are true. ",
           "D": "All of the above Statements are true."
         },
-        "correctAnswer": "A",
-        "explanation": ""
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Geography"
       },
       {
         "id": "r9tfj1bmnrqhdio",
-        "text": "Which of the following three districts from Maharashtra recording negative growth rate of population as per 2011 census ? (",
+        "text": "Which of the following three districts from Maharashtra recording negative growth rate of population as per 2011 census ?",
         "options": {
-          "A": "Mumbai Suburban, Sindhudurg and Ratnagiri (",
-          "B": "Mumbai City, Sindhudurg and Ratnagiri (",
-          "C": "Mumbai Suburban, Sindhudurg and Palghar (",
+          "A": "Mumbai Suburban, Sindhudurg and Ratnagiri",
+          "B": "Mumbai City, Sindhudurg and Ratnagiri",
+          "C": "Mumbai Suburban, Sindhudurg and Palghar",
           "D": "Mumbai City, Sindhudurg and Palghar"
         },
-        "correctAnswer": "A",
-        "explanation": ""
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
       },
       {
         "id": "hgo6mvamnrqhdio",
-        "text": "Which district in Maharashtra have more iron ore mineral deposits as per statistics of 2014 by Directorate, Mining Department, Nagpur ? (",
+        "text": "Which district in Maharashtra have more iron ore mineral deposits as per statistics of 2014 by Directorate, Mining Department, Nagpur ? ",
         "options": {
-          "A": "Bhandara (",
-          "B": "Sindhudurg (",
-          "C": "Gadchiroli (",
+          "A": "Bhandara ",
+          "B": "Sindhudurg ",
+          "C": "Gadchiroli ",
           "D": "Chandrapur"
         },
-        "correctAnswer": "A",
-        "explanation": ""
+        "correctAnswer": "C",
+        "explanation": "Based on 2014 statistics, the Gadchiroli district holds the highest iron ore deposits in Maharashtra.",
+        "category": "Geography"
       },
       {
         "id": "3259c5lmnrqhdio",
