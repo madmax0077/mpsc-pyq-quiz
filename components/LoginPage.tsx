@@ -55,9 +55,9 @@ export default function LoginPage() {
         <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/50">
           {!showAdminForm ? (
             <>
-              {/* Student Sign-In */}
+              {/* Aspirant Sign-In */}
               <h2 className="mb-6 text-center text-lg font-semibold text-slate-700">
-                Welcome, Student
+                Welcome, Aspirant
               </h2>
 
               <button

@@ -69,7 +69,7 @@ export default function Home() {
                   )}
                   <div className="hidden sm:block">
                     <p className="text-xs font-semibold text-slate-700 leading-tight">
-                      {studentUser.displayName || "Student"}
+                      {studentUser.displayName || "Aspirant"}
                     </p>
                     <p className="text-[10px] text-slate-400">{studentUser.email}</p>
                   </div>
@@ -95,7 +95,7 @@ export default function Home() {
             }`}
           />
           <span className="text-sm font-medium text-slate-500">
-            {mode === "admin" ? "Admin Mode — Create & manage quizzes" : "Student Mode — Take a quiz"}
+            {mode === "admin" ? "Admin Mode — Create & manage quizzes" : "Aspirant Mode — Take a quiz"}
           </span>
         </div>
 

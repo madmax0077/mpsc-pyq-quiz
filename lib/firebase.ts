@@ -9,12 +9,12 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDPLAeCHOLDER_REPLACE_ME",
+  apiKey: "AIzaSyBWE48Bh--2_4YMyo81JNnKNs_0HJhhcqU",
   authDomain: "mpsc-pyq-quiz.firebaseapp.com",
   projectId: "mpsc-pyq-quiz",
-  storageBucket: "mpsc-pyq-quiz.appspot.com",
-  messagingSenderId: "000000000000",
-  appId: "1:000000000000:web:0000000000000000000000",
+  storageBucket: "mpsc-pyq-quiz.firebasestorage.app",
+  messagingSenderId: "790160623755",
+  appId: "1:790160623755:web:84aabe54cce6289b7bac8e",
 };
 
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
