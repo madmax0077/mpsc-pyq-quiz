@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category } from "@/lib/types";
 import { getAllQuizzes } from "@/lib/storage";
+import AdBanner from "./AdBanner";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
@@ -178,6 +179,8 @@ export default function StudentView() {
               </div>
             )}
 
+            <AdBanner slot="2345678901" format="horizontal" />
+
             {/* Regular Quizzes */}
             {regularQuizzes.length > 0 && (
               <div>
@@ -309,14 +312,15 @@ export default function StudentView() {
       <div className="space-y-4">
         {pageQuestions.map((q, localIdx) => {
           const globalIdx = currentPage * QUESTIONS_PER_PAGE + localIdx;
+          const showAdAfter = (localIdx + 1) % 5 === 0 && localIdx < pageQuestions.length - 1;
           const userAnswer = answers[q.id];
           const isCorrect = submitted && userAnswer === q.correctAnswer;
           const isWrong = submitted && userAnswer && userAnswer !== q.correctAnswer;
           const isSkipped = submitted && !userAnswer;
 
           return (
+            <div key={q.id} className="space-y-4">
             <div
-              key={q.id}
               className={`rounded-xl border bg-white shadow-sm transition-all ${
                 submitted
                   ? isCorrect
@@ -453,6 +457,8 @@ export default function StudentView() {
                 )}
               </div>
             </div>
+            {showAdAfter && <AdBanner slot="4567890123" format="horizontal" className="my-2" />}
+            </div>
           );
         })}
       </div>
@@ -504,25 +510,28 @@ export default function StudentView() {
           </button>
         </div>
       ) : (
-        <div className="flex gap-3">
-          <button
-            onClick={() => {
-              setAnswers({});
-              setSubmitted(false);
-              setScore(0);
-              setCurrentPage(0);
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors"
-          >
-            Retake Quiz
-          </button>
-          <button
-            onClick={goBack}
-            className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors"
-          >
-            Back to Quizzes
-          </button>
+        <div className="space-y-4">
+          <AdBanner slot="3456789012" format="horizontal" />
+          <div className="flex gap-3">
+            <button
+              onClick={() => {
+                setAnswers({});
+                setSubmitted(false);
+                setScore(0);
+                setCurrentPage(0);
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors"
+            >
+              Retake Quiz
+            </button>
+            <button
+              onClick={goBack}
+              className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors"
+            >
+              Back to Quizzes
+            </button>
+          </div>
         </div>
       )}
     </div>

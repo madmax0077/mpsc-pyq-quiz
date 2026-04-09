@@ -103,8 +103,23 @@ export default function Home() {
       </main>
 
       {/* ---- Footer ---- */}
-      <footer className="border-t border-slate-200/80 py-6 text-center text-xs text-slate-400">
-        MPSC PYQ Quiz &middot; Don&apos;t know Academy
+      <footer className="border-t border-slate-200/80 py-6">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs text-slate-400">
+              MPSC PYQ Quiz &middot; Don&apos;t know Academy
+            </p>
+            <div className="flex items-center gap-4">
+              <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline">
+                About
+              </a>
+              <span className="text-slate-300">|</span>
+              <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline">
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

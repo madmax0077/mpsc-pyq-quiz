@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { signInWithGoogle } from "@/lib/firebase";
 import { useAuth } from "@/lib/auth-context";
+import AdBanner from "./AdBanner";
 
 export default function LoginPage() {
   const { loginAdmin } = useAuth();
@@ -173,7 +174,9 @@ export default function LoginPage() {
           )}
         </div>
 
-        <p className="mt-6 text-center text-xs text-slate-400">
+        <AdBanner slot="1234567890" format="horizontal" className="mt-6" />
+
+        <p className="mt-4 text-center text-xs text-slate-400">
           Secure access &middot; Your data stays in your browser
         </p>
       </div>
