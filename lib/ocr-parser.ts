@@ -234,22 +234,9 @@ function extractQuestionFromBlock(block: string): ParsedQuestion | null {
     /\bmatch\s+the\s+pairs/i.test(trimmed);
 
   if (isMatchType) {
-    const parenNum = detectParenNumResult(trimmed);
-    if (parenNum && Object.keys(parenNum.opts).length >= 2 && optionsLookValid(parenNum.opts)) {
-      let qText = trimmed.substring(0, parenNum.idx);
-      qText = cleanQuestionText(qText);
-      if (qText) {
-        return { text: qText, options: fillOptions(parenNum.opts) };
-      }
-    }
-    const parenLetter = detectParenLetterResult(trimmed);
-    if (parenLetter && Object.keys(parenLetter.opts).length >= 2 && optionsLookValid(parenLetter.opts)) {
-      let qText = trimmed.substring(0, parenLetter.idx);
-      qText = cleanQuestionText(qText);
-      if (qText) {
-        return { text: qText, options: fillOptions(parenLetter.opts) };
-      }
-    }
+    const matchResult = parseMatchThePair(trimmed);
+    if (matchResult) return matchResult;
+
     const qText = cleanQuestionText(trimmed);
     if (qText) {
       return { text: qText, options: { A: "", B: "", C: "", D: "" } };
@@ -274,6 +261,155 @@ function extractQuestionFromBlock(block: string): ParsedQuestion | null {
     }
   }
   return null;
+}
+
+/* ================================================================== */
+/*  MATCH-THE-PAIR PARSER                                             */
+/* ================================================================== */
+
+/**
+ * Dedicated parser for match-the-pair / match-the-following questions.
+ *
+ * These questions have a matching table with items like:
+ *   (a) Mukundarao Patil    (i) Vijayi Maratha
+ *   (b) V.R. Kothari        (ii) Jagruti
+ *   ...
+ * followed by answer options using (1)-(4) or a second set of (a)-(d):
+ *   (1) (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+ *   (2) (a)-(ii), (b)-(iii), ...
+ *
+ * The key is to NOT confuse the table's (a)-(d) with answer options.
+ */
+function parseMatchThePair(block: string): ParsedQuestion | null {
+  const hasRomanNumerals = /\(\s*(?:i{1,3}v?|vi{0,3})\s*\)/i.test(block);
+  const hasLetterItems = /\(\s*[a-d]\s*\)/i.test(block);
+
+  if (!hasLetterItems && !hasRomanNumerals) return null;
+
+  const tableEndIdx = findMatchTableEnd(block);
+
+  if (tableEndIdx > 0) {
+    const afterTable = block.substring(tableEndIdx);
+    const beforeTable = block.substring(0, tableEndIdx);
+
+    const parenNum = detectParenNumResult(afterTable);
+    if (parenNum && Object.keys(parenNum.opts).length >= 2) {
+      const qText = cleanQuestionText(beforeTable);
+      if (qText) {
+        return { text: qText, options: fillOptions(parenNum.opts) };
+      }
+    }
+
+    const parenLetter = detectParenLetterResultForMatch(afterTable);
+    if (parenLetter && Object.keys(parenLetter.opts).length >= 2) {
+      const qText = cleanQuestionText(beforeTable);
+      if (qText) {
+        return { text: qText, options: fillOptions(parenLetter.opts) };
+      }
+    }
+  }
+
+  const parenNum = detectParenNumResult(block);
+  if (parenNum && Object.keys(parenNum.opts).length >= 2 && optionsLookValid(parenNum.opts)) {
+    let qText = block.substring(0, parenNum.idx);
+    qText = cleanQuestionText(qText);
+    if (qText) {
+      return { text: qText, options: fillOptions(parenNum.opts) };
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Find where the matching table ends. The table contains lines with
+ * (a)/(b)/(c)/(d) paired with (i)/(ii)/(iii)/(iv) or Column A / Column B items.
+ * Returns the character index where answer options begin.
+ */
+function findMatchTableEnd(block: string): number {
+  const lines = block.split("\n");
+  let lastTableLine = -1;
+
+  // Table line: STARTS with (a)-(d) and also has (i)-(iv) roman numeral
+  const tableLineStartsWithLetterRe =
+    /^\s*\(\s*[a-d]\s*\)\s+.+?\s*\(\s*(?:i{1,3}v?|vi{0,3})\s*\)/i;
+  // Standalone (a) Name or (i) Name lines that are part of the matching table
+  const standaloneLetterRe = /^\s*\(\s*[a-d]\s*\)\s+\S/i;
+  const standaloneRomanRe = /^\s*\(\s*(?:i{1,3}v?|vi{0,3})\s*\)\s+\S/i;
+  const columnHeaderRe = /column\s*[AB]|list[- ][I1]/i;
+  // Answer option line: starts with (1)-(4) — NOT a table line
+  const answerOptionRe = /^\s*\(\s*[1-4]\s*\)/;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Skip lines that start with (1)-(4) — these are answer options, not table
+    if (answerOptionRe.test(line)) continue;
+
+    if (
+      tableLineStartsWithLetterRe.test(line) ||
+      columnHeaderRe.test(line)
+    ) {
+      lastTableLine = i;
+    } else if (standaloneRomanRe.test(line) && !answerOptionRe.test(line)) {
+      lastTableLine = i;
+    } else if (standaloneLetterRe.test(line)) {
+      // (a) Name on its own line — part of table if next line is (i) or close to other table lines
+      if (i + 1 < lines.length && standaloneRomanRe.test(lines[i + 1])) {
+        lastTableLine = i + 1;
+      } else if (lastTableLine >= 0 && i - lastTableLine <= 2) {
+        lastTableLine = i;
+      }
+    }
+  }
+
+  if (lastTableLine < 0) return -1;
+
+  let charIdx = 0;
+  for (let i = 0; i <= lastTableLine && i < lines.length; i++) {
+    charIdx += lines[i].length + 1;
+  }
+  return Math.min(charIdx, block.length);
+}
+
+/**
+ * Detect (a)-(d) answer options that contain pair-mapping references
+ * like "(a)-(i), (b)-(ii)" — these are actual answer choices, not table items.
+ */
+function detectParenLetterResultForMatch(
+  text: string,
+): { opts: Record<string, string>; idx: number } | null {
+  const re =
+    /\(\s*([a-dA-D])\s*\)\s*(.+?)(?=\s*\(\s*[a-dA-D]\s*\)\s*\(|$)/gs;
+  const opts: Record<string, string> = {};
+  let firstIdx = Infinity;
+  let m: RegExpExecArray | null;
+
+  while ((m = re.exec(text)) !== null) {
+    const val = cleanOptionValue(m[2]);
+    if (val && /[(\-–]/.test(val) && /\(\s*(?:i{1,3}v?|vi{0,3}|[a-d])\s*\)/i.test(val)) {
+      const letter = m[1].toUpperCase();
+      if (!opts[letter]) opts[letter] = val;
+      if (m.index < firstIdx) firstIdx = m.index;
+    }
+  }
+
+  if (Object.keys(opts).length >= 2) return { opts, idx: firstIdx };
+
+  const re2 = /\(\s*([a-dA-D])\s*\)\s*(.+?)(?=\s*\(\s*[a-dA-D]\s*\)|$)/gs;
+  const opts2: Record<string, string> = {};
+  let firstIdx2 = Infinity;
+
+  while ((m = re2.exec(text)) !== null) {
+    const letter = m[1].toUpperCase();
+    const val = cleanOptionValue(m[2]);
+    if (!opts2[letter] && val) opts2[letter] = val;
+    if (m.index < firstIdx2) firstIdx2 = m.index;
+  }
+
+  return Object.keys(opts2).length >= 2
+    ? { opts: opts2, idx: firstIdx2 }
+    : null;
 }
 
 /* ================================================================== */
@@ -404,6 +540,20 @@ function findLastOptionGroup(
 }
 
 function detectParenLetterResult(text: string): { opts: Record<string, string>; idx: number } | null {
+  const hasMatchTable =
+    /\(\s*[a-d]\s*\)\s*.+?\(\s*(?:i{1,3}v?|vi{0,3})\s*\)/i.test(text);
+
+  if (hasMatchTable) {
+    const tableEnd = findMatchTableEnd(text);
+    if (tableEnd > 0) {
+      const after = text.substring(tableEnd);
+      const result = detectParenLetterResultForMatch(after);
+      if (result) {
+        return { opts: result.opts, idx: tableEnd + result.idx };
+      }
+    }
+  }
+
   const re = /\(\s*([a-dA-D])\s*\)\s*(.+?)(?=\s*\(\s*[a-dA-D]\s*\)|$)/gs;
   const opts: Record<string, string> = {};
   let firstIdx = Infinity;
