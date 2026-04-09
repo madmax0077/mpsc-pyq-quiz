@@ -126,89 +126,33 @@ interface TextItem {
   str: string;
   hasEOL?: boolean;
   transform?: number[];
-  width?: number;
-  height?: number;
 }
 
-/**
- * Detects two-column layout (common in bilingual MPSC papers where
- * Marathi is on the left and English on the right). When detected,
- * separates columns so they don't interleave.
- */
 function reconstructText(items: unknown[]): string {
-  const typed: TextItem[] = [];
-  for (const raw of items) {
-    const item = raw as TextItem;
-    if (typeof item.str === "string" && item.str.trim()) typed.push(item);
-  }
-  if (typed.length === 0) return "";
-
-  const xPositions = typed
-    .filter((it) => it.transform)
-    .map((it) => it.transform![4]);
-
-  if (xPositions.length > 10) {
-    const sorted = [...xPositions].sort((a, b) => a - b);
-    const minX = sorted[0];
-    const maxX = sorted[sorted.length - 1];
-    const pageWidth = maxX - minX;
-
-    if (pageWidth > 200) {
-      const midX = minX + pageWidth * 0.45;
-      const leftCount = xPositions.filter((x) => x < midX).length;
-      const rightCount = xPositions.filter((x) => x >= midX).length;
-
-      if (leftCount > typed.length * 0.2 && rightCount > typed.length * 0.2) {
-        const leftItems = typed.filter(
-          (it) => !it.transform || it.transform[4] < midX,
-        );
-        const rightItems = typed.filter(
-          (it) => it.transform && it.transform[4] >= midX,
-        );
-        const leftText = buildLines(leftItems);
-        const rightText = buildLines(rightItems);
-        return leftText + "\n" + rightText;
-      }
-    }
-  }
-
-  return buildLines(typed);
-}
-
-function buildLines(items: TextItem[]): string {
   const lines: string[] = [];
   let currentLine = "";
   let lastY: number | null = null;
-  let lastX: number | null = null;
 
-  for (const item of items) {
+  for (const raw of items) {
+    const item = raw as TextItem;
+    if (typeof item.str !== "string") continue;
+
     const y = item.transform ? item.transform[5] : null;
-    const x = item.transform ? item.transform[4] : null;
-
-    if (lastY !== null && y !== null && Math.abs(y - lastY) > 3) {
+    if (lastY !== null && y !== null && Math.abs(y - lastY) > 2) {
       lines.push(currentLine);
       currentLine = "";
     }
     if (y !== null) lastY = y;
 
-    const needsSpace =
-      currentLine &&
-      !currentLine.endsWith(" ") &&
-      !item.str.startsWith(" ") &&
-      (lastX === null || x === null || x - lastX > 1);
-
-    if (needsSpace) currentLine += " ";
-    currentLine += item.str;
-
-    if (x !== null && item.transform) {
-      lastX = x + (item.width ?? item.str.length * 5);
+    if (currentLine && !currentLine.endsWith(" ") && !item.str.startsWith(" ")) {
+      currentLine += " ";
     }
+    currentLine += item.str;
 
     if (item.hasEOL) {
       lines.push(currentLine);
       currentLine = "";
       lastY = null;
-      lastX = null;
     }
   }
 

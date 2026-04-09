@@ -30,8 +30,6 @@ export function parseOCRText(rawText: string): ParsedQuestion[] {
     const result = fn();
     if (result.length > best.length) best = result;
   }
-
-  best = deduplicateQuestions(best);
   return best;
 }
 
@@ -54,27 +52,35 @@ function normalise(raw: string): string {
     .replace(/[{\[]\s*([1-4])\s*[}\]]/g, "($1)")
     .replace(/[{\[]\s*([a-dA-D])\s*[}\]]/g, "($1)");
 
+  // Pattern: OCR special char inside parens → mapped option letter
   text = text.replace(/\(([®©@¢€])\)/g, (_m, ch: string) =>
-    `(${OCR_CHAR_MAP[ch] || ch})`,
+    `(${OCR_CHAR_MAP[ch] || ch})`
   );
 
+  // Pattern: OCR char inside opening paren WITHOUT closing paren
   text = text.replace(/\(([®©@¢€])(?=[\s,.])/g, (_m, ch: string) =>
-    `(${OCR_CHAR_MAP[ch] || ch})`,
+    `(${OCR_CHAR_MAP[ch] || ch})`
   );
 
+  // Pattern: bare OCR char + ) with no opening paren
   text = text.replace(/(?<=\s|^)([®©¢@])\)/gm, (_m, ch: string) =>
-    `(${OCR_CHAR_MAP[ch] || ch})`,
+    `(${OCR_CHAR_MAP[ch] || ch})`
   );
 
+  // Pattern: multi-char garbled option markers like ©®) → (3), @® → stripped
   text = text.replace(/(?<=\s|^)[©®@¢€]{2,}\)(?=\s)/gm, "(3)");
   text = text.replace(/(?<=\s|^)®[nN]\s/gm, "(1) ");
 
+  // Pattern: extra chars around option letters — (pb)→(b), (bh)→(b), (pa)→(a)
   text = text.replace(/\(p?([a-d])h?\)/gi, "($1)");
 
+  // Pattern: OCR reads ) as y — (ay→(a), (cy→(c), (ivy→(iv)
   text = text.replace(/\(([a-d]|i{1,3}v?|vi{0,3})y(?=[\s,.])/gi, "($1)");
 
+  // Pattern: bare n) → (n) for 1-4 (OCR drops opening paren)
   text = text.replace(/(?<!\d)([1-4])\)(?=\s)/g, "($1)");
 
+  // Strip "Answer Options" and "Select the correct options" header lines
   text = text.replace(/\n\s*answer\s*options?\s*:?\s*(?=\n|$)/gim, "");
   text = text.replace(/\n\s*select\s+the\s+correct\s+options?\s*:?\s*(?=\n|$)/gim, "");
 
@@ -94,19 +100,7 @@ function splitByQuestionNumber(text: string): ParsedQuestion[] {
   while ((m = re.exec(text)) !== null) {
     const before = text.substring(Math.max(0, m.index - 5), m.index);
     if (/[(\[{]\s*$/.test(before)) continue;
-
-    const matchStr = m[0];
-    const numMatch = matchStr.match(/(\d{1,3})/);
-    if (numMatch) {
-      const num = parseInt(numMatch[1], 10);
-      if (
-        num >= 1 &&
-        num <= 200 &&
-        (positions.length === 0 || /\n/.test(text.substring(m.index - 1, m.index + 1)))
-      ) {
-        positions.push(m.index);
-      }
-    }
+    positions.push(m.index);
   }
 
   if (positions.length === 0) return [];
@@ -127,8 +121,7 @@ function splitByQuestionNumber(text: string): ParsedQuestion[] {
 /* ================================================================== */
 
 function splitByParenOptionBlocks(text: string): ParsedQuestion[] {
-  const optSetRe =
-    /\(\s*1\s*\)\s*.+?\(\s*2\s*\)\s*.+?(?:\(\s*3\s*\)\s*.+?)?(?:\(\s*4\s*\)\s*.+?)?(?=\n\s*\d{1,3}\s*[.):\-]\s|\n\s*(?:Q(?:uestion)?|Ques)\s*\d|\(\s*1\s*\)\s*(?=.+\(\s*2\s*\))|$)/gs;
+  const optSetRe = /\(\s*1\s*\)\s*.+?\(\s*2\s*\)\s*.+?\(\s*3\s*\)\s*.+?\(\s*4\s*\)\s*.+?(?=\n\s*\d{1,3}\s*[.):\-]\s|\n\s*(?:Q(?:uestion)?|Ques)\s*\d|\(\s*1\s*\)\s*(?=.+\(\s*2\s*\))|$)/gs;
 
   const matches: { start: number; end: number; optStart: number }[] = [];
   let match: RegExpExecArray | null;
@@ -188,7 +181,7 @@ function splitByOptionClusters(text: string): ParsedQuestion[] {
     const c = clusters[ci];
     const firstOpt = c[0];
     const prevEnd = ci > 0 ? clusters[ci - 1][clusters[ci - 1].length - 1] + 1 : 0;
-    const qLines = lines.slice(Math.max(prevEnd, firstOpt - 8), firstOpt);
+    const qLines = lines.slice(Math.max(prevEnd, firstOpt - 6), firstOpt);
     const qText = cleanQuestionText(qLines.join(" "));
     const opts = extractOptionsFromLines(c.map((n) => lines[n]));
     if (qText && Object.keys(opts).length >= 2) {
@@ -215,13 +208,13 @@ function hasEnoughEnglish(text: string): boolean {
   const words = text.split(/\s+/).filter((w) => w.length >= 2);
   if (words.length === 0) return false;
   const engWords = words.filter((w) => /^[a-zA-Z]/.test(w));
-  return engWords.length / words.length >= 0.35;
+  return engWords.length / words.length >= 0.4;
 }
 
 function optionsLookValid(opts: Record<string, string>): boolean {
   const vals = Object.values(opts).filter(Boolean);
   if (vals.length < 2) return false;
-  return vals.some((v) => hasEnoughEnglish(v) || v.length >= 2);
+  return vals.some((v) => hasEnoughEnglish(v));
 }
 
 function extractQuestionFromBlock(block: string): ParsedQuestion | null {
@@ -242,28 +235,39 @@ function extractQuestionFromBlock(block: string): ParsedQuestion | null {
         return { text: qText, options: fillOptions(parenNum.opts) };
       }
     }
-    const parenLetter = detectParenLetterResult(trimmed);
-    if (parenLetter && Object.keys(parenLetter.opts).length >= 2 && optionsLookValid(parenLetter.opts)) {
-      let qText = trimmed.substring(0, parenLetter.idx);
-      qText = cleanQuestionText(qText);
-      if (qText) {
-        return { text: qText, options: fillOptions(parenLetter.opts) };
-      }
-    }
     const qText = cleanQuestionText(trimmed);
     if (qText) {
       return { text: qText, options: { A: "", B: "", C: "", D: "" } };
     }
   }
 
-  const detectors = [
-    () => detectParenNumResult(trimmed),
-    () => detectParenLetterResult(trimmed),
+  // Priority 1: (1)…(2)…(3)…(4) options
+  const parenNum = detectParenNumResult(trimmed);
+  if (parenNum && Object.keys(parenNum.opts).length >= 2) {
+    let qText = trimmed.substring(0, parenNum.idx);
+    qText = cleanQuestionText(qText);
+    if (qText) {
+      return { text: qText, options: fillOptions(parenNum.opts) };
+    }
+  }
+
+  // Priority 2: (a)-(d) options
+  const parenLetter = detectParenLetterResult(trimmed);
+  if (parenLetter && Object.keys(parenLetter.opts).length >= 2) {
+    let qText = trimmed.substring(0, parenLetter.idx);
+    qText = cleanQuestionText(qText);
+    if (qText) {
+      return { text: qText, options: fillOptions(parenLetter.opts) };
+    }
+  }
+
+  // Priority 3-4: other option formats
+  const otherDetectors = [
     () => detectLetterResult(trimmed),
     () => detectBareNumResult(trimmed),
   ];
 
-  for (const detect of detectors) {
+  for (const detect of otherDetectors) {
     const result = detect();
     if (result && Object.keys(result.opts).length >= 2) {
       let qText = trimmed.substring(0, result.idx);
@@ -299,33 +303,16 @@ function detectParenNumResult(text: string): { opts: Record<string, string>; idx
   const opts: Record<string, string> = {};
   let firstIdx = Infinity;
   let m: RegExpExecArray | null;
-
-  const allMatches: { num: string; val: string; idx: number }[] = [];
   while ((m = re.exec(text)) !== null) {
-    allMatches.push({ num: m[1], val: cleanOptionValue(m[2]), idx: m.index });
-  }
-
-  if (allMatches.length >= 2) {
-    const lastGroup = findLastOptionGroup(allMatches);
-    for (const am of lastGroup) {
-      const letter = NUM_TO_LETTER[am.num];
-      if (letter && !opts[letter] && am.val) {
-        opts[letter] = am.val;
-      }
-      if (am.idx < firstIdx) firstIdx = am.idx;
+    const letter = NUM_TO_LETTER[m[1]];
+    const val = cleanOptionValue(m[2]);
+    if (letter && !opts[letter] && val) {
+      opts[letter] = val;
     }
+    if (m.index < firstIdx) firstIdx = m.index;
   }
 
-  if (Object.keys(opts).length === 0) {
-    for (const am of allMatches) {
-      const letter = NUM_TO_LETTER[am.num];
-      if (letter && !opts[letter] && am.val) {
-        opts[letter] = am.val;
-      }
-      if (am.idx < firstIdx) firstIdx = am.idx;
-    }
-  }
-
+  // Handle garbled (3) → () : if we found (1),(2),(4) but not (3), check for ()
   if (opts["A"] && opts["B"] && opts["D"] && !opts["C"]) {
     const emptyRe = /\(\)\s*(.+?)(?=\s*\(\s*[1-4]\s*\)|$)/gs;
     let em: RegExpExecArray | null;
@@ -340,6 +327,7 @@ function detectParenNumResult(text: string): { opts: Record<string, string>; idx
     }
   }
 
+  // Also handle: found (1),(2) but not (3),(4) — check for () and stray patterns
   if (opts["A"] && opts["B"] && !opts["C"]) {
     const emptyRe = /\(\)\s*(.+?)(?=\s*\(\s*[1-4]\s*\)|\s*\(\)|$)/gs;
     let em: RegExpExecArray | null;
@@ -356,6 +344,7 @@ function detectParenNumResult(text: string): { opts: Record<string, string>; idx
 
   if (Object.keys(opts).length >= 2) return { opts, idx: firstIdx };
 
+  // Fallback: bare n) format
   const reBare = /(?:^|\s)([1-4])\)\s*(.+?)(?=\s+[1-4]\)|$)/gs;
   const optsBare: Record<string, string> = {};
   let firstIdxBare = Infinity;
@@ -368,39 +357,6 @@ function detectParenNumResult(text: string): { opts: Record<string, string>; idx
     if (m.index < firstIdxBare) firstIdxBare = m.index;
   }
   return Object.keys(optsBare).length >= 2 ? { opts: optsBare, idx: firstIdxBare } : null;
-}
-
-/**
- * For match-the-pair questions, the body often contains (1),(2),(3),(4) items
- * that are NOT answer options. The actual answer options come LAST. This function
- * finds the last contiguous group of (1)-(4) matches.
- */
-function findLastOptionGroup(
-  matches: { num: string; val: string; idx: number }[],
-): { num: string; val: string; idx: number }[] {
-  if (matches.length <= 4) return matches;
-
-  const groups: { num: string; val: string; idx: number }[][] = [];
-  let current = [matches[0]];
-
-  for (let i = 1; i < matches.length; i++) {
-    const prevNum = parseInt(current[current.length - 1].num, 10);
-    const curNum = parseInt(matches[i].num, 10);
-    const gap = matches[i].idx - matches[i - 1].idx;
-
-    if (curNum <= prevNum || gap > 500) {
-      groups.push(current);
-      current = [matches[i]];
-    } else {
-      current.push(matches[i]);
-    }
-  }
-  groups.push(current);
-
-  for (let i = groups.length - 1; i >= 0; i--) {
-    if (groups[i].length >= 2) return groups[i];
-  }
-  return matches.slice(-4);
 }
 
 function detectParenLetterResult(text: string): { opts: Record<string, string>; idx: number } | null {
@@ -418,12 +374,12 @@ function detectParenLetterResult(text: string): { opts: Record<string, string>; 
 }
 
 function detectLetterResult(text: string): { opts: Record<string, string>; idx: number } | null {
-  const lineRe = /(?:^|\n)\s*[(\[]?\s*([A-Da-d])\s*[)\].\-:]\s*(.+)/g;
+  const inlineRe = /[(\[]?\s*([A-Da-d])\s*[)\].\-:]\s*(.+?)(?=\s+[(\[]?\s*[A-Da-d]\s*[)\].\-:]|$)/g;
   let opts: Record<string, string> = {};
   let firstIdx = Infinity;
   let m: RegExpExecArray | null;
 
-  while ((m = lineRe.exec(text)) !== null) {
+  while ((m = inlineRe.exec(text)) !== null) {
     const letter = m[1].toUpperCase();
     if (!opts[letter]) opts[letter] = m[2].trim();
     if (m.index < firstIdx) firstIdx = m.index;
@@ -432,9 +388,8 @@ function detectLetterResult(text: string): { opts: Record<string, string>; idx: 
 
   opts = {};
   firstIdx = Infinity;
-  const inlineRe = /[(\[]?\s*([A-Da-d])\s*[)\].\-:]\s*(.+?)(?=\s+[(\[]?\s*[A-Da-d]\s*[)\].\-:]|$)/g;
-
-  while ((m = inlineRe.exec(text)) !== null) {
+  const lineRe = /(?:^|\n)\s*[(\[]?\s*([A-Da-d])\s*[)\].\-:]\s*(.+)/g;
+  while ((m = lineRe.exec(text)) !== null) {
     const letter = m[1].toUpperCase();
     if (!opts[letter]) opts[letter] = m[2].trim();
     if (m.index < firstIdx) firstIdx = m.index;
@@ -483,6 +438,12 @@ function cleanOptionValue(raw: string): string {
   return result;
 }
 
+/**
+ * Fix garbled letter references INSIDE option text.
+ * OCR commonly garbles (c) to (9), (0), (5), (6), () or drops the closing paren.
+ * This runs per-option-value so it doesn't conflict with the question statements
+ * where (c) might be intact.
+ */
 function fixGarbledLetterRefs(text: string): string {
   const letters = ["a", "b", "c", "d"] as const;
   const present = new Set<string>();
@@ -492,6 +453,7 @@ function fixGarbledLetterRefs(text: string): string {
 
   if (present.size === 0) return text;
 
+  // Digits 0,5,6,9 almost always represent garbled (c) in OCR
   const digitTarget = !present.has("c")
     ? "c"
     : letters.find((l) => !present.has(l)) || null;
@@ -501,6 +463,7 @@ function fixGarbledLetterRefs(text: string): string {
     text = text.replace(/\(\s*[0569]\s*$/g, `(${digitTarget})`);
   }
 
+  // Empty parens () → first missing letter
   const firstMissing = letters.find((l) => !present.has(l));
   if (firstMissing && /\(\)/.test(text)) {
     text = text.replace(/\(\)(?=[\s,.]|$)/g, `(${firstMissing})`);
@@ -540,14 +503,4 @@ function extractOptionsFromLines(lines: string[]): Record<string, string> {
     if (m) { opts[m[1].toUpperCase()] = m[2].trim(); continue; }
   }
   return opts;
-}
-
-function deduplicateQuestions(questions: ParsedQuestion[]): ParsedQuestion[] {
-  const seen = new Set<string>();
-  return questions.filter((q) => {
-    const key = q.text.slice(0, 80).toLowerCase().replace(/\s+/g, " ").trim();
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
 }

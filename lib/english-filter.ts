@@ -415,15 +415,16 @@ function isNoise(line: string): boolean {
   if (/^[=\-_|]{2,}$/.test(t)) return true;
   if (/^-+\s*(oo+|0o+)\s*-+$/i.test(t)) return true;
   if (/BOOKLET\s*NO/i.test(t)) return true;
-  if (/^20[0-9]{2}\s+M\d+/i.test(t)) return true;
-  if (t.length <= 3 && !/\d/.test(t)) return true;
+  if (/^2025\s+M\d+/i.test(t)) return true;
+  if (t.length <= 4 && !/\d/.test(t)) return true;
   if (/^[|*#~`]+$/.test(t)) return true;
   if (/^[^a-zA-Z0-9]*$/.test(t)) return true;
   if (/^[_\-—\s.,;:]+$/.test(t)) return true;
-  if (/^\s*page\s+\d+\s*(of\s+\d+)?\s*$/i.test(t)) return true;
-  if (/^\s*\d+\s*\/\s*\d+\s*$/.test(t)) return true;
+  // Pattern: garbled lines with no English words
   if (countEng(t) === 0 && t.length > 5) {
+    // Repeated characters (e.g., "RRRRRARARAARRE", "SERRE ww ww")
     if (/(.)\1{3,}/.test(t)) return true;
+    // Garbled page header/footer patterns (SIFT, WRT, SRM, etc.)
     if (/S[IF][FR][TM]|WR[TN]|IFT|SRM|IRM/i.test(t) && /[A-Z]{4,}/.test(t)) return true;
   }
   return false;
@@ -437,11 +438,7 @@ function splitIntoBlocks(lines: string[]): string[][] {
   const blocks: string[][] = [];
   let current: string[] = [];
   for (const line of lines) {
-    const isQStart =
-      /^\s*\d{1,3}\.\s/.test(line) ||
-      /^\s*Q(?:uestion)?\s*\d{1,3}\s*[.):\-]/i.test(line) ||
-      /^\s*\d{1,3}\)\s/.test(line);
-    if (isQStart && current.length > 0) {
+    if (/^\s*\d{1,3}\.\s/.test(line) && current.length > 0) {
       blocks.push(current);
       current = [];
     }
@@ -456,13 +453,8 @@ function splitIntoBlocks(lines: string[]): string[][] {
 /* ------------------------------------------------------------------ */
 
 function extractEnglishPortion(block: string[]): string[] {
-  const qnMatch = block[0]?.match(
-    /^\s*(?:Q(?:uestion)?\s*)?(\d{1,3})\s*[.):\-]\s/i,
-  );
-  if (!qnMatch) {
-    if (block.every((l) => isAcceptableInEnglishZone(l))) return block;
-    return [];
-  }
+  const qnMatch = block[0]?.match(/^\s*(\d{1,3})\.\s/);
+  if (!qnMatch) return [];
   const qnPrefix = `${qnMatch[1]}. `;
 
   let anchorIdx = -1;
@@ -470,13 +462,6 @@ function extractEnglishPortion(block: string[]): string[] {
     if (isEnglishAnchor(block[i])) {
       anchorIdx = i;
       break;
-    }
-  }
-
-  if (anchorIdx === -1) {
-    const engLines = block.filter((l) => isAcceptableInEnglishZone(l));
-    if (engLines.length >= 2) {
-      anchorIdx = block.indexOf(engLines[0]);
     }
   }
   if (anchorIdx === -1) return [];
@@ -502,21 +487,21 @@ function isEnglishAnchor(line: string): boolean {
   if (!t) return false;
 
   if (/answer\s*options\s*:?/i.test(t) && countEng(t) >= 1) return true;
-  if (/match the (following|pairs?|correct|column)/i.test(t)) return true;
-  if (/^[^a-zA-Z]{0,3}(which|who|what|where|when|how|the |was |is |are |an |in |it )/i.test(t)) return true;
-  if (/^[^a-zA-Z]{0,3}(consider|select|find|observe|state|match|according|identify|if |on )/i.test(t)) return true;
+  if (/match the (following|pairs|correct|column)/i.test(t)) return true;
+  // Pattern: line starts with a common English question word
+  if (/^[^a-zA-Z]{0,3}(which|who|what|where|when|how|the |was |is |are |an |in )/i.test(t)) return true;
+  // Pattern: line starts with an English instruction verb
+  if (/^[^a-zA-Z]{0,3}(consider|select|find|observe|state|match|according)/i.test(t)) return true;
+  // Pattern: structural headers for match-the-following
   if (/column\s*[AB]|list[- ][I1]/i.test(t)) return true;
-  if (/\(\s*[1-4]\s*\)\s*.+\(\s*[1-4]\s*\)/.test(t)) return true;
-  if (/\(\s*[a-d]\s*\)\s*.+\(\s*[a-d]\s*\)/i.test(t)) return true;
-  if (/^[^a-zA-Z]{0,5}[A-Z][a-z]{2,}/.test(t) && countEng(t) >= 1) return true;
 
   const eng = countEng(t);
   const total = totalWords(t);
   if (total === 0) return false;
 
-  if (total <= 3) return eng >= 1;
-  if (total <= 5) return eng >= 2 && eng / total >= 0.3;
-  return eng >= 2 && eng / total >= 0.2;
+  if (total <= 3) return eng >= 2;
+  if (total <= 5) return eng >= 2 && eng / total >= 0.35;
+  return eng >= 3 && eng / total >= 0.25;
 }
 
 /* ------------------------------------------------------------------ */
@@ -527,27 +512,30 @@ function isAcceptableInEnglishZone(line: string): boolean {
   const t = line.trim();
   if (!t) return false;
 
+  // Structural phrases
   if (/answer\s*options/i.test(t)) return true;
   if (/select the correct/i.test(t)) return true;
   if (/match the/i.test(t)) return true;
   if (/column\s*[AB]|list[- ][I1]/i.test(t)) return true;
   if (/^(True|False)[\s,]+(True|False)/i.test(t)) return true;
+  // Grid header rows like "(a) (b) (c) (d)" or "(1) (2) (3) (4)" for answer tables
   if (/^\s*\(\s*[a-d]\s*\)\s+\(\s*[a-d]\s*\)\s+\(\s*[a-d]\s*\)\s+\(\s*[a-d]\s*\)/i.test(t)) return true;
 
+  // Percentages or currency — always keep
   if (/\d+\s*%/.test(t)) return true;
   if (/[₹¥$€]/.test(t)) return true;
 
+  // Purely numeric / math / measurement lines
   if (/^[\d\s+\-×xX*÷/=.,:;()%₹¥$€°m²³]+$/.test(t)) return true;
 
+  // Has at least 1 recognised English word → keep
   if (countEng(t) >= 1) return true;
 
+  // Roman numeral markers (i)-(iv) with English content → match-the-pair item lines
   if (/\(\s*(?:i{1,3}v?|vi{0,3})\s*\)/i.test(t) && /[a-zA-Z]{3,}/.test(t)) return true;
 
-  // Lines that are mostly Latin alphabet (proper nouns, names, places not in dict)
-  const latinChars = (t.match(/[a-zA-Z]/g) || []).length;
-  const totalChars = t.replace(/[\s\d.,;:()[\]{}'"!?\-]/g, "").length;
-  if (totalChars > 0 && latinChars / totalChars >= 0.7 && latinChars >= 4) return true;
-
+  // Option markers — only keep if line also has meaningful content
+  // (blocks garbled answer-grid rows like "2) Gv) @ @) @" or "(1) Gv) GH) G6")
   if (/\(\s*[1-4]\s*\)/.test(t) || /\(\s*[a-dA-D]\s*\)/.test(t) || /^\s*[1-4]\s*[)]\s/.test(t)) {
     const nMarkers = ((t.match(/\(\s*[1-4]\s*\)/g) || []).length) +
                      ((t.match(/\(\s*[a-dA-D]\s*\)/g) || []).length);
@@ -556,6 +544,7 @@ function isAcceptableInEnglishZone(line: string): boolean {
     return false;
   }
 
+  // Garbled grid rows — Gv), G6, @@), etc. with no English words → reject
   if (/[GQ@®©¢€]{2,}|Gv\)|GH\)|G6|@@\)/i.test(t) && countEng(t) === 0) return false;
 
   return false;
