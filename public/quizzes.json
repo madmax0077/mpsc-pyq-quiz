@@ -2,7 +2,7 @@
   {
     "id": "2aei7ehmnrrb55f",
     "title": "Maharashtra Group B Combined Preliminary Examination 2025",
-    "createdAt": "2026-04-09T17:34:20.115Z",
+    "createdAt": "2026-04-09T18:20:13.936Z",
     "questions": [
       {
         "id": "o45cqa8mnrqhdio",
@@ -79,7 +79,8 @@
           "D": "Sir William Wedderburn"
         },
         "correctAnswer": "C",
-        "explanation": "Badruddin Tyabji was the chairperson (President) of the Indian National Congress (INC) session held in Madras in 1887."
+        "explanation": "Badruddin Tyabji was the chairperson (President) of the Indian National Congress (INC) session held in Madras in 1887.",
+        "category": "History"
       },
       {
         "id": "cbiz3ssmnrqhdio",
@@ -98,37 +99,40 @@
         "id": "cndwro9mnrqhdio",
         "text": "What was the reason the indigo farmers in Bengal succeeded in revolting against the landlords after the revolt of 1857 ? (a) Entrepreneurship and co-operation \n(b) Organization and discipline \n(c) A split in the landlords \n(d) Hindu-Muslim peasants unity ",
         "options": {
-          "A": "Only (b), (c) and (d) (",
-          "B": "Only (a), (b) and (d) (",
-          "C": "Only (a), (b) and (c) (",
+          "A": "Only (b), (c) and (d) ",
+          "B": "Only (a), (b) and (d) ",
+          "C": "Only (a), (b) and (c) ",
           "D": "Only (a) and (c)"
         },
         "correctAnswer": "A",
-        "explanation": ""
+        "explanation": "",
+        "category": "History"
       },
       {
         "id": "bec234fmnrqhdio",
-        "text": "Match the pairs : (a) Moplah rebellion (i) Khandesh (Maharashtra) (b) Kol uprising (ii) Kerala (c) Santhal uprising (iii) Bihar (d) Bhil uprising (iv) Bangal",
+        "text": "Match the pairs : \n(a) Moplah rebellion         (i) Khandesh (Maharashtra) \n(b) Kol uprising                 (ii) Kerala \n(c) Santhal uprising          (iii) Bihar \n(d) Bhil uprising                (iv) Bangal",
         "options": {
-          "A": "",
-          "B": "",
-          "C": "",
-          "D": ""
+          "A": "(ii) (iii) (iv) (i)",
+          "B": "(iii) (iv) (i) (ii)",
+          "C": "(iv) (ii) (iii) (i)",
+          "D": "(ii) (iii) (i) (iv)"
         },
         "correctAnswer": "A",
-        "explanation": ""
+        "explanation": "",
+        "category": "History"
       },
       {
         "id": "0w0smcxmnrqhdio",
-        "text": "was the Police Commissioner of Bombay had erected a gallows to hang those who took action against the British rule. (",
+        "text": "______ was the Police Commissioner of Bombay had erected a gallows to hang those who took action against the British rule.",
         "options": {
-          "A": "Sir Andrew Fraser (",
-          "B": "John Notboer (",
-          "C": "Richard Mayne (",
+          "A": "Sir Andrew Fraser",
+          "B": "John Notboer",
+          "C": "Richard Mayne",
           "D": "Charles Forget"
         },
-        "correctAnswer": "A",
-        "explanation": ""
+        "correctAnswer": "D",
+        "explanation": "Charles Forjett (often referred to as Charles Forget in some accounts) was the Acting Commissioner of Police in Bombay during the 1857 uprising who erected gallows near the police headquarters to execute those suspected of plotting against British rule.",
+        "category": "History"
       },
       {
         "id": "tz3cikgmnrqhdio",
