@@ -1,4 +1,5 @@
 export type OptionKey = "A" | "B" | "C" | "D";
+export type Language = "english" | "marathi";
 
 export const CATEGORIES = [
   "Polity",
@@ -26,6 +27,7 @@ export interface Quiz {
   title: string;
   createdAt: string;
   questions: Question[];
+  language?: Language;
 }
 
 export type AppMode = "admin" | "student";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category } from "@/lib/types";
+import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language } from "@/lib/types";
 import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes } from "@/lib/storage";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
@@ -38,6 +38,7 @@ export default function AdminView() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [toast, setToast] = useState("");
   const [bulkCategory, setBulkCategory] = useState<Category | "">("");
+  const [quizLanguage, setQuizLanguage] = useState<Language>("english");
   const [showChangePw, setShowChangePw] = useState(false);
   const [currentPw, setCurrentPw] = useState("");
   const [newPw, setNewPw] = useState("");
@@ -99,6 +100,7 @@ export default function AdminView() {
       title: title.trim(),
       createdAt: new Date().toISOString(),
       questions: valid,
+      language: quizLanguage,
     };
     saveQuiz(quiz);
     setSavedQuizzes(getAllQuizzes());
@@ -106,12 +108,14 @@ export default function AdminView() {
     setTitle("");
     setQuestions([]);
     setEditingId(null);
+    setQuizLanguage("english");
   };
 
   const handleEdit = (quiz: Quiz) => {
     setTitle(quiz.title);
     setQuestions(quiz.questions);
     setEditingId(quiz.id);
+    setQuizLanguage(quiz.language || "english");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -195,18 +199,49 @@ export default function AdminView() {
         </div>
       )}
 
-      {/* Quiz Title */}
-      <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <label className="mb-2 block text-sm font-semibold text-slate-700">
-          Quiz Title
-        </label>
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder="e.g. MPSC Prelims 2025 Set A"
-          className="w-full rounded-lg border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
-        />
+      {/* Quiz Title + Language */}
+      <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm space-y-4">
+        <div>
+          <label className="mb-2 block text-sm font-semibold text-slate-700">
+            Quiz Title
+          </label>
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="e.g. MPSC Prelims 2025 Set A"
+            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+          />
+        </div>
+        <div>
+          <label className="mb-2 block text-sm font-semibold text-slate-700">
+            Quiz Language
+          </label>
+          <div className="flex gap-3">
+            <button
+              type="button"
+              onClick={() => setQuizLanguage("english")}
+              className={`flex-1 rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-all ${
+                quizLanguage === "english"
+                  ? "border-indigo-500 bg-indigo-50 text-indigo-700"
+                  : "border-slate-200 bg-white text-slate-500 hover:border-slate-300"
+              }`}
+            >
+              English
+            </button>
+            <button
+              type="button"
+              onClick={() => setQuizLanguage("marathi")}
+              className={`flex-1 rounded-lg border-2 px-4 py-2.5 text-sm font-medium transition-all ${
+                quizLanguage === "marathi"
+                  ? "border-orange-500 bg-orange-50 text-orange-700"
+                  : "border-slate-200 bg-white text-slate-500 hover:border-slate-300"
+              }`}
+            >
+              मराठी (Marathi)
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* File Upload (Image + PDF) */}
@@ -288,6 +323,7 @@ export default function AdminView() {
               setTitle("");
               setQuestions([]);
               setEditingId(null);
+              setQuizLanguage("english");
             }}
             className="rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-500 hover:bg-slate-50 transition-colors"
           >
@@ -369,6 +405,9 @@ export default function AdminView() {
                       <p className="mt-0.5 text-xs text-slate-500">
                         {quiz.questions.length} question{quiz.questions.length !== 1 ? "s" : ""} &middot;{" "}
                         {new Date(quiz.createdAt).toLocaleDateString()}
+                        {quiz.language === "marathi" && (
+                          <span className="ml-1.5 inline-block rounded bg-orange-100 px-1.5 py-0.5 text-[10px] font-semibold text-orange-600">मराठी</span>
+                        )}
                       </p>
                       {cats.length > 0 && (
                         <div className="mt-2 flex flex-wrap gap-1">

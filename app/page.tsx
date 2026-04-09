@@ -1,12 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import { useAuth } from "@/lib/auth-context";
+import type { Language } from "@/lib/types";
 import LoginPage from "@/components/LoginPage";
 import AdminView from "@/components/AdminView";
 import StudentView from "@/components/StudentView";
 
 export default function Home() {
   const { loading, studentUser, isAdmin, logoutAdmin, logoutStudent } = useAuth();
+  const [language, setLanguage] = useState<Language>("english");
 
   if (loading) {
     return (
@@ -57,7 +60,15 @@ export default function Home() {
                 </button>
               </div>
             ) : studentUser ? (
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <select
+                  value={language}
+                  onChange={(e) => setLanguage(e.target.value as Language)}
+                  className="rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-xs font-medium text-slate-600 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+                >
+                  <option value="english">English</option>
+                  <option value="marathi">मराठी</option>
+                </select>
                 <div className="flex items-center gap-2">
                   {studentUser.photoURL && (
                     <img
@@ -99,7 +110,7 @@ export default function Home() {
           </span>
         </div>
 
-        {mode === "admin" ? <AdminView /> : <StudentView />}
+        {mode === "admin" ? <AdminView /> : <StudentView language={language} />}
       </main>
 
       {/* ---- Footer ---- */}

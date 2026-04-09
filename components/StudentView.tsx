@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { Quiz, Question, OptionKey, CATEGORIES, Category } from "@/lib/types";
+import { Quiz, Question, OptionKey, CATEGORIES, Category, Language } from "@/lib/types";
 import { getAllQuizzes } from "@/lib/storage";
 import AdBanner from "./AdBanner";
 
@@ -35,7 +35,7 @@ interface DisplayQuiz {
   quizCount?: number;
 }
 
-export default function StudentView() {
+export default function StudentView({ language = "english" }: { language?: Language }) {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
   const [answers, setAnswers] = useState<Record<string, OptionKey>>({});
@@ -178,6 +178,27 @@ export default function StudentView() {
     setSubmittedPages(new Set());
     setPageScores({});
   };
+
+  /* --------- Marathi Coming Soon --------- */
+  if (language === "marathi") {
+    return (
+      <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-orange-300 bg-gradient-to-br from-orange-50 to-amber-50 p-16 text-center">
+        <div className="mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
+          <svg className="h-10 w-10 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+          </svg>
+        </div>
+        <h2 className="text-2xl font-bold text-orange-700">लवकरच येत आहे!</h2>
+        <p className="mt-2 text-lg font-semibold text-slate-700">Coming Soon</p>
+        <p className="mt-3 max-w-sm text-sm text-slate-500">
+          मराठी प्रश्नसंच लवकरच उपलब्ध होईल. कृपया सध्या English मध्ये सराव करा.
+        </p>
+        <p className="mt-1 max-w-sm text-xs text-slate-400">
+          Marathi quizzes will be available soon. Please practice in English for now.
+        </p>
+      </div>
+    );
+  }
 
   /* --------- Quiz selector --------- */
   if (!selectedQuiz) {
