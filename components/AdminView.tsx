@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category } from "@/lib/types";
 import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes } from "@/lib/storage";
+import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
 import QuestionForm from "./QuestionForm";
 
@@ -30,12 +31,17 @@ const CATEGORY_ICONS: Record<Category, string> = {
 };
 
 export default function AdminView() {
+  const { changeAdminPassword } = useAuth();
   const [title, setTitle] = useState("");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [savedQuizzes, setSavedQuizzes] = useState<Quiz[]>([]);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [toast, setToast] = useState("");
   const [bulkCategory, setBulkCategory] = useState<Category | "">("");
+  const [showChangePw, setShowChangePw] = useState(false);
+  const [currentPw, setCurrentPw] = useState("");
+  const [newPw, setNewPw] = useState("");
+  const [confirmPw, setConfirmPw] = useState("");
 
   useEffect(() => {
     setSavedQuizzes(getAllQuizzes());
@@ -158,6 +164,27 @@ export default function AdminView() {
     }
     return acc;
   }, {});
+
+  const handleChangePassword = () => {
+    if (!currentPw || !newPw || !confirmPw) {
+      showToast("Please fill all password fields.");
+      return;
+    }
+    if (newPw !== confirmPw) {
+      showToast("New passwords do not match.");
+      return;
+    }
+    const err = changeAdminPassword(currentPw, newPw);
+    if (err) {
+      showToast(err);
+      return;
+    }
+    showToast("Password changed successfully!");
+    setCurrentPw("");
+    setNewPw("");
+    setConfirmPw("");
+    setShowChangePw(false);
+  };
 
   return (
     <div className="space-y-8">
@@ -383,6 +410,60 @@ export default function AdminView() {
           </div>
         </div>
       )}
+
+      {/* Change Password */}
+      <div className="rounded-xl border border-slate-200 bg-white shadow-sm">
+        <button
+          onClick={() => setShowChangePw(!showChangePw)}
+          className="flex w-full items-center justify-between px-6 py-4 text-left"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-slate-500">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-slate-700">Change Password</p>
+              <p className="text-xs text-slate-400">Update your admin login credentials</p>
+            </div>
+          </div>
+          <svg className={`h-5 w-5 text-slate-400 transition-transform ${showChangePw ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+        {showChangePw && (
+          <div className="border-t border-slate-100 px-6 pb-5 pt-4 space-y-3">
+            <input
+              type="password"
+              value={currentPw}
+              onChange={(e) => setCurrentPw(e.target.value)}
+              placeholder="Current password"
+              className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+            />
+            <input
+              type="password"
+              value={newPw}
+              onChange={(e) => setNewPw(e.target.value)}
+              placeholder="New password (min 6 chars)"
+              className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+            />
+            <input
+              type="password"
+              value={confirmPw}
+              onChange={(e) => setConfirmPw(e.target.value)}
+              placeholder="Confirm new password"
+              className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+            />
+            <button
+              onClick={handleChangePassword}
+              className="rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-indigo-700 transition-colors"
+            >
+              Update Password
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -42,6 +42,8 @@ export default function StudentView() {
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
+  const [submittedPages, setSubmittedPages] = useState<Set<number>>(new Set());
+  const [pageScores, setPageScores] = useState<Record<number, { correct: number; total: number }>>({});
 
   useEffect(() => {
     let cancelled = false;
@@ -108,10 +110,13 @@ export default function StudentView() {
     setSubmitted(false);
     setScore(0);
     setCurrentPage(0);
+    setSubmittedPages(new Set());
+    setPageScores({});
   };
 
   const handleAnswer = (questionId: string, option: OptionKey) => {
     if (submitted) return;
+    if (selectedQuiz?.isCategory && submittedPages.has(currentPage)) return;
     setAnswers((prev) => ({ ...prev, [questionId]: option }));
   };
 
@@ -131,12 +136,47 @@ export default function StudentView() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleSubmitPage = () => {
+    if (!selectedQuiz) return;
+    const perPage = selectedQuiz.isCategory ? 20 : QUESTIONS_PER_PAGE;
+    const start = currentPage * perPage;
+    const end = Math.min(start + perPage, selectedQuiz.questions.length);
+    const pageQs = selectedQuiz.questions.slice(start, end);
+
+    const pageAnswered = pageQs.filter((q) => answers[q.id]).length;
+    if (pageAnswered === 0) {
+      alert("Please attempt at least one question before submitting this set.");
+      return;
+    }
+
+    let correct = 0;
+    for (const q of pageQs) {
+      if (answers[q.id] === q.correctAnswer) correct++;
+    }
+
+    setSubmittedPages((prev) => new Set(prev).add(currentPage));
+    setPageScores((prev) => ({ ...prev, [currentPage]: { correct, total: pageQs.length } }));
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleNextSet = () => {
+    const perPage = selectedQuiz!.isCategory ? 20 : QUESTIONS_PER_PAGE;
+    const nextPage = currentPage + 1;
+    const maxPage = Math.ceil(selectedQuiz!.questions.length / perPage) - 1;
+    if (nextPage <= maxPage) {
+      setCurrentPage(nextPage);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   const goBack = () => {
     setSelectedQuiz(null);
     setAnswers({});
     setSubmitted(false);
     setScore(0);
     setCurrentPage(0);
+    setSubmittedPages(new Set());
+    setPageScores({});
   };
 
   /* --------- Quiz selector --------- */
@@ -249,18 +289,26 @@ export default function StudentView() {
   }
 
   /* --------- Quiz in progress / submitted --------- */
+  const isCategoryQuiz = selectedQuiz.isCategory;
+  const QUESTIONS_PER_PAGE = 10;
+  const perPage = isCategoryQuiz ? 20 : QUESTIONS_PER_PAGE;
   const total = selectedQuiz.questions.length;
   const answeredCount = Object.keys(answers).length;
   const pct = total > 0 ? Math.round((score / total) * 100) : 0;
   const skippedCount = total - answeredCount;
   const catStyle = selectedQuiz.category ? CATEGORY_COLORS[selectedQuiz.category] : null;
 
-  const QUESTIONS_PER_PAGE = 10;
-  const totalPages = Math.ceil(total / QUESTIONS_PER_PAGE);
+  const totalPages = Math.ceil(total / perPage);
   const pageQuestions = selectedQuiz.questions.slice(
-    currentPage * QUESTIONS_PER_PAGE,
-    (currentPage + 1) * QUESTIONS_PER_PAGE,
+    currentPage * perPage,
+    (currentPage + 1) * perPage,
   );
+  const isPageSubmitted = submittedPages.has(currentPage);
+  const currentPageScore = pageScores[currentPage];
+  const pageAnsweredCount = pageQuestions.filter((q) => answers[q.id]).length;
+  const allPagesSubmitted = submittedPages.size === totalPages;
+  const totalCategoryScore = Object.values(pageScores).reduce((s, p) => s + p.correct, 0);
+  const totalCategoryQuestions = Object.values(pageScores).reduce((s, p) => s + p.total, 0);
 
   return (
     <div className="space-y-6">
@@ -285,7 +333,7 @@ export default function StudentView() {
               </span>
             )}
           </div>
-          {!submitted && (
+          {!submitted && !isCategoryQuiz && (
             <p className="mt-0.5 text-sm text-slate-500">
               {answeredCount} of {total} answered
               {skippedCount > 0 && answeredCount > 0 && (
@@ -293,21 +341,36 @@ export default function StudentView() {
               )}
             </p>
           )}
+          {isCategoryQuiz && (
+            <p className="mt-0.5 text-sm text-slate-500">
+              Set {currentPage + 1} of {totalPages} &middot; {pageAnsweredCount} of {pageQuestions.length} answered
+              {submittedPages.size > 0 && (
+                <span className="text-indigo-500 font-medium"> &middot; {submittedPages.size}/{totalPages} sets done</span>
+              )}
+            </p>
+          )}
         </div>
       </div>
 
-      {/* Progress bar (before submit) */}
-      {!submitted && (
+      {/* Progress bar */}
+      {isCategoryQuiz ? (
+        <div className="overflow-hidden rounded-full bg-slate-100">
+          <div
+            className="h-1.5 rounded-full bg-indigo-500 transition-all duration-500"
+            style={{ width: `${totalPages > 0 ? (submittedPages.size / totalPages) * 100 : 0}%` }}
+          />
+        </div>
+      ) : !submitted ? (
         <div className="overflow-hidden rounded-full bg-slate-100">
           <div
             className="h-1.5 rounded-full bg-indigo-500 transition-all duration-500"
             style={{ width: `${total > 0 ? (answeredCount / total) * 100 : 0}%` }}
           />
         </div>
-      )}
+      ) : null}
 
-      {/* Score Banner */}
-      {submitted && (
+      {/* Score Banner - Regular quiz (full submit) */}
+      {submitted && !isCategoryQuiz && (
         <div
           className={`animate-slide-up rounded-2xl p-6 text-center shadow-sm ${
             pct >= 70
@@ -336,21 +399,56 @@ export default function StudentView() {
         </div>
       )}
 
+      {/* Score Banner - Category quiz (per-page submit) */}
+      {isCategoryQuiz && isPageSubmitted && currentPageScore && (
+        <div
+          className={`animate-slide-up rounded-2xl p-5 shadow-sm ${
+            (() => {
+              const pagePct = Math.round((currentPageScore.correct / currentPageScore.total) * 100);
+              return pagePct >= 70
+                ? "bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200"
+                : pagePct >= 40
+                  ? "bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200"
+                  : "bg-gradient-to-br from-red-50 to-rose-50 border border-red-200";
+            })()
+          }`}
+        >
+          <p className="text-center text-3xl font-extrabold tracking-tight">
+            <span className={(() => { const p = Math.round((currentPageScore.correct / currentPageScore.total) * 100); return p >= 70 ? "text-emerald-600" : p >= 40 ? "text-amber-600" : "text-red-600"; })()}>
+              {currentPageScore.correct}
+            </span>
+            <span className="text-slate-300">/{currentPageScore.total}</span>
+          </p>
+          <p className="mt-1 text-center text-sm font-medium text-slate-600">
+            Set {currentPage + 1} — {Math.round((currentPageScore.correct / currentPageScore.total) * 100)}% correct
+          </p>
+          {allPagesSubmitted && (
+            <div className="mt-3 rounded-lg bg-white/60 p-3 text-center border border-slate-200">
+              <p className="text-lg font-bold text-indigo-700">
+                Overall: {totalCategoryScore}/{totalCategoryQuestions} ({totalCategoryQuestions > 0 ? Math.round((totalCategoryScore / totalCategoryQuestions) * 100) : 0}%)
+              </p>
+              <p className="text-xs text-slate-500">All {totalPages} sets completed!</p>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Questions */}
       <div className="space-y-4">
         {pageQuestions.map((q, localIdx) => {
-          const globalIdx = currentPage * QUESTIONS_PER_PAGE + localIdx;
+          const globalIdx = currentPage * perPage + localIdx;
           const showAdAfter = (localIdx + 1) % 5 === 0 && localIdx < pageQuestions.length - 1;
           const userAnswer = answers[q.id];
-          const isCorrect = submitted && userAnswer === q.correctAnswer;
-          const isWrong = submitted && userAnswer && userAnswer !== q.correctAnswer;
-          const isSkipped = submitted && !userAnswer;
+          const qSubmitted = isCategoryQuiz ? isPageSubmitted : submitted;
+          const isCorrect = qSubmitted && userAnswer === q.correctAnswer;
+          const isWrong = qSubmitted && userAnswer && userAnswer !== q.correctAnswer;
+          const isSkipped = qSubmitted && !userAnswer;
 
           return (
             <div key={q.id} className="space-y-4">
             <div
               className={`rounded-xl border bg-white shadow-sm transition-all ${
-                submitted
+                qSubmitted
                   ? isCorrect
                     ? "border-emerald-300 bg-emerald-50/30"
                     : isSkipped
@@ -364,11 +462,11 @@ export default function StudentView() {
               <div className="p-5">
                 <div className="mb-4 flex items-start gap-3">
                   <span className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
-                    submitted && isCorrect
+                    qSubmitted && isCorrect
                       ? "bg-emerald-100 text-emerald-700"
-                      : submitted && isSkipped
+                      : qSubmitted && isSkipped
                         ? "bg-slate-100 text-slate-500"
-                        : submitted && isWrong
+                        : qSubmitted && isWrong
                           ? "bg-red-100 text-red-700"
                           : userAnswer
                             ? "bg-indigo-100 text-indigo-700"
@@ -397,7 +495,7 @@ export default function StudentView() {
                     let classes =
                       "flex items-center gap-3 rounded-lg border px-4 py-3 text-sm transition-all ";
 
-                    if (submitted) {
+                    if (qSubmitted) {
                       if (isThisCorrect) {
                         classes += "border-emerald-400 bg-emerald-50 text-emerald-800 font-medium";
                       } else if (isSelected && !isThisCorrect) {
@@ -419,23 +517,23 @@ export default function StudentView() {
                           value={key}
                           checked={isSelected}
                           onChange={() => handleAnswer(q.id, key)}
-                          disabled={submitted}
+                          disabled={qSubmitted}
                           className="sr-only"
                         />
                         <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-xs font-bold ${
-                          submitted && isThisCorrect
+                          qSubmitted && isThisCorrect
                             ? "border-emerald-500 bg-emerald-500 text-white"
-                            : submitted && isSelected && !isThisCorrect
+                            : qSubmitted && isSelected && !isThisCorrect
                               ? "border-red-400 bg-red-100 text-red-600"
                               : isSelected
                                 ? "border-indigo-500 bg-indigo-500 text-white"
                                 : "border-slate-300 text-slate-500"
                         }`}>
-                          {submitted && isThisCorrect ? (
+                          {qSubmitted && isThisCorrect ? (
                             <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
-                          ) : submitted && isSelected && !isThisCorrect ? (
+                          ) : qSubmitted && isSelected && !isThisCorrect ? (
                             <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -450,7 +548,7 @@ export default function StudentView() {
                 </div>
 
                 {/* Explanation after submit */}
-                {submitted && (
+                {qSubmitted && (
                   <div className={`mt-4 ml-10 rounded-lg p-4 border ${
                     isCorrect ? "bg-emerald-50 border-emerald-200" : isSkipped ? "bg-slate-50 border-slate-200" : "bg-red-50 border-red-200"
                   }`}>
@@ -491,8 +589,8 @@ export default function StudentView() {
         })}
       </div>
 
-      {/* Pagination */}
-      {totalPages > 1 && (
+      {/* Pagination - only for regular quizzes */}
+      {!isCategoryQuiz && totalPages > 1 && (
         <div className="flex items-center justify-center gap-2">
           <button
             onClick={() => { setCurrentPage((p) => Math.max(0, p - 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
@@ -524,43 +622,129 @@ export default function StudentView() {
         </div>
       )}
 
-      {/* Submit / Retake */}
-      {!submitted ? (
-        <div className="sticky bottom-4 z-10">
-          <button
-            onClick={handleSubmit}
-            className="w-full rounded-xl bg-indigo-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
-          >
-            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            Submit Quiz ({answeredCount}/{total} answered)
-          </button>
-        </div>
-      ) : (
-        <div className="space-y-4">
-          <AdBanner slot="3456789012" format="horizontal" />
-          <div className="flex gap-3">
+      {/* Category quiz pagination (set indicator) */}
+      {isCategoryQuiz && totalPages > 1 && (
+        <div className="flex items-center justify-center gap-2 flex-wrap">
+          {Array.from({ length: totalPages }, (_, i) => (
             <button
-              onClick={() => {
-                setAnswers({});
-                setSubmitted(false);
-                setScore(0);
-                setCurrentPage(0);
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
-              className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors"
+              key={i}
+              onClick={() => { setCurrentPage(i); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              disabled={!submittedPages.has(i) && i !== currentPage}
+              className={`h-9 min-w-[2.25rem] rounded-lg px-2 text-sm font-medium transition-colors ${
+                currentPage === i
+                  ? "bg-indigo-600 text-white shadow-sm"
+                  : submittedPages.has(i)
+                    ? "bg-emerald-100 text-emerald-700 border border-emerald-200"
+                    : "border border-slate-200 bg-white text-slate-400 cursor-not-allowed"
+              }`}
             >
-              Retake Quiz
+              {submittedPages.has(i) ? (
+                <svg className="h-4 w-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+              ) : (
+                i + 1
+              )}
             </button>
-            <button
-              onClick={goBack}
-              className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors"
-            >
-              Back to Quizzes
-            </button>
-          </div>
+          ))}
         </div>
+      )}
+
+      {/* Submit / Retake — Regular quizzes */}
+      {!isCategoryQuiz && (
+        <>
+          {!submitted ? (
+            <div className="sticky bottom-4 z-10">
+              <button
+                onClick={handleSubmit}
+                className="w-full rounded-xl bg-indigo-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Submit Quiz ({answeredCount}/{total} answered)
+              </button>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <AdBanner slot="3456789012" format="horizontal" />
+              <div className="flex gap-3">
+                <button
+                  onClick={() => {
+                    setAnswers({});
+                    setSubmitted(false);
+                    setScore(0);
+                    setCurrentPage(0);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors"
+                >
+                  Retake Quiz
+                </button>
+                <button
+                  onClick={goBack}
+                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors"
+                >
+                  Back to Quizzes
+                </button>
+              </div>
+            </div>
+          )}
+        </>
+      )}
+
+      {/* Submit / Next Set / Retake — Category quizzes */}
+      {isCategoryQuiz && (
+        <>
+          {!isPageSubmitted ? (
+            <div className="sticky bottom-4 z-10">
+              <button
+                onClick={handleSubmitPage}
+                className="w-full rounded-xl bg-indigo-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Submit Set {currentPage + 1} ({pageAnsweredCount}/{pageQuestions.length} answered)
+              </button>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <AdBanner slot="3456789012" format="horizontal" />
+              <div className="flex gap-3">
+                {currentPage < totalPages - 1 && (
+                  <button
+                    onClick={handleNextSet}
+                    className="flex-1 rounded-xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
+                  >
+                    Next Set
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </button>
+                )}
+                <button
+                  onClick={() => {
+                    setAnswers({});
+                    setSubmittedPages(new Set());
+                    setPageScores({});
+                    setCurrentPage(0);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors"
+                >
+                  Retake All
+                </button>
+                <button
+                  onClick={goBack}
+                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
+          )}
+        </>
       )}
     </div>
   );

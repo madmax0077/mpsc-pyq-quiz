@@ -10,10 +10,16 @@ import {
 import { onAuthChange, signOutUser, type User } from "./firebase";
 
 const ADMIN_USERNAME = "admin";
-const ADMIN_PASSWORD = "admin@123";
+const DEFAULT_ADMIN_PASSWORD = "admin@123";
+const ADMIN_PW_KEY = "mpsc_admin_pw";
 
 const ADMIN_SESSION_KEY = "mpsc_admin_session";
 const STUDENT_SESSION_KEY = "mpsc_student_session";
+
+function getAdminPassword(): string {
+  if (typeof window === "undefined") return DEFAULT_ADMIN_PASSWORD;
+  return localStorage.getItem(ADMIN_PW_KEY) || DEFAULT_ADMIN_PASSWORD;
+}
 
 export interface AuthState {
   loading: boolean;
@@ -22,6 +28,7 @@ export interface AuthState {
   loginAdmin: (username: string, password: string) => boolean;
   logoutAdmin: () => void;
   logoutStudent: () => Promise<void>;
+  changeAdminPassword: (currentPw: string, newPw: string) => string | null;
 }
 
 const AuthContext = createContext<AuthState | null>(null);
@@ -51,12 +58,19 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const loginAdmin = (username: string, password: string): boolean => {
-    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+    if (username === ADMIN_USERNAME && password === getAdminPassword()) {
       setIsAdmin(true);
       sessionStorage.setItem(ADMIN_SESSION_KEY, "true");
       return true;
     }
     return false;
+  };
+
+  const changeAdminPassword = (currentPw: string, newPw: string): string | null => {
+    if (currentPw !== getAdminPassword()) return "Current password is incorrect.";
+    if (newPw.length < 6) return "New password must be at least 6 characters.";
+    localStorage.setItem(ADMIN_PW_KEY, newPw);
+    return null;
   };
 
   const logoutAdmin = () => {
@@ -72,7 +86,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   return (
     <AuthContext.Provider
-      value={{ loading, studentUser, isAdmin, loginAdmin, logoutAdmin, logoutStudent }}
+      value={{ loading, studentUser, isAdmin, loginAdmin, logoutAdmin, logoutStudent, changeAdminPassword }}
     >
       {children}
     </AuthContext.Provider>
