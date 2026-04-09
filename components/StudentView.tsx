@@ -5,6 +5,16 @@ import { Quiz, Question, OptionKey, CATEGORIES, Category } from "@/lib/types";
 import { getAllQuizzes } from "@/lib/storage";
 import AdBanner from "./AdBanner";
 
+/** Merge quizzes baked into the site (`public/quizzes.json`) with any from this browser's localStorage. Same id → bundled wins. */
+function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
+  const ids = new Set(bundled.map((q) => q.id));
+  const merged = [...bundled];
+  for (const q of local) {
+    if (!ids.has(q.id)) merged.push(q);
+  }
+  return merged;
+}
+
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
 const CATEGORY_COLORS: Record<Category, { gradient: string; icon: string; badge: string }> = {
@@ -34,7 +44,25 @@ export default function StudentView() {
   const [currentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
-    setQuizzes(getAllQuizzes());
+    let cancelled = false;
+    const local = getAllQuizzes();
+
+    (async () => {
+      try {
+        const res = await fetch("/quizzes.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`quizzes.json ${res.status}`);
+        const bundled = (await res.json()) as Quiz[];
+        if (!Array.isArray(bundled)) throw new Error("invalid quizzes.json shape");
+        if (cancelled) return;
+        setQuizzes(mergeBundledAndLocal(bundled, local));
+      } catch {
+        if (!cancelled) setQuizzes(local);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const categoryQuizzes = useMemo<DisplayQuiz[]>(() => {
