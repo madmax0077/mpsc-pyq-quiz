@@ -2,7 +2,7 @@
   {
     "id": "2aei7ehmnrrb55f",
     "title": "Maharashtra Group B Combined Preliminary Examination 2025",
-    "createdAt": "2026-04-09T18:30:49.375Z",
+    "createdAt": "2026-04-09T19:18:52.217Z",
     "questions": [
       {
         "id": "o45cqa8mnrqhdio",
@@ -175,39 +175,42 @@
       },
       {
         "id": "3259c5lmnrqhdio",
-        "text": "Match the following. . Column A Column B (Coppen climate) (Climate type) (a) Cwg (i) Hot Desert (b) BWhw (ii) Cold and humid winter (c) Dfc (iii) Tropical monsoon (d) Amw (iv) Mesothermal",
+        "text": "Match the following. . \nColumn A                  Column B \n(Coppen climate)     (Climate type) \n(a) Cwg                    (i) Hot Desert \n(b) BWhw                (ii) Cold and humid winter \n(c) Dfc                     (iii) Tropical monsoon \n(d) Amw                  (iv) Mesothermal",
         "options": {
-          "A": "",
-          "B": "",
-          "C": "",
-          "D": ""
+          "A": "(iv) (i) (ii) (iii)",
+          "B": "(i) (iv) (iii) (ii)",
+          "C": "(ii) (iii) (i) (iv)",
+          "D": "(iii) (ii) (iv) (i)"
         },
         "correctAnswer": "A",
-        "explanation": ""
+        "explanation": "(a) \nCwg — (iv) Mesothermal\nC denotes a temperate or mesothermal climate.\nw indicates a dry winter.\ng represents the \"Ganges\" type, where the hottest month precedes the summer rainy season.\n\n(b) \nBWhw — (i) Hot Desert\nB represents dry climates.\nW stands for desert (arid) conditions.\nh indicates a hot climate (average annual temperature above 18°C).\nw signifies a dry winter.\n\n(c) \nDfc — (ii) Cold and humid winter\nD represents cold snow-forest or continental climates.\nf means no dry season (humid year-round).\nc indicates a short, cool summer.\n\n(d) \nAmw — (iii) Tropical monsoon\nA stands for tropical climates.\nm denotes a monsoon climate with a short dry season.\nw indicates the dry season occurs in winter. ",
+        "category": "Geography"
       },
       {
         "id": "65r46j7mnrqhdio",
-        "text": "Consider the following statements : (a) The Chenab river originates near the Zojila Pass. (b) The source of Ravi river is near the Rohtang Pass. (c) The source of Sutluj river is near Rakas lake. Which of the following statements is/are correct ? (",
+        "text": "Consider the following statements : \n(a) The Chenab river originates near the Zojila Pass. \n(b) The source of Ravi river is near the Rohtang Pass. \n(c) The source of Sutluj river is near Rakas lake. Which of the following statements is/are correct ?",
         "options": {
-          "A": "(a) and (c)only (",
-          "B": "(a)and(b) only (",
-          "C": "(b)and (c)only (",
-          "D": "Only (J"
+          "A": "(a) and (c) only ",
+          "B": "(a) and (b) only ",
+          "C": "(b) and (c) only ",
+          "D": "Only (c)"
         },
-        "correctAnswer": "A",
-        "explanation": ""
+        "correctAnswer": "C",
+        "explanation": "Origin of Chenab River: The Chenab river does not originate near the Zojila Pass. It is formed by the confluence of two streams, the Chandra and the Bhaga, which originate from opposite sides of the Bara Lacha Pass in the Lahaul and Spiti district of Himachal Pradesh. The Zojila Pass is instead located on the path toward the Indus and Jhelum basins.",
+        "category": "Geography"
       },
       {
         "id": "3k5vxytmnrqhdio",
-        "text": "Which of the following statement/s is/are correct regarding the rainfall of Maharashtra ? (a) In Maharashtra, the air pressure decreases from West to East at the beginning of the monsoon (b) The distribution of rainfall in the state depends mainly on the distribution of natural vegetation. (c) When the South-West monsoon winds move Eastward from the ghats, their vapour holding capacity increases. (d) Rainfall increases from West to East in Vidarbha. (",
+        "text": "Which of the following statement/s is/are correct regarding the rainfall of Maharashtra ? \n(a) In Maharashtra, the air pressure decreases from West to East at the beginning of the monsoon \n(b) The distribution of rainfall in the state depends mainly on the distribution of natural vegetation. \n(c) When the South-West monsoon winds move Eastward from the ghats, their vapour holding capacity increases. \n(d) Rainfall increases from West to East in Vidarbha. ",
         "options": {
-          "A": "Only (a) (",
-          "B": "(a) and (b) (",
-          "C": "(b)and (c) @® (a) (c) and (d)",
-          "D": ""
+          "A": "Only (a) ",
+          "B": "(a) and (b) ",
+          "C": "(b)and (c)",
+          "D": "(a) (c) and (d)"
         },
         "correctAnswer": "A",
-        "explanation": ""
+        "explanation": "(a) and (c) are correct",
+        "category": "Geography"
       },
       {
         "id": "ri84t3omnrqhdio",
