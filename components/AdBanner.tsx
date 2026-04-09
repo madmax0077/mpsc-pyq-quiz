@@ -8,7 +8,7 @@ interface AdBannerProps {
   className?: string;
 }
 
-const PUBLISHER_ID = "ca-pub-XXXXXXXXXX"; // Replace with your real AdSense publisher ID
+const PUBLISHER_ID = "ca-pub-5084738834329206";
 
 export default function AdBanner({
   slot,

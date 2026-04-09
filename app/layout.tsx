@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 
-const ADSENSE_ID = "ca-pub-XXXXXXXXXX"; // Replace with your real AdSense publisher ID
+const ADSENSE_ID = "ca-pub-5084738834329206";
 
 export const metadata: Metadata = {
   title: "MPSC PYQ Quiz — Don't know Academy",
