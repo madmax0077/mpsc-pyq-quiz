@@ -48,7 +48,7 @@ export default function LoginPage() {
             alt="MPSC Logo"
             className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white"
           />
-          <h1 className="text-2xl font-bold text-slate-800">MPSC PYQ Quiz</h1>
+          <h1 className="text-2xl font-bold text-slate-800">MPSC PYQ QUIZ</h1>
           <p className="mt-1 text-sm text-slate-500">Don&apos;t know Academy</p>
         </div>
 

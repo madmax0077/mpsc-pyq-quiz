@@ -22,19 +22,19 @@ export default function About() {
           <div className="mb-8 flex flex-col items-center text-center">
             <img
               src="/logo.png"
-              alt="MPSC PYQ Quiz Logo"
+              alt="MPSC PYQ QUIZ Logo"
               className="mb-4 h-24 w-24 rounded-full object-cover shadow-lg ring-4 ring-white"
             />
-            <h2 className="text-2xl font-bold text-slate-800">MPSC PYQ Quiz</h2>
+            <h2 className="text-2xl font-bold text-slate-800">MPSC PYQ QUIZ</h2>
             <p className="mt-1 text-sm font-medium text-indigo-600">
               by Don&apos;t know Academy
             </p>
           </div>
 
           <div className="prose prose-slate max-w-none">
-            <h3>What is MPSC PYQ Quiz?</h3>
+            <h3>What is MPSC PYQ QUIZ?</h3>
             <p>
-              MPSC PYQ Quiz is a free online platform designed to help MPSC (Maharashtra
+              MPSC PYQ QUIZ is a free online platform designed to help MPSC (Maharashtra
               Public Service Commission) aspirants practice with Previous Year Questions
               (PYQs). Our goal is to make quality exam preparation accessible to everyone.
             </p>
@@ -90,7 +90,7 @@ export default function About() {
       </main>
 
       <footer className="border-t border-slate-200/80 py-6 text-center text-xs text-slate-400">
-        MPSC PYQ Quiz &middot; Don&apos;t know Academy
+        MPSC PYQ QUIZ &middot; Don&apos;t know Academy
       </footer>
     </div>
   );

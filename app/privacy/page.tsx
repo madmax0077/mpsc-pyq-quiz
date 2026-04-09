@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
 
           <h2>Introduction</h2>
           <p>
-            Welcome to <strong>MPSC PYQ Quiz</strong> operated by Don&apos;t know Academy
+            Welcome to <strong>MPSC PYQ QUIZ</strong> operated by Don&apos;t know Academy
             (&quot;we&quot;, &quot;our&quot;, &quot;us&quot;). We respect your privacy and are
             committed to protecting your personal data. This Privacy Policy explains how we
             collect, use, and safeguard your information when you use our website.
@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
       </main>
 
       <footer className="border-t border-slate-200/80 py-6 text-center text-xs text-slate-400">
-        MPSC PYQ Quiz &middot; Don&apos;t know Academy
+        MPSC PYQ QUIZ &middot; Don&apos;t know Academy
       </footer>
     </div>
   );

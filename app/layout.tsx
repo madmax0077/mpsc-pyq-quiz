@@ -3,7 +3,7 @@ import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 
 export const metadata: Metadata = {
-  title: "MPSC PYQ Quiz — Don't know Academy",
+  title: "MPSC PYQ QUIZ — Don't know Academy",
   description: "Create and take MPSC multiple-choice quizzes — local-first, fast, and simple.",
 };
 

@@ -33,7 +33,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="MPSC Logo" className="h-10 w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200" />
             <div>
-              <h1 className="text-base font-bold leading-tight text-slate-800">MPSC PYQ Quiz</h1>
+              <h1 className="text-base font-bold leading-tight text-slate-800">MPSC PYQ QUIZ</h1>
               <p className="text-[10px] font-medium text-slate-400">Don&apos;t know Academy</p>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="flex flex-col items-center gap-2">
             <p className="text-xs text-slate-400">
-              MPSC PYQ Quiz &middot; Don&apos;t know Academy
+              MPSC PYQ QUIZ &middot; Don&apos;t know Academy
             </p>
             <div className="flex items-center gap-4">
               <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline">
