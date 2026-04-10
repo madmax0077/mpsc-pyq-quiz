@@ -68,7 +68,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')})();if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js').catch(function(){});`,
+            __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')})();`,
           }}
         />
         <script
