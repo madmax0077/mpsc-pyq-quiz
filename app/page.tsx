@@ -113,13 +113,6 @@ export default function Home() {
 
       {/* ---- Main Content ---- */}
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <div className="mb-6 flex items-center gap-2">
-          <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-          <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
-            Aspirant Mode — Take a quiz
-          </span>
-        </div>
-
         <StudentView language={language} challenge={challenge} />
       </main>
 

@@ -57,7 +57,7 @@ export default function SearchBar({ allQuestions }: Props) {
 
   return (
     <div ref={containerRef} className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4 bg-black/30 backdrop-blur-sm">
-      <div className="w-full max-w-xl rounded-2xl border border-slate-200 bg-white shadow-2xl dark:bg-slate-800 dark:border-slate-700">
+      <div className="w-full max-w-3xl rounded-2xl border border-slate-200 bg-white shadow-2xl dark:bg-slate-800 dark:border-slate-700">
         {/* Search input */}
         <div className="flex items-center gap-3 border-b border-slate-200 px-4 py-3 dark:border-slate-700">
           <svg className="h-5 w-5 shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
