@@ -18,6 +18,18 @@ function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
+function seededShuffle<T>(arr: T[], seed: string): T[] {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) h = ((h << 5) - h + seed.charCodeAt(i)) | 0;
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    h = (h * 16807 + 0) % 2147483647;
+    const j = Math.abs(h) % (i + 1);
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 const CATEGORY_COLORS: Record<Category, { gradient: string; icon: string; badge: string }> = {
   Polity:    { gradient: "from-blue-500 to-blue-600",    icon: "M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z", badge: "bg-blue-100 text-blue-700" },
   History:   { gradient: "from-amber-500 to-amber-600",  icon: "M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z", badge: "bg-amber-100 text-amber-700" },
@@ -106,6 +118,24 @@ export default function StudentView({ language = "english" }: { language?: Langu
     [quizzes],
   );
 
+  const dailyQuiz = useMemo<DisplayQuiz | null>(() => {
+    const pool: Question[] = [];
+    for (const quiz of quizzes) {
+      for (const q of quiz.questions) pool.push(q);
+    }
+    if (pool.length === 0) return null;
+    const today = new Date().toISOString().slice(0, 10);
+    const shuffled = seededShuffle(pool, today);
+    const picked = shuffled.slice(0, Math.min(10, shuffled.length));
+    const monthDay = new Date().toLocaleDateString("en-IN", { month: "short", day: "numeric" });
+    return {
+      id: "daily",
+      title: `Daily Quiz — ${monthDay}`,
+      questions: picked,
+      isCategory: false,
+    };
+  }, [quizzes]);
+
   const selectQuiz = (quiz: DisplayQuiz) => {
     setSelectedQuiz(quiz);
     setAnswers({});
@@ -184,18 +214,18 @@ export default function StudentView({ language = "english" }: { language?: Langu
   /* --------- Marathi Coming Soon --------- */
   if (language === "marathi") {
     return (
-      <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-orange-300 bg-gradient-to-br from-orange-50 to-amber-50 p-16 text-center">
+      <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-orange-300 bg-gradient-to-br from-orange-50 to-amber-50 p-16 text-center dark:from-orange-950/30 dark:to-amber-950/30 dark:border-orange-700">
         <div className="mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
           <svg className="h-10 w-10 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
           </svg>
         </div>
-        <h2 className="text-2xl font-bold text-orange-700">लवकरच येत आहे!</h2>
-        <p className="mt-2 text-lg font-semibold text-slate-700">Coming Soon</p>
-        <p className="mt-3 max-w-sm text-sm text-slate-500">
+        <h2 className="text-2xl font-bold text-orange-700 dark:text-orange-400">लवकरच येत आहे!</h2>
+        <p className="mt-2 text-lg font-semibold text-slate-700 dark:text-slate-200">Coming Soon</p>
+        <p className="mt-3 max-w-sm text-sm text-slate-500 dark:text-slate-400">
           मराठी प्रश्नसंच लवकरच उपलब्ध होईल. कृपया सध्या English मध्ये सराव करा.
         </p>
-        <p className="mt-1 max-w-sm text-xs text-slate-400">
+        <p className="mt-1 max-w-sm text-xs text-slate-400 dark:text-slate-500">
           Marathi quizzes will be available soon. Please practice in English for now.
         </p>
       </div>
@@ -209,24 +239,51 @@ export default function StudentView({ language = "english" }: { language?: Langu
     return (
       <div className="space-y-8">
         {!hasAny ? (
-          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-16 text-center">
+          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-16 text-center dark:bg-slate-800 dark:border-slate-600">
             <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-slate-100">
               <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
               </svg>
             </div>
-            <p className="text-lg font-semibold text-slate-700">No quizzes available</p>
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">No quizzes available</p>
+            <p className="mt-1 text-sm text-slate-400 dark:text-slate-500">
               Switch to Admin Mode to create your first quiz.
             </p>
           </div>
         ) : (
           <>
+            {/* Daily Quiz */}
+            {dailyQuiz && (
+              <button
+                onClick={() => selectQuiz(dailyQuiz)}
+                className="group w-full rounded-xl border-2 border-indigo-200 bg-gradient-to-r from-indigo-50 via-violet-50 to-purple-50 p-5 text-left shadow-sm hover:shadow-md hover:border-indigo-300 transition-all dark:from-indigo-950/50 dark:via-violet-950/50 dark:to-purple-950/50 dark:border-indigo-700 dark:hover:border-indigo-500"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md">
+                    <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                    </svg>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold text-indigo-700 group-hover:text-indigo-800 transition-colors dark:text-indigo-300 dark:group-hover:text-indigo-200">
+                      {dailyQuiz.title}
+                    </h3>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                      {dailyQuiz.questions.length} random questions &middot; New questions every day!
+                    </p>
+                  </div>
+                  <svg className="h-5 w-5 shrink-0 text-indigo-300 group-hover:text-indigo-500 transition-colors dark:text-indigo-600 dark:group-hover:text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </div>
+              </button>
+            )}
+
             {/* Category Quizzes */}
             {categoryQuizzes.length > 0 && (
               <div>
-                <h2 className="mb-1 text-lg font-bold text-slate-800">Practice by Subject</h2>
-                <p className="mb-4 text-sm text-slate-500">Auto-grouped from categorized questions across all quizzes.</p>
+                <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">Practice by Subject</h2>
+                <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">Auto-grouped from categorized questions across all quizzes.</p>
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {categoryQuizzes.map((cq) => {
                     const cat = cq.category!;
@@ -235,7 +292,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
                       <button
                         key={cq.id}
                         onClick={() => selectQuiz(cq)}
-                        className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm hover:shadow-md transition-all"
+                        className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700"
                       >
                         <div className={`h-1.5 bg-gradient-to-r ${colors.gradient}`} />
                         <div className="p-5">
@@ -246,10 +303,10 @@ export default function StudentView({ language = "english" }: { language?: Langu
                               </svg>
                             </div>
                             <div>
-                              <h3 className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors">
+                              <h3 className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
                                 {cq.title}
                               </h3>
-                              <p className="text-xs text-slate-500">
+                              <p className="text-xs text-slate-500 dark:text-slate-400">
                                 {cq.questions.length} question{cq.questions.length !== 1 ? "s" : ""}
                               </p>
                             </div>
@@ -275,25 +332,25 @@ export default function StudentView({ language = "english" }: { language?: Langu
             {/* Regular Quizzes */}
             {regularQuizzes.length > 0 && (
               <div>
-                <h2 className="mb-1 text-lg font-bold text-slate-800">All Quizzes</h2>
-                <p className="mb-4 text-sm text-slate-500">Full question papers as uploaded by admin.</p>
+                <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">All Quizzes</h2>
+                <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">Full question papers as uploaded by admin.</p>
                 <div className="grid gap-3 sm:grid-cols-2">
                   {regularQuizzes.map((quiz) => (
                     <button
                       key={quiz.id}
                       onClick={() => selectQuiz(quiz)}
-                      className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-left shadow-sm hover:border-indigo-200 hover:shadow-md transition-all"
+                      className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-left shadow-sm hover:border-indigo-200 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-indigo-600"
                     >
-                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-100 transition-colors">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-100 transition-colors dark:bg-indigo-900/40 dark:text-indigo-400 dark:group-hover:bg-indigo-900/60">
                         <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                         </svg>
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h3 className="font-semibold text-slate-800 truncate group-hover:text-indigo-600 transition-colors">
+                        <h3 className="font-semibold text-slate-800 truncate group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
                           {quiz.title}
                         </h3>
-                        <p className="mt-0.5 text-sm text-slate-500">
+                        <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
                           {quiz.questions.length} question{quiz.questions.length !== 1 ? "s" : ""}
                         </p>
                       </div>
@@ -307,8 +364,8 @@ export default function StudentView({ language = "english" }: { language?: Langu
             )}
 
             {/* Share CTA */}
-            <div className="rounded-xl border border-indigo-100 bg-gradient-to-r from-indigo-50 to-violet-50 p-5 text-center">
-              <p className="mb-3 text-sm font-medium text-slate-600">
+            <div className="rounded-xl border border-indigo-100 bg-gradient-to-r from-indigo-50 to-violet-50 p-5 text-center dark:from-indigo-950/30 dark:to-violet-950/30 dark:border-indigo-800">
+              <p className="mb-3 text-sm font-medium text-slate-600 dark:text-slate-300">
                 Know someone preparing for MPSC? Help them practice for free!
               </p>
               <ShareButton />
@@ -347,7 +404,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
       <div className="flex items-center gap-3">
         <button
           onClick={goBack}
-          className="rounded-lg p-2 text-slate-500 hover:bg-slate-100 transition-colors"
+          className="rounded-lg p-2 text-slate-500 hover:bg-slate-100 transition-colors dark:text-slate-400 dark:hover:bg-slate-800"
         >
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
@@ -355,7 +412,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
         </button>
         <div className="flex-1">
           <div className="flex items-center gap-2">
-            <h2 className="text-xl font-bold text-slate-800">
+            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
               {selectedQuiz.title}
             </h2>
             {selectedQuiz.category && catStyle && (
@@ -365,7 +422,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
             )}
           </div>
           {!submitted && !isCategoryQuiz && (
-            <p className="mt-0.5 text-sm text-slate-500">
+            <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
               {answeredCount} of {total} answered
               {skippedCount > 0 && answeredCount > 0 && (
                 <span className="text-slate-400"> &middot; {skippedCount} skipped</span>
@@ -373,7 +430,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
             </p>
           )}
           {isCategoryQuiz && (
-            <p className="mt-0.5 text-sm text-slate-500">
+            <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
               Set {currentPage + 1} of {totalPages} &middot; {pageAnsweredCount} of {pageQuestions.length} answered
               {submittedPages.size > 0 && (
                 <span className="text-indigo-500 font-medium"> &middot; {submittedPages.size}/{totalPages} sets done</span>
@@ -385,14 +442,14 @@ export default function StudentView({ language = "english" }: { language?: Langu
 
       {/* Progress bar */}
       {isCategoryQuiz ? (
-        <div className="overflow-hidden rounded-full bg-slate-100">
+        <div className="overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
           <div
             className="h-1.5 rounded-full bg-indigo-500 transition-all duration-500"
             style={{ width: `${totalPages > 0 ? (submittedPages.size / totalPages) * 100 : 0}%` }}
           />
         </div>
       ) : !submitted ? (
-        <div className="overflow-hidden rounded-full bg-slate-100">
+        <div className="overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
           <div
             className="h-1.5 rounded-full bg-indigo-500 transition-all duration-500"
             style={{ width: `${total > 0 ? (answeredCount / total) * 100 : 0}%` }}
@@ -417,7 +474,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
             </span>
             <span className="text-slate-300">/{total}</span>
           </p>
-          <p className="mt-2 text-sm font-medium text-slate-600">
+          <p className="mt-2 text-sm font-medium text-slate-600 dark:text-slate-300">
             You scored {pct}%
             {skippedCount > 0 && <span className="text-slate-400"> ({skippedCount} skipped)</span>}
             {" "}
@@ -453,11 +510,11 @@ export default function StudentView({ language = "english" }: { language?: Langu
             </span>
             <span className="text-slate-300">/{currentPageScore.total}</span>
           </p>
-          <p className="mt-1 text-center text-sm font-medium text-slate-600">
+          <p className="mt-1 text-center text-sm font-medium text-slate-600 dark:text-slate-300">
             Set {currentPage + 1} — {Math.round((currentPageScore.correct / currentPageScore.total) * 100)}% correct
           </p>
           {allPagesSubmitted && (
-            <div className="mt-3 rounded-lg bg-white/60 p-3 text-center border border-slate-200">
+            <div className="mt-3 rounded-lg bg-white/60 p-3 text-center border border-slate-200 dark:bg-slate-800/60 dark:border-slate-700">
               <p className="text-lg font-bold text-indigo-700">
                 Overall: {totalCategoryScore}/{totalCategoryQuestions} ({totalCategoryQuestions > 0 ? Math.round((totalCategoryScore / totalCategoryQuestions) * 100) : 0}%)
               </p>
@@ -484,21 +541,21 @@ export default function StudentView({ language = "english" }: { language?: Langu
           return (
             <div key={q.id} className="space-y-4">
             <div
-              className={`rounded-xl border bg-white shadow-sm transition-all ${
+              className={`rounded-xl border bg-white shadow-sm transition-all dark:bg-slate-800 ${
                 qSubmitted
                   ? isCorrect
-                    ? "border-emerald-300 bg-emerald-50/30"
+                    ? "border-emerald-300 bg-emerald-50/30 dark:bg-emerald-900/20 dark:border-emerald-700"
                     : isSkipped
-                      ? "border-slate-200 bg-slate-50/50"
-                      : "border-red-300 bg-red-50/30"
+                      ? "border-slate-200 bg-slate-50/50 dark:border-slate-700 dark:bg-slate-800/50"
+                      : "border-red-300 bg-red-50/30 dark:bg-red-900/20 dark:border-red-700"
                   : userAnswer
-                    ? "border-indigo-200"
-                    : "border-slate-200"
+                    ? "border-indigo-200 dark:border-indigo-700"
+                    : "border-slate-200 dark:border-slate-700"
               }`}
             >
               <div className="relative p-5">
                 {isCategoryQuiz && q.sourceTag && (
-                  <span className="absolute top-2 right-2 rounded-md bg-violet-100 px-2 py-0.5 text-[10px] font-semibold text-violet-600 leading-tight max-w-[45%] truncate">
+                  <span className="absolute top-2 right-2 rounded-md bg-violet-100 px-2 py-0.5 text-[10px] font-semibold text-violet-600 leading-tight max-w-[45%] truncate dark:bg-violet-900/40 dark:text-violet-300">
                     {q.sourceTag}
                   </span>
                 )}
@@ -516,7 +573,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
                   }`}>
                     {globalIdx + 1}
                   </span>
-                  <p className="font-medium text-slate-800 leading-relaxed">{q.text}</p>
+                  <p className="font-medium text-slate-800 leading-relaxed dark:text-slate-100">{q.text}</p>
                 </div>
 
                 {q.imageUrl && (
@@ -539,16 +596,16 @@ export default function StudentView({ language = "english" }: { language?: Langu
 
                     if (qSubmitted) {
                       if (isThisCorrect) {
-                        classes += "border-emerald-400 bg-emerald-50 text-emerald-800 font-medium";
+                        classes += "border-emerald-400 bg-emerald-50 text-emerald-800 font-medium dark:bg-emerald-900/30 dark:border-emerald-600 dark:text-emerald-300";
                       } else if (isSelected && !isThisCorrect) {
-                        classes += "border-red-400 bg-red-50 text-red-700 line-through";
+                        classes += "border-red-400 bg-red-50 text-red-700 line-through dark:bg-red-900/30 dark:border-red-600 dark:text-red-300";
                       } else {
-                        classes += "border-slate-100 text-slate-400 bg-slate-50/50";
+                        classes += "border-slate-100 text-slate-400 bg-slate-50/50 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-500";
                       }
                     } else {
                       classes += isSelected
-                        ? "border-indigo-400 bg-indigo-50 text-indigo-800 font-medium ring-2 ring-indigo-100 cursor-pointer"
-                        : "border-slate-200 text-slate-700 hover:border-indigo-200 hover:bg-indigo-50/50 cursor-pointer";
+                        ? "border-indigo-400 bg-indigo-50 text-indigo-800 font-medium ring-2 ring-indigo-100 cursor-pointer dark:bg-indigo-900/30 dark:border-indigo-500 dark:text-indigo-200 dark:ring-indigo-900"
+                        : "border-slate-200 text-slate-700 hover:border-indigo-200 hover:bg-indigo-50/50 cursor-pointer dark:border-slate-600 dark:text-slate-300 dark:hover:border-indigo-600 dark:hover:bg-indigo-900/20";
                     }
 
                     return (
@@ -592,7 +649,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
                 {/* Explanation after submit */}
                 {qSubmitted && (
                   <div className={`mt-4 ml-10 rounded-lg p-4 border ${
-                    isCorrect ? "bg-emerald-50 border-emerald-200" : isSkipped ? "bg-slate-50 border-slate-200" : "bg-red-50 border-red-200"
+                    isCorrect ? "bg-emerald-50 border-emerald-200 dark:bg-emerald-900/20 dark:border-emerald-700" : isSkipped ? "bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700" : "bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-700"
                   }`}>
                     <div className="flex items-start gap-2">
                       {isCorrect ? (
@@ -609,7 +666,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
                         </svg>
                       )}
                       <div>
-                        <p className="text-sm font-medium text-slate-700">
+                        <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
                           {isCorrect
                             ? "Correct!"
                             : isSkipped
@@ -617,7 +674,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
                               : `Incorrect — the answer is ${q.correctAnswer}.`}
                         </p>
                         {q.explanation && (
-                          <p className="mt-1 text-sm text-slate-600">{q.explanation}</p>
+                          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{q.explanation}</p>
                         )}
                       </div>
                     </div>
@@ -637,7 +694,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
           <button
             onClick={() => { setCurrentPage((p) => Math.max(0, p - 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             disabled={currentPage === 0}
-            className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
           >
             Previous
           </button>
@@ -648,7 +705,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
               className={`h-9 w-9 rounded-lg text-sm font-medium transition-colors ${
                 currentPage === i
                   ? "bg-indigo-600 text-white shadow-sm"
-                  : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
+                  : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
               }`}
             >
               {i + 1}
@@ -657,7 +714,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
           <button
             onClick={() => { setCurrentPage((p) => Math.min(totalPages - 1, p + 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             disabled={currentPage === totalPages - 1}
-            className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
           >
             Next
           </button>
@@ -676,8 +733,8 @@ export default function StudentView({ language = "english" }: { language?: Langu
                 currentPage === i
                   ? "bg-indigo-600 text-white shadow-sm"
                   : submittedPages.has(i)
-                    ? "bg-emerald-100 text-emerald-700 border border-emerald-200"
-                    : "border border-slate-200 bg-white text-slate-400 cursor-not-allowed"
+                    ? "bg-emerald-100 text-emerald-700 border border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-700"
+                    : "border border-slate-200 bg-white text-slate-400 cursor-not-allowed dark:border-slate-700 dark:bg-slate-800 dark:text-slate-600"
               }`}
             >
               {submittedPages.has(i) ? (
@@ -719,13 +776,13 @@ export default function StudentView({ language = "english" }: { language?: Langu
                     setCurrentPage(0);
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
-                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors"
+                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
                 >
                   Retake Quiz
                 </button>
                 <button
                   onClick={goBack}
-                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors"
+                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
                 >
                   Back to Quizzes
                 </button>
@@ -773,13 +830,13 @@ export default function StudentView({ language = "english" }: { language?: Langu
                     setCurrentPage(0);
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
-                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors"
+                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
                 >
                   Retake All
                 </button>
                 <button
                   onClick={goBack}
-                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors"
+                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
                 >
                   Back
                 </button>

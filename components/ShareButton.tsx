@@ -56,13 +56,13 @@ export default function ShareButton({ score, className = "" }: ShareButtonProps)
       {open && (
         <>
           <div className="fixed inset-0 z-40" onClick={() => setOpen(false)} />
-          <div className="absolute bottom-full left-0 z-50 mb-2 w-56 rounded-xl border border-slate-200 bg-white p-2 shadow-xl animate-slide-up">
+          <div className="absolute bottom-full left-0 z-50 mb-2 w-56 rounded-xl border border-slate-200 bg-white p-2 shadow-xl animate-slide-up dark:bg-slate-800 dark:border-slate-700">
             {/* WhatsApp */}
             <a
               href={`https://api.whatsapp.com/send?text=${encodedText}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
+              className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 transition-colors dark:text-slate-300 dark:hover:bg-emerald-900/30 dark:hover:text-emerald-400"
               onClick={() => setOpen(false)}
             >
               <svg className="h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="currentColor">
@@ -76,7 +76,7 @@ export default function ShareButton({ score, className = "" }: ShareButtonProps)
               href={`https://t.me/share/url?url=${encodeURIComponent(SITE_URL)}&text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+              className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-blue-50 hover:text-blue-700 transition-colors dark:text-slate-300 dark:hover:bg-blue-900/30 dark:hover:text-blue-400"
               onClick={() => setOpen(false)}
             >
               <svg className="h-5 w-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor">
@@ -90,7 +90,7 @@ export default function ShareButton({ score, className = "" }: ShareButtonProps)
               href={`https://twitter.com/intent/tweet?text=${encodedText}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors"
+              className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors dark:text-slate-300 dark:hover:bg-slate-700 dark:hover:text-slate-100"
               onClick={() => setOpen(false)}
             >
               <svg className="h-5 w-5 text-slate-800" viewBox="0 0 24 24" fill="currentColor">
@@ -102,7 +102,7 @@ export default function ShareButton({ score, className = "" }: ShareButtonProps)
             {/* Copy Link */}
             <button
               onClick={() => { copyLink(); setOpen(false); }}
-              className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-violet-50 hover:text-violet-700 transition-colors"
+              className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-violet-50 hover:text-violet-700 transition-colors dark:text-slate-300 dark:hover:bg-violet-900/30 dark:hover:text-violet-400"
             >
               {copied ? (
                 <svg className="h-5 w-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

@@ -204,11 +204,11 @@ export default function FileUploader({ onQuestionsExtracted }: Props) {
   const hasFile = fileKind !== null;
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-      <h3 className="mb-1 text-lg font-semibold text-slate-800">
+    <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:bg-slate-800 dark:border-slate-700">
+      <h3 className="mb-1 text-lg font-semibold text-slate-800 dark:text-slate-100">
         Upload Question Paper
       </h3>
-      <p className="mb-4 text-sm text-slate-500">
+      <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
         Upload an image or PDF — questions &amp; options will be extracted automatically.
       </p>
 
@@ -221,17 +221,17 @@ export default function FileUploader({ onQuestionsExtracted }: Props) {
           onClick={() => inputRef.current?.click()}
           className={`flex cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed p-10 transition-colors ${
             dragActive
-              ? "border-indigo-500 bg-indigo-50"
-              : "border-slate-300 bg-slate-50 hover:border-indigo-400 hover:bg-indigo-50/50"
+              ? "border-indigo-500 bg-indigo-50 dark:bg-indigo-900/30"
+              : "border-slate-300 bg-slate-50 hover:border-indigo-400 hover:bg-indigo-50/50 dark:bg-slate-700 dark:border-slate-600 dark:hover:border-indigo-500 dark:hover:bg-indigo-900/20"
           }`}
         >
           <svg className="mb-3 h-10 w-10 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
           </svg>
-          <p className="text-sm font-medium text-slate-600">
+          <p className="text-sm font-medium text-slate-600 dark:text-slate-300">
             Drag &amp; drop your file here
           </p>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="mt-1 text-xs text-slate-400 dark:text-slate-500">
             Supports PNG, JPG, WEBP, and PDF
           </p>
           <input

@@ -35,9 +35,9 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
   const catColor = question.category ? CATEGORY_COLORS[question.category] : null;
 
   return (
-    <div className="animate-fade-in rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+    <div className="animate-fade-in rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden dark:bg-slate-800 dark:border-slate-700">
       {/* Header bar */}
-      <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50/60 px-5 py-3">
+      <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50/60 px-5 py-3 dark:border-slate-700 dark:bg-slate-800/60">
         <div className="flex items-center gap-3">
           <span className="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-sm font-semibold text-indigo-700">
             Q{index + 1}
@@ -66,13 +66,13 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
           onChange={(e) => update({ text: e.target.value })}
           placeholder="Enter the question text..."
           rows={2}
-          className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 resize-none"
+          className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 resize-none dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
         />
 
         {/* Diagram image */}
         {question.imageUrl && (
-          <div className="rounded-lg border border-slate-200 bg-slate-50 p-2">
-            <p className="mb-1 text-xs font-medium text-slate-500">Diagram / Figure (from PDF page)</p>
+          <div className="rounded-lg border border-slate-200 bg-slate-50 p-2 dark:bg-slate-700 dark:border-slate-600">
+            <p className="mb-1 text-xs font-medium text-slate-500 dark:text-slate-400">Diagram / Figure (from PDF page)</p>
             <img
               src={question.imageUrl}
               alt="Question diagram"
@@ -91,7 +91,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
         <div className="grid gap-3 sm:grid-cols-2">
           {OPTION_KEYS.map((key) => (
             <div key={key} className="flex items-center gap-2">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 text-sm font-bold text-slate-600">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-slate-100 text-sm font-bold text-slate-600 dark:bg-slate-700 dark:text-slate-300">
                 {key}
               </span>
               <input
@@ -99,7 +99,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
                 value={question.options[key]}
                 onChange={(e) => updateOption(key, e.target.value)}
                 placeholder={`Option ${key}`}
-                className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+                className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
               />
             </div>
           ))}
@@ -109,7 +109,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
         <div className="grid gap-4 sm:grid-cols-2">
           {/* Correct Answer */}
           <div>
-            <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500">
+            <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
               Correct Answer
             </label>
             <div className="flex gap-2">
@@ -118,8 +118,8 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
                   key={key}
                   className={`flex flex-1 cursor-pointer items-center justify-center rounded-lg border px-3 py-2 text-sm font-medium transition-all ${
                     question.correctAnswer === key
-                      ? "border-emerald-400 bg-emerald-50 text-emerald-700 ring-2 ring-emerald-100"
-                      : "border-slate-200 text-slate-600 hover:bg-slate-50"
+                      ? "border-emerald-400 bg-emerald-50 text-emerald-700 ring-2 ring-emerald-100 dark:bg-emerald-900/30 dark:text-emerald-300 dark:border-emerald-600"
+                      : "border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-700"
                   }`}
                 >
                   <input
@@ -138,7 +138,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
 
           {/* Category */}
           <div>
-            <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500">
+            <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
               Category (optional)
             </label>
             <select
@@ -149,7 +149,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
               className={`w-full rounded-lg border px-3 py-2.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 ${
                 question.category && catColor
                   ? `${catColor.border} ${catColor.bg} ${catColor.text} focus:${catColor.ring}`
-                  : "border-slate-200 text-slate-600 focus:border-indigo-400 focus:ring-indigo-100"
+                  : "border-slate-200 text-slate-600 focus:border-indigo-400 focus:ring-indigo-100 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-300"
               }`}
             >
               <option value="">No category</option>
@@ -164,7 +164,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
 
         {/* Explanation */}
         <div>
-          <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500">
+          <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
             Explanation (optional)
           </label>
           <textarea
@@ -172,7 +172,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
             onChange={(e) => update({ explanation: e.target.value })}
             placeholder="Explain why this is the correct answer..."
             rows={2}
-            className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 resize-none"
+            className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 resize-none dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
           />
         </div>
       </div>
