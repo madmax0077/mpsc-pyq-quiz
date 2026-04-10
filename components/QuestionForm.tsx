@@ -9,8 +9,9 @@ const CATEGORY_COLORS: Record<Category, { bg: string; text: string; border: stri
   History:   { bg: "bg-amber-50",   text: "text-amber-700",   border: "border-amber-200",   ring: "ring-amber-100" },
   Geography: { bg: "bg-emerald-50", text: "text-emerald-700", border: "border-emerald-200", ring: "ring-emerald-100" },
   Science:   { bg: "bg-purple-50",  text: "text-purple-700",  border: "border-purple-200",  ring: "ring-purple-100" },
-  GK:        { bg: "bg-pink-50",    text: "text-pink-700",    border: "border-pink-200",    ring: "ring-pink-100" },
+  "Current Affairs": { bg: "bg-pink-50", text: "text-pink-700", border: "border-pink-200", ring: "ring-pink-100" },
   Economics: { bg: "bg-teal-50",    text: "text-teal-700",    border: "border-teal-200",    ring: "ring-teal-100" },
+  Aptitude:  { bg: "bg-orange-50",  text: "text-orange-700",  border: "border-orange-200",  ring: "ring-orange-100" },
 };
 
 interface Props {
