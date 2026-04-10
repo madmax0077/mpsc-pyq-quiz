@@ -124,14 +124,27 @@ export default function StudentView({ language = "english", challenge }: { langu
     let cancelled = false;
     const local = getAllQuizzes();
 
+    const loadCount = Number(localStorage.getItem("mcq_load_count") || "0") + 1;
+    localStorage.setItem("mcq_load_count", String(loadCount));
+    const forceRefresh = loadCount % 2 === 0;
+
     (async () => {
       try {
-        const res = await fetch("/quizzes.json", { cache: "no-store" });
+        const res = await fetch("/quizzes.json", { cache: forceRefresh ? "no-store" : "default" });
         if (!res.ok) throw new Error(`quizzes.json ${res.status}`);
         const bundled = (await res.json()) as Quiz[];
         if (!Array.isArray(bundled)) throw new Error("invalid quizzes.json shape");
         if (cancelled) return;
-        setQuizzes(mergeBundledAndLocal(bundled, local));
+
+        if (forceRefresh) {
+          const bundledIds = new Set(bundled.map((q) => q.id));
+          const localOnly = local.filter((q) => !bundledIds.has(q.id));
+          const refreshed = [...bundled, ...localOnly];
+          localStorage.setItem("mcq_quiz_app_quizzes", JSON.stringify(refreshed));
+          setQuizzes(refreshed);
+        } else {
+          setQuizzes(mergeBundledAndLocal(bundled, local));
+        }
       } catch {
         if (!cancelled) setQuizzes(local);
       }
