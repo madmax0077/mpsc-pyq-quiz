@@ -1,0 +1,1309 @@
+[
+  {
+    "id": "cs-pre-2023-english",
+    "title": "MPSC Gazetted CS Combined Pre 2023 (English)",
+    "createdAt": "2023-07-08T00:00:00.000Z",
+    "questions": [
+      {
+        "id": "cs-pre-2023-english-q1",
+        "text": "Pandita Ramabai with the permission of the Ramabai Association, appointed an advisory board to advise her, who among the following was included in this advisory board?\ni. Justice M. G. Ranade\nii. Dr. R. G. Bhandarkar\niii. Justice K. T. Telang\niv. Bapu Hari Shinde",
+        "options": [
+          "i and ii only",
+          "ii and iii only",
+          "i and iv only",
+          "i, ii and iii only"
+        ],
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q2",
+        "text": "In 1918 A.D., who advised to the Mumbai workers to establish the organization 'People's Union'?",
+        "options": [
+          "Rajashree Shahu Maharaj",
+          "Dr. Babasaheb Ambedkar",
+          "Narayan Meghaji Lokhande",
+          "Bhai Madhavrao Bagal"
+        ],
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q3",
+        "text": "Who defended Chiplunkar's attack on Mahatma Jyotirao Phule through his newspaper, considered as the beginning of non Brahmin journalism?",
+        "options": [
+          "Narayan Meghaji Lokhande",
+          "Bhau Daji Lad",
+          "Tukaram Tatya Padval",
+          "Krushnaji Bhalekar"
+        ],
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q4",
+        "text": "On which of the following matrimonial relationship between two Royal families, the ancient drama 'Malavikagnimitra' throws light?",
+        "options": [
+          "Shunga and Vidarbha (Yadnyasen) family",
+          "Gupta and Vakataka family",
+          "Shakas and Satavahana family",
+          "Chalukya and Vardhana family"
+        ],
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q5",
+        "text": "What was the medium of trade exchange during vedic period?\ni. Nishka\nii. Krusnal\niii. Shatman\niv. Gan\nv. Shreni",
+        "options": [
+          "i, ii and iii",
+          "ii, iii and iv",
+          "i, ii, iv and v",
+          "i, iii and v"
+        ],
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q6",
+        "text": "According to Setu Madhavrao Pagadi, who of the following saint renamed himself as 'Shaha Ramjan' and got converted to Islam by a Sufi Saint Nizamuddin. It is a mystery of cultural history of Maharashtra.",
+        "options": [
+          "Gorakhnath",
+          "Gahininath",
+          "Jalandharnath",
+          "Kanifnath"
+        ],
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q7",
+        "text": "Arrange the following events in the correct order.\ni. White paper\nii. Poona pact\niii. Nehru report\niv. Dharasna Satyagraha",
+        "options": [
+          "iv, ii, iii, i",
+          "iv, i, ii, iii",
+          "iii, iv, ii, i",
+          "ii, iii, iv, i"
+        ],
+        "correctAnswer": "C",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q8",
+        "text": "The following statements are written about ______\na. He played an important role in the field of education in Maharashtra.\nb. He prepared textbooks on various subjects.\nc. He wrote a book 'Shunyalabdhi' on Mathematics and Science in Marathi.\nd. Keshavrao Bhavalkar has written his biography.",
+        "options": [
+          "Dadoba Pandurang Tarkhadkar",
+          "Atmaram Pandurang Tarkhadkar",
+          "Balshastri Jambhekar",
+          "Gopal Hari Deshmukh"
+        ],
+        "correctAnswer": "C",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q9",
+        "text": "Arrange the following political organizations chronologically.\na. Pune Sarvajanik Sabha\nb. Bombay Presidency Association\nc. Madras Mahajan Sabha\nd. Indian Association",
+        "options": [
+          "b a d c",
+          "a d c b",
+          "c d b a",
+          "d b a c"
+        ],
+        "correctAnswer": "B",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q10",
+        "text": "Which of the following decision was taken by Sabarmati treaty?",
+        "options": [
+          "A competitive co-operative party should be established.",
+          "Students should not be involved in politics.",
+          "There should be no discrimination among lower caste workers and a team of 50 volunteers should be formed and Hindu Muslim unity should be maintained.",
+          "A committee of Motilal Nehru and Jayakar to determine the members of the Central Legislature."
+        ],
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q11",
+        "text": "In 1934 A.D., which of the following region witnessed the establishment of 'Karshak Sangham' as a peasant organisation?",
+        "options": [
+          "Andhra Pradesh",
+          "Tamil Nadu",
+          "Kerala",
+          "Bengal"
+        ],
+        "correctAnswer": "C",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q12",
+        "text": "Who remarked about the 'Dandi Yatra' as, Rama's Historical March to Lanka?",
+        "options": [
+          "Pandit Motilal Nehru and D. J. Tendulkar",
+          "P. C. Ray and D. P. Mishra",
+          "Shankarrao Dev and G. V. Ketkar",
+          "Appasaheb Patwardhan and Suhasini Nambiyar"
+        ],
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q13",
+        "text": "About whom of the following statements are related?\ni. Religion was separated from politics.\nii. Adopted a policy of seclusion towards brave women who followed Sati.\niii. To stop child marriage and widow marriage was encouraged.\niv. Claimed that the final decision regarding the social law will be his.",
+        "options": [
+          "Babur",
+          "Humayun",
+          "Akbar",
+          "Aurangzeb"
+        ],
+        "correctAnswer": "C",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q14",
+        "text": "Bhills in Khandesh protested against British rule because\ni. The Bhills of the Satpura division got inspiration from the event of the uprising in North India.\nii. Taking advantage of the revolt of 1857 Bhagoji Naik and Kazising Naik joined the revolt.\niii. Kazising and his associates burnt government treasuries and post offices.",
+        "options": [
+          "i and ii",
+          "ii and iii",
+          "i and iii",
+          "All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q15",
+        "text": "In which of the following newspapers did Annie-Besant present her thoughts about Home Rule Movement?\na. New India\nb. Common Weal\nc. Bombay Gazette\nd. Telegraph",
+        "options": [
+          "a and b only",
+          "b and c only",
+          "a and d only",
+          "a, b and c only"
+        ],
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "cs-pre-2023-english-q16",
+        "text": "Observe the following statements:\nA. There is loss of bio-diversity due to dumping of toxic waste into soil.\nB. Deforestation is responsible for frequent floods in river.\nC. Fransisco Mendez was known as 'Amazon Gandhi' due to his work in energy field.",
+        "options": [
+          "Only statement C is correct",
+          "Only statement A is correct",
+          "Only statement A and B are correct",
+          "Statement A, B and C are correct"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q17",
+        "text": "Nitrogen fertilizers in soils releases ______ when broken down by bacteria.",
+        "options": [
+          "Nitrogen dioxide (NO₂)",
+          "Nitrous oxide (N₂O)",
+          "Nitrogen trioxide (NO₃)",
+          "Nitrogen (N₂)"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q18",
+        "text": "In relation to Ozone which statements are true?\nA. Ozone is called protection shield of the Earth.\nB. In 1985 it was clear that Ozone layer has holes.\nC. 16th September is celebrated as World Ozone Day.\nD. In 1989 chemicals responsible for Ozone depletion are banned to utilize.",
+        "options": [
+          "Only A, B and C",
+          "Only B, C and D",
+          "Only A, C and D",
+          "All the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q19",
+        "text": "Which of the following is not the type of Ecological pyramid?",
+        "options": [
+          "Pyramid of number",
+          "Pyramid of biomass",
+          "Pyramid of food web",
+          "Pyramid of energy"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q20",
+        "text": "Some species if eliminated seriously affect the ecosystem. These are called ______",
+        "options": [
+          "Blue stone",
+          "Red stone",
+          "Yellow stone",
+          "Keystone"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q21",
+        "text": "Observe the following diagram and state which of the following alphabets indicate the gibbous phase of the moon?",
+        "options": [
+          "B and H",
+          "C and G",
+          "D and F",
+          "E and A"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q22",
+        "text": "\"Environment means the sum total of all conditions agencies and influences which affect the development, growth, life and death of an organism, species or race.\"\nWho created this definition of environment?",
+        "options": [
+          "Universal Encyclopedia",
+          "Britanica Encyclopedia",
+          "A. C. Tansley",
+          "Jackie Smith"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q23",
+        "text": "In the western part of Rajasthan minerals like limestone, gypsum and mineral salts reserves are distributed. Which of the following reasons are responsible for this occurrence?\na. Western part of Rajasthan was submerged under sea water during permocarboniferous period.\nb. Western part of Rajasthan receives low rainfall.\nc. Western part of Rajasthan has hot and dry climate.\nd. In the western part of Rajasthan the area under vegetation is very low.",
+        "options": [
+          "only a is correct",
+          "only a and b are correct",
+          "a, b and c are correct",
+          "only d is correct"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q24",
+        "text": "Which of the following soil contain the maximum proportion of iron and bauxite minerals?",
+        "options": [
+          "Red soil",
+          "Regur soil",
+          "Laterite soil",
+          "Alluvial soil"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q25",
+        "text": "Given below are two statements one labeled as Assertion (A) and other labeled as Reason (R).\n(A) Cotton is not a weight lossing pure raw material, besides is light in weight and durable.\n(R) The localization of the cotton textile is found either in cotton producing region or near market.",
+        "options": [
+          "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+          "Both (A) and (R) are true but (R) is not the correct explanation of (A)",
+          "(A) is true but (R) is false",
+          "(A) is false but (R) is true"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q26",
+        "text": "In the physical map of India, Maharashtra plateau is shown by which of the following colours?",
+        "options": [
+          "Dark green",
+          "Green",
+          "Yellow",
+          "Brown"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q27",
+        "text": "On which of the following day does the summer solstice occurs in the southern hemisphere?",
+        "options": [
+          "21 March",
+          "21 June",
+          "23 September",
+          "22 December"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q28",
+        "text": "Winter rainfall received by the Mediterranean region is the result of",
+        "options": [
+          "Shifting of pressure belts",
+          "Low pressure belt occurs over the Mediterranean region during the winter season due to shifting of pressure belts",
+          "Winds blow from the Mediterranean sea towards land",
+          "Orographic rain developed on the windward slope of the Alps"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q29",
+        "text": "Trenches are found mainly along the coast of the western Pacific Ocean because",
+        "options": [
+          "The western margin of the Pacific Ocean is the sub-duction zone",
+          "Along the western border of the Pacific Ocean parallel mountain ranges are aligned",
+          "The continental slope of the western part of the Pacific Ocean is steep",
+          "The western part of the Pacific Ocean is characterised by a large number of trenches"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q30",
+        "text": "The climatic phenomena retreating monsoon is the result of which of the following atmospheric condition in India?",
+        "options": [
+          "After reaching to the Himalayan ranges the south-west monsoons retreats",
+          "The apparent movement of the Sun",
+          "The expansion of the high pressure belt from north-western part to south-eastern part of India",
+          "The occurrence of variability in the atmospheric pressure developed over the Indian sub-continent"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q31",
+        "text": "Which of the following is/are correct statements?\nIn Maharashtra, in order from north, the major hill ranges on the plateau and the river basins to their south are as follows:\na. Tapi Purna basin to the south of the Satpura mountain range.\nb. Godavari river valley to the south of Satmala Ajintha hills.\nc. Harishchandra Balaghat hill and Bhima river basin to its south.\nd. Shambhu Mahadeva hills and Krishna river basin to its south.",
+        "options": [
+          "Only a",
+          "All are correct",
+          "Only a and b",
+          "Only a and c"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q32",
+        "text": "The Sahyadri range is not straight but at many places it is curved, because",
+        "options": [
+          "The Sahyadri range is curved at many places because of the headward erosion of the Konkan rivers originating in Sahyadri",
+          "The Sahyadri range is curved at many places because of the lateral erosion of the Konkan rivers originating in Sahyadri",
+          "The Sahyadri range is curved at many places because of the downward erosion of the Konkan rivers originating in Sahyadri",
+          "Due to heavy rainfall the Sahyadri range is heavily eroded and hence it is curved"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q33",
+        "text": "As compared to the Godavari and Krishna rivers, the course of the Kaveri river receives large volume of water during winter, because",
+        "options": [
+          "The course of the river Kaveri receives heavy rainfall from the south-west monsoons",
+          "The course of the river Kaveri receives heavy rainfall from the north-east monsoons",
+          "The course of the river Kaveri receives rainfall from both south-west and north-east monsoons",
+          "The tributaries of the Kaveri provide large volume of water to the course of the Kaveri"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q34",
+        "text": "In his theory of industrial location Alfred Weber tried to establish the pivotal role of which of the following factors?",
+        "options": [
+          "Labour cost plays a pivotal role in the selection of industrial location",
+          "Cost of raw material plays a pivotal role in the selection of industrial location",
+          "Market accessibility plays a pivotal role in the selection of industrial location",
+          "Transport cost plays a pivotal role in the selection of industrial location"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q35",
+        "text": "Consider the following statements and select the correct answer using the code given below.\n1. A compact settlement is most probably surrounded by hamlets.\n2. Compact settlements are not found in the Himalayan region.",
+        "options": [
+          "Only 1 is correct",
+          "Only 2 is correct",
+          "Both 1 and 2 are correct",
+          "Neither 1 nor 2 is correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "cs-pre-2023-english-q36",
+        "text": "______ are materials whose resistivities become zero below a critical temperature.",
+        "options": [
+          "Conductors",
+          "Insulators",
+          "Super conductors",
+          "None of these"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q37",
+        "text": "If an object is placed symmetrically between two plane mirrors inclined at an angle of 36°, then how many images will be formed?",
+        "options": [
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q38",
+        "text": "P/ρ + hg + ½v² = constant is the mathematical statement of ______ [CANCELLED]",
+        "options": [
+          "Equation of continuity",
+          "Bernoulli's equation",
+          "Pascal's law",
+          "Euler's equation"
+        ],
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q39",
+        "text": "When α-particle emits from a radioactive element then",
+        "options": [
+          "atomic number decreases by 2 and mass number decreases by 4",
+          "atomic number decreases by 1 and mass number decreases by 2",
+          "atomic number increases by 1",
+          "atomic number and mass number remains same"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q40",
+        "text": "The fever of a child is 104°F. What is this temperature in degree Celsius?",
+        "options": [
+          "35°C",
+          "37°C",
+          "39°C",
+          "40°C"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q41",
+        "text": "Which of the following statement is correct?",
+        "options": [
+          "The speed of Planet is faster when they are nearer to the sun and slower when they are farther away from the sun.",
+          "The speed of Planet is faster when they are farther from the sun and slower when they are nearer to the sun.",
+          "The speed of Planet is same when they are nearer to the sun or farther away from the sun.",
+          "The speed of Planet is faster when they are nearer to the sun or farther away from the sun."
+        ],
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q42",
+        "text": "Match the following – Vitamins and respective deficiency diseases:\na. Vit. A    b. Vit. D    c. Vit. C    d. Vit. B₁₂\ni. Rickets    ii. Scurvy    iii. Anaemia    iv. Night blindness",
+        "options": [
+          "iii, ii, iv, i",
+          "iv, i, ii, iii",
+          "i, iv, iii, ii",
+          "ii, iii, iv, i"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q43",
+        "text": "Anguina tritici is the parasitic nematode found on ______ plant.",
+        "options": [
+          "Wheat",
+          "Rice",
+          "Jowar",
+          "Bajra"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q44",
+        "text": "Conchology is the study of what?",
+        "options": [
+          "Coelenterates",
+          "Mollusca",
+          "Shells of Mollusca",
+          "Mantle of Mollusca"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q45",
+        "text": "Phyllum Mollusca contains soft bodied animals characterized of:\na. They are second largest phyllum in animal kingdom\nb. They are generally bilaterally symmetrical\nc. They are only Terrestrial animals\nd. They are having muscular foot\nWhich of the statements given above is/are correct?",
+        "options": [
+          "only a",
+          "a, b and d",
+          "a, b and c",
+          "only a and b"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q46",
+        "text": "Which of the following major policy interventions are the part of the land reforms in India?\na. Abolition of intermediaries\nb. Tenancy reforms\nc. Fixing ceilings on land holdings\nd. Consolidation of land holdings",
+        "options": [
+          "a, b and c",
+          "b, c and d",
+          "a, b and d",
+          "All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q47",
+        "text": "Who are the beneficiaries of Annapurna Yojana?",
+        "options": [
+          "School girls",
+          "Casual labours",
+          "Senior citizens who are not under National Old Age Pension Scheme",
+          "Retired soldiers"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q48",
+        "text": "Balanced growth rate aims at",
+        "options": [
+          "equality between growth rate of income, growth rate of output and growth rate of natural resources",
+          "equality between growth rate of income and growth rate of population",
+          "equality between growth rate of natural resources and growth rate of income",
+          "equality between growth rate of natural resources and growth rate of population"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q49",
+        "text": "Urbanization means\na. Centralization of population in the cities\nb. Decentralization of population in the cities\nc. Centralization of population in villages\nd. Increase in density of population",
+        "options": [
+          "Only a",
+          "Only a and b",
+          "Only a and d",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q50",
+        "text": "Which of the following statements about Atal Mission for Rejuvenation and Urban Transformation (AMRUT) is not correct?",
+        "options": [
+          "AMRUT is flagship mission of Government of India",
+          "It was launched by Ministry of Housing and Urban Affairs",
+          "It addresses the challenges of water supply in cities across the country",
+          "It was launched on 25th June, 2015 in 500 cities in the country"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q51",
+        "text": "If deprivation score of a household is ______ percent or greater, then that household is called multidimensionally poor.",
+        "options": [
+          "20.33",
+          "50.33",
+          "40.33",
+          "33.3"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q52",
+        "text": "Since July 1991, comprehensive liberalization measures have been undertaken to improve the supply side of the economy. Among these the more important are:\na. Trade and capital flows reforms\nb. Industrial deregulation\nc. Disinvestment and Public Enterprises Reforms\nd. Financial sector reforms",
+        "options": [
+          "a and b",
+          "c and d",
+          "a, b and c",
+          "a, b, c and d"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q53",
+        "text": "The long-term objectives of economic planning, as spelt out in various plan documents have been as follows:\na. Economic growth, self-reliance\nb. Removal of unemployment, reduction in income inequalities\nc. Elimination of poverty, modernization\nd. Inclusiveness and sustainability of growth",
+        "options": [
+          "a only",
+          "b only",
+          "c only",
+          "a, b, c and d"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q54",
+        "text": "The formulation and success of a plan require the following:\na. Planning Commission, Statistical data, Objectives\nb. Fixation of Targets and Priorities, Mobilisation of Resources\nc. Incorrupt and Efficient Administration, Proper Development Policy\nd. Economy in Administration, Education base",
+        "options": [
+          "a only",
+          "a and b",
+          "a, b and c",
+          "a, b, c and d"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q55",
+        "text": "'A country is poor, because it is poor' this statement is of ______",
+        "options": [
+          "G. Myrdal",
+          "Ragnar Nurks",
+          "Robbins",
+          "Marshall"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q56",
+        "text": "Balanced growth theory requires balance between\na. Consumer goods and industrial goods\nb. Capital goods and industrial goods\nc. Agricultural sector and industrial sector\nd. All sectors in the economy",
+        "options": [
+          "Only a",
+          "Only c",
+          "Only d",
+          "Only a and b"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q57",
+        "text": "According to Schumpeter,\na. Development is a discontinuous and spontaneous change in the stationary state.\nb. While growth is a gradual and steady change in the long run which, comes about by a gradual increase in the rate of savings and population.\nWhich of the statement above is/are correct?",
+        "options": [
+          "a only",
+          "b only",
+          "a and b",
+          "None of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q58",
+        "text": "Rangarajan Committee, 2014 defined poverty line for 2011-12 at Rs. ______ per capita per day consumption expenditure for urban areas and Rs. ______ per capita per day for rural areas.",
+        "options": [
+          "Rs. 50 and Rs. 35",
+          "Rs. 47 and Rs. 32",
+          "Rs. 55 and Rs. 40",
+          "Rs. 60 and Rs. 45"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q59",
+        "text": "In 2014, the Government implemented which of the following Scheme for financial inclusion?",
+        "options": [
+          "Demonetization Scheme",
+          "Property Disclosure Scheme",
+          "Pradhan Mantri Jan Dhan Yojana",
+          "All of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q60",
+        "text": "What is meant by Gender Budget?",
+        "options": [
+          "Separate budget for men",
+          "Separate budget for women",
+          "Independent provisions for men in the general budget",
+          "Independent provisions for women in the general budget"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "cs-pre-2023-english-q61",
+        "text": "Which of the following mathematical relationships should be used to calculate the pH of a 0.10M aqueous HCl solution?",
+        "options": [
+          "pH = log₁₀(1.0 × 10⁻¹)",
+          "pH = log₁₀(1.0 × 10¹)",
+          "pH = -log₁₀(1.0 × 10⁻¹)",
+          "pH = -log₁₀(0.10 × 10¹)"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q62",
+        "text": "How is 1.0N H₂SO₄ solution is prepared from 10 dm³ of 1.5M H₂SO₄ solution?",
+        "options": [
+          "By adding 5 dm³ of water to it",
+          "By adding 294 g of H₂SO₄ to it",
+          "By adding 20 dm³ of water to it",
+          "By adding 174 g of H₂SO₄ to it"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q63",
+        "text": "Which of the following is correct for the shapes of NH₃ and BF₃?",
+        "options": [
+          "NH₃ – Pyramidal and BF₃ – Pyramidal",
+          "NH₃ – Planar and BF₃ – Planar",
+          "NH₃ – Planar and BF₃ – Pyramidal",
+          "NH₃ – Pyramidal and BF₃ – Planar"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q64",
+        "text": "Which of the following hydrocarbon has 80% carbon? (H = 1, C = 12)",
+        "options": [
+          "Benzene",
+          "Methane",
+          "Ethane",
+          "Cyclohexane"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q65",
+        "text": "180 g of acetic acid (CH₃COOH) is mixed with 180 g of water (H₂O). The mole fraction of acetic acid in the resultant solution is [H = 1, C = 12, O = 16]",
+        "options": [
+          "0.23",
+          "1.0",
+          "0.5",
+          "None of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q66",
+        "text": "If one mole of an ideal gas occupies 22.4 Lit at Standard Temperature and Pressure, then the value of the universal gas constant R is",
+        "options": [
+          "0.0821 atm Lit mol⁻¹ K⁻¹",
+          "8.314 × 10⁷ Joules K⁻¹ mol⁻¹",
+          "82.1 atm Lit mol⁻¹ K⁻¹",
+          "8.314 erg K⁻¹ mol⁻¹"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q67",
+        "text": "Find the wrong pair.",
+        "options": [
+          "Labiatae – Lamiaceae",
+          "Palmae – Arecaceae",
+          "Compositae – Clusiaceae",
+          "Umbelliferae – Apiaceae"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q68",
+        "text": "What is the principal function of the light-dependent reactions of photosynthesis?",
+        "options": [
+          "To transfer the NADH₂ and ATP",
+          "To utilize the NADPH and ATP",
+          "To generate the NADPH and ATP",
+          "All of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q69",
+        "text": "______ are precursors of enzymes.\na. Zymogens\nb. Ribosomes\nc. RNA\nd. Protein\nWhich of the option given above is/are correct?",
+        "options": [
+          "only a",
+          "only b and c",
+          "only a and c",
+          "only d"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q70",
+        "text": "Which of the following statement/s is/are correct?\na. Enzymes are organic catalyst that accelerate biochemical reaction.\nb. Enzymes are made up from proteins.\nc. Enzyme activity is not depends upon temperature.\nd. Amylase is an enzyme that act on starch.",
+        "options": [
+          "a and b",
+          "a, c and d",
+          "a, b and d",
+          "all the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "cs-pre-2023-english-q71",
+        "text": "Which of the following statement is not included in Article 164?",
+        "options": [
+          "The Chief Minister shall be appointed by the Governor",
+          "The Council of Ministers shall not be collectively responsible to the State Legislature",
+          "The other Minister shall be appointed by the Governor on the advice of the Chief Minister",
+          "A Minister who for any period of six consecutive months is not a member of the Legislature of the State shall at the expiration of that period cease to be a minister"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q72",
+        "text": "Indian citizenship of a person can be terminated if\nA. A person voluntary acquire the citizenship of some other country.\nB. A person who has become a citizen through registration is sentenced to imprisonment for 18 months within five years of his registration.\nC. The government of India is satisfied that citizenship was obtained by fraud.\nD. A person has shown disloyalty to the Constitution of India.",
+        "options": [
+          "A, B and C",
+          "A, C and D",
+          "B and C",
+          "A, B, C and D"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q73",
+        "text": "Which of the following is/are correct pair/s with regard to acceptance in the Indian Constitution?\nA. America – Post of Vice President\nB. Canada – The concept of 'Union' for the Central Government\nC. South Africa – Election method of Rajya Sabha\nD. Ireland – Nomination method of the members of the Rajya Sabha by the President who have done special work in specific area",
+        "options": [
+          "Only A",
+          "A and C",
+          "A, B and D",
+          "A, B, C and D"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q74",
+        "text": "Which of the following is/are the main objective/s of Committee of Parliament on Official language?\nA. To review the progress made in the use of Hindi for official purposes of the Union and to make recommendations to increase the use of Hindi.\nB. Looking into the linguistic demands for new States and make suggestions in that regard.\nC. Identify the endangered language and make recommendations to protect and preserve them.\nD. Examine the vernacular education and make recommendations for effective implementation of the three languages formula.",
+        "options": [
+          "A only",
+          "B, C and D",
+          "A and D",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q75",
+        "text": "Consider the following statement/s with reference to the President of Zilla Parishad. [CANCELLED]\nA. If 1/5th of the total number of members of the Zilla Parishad moves a motion of no confidence and passes it, the President has to resign from office.\nB. Sudhakarrao Naik's cabinet took the decision to give ministerial status to the President of Zilla Parishad.\nC. Vasantrao Naik's cabinet took the decision to give ministerial status to the President of Zilla Parishad.\nD. Vasantdada Patil's cabinet took the decision to give ministerial status to the President of Zilla Parishad.\nSelect the incorrect statements from the above.",
+        "options": [
+          "A and C",
+          "B and D",
+          "A and B",
+          "C and D"
+        ],
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q76",
+        "text": "Which of the following is/are non-constitutional body/bodies?\nI. NITI Aayog\nII. State Finance Commission\nIII. National Commission for Backward Classes\nIV. Central Information Commission",
+        "options": [
+          "Only I is correct",
+          "Only III and IV are correct",
+          "Only I, III and IV are correct",
+          "Only I and IV are correct"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q77",
+        "text": "Key Provisions of Lokpal and Lokayukta (Amendment) Act, 2016:\nA. It amended the Lokpal and Lokayukta Act, 2013 (which came into force on 16 January 2014).\nB. It also amended Section 44 of the 2013 Act that deals with the Provision of furnishing details of assets and liabilities of Public Servants.\nC. Made it compulsory that all States should set up the office of the Lokayukta within one year.\nD. The Amendment has removed the period of 30 days for furnishing details of assets and liabilities of Public Servants.\nWhich of the statements given above are correct?",
+        "options": [
+          "A, B and C",
+          "A, B and D",
+          "A, C and D",
+          "All of the above"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q78",
+        "text": "Which of the following is/are a duties of National Commission for Backward Classes?",
+        "options": [
+          "To enquire into specific complaints with respect to the deprivation of rights and safeguards of the socially and educationally backward classes",
+          "To participate and advise on the socio-economic development of the socially and educationally backward classes",
+          "To discharge other functions in relation to the protection, welfare, development and advancement of socially and educationally backward classes",
+          "All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q79",
+        "text": "Which of the following pair is incorrect?\nNational Party of India – Year of establishment",
+        "options": [
+          "Communist Party of India (Marxist) CPI-M – 1964",
+          "Communist Party of India (CPI) – 1926",
+          "Bahujan Samaj Party (B.S.P.) – 1984",
+          "All India Trinamool Congress (AITC) – 1998"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q80",
+        "text": "Match the pairs correctly.\nA. Part – I    →  i. Fundamental Rights\nB. Part – III  →  ii. Panchayat Raj\nC. Part – IX   →  iii. Citizenship\nD. Part – II   →  iv. The Union and its territory",
+        "options": [
+          "iv, ii, iii, i",
+          "iii, i, ii, iv",
+          "ii, iii, i, iv",
+          "iv, i, ii, iii"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q81",
+        "text": "Provisions of the Constitution relating to the administration of Scheduled Areas and Scheduled Tribes in Schedule – V",
+        "options": [
+          "may be altered by the Governor",
+          "may be altered by the President",
+          "may be altered by the Parliament by Constitutional Amendment requiring special majority",
+          "may be altered by the Parliament by ordinary legislation"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q82",
+        "text": "Which of the following are the objectives of the 'SVAMITVA' Scheme?\nA. Ensure financial stability to villagers by letting them use their property to take loans.\nB. Create precise land records for urban planning and implementation.\nC. Lessen property related disputes.\nD. Determine property tax.",
+        "options": [
+          "Only A",
+          "B, C and D",
+          "A, C and D",
+          "All of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q83",
+        "text": "Consider the following statements regarding 'Zero Hour' of Lok Sabha:\nA. The time immediately following the question hour and laying of papers and before any listed business is taken up in the house has come to be known as the zero hour.\nB. For raising matters during the zero hour members has to give notice between 8.00 a.m. to 9.30 a.m. everyday to the Speaker.\nC. At present, thirty matters per day as per their priority are allowed to be raised during zero hour.\nD. There is no maximum limit on the number of matters that can be raised on any given day as there is no provision in rules about Zero Hour.\nWhich of the statements given above are correct?",
+        "options": [
+          "A and B",
+          "A, B and D",
+          "B, C and D",
+          "A and D"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q84",
+        "text": "Which of the following statements are correct regarding the legal relationship between the Central and State Government in India?\nA. The subject of transfer of property other than agricultural land is included in the Concurrent List.\nB. The subject of wealth tax on property other than agricultural land is included in the Union List.\nC. The subject of entertainment tax is included in the Concurrent List.\nD. The subject of 'Antiquities Museum' is included in the State List.",
+        "options": [
+          "A, B and C",
+          "B, C and D",
+          "A, B and D",
+          "A, C and D"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q85",
+        "text": "After the extensive discussion in the Constituent Assembly, the following provisions was/were included. Which Article does not include?\nI. Fundamental duties under Art. 51A\nII. Constitutional Amendment under Art. 368\nIII. National emergency under Art. 352\nIV. Ordinance under Art. 123",
+        "options": [
+          "Only I correct",
+          "Only II correct",
+          "All of the above are correct",
+          "None of the above are correct"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "cs-pre-2023-english-q86",
+        "text": "In which State was the 10th International Tourism Mart organized in November 2022?",
+        "options": [
+          "Maharashtra",
+          "Uttar Pradesh",
+          "Mizoram",
+          "Assam"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q87",
+        "text": "Choose the correct option considering the following statements.\na. Ramesh Bais is appointed as the Governor of Maharashtra.\nb. Earlier he was the Governor of Tripura State.\nc. He belongs to Chhattisgarh State.",
+        "options": [
+          "Only a is correct",
+          "a and b both are correct",
+          "a and c both are correct",
+          "a, b and c are correct"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q88",
+        "text": "Examine the following statements regarding the 'Nutrition Promotion Campaign' of the United Nations.\nA. Afshan Khan was nominated as the co-ordinator of this Campaign.\nB. Antony Blinken was nominated as the co-ordinator of this Campaign.\nC. To eradicate malnutrition by 2030 is the objective of this Campaign.\nD. This campaign is implemented in countries suffering with malnutrition in the world.\nIdentify the correct statements from the above.",
+        "options": [
+          "A and B are correct",
+          "C and D are correct",
+          "A, C and D are correct",
+          "A, B and D are correct"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q89",
+        "text": "In the Budget 2023 of Maharashtra State, which Corporations was announced to be established?\nA. Raje Umaji Naik Economic Development Corporation.\nB. Marathwada Milk Development Corporation.\nC. Jagadjyoti Mahatma Basaveshwar Economic Development Corporation.\nD. Saint Kashiba Gurav Youth Economic Development Corporation.",
+        "options": [
+          "Only A and D",
+          "Only A, C and D",
+          "Only B, C and D",
+          "Only B and C"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q90",
+        "text": "Which of the following city was the host of '5th ASEAN-India Business Summit' in 2023?",
+        "options": [
+          "New Delhi",
+          "Dhaka",
+          "Kuala Lumpur",
+          "Singapore city"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q91",
+        "text": "The Shrine of Sammed Shikharji has been in news for the past few days. Identify the correct statements about this pilgrimage site.\nA. It is the pilgrimage site of Jain community.\nB. This pilgrimage site is at Girdhi in the Jharkhand State.\nC. This pilgrimage site is at Aravali Mountain in Rajasthan.\nD. It is the pilgrimage site of Hindu community.",
+        "options": [
+          "Only A and C are correct",
+          "Only A and B are correct",
+          "Only B and C are correct",
+          "Only C is correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q92",
+        "text": "Which Mission did India conduct to aid earthquake affected in 'Turkey'?",
+        "options": [
+          "Operation Rahat",
+          "Operation Hamdard",
+          "Operation Dost",
+          "Operation Sakha"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q93",
+        "text": "Identify the correct statement/s from the following in relation to 'UN COP 15'\nA. The Global Biodiversity Agreement was approved by this Council.\nB. The Global Biodiversity Agreement was done under the Presidency of America.\nC. China presided 'UN COP 15'.\nD. There is a need to make efforts to reduce the consequences of climate change and the conservation of threatened species in the agreement.",
+        "options": [
+          "A and B are correct",
+          "B and D are correct",
+          "B and C are correct",
+          "A, C and D are correct"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q94",
+        "text": "Who among the following inaugurated IBA Women's World Boxing Championship, 2023 in New Delhi?",
+        "options": [
+          "Shri Anurag Singh Thakur",
+          "Shri Narendra Modi",
+          "Shri Amit Shah",
+          "Smt. Jayashree Banerjee"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q95",
+        "text": "Match the following.\nWinner of Arjun Award 2022 – Sports\na. Bhakti Kulkarni → i. Badminton\nb. Sakshi Kumari → ii. Kabaddi\nc. Lakshya Sen → iii. Chess",
+        "options": [
+          "i, iii, ii",
+          "ii, i, iii",
+          "iii, ii, i",
+          "i, ii, iii"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q96",
+        "text": "Who has been appointed as the Chairman of Pension Fund Regulatory and Development Authority (PFRDA) by Government in March 2023?",
+        "options": [
+          "Amitava Mukharjee",
+          "Deepak Mohanty",
+          "Rajesh Malhotra",
+          "Supratim Bandopadhyay"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q97",
+        "text": "Where was the 25th National E-Governance Conference, 2022 held?",
+        "options": [
+          "Kollam – Kerala",
+          "Mumbai – Maharashtra",
+          "Ahmedabad – Gujarat",
+          "Katra – Jammu Kashmir"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q98",
+        "text": "UNESCO has dedicated International Education Day of 2023 to which country's girls and women?",
+        "options": [
+          "Iran",
+          "Afghanistan",
+          "Israel",
+          "Vietnam"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q99",
+        "text": "Which country has removed the mention of the British Monarchy from its currency notes in 2023?",
+        "options": [
+          "Australia",
+          "New Zealand",
+          "Switzerland",
+          "Canada"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "cs-pre-2023-english-q100",
+        "text": "Match the pairs about 'Padma Shri' Award, 2023.\nPerson – Field\na. Ramesh Patange → i. Science and Engineering\nb. Dr. Mahendra Pal → ii. Literature and Education\nc. Uma Shankar Pande → iii. Art\nd. Parshuram Khune → iv. Social Work",
+        "options": [
+          "ii, iii, i, iv",
+          "iii, ii, iv, i",
+          "i, iv, iii, ii",
+          "ii, i, iv, iii"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      }
+    ]
+  }
+]
