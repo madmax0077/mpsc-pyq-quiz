@@ -2,6 +2,7 @@ import { initializeApp, getApps } from "firebase/app";
 import {
   getAuth,
   GoogleAuthProvider,
+  OAuthProvider,
   signInWithPopup,
   signOut as fbSignOut,
   onAuthStateChanged,
@@ -20,9 +21,17 @@ const firebaseConfig = {
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
+const appleProvider = new OAuthProvider("apple.com");
+appleProvider.addScope("email");
+appleProvider.addScope("name");
 
 export async function signInWithGoogle() {
   const result = await signInWithPopup(auth, googleProvider);
+  return result.user;
+}
+
+export async function signInWithApple() {
+  const result = await signInWithPopup(auth, appleProvider);
   return result.user;
 }
 
