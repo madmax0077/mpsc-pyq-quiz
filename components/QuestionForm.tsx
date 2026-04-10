@@ -12,6 +12,8 @@ const CATEGORY_COLORS: Record<Category, { bg: string; text: string; border: stri
   "Current Affairs": { bg: "bg-pink-50", text: "text-pink-700", border: "border-pink-200", ring: "ring-pink-100" },
   Economics: { bg: "bg-teal-50",    text: "text-teal-700",    border: "border-teal-200",    ring: "ring-teal-100" },
   Aptitude:  { bg: "bg-orange-50",  text: "text-orange-700",  border: "border-orange-200",  ring: "ring-orange-100" },
+  English:   { bg: "bg-cyan-50",    text: "text-cyan-700",    border: "border-cyan-200",    ring: "ring-cyan-100" },
+  Marathi:   { bg: "bg-rose-50",    text: "text-rose-700",    border: "border-rose-200",    ring: "ring-rose-100" },
 };
 
 interface Props {
