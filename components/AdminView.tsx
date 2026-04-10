@@ -39,6 +39,7 @@ export default function AdminView() {
   const [toast, setToast] = useState("");
   const [bulkCategory, setBulkCategory] = useState<Category | "">("");
   const [quizLanguage, setQuizLanguage] = useState<Language>("english");
+  const [quizTag, setQuizTag] = useState("");
   const [showChangePw, setShowChangePw] = useState(false);
   const [currentPw, setCurrentPw] = useState("");
   const [newPw, setNewPw] = useState("");
@@ -101,6 +102,7 @@ export default function AdminView() {
       createdAt: new Date().toISOString(),
       questions: valid,
       language: quizLanguage,
+      tag: quizTag.trim() || undefined,
     };
     saveQuiz(quiz);
     setSavedQuizzes(getAllQuizzes());
@@ -109,6 +111,7 @@ export default function AdminView() {
     setQuestions([]);
     setEditingId(null);
     setQuizLanguage("english");
+    setQuizTag("");
   };
 
   const handleEdit = (quiz: Quiz) => {
@@ -116,6 +119,7 @@ export default function AdminView() {
     setQuestions(quiz.questions);
     setEditingId(quiz.id);
     setQuizLanguage(quiz.language || "english");
+    setQuizTag(quiz.tag || "");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -242,6 +246,18 @@ export default function AdminView() {
             </button>
           </div>
         </div>
+        <div>
+          <label className="mb-2 block text-sm font-semibold text-slate-700">
+            Paper Tag <span className="text-xs font-normal text-slate-400">(shown on each question in Practice by Subject)</span>
+          </label>
+          <input
+            type="text"
+            value={quizTag}
+            onChange={(e) => setQuizTag(e.target.value)}
+            placeholder="e.g. Group C 2024, Prelims 2025 Set A"
+            className="w-full rounded-lg border border-slate-200 px-4 py-3 text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100"
+          />
+        </div>
       </div>
 
       {/* File Upload (Image + PDF) */}
@@ -324,6 +340,7 @@ export default function AdminView() {
               setQuestions([]);
               setEditingId(null);
               setQuizLanguage("english");
+              setQuizTag("");
             }}
             className="rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-500 hover:bg-slate-50 transition-colors"
           >
@@ -407,6 +424,9 @@ export default function AdminView() {
                         {new Date(quiz.createdAt).toLocaleDateString()}
                         {quiz.language === "marathi" && (
                           <span className="ml-1.5 inline-block rounded bg-orange-100 px-1.5 py-0.5 text-[10px] font-semibold text-orange-600">मराठी</span>
+                        )}
+                        {quiz.tag && (
+                          <span className="ml-1.5 inline-block rounded bg-violet-100 px-1.5 py-0.5 text-[10px] font-semibold text-violet-600">{quiz.tag}</span>
                         )}
                       </p>
                       {cats.length > 0 && (

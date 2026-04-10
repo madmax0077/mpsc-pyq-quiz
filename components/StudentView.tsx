@@ -70,11 +70,12 @@ export default function StudentView({ language = "english" }: { language?: Langu
   const categoryQuizzes = useMemo<DisplayQuiz[]>(() => {
     const catMap = new Map<Category, Map<string, Question>>();
     for (const quiz of quizzes) {
+      const tag = quiz.tag || quiz.title;
       for (const q of quiz.questions) {
         if (!q.category) continue;
         if (!catMap.has(q.category)) catMap.set(q.category, new Map());
         const map = catMap.get(q.category)!;
-        if (!map.has(q.id)) map.set(q.id, q);
+        if (!map.has(q.id)) map.set(q.id, { ...q, sourceTag: tag });
       }
     }
     const result: DisplayQuiz[] = [];
@@ -495,7 +496,12 @@ export default function StudentView({ language = "english" }: { language?: Langu
                   }`}>
                     {globalIdx + 1}
                   </span>
-                  <p className="font-medium text-slate-800 leading-relaxed">{q.text}</p>
+                  <p className="flex-1 font-medium text-slate-800 leading-relaxed">{q.text}</p>
+                  {isCategoryQuiz && q.sourceTag && (
+                    <span className="ml-2 shrink-0 rounded-md bg-violet-100 px-2 py-0.5 text-[10px] font-semibold text-violet-600 leading-tight whitespace-nowrap">
+                      {q.sourceTag}
+                    </span>
+                  )}
                 </div>
 
                 {q.imageUrl && (

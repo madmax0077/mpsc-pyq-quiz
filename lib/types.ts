@@ -20,6 +20,7 @@ export interface Question {
   explanation: string;
   imageUrl?: string;
   category?: Category;
+  sourceTag?: string;
 }
 
 export interface Quiz {
@@ -28,6 +29,7 @@ export interface Quiz {
   createdAt: string;
   questions: Question[];
   language?: Language;
+  tag?: string;
 }
 
 export type AppMode = "admin" | "student";
