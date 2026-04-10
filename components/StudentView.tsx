@@ -397,12 +397,12 @@ export default function StudentView({ language = "english", challenge }: { langu
             {/* Streak + Search + My Stats row */}
             <div className="flex items-center justify-between gap-2 flex-wrap">
               {streak > 0 ? (
-                <div className="flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-100 to-amber-100 px-4 py-2 shadow-sm dark:from-orange-900/40 dark:to-amber-900/40">
+                <div className="flex items-center gap-2 rounded-full bg-indigo-50 px-4 py-2 ring-1 ring-indigo-200 dark:bg-indigo-950/50 dark:ring-indigo-800">
                   <span className="text-xl">🔥</span>
-                  <span className="text-sm font-bold text-orange-700 dark:text-orange-300">{streak} day{streak !== 1 ? "s" : ""} streak!</span>
+                  <span className="text-sm font-bold text-indigo-700 dark:text-indigo-300">{streak} day{streak !== 1 ? "s" : ""} streak!</span>
                 </div>
               ) : (
-                <div className="flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 dark:bg-slate-800">
+                <div className="flex items-center gap-2 rounded-full bg-slate-50 px-4 py-2 ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-700">
                   <span className="text-lg">🔥</span>
                   <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Take a quiz to start your streak!</span>
                 </div>
