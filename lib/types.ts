@@ -9,6 +9,8 @@ export const CATEGORIES = [
   "Current Affairs",
   "Economics",
   "Aptitude",
+  "English",
+  "Marathi",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];

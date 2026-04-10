@@ -1,0 +1,983 @@
+[
+  {
+    "id": "psi-2023-english",
+    "title": "PSI 2023 - English & General Studies (Set A)",
+    "questions": [
+      {
+        "id": "psi23-26",
+        "text": "Choose the correct suffix to make a noun form of: 'durable'",
+        "options": {
+          "A": "-ity",
+          "B": "-ness",
+          "C": "-ism",
+          "D": "-ment"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-27",
+        "text": "Choose the word having nearest opposite meaning of the underlined word:\nHe is interested in the occult.",
+        "options": {
+          "A": "Magical",
+          "B": "Unique",
+          "C": "Rational",
+          "D": "Difficult"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Vocabulary",
+        "category": "English"
+      },
+      {
+        "id": "psi23-28",
+        "text": "Choose the correct sentences:\n(a) The table's leg was broken.\n(b) The cover of the book was beautiful.\n(c) The house's roof was painted.",
+        "options": {
+          "A": "(b) only",
+          "B": "(a) and (c) only",
+          "C": "(b) and (c) only",
+          "D": "(a), (b) and (c)"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-29",
+        "text": "Choose the correct sentences:\n(a) I am knowing him for a long time.\n(b) We have lived here for ten years.\n(c) We haven't seen Padma for several months.",
+        "options": {
+          "A": "(c) only",
+          "B": "(a) and (c) only",
+          "C": "(b) and (c) only",
+          "D": "(a), (b) and (c)"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-30",
+        "text": "Which one of the following explains the meaning of the word 'Bibliophile'?\n(a) One who is a great collector of stamps.\n(b) One who is a great lover of books.\n(c) One who is an expert in preparing bibliography.\n(d) One who is a lover of birds and plants.",
+        "options": {
+          "A": "(d) only",
+          "B": "both (b) and (c)",
+          "C": "(a) only",
+          "D": "(b) only"
+        },
+        "correctAnswer": "D",
+        "explanation": "English Vocabulary",
+        "category": "English"
+      },
+      {
+        "id": "psi23-31",
+        "text": "\"Travelling by metro is better than travelling by bus.\"\nIf this sentence is changed into negative, the form of sentence will be:",
+        "options": {
+          "A": "Travelling by metro is not better than travelling by bus.",
+          "B": "Travelling by bus is not better than travelling by metro.",
+          "C": "Travelling by bus is not as good as travelling by metro.",
+          "D": "Travelling by metro is not as good as travelling by bus."
+        },
+        "correctAnswer": "C",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-32",
+        "text": "Fill in the blank:\nYou touched a _____ nerve when you mentioned his first wife.",
+        "options": {
+          "A": "ripe",
+          "B": "old",
+          "C": "raw",
+          "D": "outer"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Vocabulary",
+        "category": "English"
+      },
+      {
+        "id": "psi23-33",
+        "text": "'He can drive a sports car.'\nThe underlined modal verb expresses _____.",
+        "options": {
+          "A": "Asking permission",
+          "B": "Probability",
+          "C": "Ability",
+          "D": "Necessity"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-34",
+        "text": "\"I normally go to Mumbai by train.\"\nThe underlined words in the given sentence are _____.",
+        "options": {
+          "A": "Adjective phrase",
+          "B": "Noun phrase",
+          "C": "Adverbial phrase",
+          "D": "An Article"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-35",
+        "text": "Choose the correct replacement for the underlined items:\nThe umbrella with a broken handle is mine.",
+        "options": {
+          "A": "which had a broken handle",
+          "B": "which has a broken handle",
+          "C": "that having a broken handle",
+          "D": "which having a broken handle"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-36",
+        "text": "Choose the nearest meaning of the underlined items:\nKeep the news under your hat.",
+        "options": {
+          "A": "Safe",
+          "B": "Pure",
+          "C": "Secret",
+          "D": "Fresh"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Idioms",
+        "category": "English"
+      },
+      {
+        "id": "psi23-37",
+        "text": "Choose the correct option to fill in the blanks:\n(a) The speakers came on to the platform in order of _____.\n(b) There is no _____ for a disaster of this scale.",
+        "options": {
+          "A": "Precedent, Precedent",
+          "B": "Precedence, Precedent",
+          "C": "Precedence, Precedence",
+          "D": "Precedence, Precaution"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Vocabulary",
+        "category": "English"
+      },
+      {
+        "id": "psi23-38",
+        "text": "Choose the correct replacement for the underlined items:\nThey rested at sunset.",
+        "options": {
+          "A": "When evening was coming.",
+          "B": "When evening had come.",
+          "C": "When evening came.",
+          "D": "When evening has come."
+        },
+        "correctAnswer": "C",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-39",
+        "text": "Fill in the blanks:\nHe decided to _____ the _____.",
+        "options": {
+          "A": "sink, hatchet",
+          "B": "bury, sword",
+          "C": "dig, hatchet",
+          "D": "bury, hatchet"
+        },
+        "correctAnswer": "D",
+        "explanation": "English Idioms",
+        "category": "English"
+      },
+      {
+        "id": "psi23-40",
+        "text": "Choose the option closest in meaning to the underlined word:\nThe drug attenuates the effects of the Virus.",
+        "options": {
+          "A": "Show",
+          "B": "Cure",
+          "C": "To make less effective",
+          "D": "To make more effective"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Vocabulary",
+        "category": "English"
+      },
+      {
+        "id": "psi23-41",
+        "text": "What does the underlined Modal Verb express in the sentence:\n'People should not venture into the deep water of the ocean.'",
+        "options": {
+          "A": "Probability",
+          "B": "Suggestion",
+          "C": "Compulsion",
+          "D": "Moral Obligation"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-42",
+        "text": "'A thoroughly ignorant person'.\nWhich of the following words explains the above meaning?\n(a) illiterate  (b) inhumane  (c) countryside fellow  (d) ignoramus",
+        "options": {
+          "A": "(c) only",
+          "B": "(b) only",
+          "C": "both (a) and (c)",
+          "D": "(d) only"
+        },
+        "correctAnswer": "D",
+        "explanation": "English Vocabulary",
+        "category": "English"
+      },
+      {
+        "id": "psi23-43",
+        "text": "Which one of the following is the correct meaning of the word: \"Diffident\"",
+        "options": {
+          "A": "lacking",
+          "B": "hesitant",
+          "C": "condemn",
+          "D": "reveal"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Vocabulary",
+        "category": "English"
+      },
+      {
+        "id": "psi23-44",
+        "text": "'I still remember the joys of my childhood.'\nWhich one of the following is a correct complex sentence corresponding to the simple sentence above?\n(a) I remember the joys experienced in my childhood.\n(b) I still remember the joys which I experienced in my childhood.\n(c) I still remember the joys I experienced in childhood.\n(d) I still remember the joys which I had experienced in my childhood.",
+        "options": {
+          "A": "(d) only",
+          "B": "(c) only",
+          "C": "(b) only",
+          "D": "(a) only"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-45",
+        "text": "Choose the correct passive form of the given sentence:\nOne should keep one's promises.",
+        "options": {
+          "A": "Promises should have kept.",
+          "B": "Promises have been kept.",
+          "C": "Promises should be keeping.",
+          "D": "Promises should be kept."
+        },
+        "correctAnswer": "D",
+        "explanation": "English Grammar",
+        "category": "English"
+      },
+      {
+        "id": "psi23-46",
+        "text": "[Reading Comprehension]\nThe people who had gathered outside were:",
+        "options": {
+          "A": "Passers by",
+          "B": "From railway quarters",
+          "C": "Snake charmers",
+          "D": "Strangers to the writer"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Comprehension",
+        "category": "English"
+      },
+      {
+        "id": "psi23-47",
+        "text": "[Reading Comprehension]\nThe incident narrated in the passage is _____.",
+        "options": {
+          "A": "Thrilling",
+          "B": "Dramatic",
+          "C": "Tragic",
+          "D": "Humorous"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Comprehension",
+        "category": "English"
+      },
+      {
+        "id": "psi23-48",
+        "text": "[Reading Comprehension]\nA large crowd had gathered outside the writer's room, presumably to:",
+        "options": {
+          "A": "Break open the door of the room.",
+          "B": "Watch the writer's struggle with the Cobra.",
+          "C": "Kill the snake if it came out.",
+          "D": "Catch the snake."
+        },
+        "correctAnswer": "C",
+        "explanation": "English Comprehension",
+        "category": "English"
+      },
+      {
+        "id": "psi23-49",
+        "text": "[Reading Comprehension]\nThe room in which the writer was locked in with the Cobra was his:",
+        "options": {
+          "A": "Bedroom",
+          "B": "Bathroom",
+          "C": "Toilet",
+          "D": "Drawing Room"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Comprehension",
+        "category": "English"
+      },
+      {
+        "id": "psi23-50",
+        "text": "[Reading Comprehension]\n\"It did not illuminate the room.\" Here \"illuminate\" can be replaced by:",
+        "options": {
+          "A": "Light up brightly",
+          "B": "Throw faint light",
+          "C": "Enlighten",
+          "D": "Make colourful"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Comprehension",
+        "category": "English"
+      },
+      {
+        "id": "psi23-51",
+        "text": "What were the effects of de-industrialization on India during British period?\n(a) Burden on agriculture was decreased\n(b) Independent rural economy was destroyed\n(c) Decline of industrial centres\n(d) Drive for economic Nationalism in India",
+        "options": {
+          "A": "(a) and (b) only",
+          "B": "(b) and (c) only",
+          "C": "(a), (b) and (c) only",
+          "D": "(b), (c) and (d) only"
+        },
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-52",
+        "text": "Which of the following provisions were made through 1919 Act?\n(a) Salaries of Secretary State of India was from Indian expenditure.\n(b) Public Service Commission was established through this Act.\n(c) Importance of India Council was reduced.\n(d) This act made provision for classification of the Central and State subjects.",
+        "options": {
+          "A": "(a) and (b) only",
+          "B": "(b) and (c) only",
+          "C": "(b), (c) and (d) only",
+          "D": "(a), (b) and (c) only"
+        },
+        "correctAnswer": "C",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-53",
+        "text": "Under whose Presidentship 'Mumbai Kamgar Samiti' was established in 1920?",
+        "options": {
+          "A": "Narayan Chandavarkar",
+          "B": "Narayan Meghaji Lokhande",
+          "C": "S.M. Joshi",
+          "D": "B.P. Wadia"
+        },
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-54",
+        "text": "At which of the following places 'Queens Declaration' was read by Governor General Lord Canning on 1st November 1858?",
+        "options": {
+          "A": "Calcutta",
+          "B": "Allahabad",
+          "C": "Delhi",
+          "D": "Meerut"
+        },
+        "correctAnswer": "B",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-55",
+        "text": "Which correspondent of the London Daily Herald stood with the satyagrahis of Wadala Salt Factory and sent his observations to London?",
+        "options": {
+          "A": "Webb Miller",
+          "B": "George Slokombh",
+          "C": "Perin Comton",
+          "D": "A. Mykay"
+        },
+        "correctAnswer": "B",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-56",
+        "text": "Which was the highest position for Indians in military in British period?",
+        "options": {
+          "A": "Sardar",
+          "B": "Subhedar",
+          "C": "Hawaldar",
+          "D": "Captain"
+        },
+        "correctAnswer": "B",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-57",
+        "text": "Scholarships given by India House in London were given through, whose donation?",
+        "options": {
+          "A": "Shyamji Krishna Varma",
+          "B": "Sardarsingh Revabhai Rana",
+          "C": "Jemshetji Jijibhai",
+          "D": "Jamnalal Bajaj"
+        },
+        "correctAnswer": "B",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-58",
+        "text": "Where was 'All India Muslim League' founded?",
+        "options": {
+          "A": "Dhaka",
+          "B": "Lahore",
+          "C": "Karachi",
+          "D": "Delhi"
+        },
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-59",
+        "text": "Under whose leadership was the Akhil Bhartiya Satyagrah Council established?",
+        "options": {
+          "A": "Sarojini Nayadu",
+          "B": "Sucheta Kruplani",
+          "C": "Minu Masani",
+          "D": "Jayprakash Narayan"
+        },
+        "correctAnswer": "B",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-60",
+        "text": "Which of the following recommendations were made through 'The Deccan Agricultural Relief Act' 1879 for upliftment of Farmers condition?\n(a) Establishment of Irrigation Commission\n(b) Facilities of loan system\n(c) To start 'Farmers Bank'\n(d) To make it difficult for transfer of Farmers Land to moneylenders",
+        "options": {
+          "A": "(a) and (b) only",
+          "B": "(b) and (c) only",
+          "C": "(a), (b) and (c) only",
+          "D": "(b), (c) and (d) only"
+        },
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-61",
+        "text": "Match the correct pairs:\n(a) Tadoba National Park - (i) Chandrapur\n(b) Pandit Jawaharlal Nehru National Park - (ii) Pench-Nagpur\n(c) Gugamal National Park - (iii) Amravati\n(d) Navegaon National Park - (iv) Gondia",
+        "options": {
+          "A": "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)",
+          "B": "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+          "C": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+          "D": "(a)-(ii), (b)-(iv), (c)-(iii), (d)-(i)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-62",
+        "text": "Consider the following statements about the location of India.\n(a) India has the central location between the east and west Asia.\n(b) India's maritime contacts with the world have a longer history than its land based relationship.\n(c) No other country has a long coastline on the Indian Ocean as India has.\n(d) India shares its land with Pakistan and Afghanistan in the north-east.\nWhich of the above statements are correct?",
+        "options": {
+          "A": "(a) and (d) only",
+          "B": "(a) and (c) only",
+          "C": "(a), (b) and (c)",
+          "D": "(a), (b) and (d)"
+        },
+        "correctAnswer": "B",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-63",
+        "text": "What is the latitudinal and longitudinal extent of India?",
+        "options": {
+          "A": "More than 29°",
+          "B": "More than 30°",
+          "C": "More than 31°",
+          "D": "More than 32°"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-64",
+        "text": "Match the following:\nDistrict → Establishment Year\n(a) Palghar - (i) 2014\n(b) Gondiya - (ii) 1998\n(c) Nandurbar - (iii) 1999\n(d) Gadchiroli - (iv) 1982",
+        "options": {
+          "A": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+          "B": "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+          "C": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
+          "D": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)"
+        },
+        "correctAnswer": "B",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-65",
+        "text": "Which of the following is not a tributary of Bhima river?",
+        "options": {
+          "A": "Sina",
+          "B": "Man",
+          "C": "Bhama",
+          "D": "Terna"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-66",
+        "text": "Match the following:\nMinerals → Mining Area\n(a) Manganese - (i) Surjagad\n(b) Iron Ore - (ii) Janoli\n(c) Bauxite - (iii) Chikhala\n(d) Chromite - (iv) Udgiri",
+        "options": {
+          "A": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+          "B": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)",
+          "C": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+          "D": "(a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-67",
+        "text": "Which of the following district of Maharashtra has the highest population density as per 2011 census?",
+        "options": {
+          "A": "Gondiya",
+          "B": "Washim",
+          "C": "Hingoli",
+          "D": "Amravati"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-68",
+        "text": "Which of the following forests occupies the largest area in Maharashtra?\n(a) Deciduous Forests  (b) Broadleaf Forests\n(c) Swamp Forests  (d) Thorn Forests",
+        "options": {
+          "A": "Only (a)",
+          "B": "Only (d)",
+          "C": "(a), (b) and (d)",
+          "D": "All above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-69",
+        "text": "Which of the following is the correct pair of tributaries of river Krishna?",
+        "options": {
+          "A": "Arkavati - Bhavani",
+          "B": "Koyana - Pranhita",
+          "C": "Musi - Hemavati",
+          "D": "Malprabha - Tungabhadra"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-70",
+        "text": "The wood of _____ tree is very soft so it is used to make the sticks of the match box.",
+        "options": {
+          "A": "Tendu",
+          "B": "Teak",
+          "C": "Pine",
+          "D": "Shalmali"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "psi23-71",
+        "text": "The reform policies raised the foreign investment limit in banks upto _____ percent.",
+        "options": {
+          "A": "51",
+          "B": "64",
+          "C": "54",
+          "D": "74"
+        },
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-72",
+        "text": "Statement (a): Indian Economy is primarily a rural economy.\nStatement (b): As per, 2011 census the rural population of the country is about 83.25 crores (68.8% of the total population).",
+        "options": {
+          "A": "Statement (a) is true but (b) is false.",
+          "B": "Statement (a) is false but (b) is true.",
+          "C": "Both statement (a) and (b) are true and (b) is the correct explanation of (a).",
+          "D": "Both statement (a) and (b) are true and (b) is the incorrect explanation of (a)."
+        },
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-73",
+        "text": "Since July 1991, the government has introduced a series of reforms in the trade sector. Among these the reform measures consisted of:\n(a) Devaluation of the rupee\n(b) Convertibility of rupee first on trade account and then on current account\n(c) Liberalization of import, and decanalization of trade\n(d) Measures to promote exports\nWhich of the following is correct?",
+        "options": {
+          "A": "Only (a) and (b)",
+          "B": "Only (c) and (d)",
+          "C": "Only (a), (b) and (c)",
+          "D": "All the (a), (b), (c) and (d)"
+        },
+        "correctAnswer": "D",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-74",
+        "text": "Deepa Nayyar defined Globalisation as:\n(a) Reduction in economic activities across political boundaries of nation.\n(b) Expansion of economic activities across political boundaries of nation.\n(c) The emergence of global markets for industrial sector only.\n(d) The emergence of global market for agricultural and industrial market.",
+        "options": {
+          "A": "(a)",
+          "B": "(b)",
+          "C": "(c)",
+          "D": "(a) and (d)"
+        },
+        "correctAnswer": "B",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-75",
+        "text": "Who said that liberalization is going to promote economic growth and public welfare?",
+        "options": {
+          "A": "Mohammad Yunus",
+          "B": "Adam Smith",
+          "C": "Manmohan Singh",
+          "D": "M.S. Swaminathan"
+        },
+        "correctAnswer": "B",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-76",
+        "text": "Growth in the index of wholesale prices is considered as an index of:",
+        "options": {
+          "A": "Economic Policy",
+          "B": "Inflation",
+          "C": "Export",
+          "D": "Import"
+        },
+        "correctAnswer": "B",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-77",
+        "text": "The government also liberalised the capital flows in form of _____.",
+        "options": {
+          "A": "FDI",
+          "B": "Control on MNC's",
+          "C": "Promotion of PSU's",
+          "D": "Promotion of Indian industries"
+        },
+        "correctAnswer": "A",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-78",
+        "text": "In early 1991, a major economic crisis surfaced in India. To tackle the problems, the government introduced a programme of:\n(a) Macroeconomic stabilization\n(b) Structural reforms\n(c) National education policy\nWhich of the following is correct?",
+        "options": {
+          "A": "Only (a)",
+          "B": "Only (b)",
+          "C": "Both the (a) and (b)",
+          "D": "Only (c)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-79",
+        "text": "Which of the following condition was laid down by IMF in 1991, for the grant of assistance to India?",
+        "options": {
+          "A": "Raise the import duty",
+          "B": "Grow the export",
+          "C": "Devaluation of the Indian Rupee",
+          "D": "Reduce international trade"
+        },
+        "correctAnswer": "C",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-80",
+        "text": "In which state was the first Export Processing Zone (EPZ) setup?",
+        "options": {
+          "A": "Maharashtra",
+          "B": "Gujarat",
+          "C": "Rajasthan",
+          "D": "Delhi"
+        },
+        "correctAnswer": "B",
+        "explanation": "Economics",
+        "category": "Economics"
+      },
+      {
+        "id": "psi23-81",
+        "text": "Article 243-A of the Indian Constitution related to the Panchayat Raj provides for which of the following?",
+        "options": {
+          "A": "Reservation of seats",
+          "B": "Gram Sabha",
+          "C": "Election of Panchayat",
+          "D": "Audit of Panchayat"
+        },
+        "correctAnswer": "B",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "psi23-82",
+        "text": "Which Act is related to the establishment of Zilla Parishads and Panchayat Samitis in Maharashtra?",
+        "options": {
+          "A": "Act 1958",
+          "B": "Act 1961",
+          "C": "Act 1988",
+          "D": "Act 1948"
+        },
+        "correctAnswer": "B",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "psi23-83",
+        "text": "Consider the statements regarding Standing Committee of Zilla Parishad.\n(a) There is a provision of independent Chairman for Standing Committee.\n(b) Zilla Parishad Chairman is the Chairman of Standing Committee.\n(c) Chief Executive Officer of Zilla Parishad is secretary of Standing Committee.\n(d) Deputy Chief Executive Officer works is the secretary of Standing Committee of ZP.\nChoose the correct statements.",
+        "options": {
+          "A": "(a), (b), (c) Correct",
+          "B": "(b), (c) Correct",
+          "C": "(b), (d) Correct",
+          "D": "None of these"
+        },
+        "correctAnswer": "C",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "psi23-84",
+        "text": "Which of the following Articles of the Indian Constitution deals with Gramsabha?",
+        "options": {
+          "A": "Article 244 C",
+          "B": "Article 243 D",
+          "C": "Article 243 A",
+          "D": "Article 241 A"
+        },
+        "correctAnswer": "C",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "psi23-85",
+        "text": "Lord Ripon's resolution which is known as 'Magna Carta' of Local Self Government in India was passed in which year?",
+        "options": {
+          "A": "1726",
+          "B": "1935",
+          "C": "1882",
+          "D": "1687"
+        },
+        "correctAnswer": "C",
+        "explanation": "Polity",
+        "category": "Polity"
+      },
+      {
+        "id": "psi23-86",
+        "text": "What thesis did Dr. Babasaheb Ambedkar write for his M.A. degree at Columbia University?",
+        "options": {
+          "A": "Ancient Indian Commerce",
+          "B": "National Divident of India",
+          "C": "Problem of Rupee",
+          "D": "Buddha and his Dhamma"
+        },
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-87",
+        "text": "Who among the following played an important role in setting up the secret organization Aryabandhav Samaj?",
+        "options": {
+          "A": "Shamrao Deshpande",
+          "B": "Shridhar Hari Khair",
+          "C": "Venkatesh Khankhoje",
+          "D": "Shidhnath Krushna Kane"
+        },
+        "correctAnswer": "C",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-88",
+        "text": "Which of the following personalities were related with organisation of Dakshin Maharashtra Bahishkrut Mangaon Parishad in 1920?\n(a) Appasaheb Dadagowda Patil  (b) Dattoba Pawar\n(c) Tukaram Ganeshacharya  (d) Gangaram Kamble",
+        "options": {
+          "A": "(a) and (b) only",
+          "B": "(b) and (c) only",
+          "C": "(c) and (d) only",
+          "D": "all of the above are correct"
+        },
+        "correctAnswer": "D",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-89",
+        "text": "Identify the correct statement from the following.\n(a) Mrs. Wilson ran three school in Mumbai for Girls.\n(b) Scottish Mission started the first English school in Pune.\n(c) The American Marathi Mission started the education of girls in Mumbai.",
+        "options": {
+          "A": "(a), (b), (c)",
+          "B": "(b), (c)",
+          "C": "only (b)",
+          "D": "only (a)"
+        },
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-90",
+        "text": "Vishnubuwa Brahmachari retorted to the criticism on vedic religion through which of the following Newspaper?",
+        "options": {
+          "A": "Vartman Deepika",
+          "B": "Dnyanoday",
+          "C": "Dnyan Prakash",
+          "D": "Sanskrit Chandrika"
+        },
+        "correctAnswer": "A",
+        "explanation": "History",
+        "category": "History"
+      },
+      {
+        "id": "psi23-91",
+        "text": "What is the current name given to the foreign policy implemented by India to increase relations with South-East Asian Countries?",
+        "options": {
+          "A": "Must East",
+          "B": "Act East",
+          "C": "Fast East",
+          "D": "Just East"
+        },
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-92",
+        "text": "Which rivers were given to India and Pakistan under the Indus water treaty between India and Pakistan in 1960?",
+        "options": {
+          "A": "Ravi, Sutlej and Beas to India and Indus, Chenab and Jhelum to Pakistan",
+          "B": "Ravi, Sutlej and Beas to Pakistan and Indus, Chenab and Jhelum to India",
+          "C": "Meghana, Padma, and Someshwari to India and Indus, Mahananda, and Kosi to Pakistan",
+          "D": "None of these"
+        },
+        "correctAnswer": "A",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-93",
+        "text": "The term, 'Two state solution', is sometimes mentioned in news in the context of the affairs of which country?",
+        "options": {
+          "A": "China",
+          "B": "North Korea",
+          "C": "Iraq",
+          "D": "Israel"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-94",
+        "text": "Which of the following is/are incorrect statement/s?\n(a) The Neemrana Dialogue is related to India-China Relations.\n(b) The Ottawa Dialogue is related to India-Pakistan Relations.\n(c) Shangri-La Dialogue is related to India-Singapore Relations.\n(d) Raisina Dialogue is India's flagship conference of geo politics and geo economics.\nChoose correct answer:",
+        "options": {
+          "A": "(a), (b), (c)",
+          "B": "(b), (c), (d)",
+          "C": "(a), (c)",
+          "D": "(c), (d)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-95",
+        "text": "Which of the following country is not a member of South Asian Free Trade Area (SAFTA)?",
+        "options": {
+          "A": "Afghanistan",
+          "B": "Bhutan",
+          "C": "Maldives",
+          "D": "Myanmar"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-96",
+        "text": "The Commission led by Justice G. Rohini, appointed by government of India is in the news. What is the purpose of this Commission?",
+        "options": {
+          "A": "To remove injustice done to wrestlers.",
+          "B": "To examine the concentration of reservation and benefits among dominant OBC caste groups.",
+          "C": "To suggest reforms to modernize the defence sector.",
+          "D": "To control the corruption and black money."
+        },
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-97",
+        "text": "Who has been awarded the 'Nobel Peace Prize' for the year 2023?",
+        "options": {
+          "A": "Narges Mohammadi",
+          "B": "Pierre Agostini",
+          "C": "Jon Fosse",
+          "D": "Claudia Goldin"
+        },
+        "correctAnswer": "A",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-98",
+        "text": "G-20 does not include the following countries.\n(a) Argentina  (b) Italy  (c) Indonesia  (d) Pakistan  (e) Tajikistan",
+        "options": {
+          "A": "(a), (d)",
+          "B": "(a), (c), (e)",
+          "C": "(d), (e)",
+          "D": "(c), (e)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-99",
+        "text": "What is the purpose of 'Consumer Protection Act 2019'?\n(a) Replacing the 'Consumer Act 1986'.\n(b) Strengthening consumer protection provisions.\n(c) Protecting the consumer in online transactions.\n(d) Protecting the consumer in the age of globalization.",
+        "options": {
+          "A": "Only (a)",
+          "B": "Only (a) and (d)",
+          "C": "Only (b), (c) and (d)",
+          "D": "(a), (b), (c) and (d)"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "psi23-100",
+        "text": "What is the theme of World Tourism Day 2023?",
+        "options": {
+          "A": "Tourism and Cultural Diversity",
+          "B": "Sustainable Tourism for a Better Tomorrow",
+          "C": "Tourism and Green Investment",
+          "D": "Exploring New Horizons in Tourism"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      }
+    ]
+  }
+]
