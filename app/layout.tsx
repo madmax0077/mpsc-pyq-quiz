@@ -3,9 +3,54 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 
+const SITE_URL = "https://mpscpyq.vercel.app";
+const SITE_NAME = "MPSC PYQ QUIZ";
+const DESCRIPTION =
+  "Free MPSC Previous Year Question practice — Group B, Group C papers with subject-wise quizzes, instant scoring & detailed answers. 100% free for all aspirants.";
+
 export const metadata: Metadata = {
-  title: "MPSC PYQ QUIZ — Don't know Academy",
-  description: "Create and take MPSC multiple-choice quizzes — local-first, fast, and simple.",
+  title: {
+    default: "MPSC PYQ QUIZ — Free Previous Year Question Practice",
+    template: "%s | MPSC PYQ QUIZ",
+  },
+  description: DESCRIPTION,
+  keywords: [
+    "MPSC", "MPSC PYQ", "MPSC previous year questions", "MPSC quiz",
+    "MPSC practice", "MPSC Group B", "MPSC Group C", "MPSC prelims",
+    "Maharashtra PSC", "MPSC free", "MPSC online test", "MPSC mock test",
+    "MPSC preparation", "MPSC study material",
+  ],
+  authors: [{ name: "Don't know Academy" }],
+  creator: "Don't know Academy",
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: "MPSC PYQ QUIZ — Free Previous Year Question Practice",
+    description: DESCRIPTION,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MPSC PYQ QUIZ — Free practice for MPSC aspirants",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MPSC PYQ QUIZ — Free PYQ Practice",
+    description: DESCRIPTION,
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +62,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-5084738834329206" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/og-image.png" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5084738834329206"

@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language } from "@/lib/types";
 import { getAllQuizzes } from "@/lib/storage";
 import AdBanner from "./AdBanner";
+import ShareButton from "./ShareButton";
 
 /** Merge quizzes baked into the site (`public/quizzes.json`) with any from this browser's localStorage. Same id → bundled wins. */
 function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
@@ -304,6 +305,14 @@ export default function StudentView({ language = "english" }: { language?: Langu
                 </div>
               </div>
             )}
+
+            {/* Share CTA */}
+            <div className="rounded-xl border border-indigo-100 bg-gradient-to-r from-indigo-50 to-violet-50 p-5 text-center">
+              <p className="mb-3 text-sm font-medium text-slate-600">
+                Know someone preparing for MPSC? Help them practice for free!
+              </p>
+              <ShareButton />
+            </div>
           </>
         )}
       </div>
@@ -418,6 +427,9 @@ export default function StudentView({ language = "english" }: { language?: Langu
                 ? "— Good effort, keep practicing!"
                 : "— Review the answers below."}
           </p>
+          <div className="mt-4 flex justify-center">
+            <ShareButton score={{ correct: score, total }} />
+          </div>
         </div>
       )}
 
@@ -450,6 +462,9 @@ export default function StudentView({ language = "english" }: { language?: Langu
                 Overall: {totalCategoryScore}/{totalCategoryQuestions} ({totalCategoryQuestions > 0 ? Math.round((totalCategoryScore / totalCategoryQuestions) * 100) : 0}%)
               </p>
               <p className="text-xs text-slate-500">All {totalPages} sets completed!</p>
+              <div className="mt-3 flex justify-center">
+                <ShareButton score={{ correct: totalCategoryScore, total: totalCategoryQuestions }} />
+              </div>
             </div>
           )}
         </div>
