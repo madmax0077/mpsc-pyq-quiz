@@ -481,8 +481,13 @@ export default function StudentView({ language = "english" }: { language?: Langu
                     : "border-slate-200"
               }`}
             >
-              <div className="p-5">
-                <div className="mb-4 flex items-start gap-3">
+              <div className="relative p-5">
+                {isCategoryQuiz && q.sourceTag && (
+                  <span className="absolute top-2 right-2 rounded-md bg-violet-100 px-2 py-0.5 text-[10px] font-semibold text-violet-600 leading-tight max-w-[45%] truncate">
+                    {q.sourceTag}
+                  </span>
+                )}
+                <div className={`mb-4 flex items-start gap-3 ${isCategoryQuiz && q.sourceTag ? "pr-[calc(45%+0.5rem)] sm:pr-0" : ""}`}>
                   <span className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
                     qSubmitted && isCorrect
                       ? "bg-emerald-100 text-emerald-700"
@@ -496,12 +501,7 @@ export default function StudentView({ language = "english" }: { language?: Langu
                   }`}>
                     {globalIdx + 1}
                   </span>
-                  <p className="flex-1 font-medium text-slate-800 leading-relaxed">{q.text}</p>
-                  {isCategoryQuiz && q.sourceTag && (
-                    <span className="ml-2 shrink-0 rounded-md bg-violet-100 px-2 py-0.5 text-[10px] font-semibold text-violet-600 leading-tight whitespace-nowrap">
-                      {q.sourceTag}
-                    </span>
-                  )}
+                  <p className="font-medium text-slate-800 leading-relaxed">{q.text}</p>
                 </div>
 
                 {q.imageUrl && (
