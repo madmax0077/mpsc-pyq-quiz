@@ -1,10 +1,12 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language } from "@/lib/types";
 import { getAllQuizzes } from "@/lib/storage";
+import { markAttempted, getCategoryProgress, reportQuestion } from "@/lib/progress";
 import AdBanner from "./AdBanner";
 import ShareButton from "./ShareButton";
+import Confetti from "./Confetti";
 
 /** Merge quizzes baked into the site (`public/quizzes.json`) with any from this browser's localStorage. Same id → bundled wins. */
 function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
@@ -30,6 +32,26 @@ function seededShuffle<T>(arr: T[], seed: string): T[] {
   return a;
 }
 
+const SITE_URL = "https://mpscpyq.vercel.app";
+
+const MOTIVATIONAL_QUOTES = [
+  { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+  { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+  { text: "Hard work beats talent when talent doesn't work hard.", author: "Tim Notke" },
+  { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
+  { text: "It does not matter how slowly you go as long as you do not stop.", author: "Confucius" },
+  { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+  { text: "Don't watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
+  { text: "You don't have to be great to start, but you have to start to be great.", author: "Zig Ziglar" },
+  { text: "Discipline is the bridge between goals and accomplishment.", author: "Jim Rohn" },
+  { text: "The future belongs to those who prepare for it today.", author: "Malcolm X" },
+  { text: "A little progress each day adds up to big results.", author: "Satya Nani" },
+  { text: "Winners never quit, and quitters never win.", author: "Vince Lombardi" },
+  { text: "Education is the most powerful weapon to change the world.", author: "Nelson Mandela" },
+  { text: "Success usually comes to those who are too busy to be looking for it.", author: "Henry David Thoreau" },
+  { text: "Strive for progress, not perfection.", author: "Unknown" },
+];
+
 const CATEGORY_COLORS: Record<Category, { gradient: string; icon: string; badge: string }> = {
   Polity:    { gradient: "from-blue-500 to-blue-600",    icon: "M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z", badge: "bg-blue-100 text-blue-700" },
   History:   { gradient: "from-amber-500 to-amber-600",  icon: "M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z", badge: "bg-amber-100 text-amber-700" },
@@ -38,6 +60,35 @@ const CATEGORY_COLORS: Record<Category, { gradient: string; icon: string; badge:
   GK:        { gradient: "from-pink-500 to-pink-600",    icon: "M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5", badge: "bg-pink-100 text-pink-700" },
   Economics: { gradient: "from-teal-500 to-teal-600",    icon: "M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z", badge: "bg-teal-100 text-teal-700" },
 };
+
+function ChallengeButton({ quizId, score, total }: { quizId: string; score: number; total: number }) {
+  const [copied, setCopied] = useState(false);
+  const link = `${SITE_URL}?cq=${encodeURIComponent(quizId)}&cs=${score}&ct=${total}&cn=${encodeURIComponent("A friend")}`;
+
+  const share = () => {
+    const text = `I scored ${score}/${total} on MPSC PYQ QUIZ! Can you beat me?`;
+    if (navigator.share) {
+      navigator.share({ title: "MPSC PYQ Challenge", text, url: link }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(`${text}\n${link}`).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }).catch(() => {});
+    }
+  };
+
+  return (
+    <button
+      onClick={share}
+      className="flex items-center gap-1.5 rounded-lg border-2 border-amber-300 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700 shadow-sm hover:bg-amber-100 transition-colors dark:bg-amber-900/30 dark:border-amber-600 dark:text-amber-400 dark:hover:bg-amber-900/50"
+    >
+      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+      </svg>
+      {copied ? "Link Copied!" : "Challenge a Friend"}
+    </button>
+  );
+}
 
 interface DisplayQuiz {
   id: string;
@@ -48,7 +99,14 @@ interface DisplayQuiz {
   quizCount?: number;
 }
 
-export default function StudentView({ language = "english" }: { language?: Language }) {
+interface ChallengeInfo {
+  quizId: string;
+  name: string;
+  score: number;
+  total: number;
+}
+
+export default function StudentView({ language = "english", challenge }: { language?: Language; challenge?: ChallengeInfo | null }) {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
   const [answers, setAnswers] = useState<Record<string, OptionKey>>({});
@@ -57,6 +115,9 @@ export default function StudentView({ language = "english" }: { language?: Langu
   const [currentPage, setCurrentPage] = useState(0);
   const [submittedPages, setSubmittedPages] = useState<Set<number>>(new Set());
   const [pageScores, setPageScores] = useState<Record<number, { correct: number; total: number }>>({});
+  const [showConfetti, setShowConfetti] = useState(false);
+  const [reportedIds, setReportedIds] = useState<Set<string>>(new Set());
+  const [reportToast, setReportToast] = useState("");
 
   useEffect(() => {
     let cancelled = false;
@@ -136,7 +197,28 @@ export default function StudentView({ language = "english" }: { language?: Langu
     };
   }, [quizzes]);
 
-  const selectQuiz = (quiz: DisplayQuiz) => {
+  const dailyQuote = useMemo(() => {
+    const today = new Date().toISOString().slice(0, 10);
+    let h = 0;
+    for (let i = 0; i < today.length; i++) h = ((h << 5) - h + today.charCodeAt(i)) | 0;
+    return MOTIVATIONAL_QUOTES[Math.abs(h) % MOTIVATIONAL_QUOTES.length];
+  }, []);
+
+  const catProgress = useMemo(() => {
+    const map: Record<string, number> = {};
+    for (const cat of CATEGORIES) map[cat] = getCategoryProgress(cat);
+    return map;
+  }, [submitted, submittedPages]);
+
+  useEffect(() => {
+    if (challenge && quizzes.length > 0 && !selectedQuiz) {
+      const allQuizzes = [...regularQuizzes, ...categoryQuizzes];
+      const match = allQuizzes.find((q) => q.id === challenge.quizId);
+      if (match) selectQuiz(match);
+    }
+  }, [challenge, quizzes]);
+
+  const selectQuiz = useCallback((quiz: DisplayQuiz) => {
     setSelectedQuiz(quiz);
     setAnswers({});
     setSubmitted(false);
@@ -144,7 +226,8 @@ export default function StudentView({ language = "english" }: { language?: Langu
     setCurrentPage(0);
     setSubmittedPages(new Set());
     setPageScores({});
-  };
+    setShowConfetti(false);
+  }, []);
 
   const handleAnswer = (questionId: string, option: OptionKey) => {
     if (submitted) return;
@@ -165,6 +248,11 @@ export default function StudentView({ language = "english" }: { language?: Langu
     }
     setScore(correct);
     setSubmitted(true);
+    const pctResult = selectedQuiz.questions.length > 0 ? Math.round((correct / selectedQuiz.questions.length) * 100) : 0;
+    if (pctResult >= 80) setShowConfetti(true);
+    if (selectedQuiz.category) {
+      markAttempted(selectedQuiz.category, selectedQuiz.questions.filter((q) => answers[q.id]).map((q) => q.id));
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -188,6 +276,11 @@ export default function StudentView({ language = "english" }: { language?: Langu
 
     setSubmittedPages((prev) => new Set(prev).add(currentPage));
     setPageScores((prev) => ({ ...prev, [currentPage]: { correct, total: pageQs.length } }));
+    const pagePct = pageQs.length > 0 ? Math.round((correct / pageQs.length) * 100) : 0;
+    if (pagePct >= 80) setShowConfetti(true);
+    if (selectedQuiz?.category) {
+      markAttempted(selectedQuiz.category, pageQs.filter((q) => answers[q.id]).map((q) => q.id));
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -209,6 +302,18 @@ export default function StudentView({ language = "english" }: { language?: Langu
     setCurrentPage(0);
     setSubmittedPages(new Set());
     setPageScores({});
+  };
+
+  const handleReport = (qId: string, qText: string) => {
+    const ok = reportQuestion(qId, qText, "Wrong answer / needs correction");
+    if (ok) {
+      setReportedIds((prev) => new Set(prev).add(qId));
+      setReportToast("Thanks for reporting! We'll review this question.");
+      setTimeout(() => setReportToast(""), 3000);
+    } else {
+      setReportToast("You already reported this question.");
+      setTimeout(() => setReportToast(""), 2000);
+    }
   };
 
   /* --------- Marathi Coming Soon --------- */
@@ -252,6 +357,21 @@ export default function StudentView({ language = "english" }: { language?: Langu
           </div>
         ) : (
           <>
+            {/* Daily Motivation Quote */}
+            <div className="rounded-xl border border-amber-200/60 bg-gradient-to-r from-amber-50 to-orange-50 px-5 py-4 dark:from-amber-950/20 dark:to-orange-950/20 dark:border-amber-800/40">
+              <div className="flex gap-3">
+                <span className="mt-0.5 text-xl">💡</span>
+                <div>
+                  <p className="text-sm font-medium italic text-slate-700 dark:text-slate-200">
+                    &ldquo;{dailyQuote.text}&rdquo;
+                  </p>
+                  <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+                    — {dailyQuote.author}
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Daily Quiz */}
             {dailyQuiz && (
               <button
@@ -288,6 +408,12 @@ export default function StudentView({ language = "english" }: { language?: Langu
                   {categoryQuizzes.map((cq) => {
                     const cat = cq.category!;
                     const colors = CATEGORY_COLORS[cat];
+                    const attempted = catProgress[cat] || 0;
+                    const totalQ = cq.questions.length;
+                    const progressPct = totalQ > 0 ? Math.min(100, Math.round((attempted / totalQ) * 100)) : 0;
+                    const r = 18;
+                    const circ = 2 * Math.PI * r;
+                    const offset = circ - (progressPct / 100) * circ;
                     return (
                       <button
                         key={cq.id}
@@ -297,23 +423,29 @@ export default function StudentView({ language = "english" }: { language?: Langu
                         <div className={`h-1.5 bg-gradient-to-r ${colors.gradient}`} />
                         <div className="p-5">
                           <div className="flex items-center gap-3">
-                            <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br ${colors.gradient} text-white shadow-sm`}>
-                              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d={colors.icon} />
+                            <div className="relative shrink-0">
+                              <svg width="44" height="44" className="-rotate-90">
+                                <circle cx="22" cy="22" r={r} fill="none" strokeWidth="3" className="stroke-slate-100 dark:stroke-slate-700" />
+                                {progressPct > 0 && (
+                                  <circle cx="22" cy="22" r={r} fill="none" strokeWidth="3" strokeLinecap="round" strokeDasharray={circ} strokeDashoffset={offset} style={{ stroke: colors.gradient.includes("blue") ? "#3b82f6" : colors.gradient.includes("amber") ? "#f59e0b" : colors.gradient.includes("emerald") ? "#10b981" : colors.gradient.includes("purple") ? "#8b5cf6" : colors.gradient.includes("pink") ? "#ec4899" : "#14b8a6" }} />
+                                )}
                               </svg>
+                              <div className="absolute inset-0 flex items-center justify-center">
+                                <span className="text-[10px] font-bold text-slate-600 dark:text-slate-300">{progressPct}%</span>
+                              </div>
                             </div>
                             <div>
                               <h3 className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
                                 {cq.title}
                               </h3>
                               <p className="text-xs text-slate-500 dark:text-slate-400">
-                                {cq.questions.length} question{cq.questions.length !== 1 ? "s" : ""}
+                                {attempted}/{totalQ} attempted
                               </p>
                             </div>
                           </div>
                           <div className="mt-3 flex items-center justify-end">
                             <span className="text-xs font-medium text-indigo-500 group-hover:text-indigo-600 transition-colors flex items-center gap-1">
-                              Start Practice
+                              {progressPct >= 100 ? "Review All" : "Start Practice"}
                               <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                               </svg>
@@ -400,6 +532,24 @@ export default function StudentView({ language = "english" }: { language?: Langu
 
   return (
     <div className="space-y-6">
+      {showConfetti && <Confetti />}
+
+      {/* Report Toast */}
+      {reportToast && (
+        <div className="animate-slide-up fixed bottom-6 right-6 z-50 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-lg">
+          {reportToast}
+        </div>
+      )}
+
+      {/* Challenge Banner */}
+      {challenge && challenge.quizId === selectedQuiz?.id && (
+        <div className="animate-slide-up rounded-xl border-2 border-amber-300 bg-gradient-to-r from-amber-50 to-orange-50 p-4 text-center dark:from-amber-950/30 dark:to-orange-950/30 dark:border-amber-600">
+          <p className="text-base font-bold text-amber-700 dark:text-amber-400">
+            ⚔️ {challenge.name} scored {challenge.score}/{challenge.total}. Can you beat them?
+          </p>
+        </div>
+      )}
+
       {/* Header */}
       <div className="flex items-center gap-3">
         <button
@@ -484,8 +634,20 @@ export default function StudentView({ language = "english" }: { language?: Langu
                 ? "— Good effort, keep practicing!"
                 : "— Review the answers below."}
           </p>
-          <div className="mt-4 flex justify-center">
+          {challenge && challenge.quizId === selectedQuiz.id && (
+            <p className="mt-2 text-sm font-bold">
+              {score > challenge.score ? (
+                <span className="text-emerald-600 dark:text-emerald-400">🏆 You beat {challenge.name}! ({challenge.score}/{challenge.total})</span>
+              ) : score === challenge.score ? (
+                <span className="text-amber-600 dark:text-amber-400">🤝 It&apos;s a tie with {challenge.name}!</span>
+              ) : (
+                <span className="text-red-600 dark:text-red-400">😤 {challenge.name} wins ({challenge.score}/{challenge.total}). Try again!</span>
+              )}
+            </p>
+          )}
+          <div className="mt-4 flex flex-wrap justify-center gap-2">
             <ShareButton score={{ correct: score, total }} />
+            <ChallengeButton quizId={selectedQuiz.id} score={score} total={total} />
           </div>
         </div>
       )}
@@ -677,6 +839,18 @@ export default function StudentView({ language = "english" }: { language?: Langu
                           <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{q.explanation}</p>
                         )}
                       </div>
+                    </div>
+                    <div className="mt-2 ml-6 flex justify-end">
+                      <button
+                        onClick={() => handleReport(q.id, q.text)}
+                        disabled={reportedIds.has(q.id)}
+                        className="flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-medium text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed dark:hover:bg-red-900/20 dark:hover:text-red-400"
+                      >
+                        <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                        </svg>
+                        {reportedIds.has(q.id) ? "Reported" : "Report"}
+                      </button>
                     </div>
                   </div>
                 )}

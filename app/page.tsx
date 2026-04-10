@@ -11,9 +11,19 @@ export default function Home() {
   const { loading, studentUser, isAdmin, logoutAdmin, logoutStudent } = useAuth();
   const [language, setLanguage] = useState<Language>("english");
   const [dark, setDark] = useState(false);
+  const [challenge, setChallenge] = useState<{ quizId: string; name: string; score: number; total: number } | null>(null);
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
+    const params = new URLSearchParams(window.location.search);
+    const cq = params.get("cq");
+    const cs = params.get("cs");
+    const ct = params.get("ct");
+    const cn = params.get("cn");
+    if (cq && cs && ct) {
+      setChallenge({ quizId: cq, name: cn || "A friend", score: parseInt(cs, 10), total: parseInt(ct, 10) });
+      window.history.replaceState({}, "", window.location.pathname);
+    }
   }, []);
 
   const toggleDark = useCallback(() => {
@@ -139,7 +149,7 @@ export default function Home() {
           </span>
         </div>
 
-        {mode === "admin" ? <AdminView /> : <StudentView language={language} />}
+        {mode === "admin" ? <AdminView /> : <StudentView language={language} challenge={challenge} />}
       </main>
 
       {/* ---- Footer ---- */}
