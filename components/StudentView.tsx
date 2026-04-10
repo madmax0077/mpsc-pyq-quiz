@@ -167,9 +167,24 @@ export default function StudentView({ language = "english", challenge }: { langu
     setStreak(getStreak());
   }, [submitted, submittedPages]);
 
+  useEffect(() => {
+    setSelectedQuiz(null);
+    setAnswers({});
+    setSubmitted(false);
+    setScore(0);
+    setCurrentPage(0);
+    setSubmittedPages(new Set());
+    setPageScores({});
+  }, [language]);
+
+  const filteredQuizzes = useMemo(() => {
+    if (language === "marathi") return quizzes.filter((q) => q.language === "marathi");
+    return quizzes.filter((q) => q.language !== "marathi");
+  }, [quizzes, language]);
+
   const categoryQuizzes = useMemo<DisplayQuiz[]>(() => {
     const catMap = new Map<Category, Map<string, Question>>();
-    for (const quiz of quizzes) {
+    for (const quiz of filteredQuizzes) {
       const tag = quiz.tag || quiz.title;
       for (const q of quiz.questions) {
         if (!q.category) continue;
@@ -191,37 +206,37 @@ export default function StudentView({ language = "english", challenge }: { langu
       });
     }
     return result;
-  }, [quizzes]);
+  }, [filteredQuizzes]);
 
   const regularQuizzes = useMemo<DisplayQuiz[]>(
     () =>
-      quizzes.map((q) => ({
+      filteredQuizzes.map((q) => ({
         id: q.id,
         title: q.title,
         questions: q.questions,
         isCategory: false,
         quizCount: q.questions.length,
       })),
-    [quizzes],
+    [filteredQuizzes],
   );
 
   const dailyQuiz = useMemo<DisplayQuiz | null>(() => {
     const pool: Question[] = [];
-    for (const quiz of quizzes) {
+    for (const quiz of filteredQuizzes) {
       for (const q of quiz.questions) pool.push(q);
     }
     if (pool.length === 0) return null;
     const today = new Date().toISOString().slice(0, 10);
-    const shuffled = seededShuffle(pool, today);
+    const shuffled = seededShuffle(pool, today + language);
     const picked = shuffled.slice(0, Math.min(10, shuffled.length));
     const monthDay = new Date().toLocaleDateString("en-IN", { month: "short", day: "numeric" });
     return {
-      id: "daily",
-      title: `Daily Quiz — ${monthDay}`,
+      id: `daily-${language}`,
+      title: language === "marathi" ? `दैनिक प्रश्नमंजुषा — ${monthDay}` : `Daily Quiz — ${monthDay}`,
       questions: picked,
       isCategory: false,
     };
-  }, [quizzes]);
+  }, [filteredQuizzes, language]);
 
   const dailyQuote = useMemo(() => {
     const today = new Date().toISOString().slice(0, 10);
@@ -238,12 +253,12 @@ export default function StudentView({ language = "english", challenge }: { langu
 
   const allSearchableQuestions = useMemo(() => {
     const result: { question: Question; quizTitle: string }[] = [];
-    for (const quiz of quizzes) {
+    for (const quiz of filteredQuizzes) {
       const tag = quiz.tag || quiz.title;
       for (const q of quiz.questions) result.push({ question: q, quizTitle: tag });
     }
     return result;
-  }, [quizzes]);
+  }, [filteredQuizzes]);
 
   useEffect(() => {
     if (challenge && quizzes.length > 0 && !selectedQuiz) {
@@ -355,27 +370,6 @@ export default function StudentView({ language = "english", challenge }: { langu
     }
   };
 
-  /* --------- Marathi Coming Soon --------- */
-  if (language === "marathi") {
-    return (
-      <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-orange-300 bg-gradient-to-br from-orange-50 to-amber-50 p-16 text-center dark:from-orange-950/30 dark:to-amber-950/30 dark:border-orange-700">
-        <div className="mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
-          <svg className="h-10 w-10 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
-          </svg>
-        </div>
-        <h2 className="text-2xl font-bold text-orange-700 dark:text-orange-400">लवकरच येत आहे!</h2>
-        <p className="mt-2 text-lg font-semibold text-slate-700 dark:text-slate-200">Coming Soon</p>
-        <p className="mt-3 max-w-sm text-sm text-slate-500 dark:text-slate-400">
-          मराठी प्रश्नसंच लवकरच उपलब्ध होईल. कृपया सध्या English मध्ये सराव करा.
-        </p>
-        <p className="mt-1 max-w-sm text-xs text-slate-400 dark:text-slate-500">
-          Marathi quizzes will be available soon. Please practice in English for now.
-        </p>
-      </div>
-    );
-  }
-
   /* --------- Quiz selector --------- */
   if (!selectedQuiz) {
     const hasAny = regularQuizzes.length > 0 || categoryQuizzes.length > 0;
@@ -389,9 +383,11 @@ export default function StudentView({ language = "english", challenge }: { langu
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
               </svg>
             </div>
-            <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">No quizzes available</p>
+            <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">
+              {language === "marathi" ? "मराठी प्रश्नसंच उपलब्ध नाहीत" : "No quizzes available"}
+            </p>
             <p className="mt-1 text-sm text-slate-400 dark:text-slate-500">
-              Switch to Admin Mode to create your first quiz.
+              {language === "marathi" ? "मराठी प्रश्नसंच लवकरच जोडले जातील." : "Switch to Admin Mode to create your first quiz."}
             </p>
           </div>
         ) : (
