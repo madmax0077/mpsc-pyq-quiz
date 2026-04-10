@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const SITE_URL = "https://mpscpyq.vercel.app";
+const SITE_URL = "https://www.mpscs.in";
 
 const SHARE_TEXT =
   "Free MPSC PYQ practice — Group B, Group C papers with subject-wise quizzes & instant scoring. 100% free!";

@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 
-const SITE_URL = "https://mpscpyq.vercel.app";
+const SITE_URL = "https://www.mpscs.in";
 const SITE_NAME = "MPSC PYQ QUIZ";
 const DESCRIPTION =
   "Free MPSC Previous Year Question practice — Group B, Group C papers with subject-wise quizzes, instant scoring & detailed answers. 100% free for all aspirants.";

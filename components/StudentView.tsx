@@ -36,7 +36,7 @@ function seededShuffle<T>(arr: T[], seed: string): T[] {
   return a;
 }
 
-const SITE_URL = "https://mpscpyq.vercel.app";
+const SITE_URL = "https://www.mpscs.in";
 
 const MOTIVATIONAL_QUOTES = [
   { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
@@ -681,21 +681,21 @@ export default function StudentView({ language = "english", challenge }: { langu
         <div
           className={`animate-slide-up rounded-2xl p-6 text-center shadow-sm ${
             pct >= 70
-              ? "bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200"
+              ? "bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 dark:from-emerald-950 dark:to-green-950 dark:border-emerald-800"
               : pct >= 40
-                ? "bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200"
-                : "bg-gradient-to-br from-red-50 to-rose-50 border border-red-200"
+                ? "bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 dark:from-amber-950 dark:to-yellow-950 dark:border-amber-800"
+                : "bg-gradient-to-br from-red-50 to-rose-50 border border-red-200 dark:from-red-950 dark:to-rose-950 dark:border-red-800"
           }`}
         >
           <p className="text-5xl font-extrabold tracking-tight">
             <span className={pct >= 70 ? "text-emerald-600" : pct >= 40 ? "text-amber-600" : "text-red-600"}>
               {score}
             </span>
-            <span className="text-slate-300">/{total}</span>
+            <span className="text-slate-400 dark:text-slate-100">/{total}</span>
           </p>
-          <p className="mt-2 text-sm font-medium text-slate-600 dark:text-slate-300">
+          <p className="mt-2 text-sm font-medium text-slate-600 dark:text-slate-100">
             You scored {pct}%
-            {skippedCount > 0 && <span className="text-slate-400"> ({skippedCount} skipped)</span>}
+            {skippedCount > 0 && <span className="text-slate-500 dark:text-slate-200"> ({skippedCount} skipped)</span>}
             {" "}
             {pct >= 70
               ? "— Excellent!"
@@ -714,7 +714,7 @@ export default function StudentView({ language = "english", challenge }: { langu
               )}
             </p>
           )}
-          <p className="mt-4 text-xs font-medium text-slate-500 dark:text-slate-400">
+          <p className="mt-4 text-xs font-medium text-slate-500 dark:text-slate-100">
             Think you did well? Dare a friend to beat your score!
           </p>
           <div className="mt-2 flex flex-wrap justify-center gap-2">
@@ -731,10 +731,10 @@ export default function StudentView({ language = "english", challenge }: { langu
             (() => {
               const pagePct = Math.round((currentPageScore.correct / currentPageScore.total) * 100);
               return pagePct >= 70
-                ? "bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200"
+                ? "bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 dark:from-emerald-950 dark:to-green-950 dark:border-emerald-800"
                 : pagePct >= 40
-                  ? "bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200"
-                  : "bg-gradient-to-br from-red-50 to-rose-50 border border-red-200";
+                  ? "bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 dark:from-amber-950 dark:to-yellow-950 dark:border-amber-800"
+                  : "bg-gradient-to-br from-red-50 to-rose-50 border border-red-200 dark:from-red-950 dark:to-rose-950 dark:border-red-800";
             })()
           }`}
         >
@@ -742,18 +742,18 @@ export default function StudentView({ language = "english", challenge }: { langu
             <span className={(() => { const p = Math.round((currentPageScore.correct / currentPageScore.total) * 100); return p >= 70 ? "text-emerald-600" : p >= 40 ? "text-amber-600" : "text-red-600"; })()}>
               {currentPageScore.correct}
             </span>
-            <span className="text-slate-300">/{currentPageScore.total}</span>
+            <span className="text-slate-400 dark:text-slate-100">/{currentPageScore.total}</span>
           </p>
           <p className="mt-1 text-center text-sm font-medium text-slate-600 dark:text-slate-300">
             Set {currentPage + 1} — {Math.round((currentPageScore.correct / currentPageScore.total) * 100)}% correct
           </p>
           {allPagesSubmitted && (
             <div className="mt-3 rounded-lg bg-white/60 p-3 text-center border border-slate-200 dark:bg-slate-800/60 dark:border-slate-700">
-              <p className="text-lg font-bold text-indigo-700">
+              <p className="text-lg font-bold text-indigo-700 dark:text-indigo-300">
                 Overall: {totalCategoryScore}/{totalCategoryQuestions} ({totalCategoryQuestions > 0 ? Math.round((totalCategoryScore / totalCategoryQuestions) * 100) : 0}%)
               </p>
-              <p className="text-xs text-slate-500">All {totalPages} sets completed!</p>
-              <p className="mt-2 text-xs font-medium text-slate-500 dark:text-slate-400">
+              <p className="text-xs text-slate-500 dark:text-slate-300">All {totalPages} sets completed!</p>
+              <p className="mt-2 text-xs font-medium text-slate-500 dark:text-slate-100">
                 Dare a friend to beat your score!
               </p>
               <div className="mt-2 flex flex-wrap justify-center gap-2">
