@@ -811,7 +811,7 @@ export default function StudentView({ language = "english", challenge }: { langu
                   }`}>
                     {globalIdx + 1}
                   </span>
-                  <p className="font-medium text-slate-800 leading-relaxed dark:text-slate-100">{q.text}</p>
+                  <p className="font-medium text-slate-800 leading-relaxed whitespace-pre-line dark:text-slate-100">{q.text}</p>
                 </div>
 
                 {q.imageUrl && (
@@ -878,7 +878,7 @@ export default function StudentView({ language = "english", challenge }: { langu
                             key
                           )}
                         </span>
-                        <span className="leading-snug">{q.options[key] || `Option ${key}`}</span>
+                        <span className="leading-snug whitespace-pre-line">{q.options[key] || `Option ${key}`}</span>
                       </label>
                     );
                   })}
@@ -912,7 +912,7 @@ export default function StudentView({ language = "english", challenge }: { langu
                               : `Incorrect — the answer is ${q.correctAnswer}.`}
                         </p>
                         {q.explanation && (
-                          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{q.explanation}</p>
+                          <p className="mt-1 text-sm text-slate-600 whitespace-pre-line dark:text-slate-300">{q.explanation}</p>
                         )}
                       </div>
                     </div>
