@@ -1,6 +1,20 @@
 import { Quiz } from "./types";
 
 const STORAGE_KEY = "mcq_quiz_app_quizzes";
+const MIGRATION_KEY = "mcq_migration_gk_to_ca";
+
+function migrateGKtoCurrentAffairs(): void {
+  if (typeof window === "undefined") return;
+  if (localStorage.getItem(MIGRATION_KEY)) return;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const updated = raw.replace(/"category"\s*:\s*"GK"/g, '"category":"Current Affairs"');
+      if (updated !== raw) localStorage.setItem(STORAGE_KEY, updated);
+    }
+    localStorage.setItem(MIGRATION_KEY, "1");
+  } catch { /* ignore */ }
+}
 
 export function saveQuiz(quiz: Quiz): void {
   const quizzes = getAllQuizzes();
@@ -19,6 +33,7 @@ export function saveQuiz(quiz: Quiz): void {
 
 export function getAllQuizzes(): Quiz[] {
   if (typeof window === "undefined") return [];
+  migrateGKtoCurrentAffairs();
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return [];
