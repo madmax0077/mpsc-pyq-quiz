@@ -4,9 +4,13 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language } from "@/lib/types";
 import { getAllQuizzes } from "@/lib/storage";
 import { markAttempted, getCategoryProgress, reportQuestion } from "@/lib/progress";
+import { recordStreak, getStreak } from "@/lib/streak";
+import { recordResult } from "@/lib/analytics";
 import AdBanner from "./AdBanner";
 import ShareButton from "./ShareButton";
 import Confetti from "./Confetti";
+import Analytics from "./Analytics";
+import SearchBar from "./SearchBar";
 
 /** Merge quizzes baked into the site (`public/quizzes.json`) with any from this browser's localStorage. Same id → bundled wins. */
 function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
@@ -119,6 +123,8 @@ export default function StudentView({ language = "english", challenge }: { langu
   const [showConfetti, setShowConfetti] = useState(false);
   const [reportedIds, setReportedIds] = useState<Set<string>>(new Set());
   const [reportToast, setReportToast] = useState("");
+  const [streak, setStreak] = useState(0);
+  const [showAnalytics, setShowAnalytics] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -154,6 +160,10 @@ export default function StudentView({ language = "english", challenge }: { langu
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    setStreak(getStreak());
+  }, [submitted, submittedPages]);
 
   const categoryQuizzes = useMemo<DisplayQuiz[]>(() => {
     const catMap = new Map<Category, Map<string, Question>>();
@@ -224,6 +234,15 @@ export default function StudentView({ language = "english", challenge }: { langu
     return map;
   }, [submitted, submittedPages]);
 
+  const allSearchableQuestions = useMemo(() => {
+    const result: { question: Question; quizTitle: string }[] = [];
+    for (const quiz of quizzes) {
+      const tag = quiz.tag || quiz.title;
+      for (const q of quiz.questions) result.push({ question: q, quizTitle: tag });
+    }
+    return result;
+  }, [quizzes]);
+
   useEffect(() => {
     if (challenge && quizzes.length > 0 && !selectedQuiz) {
       const allQuizzes = [...regularQuizzes, ...categoryQuizzes];
@@ -267,6 +286,8 @@ export default function StudentView({ language = "english", challenge }: { langu
     if (selectedQuiz.category) {
       markAttempted(selectedQuiz.category, selectedQuiz.questions.filter((q) => answers[q.id]).map((q) => q.id));
     }
+    recordStreak();
+    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz.id, quizTitle: selectedQuiz.title, category: selectedQuiz.category, score: correct, total: selectedQuiz.questions.length });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -295,6 +316,8 @@ export default function StudentView({ language = "english", challenge }: { langu
     if (selectedQuiz?.category) {
       markAttempted(selectedQuiz.category, pageQs.filter((q) => answers[q.id]).map((q) => q.id));
     }
+    recordStreak();
+    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz!.id, quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`, category: selectedQuiz?.category, score: correct, total: pageQs.length });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -371,6 +394,38 @@ export default function StudentView({ language = "english", challenge }: { langu
           </div>
         ) : (
           <>
+            {/* Streak + Search + My Stats row */}
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              {streak > 0 ? (
+                <div className="flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-100 to-amber-100 px-4 py-2 shadow-sm dark:from-orange-900/40 dark:to-amber-900/40">
+                  <span className="text-xl">🔥</span>
+                  <span className="text-sm font-bold text-orange-700 dark:text-orange-300">{streak} day{streak !== 1 ? "s" : ""} streak!</span>
+                </div>
+              ) : (
+                <div className="flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 dark:bg-slate-800">
+                  <span className="text-lg">🔥</span>
+                  <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Take a quiz to start your streak!</span>
+                </div>
+              )}
+              <div className="flex items-center gap-2">
+                <SearchBar allQuestions={allSearchableQuestions} />
+                <button
+                  onClick={() => setShowAnalytics(true)}
+                  className="flex items-center gap-1.5 rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
+                >
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                  </svg>
+                  <span className="hidden sm:inline">My Stats</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Analytics Dashboard */}
+            {showAnalytics && (
+              <Analytics streak={streak} onClose={() => setShowAnalytics(false)} />
+            )}
+
             {/* Daily Motivation Quote */}
             <div className="rounded-xl border border-amber-200/60 bg-gradient-to-r from-amber-50 to-orange-50 px-5 py-4 dark:from-amber-950/20 dark:to-orange-950/20 dark:border-amber-800/40">
               <div className="flex gap-3">
