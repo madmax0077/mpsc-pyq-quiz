@@ -121,7 +121,7 @@ export default function Home() {
               MPSC PYQ QUIZ &middot; Don&apos;t know Academy
             </p>
             <p className="text-[10px] text-slate-300">
-              Free PYQ practice for MPSC aspirants &middot; Group B &amp; Group C papers
+              Free PYQ practice for MPSC aspirants
             </p>
             <div className="flex items-center gap-4">
               <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline">
