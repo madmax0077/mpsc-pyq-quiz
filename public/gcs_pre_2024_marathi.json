@@ -1,0 +1,1308 @@
+{
+  "id": "gcs_pre_2024_mr",
+  "title": "MPSC Gazetted Civil Services Combined Pre 2024 (Marathi)",
+  "createdAt": "2024-12-07T10:00:00.000Z",
+  "questions": [
+    {
+      "id": "gcs_pre_2024_mr_1",
+      "text": "Who among the following founded the 'Tilak School of Politics'?",
+      "options": [
+        "Bipinchandra Pal",
+        "Shripad Amrut Dange",
+        "Lala Lajpatrai",
+        "Arvind Ghosh"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_2",
+      "text": "Who among the following gave a personal sum of ₹ 25,000 to the Elphinstone Fund?",
+      "options": [
+        "Balshastri Jambhekar",
+        "Ramkrishna Bhandarkar",
+        "Nana Jagannath Shankarseth",
+        "Waman Aabaji Modak"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_3",
+      "text": "Who was the prominent participant in the Satyagraha at Dharasana in the Civil Disobedience Movement?",
+      "options": [
+        "Kamaladevi Chatopadhyaya",
+        "Ambika Chakrawarti",
+        "Kasturba Gandhi",
+        "Sarojini Naidu"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_4",
+      "text": "Who was the leader in the uprising of 1857 in Kanpur?",
+      "options": [
+        "Tatya Tope",
+        "Azimulla",
+        "Nanasaheb",
+        "Maulavi Ahmedulla"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_5",
+      "text": "Noted Warali painter Jivya Soma Mhase was honored with which of the following awards?\n(a) Padma Bhushan (b) Padma Shri\n(c) Shilpguru (d) National award for tribal arts",
+      "options": [
+        "(a) and (d) are correct",
+        "Only (a) is correct",
+        "(b), (c) and (d) are correct",
+        "Only (d) is correct"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_6",
+      "text": "Simuka was the founder of the _________ dynasty.",
+      "options": [
+        "Satavahana",
+        "Sunga",
+        "Kanva",
+        "Saka"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_7",
+      "text": "Who was the main female collaborator with Mahatma Gandhi in the struggle of mill workers in Ahmedabad?",
+      "options": [
+        "Sarojini Naidu",
+        "Anusaya Sarabhai",
+        "Kasturba Gandhi",
+        "Aruna Asaf Ali"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_8",
+      "text": "Identify the wrong pairs.\n(a) Abdul Samad - Famous painter\n(b) Takhte Taus - Peacock throne\n(c) Prince Azam Shah - Bahamani ruler\n(d) Bibi ka Makbara - Memorial of Dilras Bano",
+      "options": [
+        "Only (c)",
+        "(a) and (d)",
+        "(b) and (d)",
+        "(c) and (d)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_9",
+      "text": "What were the main principles of the National Education Policy of 1968 based on the recommendations of the Kothari Commission?\n(a) Compulsory and free education till the age of 14 years.\n(b) Higher position and improved pay for teachers.\n(c) At least 10% of gross national income spent on education.",
+      "options": [
+        "Only (a) and (b)",
+        "Only (b) and (c)",
+        "Only (a) and (c)",
+        "All of the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_10",
+      "text": "Which of the following taxes was collected from Hindu and Muslim landlords respectively during the Sultanate rule?",
+      "options": [
+        "Jizya and Shar",
+        "Jizya and Khams",
+        "Khiraj and Zakat",
+        "Khams and Zakat"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_11",
+      "text": "After the split in the Indian National Congress in 1907, who made the statement 'National Congress Collapsed at Surat, this is our victory'?",
+      "options": [
+        "Lord Curzon",
+        "Lokmanya Tilak",
+        "Lord Morley",
+        "Lord Minto"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_12",
+      "text": "Abdul Razzaq, a Persian traveller visited Vijayanagar during the period of which of the following rulers?",
+      "options": [
+        "Harihar",
+        "Krishnadevrai",
+        "Devrai I",
+        "Devrai II"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_13",
+      "text": "Which of the following literature was written by King Harshavardhana?\n(a) Priyadarshika (b) Harshacharita (c) Ratnawali (d) Naganand",
+      "options": [
+        "Only (a), (c) and (d)",
+        "Only (a), (b) and (c)",
+        "Only (a), (b) and (d)",
+        "All of the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_14",
+      "text": "Which of the following objectives was outlined in the Nehru Report?",
+      "options": [
+        "Achieving Dominion Status",
+        "Creation of Two Nations",
+        "Achieving Home Rule",
+        "To gain complete Independence"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_15",
+      "text": "Match the correct pairs of extension centers of Swadeshi Movement and their concerned persons.\n(a) Mumbai - (i) Chidambaram Pillai\n(b) Delhi - (ii) Lala Lajpat Rai\n(c) Punjab - (iii) Lokmanya Tilak\n(d) Madras - (iv) Syed Raza Haider",
+      "options": [
+        "a-(iv), b-(iii), c-(ii), d-(i)",
+        "a-(iii), b-(iv), c-(ii), d-(i)",
+        "a-(iv), b-(i), c-(ii), d-(iii)",
+        "a-(i), b-(ii), c-(iv), d-(iii)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gcs_pre_2024_mr_16",
+      "text": "Which of the following is not a characteristic of intensive subsistence agriculture?\n(a) Intensive cultivation\n(b) Animal husbandry is a complementary business to agriculture\n(c) The vast size of the farm\n(d) Maximum yield production per hectare.",
+      "options": [
+        "Only (a)",
+        "(b) and (d)",
+        "Only (c)",
+        "(b), (c) and (d)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_17",
+      "text": "Which of the following is not the pattern of Urban settlement?",
+      "options": [
+        "Checker-board",
+        "Circular",
+        "Dispersed",
+        "Linear"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_18",
+      "text": "Match the correct pairs:\nCountry - National Park\n(a) India - (i) Jim Corbett\n(b) Ecuador - (ii) Grand Canyon\n(c) U.S.A. - (iii) Galapagos\n(d) Australia - (iv) Great barrier reef",
+      "options": [
+        "a-(i), b-(ii), c-(iii), d-(iv)",
+        "a-(iv), b-(iii), c-(ii), d-(i)",
+        "a-(i), b-(iii), c-(ii), d-(iv)",
+        "a-(iii), b-(i), c-(iv), d-(ii)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_19",
+      "text": "In which district is the Hetwane major irrigation scheme located?",
+      "options": [
+        "Sindhudurg",
+        "Satara",
+        "Beed",
+        "Raigad"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_20",
+      "text": "Which of the following is not a characteristic of sedimentary rock?",
+      "options": [
+        "Particles of many sizes are organized in a single rocks layer.",
+        "The rocks are huge and hard.",
+        "Fossils are mainly found in rocks.",
+        "Rocks are soft, so they wear out quickly."
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_21",
+      "text": "Match the correct pairs of census year and death rate in India:\n(a) 1981 - (i) 15\n(b) 1991 - (ii) 11\n(c) 2001 - (iii) 08\n(d) 2011 - (iv) 07",
+      "options": [
+        "a-(i), b-(ii), c-(iii), d-(iv)",
+        "a-(ii), b-(i), c-(iv), d-(iii)",
+        "a-(i), b-(iii), c-(iv), d-(ii)",
+        "a-(iv), b-(iii), c-(ii), d-(i)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_22",
+      "text": "Dispersed settlement have the following characteristics:\n(a) Found in hilly areas, grasslands, dense forests due to physical and environmental unfavourable conditions.\n(b) The structure of the houses in this settlement is isolated.\n(c) Due to rivers, mountain ranges, roads, railway lines etc. the clusters of houses are far away from each other.\n(d) These settlements are found in plains and fertile soil areas in India.\nWhich of the statement given above is/are correct?",
+      "options": [
+        "(a) only",
+        "(a) and (b) only",
+        "(a), (b) and (c)",
+        "All of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_23",
+      "text": "Which of the following is not the tributary of river Sindhu?",
+      "options": [
+        "Chinab",
+        "Biyas",
+        "Son",
+        "Ravi"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_24",
+      "text": "Which type of drainage pattern is found in Maharashtra?\n(a) Dendritic (b) Parallel (c) Indefinite (d) Trellis",
+      "options": [
+        "(a), (b) and (c)",
+        "(b), (c) and (d)",
+        "(a), (c) and (d)",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_25",
+      "text": "Choose the correct option considering the following statements:\nStatement (a): According to the final census of 2011, Mumbai sub-urban district had the highest population density in Maharashtra.\nStatement (b): According to the final census of 2011, Kolhapur district is the fifth most densely populated district in Maharashtra.",
+      "options": [
+        "Statement (a) is correct and Statement (b) is false",
+        "Statement (b) is correct and Statement (a) is false",
+        "Both Statements are wrong",
+        "Both Statements are correct"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_26",
+      "text": "Which of the following statements is incorrect?",
+      "options": [
+        "The Lakshadweep island group is in the Arabian Sea.",
+        "India's maritime boundary is 12 nautical miles from the coast.",
+        "Andman and Nicobar Islands are located in the Bay of Bengal.",
+        "India has a natural land border with Pakistan and Bangladesh."
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_27",
+      "text": "Through which of the following factors the fisheries development program is implemented effectively?\n(a) The Fishery Survey of India.\n(b) National fisheries development board.\n(c) Development of fishing harbours.\n(d) Meat Marketing.",
+      "options": [
+        "(a), (b)",
+        "(a), (b), (d)",
+        "(a), (b), (c)",
+        "(c), (d)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_28",
+      "text": "Which is the longest river in the United States from the options below?",
+      "options": [
+        "The Mississippi",
+        "The Columbia",
+        "The Snake",
+        "The Hudson"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_29",
+      "text": "In relation to Maharashtra which statements are true as per 2011 census?\n(a) In population Maharashtra rank 2nd in Country\n(b) Density is 365 per sq. km\n(c) Literacy is 82.91%\n(d) Sex ratio is 925",
+      "options": [
+        "Only (a), (b) and (c)",
+        "Only (b), (c) and (d)",
+        "Only (a), (c) and (d)",
+        "All the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_30",
+      "text": "Coal is found at which of the following place in Chandrapur district?\n(a) Bandar (b) Ghoggus (c) Telwasa (d) Wani",
+      "options": [
+        "(a), (b) and (c)",
+        "only (a)",
+        "only (b)",
+        "(b), (c) and (d)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gcs_pre_2024_mr_31",
+      "text": "Which geological evidence supports the notion that climate change is a natural and continuous process?",
+      "options": [
+        "Tree rings in high altitudes",
+        "Glacial advances and retreats",
+        "Sediment deposits in glacial lakes",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Environment"
+    },
+    {
+      "id": "gcs_pre_2024_mr_32",
+      "text": "Consider the following statements.\n(a) High latitudes generally have greater biodiversity than low latitudes.\n(b) Biodiversity is generally greater at lower altitude than at higher altitude on mountain slopes.\nWhich of the above statement/statements is/are correct?",
+      "options": [
+        "Only (a)",
+        "Only (b)",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Environment"
+    },
+    {
+      "id": "gcs_pre_2024_mr_33",
+      "text": "Government of India has established system of Air quality, Weather forecasting and Research (SAFAR) in which of the following four cities?",
+      "options": [
+        "Delhi, Pune, Ahmedabad, Mumbai",
+        "Delhi, Chennai, Mumbai, Kolkata",
+        "Delhi, Mumbai, Hyderabad, Chennai",
+        "Delhi, Mumbai, Bangalore, Chennai"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Environment"
+    },
+    {
+      "id": "gcs_pre_2024_mr_34",
+      "text": "Consider the following statements regarding global warming:\n(a) Anaerobic Methane is emitted with rice cultivation.\n(b) When nitrogen-based fertilizers are used, nitrous oxide is released into the soil.\nWhich of the above statement/statements is/are correct?",
+      "options": [
+        "Only (a)",
+        "Only (b)",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Environment"
+    },
+    {
+      "id": "gcs_pre_2024_mr_35",
+      "text": "PAN (Peroxyacetyl nitrate) is formed as a result of following interaction:",
+      "options": [
+        "Nitrogen oxide and sulfer dioxide",
+        "Carbon monoxide and volatile organic compounds",
+        "Nitrogen Oxide and hydrocarbons",
+        "Ozone and particulate matter"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Environment"
+    },
+    {
+      "id": "gcs_pre_2024_mr_36",
+      "text": "_________ development is prioritized over environment degradation in energy generation.",
+      "options": [
+        "Human",
+        "Cultural",
+        "Political",
+        "Social"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_37",
+      "text": "What percentage of the rate of price increase was required to be kept as per the objectives of the 12th Five Year Plan?",
+      "options": [
+        "4.5 to 5.0%",
+        "3.5 to 5.0%",
+        "4.0 to 5.0%",
+        "4.5 to 5.5%"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_38",
+      "text": "To study the problems of India in the year 1995 _________ committee was formed under the chairmanship of Dr. Abid Hussain.",
+      "options": [
+        "Education",
+        "Agriculture",
+        "Large Industry",
+        "Small Industry"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_39",
+      "text": "The Employees Provident Fund Act was made in _________.",
+      "options": [
+        "1950",
+        "1952",
+        "1960",
+        "1981"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_40",
+      "text": "Perspective Planning refers _________.\n(a) Long run planning for 20 to 25 years.\n(b) Long range targets are set in-advance for a period of 15, 20 or 25 years.\n(c) One plan for entire period of 15 to 20 years.\n(d) Broader Objectives and targets are achieved within one or two years.",
+      "options": [
+        "only (b)",
+        "only (a)",
+        "(a) and (c)",
+        "(c) and (d)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_41",
+      "text": "Education for women reduces fertility due to _________.\n(a) Education improves work opportunity for women.\n(b) Educated women want their own children to be educated.\n(c) Education and literacy make women more receptive to information about contraception.\n(d) Improving economic condition of women.",
+      "options": [
+        "(a) and (b)",
+        "Only (c)",
+        "(b) and (d)",
+        "(c) and (d)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_42",
+      "text": "Food security includes following stages:\n(a) Adequate availability of food grains to all.\n(b) Adequate availability of food grains and pulses to all.\n(c) Adequate availability of food grains, pulses, milk and vegetables to all.\n(d) Adequate availability of food grains, pulses, milk products, vegetables, fruits, meat and fish etc.",
+      "options": [
+        "Only (d)",
+        "(a) and (b)",
+        "(a), (b) and (c)",
+        "(a), (b), (c) and (d)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_43",
+      "text": "According to Gunnar Mirdal the role of Govt. in economic development should be as follows:\n(a) Effecting the spread effect by neutralizing backward effect.\n(b) Neutralizing spread effect by effecting the backward effect.\n(c) Effecting spread effect and backward effect.\n(d) Neutralizing spread effect and backward effect.",
+      "options": [
+        "Only (a)",
+        "(a) and (c)",
+        "(b) and (c)",
+        "(c) and (d)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_44",
+      "text": "Gaurav Dutt and Martin Ravalin said that Poverty Gap Index is calculated for which of the following reasons?",
+      "options": [
+        "How much calories deficit needs to be made up to eliminate poverty?",
+        "How much income would be needed to cover the deficit to eliminate poverty?",
+        "How much increase in per capita income will be required to eliminate poverty?",
+        "None of these"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_45",
+      "text": "When was the 'Beti Bachao, Beti Padhao' campaign launched for the protection and empowerment of the girl child as per the last revised statistics of child sex Ratio in India?",
+      "options": [
+        "22 January 2016",
+        "22 January 2018",
+        "22 January 2015",
+        "25 January 2015"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_46",
+      "text": "Relative poverty depends on following factors:\n(a) The human body needs calories every day.\n(b) Income is necessary to meet basic needs.\n(c) Comparing two income groups, the lower income group comes in poverty.\n(d) Poverty is the condition of not being able to meet the basic needs.",
+      "options": [
+        "only (c)",
+        "(a) and (b)",
+        "only (d)",
+        "(a) and (d)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_47",
+      "text": "According to Higins Population growth can be _________.\n(a) A motivator for autonomous investment in developed countries.\n(b) A motivator for induced investment in under-developed countries.\n(c) A motivator for only induced investment in developed countries.\n(d) Demotivate for autonomous investment in a developed countries.",
+      "options": [
+        "(a) and (b)",
+        "only (d)",
+        "only (a)",
+        "(b) and (c)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_48",
+      "text": "The largest share of allocation in the Seventh Five Year Plan went to the:",
+      "options": [
+        "Agriculture and Communication Sector",
+        "Industrial and Communication Sector",
+        "Energy Sector",
+        "Transport and Communication Sector"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_49",
+      "text": "Who has criticized that economics is a Kuber worshiping science?",
+      "options": [
+        "Ricardo and Malthus",
+        "Keneys and Karl Marks",
+        "Karlail and Raskin",
+        "Chamberlein and Robinsons"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_50",
+      "text": "In a Society where the income distribution is excessive _________ the handful individual there has unlimited money.",
+      "options": [
+        "Equality",
+        "Asymmetry",
+        "Deficiency",
+        "Abundance"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gcs_pre_2024_mr_51",
+      "text": "A particle thrown up has zero velocity but how much will be the acceleration?",
+      "options": [
+        "Zero",
+        "Infinity",
+        "Equal to acceleration due to gravity",
+        "One"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_52",
+      "text": "Which one of the following is not an application of Bernoulli equation?",
+      "options": [
+        "Aspirator pump",
+        "Ventury pump",
+        "Speed of Efflux",
+        "None of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_53",
+      "text": "At room temperature (300k), what is the significant contribution wavelength for the thermal radiation emitted by a body?",
+      "options": [
+        "500 nm",
+        "9550 nm",
+        "1500 nm",
+        "3000 nm"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_54",
+      "text": "Which of the following sentence is wrong?\n(I) Atomic nucleus is made up of protons and neutrons.\n(II) Proton has a positive charge.\n(III) Electron has a negative charge.\n(IV) Neutron has a positive charge.",
+      "options": [
+        "(III) and (II)",
+        "(II) and (I)",
+        "Only (I)",
+        "Only (IV)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_55",
+      "text": "Say whether following sentences are true or false:\n(I) For propagation of sound medium is necessary.\n(II) Unit of frequency of sound is Hertz.\n(III) Loudness of sound is expressed in decibel unit.",
+      "options": [
+        "(I), (II), (III) are true",
+        "Only (I), (II) is true",
+        "Only (II) is true",
+        "(I), (II), (III) are false"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_56",
+      "text": "Which of the following wavelengths are used to study the crystal structure of material?",
+      "options": [
+        "Ultraviolet wavelength",
+        "Gamma Rays wavelength",
+        "X-Rays wavelength",
+        "Infrared wavelength"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_57",
+      "text": "Leaf Blight of wheat is caused by infection of which of the following fungus?",
+      "options": [
+        "Uromyces tritici",
+        "Alternaria triticina",
+        "Ustilago nuda",
+        "Helminthosporium sativum"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_58",
+      "text": "Which division of Plantae is called amphibians of plant kingdom?",
+      "options": [
+        "Bryophyta",
+        "Pteridophyta",
+        "Gymnosperm",
+        "Angiosperm"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_59",
+      "text": "With respect to structure of DNA, following four statements are made. Choose the two relevant statements.\n(a) DNA is made of two long chains of nucleotides coiled in a helix around a central axis.\n(b) DNA is made of two long chains of nucleoside coiled around a central axis.\n(c) The two chains are complimentary to each other so that Adenine is always paired with Thymine and cytosine with Guanine.\n(d) The two chains are not complimentary to each other where Adenine is paired with uracil and cytosine with Guanine.",
+      "options": [
+        "Only (a) and (b) is relevant.",
+        "Only (b) and (d) is relevant.",
+        "Only (a) and (c) is relevant.",
+        "Only (c) and (d) is relevant."
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_60",
+      "text": "Which of the following statements are correct about the cell theory of Schleiden and Schwann?\n(a) All living things are composed of one or more cells.\n(b) New cells are formed from the pre-existing cells.\n(c) There are basic similarities in chemical composition and metabolic functions of cells.\n(d) The activity of an organism is collective activities and interactions of its cellular structures.",
+      "options": [
+        "(a) and (b)",
+        "(a), (b) and (c)",
+        "(a), (c) and (d)",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_61",
+      "text": "Which of the following animals belong to same class?",
+      "options": [
+        "Torpedo, Pristis, Hippocampus, Ichthyophis",
+        "Ichthyophis, Hippocampus, Calotes, Anabas",
+        "Calotes, Pristis, Ichthyophis, Hippocampus",
+        "Torpedo, Pristis, Hippocampus, Anabas"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_62",
+      "text": "Which plants extract/latex is used to prepare a narcotics called Heroin?",
+      "options": [
+        "Poppy plant",
+        "Coca plant",
+        "Hemp plant",
+        "Bajra"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_63",
+      "text": "Match the following to express general resemblance between bones and girdle fore limbs and hind limbs.\n(a) Shoulder joint - (i) Tibio-fibula\n(b) Humerus - (ii) Knee\n(c) Elbow - (iii) Femur\n(d) Radio-ulna - (iv) Hip joint",
+      "options": [
+        "a-(iv), b-(iii), c-(ii), d-(i)",
+        "a-(iii), b-(ii), c-(iv), d-(i)",
+        "a-(ii), b-(iv), c-(i), d-(iii)",
+        "a-(i), b-(ii), c-(iv), d-(iii)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_64",
+      "text": "Which of the following statements is true?\n(a) The adult human skeleton consists of 208 bones.\n(b) Vertebrae and facial bones are irregular type of bones.",
+      "options": [
+        "(a) & (b)",
+        "Only (b)",
+        "(a) only",
+        "Neither of the two"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_65",
+      "text": "Consider the following statements:\nRate of a chemical reaction is _________.\n(a) proportional to the concentration of reactants.\n(b) decreases on increasing the concentration of reactants.\n(c) increases on increasing the temperature.\n(d) decreases on increasing the temperature.",
+      "options": [
+        "Only (b)",
+        "Only (d)",
+        "Only (a) and (c)",
+        "Only (b) and (d)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_66",
+      "text": "Which chemical compound is used to neutralize the acidity of soil increased due to excessive use of Chemical Fertilizers?\n(a) Potash (b) Lime water (c) Milk of magnesia (d) Ammonium hydroxide",
+      "options": [
+        "Only (c)",
+        "Only (a) and (d)",
+        "Only (b)",
+        "All the above"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_67",
+      "text": "Which of the following pair/pairs of metal/metals can be extracted from their ores by using cyanide complex solutions?\n(A) Cu and Au (B) Co and Ag (C) Au and Ag (D) Na and Hg",
+      "options": [
+        "Both (A) and (B)",
+        "Only (C)",
+        "Only (D)",
+        "Both (C) and (D)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_68",
+      "text": "Identify the type of following chemical reaction.\n2KClO₃(s) → 2KCl(s) + 3O₂ ↑\n(a) Exothermic reaction (b) Displacement reaction (c) Decomposition reaction (d) Photochemical reaction",
+      "options": [
+        "Only (c)",
+        "Only (b)",
+        "Only (a) and (d)",
+        "Only (a)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_69",
+      "text": "From the following which isotope is called as heavy hydrogen?\n(a) Protium (b) Deuterium (c) Tritium (d) None of the above",
+      "options": [
+        "Only (c)",
+        "Only (b)",
+        "Only (d)",
+        "Only (a) and (c)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_70",
+      "text": "_________ is used to estimate the presence of unsaturation in oils and fats.",
+      "options": [
+        "Saponification value",
+        "Iodine value",
+        "Acid value",
+        "Viscosity value"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gcs_pre_2024_mr_71",
+      "text": "Who among the following are members of a Committee that recommends the appointment of the Chief Information Commissioner?\n(A) Prime Minister\n(B) Leader of Opposition in the Lok Sabha\n(C) Leader of Opposition in the Rajya Sabha\n(D) Union Cabinet Minister nominated by the Prime Minister.\n(E) Speaker of the Lok Sabha",
+      "options": [
+        "(A), (B) and (D)",
+        "(A), (B), (C) and (E)",
+        "(A), (B), (C) and (D)",
+        "(A), (B) and (E)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_72",
+      "text": "Which Article in the Constitution of India provides for the Post of Comptroller and Auditor General of India (CAG)?",
+      "options": [
+        "Article 148",
+        "Article 343",
+        "Article 266",
+        "Article 248"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_73",
+      "text": "Consider the following statements regarding 'Kesavanand Bharati' Case:\n(A) This case was heard by the Constitution Bench of 13 judges headed by Chief Justice of India A.N. Ray.\n(B) In Seven-Six majority, the bench outlined the basic structure doctrine.\n(C) This case changed the decision of Golaknath case.\n(D) This case seems to be the instance of judicial activism.",
+      "options": [
+        "(A), (B) and (C)",
+        "(B), (C) and (D)",
+        "(B) Only",
+        "(A), (B), (C) and (D)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_74",
+      "text": "The Contingency Fund of India has been placed at the disposal of which authority among the following?",
+      "options": [
+        "Comptroller and Auditor General of India",
+        "President of India",
+        "Parliament of India",
+        "Prime Minister of India"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_75",
+      "text": "Which of the following statements are correct regarding the 'Bommai Case' in reference to the Emergency in the State?\n(A) The 'Bommai Case' Judgement was delivered by the Supreme Court in 1994.\n(B) States can appeal to the Supreme Court when President's rule is introduced in the States.\n(C) If President's Rule is imposed without valid reason/s the Supreme Court can quash the decision of the Central Government.\n(D) An order to dissolve a State Assembly requires the approval of the Parliament.",
+      "options": [
+        "Only (C) and (D)",
+        "(A), (B), (C) and (D)",
+        "Only (B), (C) and (D)",
+        "Only (A), (B) and (C)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_76",
+      "text": "Identify the incorrect pair:",
+      "options": [
+        "July 22, 1947 - Adoption of National Flag by the Constituent Assembly.",
+        "January 24, 1950 - Adoption of National Anthem by the Constituent Assembly.",
+        "January 25, 1950 - Adoption of National Calendar by the Government.",
+        "January 26, 1950 - Adoption of National Emblem by the Government."
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_77",
+      "text": "Consider the following statement/s regarding constitutional amendment/s in India and Choose the correct option/s.\n(A) Dadra and Nagar Haveli territories were included in India as per the 10th Amendment.\n(B) The territories of Diu, Daman and Goa were included in India as per the 11th Amendment.\n(C) Legislature was established in Union Territories as per the 15th Amendment.\n(D) The state of Meghalaya was created as per the 22nd Amendment.",
+      "options": [
+        "(A) and (C) correct",
+        "(B) and (D) correct",
+        "(B) and (C) correct",
+        "(A) and (D) correct"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_78",
+      "text": "The Central Information Commission includes one Chief Information Commissioner and Maximum how many Information Commissioners?",
+      "options": [
+        "Five Information Commissioners",
+        "Ten Information Commissioners",
+        "Six Information Commissioners",
+        "Eight Information Commissioners"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_79",
+      "text": "Which of the following statement/s is/are correct regarding the citizenship of India?\n(A) India has single citizenship system.\n(B) Citizenship Act was passed in 1955.\n(C) Part 4 of the Indian Constitution provides citizenship.",
+      "options": [
+        "Only (A) & (C) Correct",
+        "Only (A) Correct",
+        "Only (A) & (B) Correct",
+        "All of the above are correct"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_80",
+      "text": "Which Articles in the Constitution provide for the electoral system in our country?",
+      "options": [
+        "Articles 124 to 128",
+        "Articles 324 to 329",
+        "Articles 256 to 259",
+        "Articles 274 to 279"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_81",
+      "text": "The Indian Constitution establishes a secular state, meaning:\n(A) The state makes discrimination on the basis of religion in matters of employment.\n(B) The state avoids preferential treatment for any particular religion.\n(C) The state treats all religions equally.\n(D) Freedom of faith and worship is allowed to all the people.\n(E) Educational institutions, without exception, are free to impart religious instructions.",
+      "options": [
+        "(A), (B) and (C)",
+        "(B), (C) and (D)",
+        "(A), (C), (D) and (E)",
+        "(B) and (D)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_82",
+      "text": "Delhi was called National Capital Territory by which Constitution Amendment Act?",
+      "options": [
+        "63rd Constitutional Amendment Act",
+        "69th Constitutional Amendment Act",
+        "91st Constitutional Amendment Act",
+        "93rd Constitutional Amendment Act"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_83",
+      "text": "Consider the following statements about First Lok Sabha:\n(A) The first Lok Sabha was constituted on 17 April 1952 after India's First General Elections were held from 25 October 1951 to 21 February 1952.\n(B) The first session of first Lok Sabha commenced on 13 May 1952.\n(C) The first Lok Sabha lasted its Full tenure and dissolved on 1 April 1957.\n(D) Shri. G.V. Mavalankar was the First Deputy Speaker of First Lok Sabha.",
+      "options": [
+        "(A) Only",
+        "(A) and (B)",
+        "(B), (C) and (D)",
+        "(D) Only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_84",
+      "text": "Consider the following provision/s with respect to various 'National Commissions' in India.\n(A) 'National Commission for Scheduled Castes and Scheduled Tribes' was established under Article 339 of the Constitution of India.\n(B) The 'National Commission for Women' was established under the 'National Commission for Women Act' 1990.\n(C) The 'National Commission for Minorities' was established under the 'National Commission for Minorities Act' 1992.\n(D) On 27th December 1993 an ordinance was passed to establish the 'National Human Rights Commission'.",
+      "options": [
+        "(A) and (C)",
+        "(B) and (D)",
+        "(A) and (D)",
+        "(B) and (C)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_85",
+      "text": "Which article empowers the High Courts to issue directions for the enforcement of Fundamental Rights?",
+      "options": [
+        "Article 226",
+        "Article 135",
+        "Article 143",
+        "Article 133"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gcs_pre_2024_mr_86",
+      "text": "Karpoori Thakur was recently in news. Which of the following is not true about him?",
+      "options": [
+        "He is also known as 'Jan Nayak'.",
+        "He was First non-congress Chief Minister of Bihar.",
+        "He was born in 1924, in a village in Samastipur District.",
+        "He won State Assembly election in 1952 from Samastipur Constituency."
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_87",
+      "text": "Which is the India's rank in global hunger Index 2023?",
+      "options": [
+        "100",
+        "111",
+        "101",
+        "123"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_88",
+      "text": "Consider the correct statements regarding new Parliament building:\n(a) The interior design of Lok Sabha in the new Parliament is based on the theme of National Animal Lion.\n(b) The design of Rajya Sabha is based on the theme of India's National Flower Lotus.\n(c) The new Parliament building was inaugurated on 28th May, 2023.\n(d) The historic Ashok Chakra has been installed beside the speaker of Lok Sabha.",
+      "options": [
+        "Statements (b), (c) are correct.",
+        "Statements (a), (b), (c) are correct.",
+        "Statements (b), (c), (d) are correct.",
+        "(a), (b), (c), (d) are correct."
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_89",
+      "text": "Identify the correct statements regarding Asian Games - 2023.\n(a) This competition was held in Hangzhou, China.\n(b) Shooter Lovelina Borgohain played a role of flag bearer for India at the time of inauguration.\n(c) India got 4th position with 28 gold medals.\n(d) India got total 107 medals in this competition.",
+      "options": [
+        "(a), (b), (c)",
+        "(a), (b), (d)",
+        "(b), (c), (d)",
+        "(a), (c), (d)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_90",
+      "text": "Select the correct statements:\n(a) The Nobel Peace Prize, 2023 was awarded to Narges Mohammadi.\n(b) Narges Mohammadi is a champion of equality and women's rights.\n(c) In 2004, Narges Mohammadi joined the Defenders of Human Right Center founded by Shirin Ebadi.",
+      "options": [
+        "Only (a), (b)",
+        "Only (b), (c)",
+        "Only (a), (c)",
+        "All of the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_91",
+      "text": "Which space agency helps India in tracking the Solar Mission Aditya - L1?",
+      "options": [
+        "NASA",
+        "ESA",
+        "JAXA",
+        "ROCOSMOS"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_92",
+      "text": "Select the correct statements (Padma Awards 2024):\n(a) 30 of the awardees in it are women.\n(b) 6 Padma Vibhushan award were declared.\n(c) 17 Padma Bhushan and 110 Padma Shri awards were declared.",
+      "options": [
+        "Only (a), (b)",
+        "Only (b), (c)",
+        "Only (a), (c)",
+        "All of these"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_93",
+      "text": "Bar Council of India's 'International Lawyers Conference 2023' was inaugurated in which City?",
+      "options": [
+        "New Delhi",
+        "Mumbai",
+        "Kolkata",
+        "Bengaluru"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_94",
+      "text": "Match the country and the Operations undertaken to protect Indian Nationals Abroad.\n(a) Operation Ajay - (i) Ukraine\n(b) Operation Ganga - (ii) Israel\n(c) Operation Devishakti - (iii) Sudan\n(d) Operation Kaveri - (iv) Afghanistan",
+      "options": [
+        "a-(i), b-(ii), c-(iii), d-(iv)",
+        "a-(ii), b-(iii), c-(iv), d-(i)",
+        "a-(ii), b-(i), c-(iv), d-(iii)",
+        "a-(iv), b-(ii), c-(iii), d-(i)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_95",
+      "text": "Recently, Odisha Chief Minister has launched Mukhyamantri Sampoorna Pushti Yojana. What is/are the primary objective/s of the scheme?\n(a) To promote higher education for girls.\n(b) Improve maternal and child nutrition in the State.\n(c) To provide employment opportunities for adolescent girls.\n(d) Boosting agricultural production in rural area.",
+      "options": [
+        "Only (a) is correct.",
+        "Only (b) is correct.",
+        "(a) and (d) are correct.",
+        "(c) and (d) are correct."
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_96",
+      "text": "Match the following pairs:\n(a) Dr. Nitin Karmalkar Committee - (i) For implementation of National Education Policy - 2020 in Maharashtra\n(b) Nitin Karir Committee - (ii) To enquire the incident during distribution of Maharashtra Bhushan Award\n(c) Sunil Pawar Committee - (iii) To study why the rates of onion collapse.\n(d) Dr. K. Kasturirangan Committee - (iv) To make the syllabus for pre-primary to degree according to NEP - 2020",
+      "options": [
+        "a-(i), b-(ii), c-(iii), d-(iv)",
+        "a-(ii), b-(iii), c-(iv), d-(i)",
+        "a-(iii), b-(iv), c-(ii), d-(i)",
+        "a-(iv), b-(ii), c-(i), d-(iii)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_97",
+      "text": "Identify the correct statements regarding the Chief Minister Solar Agricultural Channel Scheme.\n(a) This Scheme was started in June 2017, when Devendra Fadanvis was Chief Minister.\n(b) The main purpose is to provide supply of electricity to farmers through the agricultural feeder.\n(c) The government has decided to pay ₹ 50,000 per acre as rent to the farmers.\n(d) Solar panels are set up on government land up to ten kilometres from the 33 kV substation.",
+      "options": [
+        "(a), (d) are correct",
+        "(a), (b), (c) are correct",
+        "(a), (b) are correct",
+        "(a), (c), (d) are correct"
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_98",
+      "text": "Women Reservation Bill - 2023, consider the following statements:\n(a) Narishakti Vandan Adhiniyam officially the Constitutional (128th amendment) bill - 2023 is a bill introduced in the Parliament of India.\n(b) The Women reservation bill was introduced by PM Narendra Modi in Lok Sabha on 10th Sept. 2023.\n(c) This legislation seeks to allocate 30 percent of the seats in Lok Sabha and State legislative assemblies for women.\n(d) The bill was the first that was considered in the new Parliament building.",
+      "options": [
+        "(a) and (d) are correct.",
+        "(a) and (b) are correct.",
+        "(a), (b), (c) are correct.",
+        "(a), (b), (c) and (d) are correct."
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_99",
+      "text": "Identify the correct statements regarding M.S. Swaminathan.\n(a) He was resident of Tamil Nadu.\n(b) He was educated from Oxford University.\n(c) He was Scientist of Agriculture department.\n(d) He was Member of Rajya Sabha for some time.\n(e) He was awarded by Raman Magsaysay award.",
+      "options": [
+        "(a), (b), (c), (e)",
+        "(a), (c), (d), (e)",
+        "(b), (c), (d), (e)",
+        "(a), (b), (c), (d)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gcs_pre_2024_mr_100",
+      "text": "Which of the following countries are included in the Five Eyes Alliance?\n(a) America (b) Britain (c) New Zealand (d) Australia (e) France (f) Germany",
+      "options": [
+        "(a), (b), (c), (d)",
+        "(a), (b), (c), (e)",
+        "(a), (b), (e), (f)",
+        "(a), (b), (c), (d), (e)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    }
+  ],
+  "language": "marathi"
+}
