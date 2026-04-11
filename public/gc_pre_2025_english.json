@@ -1,0 +1,1307 @@
+{
+  "id": "gc_pre_2025_english",
+  "title": "MPSC Group-C Combined Pre 2025 (English)",
+  "createdAt": "2026-04-11T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "gc_pre_2025_english_1",
+      "text": "After M. Gandhiji came to India in 1915, which of the following problems did he handle successfully?\na. The indigo problem of Champaran in Bihar.\nb. The land revenue problem of the farmers of Kheda.\nc. The conflict between the mill workers and the owners in Ahmedabad city.\nd. Creating a separate electorate for Muslims.",
+      "options": {
+        "A": "'a', 'b' and 'c'",
+        "B": "'a', 'c' and 'd'",
+        "C": "'b', 'd' and 'a'",
+        "D": "'a', 'b' 'c' and 'd'"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_2",
+      "text": "Which of the following activists led the March to the Mamledar Court of Tasgaon on 3rd September 1942?\na. Krishna Rama Kurhade\nb. V. S. Page\nc. Govind Khot\nd. Dr. Y. K. Sovani",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only b and c",
+        "C": "Only b, c and d",
+        "D": "All of the above are correct"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_3",
+      "text": "Identify the social reformer from the following description.\na. He started the Marathi newspaper 'Dnyan Prakash'.\nb. The government honored him with the titles 'Justice of Peace and Rao Bahadur'.\nc. He had a deep interest in music.",
+      "options": {
+        "A": "Baba Padmanji",
+        "B": "Gopal Hari Deshmukh",
+        "C": "Vishnushastri Pandit",
+        "D": "None of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_4",
+      "text": "Which women reformer's work do you identify by reading the following statements?\nA. She was active in the women's emancipation work of the organization 'Shardasadan' and 'Arya Mahila Samaj'.\nB. The Government honored her with the title of 'Kaisar-i-Hind' for her social work in 1913.\nC. She founded the 'Hindu Ladies Social Club' in 1894.\nD. Her work for the emancipation of women was supported by Thakarsy and Tata families by providing financial assistance.",
+      "options": {
+        "A": "Hindu lady Dr. Rakhamabai",
+        "B": "Pandita Ramabai",
+        "C": "Ramabai Ranade",
+        "D": "Dr. Anandibai Joshi"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_5",
+      "text": "Which of the following statements are correct regarding the uprising of 1857 in Maharashtra?\na. Rangrao Page made relentless efforts to regain the lost kingdom of Chhatrapati Pratapsingh of Satara.\nb. Soldiers of the 21st and 28th regiments mutinied in Kolhapur on 31st July 1857.\nc. In Princely State of Nargunda, Bhave's adopted son was disowned and he rebelled in May 1858.\nd. The Bhillas were defeated in the battle of Amba Pani on 11th April 1858.",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only c and d",
+        "C": "Only a, b and c",
+        "D": "Only b, c and d"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_6",
+      "text": "Match the pairs:\nNational Congress Sessions and Venue — Chairman\na. Second Session of Congress 1886 – Calcutta — I. Badruddin Tyabji\nb. Third Session of Congress 1887 – Madras — II. William Wedderburn\nc. Fourth Session of Congress 1888 – Allahabad — III. Dadabhai Naoroji\nd. Fifth Session of Congress 1889 – Mumbai — IV. George Yule",
+      "options": {
+        "A": "a-III, b-I, c-IV, d-II",
+        "B": "a-II, b-III, c-I, d-IV",
+        "C": "a-IV, b-II, c-III, d-I",
+        "D": "a-I, b-IV, c-II, d-III"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_7",
+      "text": "In the permanent settlement system, which class benefitted the most?\na. Farmers\nb. Zamindars (Landlords)\nc. Industrialists\nd. Artisans",
+      "options": {
+        "A": "Only 'a' and 'b'",
+        "B": "Only 'c' and 'd'",
+        "C": "Only 'a'",
+        "D": "Only 'b'"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_8",
+      "text": "Which of the following Newspaper and Literature is not associated with Lala Lajpat Rai?\nA. He published the Newspaper 'Punjabi'.\nB. He wrote the book 'Young India'.\nC. He formulated the 'Theory of Passive Resistance' in Newspaper 'Vande Mataram'.\nD. He wrote the book 'Political Future of India'.",
+      "options": {
+        "A": "Only 'A' and 'B'",
+        "B": "Only 'C'",
+        "C": "Only 'C' and 'D'",
+        "D": "Only 'B'"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_9",
+      "text": "Which Committee was appointed for inquiry into the defects of the Act of 1919?",
+      "options": {
+        "A": "Only a (Mudiman Committee)",
+        "B": "Only b (Simon Committee)",
+        "C": "Only b and c (Simon and Lord Macaulay Committee)",
+        "D": "Only c and d (Lord Macaulay and Hunter Committee)"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_10",
+      "text": "Which was the first war fought during the time of Lord Hardinge (1844–48)?",
+      "options": {
+        "A": "Anglo – Maratha War",
+        "B": "Anglo – Sikh War",
+        "C": "Anglo – Afghan War",
+        "D": "Anglo – Mughal War"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "gc_pre_2025_english_11",
+      "text": "India's first cloned cow calf of the Gir breed was named as ___.",
+      "options": {
+        "A": "Kapila",
+        "B": "Saraswati",
+        "C": "Luni",
+        "D": "Ganga"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_12",
+      "text": "As per UN World Agenda 2015, how many sustainable development goals are identified?",
+      "options": {
+        "A": "17",
+        "B": "15",
+        "C": "20",
+        "D": "10"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_13",
+      "text": "Match the following.\nMinerals — Mining Area\na. Manganese — i. Surjagad\nb. Iron ore — ii. Janoli\nc. Bauxite — iii. Chikhala\nd. Chromite — iv. Udgiri",
+      "options": {
+        "A": "a-iii, b-iv, c-ii, d-i",
+        "B": "a-i, b-ii, c-iv, d-iii",
+        "C": "a-iii, b-i, c-iv, d-ii",
+        "D": "a-iii, b-i, c-ii, d-iv"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_14",
+      "text": "Which of the following is not an objective of Pradhan Mantri Matsya Sampada Yojana, 2025?\nA. Social, Physical and Economic Security of Fisherman.\nB. Fourfold increase in the Fisherman's income.\nC. Harnessing of fisheries potential in sustainable manner.\nD. Enhancing fish production and productivity.",
+      "options": {
+        "A": "All are the major objectives",
+        "B": "Only A, C and D are the objectives, B is not in objectives",
+        "C": "Only A and B are not in objectives",
+        "D": "Only C and D are not in objectives"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_15",
+      "text": "Arrange these tributaries of Yamuna river from East to West direction.\nRivers – Sindh, Chambal, Betwa, Ken",
+      "options": {
+        "A": "Sindh, Chambal, Ken, Betwa",
+        "B": "Ken, Betwa, Sindh, Chambal",
+        "C": "Ken, Sindh, Betwa, Chambal",
+        "D": "Ken, Chambal, Betwa, Sindh"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_16",
+      "text": "At what distance along highways in Maharashtra will charging stations for electric vehicles be installed as per Maharashtra Electric Vehicle Policy-2025?",
+      "options": {
+        "A": "25 km",
+        "B": "40 km",
+        "C": "50 km",
+        "D": "100 km"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_17",
+      "text": "According to Koppen's classification of the climatic regions, which type of climate is found in the western coastal region of India? (South of Mumbai).",
+      "options": {
+        "A": "Aw (Tropical Savanah type)",
+        "B": "As (Monsoon type with dry summer)",
+        "C": "Amw (Monsoon type with short dry winter)",
+        "D": "BShw (Semi-arid Steppe type)"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_18",
+      "text": "Which of the following statement/s is/are incorrect?\na. Uttarakhand, Uttar Pradesh, Bihar, West Bengal and Manipur States of India shares a border with Nepal.\nb. Nepal is a landlocked country which is situated between two giant countries i.e. China and India.\nc. Bhutan is a neighboring country of Nepal.",
+      "options": {
+        "A": "a and b",
+        "B": "b and c",
+        "C": "c and a",
+        "D": "Only c"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_19",
+      "text": "Which of the following is a wrong statement regarding the hill station and district?",
+      "options": {
+        "A": "Pal–Jalgaon",
+        "B": "Toranmal–Dhule",
+        "C": "Mahabaleshwar–Satara",
+        "D": "Lonavala–Pune"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_20",
+      "text": "[CANCELLED] Identify the incorrect statement from the following statements.\n(1) The confluence of the rivers Wardha and Wainganga occurs southwest of Chandrapur.\n(2) Kanha, Pench, Bag are tributaries of the Wainganga river.\n(3) Tributaries like Poos, Arana, Waghadi and Khuli joins on the left bank of the Wainganga river.\n(4) The tributaries of Manjara river i.e. Tavarja, Torna, Manyad, Girna etc. joins the Godavari.",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correctAnswer": "CANCELLED",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "gc_pre_2025_english_21",
+      "text": "NITI Aayog was established on ___.",
+      "options": {
+        "A": "1st January 2015",
+        "B": "15th August 2014",
+        "C": "26th January 2015",
+        "D": "1st April 2014"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_22",
+      "text": "Which Committee/s explained the definition of poverty line?\na. Tendulkar Committee\nb. Rangarajan Committee\nc. Vijay Kelkar Committee\nd. R. N. Malhotra Committee",
+      "options": {
+        "A": "Only a",
+        "B": "Only a and b",
+        "C": "Only c",
+        "D": "Only d"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_23",
+      "text": "Which of the following statement regarding India's Industrial Policy is incorrect?\nA. The Industrial Policy of 1948 set out the objective of establishing a mixed economy for India.\nB. It is seen that the 1956 Industrial Policy gave more importance to public sector industries and its development than the 1948 Industrial Policy.\nC. According to the 1991 policy, only 17 industries were reserved for the public sector.",
+      "options": {
+        "A": "Only A",
+        "B": "A and B",
+        "C": "Only C",
+        "D": "All of the above"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_24",
+      "text": "When was the National Bank for Agriculture and Rural Development (NABARD) established?",
+      "options": {
+        "A": "1 April 1935",
+        "B": "12 July 1982",
+        "C": "2 October 1982",
+        "D": "1 May 1960"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_25",
+      "text": "Which RBI Act classifies the Scheduled Bank and Non Scheduled Bank?",
+      "options": {
+        "A": "RBI Act 1930",
+        "B": "RBI Act 1934",
+        "C": "RBI Act 1956",
+        "D": "Banking Regulation Act 1949"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_26",
+      "text": "Which is the third stage in the theory of demographic transition?\na. Both birth rate and death rate remain high\nb. Rapid growth of population\nc. Death rate increases significantly\nd. Birth rate declines significantly",
+      "options": {
+        "A": "Only a",
+        "B": "Only a and b",
+        "C": "Only c",
+        "D": "Only d"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_27",
+      "text": "Which of the following combinations correctly reflects the three key enhancements under the extended Pradhan Mantri JanDhan Yojana (PMJDY) from 14-08-2018.",
+      "options": {
+        "A": "Overdraft (OD) limit raised, insurance cover reduced, age limit unchanged",
+        "B": "Overdraft (OD) limit lowered, insurance cover raised, conditions added",
+        "C": "Overdraft (OD) limit raised, insurance cover raised, age limit raised",
+        "D": "Overdraft (OD) limit raised, insurance cover unchanged, conditions added"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_28",
+      "text": "M. Narasimham Committee formed in 1991 is associated with which of the following?",
+      "options": {
+        "A": "Reforms in commodity market",
+        "B": "Convertibility of rupee",
+        "C": "Industrial sickness",
+        "D": "Financial sector reforms"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_29",
+      "text": "The Government appointed a five member Committee headed by ___ in May 2016 to review the Fiscal Responsibility and Budget Management (FRBM) Act.",
+      "options": {
+        "A": "L. K. Jha",
+        "B": "N. K. Singh",
+        "C": "Raja Chelliah",
+        "D": "M. Narasimham"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_30",
+      "text": "National Food Security Mission (NPSM) formulated in the ___ five year plan.",
+      "options": {
+        "A": "Ninth",
+        "B": "Tenth",
+        "C": "Eleventh",
+        "D": "Twelfth"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_31",
+      "text": "Identify the correct statement/s from the following.\nA. The policy according to which the government plans and implements its expenditure and revenue programs to avoid adverse effects on national income, production and employment levels is called monetary policy.\nB. Fiscal policy gained more importance in the post Great Depression period of 1929-33 in terms of smooth functioning of the economy. J. M. Keynes contribution in this regard is significant.",
+      "options": {
+        "A": "Only A",
+        "B": "Only B",
+        "C": "Both are correct",
+        "D": "Both are incorrect"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_32",
+      "text": "Find out a correct match from the following:\n(1) Fourteenth finance commission – Y.V. Reddy\n(2) Tenth five year plan – 2003 – 2008\n(3) Lowering of customs duties – Financial sector reforms\n(4) Fiscal deficit of Central Government for 2022-23 – 5.8% of GDP",
+      "options": {
+        "A": "(1) Fourteenth finance commission – Y.V. Reddy",
+        "B": "(2) Tenth five year plan – 2003 – 2008",
+        "C": "(3) Lowering of customs duties – Financial sector reforms",
+        "D": "(4) Fiscal deficit of Central Government for 2022-23 – 5.8% of GDP"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_33",
+      "text": "The objectives of National Population Policy 2000 includes ___.\na. To reduce total fertility rate\nb. To stabilize population by 2045\nc. To bring gender equality\nd. To attain 100% urbanization by 2045",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only b and d",
+        "C": "Only a and c",
+        "D": "All of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_34",
+      "text": "The generally accepted criteria for public debt sustainability are ___.\na. Debt should be nil during specified period.\nb. Future debt-GDP ratio should be reduced to a certain fraction of today's debt-GDP ratio.\nc. The debt-GDP ratio for the future can be fixed at today's ratio.",
+      "options": {
+        "A": "a and b",
+        "B": "b and c",
+        "C": "a and c",
+        "D": "a, b and c"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_35",
+      "text": "The buffer stock of foodgrains are for ___.\na. Moderating price fluctuations\nb. Export of foodgrains\nc. Seed supply\nd. Sale in open market",
+      "options": {
+        "A": "a",
+        "B": "a and d",
+        "C": "b",
+        "D": "c"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "gc_pre_2025_english_36",
+      "text": "In which city the 11th ASEAN Defence Minister's Meeting-Plus was held?",
+      "options": {
+        "A": "Bangkok",
+        "B": "Burma",
+        "C": "Singapore",
+        "D": "Vientiane"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_37",
+      "text": "Who among the following was honoured with Padmapani Lifetime Achievement Award at Ajanta-Ellora Film Festival?",
+      "options": {
+        "A": "Mahesh Kothare",
+        "B": "Ashok Saraf",
+        "C": "Sai Paranjape",
+        "D": "Sachin Pilgoankar"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_38",
+      "text": "Who has been appointed as the first woman Vice Chancellor of Indira Gandhi National Open University since the university's founding in 1985?",
+      "options": {
+        "A": "Prof. Uma Kanjilal",
+        "B": "Prof. Ujwala Chakradeo",
+        "C": "Dr. Sujata Shahi",
+        "D": "Prof. Sangeeta Shukla"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_39",
+      "text": "What is the annual income limit set for the beneficiary of the Chief Minister's Majhi-Ladki Bahin Yojana?",
+      "options": {
+        "A": "Less than 2.50 lakhs",
+        "B": "Less than 4.50 lakhs",
+        "C": "Less than 1.50 lakhs",
+        "D": "Less than 8.50 lakhs"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_40",
+      "text": "The Supreme Court, while giving a landmark decision on September 12, 2025, aimed at protecting the interests of home buyers, declared the \"Right to Housing\" a fundamental right under which Article of the Constitution?",
+      "options": {
+        "A": "Article 19",
+        "B": "Article 21",
+        "C": "Article 20",
+        "D": "Article 32"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_41",
+      "text": "Which Gram Panchayat in Maharashtra was awarded the Gold Award for National E-Governance 2025?",
+      "options": {
+        "A": "Gram Panchayat Rohini",
+        "B": "Gram Panchayat Kavathe Mahapir",
+        "C": "Gram Panchayat Hiware Bazar",
+        "D": "Gram Panchayat Raigad Siddhi"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_42",
+      "text": "Which of the following is a unified digital platform by the Election Commission of India to simplify the electoral processes?",
+      "options": {
+        "A": "ELECT APP",
+        "B": "ECI NET",
+        "C": "DIGELC",
+        "D": "ECI EASY"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_43",
+      "text": "Who was honoured with the 43rd Lokmanya Tilak National Award for significant contribution to National Progress?",
+      "options": {
+        "A": "Shri. Devendra Fadnavis",
+        "B": "Shri. Eknath Shinde",
+        "C": "Shri. Nitin Gadkari",
+        "D": "Shri. Ajit Pawar"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_44",
+      "text": "Which team was the runner-up of the Durand Cup 2025?",
+      "options": {
+        "A": "North East United Football Club",
+        "B": "Diamond Harbour Football Club",
+        "C": "Mohan Bagan Football Club",
+        "D": "Kerala Blasters Football Club"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_45",
+      "text": "Identify the correct statement/s from the following about – PM Dhan-Dhanya Krishi Yojana (PMDDKY).\nA. On 16th July 2025, the Union Cabinet approved the PMDDKY.\nB. This scheme is designed to catalyse growth in 200 agri-districts.",
+      "options": {
+        "A": "Both A and B",
+        "B": "Only B",
+        "C": "Only A",
+        "D": "None of the above"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_46",
+      "text": "The Second World Summit for Social Development 2025 was held in ___ from 4 to 6 November, 2025.",
+      "options": {
+        "A": "Doha, Qatar",
+        "B": "Geneva, Switzerland",
+        "C": "Delhi, India",
+        "D": "Karachi, Pakistan"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_47",
+      "text": "Which of the following sportsmen were honoured with Padma Shri Award in 2025?\nA. Ravi Ashwin\nB. Harvinder Singh\nC. I. M. Vijayan\nD. P. R. Sreejesh",
+      "options": {
+        "A": "Only A, B, C",
+        "B": "Only B, C, D",
+        "C": "Only A, B, D",
+        "D": "All of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_48",
+      "text": "First Artificial Intelligence (AI) technology based Anganwadi of the country has been launched by the Government in ___ village, Nagpur district.",
+      "options": {
+        "A": "Hingna",
+        "B": "Kalmeshwar",
+        "C": "Vaddhamana",
+        "D": "Beltarodi"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_49",
+      "text": "Opal Suchata Chuangsri, who won the Miss World Title at the 72nd Miss World 2025 Competition held in Hyderabad, belongs to which country?",
+      "options": {
+        "A": "Malaysia",
+        "B": "Indonesia",
+        "C": "Thailand",
+        "D": "Philippines"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_50",
+      "text": "Select the correct statement/s from the following.\nA. NISAR (NASA-ISRO Synthetic Aperture Radar) Mission is joint project between ISRO and NASA.\nB. NISAR Mission's primary objectives are to study land and ice deformation, land ecosystems and oceanic regions.",
+      "options": {
+        "A": "Only A",
+        "B": "Only B",
+        "C": "Both A and B",
+        "D": "Neither A nor B"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "gc_pre_2025_english_51",
+      "text": "Town Area Committee is set up for the administration of a small town. It may be ___.\nA. Wholly elected.\nB. Wholly nominated by State Government.\nC. Partly elected and partly nominated.",
+      "options": {
+        "A": "Only A, B",
+        "B": "Only B, C",
+        "C": "Only A, C",
+        "D": "All of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_52",
+      "text": "___ is the President of the first Gram Sabha after the general election as well as the President of the first Gram Sabha of the financial year.",
+      "options": {
+        "A": "MLA",
+        "B": "MP",
+        "C": "Sarpanch",
+        "D": "Sub-Sarpanch"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_53",
+      "text": "The executive power of the State shall be vested in the Governor under Article ___ of the Indian Constitution.",
+      "options": {
+        "A": "Article 154",
+        "B": "Article 152",
+        "C": "Article 153",
+        "D": "Article 155"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_54",
+      "text": "Which of the following pair is not correctly matched?",
+      "options": {
+        "A": "Right to Equality – Article 14 to 18",
+        "B": "Right against Exploitation – Article 20 to 22",
+        "C": "Right to Religious Freedom – Article 25 to 28",
+        "D": "Cultural and Education Rights – Article 29 to 30"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_55",
+      "text": "Who has the authority to appoint Police Patil?",
+      "options": {
+        "A": "Tahsildar",
+        "B": "Guardian Minister",
+        "C": "Collector",
+        "D": "Deputy Collector"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_56",
+      "text": "Which of the following High Court has the largest number of Benches?",
+      "options": {
+        "A": "Bombay High Court",
+        "B": "Alahabad High Court",
+        "C": "Rajasthan High Court",
+        "D": "Madhya Pradesh High Court"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_57",
+      "text": "Which Schedule includes the list of the official languages of India?",
+      "options": {
+        "A": "Fifth Schedule",
+        "B": "Tenth Schedule",
+        "C": "Eighth Schedule",
+        "D": "Ninth Schedule"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_58",
+      "text": "The Central Government taken out the ___ from Part III of Constitution i.e. the list of fundamental rights by the 44th Constitutional Amendment.",
+      "options": {
+        "A": "Right to Equality",
+        "B": "Right to Liberty",
+        "C": "Right to Property",
+        "D": "Right to Freedom of Religion"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_59",
+      "text": "Who described the Concurrent list of the Central and the States as a 'Twilight Zone'?",
+      "options": {
+        "A": "Laski",
+        "B": "Pyle",
+        "C": "Jennings",
+        "D": "Austin"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_60",
+      "text": "Select the incorrect statement/s from the following.\nA. H.V.R. Iyengar was the Chief Draftsman of the Constituent Assembly.\nB. S.N. Mukherjee was the Secretary to the Constituent Assembly.\nC. Prem Bihari Narayan Raizada was the Calligrapher of the Indian Constitution.",
+      "options": {
+        "A": "Only A, B",
+        "B": "Only B, C",
+        "C": "Only A, C",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_61",
+      "text": "Select the correct statement/s from the following (State Legislature).\nA. Ordinary Bills can be introduced by a minister or by private member.\nB. Money Bills can be introduced by a minister or by private member.",
+      "options": {
+        "A": "Only A",
+        "B": "Only B",
+        "C": "Both A and B",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_62",
+      "text": "Select the correct recommendations of the Balwantrai Mehta Committee.\nA. The Village Panchayat should be constituted with directly elected representatives.\nB. Panchayat Samiti and Zilla Parishad should be constituted with directly elected representatives.\nC. The District Collector should be the Chairman of the Zilla Parishad.",
+      "options": {
+        "A": "Only A, B",
+        "B": "Only B, C",
+        "C": "Only A, C",
+        "D": "All of the above"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_63",
+      "text": "The provision of preventive detention is found in which of the following lists?",
+      "options": {
+        "A": "Concurrent list only",
+        "B": "State list only",
+        "C": "Union list and Concurrent list",
+        "D": "State list and Concurrent list"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_64",
+      "text": "Which High Court has Jurisdiction over Lakshadweep?",
+      "options": {
+        "A": "Karnataka",
+        "B": "Madras",
+        "C": "Odisha",
+        "D": "Kerala"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_65",
+      "text": "Which of the following statement is not true?\n(1) The date of implementation of the Indian Constitution is November 26, 1949.\n(2) The 'Secular' word was substituted by the 42nd Constitutional Amendment.\n(3) The 42nd Constitutional Amendment was done in 1976.\n(4) Social, Economic and Political Justice has been taken from the Constitution of USSR in the Indian Constitution.",
+      "options": {
+        "A": "(1) The date of implementation of the Indian Constitution is November 26, 1949.",
+        "B": "(2) The 'Secular' word was substituted by the 42nd Constitutional Amendment.",
+        "C": "(3) The 42nd Constitutional Amendment was done in 1976.",
+        "D": "(4) Social, Economic and Political Justice has been taken from the Constitution of USSR."
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "gc_pre_2025_english_66",
+      "text": "Which of the following is not the adverse effect of hydroelectric power plant?",
+      "options": {
+        "A": "Air pollution",
+        "B": "Soil erosion",
+        "C": "Disruption of natural flow",
+        "D": "Disruption of natural habitat of aquatic animals"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_67",
+      "text": "A house uses 1 fan of 100 W for 10 hours/day, 2 bulbs of 50 W each 5 hours/day. If electricity costs Rs. 5 per unit (kWh), calculate the monthly electricity bill for 30 days.",
+      "options": {
+        "A": "Rs. 150",
+        "B": "Rs. 225",
+        "C": "Rs. 300",
+        "D": "Rs. 375"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_68",
+      "text": "Which of the following rays will not change direction in presence of magnetic field?",
+      "options": {
+        "A": "Alpha rays",
+        "B": "Beta rays",
+        "C": "Gamma rays",
+        "D": "Cathodic rays"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_69",
+      "text": "Brass is an alloy of ___.",
+      "options": {
+        "A": "Copper and tin",
+        "B": "Iron and carbon",
+        "C": "Iron and chromium",
+        "D": "Copper and zinc"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_70",
+      "text": "Malachite is ore of ___.",
+      "options": {
+        "A": "Copper",
+        "B": "Iron",
+        "C": "Aluminium",
+        "D": "Sulphur"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_71",
+      "text": "Calcium and chlorine combine to form calcium chloride by ___.",
+      "options": {
+        "A": "Covalent bonding",
+        "B": "Ionic bonding",
+        "C": "Metallic bonding",
+        "D": "Hydrogen bonding"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_72",
+      "text": "Which one of the following zooids in Cnidarians have protective cover?",
+      "options": {
+        "A": "Dactylozooid",
+        "B": "Tentaculozooid",
+        "C": "Trophozooid",
+        "D": "Phyllozooid"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_73",
+      "text": "Kangaroo is a pouched mammal, –\na. Found in Australia and Tasmania on grassy plains.\nb. It is terrestrial and herbivorous.\nc. Fore limbs are very long and powerful while hind limbs are very short and weak.\nd. Females have a brood pouch known as Marsupium.\nWhich of the statement/s given above is/are correct?",
+      "options": {
+        "A": "Only a",
+        "B": "Only a and b",
+        "C": "a, b and c",
+        "D": "a, b and d"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_74",
+      "text": "Malignant subtertian malaria is caused by ___.",
+      "options": {
+        "A": "Plasmodium vivax",
+        "B": "Plasmodium falciparum",
+        "C": "Plasmodium ovale",
+        "D": "Plasmodium malariae"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_75",
+      "text": "With the help of which micro-organism leguminous plants absorb nitrogen from air?\na. Rhizobium\nb. Virus\nc. Fungus\nd. Protozoa",
+      "options": {
+        "A": "Only a",
+        "B": "Only a and b",
+        "C": "Only c",
+        "D": "Only c and d"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_76",
+      "text": "Which is the causal organism of Tikka disease of Groundnut?",
+      "options": {
+        "A": "Puccinia species",
+        "B": "Cercospora personata",
+        "C": "Aspergillus species",
+        "D": "Ustilago species"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_77",
+      "text": "Mirabilis jalapa (four o'clock) plant belongs to ___ family.",
+      "options": {
+        "A": "Acanthaceae",
+        "B": "Amaranthaceae",
+        "C": "Solanaceae",
+        "D": "Nyctaginaceae"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_78",
+      "text": "Which of the following is natural blood anticoagulant medicine?",
+      "options": {
+        "A": "Heparin",
+        "B": "Sodium citrate",
+        "C": "Sodium nitrate",
+        "D": "Gum"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_79",
+      "text": "Match the viral diseases and causative viruses.\nDisease — Virus\na. AIDS — I. Dengue virus\nb. Chickenpox — II. Hepatitis B virus\nc. Liver damage and cirrhosis — III. Varicella-zoster virus\nd. Hemorrhagic fever — IV. Human Immunodeficiency virus",
+      "options": {
+        "A": "a-III, b-II, c-IV, d-I",
+        "B": "a-II, b-IV, c-III, d-I",
+        "C": "a-IV, b-III, c-II, d-I",
+        "D": "a-III, b-IV, c-I, d-II"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_80",
+      "text": "How much % of 'plasma' is present in human blood?",
+      "options": {
+        "A": "45",
+        "B": "55",
+        "C": "60",
+        "D": "20"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "gc_pre_2025_english_81",
+      "text": "If four-fifth of a number is greater than 60% of that number by 10, then what is that number?",
+      "options": {
+        "A": "10",
+        "B": "40",
+        "C": "50",
+        "D": "60"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_82",
+      "text": "In alloys A and B, copper and zinc are present in the ratio 4 : 3 and 9 : 5 respectively. If equal parts of both alloys are mixed to form a new alloy C, what will be the ratio of copper to zinc in alloy C?",
+      "options": {
+        "A": "11 : 14",
+        "B": "17 : 11",
+        "C": "14 : 11",
+        "D": "17 : 14"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_83",
+      "text": "A sum of Rs. 5,000 amounts to Rs. 5,600 in three years at simple interest. If the rate of interest is increased by 3%, what will be the amount of the same sum in three years?",
+      "options": {
+        "A": "5950",
+        "B": "5800",
+        "C": "6000",
+        "D": "6050"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_84",
+      "text": "10 women can complete a work in 7 days. 10 children take 14 days to complete the same work. How many days 5 women and 10 children will take to complete the same work?",
+      "options": {
+        "A": "8 days",
+        "B": "7 days",
+        "C": "9 days",
+        "D": "10 days"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_85",
+      "text": "The difference between the squares of two consecutive odd numbers is 112. What is the square of the smaller number?",
+      "options": {
+        "A": "625",
+        "B": "729",
+        "C": "900",
+        "D": "784"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_86",
+      "text": "Find the value of following –\n(0.11)² – (0.01)² / 1.2",
+      "options": {
+        "A": "0.01",
+        "B": "0.09",
+        "C": "0.10",
+        "D": "0.12"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_87",
+      "text": "From the following Histogram, what percent of decrease in production occurs from year 1976 to 1980?\n(Production: 1976=3000, 1977=2500, 1978=2000, 1979=1000, 1980=500)",
+      "options": {
+        "A": "75%",
+        "B": "83.33%",
+        "C": "80%",
+        "D": "60.66%"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_88",
+      "text": "If the side of square is increased by 25%, then its area will be increased by what percentage?",
+      "options": {
+        "A": "25",
+        "B": "50",
+        "C": "56.25",
+        "D": "37.50"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_89",
+      "text": "The distance between Mumbai and Goa is 540 km. Two trains start running at the same time in the morning at 7.30 a.m. in opposite directions from these two stations with speed of 60 km/hr and 75 km/hr respectively. At what time will they cross each other?",
+      "options": {
+        "A": "12.30 pm",
+        "B": "12.00 noon",
+        "C": "1.30 pm",
+        "D": "11.30 am"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_90",
+      "text": "A shopkeeper offers 25% discount on the printed price of a cupboard, yet he make 15% profit. If printed price of the cupboard is Rs. 23,000 then, what is the purchase price of it?",
+      "options": {
+        "A": "Rs. 16,000",
+        "B": "Rs. 20,000",
+        "C": "Rs. 15,000",
+        "D": "Rs. 18,000"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_91",
+      "text": "Aadit walks northwards from his house. After a while, he turns to his right and a little further to his left. Finally, after walking a distance of one kilometer, he turns to his left again. In which direction is he moving now?",
+      "options": {
+        "A": "North",
+        "B": "South",
+        "C": "East",
+        "D": "West"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_92",
+      "text": "The average age of Ram, Sham and John 5 years ago was 16 years. What will be their average age after 5 years?",
+      "options": {
+        "A": "21 years",
+        "B": "22 years",
+        "C": "26 years",
+        "D": "30 years"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_93",
+      "text": "Which of the following alternative will complete the letter series?\naa _ aaa _ aaaa _ aaaa _ b",
+      "options": {
+        "A": "baaa",
+        "B": "bbaa",
+        "C": "bbbb",
+        "D": "bbba"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_94",
+      "text": "Complete the following number series.\n3.75, 5.00, 6.25, 7.50, 8.75, ?",
+      "options": {
+        "A": "9.50",
+        "B": "9.00",
+        "C": "10.75",
+        "D": "10.00"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_95",
+      "text": "A student collects old data, compare it with new findings, identifies errors and proposes new conclusion. Which mental process does this represent?",
+      "options": {
+        "A": "Observation",
+        "B": "Evaluation / (Critical Thinking)",
+        "C": "Imitation",
+        "D": "Memorization"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_96",
+      "text": "Which number will come at the place of question mark in the following number series?\n170, 197, 226, 257, ?",
+      "options": {
+        "A": "289",
+        "B": "290",
+        "C": "291",
+        "D": "292"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_97",
+      "text": "How many triangles are in the following figure?\n(A figure with overlapping triangles is shown)",
+      "options": {
+        "A": "10",
+        "B": "15",
+        "C": "20",
+        "D": "12"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_98",
+      "text": "If Spandan has read 3/6th part of a book of 120 pages, then how many pages of that book he did not read?",
+      "options": {
+        "A": "40",
+        "B": "60",
+        "C": "80",
+        "D": "20"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_99",
+      "text": "In a certain code language, 'THANKS' is written as 'SKNTHA'. How will you write, 'STUPID' in that code language?",
+      "options": {
+        "A": "DIPUTS",
+        "B": "DIPSTU",
+        "C": "DISPUT",
+        "D": "DIPUST"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "gc_pre_2025_english_100",
+      "text": "Rani and Suresh are a married couple have two daughters Medha and Deepti. Deepti is married to Anurag who is the son of Gareema and Tushar. Nidhi is the daughter of Anurag. Komal who is Anurag's sister is married with Harshit and has two sons, Aman and Prem. Prem is the grandson of Garima and Tushar, what is relation between Deepti and Komal?",
+      "options": {
+        "A": "Aunt (Paternal) and Brother's daughter",
+        "B": "Sister-in-law and Brother's wife",
+        "C": "Sister – Sister",
+        "D": "Daughter – Mother"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    }
+  ]
+}
