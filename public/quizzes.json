@@ -38466,5 +38466,2621 @@
     ],
     "language": "marathi",
     "tag": "Group B Pre - 2025"
+  },
+  {
+    "id": "csg_pre_2025_en",
+    "title": "MPSC CS Gazetted Combined Pre 2025 (English)",
+    "createdAt": "2025-01-02T10:00:00.000Z",
+    "questions": [
+      {
+        "id": "csg_pre_2025_en_1",
+        "text": "The book, 'Jatibhed Viveksar' was written by _________.",
+        "options": [
+          "Mahatma Jyotiba Phule",
+          "Tukaram Tatya Padval",
+          "Vitthal Ramji Shinde",
+          "Bhaurao Paigonda Patil"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_2",
+        "text": "Who were the Prime Ministers of India and China while accepting the Panchashil Principles?\nA. Pandit Nehru and Zhou Enlaay\nB. Pandit Nehru and Dr. San-Yat-Sen\nC. Indira Gandhi and Mao-Tse-Tung\nD. Pandit Nehru and Mao-Tse-Tung",
+        "options": [
+          "A and B",
+          "C and A",
+          "C and D",
+          "Only A"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_3",
+        "text": "The book 'Vidhava Vapan Anachar' was written by _________.",
+        "options": [
+          "Vyankatesh Rango Katti",
+          "Vishnushastri Pandit",
+          "Balshastri Jambhekar",
+          "Gopal Ganesh Agarkar"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_4",
+        "text": "On 11th April 1942, a resolution was passed by the Congress Working Committee rejecting _________.",
+        "options": [
+          "Cripps Proposal",
+          "Aligarh Scheme",
+          "Curzon Plan",
+          "Latifs Scheme"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_5",
+        "text": "In order to appease the moderates and win over the support of the Muslims, the British Government introduced the _________ through the Indian Councils Act, 1909.",
+        "options": [
+          "Morley-Minto Reforms",
+          "Montague Chelmsford Reforms",
+          "Indian Educational Reforms",
+          "Indian Civil Service Reforms"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_6",
+        "text": "\"Reformers have to face opposition from our near and dear ones – parents, wives, daughters and countrymen with whom we have to travel through life.\" This was said by the social reformer Wamanrao Madhavrao Kolhatkar, who hailed from _________.",
+        "options": [
+          "Vidarbha",
+          "Marathwada",
+          "Pune",
+          "Kolhapur"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_7",
+        "text": "Match the following Kings and their dynasties.\nA. Aparajita - I. Pallava\nB. Aditya – I - II. Chola\nC. Vijayalaya - III. Founder of Chola dynasty\nD. Bhoja – I - IV. Gurjara",
+        "options": [
+          "A – II, B – III, C – I, D – IV",
+          "A – I, B – II, C – III, D – IV",
+          "A – IV, B – III, C – II, D – I",
+          "A – I, B – II, C – IV, D – III"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_8",
+        "text": "Which of the following statements are correct about Krishnadevaraya?\na. Ruler of Vijayanagar Empire Krishnadevaraya wrote 'Amuktamalyada' epic poem.\nb. Took title as 'Andhra Bhoja', 'Abhinava Bhoja'.\nc. Peddana was a prominent Telugu poet in the court of Krishnadevaraya.\nd. Krishnadevaraya was from Sangama dynasty.",
+        "options": [
+          "Only a and b",
+          "Only b and c",
+          "Only a, b and c",
+          "Only b, c and d"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_9",
+        "text": "To become a member of _________; \"Person had to eat bread prepared by Christians and drink water at the hands of Muslims\".",
+        "options": [
+          "Brahmo Samaj",
+          "Arya Samaj",
+          "Prarthana Samaj",
+          "Satyashodhak Samaj"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_10",
+        "text": "Match the correct pairs of punishment and forms of punishment in the Mughal Judicial System.\nColumn 'A' (Punishment): a. Hadd, b. Tazir, c. Qisas, d. Tashir\nColumn 'B' (Forms of Punishment): i. Tit for Tat, ii. Defamation, to expose to disgrace, iii. Warning, admonish or banishment, iv. Death penalty, amputation",
+        "options": [
+          "a-iii, b-i, c-iv, d-ii",
+          "a-ii, b-iii, c-i, d-iv",
+          "a-iv, b-iii, c-i, d-ii",
+          "a-iii, b-i, c-ii, d-iv"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_11",
+        "text": "Which of the following books was published by combining four famous speeches delivered by Barrister Chittaranjan Das in 1917?",
+        "options": [
+          "Indians of India",
+          "India for Indians",
+          "India and Indians",
+          "Indians for India"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_12",
+        "text": "Who was the Lieutenant General who played a guiding role in the merger of Hyderabad State?",
+        "options": [
+          "K. M. Cariappa",
+          "Rajendra Singh",
+          "S. M. Srinagesh",
+          "Sir Robert Lockhart"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_13",
+        "text": "Mughal Emperor Akbar bestowed the title of \"Khan-e-Khanan\" to whom in A.D. 1584?",
+        "options": [
+          "Abul Fazal",
+          "Miya Tansen",
+          "Abdul Rahim",
+          "Hakim Humam"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_14",
+        "text": "In 1877, 'The Great Delhi Darbar' was held, who described it as, 'An Indian Parliament'?",
+        "options": [
+          "M. G. Ranade",
+          "K. T. Telang",
+          "S. H. Chiplunkar",
+          "G. V. Joshi"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_15",
+        "text": "Who set up the separate department called, 'diwan-i-amir-i-kohi'?",
+        "options": [
+          "Alauddin Khalji",
+          "Muhammad bin Tughlaq",
+          "Balban",
+          "Firoz Shah Tughlaq"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_en_16",
+        "text": "The Tropic of Cancer is going through which States of India?",
+        "options": [
+          "Gujarat – Madhya Pradesh – Tripura – Mizoram",
+          "Gujarat – Maharashtra – West Bengal – Tripura",
+          "Maharashtra – Bihar – West Bengal – Mizoram",
+          "Gujarat – Bihar – Tripura – West Bengal"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_17",
+        "text": "Match the following.\nBiosphere Reserve - Establishment Year\na. Nilgiri - I. 2011\nb. Sundarban - II. 2008\nc. Kutch - III. 1989\nd. Panna - IV. 1986",
+        "options": [
+          "a-I, b-II, c-III, d-IV",
+          "a-IV, b-III, c-II, d-I",
+          "a-II, b-III, c-IV, d-I",
+          "a-III, b-IV, c-I, d-II"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_18",
+        "text": "Match the following.\nRiver Confluence - Rivers\na. Prakashe - I. Tapi-Panzara\nb. Mudavad - II. Tapi-Gomati\nc. Mahuli - III. Bhima-Indrayani\nd. Tulapur - IV. Krishna-Venna",
+        "options": [
+          "a-I, b-II, c-III, d-IV",
+          "a-II, b-I, c-IV, d-III",
+          "a-III, b-IV, c-II, d-I",
+          "a-IV, b-III, c-II, d-I"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_19",
+        "text": "According to the 2011 census, which Union Territory has the highest percentage of scheduled tribe population?",
+        "options": [
+          "Chandigarh",
+          "Lakshadweep",
+          "Dadra-Nagar Haveli",
+          "Delhi"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_20",
+        "text": "According to the 2011 census of India, the State of Rajasthan had the lowest literacy rate of _________.",
+        "options": [
+          "55.42%",
+          "61.8%",
+          "66.11%",
+          "65.39%"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_21",
+        "text": "Which one of the following statements is false?",
+        "options": [
+          "The Northern tip of main land India is Defdar in Ladakh.",
+          "The Southern tip of main land India is Kanniyakumari in Tamil Nadu.",
+          "The Eastern tip of main land India is Kibithu in Assam.",
+          "The Western tip of main land India is Ghuar mota in Gujarat."
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_22",
+        "text": "_________ Monsoon winds blow in Maharashtra from June to September.",
+        "options": [
+          "South east",
+          "North west",
+          "South west",
+          "North east"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_23",
+        "text": "Consider the following statements.\na. The temperature of the troposphere generally decreases with increasing altitude.\nb. The troposphere is heated not by absorption of incoming short wave solar radiation but by transfer of heat from the earth's surface.\nNow state whether:",
+        "options": [
+          "Both the statements are correct and second is the correct explanation of the first",
+          "Neither of the statements is correct",
+          "Both the statements are correct, but the second is not the correct explanation of the first",
+          "The first statement is correct, but second is not the correct"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_24",
+        "text": "Which of the following rock types is a hydrous rock formed by chemical processes?",
+        "options": [
+          "Gypsum",
+          "Shale",
+          "Granite",
+          "Pumice"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_25",
+        "text": "Which one of the following statements is/are not correct?\na. Tropical cyclones are formed in the 30° Latitude region North and South of the equator.\nb. The diameter of a tropical cyclone can range from 300 to 1500 km and even more.\nc. Tropical cyclones can have wind speed of 50 to 60 km per hour and even more.\nd. Tropical cyclones flow clockwise direction in the Northern hemisphere.",
+        "options": [
+          "Only a",
+          "Only b and c",
+          "Only d",
+          "Only b and d"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_26",
+        "text": "Which of the following rivers are the tributaries of the Sindhu river?\nA. Jhelum, Chenab, Kosi, Sutlej\nB. Gandak, Kosi, Ghagra, Son\nC. Sutlej, Beas, Ravi, Chenab\nD. Kabul, Kurram, Swat, Jhelum",
+        "options": [
+          "A and B are correct",
+          "C and D are correct",
+          "B and D are correct",
+          "A and C are correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_27",
+        "text": "Match the Indian States/Union Territory (List – I) with their Sex-Ratio (List – II).\nList-I (States/Union Territory): a. Kerala, b. Tamil Nadu, c. Puducherry, d. Andhra Pradesh\nList-II (Sex-Ratio, Census – 2011): i. 996, ii. 1037, iii. 1084, iv. 993",
+        "options": [
+          "a-ii, b-iii, c-i, d-iv",
+          "a-iv, b-i, c-ii, d-iii",
+          "a-i, b-ii, c-iv, d-iii",
+          "a-iii, b-i, c-ii, d-iv"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_28",
+        "text": "Which of the following is the reason of the storms in Arabian sea and Bay of Bengal on the border of the Indian Peninsula?",
+        "options": [
+          "Due to decrease in temperature and increase in air pressure",
+          "Due to increase in temperature and decrease in air pressure",
+          "Increase in temperature and air pressure",
+          "Decrease in temperature and air pressure"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_29",
+        "text": "Kalsubai is the highest mountain peak in Maharashtra located in which of the following mountain ranges?",
+        "options": [
+          "Sahyadri",
+          "Shambhu Mahadeo",
+          "Satpuda",
+          "Balaghat"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_30",
+        "text": "Match the following.\nOcean - Trench\na. Pacific ocean - i. Java Trench\nb. Atlantic ocean - ii. Mariana Trench\nc. Indian ocean - iii. Eurasian Trench\nd. Arctic ocean - iv. Puerto Rico Trench",
+        "options": [
+          "a-iv, b-iii, c-ii, d-i",
+          "a-i, b-ii, c-iii, d-iv",
+          "a-ii, b-iv, c-i, d-iii",
+          "a-ii, b-iii, c-iv, d-i"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_en_31",
+        "text": "Match the pollutants given in List – I with their effects given in List – II.\nList-I (Pollutants): a. Phosphate fertilizers in water, b. Methane in air, c. Synthetic detergents in water, d. Nitrogen oxides in air\nList-II (Effects of Pollutants): i. Biochemical oxygen demand level increase, ii. Acid Rain, iii. Global warming, iv. Eutrophication",
+        "options": [
+          "a-ii, b-i, c-iv, d-iii",
+          "a-iv, b-iii, c-i, d-ii",
+          "a-iii, b-ii, c-iv, d-i",
+          "a-i, b-iii, c-ii, d-iv"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_en_32",
+        "text": "Which of the following animal is not declared as a critically endangered species of reptile and amphibian of India?",
+        "options": [
+          "Gharial",
+          "Bengal Florican",
+          "Four-toed River Terrapin",
+          "Leatherback turtles"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_en_33",
+        "text": "Which of the following acronyms has been used by Biologists to describe the factors that threaten to biodiversity?",
+        "options": [
+          "EIA",
+          "IUCN",
+          "EPA",
+          "HIPPO"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_en_34",
+        "text": "Which of the following is an example of a renewable energy resource?",
+        "options": [
+          "Rock-Coal",
+          "Mineral Oil/Petroleum",
+          "Natural Gas",
+          "Geothermal energy"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_en_35",
+        "text": "As per the Hazardous Waste (Management, Handling and Transboundary Movement) Rules, 2008, the _________ shall be the nodal Ministry to deal with the transboundary movement of the hazardous wastes and to grant permission for transit of the hazardous wastes through any part of India.",
+        "options": [
+          "Ministry of Environment and Forests, Govt. of India",
+          "Ministry of Home Affairs, Govt. of India",
+          "Ministry of External Affairs, Govt. of India",
+          "Ministry of Commerce and Industry, Govt. of India"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_en_36",
+        "text": "Identify the correct statement/s from the following regarding Food Security Bill, 2013.\nA. The Bill provides food safety benefits to the 50% of the urban population and 75% of the rural population.\nB. Beneficiaries will be provided rice at Rs. 3/-kg, coarse grains at Re. 1/-kg and wheat at Rs. 2/-kg per month.",
+        "options": [
+          "Both A and B are correct",
+          "Both A and B are incorrect",
+          "Only A is correct",
+          "Only B is correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_37",
+        "text": "The term sustainable development first came into prominence in the World Conservation Strategy presented in _________.",
+        "options": [
+          "1980",
+          "1987",
+          "1990",
+          "1992"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_38",
+        "text": "What is India's position in the Sustainable Development Goals Index released in 2020?",
+        "options": [
+          "117th",
+          "17th",
+          "40th",
+          "125th"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_39",
+        "text": "\"Economic growth is the increase in output only\" whose statement was this?",
+        "options": [
+          "Prof. Edison",
+          "Prof. Kindleberger",
+          "A.D. Gorwala",
+          "Prof. Joseph Schumpeter"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_40",
+        "text": "Consider the following statements and choose the correct option regarding Indian economy.\nA. Considering the economic changes in India after globalisation, 'Trickle Down Theory' is precisely applicable to Indian economy.\nB. The high growth rate of Indian economy after globalisation, especially since 2005, poses question about applicability of the 'Trickle Down Theory'.",
+        "options": [
+          "Statement A is correct",
+          "Statement B is correct",
+          "Both statements A and B are correct",
+          "Both statements A and B are incorrect"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_41",
+        "text": "\"About 40% of the population of the developing world did not benefit from economic growth during the 1950's and 1960's.\" Who made this statement?",
+        "options": [
+          "Robert McNamara",
+          "Robert Clover",
+          "Charles Kindleberger",
+          "Jean Dreze"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_42",
+        "text": "Which one of the following National Mission was not included in the National Climate Action Program?",
+        "options": [
+          "National Solar Mission",
+          "National Sustainable Habitat Mission",
+          "National Water Mission",
+          "National Health Mission"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_43",
+        "text": "Which of the following is/are reason/s for the existence of poverty even after seven decades of Independence in India?\nA. More dependency of Economy on the agricultural sector.\nB. Shortage of employment opportunities in manufacturing sector.\nC. High growth rate of agriculture in comparison with developed countries.",
+        "options": [
+          "Statements A and C are correct",
+          "Statements A and B are correct",
+          "Only statement A is correct",
+          "Only statement B is correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_44",
+        "text": "Program/s implemented under the Integrated Child Development Services Scheme _________.\nA. Nutrition supplemental program\nB. Health check-up\nC. Worker's training\nD. Gender inequality",
+        "options": [
+          "Only A, C",
+          "Only C, D",
+          "Only A, B",
+          "A, B and C"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_45",
+        "text": "As per the 2011 Census, 13% of the total urban population of the country was living in which of the following cities in 2011?\na. Mumbai\nb. Chennai\nc. Kolkata\nd. Delhi",
+        "options": [
+          "a and d",
+          "a, c and d",
+          "a, b and d",
+          "a, b and c"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_46",
+        "text": "As per the 2011 Census, India's population percentage is _________ of the total Global population.",
+        "options": [
+          "2.4",
+          "17.5",
+          "31.9",
+          "25.1"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_47",
+        "text": "Which of the following statement/s is/are correct in relation to India's National Population Policy, 2000?\nA. Stabilizing the population of the country by 2050 with maximum two children norm.\nB. Universal immunization.\nC. Reduction of infant mortality rate below 30% per thousand.",
+        "options": [
+          "Statements A, B and C are correct",
+          "Statements A and C are correct",
+          "Only statement A is correct",
+          "Only statement B is correct"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_48",
+        "text": "[Question Cancelled]",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": "A",
+        "explanation": "(Question Cancelled)",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_49",
+        "text": "Consider the following statements:\nA. Gender Development Index is a composite index of health, education, empowerment and labour market.\nB. When the above four factors are considered together, inequality in women and men has adverse impact on Human Development Index.",
+        "options": [
+          "Only A is correct",
+          "Only B is correct",
+          "Both A and B are correct",
+          "Both A and B are incorrect"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_50",
+        "text": "Which of the following was the main objective of the 20 point programme announced on 26 June, 1975?\nA. To improve the standard of living.\nB. To help the people living below the poverty line (Poverty alleviation).",
+        "options": [
+          "Only A is correct",
+          "Only B is correct",
+          "Both A and B are correct",
+          "None of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_en_51",
+        "text": "The ratio of lengths to radii of two rods of same material is 1 : 2 and 2 : 3. If temperature difference between two ends of the rod is same, then what will be the ratio of heat flow?",
+        "options": [
+          "3 : 2",
+          "4 : 3",
+          "1 : 3",
+          "8 : 9"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_52",
+        "text": "In the network of resistances shown below, Current through the battery will be _________.\n[Circuit with 1Ω, 2Ω, 2Ω, 3Ω, 4Ω resistors and 2V battery]",
+        "options": [
+          "1.5 A",
+          "3.5 A",
+          "4.0 A",
+          "1.0 A"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_53",
+        "text": "Which physical quantity conserved during collision?",
+        "options": [
+          "Mass",
+          "Momentum",
+          "Time",
+          "Length"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_54",
+        "text": "Which of the following confirms that the universe is not static but expanding?",
+        "options": [
+          "Red shift in the light coming from distant galaxies",
+          "Blue shift in the light coming from distant galaxies",
+          "Bending of light while passing near to the Black hole",
+          "Constancy of velocity of light"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_55",
+        "text": "Neutrino particle is emitted in the process of _________.",
+        "options": [
+          "α-decay",
+          "β-decay",
+          "γ-decay",
+          "X-ray"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_56",
+        "text": "What is the effect of increase in temperature on viscosity of gases?",
+        "options": [
+          "Viscosity increases",
+          "Viscosity decreases",
+          "Viscosity remains constant",
+          "Viscosity becomes negative"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_57",
+        "text": "Stomata will open if there is accumulation of the following element in the guard cells _________.",
+        "options": [
+          "Magnesium",
+          "Potassium",
+          "Iron",
+          "Zinc"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_58",
+        "text": "Citrus canker is caused by which type of pathogen?",
+        "options": [
+          "Bacteria",
+          "Fungi",
+          "Virus",
+          "Nematode"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_59",
+        "text": "Which of the following statements are correct regarding Spirogyra algae?\na. It is commonly called as Pond scum.\nb. It grows in Marine water.\nc. Its cell consist spiral shaped chloroplast.\nd. It belong in family Zygnemataceae.",
+        "options": [
+          "a, b and c",
+          "b, c and d",
+          "a, c and d",
+          "a, b and d"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_60",
+        "text": "The categories of sclereids are _________.\na. Macrosclereids\nb. Osteosclereids\nc. Tracheids\nd. Asterosclereids\nWhich of the statements given above is/are correct?",
+        "options": [
+          "Only a",
+          "Only a and b",
+          "a, b and d",
+          "a, b and c"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_61",
+        "text": "Which of the following sets of hormones regulate menstrual cycle?",
+        "options": [
+          "FSH, LH, estrogen and progesterone",
+          "Estrogen, testosterone, LH and Corticosterone",
+          "Cortisol, estrogen, progesterone and FSH",
+          "Dihydrotestosterone, estrogen, progesterone and FSH"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_62",
+        "text": "Flowers, leaves and seeds of which plant are used to prepare a narcotics 'Marijuana'?",
+        "options": [
+          "Cannabis Sativa",
+          "Nicotiana tabacum",
+          "Opium Poppy",
+          "Mentha Spicata"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_63",
+        "text": "The main objective/s of \"Human Genome Project 1990\" was/were _________.\na. To identify 20,000 to 25,000 genes in human.\nb. To determine the sequence of 5 billion base pairs in DNA.\nc. To incorporate new genomic knowledge into research and medicine.\nd. To develop cloning of animals.",
+        "options": [
+          "Only b and d",
+          "Only a and c",
+          "Only a",
+          "Only b"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_64",
+        "text": "In prokaryotic genetic code, which is the initial code for N-formyl methionine?",
+        "options": [
+          "TTG",
+          "CUG",
+          "GGC",
+          "AUG"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_65",
+        "text": "Which of the following options does not involve use of carbon in any form for energy production?\nA. Wood\nB. Biogas\nC. Geothermal source\nD. Coal",
+        "options": [
+          "Both A and B",
+          "Both B and C",
+          "Only C",
+          "Only D"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_66",
+        "text": "Which chemical bond is formed between Mg and Cl atoms during formation of compound MgCl₂?\na. Covalent bond\nb. Ionic bond\nc. Coordinate covalent bond\nd. Metallic bond",
+        "options": [
+          "Only d",
+          "Only a",
+          "Only a and c",
+          "Only b"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_67",
+        "text": "Which of the following is used as a substitute for wool in the production of commercial fibers?",
+        "options": [
+          "Dacron",
+          "Teflon",
+          "Polyacrylonitrile",
+          "Caprolactam"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_68",
+        "text": "Which of the following medicine can be classified as both Analgesics and Antipyretics?\nA. Veronal\nB. Benadryl\nC. Penicillin\nD. Paracetamol",
+        "options": [
+          "Only A",
+          "Both A and D",
+          "Both B and C",
+          "Only D"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_69",
+        "text": "Match the correct pairs:\nA. Monosaccharide - i. Raffinose\nB. Disaccharide - ii. Starch\nC. Trisaccharide - iii. Glucose\nD. Polysaccharide - iv. Sucrose",
+        "options": [
+          "A – iii, B – ii, C – i, D – iv",
+          "A – ii, B – i, C – iii, D – iv",
+          "A – iv, B – iii, C – ii, D – i",
+          "A – iii, B – iv, C – i, D – ii"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_70",
+        "text": "The isotopes of hydrogen and their respective mass ratio are _________.",
+        "options": [
+          "Deuterium, Protium, Tritium; 1 : 2 : 3",
+          "Tritium, Deuterium, Protium; 2 : 3 : 1",
+          "Tritium, Protium, Deuterium; 2 : 3 : 1",
+          "Protium, Deuterium, Tritium; 1 : 2 : 3"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_en_71",
+        "text": "Which of the following Constitution Amendment Acts provided for the formation of the 'Metropolitan Planning Committee'?",
+        "options": [
+          "42nd Constitution Amendment Act",
+          "44th Constitution Amendment Act",
+          "73rd Constitution Amendment Act",
+          "74th Constitution Amendment Act"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_72",
+        "text": "Identify the incorrect pair/s of the various Committees constituted under the Indian Constituent Assembly and its Chairmans.\nA. Steering Committee – Rajendra Prasad\nB. Advisory Committee – Vallabhbhai Patel\nC. Central Rights Committee – J. B. Kripalani\nD. Fundamental Rights Sub-Committee – Jawaharlal Nehru",
+        "options": [
+          "A and C",
+          "B and D",
+          "C and D",
+          "A and B"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_73",
+        "text": "Select the correct statement/s from the following.\nA. The Vice-President shall hold office for a term of five years from the date on which he enters upon his office.\nB. A Vice-President may, by writing under his hand addressed to the President, resign his office.\nC. A Vice-President may be removed from his office by a resolution of House of the People passed by a majority of all the then members of the House of People and approved by the Council of States.",
+        "options": [
+          "Only A",
+          "Only B, C",
+          "Only A, C",
+          "Only A, B"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_74",
+        "text": "Identify the incorrect statement/s from the following about provisions for Anglo-Indian Community.\nA. Article 335 is related to Representation of the Anglo-Indian Community in the Legislative Assembly.\nB. Grants if any, were made for the benefit of the Anglo-Indian Community in respect of education in the financial year ending on the 31st March, 1948, the same shall be given for the first three financial years after the commencement of the Constitution.\nC. During every succeeding period of three years, the grants may be less 10%, than that, for the immediately preceding period of three years.",
+        "options": [
+          "Only A",
+          "Only B and C",
+          "Only C",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_75",
+        "text": "Which of the following are related to Article 1 to 4 of Part I of the Constitution of India?\na. The union and its territory\nb. About the Fundamental Rights\nc. About the Justice\nd. Regarding duties",
+        "options": [
+          "Only b and d",
+          "Only c and a",
+          "Only a",
+          "Only a and b"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_76",
+        "text": "Identify the States without special status under Article 371 and its Sub-Articles of the Constitution of India.",
+        "options": [
+          "Nagaland, Assam",
+          "Manipur, Sikkim",
+          "Mizoram, Nagaland",
+          "Tripura, Jharkhand"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_77",
+        "text": "The First Lok Adalat Camp after Independence was held in which State in 1982?",
+        "options": [
+          "Maharashtra",
+          "Gujarat",
+          "Andhra Pradesh",
+          "Punjab"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_78",
+        "text": "B. Pattabhi Sitaramayya was a Chairman of the following Committees.\nA. House Committee\nB. Committee on Chief Commissioner's Provinces\nC. Adhoc Committee on Citizenship\nD. Adhoc Committee on Supreme Court",
+        "options": [
+          "Only A, B",
+          "Only C, D",
+          "Only A, D",
+          "Only B, C"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_79",
+        "text": "The 'National Commission for Protection of Child Rights' (NCPCR) in India was established in which year?",
+        "options": [
+          "2001",
+          "2005",
+          "2007",
+          "2010"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_80",
+        "text": "The 'Protection of Children from Sexual Offences' (POCSO) Act was enacted in India in which year?",
+        "options": [
+          "2009",
+          "2012",
+          "2015",
+          "2018"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_81",
+        "text": "When was the National Commission for Women established in India?",
+        "options": [
+          "1990",
+          "1991",
+          "1992",
+          "1993"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_82",
+        "text": "Which of the following functions were performed by Constituent Assembly on January 24, 1950?\nA. Adopted the National Flag\nB. Adopted the National Anthem\nC. Adopted the National Song\nD. Elected Dr. Rajendra Prasad as a First President of India",
+        "options": [
+          "Only A, B, C",
+          "Only A, B, D",
+          "Only A, C, D",
+          "Only B, C, D"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_83",
+        "text": "Select the correct statements from the following.\nA. The Constituent Assembly was constituted in November, 1946 under the Cabinet Mission Plan.\nB. Cabinet Mission rejected the idea of two Constituent Assemblies.\nC. The Cripps Proposal was accepted by the Muslim League.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_84",
+        "text": "In which country, the concept of Modern Constitutionalism was started?",
+        "options": [
+          "America",
+          "England",
+          "France",
+          "India"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_85",
+        "text": "Identify the correct statement/s from the following.\nA. A person who holds, or who has held office as President shall, subject to the other provisions of the Constitution, be eligible for re-election to that office.\nB. No person shall be eligible for election as President unless he is qualified for election as a member of the Council of the States.",
+        "options": [
+          "Only A",
+          "Only B",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_en_86",
+        "text": "Which of the following statement is correct?\nA. The applications for the Sixth National Water Awards sought on 15 November 2024.\nB. National Water Awards are given under nine categories.\nC. Ministry of Jal Shakti has been organising the National Water Awards since year 2016.",
+        "options": [
+          "A, B and C are correct",
+          "A, B and C are incorrect",
+          "A and B are correct",
+          "B and C are correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_87",
+        "text": "[Question Cancelled]",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": "A",
+        "explanation": "(Question Cancelled)",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_88",
+        "text": "Gukesh D. is one of the most outstanding chess player of the country. His achievements are, —\nA. Gold medal in FIDE World Chess Championship held in Singapore in 2024.\nB. Gold medal in FIDE 45th Chess Olympiad (Open Team) held in Singapore in 2024.\nC. Gold Medal in FIDE 45th Chess Olympiad (Individual) held in Budapest in 2024.\nConsider the above statements and select the correct statements.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_89",
+        "text": "Identify the correct statement/s:\nA. January 22 is celebrated as 'National Girl Child Day' in India.\nB. National Girl Child Day celebrated from 2008 to spread awareness about girl child rights.\nC. Beti Bachao Beti Padhao Scheme launched in 2015.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_90",
+        "text": "Match the pairs (BRICS Summits):\nA. 16th BRICS Summit - i. New Delhi\nB. 15th BRICS Summit - ii. Beijing\nC. 14th BRICS Summit - iii. Johannesburg\nD. 13th BRICS Summit - iv. Kazan",
+        "options": [
+          "A-iv, B-i, C-ii, D-iii",
+          "A-iii, B-ii, C-i, D-iv",
+          "A-ii, B-iii, C-iv, D-i",
+          "A-iv, B-iii, C-ii, D-i"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_91",
+        "text": "Which of the following items will receive free of cost to the beneficiaries of Akshay Anna Yojana?\nA. Rice\nB. Sugar\nC. Red chilli powder\nD. Turmeric\nE. Jowar",
+        "options": [
+          "Only A, B, C",
+          "Only C, D, E",
+          "Only A, B, E",
+          "All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_92",
+        "text": "Identify the correct statements regarding Bhagwan Birsa Munda Road Linking Scheme.\nA. This scheme was started by Maharashtra Government.\nB. This scheme was only launched to connect the tribal villages.\nC. This scheme was made to connect tribal areas with primary health centres and Ashram schools through main roads.\nD. This scheme was discontinued by Govt. of Maharashtra in January 2025.",
+        "options": [
+          "A, B",
+          "B, C",
+          "A, B, C",
+          "A, C and D"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_93",
+        "text": "Which party has won in the General elections of Maldives held in April 2024?",
+        "options": [
+          "People's National Congress",
+          "Maldives National Congress",
+          "Awami League",
+          "Democratic Party"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_94",
+        "text": "According to the Indus Water Treaty of 1960, India uses water of _________ rivers.",
+        "options": [
+          "Sutlej, Indus, Ravi",
+          "Ravi, Jhelum, Indus",
+          "Sutlej, Beas, Ravi",
+          "Ravi, Chenab, Indus"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_95",
+        "text": "What is the meaning of 'guillotine' in the Indian Budget Process?\na. Raising taxes to fill Government deficits.\nb. Remaining budgetary demands for grants are put to vote without further discussion.\nc. Reserve Bank's support during financial crises.\nd. Rejection by the Parliament at the end of the budget.\nWhich of the statement given above is/are correct?",
+        "options": [
+          "Only b",
+          "Only c and d",
+          "Only a, b and c",
+          "Only a"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_96",
+        "text": "Which of the following books are written by Maruti Chitampalli?\nA. Ratva\nB. Pakhar Maya\nC. Chakwa Chandan\nD. Phulvanti\nE. Janglacha Paus",
+        "options": [
+          "Only A, B, C",
+          "Only B, D, E",
+          "Only A, D, B",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_97",
+        "text": "The President of India Draupadi Murmu inaugurated Kaushal Bhawan the new building at the ministry of skill development and entrepreneurship, on 24th January, 2024 at",
+        "options": [
+          "New Delhi",
+          "Hyderabad",
+          "Bengaluru",
+          "Lucknow"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_98",
+        "text": "Select the correct statement/s from the following:\nA. A key highlight of the Union Budget 2025–26 is the launch of a Nuclear Energy Mission, which is focused on research and development of Small Modular Reactors (SMRs).\nB. To facilitate the implementation of the Nuclear Energy Mission, amendments to the Atomic Energy Act and Civil Liability for Nuclear Damage Act will be taken up by the Parliament.\nC. These Amendments are expected to encourage foreign sector investments in nuclear power projects.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_99",
+        "text": "Select the correct statement/s from the following:\nA. INS Vikrant officially joined the Indian Navy's Western Naval Command in August 2024.\nB. INS Vikrant (INS – I) is an aircraft carrier in service with the Indian Navy. It is the first ship of its kind to be built in Tamil Nadu.",
+        "options": [
+          "Only A",
+          "Only B",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_en_100",
+        "text": "Chief Justice of India, Bhushan Gawai which is not true about him?",
+        "options": [
+          "He was born on 24th November 1960.",
+          "He practiced in Constitutional Law and Administrative Law.",
+          "He was appointed as Government Pleader and Public Prosecutor for Nagpur Bench in January 2005.",
+          "He was elevated as a Judge of the Supreme Court of India in May 2019."
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      }
+    ],
+    "language": "english"
+  },
+  {
+    "id": "csg_pre_2025_mr",
+    "title": "MPSC CS Gazetted Combined Pre 2025 (Marathi)",
+    "createdAt": "2025-01-02T10:00:00.000Z",
+    "questions": [
+      {
+        "id": "csg_pre_2025_mr_1",
+        "text": "जातिभेद विवेकसार' हे पुस्तक _________ यांनी लिहीले.",
+        "options": [
+          "महात्मा ज्योतिबा फुले",
+          "तुकाराम तात्या पडवळ",
+          "विठ्ठल रामजी शिंदे",
+          "भाउराव पायगोंडा पाटील"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_2",
+        "text": "पंचशील तत्वांचा पुरस्कार प्रथम भारत व चीन या देशांनी केला तेव्हा भारताचे पंतप्रधान व चीनचे पंतप्रधान कोण होते ?\nअ. पंडित नेहरू व चाउ-एन-लाय\nब. पंडित नेहरू व डॉ. सन-यत-सेन\nक. इंदिरा गांधी व माओ-त्से-तुंग\nड. पंडित नेहरू व माओ-त्से-तुंग",
+        "options": [
+          "अ आणि ब",
+          "क आणि अ",
+          "क आणि ड",
+          "फक्त अ"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_3",
+        "text": "'विधवा वपन अनाचार' हे पुस्तक _________ यांनी लिहीले.",
+        "options": [
+          "व्यंकटेश रंगो कट्टी",
+          "विष्णुशास्त्री पंडित",
+          "बाळशास्त्री जाम्भेकर",
+          "गोपाळ गणेश आगरकर"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_4",
+        "text": "11 एप्रिल 1942 रोजी कॉंग्रेस वर्किंग कमिटीने _________ नाकारण्यासाठी ठराव पारीत केला.",
+        "options": [
+          "क्रिप्स प्रस्ताव",
+          "अलिगड योजना",
+          "कर्झन योजना",
+          "लतिफ कोजना"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_5",
+        "text": "मवाळांना शांत करण्यासाठी आणि मुस्लिमांचे समर्थन मिळवण्यासाठी इंग्रज सरकारने इंडियन कोन्सिल अॅक्ट, 1909 च्या द्वारे _________ केल्या.",
+        "options": [
+          "मॉर्ले-मिंटो सुधारणा",
+          "मॉंटेग्यू चेम्सफर्ड सुधारणा",
+          "भारतीय शिक्षण सुधारणा",
+          "भारतीय नागरी सेवा सुधारणा"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_6",
+        "text": "\"सुधारकांना आपले आईवडील, पत्नी, मुली आणि देशबंधव अशा सर्व निकटवर्तीयांचा विरोध पत्करून जाण्याचा प्रवास करावा लागतो.\" हे सांगणारे वामनराव माधवराव कोल्हटकर हे समाज सुधारक _________ येथील होते.",
+        "options": [
+          "विदर्भ",
+          "मराठवाडा",
+          "पुणे",
+          "कोल्हापूर"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_7",
+        "text": "पुढील राजे व त्यांची राजघराणी यांच्या जोड्या जुळवा.\nअ. अपराजीत - I. पल्लव\nब. आदित्य – I - II. चोळ\nक. विजयालय - III. चोळ राज घराण्याचा संस्थापक\nड. भोज – I - IV. गुर्जर",
+        "options": [
+          "अ – II, ब – III, क – I, ड – IV",
+          "अ – I, ब – II, क – III, ड – IV",
+          "अ – IV, ब – III, क – II, ड – I",
+          "अ – I, ब – II, क – IV, ड – III"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_8",
+        "text": "खालीलपैकी कृष्णदेवराय यांच्याशी संबंधित योग्य विधाने कोणती ?\nअ. विजयनगरच्या साम्राज्याचा सत्ताधीश कृष्णदेवराय याने 'अमुक्तमाल्यदा' हा काव्य ग्रंथ लिहिला.\nब. 'आंध्र भोज', 'अभिनव भोज' असे या राजास संबोधले जात असे.\nक. पेद्दना हा महान तेलगू कवी कृष्णदेवरायाच्या दरबारात होता.\nड. कृष्णदेवराय हा संगम राजघराण्यातील होता.",
+        "options": [
+          "फक्त अ आणि ब",
+          "फक्त ब आणि क",
+          "फक्त अ, ब आणि क",
+          "फक्त ब, क आणि ड"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_9",
+        "text": "_________ या समाजाचे सदस्य होण्यासाठी; \"व्यक्तीला, ख्रिस्चनांनी बनवलेला पाव व मुस्लिमांच्या हातातील पाणी पिणे बंधनकारक होते\".",
+        "options": [
+          "ब्राह्मो समाज",
+          "आर्य समाज",
+          "प्रार्थना समाज",
+          "सत्यशोधक समाज"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_10",
+        "text": "मुघलकालीन न्यायव्यवस्थेतील शिक्षा आणि शिक्षेचे स्वरूप यांच्या अचूक जोड्या जुळवा.\nस्तंभ 'अ' (शिक्षा): अ. हद्द, ब. ताझीर, क. किस्सास, ड. तशहीर\nस्तंभ 'ब' (शिक्षेचे स्वरूप): i. जशास तसे, ii. मानहानी, धिंड काढणे, iii. ताकीद, समज वा हद्दपार, iv. मृत्युदंड, हातपाय तोडणे",
+        "options": [
+          "अ-iii, ब-i, क-iv, ड-ii",
+          "अ-ii, ब-iii, क-i, ड-iv",
+          "अ-iv, ब-iii, क-i, ड-ii",
+          "अ-iii, ब-i, क-ii, ड-iv"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_11",
+        "text": "Which of the following books was published by combining four famous speeches delivered by Barrister Chittaranjan Das in 1917?",
+        "options": [
+          "Indians of India",
+          "India for Indians",
+          "India and Indians",
+          "Indians for India"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_12",
+        "text": "Who was the Lieutenant General who played a guiding role in the merger of Hyderabad State?",
+        "options": [
+          "K. M. Cariappa",
+          "Rajendra Singh",
+          "S. M. Srinagesh",
+          "Sir Robert Lockhart"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_13",
+        "text": "Mughal Emperor Akbar bestowed the title of \"Khan-e-Khanan\" to whom in A.D. 1584?",
+        "options": [
+          "Abul Fazal",
+          "Miya Tansen",
+          "Abdul Rahim",
+          "Hakim Humam"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_14",
+        "text": "In 1877, 'The Great Delhi Darbar' was held, who described it as, 'An Indian Parliament'?",
+        "options": [
+          "M. G. Ranade",
+          "K. T. Telang",
+          "S. H. Chiplunkar",
+          "G. V. Joshi"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_15",
+        "text": "Who set up the separate department called, 'diwan-i-amir-i-kohi'?",
+        "options": [
+          "Alauddin Khalji",
+          "Muhammad bin Tughlaq",
+          "Balban",
+          "Firoz Shah Tughlaq"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "csg_pre_2025_mr_16",
+        "text": "The Tropic of Cancer is going through which States of India?",
+        "options": [
+          "Gujarat – Madhya Pradesh – Tripura – Mizoram",
+          "Gujarat – Maharashtra – West Bengal – Tripura",
+          "Maharashtra – Bihar – West Bengal – Mizoram",
+          "Gujarat – Bihar – Tripura – West Bengal"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_17",
+        "text": "Match the following.\nBiosphere Reserve - Establishment Year\na. Nilgiri - I. 2011\nb. Sundarban - II. 2008\nc. Kutch - III. 1989\nd. Panna - IV. 1986",
+        "options": [
+          "a-I, b-II, c-III, d-IV",
+          "a-IV, b-III, c-II, d-I",
+          "a-II, b-III, c-IV, d-I",
+          "a-III, b-IV, c-I, d-II"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_18",
+        "text": "Match the following.\nRiver Confluence - Rivers\na. Prakashe - I. Tapi-Panzara\nb. Mudavad - II. Tapi-Gomati\nc. Mahuli - III. Bhima-Indrayani\nd. Tulapur - IV. Krishna-Venna",
+        "options": [
+          "a-I, b-II, c-III, d-IV",
+          "a-II, b-I, c-IV, d-III",
+          "a-III, b-IV, c-II, d-I",
+          "a-IV, b-III, c-II, d-I"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_19",
+        "text": "According to the 2011 census, which Union Territory has the highest percentage of scheduled tribe population?",
+        "options": [
+          "Chandigarh",
+          "Lakshadweep",
+          "Dadra-Nagar Haveli",
+          "Delhi"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_20",
+        "text": "According to the 2011 census of India, the State of Rajasthan had the lowest literacy rate of _________.",
+        "options": [
+          "55.42%",
+          "61.8%",
+          "66.11%",
+          "65.39%"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_21",
+        "text": "Which one of the following statements is false?",
+        "options": [
+          "The Northern tip of main land India is Defdar in Ladakh.",
+          "The Southern tip of main land India is Kanniyakumari in Tamil Nadu.",
+          "The Eastern tip of main land India is Kibithu in Assam.",
+          "The Western tip of main land India is Ghuar mota in Gujarat."
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_22",
+        "text": "_________ Monsoon winds blow in Maharashtra from June to September.",
+        "options": [
+          "South east",
+          "North west",
+          "South west",
+          "North east"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_23",
+        "text": "Consider the following statements.\na. The temperature of the troposphere generally decreases with increasing altitude.\nb. The troposphere is heated not by absorption of incoming short wave solar radiation but by transfer of heat from the earth's surface.\nNow state whether:",
+        "options": [
+          "Both the statements are correct and second is the correct explanation of the first",
+          "Neither of the statements is correct",
+          "Both the statements are correct, but the second is not the correct explanation of the first",
+          "The first statement is correct, but second is not the correct"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_24",
+        "text": "Which of the following rock types is a hydrous rock formed by chemical processes?",
+        "options": [
+          "Gypsum",
+          "Shale",
+          "Granite",
+          "Pumice"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_25",
+        "text": "Which one of the following statements is/are not correct?\na. Tropical cyclones are formed in the 30° Latitude region North and South of the equator.\nb. The diameter of a tropical cyclone can range from 300 to 1500 km and even more.\nc. Tropical cyclones can have wind speed of 50 to 60 km per hour and even more.\nd. Tropical cyclones flow clockwise direction in the Northern hemisphere.",
+        "options": [
+          "Only a",
+          "Only b and c",
+          "Only d",
+          "Only b and d"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_26",
+        "text": "Which of the following rivers are the tributaries of the Sindhu river?\nA. Jhelum, Chenab, Kosi, Sutlej\nB. Gandak, Kosi, Ghagra, Son\nC. Sutlej, Beas, Ravi, Chenab\nD. Kabul, Kurram, Swat, Jhelum",
+        "options": [
+          "A and B are correct",
+          "C and D are correct",
+          "B and D are correct",
+          "A and C are correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_27",
+        "text": "Match the Indian States/Union Territory (List – I) with their Sex-Ratio (List – II).\nList-I (States/Union Territory): a. Kerala, b. Tamil Nadu, c. Puducherry, d. Andhra Pradesh\nList-II (Sex-Ratio, Census – 2011): i. 996, ii. 1037, iii. 1084, iv. 993",
+        "options": [
+          "a-ii, b-iii, c-i, d-iv",
+          "a-iv, b-i, c-ii, d-iii",
+          "a-i, b-ii, c-iv, d-iii",
+          "a-iii, b-i, c-ii, d-iv"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_28",
+        "text": "Which of the following is the reason of the storms in Arabian sea and Bay of Bengal on the border of the Indian Peninsula?",
+        "options": [
+          "Due to decrease in temperature and increase in air pressure",
+          "Due to increase in temperature and decrease in air pressure",
+          "Increase in temperature and air pressure",
+          "Decrease in temperature and air pressure"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_29",
+        "text": "Kalsubai is the highest mountain peak in Maharashtra located in which of the following mountain ranges?",
+        "options": [
+          "Sahyadri",
+          "Shambhu Mahadeo",
+          "Satpuda",
+          "Balaghat"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_30",
+        "text": "Match the following.\nOcean - Trench\na. Pacific ocean - i. Java Trench\nb. Atlantic ocean - ii. Mariana Trench\nc. Indian ocean - iii. Eurasian Trench\nd. Arctic ocean - iv. Puerto Rico Trench",
+        "options": [
+          "a-iv, b-iii, c-ii, d-i",
+          "a-i, b-ii, c-iii, d-iv",
+          "a-ii, b-iv, c-i, d-iii",
+          "a-ii, b-iii, c-iv, d-i"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "csg_pre_2025_mr_31",
+        "text": "Match the pollutants given in List – I with their effects given in List – II.\nList-I (Pollutants): a. Phosphate fertilizers in water, b. Methane in air, c. Synthetic detergents in water, d. Nitrogen oxides in air\nList-II (Effects of Pollutants): i. Biochemical oxygen demand level increase, ii. Acid Rain, iii. Global warming, iv. Eutrophication",
+        "options": [
+          "a-ii, b-i, c-iv, d-iii",
+          "a-iv, b-iii, c-i, d-ii",
+          "a-iii, b-ii, c-iv, d-i",
+          "a-i, b-iii, c-ii, d-iv"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_mr_32",
+        "text": "Which of the following animal is not declared as a critically endangered species of reptile and amphibian of India?",
+        "options": [
+          "Gharial",
+          "Bengal Florican",
+          "Four-toed River Terrapin",
+          "Leatherback turtles"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_mr_33",
+        "text": "Which of the following acronyms has been used by Biologists to describe the factors that threaten to biodiversity?",
+        "options": [
+          "EIA",
+          "IUCN",
+          "EPA",
+          "HIPPO"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_mr_34",
+        "text": "Which of the following is an example of a renewable energy resource?",
+        "options": [
+          "Rock-Coal",
+          "Mineral Oil/Petroleum",
+          "Natural Gas",
+          "Geothermal energy"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_mr_35",
+        "text": "As per the Hazardous Waste (Management, Handling and Transboundary Movement) Rules, 2008, the _________ shall be the nodal Ministry to deal with the transboundary movement of the hazardous wastes and to grant permission for transit of the hazardous wastes through any part of India.",
+        "options": [
+          "Ministry of Environment and Forests, Govt. of India",
+          "Ministry of Home Affairs, Govt. of India",
+          "Ministry of External Affairs, Govt. of India",
+          "Ministry of Commerce and Industry, Govt. of India"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Environment"
+      },
+      {
+        "id": "csg_pre_2025_mr_36",
+        "text": "Identify the correct statement/s from the following regarding Food Security Bill, 2013.\nA. The Bill provides food safety benefits to the 50% of the urban population and 75% of the rural population.\nB. Beneficiaries will be provided rice at Rs. 3/-kg, coarse grains at Re. 1/-kg and wheat at Rs. 2/-kg per month.",
+        "options": [
+          "Both A and B are correct",
+          "Both A and B are incorrect",
+          "Only A is correct",
+          "Only B is correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_37",
+        "text": "The term sustainable development first came into prominence in the World Conservation Strategy presented in _________.",
+        "options": [
+          "1980",
+          "1987",
+          "1990",
+          "1992"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_38",
+        "text": "What is India's position in the Sustainable Development Goals Index released in 2020?",
+        "options": [
+          "117th",
+          "17th",
+          "40th",
+          "125th"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_39",
+        "text": "\"Economic growth is the increase in output only\" whose statement was this?",
+        "options": [
+          "Prof. Edison",
+          "Prof. Kindleberger",
+          "A.D. Gorwala",
+          "Prof. Joseph Schumpeter"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_40",
+        "text": "Consider the following statements and choose the correct option regarding Indian economy.\nA. Considering the economic changes in India after globalisation, 'Trickle Down Theory' is precisely applicable to Indian economy.\nB. The high growth rate of Indian economy after globalisation, especially since 2005, poses question about applicability of the 'Trickle Down Theory'.",
+        "options": [
+          "Statement A is correct",
+          "Statement B is correct",
+          "Both statements A and B are correct",
+          "Both statements A and B are incorrect"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_41",
+        "text": "\"About 40% of the population of the developing world did not benefit from economic growth during the 1950's and 1960's.\" Who made this statement?",
+        "options": [
+          "Robert McNamara",
+          "Robert Clover",
+          "Charles Kindleberger",
+          "Jean Dreze"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_42",
+        "text": "Which one of the following National Mission was not included in the National Climate Action Program?",
+        "options": [
+          "National Solar Mission",
+          "National Sustainable Habitat Mission",
+          "National Water Mission",
+          "National Health Mission"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_43",
+        "text": "Which of the following is/are reason/s for the existence of poverty even after seven decades of Independence in India?\nA. More dependency of Economy on the agricultural sector.\nB. Shortage of employment opportunities in manufacturing sector.\nC. High growth rate of agriculture in comparison with developed countries.",
+        "options": [
+          "Statements A and C are correct",
+          "Statements A and B are correct",
+          "Only statement A is correct",
+          "Only statement B is correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_44",
+        "text": "Program/s implemented under the Integrated Child Development Services Scheme _________.\nA. Nutrition supplemental program\nB. Health check-up\nC. Worker's training\nD. Gender inequality",
+        "options": [
+          "Only A, C",
+          "Only C, D",
+          "Only A, B",
+          "A, B and C"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_45",
+        "text": "As per the 2011 Census, 13% of the total urban population of the country was living in which of the following cities in 2011?\na. Mumbai\nb. Chennai\nc. Kolkata\nd. Delhi",
+        "options": [
+          "a and d",
+          "a, c and d",
+          "a, b and d",
+          "a, b and c"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_46",
+        "text": "As per the 2011 Census, India's population percentage is _________ of the total Global population.",
+        "options": [
+          "2.4",
+          "17.5",
+          "31.9",
+          "25.1"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_47",
+        "text": "Which of the following statement/s is/are correct in relation to India's National Population Policy, 2000?\nA. Stabilizing the population of the country by 2050 with maximum two children norm.\nB. Universal immunization.\nC. Reduction of infant mortality rate below 30% per thousand.",
+        "options": [
+          "Statements A, B and C are correct",
+          "Statements A and C are correct",
+          "Only statement A is correct",
+          "Only statement B is correct"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_48",
+        "text": "[Question Cancelled]",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": "A",
+        "explanation": "(Question Cancelled)",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_49",
+        "text": "Consider the following statements:\nA. Gender Development Index is a composite index of health, education, empowerment and labour market.\nB. When the above four factors are considered together, inequality in women and men has adverse impact on Human Development Index.",
+        "options": [
+          "Only A is correct",
+          "Only B is correct",
+          "Both A and B are correct",
+          "Both A and B are incorrect"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_50",
+        "text": "Which of the following was the main objective of the 20 point programme announced on 26 June, 1975?\nA. To improve the standard of living.\nB. To help the people living below the poverty line (Poverty alleviation).",
+        "options": [
+          "Only A is correct",
+          "Only B is correct",
+          "Both A and B are correct",
+          "None of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "csg_pre_2025_mr_51",
+        "text": "The ratio of lengths to radii of two rods of same material is 1 : 2 and 2 : 3. If temperature difference between two ends of the rod is same, then what will be the ratio of heat flow?",
+        "options": [
+          "3 : 2",
+          "4 : 3",
+          "1 : 3",
+          "8 : 9"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_52",
+        "text": "In the network of resistances shown below, Current through the battery will be _________.\n[Circuit with 1Ω, 2Ω, 2Ω, 3Ω, 4Ω resistors and 2V battery]",
+        "options": [
+          "1.5 A",
+          "3.5 A",
+          "4.0 A",
+          "1.0 A"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_53",
+        "text": "Which physical quantity conserved during collision?",
+        "options": [
+          "Mass",
+          "Momentum",
+          "Time",
+          "Length"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_54",
+        "text": "Which of the following confirms that the universe is not static but expanding?",
+        "options": [
+          "Red shift in the light coming from distant galaxies",
+          "Blue shift in the light coming from distant galaxies",
+          "Bending of light while passing near to the Black hole",
+          "Constancy of velocity of light"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_55",
+        "text": "Neutrino particle is emitted in the process of _________.",
+        "options": [
+          "α-decay",
+          "β-decay",
+          "γ-decay",
+          "X-ray"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_56",
+        "text": "What is the effect of increase in temperature on viscosity of gases?",
+        "options": [
+          "Viscosity increases",
+          "Viscosity decreases",
+          "Viscosity remains constant",
+          "Viscosity becomes negative"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_57",
+        "text": "Stomata will open if there is accumulation of the following element in the guard cells _________.",
+        "options": [
+          "Magnesium",
+          "Potassium",
+          "Iron",
+          "Zinc"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_58",
+        "text": "Citrus canker is caused by which type of pathogen?",
+        "options": [
+          "Bacteria",
+          "Fungi",
+          "Virus",
+          "Nematode"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_59",
+        "text": "Which of the following statements are correct regarding Spirogyra algae?\na. It is commonly called as Pond scum.\nb. It grows in Marine water.\nc. Its cell consist spiral shaped chloroplast.\nd. It belong in family Zygnemataceae.",
+        "options": [
+          "a, b and c",
+          "b, c and d",
+          "a, c and d",
+          "a, b and d"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_60",
+        "text": "The categories of sclereids are _________.\na. Macrosclereids\nb. Osteosclereids\nc. Tracheids\nd. Asterosclereids\nWhich of the statements given above is/are correct?",
+        "options": [
+          "Only a",
+          "Only a and b",
+          "a, b and d",
+          "a, b and c"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_61",
+        "text": "Which of the following sets of hormones regulate menstrual cycle?",
+        "options": [
+          "FSH, LH, estrogen and progesterone",
+          "Estrogen, testosterone, LH and Corticosterone",
+          "Cortisol, estrogen, progesterone and FSH",
+          "Dihydrotestosterone, estrogen, progesterone and FSH"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_62",
+        "text": "Flowers, leaves and seeds of which plant are used to prepare a narcotics 'Marijuana'?",
+        "options": [
+          "Cannabis Sativa",
+          "Nicotiana tabacum",
+          "Opium Poppy",
+          "Mentha Spicata"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_63",
+        "text": "The main objective/s of \"Human Genome Project 1990\" was/were _________.\na. To identify 20,000 to 25,000 genes in human.\nb. To determine the sequence of 5 billion base pairs in DNA.\nc. To incorporate new genomic knowledge into research and medicine.\nd. To develop cloning of animals.",
+        "options": [
+          "Only b and d",
+          "Only a and c",
+          "Only a",
+          "Only b"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_64",
+        "text": "In prokaryotic genetic code, which is the initial code for N-formyl methionine?",
+        "options": [
+          "TTG",
+          "CUG",
+          "GGC",
+          "AUG"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_65",
+        "text": "Which of the following options does not involve use of carbon in any form for energy production?\nA. Wood\nB. Biogas\nC. Geothermal source\nD. Coal",
+        "options": [
+          "Both A and B",
+          "Both B and C",
+          "Only C",
+          "Only D"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_66",
+        "text": "Which chemical bond is formed between Mg and Cl atoms during formation of compound MgCl₂?\na. Covalent bond\nb. Ionic bond\nc. Coordinate covalent bond\nd. Metallic bond",
+        "options": [
+          "Only d",
+          "Only a",
+          "Only a and c",
+          "Only b"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_67",
+        "text": "Which of the following is used as a substitute for wool in the production of commercial fibers?",
+        "options": [
+          "Dacron",
+          "Teflon",
+          "Polyacrylonitrile",
+          "Caprolactam"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_68",
+        "text": "Which of the following medicine can be classified as both Analgesics and Antipyretics?\nA. Veronal\nB. Benadryl\nC. Penicillin\nD. Paracetamol",
+        "options": [
+          "Only A",
+          "Both A and D",
+          "Both B and C",
+          "Only D"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_69",
+        "text": "Match the correct pairs:\nA. Monosaccharide - i. Raffinose\nB. Disaccharide - ii. Starch\nC. Trisaccharide - iii. Glucose\nD. Polysaccharide - iv. Sucrose",
+        "options": [
+          "A – iii, B – ii, C – i, D – iv",
+          "A – ii, B – i, C – iii, D – iv",
+          "A – iv, B – iii, C – ii, D – i",
+          "A – iii, B – iv, C – i, D – ii"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_70",
+        "text": "The isotopes of hydrogen and their respective mass ratio are _________.",
+        "options": [
+          "Deuterium, Protium, Tritium; 1 : 2 : 3",
+          "Tritium, Deuterium, Protium; 2 : 3 : 1",
+          "Tritium, Protium, Deuterium; 2 : 3 : 1",
+          "Protium, Deuterium, Tritium; 1 : 2 : 3"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "csg_pre_2025_mr_71",
+        "text": "Which of the following Constitution Amendment Acts provided for the formation of the 'Metropolitan Planning Committee'?",
+        "options": [
+          "42nd Constitution Amendment Act",
+          "44th Constitution Amendment Act",
+          "73rd Constitution Amendment Act",
+          "74th Constitution Amendment Act"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_72",
+        "text": "Identify the incorrect pair/s of the various Committees constituted under the Indian Constituent Assembly and its Chairmans.\nA. Steering Committee – Rajendra Prasad\nB. Advisory Committee – Vallabhbhai Patel\nC. Central Rights Committee – J. B. Kripalani\nD. Fundamental Rights Sub-Committee – Jawaharlal Nehru",
+        "options": [
+          "A and C",
+          "B and D",
+          "C and D",
+          "A and B"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_73",
+        "text": "Select the correct statement/s from the following.\nA. The Vice-President shall hold office for a term of five years from the date on which he enters upon his office.\nB. A Vice-President may, by writing under his hand addressed to the President, resign his office.\nC. A Vice-President may be removed from his office by a resolution of House of the People passed by a majority of all the then members of the House of People and approved by the Council of States.",
+        "options": [
+          "Only A",
+          "Only B, C",
+          "Only A, C",
+          "Only A, B"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_74",
+        "text": "Identify the incorrect statement/s from the following about provisions for Anglo-Indian Community.\nA. Article 335 is related to Representation of the Anglo-Indian Community in the Legislative Assembly.\nB. Grants if any, were made for the benefit of the Anglo-Indian Community in respect of education in the financial year ending on the 31st March, 1948, the same shall be given for the first three financial years after the commencement of the Constitution.\nC. During every succeeding period of three years, the grants may be less 10%, than that, for the immediately preceding period of three years.",
+        "options": [
+          "Only A",
+          "Only B and C",
+          "Only C",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_75",
+        "text": "Which of the following are related to Article 1 to 4 of Part I of the Constitution of India?\na. The union and its territory\nb. About the Fundamental Rights\nc. About the Justice\nd. Regarding duties",
+        "options": [
+          "Only b and d",
+          "Only c and a",
+          "Only a",
+          "Only a and b"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_76",
+        "text": "Identify the States without special status under Article 371 and its Sub-Articles of the Constitution of India.",
+        "options": [
+          "Nagaland, Assam",
+          "Manipur, Sikkim",
+          "Mizoram, Nagaland",
+          "Tripura, Jharkhand"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_77",
+        "text": "The First Lok Adalat Camp after Independence was held in which State in 1982?",
+        "options": [
+          "Maharashtra",
+          "Gujarat",
+          "Andhra Pradesh",
+          "Punjab"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_78",
+        "text": "B. Pattabhi Sitaramayya was a Chairman of the following Committees.\nA. House Committee\nB. Committee on Chief Commissioner's Provinces\nC. Adhoc Committee on Citizenship\nD. Adhoc Committee on Supreme Court",
+        "options": [
+          "Only A, B",
+          "Only C, D",
+          "Only A, D",
+          "Only B, C"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_79",
+        "text": "The 'National Commission for Protection of Child Rights' (NCPCR) in India was established in which year?",
+        "options": [
+          "2001",
+          "2005",
+          "2007",
+          "2010"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_80",
+        "text": "The 'Protection of Children from Sexual Offences' (POCSO) Act was enacted in India in which year?",
+        "options": [
+          "2009",
+          "2012",
+          "2015",
+          "2018"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_81",
+        "text": "When was the National Commission for Women established in India?",
+        "options": [
+          "1990",
+          "1991",
+          "1992",
+          "1993"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_82",
+        "text": "Which of the following functions were performed by Constituent Assembly on January 24, 1950?\nA. Adopted the National Flag\nB. Adopted the National Anthem\nC. Adopted the National Song\nD. Elected Dr. Rajendra Prasad as a First President of India",
+        "options": [
+          "Only A, B, C",
+          "Only A, B, D",
+          "Only A, C, D",
+          "Only B, C, D"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_83",
+        "text": "Select the correct statements from the following.\nA. The Constituent Assembly was constituted in November, 1946 under the Cabinet Mission Plan.\nB. Cabinet Mission rejected the idea of two Constituent Assemblies.\nC. The Cripps Proposal was accepted by the Muslim League.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_84",
+        "text": "In which country, the concept of Modern Constitutionalism was started?",
+        "options": [
+          "America",
+          "England",
+          "France",
+          "India"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_85",
+        "text": "Identify the correct statement/s from the following.\nA. A person who holds, or who has held office as President shall, subject to the other provisions of the Constitution, be eligible for re-election to that office.\nB. No person shall be eligible for election as President unless he is qualified for election as a member of the Council of the States.",
+        "options": [
+          "Only A",
+          "Only B",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "csg_pre_2025_mr_86",
+        "text": "Which of the following statement is correct?\nA. The applications for the Sixth National Water Awards sought on 15 November 2024.\nB. National Water Awards are given under nine categories.\nC. Ministry of Jal Shakti has been organising the National Water Awards since year 2016.",
+        "options": [
+          "A, B and C are correct",
+          "A, B and C are incorrect",
+          "A and B are correct",
+          "B and C are correct"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_87",
+        "text": "[Question Cancelled]",
+        "options": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "correctAnswer": "A",
+        "explanation": "(Question Cancelled)",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_88",
+        "text": "Gukesh D. is one of the most outstanding chess player of the country. His achievements are, —\nA. Gold medal in FIDE World Chess Championship held in Singapore in 2024.\nB. Gold medal in FIDE 45th Chess Olympiad (Open Team) held in Singapore in 2024.\nC. Gold Medal in FIDE 45th Chess Olympiad (Individual) held in Budapest in 2024.\nConsider the above statements and select the correct statements.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_89",
+        "text": "Identify the correct statement/s:\nA. January 22 is celebrated as 'National Girl Child Day' in India.\nB. National Girl Child Day celebrated from 2008 to spread awareness about girl child rights.\nC. Beti Bachao Beti Padhao Scheme launched in 2015.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_90",
+        "text": "Match the pairs (BRICS Summits):\nA. 16th BRICS Summit - i. New Delhi\nB. 15th BRICS Summit - ii. Beijing\nC. 14th BRICS Summit - iii. Johannesburg\nD. 13th BRICS Summit - iv. Kazan",
+        "options": [
+          "A-iv, B-i, C-ii, D-iii",
+          "A-iii, B-ii, C-i, D-iv",
+          "A-ii, B-iii, C-iv, D-i",
+          "A-iv, B-iii, C-ii, D-i"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_91",
+        "text": "Which of the following items will receive free of cost to the beneficiaries of Akshay Anna Yojana?\nA. Rice\nB. Sugar\nC. Red chilli powder\nD. Turmeric\nE. Jowar",
+        "options": [
+          "Only A, B, C",
+          "Only C, D, E",
+          "Only A, B, E",
+          "All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_92",
+        "text": "Identify the correct statements regarding Bhagwan Birsa Munda Road Linking Scheme.\nA. This scheme was started by Maharashtra Government.\nB. This scheme was only launched to connect the tribal villages.\nC. This scheme was made to connect tribal areas with primary health centres and Ashram schools through main roads.\nD. This scheme was discontinued by Govt. of Maharashtra in January 2025.",
+        "options": [
+          "A, B",
+          "B, C",
+          "A, B, C",
+          "A, C and D"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_93",
+        "text": "Which party has won in the General elections of Maldives held in April 2024?",
+        "options": [
+          "People's National Congress",
+          "Maldives National Congress",
+          "Awami League",
+          "Democratic Party"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_94",
+        "text": "According to the Indus Water Treaty of 1960, India uses water of _________ rivers.",
+        "options": [
+          "Sutlej, Indus, Ravi",
+          "Ravi, Jhelum, Indus",
+          "Sutlej, Beas, Ravi",
+          "Ravi, Chenab, Indus"
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_95",
+        "text": "What is the meaning of 'guillotine' in the Indian Budget Process?\na. Raising taxes to fill Government deficits.\nb. Remaining budgetary demands for grants are put to vote without further discussion.\nc. Reserve Bank's support during financial crises.\nd. Rejection by the Parliament at the end of the budget.\nWhich of the statement given above is/are correct?",
+        "options": [
+          "Only b",
+          "Only c and d",
+          "Only a, b and c",
+          "Only a"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_96",
+        "text": "Which of the following books are written by Maruti Chitampalli?\nA. Ratva\nB. Pakhar Maya\nC. Chakwa Chandan\nD. Phulvanti\nE. Janglacha Paus",
+        "options": [
+          "Only A, B, C",
+          "Only B, D, E",
+          "Only A, D, B",
+          "All of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_97",
+        "text": "The President of India Draupadi Murmu inaugurated Kaushal Bhawan the new building at the ministry of skill development and entrepreneurship, on 24th January, 2024 at",
+        "options": [
+          "New Delhi",
+          "Hyderabad",
+          "Bengaluru",
+          "Lucknow"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_98",
+        "text": "Select the correct statement/s from the following:\nA. A key highlight of the Union Budget 2025–26 is the launch of a Nuclear Energy Mission, which is focused on research and development of Small Modular Reactors (SMRs).\nB. To facilitate the implementation of the Nuclear Energy Mission, amendments to the Atomic Energy Act and Civil Liability for Nuclear Damage Act will be taken up by the Parliament.\nC. These Amendments are expected to encourage foreign sector investments in nuclear power projects.",
+        "options": [
+          "Only A, B",
+          "Only B, C",
+          "Only A, C",
+          "All of the above"
+        ],
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_99",
+        "text": "Select the correct statement/s from the following:\nA. INS Vikrant officially joined the Indian Navy's Western Naval Command in August 2024.\nB. INS Vikrant (INS – I) is an aircraft carrier in service with the Indian Navy. It is the first ship of its kind to be built in Tamil Nadu.",
+        "options": [
+          "Only A",
+          "Only B",
+          "Both A and B",
+          "None of the above"
+        ],
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "csg_pre_2025_mr_100",
+        "text": "Chief Justice of India, Bhushan Gawai which is not true about him?",
+        "options": [
+          "He was born on 24th November 1960.",
+          "He practiced in Constitutional Law and Administrative Law.",
+          "He was appointed as Government Pleader and Public Prosecutor for Nagpur Bench in January 2005.",
+          "He was elevated as a Judge of the Supreme Court of India in May 2019."
+        ],
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      }
+    ],
+    "language": "marathi"
   }
 ]
