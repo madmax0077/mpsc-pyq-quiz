@@ -383,7 +383,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
     setReportSubmitting(true);
     try {
       const user = (await import("@/lib/firebase")).auth.currentUser;
-      const ok = await submitReport({
+      const result = await submitReport({
         questionId: reportModal.qId,
         questionText: reportModal.qText,
         quizTitle: selectedQuiz?.title || "",
@@ -391,7 +391,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
         reporterName: user?.displayName || "Anonymous",
         reporterEmail: user?.email || "unknown",
       });
-      if (ok) {
+      if (result === "ok") {
         setReportedIds((prev) => new Set(prev).add(reportModal.qId));
         setReportToast("Thanks for reporting! We'll review this question.");
         setTimeout(() => setReportToast(""), 3000);
@@ -399,12 +399,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
         setReportToast("You already reported this question.");
         setTimeout(() => setReportToast(""), 2000);
       }
-    } catch {
-      setReportToast("Failed to submit report. Please try again.");
-      setTimeout(() => setReportToast(""), 3000);
+      setReportModal(null);
+    } catch (err) {
+      console.error("Report submit failed:", err);
+      setReportToast("Failed to submit report. Please try again later.");
+      setTimeout(() => setReportToast(""), 4000);
     } finally {
       setReportSubmitting(false);
-      setReportModal(null);
     }
   };
 
@@ -658,9 +659,8 @@ export default function StudentView({ language = "english", challenge, homeKey =
               </div>
               <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-100">Report Question</h3>
             </div>
-            <p className="mb-1 text-xs font-medium text-slate-400 dark:text-slate-500">Question</p>
-            <p className="mb-4 rounded-lg bg-slate-50 p-3 text-sm text-slate-600 line-clamp-3 dark:bg-slate-700/50 dark:text-slate-300">
-              {reportModal.qText}
+            <p className="mb-4 rounded-lg bg-indigo-50 p-3 text-sm text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">
+              We are still in the initial phase of our project. Please help us by reporting wrong answers — we will take action ASAP!
             </p>
             <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
               Describe the issue

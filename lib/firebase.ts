@@ -81,7 +81,7 @@ export async function submitReport(data: {
   reason: string;
   reporterName: string;
   reporterEmail: string;
-}): Promise<boolean> {
+}): Promise<"ok" | "duplicate" | "error"> {
   try {
     const existing = query(
       collection(db, REPORTS_COLLECTION),
@@ -89,17 +89,17 @@ export async function submitReport(data: {
       where("reporterEmail", "==", data.reporterEmail),
     );
     const snap = await getDocs(existing);
-    if (!snap.empty) return false;
+    if (!snap.empty) return "duplicate";
 
     await addDoc(collection(db, REPORTS_COLLECTION), {
       ...data,
       createdAt: serverTimestamp(),
       status: "pending",
     });
-    return true;
+    return "ok";
   } catch (e) {
     console.error("submitReport error:", e);
-    return false;
+    throw e;
   }
 }
 
