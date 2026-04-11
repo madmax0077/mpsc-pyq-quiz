@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MPSC PYQ QUIZ</string>
+    <string name="title_activity_main">MPSC PYQ QUIZ</string>
+    <string name="package_name">in.mpscs.pyqquiz</string>
+    <string name="custom_url_scheme">in.mpscs.pyqquiz</string>
+</resources>

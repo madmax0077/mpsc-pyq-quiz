@@ -30,3 +30,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# capacitor build artifacts
+android/app/src/main/assets/public/
+ios/App/App/public/
+assets/
