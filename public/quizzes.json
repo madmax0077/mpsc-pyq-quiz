@@ -13417,5 +13417,2620 @@
       }
     ],
     "language": "marathi"
+  },
+  {
+    "id": "ts-pre-2022-english",
+    "title": "MPSC Gazetted TS Combined Pre 2022 (English)",
+    "createdAt": "2022-12-17T00:00:00.000Z",
+    "questions": [
+      {
+        "id": "ts-pre-2022-english-q1",
+        "text": "साठी, स्तव, प्रति, इ विभक्ति प्रतिरुपक शब्दयोगी अव्ययी शब्दांचा वापर कोणत्या विभक्तीत केला जातो?",
+        "options": {
+          "A": "द्वितीया",
+          "B": "तृतीया",
+          "C": "चतुर्थी",
+          "D": "पष्ठी"
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q2",
+        "text": "'कुडास कान, ठेवी ध्यान' या म्हणीचा योग्य अर्थ कोणता?\n(a) नेहमी सावधगिरीने बोलावे.\n(b) मागून येऊन वरचढ होणे.\n(c) एकाने काम करावे दुसऱ्याने त्याचा फायदा घ्यावा.\n(d) साहसाने कार्य करायचे, तर संकटाची भीती बाळगू नये.",
+        "options": {
+          "A": "फक्त (c) बरोबर",
+          "B": "फक्त (a) बरोबर",
+          "C": "फक्त (b) बरोबर",
+          "D": "फक्त (c) व (d) बरोबर"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q3",
+        "text": "'आमच्या शाळेच्या सर्व विद्यार्थ्यांनी येत्या रविवारी वनभोजनास जाण्याचा निश्चय केला आहे.'\nवरील वाक्यातील उद्देश्य ओळखा.",
+        "options": {
+          "A": "वनभोजनास",
+          "B": "विद्यार्थ्यांनी",
+          "C": "आमच्या शाळेच्या",
+          "D": "सर्व"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q4",
+        "text": "वाक्यातील नाम किंवा सर्वनाम यांचे क्रियापदाशी जे संबंध असतात त्यांना काय म्हणतात?",
+        "options": {
+          "A": "कारकार्थ",
+          "B": "उपपदार्थ",
+          "C": "अधिकरण",
+          "D": "संप्रदान"
+        },
+        "correctAnswer": "A",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q5",
+        "text": "'वरपांगी नको असल्याचे सोंग करून एखादीच्या पाठीमागे लाभ मिळविण्यासाठी जाणे'. या अर्थांची म्हण कोणती?",
+        "options": {
+          "A": "नगं नगं म्हणत पायलीच्या मागं पळणं.",
+          "B": "आगीतून निघावे अन् कुफाट्यात पडावे.",
+          "C": "अगं अगं म्हशी मला कुठे नेशी.",
+          "D": "ओठापर्यंत आले पण पोटात नाही गेले."
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q6",
+        "text": "'जो जे वांछिल तो ते लाहो'. अर्थानुसार या वाक्याचा प्रकार कोणता?",
+        "options": {
+          "A": "विध्यर्थी",
+          "B": "आज्ञार्थी",
+          "C": "संकेतार्थी",
+          "D": "विधानार्थी"
+        },
+        "correctAnswer": "A",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q7",
+        "text": "'वाघाच्या घरी शेळी पाहुणी' या म्हणीचा सुसंगत अर्थ व्यक्त करणारा पर्याय निवडा.\n(a) पाहुण्यांचा आदरसत्कार करणे ही भारतीय संस्कृती\n(b) जाणूनबुजून नाजूकपणा दाखविण्याची वृत्ती\n(c) दुर्जनाच्या तावडीत सज्जन\n(d) संकटात परिस्थिती पाहून चलाखपणे वर्तन करणे",
+        "options": {
+          "A": "(d) बरोबर",
+          "B": "(c) बरोबर",
+          "C": "(b) बरोबर",
+          "D": "(a) व (b) बरोबर"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q8",
+        "text": "'शिक्षकांनी विद्यार्थ्यांना शिकवावे' या वाक्यातील प्रयोग ओळखा.",
+        "options": {
+          "A": "कर्मणी प्रयोग",
+          "B": "भावे प्रयोग",
+          "C": "संकीर्ण प्रयोग",
+          "D": "भावकर्तरी प्रयोग"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q9",
+        "text": "'हिरवे हिरवेगार गालिवे' या ओळीतील विशेषणाचा प्रकार पुढीलपैकी कोणता?\n(a) गुणवाचक विशेषण (b) क्रमवाचक विशेषण\n(c) आवृत्तिवाचक विशेषण (d) गणनावाचक विशेषण",
+        "options": {
+          "A": "(b) व (a) बरोबर",
+          "B": "फक्त (a) बरोबर",
+          "C": "फक्त (d) बरोबर",
+          "D": "यापैकी नाही"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q10",
+        "text": "साधित क्रियापदाची पुढीलपैकी दोन उदाहरणे कोणती आहेत?\n(a) संपाची तीव्रता आता थंडावली. (b) हमालल काम करवते.\n(c) कामगारांनी काम संपवून टाकले. (d) आईच्या प्रेमास तो आता दुरावला.",
+        "options": {
+          "A": "फक्त (a) व (c)",
+          "B": "फक्त (a) व (d)",
+          "C": "फक्त (c) व (d)",
+          "D": "फक्त (a) व (b)"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q11",
+        "text": "[उतारा आधारित] उतारा वाचल्यानंतर आपणास खरे 'परिवर्तन विरोधी कोण आहेत' असे वाटते?",
+        "options": {
+          "A": "प्रतिगामी विचारांचे लोक",
+          "B": "प्रस्थापित लोक",
+          "C": "फुटीरतावादी लोक",
+          "D": "समग्र क्रांतीची भाषा करणारे लोक"
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q12",
+        "text": "[उतारा आधारित] परिवर्तनवादी संघटनांना अपयश येण्यामागचे अचूक कारण कोणते?",
+        "options": {
+          "A": "व्यक्तीगत स्वार्थ",
+          "B": "इतस्ततः विखुरलेल्या संघटना",
+          "C": "व्यक्तींचे दोष किंवा संघटनेतील उणिवा",
+          "D": "अल्पातेची प्रवृत्ती"
+        },
+        "correctAnswer": "D",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q13",
+        "text": "[उतारा आधारित] लेखकाच्या मते 'खरा परिवर्तनवादी' कोणाला म्हणावे?",
+        "options": {
+          "A": "समन्वयशील वृत्ती असलेला.",
+          "B": "सम्यक व समर्पणशील वृत्तीने प्रयत्नशील असलेला.",
+          "C": "संघटनशील वृत्तीचा.",
+          "D": "एकजूट करण्यात प्रयत्नशील असलेला."
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q14",
+        "text": "[उतारा आधारित] परिवर्तनवादी चळवळीमध्ये एकजूट होण्यासाठी अचूक उपाय कोणता?",
+        "options": {
+          "A": "विविध चळवळींचे ऐक्य घडवून आणावे.",
+          "B": "संघटनात्मक एकजूट दाखवून संघर्ष करावा.",
+          "C": "फुटीरतावादी प्रवृत्तीवर सतत प्रहार करून एकजुटीचे महत्व वाढवावे.",
+          "D": "पक्ष किंवा संघटना यांच्यातील दोष व उणिवा चालवून घ्याव्या."
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q15",
+        "text": "[उतारा आधारित] परिवर्तनवादी संघटनांना यश येण्यासाठी काय उपाय केला पाहिजे?",
+        "options": {
+          "A": "परिवर्तनवादी शक्तींची एकजूट झाली पाहिजे.",
+          "B": "प्रस्थापितांना विरोध केला पाहिजे.",
+          "C": "फुटीरतावाद्यांना सोडून द्यावे.",
+          "D": "संघटितपणे संघर्ष करावा."
+        },
+        "correctAnswer": "A",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q16",
+        "text": "Choose the correct option to fill in the blank.\nThey decided to _________ and try to be friends again.",
+        "options": {
+          "A": "Bury the hatchet",
+          "B": "Bury the sword",
+          "C": "Bury the gun",
+          "D": "Bury the clarion call"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q17",
+        "text": "Choose the most appropriate option to complete the sentence:\nShe _________ between cheerfulness and deep despair.",
+        "options": {
+          "A": "Alternates",
+          "B": "Alternately",
+          "C": "Alters",
+          "D": "Alternatively"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q18",
+        "text": "'He worked hard that he might pass the examination.'\nChoose the correct simple sentence form of the above sentence.",
+        "options": {
+          "A": "He worked hard and passed the examination.",
+          "B": "He worked hard to pass the examination.",
+          "C": "He worked hard so that he could pass the examination.",
+          "D": "If you work hard you may pass the examination."
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q19",
+        "text": "(a) He is almost correct in his decision.\n(b) The house is enough large to accommodate sizeable number of people.\n(c) Each boy and each girl is busy with duty.\n(d) Neither he nor his friend has prepared their lesson.\nIdentify the correct sentences.",
+        "options": {
+          "A": "Only (a) and (b)",
+          "B": "Only (a) and (c)",
+          "C": "Only (b) and (c)",
+          "D": "Only (b) and (d)"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q20",
+        "text": "Fill in the blank in the following sentences:\nThe book just _________ in my hands.\nMy whole life had _________ at the seams.",
+        "options": {
+          "A": "came round, come round",
+          "B": "came apart, come apart",
+          "C": "came into, come in",
+          "D": "came by, came around"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q21",
+        "text": "Identify the underlined clause in the following sentence:\nHamish asked me how I grow my carrots.",
+        "options": {
+          "A": "Noun clause",
+          "B": "Adjective clause",
+          "C": "Adverb clause",
+          "D": "Relative clause"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q22",
+        "text": "Nobody is happy with him because he is 'a black sheep' in the society.\nIdentify the correct meaning of the underlined word.",
+        "options": {
+          "A": "a man with black complexion",
+          "B": "a very poor man",
+          "C": "a man of bad character",
+          "D": "a man of no importance"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q23",
+        "text": "Choose the correct sentence/s:\n(a) You mustn't driving fast.\n(b) You needn't drive fast.\n(c) Don't you have to go to the office at nine every day?",
+        "options": {
+          "A": "(a) and (b) only",
+          "B": "(b) only",
+          "C": "(b) and (c) only",
+          "D": "(a), (b) and (c)"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q24",
+        "text": "Match the pairs.\n(a) First appearance in public → (i) maiden\n(b) A mournful song for the dead → (ii) highbrow\n(c) One who exhibits about his superiority → (iii) debut\n(d) First venture of a person → (iv) dirge, (v) egotist",
+        "options": {
+          "A": "(iii), (iv), (v), (ii)",
+          "B": "(iii), (iv), (ii), (i)",
+          "C": "(i), (iv), (ii), (v)",
+          "D": "(i), (iv), (v), (iii)"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q25",
+        "text": "Choose the incorrect passive option/s of the following sentence:\nHe urged the Council to reduce the rates.\n(a) The Council was urged to reduce the rates.\n(b) The Council were urged to reduce the rates.\n(c) He urged that the rates should be reduced.\n(d) He urged the rates to reduced.",
+        "options": {
+          "A": "(a), (c)",
+          "B": "(b), (d)",
+          "C": "Only (d)",
+          "D": "Only (a)"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q26",
+        "text": "[Passage based] The attitude of author towards the subject is most probably.",
+        "options": {
+          "A": "Repulsive",
+          "B": "Autocratic",
+          "C": "Suggestive",
+          "D": "Arrogant"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q27",
+        "text": "[Passage based] Which of the following statements are not true in the context of the passage:\n(a) Book lovers never feel lonely.\n(b) Only fiction books provide pleasure.\n(c) Habit of reading provides pleasure, inspiration throughout one's life.\n(d) Serious reading is necessary for cultivation of mind.\n(e) Poetry is compared with cakes and sweetmeats.",
+        "options": {
+          "A": "(a), (b), (c)",
+          "B": "(c), (d), (e)",
+          "C": "(b), (d)",
+          "D": "(b), (e)"
+        },
+        "correctAnswer": "D",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q28",
+        "text": "[Passage based] According to the author, which of the following statements are correct?\n(a) Reading for only pleasure is desirable.\n(b) Poetry should be neglected.\n(c) One can choose books according to his or her taste for serious reading.\n(d) Reading habit is boon.\n(e) Poor are those who do not read.\n(f) Books are always willing to converse with us.",
+        "options": {
+          "A": "(a), (b), (e), (f)",
+          "B": "(c), (d), (e), (f)",
+          "C": "(b), (c), (e), (f)",
+          "D": "(d), (c), (b)"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q29",
+        "text": "[Passage based] Match the following:\n(a) Right kind of books → (i) Noble thoughts\n(b) Poetry → (ii) Kings' Treasures\n(c) Ruskin → (iii) Pleasure\n(d) Books on history → (iv) Education",
+        "options": {
+          "A": "(i), (iii), (ii), (iv)",
+          "B": "(iv), (ii), (iii), (i)",
+          "C": "(iii), (i), (ii), (iv)",
+          "D": "(ii), (iv), (iii), (i)"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q30",
+        "text": "[Passage based] To read nothing but books of fiction is like",
+        "options": {
+          "A": "Eating plain, wholesome food",
+          "B": "Eating only cakes and sweetmeats",
+          "C": "Eating nothing but cakes and chocolates",
+          "D": "Eating nothing but cakes and fruits"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-english-q31",
+        "text": "Consider the following two statements about Droupadi Murmu, 15th President of India:\n(a) She was a Governor of Jharkhand.\n(b) She is a degree holder in Arts faculty.",
+        "options": {
+          "A": "Only (a) is right",
+          "B": "Only (b) is right",
+          "C": "Both (a) and (b) are right",
+          "D": "Neither (a) nor (b) is right"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q32",
+        "text": "As of August 2022, how many languages in India were given the status of a 'Classical language'?",
+        "options": {
+          "A": "04",
+          "B": "06",
+          "C": "08",
+          "D": "10"
+        },
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q33",
+        "text": "The 2022 Sahitya Academy - Bal Sahitya Puraskar (Children's Literature Award) for Marathi was awarded to which novel by Sangeeta Barve?",
+        "options": {
+          "A": "Ranfule",
+          "B": "Gammat Zali Bhari",
+          "C": "Ujedacha Gaav",
+          "D": "Piyuchi Vahi"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q34",
+        "text": "Who inaugurated the 'Industrial Decarbonization Summit 2022' in New Delhi in June 2022?",
+        "options": {
+          "A": "Minister of External Affairs",
+          "B": "Finance Minister",
+          "C": "Minister for Road Transport and Highways",
+          "D": "Minister of Home Affairs"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q35",
+        "text": "When did the Indian Space Research Organization (ISRO) launch the Brazilian 'Amazonia - 1' satellite into space?",
+        "options": {
+          "A": "12 August 2021",
+          "B": "19 April 2021",
+          "C": "28 February 2021",
+          "D": "21 February 2021"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q36",
+        "text": "Recently, in June 2022 who inaugurated the 'National Museum of Customs and GST' in Goa?",
+        "options": {
+          "A": "Pramod Sawant",
+          "B": "S. Sreedharan Pillai",
+          "C": "Prime Minister Narendra Modi",
+          "D": "Nirmala Sitharaman"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q37",
+        "text": "When and in which country was the first human case of Monkeypox recorded?",
+        "options": {
+          "A": "Angola - 2022",
+          "B": "Ethiopia - 2021",
+          "C": "Namibia - 2022",
+          "D": "Democratic Republic of the Congo - 1970"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q38",
+        "text": "When is the International Volunteer Day observed every year?",
+        "options": {
+          "A": "1, December",
+          "B": "4, December",
+          "C": "5, December",
+          "D": "10, December"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q39",
+        "text": "Which is the first state to develop Migration Tracking System (MTS) application?",
+        "options": {
+          "A": "Bihar",
+          "B": "Gujarat",
+          "C": "Maharashtra",
+          "D": "Uttar Pradesh"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q40",
+        "text": "To whom is the Nobel Peace Prize in 2021 awarded for their efforts to safeguard freedom of expression?",
+        "options": {
+          "A": "Abdulrazak Gurnah",
+          "B": "David Card and Joshua Angrist",
+          "C": "Maria Ressa and Dmitry Muratov",
+          "D": "Donald Trump"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-english-q41",
+        "text": "Which of the following Committee was not formed for election reforms?",
+        "options": {
+          "A": "L.M. Singhvi Committee (1986)",
+          "B": "Tarkunde Committee (1974)",
+          "C": "Goswami Committee (1990)",
+          "D": "Indrajit Gupta Committee (1998)"
+        },
+        "correctAnswer": "A",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q42",
+        "text": "In the 11th schedule of the Constitution, Panchayati Raj institutions do not have powers to take decisions regarding which of the following subjects?",
+        "options": {
+          "A": "Social forestry and Agro forestry, Small scale industries",
+          "B": "Village industry, Rural housing, Drinking water",
+          "C": "Primary and Secondary schools, Technical Training",
+          "D": "Higher education, Telecommunications, State Transport"
+        },
+        "correctAnswer": "D",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q43",
+        "text": "As per Maharashtra Municipal Corporations Act, 1949 the Standing Committee shall consist of:",
+        "options": {
+          "A": "15 councillors",
+          "B": "20 councillors",
+          "C": "14 councillors",
+          "D": "16 councillors"
+        },
+        "correctAnswer": "D",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q44",
+        "text": "Which of the following is income source of Gram Panchayat?",
+        "options": {
+          "A": "Gram Panchayat gets 10% of the total revenue collected from the village",
+          "B": "House tax",
+          "C": "Gram Panchayat imposes tax on animals and professions etc.",
+          "D": "All the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q45",
+        "text": "Which institution emerged as the best higher education institution in India in the 2023 edition of QS World University Ranking?",
+        "options": {
+          "A": "IIT Madras",
+          "B": "IIT Bombay",
+          "C": "IISc Bengaluru",
+          "D": "IIIT Bengalore"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q46",
+        "text": "Which of the following is not a function of the Chief Secretary of State?\n(a) To exercise control over the whole Secretariat.\n(b) To advise the Chief Minister on all matters related to administration.\n(c) To act as a spokesperson of the State Government.\n(d) To report to Union Home Minister regarding affairs of the State.",
+        "options": {
+          "A": "Only (a) and (b)",
+          "B": "Only (c) and (d)",
+          "C": "Only (d)",
+          "D": "Only (c)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q47",
+        "text": "Among the following who is known as 'father of Local-Self Government' in India?",
+        "options": {
+          "A": "Lord Ripon",
+          "B": "Lal Bahadur Shastri",
+          "C": "Mahatma Gandhi",
+          "D": "Lord Mountbatten"
+        },
+        "correctAnswer": "A",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q48",
+        "text": "Which of the following functions is not among the functions of municipalities listed in the 12th schedule of the Constitution of India?",
+        "options": {
+          "A": "Safeguarding the interests of the weaker sections of society, including the handicapped and mentally retarded",
+          "B": "Urban forestry, Protection of environment and promotion of ecological aspects",
+          "C": "Planning for Economic and Social Development",
+          "D": "None of these"
+        },
+        "correctAnswer": "D",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q49",
+        "text": "73rd Constitutional Amendment does not apply to which of the following Indian states?\n(a) Meghalaya (b) Goa (c) Mizoram (d) Himachal Pradesh",
+        "options": {
+          "A": "(a) and (b)",
+          "B": "(c) and (d)",
+          "C": "(a) and (c)",
+          "D": "(b) and (d)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q50",
+        "text": "The National Commission for Women was created with _______.",
+        "options": {
+          "A": "an amendment in the Constitution of India",
+          "B": "a decision of the Union Cabinet of India",
+          "C": "an act passed by the Parliament of India",
+          "D": "an order of the President of India"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-english-q51",
+        "text": "How much is the ionisation energy of the Hydrogen atom?",
+        "options": {
+          "A": "786 eV",
+          "B": "13.6 eV",
+          "C": "0 eV",
+          "D": "1 MeV"
+        },
+        "correctAnswer": "B",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-english-q52",
+        "text": "Due to which of the following process white light gets separated into its constituent colors when passing through a prism?",
+        "options": {
+          "A": "Reflection of light",
+          "B": "Total internal reflection",
+          "C": "Dispersion",
+          "D": "Refraction of light"
+        },
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-english-q53",
+        "text": "In alpha decay, the unstable nucleus emits an alpha particle reducing its proton and neutron by:",
+        "options": {
+          "A": "Z by 2 and N by 2",
+          "B": "Z by 1 and N by 2",
+          "C": "Z by 2 and N by 1",
+          "D": "Z by 1 and N by 1"
+        },
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-english-q54",
+        "text": "Which atom does not contain neutron?",
+        "options": {
+          "A": "Deuterium",
+          "B": "Hydrogen",
+          "C": "Tritium",
+          "D": "Helium"
+        },
+        "correctAnswer": "B",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-english-q55",
+        "text": "When CO₂ is passed into a concentrated solution of NaCl which is saturated with NH₃, Crystals of _______ separate out.",
+        "options": {
+          "A": "NaHCO₃",
+          "B": "Na₂CO₃",
+          "C": "NH₄Cl",
+          "D": "(NH₄)₂CO₃"
+        },
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-english-q56",
+        "text": "Which of the following does not obey octet rule?",
+        "options": {
+          "A": "BeCl₂",
+          "B": "PCl₅",
+          "C": "BCl₃",
+          "D": "All of the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-english-q57",
+        "text": "_______ element is used for digitalization of forest area.",
+        "options": {
+          "A": "Point",
+          "B": "Line",
+          "C": "Polygon",
+          "D": "Above all"
+        },
+        "correctAnswer": "C",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-english-q58",
+        "text": "Short-range Network is called _______.",
+        "options": {
+          "A": "Bluetooth",
+          "B": "Computer",
+          "C": "Mobile",
+          "D": "Printer"
+        },
+        "correctAnswer": "A",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-english-q59",
+        "text": "In India aerial photography started in _______ year.",
+        "options": {
+          "A": "1920",
+          "B": "1921",
+          "C": "1951",
+          "D": "1971"
+        },
+        "correctAnswer": "A",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-english-q60",
+        "text": "The Authentication of the electronic record shall be effected by the use of _______ and hash function which envelop and transform the initial electronic record into another electronic record.",
+        "options": {
+          "A": "Digital Signature",
+          "B": "Asymmetric Crypto System",
+          "C": "Cryptography",
+          "D": "Crypto Function"
+        },
+        "correctAnswer": "B",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-english-q61",
+        "text": "Malware can be classified as:\n(a) Viruses and Worms (b) Trojan Horses (c) Spyware (d) Softcon",
+        "options": {
+          "A": "(a) and (c)",
+          "B": "(b) and (c)",
+          "C": "(a), (b) and (c)",
+          "D": "(d) only"
+        },
+        "correctAnswer": "C",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-english-q62",
+        "text": "The software that controls computer hardware is _______.",
+        "options": {
+          "A": "Cable",
+          "B": "Operating System",
+          "C": "COBOL",
+          "D": "Compiler"
+        },
+        "correctAnswer": "B",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-english-q63",
+        "text": "Cyber Crime involves activities such as:\n(a) Child pornography (b) Credit Card Fraud\n(c) Defaming another person online (d) Gaining unauthorized access to computer Systems",
+        "options": {
+          "A": "(a) and (b) only",
+          "B": "(c) and (d) only",
+          "C": "(a), (b) and (d) only",
+          "D": "All of the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-english-q64",
+        "text": "Which kind of settlement pattern is found in Sahyadri ranges of Maharashtra?",
+        "options": {
+          "A": "Triangles pattern",
+          "B": "Linear pattern",
+          "C": "Star pattern",
+          "D": "Step pattern"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q65",
+        "text": "India is having how many neighbouring countries?",
+        "options": {
+          "A": "7",
+          "B": "6",
+          "C": "8",
+          "D": "9"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q66",
+        "text": "The total length of Tapi River is:",
+        "options": {
+          "A": "540 km",
+          "B": "762 km",
+          "C": "900 km",
+          "D": "724 km"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q67",
+        "text": "In Himachal Pradesh the Bhakra dam built on which river?",
+        "options": {
+          "A": "Sutlej",
+          "B": "Ravi",
+          "C": "Chenab",
+          "D": "Beas"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q68",
+        "text": "_______ hill is situated between Bhima river and Godavari river.",
+        "options": {
+          "A": "Mahadev hill",
+          "B": "Satmala - Ajentha",
+          "C": "Harishchandra Balaghat",
+          "D": "Satpuda"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q69",
+        "text": "Which ocean was located between Angara and Gondawana land?",
+        "options": {
+          "A": "Pacific ocean",
+          "B": "Red sea",
+          "C": "Atlantic ocean",
+          "D": "Tethys sea"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q70",
+        "text": "_______ is a heavy rainfall place in south Konkan.",
+        "options": {
+          "A": "Igatpuri",
+          "B": "Matheran",
+          "C": "Amboli",
+          "D": "Mahabaleshwar"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q71",
+        "text": "Find the number at the place of star in given number pyramid.\n19, 43, 37, 26, 39\n  24, 6, 11, 13\n    30, 17, 24\n      13, 7\n        ☆",
+        "options": {
+          "A": "18",
+          "B": "6",
+          "C": "16",
+          "D": "20"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q72",
+        "text": "In the following diagram, rectangle represents females, triangle represents educated, circle represents rural and square represents self employed. Who among the following is uneducated self employed rural female?",
+        "options": {
+          "A": "4",
+          "B": "18",
+          "C": "5",
+          "D": "3"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q73",
+        "text": "Pari collected data from 800 students about favourite subjects. (Pie chart: Maths 36%, English 28%, Science 11%, Hindi 7%, History 8%, Geography 6%, Marathi ?%). How many students like Marathi subject?",
+        "options": {
+          "A": "4",
+          "B": "32",
+          "C": "1440",
+          "D": "40"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q74",
+        "text": "Vinay remembered that his mother's birthday is after 26 August but before 29th August. While his brother Vikas remembered that his mother's birthday is after 27th August but before 30th August. What is the birth date of their mother?",
+        "options": {
+          "A": "26 August",
+          "B": "27 August",
+          "C": "28 August",
+          "D": "30 August"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q75",
+        "text": "Find out the proper term at the place of question mark.\nFVJ : HXD : : ? : TWP",
+        "options": {
+          "A": "BTW",
+          "B": "DYV",
+          "C": "NUR",
+          "D": "JVF"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q76",
+        "text": "Find out the number for question mark:\n81/20/64 (base 9), 36/23/144 (base 25), 49/18/? (base 4)",
+        "options": {
+          "A": "81",
+          "B": "72",
+          "C": "53",
+          "D": "01"
+        },
+        "correctAnswer": "A",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q77",
+        "text": "Find out the correct number for empty space:\n(8)(4)(2)→621, (9)(6)(3)→611, (7)(8)(9)→543, (2)(2)(1), (3)(5)(2), (?)(?)(?)\nWhat are the missing numbers?",
+        "options": {
+          "A": "4 2 3",
+          "B": "3 2 2",
+          "C": "6 4 3",
+          "D": "2 4 6"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q78",
+        "text": "Which number will replace question mark in the series?\n31, 15, 6, ?, 1",
+        "options": {
+          "A": "7",
+          "B": "4",
+          "C": "2",
+          "D": "1"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q79",
+        "text": "If 8 × 2 = 4, 8 × 4 = 2, 16 × 8 = 2 then 40 × 5 = ?",
+        "options": {
+          "A": "2",
+          "B": "8",
+          "C": "20",
+          "D": "10"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q80",
+        "text": "An examination of 20 questions is taken for Bank recruitment. 5 marks are awarded for the correct answer and 2 marks are deducted for the wrong answer. Spandan has solved 10 questions correctly in that examination, then what will be his score?",
+        "options": {
+          "A": "20",
+          "B": "30",
+          "C": "40",
+          "D": "50"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q81",
+        "text": "If the sum of two numbers is 50 and their difference is 22, then the smaller number is?",
+        "options": {
+          "A": "28",
+          "B": "14",
+          "C": "05",
+          "D": "30"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q82",
+        "text": "In a group there are five persons A, B, C, D and E. B is the brother of C. In these five people there is one couple. E is the husband. A and D are female friends and they are unmarried. Who is a wife of 'E'?",
+        "options": {
+          "A": "B",
+          "B": "C",
+          "C": "D",
+          "D": "A"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q83",
+        "text": "If mean of the following data is 6, then find out the value of P:\nX: 2, 4, 6, 10, P+5\nf: 3, 2, 3, 1, 2",
+        "options": {
+          "A": "66",
+          "B": "14",
+          "C": "07",
+          "D": "03"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q84",
+        "text": "In the morning Neelam starts to walk towards the Sun and walks 8 km. She turns left at 90° and goes 12 km, and then again turns right at 90° and goes 8 km. How far and in which direction is she from her starting point?",
+        "options": {
+          "A": "28 km, East",
+          "B": "18 km, North-East",
+          "C": "20 km, North-East",
+          "D": "20 km, East"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q85",
+        "text": "In a class of 73 students, some can play only Guitar & some can play only Flute. Eleven students can play both. If the number of students who can play Guitar is 31. Then how many students can play only Flute & how many can only play Guitar?",
+        "options": {
+          "A": "43 and 21",
+          "B": "42 and 21",
+          "C": "42 and 22",
+          "D": "42 and 20"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q86",
+        "text": "Find out the next missing term.\nX 11, V 13, S 17, O 23, ___",
+        "options": {
+          "A": "K 25",
+          "B": "I 27",
+          "C": "J 31",
+          "D": "F 32"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q87",
+        "text": "Find out the missing term.\nCX, FU, IR, ___, OL",
+        "options": {
+          "A": "LO",
+          "B": "OM",
+          "C": "MP",
+          "D": "OO"
+        },
+        "correctAnswer": "A",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q88",
+        "text": "Find out the missing number:\n(4)(3)→11, (2)(4)→60, (3)(5)→?",
+        "options": {
+          "A": "19",
+          "B": "80",
+          "C": "33",
+          "D": "116"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q89",
+        "text": "A bag contains 10 white, 16 red and 14 black balls. A ball is drawn randomly from it, then the probability of drawing a red or black ball is?",
+        "options": {
+          "A": "1/1",
+          "B": "3/4",
+          "C": "7/3",
+          "D": "2/40"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q90",
+        "text": "Use proper mathematical signs to make the equation correct:\n42 □ 6 □ 51 = 201",
+        "options": {
+          "A": "+ and −",
+          "B": "× and −",
+          "C": "− and +",
+          "D": "+ and ×"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q91",
+        "text": "Choose proper conclusion:\nStatement: It is faster to travel by air from Aurangabad to Chennai.\nConclusion: (a) Aurangabad and Chennai are connected by air services.\n(b) There is no other means of transportation between Aurangabad to Chennai.",
+        "options": {
+          "A": "Only conclusion (a) is implicit.",
+          "B": "Only conclusion (b) is implicit.",
+          "C": "Both (a) and (b) are implicit.",
+          "D": "Neither (a) or (b) are implicit."
+        },
+        "correctAnswer": "A",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q92",
+        "text": "Nitin is 3 year older than Sanjay, who is twice as old as Kiran. If the sum of total age of all three is 103, then how old is Nitin?",
+        "options": {
+          "A": "20",
+          "B": "34",
+          "C": "40",
+          "D": "43"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q93",
+        "text": "The students are using following transportation for school. If this information is shown in a Pie-chart then how many degree's angle will be made for students who are coming by walking?\nWalk: 6, Car: 4, Cycle: 7, Bus: 8, Auto: 5",
+        "options": {
+          "A": "6°",
+          "B": "30°",
+          "C": "72°",
+          "D": "80°"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q94",
+        "text": "Find out the missing number.\n27, 32, ___, 54, 71, 92",
+        "options": {
+          "A": "37",
+          "B": "41",
+          "C": "51",
+          "D": "52"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q95",
+        "text": "A daughter is 16 years of age, who was born after one year of parent's marriage. The sum of total age of parents and their marriage is 116 years. Mother is 3 year younger than father, then what is the age of father?",
+        "options": {
+          "A": "56 years 6 months",
+          "B": "51 years",
+          "C": "48 years",
+          "D": "99 years"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-english-q96",
+        "text": "Majority districts of which state are affected by the floods due to change in the course of river Kosi?",
+        "options": {
+          "A": "Jharkhand",
+          "B": "Bihar and Uttar Pradesh",
+          "C": "Bihar",
+          "D": "Uttar Pradesh"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q97",
+        "text": "In the atmosphere ozone gas is found in _______ percent.",
+        "options": {
+          "A": "0.00006",
+          "B": "0.00005",
+          "C": "0.00007",
+          "D": "0.000006"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q98",
+        "text": "_______ is a manmade hazard.",
+        "options": {
+          "A": "Floods",
+          "B": "Landslide",
+          "C": "Famine",
+          "D": "Industrial accident"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q99",
+        "text": "Which of the following is not a biodiversity hotspot?",
+        "options": {
+          "A": "Western Ghat",
+          "B": "Eastern Himalaya",
+          "C": "Andaman - Nicobar Islands",
+          "D": "Eastern Ghat"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-english-q100",
+        "text": "In which of the following city the first 'International Environmental Conference' was held on 5th June 1972?",
+        "options": {
+          "A": "Stockholm",
+          "B": "New York",
+          "C": "London",
+          "D": "Birmingham"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      }
+    ]
+  },
+  {
+    "id": "ts-pre-2022-marathi",
+    "title": "MPSC राजपत्रित तांत्रिक सेवा संयुक्त पूर्व परीक्षा 2022 (मराठी)",
+    "createdAt": "2022-12-17T00:00:00.000Z",
+    "questions": [
+      {
+        "id": "ts-pre-2022-marathi-q1",
+        "text": "साठी, स्तव, प्रति, इ विभक्ति प्रतिरुपक शब्दयोगी अव्ययी शब्दांचा वापर कोणत्या विभक्तीत केला जातो?",
+        "options": {
+          "A": "द्वितीया",
+          "B": "तृतीया",
+          "C": "चतुर्थी",
+          "D": "पष्ठी"
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q2",
+        "text": "'कुडास कान, ठेवी ध्यान' या म्हणीचा योग्य अर्थ कोणता?\n(a) नेहमी सावधगिरीने बोलावे.\n(b) मागून येऊन वरचढ होणे.\n(c) एकाने काम करावे दुसऱ्याने त्याचा फायदा घ्यावा.\n(d) साहसाने कार्य करायचे, तर संकटाची भीती बाळगू नये.",
+        "options": {
+          "A": "फक्त (c) बरोबर",
+          "B": "फक्त (a) बरोबर",
+          "C": "फक्त (b) बरोबर",
+          "D": "फक्त (c) व (d) बरोबर"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q3",
+        "text": "'आमच्या शाळेच्या सर्व विद्यार्थ्यांनी येत्या रविवारी वनभोजनास जाण्याचा निश्चय केला आहे.'\nवरील वाक्यातील उद्देश्य ओळखा.",
+        "options": {
+          "A": "वनभोजनास",
+          "B": "विद्यार्थ्यांनी",
+          "C": "आमच्या शाळेच्या",
+          "D": "सर्व"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q4",
+        "text": "वाक्यातील नाम किंवा सर्वनाम यांचे क्रियापदाशी जे संबंध असतात त्यांना काय म्हणतात?",
+        "options": {
+          "A": "कारकार्थ",
+          "B": "उपपदार्थ",
+          "C": "अधिकरण",
+          "D": "संप्रदान"
+        },
+        "correctAnswer": "A",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q5",
+        "text": "'वरपांगी नको असल्याचे सोंग करून एखादीच्या पाठीमागे लाभ मिळविण्यासाठी जाणे'. या अर्थांची म्हण कोणती?",
+        "options": {
+          "A": "नगं नगं म्हणत पायलीच्या मागं पळणं.",
+          "B": "आगीतून निघावे अन् कुफाट्यात पडावे.",
+          "C": "अगं अगं म्हशी मला कुठे नेशी.",
+          "D": "ओठापर्यंत आले पण पोटात नाही गेले."
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q6",
+        "text": "'जो जे वांछिल तो ते लाहो'. अर्थानुसार या वाक्याचा प्रकार कोणता?",
+        "options": {
+          "A": "विध्यर्थी",
+          "B": "आज्ञार्थी",
+          "C": "संकेतार्थी",
+          "D": "विधानार्थी"
+        },
+        "correctAnswer": "A",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q7",
+        "text": "'वाघाच्या घरी शेळी पाहुणी' या म्हणीचा सुसंगत अर्थ व्यक्त करणारा पर्याय निवडा.\n(a) पाहुण्यांचा आदरसत्कार करणे ही भारतीय संस्कृती\n(b) जाणूनबुजून नाजूकपणा दाखविण्याची वृत्ती\n(c) दुर्जनाच्या तावडीत सज्जन\n(d) संकटात परिस्थिती पाहून चलाखपणे वर्तन करणे",
+        "options": {
+          "A": "(d) बरोबर",
+          "B": "(c) बरोबर",
+          "C": "(b) बरोबर",
+          "D": "(a) व (b) बरोबर"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q8",
+        "text": "'शिक्षकांनी विद्यार्थ्यांना शिकवावे' या वाक्यातील प्रयोग ओळखा.",
+        "options": {
+          "A": "कर्मणी प्रयोग",
+          "B": "भावे प्रयोग",
+          "C": "संकीर्ण प्रयोग",
+          "D": "भावकर्तरी प्रयोग"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q9",
+        "text": "'हिरवे हिरवेगार गालिवे' या ओळीतील विशेषणाचा प्रकार पुढीलपैकी कोणता?\n(a) गुणवाचक विशेषण (b) क्रमवाचक विशेषण\n(c) आवृत्तिवाचक विशेषण (d) गणनावाचक विशेषण",
+        "options": {
+          "A": "(b) व (a) बरोबर",
+          "B": "फक्त (a) बरोबर",
+          "C": "फक्त (d) बरोबर",
+          "D": "यापैकी नाही"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q10",
+        "text": "साधित क्रियापदाची पुढीलपैकी दोन उदाहरणे कोणती आहेत?\n(a) संपाची तीव्रता आता थंडावली. (b) हमालल काम करवते.\n(c) कामगारांनी काम संपवून टाकले. (d) आईच्या प्रेमास तो आता दुरावला.",
+        "options": {
+          "A": "फक्त (a) व (c)",
+          "B": "फक्त (a) व (d)",
+          "C": "फक्त (c) व (d)",
+          "D": "फक्त (a) व (b)"
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q11",
+        "text": "[उतारा आधारित] उतारा वाचल्यानंतर आपणास खरे 'परिवर्तन विरोधी कोण आहेत' असे वाटते?",
+        "options": {
+          "A": "प्रतिगामी विचारांचे लोक",
+          "B": "प्रस्थापित लोक",
+          "C": "फुटीरतावादी लोक",
+          "D": "समग्र क्रांतीची भाषा करणारे लोक"
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q12",
+        "text": "[उतारा आधारित] परिवर्तनवादी संघटनांना अपयश येण्यामागचे अचूक कारण कोणते?",
+        "options": {
+          "A": "व्यक्तीगत स्वार्थ",
+          "B": "इतस्ततः विखुरलेल्या संघटना",
+          "C": "व्यक्तींचे दोष किंवा संघटनेतील उणिवा",
+          "D": "अल्पातेची प्रवृत्ती"
+        },
+        "correctAnswer": "D",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q13",
+        "text": "[उतारा आधारित] लेखकाच्या मते 'खरा परिवर्तनवादी' कोणाला म्हणावे?",
+        "options": {
+          "A": "समन्वयशील वृत्ती असलेला.",
+          "B": "सम्यक व समर्पणशील वृत्तीने प्रयत्नशील असलेला.",
+          "C": "संघटनशील वृत्तीचा.",
+          "D": "एकजूट करण्यात प्रयत्नशील असलेला."
+        },
+        "correctAnswer": "B",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q14",
+        "text": "[उतारा आधारित] परिवर्तनवादी चळवळीमध्ये एकजूट होण्यासाठी अचूक उपाय कोणता?",
+        "options": {
+          "A": "विविध चळवळींचे ऐक्य घडवून आणावे.",
+          "B": "संघटनात्मक एकजूट दाखवून संघर्ष करावा.",
+          "C": "फुटीरतावादी प्रवृत्तीवर सतत प्रहार करून एकजुटीचे महत्व वाढवावे.",
+          "D": "पक्ष किंवा संघटना यांच्यातील दोष व उणिवा चालवून घ्याव्या."
+        },
+        "correctAnswer": "C",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q15",
+        "text": "[उतारा आधारित] परिवर्तनवादी संघटनांना यश येण्यासाठी काय उपाय केला पाहिजे?",
+        "options": {
+          "A": "परिवर्तनवादी शक्तींची एकजूट झाली पाहिजे.",
+          "B": "प्रस्थापितांना विरोध केला पाहिजे.",
+          "C": "फुटीरतावाद्यांना सोडून द्यावे.",
+          "D": "संघटितपणे संघर्ष करावा."
+        },
+        "correctAnswer": "A",
+        "explanation": "Marathi Language",
+        "category": "Marathi Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q16",
+        "text": "Choose the correct option to fill in the blank.\nThey decided to _________ and try to be friends again.",
+        "options": {
+          "A": "Bury the hatchet",
+          "B": "Bury the sword",
+          "C": "Bury the gun",
+          "D": "Bury the clarion call"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q17",
+        "text": "Choose the most appropriate option to complete the sentence:\nShe _________ between cheerfulness and deep despair.",
+        "options": {
+          "A": "Alternates",
+          "B": "Alternately",
+          "C": "Alters",
+          "D": "Alternatively"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q18",
+        "text": "'He worked hard that he might pass the examination.'\nChoose the correct simple sentence form of the above sentence.",
+        "options": {
+          "A": "He worked hard and passed the examination.",
+          "B": "He worked hard to pass the examination.",
+          "C": "He worked hard so that he could pass the examination.",
+          "D": "If you work hard you may pass the examination."
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q19",
+        "text": "(a) He is almost correct in his decision.\n(b) The house is enough large to accommodate sizeable number of people.\n(c) Each boy and each girl is busy with duty.\n(d) Neither he nor his friend has prepared their lesson.\nIdentify the correct sentences.",
+        "options": {
+          "A": "Only (a) and (b)",
+          "B": "Only (a) and (c)",
+          "C": "Only (b) and (c)",
+          "D": "Only (b) and (d)"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q20",
+        "text": "Fill in the blank in the following sentences:\nThe book just _________ in my hands.\nMy whole life had _________ at the seams.",
+        "options": {
+          "A": "came round, come round",
+          "B": "came apart, come apart",
+          "C": "came into, come in",
+          "D": "came by, came around"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q21",
+        "text": "Identify the underlined clause in the following sentence:\nHamish asked me how I grow my carrots.",
+        "options": {
+          "A": "Noun clause",
+          "B": "Adjective clause",
+          "C": "Adverb clause",
+          "D": "Relative clause"
+        },
+        "correctAnswer": "A",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q22",
+        "text": "Nobody is happy with him because he is 'a black sheep' in the society.\nIdentify the correct meaning of the underlined word.",
+        "options": {
+          "A": "a man with black complexion",
+          "B": "a very poor man",
+          "C": "a man of bad character",
+          "D": "a man of no importance"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q23",
+        "text": "Choose the correct sentence/s:\n(a) You mustn't driving fast.\n(b) You needn't drive fast.\n(c) Don't you have to go to the office at nine every day?",
+        "options": {
+          "A": "(a) and (b) only",
+          "B": "(b) only",
+          "C": "(b) and (c) only",
+          "D": "(a), (b) and (c)"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q24",
+        "text": "Match the pairs.\n(a) First appearance in public → (i) maiden\n(b) A mournful song for the dead → (ii) highbrow\n(c) One who exhibits about his superiority → (iii) debut\n(d) First venture of a person → (iv) dirge, (v) egotist",
+        "options": {
+          "A": "(iii), (iv), (v), (ii)",
+          "B": "(iii), (iv), (ii), (i)",
+          "C": "(i), (iv), (ii), (v)",
+          "D": "(i), (iv), (v), (iii)"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q25",
+        "text": "Choose the incorrect passive option/s of the following sentence:\nHe urged the Council to reduce the rates.\n(a) The Council was urged to reduce the rates.\n(b) The Council were urged to reduce the rates.\n(c) He urged that the rates should be reduced.\n(d) He urged the rates to reduced.",
+        "options": {
+          "A": "(a), (c)",
+          "B": "(b), (d)",
+          "C": "Only (d)",
+          "D": "Only (a)"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q26",
+        "text": "[Passage based] The attitude of author towards the subject is most probably.",
+        "options": {
+          "A": "Repulsive",
+          "B": "Autocratic",
+          "C": "Suggestive",
+          "D": "Arrogant"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q27",
+        "text": "[Passage based] Which of the following statements are not true in the context of the passage:\n(a) Book lovers never feel lonely.\n(b) Only fiction books provide pleasure.\n(c) Habit of reading provides pleasure, inspiration throughout one's life.\n(d) Serious reading is necessary for cultivation of mind.\n(e) Poetry is compared with cakes and sweetmeats.",
+        "options": {
+          "A": "(a), (b), (c)",
+          "B": "(c), (d), (e)",
+          "C": "(b), (d)",
+          "D": "(b), (e)"
+        },
+        "correctAnswer": "D",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q28",
+        "text": "[Passage based] According to the author, which of the following statements are correct?\n(a) Reading for only pleasure is desirable.\n(b) Poetry should be neglected.\n(c) One can choose books according to his or her taste for serious reading.\n(d) Reading habit is boon.\n(e) Poor are those who do not read.\n(f) Books are always willing to converse with us.",
+        "options": {
+          "A": "(a), (b), (e), (f)",
+          "B": "(c), (d), (e), (f)",
+          "C": "(b), (c), (e), (f)",
+          "D": "(d), (c), (b)"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q29",
+        "text": "[Passage based] Match the following:\n(a) Right kind of books → (i) Noble thoughts\n(b) Poetry → (ii) Kings' Treasures\n(c) Ruskin → (iii) Pleasure\n(d) Books on history → (iv) Education",
+        "options": {
+          "A": "(i), (iii), (ii), (iv)",
+          "B": "(iv), (ii), (iii), (i)",
+          "C": "(iii), (i), (ii), (iv)",
+          "D": "(ii), (iv), (iii), (i)"
+        },
+        "correctAnswer": "C",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q30",
+        "text": "[Passage based] To read nothing but books of fiction is like",
+        "options": {
+          "A": "Eating plain, wholesome food",
+          "B": "Eating only cakes and sweetmeats",
+          "C": "Eating nothing but cakes and chocolates",
+          "D": "Eating nothing but cakes and fruits"
+        },
+        "correctAnswer": "B",
+        "explanation": "English Language",
+        "category": "English Language"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q31",
+        "text": "द्रौपदी मुर्मू, भारताच्या 15 व्या राष्ट्रपतीबाबत पुढील दोन विधाने पहा:\n(a) त्या झारखंडच्या राज्यपाल होत्या.\n(b) त्या कला शाखेतील पदवीधारक आहेत.",
+        "options": {
+          "A": "केवळ (a) बरोबर",
+          "B": "केवळ (b) बरोबर",
+          "C": "(a) व (b) दोन्ही विधाने बरोबर",
+          "D": "(a) व (b) दोन्ही विधाने चूक"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q32",
+        "text": "ऑगस्ट 2022 पर्यंत, भारतातील किती भाषांना 'अभिजात भाषेचा' दर्जा देण्यात आला आहे?",
+        "options": {
+          "A": "04",
+          "B": "06",
+          "C": "08",
+          "D": "10"
+        },
+        "correctAnswer": "B",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q33",
+        "text": "2022 चा साहित्य अकादमीतर्फे देण्यात येणारा बालसाहित्य पुरस्कार मराठीसाठी संगीता बर्वे यांच्या कुठल्या कादंबरील देण्यात आला?",
+        "options": {
+          "A": "रानफुले",
+          "B": "गंमत झाली भारी",
+          "C": "उजेडाचा गाव",
+          "D": "पियुची वही"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q34",
+        "text": "नवी दिल्ली येथे जून 2022 मध्ये 'इंडस्ट्रियल डीकार्बोनायझेशन समीट 2022' चे उद्घाटन कोणी केले?",
+        "options": {
+          "A": "परराष्ट्र मंत्री",
+          "B": "अर्थमंत्री",
+          "C": "रस्तेवाहतूक आणि महामार्ग मंत्री",
+          "D": "गृहमंत्री"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q35",
+        "text": "भारतीय अवकाश संशोधन संस्थेने (ISRO) ब्राझीलचा 'ॲमेझॉनिया – 1' हा उपग्रह अवकाशात केव्हा सोडला?",
+        "options": {
+          "A": "12 ऑगस्ट 2021",
+          "B": "19 एप्रिल 2021",
+          "C": "28 फेब्रुवारी 2021",
+          "D": "21 फेब्रुवारी 2021"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q36",
+        "text": "नुकतेच जून 2022 मध्ये गोव्यात 'नॅशनल म्युझियम ऑफ कस्टम्स ॲंड जी एस टी' चे उद्घाटन कोणी केले?",
+        "options": {
+          "A": "प्रमोद सावंत",
+          "B": "एस श्रीधरन पिल्लई",
+          "C": "पंतप्रधान नरेंद्र मोदी",
+          "D": "निर्मल सीताराम्‌न"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q37",
+        "text": "मंकीपॉक्स चा पहिला मानवी रुण कधी आणि कोणत्या देशात नोंदवला गेला?",
+        "options": {
+          "A": "अंगोला – 2022",
+          "B": "इथिओपीया – 2021",
+          "C": "नामिबीया – 2022",
+          "D": "काँगो लोकशाही प्रजासत्ताक – 1970"
+        },
+        "correctAnswer": "D",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q38",
+        "text": "दरवर्षी आंतरराष्ट्रीय स्वयंसेवक दिन कधी साजरा केला जातो?",
+        "options": {
+          "A": "1 डिसेंबर",
+          "B": "4 डिसेंबर",
+          "C": "5 डिसेंबर",
+          "D": "10 डिसेंबर"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q39",
+        "text": "मायग्रेशन ट्रॅकिंग सिस्टम (MTS) ॲप्लिकेशन विकसित करणारे पहिले राज्य कोणते आहे?",
+        "options": {
+          "A": "बिहार",
+          "B": "गुजरात",
+          "C": "महाराष्ट्र",
+          "D": "उत्तर प्रदेश"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q40",
+        "text": "इ.स. 2021 मध्ये शांततेचे नोबेल पारितोषिक कोणाला अभिव्यक्ती स्वातंत्र्याचे रक्षण करण्यासाठी प्रयत्न केले?",
+        "options": {
+          "A": "अब्दुल्रझाक गुरनाह",
+          "B": "डेव्हिड कार्ड आणि जोशुआ ॲंग्रिस्ट",
+          "C": "मारिया रेसा आणि दिमित्री मुरातोव्ह",
+          "D": "डोनाल्ड ट्रम्प"
+        },
+        "correctAnswer": "C",
+        "explanation": "Current Affairs",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q41",
+        "text": "खालीलपैकी कोणती समिती निवडणूक सुधारणांसाठी स्थापन केलेली नाही?",
+        "options": {
+          "A": "एल.एम. सिंघवी समिती (1986)",
+          "B": "तार्कुंडे समिती (1974)",
+          "C": "गोस्वामी समिती (1990)",
+          "D": "इंद्रजीत गुप्ता समिती (1998)"
+        },
+        "correctAnswer": "A",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q42",
+        "text": "राज्यघटनेच्या अकराव्या यादीमध्ये पंचायती राज संस्थांना खालीलपैकी कोणत्या विषयाच्या संदर्भात निर्णय घेण्याचे अधिकार नाहीत?",
+        "options": {
+          "A": "सामाजिक वनीकरण व वनशेती, लघुद्योग",
+          "B": "ग्रामोद्योग, ग्रामीण घरबांधणी, पिण्याचे पाणी",
+          "C": "प्राथमिक व माध्यमिक शाळा, तांत्रिक प्रशिक्षण",
+          "D": "उच्च शिक्षण, दूरसंचार, राज्यपरिवहन"
+        },
+        "correctAnswer": "D",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q43",
+        "text": "महाराष्ट्र महानगरपालिका अधिनियम, 1949 नुसार स्थायी समितीत किती नगरसेवकांचा समावेश असेल?",
+        "options": {
+          "A": "15 नगरसेवक",
+          "B": "20 नगरसेवक",
+          "C": "14 नगरसेवक",
+          "D": "16 नगरसेवक"
+        },
+        "correctAnswer": "D",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q44",
+        "text": "खालीलपैकी कोणता ग्रामपंचायतींचे उत्पन्नाचा स्रोत आहे?",
+        "options": {
+          "A": "गावातून जमा झालेल्या एकूण महसूलाच्या (दहा) 10% ग्रामपंचायतीला मिळतात",
+          "B": "घरांवरील कर",
+          "C": "ग्रामपंचायत प्राणी, व्यवसाय इत्यादींवर कर लादते",
+          "D": "वरील सर्व"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q45",
+        "text": "क्यू एस वर्ल्ड युनिव्हर्सिटी रँकींगच्या 2023 आवृत्तीत भारतातील सर्वोत्तम उच्च शिक्षण संस्था म्हणून कोणती संस्था उदयाला आली?",
+        "options": {
+          "A": "आय आय टी मद्रास",
+          "B": "आय आय टी बॉम्बे",
+          "C": "आय आय एस सी बेंगळुरु",
+          "D": "आय आय आय टी बेंगलोर"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q46",
+        "text": "खालीलपैकी कोणते राज्याच्या मुख्य सचिवांचे कार्य नाही?\n(a) संपूर्ण सचिवालयावर नियंत्रण ठेवणे.\n(b) प्रशासनाशी संबंधित सर्व बाबींवर मुख्यमंत्र्यांना सल्ला देणे.\n(c) राज्यसरकारचा प्रवक्ता म्हणून काम करणे.\n(d) राज्याच्या कारभाराबाबत केंद्रीय गृहमंत्र्यांना अहवाल देणे.",
+        "options": {
+          "A": "फक्त (a) आणि (b)",
+          "B": "फक्त (c) आणि (d)",
+          "C": "फक्त (d)",
+          "D": "फक्त (c)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q47",
+        "text": "खालीलपैकी कोणाला भारतातील 'स्थानिक स्वराज्य संस्थेचे जनक' म्हणून ओळखले जाते?",
+        "options": {
+          "A": "लॉर्ड रिपन",
+          "B": "लाल बहादूर शास्त्री",
+          "C": "महात्मा गांधी",
+          "D": "लॉर्ड माऊंटबॅटन"
+        },
+        "correctAnswer": "A",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q48",
+        "text": "खालीलपैकी कोणते कार्य भारतीय राज्यघटनेच्या बाराव्या अनुसूचीमध्ये सूचीबद्ध नगरपालिकांच्या कार्यपैकी नाही?",
+        "options": {
+          "A": "अपंग आणि मतिमंद यांच्यासह समाजातील दुर्बल घटकांच्या हिताचे रक्षण करणे",
+          "B": "शहरी वनीकरण, पर्यावरणाचे संरक्षण आणि पर्यावरणीय पैलूंना प्रोत्साहन",
+          "C": "आर्थिक आणि सामाजिक विकासासाठी नियोजन",
+          "D": "यापैकी नाही"
+        },
+        "correctAnswer": "D",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q49",
+        "text": "73 वी घटनादुरुस्ती खालीलपैकी कोणत्या भारतीय राज्यांना लागू होत नाही?\n(a) मेघालय (b) गोवा (c) मिझोरम (d) हिमाचल प्रदेश",
+        "options": {
+          "A": "(a) आणि (b)",
+          "B": "(c) आणि (d)",
+          "C": "(a) आणि (c)",
+          "D": "(b) आणि (d)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q50",
+        "text": "राष्ट्रीय महिला आयोगाची निर्मिती __________ करण्यात आली.",
+        "options": {
+          "A": "भारताच्या संविधानातील दुरुस्तीने",
+          "B": "भारताच्या केंद्रीय मंत्रिमंडळाच्या निर्णयाने",
+          "C": "भारतीय संसदेने संमत केलेल्या कायद्याने",
+          "D": "भारताच्या राष्ट्रपतींच्या आदेशाने"
+        },
+        "correctAnswer": "C",
+        "explanation": "Indian Polity",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q51",
+        "text": "हायड्रोजन अणूची आयोनायझेशन ऊर्जा किती असते?",
+        "options": {
+          "A": "786 eV",
+          "B": "13.6 eV",
+          "C": "0 eV",
+          "D": "1 MeV"
+        },
+        "correctAnswer": "B",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q52",
+        "text": "खालीलपैकी कोणत्या प्रक्रियेमुळे पांढऱ्या प्रकाशाचे त्याच्या घटक रंगात विभाजन होते जेव्हा ते लोलकामधून बाहेर पडतात?",
+        "options": {
+          "A": "प्रकाशाचे परावर्तन",
+          "B": "टोटल इंटर्नल रिफ्लेक्शन",
+          "C": "डिस्पर्शन",
+          "D": "प्रकाशाचे अपवर्तन"
+        },
+        "correctAnswer": "C",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q53",
+        "text": "अल्फा क्षयामध्ये अस्थिर न्यूक्लिअस, अल्फा कण उत्सर्जित करतो, ज्यामुळे त्याचे प्रोटॉन आणि न्यूट्रॉन __________ ने कमी होते.",
+        "options": {
+          "A": "प्रोटॉन 2 ने आणि न्यूट्रॉन 2 ने",
+          "B": "प्रोटॉन 1 ने आणि न्यूट्रॉन 2 ने",
+          "C": "प्रोटॉन 2 ने आणि न्यूट्रॉन 1 ने",
+          "D": "प्रोटॉन 1 ने आणि न्यूट्रॉन 1 ने"
+        },
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q54",
+        "text": "खालीलपैकी कोणत्या अणूमध्ये न्यूट्रॉन नसतो?",
+        "options": {
+          "A": "ड्युटेरिअम",
+          "B": "हायड्रोजन",
+          "C": "ट्रिटीयम",
+          "D": "हेलियम"
+        },
+        "correctAnswer": "B",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q55",
+        "text": "NH₃ ने संतृप्त आहे अशा NaCl च्या संहत द्रावणातून CO₂ पाठविला असता __________ चे स्फटिक वेगळे होतात.",
+        "options": {
+          "A": "NaHCO₃",
+          "B": "Na₂CO₃",
+          "C": "NH₄Cl",
+          "D": "(NH₄)₂CO₃"
+        },
+        "correctAnswer": "A",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q56",
+        "text": "खालीलपैकी कोण अष्टकाचा नियम पाळत नाही?",
+        "options": {
+          "A": "BeCl₂",
+          "B": "PCl₅",
+          "C": "BCl₃",
+          "D": "वरीलपैकी सर्व"
+        },
+        "correctAnswer": "D",
+        "explanation": "Science",
+        "category": "Science"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q57",
+        "text": "वनक्षेत्राचे आरेखन (digitalization) करण्यासाठी __________ घटकाचा वापर करतात.",
+        "options": {
+          "A": "बिंदू",
+          "B": "रेषा",
+          "C": "बहुभुजाकृती",
+          "D": "वरील सर्व"
+        },
+        "correctAnswer": "C",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q58",
+        "text": "शॉर्टरेंज नेटवर्क यास __________ असे म्हणतात.",
+        "options": {
+          "A": "ब्लूटूथ",
+          "B": "संगणक",
+          "C": "मोबाईल",
+          "D": "प्रिन्टर"
+        },
+        "correctAnswer": "A",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q59",
+        "text": "भारतात हवाई छायाचित्रणाची सुरवात __________ साली झाली.",
+        "options": {
+          "A": "1920",
+          "B": "1921",
+          "C": "1951",
+          "D": "1971"
+        },
+        "correctAnswer": "A",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q60",
+        "text": "इलेक्ट्रॉनिक रेकॉर्डचे प्रमाणीकरण हे __________ आणि हॅश फंक्शनच्या वापराद्वारे केले जाईल, जे सुरुवातीच्या इलेक्ट्रॉनिक रेकॉर्डमध्ये आच्छादित आणि रुपांतरित करते.",
+        "options": {
+          "A": "डिजिटल सिग्नेचर",
+          "B": "असिमेट्रिक क्रिप्टो सिस्टीम",
+          "C": "क्रिप्टोग्राफी",
+          "D": "क्रिप्टोफंक्शन"
+        },
+        "correctAnswer": "B",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q61",
+        "text": "मालवेअर वर्गीकृत करण्याचे प्रकार ______.\n(a) विषाणू आणि वर्म्स (b) ट्रोजन हॉर्सिस (c) स्पायवेअर (d) सॉफ्टकॉन",
+        "options": {
+          "A": "(a) आणि (c)",
+          "B": "(b) आणि (c)",
+          "C": "(a), (b) आणि (c)",
+          "D": "(d) फक्त"
+        },
+        "correctAnswer": "C",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q62",
+        "text": "संगणक हार्डवेअर नियंत्रित करणारे __________ हे सॉफ्टवेअर आहे.",
+        "options": {
+          "A": "केबल",
+          "B": "ऑपरेटिंग सिस्टीम",
+          "C": "कोबोल",
+          "D": "कंपायलर"
+        },
+        "correctAnswer": "B",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q63",
+        "text": "सायबर गुन्ह्यांत __________ सारख्या क्रियाप्रकारांचा समावेश होतो.\n(a) चाइल्ड पोर्नोग्राफी (b) क्रेडीट कार्ड फसवणूक\n(c) दुसऱ्या व्यक्तीची ऑनलाईन बदनामी करणे (d) संगणक प्रणालीमध्ये अनधिकृत प्रवेश मिळवणे",
+        "options": {
+          "A": "(a) आणि (b)",
+          "B": "(c) आणि (d)",
+          "C": "(a), (b) आणि (d)",
+          "D": "वरील सर्व"
+        },
+        "correctAnswer": "D",
+        "explanation": "Information Technology",
+        "category": "Information Technology"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q64",
+        "text": "महाराष्ट्रातील सह्याद्री पर्वत रांगेत खालीलपैकी कोणत्या प्रकारचे वस्तीचे प्रारूप आढळते?",
+        "options": {
+          "A": "त्रिकोणी प्रारूप",
+          "B": "रेषाकृती प्रारूप",
+          "C": "ताराकृती प्रारूप",
+          "D": "पायऱ्या पायऱ्याचे प्रारूप"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q65",
+        "text": "भारताच्या शेजारी राष्ट्रांची संख्या किती आहे?",
+        "options": {
+          "A": "7",
+          "B": "6",
+          "C": "8",
+          "D": "9"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q66",
+        "text": "तापी जलप्रणालीची लांबी किती आहे?",
+        "options": {
+          "A": "540 किमी",
+          "B": "762 किमी",
+          "C": "900 किमी",
+          "D": "724 किमी"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q67",
+        "text": "हिमाचल प्रदेशातील भाक्रा हे धरण कोणत्या नदीवर बांधण्यात आले आहे?",
+        "options": {
+          "A": "सतलज",
+          "B": "रावी",
+          "C": "चिनाब",
+          "D": "बियास"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q68",
+        "text": "भिमा आणि गोदावरी नद्यांच्या दरम्यान __________ डोंगर रांग स्थित आहे.",
+        "options": {
+          "A": "महादेव डोंगर",
+          "B": "सातमाळा-अजंठा",
+          "C": "हरिशचंद्र बालाघाट",
+          "D": "सातपुडा"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q69",
+        "text": "अंगारा भूमी आणि गोंडवाना भूमी यांच्या दरम्यान कोणता समुद्र होता?",
+        "options": {
+          "A": "पॅसिफिक समुद्र",
+          "B": "लाल समुद्र",
+          "C": "अटलांटिक समुद्र",
+          "D": "टेथिस समुद्र"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q70",
+        "text": "__________ हे दक्षिण कोकणातील जास्त पावसाचे ठिकाण आहे.",
+        "options": {
+          "A": "इगतपुरी",
+          "B": "माथेरान",
+          "C": "आंबोली",
+          "D": "महाबळेश्वर"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q71",
+        "text": "दिलेल्या संख्या शंकूतील ताऱ्याच्या ठिकाणी येणारी संख्या शोधा.\n19, 43, 37, 26, 39\n  24, 6, 11, 13\n    30, 17, 24\n      13, 7\n        ☆",
+        "options": {
+          "A": "18",
+          "B": "6",
+          "C": "16",
+          "D": "20"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q72",
+        "text": "खालील दिलेल्या आकृतीत आयत महिला दर्शवितो, त्रिकोण शिक्षित दर्शवितो, वर्तुळ ग्रामीण दर्शवितो आणि चौकोन स्वयंरोजगार दर्शवितो; तर खालीलपैकी कोण अशिक्षित स्वयंरोजगारीत ग्रामीण महिला आहे?",
+        "options": {
+          "A": "4",
+          "B": "18",
+          "C": "5",
+          "D": "3"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q73",
+        "text": "परीला शाळेतून एक प्रोजेक्ट मिळाला. त्यात तिला विद्यार्थ्यांना आवडणाऱ्या विषयाबद्दल माहिती जमा करावयाची होती. तीने 800 विद्यार्थ्यांकडून माहिती जमा केली तर मराठी विषय आवडणारे किती विद्यार्थी आहेत?",
+        "options": {
+          "A": "4",
+          "B": "32",
+          "C": "1440",
+          "D": "40"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q74",
+        "text": "विनयला आठवते की त्याच्या आईचा वाढदिवस 26 ऑगस्ट च्या नंतर परंतु 29 ऑगस्ट च्या आत आहे. तर त्याच्या भावाला विकासला आठवते की आईचा वाढदिवस 27 ऑगस्टच्या नंतर परंतु 30 ऑगस्टच्या आत आहे. तर त्यांच्या आईचा वाढदिवस कोणत्या दिवशी असतो?",
+        "options": {
+          "A": "26 ऑगस्ट",
+          "B": "27 ऑगस्ट",
+          "C": "28 ऑगस्ट",
+          "D": "30 ऑगस्ट"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q75",
+        "text": "प्रश्न चिन्हाच्या ठिकाणी योग्य संकल्पना ओळखा –\nFVJ : HXD : : ? : TWP",
+        "options": {
+          "A": "BTW",
+          "B": "DYV",
+          "C": "NUR",
+          "D": "JVF"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q76",
+        "text": "प्रश्न चिन्हाच्या ठिकाणी योग्य संख्या शोधा:\n81/20/64 (तळ 9), 36/23/144 (तळ 25), 49/18/? (तळ 4)",
+        "options": {
+          "A": "81",
+          "B": "72",
+          "C": "53",
+          "D": "01"
+        },
+        "correctAnswer": "A",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q77",
+        "text": "मोकळ्या जागेतील योग्य संख्या शोधा:\n(8)(4)(2)→621, (9)(6)(3)→611, (7)(8)(9)→543\n(2)(2)(1), (3)(5)(2), (?)(?)(?)\nगहाळ संख्या कोणत्या?",
+        "options": {
+          "A": "4 2 3",
+          "B": "3 2 2",
+          "C": "6 4 3",
+          "D": "2 4 6"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q78",
+        "text": "प्रश्न चिन्हाच्या जागी कोणती संख्या येईल?\n31, 15, 6, ?, 1",
+        "options": {
+          "A": "7",
+          "B": "4",
+          "C": "2",
+          "D": "1"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q79",
+        "text": "जर 8 × 2 = 4, 8 × 4 = 2, 16 × 8 = 2 तर 40 × 5 = ?",
+        "options": {
+          "A": "2",
+          "B": "8",
+          "C": "20",
+          "D": "10"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q80",
+        "text": "बँकेतील भरतीसाठी 20 प्रश्नांची एक परीक्षा घेण्यात आली. त्या परीक्षेत प्रत्येक बरोबर उत्तरासाठी 5 गुण मिळतात तर प्रत्येक चुकलेल्या उत्तरासाठी 2 गुण कमी होतात. स्पंदनला त्या परीक्षेत फक्त 10 प्रश्न बरोबर सोडविता आले तर त्याला किती गुण मिळतील?",
+        "options": {
+          "A": "20",
+          "B": "30",
+          "C": "40",
+          "D": "50"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q81",
+        "text": "दोन संख्यांची बेरीज 50 आहे. त्यांच्यातील फरक 22 आहे, तर त्यातील लहान संख्या कोणती?",
+        "options": {
+          "A": "28",
+          "B": "14",
+          "C": "05",
+          "D": "30"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q82",
+        "text": "एका गटात A, B, C, D आणि E अशा पाच व्यक्ती आहेत. त्यात B, C चा भाऊ आहे. या 5 व्यक्तीत एक जोडपे आहे. E हा नवरा आहे. A आणि D मैत्रीणी आहेत आणि त्यांनी लग्न केलेले नाही. तर E ची बायको कोण?",
+        "options": {
+          "A": "B",
+          "B": "C",
+          "C": "D",
+          "D": "A"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q83",
+        "text": "जर खालील संख्यात्मक माहितीचा मध्यमान 6 असेल तर खालील माहितीतील 'P' ची किंमत किती असेल?\nX: 2, 4, 6, 10, P+5\nf: 3, 2, 3, 1, 2",
+        "options": {
+          "A": "66",
+          "B": "14",
+          "C": "07",
+          "D": "03"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q84",
+        "text": "सकाळी नीलम सूर्याच्या दिशेने चालायला सुरुवात करते आणि 8 किमी चालते. ती 90° च्या कोनात डावीकडे वळते आणि सरळ 12 किमी चालते आणि पुन्हा 90° च्या कोनात उजवीकडे वळते आणि 8 किमी जाते. तर ती सुरुवातीच्या स्थळापासून किती अंतर दूर आहे आणि कोणत्या दिशेला आहे?",
+        "options": {
+          "A": "28 किमी पूर्वेला",
+          "B": "18 किमी ईशान्यकडे",
+          "C": "20 किमी ईशान्यकडे",
+          "D": "20 किमी पूर्वेकडे"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q85",
+        "text": "73 विद्यार्थी असलेल्या वर्गातील काही विद्यार्थी केवळ गिटार आणि काही केवळ बासरी वाजवू शकतात. अकरा विद्यार्थी दोन्ही वाजवू शकतात. जर गिटार वाजवू शकणाऱ्या विद्यार्थ्यांची संख्या 31 असेल तर केवळ गिटार वाजवू शकणाऱ्या व केवळ बासरी वाजवू शकणाऱ्या विद्यार्थ्यांची संख्या किती?",
+        "options": {
+          "A": "43 व 21",
+          "B": "42 व 21",
+          "C": "42 व 22",
+          "D": "42 व 20"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q86",
+        "text": "गाळलेल्या जागेतील संज्ञा शोधा.\nX 11, V 13, S 17, O 23, ___",
+        "options": {
+          "A": "K 25",
+          "B": "I 27",
+          "C": "J 31",
+          "D": "F 32"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q87",
+        "text": "गाळलेल्या जागी योग्य शब्द शोधा.\nCX, FU, IR, ___, OL",
+        "options": {
+          "A": "LO",
+          "B": "OM",
+          "C": "MP",
+          "D": "OO"
+        },
+        "correctAnswer": "A",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q88",
+        "text": "रिकाम्या जागेतील अंक शोधा:\n(4)(3)→11, (2)(4)→60, (3)(5)→?",
+        "options": {
+          "A": "19",
+          "B": "80",
+          "C": "33",
+          "D": "116"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q89",
+        "text": "एका पिशवीत 10 पांढरे, 16 लाल आणि 14 काळे चेंडू आहेत. जर यादृच्छिकपणे एक चेंडू त्यातून काढण्यात आला तर लाल किंवा काळा चेंडू निघण्याची किती शक्यता आहे?",
+        "options": {
+          "A": "1/1",
+          "B": "3/4",
+          "C": "7/3",
+          "D": "2/40"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q90",
+        "text": "योग्य गणितीय चिन्हांचा उपयोग करून खालील समीकरण बरोबर करा:\n42 □ 6 □ 51 = 201",
+        "options": {
+          "A": "+ आणि −",
+          "B": "× आणि −",
+          "C": "− आणि +",
+          "D": "+ आणि ×"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q91",
+        "text": "योग्य निष्कर्ष निवडा:\nविधान: औरंगाबाद ते चेन्नई प्रवास हवाई मार्गिने जलद होतो.\nनिष्कर्ष: (a) औरंगाबाद आणि चेन्नई ही ठिकाणे हवाई मार्गिने जोडलेली आहे.\n(b) औरंगाबाद ते चेन्नईसाठी दुसरा कोणताही वळण-वळणाचा मार्ग उपलब्ध नाही.",
+        "options": {
+          "A": "फक्त (a) हा निष्कर्ष योग्य आहे.",
+          "B": "फक्त (b) हा निष्कर्ष योग्य आहे.",
+          "C": "दोन्ही (a) आणि (b) निष्कर्ष योग्य आहेत.",
+          "D": "दोन्ही (a) आणि (b) निष्कर्ष योग्य नाही."
+        },
+        "correctAnswer": "A",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q92",
+        "text": "संजयपेक्षा नितीन 3 वर्षांनी मोठा आहे. संजयचे वय किरण च्या वयाच्या दुप्पट आहे. जर त्यांच्या तिघांच्या वयांची एकूण बेरीज 103 आहे. तर नितीन किती वर्षांचा आहे?",
+        "options": {
+          "A": "20",
+          "B": "34",
+          "C": "40",
+          "D": "43"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q93",
+        "text": "शाळेत येण्यासाठी विद्यार्थी खालील दळणवळण साधने वापरतात आणि ही माहिती जर पाई चार्ट द्वारा दाखवण्यात आली तर शाळेत पायी येणाऱ्या विद्यार्थ्यांसाठी किती अंशाचा कोन तयार होईल?\nपायी: 6, गाडी: 4, सायकल: 7, बस: 8, रिक्षा: 5",
+        "options": {
+          "A": "6°",
+          "B": "30°",
+          "C": "72°",
+          "D": "80°"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q94",
+        "text": "रिकाम्या जागेसाठी योग्य अंक शोधा.\n27, 32, ___, 54, 71, 92",
+        "options": {
+          "A": "37",
+          "B": "41",
+          "C": "51",
+          "D": "52"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q95",
+        "text": "मुलीचे वय 16 वर्षे आहे आणि मुलगी ही आई-वडीलांच्या लग्नानंतर 1 वर्षानी जन्मलेली आहे. जर आई वडीलांच्या वयांची व त्यांच्या वर्षांची बेरीज 116 आहे. आईचे वय वडीलांच्या वयापेक्षा 3 वर्षांनी कमी असेल तर वडीलांचे वय किती आहे?",
+        "options": {
+          "A": "56 वर्षे 6 महिने",
+          "B": "51 वर्षे",
+          "C": "48 वर्षे",
+          "D": "99 वर्षे"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mathematics & Reasoning",
+        "category": "Mathematics & Reasoning"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q96",
+        "text": "कोसी नदीच्या पात्र बदलामुळे खालीलपैकी कोणत्या राज्यातील सर्वाधिक जिल्ह्यांना नेहमी पुराचा तडाखा बसतो?",
+        "options": {
+          "A": "झारखंड",
+          "B": "बिहार आणि उत्तर प्रदेश",
+          "C": "बिहार",
+          "D": "उत्तर प्रदेश"
+        },
+        "correctAnswer": "C",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q97",
+        "text": "वातावरणात ओझोन वायूचे प्रमाण __________ टक्के आढळते.",
+        "options": {
+          "A": "0.00006",
+          "B": "0.00005",
+          "C": "0.00007",
+          "D": "0.000006"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q98",
+        "text": "__________ हि मानवनिर्मित आपत्ती आहे.",
+        "options": {
+          "A": "पूर",
+          "B": "भूस्खलन",
+          "C": "दुष्काळ",
+          "D": "औद्योगिक अपघात"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q99",
+        "text": "खालीलपैकी कोणते जैवविविधता स्थळ नाही?",
+        "options": {
+          "A": "पश्चिम घाट",
+          "B": "पूर्व हिमालय",
+          "C": "अंदमान निकोबार बेटे",
+          "D": "पूर्व घाट"
+        },
+        "correctAnswer": "D",
+        "explanation": "Geography",
+        "category": "Geography"
+      },
+      {
+        "id": "ts-pre-2022-marathi-q100",
+        "text": "आंतरराष्ट्रीय स्तरावर पर्यावरण विषयक पहिली जागतिक परिषद 5 जून 1972 रोजी कोणत्या शहरात संपन्न झाली?",
+        "options": {
+          "A": "स्टॉकहोम",
+          "B": "न्युयॉर्क",
+          "C": "लंडन",
+          "D": "बर्मिंगहॅम"
+        },
+        "correctAnswer": "A",
+        "explanation": "Geography",
+        "category": "Geography"
+      }
+    ],
+    "language": "marathi"
   }
 ]
