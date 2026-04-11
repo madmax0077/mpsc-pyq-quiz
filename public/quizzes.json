@@ -35852,7 +35852,7 @@
   {
     "id": "gb_pre_2025_en",
     "title": "MPSC Group B Combined Pre 2025 (English)",
-    "createdAt": "2025-01-04T10:00:00.000Z",
+    "createdAt": "2026-04-11T15:51:26.267Z",
     "questions": [
       {
         "id": "gb_pre_2025_en_1",
@@ -37155,12 +37155,13 @@
         "category": "Aptitude"
       }
     ],
-    "language": "english"
+    "language": "english",
+    "tag": "Group B Pre - 2025"
   },
   {
     "id": "gb_pre_2025_mr",
     "title": "MPSC Group B Combined Pre 2025 (Marathi)",
-    "createdAt": "2025-01-04T10:00:00.000Z",
+    "createdAt": "2026-04-11T15:51:51.770Z",
     "questions": [
       {
         "id": "gb_pre_2025_mr_1",
@@ -38463,6 +38464,7 @@
         "category": "Aptitude"
       }
     ],
-    "language": "marathi"
+    "language": "marathi",
+    "tag": "Group B Pre - 2025"
   }
 ]
