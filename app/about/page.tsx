@@ -19,7 +19,7 @@ export default function About() {
 
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-          <div className="mb-8 flex flex-col items-center text-center">
+          <Link href="/" className="mb-8 flex flex-col items-center text-center no-underline">
             <img
               src="/logo.png"
               alt="MPSC PYQ QUIZ Logo"
@@ -29,7 +29,7 @@ export default function About() {
             <p className="mt-1 text-sm font-medium text-indigo-600">
               by Don&apos;t know Academy
             </p>
-          </div>
+          </Link>
 
           <div className="prose prose-slate max-w-none">
             <h3>What is MPSC PYQ QUIZ?</h3>

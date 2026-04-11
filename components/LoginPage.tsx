@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { signInWithGoogle, signInWithApple } from "@/lib/firebase";
 import AdBanner from "./AdBanner";
 
@@ -46,7 +47,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-slate-50 px-4 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
       <div className="w-full max-w-md">
         {/* Header */}
-        <div className="mb-8 text-center">
+        <Link href="/" className="mb-8 block text-center no-underline">
           <img
             src="/logo.png"
             alt="MPSC Logo"
@@ -54,7 +55,7 @@ export default function LoginPage() {
           />
           <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Don&apos;t know Academy</p>
-        </div>
+        </Link>
 
         {/* Card */}
         <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/50 dark:bg-slate-800 dark:border-slate-700 dark:shadow-slate-900/50">
