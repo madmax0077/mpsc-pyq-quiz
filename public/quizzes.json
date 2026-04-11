@@ -33234,7 +33234,7 @@
   {
     "id": "gc_pre_2025_english",
     "title": "MPSC Group-C Combined Pre 2025 (English)",
-    "createdAt": "2026-04-11T15:06:22.172Z",
+    "createdAt": "2026-04-11T15:28:32.959Z",
     "questions": [
       {
         "id": "gc_pre_2025_english_1",
@@ -34538,12 +34538,12 @@
       }
     ],
     "language": "english",
-    "tag": "Group B Pre - 2025"
+    "tag": "Group C Pre - 2025"
   },
   {
     "id": "gc_pre_2025_marathi",
     "title": "MPSC Group-C Combined Pre 2025 (Marathi)",
-    "createdAt": "2026-04-11T15:05:53.690Z",
+    "createdAt": "2026-04-11T15:28:59.670Z",
     "questions": [
       {
         "id": "gc_pre_2025_marathi_1",
@@ -35847,6 +35847,6 @@
       }
     ],
     "language": "marathi",
-    "tag": "Group B Pre - 2025"
+    "tag": "Group C Pre - 2025"
   }
 ]
