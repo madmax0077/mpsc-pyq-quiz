@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import Link from "next/link";
 import { useAuth } from "@/lib/auth-context";
 import type { Language } from "@/lib/types";
 import LoginPage from "@/components/LoginPage";
@@ -11,6 +10,7 @@ export default function Home() {
   const { loading, studentUser, logoutStudent } = useAuth();
   const [language, setLanguage] = useState<Language>("english");
   const [dark, setDark] = useState(false);
+  const [homeKey, setHomeKey] = useState(0);
   const [challenge, setChallenge] = useState<{ quizId: string; name: string; score: number; total: number } | null>(null);
 
   useEffect(() => {
@@ -51,13 +51,13 @@ export default function Home() {
       {/* ---- Top Navigation Bar ---- */}
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6">
-          <Link href="/" className="flex items-center gap-3 no-underline">
+          <button onClick={() => { setHomeKey((k) => k + 1); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-3 cursor-pointer bg-transparent border-none p-0">
             <img src="/logo.png" alt="MPSC Logo" className="h-10 w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
-            <div>
+            <div className="text-left">
               <h1 className="text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
               <p className="text-[10px] font-medium text-slate-400 dark:text-slate-500">Don&apos;t know Academy</p>
             </div>
-          </Link>
+          </button>
 
           <div className="flex items-center gap-3">
             <button
@@ -114,7 +114,7 @@ export default function Home() {
 
       {/* ---- Main Content ---- */}
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <StudentView language={language} challenge={challenge} />
+        <StudentView language={language} challenge={challenge} homeKey={homeKey} />
       </main>
 
       {/* ---- Footer ---- */}

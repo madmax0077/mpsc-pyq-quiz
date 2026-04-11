@@ -114,7 +114,7 @@ interface ChallengeInfo {
   total: number;
 }
 
-export default function StudentView({ language = "english", challenge }: { language?: Language; challenge?: ChallengeInfo | null }) {
+export default function StudentView({ language = "english", challenge, homeKey = 0 }: { language?: Language; challenge?: ChallengeInfo | null; homeKey?: number }) {
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
   const [answers, setAnswers] = useState<Record<string, OptionKey>>({});
@@ -358,6 +358,11 @@ export default function StudentView({ language = "english", challenge }: { langu
     setSubmittedPages(new Set());
     setPageScores({});
   };
+
+  useEffect(() => {
+    if (homeKey > 0) goBack();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [homeKey]);
 
   const handleReport = (qId: string, qText: string) => {
     const ok = reportQuestion(qId, qText, "Wrong answer / needs correction");
