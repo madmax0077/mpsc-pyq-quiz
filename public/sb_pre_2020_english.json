@@ -1,0 +1,1307 @@
+{
+  "id": "sb-pre-2020-english",
+  "title": "MPSC Subordinate Services Group B Combined Pre 2020 (English)",
+  "createdAt": "2025-04-09T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "sb-pre-2020-english-q1",
+      "text": "_______ started an association by the name 'Granthottejak Mandali' at Nashik.",
+      "options": {
+        "A": "V.D. Savarkar",
+        "B": "V.V. Shirwadkar",
+        "C": "Justice Ranade",
+        "D": "Anant Laxman Kanhere"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q2",
+      "text": "During the period 1885 to 1915 _______ was known as the uncoronated king of Bombay.",
+      "options": {
+        "A": "Jagannath Shankar Sheth",
+        "B": "Bhau Daji Lad",
+        "C": "Dadabhai Naoroji",
+        "D": "Pherozeshah Mehta"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q3",
+      "text": "Who from the following have worked for religious and social reforms through Prarthana Samaj ?\na. Dr. Atmaram Pandurang, Dr. R.G. Bhandarkar\nb. Vaman Abaji Modak, Narayan Ganesh Chandavarkar\nc. Vitthal Ramji Shinde, Justice Mahadev Govind Ranade\nd. Govind Vitthal Kunte, Rao Saheb Mandlik\nAnswer options :",
+      "options": {
+        "A": "Only a, b and d",
+        "B": "Only a, b and c",
+        "C": "Only b, c and d",
+        "D": "Only a and b"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q4",
+      "text": "Where did the first revolt of farmers take place on 12th May, 1875 ?",
+      "options": {
+        "A": "Pune",
+        "B": "Supe",
+        "C": "Ahmednagar",
+        "D": "Solapur"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q5",
+      "text": "Match the following :\n    Centres of the Revolt of 1857    Leaders\na. Peth          I. Vaikappa Naik Balwant Behari\nb. Nargund       II. Ramchandra Patwardhan\nc. Jamkhandi     III. Babasaheb Bhave\nd. Shorapur      IV. Bhagwantrao Koli\nAnswer options :",
+      "options": {
+        "A": "a-IV, b-III, c-II, d-I",
+        "B": "a-IV, b-II, c-III, d-I",
+        "C": "a-IV, b-I, c-II, d-III",
+        "D": "a-IV, b-I, c-III, d-II"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q6",
+      "text": "The demand for freedom for the colonies was like asking for the moon, said _______.",
+      "options": {
+        "A": "Lord Dalhousie",
+        "B": "Lord Ripon",
+        "C": "William Jones",
+        "D": "Lord Morley"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q7",
+      "text": "The first telegraph line was laid from _______ to _______ during Lord Dalhousie's time.",
+      "options": {
+        "A": "Calcutta to Delhi",
+        "B": "Madras to Delhi",
+        "C": "Calcutta to Madras",
+        "D": "Calcutta to Agra"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q8",
+      "text": "Who from the following was in the forefront to unite the workers to form their association in 1875 ?",
+      "options": {
+        "A": "Narayan Meghaji Lokhande",
+        "B": "Narayan Rao Pawar",
+        "C": "Shapurji Bengali",
+        "D": "Sorabji Shapurji"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q9",
+      "text": "Under whose chairmanship did the Bombay Government establish the Railway Board ?",
+      "options": {
+        "A": "Lieutenant Prescott",
+        "B": "Lord Dalhousie",
+        "C": "Lord Elphinstone",
+        "D": "Lieutenant Nelson"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q10",
+      "text": "Find out the wrong pair :",
+      "options": {
+        "A": "Sarala Devi Chaudhurani — The All India Women's Council",
+        "B": "Dr. Annie Besant — The Women's Indian Association",
+        "C": "Meherbai Tata — The National Council of Women in India",
+        "D": "Margaret Cousins — The All India Women's Conference"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q11",
+      "text": "Which society started a school for Bengali girls in Calcutta in the year 1820 ?",
+      "options": {
+        "A": "Calcutta Female Juvenile Society",
+        "B": "British Foreign School Society",
+        "C": "Society for Native Female Education",
+        "D": "Scottish Mission"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q12",
+      "text": "_______ was the centre of 'Wahabi' movement in North India.",
+      "options": {
+        "A": "Patna",
+        "B": "Delhi",
+        "C": "Firozpur",
+        "D": "Aligarh"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q13",
+      "text": "Who from the following persons helped Jyotiba Phule to run a Girls School in Pune ?\na. Sakharam Yashwant Paranjpe, Sadashiv Govind Hate\nb. Sadashivrao Ballal Govande, Moro Vitthal Walvekar\nc. Vishnupant Thatte, Keshav Shivram Bhawalkar\nd. Kashirao Deshmukh, Haribhau Chavan\nAnswer options :",
+      "options": {
+        "A": "Only a, b and c",
+        "B": "Only a, c and d",
+        "C": "Only a and b",
+        "D": "Only c and d"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q14",
+      "text": "Match the following :\na. Paramahansa Mata Prasamsha   I. Gujaba Joshi Punekar\nb. Vichar Lahari                II. Krushnashastri Chiplunkar\nc. Follower of Sakta sect       III. Morbhat Dandekar\nd. Dadoba Pandurang             IV. Dharma Vivechan\nAnswer options :",
+      "options": {
+        "A": "a-I, b-III, c-IV, d-II",
+        "B": "a-I, b-II, c-III, d-IV",
+        "C": "a-II, b-I, c-IV, d-III",
+        "D": "a-IV, b-III, c-II, d-I"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q15",
+      "text": "The day Lokmanya Tilak passed away, the same day Gandhiji's _______ movement was launched in Bombay.",
+      "options": {
+        "A": "Civil Disobedience",
+        "B": "Non-Cooperation",
+        "C": "Anti Liquor",
+        "D": "Quit India"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "sb-pre-2020-english-q16",
+      "text": "As per the 'Indus Water Treaty – 1960' between India and Pakistan, on which rivers water does India have absolute claim ?",
+      "options": {
+        "A": "Indus, Chenab and Jhelum",
+        "B": "Ravi, Beas and Sutlej",
+        "C": "Jhelum, Sutlej and Chenab",
+        "D": "Chenab, Beas and Jhelum"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q17",
+      "text": "Which of the following is the best quality iron ore ?",
+      "options": {
+        "A": "Hematite",
+        "B": "Limonite",
+        "C": "Magnetite",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q18",
+      "text": "Correctly arrange the following passes in India from west to east :",
+      "options": {
+        "A": "Mana Pass, Shipkila Pass, Niti Pass, Zojila Pass",
+        "B": "Zojila Pass, Shipkila Pass, Mana Pass, Niti Pass",
+        "C": "Shipkila Pass, Niti Pass, Mana Pass, Zojila Pass",
+        "D": "Niti Pass, Mana Pass, Zojila Pass, Shipkila Pass"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q19",
+      "text": "Saline and Alkaline soils are also known by another name. Which is the correct option given below ?",
+      "options": {
+        "A": "Desert soil",
+        "B": "Chopan soil",
+        "C": "Wet and Marshy soils",
+        "D": "Chestnut or grey brown soil"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q20",
+      "text": "Which of the following States are associated with Pench Tiger Reserve ?",
+      "options": {
+        "A": "Maharashtra — Chhattisgarh",
+        "B": "Maharashtra — Madhya Pradesh",
+        "C": "Madhya Pradesh — Chhattisgarh",
+        "D": "Maharashtra — Karnataka"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q21",
+      "text": "As per 2001 Census, the following State has the highest population of Scheduled Tribes in India.",
+      "options": {
+        "A": "Odisha",
+        "B": "Maharashtra",
+        "C": "Rajasthan",
+        "D": "Madhya Pradesh"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q22",
+      "text": "As per 2011 Census, which are the first five districts according to population density in Maharashtra ?",
+      "options": {
+        "A": "Mumbai Suburb, Thane, Mumbai City, Kolhapur, Pune",
+        "B": "Mumbai City, Mumbai Suburb, Pune, Kolhapur, Thane",
+        "C": "Mumbai Suburb, Mumbai City, Thane, Pune, Kolhapur",
+        "D": "Thane, Mumbai City, Kolhapur, Pune, Mumbai Suburb"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q23",
+      "text": "What is the difference in sex ratio of Maharashtra State as per Census 2001 and 2011 ?",
+      "options": {
+        "A": "09",
+        "B": "90",
+        "C": "19",
+        "D": "29"
+      },
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q24",
+      "text": "Observe the following statements :\na. Maval section does not come in rain shadow area.\nb. Maval area is known for its climate.\nc. Kasheli Ghat connects Poladpur and Mahabaleshwar.\nAnswer options :",
+      "options": {
+        "A": "Only statement a is correct",
+        "B": "Only statement b is correct",
+        "C": "Statements a and b are correct",
+        "D": "Statements b and c are correct"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q25",
+      "text": "In which district of Maharashtra are the 'Darekasa Hills' located ?",
+      "options": {
+        "A": "Nagpur",
+        "B": "Chandrapur",
+        "C": "Gondia",
+        "D": "Gadchiroli"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q26",
+      "text": "As per the Census 2011, what is the 'Population density' of Gadchiroli district ?",
+      "options": {
+        "A": "163 sq.km",
+        "B": "193 sq.km",
+        "C": "74 sq.km",
+        "D": "93 sq.km"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q27",
+      "text": "Observe the following statements :\na. Verul caves is in Aurangabad district.\nb. Chambhar caves is in Pune district.\nc. Chikhaldara hill station is in Raigad district.\nd. Gautala National Park is in Jalgaon district.\nWhich of the above statements is/are correct ?",
+      "options": {
+        "A": "Only a statement is correct",
+        "B": "Only b and c statements are correct",
+        "C": "Only a and d statements are correct",
+        "D": "All the above statements are correct"
+      },
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q28",
+      "text": "Match the following :\n    Column I (Thermal Power House)    Column II (District)\na. Chola          I. Mumbai\nb. Turbhe         II. Akola\nc. Fekari         III. Thane\nd. Paras          IV. Bhusawal\nAnswer options :",
+      "options": {
+        "A": "a-III, b-IV, c-I, d-II",
+        "B": "a-III, b-I, c-II, d-IV",
+        "C": "a-III, b-I, c-IV, d-II",
+        "D": "a-II, b-IV, c-I, d-III"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q29",
+      "text": "Which of the following sequence of Ghats in Maharashtra from North to South is correct ?",
+      "options": {
+        "A": "Thal Ghat, Kumbharli Ghat, Amba Ghat, Amboli Ghat",
+        "B": "Amboli Ghat, Amba Ghat, Kumbharli Ghat, Thal Ghat",
+        "C": "Thal Ghat, Kumbharli Ghat, Amboli Ghat, Amba Ghat",
+        "D": "Thal Ghat, Amba Ghat, Amboli Ghat, Kumbharli Ghat"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q30",
+      "text": "In Tapi – Purna river basin, which of the following sequence of rivers from North to South is correct ?",
+      "options": {
+        "A": "Girna, Bori, Panzara, Burai, Gomati",
+        "B": "Gomati, Burai, Panzara, Bori, Girna",
+        "C": "Gomati, Burai, Girna, Bori, Panzara",
+        "D": "Gomati, Panzara, Girna, Burai, Bori"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "sb-pre-2020-english-q31",
+      "text": "_______ has the major foodgrain crop production recorded as highest growth after green revolution.",
+      "options": {
+        "A": "Rice",
+        "B": "Bajra",
+        "C": "Maize",
+        "D": "Wheat"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q32",
+      "text": "The National Rural Employment Guarantee Act (NREGA) was enacted in _______.",
+      "options": {
+        "A": "October 2001",
+        "B": "October 2002",
+        "C": "September 2005",
+        "D": "September 2011"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q33",
+      "text": "Which of the following is not an outstanding liability of Central Government ?",
+      "options": {
+        "A": "Internal debt",
+        "B": "Market loans",
+        "C": "Treasury bills",
+        "D": "Foreign aid"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q34",
+      "text": "Which of the following has been suggested as a substitute for the Fiscal Responsibility and Budget Management (FRBM) Act by the Fourteenth Finance Commission ?",
+      "options": {
+        "A": "Fiscal Consolidation Fund",
+        "B": "Fiscal Deficit",
+        "C": "Revenue and Debt Management",
+        "D": "Debt Ceiling and Fiscal Responsibility Legislation"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q35",
+      "text": "India is the world's largest producer of _______.",
+      "options": {
+        "A": "Jute",
+        "B": "Steel",
+        "C": "Cement",
+        "D": "Sugar"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q36",
+      "text": "The share of secondary sector in GDP in India from 1950 – 51 to 2013 – 14 has increased by _______ per cent.",
+      "options": {
+        "A": "16.6 to 26.2",
+        "B": "30.6 to 59.2",
+        "C": "16.9 to 36.2",
+        "D": "15.6 to 36.2"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q37",
+      "text": "According to Tendulkar Committee, the total percentage of population in India below the poverty line in 2011 – 12 was _______.",
+      "options": {
+        "A": "21.9%",
+        "B": "27.5%",
+        "C": "37.2%",
+        "D": "42.9%"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q38",
+      "text": "The immediate objective of the National Population Policy 2000 was\na. to meet the needs of health infrastructure and to provide basic reproductive health care.\nb. to lower the total fertility rate to the replacement level.\nc. to achieve universal immunization of children.\nAnswer options :",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only c",
+        "C": "Only b",
+        "D": "Only a"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q39",
+      "text": "The WTO agreements are based on which of the following important principle ?",
+      "options": {
+        "A": "Non-discrimination",
+        "B": "Most-favoured nation",
+        "C": "National treatment",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q40",
+      "text": "Consider the following statements :\na. Rashtriya Krishi Vikas Yojana was launched during the 11th Five Year Plan.\nb. The Mission for Integrated Development of Horticulture was launched during the 12th Five Year Plan.\nc. National Food Security Mission was launched in 2009 – 10.\nWhich of the above statements is/are incorrect ?",
+      "options": {
+        "A": "All the three are incorrect",
+        "B": "Only b",
+        "C": "Only c",
+        "D": "Only a"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q41",
+      "text": "_______ occupied the first place in India's export earnings in 2018 – 19.",
+      "options": {
+        "A": "Jute garments",
+        "B": "Readymade garments",
+        "C": "Engineering goods",
+        "D": "Gems and Jewellery"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q42",
+      "text": "Which one of the following is not a part of Bharat Nirman Programme ?",
+      "options": {
+        "A": "Irrigation",
+        "B": "Rural electrification",
+        "C": "Schools in rural areas",
+        "D": "Rural roads"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q43",
+      "text": "The main features of Payment Banks are _______. Choose the correct sentences.\na. to accept deposits upto ₹ 1 lakh per individual\nb. to allow the use of ATM and debit cards\nc. to allow the use of ATM\nd. not to lend in any form\nAnswer options :",
+      "options": {
+        "A": "Only a, c and d",
+        "B": "Only a, b and c",
+        "C": "Only b, c and d",
+        "D": "Only a, b and d"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q44",
+      "text": "As per Rangarajan Committee (2014) defined poverty line for 2011 – 12 for rural and urban areas per capita is ₹ _______.",
+      "options": {
+        "A": "32 and 47",
+        "B": "32 and 67",
+        "C": "32 and 87",
+        "D": "31 and 97"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q45",
+      "text": "The Oxfam Report 2018, says that the richest 1 per cent of the people are generating _______ per cent share of National Income in India.",
+      "options": {
+        "A": "41",
+        "B": "35",
+        "C": "73",
+        "D": "83"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "sb-pre-2020-english-q46",
+      "text": "Which method is used to determine the distance of different stars from the Earth ?",
+      "options": {
+        "A": "Gravitational method",
+        "B": "Parallax method",
+        "C": "Parallel method",
+        "D": "Direct method"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q47",
+      "text": "Working of a Solar cell is based on _______.",
+      "options": {
+        "A": "Stark effect",
+        "B": "Coulomb effect",
+        "C": "Zeeman effect",
+        "D": "Photovoltaic effect"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q48",
+      "text": "Who was the earliest to use algebra to solve astronomical problems ?",
+      "options": {
+        "A": "Bhaskara",
+        "B": "Brahmagupta",
+        "C": "Aryabhata",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q49",
+      "text": "The copper alloy German Silver contains _______.",
+      "options": {
+        "A": "Cu, Zn, Ag",
+        "B": "Cu, Zn, Ni",
+        "C": "Cu, Ni, Ag",
+        "D": "Cu, Zn, Al"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q50",
+      "text": "A crystalline solid has\na. definite geometry.\nb. sharp melting point.\nc. anisotropic property.\nAnswer options :",
+      "options": {
+        "A": "a and b is correct",
+        "B": "b and c is correct",
+        "C": "a and c is correct",
+        "D": "All of the above are correct"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q51",
+      "text": "According to Moseley, the basis for the periodic arrangement of elements is _______.",
+      "options": {
+        "A": "Atomic weight",
+        "B": "Atomic mass",
+        "C": "Atomic number",
+        "D": "Atomic volume"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q52",
+      "text": "The five kingdoms under the recent scheme of classification are\na. Protista, Fungi, Mammalia, Annelida, Plantae\nb. Monera, Protista, Fungi, Plantae, Animalia\nc. Protista, Fungi, Plantae, Porifera, Animalia\nd. Monera, Fungi, Mammalia, Plantae, Animalia\nWhich of the option given above is correct ?",
+      "options": {
+        "A": "Only c",
+        "B": "Only b",
+        "C": "Only a",
+        "D": "Only d"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q53",
+      "text": "A toxic substance responsible for chills and high fever recurring every three to four days in malaria fever is due to",
+      "options": {
+        "A": "Interferon",
+        "B": "Hemozoin",
+        "C": "Hirudin",
+        "D": "Colostrum"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q54",
+      "text": "The disease \"African Sleeping Sickness\" is caused by which of the following parasite ?",
+      "options": {
+        "A": "Trypanosoma",
+        "B": "Paramoecium",
+        "C": "Mosquito",
+        "D": "Tapeworm"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q55",
+      "text": "Algae and fungi are classified in which of the following groups ?",
+      "options": {
+        "A": "Gymnosperms",
+        "B": "Thallophytes",
+        "C": "Angiosperms",
+        "D": "Bryophytes"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q56",
+      "text": "In which of the following disease of plants does chlorophyll of the leaves get destroyed and the leaves shrink ?",
+      "options": {
+        "A": "Mosaic disease of tobacco",
+        "B": "Citrus canker",
+        "C": "Smut of jowar",
+        "D": "Rhizoctonia"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q57",
+      "text": "Which of the following biofertilizer is added in rice fields ?",
+      "options": {
+        "A": "Red algae",
+        "B": "Brown algae",
+        "C": "Rhizobium",
+        "D": "Blue green algae"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q58",
+      "text": "Mechanisms by which bacteria becomes resistant to antimicrobial agents are _______.\na. Alteration in surface receptors for drugs\nb. MDR pump\nc. Secretion of inactivating enzymes\nAnswer Options :",
+      "options": {
+        "A": "Only a and b",
+        "B": "a, b and c",
+        "C": "Only a and c",
+        "D": "Only b and c"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q59",
+      "text": "Staphylococcal food poisoning is caused by _______.",
+      "options": {
+        "A": "ingestion of preformed enterotoxin",
+        "B": "colonisation of mucosal surface followed by production of toxin",
+        "C": "colonisation of wound or abscess followed by local toxin production",
+        "D": "All of the above reasons"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q60",
+      "text": "National Salmonella Phage Typing Centre is at _______.",
+      "options": {
+        "A": "Lady Hardinge Medical College, New Delhi",
+        "B": "Maulana Azad Medical College, New Delhi",
+        "C": "National Institute of Cholera and Enteric Disease, Kolkata",
+        "D": "National Centre for Disease Control"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "sb-pre-2020-english-q61",
+      "text": "Select the logical column of digits for replacing the column of question marks.\n5  4  6  ?\n2  6  4  ?\n6  4  8  ?\n3  5  4  ?",
+      "options": {
+        "A": "5, 8, 6, 6",
+        "B": "5, 6, 4, 8",
+        "C": "4, 5, 6, 4",
+        "D": "4, 8, 6, 6"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q62",
+      "text": "Select the pair of words or word groups that fit in each of the sentences to make two separate and having equivalent meaning in the given context.\nThe stock market having plunged drastically, the investor's _______ mood on the trading floor seemed incongruous.",
+      "options": {
+        "A": "enervated and funereal",
+        "B": "inconsolable and sardonic",
+        "C": "sanguine and buoyant",
+        "D": "enervated and sardonic"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q63",
+      "text": "Study the accompanying cube with numbers 1, 2, 3, 4, 5 and 6 on its six faces. Number 3 is not opposite to either 1 or 6 and number 6 is not opposite to 4. If this cube is rotated so as to keep number 1 on the top and right side face with number 6 takes the front place that has number 2 now, then which number will be on the right face ?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "3",
+        "D": "More information is needed for selection"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q64",
+      "text": "Accompanying net is folded to get a cube. Select the number of vertices of the cube at which two or more diagonal lines on the faces meet.",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q65",
+      "text": "Study accompanying transparent sheet of paper X and select the fold that is made using it.",
+      "options": {
+        "A": "Option 1",
+        "B": "Option 2",
+        "C": "Option 3",
+        "D": "Option 4"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q66",
+      "text": "The decline in voter turnout at elections is chiefly explained by the decline in voting by younger people who have very different lifestyles. Older people are much more likely to vote. If this trend continues, probably this will lead to a point at which no government can be said to have a mandate to govern as the number of voters will be too small to indicate the wishes of the majority. Society needs, therefore, to find an alternative to conventional elections so that the wishes of the people can be heard.\nSelect one option that best expresses the flaw in the above argument.",
+      "options": {
+        "A": "Elections are used in all democratic countries as the only well established process of choosing a government.",
+        "B": "With the help of social media, young people may be more likely to join pressure groups than to vote in an election.",
+        "C": "There may be problems in using alternatives such as internet and postal voting due to remote residential places.",
+        "D": "People who are young now may become more likely to vote as they get older."
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q67",
+      "text": "The following question is based on the information given below :\nI. A, B, C, D and E are five persons sitting in a line facing South – while M, N, O, P and Q are five persons sitting in the second line parallel to the first line and facing North, facing each other.\nII. E is opposite to O who is just next, right of M.\nIII. C and N are diagonally opposite to each other.\nIV. B who is just next to left of D, is opposite to Q.\nV. M is at one end of the line.\nVI. P who is just to the left of Q, is opposite to D.\nIf B shifts to the place of E, E shifts to the place of Q and Q shifts to the place of B, then who will be the second to the left of the person opposite to O ?",
+      "options": {
+        "A": "Q",
+        "B": "P",
+        "C": "E",
+        "D": "D"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q68",
+      "text": "In the following question, an Assertion followed by two Reasons RI and RII is given. Apply reasons to the Assertion and find the answer.\nAssertion : People, these days, are doing a lot of teleshopping.\nReasons : RI – People are watching TV a lot.\n           RII – People, these days, are not finding time to shop in the market.\nAnswer options :",
+      "options": {
+        "A": "Only RI not RII is a possible reason",
+        "B": "Only RII not RI is a possible reason",
+        "C": "Either RI or RII but not both reasons",
+        "D": "Neither RI nor RII is a possible reason"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q69",
+      "text": "Prashant starts from his house and travels 8 km towards North. Then he turns right, travels 5 km, then turns right again and travels 4 km and then travels 3 km towards East. Finally he turns left and travels 2 km. How far is he from his house, in kilometers ?",
+      "options": {
+        "A": "14",
+        "B": "12",
+        "C": "10",
+        "D": "7"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q70",
+      "text": "A survey is conducted on 6200 villagers staying in 4 villages A, B, C and D and having various favourite colours. 50% of people from village B have red as their favourite colour. How many people from other villages have the same favourite colour ?",
+      "options": {
+        "A": "1240",
+        "B": "527",
+        "C": "713",
+        "D": "1426"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q71",
+      "text": "If the diameter of a circular track is 28 m and there is a 7 m wide road around the track, then find the area of the road.",
+      "options": {
+        "A": "616 sq. m",
+        "B": "770 sq. m",
+        "C": "1386 sq. m",
+        "D": "28 sq. m"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q72",
+      "text": "Five workers take 12 days to weed a field. How many days would 15 workers take to do the same task ?",
+      "options": {
+        "A": "15",
+        "B": "4",
+        "C": "12",
+        "D": "16"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q73",
+      "text": "The sum of the present ages of 3 persons is 72 years. Seven years ago, their ages were in the ratio 4 : 6 : 7. What are their present ages ?",
+      "options": {
+        "A": "20, 30, 22 years",
+        "B": "22, 24, 26 years",
+        "C": "19, 25, 28 years",
+        "D": "17, 25, 30 years"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q74",
+      "text": "The true discount on a bill due 10 months hence at 6% per annum is ₹ 26.25. The amount of the bill is",
+      "options": {
+        "A": "₹ 1575",
+        "B": "₹ 500",
+        "C": "₹ 650.25",
+        "D": "₹ 551.25"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q75",
+      "text": "A bag contains one-rupee, 50 paise and 25 paise coins in the ratio 5 : 6 : 8. If the total amount is ₹ 420, then the number of 50 paise coins is",
+      "options": {
+        "A": "210",
+        "B": "126",
+        "C": "252",
+        "D": "70"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "sb-pre-2020-english-q76",
+      "text": "American astronaut Christina Koch is the female astronaut spending longest period in space. She spent 328 days in space. On _______, she took off from Earth.",
+      "options": {
+        "A": "10th February, 2019",
+        "B": "14th February, 2019",
+        "C": "14th March, 2019",
+        "D": "17th March, 2019"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q77",
+      "text": "Guinness World Records has taken note of adventure swimmer Prabhat Koli who has won the Central Government Tenzing Norgay National Award and Maharashtra State prestigious Shiv Chhatrapati Bravery Award. So far he has crossed six seas. Among the following, which one water body has he not crossed ?",
+      "options": {
+        "A": "English Channel",
+        "B": "Catalina Channel",
+        "C": "Strait of Gibraltar",
+        "D": "Suez Canal"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q78",
+      "text": "In the last 72 years after freedom, in our country of 130 crores population, only _______ persons have achieved the honour of 'Param Vir Chakra'.",
+      "options": {
+        "A": "24",
+        "B": "42",
+        "C": "12",
+        "D": "21"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q79",
+      "text": "Select the inappropriate (wrong) option regarding Ayushman Bharat scheme.\na. 10 crore Indian families will be benefited by this scheme.\nb. Ayushman card holder family can avail medical treatment upto ₹ 5 lakh free of cost.\nc. 30 crore Indian families will be benefited by this scheme.\nd. 15 thousand Private Hospitals will get status of Jan Arogya Mitra by this scheme.\nAnswer options :",
+      "options": {
+        "A": "Only b",
+        "B": "Only c",
+        "C": "Only a and c",
+        "D": "Only b and d"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q80",
+      "text": "Choose the proper option which explains the concept and its utilization in daily life with advancement of Information Technology.\n    Concept        Utilization\na. UPI          I. Artificial Knowledge Exchange\nb. AI           II. Digital payment system\nc. GeM          III. Internet of things\nd. IoT          IV. Online platform by the Government\nAnswer options :",
+      "options": {
+        "A": "a-IV, b-I, c-II, d-III",
+        "B": "a-III, b-IV, c-I, d-II",
+        "C": "a-I, b-II, c-IV, d-III",
+        "D": "a-II, b-I, c-IV, d-III"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q81",
+      "text": "Choose the option which explains the correct order of place, year and Chairperson regarding Akhil Bharatiya Marathi Natya Sammelan.\n    Year-Place            Chairperson\na. 2016 – Thane        I. Jayant Savarkar\nb. 2017 – Osmanabad    II. Premanand Gajvi\nc. 2018 – Mulund       III. Kirti Shiledar\nd. 2019 – Nagpur       IV. Gangaram Gawankar\nAnswer options :",
+      "options": {
+        "A": "a-III, b-II, c-IV, d-I",
+        "B": "a-II, b-III, c-I, d-IV",
+        "C": "a-IV, b-I, c-III, d-II",
+        "D": "a-I, b-IV, c-II, d-III"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q82",
+      "text": "How many metric tonnes (MT) of e-waste was decomposed and recycled during the year 2018 – 19 as per the Central Pollution Control Board's information ?",
+      "options": {
+        "A": "69414 MT",
+        "B": "164663 MT",
+        "C": "771215 MT",
+        "D": "708445 MT"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q83",
+      "text": "Who has been appointed as 'Queen's Counsel' of Queen of Britain ?",
+      "options": {
+        "A": "Ujjwal Nikam",
+        "B": "L. Nageswara Rao",
+        "C": "Harish Salve",
+        "D": "R.M. Shinde"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q84",
+      "text": "The following is a report on digital payment by The Era of Rising Fintech.\na. Karnataka ranks first in the use of digital payments.\nb. Maharashtra ranks second in the use of digital payments.\nc. Bengaluru ranks first in digitised cities.\nd. Hyderabad ranks second in digitised cities.\nWhich of the above sentences are correct ?",
+      "options": {
+        "A": "Only a, b and c",
+        "B": "Only b, c and d",
+        "C": "Only c, d and a",
+        "D": "Only d, a and b"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q85",
+      "text": "Who can participate in the Government of India (MHRD) proposed IMPRINT-II scheme to inculcate culture of innovation among higher education institutes ?\na. Professors in Private Colleges\nb. Professors in ITI\nc. Professors in IIT, NIT, IIIT\nd. Professors in IIT, NIT, IIIT, IISER and Central Universities\nAnswer options :",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only d",
+        "C": "Only a, b and c",
+        "D": "Only c and d"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q86",
+      "text": "For students belonging to the Scheduled Castes and Neo Buddhist class who did not get admission in the Government hostels, to enable them to take post matric education, the Government has started _______ for their lodging, boarding and educational facilities.",
+      "options": {
+        "A": "Padmashree Baba Amte Swadhar Yojana",
+        "B": "Bharat Ratna Dr. Babasaheb Ambedkar Swadhar Yojana",
+        "C": "Karmaveer Bhaurao Patil Aadhar Yojana",
+        "D": "Savitribai Phule Aadhar Yojana"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q87",
+      "text": "For economically backward classes, by the 103rd Constitutional Amendment in 2019, Article 15(6) and 16(6) of the Indian Constitution, following provisions are made. Choose the correct option.\na. This reservation can be availed by persons not benefiting by schemes for SC, ST, OBC.\nb. The reservation proportion will be upto 13% for economically backward classes.\nc. This reservation is for education and job related benefits.\nd. The reservation proportion will be upto 10% for economically backward classes.\nWhich of the above sentences are correct ?\nAnswer options :",
+      "options": {
+        "A": "Only c and d",
+        "B": "a, b, c and d",
+        "C": "Only a, c and d",
+        "D": "Only b and c"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q88",
+      "text": "Prof. Anil Gore, known as 'Marathi Kaka', was awarded State Government _______ award 2019 for popularising Marathi language.",
+      "options": {
+        "A": "Poet V.V. Shirwadkar",
+        "B": "Poet B.R. Tambe",
+        "C": "Poet Mangesh Padgaonkar",
+        "D": "Novelist V.S. Khandekar"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q89",
+      "text": "Who is the first Indian to be appointed as General Vice President of International Organisation Development Association (IODA) ?",
+      "options": {
+        "A": "Rajesh Reddy",
+        "B": "Vinaya Shetty",
+        "C": "Mohit Kumar",
+        "D": "Nidhi Sharma"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q90",
+      "text": "The Indian Space Research Organization (ISRO) will launch an unmanned campaign in December 2020.",
+      "options": {
+        "A": "Gaganyaan",
+        "B": "Vyom Mitra",
+        "C": "Robonaut",
+        "D": "Fedor"
+      },
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "sb-pre-2020-english-q91",
+      "text": "Which one of the following statements is correct ?",
+      "options": {
+        "A": "On 26th January, 1950, 288 members of the Constituent Assembly signed the Constitution.",
+        "B": "'Procedure established by Law' was adopted from the Constitution of the United States of America.",
+        "C": "The idea of 'Joint sitting of two Houses of Parliament' was taken from the British Constitution.",
+        "D": "None of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q92",
+      "text": "Consider the following statements about the 'Preamble' of the Indian Constitution :\na. It states the objects which the Constitution seeks to establish and promote and also aids the legal interpretation of the Constitution where the language is found to be ambiguous.\nb. Like any other part of the Constitution, the 'Preamble' was not enacted by the Constituent Assembly.\nAnswer options :",
+      "options": {
+        "A": "Statement a is correct",
+        "B": "Statement b is correct",
+        "C": "Both the statements are correct",
+        "D": "Both the statements are incorrect"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q93",
+      "text": "As observed by Prof. K.C. Wheare, which one of the following statements correctly shows the true nature of the Indian Federal System ?",
+      "options": {
+        "A": "The Indian Federation is more a functional than an institutional concept.",
+        "B": "A one dominant party regime which is in conflict with the principles of federalism.",
+        "C": "The Indian federation is not the result of an agreement between the units.",
+        "D": "It is a unitary state with subsidiary federal features rather than a federal state with subsidiary unitary features."
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q94",
+      "text": "Consider the following statements :\na. It is a joint responsibility of the Sarpanch and Upa Sarpanch to maintain secured custody and proper safety of proceeding register and other relevant records of the Gram Sabha.\nb. The first meeting of the Gram Sabha in every financial year shall be held within two months from the commencement of that year.\nAnswer options :",
+      "options": {
+        "A": "Statement a is correct",
+        "B": "Statement b is correct",
+        "C": "Both the statements are correct",
+        "D": "Both the statements are incorrect"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q95",
+      "text": "Consider the following statements :\na. Any resolution of Gram Panchayat shall be modified, amended, varied or cancelled by a Panchayat after a period of three months from the date of the passing thereof by another resolution supported by simple majority.\nb. No resolution of Gram Panchayat shall be modified, amended, varied or cancelled by a Panchayat within a period of three months from the date of the passing thereof, except by a resolution supported by two-third of the total number of members of such Panchayat.\nAnswer options :",
+      "options": {
+        "A": "Statement a is correct",
+        "B": "Statement b is correct",
+        "C": "Both the statements are correct",
+        "D": "Both the statements are incorrect"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q96",
+      "text": "The judicial control over administrative actions emanates from the Doctrine of",
+      "options": {
+        "A": "Judicial Review",
+        "B": "Rule of Law",
+        "C": "Delegated Legislation",
+        "D": "Separation of Powers"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q97",
+      "text": "Which of the following has been wrongly listed as a recommendation of the 'Punchhi' Commission with regard to the Governor ?",
+      "options": {
+        "A": "He should have the power to sanction prosecution of a working or retired minister without or against the advice of Council of Ministers.",
+        "B": "He may be removed by a resolution of impeachment passed by the State Legislative Assembly.",
+        "C": "He may be removed by a resolution of impeachment passed by the Rajya Sabha and agreed to by the Lok Sabha.",
+        "D": "Article – 163 of the Constitution should be amended in a way that he may not be able to exercise his discretionary powers in an arbitrary manner."
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q98",
+      "text": "What is Rashtriya Gram Swaraj Abhiyan (RGSA) ?",
+      "options": {
+        "A": "It is a scheme aimed to enable Panchayat Raj institutions to prepare Gram Panchayat Development plans",
+        "B": "It is a scheme for promoting regular Gram Sabha and their records",
+        "C": "It is a scheme for increasing voting at village level",
+        "D": "It is a scheme for promoting direct election of the Sarpanch"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q99",
+      "text": "Consider the following statements :\na. Public Accounts Committee has seven members of the Rajya Sabha.\nb. It is mentioned in the rules of day-to-day business of Lok Sabha that a member of opposition will be the chairperson of Public Accounts Committee.\nWhich is/are the incorrect statements from the above ?",
+      "options": {
+        "A": "Only a",
+        "B": "Only b",
+        "C": "Both a and b",
+        "D": "None of the above"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "sb-pre-2020-english-q100",
+      "text": "First Lokpal of India is",
+      "options": {
+        "A": "Justice Dipak Misra",
+        "B": "Justice T.S. Thakur",
+        "C": "Justice Pinaki Chandra Ghose",
+        "D": "Justice Jagdish Singh Khehar"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    }
+  ]
+}

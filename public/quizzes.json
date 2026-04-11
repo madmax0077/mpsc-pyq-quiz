@@ -31722,5 +31722,2620 @@
       }
     ],
     "language": "marathi"
+  },
+  {
+    "id": "sb-pre-2020-english",
+    "title": "MPSC Subordinate Services Group B Combined Pre 2020 (English)",
+    "createdAt": "2025-04-09T00:00:00.000Z",
+    "questions": [
+      {
+        "id": "sb-pre-2020-english-q1",
+        "text": "_______ started an association by the name 'Granthottejak Mandali' at Nashik.",
+        "options": {
+          "A": "V.D. Savarkar",
+          "B": "V.V. Shirwadkar",
+          "C": "Justice Ranade",
+          "D": "Anant Laxman Kanhere"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q2",
+        "text": "During the period 1885 to 1915 _______ was known as the uncoronated king of Bombay.",
+        "options": {
+          "A": "Jagannath Shankar Sheth",
+          "B": "Bhau Daji Lad",
+          "C": "Dadabhai Naoroji",
+          "D": "Pherozeshah Mehta"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q3",
+        "text": "Who from the following have worked for religious and social reforms through Prarthana Samaj ?\na. Dr. Atmaram Pandurang, Dr. R.G. Bhandarkar\nb. Vaman Abaji Modak, Narayan Ganesh Chandavarkar\nc. Vitthal Ramji Shinde, Justice Mahadev Govind Ranade\nd. Govind Vitthal Kunte, Rao Saheb Mandlik\nAnswer options :",
+        "options": {
+          "A": "Only a, b and d",
+          "B": "Only a, b and c",
+          "C": "Only b, c and d",
+          "D": "Only a and b"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q4",
+        "text": "Where did the first revolt of farmers take place on 12th May, 1875 ?",
+        "options": {
+          "A": "Pune",
+          "B": "Supe",
+          "C": "Ahmednagar",
+          "D": "Solapur"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q5",
+        "text": "Match the following :\n    Centres of the Revolt of 1857    Leaders\na. Peth          I. Vaikappa Naik Balwant Behari\nb. Nargund       II. Ramchandra Patwardhan\nc. Jamkhandi     III. Babasaheb Bhave\nd. Shorapur      IV. Bhagwantrao Koli\nAnswer options :",
+        "options": {
+          "A": "a-IV, b-III, c-II, d-I",
+          "B": "a-IV, b-II, c-III, d-I",
+          "C": "a-IV, b-I, c-II, d-III",
+          "D": "a-IV, b-I, c-III, d-II"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q6",
+        "text": "The demand for freedom for the colonies was like asking for the moon, said _______.",
+        "options": {
+          "A": "Lord Dalhousie",
+          "B": "Lord Ripon",
+          "C": "William Jones",
+          "D": "Lord Morley"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q7",
+        "text": "The first telegraph line was laid from _______ to _______ during Lord Dalhousie's time.",
+        "options": {
+          "A": "Calcutta to Delhi",
+          "B": "Madras to Delhi",
+          "C": "Calcutta to Madras",
+          "D": "Calcutta to Agra"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q8",
+        "text": "Who from the following was in the forefront to unite the workers to form their association in 1875 ?",
+        "options": {
+          "A": "Narayan Meghaji Lokhande",
+          "B": "Narayan Rao Pawar",
+          "C": "Shapurji Bengali",
+          "D": "Sorabji Shapurji"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q9",
+        "text": "Under whose chairmanship did the Bombay Government establish the Railway Board ?",
+        "options": {
+          "A": "Lieutenant Prescott",
+          "B": "Lord Dalhousie",
+          "C": "Lord Elphinstone",
+          "D": "Lieutenant Nelson"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q10",
+        "text": "Find out the wrong pair :",
+        "options": {
+          "A": "Sarala Devi Chaudhurani — The All India Women's Council",
+          "B": "Dr. Annie Besant — The Women's Indian Association",
+          "C": "Meherbai Tata — The National Council of Women in India",
+          "D": "Margaret Cousins — The All India Women's Conference"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q11",
+        "text": "Which society started a school for Bengali girls in Calcutta in the year 1820 ?",
+        "options": {
+          "A": "Calcutta Female Juvenile Society",
+          "B": "British Foreign School Society",
+          "C": "Society for Native Female Education",
+          "D": "Scottish Mission"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q12",
+        "text": "_______ was the centre of 'Wahabi' movement in North India.",
+        "options": {
+          "A": "Patna",
+          "B": "Delhi",
+          "C": "Firozpur",
+          "D": "Aligarh"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q13",
+        "text": "Who from the following persons helped Jyotiba Phule to run a Girls School in Pune ?\na. Sakharam Yashwant Paranjpe, Sadashiv Govind Hate\nb. Sadashivrao Ballal Govande, Moro Vitthal Walvekar\nc. Vishnupant Thatte, Keshav Shivram Bhawalkar\nd. Kashirao Deshmukh, Haribhau Chavan\nAnswer options :",
+        "options": {
+          "A": "Only a, b and c",
+          "B": "Only a, c and d",
+          "C": "Only a and b",
+          "D": "Only c and d"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q14",
+        "text": "Match the following :\na. Paramahansa Mata Prasamsha   I. Gujaba Joshi Punekar\nb. Vichar Lahari                II. Krushnashastri Chiplunkar\nc. Follower of Sakta sect       III. Morbhat Dandekar\nd. Dadoba Pandurang             IV. Dharma Vivechan\nAnswer options :",
+        "options": {
+          "A": "a-I, b-III, c-IV, d-II",
+          "B": "a-I, b-II, c-III, d-IV",
+          "C": "a-II, b-I, c-IV, d-III",
+          "D": "a-IV, b-III, c-II, d-I"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q15",
+        "text": "The day Lokmanya Tilak passed away, the same day Gandhiji's _______ movement was launched in Bombay.",
+        "options": {
+          "A": "Civil Disobedience",
+          "B": "Non-Cooperation",
+          "C": "Anti Liquor",
+          "D": "Quit India"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-english-q16",
+        "text": "As per the 'Indus Water Treaty – 1960' between India and Pakistan, on which rivers water does India have absolute claim ?",
+        "options": {
+          "A": "Indus, Chenab and Jhelum",
+          "B": "Ravi, Beas and Sutlej",
+          "C": "Jhelum, Sutlej and Chenab",
+          "D": "Chenab, Beas and Jhelum"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q17",
+        "text": "Which of the following is the best quality iron ore ?",
+        "options": {
+          "A": "Hematite",
+          "B": "Limonite",
+          "C": "Magnetite",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q18",
+        "text": "Correctly arrange the following passes in India from west to east :",
+        "options": {
+          "A": "Mana Pass, Shipkila Pass, Niti Pass, Zojila Pass",
+          "B": "Zojila Pass, Shipkila Pass, Mana Pass, Niti Pass",
+          "C": "Shipkila Pass, Niti Pass, Mana Pass, Zojila Pass",
+          "D": "Niti Pass, Mana Pass, Zojila Pass, Shipkila Pass"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q19",
+        "text": "Saline and Alkaline soils are also known by another name. Which is the correct option given below ?",
+        "options": {
+          "A": "Desert soil",
+          "B": "Chopan soil",
+          "C": "Wet and Marshy soils",
+          "D": "Chestnut or grey brown soil"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q20",
+        "text": "Which of the following States are associated with Pench Tiger Reserve ?",
+        "options": {
+          "A": "Maharashtra — Chhattisgarh",
+          "B": "Maharashtra — Madhya Pradesh",
+          "C": "Madhya Pradesh — Chhattisgarh",
+          "D": "Maharashtra — Karnataka"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q21",
+        "text": "As per 2001 Census, the following State has the highest population of Scheduled Tribes in India.",
+        "options": {
+          "A": "Odisha",
+          "B": "Maharashtra",
+          "C": "Rajasthan",
+          "D": "Madhya Pradesh"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q22",
+        "text": "As per 2011 Census, which are the first five districts according to population density in Maharashtra ?",
+        "options": {
+          "A": "Mumbai Suburb, Thane, Mumbai City, Kolhapur, Pune",
+          "B": "Mumbai City, Mumbai Suburb, Pune, Kolhapur, Thane",
+          "C": "Mumbai Suburb, Mumbai City, Thane, Pune, Kolhapur",
+          "D": "Thane, Mumbai City, Kolhapur, Pune, Mumbai Suburb"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q23",
+        "text": "What is the difference in sex ratio of Maharashtra State as per Census 2001 and 2011 ?",
+        "options": {
+          "A": "09",
+          "B": "90",
+          "C": "19",
+          "D": "29"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q24",
+        "text": "Observe the following statements :\na. Maval section does not come in rain shadow area.\nb. Maval area is known for its climate.\nc. Kasheli Ghat connects Poladpur and Mahabaleshwar.\nAnswer options :",
+        "options": {
+          "A": "Only statement a is correct",
+          "B": "Only statement b is correct",
+          "C": "Statements a and b are correct",
+          "D": "Statements b and c are correct"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q25",
+        "text": "In which district of Maharashtra are the 'Darekasa Hills' located ?",
+        "options": {
+          "A": "Nagpur",
+          "B": "Chandrapur",
+          "C": "Gondia",
+          "D": "Gadchiroli"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q26",
+        "text": "As per the Census 2011, what is the 'Population density' of Gadchiroli district ?",
+        "options": {
+          "A": "163 sq.km",
+          "B": "193 sq.km",
+          "C": "74 sq.km",
+          "D": "93 sq.km"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q27",
+        "text": "Observe the following statements :\na. Verul caves is in Aurangabad district.\nb. Chambhar caves is in Pune district.\nc. Chikhaldara hill station is in Raigad district.\nd. Gautala National Park is in Jalgaon district.\nWhich of the above statements is/are correct ?",
+        "options": {
+          "A": "Only a statement is correct",
+          "B": "Only b and c statements are correct",
+          "C": "Only a and d statements are correct",
+          "D": "All the above statements are correct"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q28",
+        "text": "Match the following :\n    Column I (Thermal Power House)    Column II (District)\na. Chola          I. Mumbai\nb. Turbhe         II. Akola\nc. Fekari         III. Thane\nd. Paras          IV. Bhusawal\nAnswer options :",
+        "options": {
+          "A": "a-III, b-IV, c-I, d-II",
+          "B": "a-III, b-I, c-II, d-IV",
+          "C": "a-III, b-I, c-IV, d-II",
+          "D": "a-II, b-IV, c-I, d-III"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q29",
+        "text": "Which of the following sequence of Ghats in Maharashtra from North to South is correct ?",
+        "options": {
+          "A": "Thal Ghat, Kumbharli Ghat, Amba Ghat, Amboli Ghat",
+          "B": "Amboli Ghat, Amba Ghat, Kumbharli Ghat, Thal Ghat",
+          "C": "Thal Ghat, Kumbharli Ghat, Amboli Ghat, Amba Ghat",
+          "D": "Thal Ghat, Amba Ghat, Amboli Ghat, Kumbharli Ghat"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q30",
+        "text": "In Tapi – Purna river basin, which of the following sequence of rivers from North to South is correct ?",
+        "options": {
+          "A": "Girna, Bori, Panzara, Burai, Gomati",
+          "B": "Gomati, Burai, Panzara, Bori, Girna",
+          "C": "Gomati, Burai, Girna, Bori, Panzara",
+          "D": "Gomati, Panzara, Girna, Burai, Bori"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-english-q31",
+        "text": "_______ has the major foodgrain crop production recorded as highest growth after green revolution.",
+        "options": {
+          "A": "Rice",
+          "B": "Bajra",
+          "C": "Maize",
+          "D": "Wheat"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q32",
+        "text": "The National Rural Employment Guarantee Act (NREGA) was enacted in _______.",
+        "options": {
+          "A": "October 2001",
+          "B": "October 2002",
+          "C": "September 2005",
+          "D": "September 2011"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q33",
+        "text": "Which of the following is not an outstanding liability of Central Government ?",
+        "options": {
+          "A": "Internal debt",
+          "B": "Market loans",
+          "C": "Treasury bills",
+          "D": "Foreign aid"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q34",
+        "text": "Which of the following has been suggested as a substitute for the Fiscal Responsibility and Budget Management (FRBM) Act by the Fourteenth Finance Commission ?",
+        "options": {
+          "A": "Fiscal Consolidation Fund",
+          "B": "Fiscal Deficit",
+          "C": "Revenue and Debt Management",
+          "D": "Debt Ceiling and Fiscal Responsibility Legislation"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q35",
+        "text": "India is the world's largest producer of _______.",
+        "options": {
+          "A": "Jute",
+          "B": "Steel",
+          "C": "Cement",
+          "D": "Sugar"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q36",
+        "text": "The share of secondary sector in GDP in India from 1950 – 51 to 2013 – 14 has increased by _______ per cent.",
+        "options": {
+          "A": "16.6 to 26.2",
+          "B": "30.6 to 59.2",
+          "C": "16.9 to 36.2",
+          "D": "15.6 to 36.2"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q37",
+        "text": "According to Tendulkar Committee, the total percentage of population in India below the poverty line in 2011 – 12 was _______.",
+        "options": {
+          "A": "21.9%",
+          "B": "27.5%",
+          "C": "37.2%",
+          "D": "42.9%"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q38",
+        "text": "The immediate objective of the National Population Policy 2000 was\na. to meet the needs of health infrastructure and to provide basic reproductive health care.\nb. to lower the total fertility rate to the replacement level.\nc. to achieve universal immunization of children.\nAnswer options :",
+        "options": {
+          "A": "Only a and b",
+          "B": "Only c",
+          "C": "Only b",
+          "D": "Only a"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q39",
+        "text": "The WTO agreements are based on which of the following important principle ?",
+        "options": {
+          "A": "Non-discrimination",
+          "B": "Most-favoured nation",
+          "C": "National treatment",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q40",
+        "text": "Consider the following statements :\na. Rashtriya Krishi Vikas Yojana was launched during the 11th Five Year Plan.\nb. The Mission for Integrated Development of Horticulture was launched during the 12th Five Year Plan.\nc. National Food Security Mission was launched in 2009 – 10.\nWhich of the above statements is/are incorrect ?",
+        "options": {
+          "A": "All the three are incorrect",
+          "B": "Only b",
+          "C": "Only c",
+          "D": "Only a"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q41",
+        "text": "_______ occupied the first place in India's export earnings in 2018 – 19.",
+        "options": {
+          "A": "Jute garments",
+          "B": "Readymade garments",
+          "C": "Engineering goods",
+          "D": "Gems and Jewellery"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q42",
+        "text": "Which one of the following is not a part of Bharat Nirman Programme ?",
+        "options": {
+          "A": "Irrigation",
+          "B": "Rural electrification",
+          "C": "Schools in rural areas",
+          "D": "Rural roads"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q43",
+        "text": "The main features of Payment Banks are _______. Choose the correct sentences.\na. to accept deposits upto ₹ 1 lakh per individual\nb. to allow the use of ATM and debit cards\nc. to allow the use of ATM\nd. not to lend in any form\nAnswer options :",
+        "options": {
+          "A": "Only a, c and d",
+          "B": "Only a, b and c",
+          "C": "Only b, c and d",
+          "D": "Only a, b and d"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q44",
+        "text": "As per Rangarajan Committee (2014) defined poverty line for 2011 – 12 for rural and urban areas per capita is ₹ _______.",
+        "options": {
+          "A": "32 and 47",
+          "B": "32 and 67",
+          "C": "32 and 87",
+          "D": "31 and 97"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q45",
+        "text": "The Oxfam Report 2018, says that the richest 1 per cent of the people are generating _______ per cent share of National Income in India.",
+        "options": {
+          "A": "41",
+          "B": "35",
+          "C": "73",
+          "D": "83"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-english-q46",
+        "text": "Which method is used to determine the distance of different stars from the Earth ?",
+        "options": {
+          "A": "Gravitational method",
+          "B": "Parallax method",
+          "C": "Parallel method",
+          "D": "Direct method"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q47",
+        "text": "Working of a Solar cell is based on _______.",
+        "options": {
+          "A": "Stark effect",
+          "B": "Coulomb effect",
+          "C": "Zeeman effect",
+          "D": "Photovoltaic effect"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q48",
+        "text": "Who was the earliest to use algebra to solve astronomical problems ?",
+        "options": {
+          "A": "Bhaskara",
+          "B": "Brahmagupta",
+          "C": "Aryabhata",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q49",
+        "text": "The copper alloy German Silver contains _______.",
+        "options": {
+          "A": "Cu, Zn, Ag",
+          "B": "Cu, Zn, Ni",
+          "C": "Cu, Ni, Ag",
+          "D": "Cu, Zn, Al"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q50",
+        "text": "A crystalline solid has\na. definite geometry.\nb. sharp melting point.\nc. anisotropic property.\nAnswer options :",
+        "options": {
+          "A": "a and b is correct",
+          "B": "b and c is correct",
+          "C": "a and c is correct",
+          "D": "All of the above are correct"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q51",
+        "text": "According to Moseley, the basis for the periodic arrangement of elements is _______.",
+        "options": {
+          "A": "Atomic weight",
+          "B": "Atomic mass",
+          "C": "Atomic number",
+          "D": "Atomic volume"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q52",
+        "text": "The five kingdoms under the recent scheme of classification are\na. Protista, Fungi, Mammalia, Annelida, Plantae\nb. Monera, Protista, Fungi, Plantae, Animalia\nc. Protista, Fungi, Plantae, Porifera, Animalia\nd. Monera, Fungi, Mammalia, Plantae, Animalia\nWhich of the option given above is correct ?",
+        "options": {
+          "A": "Only c",
+          "B": "Only b",
+          "C": "Only a",
+          "D": "Only d"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q53",
+        "text": "A toxic substance responsible for chills and high fever recurring every three to four days in malaria fever is due to",
+        "options": {
+          "A": "Interferon",
+          "B": "Hemozoin",
+          "C": "Hirudin",
+          "D": "Colostrum"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q54",
+        "text": "The disease \"African Sleeping Sickness\" is caused by which of the following parasite ?",
+        "options": {
+          "A": "Trypanosoma",
+          "B": "Paramoecium",
+          "C": "Mosquito",
+          "D": "Tapeworm"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q55",
+        "text": "Algae and fungi are classified in which of the following groups ?",
+        "options": {
+          "A": "Gymnosperms",
+          "B": "Thallophytes",
+          "C": "Angiosperms",
+          "D": "Bryophytes"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q56",
+        "text": "In which of the following disease of plants does chlorophyll of the leaves get destroyed and the leaves shrink ?",
+        "options": {
+          "A": "Mosaic disease of tobacco",
+          "B": "Citrus canker",
+          "C": "Smut of jowar",
+          "D": "Rhizoctonia"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q57",
+        "text": "Which of the following biofertilizer is added in rice fields ?",
+        "options": {
+          "A": "Red algae",
+          "B": "Brown algae",
+          "C": "Rhizobium",
+          "D": "Blue green algae"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q58",
+        "text": "Mechanisms by which bacteria becomes resistant to antimicrobial agents are _______.\na. Alteration in surface receptors for drugs\nb. MDR pump\nc. Secretion of inactivating enzymes\nAnswer Options :",
+        "options": {
+          "A": "Only a and b",
+          "B": "a, b and c",
+          "C": "Only a and c",
+          "D": "Only b and c"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q59",
+        "text": "Staphylococcal food poisoning is caused by _______.",
+        "options": {
+          "A": "ingestion of preformed enterotoxin",
+          "B": "colonisation of mucosal surface followed by production of toxin",
+          "C": "colonisation of wound or abscess followed by local toxin production",
+          "D": "All of the above reasons"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q60",
+        "text": "National Salmonella Phage Typing Centre is at _______.",
+        "options": {
+          "A": "Lady Hardinge Medical College, New Delhi",
+          "B": "Maulana Azad Medical College, New Delhi",
+          "C": "National Institute of Cholera and Enteric Disease, Kolkata",
+          "D": "National Centre for Disease Control"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-english-q61",
+        "text": "Select the logical column of digits for replacing the column of question marks.\n5  4  6  ?\n2  6  4  ?\n6  4  8  ?\n3  5  4  ?",
+        "options": {
+          "A": "5, 8, 6, 6",
+          "B": "5, 6, 4, 8",
+          "C": "4, 5, 6, 4",
+          "D": "4, 8, 6, 6"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q62",
+        "text": "Select the pair of words or word groups that fit in each of the sentences to make two separate and having equivalent meaning in the given context.\nThe stock market having plunged drastically, the investor's _______ mood on the trading floor seemed incongruous.",
+        "options": {
+          "A": "enervated and funereal",
+          "B": "inconsolable and sardonic",
+          "C": "sanguine and buoyant",
+          "D": "enervated and sardonic"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q63",
+        "text": "Study the accompanying cube with numbers 1, 2, 3, 4, 5 and 6 on its six faces. Number 3 is not opposite to either 1 or 6 and number 6 is not opposite to 4. If this cube is rotated so as to keep number 1 on the top and right side face with number 6 takes the front place that has number 2 now, then which number will be on the right face ?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "3",
+          "D": "More information is needed for selection"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q64",
+        "text": "Accompanying net is folded to get a cube. Select the number of vertices of the cube at which two or more diagonal lines on the faces meet.",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q65",
+        "text": "Study accompanying transparent sheet of paper X and select the fold that is made using it.",
+        "options": {
+          "A": "Option 1",
+          "B": "Option 2",
+          "C": "Option 3",
+          "D": "Option 4"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q66",
+        "text": "The decline in voter turnout at elections is chiefly explained by the decline in voting by younger people who have very different lifestyles. Older people are much more likely to vote. If this trend continues, probably this will lead to a point at which no government can be said to have a mandate to govern as the number of voters will be too small to indicate the wishes of the majority. Society needs, therefore, to find an alternative to conventional elections so that the wishes of the people can be heard.\nSelect one option that best expresses the flaw in the above argument.",
+        "options": {
+          "A": "Elections are used in all democratic countries as the only well established process of choosing a government.",
+          "B": "With the help of social media, young people may be more likely to join pressure groups than to vote in an election.",
+          "C": "There may be problems in using alternatives such as internet and postal voting due to remote residential places.",
+          "D": "People who are young now may become more likely to vote as they get older."
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q67",
+        "text": "The following question is based on the information given below :\nI. A, B, C, D and E are five persons sitting in a line facing South – while M, N, O, P and Q are five persons sitting in the second line parallel to the first line and facing North, facing each other.\nII. E is opposite to O who is just next, right of M.\nIII. C and N are diagonally opposite to each other.\nIV. B who is just next to left of D, is opposite to Q.\nV. M is at one end of the line.\nVI. P who is just to the left of Q, is opposite to D.\nIf B shifts to the place of E, E shifts to the place of Q and Q shifts to the place of B, then who will be the second to the left of the person opposite to O ?",
+        "options": {
+          "A": "Q",
+          "B": "P",
+          "C": "E",
+          "D": "D"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q68",
+        "text": "In the following question, an Assertion followed by two Reasons RI and RII is given. Apply reasons to the Assertion and find the answer.\nAssertion : People, these days, are doing a lot of teleshopping.\nReasons : RI – People are watching TV a lot.\n           RII – People, these days, are not finding time to shop in the market.\nAnswer options :",
+        "options": {
+          "A": "Only RI not RII is a possible reason",
+          "B": "Only RII not RI is a possible reason",
+          "C": "Either RI or RII but not both reasons",
+          "D": "Neither RI nor RII is a possible reason"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q69",
+        "text": "Prashant starts from his house and travels 8 km towards North. Then he turns right, travels 5 km, then turns right again and travels 4 km and then travels 3 km towards East. Finally he turns left and travels 2 km. How far is he from his house, in kilometers ?",
+        "options": {
+          "A": "14",
+          "B": "12",
+          "C": "10",
+          "D": "7"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q70",
+        "text": "A survey is conducted on 6200 villagers staying in 4 villages A, B, C and D and having various favourite colours. 50% of people from village B have red as their favourite colour. How many people from other villages have the same favourite colour ?",
+        "options": {
+          "A": "1240",
+          "B": "527",
+          "C": "713",
+          "D": "1426"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q71",
+        "text": "If the diameter of a circular track is 28 m and there is a 7 m wide road around the track, then find the area of the road.",
+        "options": {
+          "A": "616 sq. m",
+          "B": "770 sq. m",
+          "C": "1386 sq. m",
+          "D": "28 sq. m"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q72",
+        "text": "Five workers take 12 days to weed a field. How many days would 15 workers take to do the same task ?",
+        "options": {
+          "A": "15",
+          "B": "4",
+          "C": "12",
+          "D": "16"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q73",
+        "text": "The sum of the present ages of 3 persons is 72 years. Seven years ago, their ages were in the ratio 4 : 6 : 7. What are their present ages ?",
+        "options": {
+          "A": "20, 30, 22 years",
+          "B": "22, 24, 26 years",
+          "C": "19, 25, 28 years",
+          "D": "17, 25, 30 years"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q74",
+        "text": "The true discount on a bill due 10 months hence at 6% per annum is ₹ 26.25. The amount of the bill is",
+        "options": {
+          "A": "₹ 1575",
+          "B": "₹ 500",
+          "C": "₹ 650.25",
+          "D": "₹ 551.25"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q75",
+        "text": "A bag contains one-rupee, 50 paise and 25 paise coins in the ratio 5 : 6 : 8. If the total amount is ₹ 420, then the number of 50 paise coins is",
+        "options": {
+          "A": "210",
+          "B": "126",
+          "C": "252",
+          "D": "70"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-english-q76",
+        "text": "American astronaut Christina Koch is the female astronaut spending longest period in space. She spent 328 days in space. On _______, she took off from Earth.",
+        "options": {
+          "A": "10th February, 2019",
+          "B": "14th February, 2019",
+          "C": "14th March, 2019",
+          "D": "17th March, 2019"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q77",
+        "text": "Guinness World Records has taken note of adventure swimmer Prabhat Koli who has won the Central Government Tenzing Norgay National Award and Maharashtra State prestigious Shiv Chhatrapati Bravery Award. So far he has crossed six seas. Among the following, which one water body has he not crossed ?",
+        "options": {
+          "A": "English Channel",
+          "B": "Catalina Channel",
+          "C": "Strait of Gibraltar",
+          "D": "Suez Canal"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q78",
+        "text": "In the last 72 years after freedom, in our country of 130 crores population, only _______ persons have achieved the honour of 'Param Vir Chakra'.",
+        "options": {
+          "A": "24",
+          "B": "42",
+          "C": "12",
+          "D": "21"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q79",
+        "text": "Select the inappropriate (wrong) option regarding Ayushman Bharat scheme.\na. 10 crore Indian families will be benefited by this scheme.\nb. Ayushman card holder family can avail medical treatment upto ₹ 5 lakh free of cost.\nc. 30 crore Indian families will be benefited by this scheme.\nd. 15 thousand Private Hospitals will get status of Jan Arogya Mitra by this scheme.\nAnswer options :",
+        "options": {
+          "A": "Only b",
+          "B": "Only c",
+          "C": "Only a and c",
+          "D": "Only b and d"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q80",
+        "text": "Choose the proper option which explains the concept and its utilization in daily life with advancement of Information Technology.\n    Concept        Utilization\na. UPI          I. Artificial Knowledge Exchange\nb. AI           II. Digital payment system\nc. GeM          III. Internet of things\nd. IoT          IV. Online platform by the Government\nAnswer options :",
+        "options": {
+          "A": "a-IV, b-I, c-II, d-III",
+          "B": "a-III, b-IV, c-I, d-II",
+          "C": "a-I, b-II, c-IV, d-III",
+          "D": "a-II, b-I, c-IV, d-III"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q81",
+        "text": "Choose the option which explains the correct order of place, year and Chairperson regarding Akhil Bharatiya Marathi Natya Sammelan.\n    Year-Place            Chairperson\na. 2016 – Thane        I. Jayant Savarkar\nb. 2017 – Osmanabad    II. Premanand Gajvi\nc. 2018 – Mulund       III. Kirti Shiledar\nd. 2019 – Nagpur       IV. Gangaram Gawankar\nAnswer options :",
+        "options": {
+          "A": "a-III, b-II, c-IV, d-I",
+          "B": "a-II, b-III, c-I, d-IV",
+          "C": "a-IV, b-I, c-III, d-II",
+          "D": "a-I, b-IV, c-II, d-III"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q82",
+        "text": "How many metric tonnes (MT) of e-waste was decomposed and recycled during the year 2018 – 19 as per the Central Pollution Control Board's information ?",
+        "options": {
+          "A": "69414 MT",
+          "B": "164663 MT",
+          "C": "771215 MT",
+          "D": "708445 MT"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q83",
+        "text": "Who has been appointed as 'Queen's Counsel' of Queen of Britain ?",
+        "options": {
+          "A": "Ujjwal Nikam",
+          "B": "L. Nageswara Rao",
+          "C": "Harish Salve",
+          "D": "R.M. Shinde"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q84",
+        "text": "The following is a report on digital payment by The Era of Rising Fintech.\na. Karnataka ranks first in the use of digital payments.\nb. Maharashtra ranks second in the use of digital payments.\nc. Bengaluru ranks first in digitised cities.\nd. Hyderabad ranks second in digitised cities.\nWhich of the above sentences are correct ?",
+        "options": {
+          "A": "Only a, b and c",
+          "B": "Only b, c and d",
+          "C": "Only c, d and a",
+          "D": "Only d, a and b"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q85",
+        "text": "Who can participate in the Government of India (MHRD) proposed IMPRINT-II scheme to inculcate culture of innovation among higher education institutes ?\na. Professors in Private Colleges\nb. Professors in ITI\nc. Professors in IIT, NIT, IIIT\nd. Professors in IIT, NIT, IIIT, IISER and Central Universities\nAnswer options :",
+        "options": {
+          "A": "Only a and b",
+          "B": "Only d",
+          "C": "Only a, b and c",
+          "D": "Only c and d"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q86",
+        "text": "For students belonging to the Scheduled Castes and Neo Buddhist class who did not get admission in the Government hostels, to enable them to take post matric education, the Government has started _______ for their lodging, boarding and educational facilities.",
+        "options": {
+          "A": "Padmashree Baba Amte Swadhar Yojana",
+          "B": "Bharat Ratna Dr. Babasaheb Ambedkar Swadhar Yojana",
+          "C": "Karmaveer Bhaurao Patil Aadhar Yojana",
+          "D": "Savitribai Phule Aadhar Yojana"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q87",
+        "text": "For economically backward classes, by the 103rd Constitutional Amendment in 2019, Article 15(6) and 16(6) of the Indian Constitution, following provisions are made. Choose the correct option.\na. This reservation can be availed by persons not benefiting by schemes for SC, ST, OBC.\nb. The reservation proportion will be upto 13% for economically backward classes.\nc. This reservation is for education and job related benefits.\nd. The reservation proportion will be upto 10% for economically backward classes.\nWhich of the above sentences are correct ?\nAnswer options :",
+        "options": {
+          "A": "Only c and d",
+          "B": "a, b, c and d",
+          "C": "Only a, c and d",
+          "D": "Only b and c"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q88",
+        "text": "Prof. Anil Gore, known as 'Marathi Kaka', was awarded State Government _______ award 2019 for popularising Marathi language.",
+        "options": {
+          "A": "Poet V.V. Shirwadkar",
+          "B": "Poet B.R. Tambe",
+          "C": "Poet Mangesh Padgaonkar",
+          "D": "Novelist V.S. Khandekar"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q89",
+        "text": "Who is the first Indian to be appointed as General Vice President of International Organisation Development Association (IODA) ?",
+        "options": {
+          "A": "Rajesh Reddy",
+          "B": "Vinaya Shetty",
+          "C": "Mohit Kumar",
+          "D": "Nidhi Sharma"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q90",
+        "text": "The Indian Space Research Organization (ISRO) will launch an unmanned campaign in December 2020.",
+        "options": {
+          "A": "Gaganyaan",
+          "B": "Vyom Mitra",
+          "C": "Robonaut",
+          "D": "Fedor"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-english-q91",
+        "text": "Which one of the following statements is correct ?",
+        "options": {
+          "A": "On 26th January, 1950, 288 members of the Constituent Assembly signed the Constitution.",
+          "B": "'Procedure established by Law' was adopted from the Constitution of the United States of America.",
+          "C": "The idea of 'Joint sitting of two Houses of Parliament' was taken from the British Constitution.",
+          "D": "None of the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q92",
+        "text": "Consider the following statements about the 'Preamble' of the Indian Constitution :\na. It states the objects which the Constitution seeks to establish and promote and also aids the legal interpretation of the Constitution where the language is found to be ambiguous.\nb. Like any other part of the Constitution, the 'Preamble' was not enacted by the Constituent Assembly.\nAnswer options :",
+        "options": {
+          "A": "Statement a is correct",
+          "B": "Statement b is correct",
+          "C": "Both the statements are correct",
+          "D": "Both the statements are incorrect"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q93",
+        "text": "As observed by Prof. K.C. Wheare, which one of the following statements correctly shows the true nature of the Indian Federal System ?",
+        "options": {
+          "A": "The Indian Federation is more a functional than an institutional concept.",
+          "B": "A one dominant party regime which is in conflict with the principles of federalism.",
+          "C": "The Indian federation is not the result of an agreement between the units.",
+          "D": "It is a unitary state with subsidiary federal features rather than a federal state with subsidiary unitary features."
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q94",
+        "text": "Consider the following statements :\na. It is a joint responsibility of the Sarpanch and Upa Sarpanch to maintain secured custody and proper safety of proceeding register and other relevant records of the Gram Sabha.\nb. The first meeting of the Gram Sabha in every financial year shall be held within two months from the commencement of that year.\nAnswer options :",
+        "options": {
+          "A": "Statement a is correct",
+          "B": "Statement b is correct",
+          "C": "Both the statements are correct",
+          "D": "Both the statements are incorrect"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q95",
+        "text": "Consider the following statements :\na. Any resolution of Gram Panchayat shall be modified, amended, varied or cancelled by a Panchayat after a period of three months from the date of the passing thereof by another resolution supported by simple majority.\nb. No resolution of Gram Panchayat shall be modified, amended, varied or cancelled by a Panchayat within a period of three months from the date of the passing thereof, except by a resolution supported by two-third of the total number of members of such Panchayat.\nAnswer options :",
+        "options": {
+          "A": "Statement a is correct",
+          "B": "Statement b is correct",
+          "C": "Both the statements are correct",
+          "D": "Both the statements are incorrect"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q96",
+        "text": "The judicial control over administrative actions emanates from the Doctrine of",
+        "options": {
+          "A": "Judicial Review",
+          "B": "Rule of Law",
+          "C": "Delegated Legislation",
+          "D": "Separation of Powers"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q97",
+        "text": "Which of the following has been wrongly listed as a recommendation of the 'Punchhi' Commission with regard to the Governor ?",
+        "options": {
+          "A": "He should have the power to sanction prosecution of a working or retired minister without or against the advice of Council of Ministers.",
+          "B": "He may be removed by a resolution of impeachment passed by the State Legislative Assembly.",
+          "C": "He may be removed by a resolution of impeachment passed by the Rajya Sabha and agreed to by the Lok Sabha.",
+          "D": "Article – 163 of the Constitution should be amended in a way that he may not be able to exercise his discretionary powers in an arbitrary manner."
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q98",
+        "text": "What is Rashtriya Gram Swaraj Abhiyan (RGSA) ?",
+        "options": {
+          "A": "It is a scheme aimed to enable Panchayat Raj institutions to prepare Gram Panchayat Development plans",
+          "B": "It is a scheme for promoting regular Gram Sabha and their records",
+          "C": "It is a scheme for increasing voting at village level",
+          "D": "It is a scheme for promoting direct election of the Sarpanch"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q99",
+        "text": "Consider the following statements :\na. Public Accounts Committee has seven members of the Rajya Sabha.\nb. It is mentioned in the rules of day-to-day business of Lok Sabha that a member of opposition will be the chairperson of Public Accounts Committee.\nWhich is/are the incorrect statements from the above ?",
+        "options": {
+          "A": "Only a",
+          "B": "Only b",
+          "C": "Both a and b",
+          "D": "None of the above"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-english-q100",
+        "text": "First Lokpal of India is",
+        "options": {
+          "A": "Justice Dipak Misra",
+          "B": "Justice T.S. Thakur",
+          "C": "Justice Pinaki Chandra Ghose",
+          "D": "Justice Jagdish Singh Khehar"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      }
+    ]
+  },
+  {
+    "id": "sb-pre-2020-marathi",
+    "title": "MPSC Subordinate Services Group B Combined Pre 2020 (मराठी)",
+    "createdAt": "2025-04-09T00:00:00.000Z",
+    "questions": [
+      {
+        "id": "sb-pre-2020-marathi-q1",
+        "text": "_________ यांनी नाशिक येथे 'ग्रंथोत्तेजक मंडळी' नावाची संस्था स्थापन केली होती.",
+        "options": {
+          "A": "वि.दा. सावरकर",
+          "B": "वि.वा. शिरवाडकर",
+          "C": "न्यायमूर्ती रानडे",
+          "D": "अनंत लक्ष्मण कान्हेरे"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q2",
+        "text": "1885 ते 1915 या काळात _________ हे मुंबईचा अनभिषिक्त राजा म्हणून ओळखले जात.",
+        "options": {
+          "A": "जगन्नाथ शंकर शेठ",
+          "B": "भाऊ दाजी लाड",
+          "C": "दादाभाई नौरोजी",
+          "D": "फिरोजशहा मेहता"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q3",
+        "text": "खालीलपैकी कोणत्या व्यक्तींनी प्रार्थना समाजाच्या माध्यमातून धार्मिक व सामाजिक सुधारणांचे कार्य केले होते ?\nअ. डॉ. आत्माराम पांडुरंग, डॉ. आर.जी. भांडारकर\nब. वामन आबाजी मोडक, नारायण गणेश चंदावरकर\nक. विठ्ठल रामजी शिंदे, न्यायमूर्ती महादेव गोविंद रानडे\nड. गोविंद विठ्ठल कुंटे, राव साहेब मंडलीक\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "फक्त अ, ब आणि ड",
+          "B": "फक्त अ, ब आणि क",
+          "C": "फक्त ब, क आणि ड",
+          "D": "फक्त अ आणि ब"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q4",
+        "text": "खालीलपैकी कोणत्या ठिकाणी 12 मे, 1875 रोजी शेतकऱ्यांनी पहिला उठाव केला होता ?",
+        "options": {
+          "A": "पुणे",
+          "B": "सुपे",
+          "C": "अहमदनगर",
+          "D": "सोलापूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q5",
+        "text": "खालील जोड्या जुळवा :\n    1857 च्या उठावाची केंद्रे    नेते\nअ. पेठ          I. वैकप्पा नाईक बळवंत बेहरी\nब. नरगुंद       II. रामचंद्र पटवर्धन\nक. जमखिंडी     III. बाबासाहेब भावे\nड. शोरापूर      IV. भगवंतराव कोळी\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "अ-IV, ब-III, क-II, ड-I",
+          "B": "अ-IV, ब-II, क-III, ड-I",
+          "C": "अ-IV, ब-I, क-II, ड-III",
+          "D": "अ-IV, ब-I, क-III, ड-II"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q6",
+        "text": "वसाहतीच्या स्वातंत्र्याची मागणी म्हणजे 'चांदोबाची' मागणी असे _________ म्हणाले.",
+        "options": {
+          "A": "लॉर्ड डलहौसी",
+          "B": "लॉर्ड रिपन",
+          "C": "विलियम जोन्स",
+          "D": "लॉर्ड मोर्ले"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q7",
+        "text": "लॉर्ड डलहौसीच्या कारकिर्दीत भारतात पहिली टेलिग्राफ लाईन _________ ते _________ पर्यंत टाकली गेली.",
+        "options": {
+          "A": "कलकत्ता ते दिल्ली",
+          "B": "मद्रास ते दिल्ली",
+          "C": "कलकत्ता ते मद्रास",
+          "D": "कलकत्ता ते आग्रा"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q8",
+        "text": "1875 मध्ये कामगारांना एकत्रित करून त्यांची कामगार संघटना स्थापना करण्यासाठी पुढीलपैकी कोणती व्यक्ती आघाडीवर होती ?",
+        "options": {
+          "A": "नारायण मेघाजी लोखंडे",
+          "B": "नारायण राव पवार",
+          "C": "शापुरजी बंगाली",
+          "D": "सोराबजी शापुरजी"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q9",
+        "text": "मुंबई सरकारने खालीलपैकी कोणाच्या अध्यक्षतेखाली रेल्वे मंडळाची स्थापना केली होती ?",
+        "options": {
+          "A": "लेफ्टनंट प्रेस्कॉट",
+          "B": "लॉर्ड डलहौजी",
+          "C": "लॉर्ड एल्फिन्स्टन",
+          "D": "लेफ्टनंट नेल्सन"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q10",
+        "text": "चुकीची जोडी ओळखा :",
+        "options": {
+          "A": "सरलादेवी चौधुरानी — द ऑल इंडिया वुमेन्स कौन्सिल",
+          "B": "डॉ. ॲनी बेझंट — द वुमेन्स इंडियन असोशिएशन",
+          "C": "मेहरबाई टाटा — द नॅशनल कौन्सिल ऑफ वुमेन इन इंडिया",
+          "D": "मार्गारेट कझिन्स — द ऑल इंडिया वुमेन्स कॉन्फरन्स"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q11",
+        "text": "वर्ष 1820 मध्ये कोणत्या संस्थेने बंगाली मुलींची शाळा कलकत्ता येथे सुरू केली ?",
+        "options": {
+          "A": "कलकत्ता फिमेल जूव्हेनाईल सोसायटी",
+          "B": "ब्रिटिश फॉरिन स्कूल सोसायटी",
+          "C": "सोसायटी फॉर नेटिव्ह फिमेल एज्यूकेशन",
+          "D": "स्कॉटिश मिशन"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q12",
+        "text": "_________ हे उत्तर भारतातील 'वहाबी' आंदोलनाचे केंद्र होते.",
+        "options": {
+          "A": "पटना",
+          "B": "दिल्ली",
+          "C": "फिरोजपूर",
+          "D": "अलीगढ"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q13",
+        "text": "पुणे येथील मुलींची शाळा चालविण्यासाठी ज्योतिबा फुले यांना खालीलपैकी कोणत्या व्यक्तींनी सहकार्य केले होते ?\nअ. सखाराम यशवंत परांजपे, सदाशिव गोविंद हाटे\nब. सदाशिवराव बल्लाळ गोवंडे, मोरो विठ्ठल वाळवेकर\nक. विष्णुपंत थत्ते, केशव शिवराम भवाळकर\nड. काशीराव देशमुख, हरिभाऊ चव्हाण\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "फक्त अ, ब आणि क",
+          "B": "फक्त अ, क आणि ड",
+          "C": "फक्त अ आणि ब",
+          "D": "फक्त क आणि ड"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q14",
+        "text": "खालील जोड्या जुळवा :\nअ. परमहंस मत प्रसंशा   I. गुजाबा जोशी पुणेकर\nब. विचार लहरी           II. कृष्णशास्त्री चिपळूणकर\nक. शाक्त पंथाचे अनुयायी III. मोरभट दांडेकर\nड. दादोबा पांडुरंग       IV. धर्म विवेचन\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "अ-I, ब-III, क-IV, ड-II",
+          "B": "अ-I, ब-II, क-III, ड-IV",
+          "C": "अ-II, ब-I, क-IV, ड-III",
+          "D": "अ-IV, ब-III, क-II, ड-I"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q15",
+        "text": "ज्या दिवशी लोकमान्य टिळकांचे निधन झाले त्याच दिवशी गांधीजींच्या _________ चळवळीचे उद्घाटन मुंबईत झाले होते.",
+        "options": {
+          "A": "सविनय कायदेभंग",
+          "B": "असहकार",
+          "C": "दारू विरोधी",
+          "D": "भारत छोडो"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q16",
+        "text": "भारत आणि पाकिस्तान यांच्यातील 'सिंधू पाणी करार – 1960' नुसार खालीलपैकी कोणत्या नद्यांच्या पाण्यावर भारतास पूर्ण अधिकार आहे ?",
+        "options": {
+          "A": "सिंधू, चिनाब व झेलम",
+          "B": "रावी, बियास व सतलज",
+          "C": "झेलम, सतलज व चिनाब",
+          "D": "चिनाब, बियास व झेलम"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q17",
+        "text": "खालीलपैकी कोणते लोह खनिज सर्वोत्तम दर्जाचे आहे ?",
+        "options": {
+          "A": "हॅमेटाइट",
+          "B": "लिमोनाईट",
+          "C": "मॅग्नेटाइट",
+          "D": "वरीलपैकी नाही"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q18",
+        "text": "भारतातील खालील खिंडीचा पश्चिमेकडून पूर्वेकडे बरोबर क्रम लावा :",
+        "options": {
+          "A": "मानाखिंड, सिप्किलाखिंड, नितीखिंड, झोजिलाखिंड",
+          "B": "झोजिलाखिंड, सिप्किलाखिंड, मानाखिंड, नितीखिंड",
+          "C": "सिप्किलाखिंड, नितीखिंड, मानाखिंड, झोजिलाखिंड",
+          "D": "नितीखिंड, मानाखिंड, झोजिलाखिंड, सिप्किलाखिंड"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q19",
+        "text": "खारट आणि क्षारीय मृदेस दुसऱ्या नावानेसुद्धा ओळखतात. खालीलपैकी अचूक पर्याय कोणता ?",
+        "options": {
+          "A": "वाळवटीय मृदा",
+          "B": "चोपन मृदा",
+          "C": "पाणथळ आणि दलदलीची मृदा",
+          "D": "चेस्टनट किंवा राखाडी तपकिरी मृदा"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q20",
+        "text": "पेंच व्याघ्र राखीव क्षेत्र खालीलपैकी कोणत्या राज्याशी निगडीत आहे ?",
+        "options": {
+          "A": "महाराष्ट्र — छत्तीसगढ",
+          "B": "महाराष्ट्र — मध्य प्रदेश",
+          "C": "मध्य प्रदेश — छत्तीसगढ",
+          "D": "महाराष्ट्र — कर्नाटक"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q21",
+        "text": "2001 च्या जनगणनेनुसार, भारतातील अनुसूचित जमातीची सर्वाधिक लोकसंख्या असलेले राज्य.",
+        "options": {
+          "A": "ओडिशा",
+          "B": "महाराष्ट्र",
+          "C": "राजस्थान",
+          "D": "मध्य प्रदेश"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q22",
+        "text": "महाराष्ट्रातील 2011 च्या जनगणनेनुसार लोकसंख्येच्या घनतेनुसार पहिले पाच जिल्हे कोणते ?",
+        "options": {
+          "A": "मुंबई उपनगर, ठाणे, मुंबई शहर, कोल्हापूर, पुणे",
+          "B": "मुंबई शहर, मुंबई उपनगर, पुणे, कोल्हापूर, ठाणे",
+          "C": "मुंबई उपनगर, मुंबई शहर, ठाणे, पुणे, कोल्हापूर",
+          "D": "ठाणे, मुंबई शहर, कोल्हापूर, पुणे, मुंबई उपनगर"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q23",
+        "text": "जनगणना 2001 आणि 2011 प्रमाणे महाराष्ट्र राज्याच्या लिंग गुणोत्तरामध्ये किती फरक आहे ?",
+        "options": {
+          "A": "09",
+          "B": "90",
+          "C": "19",
+          "D": "29"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q24",
+        "text": "खालील विधाने पहा :\nअ. मावळ भाग पर्जन्य छायेच्या प्रदेशात येत नाही.\nब. मावळ क्षेत्र हवामानामुळे ओळखला जातो.\nक. कशेळी घाट पोलादपूर आणि महाबळेश्वर यांना जोडतो.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "फक्त विधान अ बरोबर आहे",
+          "B": "फक्त विधान ब बरोबर आहे",
+          "C": "विधान अ आणि ब बरोबर आहेत",
+          "D": "विधान ब आणि क बरोबर आहेत"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q25",
+        "text": "'दरेकसा टेकड्या' महाराष्ट्राच्या कोणत्या जिल्ह्यात आढळतात ?",
+        "options": {
+          "A": "नागपूर",
+          "B": "चंद्रपूर",
+          "C": "गोंदिया",
+          "D": "गडचिरोली"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q26",
+        "text": "2011 च्या जनगणनेच्या अनुसार गडचिरोली जिल्ह्याची 'लोकसंख्येची घनता' काय आहे ?",
+        "options": {
+          "A": "163 चौ.कि.मी.",
+          "B": "193 चौ.कि.मी.",
+          "C": "74 चौ.कि.मी.",
+          "D": "93 चौ.कि.मी."
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q27",
+        "text": "खालील विधाने पहा :\nअ. वेरूळ लेणी औरंगाबाद जिल्ह्यात आहे.\nब. चांभार लेणी पुणे जिल्ह्यात आहे.\nक. चिखलदरा शंड हवेचे ठिकाण रायगाड जिल्ह्यात आहे.\nड. गौताळा राष्ट्रीय उद्यान जळगाव जिल्ह्यात आहे.\nवरीलपैकी कोणता/ते विधान/ने बरोबर आहे/त ?",
+        "options": {
+          "A": "फक्त अ विधान बरोबर आहे",
+          "B": "फक्त ब व क विधाने बरोबर आहेत",
+          "C": "फक्त अ व ड विधाने बरोबर आहेत",
+          "D": "वरील सर्व विधाने बरोबर आहेत"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q28",
+        "text": "खालील जोड्या लावा :\n    स्तंभ I (औष्णिक विजकेंद्र)    स्तंभ II (जिल्हा/ठिकाण)\nअ. चोला          I. मुंबई\nब. तुर्भे         II. अकोला\nक. फेकरी         III. ठाणे\nड. पारस          IV. भुसावळ\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "अ-III, ब-IV, क-I, ड-II",
+          "B": "अ-III, ब-I, क-II, ड-IV",
+          "C": "अ-III, ब-I, क-IV, ड-II",
+          "D": "अ-II, ब-IV, क-I, ड-III"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q29",
+        "text": "महाराष्ट्रातील घाटांचा कोणता क्रम उत्तरेकडून दक्षिणेकडे बरोबर आहे ?",
+        "options": {
+          "A": "थळघाट, कुंभार्लीघाट, आंबाघाट, आंबोलीघाट",
+          "B": "आंबोलीघाट, अंबाघाट, कुंभार्लीघाट, थळघाट",
+          "C": "थळघाट, कुंभार्लीघाट, आंबोलीघाट, आंबाघाट",
+          "D": "थळघाट, आंबाघाट, आंबोलीघाट, कुंभार्लीघाट"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q30",
+        "text": "तापी – पूर्णाखोऱ्यातील नद्यांचा खालीलपैकी कोणता क्रम उत्तरेकडून दक्षिणेकडे बरोबर आहे ?",
+        "options": {
+          "A": "गिरणा, बोरी, पांझरा, बुराई, गोमती",
+          "B": "गोमती, बुराई, पांझरा, बोरी, गिरणा",
+          "C": "गोमती, बुराई, गिरणा, बोरी, पांझरा",
+          "D": "गोमती, पांझरा, गिरणा, बुराई, बोरी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Geography"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q31",
+        "text": "हरितक्रांतीनंतर _________ हे सर्वात जास्त उत्पादन वाढ दर्शविणारे प्रमुख अन्नधान्य पीक आहे.",
+        "options": {
+          "A": "तांदूळ",
+          "B": "बाजरी",
+          "C": "मका",
+          "D": "गहू"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q32",
+        "text": "राष्ट्रीय ग्रामीण रोजगार हमी कायदा (NREGA) _________ मध्ये अधिनियमित झाला.",
+        "options": {
+          "A": "ऑक्टोबर 2001",
+          "B": "ऑक्टोबर 2002",
+          "C": "सप्टेंबर 2005",
+          "D": "सप्टेंबर 2011"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q33",
+        "text": "खालीलपैकी कोणती केंद्र सरकारची थकीत देयता नाही ?",
+        "options": {
+          "A": "अंतर्गत कर्ज",
+          "B": "बाजार कर्जे",
+          "C": "कोषगार विपत्रे",
+          "D": "विदेशी मदत"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q34",
+        "text": "चौदाव्या वित्त आयोगाने राजकोषीय जबाबदारी आणि अंदाजपत्रक व्यवस्थापण (FRBM) कायद्याला खालीलपैकी कोणता पर्याय सुचविला ?",
+        "options": {
+          "A": "वित्तीय एकत्रीकरण निधी",
+          "B": "वित्तीय तूट",
+          "C": "महसुल आणि कर्ज व्यवस्थापण",
+          "D": "कर्ज मर्यादा आणि वित्तीय जबाबदारी कायदा"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q35",
+        "text": "भारत हा जगातील सर्वात मोठा _________ उत्पादक देश आहे.",
+        "options": {
+          "A": "ताग",
+          "B": "लोह",
+          "C": "सिमेंट",
+          "D": "साखर"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q36",
+        "text": "1950 – 51 ते 2013 – 14 या काळात भारतातील स्थूल राष्ट्रीय उत्पादनातील द्वितीय क्षेत्रांचा हिस्सा _________ टक्क्यांनी वाढला आहे.",
+        "options": {
+          "A": "16·6 ते 26·2",
+          "B": "30·6 ते 59·2",
+          "C": "16·9 ते 36·2",
+          "D": "15·6 ते 36·2"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q37",
+        "text": "तेंडूलकर समितीनुसार 2011 – 12 मध्ये भारतात दारिद्र्य रेषेखालील लोकसंख्येचे शेकडा प्रमाण _________ होते.",
+        "options": {
+          "A": "21·9%",
+          "B": "27·5%",
+          "C": "37·2%",
+          "D": "42·9%"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q38",
+        "text": "राष्ट्रीय लोकसंख्या धोरण 2000 चे तात्कालिक (ताबडतोबीचे) उद्दिष्ट हे होते\nअ. आरोग्याच्या पायाभूत सुविधांच्या गरजांची पूर्ती करणे व मूलभूत प्रजनन आरोग्य सुविधा उपलब्ध करणे.\nब. एकूण प्रजनन दर हा बदली दराच्या पातळी इतका कमी करणे.\nक. सर्व मुलांचे (बालकांचे) सार्वत्रिक लसीकरण पूर्ण करणे.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "फक्त अ आणि ब",
+          "B": "फक्त क",
+          "C": "फक्त ब",
+          "D": "फक्त अ"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q39",
+        "text": "खालीलपैकी कोणत्या महत्त्वाच्या तत्त्वावर आधारित विश्व व्यापार संघटनेचे करार आहेत ?",
+        "options": {
+          "A": "भेदभाव नाही",
+          "B": "सर्वात अनुकूल राष्ट्र",
+          "C": "राष्ट्रीय वाणूक",
+          "D": "वरीलपैकी एकही नाही"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q40",
+        "text": "खालील विधाने विचारात घ्या :\nअ. राष्ट्रीय कृषी विकास योजना ही अकराव्या पंचवार्षिक योजनेच्या काळात सुरू करण्यात आली.\nब. समाकलित (एकात्मिक/एकत्रित) फलोत्पान विकास उपक्रम बाराच्या पंचवार्षिक योजनेच्या काळात सुरु केला गेला.\nक. राष्ट्रीय अन्न सुरक्षा उपक्रम हा सन 2009 – 10 मध्ये सुरू करण्यात आला.\nवरीलपैकी कुठलेली विधान/ने चूक आहे/त ?",
+        "options": {
+          "A": "तिन्ही विधाने चूक आहेत",
+          "B": "फक्त ब",
+          "C": "फक्त क",
+          "D": "फक्त अ"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q41",
+        "text": "सन 2018 – 19 मध्ये भारतातील निर्यात उत्पन्नात _________ क्षेत्राचा हिस्सा सर्वाधिक आहे.",
+        "options": {
+          "A": "ताग वस्तू",
+          "B": "तयार कपडे",
+          "C": "अभियांत्रिकी वस्तू",
+          "D": "रत्ने आणि दागिने"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q42",
+        "text": "खालीलपैकी कोणता एक भारत निर्माण कार्यक्रमाचा भाग नाही ?",
+        "options": {
+          "A": "जलसिंचन",
+          "B": "ग्रामीण विद्युतीकरण",
+          "C": "ग्रामीण भागात शाळा",
+          "D": "ग्रामीण रस्ते"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q43",
+        "text": "पेमेंट बँकेची प्रमुख वैशिष्ट्ये _________ ही आहेत. योग्य वाक्य निवडा.\nअ. प्रती व्यक्ती ₹ 1 लाख पर्यंत ठेवी स्वीकारणे\nब. ए.टी.एम. व डेबीट कार्ड देण्यास परवानगी\nक. ए.टी.एम. कार्ड देण्यास परवानगी\nड. कोणत्याही स्वरूपात कर्ज देता येणार नाही\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "फक्त अ, क आणि ड",
+          "B": "फक्त अ, ब आणि क",
+          "C": "फक्त ब, क आणि ड",
+          "D": "फक्त अ, ब आणि ड"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q44",
+        "text": "रंगराजन कमिटी (2014) नुसार सन 2011 – 12 साठी, ग्रामीण व शहरी भागासाठी दारिद्र्यरेषेचा व्याख्या ही दरडोई ₹ _________ अशी निश्चित करण्यात आली.",
+        "options": {
+          "A": "32 आणि 47",
+          "B": "32 आणि 67",
+          "C": "32 आणि 87",
+          "D": "31 आणि 97"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q45",
+        "text": "ऑक्सफॅम अहवाल 2018 नुसार भारतातील सर्वात श्रीमंत 1 टक्के लोकांचा राष्ट्रीय उत्पन्नातील हिस्सा _________ टक्के आहे.",
+        "options": {
+          "A": "41",
+          "B": "35",
+          "C": "73",
+          "D": "83"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Economics"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q46",
+        "text": "पृथ्वीवरून विविध ताऱ्यांची अंतरे निश्चित करण्यासाठी कोणती पद्धत वापरतात ?",
+        "options": {
+          "A": "गुरुत्वाकर्षणीय पद्धत",
+          "B": "खगोलीय पाराशर पद्धत",
+          "C": "समांतर पद्धत",
+          "D": "थेट पद्धत"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q47",
+        "text": "सोलार सेलचे (सौर घट) कार्य _________ वर आधारित आहे.",
+        "options": {
+          "A": "स्टार्क इफेक्ट",
+          "B": "कुलोम्ब इफेक्ट",
+          "C": "झीमन इफेक्ट",
+          "D": "फोटोव्होल्टाईक इफेक्ट"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q48",
+        "text": "खगोलशास्त्रीय समस्येचे निराकरण करण्यासाठी बीजगणिता चा वापर सर्वात आधी करणारा कोण होता ?",
+        "options": {
+          "A": "भास्कर",
+          "B": "ब्रह्मगुप्ता",
+          "C": "आर्यभट्ट",
+          "D": "यापैकी नाही"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q49",
+        "text": "कॉपरच्या जर्मन सिल्व्हर धातुमिश्रणात _________ असते.",
+        "options": {
+          "A": "Cu, Zn, Ag",
+          "B": "Cu, Zn, Ni",
+          "C": "Cu, Ni, Ag",
+          "D": "Cu, Zn, Al"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q50",
+        "text": "स्फटिकासारख्या पदार्थींना\nअ. निश्चित भौमितिक रचना असते.\nब. निश्चित द्रवीभवन बिंदू असतो.\nक. दिशानुवर्ती गुणधर्म असतात.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "अ आणि ब बरोबर आहेत",
+          "B": "ब आणि क बरोबर आहेत",
+          "C": "अ आणि क बरोबर आहेत",
+          "D": "वरील सर्व बरोबर आहेत"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q51",
+        "text": "मोसले प्रमाणे, आवर्त सारणीतील मुलद्रव्यांची रचना _________ च्या आधारे आहे.",
+        "options": {
+          "A": "अणूचे वजन",
+          "B": "अणूचे वस्तुमान",
+          "C": "अणूचा क्रमांक",
+          "D": "अणूचे आकारमान"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q52",
+        "text": "आधुनिक योजनेनुसार वर्गीकरणाचे पाच किंगडम खालीलप्रमाणे\nअ. प्रोटिस्टा, फंजाय, मॅमेलिया, ॲनेलिडा, प्लांटी\nब. मोनेरा, प्रोटिस्टा, फंजाय, प्लांटी, ॲनिमेलिया\nक. प्रोटिस्टा, फंजाय, प्लांटी, पोरीफेरा, ॲनिमेलिया\nड. मोनेरा, फंजाय, मॅमेलिया, प्लांटी, ॲनिमेलिया\nवरीलपैकी कोणता पर्याय बरोबर आहे ?",
+        "options": {
+          "A": "फक्त क",
+          "B": "फक्त ब",
+          "C": "फक्त अ",
+          "D": "फक्त ड"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q53",
+        "text": "मलेरियाच्या तापात थंडी वाजून ताप येणे आणि तीन चार दिवसांनी पुन्हा पुन्हा ताप येणे यासाठी शरीरात _________ हा विषारी पदार्थ दिसून येतो.",
+        "options": {
+          "A": "इंटरफेरॉन",
+          "B": "हिमोझॉईन",
+          "C": "हिरुडिन",
+          "D": "कोलोस्ट्रम"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q54",
+        "text": "\"आफ्रिकन स्लिपिंग सिकनेस\" हा आजार प्रामुख्याने खालीलपैकी कोणत्या परजीवी मुळे होतो ?",
+        "options": {
+          "A": "ट्रिपॅनोसोमा",
+          "B": "पॅरामीशीअम",
+          "C": "मच्छर",
+          "D": "पट्टकृमी (टेपवर्म)"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q55",
+        "text": "शैवाल आणि बुरशीचा समावेश खालीलपैकी कोणत्या गटात होतो ?",
+        "options": {
+          "A": "जिम्नोस्पर्म्स",
+          "B": "थॅलोफाइट्स",
+          "C": "ॲंजिओस्पर्म्स",
+          "D": "ब्रायोफाइट्स"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q56",
+        "text": "खालीलपैकी कोणत्या रोगामुळे झाडाच्या पानातील हरितद्रव्ये नष्ट होऊन झाडाची पाने आकुंचन पावतात ?",
+        "options": {
+          "A": "मोझॅयिक डिसीज ऑफ टोबॅको",
+          "B": "सायट्रस कँकर",
+          "C": "स्मट ऑफ जवार",
+          "D": "रायझोक्टोनिया"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q57",
+        "text": "खालीलपैकी कोणते जैविक खत भातशेती साठी वापरतात ?",
+        "options": {
+          "A": "लाल शैवाल",
+          "B": "तपकिरी शैवाल",
+          "C": "रायझोबियम",
+          "D": "निल हरित शैवाल"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q58",
+        "text": "जीवाणू खालीलपैकी _________ या यंत्रणेच्या माध्यमातून प्रतिजैविकांना प्रतिरोध करतात.\nअ. कोशिकांवरील रिसेप्टर्स मधे बदल करणे\nब. एम.डी.आर. पंप\nक. वेगवेगळ्या एनझाईम्सचा स्राव जो प्रतिजैविकांना निष्क्रिय करतो\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "फक्त अ आणि ब",
+          "B": "अ, ब आणि क",
+          "C": "फक्त अ आणि क",
+          "D": "फक्त ब आणि क"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q59",
+        "text": "स्टॅफिलोकोकल खाद्य विषबाधा _________ होते.",
+        "options": {
+          "A": "आधी तयार केलेले एन्ट्रोटॉक्सीन अंतर्ग्रहण केल्यामुळे",
+          "B": "विषाच्या निर्मितीनंतर श्लेष्मल पृष्ठभागाचे वसाहतकरण केल्यामुळे",
+          "C": "स्थानिक विषाच्या निर्मितीनंतर जखमेचे किंवा गळूचे वसाहतकरण केल्यामुळे",
+          "D": "वरील सर्व कारणामुळे"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q60",
+        "text": "राष्ट्रीय साल्मोनेला फाज टायपिंग केंद्र _________ येथे आहे.",
+        "options": {
+          "A": "लेडी हार्डिंग मेडिकल कॉलेज, नवी दिल्ली",
+          "B": "मौलाना आझाद मेडिकल कॉलेज, नवी दिल्ली",
+          "C": "नॅशनल इन्स्टिट्यूट ऑफ कॉलरा ॲंड एन्टरीक डिसीजेस, कोलकाता",
+          "D": "नॅशनल सेंटर फॉर डिसीज कंट्रोल"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Science"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q61",
+        "text": "प्रश्नचिन्ह स्तंभाच्या जागी ठेवण्यासाठी तर्कसंगत स्तंभ निवडा.\n5  4  6  ?\n2  6  4  ?\n6  4  8  ?\n3  5  4  ?",
+        "options": {
+          "A": "5, 8, 6, 6",
+          "B": "5, 6, 4, 8",
+          "C": "4, 5, 6, 4",
+          "D": "4, 8, 6, 6"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q62",
+        "text": "प्रत्येक वाक्यातील रिकाम्या जागेत चपखल बसून दिलेल्या संदर्भात दोन स्वतंत्र व समान अर्थाची पूर्ण वाक्ये तयार करतील, अशी शब्दजोडी वा शब्दसमूह जोडी निवडा.\nरोखे बाजार जोरदार कोसळल्यामुळे खरेदी-विक्री व्यवहार करतानाची त्या गुंतवणूकदाराची _________ मनःस्थिती विसंगत वाटत होती.",
+        "options": {
+          "A": "कमजोर आणि भकास",
+          "B": "सांत्वनापलीकडची आणि उपरोधिक",
+          "C": "आशावादी आणि आनंदी",
+          "D": "कमजोर आणि उपरोधिक"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q63",
+        "text": "सहा पृष्ठांवर 1, 2, 3, 4, 5 आणि 6 संख्या असलेला सोबतचा घन अभ्यासा. 3 ही संख्या 1 किंवा 6 च्या विरुद्ध पृष्ठांवर नाही आणि 4 ही संख्या 6 च्या विरुद्ध पृष्ठावर नाही. जर 1 ही संख्या वरच्या पृष्ठावर राहील अशा तीतीने हा घन फिरवला आणि 6 संख्या असलेले उजवीकडचे पृष्ठ आताच्या 2 संख्या असलेल्या समोरच्या पृष्ठाच्या जागी आणले तर उजव्या पृष्ठावर कोणती संख्या असेल ?",
+        "options": {
+          "A": "5",
+          "B": "4",
+          "C": "3",
+          "D": "निवडीसाठी अधिक माहितीची गरज आहे."
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q64",
+        "text": "सोबतच्या जाळ्याची घडी घालून घनाकार मिळवला.\nघनाच्या पृष्ठावरील दोन किंवा अधिक कर्ण रेषा जितक्या शिरोबिंदूत छेदतात त्यांची संख्या निवडा.",
+        "options": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q65",
+        "text": "सोबतचा पारदर्शक कागदाचा तुकडा X अभ्यासा आणि तो वापरून तयार केलेली घडी निवडा.",
+        "options": {
+          "A": "पर्याय 1",
+          "B": "पर्याय 2",
+          "C": "पर्याय 3",
+          "D": "पर्याय 4"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q66",
+        "text": "पूर्णतया वेगळी जीवनशैली असलेल्या तरुणांकडून होणाऱ्या मतदानाला लागलेली उतरती कळा प्रामुख्याने निवडणुकांत मतदाराच्या संख्येला लागलेल्या ओहोटीला कारणीभूत असल्याचे स्पष्टीकरण केले जाते. वयस्क लोक मतदान करण्याची शक्यता अधिक असते. जर हीच प्रथा चालू राहिली तर मतदारांची संख्या खूपच कमी असल्यामुळे बहुसंख्यांच्या इच्छा निर्देशित केल्या जाणार नाहीत आणि शासन शासन करण्याचा अधिकार आहे असे म्हणता येणार नाही, अशा स्थितीला (आपण) पोहोचण्याची शक्यता आहे. लोकांच्या इच्छांची दखल घेतली जाण्यासाठी समाजाने पारंपरिक निवडणुकींना पर्याय शोधणे गरजेचे आहे.\nवरील युक्तिवादातील त्रुटी सर्वात चांगल्या प्रकारे व्यक्त करणारा पर्याय निवडा.",
+        "options": {
+          "A": "निवडणूक ही सर्व लोकशाही देशांत शासन निवडीसाठी उत्तम प्रकारे स्थापित झालेली एकमेव प्रक्रिया आहे.",
+          "B": "निवडणुकीत मतदान करण्यापेक्षाही तरुण व्यक्ती सामाजिक माध्यमांच्या मदतीने दबाव गटांत सामील होण्याची शक्यता अधिक आहे.",
+          "C": "दूरस्थ निवासी स्थानांमुळे महाजालाद्वारे वा पोष्टाद्वारे मतदानाचा पर्याय वापरण्यात समस्या येण्याची शक्यता आहे.",
+          "D": "ज्या व्यक्ती आता तरुण आहेत त्या वय होता होता मतदान करण्याची शक्यता अधिक आहे."
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q67",
+        "text": "खालील प्रश्न दिलेल्या माहितीवर आधारित आहे.\nI. दक्षिणेकडे तोंड असलेल्या पाच व्यक्ती A, B, C, D आणि E, आणि उत्तरेकडे तोंड करून बसलेल्या पाच व्यक्ती M, N, O, P आणि Q परस्परांसमोर दोन समांतर रांगांमध्ये बसल्या आहेत.\nII. E हा O च्या समोर आहे, जो, M च्या उजवीकडे लागून आहे.\nIII. C आणि N एकमेकांच्या समोर कर्णरेषेत आहेत.\nIV. B, जो D च्या डावीकडे लागून आहे, Q च्या समोर आहे.\nV. M हा रांगेच्या एका टोकाला आहे.\nVI. P, जो Q च्या डावीकडे लागून आहे, D च्या समोर आहे.\nजर B हा E च्या जागेवर गेला, E हा Q च्या जागेवर गेला आणि Q हा B च्या जागेवर गेला, तर O च्या समोरील व्यक्तीच्या डावीकडून दुसरी व्यक्ती कोण असेल ?",
+        "options": {
+          "A": "Q",
+          "B": "P",
+          "C": "E",
+          "D": "D"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q68",
+        "text": "खालील प्रश्नात एक विधान आणि त्या अनुषंगाने येणारी दोन कारणे RI आणि RII दिलेली आहे. विधानासंदर्भात कारणांचे उपयोजन करून उत्तर शोधा.\nविधान : हल्ली लोक खूप मोठ्या प्रमाणावर दूरस्थ खरेदी (teleshopping) करतात.\nकारणे : RI – लोक मोठ्या प्रमाणात दूरदर्शन पाहतात.\n         RII – हल्ली लोकांना बाजारात जाऊन खरेदी करावला वेळ मिळत नाही.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "संभवनीय कारण फक्त RI आहे RII नाही",
+          "B": "संभवनीय कारण फक्त RII आहे RI नाही",
+          "C": "संभवनीय कारण दोन्ही नसून फक्त RI किंवा RII आहे",
+          "D": "संभवनीय कारण RI ही नाही किंवा RII ही नाही"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q69",
+        "text": "प्रसादने त्याच्या घरापासून सुरुवात करून उत्तरेकडे 8 कि.मी. प्रवास केला. नंतर त्याने उजवीकडे वळून 5 कि.मी. प्रवास केला. नंतर पुन्हा उजवीकडे वळून 4 कि.मी. प्रवास केला आणि नंतर पूर्वेकडे 3 कि.मी. प्रवास केला. शेवटी तो डावीकडे वळला आणि 2 कि.मी. प्रवास केला. तर तो त्याच्या घरापासून किती किलोमीटर अंतरावर आहे ?",
+        "options": {
+          "A": "14",
+          "B": "12",
+          "C": "10",
+          "D": "7"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q70",
+        "text": "A, B, C व D या चार खेड्यात राहणाऱ्या 6200 ग्रामस्थांवर त्यांच्या अतिप्रिय रंगासंदर्भात सर्वेक्षण केले. B खेड्यातील 50% लोकांचा लाल हा अतिप्रिय रंग आहे. तर इतर खेड्यातील किती लोकांचा तोच अतिप्रिय रंग आहे ?",
+        "options": {
+          "A": "1240",
+          "B": "527",
+          "C": "713",
+          "D": "1426"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q71",
+        "text": "जर 28 मी. व्यासाचे वर्तुळाकार मैदान असेल आणि त्या भोवती 7 मी. रुंद रस्ता असेल. तर रस्त्याचे क्षेत्रफळ किती ?",
+        "options": {
+          "A": "616 चौ. मी.",
+          "B": "770 चौ. मी.",
+          "C": "1386 चौ. मी.",
+          "D": "28 चौ. मी."
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q72",
+        "text": "शेतातील तण काढण्यासाठी 5 मजुरांना 12 दिवस लागतात. तेच काम करण्यासाठी 15 मजुरांना किती दिवस लागतील ?",
+        "options": {
+          "A": "15",
+          "B": "4",
+          "C": "12",
+          "D": "16"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q73",
+        "text": "तीन व्यक्तींच्या आजच्या वयांची बेरीज 72 वर्षे आहे व सात वर्षांपूर्वी त्यांच्या वयाचे गुणोत्तर 4 : 6 : 7 असे होते, तर त्यांचे आजचे वय किती ?",
+        "options": {
+          "A": "20, 30, 22 वर्षे",
+          "B": "22, 24, 26 वर्षे",
+          "C": "19, 25, 28 वर्षे",
+          "D": "17, 25, 30 वर्षे"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q74",
+        "text": "वार्षिक 6% दराने 10 महिन्याच्या थकीत बिलावर ₹ 26·25 सूट मिळते. तर बिलाची एकूण रक्कम किती ?",
+        "options": {
+          "A": "₹ 1575",
+          "B": "₹ 500",
+          "C": "₹ 650·25",
+          "D": "₹ 551·25"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q75",
+        "text": "एका थैलीत एक-रुपया, 50 पैसे व 25 पैसे यांची 5 : 6 : 8 या प्रमाणात नाणी आहेत. जर त्यांची एकूण किंमत ₹ 420 असेल, तर 50 पैशांची किती नाणी आहेत ?",
+        "options": {
+          "A": "210",
+          "B": "126",
+          "C": "252",
+          "D": "70"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Aptitude"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q76",
+        "text": "अमेरिकी अंतराळवीर क्रिस्टीना कोच या सर्वाधिक कालावधीची, अंतराळ मोहीम पार पाडणाऱ्या महिला अंतराळवीर ठरल्या आहेत. त्यांनी 328 दिवस अंतराळात व्यतित केले. म्हणजे कोच यांनी गेल्या वर्षी _________ रोजी, पृथ्वीवरून उड्डाण केले होते.",
+        "options": {
+          "A": "10 फेब्रुवारी, 2019",
+          "B": "14 फेब्रुवारी, 2019",
+          "C": "14 मार्च, 2019",
+          "D": "17 मार्च, 2019"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q77",
+        "text": "तेनसिंग नॉर्ग हा केंद्र सरकारचा राष्ट्रीय साहस पुरस्कार आणि महाराष्ट्राचा प्रतिष्ठेचा शिवछत्रपती बेट साहसी पुरस्कार पटकावणारा साहसी जलतरणपटू प्रभात कोळीच्या कामगिरीची दखल गिनीज वर्ल्ड रिकॉर्डनी घेतली पुरस्कार आहे. त्याने आतापर्यंत जे सहा समुद्र पार केले त्यात खालील कोणत्या समुद्राचा समावेश नाही ?",
+        "options": {
+          "A": "इंग्लिश खाडी",
+          "B": "कॅटलिना चॅनेल",
+          "C": "जिब्राल्टची समुद्रपुनी",
+          "D": "सुवेझ कालवा"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q78",
+        "text": "'परम वीर चक्र' स्वातंत्र्यप्राप्तीपासून आजपर्यंतच्या 72 वर्षांत, सुमारे 130 कोटी लोकसंख्येच्या आपल्या देशात फक्त _________ जणांनाच हा बहुमान प्राप्त झाला आहे.",
+        "options": {
+          "A": "24",
+          "B": "42",
+          "C": "12",
+          "D": "21"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q79",
+        "text": "आयुष्मान भारत योजनेअंतर्गत पुढील पर्यायांपैकी अयोग्य (चुकीचा) पर्याय निवडा.\nअ. या योजनेचा लाभ 10 कोटीपेक्षा जास्त भारतीय परिवारांना होणार आहे.\nब. आयुष्मान कार्डधारकाच्या परिवाराला ₹ 5 लाखपर्यंत वैद्यकीय उपचार मोफत स्वरूपात दिला जाणार आहे.\nक. या योजनेचा लाभ 30 कोटीपेक्षा जास्त भारतीय परिवारांना होणार आहे.\nड. या योजनेअंतर्गत 15 हजार खाजगी दवाखान्यांना जन आरोग्य मित्र असा दर्जा बहाल केला जाणार आहे.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "फक्त ब",
+          "B": "फक्त क",
+          "C": "फक्त अ आणि क",
+          "D": "फक्त ब आणि ड"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q80",
+        "text": "माहिती तंत्रज्ञान क्षेत्राच्या प्रगतीमुळे दैनंदिन वापरात येणाऱ्या संकल्पना व त्यांचे पूर्ण स्वरूप व्यक्त करणारा योग्य पर्याय निवडा.\n    संकल्पना        सेवा विवरण\nअ. यु.पी.आय. (UPI)   I. ज्ञानाचे कृत्रिम आदान-प्रदान\nब. ए.आय. (AI)        II. डिजिटल पेमेंट व्यवस्था\nक. जी.इ.एम. (GeM)    III. वस्तूसाठी चे इंटरनेट\nड. आय.ओ.टी. (IoT)    IV. सरकारचे ऑनलाईन मंच\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "अ-IV, ब-I, क-II, ड-III",
+          "B": "अ-III, ब-IV, क-I, ड-II",
+          "C": "अ-I, ब-II, क-IV, ड-III",
+          "D": "अ-II, ब-I, क-IV, ड-III"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q81",
+        "text": "अखिल भारतीय मराठी नाट्य संमेलनासंदर्भातील स्थळ, वर्ष व संमेलनाध्यक्ष यांचा योग्य क्रम सांगणारा अचूक पर्याय निवडा.\n    वर्ष व ठिकाण    संमेलनाध्यक्ष\nअ. 2016 – ठाणे       I. जयंत सावरकर\nब. 2017 – उस्मानाबाद  II. प्रेमानंद गज्वी\nक. 2018 – मुलुंड      III. किर्ती शिलेदार\nड. 2019 – नागपूर      IV. गंगाराम गवाणकर\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "अ-III, ब-II, क-IV, ड-I",
+          "B": "अ-II, ब-III, क-I, ड-IV",
+          "C": "अ-IV, ब-I, क-III, ड-II",
+          "D": "अ-I, ब-IV, क-II, ड-III"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q82",
+        "text": "केंद्रीय प्रदूषण नियंत्रण बोर्डच्या उपलब्ध सूचनेअनुसार वर्ष 2018 – 19 च्या दरम्यान किती मेट्रिक टन ई-कचरा एकत्रित करून विघटित आणि पुनर्चक्रित करण्यात आला ?",
+        "options": {
+          "A": "69414 मेट्रिक टन",
+          "B": "164663 मेट्रिक टन",
+          "C": "771215 मेट्रिक टन",
+          "D": "708445 मेट्रिक टन"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q83",
+        "text": "ब्रिटेनच्या महाराणीचे 'क्वीन्स कौंसिल' म्हणून कोणाची नियुक्ती झाली आहे ?",
+        "options": {
+          "A": "उज्ज्वल निकम",
+          "B": "एल. नागेश्वर राव",
+          "C": "हरीश साळवे",
+          "D": "आर.एम. शिंदे"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q84",
+        "text": "द एरा ऑफ राईझिंग फिनटेकच्या डिजिटल भुगतान संबंधी रिपोर्ट खालीलप्रमाणे आहे.\nअ. डिजिटल भुगतानच्या वापरामध्ये कर्नाटक पहिल्या क्रमांकावर.\nब. डिजिटल भुगतानच्या वापरामध्ये महाराष्ट्र दुसऱ्या क्रमांकावर.\nक. डिजिटलाइज्ड शहरांमध्ये बँगलूरु प्रथम स्थानांवर.\nड. डिजिटलाइज्ड शहरांमध्ये हैदराबाद द्वितीय स्थानावर.\nवरीलपैकी कोणते वाक्य बरोबर आहेत ?",
+        "options": {
+          "A": "फक्त अ, ब आणि क",
+          "B": "फक्त ब, क आणि ड",
+          "C": "फक्त क, ड आणि अ",
+          "D": "फक्त ड, अ आणि ब"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q85",
+        "text": "उच्च शिक्षण संस्थांमध्ये नवनिर्माणाची संस्कृती रुजवण्यासाठी भारत सरकारने (मनुष्यबळ विकास मंत्रालय) प्रस्तावित केलेल्या इम्प्रिंट II (IMPRINT-II) योजनेमध्ये कोण सहभागी होऊ शकतात ?",
+        "options": {
+          "A": "फक्त अ आणि ब",
+          "B": "फक्त ड",
+          "C": "फक्त अ, ब आणि क",
+          "D": "फक्त क आणि ड"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q86",
+        "text": "अनुसूचित जाती व नवबौद्ध प्रवर्गातील विद्यार्थ्यांना शासकीय वसतिगृहामध्ये प्रवेश मिळालेला नाही, अशा विद्यार्थ्यांना मॅट्रीकोत्तर शिक्षण घेता यावे म्हणून भोजन, निवास व इतर शैक्षणिक सुविधा उपलब्ध करून घेण्यासाठी सरकारने _________ सुरू केली आहे.",
+        "options": {
+          "A": "पद्मश्री बाबा आमटे स्वाधार योजना",
+          "B": "भारतरत्न डॉ. बाबासाहेब आंबेडकर स्वाधार योजना",
+          "C": "कर्मवीर भाऊराव पाटील आधार योजना",
+          "D": "सावित्रीबाई फुले आधार योजना"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q87",
+        "text": "आर्थिक दुर्बल घटकांसाठी 103 व्या घटनादुरुस्तीने 2019 मध्ये भारतीय राज्यघटनेच्या कलम 15(6) आणि 16(6) मध्ये पुढील तरतुदींचा समावेश करण्यात आला. योग्य पर्याय निवडा.\nअ. अनुसूचित जाती/जमाती व इतर मागासवर्गीयांसाठी असलेल्या योजांचा लाभ घेतलेला नाही त्यांना या आरक्षणाचा लाभ घेता येईल.\nब. आर्थिक मागासवर्गीयांना 13% पर्यंत आरक्षणाचे प्रमाण राहील.\nक. या आरक्षणाचा लाभ शैक्षणिक व नोकरीविषयक बाबींना लागु होईल.\nड. आर्थिक मागासवर्गीयांना 10% पर्यंत आरक्षणाचे प्रमाण राहील.\nवरीलपैकी कोणते वाक्य बरोबर आहेत ?",
+        "options": {
+          "A": "फक्त क आणि ड",
+          "B": "अ, ब, क आणि ड",
+          "C": "फक्त अ, क आणि ड",
+          "D": "फक्त ब आणि क"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q88",
+        "text": "'मराठी काका' म्हणून प्रसिद्ध असलेले प्रा. अनिल गोरे यांना मराठी भाषा प्रसार व प्रचाराच्या संदर्भात देण्यात येणारा राज्य सरकारचा 2019 चा _________ हा पुरस्कार जाहिर झाला आहे.",
+        "options": {
+          "A": "कविवर्य वि.वा. शिरवाडकर",
+          "B": "कविवर्य भा.रा. तांबे",
+          "C": "कविवर्य मंगेश पाडगावकर",
+          "D": "कादंबरीकार वि.स. खांडेकर"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q89",
+        "text": "आंतरराष्ट्रीय संघटना विकास संघ (आय.ओ.डी.ए.) चे जनरल व्हाईस प्रेसिडेंट म्हणून नियुक्त होणारे पहिले भारतीय कोण बनले आहे ?",
+        "options": {
+          "A": "राजेश रेड्डी",
+          "B": "विनया शेट्टी",
+          "C": "मोहित कुमार",
+          "D": "निधि शर्मा"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q90",
+        "text": "भारतीय अंतराळ संशोधन संस्था (ISRO) डिसेंबर 2020 मध्ये कोणती मानवरहित मोहिम अंतराळात पाठवणार आहे ?",
+        "options": {
+          "A": "गगनयान",
+          "B": "व्योम मित्रा",
+          "C": "रोबोनाऊट",
+          "D": "फेडॉर"
+        },
+        "correctAnswer": "A",
+        "explanation": "This question was cancelled by the examination authority.",
+        "category": "Current Affairs"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q91",
+        "text": "खालील विधानांपैकी कोणते विधान योग्य आहे ?",
+        "options": {
+          "A": "संविधान सभेच्या 288 सदस्यांनी 26 जानेवारी, 1950 रोजी राज्यघटनेवर स्वाक्षऱ्या केल्या.",
+          "B": "'कायद्याने घालून दिलेली पद्धती' हे तत्व अमेरिकेच्या राज्यघटनेकडून स्विकारले गेले आहे.",
+          "C": "'संसदेच्या दोन्ही सभागृहांची संयुक्त बैठक' ही कल्पना ब्रिटीश राज्यघटनेकडून घेतली आहे.",
+          "D": "वरीलपैकी एकही नाही"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q92",
+        "text": "भारतीय राज्यघटनेच्या 'सरनाम्या' विषयी खालील विधाने विचारात घ्या :\nअ. सरनामा हा राज्यघटनेला जे प्रस्थापित आणि प्रचारित कराव्याचे आहे ती उद्दिष्ये कथन करतो आणि त्यामधील भाषा जेथे जेथे संदिग्ध असल्याचे आढळते, तेथे तेथे घटनेचा वैधानिक अर्थ निरूपण करण्यास सहाय्य करतो.\nब. संविधान सभेने ज्याप्रमाणे राज्यघटनेच्या इतर भागास कायदेशीर मान्यता दिली आहे, तशी ती 'सरनाम्यास' दिलेली नाही.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "विधान अ बरोबर",
+          "B": "विधान ब बरोबर",
+          "C": "दोन्हीही विधाने बरोबर",
+          "D": "दोन्हीही विधाने चुकीची"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q93",
+        "text": "प्रा. के.सी. व्हिअर यांच्या निरीक्षणानुसार खालील विधानांपैकी कोणत्या विधानातून भारतीय संघराज्य पद्धतीचे खरे स्वरूप व्यक्त होते ?",
+        "options": {
+          "A": "भारतीय संघराज्य हे संस्थात्मक संकल्पनेपेक्षा अधिक क्रियात्मक आहे.",
+          "B": "एक पक्षीय प्रभावी राजवट ही संघराज्यवादाच्या तत्वाशी सघर्ष करणारी ठरली.",
+          "C": "भारतीय संघराज्य हे घटकांमधील कराराचा परिणाम नाही.",
+          "D": "एकात्म राज्याची दुय्यम वैशिष्ट्ये असलेल्या संघराज्यापेक्षा ते संघराज्याची दुय्यम वैशिष्ट्ये असलेले एकात्म राज्य आहे."
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q94",
+        "text": "खालील विधाने विचारात घ्या :\nअ. ग्रामसभेचे कार्यवृत्त व इतर संबंधित अभिलेख सुरक्षित, अभिरक्षेत ठेवणे आणि त्यांची योग्य ती सुरक्षितता राखणे ही सरपंच आणि उपसरपंच यांची संयुक्त जबाबदारी असते.\nब. प्रत्येक वित्तीय वर्षांतील ग्रामसभेची पहिली बैठक ते वित्तीय वर्ष सुरू झाल्यापासून दोन महिन्यांच्या आत भरवली पाहिजे.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "विधान अ बरोबर",
+          "B": "विधान ब बरोबर",
+          "C": "दोन्हीही विधाने बरोबर",
+          "D": "दोन्हीही विधाने चुकीची"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q95",
+        "text": "खालील विधाने विचारात घ्या :\nअ. ग्रामपंचायतीचा कोणताही ठराव, त्या ठरावाच्या संमत झाल्याच्या तारखेपासून तीन महिन्यांनंतर दुसरा ठराव साध्या बहुमताने संमत करून त्यात फेरबदल, सुधारणा, फेरफार करता येईल अथवा तो रद्द करता येईल.\nब. ग्रामपंचायतीने आपल्या सदस्यांची एकूण संख्येच्या दोन-तृतीयांश इतक्या सदस्यांनी पाठीबा दिलेल्या ठरावा खेरीज, इतर कोणत्याही रीतीने पंचायतीच्या कोणत्याही ठरावात तो संमत झाल्याच्या तारखेपासून तीन महिन्यांच्या आत फेरबदल, सुधारणा, फेरफार करता येणार नाही अथवा तो रद्द करता येणार नाही.\nपर्यायी उत्तरे :",
+        "options": {
+          "A": "विधान अ बरोबर",
+          "B": "विधान ब बरोबर",
+          "C": "दोन्हीही विधाने बरोबर",
+          "D": "दोन्हीही विधाने चुकीची"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q96",
+        "text": "कोणत्या तत्त्वातून न्यायसंस्थेच्या प्रशासकीय कृतीवरील नियंत्रणाचा उगम होतो ?",
+        "options": {
+          "A": "न्यायालयीन पुनर्विलोकन",
+          "B": "कायद्याचे राज्य",
+          "C": "प्रदत्त विधिनियम",
+          "D": "सत्ता विभाजन"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q97",
+        "text": "राज्यपाल यांच्या संबंधी 'पुंछी' आयोगाच्या शिफारशीबाबत खालीलपैकी कोणती शिफारस ही चुकीची नमूद करण्यात आलेली आहे ?",
+        "options": {
+          "A": "त्यांना मंत्रीमंडळाच्या सल्ल्याशिवाय अथवा सल्ल्याविरुद्ध, कार्यरत असणाऱ्या किंवा निवृत्त झालेल्या मंत्र्यावर खटला चालविण्यास मंजूरी देण्याचा अधिकार असावा.",
+          "B": "ते राज्य विधानसभेने मंजूर केलेल्या महाभियोगाच्या ठरावाने पदावरून दूर केले जावू शकतील.",
+          "C": "ते राज्यसभेने मंजूर केलेल्या महाभियोगाच्या ठरावाने आणि त्या ठरावास लोकसभेने मान्यता दिल्यास पदावरून दूर केले जावू शकतील.",
+          "D": "राज्यघटनेच्या अनुच्छेद – 163 मध्ये असा बदल करण्यात यावा की, ते त्यांना असलेले स्वेच्छाधीन अधिकार मनमानी पद्धतीने वापरू शकणार नाहीत."
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q98",
+        "text": "राष्ट्रीय ग्राम स्वराज अभियान (RGSA) काय आहे ?",
+        "options": {
+          "A": "पंचायत राज संस्थांना ग्राम पंचायत विकास आराखडा करण्यास सक्षम करणारी योजना",
+          "B": "नियमित ग्राम सभा आणि त्यांचे नोंदी ठेवण्यास प्रोत्साहन देणारी योजना",
+          "C": "गावाच्या पातळीवर मतदान वाढविण्याची योजना",
+          "D": "सरपंचाची थेट निवड करण्यास प्रोत्साहन देणारी योजना"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q99",
+        "text": "खालील विधाने विचारात घ्या :\nअ. लोकलेखा समितीमध्ये 7 सदस्य राज्यसभेचे सदस्य असतात.\nब. लोकसभेच्या दैनंदिन कामकाज पद्धतीच्या नियमात असे नमूद करण्यात आले आहे की विरोधी पक्षाचा सदस्यच लोकलेखा समितीचा अध्यक्ष असेल.\nवरील विधानांपैकी असत्य विधान/ने कोणते आहे/त ?",
+        "options": {
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "अ आणि ब दोन्ही",
+          "D": "कोणतेही नाही"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "Indian Polity"
+      },
+      {
+        "id": "sb-pre-2020-marathi-q100",
+        "text": "भारताचे प्रथम लोकपाल म्हणून यांची नियुक्ती झाली.",
+        "options": {
+          "A": "न्यायमूर्ती दीपक मिश्रा",
+          "B": "न्यायमूर्ती टी.एस. ठाकूर",
+          "C": "न्यायमूर्ती पिनाकी चंद्रघोष",
+          "D": "न्यायमूर्ती जगदीश सिंग खेहर"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "Indian Polity"
+      }
+    ],
+    "language": "marathi"
   }
 ]
