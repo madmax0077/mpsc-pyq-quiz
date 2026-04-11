@@ -1,0 +1,1307 @@
+{
+  "id": "sb-pre-2022-english",
+  "title": "MPSC Sub-Ordinate Group B Combined Pre 2022 (English)",
+  "createdAt": "2025-04-09T00:00:00.000Z",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which space agency has released the first visible light images of the surface of venus from space?",
+      "options": [
+        "ESA",
+        "JAXA",
+        "NASA",
+        "CNA"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 2,
+      "text": "'Sustainable international financing scheme' is associated with which global association?",
+      "options": [
+        "G20",
+        "ASEAN",
+        "BRICS",
+        "SAARC"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 3,
+      "text": "Which of the following statement is incorrect in respect of the Consumer Protection Act 2019?\n(a) This act came into force on 20th July 2020.\n(b) Unfair trade prohibition rules on e-commerce platforms are included in this act.\n(c) As per the rules of the Consumer Disputes Redressal Commission no charges will be levied for complaints upto Rs. 10 lakhs.",
+      "options": [
+        "Statements (a) and (c)",
+        "Statement (a)",
+        "Statements (b) and (c)",
+        "Statement (c)"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 4,
+      "text": "NROL-85, which was launched recently, is an intelligence satellite of which country?",
+      "options": [
+        "Russia",
+        "Israel",
+        "France",
+        "USA"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 5,
+      "text": "India's First RT-PCR kit to detect the Omicron Variant, named 'Omisure' is developed by which company?",
+      "options": [
+        "Tata MD",
+        "Piramal",
+        "Sun Pharma",
+        "Apex Pharma"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 6,
+      "text": "Identify the person from the following description:\n(a) In 2013 she acted in the film 'Mai' for the first time.\n(b) The first Indian singer to be nominated for a Grammy Award.\n(c) She was recently awarded the Maharashtra Bhushan Award 2021.",
+      "options": [
+        "Lata Mangeshkar",
+        "Asha Bhosale",
+        "Krishna Kalle",
+        "Shanta Apte"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 7,
+      "text": "Which institution has developed the 'Positive Pay System (PPS)' for Cheque Payment?",
+      "options": [
+        "National Payments Corporation of India",
+        "Reserve Bank of India",
+        "Niti Aayog",
+        "Ministry of Finance"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 8,
+      "text": "Which one of the following country has provided instrumental support to India's ambitious space mission 'Gaganyan'?",
+      "options": [
+        "Japan",
+        "South Korea",
+        "United Arab Emirates (UAE)",
+        "France"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 9,
+      "text": "Who has been appointed as the chairman of the National Financial Reporting Authority (NFRA)?",
+      "options": [
+        "Ajay Bhushan Pandey",
+        "Nandan Nilekani",
+        "Azim Premji",
+        "Kris Gopalakrishnan"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 10,
+      "text": "The Supreme Court has appointed Justice R.V. Ravindran Committee in October 2021 for which of the following purpose?",
+      "options": [
+        "IPL spot fixing scam enquiry",
+        "Pegasus snooping row enquiry",
+        "Aadhar Card Policy confirmation",
+        "None of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 11,
+      "text": "Which Union Ministry launched 'My CGHS' Mobile application?",
+      "options": [
+        "Ministry of Education",
+        "Ministry of Health",
+        "Ministry of Tourism",
+        "Ministry of Culture"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 12,
+      "text": "Which country launched the 'COMPETES ACT' of 2022?",
+      "options": [
+        "Russia",
+        "USA",
+        "UK",
+        "Australia"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 13,
+      "text": "16th World Youth Archery Championship was held in August 2021 in which of the following nation?",
+      "options": [
+        "South Korea",
+        "Poland",
+        "India",
+        "Australia"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 14,
+      "text": "Who has been awarded the 'International Gandhi Award for Leprosy-2021'?",
+      "options": [
+        "Dr. Bhushan Kumar",
+        "Dr. G.P. Talwar",
+        "Dr. M.D. Gupte",
+        "Dr. Atul Shah"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 15,
+      "text": "According to livestock census 2019, what is the rank of Maharashtra in terms of livestock among the country?",
+      "options": [
+        "First",
+        "Third",
+        "Seventh",
+        "Ninth"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 16,
+      "text": "Which of the following are the correct statements regarding the tenure of a Governor of the State?\n(a) Governor remains in his office as long as President of India wishes.\n(b) Governor may resign voluntarily.\n(c) The appointment of Governor is generally for 05 years.\n(d) Governor remains in his office until another person takes charge.",
+      "options": [
+        "Only statements (a), (b) and (c) are correct",
+        "Only statements (a), (b) and (d) are correct",
+        "Only statements (b), (c) and (d) are correct",
+        "All statements are correct"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 17,
+      "text": "Which of the following statement/statements regarding State Public Service Commission is/are not correct?\n(a) Provisions in Articles 315 to 323 of the Indian Constitution.\n(b) These Commission are working for the State Government as well as the Central Government.\n(c) The appointment of the administrative officers selected by this Commission is done by the Central Government.\n(d) The chairman and the members of the Commission are appointed by the State Government.",
+      "options": [
+        "Only (a) and (b)",
+        "Only (a) and (c)",
+        "Only (b) and (c)",
+        "Only (b) and (d)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 18,
+      "text": "Elections in India for Parliament and State Legislatures are conducted by _______.",
+      "options": [
+        "President",
+        "State Election Commission",
+        "Governor",
+        "Election Commission of India"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 19,
+      "text": "Which Article of the Indian Constitution defines the duties of the Chief Minister?",
+      "options": [
+        "Article - 163",
+        "Article - 166",
+        "Article - 167",
+        "Article - 164"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 20,
+      "text": "Which of the following Committee is not related to the Panchayati Raj?",
+      "options": [
+        "Ashok Mehta Committee",
+        "Rajmannar Committee",
+        "Thungan Committee",
+        "L.M. Singhvi Committee"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 21,
+      "text": "Make a group of correct sentences in the composition of the Gram Sabha:\n(a) Gram Sabha is formed from all the adult citizens of the village.\n(b) Every voter who completes 18 years of age becomes a member of Gram Sabha.\n(c) Gram Sabha has election.\n(d) All the voters of the Gram Panchayat are members of the Gram Sabha.",
+      "options": [
+        "Only (a), (b) and (c)",
+        "Only (b), (c) and (d)",
+        "Only (a), (b) and (d)",
+        "All the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 22,
+      "text": "New responsibilities given to Gram Panchayats as per 73rd Constitution Amendment Act, 1993.\n(a) Enforcement of Land Reforms Act\n(b) To develop forest industries, small and cottage industries\n(c) Facilitate technical and vocational education\n(d) To arrange entertainment for the people of the village\nWhich of the above statement/statements is/are incorrect?",
+      "options": [
+        "Only (b)",
+        "Only (d)",
+        "Only (a) and (d)",
+        "Only (b) and (c)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 23,
+      "text": "Which article states that each state shall have an Advocate General?",
+      "options": [
+        "Article 194",
+        "Article 177",
+        "Article 197",
+        "Article 165"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 24,
+      "text": "Who among the following was the members of the drafting committee of the Indian Constitution?",
+      "options": [
+        "Vallabhbhai Patel",
+        "Jawaharlal Nehru",
+        "Alladi Krishnaswamy Iyer",
+        "Dr. Rajendra Prasad"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 25,
+      "text": "Which among the following features of Indian Constitution is not borrowed from British Constitution?",
+      "options": [
+        "Parliamentary form of Government",
+        "Cabinet form of Government",
+        "Rule of Law",
+        "Concurrent List"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 26,
+      "text": "Which of the following statements are true regarding the development of transport infrastructure in India?\n(a) The Public Work Department was created during the time of Lord Dalhousie.\n(b) During the reigns of Lord Cornwallis and John Shore road construction gained momentum.\n(c) Broad gauge tracks were built during the early days of the railway.\n(d) Nagpur Council presented 'Twenty Years Road Development Programme' to the Government.",
+      "options": [
+        "(a), (b) and (d) statements are correct",
+        "(a) and (d) statements are correct",
+        "(a), (b) and (c) statements are correct",
+        "(b), (c) and (d) statements are correct"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 27,
+      "text": "Match the pair.\n(a) 1890, Mumbai Mill Workers Union - (i) Lala Lajpatrai\n(b) 1918, Ahmadabad Textile Labour Association - (ii) B.P. Wadiya\n(c) 1918, Madras Labour Union - (iii) Mahatma Gandhi\n(d) 1920, All India Trade Union Congress - (iv) Narayan Meghaji Lokhande",
+      "options": [
+        "(ii), (iii), (i), (iv)",
+        "(iv), (iii), (ii), (i)",
+        "(iv), (ii), (iii), (i)",
+        "(ii), (iii), (iv), (i)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 28,
+      "text": "Match the pair place of the Congress Session and his Presidents name.\n(a) First Congress Session, Mumbai (1885) - (i) George Yul\n(b) Second Congress Session, Calcutta (1886) - (ii) Badruddin Tayyabji\n(c) Third Congress Session, Madras (1887) - (iii) Womeshchandra Banarjee\n(d) Fourth Congress Session, Allahabad (1888) - (iv) Dadabhai Naoroji",
+      "options": [
+        "(iii), (iv), (i), (ii)",
+        "(iii), (iv), (ii), (i)",
+        "(iii), (i), (ii), (iv)",
+        "(iv), (i), (ii), (iii)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 29,
+      "text": "In 1847 who was the first to demand the launch of a railway connecting the Mumbai port and the cotton producing regions?",
+      "options": [
+        "Bright",
+        "George Layite",
+        "Willogby",
+        "Prescott"
+      ],
+      "correctAnswer": "A",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 30,
+      "text": "Government of India Act of 1935 provided for establishment of which institutes?\n(a) Federal Court\n(b) Reserve Bank of India\n(c) Federal Railway\n(d) High Commissioner",
+      "options": [
+        "(a), (c) and (d)",
+        "(a), (b) and (c)",
+        "(a), (b) and (d)",
+        "All of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 31,
+      "text": "Which of the following was the aim of 'Trading Economy' of British Government?\n(a) No Trading competition\n(b) Maximum profit\n(c) Control on economic factors\n(d) Economic growth of India\nWhich of the statement given above is/are correct?",
+      "options": [
+        "(a) and (b)",
+        "(b) and (c)",
+        "(c) only",
+        "(b) only"
+      ],
+      "correctAnswer": "D",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 32,
+      "text": "What Dr. Bhau Daji Lad was the proponent of?",
+      "options": [
+        "Female old age home",
+        "Social discrimination",
+        "Widow remarriage",
+        "Christianity"
+      ],
+      "correctAnswer": "C",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 33,
+      "text": "Choose the correct option by matching the following:\n(a) Acharya Bal Shastri Jambhekar - (i) Establishment of Manav Dharm Sabha at Surat\n(b) Durgaram Manchharam, Dadoba Pandurang - (ii) Purification of Shripad Sheshadri Paralikar who was in the custody of Christi Missionary\n(c) Annie Besant - (iii) Establishment of Normal School and Victoria Institute\n(d) Keshavchandra Sen - (iv) Establishment of Central Hindu-College",
+      "options": [
+        "(iii), (i), (iv), (ii)",
+        "(ii), (i), (iv), (iii)",
+        "(iv), (iii), (ii), (i)",
+        "(iii), (iv), (i), (ii)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 34,
+      "text": "Which of the following statements are false regarding revolt of Santhala?\n(a) Economic exploitation of Santhala is presented in Punjab Review.\n(b) Santhala declared the decision of establishment of 'State of Truth'.\n(c) Kanhu the leader of Santhala was treacherously kidnapped.\n(d) O Mauli, the officer gave the report of duel of Santhala.",
+      "options": [
+        "(b), (d) statements are false",
+        "(a), (b), (c) statements are false",
+        "(b), (c), (d) statements are false",
+        "(a), (c) statements are false"
+      ],
+      "correctAnswer": "D",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 35,
+      "text": "Match the following organizers of the Secret Militant Organizations in Maharashtra and their areas.\n(a) Shridhar Paranjape - (i) Amravati\n(b) Dr. Siddhanath Kane - (ii) Belgaum\n(c) Dadasaheb Khaparde - (iii) Wardha and Nagpur\n(d) Gangadhar Deshpande - (iv) Yavatmal",
+      "options": [
+        "(iii), (ii), (i), (iv)",
+        "(ii), (iii), (iv), (i)",
+        "(iii), (iv), (i), (ii)",
+        "(iv), (ii), (iii), (i)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 36,
+      "text": "Gopal Ganesh Agarkar was related with which of the following Newspapers?\n(a) Kesari and Maratha\n(b) Varhad Samachar\n(c) Sudharak\n(d) Swarajya\nWhich of the statement/s given above is/are correct?",
+      "options": [
+        "(a) and (c) only",
+        "(a), (b) and (c) only",
+        "(b) and (d) only",
+        "(b), (c) and (d) only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 37,
+      "text": "Identify the person from following description:\n(a) He started the Newspaper 'India'\n(b) Establishment of Bombay Association\n(c) Establishment of East India Association\n(d) President of Indian National Congress",
+      "options": [
+        "Dadabhai Naoroji",
+        "Gopal Krishna Gokhale",
+        "Firojshah Mehta",
+        "Dinshaw Wachha"
+      ],
+      "correctAnswer": "A",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 38,
+      "text": "Who made the following statements which caused the growth of Communalism?\n(a) Hindu and Muslim are two nations and these are two opposite countries.\n(b) The policy of divide and beat has to be adopted in India and Muslims should be kept away from Hindu.\n(c) Mahatma Gandhiji's Civil-Disobedience Movement is not totally for freedom of India but to keep Indian Muslims under the domination of Hindu Mahasabha.\n(d) Those who are recognizing India as their motherland, India is their nation.",
+      "options": [
+        "Principal Bake, Sir Sayyad Ahamad, V.D. Sawarkar, Mohamad Ali Jinnah",
+        "Sir Sayyad Ahamad, Principal Bake, Mohamad Ali Jinnah, V.D. Sawarkar",
+        "V.D. Sawarkar, Mohamad Ali Jinnah, Principal Bake, Sir Sayyad Ahamad",
+        "Mohamad Ali Jinnah, Sir Sayyad Ahmad, V.D. Sawarkar, Principal Bake"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 39,
+      "text": "What was the aim of East India Association organisation, established on 1 November 1866?\n(a) Female Education\n(b) Political Education\n(c) People Education\n(d) Religious Education\nWhich of the statement given above is/are correct?",
+      "options": [
+        "(a) and (b)",
+        "(b) and (d)",
+        "(c) only",
+        "(d) only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 40,
+      "text": "Which of the following personalities were related with Bombay Presidency Association Organisation?\n(a) Gopal Ganesh Agarkar\n(b) Firojshah Mehta\n(c) Badruddin Tayyabji\n(d) Justice Telang",
+      "options": [
+        "(a), (c) and (d) only",
+        "(b), (c) and (d) only",
+        "(a) and (b) only",
+        "(c) and (d) only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 41,
+      "text": "In the decade of 1911 to 1921 the Population Growth in the State of Maharashtra was negative. The reason behind it is _______.",
+      "options": [
+        "Low birth rate during that period",
+        "High death due to epidemic",
+        "More deaths due to flood",
+        "Lack of industrialisation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 42,
+      "text": "Maharashtra State Agricultural Marketing Board is established in _______.",
+      "options": [
+        "1986",
+        "1987",
+        "1988",
+        "1983"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "History"
+    },
+    {
+      "id": 43,
+      "text": "In India _______ is called as a 'Golden Fiber' crop.",
+      "options": [
+        "Jute",
+        "Wool",
+        "Cotton",
+        "Silk"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 44,
+      "text": "Which is the mountain/hill situated on the North-South direction of western Maharashtra?",
+      "options": [
+        "Satpura",
+        "Shambhu Mahadev",
+        "Satmala",
+        "Sahyadri"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 45,
+      "text": "Following statements are correct or incorrect?\n(a) Commercialisation of agriculture did not promote capitalist - agriculture.\n(b) Commercialisation of agriculture intensified tenancy and share-cropping.",
+      "options": [
+        "(a) and (b) are true statements",
+        "(a) and (b) are false statements",
+        "(a) is false and (b) is true statement",
+        "(a) is true and (b) is false statement"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 46,
+      "text": "Iron ore reserves in Maharashtra are located in the district of _______.",
+      "options": [
+        "Wardha",
+        "Nashik",
+        "Buldhana",
+        "Sindhudurg"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 47,
+      "text": "Following are some of the problems in the agriculture sector in Maharashtra. Which one is more social in nature?",
+      "options": [
+        "Adverse weather condition",
+        "Limited Agricultural research",
+        "Lack of financial capital",
+        "Fragmentation of farmland"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 48,
+      "text": "What is the percent share of tourism in India's domestic income as of 2019?",
+      "options": [
+        "9.0%",
+        "8.4%",
+        "7.3%",
+        "9.34%"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 49,
+      "text": "One of the following is an important port situated on the west coast of India.",
+      "options": [
+        "Chennai",
+        "Haldia",
+        "Kandla",
+        "Kolkata"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 50,
+      "text": "The average highest temperature in the month of May is recorded in _______ region of Maharashtra.",
+      "options": [
+        "Coastal Region",
+        "Western Maharashtra",
+        "Marathwada",
+        "Eastern Vidarbha"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 51,
+      "text": "Bhilai Iron and Steel Industry is located in the state of _______.",
+      "options": [
+        "West Bengal",
+        "Odisha",
+        "Chhattisgarh",
+        "Madhya Pradesh"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 52,
+      "text": "When State Government in Maharashtra has declared the Blue Revolution Mission?",
+      "options": [
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 53,
+      "text": "The population is decreasing continuously in rural area, because:\n(a) The birth rate in rural area is low.\n(b) The rural people are migrating to urban area.\n(c) The employment is not available in rural area.\n(d) The death rate is high in rural area.\nWhich statement/s of the above is true?",
+      "options": [
+        "(b) and (c)",
+        "only (b)",
+        "(a) and (d)",
+        "only (d)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 54,
+      "text": "Which of the following physiographic factor predominantly influence on climate of Maharashtra?",
+      "options": [
+        "Deccan plateau in Maharashtra",
+        "Sahyadri mountain and Satpuda range",
+        "Coastal plains",
+        "Mudkhed hills"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 55,
+      "text": "The multipurpose project of Gujarat 'Ukai' is situated on which River?",
+      "options": [
+        "Sabarmati",
+        "Tapti",
+        "Mahi",
+        "Narmada"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 56,
+      "text": "In which state the number of Primary Agricultural Credit Societies was highest at the end of March 2020?",
+      "options": [
+        "Karnataka",
+        "Tamil Nadu",
+        "Gujarat",
+        "Maharashtra"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 57,
+      "text": "The Government appointed a Committee in 1993 on Disinvestment in Public Sector Enterprises under the Chairmanship of _______.",
+      "options": [
+        "G.V. Ramkrishna",
+        "Montek Ahluwalia",
+        "C. Rangrajan",
+        "C.P. Chandrashekhar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 58,
+      "text": "During 2017-18 Foreign Direct Investment (FDI) was highest 23.6 percent in _______ sector in India.",
+      "options": [
+        "Communication services",
+        "Manufacturing sector",
+        "Real and Wholesale trade",
+        "Financial services"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 59,
+      "text": "To tackle the burgeoning problem of air pollution, the 2021-22 Budget proposes to provide an amount of Rs. 2217 crore for _______ urban centres with a million-plus population.",
+      "options": [
+        "32",
+        "42",
+        "52",
+        "62"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 60,
+      "text": "Match the following:\n(a) Second largest agro based industry in India - (i) Cotton industry\n(b) One of the oldest and organised industry in India - (ii) Iron and steel industry\n(c) Industry leading to rapid industrialisation - (iii) Sugar industry\n(d) Use of new technology - (iv) Automobile industry",
+      "options": [
+        "(ii), (i), (iii), (iv)",
+        "(iii), (ii), (i), (iv)",
+        "(iii), (i), (ii), (iv)",
+        "(iii), (iv), (i), (ii)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 61,
+      "text": "Comptroller and Auditor General (CAG) has a right to order conduct of supplementary audit and he may also comment upon the audit report within _______ days from the date of receipt of audit report.",
+      "options": [
+        "30 days",
+        "60 days",
+        "90 days",
+        "120 days"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 62,
+      "text": "The difference between fiscal deficit and interest payment during the year is called _______.",
+      "options": [
+        "Fiscal deficit",
+        "Budget deficit",
+        "Primary deficit",
+        "Revenue deficit"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 63,
+      "text": "Consider the following statements in the context of Seventh Finance Commission for distribution of the states share of the central excise duty:\n(a) 25 percent weightage for population.\n(b) 33.5 percent weightage for poor in each state.\n(c) 16.5 percent weightage for increase in the per capita income of the state.\n(d) 25 percent weightage for income equalisation between state.\nWhich of the statement/s given above is/are correct?",
+      "options": [
+        "Only (a) and (d) are correct",
+        "Only (b) and (c) are correct",
+        "Only (a), (b) and (c) are correct",
+        "Only (a), (c) and (d) are correct"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 64,
+      "text": "Consider the following statements:\n(a) The Deposit Insurance and Credit Guarantee Corporation (Amendment) Act, passed by the Parliament in 2021.\n(b) The deposit insurance premium is recovered from the depositors.\n(c) The deposit insurance premium is compulsory for all insured banks.\nWhich of the statement/s given above is/are correct?",
+      "options": [
+        "Only (a) and (b) are correct",
+        "Only (a) and (c) are correct",
+        "Only (b) and (c) are correct",
+        "All of the above are correct"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 65,
+      "text": "Consider the following statements:\n(a) Sampoorna Grameen Rozgar Yojana (SGRY) was launched September 2001.\n(b) Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS) was introduced in February 2006.\n(c) The Nehru Rozgar Yojana (NRY) was launched in October 1989 for the benefit of the rural poor.\nWhich of the following statement/s given above is/are correct?",
+      "options": [
+        "(a) only",
+        "(b) only",
+        "(a) and (b) only",
+        "(a) and (c) only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 66,
+      "text": "N.K. Singh Committee of 2016 is related to _______.",
+      "options": [
+        "Twelfth Finance Commission",
+        "Twelfth Five Year Plan",
+        "Fourteenth Finance Commission",
+        "Fiscal Responsibility and Budget Management Act"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 67,
+      "text": "Which of the following were the reasons for small land holdings during 1980 to 1985 in India?\n(a) Law of inheritance\n(b) Rapidly growing population\n(c) Rural indebtedness\n(d) Rapidly growing joint family system",
+      "options": [
+        "only (a) and (d)",
+        "only (b) and (c)",
+        "only (a), (b) and (c)",
+        "only (b), (c) and (d)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 68,
+      "text": "During which five year plan three major steel plants in the public sector were built up at Rourkela, Bhilai and Durgapur?",
+      "options": [
+        "First Five Year Plan",
+        "Second Five Year Plan",
+        "Third Five Year Plan",
+        "Fourth Five Year Plan"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 69,
+      "text": "Which of the following is not objective of National Population Policy 2000?",
+      "options": [
+        "Reduction in infant mortality",
+        "Universal immunisation",
+        "Mid-day meal for poor children",
+        "Incentive to adopt two child small family"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 70,
+      "text": "Which of the following is not a quantitative monetary measure of Reserve Bank of India?",
+      "options": [
+        "Bank Rate",
+        "Moral Suasion",
+        "Cash Reserve Ratio",
+        "Statutory Liquidity Ratio"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 71,
+      "text": "Which of the following substance has the highest thermal conductivity?",
+      "options": [
+        "Wood",
+        "Aluminium",
+        "Glass",
+        "Silver"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 72,
+      "text": "Light enters the eye through thin membrane called the _______.",
+      "options": [
+        "Iris",
+        "Pupil",
+        "Retina",
+        "Cornea"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 73,
+      "text": "Echo is heard if the distance between the source of sound and the obstacle is _______.",
+      "options": [
+        "Less than 17 meters",
+        "More than or equal to 17 meters",
+        "Less than 7 meters",
+        "None of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 74,
+      "text": "In _______ model of an atom, the angular momentum (mvr) of an electron is an integral multiple of the quantity h/2π.",
+      "options": [
+        "Rutherford's",
+        "Dalton's",
+        "Bohr's",
+        "Fermi's"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 75,
+      "text": "Choose the incorrect answer:",
+      "options": [
+        "Bonding molecular orbitals are formed by the additive effect of the atomic orbitals.",
+        "The electron density in the internuclear region in bonding molecular orbital is very low.",
+        "Energy of the antibonding molecular orbital is higher than that of the combining atomic orbitals.",
+        "Antibonding molecular orbitals are represented by σ*, π*, δ*, etc."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 76,
+      "text": "During biological nitrogen fixation, nitrifying bacteria convert _______.",
+      "options": [
+        "NO₃⁻ to NH₄⁺",
+        "N₂ to NH₄⁺",
+        "NH₄⁺ to NO₃⁻",
+        "NO₃⁻ to N₂"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 77,
+      "text": "Match the following:\n(a) Python molurus - (i) Haemotoxic\n(b) Naja naja - (ii) Blind snake\n(c) Viper russelli - (iii) Neurotoxic\n(d) Typhlops braminus - (iv) Non-poisonous",
+      "options": [
+        "(iv), (iii), (i), (ii)",
+        "(iii), (iv), (ii), (i)",
+        "(i), (ii), (iv), (iii)",
+        "(iii), (i), (ii), (iv)"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 78,
+      "text": "Which one of the following is the correct sequence of larval stages of Aurelia?",
+      "options": [
+        "Planula, Hydratuba, Scyphistoma, Ephyra",
+        "Planula, Ephyra, Scyphistoma, Hydratuba",
+        "Scyphistoma, Planula, Hydratuba, Ephyra",
+        "Hydratuba, Ephyra, Planula, Scyphistoma"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 79,
+      "text": "Which of the following is/are group/groups of reptilian animals?\n(a) Lizard, Snake, Frog and Loris\n(b) Turtle, Gharial, Caiman and Tuatara\n(c) Turtle, Crocodile, Salamander and Lizard\n(d) Salamander, Catotes, Turtle and Frog",
+      "options": [
+        "Only (b)",
+        "Only (b) & (c)",
+        "Only (c) & (d)",
+        "All of the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 80,
+      "text": "Irrigation in the fields of saline tract affects the productivity of crops because of:\n(a) Degradation of soil structure\n(b) Growth inhibition of plants\n(c) Leaf discolouration\n(d) Salt accumulation in soil\nWhich of the given above statement/statements is/are correct?",
+      "options": [
+        "(a) only",
+        "(a) and (b) only",
+        "(a), (b) and (c) only",
+        "(a) and (d) only"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 81,
+      "text": "How the occurrence of Endemic pest is defined?",
+      "options": [
+        "Occurs frequently in months",
+        "Occurs in few localities",
+        "Occurs in the same area year after year",
+        "Occurs in an area in severe form"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 82,
+      "text": "Plants whose seeds are naked, are classified in which group?",
+      "options": [
+        "Angiosperms",
+        "Gymnosperms",
+        "Tracheophyta",
+        "Cryptogamms"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 83,
+      "text": "From the following viruses, which one transfers from one person to other via infected needles or unprotected sex?",
+      "options": [
+        "Dengue virus",
+        "Rota virus",
+        "Hepatitis A",
+        "Hepatitis B"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 84,
+      "text": "Which scientist discovered small pox vaccine?",
+      "options": [
+        "Louis Pasteur",
+        "Edward Jenner",
+        "Alexander Fleming",
+        "Selman Waksman"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 85,
+      "text": "Which of the following is used to disinfect surfaces?",
+      "options": [
+        "Ultraviolet light",
+        "Autoclave",
+        "Infrared light",
+        "Sodium Carbonate"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 86,
+      "text": "Find out which assumption is correct from the given statement.\nStatement: 'Cigarette smoking is injurious to Health', this information is given on the cigarette packet, because,\nAssumption: (i) People read the information given on the cigarette packet.\n(ii) Many people take seriously the warning given on cigarette packet.",
+      "options": [
+        "Only (i) assumption is correct",
+        "Only (ii) assumption is correct",
+        "Both (i) and (ii) assumptions are correct",
+        "Both (i) and (ii) assumptions are not correct"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 87,
+      "text": "The percentage distribution of passengers in different trains are shown in a pie-chart: Train A: 13%, Train Q: 19%, Train R: 9%, Train S: 24%, Train M: 20%, Train L: 15%.\nTotal number of passengers = 8500. What is the average number of passengers in Trains S, M and L together?",
+      "options": [
+        "1521",
+        "1641",
+        "1672",
+        "1651"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 88,
+      "text": "Mango tree is in the middle of Gauva and Lemon tree. Papaya tree is near the Lemon tree but not near the Mango tree and Gauva tree. At the right side of Papaya tree is Coconut tree but at the left side of Gauva tree no any tree.\nWhich statement/s of following is/are correct?\n(i) Lemon tree is between the Papaya and Mango tree.\n(ii) Papaya tree is between Coconut and Lemon tree.\n(iii) Papaya tree is near Coconut tree.",
+      "options": [
+        "Only (i) and (ii) statements are correct",
+        "Only (i) and (iii) statements are correct",
+        "Only (ii) and (iii) statements are correct",
+        "(i), (ii) and (iii) all statements are correct"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 89,
+      "text": "There are 80 players in a club, of which 36 play Kabaddi and 48 play Cricket. If 12 players play both Kabaddi and Cricket, what is the percentage of players who do not play either Kabaddi or Cricket?",
+      "options": [
+        "20%",
+        "15%",
+        "10%",
+        "5%"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 90,
+      "text": "Six students A, B, C, D, E and F are standing in a row. B is between F and D. E is between A and C. A does not stand next to either F or D. C does not stand next to D. F is between which of the following pair of students?",
+      "options": [
+        "B and D",
+        "B and A",
+        "B and E",
+        "B and C"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 91,
+      "text": "If the letters in the English alphabets, A to M represent number from 1 to 13 respectively and N represent zero and the letters O to Z correspond from -1 to -12, what will be sum of integers for SUCCESS?",
+      "options": [
+        "-11",
+        "11",
+        "16",
+        "20"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 92,
+      "text": "A school has four divisions A, B, C and D of ninth standard students. The results of half-yearly and annual examinations are shown in the table.\nStudents failed in both exams: A=24, B=25, C=15, D=17\nFailed in half-yearly but passed in annual: A=14, B=13, C=18, D=18\nPassed in half-yearly but failed in annual: A=8, B=17, C=11, D=15\nPassed in both: A=64, B=55, C=46, D=70\nWhich division has the maximum passing rate in the annual examinations?",
+      "options": [
+        "B",
+        "A",
+        "D",
+        "C"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 93,
+      "text": "What will be the number at the place of question mark?\n[Pattern with numbers: 12, 18, 40, 55, 79, 22, 18, 45, 20, 12, 13]",
+      "options": [
+        "116",
+        "111",
+        "114",
+        "112"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 94,
+      "text": "In a code language, RED = 9 and BLUE = 10. Then WHITE = ?",
+      "options": [
+        "13",
+        "15",
+        "17",
+        "19"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 95,
+      "text": "Travelling in a train, a person is counting the number of electric poles. The distance between the two poles is 50 metres and the speed of the train is 40 km/hour. Then how many hours will the person require to count 5601 poles?",
+      "options": [
+        "7 hours",
+        "6 hours",
+        "5 hours",
+        "3 hours"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 96,
+      "text": "Find the average of natural numbers between 1 to 97.",
+      "options": [
+        "47",
+        "37",
+        "48",
+        "49"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 97,
+      "text": "A train 250 metres long running at a speed 45 km/hr, how long does it take to pass a platform of length 250 metres?",
+      "options": [
+        "36 Seconds",
+        "40 Seconds",
+        "50 Seconds",
+        "45 Seconds"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 98,
+      "text": "Ravi sold an article to Sudhir at a profit of 6% who in turn sold that to Gopal at a loss of 5%. If Gopal paid Rs. 2014 for the article, find the cost price of the article for Ravi.",
+      "options": [
+        "Rs. 2000",
+        "Rs. 2011",
+        "Rs. 2020",
+        "Rs. 1900"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 99,
+      "text": "A man goes to Mumbai from Pune at a speed of 4 km/hr and returns to Pune at a speed of 6 km/hr. What is his average speed of the entire journey?",
+      "options": [
+        "4.8 km/hr",
+        "5 km/hr",
+        "4.2 km/hr",
+        "5.6 km/hr"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 100,
+      "text": "If A and B together can complete a piece of work in 15 days and B alone in 20 days. In how many days can A alone complete the work?",
+      "options": [
+        "60",
+        "45",
+        "40",
+        "30"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    }
+  ]
+}
