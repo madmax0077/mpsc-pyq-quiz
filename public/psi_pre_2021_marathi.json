@@ -1,0 +1,1308 @@
+{
+  "id": "psi-pre-2021-marathi",
+  "title": "MPSC PSI Pre 2021 (मराठी)",
+  "createdAt": "2025-04-09T00:00:00.000Z",
+  "questions": [
+    {
+      "id": 1,
+      "text": "'Dusryachya manatle jaannaara' yaasaathi pudheelaiki yogya paryaay nivadaa.\na. Antardnyaanee\nb. Antardhaan\nk. Manakavadaa\nd. Bhavishyavettaa",
+      "options": [
+        "Fakat a barobar baaki sarv chook",
+        "Fakat a va k barobar baaki sarv chook",
+        "Fakat k barobar baaki sarv chook",
+        "Fakat d barobar baaki sarv chook"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 2,
+      "text": "Pudheelaiki konati sandhi yogya aahe?",
+      "options": [
+        "Manah-kaamana",
+        "Mano-kaamana",
+        "Manakaamana",
+        "Mano-kaamana"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 3,
+      "text": "Kaal kashaala mhantataat?",
+      "options": [
+        "Kriyaapadaalaa",
+        "Kartaa, karma, kriyaapad yaanchya yogya vaaparalaa",
+        "Kriyaapadaavaroon kriyechi vel kaadhunyaalaa",
+        "Vareel sarv paryaay barobar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 4,
+      "text": "'Udyaa aamhi suddha gaavaalaa jaanar aahet.' — Adhorekshit shabd pudheelaiki kontya prakaraateel aahe?",
+      "options": [
+        "Kriya visheshan avyay",
+        "Vibhakti pratirup shabdyogi avyay",
+        "Shuddha shabdyogi avyay",
+        "Kriya visheshan"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 5,
+      "text": "Pudheelaiki sanskrut upasargaghateet shabd kontaa?",
+      "options": [
+        "Binadhokt",
+        "Shravaneeya",
+        "Bhandaai",
+        "Sampaadan"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 6,
+      "text": "Khaaleel visheshanaanche udaaharanashi yogya jodya laavaa.\na. Naam sadrushya visheshan - I. Jo mulagaa vyaayaam karto, to sashakt asto.\nb. Darshak visheshan - II. Shreemant maanasaannaa garva asto.\nk. Sambandhee visheshan - III. Kon manushya yeun gela.\nd. Prashnarthak visheshan - IV. Hee mulagee chalaakh aahe.",
+      "options": [
+        "II, IV, I, III",
+        "IV, III, I, II",
+        "II, III, IV, I",
+        "I, II, III, IV"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 7,
+      "text": "'Sahaleemadhye shikshakaannee vidyaarthyaannaa sambhaalatate.' — Yaa vaakyaateel kartaa kontaa?",
+      "options": [
+        "Sahal",
+        "Shikshak",
+        "Vidyaarthee",
+        "Sambhaal"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 8,
+      "text": "'Dev tyaache bhale karo' yaa vaakyaachaa prakaar kontaa?",
+      "options": [
+        "Aadnyaarthee",
+        "Vidhyaarthee",
+        "Sanketaarthee",
+        "Vidhaanaarthee"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 9,
+      "text": "'Tumchi shorlee mulagee yethe sukhroop pochali' yaa vaakyaateel uddeshy aani visheya olakhaa.",
+      "options": [
+        "Shorlee - mulagee",
+        "Mulagee - pochali",
+        "Mulagee - sukhroop",
+        "Shorlee - sukhroop"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 10,
+      "text": "'Raamanujan yaannee avghad ganite atishay sahajane sodakoon daakhavalee.'\n— Yaa vaakyaateel adhorekshit shabd he pudheelaiki konte ghatak aahet?",
+      "options": [
+        "Uddeshy",
+        "Uddeshy vistaar",
+        "Visheya",
+        "Visheya vistaar"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 11,
+      "text": "'Mee tyaalaa vichaarle aahe naa? Aamche aamhee paahoon gheu. Aamchyaamadhye _______ tulaa saangilatale konee?'\n— Yaamadhye gaalavleleya jaagevar pudheelaiki kontaa vaakyaprachaar barobar therel?",
+      "options": [
+        "Tond vaasane",
+        "Tondaavar tukadaa taakane",
+        "Tond disane",
+        "Tond chaalatane"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 12,
+      "text": "'Dolyaavar kaatade odhane' yaa vaakyaprachaaraachya viruddha arth suchavnaara vaakyaprachaar pudheelaiki kontaa?",
+      "options": [
+        "Dole bhrun paahane",
+        "Dole udhadane",
+        "Dolyaat dhool phekane",
+        "Dolyaat tel chaalatoon paahane"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 13,
+      "text": "'Paalaadhyaa ghadyaavar paanee' yaa mhanitoon kaay suchavile jaate?",
+      "options": [
+        "Mothe nuksaan zhaale.",
+        "Kelele prayatna vaayaa gele.",
+        "Yogya veli faayada millavata aala naahi.",
+        "Durdev odhaavale."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 14,
+      "text": "Pudheelaiki 'mishra vaakya' konte?\na. Aamhee jaato amuchya gaavaa.\nb. Aakaashaat jevhaa dag jamataat tevhaa mor naachoo laagato.\nk. Saayankaalee mee kreedaanganaavar khelato kinvaa mitraambarobar phiraaylaa jaato.\nd. Baabaa mhanaale kee New York he ek mothe shahar aahe.",
+      "options": [
+        "a va k barobar aani b va d chook aahet",
+        "b va d barobar aani a va k chook aahet",
+        "a va d barobar aani b va k chook aahet",
+        "Fakat d barobar aani baaki sarv chook aahet"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 15,
+      "text": "'Gautamne roj ek pustak vaachale.' — Yaa vaakyaache kartaree prayogaat roopantar kase hoeel?",
+      "options": [
+        "a pramaane",
+        "b pramaane",
+        "a va b donhee pramaane",
+        "a va b donheehi pramaane naahi"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 16,
+      "text": "(Passage-based) Maasikaaateel goshta kashaabaddalachi hotee?",
+      "options": [
+        "Manohar raajaachee saahasi vrutti",
+        "Daryaavardee jeevanaateel aavhaane",
+        "Bhaarataateel nakaashaanchaa aarambh",
+        "Shreekunjya parvataachee maahitee"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 17,
+      "text": "(Passage-based) 'Bhugol' aani 'nakaashaa' yaa sankalpanaa shekado varshe vikasit hot hotya, kaaran —",
+      "options": [
+        "Pruthveche kshetraphal aphaat aahe.",
+        "Ekeka bhaugolik ghatakaachya maahiteesovat tappyaatappyaane aakalan vaadhat gele.",
+        "Sarvaannaa mahattva kaleparyant anek piddyaa gelya.",
+        "Prachand maahitee asalyaane golaa karne yaas hajaaro varshe laagalee."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 18,
+      "text": "(Passage-based) Bhugolabaddalchee jaaneev va maanasaanchaa sanskrutik vikaas parasparsambandheet aahet, kaaran —",
+      "options": [
+        "Bhaugolik dnyaanaachaa aadhaar bhupradeshaanvar varchassva milavatanaa milaalaa.",
+        "Bhaugolik dnyaanamule naisargik sampatteechaa aaplya sukhsoyeesaathee adhikadhik vaapar hou laagalaa.",
+        "a va b donhee",
+        "a va b donheehi naahit"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 19,
+      "text": "(Passage-based) Jaagatik raajakaaranavar bhugolachya dnyaanaachaa kaay parinaam zhalaa?",
+      "options": [
+        "Fakat a va b",
+        "Fakat a va k",
+        "Fakat b va k",
+        "Fakat a"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 20,
+      "text": "(Passage-based) Yaa utaaryaasaathee pudheelaiki konte sheershak yogya therel?",
+      "options": [
+        "Daryaavardee bhaarateeya",
+        "Praacheen bhugol",
+        "Bhugol aani maanavi utkraanti",
+        "Bhugol aani raashtravaad"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 21,
+      "text": "Pudheelaiki kontaa gat samaanaarthee shabdaanchaa aahe?",
+      "options": [
+        "Raav, rank, asaamee",
+        "Raan, kantak, gard",
+        "Megh, jalad, ghan",
+        "Neer, paanee, pankaj"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 22,
+      "text": "Pudheelaiki kontaa shabd arthadrushtyaa samaanaarthee shabdaataat basat naahee?\na. Mahilaa\nb. Lalanaa\nk. Savitaa\nd. Naaree",
+      "options": [
+        "Fakat a barobar baaki sarv chook",
+        "Fakat b barobar baaki sarv chook",
+        "Fakat a, b va d barobar baaki sarv chook",
+        "Fakat k barobar baaki sarv chook"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 23,
+      "text": "(i) Gurujinee malaa prashna vichaarle.\n(ii) Tine garebaannaa paise dile.\nVareel vaakyaateel kriyaapade kontyaa prakaarachee aahet?",
+      "options": [
+        "Sakarmak",
+        "Akarmak",
+        "Dwikarmak",
+        "Sahaayya"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 24,
+      "text": "Pudheelaiki kontyaa gataateel tatsam shabd aahet?\na. Pad, dugdh, graas\nb. Ghar, haat, gaav\nk. Karna, aranya, jal",
+      "options": [
+        "Fakat a",
+        "Fakat b",
+        "Fakat a va b",
+        "Fakat a va k"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 25,
+      "text": "Vaakyaateel kriyaapadachya roopavaroon keval kaalaachaa bodh hot asel tar tyaalaa _______ vaakya mhanataat.",
+      "options": [
+        "Kaalavaachan",
+        "Vidhaanaarthee",
+        "Sanketaarth",
+        "Svaarthee"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi",
+      "category": "Marathi"
+    },
+    {
+      "id": 26,
+      "text": "\"It is extremely hot today.\"\nThe underlined word is:",
+      "options": [
+        "Adverb of Manner",
+        "Adverb of Frequency",
+        "Adverb of Degree",
+        "Adverb of Affirmation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 27,
+      "text": "Identify the sentence written in correct passive voice.",
+      "options": [
+        "Peter was taught to sing by Mr. Price.",
+        "Tim was started to respect by his colleagues.",
+        "I enjoyed taking the children to the zoo.",
+        "They saw him climbing over the fence."
+      ],
+      "correctAnswer": "A",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 28,
+      "text": "\"The Sun has ripened the fruit.\"\nWhich one of the following is the Passive Structure corresponding to the Active Voice structure above?",
+      "options": [
+        "d only",
+        "c only",
+        "b only",
+        "a only"
+      ],
+      "correctAnswer": "D",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 29,
+      "text": "The verb form of the given noun word \"Frost\" will be:",
+      "options": [
+        "Defrost",
+        "Freeze",
+        "Foster",
+        "Fructify"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 30,
+      "text": "Identify the correct conditional sentence.",
+      "options": [
+        "If he left his bicycle, someone will steal it.",
+        "If you try again, you would succeed.",
+        "If he had written the letter, I'll post it.",
+        "If we had found him earlier, we could have saved his life."
+      ],
+      "correctAnswer": "D",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 31,
+      "text": "\"None of us knew the way, _______\"\nThe correct tag-question for the sentence above is:",
+      "options": [
+        "a only (didn't we?)",
+        "c only (did we?)",
+        "d only (didn't any one?)",
+        "b only (did none?)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 32,
+      "text": "\"The dog that barks does not bite.\"\nThe underlined words are:",
+      "options": [
+        "Adjective clause",
+        "Adverb clause",
+        "Noun clause",
+        "None of the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 33,
+      "text": "Which one of the following is the one-word substitute of the given sentence.\n\"A decision which cannot be altered or withdrawn.\"",
+      "options": [
+        "Inexplicable",
+        "Inaudible",
+        "Irrevocable",
+        "Illicit"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 34,
+      "text": "The word \"Sanguine\" is synonymous with the word _______.\na. Serious  b. Sadistic  c. Optimistic  d. Genuine",
+      "options": [
+        "d only",
+        "c only",
+        "Both a and b",
+        "a only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 35,
+      "text": "Adversities provoke one to _______ one's best efforts.\nSelect the correct alternative to complete the sentence meaningfully.",
+      "options": [
+        "put forth",
+        "put back",
+        "put off",
+        "put up"
+      ],
+      "correctAnswer": "A",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 36,
+      "text": "Choose the correct meaning of the idiom underlined in the following sentence.\nShe is leading a dog's life as her husband is an alcoholic and without a job.",
+      "options": [
+        "a only (a life of misery)",
+        "b only",
+        "c only",
+        "d only"
+      ],
+      "correctAnswer": "A",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 37,
+      "text": "They have a huge reserve of latent talent.\nIdentify the correct meaning of the underlined word.",
+      "options": [
+        "Unseen",
+        "Modern",
+        "Latest",
+        "Admirable"
+      ],
+      "correctAnswer": "A",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 38,
+      "text": "Match the following pairs:\na. Eccentric - I. A person who believes in God\nb. Infallible - II. A man of strange habits\nc. Fanatic - III. A person who cannot make any mistakes\nd. Theist - IV. A person with narrow religious views",
+      "options": [
+        "IV, III, II, I",
+        "III, II, IV, I",
+        "II, III, IV, I",
+        "III, IV, II, I"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 39,
+      "text": "Select the alternative with the words spelt correctly.",
+      "options": [
+        "attendence, challange, antena, deficient",
+        "begar, ceilling, cliant, bravery",
+        "attendance, calendar, detergent, emperor",
+        "independent, sanitery, neighbour, matirial"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 40,
+      "text": "\"I always see eye to eye with my sister.\"\nThe underlined idiom in the sentence above means:",
+      "options": [
+        "Both a and b",
+        "c only (support)",
+        "d only",
+        "a only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 41,
+      "text": "(Passage on EV/Connected Mobility) The passage shows that\na. digital connectivity experts are concerned with vehicle users and consumers.\nb. manufacturers of motors and motorcycles are thinking of increasing their customers.\nc. the OEMs can easily adapt connected mobility.\nd. it is easy for the government to promote electric mobility.",
+      "options": [
+        "d only",
+        "a only",
+        "c only",
+        "Both b and d"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 42,
+      "text": "(Passage on EV/Connected Mobility) The integrated system of transportation should mainly think of\na. advancements in battery technology and power devices.\nb. data transfer and data analysis.\nc. modem for Connectivity and Bluetooth or Wi-Fi link.\nd. Safety and experience of vehicle users.",
+      "options": [
+        "b only",
+        "c only",
+        "Both a and d",
+        "d only"
+      ],
+      "correctAnswer": "D",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 43,
+      "text": "(Passage on EV/Connected Mobility) Vehicle users are reluctant to use electric vehicles because",
+      "options": [
+        "d only",
+        "b only",
+        "c only (concerned with cost of EVs and range)",
+        "Both a and b"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 44,
+      "text": "(Passage on EV/Connected Mobility) One of the challenges discussed in the passage is about\na. how to integrate various features for connectivity.\nb. how the vehicle user will access information about his geoposition.\nc. how the government will promote electric mobility.\nd. who will pay the maintenance cost of backend infrastructure.",
+      "options": [
+        "c only",
+        "d only",
+        "a only",
+        "b only"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 45,
+      "text": "(Passage on EV/Connected Mobility) The phrase 'by leaps and bounds' used in the passage means:",
+      "options": [
+        "b only (by jumps and limits)",
+        "d only",
+        "c only (very fast/rapidly)",
+        "a only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 46,
+      "text": "\"He knows how to break in horses.\"\nThe underlined idiom in the sentence above means:",
+      "options": [
+        "d only (hold by force)",
+        "c only (discipline)",
+        "b only (control)",
+        "a only (stop)"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 47,
+      "text": "\"The boy who is wearing a green shirt is my student.\"\nIn the given sentence, the underlined words describe:",
+      "options": [
+        "Noun clause",
+        "Adverb clause",
+        "Adjective clause",
+        "Both Noun and Adverb clauses"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 48,
+      "text": "\"Shall I buy a scooter?\"\nThe modal in the sentence above has been used to express:",
+      "options": [
+        "d only (giving advice)",
+        "b only (suggestion)",
+        "c only (seeking permission)",
+        "a only (promise)"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 49,
+      "text": "Choose the correct sentence.",
+      "options": [
+        "He has been working for two months.",
+        "He was slept when the thief broke in.",
+        "He has gone to Pune, yesterday.",
+        "We have gone there last week."
+      ],
+      "correctAnswer": "A",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 50,
+      "text": "Fill in the blank: \"She has been missing _______ Monday last.\"",
+      "options": [
+        "since",
+        "from",
+        "for",
+        "during"
+      ],
+      "correctAnswer": "A",
+      "explanation": "English",
+      "category": "English"
+    },
+    {
+      "id": 51,
+      "text": "All districts of Maharashtra are divided into _______ administrative divisions.",
+      "options": [
+        "Five",
+        "Six",
+        "Seven",
+        "Three"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 52,
+      "text": "Match the pair of States and Hydroelectric Project:\na. Karnataka - I. Durgapur\nb. West Bengal - II. Gandhisagar\nc. Odisha - III. Hirakud\nd. Madhya Pradesh - IV. Tungabhadra",
+      "options": [
+        "IV, I, III, II",
+        "III, II, I, IV",
+        "IV, III, II, I",
+        "III, IV, II, I"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 53,
+      "text": "Which administrative division has the highest number of districts in Maharashtra?",
+      "options": [
+        "Aurangabad",
+        "Pune",
+        "Konkan",
+        "Nagpur"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 54,
+      "text": "Arrange the coal fields of India from North to South in the proper sequence.",
+      "options": [
+        "Ranchi, Hazaribagh, Wardha Valley, Godavari Valley",
+        "Godavari Valley, Wardha Valley, Hazaribagh, Ranchi",
+        "Hazaribagh, Ranchi, Wardha Valley, Godavari Valley",
+        "Godavari Valley, Wardha Valley, Ranchi, Hazaribagh"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 55,
+      "text": "Tarapur nuclear power station is located in _______ taluka of Palghar district.",
+      "options": [
+        "Turbhe",
+        "Talasari",
+        "Wada",
+        "Palghar"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 56,
+      "text": "Examine the following statements and choose the correct option.\nStatement A: The world's largest River Island 'Majuli' is in Sindhu river bed.\nStatement B: In Tibet, river Brahmaputra is known as 'Dihang' and in Arunachal Pradesh, as 'Tsangpo'.",
+      "options": [
+        "Statement A and Statement B both are correct.",
+        "Statement A is correct and Statement B is wrong.",
+        "Statement A is wrong and Statement B is correct.",
+        "Statement A and Statement B both are wrong."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 57,
+      "text": "Examine the following statements and choose the correct option.\nStatement A: The hill range that spreads from Raireshwar to Shingnapur is known as Satpura hill range.\nStatement B: Godavari and Tapi river basins are separated by Satmala – Ajanta hill range.",
+      "options": [
+        "Statement A and Statement B both are correct.",
+        "Statement A is correct and Statement B is wrong.",
+        "Statement A is wrong and Statement B is correct.",
+        "Statement A and Statement B both are wrong."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 58,
+      "text": "Examine the following statements and choose the correct option.\nStatement A: The First Sugar Factory was established at Rahuri in Ahmednagar district, in the year 1920.\nStatement B: The First Co-operative sugar factory was founded at Loni (Pravaranagar) in Ahmednagar district in the year 1950.",
+      "options": [
+        "Statement A and Statement B both are correct.",
+        "Statement A is correct and Statement B is wrong.",
+        "Statement A is wrong and Statement B is correct.",
+        "Statement A and Statement B both are wrong."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 59,
+      "text": "Cluster settlements are found in _______ area of Maharashtra.",
+      "options": [
+        "Konkan",
+        "Deccan Plateau",
+        "Western Ghat top",
+        "Hilly areas of Eastern Vidarbha"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 60,
+      "text": "Match the pair of Column A (Peak) and Column B (Districts):\na. Astambha - I. Ahmednagar\nb. Salher - II. Amravati\nc. Chikhaldara - III. Nandurbar\nd. Harishchandragad - IV. Nashik",
+      "options": [
+        "IV, II, I, III",
+        "II, I, III, IV",
+        "I, III, IV, II",
+        "III, IV, II, I"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 61,
+      "text": "Which essential conditions have been suggested by WTO for globalization?\na. No limit of geographical boundary for trade\nb. Free capital movement\nc. Free flow of technology\nd. Free international movement of labour",
+      "options": [
+        "a only",
+        "b and d only",
+        "a, b and c only",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 62,
+      "text": "The 1993-94 budget had reduced the maximum rate of import duty from 110 percent to _______ percent.",
+      "options": [
+        "30",
+        "95",
+        "85",
+        "75"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 63,
+      "text": "Which things are expected in the privatization process?\na. To open public sector for private investment\nb. Free trade policy\nc. Special Economic Zone\nd. Government industry ownership transfer to private sector",
+      "options": [
+        "a and d only",
+        "a, b and c only",
+        "b and c only",
+        "All of the above"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 64,
+      "text": "India's Foreign Exchange Reserve was _______ in June 1991.",
+      "options": [
+        "1.1 billion dollars",
+        "10.1 billion dollars",
+        "20.1 billion dollars",
+        "20.5 billion dollars"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 65,
+      "text": "_______ deals in procurement, distribution, export and import of selected agricultural commodities.",
+      "options": [
+        "NAFED",
+        "FCI",
+        "NCDC",
+        "SIDBI"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 66,
+      "text": "Under the Liberalisation, Privatisation, Globalisation (LPG) Policy, Government of India allowed 100 percent FDI in _______ sector.",
+      "options": [
+        "b, c and d only",
+        "a, c and d only",
+        "a, b and d only",
+        "a, b and c only"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 67,
+      "text": "The Headquarter of World Trade Organization is at _______.",
+      "options": [
+        "France",
+        "U.K.",
+        "Russia",
+        "Geneva"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 68,
+      "text": "Due to fall in dollar value of exports by 1.5 percent in 1991-92, the exports grew by over _______ percent in 1993-94.",
+      "options": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 69,
+      "text": "Privatisation is related to _______.\na. Quality\nb. Non-corruption\nc. Efficiency\nd. Disinvestment",
+      "options": [
+        "a only",
+        "b and d only",
+        "a and c only",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 70,
+      "text": "The Government hands over the PSU's to private sector, which means _______.",
+      "options": [
+        "Capitalisation",
+        "Privatisation",
+        "Mixed economy",
+        "None of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Economics",
+      "category": "Economics"
+    },
+    {
+      "id": 71,
+      "text": "Which of the following statements is incorrect about Legislative Council?",
+      "options": [
+        "1/3rd of its members are elected by local bodies.",
+        "It is not subject to dissolution.",
+        "President has the final power to decide about its composition.",
+        "Minimum strength of Legislative Council cannot be less than 40."
+      ],
+      "correctAnswer": "C",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 72,
+      "text": "Consider the following statements about Gram Panchayats in Maharashtra:\nA. A motion of no-confidence against Sarpanch may be moved by not less than one-third of the total number of the members of Gram Panchayat.\nB. No such motion of no-confidence shall be brought within a period of three months from the date of election of Sarpanch.",
+      "options": [
+        "Statement A is correct B is false.",
+        "Statement B is correct A is false.",
+        "Both the statements are correct.",
+        "Both the statements are false."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 73,
+      "text": "Which one of the following is not an 'All-India Service'?",
+      "options": [
+        "Indian Forest Service",
+        "Indian Foreign Service",
+        "Indian Administrative Service",
+        "Indian Police Service"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 74,
+      "text": "Who has the right to remove the Judges of High Court from their post?",
+      "options": [
+        "a and b only",
+        "b and c only",
+        "c only (President through the process of impeachment)",
+        "d only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 75,
+      "text": "Which of the following Amendment Act of the Indian Constitution added provisions mainly regarding Panchayats?",
+      "options": [
+        "72nd",
+        "73rd",
+        "74th",
+        "42nd"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 76,
+      "text": "Match the following pairs:\na. Baba Padamji - I. Starting of the Newspaper 'Sudharak'\nb. Savitribai Phule - II. Starting the weekly 'Prabhakar'\nc. Gopal Ganesh Agarkar - III. The collection of poetry 'Bavan Kashi Subodh Ratnakar'\nd. Bhau Mahajan - IV. The novel 'Yamuna Paryatan'",
+      "options": [
+        "IV, III, I, II",
+        "III, IV, I, II",
+        "II, I, IV, III",
+        "IV, I, III, II"
+      ],
+      "correctAnswer": "A",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 77,
+      "text": "Mahatma Jyotiba Phule has praised the three basics of Liberty, Equality and Universal Brotherhood in his book _______.",
+      "options": [
+        "Sarvajanik Satyadharma Pustak",
+        "Brahmananche Kasab",
+        "Gulamgiri",
+        "Shetkaryancha Asud"
+      ],
+      "correctAnswer": "A",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 78,
+      "text": "Anutai Wagh worked for the upliftment of Tribal Society.\na. Establishment of Tribal Seva Mandal\nb. Installation of Koswad Project\nc. Beginning of Play School (Daycare Centre) and Montessory\nd. Beginning of Educational Institutions\nWhich of the statements given above are correct?",
+      "options": [
+        "a, b and c only",
+        "b, c and d only",
+        "b and c only",
+        "a, b, c and d"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 79,
+      "text": "Which of the following principles was not the principle of Arya Samaj?",
+      "options": [
+        "Encouragement of female education.",
+        "Vedas are full of knowledge; spread the knowledge given in Vedas.",
+        "Do not worship idols.",
+        "Do not believe in rebirth."
+      ],
+      "correctAnswer": "D",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 80,
+      "text": "Who wrote the book 'Vital Vidhwansak'?",
+      "options": [
+        "Shivram Dyanba Kamble",
+        "Kisan Bandsode",
+        "Gopal Baba Walangkar",
+        "Mahatma Phule"
+      ],
+      "correctAnswer": "C",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 81,
+      "text": "Which among the following countries, has decided to use India as a base to address their food security concerns?",
+      "options": [
+        "Bhutan",
+        "Bangladesh",
+        "Maldives",
+        "Saudi Arabia"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 82,
+      "text": "In 2018, India inaugurated the construction of cross-country oil pipeline project. Which is the other country partnering in this project?",
+      "options": [
+        "China",
+        "Bhutan",
+        "Maldives",
+        "Bangladesh"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 83,
+      "text": "What is the name of India – China joint military exercise?",
+      "options": [
+        "Hand-in-Hand 2019",
+        "Mitra Shakti",
+        "Maitree exercise",
+        "Vajra Prahar"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 84,
+      "text": "Sir Creek roughly divides the Kutch region of Gujarat from _______ province of Pakistan.",
+      "options": [
+        "Balochistan",
+        "Sindh",
+        "Punjab",
+        "Khyber Pakhtunkhwa"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 85,
+      "text": "India shares maritime border with _______ countries.",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "5"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 86,
+      "text": "Marathi feature film 'Panghrun' is based on a short story by _______.",
+      "options": [
+        "Chintamani Tryambak Khanolkar",
+        "Balakrishna Bhagwant Borkar",
+        "Shripad Narayan Pendse",
+        "Atmaram Ravji Deshpande"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 87,
+      "text": "Amar Jawan Jyoti was built as a tribute to Indian soldiers after the _______.",
+      "options": [
+        "1971 war",
+        "1962 war",
+        "1998 war",
+        "1857 war"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 88,
+      "text": "'Prabuddha Bharata', a monthly journal of the Ramkrishna Order, started by Swami Vivekananda completed _______ years of publication in 2021.",
+      "options": [
+        "125",
+        "200",
+        "100",
+        "75"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 89,
+      "text": "Which of the following countries was not part of the European Union as of March 2022?",
+      "options": [
+        "Germany",
+        "Norway",
+        "France",
+        "Austria"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 90,
+      "text": "Who wrote the book 'A Little Book of India: Celebrating 75 years of Independence'?",
+      "options": [
+        "Ruskin Bond",
+        "Salman Rushdie",
+        "Shashi Tharoor",
+        "William Dalrymple"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 91,
+      "text": "Who formed the Abhinav Bharat, a revolutionary organization?",
+      "options": [
+        "V.D. Savarkar",
+        "Lokmanya Tilak",
+        "Bipin Chandra Pal",
+        "Balkrishna Chapekar"
+      ],
+      "correctAnswer": "A",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 92,
+      "text": "_______ was not a follower of Jyotirao Phule or his Satyashodhak Samaj.",
+      "options": [
+        "Shahu Maharaj",
+        "Govande",
+        "Walvekar",
+        "Lokhande"
+      ],
+      "correctAnswer": "A",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 93,
+      "text": "Match the pair event and related year:\na. Partition of Bengal - I. 1909\nb. Establishment of Muslim League - II. 1916\nc. Separate Electorates Act - III. 1905\nd. Lucknow Pact - IV. 1906",
+      "options": [
+        "III, I, IV, II",
+        "IV, I, II, III",
+        "III, IV, I, II",
+        "III, I, II, IV"
+      ],
+      "correctAnswer": "C",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 94,
+      "text": "The Father of Indian Workers Movement is _______.",
+      "options": [
+        "Shashipad Banerjee",
+        "Prof. N.P. Ranga",
+        "N.M. Joshi",
+        "Narayan Meghaji Lokhande"
+      ],
+      "correctAnswer": "D",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 95,
+      "text": "Objectives of the Indian National Congress:\na. To make the people of India forget the differences in religion, race, caste, language, geographical territories and bring them on a common platform.\nb. To deliberate the problems of Indians.\nc. To increase the feelings of oneness among the Indians.\nd. To put in efforts for Indian Independence.\nWhich of the statements given above are correct?",
+      "options": [
+        "a, b and d only",
+        "b, c and d only",
+        "a, b and c only",
+        "All of the above"
+      ],
+      "correctAnswer": "C",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 96,
+      "text": "Kakori incidence was related with _______.",
+      "options": [
+        "Abhinav Bharat",
+        "Communist Party",
+        "Indian Republican Army",
+        "Hindustan Socialist Republican Association"
+      ],
+      "correctAnswer": "D",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 97,
+      "text": "Who was the first President of Indian National Congress?",
+      "options": [
+        "Dadabhai Naoroji",
+        "Womesh Chandra Banerjee",
+        "Firozshah Mehta",
+        "Justice Ranade"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 98,
+      "text": "He organised the Ramoshi's and revolted against the British.\na. Vasudev Balwant Phadke  b. Ram Singh Kuka\nc. Birsa Munda  d. Kajar Singh",
+      "options": [
+        "a and d only",
+        "a and c only",
+        "a only",
+        "d only"
+      ],
+      "correctAnswer": "C",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 99,
+      "text": "'Anath Balika Ashram' was started by _______.",
+      "options": [
+        "D.K. Karve",
+        "M.G. Ranade",
+        "Mahatma Jyotiba Phule",
+        "Dr. B.R. Ambedkar"
+      ],
+      "correctAnswer": "A",
+      "explanation": "History",
+      "category": "History"
+    },
+    {
+      "id": 100,
+      "text": "Who wrote the book 'Majhya Athavani'?",
+      "options": [
+        "Annabhau Sathe",
+        "Vitthal Ramji Shinde",
+        "Pandita Ramabai",
+        "Ramabai Ranade"
+      ],
+      "correctAnswer": "B",
+      "explanation": "History",
+      "category": "History"
+    }
+  ],
+  "language": "marathi"
+}
