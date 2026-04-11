@@ -47,7 +47,7 @@ export default function About() {
               </li>
               <li>
                 <strong>Category-wise Practice</strong> — Practice questions sorted by
-                subject: Polity, History, Geography, Science, GK, Economics
+                subject: Indian Polity, History, Geography, Science, Environment, Economics
               </li>
               <li>
                 <strong>Instant Results</strong> — Get your score immediately with detailed

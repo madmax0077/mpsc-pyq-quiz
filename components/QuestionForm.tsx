@@ -5,7 +5,7 @@ import { Question, OptionKey, CATEGORIES, Category } from "@/lib/types";
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
 const CATEGORY_COLORS: Record<Category, { bg: string; text: string; border: string; ring: string }> = {
-  Polity:    { bg: "bg-blue-50",    text: "text-blue-700",    border: "border-blue-200",    ring: "ring-blue-100" },
+  "Indian Polity":    { bg: "bg-blue-50",    text: "text-blue-700",    border: "border-blue-200",    ring: "ring-blue-100" },
   History:   { bg: "bg-amber-50",   text: "text-amber-700",   border: "border-amber-200",   ring: "ring-amber-100" },
   Geography: { bg: "bg-emerald-50", text: "text-emerald-700", border: "border-emerald-200", ring: "ring-emerald-100" },
   Science:   { bg: "bg-purple-50",  text: "text-purple-700",  border: "border-purple-200",  ring: "ring-purple-100" },
@@ -14,6 +14,7 @@ const CATEGORY_COLORS: Record<Category, { bg: string; text: string; border: stri
   Aptitude:  { bg: "bg-orange-50",  text: "text-orange-700",  border: "border-orange-200",  ring: "ring-orange-100" },
   English:   { bg: "bg-cyan-50",    text: "text-cyan-700",    border: "border-cyan-200",    ring: "ring-cyan-100" },
   Marathi:   { bg: "bg-rose-50",    text: "text-rose-700",    border: "border-rose-200",    ring: "ring-rose-100" },
+  Environment: { bg: "bg-lime-50",  text: "text-lime-700",    border: "border-lime-200",    ring: "ring-lime-100" },
 };
 
 interface Props {

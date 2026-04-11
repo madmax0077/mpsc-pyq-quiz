@@ -2,7 +2,7 @@ export type OptionKey = "A" | "B" | "C" | "D";
 export type Language = "english" | "marathi";
 
 export const CATEGORIES = [
-  "Polity",
+  "Indian Polity",
   "History",
   "Geography",
   "Science",
@@ -11,6 +11,7 @@ export const CATEGORIES = [
   "Aptitude",
   "English",
   "Marathi",
+  "Environment",
 ] as const;
 
 export type Category = (typeof CATEGORIES)[number];

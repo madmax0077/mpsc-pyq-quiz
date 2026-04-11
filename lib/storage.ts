@@ -2,6 +2,7 @@ import { Quiz } from "./types";
 
 const STORAGE_KEY = "mcq_quiz_app_quizzes";
 const MIGRATION_KEY = "mcq_migration_gk_to_ca";
+const MIGRATION_KEY_POLITY = "mcq_migration_polity_to_indian_polity";
 
 function migrateGKtoCurrentAffairs(): void {
   if (typeof window === "undefined") return;
@@ -13,6 +14,19 @@ function migrateGKtoCurrentAffairs(): void {
       if (updated !== raw) localStorage.setItem(STORAGE_KEY, updated);
     }
     localStorage.setItem(MIGRATION_KEY, "1");
+  } catch { /* ignore */ }
+}
+
+function migratePolityToIndianPolity(): void {
+  if (typeof window === "undefined") return;
+  if (localStorage.getItem(MIGRATION_KEY_POLITY)) return;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) {
+      const updated = raw.replace(/"category"\s*:\s*"Polity"/g, '"category":"Indian Polity"');
+      if (updated !== raw) localStorage.setItem(STORAGE_KEY, updated);
+    }
+    localStorage.setItem(MIGRATION_KEY_POLITY, "1");
   } catch { /* ignore */ }
 }
 
@@ -34,6 +48,7 @@ export function saveQuiz(quiz: Quiz): void {
 export function getAllQuizzes(): Quiz[] {
   if (typeof window === "undefined") return [];
   migrateGKtoCurrentAffairs();
+  migratePolityToIndianPolity();
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return [];

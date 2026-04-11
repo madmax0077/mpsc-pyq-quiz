@@ -5,13 +5,14 @@ import { getSummary, getCategoryAccuracy, getScoreTimeline } from "@/lib/analyti
 import { CATEGORIES } from "@/lib/types";
 
 const CAT_COLORS: Record<string, string> = {
-  Polity: "#3b82f6",
+  "Indian Polity": "#3b82f6",
   History: "#f59e0b",
   Geography: "#10b981",
   Science: "#8b5cf6",
   "Current Affairs": "#ec4899",
   Economics: "#14b8a6",
   Aptitude: "#f97316",
+  Environment: "#84cc16",
   Uncategorized: "#94a3b8",
 };
 
