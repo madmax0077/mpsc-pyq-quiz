@@ -1,0 +1,1307 @@
+{
+  "id": "gts-pre-2021-english",
+  "title": "MPSC Gazetted TS Combined Pre 2021 (English)",
+  "createdAt": "2025-04-09T00:00:00.000Z",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Match the correct pair:\na. Unhaalyaat bharpoor paani pyaave - I. Sthalavaachak Kriyaavisheshan\nb. Jase karaave tase bharaave - II. Kaalavaachak Kriyaavisheshan\nk. Hallee mahagaai zhaali aahe - III. Reeteevaachak Kriyaavisheshan\nd. Pudhe patangan aahe - IV. Parinamavaachak Kriyaavisheshan",
+      "options": [
+        "IV, II, III, I",
+        "IV, III, II, I",
+        "I, II, III, IV",
+        "I, III, IV, II"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 2,
+      "text": "Jya vyanjananchaa uchchaar kartaanaa havaa adhik pramaanaat vaaparali jaate tya vyanjanannaa kaay mhanataat?",
+      "options": [
+        "Mahaapraan vyanjane",
+        "Alpapraan vyanjane",
+        "Sanyukt vyanjane",
+        "Kanthy vyanjane"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 3,
+      "text": "'Ik' pratyayaant shabd hrasva astataat. Ya niyamaachaa aadhaar gheun pudheel shabdaateel shuddha 'shabd' olakha.",
+      "options": [
+        "Bhaugolik",
+        "Saahityik",
+        "Saamajeek",
+        "Praasangeek"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 4,
+      "text": "'Aajanma' ya saamasik shabdaachaa samaas olakhaa.",
+      "options": [
+        "Aluk tatpurush samaas",
+        "Karmdhaaray samaas",
+        "Avyayeebhaav samaas",
+        "Dvigu samaas"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 5,
+      "text": "(Passage-based) Maanavi svabhaavache mool svaroop samajnyaasaathi aavashyak aslele ghatak konte?",
+      "options": [
+        "Pruthviche sarvageen ashtailutva jaannyaachi ichchhaa",
+        "Dnyaanche utkhanan, sanshodhan va manan hone",
+        "Maanavi manaache bhaavtarang samajoon denaaree shakti",
+        "Svabhaav pareekshanaalaa vidnyaanaachi jod"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 6,
+      "text": "(Passage-based) Maanavaachya shodhak buddhishi sambandhit aslelaa kamaal maryadaa konate?",
+      "options": [
+        "Mhaisoorchya khaaneeteel pivalya daadtukadyaanche pruthakkaran",
+        "Chandravaril maateebhondyaanche sanshodhan",
+        "Srushteeteel hajaro ghatkaanche sanshodhan",
+        "Sooryavaril sanshodhan"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 7,
+      "text": "(Passage-based) 'Vaidnyanikdrushtya zaalele maanavi sanshodhan apoornn aahe' ase Shreeramakrishnaanna kaa vaate?",
+      "options": [
+        "Kaaran mukhya svabhaavache marma va jadanghadana ukalnyaat manushya asamarth tharla aahe mhanoon",
+        "Manushya svabhaav mhanje jaldheesthali asnaare mrugajal aahe mhanoon",
+        "Saamaajik manaachaa prashna aahe mhanoon",
+        "Vidnyaanane khoop pragati keli mhanoon"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 8,
+      "text": "(Passage-based) Maanavi svabhaavaroopi mrugajalaachya burkhyaat laplelaa saamaajik gahan prashna kontaa?",
+      "options": [
+        "Manushya manah patalaavar umatat jaanaare berevaaeet bhaavtarang",
+        "Saadhya pavitraane trayasthaashi bolane, vaagne",
+        "Maanasaachi labaadd ahamanyavruttee",
+        "Samaajaateel daambhik, khotarade, bhondu svabhaavaachi maanase olakhayachi kashi?"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 9,
+      "text": "(Passage-based) Aaple man-svabhaav-vichaar paripakva karnaari Shreeramakrishnanna abhipret aslelaa shakti kontee?",
+      "options": [
+        "Mrugajal aslele aantarman",
+        "Sajjad prayatnawaad",
+        "Saarya srushteet bhraman karnaari aatmashakti",
+        "Ahamanyavruttee"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 10,
+      "text": "'Hatabal' yaa shabdache vibhakti pratyayaachya sahaayyaane honare panchamee bahuvreehee samaasaache roop konte?",
+      "options": [
+        "Hatabal zaalela aahe to",
+        "Haataatoon bal gelela",
+        "Haataat aahe bal jyaachya to",
+        "Gele aahe bal jyaatoon to"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 11,
+      "text": "'Malaa pareekshet pahilaa varg milhaavaa.' Yaa vaakyaachaa prakaar olakhaa.",
+      "options": [
+        "Hokaarthee",
+        "Sanketaarthee",
+        "Aadnyaarthee",
+        "Vishyaarthee"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 12,
+      "text": "Var, khaalee, pudhe hee kriyaavisheshan avyaye jevhaa svatantra na yetaa shabdaalaa jodoon yetaat tevhaa tyaannaa kaay mhatale jaate?",
+      "options": [
+        "Ubhayaanvayee avyay",
+        "Keval prayogee avyay",
+        "Shabdayogee avyay",
+        "Kriyaavisheshan avyay"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 13,
+      "text": "'Udyaapaasoon bus va railwesevaa suroo hoeel.' Yaa vaakyaachaa rachanenoosaar prakaar olakhaa.",
+      "options": [
+        "Sanketaarthee",
+        "Keval vaakya",
+        "Mishra vaakya",
+        "Sanyukt vaakya"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 14,
+      "text": "Shreemant vhaave ase konaala vaatat naahi?\nYaa vaakyaache vidhaanaarthee vaakyaat roopantar karaa.\na. Gareeb vhaave ase malaa vaatate.\nb. Shreemant vhaave ase malaa ajibaat vaatat naahi.\nc. Shreemant vhaave ase sarvaanna vaatate.\nd. Gareeb vhaave ase anekanna vaatate.",
+      "options": [
+        "a barobar",
+        "a va d barobar",
+        "k barobar",
+        "d barobar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 15,
+      "text": "Khaaleelaiki 'Kanadi' shabdaanchaa gat olakhaa.\na. Arj, hukoom\nb. Bhaakari, toop\nc. Pagaar, tambaakhoo\nd. Tulaal, ghee",
+      "options": [
+        "Fakat a va d barobar",
+        "Fakat a va b barobar",
+        "Fakat b barobar",
+        "Fakat d barobar"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Marathi Language",
+      "category": "Marathi Language"
+    },
+    {
+      "id": 16,
+      "text": "Choose the correctly spelt word/s.\na. PROMENADE\nb. PROMINANCE\nc. PROMISCUOUS",
+      "options": [
+        "Only c",
+        "Only a and c",
+        "Only a and b",
+        "All of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 17,
+      "text": "Match the following:\na. The feeling that you have previously experienced something - I. De jure\nb. The crime of killing one's brother or sister - II. Regicide\nc. According to the law - III. Fratricide\nd. The crime of killing a king or queen - IV. Déjà vu",
+      "options": [
+        "I, II, IV, III",
+        "IV, III, I, II",
+        "III, IV, I, II",
+        "IV, III, II, I"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 18,
+      "text": "She _______ four awards.\nChoose the correct alternative to complete the sentence meaningfully.",
+      "options": [
+        "carried away",
+        "carried off",
+        "carried on",
+        "carried out"
+      ],
+      "correctAnswer": "B",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 19,
+      "text": "Identify complex sentence/s.\na. I know that Mohan is a bank manager.\nb. What you told me is true.\nc. I helped him because he was very weak.",
+      "options": [
+        "Only c",
+        "Only a and c",
+        "Only b and c",
+        "a, b and c"
+      ],
+      "correctAnswer": "D",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 20,
+      "text": "In which of the following is an article used correctly?\na. I was tired of the life.\nb. The both anxious parents sat up the half night.\nc. The Kapoors are our neighbours.",
+      "options": [
+        "Only c",
+        "Only a",
+        "Only b and c",
+        "a, b and c"
+      ],
+      "correctAnswer": "A",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 21,
+      "text": "(Passage on Diet & Nutrition) The passage focuses on:\na. Nutrition for vigour and vitality.\nb. Importance of nutrients in curing diseases.\nc. Types of nutrients.\nd. Balanced diet.",
+      "options": [
+        "Only a and b",
+        "Only c and d",
+        "Only a, b and d",
+        "All of the above"
+      ],
+      "correctAnswer": "D",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 22,
+      "text": "(Passage on Diet & Nutrition) What are the causes of nutritional deficiencies?\na. Use of preservatives in food\nb. Intake of refined food\nc. No use of pesticides and chemical fertilizers\nd. Use of wholesome foods and fruits\ne. Long interval between harvesting and consumption of vegetables and fruits.",
+      "options": [
+        "a, b, c, d, e",
+        "a, b, d, e",
+        "a, b, e",
+        "a, b, c, e"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 23,
+      "text": "(Passage on Diet & Nutrition) The phrase 'well balanced diet' refers to:\na. Intake of a variety of foods.\nb. Consumption of whole meal bread and the white stuff.\nc. Proper consumption of vegetables and fruits.\nd. Intake of the foods which supply all the essential nutrients.",
+      "options": [
+        "Only a and b",
+        "Only b and d",
+        "Only a",
+        "Only d"
+      ],
+      "correctAnswer": "D",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 24,
+      "text": "(Passage on Diet & Nutrition) Find out the word in the passage which means 'Not supplied in required quantity'",
+      "options": [
+        "Deficiency",
+        "Nutrition",
+        "Liberal quantity",
+        "Undersupply"
+      ],
+      "correctAnswer": "D",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 25,
+      "text": "a. Absence of any of the essential nutrients may lead to death.\nb. Oxygen and water are vital elements in human cells.\nc. Diseases caused by nutritional deficiencies are irreparable.\nd. Diet is one of the essential factors in building and maintaining good health.\nChoose the correct alternative/s.",
+      "options": [
+        "Only a, b and d",
+        "Only a, c and d",
+        "Only b, c and d",
+        "Only b and c"
+      ],
+      "correctAnswer": "A",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 26,
+      "text": "I am extremely happy.\nSelect the correct alternative to tag question to the above sentence.",
+      "options": [
+        "am I?",
+        "isn't I?",
+        "aren't I?",
+        "isn't it?"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 27,
+      "text": "Before Akshay came to Bollywood, he _______ in hotels for five years.\nSelect the correct alternative to complete the sentence meaningfully.",
+      "options": [
+        "was working",
+        "has been working",
+        "had worked",
+        "had been working"
+      ],
+      "correctAnswer": "D",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 28,
+      "text": "Choose the alternative closest in meaning to the word in capitals.\nThe negotiations have reached an IMPASSE.",
+      "options": [
+        "Point at which further development is blocked.",
+        "Point at which highest profit is guaranteed.",
+        "Point of no profit no loss.",
+        "Point at which a meeting concludes."
+      ],
+      "correctAnswer": "A",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 29,
+      "text": "Identify the part of speech of the word underlined in the following sentence:\nDon't go near the edge.",
+      "options": [
+        "Adverb",
+        "Adjective",
+        "Preposition",
+        "Conjunction"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 30,
+      "text": "Which of the following is not a synonym of the word GARRULOUS?\na. Loquacious\nb. Talkative\nc. Gauge",
+      "options": [
+        "Only a and b",
+        "Only b and c",
+        "Only c",
+        "All of the above"
+      ],
+      "correctAnswer": "C",
+      "explanation": "English Language",
+      "category": "English Language"
+    },
+    {
+      "id": 31,
+      "text": "Which of the following features of the Indian Constitution are inconsistent with the Federal principle?\na. One Constitution for the States\nb. Single citizenship\nc. More legislative power to the Centre\nd. Appointment of Governor by the Centre\ne. States field of legislation cannot be invaded by the Centre",
+      "options": [
+        "a, b, c, d, e",
+        "a, b, c, d",
+        "a, c, d",
+        "b, c, e"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 32,
+      "text": "Consider the following statements:\na. 'Fundamental Duties' is a salient feature of the Indian Constitution.\nb. These were added by the 44th Constitutional Amendment Act in the Constitution.",
+      "options": [
+        "Only a is correct",
+        "a is correct, b is wrong",
+        "Both a and b are correct",
+        "Both a and b are wrong"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 33,
+      "text": "Which Article of the Constitution provides for the Finance Commission?",
+      "options": [
+        "Article 324",
+        "Article 280",
+        "Article 224",
+        "Article 380"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 34,
+      "text": "What among the following is not true about the Public Accounts Committee?\na. The Committee was set up in 1921.\nb. Its main function is to examine the annual reports of CAG.\nc. It consists of 15 Lok Sabha members and 7 Rajya Sabha members.\nd. The term of the office of the Public Accounts Committee is one year.",
+      "options": [
+        "Only a",
+        "Only b",
+        "Only c and d",
+        "All are true"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 35,
+      "text": "Which of the following statements are correct about Lok Sabha sessions?\na. Lok Sabha shall meet at least twice in a year.\nb. Interval between two consecutive sessions shall be less than six months.\nc. The President summons the Lok Sabha to meet.\nd. Speaker of Lok Sabha will decide time and place of Lok Sabha session.",
+      "options": [
+        "a, b, c and d",
+        "Only a, b and c",
+        "Only a, c and d",
+        "Only a and b"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 36,
+      "text": "Consider the following statements and choose the correct option.\na. A Constitutional Amendment Bill can be introduced in the Parliament only.\nb. The President must give assent to the Constitutional Amendment Bill after it is duly passed by the Parliament and ratified by State Legislatures, where necessary.\nc. Constitutional Amendment process is laid down in Article 365.",
+      "options": [
+        "Only a and c",
+        "Only a and b",
+        "Only b and c",
+        "All of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 37,
+      "text": "The Chairman of National Human Rights Commission is appointed by the President on the recommendation of a Committee of certain persons. Who among the following is/are not member of that Committee?\na. The Prime Minister\nb. The Home Minister\nc. The Leader of the Opposition Party in the Lok Sabha\nd. The Chairman of Rajya Sabha",
+      "options": [
+        "Only a",
+        "Only b and d",
+        "Only c",
+        "Only d"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 38,
+      "text": "Which of the following is an exclusive power of Rajya Sabha?",
+      "options": [
+        "Impeachment of President",
+        "Setting up of All India Services",
+        "Electoral power for Vice President's Election",
+        "Power related to introduce the Finance bill"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 39,
+      "text": "'To provide opportunities for education by Mother-Father or Guardian to their child or ward between the age of 6 and 14 years.' By which Constitutional Amendment Act was this Fundamental Duty added in the Constitution?",
+      "options": [
+        "85th Constitutional Amendment Act, 2002",
+        "82nd Constitutional Amendment Act, 2000",
+        "86th Constitutional Amendment Act, 2002",
+        "81st Constitutional Amendment Act, 2000"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 40,
+      "text": "Arrange the following Committees according to their establishment year in ascending order:\na. Ashok Mehta Committee\nb. Balwant Rai Mehta Committee\nc. G.V.K. Rao Committee\nd. K. Santhanam Committee",
+      "options": [
+        "b, c, d, a",
+        "b, a, d, c",
+        "b, a, c, d",
+        "b, d, a, c"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Indian Polity",
+      "category": "Indian Polity"
+    },
+    {
+      "id": 41,
+      "text": "Two wires A and B are made of same material and having their lengths in the ratio 6:1 are connected in series. The P.D. across the wires are 3 V and 2 V respectively. Find RB/RA, where RA and RB are the radii of the 2 wires.",
+      "options": [
+        "1/4",
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 42,
+      "text": "Sound waves are longitudinal mechanical waves that can travel through which of the following mediums?",
+      "options": [
+        "Gases",
+        "Liquids",
+        "Solids",
+        "In all of above mediums"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 43,
+      "text": "The focal lengths of two lenses are 2 m and 1 m, then the total power of a combination of these lenses is",
+      "options": [
+        "3 D",
+        "1.5 D",
+        "1 D",
+        "0.5 D"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 44,
+      "text": "The chemical reagent used to remove permanent hardness of water is/are",
+      "options": [
+        "only washing soda",
+        "only sodium hexametaphosphate",
+        "Both (1) and (2)",
+        "None of the above"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 45,
+      "text": "The resultant dipole moment in NF3 molecule is _______ and in the direction of _______ atom/s.",
+      "options": [
+        "low, nitrogen",
+        "high, fluorine",
+        "high, nitrogen",
+        "low, fluorine"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Science",
+      "category": "Science"
+    },
+    {
+      "id": 46,
+      "text": "Which of the following set of quantum numbers is not possible?",
+      "options": [
+        "n=1, l=0, m=0, s=+1/2",
+        "n=4, l=0, m=3, s=-1/2",
+        "n=1, l=1, m=0, s=-1/2",
+        "n=3, l=2, m=2, s=+1/2"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Science"
+    },
+    {
+      "id": 47,
+      "text": "Over which of the following latitudes is the Geostationary satellite set?",
+      "options": [
+        "The Equator",
+        "The Tropic of Cancer",
+        "The Antarctic Circle",
+        "The Poles"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Computer Science & IT",
+      "category": "Computer Science & IT"
+    },
+    {
+      "id": 48,
+      "text": "In interpreting the aerial photograph, the pair of adjacent aerial photographs is called",
+      "options": [
+        "Aerial photograph",
+        "Stereoscope",
+        "Texture",
+        "Stereogram"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Computer Science & IT",
+      "category": "Computer Science & IT"
+    },
+    {
+      "id": 49,
+      "text": "State which of the following statements is true?",
+      "options": [
+        "In the raster data model, the basic building block is the individual cell.",
+        "In the vector data model, the basic building block is the individual cell.",
+        "In the vector data model, well-defined boundaries are represented.",
+        "In the vector data model, locations are well represented."
+      ],
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Computer Science & IT"
+    },
+    {
+      "id": 50,
+      "text": "What is the long form of the term 'HTML', used in relation to Internet?",
+      "options": [
+        "Hyper Tool Markup Language",
+        "Hybrid Text Making Language",
+        "Hyper Text Markup Language",
+        "Hybrid Test Making Language"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Computer Science & IT",
+      "category": "Computer Science & IT"
+    },
+    {
+      "id": 51,
+      "text": "The emergence of electronic commerce can be defined as",
+      "options": [
+        "The transaction of business on the Internet",
+        "Electronic education on the Internet",
+        "Electrical methodologies for transaction",
+        "Communication on the Internet"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Computer Science & IT",
+      "category": "Computer Science & IT"
+    },
+    {
+      "id": 52,
+      "text": "What is the full form of ASCII?",
+      "options": [
+        "All Standard Characters for Information Identity",
+        "American Standard Code for Information Interchange",
+        "All Simple Codes for Infotainment Interests",
+        "American Standard Characters for Information Interchange"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Computer Science & IT",
+      "category": "Computer Science & IT"
+    },
+    {
+      "id": 53,
+      "text": "What is cyber bullying?",
+      "options": [
+        "Spamming",
+        "Scareware",
+        "Threatening through Internet",
+        "Adware"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Computer Science & IT",
+      "category": "Computer Science & IT"
+    },
+    {
+      "id": 54,
+      "text": "In the Western Himalayas, fruit gardens are developed due to",
+      "options": [
+        "Soil in the Western Himalayan region being good for the growth of fruit gardens",
+        "the Western Himalayan region receiving rainfall in winter, which is favourable for the growth of fruit gardens",
+        "the amount of rainfall being generally low in the Western Himalayas",
+        "Mountain climate being favourable for the growth of fruit gardens"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 55,
+      "text": "Which of the following atmospheric conditions is responsible for the occurrence of the Indian climatic phenomena 'Retreating Monsoon'?",
+      "options": [
+        "Expansion of high pressure belt from north-west to south-east direction in India.",
+        "The south-west monsoon winds reach the foothills of the Himalayas, blocked by the Himalayan ranges, and then retreat from the Himalayas.",
+        "Apparent movement of the Sun.",
+        "Occurrence of steep pressure gradient in the Indian sub-continent."
+      ],
+      "correctAnswer": "A",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 56,
+      "text": "Arrange in correct order the following mountain ranges from the South to North.",
+      "options": [
+        "Shivalik range, Greater Himalayas, Zaskar range, Pirpanjal range, Ladakh range, Karakoram range",
+        "Shivalik range, Pirpanjal range, Greater Himalayas, Zaskar range, Ladakh range, Karakoram range",
+        "Shivalik range, Zaskar range, Pirpanjal range, Ladakh range, Greater Himalayas, Karakoram range",
+        "Shivalik range, Pirpanjal range, Zaskar range, Ladakh range, Karakoram range, Greater Himalayas"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 57,
+      "text": "The periodical difference between the shortest day and the longest day in India is given below:\na. In south near Kanyakumari it is about 45 minutes.\nb. In north near Leh in Ladakh it is about 4 hours.\nWhy does this time difference take place?",
+      "options": [
+        "Kanyakumari is situated near the equator and Leh is far away from the equator.",
+        "Location of Kanyakumari is in the tropical hemisphere while Leh is located in the temperate hemisphere.",
+        "The periodical difference between the day time and night time is minimum in South India while it goes on increasing towards North India.",
+        "The axis of the Earth is inclined to the plane of the ecliptic at an angle of 66° 30' giving rise to increasing length of day and night from the equator to the poles."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 58,
+      "text": "Which of the following types of forests is found in areas above 1200 m altitude and receiving 400 cm and more amount of rainfall in the Sahyadris?",
+      "options": [
+        "Tropical evergreen forest",
+        "Tropical semi-evergreen forest",
+        "Sub-tropical evergreen forest",
+        "Tropical humid deciduous forest"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 59,
+      "text": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (B).\n(A) Groundwater resource has been depleted intensively in Maharashtra.\n(B) There is a need for groundwater conservation in Maharashtra.",
+      "options": [
+        "Both (A) and (B) are true and (B) is the correct explanation of (A)",
+        "Both (A) and (B) are true but (B) is not the correct explanation of (A)",
+        "(A) is true but (B) is false",
+        "(A) is false but (B) is true"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 60,
+      "text": "Why is the sex-ratio in the districts of Sindhudurg and Ratnagiri in Konkan maximum in Maharashtra?",
+      "options": [
+        "Low rate of female foeticide in these districts of the Konkan",
+        "Out-migration of male working population from these districts of Konkan to the industrial region of Mumbai",
+        "Dowry is given to bride on the occasion of marriage",
+        "The number of female children is increasing due to improvement in health and medical facilities in these districts"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Geography",
+      "category": "Geography"
+    },
+    {
+      "id": 61,
+      "text": "A woman says, 'If you reverse my own age, the figures represent my father's age. He is of course older to me and the difference between our ages is three-eleventh of their sum.' The women's age is",
+      "options": [
+        "45 years",
+        "36 years",
+        "37 years",
+        "46 years"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 62,
+      "text": "There are 25 people in a group. If all shake hands with one another, how many handshakes are possible?",
+      "options": [
+        "125",
+        "625",
+        "250",
+        "300"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 63,
+      "text": "P, Q, R, S, T, U and V are travelling in three different vehicles. There are at least two passengers in each vehicle (Car, Rickshaw, Lorry) and each vehicle has passengers of both the sexes. There are two Merchants, two Doctors and three Lawyers among them. R is a lady doctor and she does not travel with the pair of sisters, P and U. Q, a male merchant, travels with only V, a Lawyer in vehicle car. S is a male doctor. Two persons belonging to same profession do not travel in the same vehicle. P is not a merchant and travels in vehicle Rickshaw.\nIn which vehicle does R travel?",
+      "options": [
+        "Car",
+        "Rickshaw",
+        "Lorry",
+        "Rickshaw or Lorry"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 64,
+      "text": "What will be the mirror image of a clock at 3:37?",
+      "options": [
+        "8:23",
+        "8:13",
+        "9:13",
+        "9:23"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 65,
+      "text": "Observe the following diagrams (A), (B), (C) - a rectangle 9x4, a parallelogram 6x6, and a triangle with base 8 and height 9.",
+      "options": [
+        "The area of all diagrams are different.",
+        "The area of all diagrams are same.",
+        "The perimeter of all diagrams are same.",
+        "Diagram (A) and (B) have the same perimeter."
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 66,
+      "text": "Anil, Sanjay, Sunil, Deepak, Mahesh, Prashant and Suresh are seated in a row. Sunil is seated between Deepak and Anil, Mahesh is seated between Prashant and Suresh and Sanjay is seated between Deepak and Prashant. Anil and Suresh are seated at both ends of the row, then where is Deepak seated?",
+      "options": [
+        "In the middle of Sunil and Sanjay",
+        "In the middle of Anil and Sanjay",
+        "In the middle of Sanjay and Mahesh",
+        "In the middle of Sunil and Prashant"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 67,
+      "text": "Which one of the following numbers will occupy the blank space?\n[Grid pattern: ?, 45, 29 / 15, 17, 21]",
+      "options": [
+        "8",
+        "10",
+        "14",
+        "16"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 68,
+      "text": "The day after is Monday. The date tomorrow is 3. Then what will be the date on next Sunday?",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 69,
+      "text": "Statements:\nAll locks are keys.\nAll keys are doors.\nSome doors are windows.\nSome windows are floors.\nConclusions:\nI. Some keys are windows.\nII. Some floors are not doors.\nIII. Any locks are not windows.",
+      "options": [
+        "None of the conclusions are correct",
+        "Only conclusion I is correct",
+        "Conclusions I and II are correct",
+        "All conclusions are correct"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 70,
+      "text": "There are five Saturdays in a month of 30 days. What will be the first day of that month?",
+      "options": [
+        "Sunday",
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 71,
+      "text": "In the following number series a number is wrong. Select that number:\n3, 7, 16, 32, 56, 93, 142",
+      "options": [
+        "7",
+        "16",
+        "56",
+        "32"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 72,
+      "text": "Insert the missing character.\n[Grid: XY=12, 10, IP / FJ=9, 8, ? / AC=?, 11, NV]",
+      "options": [
+        "DF, 8",
+        "SU, 4",
+        "BG, 7",
+        "GK, 2"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 73,
+      "text": "If 'P × Q' means P is sister of Q, 'P + Q' means P is mother of Q, 'P - Q' means P is father of Q, 'P ÷ Q' means P is brother of Q, 'P = Q' means P is daughter of Q, 'P > Q' means P is husband of Q, then which of the following represents 'B is the great-grandfather of R'?",
+      "options": [
+        "B - N + K × R",
+        "B > P = R",
+        "R ÷ S = T + B",
+        "B - S + L - R"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 74,
+      "text": "Two metro trains are running for one and a half hours in opposite directions at a same speed of 264 kmph on a circular railway-track. If the distance of the track from the center-point is 23 km, then how many times will those metro trains pass each other?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 75,
+      "text": "A can build a house alone in 15 days but B alone can build it in 10 days. A and B work on alternate days. If A works on the first day, in how many days will the house be built?",
+      "options": [
+        "12",
+        "13½",
+        "14",
+        "10⅔"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 76,
+      "text": "Find the odd-man-out in the letter group series.\nXZB, DGJ, SWA, MRX, AGM",
+      "options": [
+        "DGJ",
+        "SWA",
+        "AGM",
+        "MRX"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 77,
+      "text": "Select the correct option in place of the question mark in the given number structure.\n[Diagram: 6/2=72, 9=?, 7/6=5, with center values]",
+      "options": [
+        "67",
+        "65",
+        "86",
+        "37"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 78,
+      "text": "Gaurav is older than Saurav but younger than Saurabh. Saurav is as old as Arnav but older than Pranav.\nWhich of the statements given below is/are correct?\na. Arnav is younger than Saurav.\nb. Arnav is older than Saurabh.\nc. Arnav is older than Pranav.\nd. Arnav is older than Gaurav.",
+      "options": [
+        "Only a and d",
+        "Only b and c",
+        "Only a",
+        "Only c"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 79,
+      "text": "Six persons are sitting around a circular table. Anand is facing Heena, who is sitting to the left of Arvind and to the right of Sanjay. Suman is to the right of Arvind. Manoj is facing Arvind. If Heena and Manoj, Arvind and Sanjay mutually exchange their positions, who is now sitting next to the left of Manoj?",
+      "options": [
+        "Sanjay",
+        "Arvind",
+        "Heena",
+        "Suman"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 80,
+      "text": "If the codes given for alphabets are repeated serially for a whole sequence of alphabets then select the codes for the given words.\nA=□, B=#, C=O, D=△, E=θ\nFAIR WELL = ?",
+      "options": [
+        "□□△OOθ##",
+        "□□△Oθ#△△",
+        "□□△θθ△##",
+        "□□△θO#△△"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 81,
+      "text": "While investigating about a stolen car, the police received information from different persons as follows:\na. The car number has four digits.\nb. The sum of digits of the car number is divisible by 4.\nc. The unit place digit of the car number is 4.",
+      "options": [
+        "UPU 4054",
+        "WBB 3544",
+        "DLM 3214",
+        "MPY 8324"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 82,
+      "text": "18 teams have registered their names for the cricket competition. Every team has to play a match with another team. How many total matches will there be?",
+      "options": [
+        "179",
+        "163",
+        "173",
+        "153"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 83,
+      "text": "Select by using the following group of letters, the letter that comes third to the right of the letter that comes immediately to the left of the letter, that comes third to the right of the letter, immediately to the left of the letter B.\nA B C D E F G H",
+      "options": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 84,
+      "text": "Find the missing number in the series:\n43, 95, 167, ?, 373, 507",
+      "options": [
+        "261",
+        "259",
+        "360",
+        "257"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 85,
+      "text": "In the following English alphabet's letter groups series, which group will come in the place of the question mark (?)\nBZA, DYC, FXE, ?, JVI",
+      "options": [
+        "WHG",
+        "HUG",
+        "HWG",
+        "UHG"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Mathematics & Reasoning",
+      "category": "Mathematics & Reasoning"
+    },
+    {
+      "id": 86,
+      "text": "Match the correct pairs of Act and its Year for the environmental protection.\na. Air (Prevention and Control of Pollution) - I. 1974\nb. Wild Life Protection - II. 1980\nc. Water (Prevention and Control of Pollution) - III. 1981\nd. Forest Conservation - IV. 1972",
+      "options": [
+        "IV, II, III, I",
+        "II, I, IV, III",
+        "III, IV, I, II",
+        "I, III, II, IV"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Environment",
+      "category": "Environment"
+    },
+    {
+      "id": 87,
+      "text": "Kyoto Conference is concerned with:",
+      "options": [
+        "limiting production of SO2",
+        "developing alternatives to ozone depleting substances",
+        "reducing emission of greenhouse gases",
+        "reduction in use of energy"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Environment",
+      "category": "Environment"
+    },
+    {
+      "id": 88,
+      "text": "Greenhouse effect is enhanced in the environment by the _______ gas.",
+      "options": [
+        "CO2",
+        "CO",
+        "Fluorocarbons",
+        "NO2"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Environment",
+      "category": "Environment"
+    },
+    {
+      "id": 89,
+      "text": "Match the following pairs:\na. Chipko Movement - I. Fertilizer Industry\nb. Kerala Shastra Sahitya Parishad - II. Deforestation\nc. Soil Conservation Movement - III. Hydro Electricity Generating Project\nd. Bombay Protecting Committee - IV. Tawa River Project",
+      "options": [
+        "II, III, IV, I",
+        "I, IV, III, II",
+        "IV, I, II, III",
+        "III, II, I, IV"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Environment",
+      "category": "Environment"
+    },
+    {
+      "id": 90,
+      "text": "Depletion of ozone layer is due to oxide of",
+      "options": [
+        "Carbon",
+        "Phosphorus",
+        "Nitrogen",
+        "None of the above"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Environment",
+      "category": "Environment"
+    },
+    {
+      "id": 91,
+      "text": "Abel Prize is related to the field of",
+      "options": [
+        "Electronics",
+        "Mathematics",
+        "Mechanical Engineering",
+        "Physics"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 92,
+      "text": "The world's second largest sitting statue, the Statue of Equality has been erected in his memory.\na. Ramakrishna Paramhansa\nb. Ramdas Swami\nc. Aryabhatta\nd. Saint Ramanujacharya",
+      "options": [
+        "Only a",
+        "Only c",
+        "Only b",
+        "Only d"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 93,
+      "text": "Who is the author of the book 'By Many a Happy Accident: Recollections of a Life'?",
+      "options": [
+        "Priyanka Chopra Jonas",
+        "M. Hamid Ansari",
+        "Shashi Tharoor",
+        "Y. Mrunal"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 94,
+      "text": "Consider the following statements:\na. Maharashtra Legislative Assembly passed 'Shakti' bill in December 2021.\nb. There is a provision of death penalty to rapist.\nc. There is a provision of 10 years imprisonment to acid attacker on women.\nd. This bill was submitted in the Assembly by the Finance Minister.\nWhich of the following statements are correct?",
+      "options": [
+        "Only a, b and c",
+        "Only a and b",
+        "Only c and d",
+        "Only a and d"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 95,
+      "text": "Match the pairs:\na. Sinopharm - I. America\nb. Covishield - II. Russia\nc. Sputnik - III. China\nd. Moderna - IV. India",
+      "options": [
+        "II, IV, I, III",
+        "III, IV, II, I",
+        "I, III, II, IV",
+        "I, IV, II, III"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 96,
+      "text": "Who received the Nobel Peace Prize in 2021?",
+      "options": [
+        "David Card and Joshua Angrist",
+        "Maria Ressa and Dmitry Muratov",
+        "Abdulrazak Gurnah",
+        "Kamala Harris"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 97,
+      "text": "In March 2021, Lok Sabha, Rajya Sabha TV were merged to form which TV?",
+      "options": [
+        "DD National TV",
+        "Hindustan TV",
+        "India TV",
+        "Sansad TV"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 98,
+      "text": "Consider the following statements about 'Dadasaheb Phalke' Award:\na. Sponsored by the Directorate of Film Festivals.\nb. It is given for outstanding contribution to the development of Indian Cinema.\nc. Prize amount is Rs. 1 lakh.\nd. Award for the year 2021 has been given to Rajinikanth.\nWhich of the above statements are correct?",
+      "options": [
+        "Only a, b and c",
+        "Only b, c and d",
+        "Only a, b and d",
+        "Only a, c and d"
+      ],
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by the examination authority.",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 99,
+      "text": "Consider the following statements about New Education Policy - 2020 (NEP - 2020). Which of the statements is not correct?",
+      "options": [
+        "Approved in July 2020.",
+        "Its aim is to make India a global knowledge superpower.",
+        "It will replace Policy on Education 1986 (NPE - 1986).",
+        "Instead of 10 + 2 there will be 7 + 4 + 3 + 1 pattern."
+      ],
+      "correctAnswer": "D",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 100,
+      "text": "Which of the following statements is correct about the medal tally at the Tokyo 2020 Olympics?\na. Host country Japan secured first position.\nb. India secured 48th position with total seven medals.\nc. India secured three Gold Medals.",
+      "options": [
+        "Only a",
+        "Only b",
+        "Only c",
+        "None of the above"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Current Affairs",
+      "category": "Current Affairs"
+    }
+  ]
+}
