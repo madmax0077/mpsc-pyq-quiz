@@ -143,6 +143,8 @@ export default function ExamsPage() {
               <span>|</span>
               <Link href="/about" className="hover:text-indigo-600 hover:underline">About</Link>
               <span>|</span>
+              <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
+              <span>|</span>
               <Link href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</Link>
             </div>
           </div>

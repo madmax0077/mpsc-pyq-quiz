@@ -83,10 +83,12 @@ export default function About() {
             <h3>Contact</h3>
             <p>
               Have questions, feedback, or suggestions? We&apos;d love to hear from you!
-            </p>
-            <p>
-              Email:{" "}
-              <a href="mailto:dontknowacademy@gmail.com">dontknowacademy@gmail.com</a>
+              Visit our{" "}
+              <Link href="/contact" className="text-indigo-600 hover:text-indigo-700 underline">
+                Contact Us
+              </Link>{" "}
+              page or email us directly at{" "}
+              <a href="mailto:dontknowacademy@gmail.com">dontknowacademy@gmail.com</a>.
             </p>
 
             <h3>Disclaimer</h3>
@@ -99,8 +101,21 @@ export default function About() {
         </div>
       </main>
 
-      <footer className="border-t border-slate-200/80 py-6 text-center text-xs text-slate-400">
-        MPSC PYQ QUIZ &middot; Don&apos;t know Academy
+      <footer className="border-t border-slate-200/80 py-6">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs text-slate-400">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
+            <div className="flex items-center gap-4 text-xs text-slate-400">
+              <Link href="/" className="hover:text-indigo-600 hover:underline">Home</Link>
+              <span>|</span>
+              <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
+              <span>|</span>
+              <Link href="/exams" className="hover:text-indigo-600 hover:underline">Exams</Link>
+              <span>|</span>
+              <Link href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</Link>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

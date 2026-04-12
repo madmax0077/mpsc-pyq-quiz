@@ -129,8 +129,21 @@ export default function PrivacyPolicy() {
         </div>
       </main>
 
-      <footer className="border-t border-slate-200/80 py-6 text-center text-xs text-slate-400">
-        MPSC PYQ QUIZ &middot; Don&apos;t know Academy
+      <footer className="border-t border-slate-200/80 py-6">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs text-slate-400">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
+            <div className="flex items-center gap-4 text-xs text-slate-400">
+              <Link href="/" className="hover:text-indigo-600 hover:underline">Home</Link>
+              <span>|</span>
+              <Link href="/about" className="hover:text-indigo-600 hover:underline">About</Link>
+              <span>|</span>
+              <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
+              <span>|</span>
+              <Link href="/exams" className="hover:text-indigo-600 hover:underline">Exams</Link>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

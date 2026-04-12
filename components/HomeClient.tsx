@@ -75,6 +75,12 @@ export default function HomeClient() {
               >
                 About
               </a>
+              <a
+                href="/contact"
+                className="rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 text-[11px] sm:text-xs font-semibold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
+              >
+                Contact
+              </a>
             </nav>
 
             <div className="h-5 w-px bg-slate-200 dark:bg-slate-700 hidden sm:block" />
@@ -146,6 +152,14 @@ export default function HomeClient() {
             <div className="flex items-center gap-4">
               <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 About
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a href="/contact" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                Contact
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a href="/exams" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                Exams
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
