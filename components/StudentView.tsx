@@ -432,7 +432,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
         ) : (
           <>
             {/* Streak + Search + My Stats row */}
-            <div className="flex items-center justify-between gap-2 flex-wrap">
+            <div className="flex items-center justify-between gap-2 flex-wrap min-w-0">
               {streak > 0 ? (
                 <div className="flex items-center gap-2 rounded-full bg-indigo-50 px-4 py-2 ring-1 ring-indigo-200 dark:bg-indigo-950/50 dark:ring-indigo-800">
                   <span className="text-xl">🔥</span>
@@ -712,13 +712,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
           </svg>
         </button>
-        <div className="flex-1">
-          <div className="flex items-center gap-2">
-            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
+        <div className="flex-1 min-w-0">
+          <div className="flex flex-wrap items-center gap-2">
+            <h2 className="text-base sm:text-xl font-bold text-slate-800 dark:text-slate-100 break-words">
               {selectedQuiz.title}
             </h2>
             {selectedQuiz.category && catStyle && (
-              <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${catStyle.badge}`}>
+              <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ${catStyle.badge}`}>
                 {selectedQuiz.category}
               </span>
             )}
@@ -762,7 +762,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
       {/* Score Banner - Regular quiz (full submit) */}
       {submitted && !isCategoryQuiz && (
         <div
-          className={`animate-slide-up rounded-2xl p-6 text-center shadow-sm ${
+          className={`animate-slide-up rounded-2xl p-4 sm:p-6 text-center shadow-sm ${
             pct >= 70
               ? "bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 dark:from-emerald-950 dark:to-green-950 dark:border-emerald-800"
               : pct >= 40
@@ -874,13 +874,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
                     : "border-slate-200 dark:border-slate-700"
               }`}
             >
-              <div className="relative p-5">
+              <div className="relative p-3 sm:p-5">
                 {isCategoryQuiz && q.sourceTag && (
-                  <span className="absolute top-2 right-2 rounded-md bg-violet-100 px-2 py-0.5 text-[10px] font-semibold text-violet-600 leading-tight max-w-[45%] truncate dark:bg-violet-900/40 dark:text-violet-300">
+                  <span className="mb-2 inline-block sm:absolute sm:top-2 sm:right-2 sm:mb-0 rounded-md bg-violet-100 px-2 py-0.5 text-[10px] font-semibold text-violet-600 leading-tight max-w-full sm:max-w-[45%] truncate dark:bg-violet-900/40 dark:text-violet-300">
                     {q.sourceTag}
                   </span>
                 )}
-                <div className={`mb-4 flex items-start gap-3 ${isCategoryQuiz && q.sourceTag ? "pr-[calc(45%+0.5rem)] sm:pr-0" : ""}`}>
+                <div className="mb-4 flex items-start gap-2 sm:gap-3">
                   <span className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
                     qSubmitted && isCorrect
                       ? "bg-emerald-100 text-emerald-700"
@@ -898,7 +898,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 </div>
 
                 {q.imageUrl && (
-                  <div className="mb-4 ml-10 rounded-lg border border-slate-200 bg-slate-50 p-2">
+                  <div className="mb-4 ml-0 sm:ml-10 rounded-lg border border-slate-200 bg-slate-50 p-2">
                     <img
                       src={q.imageUrl}
                       alt="Question diagram"
@@ -907,13 +907,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
                   </div>
                 )}
 
-                <div className="ml-10 grid gap-2 sm:grid-cols-2">
+                <div className="ml-0 sm:ml-10 grid gap-2 sm:grid-cols-2">
                   {OPTION_KEYS.map((key) => {
                     const isSelected = userAnswer === key;
                     const isThisCorrect = q.correctAnswer === key;
 
                     let classes =
-                      "flex items-center gap-3 rounded-lg border px-4 py-3 text-sm transition-all ";
+                      "flex items-center gap-2 sm:gap-3 rounded-lg border px-3 py-2.5 sm:px-4 sm:py-3 text-sm transition-all ";
 
                     if (qSubmitted) {
                       if (isThisCorrect) {
@@ -969,7 +969,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
                 {/* Explanation after submit */}
                 {qSubmitted && (
-                  <div className={`mt-4 ml-10 rounded-lg p-4 border ${
+                  <div className={`mt-4 ml-0 sm:ml-10 rounded-lg p-3 sm:p-4 border ${
                     isCorrect ? "bg-emerald-50 border-emerald-200 dark:bg-emerald-900/20 dark:border-emerald-700" : isSkipped ? "bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700" : "bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-700"
                   }`}>
                     <div className="flex items-start gap-2">
@@ -999,7 +999,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                         )}
                       </div>
                     </div>
-                    <div className="mt-2 ml-6 flex justify-end">
+                    <div className="mt-2 ml-0 sm:ml-6 flex justify-end">
                       <button
                         onClick={() => openReportModal(q.id, q.text)}
                         disabled={reportedIds.has(q.id)}
@@ -1023,19 +1023,19 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
       {/* Pagination - only for regular quizzes */}
       {!isCategoryQuiz && totalPages > 1 && (
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-1.5 sm:gap-2 overflow-x-auto px-1 py-1">
           <button
             onClick={() => { setCurrentPage((p) => Math.max(0, p - 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             disabled={currentPage === 0}
-            className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
+            className="shrink-0 rounded-lg border border-slate-200 bg-white px-2 py-1.5 sm:px-3 sm:py-2 text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
           >
-            Previous
+            Prev
           </button>
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
               onClick={() => { setCurrentPage(i); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className={`h-9 w-9 rounded-lg text-sm font-medium transition-colors ${
+              className={`h-8 w-8 sm:h-9 sm:w-9 shrink-0 rounded-lg text-xs sm:text-sm font-medium transition-colors ${
                 currentPage === i
                   ? "bg-indigo-600 text-white shadow-sm"
                   : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
@@ -1047,7 +1047,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
           <button
             onClick={() => { setCurrentPage((p) => Math.min(totalPages - 1, p + 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             disabled={currentPage === totalPages - 1}
-            className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
+            className="shrink-0 rounded-lg border border-slate-200 bg-white px-2 py-1.5 sm:px-3 sm:py-2 text-xs sm:text-sm font-medium text-slate-600 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
           >
             Next
           </button>
@@ -1056,13 +1056,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
       {/* Category quiz pagination (set indicator) */}
       {isCategoryQuiz && totalPages > 1 && (
-        <div className="flex items-center justify-center gap-2 flex-wrap">
+        <div className="flex items-center justify-center gap-1.5 sm:gap-2 flex-wrap">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
               onClick={() => { setCurrentPage(i); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               disabled={!submittedPages.has(i) && i !== currentPage}
-              className={`h-9 min-w-[2.25rem] rounded-lg px-2 text-sm font-medium transition-colors ${
+              className={`h-8 sm:h-9 min-w-[2rem] sm:min-w-[2.25rem] rounded-lg px-1.5 sm:px-2 text-xs sm:text-sm font-medium transition-colors ${
                 currentPage === i
                   ? "bg-indigo-600 text-white shadow-sm"
                   : submittedPages.has(i)
@@ -1100,7 +1100,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
           ) : (
             <div className="space-y-4">
               <AdBanner slot="3456789012" format="horizontal" />
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 <button
                   onClick={() => {
                     setAnswers({});
@@ -1109,13 +1109,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
                     setCurrentPage(0);
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
-                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
+                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
                 >
                   Retake Quiz
                 </button>
                 <button
                   onClick={goBack}
-                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+                  className="flex-1 rounded-xl bg-slate-100 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
                 >
                   Back to Quizzes
                 </button>
@@ -1143,11 +1143,11 @@ export default function StudentView({ language = "english", challenge, homeKey =
           ) : (
             <div className="space-y-4">
               <AdBanner slot="3456789012" format="horizontal" />
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 {currentPage < totalPages - 1 && (
                   <button
                     onClick={handleNextSet}
-                    className="flex-1 rounded-xl bg-indigo-600 px-6 py-3 text-base font-semibold text-white hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 rounded-xl bg-indigo-600 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-white hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
                   >
                     Next Set
                     <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -1163,13 +1163,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
                     setCurrentPage(0);
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
-                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-6 py-3 text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
+                  className="flex-1 rounded-xl border border-indigo-200 bg-white px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
                 >
                   Retake All
                 </button>
                 <button
                   onClick={goBack}
-                  className="flex-1 rounded-xl bg-slate-100 px-6 py-3 text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+                  className="flex-1 rounded-xl bg-slate-100 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
                 >
                   Back
                 </button>
