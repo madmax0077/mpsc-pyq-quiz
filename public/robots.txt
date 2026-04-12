@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /*.json$
-Disallow: /quizzes.json
-Disallow: /manifest.json
 
 Sitemap: https://www.mpscs.in/sitemap.xml
 Sitemap: https://mpscs.in/sitemap.xml
