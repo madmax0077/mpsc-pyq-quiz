@@ -1,0 +1,1269 @@
+{
+  "id": "excise_pre_2017_english",
+  "title": "MPSC Sub Inspector State Excise Pre 2017 (English)",
+  "createdAt": "2026-04-12T12:33:54",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Q1. The British Government, through the Robertson Committee started ___ for the development of transportation in India.",
+      "options": {
+        "A": "Board of Agriculture",
+        "B": "Board of Transportation",
+        "C": "Board of Labour",
+        "D": "Railway Board"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": 2,
+      "text": "Q2. Match the following pairs:\na. Free Press Bulletin – I. Bombay\nb. Free India – II. Madras\nc. Dinamani – III. Calcutta\nd. Sakal – IV. Pune\n\n(A) a-I, b-III, c-II, d-IV\n(B) a-IV, b-I, c-III, d-II\n(C) a-III, b-II, c-I, d-IV\n(D) a-I, b-II, c-III, d-IV",
+      "options": {
+        "A": "I  III  II  IV",
+        "B": "IV  I  III  II",
+        "C": "III  II  I  IV",
+        "D": "I  II  III  IV"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": 3,
+      "text": "Q3. Which of the following dramas did Ratnakar Matkari write regarding the dowry system?",
+      "options": {
+        "A": "Khol Khol Pani",
+        "B": "Ashwamedh",
+        "C": "Maza Kai Chukla?",
+        "D": "Agnidivya"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Art and Culture"
+    },
+    {
+      "id": 4,
+      "text": "Q4. In Mumbai, the cooperative dairy work began at ___.",
+      "options": {
+        "A": "Bandra",
+        "B": "Colaba",
+        "C": "Aarey",
+        "D": "Worli"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 5,
+      "text": "Q5. In Maharashtra, the cooperative organisations for buying and selling are known as ___.",
+      "options": {
+        "A": "Cooperative Marketing Organisation",
+        "B": "District Cooperative Marketing Federation",
+        "C": "State Cooperative Marketing Federation",
+        "D": "Marketing Federation"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 7,
+      "text": "Q7. Which commission promoted the 'Earn and Learn' scheme?",
+      "options": {
+        "A": "Radhakrishna Commission",
+        "B": "Mudaliyar Commission",
+        "C": "Kothari Commission",
+        "D": "John Sargent Commission"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Education"
+    },
+    {
+      "id": 8,
+      "text": "Q8. Match the following pairs:\na. S.N. Pendse – I. Shitu\nb. G.N. Dandekar – II. Chakra\nc. Bhalchandra Nemade – III. Ratha Chakra\nd. Jayawant Dalvi – IV. Kosla\n\n(A) a-II, b-III, c-I, d-IV\n(B) a-III, b-I, c-IV, d-II\n(C) a-I, b-IV, c-II, d-III\n(D) a-III, b-II, c-I, d-IV",
+      "options": {
+        "A": "II  III  I  IV",
+        "B": "III  I  IV  II",
+        "C": "I  IV  II  III",
+        "D": "III  II  I  IV"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Art and Culture"
+    },
+    {
+      "id": 9,
+      "text": "Q9. The longest tunnel on Konkan Railway is at ___.",
+      "options": {
+        "A": "Karbude",
+        "B": "Malvan",
+        "C": "Rajapur",
+        "D": "Vengurla"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 10,
+      "text": "Q10. Match the following pairs:\na. Imperialist School – I. Valentine Chirol\nb. Cambridge School – II. Anil Seal\nc. The Nationalist School – III. R.C. Majumdar\nd. The Marxist School – IV. R.P. Dutt\n\n(A) a-II, b-I, c-IV, d-III\n(B) a-IV, b-III, c-II, d-I\n(C) a-I, b-II, c-III, d-IV\n(D) a-III, b-IV, c-I, d-II",
+      "options": {
+        "A": "II  I  IV  III",
+        "B": "IV  III  II  I",
+        "C": "I  II  III  IV",
+        "D": "III  IV  I  II"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": 11,
+      "text": "Q11. Name the British Governor General who transferred the Capital of India from Calcutta to Delhi.",
+      "options": {
+        "A": "Lord Hardinge II",
+        "B": "Lord Ripon",
+        "C": "Lord Chelmsford",
+        "D": "Lord Lytton"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": 12,
+      "text": "Q12. ___ was the founder member of the Communist Party of India.",
+      "options": {
+        "A": "M.N. Roy",
+        "B": "N.M. Joshi",
+        "C": "F.M. Ansari",
+        "D": "R.P. Dutt"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": 13,
+      "text": "Q13. Local self-government in modern India was started by ___.",
+      "options": {
+        "A": "Lord Ripon",
+        "B": "Lord Cornwallis",
+        "C": "Lord Mountbatten",
+        "D": "Lord Clive"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 14,
+      "text": "Q14. Consider the following statements:\na. The Constituent Assembly of India was set up according to the provision of the Cabinet Mission Plan of 1946.\nb. The first session of the Constituent Assembly of India was held on 9th December, 1946.\nc. The eleventh session of the Constituent Assembly of India was held between 14th November to 26th November, 1949.\n\nWhich of the statements given above are correct?",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only b and c",
+        "C": "a, b and c",
+        "D": "Only a and c"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 15,
+      "text": "Q15. Who was the founder of the Indian National Army?",
+      "options": {
+        "A": "Laxmi Sehgal",
+        "B": "Lala Hardayal",
+        "C": "Ras Bihari Bose",
+        "D": "Subhash Chandra Bose"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": 16,
+      "text": "Q16. In the State of Maharashtra, the lowest child sex-ratio (801) is in ___ district.",
+      "options": {
+        "A": "Gadchiroli",
+        "B": "Jalna",
+        "C": "Akola",
+        "D": "Beed"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 17,
+      "text": "Q17. In which year did the mineral oil and natural gas exploitation project start at Bombay High in the Arabian Sea?",
+      "options": {
+        "A": "2nd December, 1976",
+        "B": "3rd January, 1974",
+        "C": "1st February, 1972",
+        "D": "3rd February, 1974"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": 18,
+      "text": "Q18. Maharashtra Government has undertaken 'Sant Tukaram Vangram Yojana' from ___.",
+      "options": {
+        "A": "2000",
+        "B": "2002",
+        "C": "2004",
+        "D": "2006"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 19,
+      "text": "Q19. Consider the statements:\na. The area occupied by the Tapi river basin in north Maharashtra has an eastward slope.\nb. The area occupied by the Wardha-Wainganga river basin slopes towards the south direction.\nc. The area occupied by the remaining plateau river basin slopes towards the east direction.\n\nWhich one of the above statements is NOT correct?",
+      "options": {
+        "A": "Only a",
+        "B": "Only b",
+        "C": "Only c",
+        "D": "Only b and c"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 20,
+      "text": "Q20. Match the following pairs:\nGhats → Roads\na. Thal Ghat – I. Vengurla – Sawantwadi – Nipani\nb. Bhor Ghat – II. Mumbai – Kalyan – Otur\nc. Malshej Ghat – III. Mumbai – Pune\nd. Amboli Ghat – IV. Mumbai – Nashik\n\n(A) a-IV, b-III, c-II, d-I\n(B) a-I, b-II, c-III, d-IV\n(C) a-III, b-II, c-I, d-IV\n(D) a-II, b-III, c-IV, d-I",
+      "options": {
+        "A": "IV  III  II  I",
+        "B": "I  II  III  IV",
+        "C": "III  II  I  IV",
+        "D": "II  III  IV  I"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 21,
+      "text": "Q21. What was the density of population of Maharashtra in 1960 – 1961?",
+      "options": {
+        "A": "229",
+        "B": "339",
+        "C": "310",
+        "D": "None of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 22,
+      "text": "Q22. Match the following pairs:\nTribes → Districts\na. Katkari – I. Bhandara\nb. Bhil – II. Amrawati\nc. Korku – III. Nandurbar\nd. Gond – IV. Raigad\n\n(A) a-IV, b-III, c-II, d-I\n(B) a-III, b-II, c-I, d-IV\n(C) a-II, b-I, c-III, d-IV\n(D) a-I, b-II, c-III, d-IV",
+      "options": {
+        "A": "IV  III  II  I",
+        "B": "III  II  I  IV",
+        "C": "II  I  III  IV",
+        "D": "I  II  III  IV"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 23,
+      "text": "Q23. Arrange the following peaks in the descending order of their altitude from mean sea level:\na. Salher\nb. Saptashrungi\nc. Mahabaleshwar\nd. Kalsubai",
+      "options": {
+        "A": "a, b, c, d",
+        "B": "d, a, c, b",
+        "C": "d, c, a, b",
+        "D": "b, c, d, a"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 24,
+      "text": "Q24. Arrange the following districts of Maharashtra in ascending order on the basis of their population density as per 2011 Census record:\na. Sindhudurg\nb. Gadchiroli\nc. Nandurbar\nd. Dhule",
+      "options": {
+        "A": "a, b, c, d",
+        "B": "d, c, b, a",
+        "C": "b, a, c, d",
+        "D": "c, d, b, a"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 25,
+      "text": "Q25. Which of the following is a tributary of River Wardha?",
+      "options": {
+        "A": "Nirguda",
+        "B": "Manyad",
+        "C": "Sindphana",
+        "D": "Girja"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 26,
+      "text": "Q26. Arrange the sequence of rivers in South Konkan from North to South.\na. Vaitarna\nb. Savitri\nc. Ulhas\nd. Vashisthi",
+      "options": {
+        "A": "c, a, b, d",
+        "B": "a, c, d, b",
+        "C": "b, d, a, c",
+        "D": "a, c, b, d"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 27,
+      "text": "Q27. How many district boundaries does the Pune district have?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 28,
+      "text": "Q28. Arrange the following layers of the Earth from the outer layer to inner layer given by Dr. R.A. Daly:\na. Barysphere\nb. Asthenosphere\nc. Lithosphere\nd. Mesosphere",
+      "options": {
+        "A": "a, b, c, d",
+        "B": "d, c, b, a",
+        "C": "c, a, d, b",
+        "D": "c, b, d, a"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": 29,
+      "text": "Q29. Quantitative methods of RBI include ___.",
+      "options": {
+        "A": "Open Market Operation",
+        "B": "Bank Rate",
+        "C": "Varying Reserve Ratio",
+        "D": "All of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 30,
+      "text": "Q30. Observe the following statements:\na. Manganese deposits are found at Sindhudurg.\nb. Bauxite is mainly found in laterite.\nc. Chromite is mined at Mauni in Bhandara district.\n\nWhich statements are correct?",
+      "options": {
+        "A": "Only statement a is correct",
+        "B": "Only statement c is correct",
+        "C": "Statements b and c are correct",
+        "D": "Statements a, b and c are correct"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 31,
+      "text": "Q31. Engineering goods occupied the first place with a share of ___ percent in India's export in 2012 – 13.",
+      "options": {
+        "A": "31.7%",
+        "B": "21.7%",
+        "C": "28.7%",
+        "D": "30.7%"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 32,
+      "text": "Q32. Narasimham Committee has recommended that SLR should decline from 38.5 percent to ___.",
+      "options": {
+        "A": "32.5%",
+        "B": "30.5%",
+        "C": "25%",
+        "D": "28%"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 33,
+      "text": "Q33. Primary deficit of Govt. of India in percent of GDP was negative in the year ___.",
+      "options": {
+        "A": "2007 – 08 and 2008 – 09",
+        "B": "2010 – 11 and 2011 – 12",
+        "C": "2006 – 07 and 2007 – 08",
+        "D": "2012 – 13 and 2013 – 14"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 34,
+      "text": "Q34. The following statements are true concerning NITI Aayog:\na. No power to allocate funds.\nb. It is a think tank.\nc. Imposes policies on States.\nd. Consulting States while making policy.\n\nWhich are correct?",
+      "options": {
+        "A": "Only a, b and d",
+        "B": "Only a, b and c",
+        "C": "Only b, c and d",
+        "D": "Only a, c and d"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 35,
+      "text": "Q35. The growth rate of Indian economy was ___ in 1950 – 80.",
+      "options": {
+        "A": "4.5%",
+        "B": "2.5%",
+        "C": "3.5%",
+        "D": "4.0%"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 36,
+      "text": "Q36. The expenditure of the Government on law and order is classified as ___.",
+      "options": {
+        "A": "productive expenditure",
+        "B": "unproductive expenditure",
+        "C": "capital expenditure",
+        "D": "None of the above"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 37,
+      "text": "Q37. When RBI raises the bank rate then there is ___.",
+      "options": {
+        "A": "inflation",
+        "B": "discourage to investment",
+        "C": "raise in employment",
+        "D": "All of the above"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 38,
+      "text": "Q38. When expenditure exceeds the total revenue it is called ___.",
+      "options": {
+        "A": "Surplus budget",
+        "B": "Deficit budget",
+        "C": "Balanced budget",
+        "D": "None of the above"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 40,
+      "text": "Q40. Which of the following programmes aims to provide employment only to the rural poor?",
+      "options": {
+        "A": "Swarnajayanti Gram Swarozgar Yojana (SGSY)",
+        "B": "Swarnajayanti Shahari Rozgar Yojana (SJSRY)",
+        "C": "Self Employment for Educated Youth",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 41,
+      "text": "Q41. Which of the following statement/s is/are correct?\na. The national income trends during the period of economic planning do not indicate a consistent increase.\nb. Growth has taken place only in about half of the years of economic planning.\nc. For almost half the period of economic planning there has been little growth or even negative growth.\nd. Considering economic planning period as a whole, there has been a steady, consistent growth.",
+      "options": {
+        "A": "Only a, b and c",
+        "B": "Only d",
+        "C": "Only a",
+        "D": "Only c"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 42,
+      "text": "Q42. The lackluster agricultural growth since the new millennium is due to:\na. Structural weakness\nb. Low level of public investment\nc. Unbalanced fertilizer use\nd. Small size of agricultural holding",
+      "options": {
+        "A": "Only a",
+        "B": "Only d",
+        "C": "Only c and d",
+        "D": "Only a, b and c"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 43,
+      "text": "Q43. For which of the following industries is licensing compulsory?\na. Cigarettes\nb. Alcohol\nc. Industrial explosives\nd. Defence equipments",
+      "options": {
+        "A": "Only d",
+        "B": "Only c and d",
+        "C": "Only b and d",
+        "D": "All the four mentioned above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 44,
+      "text": "Q44. Rank the following countries in terms of their share in India's imports in recent years: U.S.A., China, Saudi Arabia, U.A.E., with the major import sending country getting the 1st rank:",
+      "options": {
+        "A": "China, U.S.A., Saudi Arabia, U.A.E.",
+        "B": "China, Saudi Arabia, U.A.E., U.S.A.",
+        "C": "U.S.A., Saudi Arabia, China, U.A.E.",
+        "D": "Saudi Arabia, China, U.S.A., U.A.E."
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 45,
+      "text": "Q45. Which of the following States contributes the largest share in the deposit mobilization in the banking sector in India?",
+      "options": {
+        "A": "Gujarat",
+        "B": "Maharashtra",
+        "C": "Uttar Pradesh",
+        "D": "Karnataka"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": 46,
+      "text": "Q46. Which of the following sentences are correct?\na. Long sightedness is corrected by convex lens.\nb. Short sightedness is corrected by convex lens.\nc. Long sightedness is corrected by concave lens.\nd. Short sightedness is corrected by concave lens.",
+      "options": {
+        "A": "Only a and b are correct",
+        "B": "Only b and c are correct",
+        "C": "Only c and d are correct",
+        "D": "Only a and d are correct"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 47,
+      "text": "Q47. Calculate the energy released when 10 gm of water at 100°C is split on the hand. The specific heat capacity of water is taken to be 4200 J kg⁻¹ K⁻¹ and the temperature of the skin is 30°C.",
+      "options": {
+        "A": "2940 kJ",
+        "B": "294 kJ",
+        "C": "29.4 kJ",
+        "D": "2.94 kJ"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 48,
+      "text": "Q48. At the hydropower station, change of form of energy is ___.",
+      "options": {
+        "A": "Kinetic Energy → Potential Energy → Electrical Energy",
+        "B": "Potential Energy → Kinetic Energy → Electrical Energy",
+        "C": "Electrical Energy → Potential Energy → Kinetic Energy",
+        "D": "Electrical Energy → Kinetic Energy → Potential Energy"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 49,
+      "text": "Q49. Sb is the chemical symbol of the element ___.",
+      "options": {
+        "A": "Seaborgium",
+        "B": "Antimony",
+        "C": "Arsenic",
+        "D": "None of the above"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 50,
+      "text": "Q50. Ozone layer gets destroyed by:\na. NO and NO₂ from natural sources.\nb. Cl atoms from chlorofluorocarbons.\n\nWhich of the above statements is/are correct?",
+      "options": {
+        "A": "Only a",
+        "B": "Only b",
+        "C": "Both a and b",
+        "D": "None of the above"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 51,
+      "text": "Q51. In which of the following compounds does the central atom have expanded octet?",
+      "options": {
+        "A": "Only BrF₃",
+        "B": "Only BrF₅",
+        "C": "Both (1) and (2)",
+        "D": "None of the above"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 52,
+      "text": "Q52. Egg laying mammals are included in ___ animal group.",
+      "options": {
+        "A": "Prototheria",
+        "B": "Theria",
+        "C": "Eutheria",
+        "D": "Metatheria"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 53,
+      "text": "Q53. The digestive system is lacking in ___.",
+      "options": {
+        "A": "Liver fluke",
+        "B": "Tapeworm",
+        "C": "Ascaris",
+        "D": "Earthworm"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 54,
+      "text": "Q54. Which is the best time to have blood test for filariasis?",
+      "options": {
+        "A": "Morning",
+        "B": "Evening",
+        "C": "Noon",
+        "D": "Midnight"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 55,
+      "text": "Q55. Leafhoppers or Jassids belong to order ___.",
+      "options": {
+        "A": "Lepidoptera",
+        "B": "Coleoptera",
+        "C": "Diptera",
+        "D": "Hemiptera"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 56,
+      "text": "Q56. The golden-yellow coloured twiner dodder (Cuscuta reflexa) is a/an ___.",
+      "options": {
+        "A": "saprophyte",
+        "B": "insectivorous plant",
+        "C": "pitcher plant",
+        "D": "total stem parasite"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 57,
+      "text": "Q57. ___ is the smallest among the angiosperms.",
+      "options": {
+        "A": "Wolffia",
+        "B": "Vallisneria",
+        "C": "Hydrilla",
+        "D": "Eichhornia"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 58,
+      "text": "Q58. Some statements regarding health and nutrition are given below:\na. Copper is an essential micronutrient for the human body.\nb. Vitamins A and D are water soluble.\nc. Caloric value of lipids is 9.3 kcal/g.\nd. Deficiency of Vitamin C causes scurvy.\n\nWhich of the above statements is/are correct?",
+      "options": {
+        "A": "Only a",
+        "B": "Only d",
+        "C": "Only b and c",
+        "D": "Only a, c and d"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 59,
+      "text": "Q59. Which cells in the human body release histamine in response to an infection?",
+      "options": {
+        "A": "Mast cells",
+        "B": "Red blood cells",
+        "C": "Lymphocytes",
+        "D": "Monocytes"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 60,
+      "text": "Q60. Dry beans, flour, sugar, canned fruits and vegetables are examples of which of the following foods?",
+      "options": {
+        "A": "Perishable foods",
+        "B": "Semi-perishable foods",
+        "C": "Non-perishable or shelf stable foods",
+        "D": "None of the above"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": 61,
+      "text": "Q61. There is a letter group series with one term missing, shown by question mark (?). Find it.\n?; EILNO; IMPRS; MQTVW; QUXZA",
+      "options": {
+        "A": "AEDHI",
+        "B": "AEHJK",
+        "C": "AEFGH",
+        "D": "BEDJK"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 62,
+      "text": "Q62. In a certain code language KGLFT is written as PTOUG. How will MERSA be written in that code language?",
+      "options": {
+        "A": "VIHNZ",
+        "B": "NVIHA",
+        "C": "NVIHZ",
+        "D": "NVLHZ"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 63,
+      "text": "Q63. Eleven players, A, B, C, D, E, F, G, H, I, J and K are standing in a row, facing the coach.\na. D, who is to the immediate left of F, is second to the right of C.\nb. A is second to the right of E, who is at one of the ends.\nc. J is the just immediate neighbour of A and B and third to the left of G.\nd. H is to the immediate left of D and third to the right of I.\n\nWho is standing in the middle of the row?",
+      "options": {
+        "A": "C",
+        "B": "B",
+        "C": "I",
+        "D": "G"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 64,
+      "text": "Q64. A system of letter-number-symbols is given:\nR%E5D2#9AFB@J3IKM41WU8V©N*GZ§67\n\nOn the basis of this system, out of the five below, four are the same in some way and form a group. Find the one, which does NOT fit in this group.\na. @IF  b. I4@  c. ©G8  d. U©1  e. #FD",
+      "options": {
+        "A": "a",
+        "B": "b",
+        "C": "c",
+        "D": "e"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 65,
+      "text": "Q65. Find the relation of the numbers around the circle, to the number within the circle and then find what will be the number instead of the question mark.\n\nCircle 1: 16(top), 25(left), 729(center), 49(right), 121(bottom)\nCircle 2: 1(top), 36(left), 361(center), 25(right), 49(bottom)\nCircle 3: 9(top), 81(left), ?(center), 100(right), 16(bottom)",
+      "options": {
+        "A": "256",
+        "B": "225",
+        "C": "324",
+        "D": "676"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 66,
+      "text": "Q66. The parts of two numbers in a number series are missing. Select the proper alternative which will fit at both the places.\n7560, 10__, 1__, 36, 9, 3",
+      "options": {
+        "A": "74",
+        "B": "84",
+        "C": "80",
+        "D": "70"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 67,
+      "text": "Q67. Find the wrong number in the following number series:\n3, 10, 27, 4, 16, 64, 5, 25, 125",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "10",
+        "D": "27"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 68,
+      "text": "Q68. If 2 × 8 = 20, 3 × 9 = 31 and 5 × 8 = 44, then 30 × 5 = ?",
+      "options": {
+        "A": "150",
+        "B": "154",
+        "C": "158",
+        "D": "145"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 69,
+      "text": "Q69. In a code language DOUBLE is written as GSXFOI. How will MISTER be written in the same code?",
+      "options": {
+        "A": "PMVXGU",
+        "B": "PMVXGV",
+        "C": "PMVXHV",
+        "D": "PLWXHV"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 70,
+      "text": "Q70. The numbers in the given square follow some rule. Find this rule and choose the correct number from the given alternatives in place of the question mark.\n\n| 72  | 24 | 06 |\n| 96  | 16 | 12 |\n| 108 |  ? | 18 |",
+      "options": {
+        "A": "12",
+        "B": "16",
+        "C": "18",
+        "D": "20"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 72,
+      "text": "Q72. Some statements and four conclusions derived from them are given. Select the proper alternative about the conclusions.\n\nStatements: Some dogs are goats. All goats are trees. Some trees are not dogs.\n\nConclusions:\nI. Some trees are dogs.\nII. All dogs are trees.\nIII. All goats are dogs.\nIV. No tree is a dog.",
+      "options": {
+        "A": "Only conclusion I follows",
+        "B": "Only conclusion II follows",
+        "C": "Both conclusions I and II follow",
+        "D": "Both conclusions III and IV follow"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 73,
+      "text": "Q73. Which figure will replace the question mark to continue the following series, from the given alternatives?\n(Figure series with symbols: +, ●, □, △, S, C arranged in grid patterns P, Q, R, S, T, ?)",
+      "options": {
+        "A": "Figure 1",
+        "B": "Figure 2",
+        "C": "Figure 3",
+        "D": "Figure 4"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 74,
+      "text": "Q74. The numbers in each figure are according to some rule. Select the number from the given alternatives which will fit in place of the question mark.\n\nFigure 1: 2(top), 4(left), 45(center), 6(right), 3(bottom)\nFigure 2: 4(top), 8(left), 84(center), 7(right), 9(bottom)\nFigure 3: 1(top), 2(left), 30(center), 3(right), 4(bottom)\nFigure 4: 6(top), 8(left), ?(center), 2(right), 9(bottom)",
+      "options": {
+        "A": "75",
+        "B": "240",
+        "C": "864",
+        "D": "25"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 75,
+      "text": "Q75. Four friends have visited different places for studying the flora of the region by car. Arman drove the car for more hours than Yunus who drove for six hours. Edward drove the car for eight hours during the forward journey and for the same number of hours during the backward journey. His total driving time is more than the combined time of Yunus and Arman. Cavas drove the car for eight hours less than Arman. For how many hours did Arman drive the car?",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "10",
+        "D": "11"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Logical Reasoning"
+    },
+    {
+      "id": 76,
+      "text": "Q76. Consider the following statements regarding the Man Booker International Prize:\na. It is an International Literary Award.\nb. It was introduced since 2004.\nc. Han Kang is the first Korean author to win the prize of 2016.\n\nWhich of the statements given above are correct?",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only b and c",
+        "C": "Only a and c",
+        "D": "All of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 77,
+      "text": "Q77. Who became the first Indian woman to receive International Maritime Organisation's award for exceptional bravery at sea?",
+      "options": {
+        "A": "Captain Ambika Das",
+        "B": "Captain Shikha Biswal",
+        "C": "Captain Neha Pillai",
+        "D": "Captain Radhika Menon"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 78,
+      "text": "Q78. India's first carbon neutral district is ___.",
+      "options": {
+        "A": "Pasighat",
+        "B": "Dubagh",
+        "C": "Majuli",
+        "D": "Shahpur"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 79,
+      "text": "Q79. The Transatlantic Trade and Investment Partnership is a trade and investment agreement being negotiated between ___.",
+      "options": {
+        "A": "United States and European Union",
+        "B": "United States and United Kingdom",
+        "C": "United States and African Union",
+        "D": "United States and Russia"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 80,
+      "text": "Q80. Recently (Jan. 2017) India's largest public WiFi system was launched in ___ city.",
+      "options": {
+        "A": "Bengaluru",
+        "B": "Mumbai",
+        "C": "Hyderabad",
+        "D": "Chennai"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 81,
+      "text": "Q81. What is the full form of the acronym BHIM, an App which was recently launched by Prime Minister Shri Narendra Modi?",
+      "options": {
+        "A": "Bharat Intermediate for Money",
+        "B": "Bharat Intermission for Monetary Payment",
+        "C": "Bharat Interface for Monetary Payment",
+        "D": "Bharat Interface for Money"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 82,
+      "text": "Q82. Which of the following countries conducted the military operation named 'Operation Sentinelle'?",
+      "options": {
+        "A": "Britain",
+        "B": "France",
+        "C": "USA",
+        "D": "Spain"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 83,
+      "text": "Q83. In which State was India's first solar powered boat launched?",
+      "options": {
+        "A": "Odisha",
+        "B": "Kerala",
+        "C": "Goa",
+        "D": "Tamil Nadu"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 84,
+      "text": "Q84. Taarak Mehta's humorous column first appeared in ___ in 1971.",
+      "options": {
+        "A": "Chandoba",
+        "B": "Kishore",
+        "C": "Chitralekha",
+        "D": "Grihshobha"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Art and Culture"
+    },
+    {
+      "id": 85,
+      "text": "Q85. India's rank in the World Bank's 'Ease of Doing Business Report, 2016' is ___.",
+      "options": {
+        "A": "120",
+        "B": "130",
+        "C": "134",
+        "D": "142"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 86,
+      "text": "Q86. Who among the following won the silver medal in women's singles badminton at the 2016 Summer Olympics?\na. Sania Mirza\nb. Saina Nehwal\nc. P.V. Sindhu",
+      "options": {
+        "A": "b and c",
+        "B": "Only b",
+        "C": "a and c",
+        "D": "Only c"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 87,
+      "text": "Q87. The sixth trial of Agni ___ was test fired in January 2017.",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 88,
+      "text": "Q88. Norwegian Magnus Carlsen defeated whom in the final to win the World Chess Championship 2016?",
+      "options": {
+        "A": "Vishwanathan Anand",
+        "B": "Vladimir Kramnik",
+        "C": "Sergei Karjakin",
+        "D": "Fabiano Caruana"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 89,
+      "text": "Q89. Who has been appointed as chairman of a high level committee to review Arbitration Mechanism in India?",
+      "options": {
+        "A": "Justice B.N. Srikrishna",
+        "B": "Justice Mihir Shah",
+        "C": "Justice Dipak Mishra",
+        "D": "Justice Arun Mishra"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 90,
+      "text": "Q90. Match the following pairs:\na. National Voters' Day – I. 28 February\nb. National Science Day – II. 25 January\nc. International Women's Day – III. 15 March\nd. World Consumer Rights Day – IV. 8 March\n\n(A) a-II, b-I, c-IV, d-III\n(B) a-I, b-II, c-III, d-IV\n(C) a-III, b-IV, c-II, d-I\n(D) a-IV, b-III, c-I, d-II",
+      "options": {
+        "A": "II  I  IV  III",
+        "B": "I  II  III  IV",
+        "C": "III  IV  II  I",
+        "D": "IV  III  I  II"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 91,
+      "text": "Q91. In 2016, Odisha completed ___ years of its formation.",
+      "options": {
+        "A": "75",
+        "B": "80",
+        "C": "66",
+        "D": "69"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": 92,
+      "text": "Q92. Uttar Pradesh Assembly elections of 2017 were held in ___ phases.",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 93,
+      "text": "Q93. During the 2017 local self-government elections ___ was the State Election Commissioner in Maharashtra.",
+      "options": {
+        "A": "Jageshwar Saharia",
+        "B": "Neela Satyanarayan",
+        "C": "Nandlal Gupta",
+        "D": "D.N. Chaudhari"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Maharashtra"
+    },
+    {
+      "id": 94,
+      "text": "Q94. Match the following pairs:\nAmendments → Particular\na. 10th Amendment – I. Goods and Service Tax\nb. 21st Amendment – II. Anti Defection Law\nc. 52nd Amendment – III. Incorporation of Dadra and Nagar Haveli as a Union Territory\nd. 101st Amendment – IV. Include Sindhi as an official language\n\n(A) a-I, b-II, c-III, d-IV\n(B) a-IV, b-III, c-II, d-I\n(C) a-III, b-I, c-IV, d-II\n(D) a-III, b-IV, c-II, d-I",
+      "options": {
+        "A": "I  II  III  IV",
+        "B": "IV  III  II  I",
+        "C": "III  I  IV  II",
+        "D": "III  IV  II  I"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 95,
+      "text": "Q95. The objective of 'Economic Justice' has been provided in the Indian Constitution under the provisions in which of the two parts mentioned below?",
+      "options": {
+        "A": "The Preamble and the Directive Principles of State Policy",
+        "B": "The Preamble and Fundamental Rights",
+        "C": "The Fundamental Rights and Directive Principles of State Policy",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 96,
+      "text": "Q96. In which clause of Fundamental Right, Right to Privacy is implied as ___.",
+      "options": {
+        "A": "Right to Life and Personal Liberty",
+        "B": "Right to Equality",
+        "C": "Right against Exploitation",
+        "D": "Right to Religion"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 97,
+      "text": "Q97. Under the Constitution of India, which one of the following is NOT a Fundamental Duty?",
+      "options": {
+        "A": "To vote in general elections",
+        "B": "To abide by the Constitution and respect its ideals",
+        "C": "To safeguard public property",
+        "D": "To develop scientific temper"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 98,
+      "text": "Q98. The term 'Cabinet' is mentioned in which of the following Articles of the Constitution?",
+      "options": {
+        "A": "Article 74",
+        "B": "Article 75",
+        "C": "Article 352",
+        "D": "Article 353"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 99,
+      "text": "Q99. Which of the following statements related to the 74th Amendment Act are correct?\na. The Act bars the interference by courts in electoral matters of municipalities.\nb. The Act shall not affect the functions and powers of the Darjeeling, Gorkha Hill Council of West Bengal.\nc. The Act shall not affect the functions and powers of the district councils of the hill area of Manipur.",
+      "options": {
+        "A": "Only a",
+        "B": "Only b",
+        "C": "Only a and b",
+        "D": "Only a and c"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Polity"
+    },
+    {
+      "id": 100,
+      "text": "Q100. ___ must be passed by each House of the Parliament, separately by special majority.",
+      "options": {
+        "A": "Finance Bill",
+        "B": "Money Bill",
+        "C": "Constitution Amendment Bill",
+        "D": "Ordinary Bill"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Polity"
+    }
+  ],
+  "language": "english"
+}
