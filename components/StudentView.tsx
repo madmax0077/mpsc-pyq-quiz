@@ -577,22 +577,22 @@ export default function StudentView({ language = "english", challenge, homeKey =
                     <button
                       key={quiz.id}
                       onClick={() => selectQuiz(quiz)}
-                      className="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-5 text-left shadow-sm hover:border-indigo-200 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-indigo-600"
+                      className="group flex items-center gap-3 sm:gap-4 rounded-xl border border-slate-200 bg-white p-3 sm:p-5 text-left shadow-sm hover:border-indigo-200 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-indigo-600"
                     >
-                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-100 transition-colors dark:bg-indigo-900/40 dark:text-indigo-400 dark:group-hover:bg-indigo-900/60">
-                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-100 transition-colors dark:bg-indigo-900/40 dark:text-indigo-400 dark:group-hover:bg-indigo-900/60">
+                        <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                         </svg>
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h3 className="font-semibold text-slate-800 truncate group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
+                        <h3 className="text-sm sm:text-base font-semibold text-slate-800 leading-snug group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
                           {quiz.title}
                         </h3>
-                        <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
+                        <p className="mt-0.5 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
                           {quiz.questions.length} question{quiz.questions.length !== 1 ? "s" : ""}
                         </p>
                       </div>
-                      <svg className="h-5 w-5 shrink-0 text-slate-300 group-hover:text-indigo-400 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <svg className="h-4 w-4 sm:h-5 sm:w-5 shrink-0 text-slate-300 group-hover:text-indigo-400 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                       </svg>
                     </button>
