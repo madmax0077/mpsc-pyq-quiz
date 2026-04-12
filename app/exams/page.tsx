@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "MPSC Previous Year Question Papers (2020–2025) — Free Online Practice",
+  title: "MPSC Previous Year Question Papers (2017–2025) — Free Online Practice",
   description:
-    "Practice MPSC previous year question papers online for free. 3350+ questions from Group B, Group C, PSI, Gazetted Civil Services & Technical Services prelims (2020–2025). English & Marathi. Official answer keys included.",
+    "Practice MPSC previous year question papers online for free. 3540+ questions from Group B, Group C, PSI, Sub Inspector Excise, Gazetted Civil Services & Technical Services prelims (2017–2025). English & Marathi. Official answer keys included.",
   keywords: [
     "MPSC previous year papers", "MPSC question papers", "MPSC PYQ",
     "MPSC Group B question paper", "MPSC Group C question paper",
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "MPSC 2025 question paper", "MPSC 2024 question paper",
     "MPSC Gazetted Services paper", "MPSC answer key",
     "MPSC online test", "MPSC mock test free",
+    "MPSC Sub Inspector Excise", "MPSC 2017 question paper",
   ],
   alternates: { canonical: "/exams" },
 };
@@ -136,9 +137,16 @@ const EXAMS = [
     questions: 100,
     description: "MPSC Subordinate Services Group B Combined Preliminary Exam 2020 — 100 questions covering the entire General Studies syllabus.",
   },
+  {
+    title: "MPSC Sub Inspector State Excise Pre 2017",
+    year: 2017,
+    type: "Sub Inspector Excise",
+    questions: 97,
+    description: "MPSC Sub Inspector in the State Excise Preliminary Exam 2017 — 97 questions (3 cancelled) covering History, Maharashtra, Economics, Science, Polity, Logical Reasoning, and Current Affairs.",
+  },
 ];
 
-const YEARS = [2025, 2024, 2023, 2022, 2021, 2020];
+const YEARS = [2025, 2024, 2023, 2022, 2021, 2020, 2017];
 
 export default function ExamsPage() {
   const totalQuestions = EXAMS.reduce((sum, e) => sum + e.questions, 0);

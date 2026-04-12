@@ -81,7 +81,7 @@ export default function RootLayout({
                   "@type": "WebSite",
                   name: "MPSC PYQ QUIZ",
                   url: "https://www.mpscs.in",
-                  description: "Free MPSC Previous Year Question practice — 3350+ questions from Group B, Group C, PSI, Gazetted Services papers (2020–2025) with instant scoring. Available in English and Marathi.",
+                  description: "Free MPSC Previous Year Question practice — 3540+ questions from Group B, Group C, PSI, Sub Inspector Excise, Gazetted Services papers (2017–2025) with instant scoring. Available in English and Marathi.",
                   publisher: { "@type": "Organization", name: "Don't know Academy" },
                   inLanguage: ["en", "mr"],
                 },
@@ -100,7 +100,7 @@ export default function RootLayout({
                       name: "What is MPSC PYQ QUIZ?",
                       acceptedAnswer: {
                         "@type": "Answer",
-                        text: "MPSC PYQ QUIZ is a free online platform that helps MPSC aspirants practice with previous year questions from Group B, Group C, PSI, and Gazetted Services prelims (2020-2025), available in English and Marathi.",
+                        text: "MPSC PYQ QUIZ is a free online platform that helps MPSC aspirants practice with previous year questions from Group B, Group C, PSI, Sub Inspector Excise, and Gazetted Services prelims (2017-2025), available in English and Marathi.",
                       },
                     },
                     {
@@ -108,7 +108,7 @@ export default function RootLayout({
                       name: "How many questions are available on MPSC PYQ QUIZ?",
                       acceptedAnswer: {
                         "@type": "Answer",
-                        text: "There are 3,350+ questions from 17 MPSC exam papers covering subjects like Indian Polity, History, Geography, Science, Economics, and Current Affairs.",
+                        text: "There are 3,540+ questions from 18 MPSC exam papers covering subjects like Indian Polity, History, Geography, Science, Economics, and Current Affairs.",
                       },
                     },
                     {
