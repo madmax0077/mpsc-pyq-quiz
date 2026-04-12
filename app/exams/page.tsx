@@ -21,48 +21,48 @@ export default function ExamsPage() {
   const { exams, years, totalQuestions, totalPapers } = meta;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50">
-      <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50 dark:from-slate-900 dark:to-slate-950">
+      <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-4xl items-center gap-3 px-4 py-4 sm:px-6">
           <Link
             href="/"
-            className="rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600"
+            className="rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600 dark:text-slate-500 dark:hover:bg-slate-800 dark:hover:text-slate-300"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
           <div>
-            <h1 className="text-lg font-bold text-slate-800">MPSC Previous Year Question Papers</h1>
-            <p className="text-xs text-slate-500">Free online practice — {totalQuestions}+ questions</p>
+            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC Previous Year Question Papers</h1>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Free online practice — {totalQuestions}+ questions</p>
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
         <div className="mb-8">
-          <h2 className="text-2xl font-extrabold text-slate-900 sm:text-3xl">
+          <h2 className="text-2xl font-extrabold text-slate-900 sm:text-3xl dark:text-slate-100">
             MPSC Previous Year Question Papers — Free Online Practice
           </h2>
-          <p className="mt-3 text-slate-600">
+          <p className="mt-3 text-slate-600 dark:text-slate-300">
             Practice with {totalQuestions}+ questions from {totalPapers} MPSC exam papers spanning {years[years.length - 1]} to {years[0]}.
             Every paper includes the official Set A answer key. Available in both <strong>English</strong> and <strong>Marathi</strong>.
-            Sign in on the <Link href="/" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">home page</Link> to start practicing instantly.
+            Sign in on the <Link href="/" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300">home page</Link> to start practicing instantly.
           </p>
         </div>
 
         <div className="mb-8 grid gap-3 sm:grid-cols-3">
-          <div className="rounded-xl border border-indigo-200 bg-indigo-50 p-4 text-center">
-            <p className="text-2xl font-bold text-indigo-700">{totalPapers}</p>
-            <p className="text-sm text-indigo-600">Exam Papers</p>
+          <div className="rounded-xl border border-indigo-200 bg-indigo-50 p-4 text-center dark:border-indigo-800 dark:bg-indigo-900/30">
+            <p className="text-2xl font-bold text-indigo-700 dark:text-indigo-400">{totalPapers}</p>
+            <p className="text-sm text-indigo-600 dark:text-indigo-300">Exam Papers</p>
           </div>
-          <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-center">
-            <p className="text-2xl font-bold text-emerald-700">{totalQuestions}+</p>
-            <p className="text-sm text-emerald-600">Questions</p>
+          <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-center dark:border-emerald-800 dark:bg-emerald-900/30">
+            <p className="text-2xl font-bold text-emerald-700 dark:text-emerald-400">{totalQuestions}+</p>
+            <p className="text-sm text-emerald-600 dark:text-emerald-300">Questions</p>
           </div>
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-center">
-            <p className="text-2xl font-bold text-amber-700">{years.length}</p>
-            <p className="text-sm text-amber-600">Years Covered</p>
+          <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-center dark:border-amber-800 dark:bg-amber-900/30">
+            <p className="text-2xl font-bold text-amber-700 dark:text-amber-400">{years.length}</p>
+            <p className="text-sm text-amber-600 dark:text-amber-300">Years Covered</p>
           </div>
         </div>
 
@@ -71,23 +71,23 @@ export default function ExamsPage() {
           if (yearExams.length === 0) return null;
           return (
             <section key={year} className="mb-10">
-              <h3 className="mb-4 text-xl font-bold text-slate-800 border-b border-slate-200 pb-2">
+              <h3 className="mb-4 text-xl font-bold text-slate-800 border-b border-slate-200 pb-2 dark:text-slate-100 dark:border-slate-700">
                 MPSC {year} Question Papers
               </h3>
               <div className="space-y-4">
                 {yearExams.map((exam) => (
-                  <article key={exam.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                  <article key={exam.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800">
                     <div className="flex items-start justify-between gap-3">
                       <div>
-                        <h4 className="font-semibold text-slate-800">{exam.title}</h4>
-                        <p className="mt-1 text-sm text-slate-600">{exam.description}</p>
+                        <h4 className="font-semibold text-slate-800 dark:text-slate-100">{exam.title}</h4>
+                        <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{exam.description}</p>
                       </div>
-                      <span className="shrink-0 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">
+                      <span className="shrink-0 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
                         {exam.questions} Qs
                       </span>
                     </div>
-                    <div className="mt-3 flex items-center gap-3 text-xs text-slate-500">
-                      <span className="rounded bg-slate-100 px-2 py-0.5 font-medium">{exam.type}</span>
+                    <div className="mt-3 flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                      <span className="rounded bg-slate-100 px-2 py-0.5 font-medium dark:bg-slate-700">{exam.type}</span>
                       <span>English + Marathi</span>
                       <span>Official Answer Key (Set A)</span>
                     </div>
@@ -98,9 +98,9 @@ export default function ExamsPage() {
           );
         })}
 
-        <div className="rounded-xl border border-indigo-200 bg-gradient-to-r from-indigo-50 to-violet-50 p-6 text-center">
-          <h3 className="text-lg font-bold text-indigo-700">Ready to Practice?</h3>
-          <p className="mt-2 text-sm text-slate-600">
+        <div className="rounded-xl border border-indigo-200 bg-gradient-to-r from-indigo-50 to-violet-50 p-6 text-center dark:border-indigo-800 dark:from-indigo-900/30 dark:to-violet-900/30">
+          <h3 className="text-lg font-bold text-indigo-700 dark:text-indigo-300">Ready to Practice?</h3>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
             Sign in on the home page to start solving MPSC previous year questions with instant scoring and detailed answers.
           </p>
           <Link
@@ -112,8 +112,8 @@ export default function ExamsPage() {
         </div>
 
         <div className="mt-10">
-          <h3 className="mb-4 text-lg font-bold text-slate-800">About MPSC Exams</h3>
-          <div className="prose prose-slate max-w-none text-sm">
+          <h3 className="mb-4 text-lg font-bold text-slate-800 dark:text-slate-100">About MPSC Exams</h3>
+          <div className="prose prose-slate max-w-none text-sm dark:prose-invert">
             <p>
               The Maharashtra Public Service Commission (MPSC) conducts competitive examinations for recruitment to various government posts in Maharashtra. The major exams include:
             </p>
@@ -134,18 +134,18 @@ export default function ExamsPage() {
         </div>
       </main>
 
-      <footer className="border-t border-slate-200/80 py-6">
+      <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="flex flex-col items-center gap-2">
-            <p className="text-xs text-slate-400">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
-            <div className="flex items-center gap-4 text-xs text-slate-400">
-              <Link href="/" className="hover:text-indigo-600 hover:underline">Home</Link>
+            <p className="text-xs text-slate-400 dark:text-slate-500">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
+            <div className="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500">
+              <Link href="/" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Home</Link>
               <span>|</span>
-              <Link href="/about" className="hover:text-indigo-600 hover:underline">About</Link>
+              <Link href="/about" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">About</Link>
               <span>|</span>
-              <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
+              <Link href="/contact" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Contact</Link>
               <span>|</span>
-              <Link href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</Link>
+              <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy Policy</Link>
             </div>
           </div>
         </div>

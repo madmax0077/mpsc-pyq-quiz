@@ -12,36 +12,36 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50">
-      <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur-xl">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50 dark:from-slate-900 dark:to-slate-950">
+      <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-4 sm:px-6">
           <Link
             href="/"
-            className="rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600"
+            className="rounded-lg p-1.5 text-slate-400 transition-colors hover:bg-slate-100 hover:text-slate-600 dark:text-slate-500 dark:hover:bg-slate-800 dark:hover:text-slate-300"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <h1 className="text-lg font-bold text-slate-800">About</h1>
+          <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">About</h1>
         </div>
       </header>
 
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-        <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:border-slate-700 dark:bg-slate-800">
           <Link href="/" className="mb-8 flex flex-col items-center text-center no-underline">
             <img
               src="/logo.png"
               alt="MPSC PYQ QUIZ Logo"
-              className="mb-4 h-24 w-24 rounded-full object-cover shadow-lg ring-4 ring-white"
+              className="mb-4 h-24 w-24 rounded-full object-cover shadow-lg ring-4 ring-white dark:ring-slate-700"
             />
-            <h2 className="text-2xl font-bold text-slate-800">MPSC PYQ QUIZ</h2>
-            <p className="mt-1 text-sm font-medium text-indigo-600">
+            <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h2>
+            <p className="mt-1 text-sm font-medium text-indigo-600 dark:text-indigo-400">
               by Don&apos;t know Academy
             </p>
           </Link>
 
-          <div className="prose prose-slate max-w-none">
+          <div className="prose prose-slate max-w-none dark:prose-invert">
             <h3>What is MPSC PYQ QUIZ?</h3>
             <p>
               MPSC PYQ QUIZ is a free online platform designed to help MPSC (Maharashtra
@@ -84,7 +84,7 @@ export default function About() {
             <p>
               Have questions, feedback, or suggestions? We&apos;d love to hear from you!
               Visit our{" "}
-              <Link href="/contact" className="text-indigo-600 hover:text-indigo-700 underline">
+              <Link href="/contact" className="text-indigo-600 hover:text-indigo-700 underline dark:text-indigo-400 dark:hover:text-indigo-300">
                 Contact Us
               </Link>{" "}
               page or email us directly at{" "}
@@ -101,18 +101,18 @@ export default function About() {
         </div>
       </main>
 
-      <footer className="border-t border-slate-200/80 py-6">
+      <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <div className="flex flex-col items-center gap-2">
-            <p className="text-xs text-slate-400">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
-            <div className="flex items-center gap-4 text-xs text-slate-400">
-              <Link href="/" className="hover:text-indigo-600 hover:underline">Home</Link>
+            <p className="text-xs text-slate-400 dark:text-slate-500">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
+            <div className="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500">
+              <Link href="/" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Home</Link>
               <span>|</span>
-              <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
+              <Link href="/contact" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Contact</Link>
               <span>|</span>
-              <Link href="/exams" className="hover:text-indigo-600 hover:underline">Exams</Link>
+              <Link href="/exams" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Exams</Link>
               <span>|</span>
-              <Link href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</Link>
+              <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy Policy</Link>
             </div>
           </div>
         </div>
