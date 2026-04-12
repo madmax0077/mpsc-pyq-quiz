@@ -63,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="-OecjT9pqzPENGpM2Pva7bxV9XIMC2KY0ElKRcQjp3I" />
         <meta name="google-adsense-account" content="ca-pub-5084738834329206" />
         <meta name="theme-color" content="#4F46E5" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
