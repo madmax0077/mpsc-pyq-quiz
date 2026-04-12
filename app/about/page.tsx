@@ -1,10 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getQuizMeta } from "@/lib/quizMeta";
+
+const meta = getQuizMeta();
 
 export const metadata: Metadata = {
   title: "About MPSC PYQ QUIZ — Free MPSC Previous Year Question Practice",
-  description:
-    "MPSC PYQ QUIZ by Don't know Academy — free platform for MPSC aspirants to practice 3540+ previous year questions from Group B, Group C, PSI, Sub Inspector Excise & Gazetted Services exams (2017–2025) in English and Marathi.",
+  description: `MPSC PYQ QUIZ by Don't know Academy — free platform for MPSC aspirants to practice ${meta.totalQuestions}+ previous year questions from ${meta.totalPapers} exam papers (${meta.minYear}–${meta.maxYear}) in English and Marathi.`,
   alternates: { canonical: "/about" },
 };
 

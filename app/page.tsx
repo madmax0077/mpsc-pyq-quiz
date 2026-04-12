@@ -1,40 +1,11 @@
 import HomeClient from "@/components/HomeClient";
+import { getQuizMeta } from "@/lib/quizMeta";
 
-const EXAM_PAPERS = [
-  "MPSC Group C Combined Pre 2025",
-  "MPSC Group B Combined Pre 2025",
-  "MPSC CS Gazetted Combined Pre 2025",
-  "MPSC Group C Combined Pre 2024",
-  "MPSC Group B Combined Pre 2024",
-  "MPSC Gazetted Civil Services Combined Pre 2024",
-  "MPSC Gazetted CS Combined Pre 2023",
-  "MPSC Gazetted Group B & C Combined Pre 2023",
-  "PSI 2023 - English & General Studies",
-  "MPSC Gazetted TS Combined Pre 2022",
-  "MPSC Group C Combined Pre 2022",
-  "MPSC Sub-Ordinate Group B Combined Pre 2022",
-  "MPSC Gazetted TS Combined Pre 2021",
-  "MPSC PSI Pre 2021",
-  "MPSC Group-C Combined Pre 2021",
-  "MPSC Subordinate Services Group B Pre 2021",
-  "MPSC SS Group B Combined Pre 2020",
-  "MPSC Sub Inspector State Excise Pre 2017",
-];
-
-const SUBJECTS = [
-  { name: "Current Affairs", count: 470 },
-  { name: "Science", count: 455 },
-  { name: "Economics", count: 435 },
-  { name: "History", count: 410 },
-  { name: "Geography", count: 420 },
-  { name: "Indian Polity", count: 395 },
-  { name: "Aptitude", count: 225 },
-  { name: "English", count: 135 },
-  { name: "Marathi", count: 135 },
-  { name: "Environment", count: 30 },
-];
+const meta = getQuizMeta();
 
 export default function Home() {
+  const { examTitles, subjects, totalQuestions, totalPapers, minYear, maxYear } = meta;
+
   return (
     <>
       <HomeClient />
@@ -48,7 +19,7 @@ export default function Home() {
             MPSC PYQ QUIZ — Free Previous Year Question Practice
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Practice 3,540+ MPSC previous year questions from 18 exam papers (2017–2025).
+            Practice {totalQuestions.toLocaleString()}+ MPSC previous year questions from {totalPapers} exam papers ({minYear}–{maxYear}).
             Covering Group B, Group C, PSI, Gazetted Civil Services and Technical Services.
             Available in both English and Marathi. 100% free for all aspirants.
           </p>
@@ -57,7 +28,7 @@ export default function Home() {
           </p>
           <p className="mt-3 text-sm text-slate-500">
             <a href="/exams" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">
-              Browse all MPSC exam papers (2017–2025) &rarr;
+              Browse all MPSC exam papers ({minYear}–{maxYear}) &rarr;
             </a>
           </p>
         </div>
@@ -73,7 +44,7 @@ export default function Home() {
               Each paper is available in both English and Marathi.
             </p>
             <ul className="grid gap-3 sm:grid-cols-2">
-              {EXAM_PAPERS.map((paper) => (
+              {examTitles.map((paper) => (
                 <li key={paper} className="flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700">
                   <span className="text-indigo-500">&#10003;</span>
                   {paper}
@@ -94,7 +65,7 @@ export default function Home() {
               Track your progress across each subject.
             </p>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {SUBJECTS.map((s) => (
+              {subjects.filter(s => s.count >= 10).map((s) => (
                 <div key={s.name} className="rounded-lg border border-slate-200 bg-white px-4 py-3">
                   <p className="font-semibold text-slate-800">{s.name}</p>
                   <p className="text-sm text-slate-500">{s.count}+ questions</p>
@@ -114,7 +85,7 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold text-slate-800">Previous Year Questions</h3>
                 <p className="mt-1 text-sm text-slate-600">
-                  Practice with actual MPSC exam questions from 2017 to 2025 — Group B, Group C, PSI, Sub Inspector Excise, Gazetted Civil Services, and Technical Services prelims.
+                  Practice with actual MPSC exam questions from {minYear} to {maxYear} — Group B, Group C, PSI, Gazetted Civil Services, and Technical Services prelims.
                 </p>
               </div>
               <div>
@@ -161,13 +132,13 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold text-slate-800">What is MPSC PYQ QUIZ?</h3>
                 <p className="mt-1 text-sm text-slate-600">
-                  MPSC PYQ QUIZ is a free online platform by Don&#39;t know Academy that helps Maharashtra Public Service Commission (MPSC) aspirants practice with previous year questions. It covers Group B, Group C, PSI, Sub Inspector Excise, and Gazetted Services prelims from 2017 to 2025.
+                  MPSC PYQ QUIZ is a free online platform by Don&#39;t know Academy that helps Maharashtra Public Service Commission (MPSC) aspirants practice with previous year questions. It covers Group B, Group C, PSI, and Gazetted Services prelims from {minYear} to {maxYear}.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-slate-800">How many questions are available?</h3>
                 <p className="mt-1 text-sm text-slate-600">
-                  Currently there are 3,540+ questions from 18 different MPSC exam papers, available in both English and Marathi.
+                  Currently there are {totalQuestions.toLocaleString()}+ questions from {totalPapers} different MPSC exam papers, available in both English and Marathi.
                 </p>
               </div>
               <div>
@@ -179,7 +150,7 @@ export default function Home() {
               <div>
                 <h3 className="font-semibold text-slate-800">Which MPSC exams are covered?</h3>
                 <p className="mt-1 text-sm text-slate-600">
-                  The platform covers MPSC Group B Combined Pre, MPSC Group C Combined Pre, MPSC PSI Pre, MPSC Sub Inspector State Excise Pre, MPSC Gazetted Civil Services Combined Pre, and MPSC Gazetted Technical Services Combined Pre exams from 2017 through 2025.
+                  The platform covers MPSC Group B Combined Pre, MPSC Group C Combined Pre, MPSC PSI Pre, MPSC Gazetted Civil Services Combined Pre, and MPSC Gazetted Technical Services Combined Pre exams from {minYear} through {maxYear}.
                 </p>
               </div>
               <div>
@@ -199,7 +170,7 @@ export default function Home() {
               MPSC मागील वर्षाच्या प्रश्नपत्रिका — मोफत ऑनलाइन सराव
             </h2>
             <p className="text-slate-600">
-              MPSC PYQ QUIZ हे MPSC परीक्षेच्या तयारीसाठी एक मोफत ऑनलाइन व्यासपीठ आहे. येथे तुम्ही गट ब, गट क, PSI, राज्य उत्पादन शुल्क उपनिरीक्षक, राजपत्रित नागरी सेवा आणि तांत्रिक सेवा प्रारंभिक परीक्षांच्या (2017–2025) मागील वर्षाच्या प्रश्नपत्रिका सोडवू शकता. सर्व प्रश्नपत्रिका इंग्रजी आणि मराठी दोन्ही भाषांमध्ये उपलब्ध आहेत. 3,540+ प्रश्न, तात्काळ गुणांकन, आणि विषयनिहाय सराव — सर्व काही 100% मोफत.
+              MPSC PYQ QUIZ हे MPSC परीक्षेच्या तयारीसाठी एक मोफत ऑनलाइन व्यासपीठ आहे. येथे तुम्ही गट ब, गट क, PSI, राजपत्रित नागरी सेवा आणि तांत्रिक सेवा प्रारंभिक परीक्षांच्या ({minYear}–{maxYear}) मागील वर्षाच्या प्रश्नपत्रिका सोडवू शकता. सर्व प्रश्नपत्रिका इंग्रजी आणि मराठी दोन्ही भाषांमध्ये उपलब्ध आहेत. {totalQuestions.toLocaleString()}+ प्रश्न, तात्काळ गुणांकन, आणि विषयनिहाय सराव — सर्व काही 100% मोफत.
             </p>
             <div className="mt-4 grid gap-2 sm:grid-cols-2 text-sm text-slate-600">
               <p>&#10003; MPSC गट ब संयुक्त पूर्व परीक्षा</p>

@@ -1,155 +1,24 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getQuizMeta } from "@/lib/quizMeta";
+
+const meta = getQuizMeta();
 
 export const metadata: Metadata = {
-  title: "MPSC Previous Year Question Papers (2017–2025) — Free Online Practice",
-  description:
-    "Practice MPSC previous year question papers online for free. 3540+ questions from Group B, Group C, PSI, Sub Inspector Excise, Gazetted Civil Services & Technical Services prelims (2017–2025). English & Marathi. Official answer keys included.",
+  title: `MPSC Previous Year Question Papers (${meta.minYear}–${meta.maxYear}) — Free Online Practice`,
+  description: `Practice MPSC previous year question papers online for free. ${meta.totalQuestions}+ questions from ${meta.totalPapers} exam papers (${meta.minYear}–${meta.maxYear}). English & Marathi. Official answer keys included.`,
   keywords: [
     "MPSC previous year papers", "MPSC question papers", "MPSC PYQ",
     "MPSC Group B question paper", "MPSC Group C question paper",
     "MPSC PSI question paper", "MPSC prelims papers",
-    "MPSC 2025 question paper", "MPSC 2024 question paper",
     "MPSC Gazetted Services paper", "MPSC answer key",
     "MPSC online test", "MPSC mock test free",
-    "MPSC Sub Inspector Excise", "MPSC 2017 question paper",
   ],
   alternates: { canonical: "/exams" },
 };
 
-const EXAMS = [
-  {
-    title: "MPSC Group C Combined Pre 2025",
-    year: 2025,
-    type: "Group C",
-    questions: 100,
-    description: "MPSC Subordinate Services Group C Combined Preliminary Exam 2025 — 100 questions covering Indian Polity, History, Geography, Science, Economics, Current Affairs, and Environment.",
-  },
-  {
-    title: "MPSC Group B Combined Pre 2025",
-    year: 2025,
-    type: "Group B",
-    questions: 100,
-    description: "MPSC Subordinate Services Group B Combined Preliminary Exam 2025 — 100 questions testing General Studies including Polity, History, Geography, Science, and Current Affairs.",
-  },
-  {
-    title: "MPSC CS Gazetted Combined Pre 2025",
-    year: 2025,
-    type: "Gazetted CS",
-    questions: 100,
-    description: "MPSC Gazetted Civil Services Combined Preliminary Exam 2025 — 100 questions for Maharashtra Civil Services covering all General Studies topics.",
-  },
-  {
-    title: "MPSC Group C Combined Pre 2024",
-    year: 2024,
-    type: "Group C",
-    questions: 100,
-    description: "MPSC Subordinate Services Group C Combined Preliminary Exam 2024 — 100 MCQs from the official question paper with Set A answer key.",
-  },
-  {
-    title: "MPSC Group B Combined Pre 2024",
-    year: 2024,
-    type: "Group B",
-    questions: 100,
-    description: "MPSC Subordinate Services Group B Combined Preliminary Exam 2024 — complete 100-question paper with verified answers.",
-  },
-  {
-    title: "MPSC Gazetted Civil Services Combined Pre 2024",
-    year: 2024,
-    type: "Gazetted CS",
-    questions: 100,
-    description: "MPSC Gazetted Civil Services Combined Preliminary Exam 2024 — 100 General Studies questions for Maharashtra state services.",
-  },
-  {
-    title: "MPSC Gazetted CS Combined Pre 2023",
-    year: 2023,
-    type: "Gazetted CS",
-    questions: 100,
-    description: "MPSC Gazetted Civil Services Combined Preliminary Exam 2023 — full paper with official answer key.",
-  },
-  {
-    title: "MPSC Gazetted Group B & C Combined Pre 2023",
-    year: 2023,
-    type: "Group B & C",
-    questions: 100,
-    description: "MPSC Gazetted Group B and C Combined Preliminary Exam 2023 — 100 questions covering the full General Studies syllabus.",
-  },
-  {
-    title: "PSI 2023 — English & General Studies",
-    year: 2023,
-    type: "PSI",
-    questions: 75,
-    description: "MPSC Police Sub-Inspector Preliminary Exam 2023 — 75 questions on English Language and General Studies.",
-  },
-  {
-    title: "MPSC Gazetted TS Combined Pre 2022",
-    year: 2022,
-    type: "Gazetted TS",
-    questions: 100,
-    description: "MPSC Gazetted Technical Services Combined Preliminary Exam 2022 — 100 General Studies questions with verified answers.",
-  },
-  {
-    title: "MPSC Group C Combined Pre 2022",
-    year: 2022,
-    type: "Group C",
-    questions: 100,
-    description: "MPSC Subordinate Services Group C Combined Preliminary Exam 2022 — 100 MCQs covering Polity, History, Geography, Science, and more.",
-  },
-  {
-    title: "MPSC Sub-Ordinate Group B Combined Pre 2022",
-    year: 2022,
-    type: "Group B",
-    questions: 100,
-    description: "MPSC Subordinate Services Group B Combined Preliminary Exam 2022 — full question paper with Set A answers.",
-  },
-  {
-    title: "MPSC Gazetted TS Combined Pre 2021",
-    year: 2021,
-    type: "Gazetted TS",
-    questions: 100,
-    description: "MPSC Gazetted Technical Services Combined Preliminary Exam 2021 — complete General Studies paper.",
-  },
-  {
-    title: "MPSC PSI Pre 2021",
-    year: 2021,
-    type: "PSI",
-    questions: 100,
-    description: "MPSC Police Sub-Inspector Preliminary Exam 2021 — 100 questions on General Studies with official answer key.",
-  },
-  {
-    title: "MPSC Group-C Combined Pre 2021",
-    year: 2021,
-    type: "Group C",
-    questions: 100,
-    description: "MPSC Subordinate Services Group C Combined Preliminary Exam 2021 — 100 General Studies MCQs.",
-  },
-  {
-    title: "MPSC Subordinate Services Group B Pre 2021",
-    year: 2021,
-    type: "Group B",
-    questions: 100,
-    description: "MPSC Subordinate Services Group B Preliminary Exam 2021 — complete paper with verified Set A answers.",
-  },
-  {
-    title: "MPSC SS Group B Combined Pre 2020",
-    year: 2020,
-    type: "Group B",
-    questions: 100,
-    description: "MPSC Subordinate Services Group B Combined Preliminary Exam 2020 — 100 questions covering the entire General Studies syllabus.",
-  },
-  {
-    title: "MPSC Sub Inspector State Excise Pre 2017",
-    year: 2017,
-    type: "Sub Inspector Excise",
-    questions: 97,
-    description: "MPSC Sub Inspector in the State Excise Preliminary Exam 2017 — 97 questions (3 cancelled) covering History, Maharashtra, Economics, Science, Polity, Logical Reasoning, and Current Affairs.",
-  },
-];
-
-const YEARS = [2025, 2024, 2023, 2022, 2021, 2020, 2017];
-
 export default function ExamsPage() {
-  const totalQuestions = EXAMS.reduce((sum, e) => sum + e.questions, 0);
+  const { exams, years, totalQuestions, totalPapers } = meta;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50">
@@ -176,7 +45,7 @@ export default function ExamsPage() {
             MPSC Previous Year Question Papers — Free Online Practice
           </h2>
           <p className="mt-3 text-slate-600">
-            Practice with {totalQuestions}+ questions from {EXAMS.length} MPSC exam papers spanning {YEARS[YEARS.length - 1]} to {YEARS[0]}.
+            Practice with {totalQuestions}+ questions from {totalPapers} MPSC exam papers spanning {years[years.length - 1]} to {years[0]}.
             Every paper includes the official Set A answer key. Available in both <strong>English</strong> and <strong>Marathi</strong>.
             Sign in on the <Link href="/" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">home page</Link> to start practicing instantly.
           </p>
@@ -184,7 +53,7 @@ export default function ExamsPage() {
 
         <div className="mb-8 grid gap-3 sm:grid-cols-3">
           <div className="rounded-xl border border-indigo-200 bg-indigo-50 p-4 text-center">
-            <p className="text-2xl font-bold text-indigo-700">{EXAMS.length}</p>
+            <p className="text-2xl font-bold text-indigo-700">{totalPapers}</p>
             <p className="text-sm text-indigo-600">Exam Papers</p>
           </div>
           <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-center">
@@ -192,13 +61,13 @@ export default function ExamsPage() {
             <p className="text-sm text-emerald-600">Questions</p>
           </div>
           <div className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-center">
-            <p className="text-2xl font-bold text-amber-700">{YEARS.length}</p>
+            <p className="text-2xl font-bold text-amber-700">{years.length}</p>
             <p className="text-sm text-amber-600">Years Covered</p>
           </div>
         </div>
 
-        {YEARS.map((year) => {
-          const yearExams = EXAMS.filter((e) => e.year === year);
+        {years.map((year) => {
+          const yearExams = exams.filter((e) => e.year === year);
           if (yearExams.length === 0) return null;
           return (
             <section key={year} className="mb-10">
