@@ -132,6 +132,10 @@ export default function StudentView({ language = "english", challenge, homeKey =
   const [reportSubmitting, setReportSubmitting] = useState(false);
   const [streak, setStreak] = useState(0);
   const [showAnalytics, setShowAnalytics] = useState(false);
+  const [showLangTip, setShowLangTip] = useState(() => {
+    if (typeof window !== "undefined") return localStorage.getItem("mcq_lang_tip_dismissed") !== "1";
+    return true;
+  });
 
   useEffect(() => {
     let cancelled = false;
@@ -431,6 +435,26 @@ export default function StudentView({ language = "english", challenge, homeKey =
           </div>
         ) : (
           <>
+            {/* Language tip */}
+            {showLangTip && language === "english" && (
+              <div className="flex items-center gap-2 rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-2.5 dark:border-indigo-800 dark:bg-indigo-950/40">
+                <span className="text-base">🌐</span>
+                <p className="flex-1 text-xs sm:text-sm text-indigo-700 dark:text-indigo-300">
+                  मराठी मध्ये तयारी करायची आहे? वरील dropdown मधून <span className="font-bold">मराठी</span> भाषा निवडा.
+                  <span className="hidden sm:inline"> &mdash; Want to prepare in Marathi? Select <span className="font-bold">मराठी</span> from the language dropdown above.</span>
+                </p>
+                <button
+                  onClick={() => { setShowLangTip(false); localStorage.setItem("mcq_lang_tip_dismissed", "1"); }}
+                  className="shrink-0 rounded-md p-1 text-indigo-400 hover:bg-indigo-100 hover:text-indigo-600 transition-colors dark:hover:bg-indigo-900/50"
+                  aria-label="Dismiss"
+                >
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            )}
+
             {/* Streak + Search + My Stats row */}
             <div className="flex items-center justify-between gap-2 flex-wrap min-w-0">
               {streak > 0 ? (
