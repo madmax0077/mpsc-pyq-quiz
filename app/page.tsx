@@ -196,6 +196,8 @@ export default function Home() {
             <span>|</span>
             <a href="/about" className="hover:text-indigo-600 hover:underline">About</a>
             <span>|</span>
+            <a href="/contact" className="hover:text-indigo-600 hover:underline">Contact</a>
+            <span>|</span>
             <a href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</a>
           </div>
         </div>

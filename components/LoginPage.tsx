@@ -122,6 +122,16 @@ export default function LoginPage() {
         <p className="mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
           Secure access &middot; Your data stays in your browser
         </p>
+
+        <nav className="mt-6 flex items-center justify-center gap-3 text-xs text-slate-400 dark:text-slate-500">
+          <Link href="/about" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">About</Link>
+          <span>|</span>
+          <Link href="/contact" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Contact</Link>
+          <span>|</span>
+          <Link href="/exams" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Exams</Link>
+          <span>|</span>
+          <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy Policy</Link>
+        </nav>
       </div>
     </div>
   );
