@@ -441,7 +441,6 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 <span className="text-base">🌐</span>
                 <p className="flex-1 text-xs sm:text-sm text-indigo-700 dark:text-indigo-300">
                   मराठी मध्ये तयारी करायची आहे? वरील dropdown मधून <span className="font-bold">मराठी</span> भाषा निवडा.
-                  <span className="hidden sm:inline"> &mdash; Want to prepare in Marathi? Select <span className="font-bold">मराठी</span> from the language dropdown above.</span>
                 </p>
                 <button
                   onClick={() => { setShowLangTip(false); localStorage.setItem("mcq_lang_tip_dismissed", "1"); }}
