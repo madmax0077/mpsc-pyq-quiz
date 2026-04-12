@@ -52,7 +52,12 @@ export default function Home() {
             Available in both English and Marathi. 100% free for all aspirants.
           </p>
           <p className="mt-6 text-sm font-medium text-indigo-600">
-            Sign in to start practicing — instant scoring, detailed answers, daily quizzes & streak tracking.
+            Sign in to start practicing — instant scoring, detailed answers, daily quizzes &amp; streak tracking.
+          </p>
+          <p className="mt-3 text-sm text-slate-500">
+            <a href="/exams" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">
+              Browse all MPSC exam papers (2020–2025) &rarr;
+            </a>
           </p>
         </div>
 
@@ -186,6 +191,26 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Marathi SEO Content */}
+        <div className="border-t border-slate-100 bg-slate-50 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="mb-4 text-2xl font-bold text-slate-900">
+              MPSC मागील वर्षाच्या प्रश्नपत्रिका — मोफत ऑनलाइन सराव
+            </h2>
+            <p className="text-slate-600">
+              MPSC PYQ QUIZ हे MPSC परीक्षेच्या तयारीसाठी एक मोफत ऑनलाइन व्यासपीठ आहे. येथे तुम्ही गट ब, गट क, PSI, राजपत्रित नागरी सेवा आणि तांत्रिक सेवा प्रारंभिक परीक्षांच्या (2020–2025) मागील वर्षाच्या प्रश्नपत्रिका सोडवू शकता. सर्व प्रश्नपत्रिका इंग्रजी आणि मराठी दोन्ही भाषांमध्ये उपलब्ध आहेत. 3,350+ प्रश्न, तात्काळ गुणांकन, आणि विषयनिहाय सराव — सर्व काही 100% मोफत.
+            </p>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2 text-sm text-slate-600">
+              <p>&#10003; MPSC गट ब संयुक्त पूर्व परीक्षा</p>
+              <p>&#10003; MPSC गट क संयुक्त पूर्व परीक्षा</p>
+              <p>&#10003; MPSC PSI पूर्व परीक्षा</p>
+              <p>&#10003; MPSC राजपत्रित नागरी सेवा पूर्व परीक्षा</p>
+              <p>&#10003; MPSC राजपत्रित तांत्रिक सेवा पूर्व परीक्षा</p>
+              <p>&#10003; अधिकृत उत्तरतालिका (Set A) समाविष्ट</p>
+            </div>
+          </div>
+        </div>
+
         {/* Footer */}
         <div className="border-t border-slate-200 bg-slate-50 py-8 text-center">
           <p className="text-sm text-slate-500">
@@ -195,6 +220,8 @@ export default function Home() {
             Free MPSC previous year question practice for all aspirants
           </p>
           <div className="mt-3 flex items-center justify-center gap-4 text-xs text-slate-400">
+            <a href="/exams" className="hover:text-indigo-600 hover:underline">Exam Papers</a>
+            <span>|</span>
             <a href="/about" className="hover:text-indigo-600 hover:underline">About</a>
             <span>|</span>
             <a href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</a>

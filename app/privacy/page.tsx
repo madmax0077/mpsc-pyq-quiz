@@ -1,4 +1,12 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — MPSC PYQ QUIZ",
+  description:
+    "Privacy policy for MPSC PYQ QUIZ. Learn how we handle your data, quiz progress, Google sign-in information, and advertising cookies.",
+  alternates: { canonical: "/privacy" },
+};
 
 export default function PrivacyPolicy() {
   return (

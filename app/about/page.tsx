@@ -1,4 +1,12 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About MPSC PYQ QUIZ — Free MPSC Previous Year Question Practice",
+  description:
+    "MPSC PYQ QUIZ by Don't know Academy — free platform for MPSC aspirants to practice 3350+ previous year questions from Group B, Group C, PSI & Gazetted Services exams (2020–2025) in English and Marathi.",
+  alternates: { canonical: "/about" },
+};
 
 export default function About() {
   return (
