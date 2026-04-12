@@ -18,7 +18,9 @@ export const metadata: Metadata = {
     "MPSC", "MPSC PYQ", "MPSC previous year questions", "MPSC quiz",
     "MPSC practice", "MPSC Group B", "MPSC Group C", "MPSC prelims",
     "Maharashtra PSC", "MPSC free", "MPSC online test", "MPSC mock test",
-    "MPSC preparation", "MPSC study material",
+    "MPSC preparation", "MPSC study material", "MPSC PSI",
+    "MPSC Gazetted Services", "MPSC 2025", "MPSC 2024", "MPSC 2023",
+    "MPSC question paper", "MPSC answer key", "MPSC subject wise questions",
   ],
   authors: [{ name: "Don't know Academy" }],
   creator: "Don't know Academy",
@@ -66,6 +68,71 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/icon-192.png" />
         <link rel="manifest" href="/manifest.json" />
+
+        {/* JSON-LD Structured Data for Google Rich Results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  name: "MPSC PYQ QUIZ",
+                  url: "https://www.mpscs.in",
+                  description: "Free MPSC Previous Year Question practice — 3350+ questions from Group B, Group C, PSI, Gazetted Services papers (2020–2025) with instant scoring. Available in English and Marathi.",
+                  publisher: { "@type": "Organization", name: "Don't know Academy" },
+                  inLanguage: ["en", "mr"],
+                },
+                {
+                  "@type": "Organization",
+                  name: "Don't know Academy",
+                  url: "https://www.mpscs.in",
+                  logo: "https://www.mpscs.in/logo.png",
+                  sameAs: [],
+                },
+                {
+                  "@type": "FAQPage",
+                  mainEntity: [
+                    {
+                      "@type": "Question",
+                      name: "What is MPSC PYQ QUIZ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "MPSC PYQ QUIZ is a free online platform that helps MPSC aspirants practice with previous year questions from Group B, Group C, PSI, and Gazetted Services prelims (2020-2025), available in English and Marathi.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "How many questions are available on MPSC PYQ QUIZ?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "There are 3,350+ questions from 17 MPSC exam papers covering subjects like Indian Polity, History, Geography, Science, Economics, and Current Affairs.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Is MPSC PYQ QUIZ free?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "Yes, MPSC PYQ QUIZ is 100% free with no subscriptions or hidden charges. All aspirants can access every question paper and feature at no cost.",
+                      },
+                    },
+                    {
+                      "@type": "Question",
+                      name: "Which MPSC exams are covered?",
+                      acceptedAnswer: {
+                        "@type": "Answer",
+                        text: "MPSC Group B Combined Pre, Group C Combined Pre, PSI Pre, Gazetted Civil Services Combined Pre, and Gazetted Technical Services Combined Pre exams from 2020 through 2025.",
+                      },
+                    },
+                  ],
+                },
+              ],
+            }),
+          }}
+        />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')})();`,

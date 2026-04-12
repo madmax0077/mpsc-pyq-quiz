@@ -1,141 +1,206 @@
-"use client";
+import HomeClient from "@/components/HomeClient";
 
-import { useState, useEffect, useCallback } from "react";
-import { useAuth } from "@/lib/auth-context";
-import type { Language } from "@/lib/types";
-import LoginPage from "@/components/LoginPage";
-import StudentView from "@/components/StudentView";
+const EXAM_PAPERS = [
+  "MPSC Group C Combined Pre 2025",
+  "MPSC Group B Combined Pre 2025",
+  "MPSC CS Gazetted Combined Pre 2025",
+  "MPSC Group C Combined Pre 2024",
+  "MPSC Group B Combined Pre 2024",
+  "MPSC Gazetted Civil Services Combined Pre 2024",
+  "MPSC Gazetted CS Combined Pre 2023",
+  "MPSC Gazetted Group B & C Combined Pre 2023",
+  "PSI 2023 - English & General Studies",
+  "MPSC Gazetted TS Combined Pre 2022",
+  "MPSC Group C Combined Pre 2022",
+  "MPSC Sub-Ordinate Group B Combined Pre 2022",
+  "MPSC Gazetted TS Combined Pre 2021",
+  "MPSC PSI Pre 2021",
+  "MPSC Group-C Combined Pre 2021",
+  "MPSC Subordinate Services Group B Pre 2021",
+  "MPSC SS Group B Combined Pre 2020",
+];
+
+const SUBJECTS = [
+  { name: "Current Affairs", count: 455 },
+  { name: "Science", count: 440 },
+  { name: "Economics", count: 415 },
+  { name: "History", count: 401 },
+  { name: "Geography", count: 401 },
+  { name: "Indian Polity", count: 386 },
+  { name: "Aptitude", count: 210 },
+  { name: "English", count: 135 },
+  { name: "Marathi", count: 135 },
+  { name: "Environment", count: 30 },
+];
 
 export default function Home() {
-  const { loading, studentUser, logoutStudent } = useAuth();
-  const [language, setLanguage] = useState<Language>("english");
-  const [dark, setDark] = useState(false);
-  const [homeKey, setHomeKey] = useState(0);
-  const [challenge, setChallenge] = useState<{ quizId: string; name: string; score: number; total: number } | null>(null);
-
-  useEffect(() => {
-    setDark(document.documentElement.classList.contains("dark"));
-    const params = new URLSearchParams(window.location.search);
-    const cq = params.get("cq");
-    const cs = params.get("cs");
-    const ct = params.get("ct");
-    const cn = params.get("cn");
-    if (cq && cs && ct) {
-      setChallenge({ quizId: cq, name: cn || "A friend", score: parseInt(cs, 10), total: parseInt(ct, 10) });
-      window.history.replaceState({}, "", window.location.pathname);
-    }
-  }, []);
-
-  const toggleDark = useCallback(() => {
-    const next = !dark;
-    setDark(next);
-    document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
-  }, [dark]);
-
-  if (loading) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-slate-50 to-slate-100/50 dark:from-slate-900 dark:to-slate-950">
-        <div className="flex flex-col items-center gap-3">
-          <div className="h-10 w-10 animate-spin rounded-full border-4 border-slate-200 border-t-indigo-600 dark:border-slate-700 dark:border-t-indigo-400" />
-          <p className="text-sm text-slate-500 dark:text-slate-400">Loading...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (!studentUser) return <LoginPage />;
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50 dark:from-slate-900 dark:to-slate-950">
-      {/* ---- Top Navigation Bar ---- */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
-        <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
-          <button onClick={() => { setHomeKey((k) => k + 1); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0 shrink-0">
-            <img src="/logo.png" alt="MPSC Logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
-            <div className="text-left">
-              <h1 className="text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
-              <p className="text-[9px] sm:text-[10px] font-medium text-slate-400 dark:text-slate-500">Don&apos;t know Academy</p>
-            </div>
-          </button>
+    <>
+      <HomeClient />
 
-          <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
-            <button
-              onClick={toggleDark}
-              aria-label="Toggle dark mode"
-              className="shrink-0 rounded-lg p-1.5 sm:p-2 text-slate-500 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 transition-colors"
-            >
-              {dark ? (
-                <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                </svg>
-              ) : (
-                <svg className="h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-                </svg>
-              )}
-            </button>
+      {/* Static SEO content — always present in HTML for search engine crawlers.
+          Hidden by HomeClient on mount via document.getElementById. */}
+      <section id="seo-landing" className="bg-white text-slate-800">
+        {/* Hero */}
+        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
+          <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+            MPSC PYQ QUIZ — Free Previous Year Question Practice
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
+            Practice 3,350+ MPSC previous year questions from 17 exam papers (2020–2025).
+            Covering Group B, Group C, PSI, Gazetted Civil Services and Technical Services.
+            Available in both English and Marathi. 100% free for all aspirants.
+          </p>
+          <p className="mt-6 text-sm font-medium text-indigo-600">
+            Sign in to start practicing — instant scoring, detailed answers, daily quizzes & streak tracking.
+          </p>
+        </div>
 
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value as Language)}
-              className="shrink-0 rounded-lg border border-slate-200 bg-white px-1.5 py-1 sm:px-2 sm:py-1.5 text-[11px] sm:text-xs font-medium text-slate-600 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
-            >
-              <option value="english">EN</option>
-              <option value="marathi">मराठी</option>
-            </select>
-
-            {studentUser.photoURL && (
-              <img
-                src={studentUser.photoURL}
-                alt=""
-                className="h-7 w-7 sm:h-8 sm:w-8 shrink-0 rounded-full ring-2 ring-white"
-                referrerPolicy="no-referrer"
-              />
-            )}
-            <div className="hidden sm:block min-w-0">
-              <p className="text-xs font-semibold text-slate-700 leading-tight truncate dark:text-slate-200">
-                {studentUser.displayName || "Aspirant"}
-              </p>
-              <p className="text-[10px] text-slate-400 truncate dark:text-slate-500">{studentUser.email}</p>
-            </div>
-            <button
-              onClick={logoutStudent}
-              className="shrink-0 rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 text-[11px] sm:text-xs font-medium text-slate-500 transition-colors hover:bg-red-50 hover:text-red-600 dark:text-slate-400 dark:hover:bg-red-900/30 dark:hover:text-red-400"
-            >
-              Logout
-            </button>
+        {/* Available Exam Papers */}
+        <div className="border-t border-slate-100 bg-slate-50 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="mb-6 text-2xl font-bold text-slate-900">
+              Available MPSC Exam Papers
+            </h2>
+            <p className="mb-6 text-slate-600">
+              All question papers include the official answer key (Set A) with correct answers pre-marked.
+              Each paper is available in both English and Marathi.
+            </p>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {EXAM_PAPERS.map((paper) => (
+                <li key={paper} className="flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700">
+                  <span className="text-indigo-500">&#10003;</span>
+                  {paper}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </header>
 
-      {/* ---- Main Content ---- */}
-      <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <StudentView language={language} challenge={challenge} homeKey={homeKey} />
-      </main>
-
-      {/* ---- Footer ---- */}
-      <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-xs text-slate-400 dark:text-slate-500">
-              MPSC PYQ QUIZ &middot; Don&apos;t know Academy
+        {/* Subject-wise Practice */}
+        <div className="border-t border-slate-100 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="mb-6 text-2xl font-bold text-slate-900">
+              Subject-wise Practice for MPSC Exams
+            </h2>
+            <p className="mb-6 text-slate-600">
+              Questions are automatically categorized by subject so you can focus on your weak areas.
+              Track your progress across each subject.
             </p>
-            <p className="text-[10px] text-slate-300 dark:text-slate-600">
-              Free PYQ practice for MPSC aspirants
-            </p>
-            <div className="flex items-center gap-4">
-              <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                About
-              </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
-              <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Privacy Policy
-              </a>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {SUBJECTS.map((s) => (
+                <div key={s.name} className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                  <p className="font-semibold text-slate-800">{s.name}</p>
+                  <p className="text-sm text-slate-500">{s.count}+ questions</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+
+        {/* Features */}
+        <div className="border-t border-slate-100 bg-slate-50 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="mb-6 text-2xl font-bold text-slate-900">
+              Why Use MPSC PYQ QUIZ?
+            </h2>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <div>
+                <h3 className="font-semibold text-slate-800">Previous Year Questions</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Practice with actual MPSC exam questions from 2020 to 2025 — Group B, Group C, PSI, Gazetted Civil Services, and Technical Services prelims.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">Instant Results & Explanations</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Submit your answers and get instant scoring with correct answer marking. Review every question after submission.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">Bilingual — English & Marathi</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Every question paper is available in both English and Marathi. Switch languages anytime.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">Daily Quiz & Streak Tracking</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  A new daily quiz with 10 random questions every day. Maintain your practice streak and track performance.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">Subject-wise Analytics</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Track your progress in Indian Polity, History, Geography, Science, Economics, Current Affairs, and more.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">100% Free — No Hidden Charges</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  MPSC PYQ QUIZ is completely free for all MPSC aspirants. No subscriptions, no premium plans.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ for SEO */}
+        <div className="border-t border-slate-100 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="mb-6 text-2xl font-bold text-slate-900">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-slate-800">What is MPSC PYQ QUIZ?</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  MPSC PYQ QUIZ is a free online platform by Don&#39;t know Academy that helps Maharashtra Public Service Commission (MPSC) aspirants practice with previous year questions. It covers Group B, Group C, PSI, and Gazetted Services prelims from 2020 to 2025.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">How many questions are available?</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Currently there are 3,350+ questions from 17 different MPSC exam papers, available in both English and Marathi.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">Is MPSC PYQ QUIZ free?</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Yes, MPSC PYQ QUIZ is 100% free. There are no subscriptions, premium plans, or hidden charges. All aspirants can access every question paper and feature at no cost.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">Which MPSC exams are covered?</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  The platform covers MPSC Group B Combined Pre, MPSC Group C Combined Pre, MPSC PSI Pre, MPSC Gazetted Civil Services Combined Pre, and MPSC Gazetted Technical Services Combined Pre exams from 2020 through 2025.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">Are the answers verified?</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Yes, all answers are based on the official MPSC answer key (Set A) published after each exam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="border-t border-slate-200 bg-slate-50 py-8 text-center">
+          <p className="text-sm text-slate-500">
+            MPSC PYQ QUIZ &middot; Don&#39;t know Academy
+          </p>
+          <p className="mt-1 text-xs text-slate-400">
+            Free MPSC previous year question practice for all aspirants
+          </p>
+          <div className="mt-3 flex items-center justify-center gap-4 text-xs text-slate-400">
+            <a href="/about" className="hover:text-indigo-600 hover:underline">About</a>
+            <span>|</span>
+            <a href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
