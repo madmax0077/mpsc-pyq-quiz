@@ -62,22 +62,24 @@ export default function HomeClient() {
           </button>
 
           <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
-            <nav className="flex items-center gap-0.5 sm:gap-1">
+            <nav className="hidden sm:flex items-center gap-1 text-xs font-semibold">
               <a
                 href="/exams"
-                className="rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 text-[11px] sm:text-xs font-semibold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
+                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
                 Exams
               </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/about"
-                className="rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 text-[11px] sm:text-xs font-semibold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
+                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
                 About
               </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/contact"
-                className="rounded-lg px-2 py-1.5 sm:px-3 sm:py-2 text-[11px] sm:text-xs font-semibold text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
+                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
                 Contact
               </a>
