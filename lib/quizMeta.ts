@@ -100,7 +100,7 @@ export function getQuizMeta(): QuizMeta {
 
   const filePath = path.join(process.cwd(), "public", "quizzes.json");
   const raw = fs.readFileSync(filePath, "utf-8");
-  const quizzes: RawQuiz[] = JSON.parse(raw);
+  const quizzes: RawQuiz[] = (JSON.parse(raw) as RawQuiz[]).filter((q) => q.id !== "__copyright__");
 
   const englishQuizzes = quizzes.filter((q) => {
     const lang = (q.language || "").toLowerCase();

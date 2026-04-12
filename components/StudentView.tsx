@@ -149,8 +149,9 @@ export default function StudentView({ language = "english", challenge, homeKey =
       try {
         const res = await fetch("/quizzes.json", { cache: forceRefresh ? "no-store" : "default" });
         if (!res.ok) throw new Error(`quizzes.json ${res.status}`);
-        const bundled = (await res.json()) as Quiz[];
-        if (!Array.isArray(bundled)) throw new Error("invalid quizzes.json shape");
+        const raw = (await res.json()) as Quiz[];
+        if (!Array.isArray(raw)) throw new Error("invalid quizzes.json shape");
+        const bundled = raw.filter((q) => q.id !== "__copyright__");
         if (cancelled) return;
 
         if (forceRefresh) {
@@ -660,7 +661,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
   const totalCategoryQuestions = Object.values(pageScores).reduce((s, p) => s + p.total, 0);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 quiz-protected">
       {showConfetti && <Confetti />}
 
       {/* Report Toast */}
