@@ -34,6 +34,7 @@ export interface Quiz {
   questions: Question[];
   language?: Language;
   tag?: string;
+  topicOnly?: boolean;
 }
 
 export type AppMode = "admin" | "student";

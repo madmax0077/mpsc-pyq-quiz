@@ -195,9 +195,11 @@ export default function StudentView({ language = "english", challenge, homeKey =
     return quizzes.filter((q) => q.language !== "marathi");
   }, [quizzes, language]);
 
+  const examQuizzes = useMemo(() => filteredQuizzes.filter((q) => !q.topicOnly), [filteredQuizzes]);
+
   const categoryQuizzes = useMemo<DisplayQuiz[]>(() => {
     const catMap = new Map<Category, Map<string, Question>>();
-    for (const quiz of filteredQuizzes) {
+    for (const quiz of examQuizzes) {
       const tag = quiz.tag || quiz.title;
       for (const q of quiz.questions) {
         if (!q.category) continue;
@@ -223,19 +225,19 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
   const regularQuizzes = useMemo<DisplayQuiz[]>(
     () =>
-      filteredQuizzes.map((q) => ({
+      examQuizzes.map((q) => ({
         id: q.id,
         title: q.title,
         questions: q.questions,
         isCategory: false,
         quizCount: q.questions.length,
       })),
-    [filteredQuizzes],
+    [examQuizzes],
   );
 
   const dailyQuiz = useMemo<DisplayQuiz | null>(() => {
     const pool: Question[] = [];
-    for (const quiz of filteredQuizzes) {
+    for (const quiz of examQuizzes) {
       for (const q of quiz.questions) pool.push(q);
     }
     if (pool.length === 0) return null;
@@ -249,7 +251,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
       questions: picked,
       isCategory: false,
     };
-  }, [filteredQuizzes, language]);
+  }, [examQuizzes, language]);
 
   const dailyQuote = useMemo(() => {
     const today = new Date().toISOString().slice(0, 10);
@@ -266,7 +268,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
   const allSearchableQuestions = useMemo(() => {
     const result: { question: Question; quizTitle: string }[] = [];
-    for (const quiz of filteredQuizzes) {
+    for (const quiz of examQuizzes) {
       const tag = quiz.tag || quiz.title;
       for (const q of quiz.questions) result.push({ question: q, quizTitle: tag });
     }
@@ -283,7 +285,24 @@ export default function StudentView({ language = "english", challenge, homeKey =
     return map;
   }, [filteredQuizzes]);
 
-  const topics = useMemo(() => getAllTopics(), [homeKey]);
+  const [topics, setTopics] = useState<Topic[]>(() => getAllTopics());
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch("/topics.json", { cache: "default" });
+        if (!res.ok) return;
+        const bundled = (await res.json()) as Topic[];
+        if (!Array.isArray(bundled) || cancelled) return;
+        const local = getAllTopics();
+        const localIds = new Set(local.map((t) => t.id));
+        const merged = [...local, ...bundled.filter((t) => !localIds.has(t.id))];
+        setTopics(merged);
+      } catch { /* bundled topics not available, use localStorage only */ }
+    })();
+    return () => { cancelled = true; };
+  }, [homeKey]);
 
   useEffect(() => {
     if (challenge && quizzes.length > 0 && !selectedQuiz) {
