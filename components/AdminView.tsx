@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language } from "@/lib/types";
-import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes } from "@/lib/storage";
+import { useState, useEffect, useMemo } from "react";
+import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language, Topic } from "@/lib/types";
+import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes, getAllTopics, saveTopic, deleteTopic } from "@/lib/storage";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
 import QuestionForm from "./QuestionForm";
@@ -48,9 +48,27 @@ export default function AdminView() {
   const [currentPw, setCurrentPw] = useState("");
   const [newPw, setNewPw] = useState("");
   const [confirmPw, setConfirmPw] = useState("");
+  // Topic management state
+  const [savedTopics, setSavedTopics] = useState<Topic[]>([]);
+  const [showTopicManager, setShowTopicManager] = useState(false);
+  const [topicName, setTopicName] = useState("");
+  const [topicDescription, setTopicDescription] = useState("");
+  const [topicCat, setTopicCat] = useState<Category | "">("");
+  const [topicQuestionIds, setTopicQuestionIds] = useState<string[]>([]);
+  const [editingTopicId, setEditingTopicId] = useState<string | null>(null);
+  const [topicSearch, setTopicSearch] = useState("");
+  const [bundledQuizzes, setBundledQuizzes] = useState<Quiz[]>([]);
 
   useEffect(() => {
     setSavedQuizzes(getAllQuizzes());
+    setSavedTopics(getAllTopics());
+    // Fetch bundled quizzes for topic question picker
+    fetch("/quizzes.json")
+      .then((r) => r.json())
+      .then((raw: Quiz[]) => {
+        if (Array.isArray(raw)) setBundledQuizzes(raw.filter((q) => q.id !== "__copyright__"));
+      })
+      .catch(() => {});
   }, []);
 
   const showToast = (msg: string) => {
@@ -176,6 +194,65 @@ export default function AdminView() {
     }
     return acc;
   }, {});
+
+  // Build question pool for topic picker from bundled + local quizzes
+  const pickerQuestions = useMemo(() => {
+    if (!topicCat) return [];
+    const quizMap = new Map<string, Quiz>();
+    for (const q of [...bundledQuizzes, ...savedQuizzes]) {
+      if (!quizMap.has(q.id)) quizMap.set(q.id, q);
+    }
+    const qMap = new Map<string, Question>();
+    for (const quiz of quizMap.values()) {
+      for (const q of quiz.questions) {
+        if (q.category === topicCat && !qMap.has(q.id)) qMap.set(q.id, q);
+      }
+    }
+    return Array.from(qMap.values());
+  }, [topicCat, savedQuizzes, bundledQuizzes]);
+
+  const filteredPickerQuestions = useMemo(() => {
+    const search = topicSearch.toLowerCase().trim();
+    const base = search ? pickerQuestions.filter((q) => q.text.toLowerCase().includes(search)) : pickerQuestions;
+    return base.slice(0, 100);
+  }, [pickerQuestions, topicSearch]);
+
+  const handleSaveTopic = () => {
+    if (!topicName.trim()) { showToast("Enter a topic name."); return; }
+    if (!topicCat) { showToast("Select a category."); return; }
+    if (topicQuestionIds.length === 0) { showToast("Select at least one question."); return; }
+    const topic: Topic = {
+      id: editingTopicId || uid(),
+      name: topicName.trim(),
+      description: topicDescription.trim() || undefined,
+      category: topicCat as Category,
+      questionIds: topicQuestionIds,
+    };
+    saveTopic(topic);
+    setSavedTopics(getAllTopics());
+    setTopicName(""); setTopicDescription(""); setTopicCat(""); setTopicQuestionIds([]); setEditingTopicId(null); setTopicSearch("");
+    showToast(editingTopicId ? "Topic updated!" : "Topic saved!");
+  };
+
+  const handleEditTopic = (topic: Topic) => {
+    setTopicName(topic.name);
+    setTopicDescription(topic.description || "");
+    setTopicCat(topic.category);
+    setTopicQuestionIds(topic.questionIds);
+    setEditingTopicId(topic.id);
+    setShowTopicManager(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleDeleteTopic = (id: string) => {
+    if (!confirm("Delete this topic?")) return;
+    deleteTopic(id);
+    setSavedTopics(getAllTopics());
+    if (editingTopicId === id) {
+      setTopicName(""); setTopicDescription(""); setTopicCat(""); setTopicQuestionIds([]); setEditingTopicId(null); setTopicSearch("");
+    }
+    showToast("Topic deleted.");
+  };
 
   const handleChangePassword = () => {
     if (!currentPw || !newPw || !confirmPw) {
@@ -473,6 +550,193 @@ export default function AdminView() {
           </div>
         </div>
       )}
+
+      {/* Topics Management */}
+      <div className="rounded-xl border border-slate-200 bg-white shadow-sm dark:bg-slate-800 dark:border-slate-700">
+        <button
+          onClick={() => setShowTopicManager(!showTopicManager)}
+          className="flex w-full items-center justify-between px-6 py-4 text-left"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+              </svg>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-slate-700 dark:text-slate-200">Manage Topics</p>
+              <p className="text-xs text-slate-400 dark:text-slate-500">
+                {savedTopics.length} topic{savedTopics.length !== 1 ? "s" : ""} &middot; For Topic Wise practice mode
+              </p>
+            </div>
+          </div>
+          <svg className={`h-5 w-5 text-slate-400 transition-transform ${showTopicManager ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+          </svg>
+        </button>
+
+        {showTopicManager && (
+          <div className="border-t border-slate-100 px-6 pb-5 pt-4 space-y-5 dark:border-slate-700">
+            {/* Topic Form */}
+            <div className="space-y-3">
+              <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">
+                {editingTopicId ? "Edit Topic" : "Create New Topic"}
+              </h4>
+              <input
+                type="text"
+                value={topicName}
+                onChange={(e) => setTopicName(e.target.value)}
+                placeholder="Topic name (e.g. Ancient India, Newton&apos;s Laws)"
+                className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
+              />
+              <input
+                type="text"
+                value={topicDescription}
+                onChange={(e) => setTopicDescription(e.target.value)}
+                placeholder="Short description (optional)"
+                className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
+              />
+              <select
+                value={topicCat}
+                onChange={(e) => { setTopicCat(e.target.value as Category | ""); setTopicQuestionIds([]); setTopicSearch(""); }}
+                className="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm text-slate-600 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-300"
+              >
+                <option value="">Select a subject/category...</option>
+                {CATEGORIES.map((cat) => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
+
+              {/* Question Picker */}
+              {topicCat && (
+                <div className="rounded-lg border border-slate-200 p-3 space-y-2 dark:border-slate-600">
+                  <div className="flex items-center justify-between">
+                    <p className="text-xs font-semibold text-slate-600 dark:text-slate-400">
+                      Select Questions ({topicQuestionIds.length} selected of {pickerQuestions.length})
+                    </p>
+                    <div className="flex gap-3">
+                      <button
+                        type="button"
+                        onClick={() => setTopicQuestionIds(pickerQuestions.map((q) => q.id))}
+                        className="text-xs text-indigo-600 hover:underline dark:text-indigo-400"
+                      >
+                        Select All
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setTopicQuestionIds([])}
+                        className="text-xs text-slate-400 hover:underline"
+                      >
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    value={topicSearch}
+                    onChange={(e) => setTopicSearch(e.target.value)}
+                    placeholder="Search questions..."
+                    className="w-full rounded-md border border-slate-200 px-3 py-1.5 text-xs text-slate-700 placeholder:text-slate-400 focus:border-emerald-400 focus:outline-none dark:bg-slate-700 dark:border-slate-600 dark:text-slate-200 dark:placeholder:text-slate-500"
+                  />
+                  <div className="max-h-64 overflow-y-auto space-y-0.5 pr-1">
+                    {filteredPickerQuestions.length === 0 ? (
+                      <p className="py-4 text-center text-xs text-slate-400">No questions found for {topicCat}</p>
+                    ) : filteredPickerQuestions.map((q) => (
+                      <label
+                        key={q.id}
+                        className="flex cursor-pointer items-start gap-2 rounded-md p-2 hover:bg-slate-50 dark:hover:bg-slate-700/50"
+                      >
+                        <input
+                          type="checkbox"
+                          checked={topicQuestionIds.includes(q.id)}
+                          onChange={(e) => {
+                            if (e.target.checked) setTopicQuestionIds((prev) => [...prev, q.id]);
+                            else setTopicQuestionIds((prev) => prev.filter((id) => id !== q.id));
+                          }}
+                          className="mt-0.5 shrink-0 accent-emerald-600"
+                        />
+                        <span className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                          {q.text.slice(0, 120)}{q.text.length > 120 ? "…" : ""}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                  {pickerQuestions.length > 100 && (
+                    <p className="text-center text-xs text-slate-400">
+                      Showing {filteredPickerQuestions.length} of {pickerQuestions.length} — use search to find specific questions
+                    </p>
+                  )}
+                </div>
+              )}
+
+              <div className="flex gap-2">
+                <button
+                  onClick={handleSaveTopic}
+                  className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-emerald-700 transition-colors"
+                >
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  {editingTopicId ? "Update Topic" : "Save Topic"}
+                </button>
+                {editingTopicId && (
+                  <button
+                    onClick={() => { setTopicName(""); setTopicDescription(""); setTopicCat(""); setTopicQuestionIds([]); setEditingTopicId(null); setTopicSearch(""); }}
+                    className="rounded-lg border border-slate-200 px-4 py-2.5 text-sm font-medium text-slate-500 hover:bg-slate-50 dark:border-slate-600 dark:text-slate-400 dark:hover:bg-slate-700 transition-colors"
+                  >
+                    Cancel Edit
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {/* Saved Topics List */}
+            {savedTopics.length > 0 && (
+              <div className="space-y-2">
+                <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">Saved Topics</h4>
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {savedTopics.map((topic) => (
+                    <div
+                      key={topic.id}
+                      className="flex items-start justify-between gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 dark:bg-slate-700/50 dark:border-slate-600"
+                    >
+                      <div className="min-w-0 flex-1">
+                        <p className="text-sm font-semibold text-slate-800 truncate dark:text-slate-100">{topic.name}</p>
+                        <p className="text-xs text-slate-500 dark:text-slate-400">
+                          {topic.category} &middot; {topic.questionIds.length} question{topic.questionIds.length !== 1 ? "s" : ""}
+                        </p>
+                        {topic.description && (
+                          <p className="mt-0.5 text-xs text-slate-400 truncate dark:text-slate-500">{topic.description}</p>
+                        )}
+                      </div>
+                      <div className="flex gap-1 shrink-0">
+                        <button
+                          onClick={() => handleEditTopic(topic)}
+                          className="rounded-lg p-1.5 text-indigo-600 hover:bg-indigo-50 transition-colors dark:text-indigo-400 dark:hover:bg-indigo-900/30"
+                          title="Edit"
+                        >
+                          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                          </svg>
+                        </button>
+                        <button
+                          onClick={() => handleDeleteTopic(topic.id)}
+                          className="rounded-lg p-1.5 text-red-500 hover:bg-red-50 transition-colors dark:hover:bg-red-900/30"
+                          title="Delete"
+                        >
+                          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
 
       {/* Change Password */}
       <div className="rounded-xl border border-slate-200 bg-white shadow-sm dark:bg-slate-800 dark:border-slate-700">

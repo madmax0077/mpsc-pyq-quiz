@@ -12,6 +12,7 @@ export default function HomeClient() {
   const [dark, setDark] = useState(false);
   const [homeKey, setHomeKey] = useState(0);
   const [challenge, setChallenge] = useState<{ quizId: string; name: string; score: number; total: number } | null>(null);
+  const [appMode, setAppMode] = useState<"home" | "subject" | "topic">("home");
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
@@ -22,6 +23,7 @@ export default function HomeClient() {
     const cn = params.get("cn");
     if (cq && cs && ct) {
       setChallenge({ quizId: cq, name: cn || "A friend", score: parseInt(cs, 10), total: parseInt(ct, 10) });
+      setAppMode("subject");
       window.history.replaceState({}, "", window.location.pathname);
     }
     const seo = document.getElementById("seo-landing");
@@ -53,7 +55,7 @@ export default function HomeClient() {
       {/* ---- Top Navigation Bar ---- */}
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
-          <button onClick={() => { setHomeKey((k) => k + 1); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0 shrink-0">
+          <button onClick={() => { setHomeKey((k) => k + 1); setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0 shrink-0">
             <img src="/logo.png" alt="MPSC Logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
             <div className="text-left">
               <h1 className="text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
@@ -138,7 +140,74 @@ export default function HomeClient() {
 
       {/* ---- Main Content ---- */}
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <StudentView language={language} challenge={challenge} homeKey={homeKey} />
+        {appMode === "home" ? (
+          <div className="flex flex-col items-center gap-8 py-6 sm:py-10">
+            <div className="text-center space-y-2">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-800 dark:text-slate-100">
+                Choose Practice Mode
+              </h2>
+              <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base">
+                How would you like to practice today?
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-5 w-full max-w-2xl">
+              {/* Subject Wise */}
+              <button
+                onClick={() => setAppMode("subject")}
+                className="group relative overflow-hidden rounded-2xl border-2 border-indigo-100 bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 p-8 text-left shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all dark:from-indigo-950/50 dark:via-violet-950/50 dark:to-purple-950/50 dark:border-indigo-800 dark:hover:border-indigo-600"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md mb-4">
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-indigo-700 dark:text-indigo-300 mb-2">
+                  📚 Subject Wise
+                </h3>
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Practice by full exam papers or subjects like History, Geography, Polity, Science and more.
+                </p>
+                <div className="mt-4 flex items-center text-xs font-semibold text-indigo-500 dark:text-indigo-400">
+                  Start Practicing
+                  <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </div>
+              </button>
+
+              {/* Topic Wise */}
+              <button
+                onClick={() => setAppMode("topic")}
+                className="group relative overflow-hidden rounded-2xl border-2 border-emerald-100 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 p-8 text-left shadow-sm hover:shadow-lg hover:border-emerald-300 transition-all dark:from-emerald-950/50 dark:via-teal-950/50 dark:to-cyan-950/50 dark:border-emerald-800 dark:hover:border-emerald-600"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-md mb-4">
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-emerald-700 dark:text-emerald-300 mb-2">
+                  🎯 Topic Wise
+                </h3>
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Practice curated topic-wise question sets. Select a subject, then dive into specific topics added by admin.
+                </p>
+                <div className="mt-4 flex items-center text-xs font-semibold text-emerald-500 dark:text-emerald-400">
+                  Explore Topics
+                  <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+            <p className="text-xs text-slate-400 dark:text-slate-600 text-center max-w-md">
+              💡 Click the logo at any time to return to this screen
+            </p>
+          </div>
+        ) : (
+          <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} />
+        )}
       </main>
 
       {/* ---- Footer ---- */}

@@ -43,3 +43,11 @@ export interface ParsedQuestion {
   options: Record<OptionKey, string>;
   imageUrl?: string;
 }
+
+export interface Topic {
+  id: string;
+  name: string;
+  description?: string;
+  category: Category;
+  questionIds: string[];
+}

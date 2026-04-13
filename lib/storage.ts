@@ -1,4 +1,4 @@
-import { Quiz } from "./types";
+import { Quiz, Topic } from "./types";
 
 const STORAGE_KEY = "mcq_quiz_app_quizzes";
 const MIGRATION_KEY = "mcq_migration_gk_to_ca";
@@ -103,4 +103,44 @@ export function importQuizzes(json: string): number {
   }
   localStorage.setItem(STORAGE_KEY, JSON.stringify(existing));
   return added;
+}
+
+// ---- Topic management ----
+const TOPICS_KEY = "mcq_topics";
+
+export function getAllTopics(): Topic[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(TOPICS_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed;
+  } catch {
+    return [];
+  }
+}
+
+export function saveTopic(topic: Topic): void {
+  const topics = getAllTopics();
+  const idx = topics.findIndex((t) => t.id === topic.id);
+  if (idx >= 0) {
+    topics[idx] = topic;
+  } else {
+    topics.push(topic);
+  }
+  try {
+    localStorage.setItem(TOPICS_KEY, JSON.stringify(topics));
+  } catch {
+    console.error("Failed to save topic.");
+  }
+}
+
+export function deleteTopic(id: string): void {
+  const topics = getAllTopics().filter((t) => t.id !== id);
+  try {
+    localStorage.setItem(TOPICS_KEY, JSON.stringify(topics));
+  } catch {
+    console.error("Failed to delete topic.");
+  }
 }
