@@ -50,6 +50,7 @@ export default function AdminView() {
   const [confirmPw, setConfirmPw] = useState("");
   // Topic management state
   const [savedTopics, setSavedTopics] = useState<Topic[]>([]);
+  const [bundledTopics, setBundledTopics] = useState<Topic[]>([]);
   const [showTopicManager, setShowTopicManager] = useState(false);
   const [topicName, setTopicName] = useState("");
   const [topicDescription, setTopicDescription] = useState("");
@@ -58,15 +59,21 @@ export default function AdminView() {
   const [editingTopicId, setEditingTopicId] = useState<string | null>(null);
   const [topicSearch, setTopicSearch] = useState("");
   const [bundledQuizzes, setBundledQuizzes] = useState<Quiz[]>([]);
+  const [topicFilter, setTopicFilter] = useState<"all" | "bundled" | "local">("all");
 
   useEffect(() => {
     setSavedQuizzes(getAllQuizzes());
     setSavedTopics(getAllTopics());
-    // Fetch bundled quizzes for topic question picker
     fetch("/quizzes.json")
       .then((r) => r.json())
       .then((raw: Quiz[]) => {
         if (Array.isArray(raw)) setBundledQuizzes(raw.filter((q) => q.id !== "__copyright__"));
+      })
+      .catch(() => {});
+    fetch("/topics.json")
+      .then((r) => r.json())
+      .then((raw: Topic[]) => {
+        if (Array.isArray(raw)) setBundledTopics(raw);
       })
       .catch(() => {});
   }, []);
@@ -205,17 +212,38 @@ export default function AdminView() {
     const qMap = new Map<string, Question>();
     for (const quiz of quizMap.values()) {
       for (const q of quiz.questions) {
-        if (q.category === topicCat && !qMap.has(q.id)) qMap.set(q.id, q);
+        const matches = q.category === topicCat || (!q.category && quiz.tag?.includes(topicCat));
+        if (matches && !qMap.has(q.id)) qMap.set(q.id, q);
+      }
+    }
+    // Also include questions already selected (they may be from bundled topic-only quizzes)
+    if (editingTopicId) {
+      for (const quiz of quizMap.values()) {
+        for (const q of quiz.questions) {
+          if (topicQuestionIds.includes(q.id) && !qMap.has(q.id)) qMap.set(q.id, q);
+        }
       }
     }
     return Array.from(qMap.values());
-  }, [topicCat, savedQuizzes, bundledQuizzes]);
+  }, [topicCat, savedQuizzes, bundledQuizzes, editingTopicId, topicQuestionIds]);
 
   const filteredPickerQuestions = useMemo(() => {
     const search = topicSearch.toLowerCase().trim();
     const base = search ? pickerQuestions.filter((q) => q.text.toLowerCase().includes(search)) : pickerQuestions;
     return base.slice(0, 100);
   }, [pickerQuestions, topicSearch]);
+
+  const allDisplayTopics = useMemo(() => {
+    const localIds = new Set(savedTopics.map((t) => t.id));
+    const merged: (Topic & { source: "local" | "bundled" })[] = [];
+    for (const t of savedTopics) merged.push({ ...t, source: "local" });
+    for (const t of bundledTopics) {
+      if (!localIds.has(t.id)) merged.push({ ...t, source: "bundled" });
+    }
+    if (topicFilter === "bundled") return merged.filter((t) => t.source === "bundled");
+    if (topicFilter === "local") return merged.filter((t) => t.source === "local");
+    return merged;
+  }, [savedTopics, bundledTopics, topicFilter]);
 
   const handleSaveTopic = () => {
     if (!topicName.trim()) { showToast("Enter a topic name."); return; }
@@ -234,11 +262,11 @@ export default function AdminView() {
     showToast(editingTopicId ? "Topic updated!" : "Topic saved!");
   };
 
-  const handleEditTopic = (topic: Topic) => {
+  const handleEditTopic = (topic: Topic & { source?: string }) => {
     setTopicName(topic.name);
     setTopicDescription(topic.description || "");
     setTopicCat(topic.category);
-    setTopicQuestionIds(topic.questionIds);
+    setTopicQuestionIds([...topic.questionIds]);
     setEditingTopicId(topic.id);
     setShowTopicManager(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -566,7 +594,7 @@ export default function AdminView() {
             <div>
               <p className="text-sm font-semibold text-slate-700 dark:text-slate-200">Manage Topics</p>
               <p className="text-xs text-slate-400 dark:text-slate-500">
-                {savedTopics.length} topic{savedTopics.length !== 1 ? "s" : ""} &middot; For Topic Wise practice mode
+                {savedTopics.length + bundledTopics.filter(t => !savedTopics.some(s => s.id === t.id)).length} topic{(savedTopics.length + bundledTopics.filter(t => !savedTopics.some(s => s.id === t.id)).length) !== 1 ? "s" : ""} &middot; For Topic Wise practice mode
               </p>
             </div>
           </div>
@@ -690,18 +718,50 @@ export default function AdminView() {
               </div>
             </div>
 
-            {/* Saved Topics List */}
-            {savedTopics.length > 0 && (
-              <div className="space-y-2">
-                <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">Saved Topics</h4>
+            {/* All Topics List (Bundled + Local) */}
+            {allDisplayTopics.length > 0 && (
+              <div className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <h4 className="text-sm font-semibold text-slate-700 dark:text-slate-200">
+                    All Topics ({allDisplayTopics.length})
+                  </h4>
+                  <div className="flex gap-1 rounded-lg border border-slate-200 bg-slate-50 p-0.5 dark:border-slate-600 dark:bg-slate-700/50">
+                    {(["all", "bundled", "local"] as const).map((f) => (
+                      <button
+                        key={f}
+                        onClick={() => setTopicFilter(f)}
+                        className={`rounded-md px-2.5 py-1 text-[11px] font-medium transition-colors ${
+                          topicFilter === f
+                            ? "bg-white text-slate-800 shadow-sm dark:bg-slate-600 dark:text-slate-100"
+                            : "text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300"
+                        }`}
+                      >
+                        {f === "all" ? `All (${savedTopics.length + bundledTopics.filter(t => !savedTopics.some(s => s.id === t.id)).length})` : f === "bundled" ? `Bundled (${bundledTopics.length})` : `Local (${savedTopics.length})`}
+                      </button>
+                    ))}
+                  </div>
+                </div>
                 <div className="grid gap-2 sm:grid-cols-2">
-                  {savedTopics.map((topic) => (
+                  {allDisplayTopics.map((topic) => (
                     <div
                       key={topic.id}
-                      className="flex items-start justify-between gap-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 dark:bg-slate-700/50 dark:border-slate-600"
+                      className={`flex items-start justify-between gap-2 rounded-xl border px-4 py-3 ${
+                        topic.source === "bundled"
+                          ? "border-emerald-200 bg-emerald-50/50 dark:bg-emerald-900/10 dark:border-emerald-800"
+                          : "border-slate-200 bg-slate-50 dark:bg-slate-700/50 dark:border-slate-600"
+                      }`}
                     >
                       <div className="min-w-0 flex-1">
-                        <p className="text-sm font-semibold text-slate-800 truncate dark:text-slate-100">{topic.name}</p>
+                        <div className="flex items-center gap-2">
+                          <p className="text-sm font-semibold text-slate-800 truncate dark:text-slate-100">{topic.name}</p>
+                          <span className={`shrink-0 inline-block rounded-full px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide ${
+                            topic.source === "bundled"
+                              ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400"
+                              : "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-400"
+                          }`}>
+                            {topic.source === "bundled" ? "Bundled" : "Local"}
+                          </span>
+                        </div>
                         <p className="text-xs text-slate-500 dark:text-slate-400">
                           {topic.category} &middot; {topic.questionIds.length} question{topic.questionIds.length !== 1 ? "s" : ""}
                         </p>
@@ -713,7 +773,7 @@ export default function AdminView() {
                         <button
                           onClick={() => handleEditTopic(topic)}
                           className="rounded-lg p-1.5 text-indigo-600 hover:bg-indigo-50 transition-colors dark:text-indigo-400 dark:hover:bg-indigo-900/30"
-                          title="Edit"
+                          title="Edit topic"
                         >
                           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
@@ -722,7 +782,7 @@ export default function AdminView() {
                         <button
                           onClick={() => handleDeleteTopic(topic.id)}
                           className="rounded-lg p-1.5 text-red-500 hover:bg-red-50 transition-colors dark:hover:bg-red-900/30"
-                          title="Delete"
+                          title={topic.source === "bundled" ? "Override & hide this topic" : "Delete topic"}
                         >
                           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
@@ -733,6 +793,9 @@ export default function AdminView() {
                   ))}
                 </div>
               </div>
+            )}
+            {allDisplayTopics.length === 0 && bundledTopics.length === 0 && savedTopics.length === 0 && (
+              <p className="py-4 text-center text-xs text-slate-400">No topics yet. Create one above or add bundled topics via topics.json.</p>
             )}
           </div>
         )}
