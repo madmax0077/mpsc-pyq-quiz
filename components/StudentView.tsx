@@ -24,7 +24,7 @@ function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
 }
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
-const CATEGORY_PER_PAGE = 3;
+const CATEGORY_PER_PAGE = 20;
 
 function seededShuffle<T>(arr: T[], seed: string): T[] {
   let h = 0;
