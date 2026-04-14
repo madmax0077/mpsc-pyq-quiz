@@ -1,6 +1,6 @@
 "use client";
 
-import { Question, OptionKey, CATEGORIES, Category } from "@/lib/types";
+import { Question, OptionKey, CATEGORIES, Category, TOPIC_TAGS } from "@/lib/types";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
@@ -49,6 +49,11 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
           {question.category && catColor && (
             <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${catColor.bg} ${catColor.text} ${catColor.border} border`}>
               {question.category}
+            </span>
+          )}
+          {question.topicTag && (
+            <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-violet-50 text-violet-700 border border-violet-200">
+              {question.topicTag}
             </span>
           )}
         </div>
@@ -109,7 +114,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
           ))}
         </div>
 
-        {/* Correct Answer + Category — side by side */}
+        {/* Correct Answer + Category + Topic — grid */}
         <div className="grid gap-4 sm:grid-cols-2">
           {/* Correct Answer */}
           <div>
@@ -140,26 +145,61 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
             </div>
           </div>
 
-          {/* Category */}
+          {/* Category (Subject Tag) */}
           <div>
             <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-              Category (optional)
+              Subject Tag
             </label>
             <select
               value={question.category || ""}
-              onChange={(e) =>
-                update({ category: (e.target.value || undefined) as Category | undefined })
-              }
+              onChange={(e) => {
+                const newCat = (e.target.value || undefined) as Category | undefined;
+                const patch: Partial<Question> = { category: newCat };
+                if (newCat !== question.category) patch.topicTag = undefined;
+                update(patch);
+              }}
               className={`w-full rounded-lg border px-3 py-2.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 ${
                 question.category && catColor
                   ? `${catColor.border} ${catColor.bg} ${catColor.text} focus:${catColor.ring}`
                   : "border-slate-200 text-slate-600 focus:border-indigo-400 focus:ring-indigo-100 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-300"
               }`}
             >
-              <option value="">No category</option>
+              <option value="">No subject</option>
               {CATEGORIES.map((cat) => (
                 <option key={cat} value={cat}>
                   {cat}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Topic Tag (dependent on Subject) */}
+          <div className="sm:col-span-2">
+            <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              Topic Tag {!question.category && <span className="text-slate-400 normal-case">(select subject first)</span>}
+            </label>
+            <select
+              value={question.topicTag || ""}
+              onChange={(e) => update({ topicTag: e.target.value || undefined })}
+              disabled={!question.category || (question.category ? TOPIC_TAGS[question.category].length === 0 : true)}
+              className={`w-full rounded-lg border px-3 py-2.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 ${
+                !question.category
+                  ? "border-slate-200 bg-slate-50 text-slate-400 cursor-not-allowed dark:border-slate-600 dark:bg-slate-800 dark:text-slate-500"
+                  : question.topicTag
+                    ? "border-violet-300 bg-violet-50 text-violet-700 focus:ring-violet-100 dark:border-violet-600 dark:bg-violet-900/20 dark:text-violet-300"
+                    : "border-slate-200 text-slate-600 focus:border-violet-400 focus:ring-violet-100 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-300"
+              }`}
+            >
+              <option value="">
+                {!question.category
+                  ? "Select subject first..."
+                  : question.category && TOPIC_TAGS[question.category].length === 0
+                    ? `No topics defined for ${question.category}`
+                    : "No topic"}
+              </option>
+              {question.category && TOPIC_TAGS[question.category].map((topic) => (
+                <option key={topic} value={topic}>
+                  {topic}
                 </option>
               ))}
             </select>

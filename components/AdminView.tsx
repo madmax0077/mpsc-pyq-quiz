@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language, Topic } from "@/lib/types";
+import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language, Topic, TOPIC_TAGS } from "@/lib/types";
 import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes, getAllTopics, saveTopic, deleteTopic } from "@/lib/storage";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
@@ -42,6 +42,7 @@ export default function AdminView() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [toast, setToast] = useState("");
   const [bulkCategory, setBulkCategory] = useState<Category | "">("");
+  const [bulkTopicTag, setBulkTopicTag] = useState("");
   const [quizLanguage, setQuizLanguage] = useState<Language>("english");
   const [quizTag, setQuizTag] = useState("");
   const [showChangePw, setShowChangePw] = useState(false);
@@ -113,6 +114,21 @@ export default function AdminView() {
     showToast(`Applied "${bulkCategory}" to all uncategorized questions.`);
     setBulkCategory("");
   };
+
+  const applyBulkTopicTag = () => {
+    if (!bulkTopicTag) return;
+    setQuestions((prev) =>
+      prev.map((q) => (q.topicTag ? q : { ...q, topicTag: bulkTopicTag })),
+    );
+    showToast(`Applied topic "${bulkTopicTag}" to all un-tagged questions.`);
+    setBulkTopicTag("");
+  };
+
+  const availableBulkTopics = bulkCategory ? TOPIC_TAGS[bulkCategory as Category] || [] : (() => {
+    const cats = [...new Set(questions.map((q) => q.category).filter(Boolean))] as Category[];
+    if (cats.length === 1) return TOPIC_TAGS[cats[0]] || [];
+    return [];
+  })();
 
   const handleSave = () => {
     if (!title.trim()) {
@@ -372,9 +388,9 @@ export default function AdminView() {
       {/* File Upload (Image + PDF) */}
       <FileUploader onQuestionsExtracted={handleExtracted} />
 
-      {/* Bulk Category + Question Count Divider */}
+      {/* Bulk Category + Topic + Question Count Divider */}
       {questions.length > 0 && (
-        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:bg-slate-800 dark:border-slate-700">
+        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm space-y-3 dark:bg-slate-800 dark:border-slate-700">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">
@@ -382,15 +398,17 @@ export default function AdminView() {
               </span>
               <span className="text-xs text-slate-400 dark:text-slate-500">
                 {questions.filter((q) => q.category).length} categorized
+                {" · "}
+                {questions.filter((q) => q.topicTag).length} topic-tagged
               </span>
             </div>
             <div className="flex items-center gap-2">
               <select
                 value={bulkCategory}
-                onChange={(e) => setBulkCategory(e.target.value as Category | "")}
+                onChange={(e) => { setBulkCategory(e.target.value as Category | ""); setBulkTopicTag(""); }}
                 className="rounded-lg border border-slate-200 px-3 py-1.5 text-sm text-slate-600 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-300"
               >
-                <option value="">Bulk assign category...</option>
+                <option value="">Bulk assign subject...</option>
                 {CATEGORIES.map((cat) => (
                   <option key={cat} value={cat}>{cat}</option>
                 ))}
@@ -399,6 +417,35 @@ export default function AdminView() {
                 onClick={applyBulkCategory}
                 disabled={!bulkCategory}
                 className="rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          {/* Bulk topic tag */}
+          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-3 dark:border-slate-700">
+            <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
+              Bulk Topic Tag
+              {availableBulkTopics.length === 0 && <span className="ml-1 text-slate-400">(assign subject first)</span>}
+            </span>
+            <div className="flex items-center gap-2">
+              <select
+                value={bulkTopicTag}
+                onChange={(e) => setBulkTopicTag(e.target.value)}
+                disabled={availableBulkTopics.length === 0}
+                className="rounded-lg border border-slate-200 px-3 py-1.5 text-sm text-slate-600 focus:border-violet-400 focus:outline-none focus:ring-2 focus:ring-violet-100 disabled:opacity-40 disabled:cursor-not-allowed dark:bg-slate-700 dark:border-slate-600 dark:text-slate-300"
+              >
+                <option value="">
+                  {availableBulkTopics.length === 0 ? "Select subject first..." : "Bulk assign topic..."}
+                </option>
+                {availableBulkTopics.map((topic) => (
+                  <option key={topic} value={topic}>{topic}</option>
+                ))}
+              </select>
+              <button
+                onClick={applyBulkTopicTag}
+                disabled={!bulkTopicTag}
+                className="rounded-lg bg-violet-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-violet-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
               >
                 Apply
               </button>

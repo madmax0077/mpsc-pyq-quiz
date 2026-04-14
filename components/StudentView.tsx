@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo, useCallback } from "react";
-import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, Topic } from "@/lib/types";
+import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, Topic, TOPIC_TAGS } from "@/lib/types";
 import { getAllQuizzes, getAllTopics } from "@/lib/storage";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
@@ -304,6 +304,23 @@ export default function StudentView({ language = "english", challenge, homeKey =
     return () => { cancelled = true; };
   }, [homeKey]);
 
+  const autoTopicGroups = useMemo(() => {
+    const groups = new Map<string, { category: Category; topicTag: string; questions: Question[] }>();
+    for (const quiz of filteredQuizzes) {
+      const tag = quiz.tag || quiz.title;
+      for (const q of quiz.questions) {
+        if (!q.category || !q.topicTag) continue;
+        const key = `${q.category}::${q.topicTag}`;
+        if (!groups.has(key)) groups.set(key, { category: q.category, topicTag: q.topicTag, questions: [] });
+        const g = groups.get(key)!;
+        if (!g.questions.some((x) => x.id === q.id)) {
+          g.questions.push({ ...q, sourceTag: q.sourceTag || tag });
+        }
+      }
+    }
+    return groups;
+  }, [filteredQuizzes]);
+
   useEffect(() => {
     if (challenge && quizzes.length > 0 && !selectedQuiz) {
       const allQuizzes = [...regularQuizzes, ...categoryQuizzes];
@@ -483,8 +500,12 @@ export default function StudentView({ language = "english", challenge, homeKey =
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {CATEGORIES.map((cat) => {
-                const catTopics = topics.filter((t) => t.category === cat);
+                const autoCount = Array.from(autoTopicGroups.values()).filter((g) => g.category === cat).length;
+                const manualTopicsForCat = topics.filter((t) => t.category === cat);
+                const manualOnlyNames = manualTopicsForCat.filter((t) => !Array.from(autoTopicGroups.values()).some((g) => g.category === cat && g.topicTag === t.name));
+                const totalTopicCount = autoCount + manualOnlyNames.filter((t) => t.questionIds.some((id) => allQuestionsMap.has(id))).length;
                 const colors = CATEGORY_COLORS[cat];
+                if (totalTopicCount === 0 && (TOPIC_TAGS[cat] || []).length === 0 && manualTopicsForCat.length === 0) return null;
                 return (
                   <button
                     key={cat}
@@ -504,7 +525,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                             {cat}
                           </h3>
                           <p className="text-xs text-slate-500 dark:text-slate-400">
-                            {catTopics.length} topic{catTopics.length !== 1 ? "s" : ""}
+                            {totalTopicCount > 0 ? `${totalTopicCount} topic${totalTopicCount !== 1 ? "s" : ""}` : "No topics yet"}
                           </p>
                         </div>
                       </div>
@@ -526,8 +547,52 @@ export default function StudentView({ language = "english", challenge, homeKey =
       }
 
       if (topicStep === "topics" && topicCategory) {
-        const catTopics = topics.filter((t) => t.category === topicCategory);
         const colors = CATEGORY_COLORS[topicCategory];
+        const definedTopicNames = TOPIC_TAGS[topicCategory] || [];
+        const autoEntries = Array.from(autoTopicGroups.values()).filter((g) => g.category === topicCategory);
+        const manualTopics = topics.filter((t) => t.category === topicCategory);
+
+        const topicItems: { key: string; name: string; qCount: number; onStart: () => void }[] = [];
+
+        if (definedTopicNames.length > 0) {
+          for (const tagName of definedTopicNames) {
+            const autoMatch = autoEntries.find((e) => e.topicTag === tagName);
+            const manualMatch = manualTopics.find((t) => t.name === tagName);
+            const questionsFromAuto = autoMatch ? autoMatch.questions : [];
+            const questionsFromManual = manualMatch ? manualMatch.questionIds.map((id) => allQuestionsMap.get(id)).filter((q): q is Question => !!q) : [];
+            const seen = new Set<string>();
+            const merged: Question[] = [];
+            for (const q of [...questionsFromAuto, ...questionsFromManual]) {
+              if (!seen.has(q.id)) { seen.add(q.id); merged.push(q); }
+            }
+            if (merged.length === 0) continue;
+            topicItems.push({
+              key: `tag-${tagName}`,
+              name: tagName,
+              qCount: merged.length,
+              onStart: () => selectQuiz({
+                id: `topictag-${topicCategory}-${tagName}`,
+                title: tagName,
+                questions: merged,
+                isCategory: false,
+                category: topicCategory,
+              }),
+            });
+          }
+        }
+
+        for (const mt of manualTopics) {
+          if (topicItems.some((ti) => ti.name === mt.name)) continue;
+          const qCount = mt.questionIds.filter((id) => allQuestionsMap.has(id)).length;
+          if (qCount === 0) continue;
+          topicItems.push({
+            key: `manual-${mt.id}`,
+            name: mt.name,
+            qCount,
+            onStart: () => startTopicQuiz(mt),
+          });
+        }
+
         return (
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -542,62 +607,54 @@ export default function StudentView({ language = "english", challenge, homeKey =
               <div>
                 <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">{topicCategory}</h2>
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  {catTopics.length} topic{catTopics.length !== 1 ? "s" : ""} available
+                  {topicItems.length} topic{topicItems.length !== 1 ? "s" : ""} available
                 </p>
               </div>
             </div>
 
-            {catTopics.length === 0 ? (
+            {topicItems.length === 0 ? (
               <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-16 text-center dark:bg-slate-800 dark:border-slate-600">
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700">
                   <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
                   </svg>
                 </div>
-                <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">No topics added yet</p>
+                <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">No topics available yet</p>
                 <p className="mt-1 text-sm text-slate-400 dark:text-slate-500">
-                  Admin hasn&apos;t added any topics for {topicCategory} yet.
+                  Questions for {topicCategory} haven&apos;t been topic-tagged yet.
                 </p>
               </div>
             ) : (
               <div className="grid gap-3 sm:grid-cols-2">
-                {catTopics.map((topic) => {
-                  const qCount = topic.questionIds.filter((id) => allQuestionsMap.has(id)).length;
-                  return (
-                    <button
-                      key={topic.id}
-                      onClick={() => startTopicQuiz(topic)}
-                      className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm hover:border-emerald-200 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-emerald-600"
-                    >
-                      <div className={`h-1.5 bg-gradient-to-r ${colors.gradient}`} />
-                      <div className="p-5">
-                        <div className="flex items-start justify-between gap-2">
-                          <div className="flex-1 min-w-0">
-                            <h3 className="font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors dark:text-slate-100 dark:group-hover:text-emerald-400">
-                              {topic.name}
-                            </h3>
-                            {topic.description && (
-                              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
-                                {topic.description}
-                              </p>
-                            )}
-                          </div>
-                          <svg className="h-5 w-5 shrink-0 mt-0.5 text-slate-300 group-hover:text-emerald-400 transition-colors dark:text-slate-600 dark:group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                          </svg>
+                {topicItems.map((item) => (
+                  <button
+                    key={item.key}
+                    onClick={item.onStart}
+                    className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm hover:border-emerald-200 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-emerald-600"
+                  >
+                    <div className={`h-1.5 bg-gradient-to-r ${colors.gradient}`} />
+                    <div className="p-5">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors dark:text-slate-100 dark:group-hover:text-emerald-400">
+                            {item.name}
+                          </h3>
                         </div>
-                        <div className="mt-3 flex items-center gap-2">
-                          <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${colors.badge}`}>
-                            {topicCategory}
-                          </span>
-                          <span className="text-xs text-slate-400 dark:text-slate-500">
-                            {qCount} question{qCount !== 1 ? "s" : ""}
-                          </span>
-                        </div>
+                        <svg className="h-5 w-5 shrink-0 mt-0.5 text-slate-300 group-hover:text-emerald-400 transition-colors dark:text-slate-600 dark:group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
                       </div>
-                    </button>
-                  );
-                })}
+                      <div className="mt-3 flex items-center gap-2">
+                        <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${colors.badge}`}>
+                          {topicCategory}
+                        </span>
+                        <span className="text-xs text-slate-400 dark:text-slate-500">
+                          {item.qCount} question{item.qCount !== 1 ? "s" : ""}
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                ))}
               </div>
             )}
           </div>
