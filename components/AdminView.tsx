@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
 import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes, getSubjectTopics, saveSubjectTopics } from "@/lib/storage";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
 import QuestionForm from "./QuestionForm";
+import SearchBar from "./SearchBar";
 
 function uid() {
   return Math.random().toString(36).slice(2, 9) + Date.now().toString(36);
@@ -55,9 +56,18 @@ export default function AdminView() {
   const [stNewTopic, setStNewTopic] = useState("");
   // Bulk topic assignment
   const [bulkTopic, setBulkTopic] = useState("");
+  const [bundledQuizzes, setBundledQuizzes] = useState<Quiz[]>([]);
+  const [scrollToQuestionId, setScrollToQuestionId] = useState<string | null>(null);
+
   useEffect(() => {
     setSavedQuizzes(getAllQuizzes());
     setSubjectTopics(getSubjectTopics());
+    fetch("/quizzes.json")
+      .then((r) => r.json())
+      .then((raw: Quiz[]) => {
+        if (Array.isArray(raw)) setBundledQuizzes(raw.filter((q) => q.id !== "__copyright__"));
+      })
+      .catch(() => {});
   }, []);
 
   const showToast = (msg: string) => {
@@ -238,6 +248,60 @@ export default function AdminView() {
     return all;
   }, [questions, subjectTopics]);
 
+  const allSearchableQuestions = useMemo(() => {
+    const result: { question: Question; quizTitle: string }[] = [];
+    const quizMap = new Map<string, Quiz>();
+    for (const q of [...bundledQuizzes, ...savedQuizzes]) {
+      if (!quizMap.has(q.id)) quizMap.set(q.id, q);
+    }
+    for (const quiz of quizMap.values()) {
+      for (const q of quiz.questions) {
+        result.push({ question: q, quizTitle: quiz.tag || quiz.title });
+      }
+    }
+    return result;
+  }, [savedQuizzes, bundledQuizzes]);
+
+  const questionToQuizMap = useMemo(() => {
+    const map = new Map<string, Quiz>();
+    for (const quiz of savedQuizzes) {
+      for (const q of quiz.questions) {
+        if (!map.has(q.id)) map.set(q.id, quiz);
+      }
+    }
+    for (const quiz of bundledQuizzes) {
+      for (const q of quiz.questions) {
+        if (!map.has(q.id)) map.set(q.id, quiz);
+      }
+    }
+    return map;
+  }, [savedQuizzes, bundledQuizzes]);
+
+  const handleSearchNavigate = useCallback((question: Question) => {
+    const quiz = questionToQuizMap.get(question.id);
+    if (!quiz) return;
+    setTitle(quiz.title);
+    setQuestions(quiz.questions);
+    setEditingId(quiz.id);
+    setQuizLanguage(quiz.language || "english");
+    setQuizTag(quiz.tag || "");
+    setScrollToQuestionId(question.id);
+  }, [questionToQuizMap]);
+
+  useEffect(() => {
+    if (!scrollToQuestionId || questions.length === 0) return;
+    const timer = setTimeout(() => {
+      const el = document.querySelector(`[data-question-id="${scrollToQuestionId}"]`);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        el.classList.add("ring-2", "ring-indigo-400", "ring-offset-2");
+        setTimeout(() => el.classList.remove("ring-2", "ring-indigo-400", "ring-offset-2"), 3000);
+      }
+      setScrollToQuestionId(null);
+    }, 200);
+    return () => clearTimeout(timer);
+  }, [scrollToQuestionId, questions]);
+
   const handleChangePassword = () => {
     if (!currentPw || !newPw || !confirmPw) {
       showToast("Please fill all password fields.");
@@ -267,6 +331,19 @@ export default function AdminView() {
           {toast}
         </div>
       )}
+
+      {/* Search across all quizzes */}
+      <div className="flex items-center justify-between">
+        <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">Admin Dashboard</h2>
+        <SearchBar
+          allQuestions={allSearchableQuestions}
+          onNavigateToQuestion={handleSearchNavigate}
+          navigateLabel={(q) => {
+            const quiz = questionToQuizMap.get(q.id);
+            return quiz ? `Edit in "${quiz.title}"` : "Edit Question";
+          }}
+        />
+      </div>
 
       {/* Quiz Title + Language */}
       <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm space-y-4 dark:bg-slate-800 dark:border-slate-700">
@@ -389,14 +466,15 @@ export default function AdminView() {
       {/* Questions List */}
       <div className="space-y-4">
         {questions.map((q, i) => (
-          <QuestionForm
-            key={q.id}
-            index={i}
-            question={q}
-            onChange={(updated) => updateQuestion(q.id, updated)}
-            onDelete={() => removeQuestion(q.id)}
-            availableTopics={q.category ? (topicsForCurrentCategory[q.category] || []) : []}
-          />
+          <div key={q.id} data-question-id={q.id}>
+            <QuestionForm
+              index={i}
+              question={q}
+              onChange={(updated) => updateQuestion(q.id, updated)}
+              onDelete={() => removeQuestion(q.id)}
+              availableTopics={q.category ? (topicsForCurrentCategory[q.category] || []) : []}
+            />
+          </div>
         ))}
       </div>
 

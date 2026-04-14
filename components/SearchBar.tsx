@@ -11,9 +11,10 @@ interface SearchResult {
 interface Props {
   allQuestions: SearchResult[];
   onNavigateToQuestion?: (question: Question) => void;
+  navigateLabel?: (question: Question) => string;
 }
 
-export default function SearchBar({ allQuestions, onNavigateToQuestion }: Props) {
+export default function SearchBar({ allQuestions, onNavigateToQuestion, navigateLabel }: Props) {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -135,7 +136,7 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion }: Props)
                             {k === r.question.correctAnswer && <span className="ml-auto shrink-0">✓</span>}
                           </div>
                         ))}
-                        {onNavigateToQuestion && r.question.category && (
+                        {onNavigateToQuestion && (
                           <button
                             onClick={() => {
                               onNavigateToQuestion(r.question);
@@ -148,7 +149,7 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion }: Props)
                             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                             </svg>
-                            Practice in {r.question.category}
+                            {navigateLabel ? navigateLabel(r.question) : (r.question.category ? `Practice in ${r.question.category}` : "Go to Question")}
                           </button>
                         )}
                       </div>
