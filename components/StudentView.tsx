@@ -132,6 +132,8 @@ export default function StudentView({ language = "english", challenge, homeKey =
   const [reportSubmitting, setReportSubmitting] = useState(false);
   const [streak, setStreak] = useState(0);
   const [showAnalytics, setShowAnalytics] = useState(false);
+  // Search → navigate to question
+  const [scrollToQuestionId, setScrollToQuestionId] = useState<string | null>(null);
   // Topic-wise navigation state
   const [topicStep, setTopicStep] = useState<"subjects" | "topics">("subjects");
   const [topicCategory, setTopicCategory] = useState<Category | null>(null);
@@ -347,6 +349,39 @@ export default function StudentView({ language = "english", challenge, homeKey =
       category,
     });
   }, [topicMap, selectQuiz]);
+
+  const navigateToQuestion = useCallback((question: Question) => {
+    if (!question.category) return;
+    const catQuiz = categoryQuizzes.find((cq) => cq.category === question.category);
+    if (!catQuiz) return;
+    const qIdx = catQuiz.questions.findIndex((q) => q.id === question.id);
+    if (qIdx === -1) return;
+    const perPg = 20;
+    const targetPage = Math.floor(qIdx / perPg);
+    setSelectedQuiz(catQuiz);
+    setAnswers({});
+    setSubmitted(false);
+    setScore(0);
+    setCurrentPage(targetPage);
+    setSubmittedPages(new Set());
+    setPageScores({});
+    setShowConfetti(false);
+    setScrollToQuestionId(question.id);
+  }, [categoryQuizzes]);
+
+  useEffect(() => {
+    if (!scrollToQuestionId || !selectedQuiz) return;
+    const timer = setTimeout(() => {
+      const el = document.querySelector(`[data-question-id="${scrollToQuestionId}"]`);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+        el.classList.add("ring-2", "ring-indigo-400", "ring-offset-2");
+        setTimeout(() => el.classList.remove("ring-2", "ring-indigo-400", "ring-offset-2"), 3000);
+      }
+      setScrollToQuestionId(null);
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [scrollToQuestionId, selectedQuiz]);
 
   const handleAnswer = (questionId: string, option: OptionKey) => {
     if (submitted) return;
@@ -670,7 +705,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 </div>
               )}
               <div className="flex items-center gap-2">
-                <SearchBar allQuestions={allSearchableQuestions} />
+                <SearchBar allQuestions={allSearchableQuestions} onNavigateToQuestion={navigateToQuestion} />
                 <button
                   onClick={() => setShowAnalytics(true)}
                   className="flex items-center gap-1.5 rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
@@ -1087,6 +1122,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
           return (
             <div key={q.id} className="space-y-4">
             <div
+              data-question-id={q.id}
               className={`rounded-xl border bg-white shadow-sm transition-all dark:bg-slate-800 ${
                 qSubmitted
                   ? isCorrect
