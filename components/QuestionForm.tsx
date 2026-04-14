@@ -22,9 +22,10 @@ interface Props {
   question: Question;
   onChange: (updated: Question) => void;
   onDelete: () => void;
+  availableTopics?: string[];
 }
 
-export default function QuestionForm({ index, question, onChange, onDelete }: Props) {
+export default function QuestionForm({ index, question, onChange, onDelete, availableTopics = [] }: Props) {
   const update = (patch: Partial<Question>) => {
     onChange({ ...question, ...patch });
   };
@@ -49,6 +50,11 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
           {question.category && catColor && (
             <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ${catColor.bg} ${catColor.text} ${catColor.border} border`}>
               {question.category}
+            </span>
+          )}
+          {question.topic && (
+            <span className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-violet-50 text-violet-700 border border-violet-200">
+              {question.topic}
             </span>
           )}
         </div>
@@ -109,7 +115,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
           ))}
         </div>
 
-        {/* Correct Answer + Category — side by side */}
+        {/* Correct Answer + Category + Topic */}
         <div className="grid gap-4 sm:grid-cols-2">
           {/* Correct Answer */}
           <div>
@@ -148,7 +154,7 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
             <select
               value={question.category || ""}
               onChange={(e) =>
-                update({ category: (e.target.value || undefined) as Category | undefined })
+                update({ category: (e.target.value || undefined) as Category | undefined, topic: undefined })
               }
               className={`w-full rounded-lg border px-3 py-2.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 ${
                 question.category && catColor
@@ -165,6 +171,29 @@ export default function QuestionForm({ index, question, onChange, onDelete }: Pr
             </select>
           </div>
         </div>
+
+        {/* Topic (sub-category) */}
+        {question.category && availableTopics.length > 0 && (
+          <div>
+            <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              Topic (optional)
+            </label>
+            <select
+              value={question.topic || ""}
+              onChange={(e) => update({ topic: e.target.value || undefined })}
+              className={`w-full rounded-lg border px-3 py-2.5 text-sm font-medium transition-all focus:outline-none focus:ring-2 ${
+                question.topic
+                  ? "border-violet-300 bg-violet-50 text-violet-700 focus:ring-violet-100 dark:bg-violet-900/20 dark:border-violet-600 dark:text-violet-300"
+                  : "border-slate-200 text-slate-600 focus:border-indigo-400 focus:ring-indigo-100 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-300"
+              }`}
+            >
+              <option value="">No topic</option>
+              {availableTopics.map((t) => (
+                <option key={t} value={t}>{t}</option>
+              ))}
+            </select>
+          </div>
+        )}
 
         {/* Explanation */}
         <div>

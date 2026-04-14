@@ -1,4 +1,4 @@
-import { Quiz, Topic } from "./types";
+import { Quiz, Topic, SubjectTopics } from "./types";
 
 const STORAGE_KEY = "mcq_quiz_app_quizzes";
 const MIGRATION_KEY = "mcq_migration_gk_to_ca";
@@ -142,5 +142,29 @@ export function deleteTopic(id: string): void {
     localStorage.setItem(TOPICS_KEY, JSON.stringify(topics));
   } catch {
     console.error("Failed to delete topic.");
+  }
+}
+
+// ---- Subject-topic registry (tag-based topics per subject) ----
+const SUBJECT_TOPICS_KEY = "mcq_subject_topics";
+
+export function getSubjectTopics(): SubjectTopics {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = localStorage.getItem(SUBJECT_TOPICS_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) return {};
+    return parsed;
+  } catch {
+    return {};
+  }
+}
+
+export function saveSubjectTopics(topics: SubjectTopics): void {
+  try {
+    localStorage.setItem(SUBJECT_TOPICS_KEY, JSON.stringify(topics));
+  } catch {
+    console.error("Failed to save subject topics.");
   }
 }

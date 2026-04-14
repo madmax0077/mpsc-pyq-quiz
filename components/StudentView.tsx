@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect, useMemo, useCallback } from "react";
-import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, Topic } from "@/lib/types";
-import { getAllQuizzes, getAllTopics } from "@/lib/storage";
+import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
+import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
 import { recordStreak, getStreak } from "@/lib/streak";
@@ -275,34 +275,43 @@ export default function StudentView({ language = "english", challenge, homeKey =
     return result;
   }, [filteredQuizzes]);
 
-  const allQuestionsMap = useMemo(() => {
-    const map = new Map<string, Question>();
+
+  const [subjectTopics, setSubjectTopics] = useState<SubjectTopics>(() => getSubjectTopics());
+
+  useEffect(() => {
+    setSubjectTopics(getSubjectTopics());
+  }, [homeKey]);
+
+  const topicMap = useMemo(() => {
+    const map = new Map<string, { category: Category; topic: string; questions: Question[] }>();
     for (const quiz of filteredQuizzes) {
       for (const q of quiz.questions) {
-        if (!map.has(q.id)) map.set(q.id, q);
+        if (!q.category || !q.topic) continue;
+        const key = `${q.category}|||${q.topic}`;
+        if (!map.has(key)) map.set(key, { category: q.category, topic: q.topic, questions: [] });
+        const entry = map.get(key)!;
+        if (!entry.questions.some((eq) => eq.id === q.id)) {
+          entry.questions.push(q);
+        }
       }
     }
     return map;
   }, [filteredQuizzes]);
 
-  const [topics, setTopics] = useState<Topic[]>(() => getAllTopics());
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      try {
-        const res = await fetch("/topics.json", { cache: "default" });
-        if (!res.ok) return;
-        const bundled = (await res.json()) as Topic[];
-        if (!Array.isArray(bundled) || cancelled) return;
-        const local = getAllTopics();
-        const localIds = new Set(local.map((t) => t.id));
-        const merged = [...local, ...bundled.filter((t) => !localIds.has(t.id))];
-        setTopics(merged);
-      } catch { /* bundled topics not available, use localStorage only */ }
-    })();
-    return () => { cancelled = true; };
-  }, [homeKey]);
+  const topicCountsByCategory = useMemo(() => {
+    const counts: Record<string, { topicCount: number; questionCount: number }> = {};
+    for (const cat of CATEGORIES) {
+      const registeredTopics = new Set(subjectTopics[cat] || []);
+      for (const [, entry] of topicMap) {
+        if (entry.category === cat) registeredTopics.add(entry.topic);
+      }
+      const questionCount = Array.from(topicMap.values())
+        .filter((e) => e.category === cat)
+        .reduce((sum, e) => sum + e.questions.length, 0);
+      counts[cat] = { topicCount: registeredTopics.size, questionCount };
+    }
+    return counts;
+  }, [topicMap, subjectTopics]);
 
   useEffect(() => {
     if (challenge && quizzes.length > 0 && !selectedQuiz) {
@@ -323,22 +332,21 @@ export default function StudentView({ language = "english", challenge, homeKey =
     setShowConfetti(false);
   }, []);
 
-  const startTopicQuiz = useCallback((topic: Topic) => {
-    const questions = topic.questionIds
-      .map((id) => allQuestionsMap.get(id))
-      .filter((q): q is Question => q !== undefined);
-    if (questions.length === 0) {
+  const startTopicQuiz = useCallback((category: Category, topicName: string) => {
+    const key = `${category}|||${topicName}`;
+    const entry = topicMap.get(key);
+    if (!entry || entry.questions.length === 0) {
       alert("This topic has no questions available in the current language.");
       return;
     }
     selectQuiz({
-      id: `topic-${topic.id}`,
-      title: topic.name,
-      questions,
+      id: `topic-${category}-${topicName}`,
+      title: topicName,
+      questions: entry.questions,
       isCategory: false,
-      category: topic.category,
+      category,
     });
-  }, [allQuestionsMap, selectQuiz]);
+  }, [topicMap, selectQuiz]);
 
   const handleAnswer = (questionId: string, option: OptionKey) => {
     if (submitted) return;
@@ -472,19 +480,20 @@ export default function StudentView({ language = "english", challenge, homeKey =
   /* --------- Quiz selector --------- */
   if (!selectedQuiz) {
 
-    /* ---- Topic-wise browsing ---- */
+    /* ---- Topic-wise browsing (tag-based) ---- */
     if (topicMode) {
       if (topicStep === "subjects") {
         return (
           <div className="space-y-6">
             <div>
-              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">\uD83C\uDFAF Topic Wise Practice</h2>
+              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">{"\uD83C\uDFAF"} Topic Wise Practice</h2>
               <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Select a subject to browse available topics</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {CATEGORIES.map((cat) => {
-                const catTopics = topics.filter((t) => t.category === cat);
+                const info = topicCountsByCategory[cat] || { topicCount: 0, questionCount: 0 };
                 const colors = CATEGORY_COLORS[cat];
+                if (info.topicCount === 0) return null;
                 return (
                   <button
                     key={cat}
@@ -504,7 +513,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                             {cat}
                           </h3>
                           <p className="text-xs text-slate-500 dark:text-slate-400">
-                            {catTopics.length} topic{catTopics.length !== 1 ? "s" : ""}
+                            {info.topicCount} topic{info.topicCount !== 1 ? "s" : ""} &middot; {info.questionCount} question{info.questionCount !== 1 ? "s" : ""}
                           </p>
                         </div>
                       </div>
@@ -526,8 +535,17 @@ export default function StudentView({ language = "english", challenge, homeKey =
       }
 
       if (topicStep === "topics" && topicCategory) {
-        const catTopics = topics.filter((t) => t.category === topicCategory);
         const colors = CATEGORY_COLORS[topicCategory];
+        const registeredTopics = new Set(subjectTopics[topicCategory] || []);
+        for (const [, entry] of topicMap) {
+          if (entry.category === topicCategory) registeredTopics.add(entry.topic);
+        }
+        const topicList = Array.from(registeredTopics).map((name) => {
+          const key = `${topicCategory}|||${name}`;
+          const entry = topicMap.get(key);
+          return { name, questionCount: entry ? entry.questions.length : 0 };
+        }).sort((a, b) => b.questionCount - a.questionCount);
+
         return (
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -542,16 +560,17 @@ export default function StudentView({ language = "english", challenge, homeKey =
               <div>
                 <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">{topicCategory}</h2>
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  {catTopics.length} topic{catTopics.length !== 1 ? "s" : ""} available
+                  {topicList.length} topic{topicList.length !== 1 ? "s" : ""} available
                 </p>
               </div>
             </div>
 
-            {catTopics.length === 0 ? (
+            {topicList.length === 0 ? (
               <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-16 text-center dark:bg-slate-800 dark:border-slate-600">
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700">
                   <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
                   </svg>
                 </div>
                 <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">No topics added yet</p>
@@ -561,43 +580,36 @@ export default function StudentView({ language = "english", challenge, homeKey =
               </div>
             ) : (
               <div className="grid gap-3 sm:grid-cols-2">
-                {catTopics.map((topic) => {
-                  const qCount = topic.questionIds.filter((id) => allQuestionsMap.has(id)).length;
-                  return (
-                    <button
-                      key={topic.id}
-                      onClick={() => startTopicQuiz(topic)}
-                      className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm hover:border-emerald-200 hover:shadow-md transition-all dark:bg-slate-800 dark:border-slate-700 dark:hover:border-emerald-600"
-                    >
-                      <div className={`h-1.5 bg-gradient-to-r ${colors.gradient}`} />
-                      <div className="p-5">
-                        <div className="flex items-start justify-between gap-2">
-                          <div className="flex-1 min-w-0">
-                            <h3 className="font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors dark:text-slate-100 dark:group-hover:text-emerald-400">
-                              {topic.name}
-                            </h3>
-                            {topic.description && (
-                              <p className="mt-1 text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
-                                {topic.description}
-                              </p>
-                            )}
-                          </div>
-                          <svg className="h-5 w-5 shrink-0 mt-0.5 text-slate-300 group-hover:text-emerald-400 transition-colors dark:text-slate-600 dark:group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                          </svg>
+                {topicList.map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => startTopicQuiz(topicCategory, item.name)}
+                    disabled={item.questionCount === 0}
+                    className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white text-left shadow-sm hover:border-emerald-200 hover:shadow-md transition-all disabled:opacity-50 disabled:cursor-not-allowed dark:bg-slate-800 dark:border-slate-700 dark:hover:border-emerald-600"
+                  >
+                    <div className={`h-1.5 bg-gradient-to-r ${colors.gradient}`} />
+                    <div className="p-5">
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="flex-1 min-w-0">
+                          <h3 className="font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors dark:text-slate-100 dark:group-hover:text-emerald-400">
+                            {item.name}
+                          </h3>
                         </div>
-                        <div className="mt-3 flex items-center gap-2">
-                          <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${colors.badge}`}>
-                            {topicCategory}
-                          </span>
-                          <span className="text-xs text-slate-400 dark:text-slate-500">
-                            {qCount} question{qCount !== 1 ? "s" : ""}
-                          </span>
-                        </div>
+                        <svg className="h-5 w-5 shrink-0 mt-0.5 text-slate-300 group-hover:text-emerald-400 transition-colors dark:text-slate-600 dark:group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
                       </div>
-                    </button>
-                  );
-                })}
+                      <div className="mt-3 flex items-center gap-2">
+                        <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${colors.badge}`}>
+                          {topicCategory}
+                        </span>
+                        <span className="text-xs text-slate-400 dark:text-slate-500">
+                          {item.questionCount} question{item.questionCount !== 1 ? "s" : ""}
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                ))}
               </div>
             )}
           </div>

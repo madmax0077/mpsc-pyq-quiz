@@ -24,8 +24,11 @@ export interface Question {
   explanation: string;
   imageUrl?: string;
   category?: Category;
+  topic?: string;
   sourceTag?: string;
 }
+
+export type SubjectTopics = Record<string, string[]>;
 
 export interface Quiz {
   id: string;
