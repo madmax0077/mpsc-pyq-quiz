@@ -24,6 +24,7 @@ function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
 }
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
+const CATEGORY_PER_PAGE = 3;
 
 function seededShuffle<T>(arr: T[], seed: string): T[] {
   let h = 0;
@@ -329,16 +330,27 @@ export default function StudentView({ language = "english", challenge, homeKey =
     }
   }, [challenge, quizzes]);
 
-  const selectQuiz = useCallback((quiz: DisplayQuiz) => {
+  const selectQuiz = useCallback((quiz: DisplayQuiz, startPage = 0) => {
     setSelectedQuiz(quiz);
     setAnswers({});
     setSubmitted(false);
     setScore(0);
-    setCurrentPage(0);
+    setCurrentPage(startPage);
     setSubmittedPages(new Set());
     setPageScores({});
     setShowConfetti(false);
   }, []);
+
+  const handleSearchSelect = useCallback((questionId: string) => {
+    const question = allQuestionsMap.get(questionId);
+    if (!question?.category) return;
+    const catQuiz = categoryQuizzes.find((cq) => cq.category === question.category);
+    if (!catQuiz) return;
+    const qIndex = catQuiz.questions.findIndex((q) => q.id === questionId);
+    if (qIndex === -1) return;
+    const targetPage = Math.floor(qIndex / CATEGORY_PER_PAGE);
+    selectQuiz(catQuiz, targetPage);
+  }, [allQuestionsMap, categoryQuizzes, selectQuiz]);
 
   const startTopicQuiz = useCallback((topic: Topic) => {
     const questions = topic.questionIds
@@ -388,7 +400,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
   const handleSubmitPage = () => {
     if (!selectedQuiz) return;
-    const perPage = selectedQuiz.isCategory ? 20 : QUESTIONS_PER_PAGE;
+    const perPage = selectedQuiz.isCategory ? CATEGORY_PER_PAGE : QUESTIONS_PER_PAGE;
     const start = currentPage * perPage;
     const end = Math.min(start + perPage, selectedQuiz.questions.length);
     const pageQs = selectedQuiz.questions.slice(start, end);
@@ -417,7 +429,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
   };
 
   const handleNextSet = () => {
-    const perPage = selectedQuiz!.isCategory ? 20 : QUESTIONS_PER_PAGE;
+    const perPage = selectedQuiz!.isCategory ? CATEGORY_PER_PAGE : QUESTIONS_PER_PAGE;
     const nextPage = currentPage + 1;
     const maxPage = Math.ceil(selectedQuiz!.questions.length / perPage) - 1;
     if (nextPage <= maxPage) {
@@ -715,7 +727,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 </div>
               )}
               <div className="flex items-center gap-2">
-                <SearchBar allQuestions={allSearchableQuestions} />
+                <SearchBar allQuestions={allSearchableQuestions} onSelect={handleSearchSelect} />
                 <button
                   onClick={() => setShowAnalytics(true)}
                   className="flex items-center gap-1.5 rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
@@ -887,7 +899,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
   /* --------- Quiz in progress / submitted --------- */
   const isCategoryQuiz = selectedQuiz.isCategory;
   const QUESTIONS_PER_PAGE = 10;
-  const perPage = isCategoryQuiz ? 20 : QUESTIONS_PER_PAGE;
+  const perPage = isCategoryQuiz ? CATEGORY_PER_PAGE : QUESTIONS_PER_PAGE;
   const total = selectedQuiz.questions.length;
   const answeredCount = Object.keys(answers).length;
   const pct = total > 0 ? Math.round((score / total) * 100) : 0;
