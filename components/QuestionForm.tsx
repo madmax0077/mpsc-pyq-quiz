@@ -1,8 +1,10 @@
 "use client";
 
+import { useRef } from "react";
 import { Question, OptionKey, CATEGORIES, Category } from "@/lib/types";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
+const MAX_IMG_BYTES = 500 * 1024;
 
 const CATEGORY_COLORS: Record<Category, { bg: string; text: string; border: string; ring: string }> = {
   "Indian Polity":    { bg: "bg-blue-50",    text: "text-blue-700",    border: "border-blue-200",    ring: "ring-blue-100" },
@@ -26,6 +28,8 @@ interface Props {
 }
 
 export default function QuestionForm({ index, question, onChange, onDelete, availableTopics = [] }: Props) {
+  const fileRef = useRef<HTMLInputElement>(null);
+
   const update = (patch: Partial<Question>) => {
     onChange({ ...question, ...patch });
   };
@@ -35,6 +39,36 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
       ...question,
       options: { ...question.options, [key]: value },
     });
+  };
+
+  const handleImagePick = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file || !file.type.startsWith("image/")) return;
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      const maxDim = 800;
+      let { width, height } = img;
+      if (width > maxDim || height > maxDim) {
+        const s = maxDim / Math.max(width, height);
+        width = Math.round(width * s);
+        height = Math.round(height * s);
+      }
+      const c = document.createElement("canvas");
+      c.width = width;
+      c.height = height;
+      c.getContext("2d")!.drawImage(img, 0, 0, width, height);
+      let q = 0.8;
+      let data = c.toDataURL("image/jpeg", q);
+      while (data.length > MAX_IMG_BYTES && q > 0.2) {
+        q -= 0.1;
+        data = c.toDataURL("image/jpeg", q);
+      }
+      update({ imageUrl: data });
+      URL.revokeObjectURL(url);
+    };
+    img.src = url;
+    if (fileRef.current) fileRef.current.value = "";
   };
 
   const catColor = question.category ? CATEGORY_COLORS[question.category] : null;
@@ -79,22 +113,42 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
           className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 resize-none dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
         />
 
-        {/* Diagram image */}
-        {question.imageUrl && (
-          <div className="rounded-lg border border-slate-200 bg-slate-50 p-2 dark:bg-slate-700 dark:border-slate-600">
-            <p className="mb-1 text-xs font-medium text-slate-500 dark:text-slate-400">Diagram / Figure (from PDF page)</p>
-            <img
-              src={question.imageUrl}
-              alt="Question diagram"
-              className="max-h-72 w-full rounded object-contain"
-            />
-            <button
-              onClick={() => update({ imageUrl: undefined })}
-              className="mt-1 text-xs text-red-500 hover:text-red-700"
-            >
-              Remove image
-            </button>
+        {/* Image upload / preview */}
+        <input ref={fileRef} type="file" accept="image/*" onChange={handleImagePick} className="hidden" />
+        {question.imageUrl ? (
+          <div className="rounded-lg border border-slate-200 bg-slate-50 p-3 dark:bg-slate-700 dark:border-slate-600">
+            <div className="mb-2 flex items-center justify-between">
+              <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Attached Image</p>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => fileRef.current?.click()}
+                  className="rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-600 hover:bg-indigo-100 transition-colors dark:bg-indigo-900/30 dark:text-indigo-300"
+                >
+                  Replace
+                </button>
+                <button
+                  type="button"
+                  onClick={() => update({ imageUrl: undefined })}
+                  className="rounded-md bg-red-50 px-2.5 py-1 text-xs font-medium text-red-600 hover:bg-red-100 transition-colors dark:bg-red-900/30 dark:text-red-300"
+                >
+                  Remove
+                </button>
+              </div>
+            </div>
+            <img src={question.imageUrl} alt="Question diagram" className="max-h-72 w-full rounded object-contain" />
           </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => fileRef.current?.click()}
+            className="flex w-full items-center justify-center gap-2 rounded-lg border-2 border-dashed border-slate-200 px-4 py-3 text-sm text-slate-500 hover:border-indigo-300 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all dark:border-slate-600 dark:text-slate-400 dark:hover:border-indigo-500 dark:hover:text-indigo-400 dark:hover:bg-indigo-900/20"
+          >
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.41a2.25 2.25 0 013.182 0l2.909 2.91m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            Add Image (optional)
+          </button>
         )}
 
         {/* Options */}
