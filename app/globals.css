@@ -18,11 +18,3 @@ body {
 ::selection {
   @apply bg-indigo-200 dark:bg-indigo-700;
 }
-
-.quiz-protected {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-}
