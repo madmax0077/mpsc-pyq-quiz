@@ -1,0 +1,1959 @@
+{
+  "id": "asst_pre_2011_en",
+  "title": "MPSC Assistant Preliminary Examination 2011 (Set A) (English)",
+  "createdAt": "2026-04-18T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "asst2011_en_1",
+      "text": "The radius of a cone is decreased by 20% and the height is increased by 50%. The change in the volume of the cone is",
+      "options": {
+        "A": "4% decrease",
+        "B": "4% increase",
+        "C": "20% increase",
+        "D": "20% decrease"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_2",
+      "text": "For A.P. √2, √8, √18, √32 ... S₁₀ = ...",
+      "options": {
+        "A": "55√2",
+        "B": "5√2",
+        "C": "20",
+        "D": "10√2"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_3",
+      "text": "In a three-digit number, the sum of the digits at hundreds place and units place is 1 less than the digit at the tens place. The number is 17 times the sum of the three digits. If 198 is added to the original number, the order of the digits is reversed. Then what is the original number?",
+      "options": {
+        "A": "351",
+        "B": "153",
+        "C": "135",
+        "D": "151"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_4",
+      "text": "A certain loan was repaid in two equal and annual instalments of ₹ 4704 each. If the rate of compound interest was 12%, then the sum borrowed was",
+      "options": {
+        "A": "₹ 7500",
+        "B": "₹ 8500",
+        "C": "₹ 7000",
+        "D": "₹ 7950"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_5",
+      "text": "The price of an item is ₹ 5000. If there is 12% discount on it, the price of that item would be",
+      "options": {
+        "A": "₹ 4400",
+        "B": "₹ 4880",
+        "C": "₹ 4940",
+        "D": "₹ 4988"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_6",
+      "text": "2/3 of the members of a committee are women. 1/4 of the men in the committee are married. If the number of bachelor men in the committee is 9, then the total number of members of the committee is",
+      "options": {
+        "A": "48",
+        "B": "27",
+        "C": "36",
+        "D": "42"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_7",
+      "text": "A machine in a soft drink factory fills 840 bottles in 6 hours. How many bottles will it fill in 5 hours?",
+      "options": {
+        "A": "840",
+        "B": "800",
+        "C": "740",
+        "D": "700"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_8",
+      "text": "A set of chairs is available for ₹ 2000 cash or for ₹ 1200 cash down payment and ₹ 860 to be paid after six months in one instalment. The rate of interest charged under the instalment scheme is ________ p.a.",
+      "options": {
+        "A": "10%",
+        "B": "12%",
+        "C": "12.5%",
+        "D": "15%"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_9",
+      "text": "Find the value of (69842 × 69842 − 30158 × 30158) / (69842 − 30158)",
+      "options": {
+        "A": "69842",
+        "B": "36684",
+        "C": "30158",
+        "D": "100000"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_10",
+      "text": "Surface area of a sphere is 314 cm². Then the volume of the sphere is ________ cm³.",
+      "options": {
+        "A": "520",
+        "B": "521",
+        "C": "523⅓",
+        "D": "522⅓"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_11",
+      "text": "How many sides does a regular polygon have if the measure of an exterior angle is 45°?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "8"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_12",
+      "text": "If we solve correctly (20 − 5 × 2 + 3 − 18 ÷ 9) then we get the answer",
+      "options": {
+        "A": "15/9",
+        "B": "46/9",
+        "C": "11",
+        "D": "31"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_13",
+      "text": "The square root of 7/5 − (4/25)√24 is",
+      "options": {
+        "A": "√8 − √3",
+        "B": "(2/5)√8 − √3",
+        "C": "(2/5)√8 − (1/5)√3",
+        "D": "(1/5)√8 − (2/5)√3"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_14",
+      "text": "If a three-digit number 24x is divisible by 9, what is the value of x?",
+      "options": {
+        "A": "8",
+        "B": "7",
+        "C": "5",
+        "D": "3"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_15",
+      "text": "Simplify: √2.25 × √0.4",
+      "options": {
+        "A": "1",
+        "B": "0.3",
+        "C": "2",
+        "D": "2/3"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_16",
+      "text": "How much less is the sum of odd numbers between 51 to 70, from the sum of even numbers between the same?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "11",
+        "D": "12"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_17",
+      "text": "If a > 0, b > 0 and c > 0, then a + 1/(b + 1/c) = ...",
+      "options": {
+        "A": "(a + b)/(bc + 1)",
+        "B": "(abc + a + c)/(bc + 1)",
+        "C": "(abc + bc + 1)/(bc + 1)",
+        "D": "(abc + b + c)/(bc + 1)"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_18",
+      "text": "Ram bought a cupboard for ₹ 3300 including tax of 10%. Find the original price of the cupboard before tax was added.",
+      "options": {
+        "A": "₹ 2970",
+        "B": "₹ 3000",
+        "C": "₹ 3033",
+        "D": "₹ 3267"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_19",
+      "text": "√−4 is not a surd because ________. Which of the following reasons is incorrect?",
+      "options": {
+        "A": "it is not a root of a rational number",
+        "B": "its square is not a positive number",
+        "C": "it is not a real number",
+        "D": "it is not an irrational number"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_20",
+      "text": "A football team won 10 matches out of the total number of matches they played. If their win percentage was 40, then how many matches did they play in all?",
+      "options": {
+        "A": "20",
+        "B": "25",
+        "C": "30",
+        "D": "40"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Aptitude"
+    },
+    {
+      "id": "asst2011_en_21",
+      "text": "If a 60 W electric bulb is lighted for 6 hours, how much electrical energy is consumed?",
+      "options": {
+        "A": "10 units",
+        "B": "360 units",
+        "C": "0.36 unit",
+        "D": "0.1 unit"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_22",
+      "text": "A radioactive substance has a half life of 4 hours. What fraction of the original substance will decay after 3 half lives?",
+      "options": {
+        "A": "1/8",
+        "B": "7/8",
+        "C": "1/4",
+        "D": "3/4"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_23",
+      "text": "Power bill of solar energy per year at the rate of ₹ 5 per unit will be ₹ ________",
+      "options": {
+        "A": "85 × 10¹⁷",
+        "B": "35 × 10¹⁷",
+        "C": "10¹⁷",
+        "D": "12 × 10¹⁷"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_24",
+      "text": "The electric potential difference (V) between the two points in a conductor is expressed by",
+      "options": {
+        "A": "V = Work done (W) / Charge (Q)",
+        "B": "V = Work done (W) / Time (t)",
+        "C": "V = Charge (Q) / Time (t)",
+        "D": "V = Charge (Q) / Work done (W)"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_25",
+      "text": "A rubber ball filled with water is having a small hole at the bottom. If this ball is used as the bob of a simple pendulum, then the time period of such a pendulum will ________ as the ball oscillates.",
+      "options": {
+        "A": "decrease",
+        "B": "first decrease and then increase",
+        "C": "first increase and then decrease",
+        "D": "increase"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_26",
+      "text": "Two thin lenses of focal length +4 m and −2 m are placed in contact. What is the focal length of the combined lens?",
+      "options": {
+        "A": "−4 m",
+        "B": "+2 m",
+        "C": "+4 m",
+        "D": "−2 m"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_27",
+      "text": "Which of the following chemicals is used as a cooling agent in air-conditioners?",
+      "options": {
+        "A": "Carbon tetrachloride",
+        "B": "Methane",
+        "C": "Chloroform",
+        "D": "Freon"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_28",
+      "text": "If the pH value of a solution is 7, then the solution is",
+      "options": {
+        "A": "acidic",
+        "B": "basic",
+        "C": "alkaline",
+        "D": "neutral"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_29",
+      "text": "The order of penetration power of α, β and γ rays through a metal sheet is ________.",
+      "options": {
+        "A": "γ > β > α",
+        "B": "α > β > γ",
+        "C": "β > α > γ",
+        "D": "α > γ > β"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_30",
+      "text": "On moderate heating, which of the following compounds gives off oxygen?",
+      "options": {
+        "A": "Cupric oxide",
+        "B": "Mercuric oxide",
+        "C": "Zinc oxide",
+        "D": "Aluminium oxide"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_31",
+      "text": "The temperature at which air becomes saturated with water vapour is called",
+      "options": {
+        "A": "freezing point",
+        "B": "melting point",
+        "C": "dew point",
+        "D": "boiling point"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_32",
+      "text": "From which of the following is methane gas produced?",
+      "options": {
+        "A": "Wheat field",
+        "B": "Paddy field",
+        "C": "Cotton field",
+        "D": "Groundnut field"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_33",
+      "text": "Human goitre is related to",
+      "options": {
+        "A": "iodine deficiency in the diet",
+        "B": "overactivity of the thyroid",
+        "C": "accelerated uptake of I₂ from the blood",
+        "D": "All of the above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_34",
+      "text": "Insulin doses are available today at low costs because",
+      "options": {
+        "A": "GM bacteria produce it",
+        "B": "Bacterial food used here is inexpensive",
+        "C": "Process of fermentation is very fast",
+        "D": "Fermentation vessels can be used for several years"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_35",
+      "text": "'Broca Index' is concerned with calibration of general health in humans. It is obtained by subtraction of",
+      "options": {
+        "A": "weight in kg and height in metres",
+        "B": "height in cm and 100",
+        "C": "height in metres and weight in kg",
+        "D": "weight in kg and height in cm"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_36",
+      "text": "While preparing liquors, _________ is not added.",
+      "options": {
+        "A": "glucose",
+        "B": "fructose",
+        "C": "yeast",
+        "D": "None of the above"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_37",
+      "text": "Who requires highest amount of proteins in his/her diet?",
+      "options": {
+        "A": "An adolescent between 12 to 18 years of age",
+        "B": "A pregnant woman",
+        "C": "A farm worker",
+        "D": "A scientist"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_38",
+      "text": "Fats are shown at the apex of food pyramid because fats",
+      "options": {
+        "A": "are easily absorbed in our cell",
+        "B": "perform several functions in a cell",
+        "C": "are easily oxidised",
+        "D": "are never stored in our body"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_39",
+      "text": "The process of continuous progressive improvement of the health status of a population is called",
+      "options": {
+        "A": "public health",
+        "B": "health development",
+        "C": "personal hygiene",
+        "D": "community hygiene"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_40",
+      "text": "Which of the following is an inherited disease?",
+      "options": {
+        "A": "Hypertension",
+        "B": "Diabetes",
+        "C": "Leprosy",
+        "D": "Both (1) and (2) above"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Science"
+    },
+    {
+      "id": "asst2011_en_41",
+      "text": "Which was the main objective of Indians during and after the revolt of 1857 A.D.?",
+      "options": {
+        "A": "To uproot the British",
+        "B": "To co-operate with the British",
+        "C": "To oppose the British",
+        "D": "None of the above"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_42",
+      "text": "Bhil Unrest took place at",
+      "options": {
+        "A": "Pune",
+        "B": "Khandesh",
+        "C": "Mumbai",
+        "D": "Konkan"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_43",
+      "text": "Who annexed many Indian Princely States between 1848 and 1856 A.D.?",
+      "options": {
+        "A": "Lord Ripon",
+        "B": "Lord William Bentinck",
+        "C": "Lord Cornwallis",
+        "D": "Lord Dalhousie"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_44",
+      "text": "Who issued an order to fire at the unarmed innocent crowd gathered for a meeting at Jallianwalla Bagh?",
+      "options": {
+        "A": "General Dyer",
+        "B": "O'Dwyer",
+        "C": "Chelmsford",
+        "D": "Curzon"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_45",
+      "text": "The agreement made between Dr. Ambedkar and Mahatma Gandhi in the year 1932 A.D. is",
+      "options": {
+        "A": "Communal Award",
+        "B": "Poona Pact",
+        "C": "An outline regarding the upliftment of untouchables",
+        "D": "None of the above"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_46",
+      "text": "Who was the founder of 'Bharat Sevak Samaj'?",
+      "options": {
+        "A": "Dadabhai Naoroji",
+        "B": "Gopal Krishna Gokhale",
+        "C": "Mahatma Gandhi",
+        "D": "Bipin Chandra Pal"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_47",
+      "text": "In September 1916, 'Home Rule League' was founded by",
+      "options": {
+        "A": "Indulal Yagnik",
+        "B": "George Arundale",
+        "C": "Annie Besant",
+        "D": "Gopal Krishna Gokhale"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_48",
+      "text": "In Maharashtra, the farmers revolted against zamindars and the money-lenders in",
+      "options": {
+        "A": "1860",
+        "B": "1873",
+        "C": "1875",
+        "D": "1905"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_49",
+      "text": "In which country was the Home Rule movement first started?",
+      "options": {
+        "A": "South Africa",
+        "B": "Ireland",
+        "C": "Netherlands",
+        "D": "India"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_50",
+      "text": "After the arrest of Mahatma Gandhi, who led the Satyagraha at Dharasana in Gujarat?",
+      "options": {
+        "A": "Shrikrishna Sarada",
+        "B": "Mallappa Dhanshetty",
+        "C": "Qurban Hussain",
+        "D": "Sarojini Naidu"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_51",
+      "text": "Which Act declared the separate electorates for Muslims?",
+      "options": {
+        "A": "1813",
+        "B": "1909",
+        "C": "1919",
+        "D": "1935"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_52",
+      "text": "The farmers and the East India Company came in direct contact in the _________ system of revenue.",
+      "options": {
+        "A": "Rayatwari",
+        "B": "Mahalwari",
+        "C": "Permanent Settlement",
+        "D": "Talukadari"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_53",
+      "text": "Which cities were connected by Grand Trunk Road?",
+      "options": {
+        "A": "Delhi to Mumbai",
+        "B": "Delhi to Kolkata",
+        "C": "Pune to Mumbai",
+        "D": "Nashik to Surat"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_54",
+      "text": "Dr. Babasaheb Ambedkar spread his message through the journals like 'Janata Patra' and ________.",
+      "options": {
+        "A": "'Mook Nayak'",
+        "B": "'Sudharak'",
+        "C": "'Vartaman Deepika'",
+        "D": "'Vicharlahari'"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_55",
+      "text": "To remove casteism and untouchability, ________ formed 'Samata Manch' in 1944 A.D.",
+      "options": {
+        "A": "Gopal Krishna Gokhale",
+        "B": "Annie Besant",
+        "C": "Maharshi Dhondo Keshav Karve",
+        "D": "Justice Ranade"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_56",
+      "text": "What is the ancestral name of Rajarshi Shahu Maharaj's dynasty?",
+      "options": {
+        "A": "Nimbalkar",
+        "B": "Bhonsle",
+        "C": "Ghatge",
+        "D": "Pawar"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_57",
+      "text": "In 1875, the 'Arya Samaj' was established by",
+      "options": {
+        "A": "Swami Vivekananda",
+        "B": "Swami Dayanand Saraswati",
+        "C": "Ramkrishna Paramahansa",
+        "D": "Raja Rammohan Roy"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_58",
+      "text": "At Pune, Mahatma Phule started first school for girls in the year",
+      "options": {
+        "A": "1848",
+        "B": "1851",
+        "C": "1873",
+        "D": "1883"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_59",
+      "text": "Mahatma Jyotiba Phule founded Satyashodhak Samaj in 1873 for",
+      "options": {
+        "A": "Religious movement",
+        "B": "Revolt against British Government",
+        "C": "Emancipation of common man from Brahmanical tyranny",
+        "D": "Political activities"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_60",
+      "text": "The book 'Gulamgiri' was written by",
+      "options": {
+        "A": "Mahatma Gandhi",
+        "B": "Mahatma Jyotiba Phule",
+        "C": "Dr. Babasaheb Ambedkar",
+        "D": "Narayan Guru"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_61",
+      "text": "Construction of Dams for Irrigation, Modernization of Agriculture, Animal Husbandry, Introduction of Horticulture and Conservation of Forests — these modern concepts were first visualized by",
+      "options": {
+        "A": "Justice M.G. Ranade",
+        "B": "Mahatma Jyotiba Phule",
+        "C": "Maharaja Sayajirao Gaekwad",
+        "D": "Lokmanya Tilak"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_62",
+      "text": "\"I shall speak apt and do whatever possible only.\" Who said this?",
+      "options": {
+        "A": "Lokmanya Tilak",
+        "B": "Gopal Krishna Gokhale",
+        "C": "Gopal Ganesh Agarkar",
+        "D": "Justice Ranade"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_63",
+      "text": "A newspaper 'Sudharak' was started by",
+      "options": {
+        "A": "Gopal Ganesh Agarkar",
+        "B": "Gopal Hari Deshmukh",
+        "C": "Bal Gangadhar Tilak",
+        "D": "Dr. Panjabrao Deshmukh"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_64",
+      "text": "________ said that \"Without social development political movement has no use.\"",
+      "options": {
+        "A": "R.G. Bhandarkar",
+        "B": "G.K. Gokhale",
+        "C": "D.K. Karve",
+        "D": "G.G. Agarkar"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_65",
+      "text": "Gopal Ganesh Agarkar was born in the village ________ near Karad.",
+      "options": {
+        "A": "Tembhu",
+        "B": "Shekhali",
+        "C": "Dapoli",
+        "D": "Khed"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_66",
+      "text": "Chhatrapati Shahu was known as a",
+      "options": {
+        "A": "Lokancha Raja",
+        "B": "Prajecha Raja",
+        "C": "Maharaja",
+        "D": "Bahujan Samaj Dalitancha Raja"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_67",
+      "text": "________ issued an order abolishing the 'Mahar vatan'.",
+      "options": {
+        "A": "British Government",
+        "B": "Panjabrao Deshmukh",
+        "C": "Krishnarao Bhalekar",
+        "D": "Chhatrapati Shahu Maharaj"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_68",
+      "text": "In Maharashtra, who was the first social reformer who had given 50% reservation for backward classes in his Princely State?",
+      "options": {
+        "A": "Vitthal Ramji Shinde",
+        "B": "Balasaheb Aundhkar",
+        "C": "Chhatrapati Shahu Maharaj",
+        "D": "Pantsachiv Bhorkar"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_69",
+      "text": "Rajarshi Shahu Maharaj was the President of Non-Brahmin Social Conference in 1920 at",
+      "options": {
+        "A": "Hubli",
+        "B": "Kolhapur",
+        "C": "Belgaum",
+        "D": "Mangaon"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_70",
+      "text": "Maharshi Karve was born on",
+      "options": {
+        "A": "18 April 1858",
+        "B": "18 April 1758",
+        "C": "18 April 1859",
+        "D": "18 April 1759"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_71",
+      "text": "In 1907 A.D. Maharshi Karve established the institution ________ at Hingane.",
+      "options": {
+        "A": "Anath Balikashram",
+        "B": "Maharashtra Gram Prathamik Shikshan Mandal",
+        "C": "Mahila Vidyalaya",
+        "D": "Samta Manch"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_72",
+      "text": "Maharshi Karve was remarried to a widow from",
+      "options": {
+        "A": "Seva Sadan",
+        "B": "Shardashram",
+        "C": "Anath Balikashram",
+        "D": "Mukti Sadan"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_73",
+      "text": "Who was the social reformer from Maharashtra to whom 'Bharat Ratna' was awarded in 1958?",
+      "options": {
+        "A": "Dr. Babasaheb Ambedkar",
+        "B": "Dr. Panjabrao Deshmukh",
+        "C": "Dhondo Keshav Karve",
+        "D": "Mukundrao Patil"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_74",
+      "text": "Who founded 'Bahiskrit Hitakarini Sabha'?",
+      "options": {
+        "A": "Mahatma Jyotiba Phule",
+        "B": "Vitthal Ramji Shinde",
+        "C": "Chhatrapati Shahu Maharaj",
+        "D": "Dr. Babasaheb Ambedkar"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_75",
+      "text": "The periodical 'Mooknayak' was started by",
+      "options": {
+        "A": "Dr. Babasaheb Ambedkar",
+        "B": "Chhatrapati Shahu Maharaj",
+        "C": "Gopal Baba Valangkar",
+        "D": "Dhondo Keshav Karve"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_76",
+      "text": "Who launched satyagraha of the 'Chavdar Tale' at Mahad in 1927 A.D.?",
+      "options": {
+        "A": "Mahatma Gandhi",
+        "B": "Dr. Babasaheb Ambedkar",
+        "C": "V.D. Savarkar",
+        "D": "Vitthal Ramji Shinde"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_77",
+      "text": "Dr. Ambedkar demanded ________ in Round Table Conference.",
+      "options": {
+        "A": "Separate electorate",
+        "B": "Reservation",
+        "C": "Education for women",
+        "D": "Temple entry"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_78",
+      "text": "________ was the father of Social Revolution.",
+      "options": {
+        "A": "Bhau Daji Lad",
+        "B": "Vishnushastri Chiplunkar",
+        "C": "Vishnubuva Brahmachari",
+        "D": "Mahatma Jyotiba Phule"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_79",
+      "text": "________ was the base of Agarkar's Social Reform.",
+      "options": {
+        "A": "Fatalism",
+        "B": "Convention",
+        "C": "Rationalism",
+        "D": "Religion"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_80",
+      "text": "'Miss Clark Hostel' was started by Shahu Maharaj for ________ students.",
+      "options": {
+        "A": "Untouchable",
+        "B": "Brahmin",
+        "C": "Jain",
+        "D": "Maratha"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "History"
+    },
+    {
+      "id": "asst2011_en_81",
+      "text": "Percentage of forest is maximum in ________ district of Maharashtra state.",
+      "options": {
+        "A": "Sindhudurg",
+        "B": "Gadchiroli",
+        "C": "Aurangabad",
+        "D": "Sholapur"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_82",
+      "text": "When we travel from west to east in Maharashtra, we cross different river basins. They are in the following sequence:",
+      "options": {
+        "A": "Bhima, Vainaganga, Seena, Savitri",
+        "B": "Vainaganga, Seena, Bhima, Savitri",
+        "C": "Savitri, Bhima, Seena, Vainaganga",
+        "D": "Vainaganga, Bhima, Seena, Savitri"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_83",
+      "text": "The length of Maharashtra state from east to west is about",
+      "options": {
+        "A": "600 km",
+        "B": "700 km",
+        "C": "720 km",
+        "D": "800 km"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_84",
+      "text": "Which of the following is not a power generation centre in Maharashtra?",
+      "options": {
+        "A": "Uran",
+        "B": "Khaparkheda",
+        "C": "Ambarnath",
+        "D": "Parali"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_85",
+      "text": "________ is a tributary of the river Wardha.",
+      "options": {
+        "A": "Penganga",
+        "B": "Bhima",
+        "C": "Yerala",
+        "D": "Panchganga"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_86",
+      "text": "The location of ________ is in the rain shadow region.",
+      "options": {
+        "A": "Mahad",
+        "B": "Wai",
+        "C": "Mahabaleshwar",
+        "D": "Nashik"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_87",
+      "text": "Which of the following varieties of rice is not hybrid?",
+      "options": {
+        "A": "Indrayani",
+        "B": "Jaya",
+        "C": "Hansa",
+        "D": "Hiramoti"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_88",
+      "text": "________ soil is widespread in the plateau region of Maharashtra.",
+      "options": {
+        "A": "Black",
+        "B": "Red",
+        "C": "Alluvial",
+        "D": "Laterite"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_89",
+      "text": "The ________ lake has been formed due to a meteoric fall.",
+      "options": {
+        "A": "Chilka",
+        "B": "Lonar",
+        "C": "Sambhar",
+        "D": "Pulicat"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_90",
+      "text": "Matheran is an example of ________ settlement.",
+      "options": {
+        "A": "Linear",
+        "B": "Twin",
+        "C": "Circular",
+        "D": "Hill top"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_91",
+      "text": "In Maharashtra ________ receives the highest rainfall.",
+      "options": {
+        "A": "Chikhaldara",
+        "B": "Toranmal",
+        "C": "Amboli",
+        "D": "Gadchiroli"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_92",
+      "text": "Which of the following is not a west-flowing river?",
+      "options": {
+        "A": "Vaitarana",
+        "B": "Tanasa",
+        "C": "Koyana",
+        "D": "Shastri"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_93",
+      "text": "India has land frontier of about ________ kilometres.",
+      "options": {
+        "A": "14300",
+        "B": "15200",
+        "C": "16500",
+        "D": "15000"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_94",
+      "text": "The oldest fold mountain in India is",
+      "options": {
+        "A": "Aravalli",
+        "B": "Sahyadri",
+        "C": "Vindhya",
+        "D": "Nilgiri"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_95",
+      "text": "Which of the following terms is not related with alluvial soil?",
+      "options": {
+        "A": "Khadar",
+        "B": "Bhangar",
+        "C": "Bhabar",
+        "D": "Regur"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_96",
+      "text": "Wildlife sanctuary at Gir in Gujarat state is reserved for",
+      "options": {
+        "A": "Tiger",
+        "B": "Elephant",
+        "C": "Lion",
+        "D": "Rhinoceros"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_97",
+      "text": "Jamshedpur is an industrial city situated on the bank of ________ river.",
+      "options": {
+        "A": "Mahanadi",
+        "B": "Son",
+        "C": "Suvarnrekha",
+        "D": "Ganga"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_98",
+      "text": "In India ________ state ranks first in tea production.",
+      "options": {
+        "A": "Assam",
+        "B": "Bihar",
+        "C": "Maharashtra",
+        "D": "Orissa"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_99",
+      "text": "The rank of India in terms of railway electrification in the world is",
+      "options": {
+        "A": "first",
+        "B": "second",
+        "C": "third",
+        "D": "fourth"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_100",
+      "text": "River Ganga enters the plains at",
+      "options": {
+        "A": "Rudraprayag",
+        "B": "Rishikesh",
+        "C": "Allahabad",
+        "D": "Garhwal"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Geography"
+    },
+    {
+      "id": "asst2011_en_101",
+      "text": "The formation of Iron & Steel industry in ________ state is the result of Sixth Five Year Plan.",
+      "options": {
+        "A": "Karnataka",
+        "B": "Bihar",
+        "C": "Maharashtra",
+        "D": "Orissa"
+      },
+      "correctAnswer": "A",
+      "explanation": "This question was cancelled by MPSC.",
+      "category": "Economics"
+    },
+    {
+      "id": "asst2011_en_102",
+      "text": "The Second Five Year Plan was implemented during the period from",
+      "options": {
+        "A": "1950 to 1955",
+        "B": "1956 to 1961",
+        "C": "1952 to 1957",
+        "D": "1961 to 1966"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "asst2011_en_103",
+      "text": "In which year was the Fourth Five Year Plan started?",
+      "options": {
+        "A": "1974",
+        "B": "1966",
+        "C": "1969",
+        "D": "1970"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "asst2011_en_104",
+      "text": "Who is the Chairman of State Planning Commission?",
+      "options": {
+        "A": "Governor",
+        "B": "Chief Minister",
+        "C": "Finance Minister",
+        "D": "Planning Minister"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "asst2011_en_105",
+      "text": "The Second Five Year Plan could not be implemented fully because of the",
+      "options": {
+        "A": "acute shortage of food grains",
+        "B": "acute shortage of foreign exchange",
+        "C": "over expenditure on war",
+        "D": "political crisis"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "asst2011_en_106",
+      "text": "The formation of Damodar Valley Project is the result of ________ Five Year Plan.",
+      "options": {
+        "A": "First",
+        "B": "Second",
+        "C": "Third",
+        "D": "Fifth"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "asst2011_en_107",
+      "text": "For how many maximum days can the Rajya Sabha keep the Money Bill?",
+      "options": {
+        "A": "7",
+        "B": "15",
+        "C": "16",
+        "D": "14"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_108",
+      "text": "What is federal form of government?",
+      "options": {
+        "A": "There is centralisation of power",
+        "B": "There is decentralisation of power",
+        "C": "There is only one central government",
+        "D": "There are only provincial governments"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_109",
+      "text": "When was the first meeting of the Constituent Assembly held in India?",
+      "options": {
+        "A": "8th December, 1946",
+        "B": "9th December, 1946",
+        "C": "15th December, 1946",
+        "D": "15th August, 1947"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_110",
+      "text": "How many Justices are there in the Supreme Court of India including the Chief Justice?",
+      "options": {
+        "A": "25",
+        "B": "26",
+        "C": "27",
+        "D": "17"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_111",
+      "text": "Who was nominated as Vice-President of the Constituent Assembly in its first session?",
+      "options": {
+        "A": "K. Santhanam",
+        "B": "Abul Kalam Azad",
+        "C": "John Matthai",
+        "D": "Frank Anthony"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_112",
+      "text": "If any Central Minister doesn't offer his resignation despite the directions of the Prime Minister, then",
+      "options": {
+        "A": "the President can dismiss him",
+        "B": "the Prime Minister can dismiss him",
+        "C": "the Prime Minister may resign",
+        "D": "the Lok Sabha will pass resolution against him/her"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_113",
+      "text": "Which State in India has its own separate Constitution?",
+      "options": {
+        "A": "Jammu and Kashmir",
+        "B": "Maharashtra",
+        "C": "Bihar",
+        "D": "Andhra Pradesh"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_114",
+      "text": "________ was the President of the Constituent Assembly of India.",
+      "options": {
+        "A": "Dr. Babasaheb Ambedkar",
+        "B": "Vallabhbhai Patel",
+        "C": "Dr. Rajendra Prasad",
+        "D": "Pt. Nehru"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_115",
+      "text": "The total number of talukas in Maharashtra is ________.",
+      "options": {
+        "A": "350",
+        "B": "355",
+        "C": "351",
+        "D": "357"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_116",
+      "text": "How many members of the Vidhan Parishad are elected from teachers' constituency?",
+      "options": {
+        "A": "1/2",
+        "B": "1/4",
+        "C": "1/12",
+        "D": "1/3"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_117",
+      "text": "How many languages are constitutionally approved in India?",
+      "options": {
+        "A": "14",
+        "B": "18",
+        "C": "20",
+        "D": "22"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_118",
+      "text": "To whom is the Governor responsible?",
+      "options": {
+        "A": "The Chief Minister",
+        "B": "The Home Minister",
+        "C": "The Prime Minister",
+        "D": "The President of India"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_119",
+      "text": "________ became the 25th state in India.",
+      "options": {
+        "A": "Goa",
+        "B": "Mizoram",
+        "C": "Sikkim",
+        "D": "Jharkhand"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_120",
+      "text": "________ can use his powers on the advice of the Chief Minister and the Council of Ministers.",
+      "options": {
+        "A": "President",
+        "B": "Prime Minister",
+        "C": "Governor",
+        "D": "The Chief Justice"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_121",
+      "text": "Who selects the Gramsevaks?",
+      "options": {
+        "A": "Panchayat Samiti",
+        "B": "Gram Panchayat",
+        "C": "State Government",
+        "D": "District Selection Board"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_122",
+      "text": "How many members can be in the Zilla Parishad?",
+      "options": {
+        "A": "50 to 75",
+        "B": "60 to 75",
+        "C": "20 to 75",
+        "D": "35 to 75"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_123",
+      "text": "Who can sanction the loan to Gram Panchayats?",
+      "options": {
+        "A": "State Government",
+        "B": "Collector",
+        "C": "Zilla Parishad",
+        "D": "Panchayat Samiti"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_124",
+      "text": "Zilla Parishad was started in Maharashtra in the year",
+      "options": {
+        "A": "1960",
+        "B": "1950",
+        "C": "1947",
+        "D": "1924"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_125",
+      "text": "Which is the final decision-making authority regarding the development of a village?",
+      "options": {
+        "A": "Gram Panchayat",
+        "B": "Gramsevak",
+        "C": "Sarpanch",
+        "D": "Gram Sabha"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_126",
+      "text": "Which movie received the Oscar Award in the Best Movie category in 2010?",
+      "options": {
+        "A": "The Hurt Locker",
+        "B": "An Education",
+        "C": "Inglorious Basterds",
+        "D": "The Secret in Their Eyes"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_127",
+      "text": "Who was the coach of the Indian Hockey team in 2010?",
+      "options": {
+        "A": "Flourisan Fuex",
+        "B": "Jose Brasa",
+        "C": "Lombi",
+        "D": "Benzamin Base"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_128",
+      "text": "What will be number of the amendment in the Constitution of India for women's reservation?",
+      "options": {
+        "A": "104th",
+        "B": "108th",
+        "C": "107th",
+        "D": "106th"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_129",
+      "text": "The autobiography 'Prakashwata' is by the following famous personality:",
+      "options": {
+        "A": "Dr. Prakash Amte",
+        "B": "Dr. Anil Awachat",
+        "C": "Dr. Raghunath Mashelkar",
+        "D": "Madhav Kanitkar"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_130",
+      "text": "Rangarajan Committee is related to",
+      "options": {
+        "A": "National Savings and Investment",
+        "B": "Gujarat Riots",
+        "C": "Mumbai Attack",
+        "D": "Rajiv Gandhi Assassination"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_131",
+      "text": "The name Soumya Swaminathan is related to",
+      "options": {
+        "A": "Tennis",
+        "B": "Chess",
+        "C": "Trekking",
+        "D": "Marathon"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_132",
+      "text": "For which party has freedom fighter Ahilyabai Rangnekar worked?",
+      "options": {
+        "A": "Communist Marxist",
+        "B": "Samajwadi Party",
+        "C": "Congress",
+        "D": "Janata Party"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_133",
+      "text": "Which power project is being constructed at Madban near Jaitapur?",
+      "options": {
+        "A": "Tidal energy",
+        "B": "Nuclear energy",
+        "C": "Hydro-electric power",
+        "D": "Windmill"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_134",
+      "text": "Which scheme has the Government of Maharashtra decided to implement from February 2011?",
+      "options": {
+        "A": "Nirmal Swarajya Mohim",
+        "B": "Swarnjayanti Gram Swarozgar Yojana",
+        "C": "Yashwant Gram Samriddhi Yojana",
+        "D": "M. Gandhi Rozgar Yojana"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_135",
+      "text": "Which is the largest Public Sector Bank in India?",
+      "options": {
+        "A": "Reserve Bank of India",
+        "B": "State Bank of India",
+        "C": "Bank of India",
+        "D": "Canara Bank"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_136",
+      "text": "Which one of the following places is famous for production of railway coaches?",
+      "options": {
+        "A": "Nashik",
+        "B": "Kapurthala",
+        "C": "Kanpur",
+        "D": "Kochi"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_137",
+      "text": "In which district are Dr. Abhay Bang and Dr. Rani Bang working to improve the health conditions of tribals?",
+      "options": {
+        "A": "Nandurbar",
+        "B": "Thane",
+        "C": "Gadchiroli",
+        "D": "Yeotmal"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_138",
+      "text": "Which is the correct pair in terms of the Agricultural University and its location?",
+      "options": {
+        "A": "Marathwada Agricultural University – Rahuri",
+        "B": "Dr. Panjabrao Deshmukh Agricultural University – Akola",
+        "C": "Dr. Babasaheb Ambedkar Agricultural University – Parbhani",
+        "D": "Mahatma Phule Agricultural University – Dapoli"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_139",
+      "text": "________ is the inventor of 'Jaipur Foot'.",
+      "options": {
+        "A": "Dr. Pramod Karan Sethi",
+        "B": "Dr. M. Khalilullah",
+        "C": "Dr. V. Swaminathan",
+        "D": "Dr. P.K. Banerjee"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_140",
+      "text": "Dhanalaxmi Scheme for Girl Child was started in March 2008. a. It was initially launched in 7 states. b. The girl child gets upto 2 lakh rupees.",
+      "options": {
+        "A": "a and b both are correct",
+        "B": "a is correct and b is wrong",
+        "C": "a and b are incorrect",
+        "D": "a is wrong and b is correct"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_141",
+      "text": "Where was the A.I. Marathi Literary Conference 2010 held?",
+      "options": {
+        "A": "Sangli",
+        "B": "Mumbai",
+        "C": "U.S.A.",
+        "D": "Thane"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_142",
+      "text": "Which Constitutional Amendment provides for Free and Compulsory Primary Education for the children aged between 6 to 14 years?",
+      "options": {
+        "A": "42nd Amendment",
+        "B": "73rd Amendment",
+        "C": "86th Amendment",
+        "D": "91st Amendment"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Indian Polity"
+    },
+    {
+      "id": "asst2011_en_143",
+      "text": "Which of the following is not an objective of India's economic planning?",
+      "options": {
+        "A": "Population growth",
+        "B": "Industrial growth",
+        "C": "Self-reliance",
+        "D": "Employment generation"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Economics"
+    },
+    {
+      "id": "asst2011_en_144",
+      "text": "\"Oscar Award\" is given for the excellence in the field of",
+      "options": {
+        "A": "Films",
+        "B": "Literature",
+        "C": "Sports",
+        "D": "Politics"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_145",
+      "text": "Which of the following missiles was test-fired from the launch site in Orissa in March 2008?",
+      "options": {
+        "A": "Agni-I",
+        "B": "Agni-II",
+        "C": "Agni-III",
+        "D": "Prithvi"
+      },
+      "correctAnswer": "A",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_146",
+      "text": "The 15th SAARC Summit of August 2008 was held at",
+      "options": {
+        "A": "New Delhi",
+        "B": "Colombo",
+        "C": "Kathmandu",
+        "D": "Islamabad"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_147",
+      "text": "Where is Tata Motors Nano Car Project in Gujarat located?",
+      "options": {
+        "A": "Rajkot",
+        "B": "Anand",
+        "C": "Sanand",
+        "D": "Baroda"
+      },
+      "correctAnswer": "C",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_148",
+      "text": "Match the columns: a. Pandit Ravi Shankar - (i) Tabla; b. Zakir Hussain - (ii) Sarod; c. Amjad Ali Khan - (iii) Sitar; d. Hari Prasad Chaurasia - (iv) Flute",
+      "options": {
+        "A": "a-iv, b-i, c-ii, d-iii",
+        "B": "a-iii, b-i, c-ii, d-iv",
+        "C": "a-ii, b-iii, c-i, d-iv",
+        "D": "a-iii, b-i, c-iv, d-ii"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_149",
+      "text": "Which gharana of Indian music is represented by Pandit Bhimsen Joshi?",
+      "options": {
+        "A": "Dagar",
+        "B": "Kirana",
+        "C": "Jaipur",
+        "D": "Carnatic"
+      },
+      "correctAnswer": "B",
+      "explanation": "",
+      "category": "Current Affairs"
+    },
+    {
+      "id": "asst2011_en_150",
+      "text": "Kavi Kulguru Kalidas Sanskrit University is located at",
+      "options": {
+        "A": "Sewagram",
+        "B": "Sangamner",
+        "C": "Wai",
+        "D": "Ramtek"
+      },
+      "correctAnswer": "D",
+      "explanation": "",
+      "category": "Current Affairs"
+    }
+  ],
+  "language": "english",
+  "tag": "Assistant Pre 2011"
+}
