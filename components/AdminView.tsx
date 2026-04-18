@@ -637,6 +637,69 @@ export default function AdminView() {
         </div>
       )}
 
+      {/* Bundled Quizzes (from quizzes.json) */}
+      {bundledQuizzes.length > 0 && (
+        <div>
+          <h3 className="mb-4 text-lg font-semibold text-slate-800 dark:text-slate-100">
+            Bundled Question Papers
+            <span className="ml-2 text-xs font-normal text-slate-400 dark:text-slate-500">
+              ({bundledQuizzes.length} papers from quizzes.json)
+            </span>
+          </h3>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {bundledQuizzes.map((quiz) => {
+              const cats = [...new Set(quiz.questions.map((q) => q.category).filter(Boolean))];
+              return (
+                <div
+                  key={quiz.id}
+                  className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm dark:bg-slate-800 dark:border-slate-700"
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-slate-800 truncate dark:text-slate-100">{quiz.title}</p>
+                      <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
+                        {quiz.questions.length} question{quiz.questions.length !== 1 ? "s" : ""}
+                        {quiz.language === "marathi" && (
+                          <span className="ml-1.5 inline-block rounded bg-orange-100 px-1.5 py-0.5 text-[10px] font-semibold text-orange-600 dark:bg-orange-900/30 dark:text-orange-400">मराठी</span>
+                        )}
+                        {quiz.language === "english" && (
+                          <span className="ml-1.5 inline-block rounded bg-blue-100 px-1.5 py-0.5 text-[10px] font-semibold text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">English</span>
+                        )}
+                        {quiz.tag && (
+                          <span className="ml-1.5 inline-block rounded bg-violet-100 px-1.5 py-0.5 text-[10px] font-semibold text-violet-600 dark:bg-violet-900/30 dark:text-violet-400">{quiz.tag}</span>
+                        )}
+                      </p>
+                      {cats.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1">
+                          {cats.slice(0, 5).map((cat) => (
+                            <span
+                              key={cat}
+                              className="inline-block rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500 dark:bg-slate-700 dark:text-slate-400"
+                            >
+                              {cat}
+                            </span>
+                          ))}
+                          {cats.length > 5 && (
+                            <span className="inline-block rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-400 dark:bg-slate-700 dark:text-slate-500">
+                              +{cats.length - 5} more
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex shrink-0 items-center">
+                      <span className="rounded-md bg-emerald-50 px-2 py-1 text-[10px] font-semibold text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400">
+                        Bundled
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* Subject Topics Management */}
       <div className="rounded-xl border border-slate-200 bg-white shadow-sm dark:bg-slate-800 dark:border-slate-700">
         <button
