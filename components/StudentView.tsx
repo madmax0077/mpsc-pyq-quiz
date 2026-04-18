@@ -897,7 +897,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
   const totalCategoryQuestions = Object.values(pageScores).reduce((s, p) => s + p.total, 0);
 
   return (
-    <div className="space-y-6 quiz-protected">
+    <div className="space-y-6">
       {showConfetti && <Confetti />}
 
       {/* Report Toast */}
