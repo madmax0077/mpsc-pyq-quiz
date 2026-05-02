@@ -1,4 +1,5 @@
 import { Quiz, Topic, SubjectTopics } from "./types";
+import { normalizeQuiz } from "./questionUtils";
 
 const STORAGE_KEY = "mcq_quiz_app_quizzes";
 const MIGRATION_KEY = "mcq_migration_gk_to_ca";
@@ -32,11 +33,12 @@ function migratePolityToIndianPolity(): void {
 
 export function saveQuiz(quiz: Quiz): void {
   const quizzes = getAllQuizzes();
-  const idx = quizzes.findIndex((q) => q.id === quiz.id);
+  const nq = normalizeQuiz(quiz);
+  const idx = quizzes.findIndex((q) => q.id === nq.id);
   if (idx >= 0) {
-    quizzes[idx] = quiz;
+    quizzes[idx] = nq;
   } else {
-    quizzes.push(quiz);
+    quizzes.push(nq);
   }
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(quizzes));
@@ -54,7 +56,7 @@ export function getAllQuizzes(): Quiz[] {
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
-    return parsed;
+    return parsed.map(normalizeQuiz);
   } catch {
     console.error("Failed to read quizzes from localStorage.");
     return [];
@@ -93,11 +95,12 @@ export function importQuizzes(json: string): number {
   let added = 0;
   for (const quiz of incoming) {
     if (!quiz.id || !quiz.title || !Array.isArray(quiz.questions)) continue;
+    const nq = normalizeQuiz(quiz);
     if (existingIds.has(quiz.id)) {
       const idx = existing.findIndex((q) => q.id === quiz.id);
-      existing[idx] = quiz;
+      existing[idx] = nq;
     } else {
-      existing.push(quiz);
+      existing.push(nq);
       added++;
     }
   }

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
-import { isQuestionCancelled, countScoredQuestions, optionText, visibleOptionKeys } from "@/lib/questionUtils";
+import { isQuestionCancelled, countScoredQuestions, optionText, normalizeQuiz } from "@/lib/questionUtils";
 import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
@@ -157,7 +157,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
         if (!res.ok) throw new Error(`quizzes.json ${res.status}`);
         const raw = (await res.json()) as Quiz[];
         if (!Array.isArray(raw)) throw new Error("invalid quizzes.json shape");
-        const bundled = raw.filter((q) => q.id !== "__copyright__");
+        const bundled = raw.filter((q) => q.id !== "__copyright__").map(normalizeQuiz);
         if (cancelled) return;
 
         if (forceRefresh) {
@@ -1187,7 +1187,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 )}
 
                 <div className="ml-0 sm:ml-10 grid gap-2 sm:grid-cols-2">
-                  {visibleOptionKeys(q).map((key) => {
+                  {OPTION_KEYS.map((key) => {
                     const isSelected = userAnswer === key;
                     const isThisCorrect = !qCancelled && q.correctAnswer === key;
 

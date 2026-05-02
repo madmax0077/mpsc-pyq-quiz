@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
+import { normalizeQuiz } from "@/lib/questionUtils";
 import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes, getSubjectTopics, saveSubjectTopics } from "@/lib/storage";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
@@ -66,7 +67,7 @@ export default function AdminView() {
     fetch("/quizzes.json")
       .then((r) => r.json())
       .then((raw: Quiz[]) => {
-        if (Array.isArray(raw)) setBundledQuizzes(raw.filter((q) => q.id !== "__copyright__"));
+        if (Array.isArray(raw)) setBundledQuizzes(raw.filter((q) => q.id !== "__copyright__").map(normalizeQuiz));
       })
       .catch(() => {});
   }, []);
