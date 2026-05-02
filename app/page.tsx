@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import HomeClient from "@/components/HomeClient";
 import { getQuizMeta } from "@/lib/quizMeta";
 
 const meta = getQuizMeta();
+
+export const metadata: Metadata = {
+  title: "MPSC PYQ QUIZ — Free Previous Year Question Practice",
+  description: `Free MPSC Previous Year Question practice — ${meta.totalQuestions}+ questions from ${meta.totalPapers} exam papers (${meta.minYear}–${meta.maxYear}) in English & Marathi. 100% free, instant scoring, detailed answers.`,
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const { examTitles, subjects, totalQuestions, totalPapers, minYear, maxYear } = meta;

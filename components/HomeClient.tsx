@@ -26,9 +26,13 @@ export default function HomeClient() {
       setAppMode("subject");
       window.history.replaceState({}, "", window.location.pathname);
     }
-    const seo = document.getElementById("seo-landing");
-    if (seo) seo.style.display = "none";
   }, []);
+
+  useEffect(() => {
+    const seo = document.getElementById("seo-landing");
+    if (!seo) return;
+    seo.style.display = studentUser ? "none" : "";
+  }, [studentUser]);
 
   const toggleDark = useCallback(() => {
     const next = !dark;

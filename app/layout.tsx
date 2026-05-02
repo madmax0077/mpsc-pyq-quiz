@@ -26,7 +26,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Don't know Academy" }],
   creator: "Don't know Academy",
   metadataBase: new URL(SITE_URL),
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "MPSC PYQ QUIZ — Free practice for MPSC aspirants",
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MPSC PYQ QUIZ — Free PYQ Practice",
     description: DESCRIPTION,
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,
@@ -144,7 +143,7 @@ export default function RootLayout({
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){document.addEventListener('contextmenu',function(e){e.preventDefault()});document.addEventListener('keydown',function(e){if(e.ctrlKey&&(e.key==='u'||e.key==='U'||e.key==='s'||e.key==='S')){e.preventDefault()}if(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='i'||e.key==='J'||e.key==='j'||e.key==='C'||e.key==='c')){e.preventDefault()}if(e.key==='F12'){e.preventDefault()}});document.addEventListener('dragstart',function(e){e.preventDefault()});document.addEventListener('copy',function(e){e.preventDefault()})})();`,
+            __html: `(function(){document.addEventListener('contextmenu',function(e){e.preventDefault()});document.addEventListener('keydown',function(e){if(e.ctrlKey&&(e.key==='u'||e.key==='U'||e.key==='s'||e.key==='S')){e.preventDefault()}if(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='i'||e.key==='J'||e.key==='j'||e.key==='C'||e.key==='c')){e.preventDefault()}if(e.key==='F12'){e.preventDefault()}});document.addEventListener('dragstart',function(e){e.preventDefault()})})();`,
           }}
         />
         <script
