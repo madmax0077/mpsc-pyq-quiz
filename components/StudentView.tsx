@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
-import { isQuestionCancelled, countScoredQuestions, optionText } from "@/lib/questionUtils";
+import { isQuestionCancelled, countScoredQuestions, optionText, visibleOptionKeys } from "@/lib/questionUtils";
 import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
@@ -1187,7 +1187,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 )}
 
                 <div className="ml-0 sm:ml-10 grid gap-2 sm:grid-cols-2">
-                  {OPTION_KEYS.map((key) => {
+                  {visibleOptionKeys(q).map((key) => {
                     const isSelected = userAnswer === key;
                     const isThisCorrect = !qCancelled && q.correctAnswer === key;
 

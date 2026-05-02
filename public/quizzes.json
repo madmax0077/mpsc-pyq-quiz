@@ -889,13 +889,13 @@
       },
       {
         "id": "3269beamr6shh4h",
-        "text": "CS₂ is used as _______.",
-        "options": {
-          "A": "Synthetic work",
-          "B": "Insecticide",
-          "C": "Herbicide",
-          "D": "Fungicide"
-        },
+        "text": "CS₂ is used as _________.",
+        "options": [
+          "Synthetic work",
+          "Insecticide",
+          "Herbicide",
+          "Fungicide"
+        ],
         "explanation": "MPSC cancelled this question in the official result; the final answer key marks it as X / # (no option credited). Practice only — do not treat any option as the official answer.",
         "category": "Science",
         "cancelled": true
@@ -39362,16 +39362,16 @@
       },
       {
         "id": "gc_pre_2024_en_69",
-        "text": "[Question Cancelled]",
+        "text": "CS₂ is used as _________.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D"
+          "Synthetic work",
+          "Insecticide",
+          "Herbicide",
+          "Fungicide"
         ],
+        "cancelled": true,
         "explanation": "MPSC cancelled this question in the official result; the final answer key marks it as X / # (no option credited). Practice only — do not treat any option as the official answer.",
-        "category": "Science",
-        "cancelled": true
+        "category": "Science"
       },
       {
         "id": "gc_pre_2024_en_70",
@@ -40671,16 +40671,16 @@
       },
       {
         "id": "gc_pre_2024_mr_69",
-        "text": "[Question Cancelled]",
+        "text": "कार्बन डायसल्फाईडचा उपयोग _________.",
         "options": [
-          "Option A",
-          "Option B",
-          "Option C",
-          "Option D"
+          "कृत्रिम काम",
+          "कीटकनाशक",
+          "तणनाशक",
+          "बुरशीनाशक"
         ],
+        "cancelled": true,
         "explanation": "महाराष्ट्र लोकसेवा आयोगाने हा प्रश्न अधिकृत निकालात रद्द केला; अंतिम उत्तरसूचीमध्ये X / # (कोणतेही पर्याय मान्य नाही). फक्त सरावासाठी — A–D पैकी कोणतेही अधिकृत उत्तर नाही.",
-        "category": "Science",
-        "cancelled": true
+        "category": "Science"
       },
       {
         "id": "gc_pre_2024_mr_70",

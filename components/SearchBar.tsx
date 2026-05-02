@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect } from "react";
 import { Question, OptionKey } from "@/lib/types";
-import { isQuestionCancelled, optionText } from "@/lib/questionUtils";
+import { isQuestionCancelled, optionText, visibleOptionKeys } from "@/lib/questionUtils";
 
 interface SearchResult {
   question: Question;
@@ -128,7 +128,7 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion, navigate
                             Cancelled by MPSC — no official key (X).
                           </p>
                         )}
-                        {(["A", "B", "C", "D"] as OptionKey[]).map((k) => (
+                        {visibleOptionKeys(r.question).map((k) => (
                           <div
                             key={k}
                             className={`flex items-start gap-2 rounded px-2 py-1 ${
