@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
-import { normalizeQuiz } from "@/lib/questionUtils";
+import { normalizeQuiz, normalizeQuestion } from "@/lib/questionUtils";
 import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes, getSubjectTopics, saveSubjectTopics } from "@/lib/storage";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
@@ -78,15 +78,17 @@ export default function AdminView() {
   };
 
   const handleExtracted = (parsed: ParsedQuestion[]) => {
-    const newQs: Question[] = parsed.map((p) => ({
-      id: uid(),
-      text: p.text,
-      options: p.options,
-      correctAnswer: "A" as OptionKey,
-      cancelled: false,
-      explanation: "",
-      imageUrl: p.imageUrl,
-    }));
+    const newQs: Question[] = parsed.map((p) =>
+      normalizeQuestion({
+        id: uid(),
+        text: p.text,
+        options: p.options,
+        correctAnswer: "A" as OptionKey,
+        cancelled: false,
+        explanation: "",
+        imageUrl: p.imageUrl,
+      }),
+    );
     setQuestions((prev) => [...prev, ...newQs]);
     showToast(`Extracted ${parsed.length} question(s)!`);
   };
@@ -124,13 +126,22 @@ export default function AdminView() {
       id: editingId || uid(),
       title: title.trim(),
       createdAt: new Date().toISOString(),
-      questions: valid,
+      questions: valid.map((q) => normalizeQuestion(q)),
       language: quizLanguage,
       tag: quizTag.trim() || undefined,
     };
     saveQuiz(quiz);
     setSavedQuizzes(getAllQuizzes());
-    showToast(editingId ? "Quiz updated!" : "Quiz saved!");
+    const overridesBundled = bundledQuizzes.some((q) => q.id === quiz.id);
+    if (editingId) {
+      showToast(
+        overridesBundled
+          ? "Quiz updated. Practice mode on this device will use your edited version."
+          : "Quiz updated!",
+      );
+    } else {
+      showToast("Quiz saved!");
+    }
     setTitle("");
     setQuestions([]);
     setEditingId(null);
@@ -140,7 +151,7 @@ export default function AdminView() {
 
   const handleEdit = (quiz: Quiz) => {
     setTitle(quiz.title);
-    setQuestions(quiz.questions);
+    setQuestions(quiz.questions.map((q) => normalizeQuestion(q)));
     setEditingId(quiz.id);
     setQuizLanguage(quiz.language || "english");
     setQuizTag(quiz.tag || "");
@@ -254,7 +265,7 @@ export default function AdminView() {
   const allSearchableQuestions = useMemo(() => {
     const result: { question: Question; quizTitle: string }[] = [];
     const quizMap = new Map<string, Quiz>();
-    for (const q of [...bundledQuizzes, ...savedQuizzes]) {
+    for (const q of [...savedQuizzes, ...bundledQuizzes]) {
       if (!quizMap.has(q.id)) quizMap.set(q.id, q);
     }
     for (const quiz of quizMap.values()) {
@@ -284,7 +295,7 @@ export default function AdminView() {
     const quiz = questionToQuizMap.get(question.id);
     if (!quiz) return;
     setTitle(quiz.title);
-    setQuestions(quiz.questions);
+    setQuestions(quiz.questions.map((q) => normalizeQuestion(q)));
     setEditingId(quiz.id);
     setQuizLanguage(quiz.language || "english");
     setQuizTag(quiz.tag || "");
@@ -690,7 +701,17 @@ export default function AdminView() {
                         </div>
                       )}
                     </div>
-                    <div className="flex shrink-0 items-center">
+                    <div className="flex shrink-0 items-center gap-1">
+                      <button
+                        type="button"
+                        onClick={() => handleEdit(quiz)}
+                        className="rounded-lg p-2 text-indigo-600 hover:bg-indigo-50 transition-colors dark:text-indigo-400 dark:hover:bg-indigo-900/30"
+                        title="Load into editor — Save writes to this browser and overrides the bundled paper in Practice until you clear site data"
+                      >
+                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                        </svg>
+                      </button>
                       <span className="rounded-md bg-emerald-50 px-2 py-1 text-[10px] font-semibold text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400">
                         Bundled
                       </span>

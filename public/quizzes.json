@@ -39,7 +39,7 @@
           "C": "(a), (c) and (d)",
           "D": "(a), (b) and (d)"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "History"
       },
@@ -52,7 +52,7 @@
           "C": "Lord Curzon",
           "D": "Lord Wellesley"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "History"
       },
@@ -78,7 +78,7 @@
           "C": "Ramchandra Ghatge",
           "D": "Jotirao Falke"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "History"
       },
@@ -104,7 +104,7 @@
           "C": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
           "D": "(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "History"
       },
@@ -117,7 +117,7 @@
           "C": "Drought Relief Plan",
           "D": "Prevention of Child Marriage"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "History"
       },
@@ -130,7 +130,7 @@
           "C": "Shripad Amrut Dange",
           "D": "Ashok Mehta"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "History"
       },
@@ -156,7 +156,7 @@
           "C": "(a), (c), (b), (d)",
           "D": "(c), (b), (a), (d)"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Geography"
       },
@@ -169,7 +169,7 @@
           "C": "Pakistan",
           "D": "Bhutan"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Geography"
       },
@@ -182,7 +182,7 @@
           "C": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
           "D": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Geography"
       },
@@ -195,7 +195,7 @@
           "C": "Brail",
           "D": "Kota"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Geography"
       },
@@ -208,7 +208,7 @@
           "C": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)",
           "D": "(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Geography"
       },
@@ -221,7 +221,7 @@
           "C": "Statement (a) and (c) are correct.",
           "D": "Statement (b) and (c) are correct."
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Economics"
       },
@@ -234,7 +234,7 @@
           "C": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
           "D": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Geography"
       },
@@ -247,7 +247,7 @@
           "C": "(a)-(iv), (b)-(i), (c)-(iii), (d)-(ii)",
           "D": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Geography"
       },
@@ -260,7 +260,7 @@
           "C": "(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)",
           "D": "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Geography"
       },
@@ -273,7 +273,7 @@
           "C": "Only (b), (c) and (d)",
           "D": "Only (a)"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Economics"
       },
@@ -286,7 +286,7 @@
           "C": "Goods and Services Tax",
           "D": "Tax on Social Services"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Economics"
       },
@@ -299,7 +299,7 @@
           "C": "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
           "D": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Economics"
       },
@@ -312,7 +312,7 @@
           "C": "(b) and (c)",
           "D": "Only (a)"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Economics"
       },
@@ -325,7 +325,7 @@
           "C": "third",
           "D": "fifth"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Economics"
       },
@@ -338,7 +338,7 @@
           "C": "(c) and (d)",
           "D": "(a), (c) and (d)"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Economics"
       },
@@ -351,7 +351,7 @@
           "C": "(b) and (c)",
           "D": "(c) only"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Economics"
       },
@@ -364,7 +364,7 @@
           "C": "Integrated and Sustainable Textiles",
           "D": "Aai Women Oriented Tourism"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Economics"
       },
@@ -390,7 +390,7 @@
           "C": "Only (c) and (d)",
           "D": "All of the above"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Economics"
       },
@@ -403,7 +403,7 @@
           "C": "Kisan Credit Card Scheme",
           "D": "POSHAN Mission"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Economics"
       },
@@ -416,7 +416,7 @@
           "C": "Only (a) is correct",
           "D": "None of the above are correct"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Economics"
       },
@@ -429,7 +429,7 @@
           "C": "Neeti Ayog",
           "D": "Reserve Bank of India"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Economics"
       },
@@ -442,7 +442,7 @@
           "C": "(c), (d) and (a)",
           "D": "(a), (b) and (d)"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Economics"
       },
@@ -455,7 +455,7 @@
           "C": "Only (c) and (d)",
           "D": "(a), (b), (c) and (d)"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -468,7 +468,7 @@
           "C": "Chakur",
           "D": "Udgir"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -481,7 +481,7 @@
           "C": "Tripura",
           "D": "Jammu Kashmir"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -494,7 +494,7 @@
           "C": "Shakti Pumps",
           "D": "Crompton Greaves"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -507,7 +507,7 @@
           "C": "Kampala - Uganda",
           "D": "Ghana - Accra"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -520,7 +520,7 @@
           "C": "Ecological Studies",
           "D": "Quantum Studies"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -533,7 +533,7 @@
           "C": "130",
           "D": "134"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -546,7 +546,7 @@
           "C": "Novak Djokovic - Naomi Osaka",
           "D": "Jannik Sinner - Aryna Sabalenka"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -559,7 +559,7 @@
           "C": "Ministry of Science and Technology and BIMSTEC Secretariat.",
           "D": "Ministry of Environment, Forest and Climate change and SAARC."
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -572,7 +572,7 @@
           "C": "(b), (c)",
           "D": "(a), (b), (c), (d)"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -585,7 +585,7 @@
           "C": "Michel Gratzel and George M.",
           "D": "John J. Hopfield and Geoffrey E. Hinton"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -598,7 +598,7 @@
           "C": "Haruhiko Kuroda",
           "D": "Tadao Chino"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -611,7 +611,7 @@
           "C": "Suryakanth Verma",
           "D": "Sanjeev Khanna"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -624,7 +624,7 @@
           "C": "Japan",
           "D": "Netherlands"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -637,7 +637,7 @@
           "C": "26 January",
           "D": "15 January"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs"
       },
@@ -662,7 +662,7 @@
           "C": "Schedule-VII",
           "D": "Schedule-VIII"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -675,7 +675,7 @@
           "C": "Article - 33",
           "D": "Article - 34"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -688,7 +688,7 @@
           "C": "Only (b)",
           "D": "Neither (a) and (b)"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -701,7 +701,7 @@
           "C": "Twenty forth Constitutional Amendment Act - 1962",
           "D": "Forty second Constitutional Amendment Act - 1976"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -727,7 +727,7 @@
           "C": "Education",
           "D": "Environment"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -740,7 +740,7 @@
           "C": "Both (a) and (b)",
           "D": "Neither (a) nor (b)"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -753,7 +753,7 @@
           "C": "46th amendment",
           "D": "42nd amendment"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -766,7 +766,7 @@
           "C": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)",
           "D": "(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -779,7 +779,7 @@
           "C": "Article - 172",
           "D": "Article - 173"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -805,7 +805,7 @@
           "C": "from the date fixed for its first meeting after election",
           "D": "from the first Financial Year commencing after the Panchayat elections"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -831,7 +831,7 @@
           "C": "Article 243-D",
           "D": "Article 243-E"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -844,7 +844,7 @@
           "C": "The Advocate General",
           "D": "The High Court Judge"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Indian Polity"
       },
@@ -870,7 +870,7 @@
           "C": "Sliding Friction",
           "D": "Fluid Friction"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Science"
       },
@@ -883,7 +883,7 @@
           "C": "All sentences are correct.",
           "D": "Only (a) sentence is correct."
         },
-        "correctAnswer": "C",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Science"
       },
@@ -922,7 +922,7 @@
           "C": "CCl₄",
           "D": "CHI₃"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Science"
       },
@@ -935,7 +935,7 @@
           "C": "(a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)",
           "D": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Science"
       },
@@ -948,7 +948,7 @@
           "C": "Salivary gland",
           "D": "Zymogen Cells"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Science"
       },
@@ -961,7 +961,7 @@
           "C": "Amphibia",
           "D": "Aves"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Science"
       },
@@ -974,7 +974,7 @@
           "C": "increase in the Acidity of Soil.",
           "D": "decrease in soil fertility."
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Science"
       },
@@ -987,7 +987,7 @@
           "C": "Colletotrichum",
           "D": "Puccinia"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Science"
       },
@@ -1013,7 +1013,7 @@
           "C": "(a), (b) and (c) only",
           "D": "(d) only"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Science"
       },
@@ -1039,7 +1039,7 @@
           "C": "Calcium",
           "D": "Sodium"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Science"
       },
@@ -1052,7 +1052,7 @@
           "C": "90",
           "D": "85"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": ""
       },
       {
@@ -1064,7 +1064,7 @@
           "C": "48 km/hr",
           "D": "36 km/hr"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": ""
       },
       {
@@ -1076,7 +1076,7 @@
           "C": "23 cm",
           "D": "32 cm"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "A",
         "explanation": ""
       },
       {
@@ -1088,7 +1088,7 @@
           "C": "7 meter",
           "D": "9 meter"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": ""
       },
       {
@@ -1100,7 +1100,7 @@
           "C": "₹18,000",
           "D": "₹16,500"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": ""
       },
       {
@@ -1112,7 +1112,7 @@
           "C": "30%",
           "D": "55.6%"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": ""
       },
       {
@@ -1160,7 +1160,7 @@
           "C": "Thursday",
           "D": "Friday"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": ""
       },
       {
@@ -1172,7 +1172,7 @@
           "C": "15",
           "D": "22"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": ""
       },
       {
@@ -1184,7 +1184,7 @@
           "C": "North",
           "D": "East"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": ""
       },
       {
@@ -1196,7 +1196,7 @@
           "C": "₹4,820",
           "D": "₹8,440"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": ""
       },
       {
@@ -1208,7 +1208,7 @@
           "C": "97",
           "D": "98"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "D",
         "explanation": ""
       },
       {
@@ -1220,7 +1220,7 @@
           "C": "₹12",
           "D": "₹16"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "D",
         "explanation": ""
       },
       {
@@ -1244,7 +1244,7 @@
           "C": "16",
           "D": "9"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": ""
       },
       {
@@ -1256,7 +1256,7 @@
           "C": "25",
           "D": "26"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": ""
       },
       {

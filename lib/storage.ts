@@ -56,7 +56,13 @@ export function getAllQuizzes(): Quiz[] {
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
-    return parsed.map(normalizeQuiz);
+    return parsed.map((item) => {
+      try {
+        return normalizeQuiz(item as Quiz);
+      } catch {
+        return item as Quiz;
+      }
+    });
   } catch {
     console.error("Failed to read quizzes from localStorage.");
     return [];

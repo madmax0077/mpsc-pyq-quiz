@@ -1,7 +1,8 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { Question, OptionKey, CATEGORIES, Category } from "@/lib/types";
+import { normalizeQuestion } from "@/lib/questionUtils";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 const MAX_IMG_BYTES = 500 * 1024;
@@ -30,6 +31,9 @@ interface Props {
 export default function QuestionForm({ index, question, onChange, onDelete, availableTopics = [] }: Props) {
   const fileRef = useRef<HTMLInputElement>(null);
 
+  /** Always A–D strings so controlled inputs never read undefined off `options`. */
+  const safeOptions = useMemo(() => normalizeQuestion(question).options, [question]);
+
   const update = (patch: Partial<Question>) => {
     onChange({ ...question, ...patch });
   };
@@ -37,7 +41,7 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
   const updateOption = (key: OptionKey, value: string) => {
     onChange({
       ...question,
-      options: { ...question.options, [key]: value },
+      options: { ...safeOptions, [key]: value },
     });
   };
 
@@ -106,7 +110,7 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
       <div className="p-5 space-y-4">
         {/* Question text */}
         <textarea
-          value={question.text}
+          value={question.text ?? ""}
           onChange={(e) => update({ text: e.target.value })}
           placeholder="Enter the question text..."
           rows={2}
@@ -160,7 +164,7 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
               </span>
               <input
                 type="text"
-                value={question.options[key]}
+                value={safeOptions[key]}
                 onChange={(e) => updateOption(key, e.target.value)}
                 placeholder={`Option ${key}`}
                 className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"

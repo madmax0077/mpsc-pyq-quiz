@@ -14,12 +14,20 @@ import Confetti from "./Confetti";
 import Analytics from "./Analytics";
 import SearchBar from "./SearchBar";
 
-/** Merge quizzes baked into the site (`public/quizzes.json`) with any from this browser's localStorage. Same id → bundled wins. */
+/**
+ * Merge bundled `quizzes.json` with localStorage quizzes.
+ * Same id → **local wins** so admin edits / uploaded papers persist for this browser.
+ * Bundled-only ids stay on disk; extra local-only ids are appended.
+ */
 function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
-  const ids = new Set(bundled.map((q) => q.id));
-  const merged = [...bundled];
+  const localById = new Map(local.map((q) => [q.id, q]));
+  const bundledIds = new Set(bundled.map((q) => q.id));
+  const merged: Quiz[] = [];
+  for (const b of bundled) {
+    merged.push(localById.get(b.id) ?? b);
+  }
   for (const q of local) {
-    if (!ids.has(q.id)) merged.push(q);
+    if (!bundledIds.has(q.id)) merged.push(q);
   }
   return merged;
 }
@@ -147,28 +155,15 @@ export default function StudentView({ language = "english", challenge, homeKey =
     let cancelled = false;
     const local = getAllQuizzes();
 
-    const loadCount = Number(localStorage.getItem("mcq_load_count") || "0") + 1;
-    localStorage.setItem("mcq_load_count", String(loadCount));
-    const forceRefresh = loadCount % 2 === 0;
-
     (async () => {
       try {
-        const res = await fetch("/quizzes.json", { cache: forceRefresh ? "no-store" : "default" });
+        const res = await fetch("/quizzes.json", { cache: "no-store" });
         if (!res.ok) throw new Error(`quizzes.json ${res.status}`);
         const raw = (await res.json()) as Quiz[];
         if (!Array.isArray(raw)) throw new Error("invalid quizzes.json shape");
         const bundled = raw.filter((q) => q.id !== "__copyright__").map(normalizeQuiz);
         if (cancelled) return;
-
-        if (forceRefresh) {
-          const bundledIds = new Set(bundled.map((q) => q.id));
-          const localOnly = local.filter((q) => !bundledIds.has(q.id));
-          const refreshed = [...bundled, ...localOnly];
-          localStorage.setItem("mcq_quiz_app_quizzes", JSON.stringify(refreshed));
-          setQuizzes(refreshed);
-        } else {
-          setQuizzes(mergeBundledAndLocal(bundled, local));
-        }
+        setQuizzes(mergeBundledAndLocal(bundled, local));
       } catch {
         if (!cancelled) setQuizzes(local);
       }
@@ -177,7 +172,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [homeKey]);
 
   useEffect(() => {
     setStreak(getStreak());
@@ -1173,7 +1168,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                   }`}>
                     {globalIdx + 1}
                   </span>
-                  <p className="font-medium text-slate-800 leading-relaxed whitespace-pre-line dark:text-slate-100">{q.text}</p>
+                  <p className="select-text font-medium text-slate-800 leading-relaxed whitespace-pre-line dark:text-slate-100">{q.text}</p>
                 </div>
 
                 {q.imageUrl && (
@@ -1246,7 +1241,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                             key
                           )}
                         </span>
-                        <span className="leading-snug whitespace-pre-line">{optionText(q, key)}</span>
+                        <span className="select-text leading-snug whitespace-pre-line">{optionText(q, key)}</span>
                       </label>
                     );
                   })}
