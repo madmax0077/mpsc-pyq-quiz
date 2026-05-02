@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
 import { isQuestionCancelled, countScoredQuestions, optionText, normalizeQuiz } from "@/lib/questionUtils";
-import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
+import { getAllQuizzes, getSubjectTopics, getHiddenBundledQuizIds } from "@/lib/storage";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
 import { recordStreak, getStreak } from "@/lib/streak";
@@ -161,7 +161,9 @@ export default function StudentView({ language = "english", challenge, homeKey =
         if (!res.ok) throw new Error(`quizzes.json ${res.status}`);
         const raw = (await res.json()) as Quiz[];
         if (!Array.isArray(raw)) throw new Error("invalid quizzes.json shape");
-        const bundled = raw.filter((q) => q.id !== "__copyright__").map(normalizeQuiz);
+        const bundledAll = raw.filter((q) => q.id !== "__copyright__").map(normalizeQuiz);
+        const hidden = getHiddenBundledQuizIds();
+        const bundled = bundledAll.filter((q) => !hidden.has(q.id));
         if (cancelled) return;
         setQuizzes(mergeBundledAndLocal(bundled, local));
       } catch {

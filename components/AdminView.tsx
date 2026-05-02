@@ -3,7 +3,18 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, ParsedQuestion, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
 import { normalizeQuiz, normalizeQuestion } from "@/lib/questionUtils";
-import { saveQuiz, getAllQuizzes, deleteQuiz, exportQuizzes, importQuizzes, getSubjectTopics, saveSubjectTopics } from "@/lib/storage";
+import {
+  saveQuiz,
+  getAllQuizzes,
+  deleteQuiz,
+  exportQuizzes,
+  importQuizzes,
+  getSubjectTopics,
+  saveSubjectTopics,
+  getHiddenBundledQuizIds,
+  hideBundledQuizId,
+  unhideBundledQuizId,
+} from "@/lib/storage";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
 import QuestionForm from "./QuestionForm";
@@ -60,9 +71,18 @@ export default function AdminView() {
   const [bulkTopic, setBulkTopic] = useState("");
   const [bundledQuizzes, setBundledQuizzes] = useState<Quiz[]>([]);
   const [scrollToQuestionId, setScrollToQuestionId] = useState<string | null>(null);
+  const [hiddenBundledIds, setHiddenBundledIds] = useState<Set<string>>(new Set());
+
+  type AdminConfirmAction =
+    | { kind: "delete-saved"; id: string; title: string }
+    | { kind: "remove-override"; id: string; title: string }
+    | { kind: "hide-bundled"; id: string; title: string };
+
+  const [confirmAction, setConfirmAction] = useState<AdminConfirmAction | null>(null);
 
   useEffect(() => {
     setSavedQuizzes(getAllQuizzes());
+    setHiddenBundledIds(getHiddenBundledQuizIds());
     setSubjectTopics(getSubjectTopics());
     fetch("/quizzes.json")
       .then((r) => r.json())
@@ -158,27 +178,47 @@ export default function AdminView() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  type DeletePaperOpts = { title?: string; mode?: "saved" | "bundled-override" };
+  const runConfirmedAction = () => {
+    if (!confirmAction) return;
+    const a = confirmAction;
+    setConfirmAction(null);
 
-  const handleDeleteQuiz = (id: string, opts?: DeletePaperOpts) => {
-    const label = opts?.title?.trim() || "this question paper";
-    const message =
-      opts?.mode === "bundled-override"
-        ? `Remove your saved copy of “${label}”? Practice on this device will use the built-in bundled paper again.`
-        : `Delete “${label}” from this browser? This cannot be undone.`;
-    if (!confirm(message)) return;
-    deleteQuiz(id);
+    if (a.kind === "hide-bundled") {
+      if (!hideBundledQuizId(a.id)) {
+        showToast("Could not save. Allow site data / local storage for this site.");
+        return;
+      }
+      setHiddenBundledIds(getHiddenBundledQuizIds());
+      showToast("Paper hidden from Practice on this device. Open the site home again to refresh the list.");
+      return;
+    }
+
+    if (!deleteQuiz(a.id)) {
+      showToast("Could not delete. Allow site data / local storage, or free disk space.");
+      return;
+    }
     setSavedQuizzes(getAllQuizzes());
-    if (editingId === id) {
+    if (editingId === a.id) {
       setTitle("");
       setQuestions([]);
       setEditingId(null);
+      setQuizLanguage("english");
+      setQuizTag("");
     }
     showToast(
-      opts?.mode === "bundled-override"
+      a.kind === "remove-override"
         ? "Local copy removed — bundled paper is used again in Practice."
         : "Question paper deleted from this browser.",
     );
+  };
+
+  const restoreBundledToPractice = (id: string) => {
+    if (!unhideBundledQuizId(id)) {
+      showToast("Could not restore. Check browser storage settings.");
+      return;
+    }
+    setHiddenBundledIds(getHiddenBundledQuizIds());
+    showToast("Paper shown again in Practice. Reload the home page if it is already open.");
   };
 
   const handleExport = () => {
@@ -204,6 +244,7 @@ export default function AdminView() {
         const text = await file.text();
         const count = importQuizzes(text);
         setSavedQuizzes(getAllQuizzes());
+        setHiddenBundledIds(getHiddenBundledQuizIds());
         showToast(`Imported ${count} new quiz(es). Existing quizzes updated.`);
       } catch {
         showToast("Import failed — invalid file format.");
@@ -275,6 +316,18 @@ export default function AdminView() {
 
   /** Saved copies that override a bundled paper (same quiz id in localStorage). */
   const savedQuizIds = useMemo(() => new Set(savedQuizzes.map((q) => q.id)), [savedQuizzes]);
+
+  const hiddenBundledEntries = useMemo(
+    () =>
+      Array.from(hiddenBundledIds).map((id) => ({
+        id,
+        title:
+          bundledQuizzes.find((q) => q.id === id)?.title ||
+          savedQuizzes.find((q) => q.id === id)?.title ||
+          id,
+      })),
+    [hiddenBundledIds, bundledQuizzes, savedQuizzes],
+  );
 
   const allSearchableQuestions = useMemo(() => {
     const result: { question: Question; quizTitle: string }[] = [];
@@ -357,6 +410,66 @@ export default function AdminView() {
       {toast && (
         <div className="animate-slide-up fixed bottom-6 right-6 z-50 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-lg">
           {toast}
+        </div>
+      )}
+
+      {confirmAction && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/45 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="admin-confirm-title"
+        >
+          <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-slate-600 dark:bg-slate-800">
+            <h3 id="admin-confirm-title" className="text-lg font-semibold text-slate-800 dark:text-slate-100">
+              {confirmAction.kind === "hide-bundled"
+                ? "Hide paper from Practice?"
+                : confirmAction.kind === "remove-override"
+                  ? "Remove your saved copy?"
+                  : "Delete question paper?"}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+              {confirmAction.kind === "hide-bundled" && (
+                <>
+                  <span className="font-medium text-slate-800 dark:text-slate-100">«{confirmAction.title}»</span> will
+                  not appear in the Practice paper list on <strong>this browser/device</strong> until you restore it
+                  below. Nothing is changed on the server.
+                </>
+              )}
+              {confirmAction.kind === "remove-override" && (
+                <>
+                  Remove your saved copy of <span className="font-medium text-slate-800 dark:text-slate-100">«{confirmAction.title}»</span>? Practice
+                  will use the built-in bundled version again for this device.
+                </>
+              )}
+              {confirmAction.kind === "delete-saved" && (
+                <>
+                  Permanently delete <span className="font-medium text-slate-800 dark:text-slate-100">«{confirmAction.title}»</span> from this
+                  browser? This cannot be undone.
+                </>
+              )}
+            </p>
+            <div className="mt-6 flex flex-wrap justify-end gap-2">
+              <button
+                type="button"
+                onClick={() => setConfirmAction(null)}
+                className="rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={runConfirmedAction}
+                className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-700"
+              >
+                {confirmAction.kind === "hide-bundled"
+                  ? "Hide from Practice"
+                  : confirmAction.kind === "remove-override"
+                    ? "Remove copy"
+                    : "Delete paper"}
+              </button>
+            </div>
+          </div>
         </div>
       )}
 
@@ -655,7 +768,7 @@ export default function AdminView() {
                         </button>
                         <button
                           type="button"
-                          onClick={() => handleDeleteQuiz(quiz.id, { title: quiz.title, mode: "saved" })}
+                          onClick={() => setConfirmAction({ kind: "delete-saved", id: quiz.id, title: quiz.title })}
                           className="inline-flex items-center justify-center gap-1 rounded-lg border border-red-200 bg-red-50 px-2 py-1.5 text-xs font-semibold text-red-700 hover:bg-red-100 transition-colors dark:border-red-800 dark:bg-red-950/40 dark:text-red-300 dark:hover:bg-red-900/30"
                           title="Delete this paper from this browser"
                         >
@@ -734,10 +847,23 @@ export default function AdminView() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                         </svg>
                       </button>
+                      {!hiddenBundledIds.has(quiz.id) && (
+                        <button
+                          type="button"
+                          onClick={() => setConfirmAction({ kind: "hide-bundled", id: quiz.id, title: quiz.title })}
+                          className="inline-flex items-center justify-center gap-1 rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[10px] font-semibold text-slate-700 hover:bg-slate-50 transition-colors dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
+                          title="Remove this paper from the Practice list on this device (restore below)"
+                        >
+                          <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                          </svg>
+                          Hide
+                        </button>
+                      )}
                       {savedQuizIds.has(quiz.id) && (
                         <button
                           type="button"
-                          onClick={() => handleDeleteQuiz(quiz.id, { title: quiz.title, mode: "bundled-override" })}
+                          onClick={() => setConfirmAction({ kind: "remove-override", id: quiz.id, title: quiz.title })}
                           className="inline-flex items-center justify-center gap-1 rounded-lg border border-red-200 bg-red-50 px-2 py-1.5 text-[10px] font-semibold text-red-700 hover:bg-red-100 transition-colors dark:border-red-800 dark:bg-red-950/40 dark:text-red-300 dark:hover:bg-red-900/30"
                           title="Remove your saved copy; Practice will use the bundled paper again"
                         >
@@ -756,6 +882,32 @@ export default function AdminView() {
               );
             })}
           </div>
+        </div>
+      )}
+
+      {hiddenBundledEntries.length > 0 && (
+        <div className="rounded-xl border border-amber-200 bg-amber-50/60 p-4 dark:border-amber-800 dark:bg-amber-950/25">
+          <h4 className="text-sm font-semibold text-amber-900 dark:text-amber-200">Hidden from Practice (this device)</h4>
+          <p className="mt-1 text-xs text-amber-800/90 dark:text-amber-300/90">
+            These papers are removed from the public Practice list on this browser until you restore them.
+          </p>
+          <ul className="mt-3 space-y-2">
+            {hiddenBundledEntries.map(({ id, title }) => (
+              <li
+                key={id}
+                className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-amber-200/90 bg-white px-3 py-2 text-sm dark:border-amber-800 dark:bg-slate-900"
+              >
+                <span className="min-w-0 flex-1 truncate font-medium text-slate-800 dark:text-slate-100">{title}</span>
+                <button
+                  type="button"
+                  onClick={() => restoreBundledToPractice(id)}
+                  className="shrink-0 rounded-lg bg-amber-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-amber-700"
+                >
+                  Restore to Practice
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 
