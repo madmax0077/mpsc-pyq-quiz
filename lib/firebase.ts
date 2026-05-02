@@ -16,6 +16,7 @@ import {
   deleteDoc,
   updateDoc,
   doc,
+  onSnapshot,
   query,
   orderBy,
   where,
@@ -120,6 +121,34 @@ export async function resolveReport(reportId: string): Promise<void> {
 
 export async function deleteReport(reportId: string): Promise<void> {
   await deleteDoc(doc(db, REPORTS_COLLECTION, reportId));
+}
+
+/**
+ * Live signal for quiz bundle updates. Create Firestore doc `settings/quiz_data` with a numeric
+ * field `revision` (e.g. 1). After you deploy a new `public/quizzes.json`, increment `revision`
+ * (Firebase Console or an offline admin script). All open clients refetch quizzes.json.
+ *
+ * Firestore rules: allow read on `settings/quiz_data` for everyone using the app; restrict writes.
+ */
+const QUIZ_DATA_SETTINGS = doc(db, "settings", "quiz_data");
+
+export function subscribeQuizDataRevision(callback: (revision: number) => void): () => void {
+  return onSnapshot(
+    QUIZ_DATA_SETTINGS,
+    (snap) => {
+      if (!snap.exists()) {
+        callback(0);
+        return;
+      }
+      const raw = snap.data()?.revision;
+      const n = typeof raw === "number" ? raw : Number(raw);
+      callback(Number.isFinite(n) ? n : 0);
+    },
+    (err) => {
+      console.warn("subscribeQuizDataRevision:", err);
+      callback(0);
+    },
+  );
 }
 
 export { auth, db };

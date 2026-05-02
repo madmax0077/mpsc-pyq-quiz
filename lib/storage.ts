@@ -85,46 +85,6 @@ export function deleteQuiz(id: string): boolean {
   }
 }
 
-/** Quiz ids (from bundled `quizzes.json`) the user chose to hide on this device only. */
-const HIDDEN_BUNDLED_KEY = "mcq_hidden_bundled_quiz_ids";
-
-export function getHiddenBundledQuizIds(): Set<string> {
-  if (typeof window === "undefined") return new Set();
-  try {
-    const raw = localStorage.getItem(HIDDEN_BUNDLED_KEY);
-    if (!raw) return new Set();
-    const parsed = JSON.parse(raw) as unknown;
-    if (!Array.isArray(parsed)) return new Set();
-    return new Set(parsed.filter((x): x is string => typeof x === "string" && x.length > 0));
-  } catch {
-    return new Set();
-  }
-}
-
-export function hideBundledQuizId(id: string): boolean {
-  const s = getHiddenBundledQuizIds();
-  s.add(id);
-  try {
-    localStorage.setItem(HIDDEN_BUNDLED_KEY, JSON.stringify([...s]));
-    return true;
-  } catch (e) {
-    console.error("Failed to save hidden bundled list.", e);
-    return false;
-  }
-}
-
-export function unhideBundledQuizId(id: string): boolean {
-  const s = getHiddenBundledQuizIds();
-  s.delete(id);
-  try {
-    localStorage.setItem(HIDDEN_BUNDLED_KEY, JSON.stringify([...s]));
-    return true;
-  } catch (e) {
-    console.error("Failed to update hidden bundled list.", e);
-    return false;
-  }
-}
-
 /**
  * Export all quizzes as a JSON string for backup.
  */
