@@ -21,11 +21,11 @@ EXISTING PATTERN ON THIS SITE
          "correctAnswer": "A",             # "A" | "B" | "C" | "D"
          "explanation": "",
          "category": "History"             # one of lib/types.ts CATEGORIES
-         // optional: "topic": "Modern India"   # for Topic Wise; omit if not used
+         (optional) "topic": "Modern India"   # Topic Wise; omit if unused
        }
      ],
      "language": "english"                 # required: "english" or "marathi"
-     // optional: "tag": "Group C 2025"   # shown as paper tag in Practice by Subject
+     (optional) "tag": "Group C 2025"      # paper tag in Practice by Subject
    }
 
 3. Append paths to NEW_FILES below, then run from repo root:
