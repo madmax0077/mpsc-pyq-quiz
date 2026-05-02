@@ -158,8 +158,15 @@ export default function AdminView() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleDeleteQuiz = (id: string) => {
-    if (!confirm("Are you sure you want to delete this quiz?")) return;
+  type DeletePaperOpts = { title?: string; mode?: "saved" | "bundled-override" };
+
+  const handleDeleteQuiz = (id: string, opts?: DeletePaperOpts) => {
+    const label = opts?.title?.trim() || "this question paper";
+    const message =
+      opts?.mode === "bundled-override"
+        ? `Remove your saved copy of “${label}”? Practice on this device will use the built-in bundled paper again.`
+        : `Delete “${label}” from this browser? This cannot be undone.`;
+    if (!confirm(message)) return;
     deleteQuiz(id);
     setSavedQuizzes(getAllQuizzes());
     if (editingId === id) {
@@ -167,7 +174,11 @@ export default function AdminView() {
       setQuestions([]);
       setEditingId(null);
     }
-    showToast("Quiz deleted.");
+    showToast(
+      opts?.mode === "bundled-override"
+        ? "Local copy removed — bundled paper is used again in Practice."
+        : "Question paper deleted from this browser.",
+    );
   };
 
   const handleExport = () => {
@@ -261,6 +272,9 @@ export default function AdminView() {
     }
     return all;
   }, [questions, subjectTopics]);
+
+  /** Saved copies that override a bundled paper (same quiz id in localStorage). */
+  const savedQuizIds = useMemo(() => new Set(savedQuizzes.map((q) => q.id)), [savedQuizzes]);
 
   const allSearchableQuestions = useMemo(() => {
     const result: { question: Question; quizTitle: string }[] = [];
@@ -559,12 +573,11 @@ export default function AdminView() {
         </div>
       )}
 
-      {/* Saved Quizzes */}
-      {savedQuizzes.length > 0 && (
-        <div>
+      {/* Saved question papers (this browser only) */}
+      <div>
           <div className="mb-4 flex items-center justify-between">
             <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-100">
-              Saved Quizzes
+              Saved question papers
             </h3>
             <div className="flex gap-2">
               <button
@@ -589,67 +602,76 @@ export default function AdminView() {
               </button>
             </div>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {savedQuizzes.map((quiz) => {
-              const cats = [...new Set(quiz.questions.map((q) => q.category).filter(Boolean))];
-              return (
-                <div
-                  key={quiz.id}
-                  className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:border-slate-300 transition-colors dark:bg-slate-800 dark:border-slate-700 dark:hover:border-slate-600"
-                >
-                  <div className="flex items-start justify-between gap-2">
-                    <div className="min-w-0 flex-1">
-                      <p className="font-semibold text-slate-800 truncate dark:text-slate-100">{quiz.title}</p>
-                      <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
-                        {quiz.questions.length} question{quiz.questions.length !== 1 ? "s" : ""} &middot;{" "}
-                        {new Date(quiz.createdAt).toLocaleDateString()}
-                        {quiz.language === "marathi" && (
-                          <span className="ml-1.5 inline-block rounded bg-orange-100 px-1.5 py-0.5 text-[10px] font-semibold text-orange-600">मराठी</span>
+          {savedQuizzes.length === 0 ? (
+            <p className="rounded-lg border border-dashed border-slate-200 bg-slate-50/80 px-4 py-6 text-sm text-slate-600 dark:border-slate-600 dark:bg-slate-800/40 dark:text-slate-400">
+              No papers saved in this browser yet. Upload a PDF or image above, or open a bundled paper with Edit and save — it will appear here. Use{" "}
+              <span className="font-medium text-slate-700 dark:text-slate-300">Delete paper</span> on a card to remove it from this device only.
+            </p>
+          ) : (
+            <div className="grid gap-3 sm:grid-cols-2">
+              {savedQuizzes.map((quiz) => {
+                const cats = [...new Set(quiz.questions.map((q) => q.category).filter(Boolean))];
+                return (
+                  <div
+                    key={quiz.id}
+                    className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:border-slate-300 transition-colors dark:bg-slate-800 dark:border-slate-700 dark:hover:border-slate-600"
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="min-w-0 flex-1">
+                        <p className="font-semibold text-slate-800 truncate dark:text-slate-100">{quiz.title}</p>
+                        <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
+                          {quiz.questions.length} question{quiz.questions.length !== 1 ? "s" : ""} &middot;{" "}
+                          {new Date(quiz.createdAt).toLocaleDateString()}
+                          {quiz.language === "marathi" && (
+                            <span className="ml-1.5 inline-block rounded bg-orange-100 px-1.5 py-0.5 text-[10px] font-semibold text-orange-600">मराठी</span>
+                          )}
+                          {quiz.tag && (
+                            <span className="ml-1.5 inline-block rounded bg-violet-100 px-1.5 py-0.5 text-[10px] font-semibold text-violet-600">{quiz.tag}</span>
+                          )}
+                        </p>
+                        {cats.length > 0 && (
+                          <div className="mt-2 flex flex-wrap gap-1">
+                            {cats.map((cat) => (
+                              <span
+                                key={cat}
+                                className="inline-block rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500 dark:bg-slate-700 dark:text-slate-400"
+                              >
+                                {cat}
+                              </span>
+                            ))}
+                          </div>
                         )}
-                        {quiz.tag && (
-                          <span className="ml-1.5 inline-block rounded bg-violet-100 px-1.5 py-0.5 text-[10px] font-semibold text-violet-600">{quiz.tag}</span>
-                        )}
-                      </p>
-                      {cats.length > 0 && (
-                        <div className="mt-2 flex flex-wrap gap-1">
-                          {cats.map((cat) => (
-                            <span
-                              key={cat}
-                              className="inline-block rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500 dark:bg-slate-700 dark:text-slate-400"
-                            >
-                              {cat}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                    <div className="flex gap-1 shrink-0">
-                      <button
-                        onClick={() => handleEdit(quiz)}
-                        className="rounded-lg p-2 text-indigo-600 hover:bg-indigo-50 transition-colors dark:text-indigo-400 dark:hover:bg-indigo-900/30"
-                        title="Edit"
-                      >
-                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                        </svg>
-                      </button>
-                      <button
-                        onClick={() => handleDeleteQuiz(quiz.id)}
-                        className="rounded-lg p-2 text-red-500 hover:bg-red-50 transition-colors dark:hover:bg-red-900/30"
-                        title="Delete"
-                      >
-                        <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                        </svg>
-                      </button>
+                      </div>
+                      <div className="flex flex-col gap-1 shrink-0 sm:flex-row sm:items-center">
+                        <button
+                          type="button"
+                          onClick={() => handleEdit(quiz)}
+                          className="rounded-lg p-2 text-indigo-600 hover:bg-indigo-50 transition-colors dark:text-indigo-400 dark:hover:bg-indigo-900/30"
+                          title="Edit paper"
+                        >
+                          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => handleDeleteQuiz(quiz.id, { title: quiz.title, mode: "saved" })}
+                          className="inline-flex items-center justify-center gap-1 rounded-lg border border-red-200 bg-red-50 px-2 py-1.5 text-xs font-semibold text-red-700 hover:bg-red-100 transition-colors dark:border-red-800 dark:bg-red-950/40 dark:text-red-300 dark:hover:bg-red-900/30"
+                          title="Delete this paper from this browser"
+                        >
+                          <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                          </svg>
+                          <span className="hidden sm:inline">Delete</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )}
         </div>
-      )}
 
       {/* Bundled Quizzes (from quizzes.json) */}
       {bundledQuizzes.length > 0 && (
@@ -701,7 +723,7 @@ export default function AdminView() {
                         </div>
                       )}
                     </div>
-                    <div className="flex shrink-0 items-center gap-1">
+                    <div className="flex shrink-0 flex-col items-end gap-1 sm:flex-row sm:items-center">
                       <button
                         type="button"
                         onClick={() => handleEdit(quiz)}
@@ -712,6 +734,19 @@ export default function AdminView() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                         </svg>
                       </button>
+                      {savedQuizIds.has(quiz.id) && (
+                        <button
+                          type="button"
+                          onClick={() => handleDeleteQuiz(quiz.id, { title: quiz.title, mode: "bundled-override" })}
+                          className="inline-flex items-center justify-center gap-1 rounded-lg border border-red-200 bg-red-50 px-2 py-1.5 text-[10px] font-semibold text-red-700 hover:bg-red-100 transition-colors dark:border-red-800 dark:bg-red-950/40 dark:text-red-300 dark:hover:bg-red-900/30"
+                          title="Remove your saved copy; Practice will use the bundled paper again"
+                        >
+                          <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                          </svg>
+                          Remove copy
+                        </button>
+                      )}
                       <span className="rounded-md bg-emerald-50 px-2 py-1 text-[10px] font-semibold text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400">
                         Bundled
                       </span>
