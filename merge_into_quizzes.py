@@ -18,9 +18,10 @@ EXISTING PATTERN ON THIS SITE
          "id": "my_exam_en_1",             # stable string ids recommended
          "text": "Question stem...",
          "options": ["A text", "B", "C", "D"],   # OR {"A":"...", "B":"...", "C":"...", "D":"..."}
-         "correctAnswer": "A",             # "A" | "B" | "C" | "D"
+         "correctAnswer": "A",             # omit when optional "cancelled": true (MPSC key X / #)
          "explanation": "",
          "category": "History"             # one of lib/types.ts CATEGORIES
+         (optional) "cancelled": true      # no official answer; omit correctAnswer
          (optional) "topic": "Modern India"   # Topic Wise; omit if unused
        }
      ],

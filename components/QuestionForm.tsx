@@ -176,7 +176,22 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
             <label className="mb-2 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
               Correct Answer
             </label>
-            <div className="flex gap-2">
+            <label className="mb-2 flex cursor-pointer items-center gap-2 text-xs text-slate-600 dark:text-slate-300">
+              <input
+                type="checkbox"
+                checked={!!question.cancelled}
+                onChange={(e) => {
+                  if (e.target.checked) {
+                    update({ cancelled: true, correctAnswer: undefined });
+                  } else {
+                    update({ cancelled: false, correctAnswer: question.correctAnswer ?? "A" });
+                  }
+                }}
+                className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+              />
+              <span>Cancelled by MPSC (no official key / X)</span>
+            </label>
+            <div className={`flex gap-2 ${question.cancelled ? "pointer-events-none opacity-40" : ""}`}>
               {OPTION_KEYS.map((key) => (
                 <label
                   key={key}
@@ -191,7 +206,8 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
                     name={`correct-${question.id}`}
                     value={key}
                     checked={question.correctAnswer === key}
-                    onChange={() => update({ correctAnswer: key })}
+                    onChange={() => update({ correctAnswer: key, cancelled: false })}
+                    disabled={!!question.cancelled}
                     className="sr-only"
                   />
                   {key}
@@ -255,7 +271,7 @@ export default function QuestionForm({ index, question, onChange, onDelete, avai
             Explanation (optional)
           </label>
           <textarea
-            value={question.explanation}
+            value={question.explanation ?? ""}
             onChange={(e) => update({ explanation: e.target.value })}
             placeholder="Explain why this is the correct answer..."
             rows={2}

@@ -18,6 +18,7 @@ function emptyQuestion(): Question {
     text: "",
     options: { A: "", B: "", C: "", D: "" },
     correctAnswer: "A" as OptionKey,
+    cancelled: false,
     explanation: "",
   };
 }
@@ -81,6 +82,7 @@ export default function AdminView() {
       text: p.text,
       options: p.options,
       correctAnswer: "A" as OptionKey,
+      cancelled: false,
       explanation: "",
       imageUrl: p.imageUrl,
     }));

@@ -20,7 +20,10 @@ export interface Question {
   id: string;
   text: string;
   options: Record<OptionKey, string>;
-  correctAnswer: OptionKey;
+  /** Absent when {@link cancelled} is true (MPSC dropped the item; no official key). */
+  correctAnswer?: OptionKey;
+  /** Official answer key X / dropped — not scored; do not mark any option correct. */
+  cancelled?: boolean;
   explanation: string;
   imageUrl?: string;
   category?: Category;

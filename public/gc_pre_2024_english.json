@@ -896,8 +896,8 @@
         "Option C",
         "Option D"
       ],
-      "correctAnswer": "A",
-      "explanation": "(Question Cancelled)",
+      "cancelled": true,
+      "explanation": "MPSC cancelled this question in the official result; the final answer key marks it as X / # (no option credited). Practice only — do not treat any option as the official answer.",
       "category": "Science"
     },
     {

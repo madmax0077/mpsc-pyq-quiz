@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
+import { isQuestionCancelled, countScoredQuestions, optionText } from "@/lib/questionUtils";
 import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
@@ -386,29 +387,33 @@ export default function StudentView({ language = "english", challenge, homeKey =
   const handleAnswer = (questionId: string, option: OptionKey) => {
     if (submitted) return;
     if (selectedQuiz?.isCategory && submittedPages.has(currentPage)) return;
+    const q = selectedQuiz?.questions.find((x) => x.id === questionId);
+    if (q && isQuestionCancelled(q)) return;
     setAnswers((prev) => ({ ...prev, [questionId]: option }));
   };
 
   const handleSubmit = () => {
     if (!selectedQuiz) return;
-    const answeredCount = Object.keys(answers).length;
-    if (answeredCount === 0) {
+    const scoredQs = selectedQuiz.questions.filter((q) => !isQuestionCancelled(q));
+    const answeredScored = scoredQs.filter((q) => answers[q.id]).length;
+    if (answeredScored === 0) {
       alert("Please attempt at least one question before submitting.");
       return;
     }
     let correct = 0;
-    for (const q of selectedQuiz.questions) {
+    for (const q of scoredQs) {
       if (answers[q.id] === q.correctAnswer) correct++;
     }
     setScore(correct);
     setSubmitted(true);
-    const pctResult = selectedQuiz.questions.length > 0 ? Math.round((correct / selectedQuiz.questions.length) * 100) : 0;
+    const scoredTotal = scoredQs.length;
+    const pctResult = scoredTotal > 0 ? Math.round((correct / scoredTotal) * 100) : 0;
     if (pctResult >= 80) setShowConfetti(true);
     if (selectedQuiz.category) {
       markAttempted(selectedQuiz.category, selectedQuiz.questions.filter((q) => answers[q.id]).map((q) => q.id));
     }
     recordStreak();
-    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz.id, quizTitle: selectedQuiz.title, category: selectedQuiz.category, score: correct, total: selectedQuiz.questions.length });
+    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz.id, quizTitle: selectedQuiz.title, category: selectedQuiz.category, score: correct, total: scoredTotal });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -419,26 +424,28 @@ export default function StudentView({ language = "english", challenge, homeKey =
     const end = Math.min(start + perPage, selectedQuiz.questions.length);
     const pageQs = selectedQuiz.questions.slice(start, end);
 
-    const pageAnswered = pageQs.filter((q) => answers[q.id]).length;
+    const scoredOnPage = pageQs.filter((q) => !isQuestionCancelled(q));
+    const pageAnswered = scoredOnPage.filter((q) => answers[q.id]).length;
     if (pageAnswered === 0) {
       alert("Please attempt at least one question before submitting this set.");
       return;
     }
 
     let correct = 0;
-    for (const q of pageQs) {
+    for (const q of scoredOnPage) {
       if (answers[q.id] === q.correctAnswer) correct++;
     }
 
     setSubmittedPages((prev) => new Set(prev).add(currentPage));
-    setPageScores((prev) => ({ ...prev, [currentPage]: { correct, total: pageQs.length } }));
-    const pagePct = pageQs.length > 0 ? Math.round((correct / pageQs.length) * 100) : 0;
+    const pageTotal = scoredOnPage.length;
+    setPageScores((prev) => ({ ...prev, [currentPage]: { correct, total: pageTotal } }));
+    const pagePct = pageTotal > 0 ? Math.round((correct / pageTotal) * 100) : 0;
     if (pagePct >= 80) setShowConfetti(true);
     if (selectedQuiz?.category) {
       markAttempted(selectedQuiz.category, pageQs.filter((q) => answers[q.id]).map((q) => q.id));
     }
     recordStreak();
-    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz!.id, quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`, category: selectedQuiz?.category, score: correct, total: pageQs.length });
+    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz!.id, quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`, category: selectedQuiz?.category, score: correct, total: pageTotal });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -879,9 +886,11 @@ export default function StudentView({ language = "english", challenge, homeKey =
   const QUESTIONS_PER_PAGE = 10;
   const perPage = isCategoryQuiz ? 20 : QUESTIONS_PER_PAGE;
   const total = selectedQuiz.questions.length;
+  const scoredTotal = countScoredQuestions(selectedQuiz.questions);
   const answeredCount = Object.keys(answers).length;
-  const pct = total > 0 ? Math.round((score / total) * 100) : 0;
-  const skippedCount = total - answeredCount;
+  const answeredScoredCount = selectedQuiz.questions.filter((q) => !isQuestionCancelled(q) && answers[q.id]).length;
+  const pct = scoredTotal > 0 ? Math.round((score / scoredTotal) * 100) : 0;
+  const skippedCount = scoredTotal - answeredScoredCount;
   const catStyle = selectedQuiz.category ? CATEGORY_COLORS[selectedQuiz.category] : null;
 
   const totalPages = Math.ceil(total / perPage);
@@ -891,7 +900,8 @@ export default function StudentView({ language = "english", challenge, homeKey =
   );
   const isPageSubmitted = submittedPages.has(currentPage);
   const currentPageScore = pageScores[currentPage];
-  const pageAnsweredCount = pageQuestions.filter((q) => answers[q.id]).length;
+  const pageScoredCount = pageQuestions.filter((q) => !isQuestionCancelled(q)).length;
+  const pageAnsweredCount = pageQuestions.filter((q) => !isQuestionCancelled(q) && answers[q.id]).length;
   const allPagesSubmitted = submittedPages.size === totalPages;
   const totalCategoryScore = Object.values(pageScores).reduce((s, p) => s + p.correct, 0);
   const totalCategoryQuestions = Object.values(pageScores).reduce((s, p) => s + p.total, 0);
@@ -985,15 +995,18 @@ export default function StudentView({ language = "english", challenge, homeKey =
           </div>
           {!submitted && !isCategoryQuiz && (
             <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
-              {answeredCount} of {total} answered
-              {skippedCount > 0 && answeredCount > 0 && (
+              {answeredScoredCount} of {scoredTotal} answered
+              {total > scoredTotal && (
+                <span className="text-slate-400"> &middot; {total - scoredTotal} cancelled (not scored)</span>
+              )}
+              {skippedCount > 0 && answeredScoredCount > 0 && (
                 <span className="text-slate-400"> &middot; {skippedCount} skipped</span>
               )}
             </p>
           )}
           {isCategoryQuiz && (
             <p className="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
-              Set {currentPage + 1} of {totalPages} &middot; {pageAnsweredCount} of {pageQuestions.length} answered
+              Set {currentPage + 1} of {totalPages} &middot; {pageAnsweredCount} of {pageScoredCount} answered
               {submittedPages.size > 0 && (
                 <span className="text-indigo-500 font-medium"> &middot; {submittedPages.size}/{totalPages} sets done</span>
               )}
@@ -1014,7 +1027,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
         <div className="overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
           <div
             className="h-1.5 rounded-full bg-indigo-500 transition-all duration-500"
-            style={{ width: `${total > 0 ? (answeredCount / total) * 100 : 0}%` }}
+            style={{ width: `${scoredTotal > 0 ? (answeredScoredCount / scoredTotal) * 100 : 0}%` }}
           />
         </div>
       ) : null}
@@ -1034,7 +1047,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
             <span className={pct >= 70 ? "text-emerald-600" : pct >= 40 ? "text-amber-600" : "text-red-600"}>
               {score}
             </span>
-            <span className="text-slate-400 dark:text-slate-100">/{total}</span>
+            <span className="text-slate-400 dark:text-slate-100">/{scoredTotal}</span>
           </p>
           <p className="mt-2 text-sm font-medium text-slate-600 dark:text-slate-100">
             You scored {pct}%
@@ -1061,8 +1074,8 @@ export default function StudentView({ language = "english", challenge, homeKey =
             Think you did well? Dare a friend to beat your score!
           </p>
           <div className="mt-2 flex flex-wrap justify-center gap-2">
-            <ChallengeButton quizId={selectedQuiz.id} score={score} total={total} />
-            <ShareButton score={{ correct: score, total }} label="Share Score" />
+            <ChallengeButton quizId={selectedQuiz.id} score={score} total={scoredTotal} />
+            <ShareButton score={{ correct: score, total: scoredTotal }} label="Share Score" />
           </div>
         </div>
       )}
@@ -1115,24 +1128,27 @@ export default function StudentView({ language = "english", challenge, homeKey =
           const showAdAfter = (localIdx + 1) % 5 === 0 && localIdx < pageQuestions.length - 1;
           const userAnswer = answers[q.id];
           const qSubmitted = isCategoryQuiz ? isPageSubmitted : submitted;
-          const isCorrect = qSubmitted && userAnswer === q.correctAnswer;
-          const isWrong = qSubmitted && userAnswer && userAnswer !== q.correctAnswer;
-          const isSkipped = qSubmitted && !userAnswer;
+          const qCancelled = isQuestionCancelled(q);
+          const isCorrect = qSubmitted && !qCancelled && userAnswer === q.correctAnswer;
+          const isWrong = qSubmitted && !qCancelled && !!userAnswer && userAnswer !== q.correctAnswer;
+          const isSkipped = qSubmitted && !qCancelled && !userAnswer;
 
           return (
             <div key={q.id} className="space-y-4">
             <div
               data-question-id={q.id}
               className={`rounded-xl border bg-white shadow-sm transition-all dark:bg-slate-800 ${
-                qSubmitted
-                  ? isCorrect
-                    ? "border-emerald-300 bg-emerald-50/30 dark:bg-emerald-900/20 dark:border-emerald-700"
-                    : isSkipped
-                      ? "border-slate-200 bg-slate-50/50 dark:border-slate-700 dark:bg-slate-800/50"
-                      : "border-red-300 bg-red-50/30 dark:bg-red-900/20 dark:border-red-700"
-                  : userAnswer
-                    ? "border-indigo-200 dark:border-indigo-700"
-                    : "border-slate-200 dark:border-slate-700"
+                qSubmitted && qCancelled
+                  ? "border-amber-200 bg-amber-50/40 dark:border-amber-800 dark:bg-amber-950/20"
+                  : qSubmitted
+                    ? isCorrect
+                      ? "border-emerald-300 bg-emerald-50/30 dark:bg-emerald-900/20 dark:border-emerald-700"
+                      : isSkipped
+                        ? "border-slate-200 bg-slate-50/50 dark:border-slate-700 dark:bg-slate-800/50"
+                        : "border-red-300 bg-red-50/30 dark:bg-red-900/20 dark:border-red-700"
+                    : userAnswer
+                      ? "border-indigo-200 dark:border-indigo-700"
+                      : "border-slate-200 dark:border-slate-700"
               }`}
             >
               <div className="relative p-3 sm:p-5">
@@ -1143,15 +1159,17 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 )}
                 <div className="mb-4 flex items-start gap-2 sm:gap-3">
                   <span className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
-                    qSubmitted && isCorrect
-                      ? "bg-emerald-100 text-emerald-700"
-                      : qSubmitted && isSkipped
-                        ? "bg-slate-100 text-slate-500"
-                        : qSubmitted && isWrong
-                          ? "bg-red-100 text-red-700"
-                          : userAnswer
-                            ? "bg-indigo-100 text-indigo-700"
-                            : "bg-slate-100 text-slate-600"
+                    qSubmitted && qCancelled
+                      ? "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200"
+                      : qSubmitted && isCorrect
+                        ? "bg-emerald-100 text-emerald-700"
+                        : qSubmitted && isSkipped
+                          ? "bg-slate-100 text-slate-500"
+                          : qSubmitted && isWrong
+                            ? "bg-red-100 text-red-700"
+                            : userAnswer
+                              ? "bg-indigo-100 text-indigo-700"
+                              : "bg-slate-100 text-slate-600"
                   }`}>
                     {globalIdx + 1}
                   </span>
@@ -1171,12 +1189,16 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 <div className="ml-0 sm:ml-10 grid gap-2 sm:grid-cols-2">
                   {OPTION_KEYS.map((key) => {
                     const isSelected = userAnswer === key;
-                    const isThisCorrect = q.correctAnswer === key;
+                    const isThisCorrect = !qCancelled && q.correctAnswer === key;
 
                     let classes =
                       "flex items-center gap-2 sm:gap-3 rounded-lg border px-3 py-2.5 sm:px-4 sm:py-3 text-sm transition-all ";
 
-                    if (qSubmitted) {
+                    if (qCancelled) {
+                      classes += qSubmitted
+                        ? "border-slate-200 text-slate-500 bg-slate-50/70 dark:border-slate-600 dark:bg-slate-800/60 dark:text-slate-400"
+                        : "border-slate-200 text-slate-500 bg-slate-50/50 cursor-not-allowed opacity-80 dark:border-slate-600 dark:bg-slate-800/40 dark:text-slate-500";
+                    } else if (qSubmitted) {
                       if (isThisCorrect) {
                         classes += "border-emerald-400 bg-emerald-50 text-emerald-800 font-medium dark:bg-emerald-900/30 dark:border-emerald-600 dark:text-emerald-300";
                       } else if (isSelected && !isThisCorrect) {
@@ -1198,23 +1220,25 @@ export default function StudentView({ language = "english", challenge, homeKey =
                           value={key}
                           checked={isSelected}
                           onChange={() => handleAnswer(q.id, key)}
-                          disabled={qSubmitted}
+                          disabled={qSubmitted || qCancelled}
                           className="sr-only"
                         />
                         <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-xs font-bold ${
-                          qSubmitted && isThisCorrect
-                            ? "border-emerald-500 bg-emerald-500 text-white"
-                            : qSubmitted && isSelected && !isThisCorrect
-                              ? "border-red-400 bg-red-100 text-red-600"
-                              : isSelected
-                                ? "border-indigo-500 bg-indigo-500 text-white"
-                                : "border-slate-300 text-slate-500"
+                          qCancelled
+                            ? "border-slate-300 bg-slate-100 text-slate-500 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-400"
+                            : qSubmitted && isThisCorrect
+                              ? "border-emerald-500 bg-emerald-500 text-white"
+                              : qSubmitted && isSelected && !isThisCorrect
+                                ? "border-red-400 bg-red-100 text-red-600"
+                                : isSelected
+                                  ? "border-indigo-500 bg-indigo-500 text-white"
+                                  : "border-slate-300 text-slate-500"
                         }`}>
-                          {qSubmitted && isThisCorrect ? (
+                          {!qCancelled && qSubmitted && isThisCorrect ? (
                             <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                             </svg>
-                          ) : qSubmitted && isSelected && !isThisCorrect ? (
+                          ) : !qCancelled && qSubmitted && isSelected && !isThisCorrect ? (
                             <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -1222,7 +1246,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                             key
                           )}
                         </span>
-                        <span className="leading-snug whitespace-pre-line">{q.options[key] || `Option ${key}`}</span>
+                        <span className="leading-snug whitespace-pre-line">{optionText(q, key)}</span>
                       </label>
                     );
                   })}
@@ -1231,10 +1255,20 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 {/* Explanation after submit */}
                 {qSubmitted && (
                   <div className={`mt-4 ml-0 sm:ml-10 rounded-lg p-3 sm:p-4 border ${
-                    isCorrect ? "bg-emerald-50 border-emerald-200 dark:bg-emerald-900/20 dark:border-emerald-700" : isSkipped ? "bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700" : "bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-700"
+                    qCancelled
+                      ? "bg-amber-50 border-amber-200 dark:bg-amber-950/25 dark:border-amber-800"
+                      : isCorrect
+                        ? "bg-emerald-50 border-emerald-200 dark:bg-emerald-900/20 dark:border-emerald-700"
+                        : isSkipped
+                          ? "bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700"
+                          : "bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-700"
                   }`}>
                     <div className="flex items-start gap-2">
-                      {isCorrect ? (
+                      {qCancelled ? (
+                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                        </svg>
+                      ) : isCorrect ? (
                         <svg className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -1249,15 +1283,17 @@ export default function StudentView({ language = "english", challenge, homeKey =
                       )}
                       <div>
                         <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
-                          {isCorrect
-                            ? "Correct!"
-                            : isSkipped
-                              ? `Skipped — the answer is ${q.correctAnswer}.`
-                              : `Incorrect — the answer is ${q.correctAnswer}.`}
+                          {qCancelled
+                            ? "Cancelled by MPSC — no official credited answer (final key: X)."
+                            : isCorrect
+                              ? "Correct!"
+                              : isSkipped
+                                ? `Skipped — the answer is ${q.correctAnswer}.`
+                                : `Incorrect — the answer is ${q.correctAnswer}.`}
                         </p>
-                        {q.explanation && (
+                        {q.explanation ? (
                           <p className="mt-1 text-sm text-slate-600 whitespace-pre-line dark:text-slate-300">{q.explanation}</p>
-                        )}
+                        ) : null}
                       </div>
                     </div>
                     <div className="mt-2 ml-0 sm:ml-6 flex justify-end">

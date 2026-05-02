@@ -896,8 +896,8 @@
         "Option C",
         "Option D"
       ],
-      "correctAnswer": "A",
-      "explanation": "(Question Cancelled)",
+      "cancelled": true,
+      "explanation": "महाराष्ट्र लोकसेवा आयोगाने हा प्रश्न अधिकृत निकालात रद्द केला; अंतिम उत्तरसूचीमध्ये X / # (कोणतेही पर्याय मान्य नाही). फक्त सरावासाठी — A–D पैकी कोणतेही अधिकृत उत्तर नाही.",
       "category": "Science"
     },
     {

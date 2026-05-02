@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect } from "react";
 import { Question, OptionKey } from "@/lib/types";
+import { isQuestionCancelled, optionText } from "@/lib/questionUtils";
 
 interface SearchResult {
   question: Question;
@@ -122,18 +123,25 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion, navigate
                     </button>
                     {isExpanded && (
                       <div className="mt-2 rounded-lg bg-slate-100 p-3 text-xs dark:bg-slate-900">
+                        {isQuestionCancelled(r.question) && (
+                          <p className="mb-2 rounded bg-amber-100 px-2 py-1.5 font-medium text-amber-900 dark:bg-amber-900/30 dark:text-amber-200">
+                            Cancelled by MPSC — no official key (X).
+                          </p>
+                        )}
                         {(["A", "B", "C", "D"] as OptionKey[]).map((k) => (
                           <div
                             key={k}
                             className={`flex items-start gap-2 rounded px-2 py-1 ${
-                              k === r.question.correctAnswer
+                              !isQuestionCancelled(r.question) && k === r.question.correctAnswer
                                 ? "bg-emerald-100 text-emerald-800 font-semibold dark:bg-emerald-900/30 dark:text-emerald-300"
                                 : "text-slate-600 dark:text-slate-400"
                             }`}
                           >
                             <span className="font-bold shrink-0">{k}.</span>
-                            <span>{r.question.options[k]}</span>
-                            {k === r.question.correctAnswer && <span className="ml-auto shrink-0">✓</span>}
+                            <span>{optionText(r.question, k)}</span>
+                            {!isQuestionCancelled(r.question) && k === r.question.correctAnswer && (
+                              <span className="ml-auto shrink-0">✓</span>
+                            )}
                           </div>
                         ))}
                         {onNavigateToQuestion && (
