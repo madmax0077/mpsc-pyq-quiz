@@ -9,15 +9,14 @@ Requires: pip install pymupdf
 
 Usage:
   python scripts/build_gb_combine_pre_2024.py "path/to/Group_B_Combine_Pre_2024.pdf"
+  python scripts/build_gb_combine_pre_2024.py "path/to/scan.pdf" --strict
 
-Outputs (when extraction yields 100 chunks):
+Outputs (always 100 questions per file):
   public/gb_combine_pre_2024_english.json
   public/gb_combine_pre_2024_marathi.json
 
-If the PDF yields fewer than 100 question segments, the script pads with placeholder
-stems so indices still line up with the 100-key grid — **review or replace in Admin**
-before publishing. For production quality, prefer typing/editing in Admin or a
-cleaner English-only PDF, then `python merge_into_quizzes.py`.
+OCR gaps get placeholder stems unless `--strict`. Then run `python merge_into_quizzes.py`
+(or replace existing quizzes in `public/quizzes.json` by id).
 """
 
 from __future__ import annotations
@@ -152,20 +151,25 @@ def _latin_ratio(s: str) -> float:
 
 
 def page_blocks_text(page: fitz.Page) -> str:
-    """Left column top-to-bottom, then right column (typical MPSC two-column MCQ layout)."""
+    """
+    Two-column MCQ layout: left column top-to-bottom, then right column.
+    Classify each *block* by its left edge (bbox[0]), not the horizontal centre,
+    so wide OCR lines are not treated as the wrong column.
+    """
     d = page.get_text("dict")
-    mid = page.rect.width / 2
+    w_cut = page.rect.width * 0.48
     rows: list[tuple[int, float, float, str]] = []
     for b in d["blocks"]:
         if b.get("type") != 0:
             continue
         bbox = b["bbox"]
-        cx = (bbox[0] + bbox[2]) / 2
+        x0, y0 = bbox[0], bbox[1]
         txt = "".join(s["text"] for ln in b.get("lines", []) for s in ln.get("spans", []))
         txt = " ".join(txt.split())
-        if txt.strip():
-            col = 0 if cx < mid else 1
-            rows.append((col, bbox[1], bbox[0], txt))
+        if not txt.strip():
+            continue
+        col = 0 if x0 < w_cut else 1
+        rows.append((col, y0, x0, txt))
     rows.sort(key=lambda t: (t[0], round(t[1] / 2) * 2, t[2]))
     return "\n".join(t[3] for t in rows)
 
@@ -210,7 +214,18 @@ def find_english_start(lines: list[str]) -> int | None:
     return None
 
 
+def normalize_devanagari_option_marks(s: str) -> str:
+    """OCR PDFs often use (१)(२)(३)(४) instead of (1)-(4)."""
+    dmap = {"१": "1", "२": "2", "३": "3", "४": "4"}
+
+    def repl(m: re.Match) -> str:
+        return "(" + dmap.get(m.group(1), m.group(1)) + ")"
+
+    return re.sub(r"\(([१२३४])\)", repl, s)
+
+
 def extract_four_options(chunk: str) -> list[str] | None:
+    chunk = normalize_devanagari_option_marks(chunk)
     opts: list[str] = []
     for d in range(1, 5):
         m = re.search(rf"\({d}\)\s*", chunk)
@@ -239,28 +254,65 @@ FALLBACK_OPTS = [
 ]
 
 
+def _valid_exam_question_marker(m: re.Match, text: str) -> bool:
+    """Drop table rows like '7.|(1)…' or '3.|घेड…' that are not real question starts."""
+    tail = text[m.end() : m.end() + 160].lstrip()
+    if len(tail) < 6:
+        return False
+    c0 = tail[0]
+    if c0 in "|()[]":
+        return False
+    # Devanagari digit + dot artifacts
+    if c0 in "१२३४५६७८९०":
+        return False
+    return True
+
+
+def _placeholder_chunk(qn: int) -> str:
+    return (
+        f"{qn}. [Stem not extracted from PDF text layer — open official paper PDF.]\n"
+        "(1) Option A\n(2) Option B\n(3) Option C\n(4) Option D\n"
+        "Which row is correct?\n(1) Option A\n(2) Option B\n(3) Option C\n(4) Option D"
+    )
+
+
 def split_questions_ordered(body: str, pad_to_100: bool) -> list[str]:
-    """Split on `N.` / `N H19` in reading order; optionally pad to 100 for key alignment."""
+    """
+    Map text to exactly 100 question chunks. Accepts only `N.` markers in order
+    (skips duplicate column repeats). Missing OCR markers become placeholder chunks.
+    If pad_to_100 is False and any slot would be placeholder, returns [].
+    """
     text = body.strip()
-    pat = re.compile(r"(?:^|\n)(100|[1-9]\d?)(?:\.\s|\s+H19\s*)")
-    ms = list(pat.finditer(text))
+    # Require "N." (not "N H19"); H19 appears inside questions and breaks splits.
+    pat = re.compile(r"(?:^|\n)(100|[1-9]\d?)\.\s")
+    ms = [m for m in pat.finditer(text) if _valid_exam_question_marker(m, text)]
+    starts: list[int | None] = [None] * 100
+    want = 1
+    for m in ms:
+        n = int(m.group(1))
+        if n < want or n > 100:
+            continue
+        while want < n:
+            want += 1
+        if want == n:
+            starts[want - 1] = m.start()
+            want += 1
     chunks: list[str] = []
-    for i, m in enumerate(ms):
-        start = m.start()
-        end = ms[i + 1].start() if i + 1 < len(ms) else len(text)
-        chunks.append(text[start:end].strip())
-    if len(chunks) >= 100:
-        return chunks[:100]
-    if not pad_to_100:
-        return chunks
-    while len(chunks) < 100:
-        n = len(chunks) + 1
-        chunks.append(
-            f"{n}. [Stem not extracted from PDF text layer — open official paper PDF.]\n"
-            "(1) Option A\n(2) Option B\n(3) Option C\n(4) Option D\n"
-            "Which row is correct?\n(1) Option A\n(2) Option B\n(3) Option C\n(4) Option D"
-        )
-    return chunks[:100]
+    for i in range(100):
+        st = starts[i]
+        qn = i + 1
+        if st is None:
+            if not pad_to_100:
+                return []
+            chunks.append(_placeholder_chunk(qn))
+            continue
+        nxt = len(text)
+        for j in range(i + 1, 100):
+            if starts[j] is not None:
+                nxt = starts[j]
+                break
+        chunks.append(text[st:nxt].strip())
+    return chunks
 
 
 def guess_category(en_stem: str) -> str:
@@ -286,7 +338,13 @@ def guess_category(en_stem: str) -> str:
     return "History"
 
 
+def normalize_loose_option_parens(chunk: str) -> str:
+    """OCR sometimes emits `4) text` instead of `(4) text` on its own line."""
+    return re.sub(r"(?:^|\n)([1-4])\)\s+", r"\n(\1) ", chunk)
+
+
 def parse_one_chunk(qn: int, chunk: str) -> tuple[dict | None, dict | None]:
+    chunk = normalize_loose_option_parens(chunk)
     lines = [ln.strip() for ln in chunk.splitlines() if ln.strip()]
     if not lines:
         return None, None
@@ -378,18 +436,24 @@ def main() -> None:
     ap.add_argument(
         "pdf",
         nargs="?",
-        default=os.path.join(os.path.expanduser("~"), "Downloads", "Group_B_Combine_Pre_2024.pdf"),
-        help="Path to Group_B_Combine_Pre_2024.pdf",
+        default="",
+        help="Path to the combined question PDF (default: common Downloads filenames).",
     )
     ap.add_argument(
-        "--pad-to-100",
+        "--strict",
         action="store_true",
-        help="Pad missing segments with placeholders so indices match the 100-answer key (needs Admin QA).",
+        help="Exit if any question number 1–100 has no PDF marker (default: use placeholders for OCR gaps).",
     )
     args = ap.parse_args()
-    pdf_path = os.path.abspath(args.pdf)
-    if not os.path.isfile(pdf_path):
-        print("PDF not found:", pdf_path, file=sys.stderr)
+    dl = os.path.join(os.path.expanduser("~"), "Downloads")
+    candidates = [
+        args.pdf.strip(),
+        os.path.join(dl, "Group_B_Combine_Pre_2024 (1).pdf"),
+        os.path.join(dl, "Group_B_Combine_Pre_2024.pdf"),
+    ]
+    pdf_path = next((os.path.abspath(p) for p in candidates if p and os.path.isfile(p)), "")
+    if not pdf_path:
+        print("PDF not found. Tried:", [p for p in candidates if p], file=sys.stderr)
         sys.exit(1)
 
     doc = fitz.open(pdf_path)
@@ -403,13 +467,9 @@ def main() -> None:
     body = clean_body(merge_body_text(doc))
     doc.close()
 
-    chunks = split_questions_ordered(body, pad_to_100=args.pad_to_100)
-    if len(chunks) < 100 and not args.pad_to_100:
-        print(
-            f"Only found {len(chunks)} question segments in the PDF text layer (need 100). "
-            "Re-run with --pad-to-100 to pad placeholders, or use Admin PDF upload / a cleaner PDF.",
-            file=sys.stderr,
-        )
+    chunks = split_questions_ordered(body, pad_to_100=not args.strict)
+    if len(chunks) != 100:
+        print(f"Internal error: expected 100 chunks, got {len(chunks)}.", file=sys.stderr)
         sys.exit(3)
 
     mr_questions: list[dict] = []
