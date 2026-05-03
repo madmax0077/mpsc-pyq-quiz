@@ -85,6 +85,46 @@ export function deleteQuiz(id: string): boolean {
   }
 }
 
+/** Ids of bundled papers omitted from the next admin Export (still in quizzes.json until you deploy). */
+const EXCLUDED_BUNDLED_KEY = "mcq_export_excluded_bundled_quiz_ids";
+
+export function getExcludedBundledQuizIds(): Set<string> {
+  if (typeof window === "undefined") return new Set();
+  try {
+    const raw = localStorage.getItem(EXCLUDED_BUNDLED_KEY);
+    if (!raw) return new Set();
+    const parsed = JSON.parse(raw) as unknown;
+    if (!Array.isArray(parsed)) return new Set();
+    return new Set(parsed.filter((x): x is string => typeof x === "string"));
+  } catch {
+    return new Set();
+  }
+}
+
+export function excludeBundledQuizId(id: string): boolean {
+  try {
+    const s = getExcludedBundledQuizIds();
+    s.add(id);
+    localStorage.setItem(EXCLUDED_BUNDLED_KEY, JSON.stringify([...s]));
+    return true;
+  } catch (e) {
+    console.error("Failed to persist excluded bundled id.", e);
+    return false;
+  }
+}
+
+export function unexcludeBundledQuizId(id: string): boolean {
+  try {
+    const s = getExcludedBundledQuizIds();
+    if (!s.delete(id)) return true;
+    localStorage.setItem(EXCLUDED_BUNDLED_KEY, JSON.stringify([...s]));
+    return true;
+  } catch (e) {
+    console.error("Failed to update excluded bundled ids.", e);
+    return false;
+  }
+}
+
 /**
  * Export all quizzes as a JSON string for backup.
  */

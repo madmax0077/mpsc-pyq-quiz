@@ -7,15 +7,18 @@ import {
   saveQuiz,
   getAllQuizzes,
   deleteQuiz,
-  exportQuizzes,
   importQuizzes,
   getSubjectTopics,
   saveSubjectTopics,
+  getExcludedBundledQuizIds,
+  excludeBundledQuizId,
+  unexcludeBundledQuizId,
 } from "@/lib/storage";
+import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { useAuth } from "@/lib/auth-context";
 import FileUploader from "./FileUploader";
 import QuestionForm from "./QuestionForm";
-import SearchBar from "./SearchBar";
+import SearchBar, { type SearchNavigatePayload } from "./SearchBar";
 
 function uid() {
   return Math.random().toString(36).slice(2, 9) + Date.now().toString(36);
@@ -68,11 +71,13 @@ export default function AdminView() {
   const [bulkTopic, setBulkTopic] = useState("");
   const [bundledQuizzes, setBundledQuizzes] = useState<Quiz[]>([]);
   const [scrollToQuestionId, setScrollToQuestionId] = useState<string | null>(null);
+  /** Bumps when bundled export-exclusion list changes so lists refresh. */
+  const [exclusionVersion, setExclusionVersion] = useState(0);
 
   type AdminConfirmAction =
     | { kind: "delete-saved"; id: string; title: string }
     | { kind: "remove-override"; id: string; title: string }
-    | { kind: "bundled-global-info"; id: string; title: string };
+    | { kind: "exclude-bundled"; id: string; title: string };
 
   const [confirmAction, setConfirmAction] = useState<AdminConfirmAction | null>(null);
 
@@ -197,9 +202,26 @@ export default function AdminView() {
   };
 
   const runConfirmedAction = () => {
-    if (!confirmAction || confirmAction.kind === "bundled-global-info") return;
+    if (!confirmAction) return;
     const a = confirmAction;
     setConfirmAction(null);
+
+    if (a.kind === "exclude-bundled") {
+      if (!excludeBundledQuizId(a.id)) {
+        showToast("Could not update list. Allow site data / local storage.");
+        return;
+      }
+      setExclusionVersion((v) => v + 1);
+      if (editingId === a.id) {
+        setTitle("");
+        setQuestions([]);
+        setEditingId(null);
+        setQuizLanguage("english");
+        setQuizTag("");
+      }
+      showToast("Paper removed from export list. Export quizzes.json and replace in repo when ready.");
+      return;
+    }
 
     if (!deleteQuiz(a.id)) {
       showToast("Could not delete. Allow site data / local storage, or free disk space.");
@@ -221,15 +243,22 @@ export default function AdminView() {
   };
 
   const handleExport = () => {
-    const json = exportQuizzes();
+    if (bundledQuizzes.length === 0) {
+      showToast("Question bank is still loading — wait a moment, then export again.");
+      return;
+    }
+    const catalog = mergeBundledAndLocal(bundledQuizzes, getAllQuizzes(), {
+      excludeBundledIds: getExcludedBundledQuizIds(),
+    });
+    const json = JSON.stringify(catalog, null, 2);
     const blob = new Blob([json], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `mpsc-pyq-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = "quizzes.json";
     a.click();
     URL.revokeObjectURL(url);
-    showToast("Backup downloaded!");
+    showToast("Downloaded quizzes.json — replace public/quizzes.json, then push.");
   };
 
   const handleImport = () => {
@@ -316,45 +345,55 @@ export default function AdminView() {
   /** Saved copies that override a bundled paper (same quiz id in localStorage). */
   const savedQuizIds = useMemo(() => new Set(savedQuizzes.map((q) => q.id)), [savedQuizzes]);
 
-  const allSearchableQuestions = useMemo(() => {
-    const result: { question: Question; quizTitle: string }[] = [];
-    const quizMap = new Map<string, Quiz>();
-    for (const q of [...savedQuizzes, ...bundledQuizzes]) {
-      if (!quizMap.has(q.id)) quizMap.set(q.id, q);
-    }
-    for (const quiz of quizMap.values()) {
-      for (const q of quiz.questions) {
-        result.push({ question: q, quizTitle: quiz.tag || quiz.title });
-      }
-    }
-    return result;
-  }, [savedQuizzes, bundledQuizzes]);
+  const excludedBundledIds = useMemo(() => {
+    void exclusionVersion;
+    return getExcludedBundledQuizIds();
+  }, [exclusionVersion]);
 
-  const questionToQuizMap = useMemo(() => {
+  const visibleBundledQuizzes = useMemo(
+    () => bundledQuizzes.filter((q) => !excludedBundledIds.has(q.id)),
+    [bundledQuizzes, excludedBundledIds],
+  );
+
+  const excludedBundledQuizzes = useMemo(
+    () => bundledQuizzes.filter((q) => excludedBundledIds.has(q.id)),
+    [bundledQuizzes, excludedBundledIds],
+  );
+
+  const quizById = useMemo(() => {
     const map = new Map<string, Quiz>();
-    for (const quiz of savedQuizzes) {
-      for (const q of quiz.questions) {
-        if (!map.has(q.id)) map.set(q.id, quiz);
-      }
-    }
-    for (const quiz of bundledQuizzes) {
-      for (const q of quiz.questions) {
-        if (!map.has(q.id)) map.set(q.id, quiz);
-      }
+    for (const q of savedQuizzes) map.set(q.id, q);
+    for (const q of bundledQuizzes) {
+      if (!map.has(q.id)) map.set(q.id, q);
     }
     return map;
   }, [savedQuizzes, bundledQuizzes]);
 
-  const handleSearchNavigate = useCallback((question: Question) => {
-    const quiz = questionToQuizMap.get(question.id);
-    if (!quiz) return;
-    setTitle(quiz.title);
-    setQuestions(quiz.questions.map((q) => normalizeQuestion(q)));
-    setEditingId(quiz.id);
-    setQuizLanguage(quiz.language || "english");
-    setQuizTag(quiz.tag || "");
-    setScrollToQuestionId(question.id);
-  }, [questionToQuizMap]);
+  const allSearchableQuestions = useMemo(() => {
+    const result: { question: Question; quizTitle: string; quizId: string }[] = [];
+    for (const quiz of quizById.values()) {
+      const tag = quiz.tag || quiz.title;
+      for (const q of quiz.questions) {
+        result.push({ question: q, quizTitle: tag, quizId: quiz.id });
+      }
+    }
+    return result;
+  }, [quizById]);
+
+  const handleSearchNavigate = useCallback(
+    (payload: SearchNavigatePayload) => {
+      const quiz = quizById.get(payload.quizId);
+      if (!quiz) return;
+      setTitle(quiz.title);
+      setQuestions(quiz.questions.map((q) => normalizeQuestion(q)));
+      setEditingId(quiz.id);
+      setQuizLanguage(quiz.language || "english");
+      setQuizTag(quiz.tag || "");
+      setScrollToQuestionId(payload.question.id);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    [quizById],
+  );
 
   useEffect(() => {
     if (!scrollToQuestionId || questions.length === 0) return;
@@ -366,7 +405,7 @@ export default function AdminView() {
         setTimeout(() => el.classList.remove("ring-2", "ring-indigo-400", "ring-offset-2"), 3000);
       }
       setScrollToQuestionId(null);
-    }, 200);
+    }, 400);
     return () => clearTimeout(timer);
   }, [scrollToQuestionId, questions]);
 
@@ -409,24 +448,20 @@ export default function AdminView() {
         >
           <div className="w-full max-w-md rounded-xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-slate-600 dark:bg-slate-800">
             <h3 id="admin-confirm-title" className="text-lg font-semibold text-slate-800 dark:text-slate-100">
-              {confirmAction.kind === "bundled-global-info"
-                ? "Remove bundled paper for everyone"
+              {confirmAction.kind === "exclude-bundled"
+                ? "Remove from export file?"
                 : confirmAction.kind === "remove-override"
                   ? "Remove saved copy?"
                   : "Delete question paper?"}
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-              {confirmAction.kind === "bundled-global-info" && (
+              {confirmAction.kind === "exclude-bundled" && (
                 <>
-                  <span className="font-medium text-slate-800 dark:text-slate-100">«{confirmAction.title}»</span> ships
-                  with the site as <span className="font-mono text-xs">public/quizzes.json</span>. This app cannot delete
-                  it from the server from the browser. To drop it for <strong>all</strong> aspirants: (1) Remove that
-                  quiz object from <span className="font-mono text-xs">quizzes.json</span> in git and deploy. (2) In
-                  Firebase Console → Firestore, open document <span className="font-mono text-xs">settings/quiz_data</span>{" "}
-                  and increment the numeric field <span className="font-mono text-xs">revision</span> by 1 (create the
-                  doc with <span className="font-mono text-xs">{"{ revision: 1 }"}</span> if missing). Every open tab
-                  will refetch the bundle in near real time. Practice history stays in each user&apos;s browser unless
-                  you later sync profiles to the cloud.
+                  <span className="font-medium text-slate-800 dark:text-slate-100">«{confirmAction.title}»</span> will be
+                  omitted from the next <span className="font-mono text-xs">Export</span> download. Replace{" "}
+                  <span className="font-mono text-xs">public/quizzes.json</span> with that file and push so it disappears
+                  for everyone. After deploy, increment Firestore{" "}
+                  <span className="font-mono text-xs">settings/quiz_data.revision</span> so open apps refetch the bundle.
                 </>
               )}
               {confirmAction.kind === "remove-override" && (
@@ -445,32 +480,24 @@ export default function AdminView() {
               )}
             </p>
             <div className="mt-6 flex flex-wrap justify-end gap-2">
-              {confirmAction.kind === "bundled-global-info" ? (
-                <button
-                  type="button"
-                  onClick={() => setConfirmAction(null)}
-                  className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-700"
-                >
-                  Got it
-                </button>
-              ) : (
-                <>
-                  <button
-                    type="button"
-                    onClick={() => setConfirmAction(null)}
-                    className="rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="button"
-                    onClick={runConfirmedAction}
-                    className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-700"
-                  >
-                    {confirmAction.kind === "remove-override" ? "Remove" : "Delete paper"}
-                  </button>
-                </>
-              )}
+              <button
+                type="button"
+                onClick={() => setConfirmAction(null)}
+                className="rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                onClick={runConfirmedAction}
+                className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-700"
+              >
+                {confirmAction.kind === "remove-override"
+                  ? "Remove"
+                  : confirmAction.kind === "exclude-bundled"
+                    ? "Remove from export"
+                    : "Delete paper"}
+              </button>
             </div>
           </div>
         </div>
@@ -482,10 +509,7 @@ export default function AdminView() {
         <SearchBar
           allQuestions={allSearchableQuestions}
           onNavigateToQuestion={handleSearchNavigate}
-          navigateLabel={(q) => {
-            const quiz = questionToQuizMap.get(q.id);
-            return quiz ? `Edit in "${quiz.title}"` : "Edit Question";
-          }}
+          navigateLabel={(p) => `Edit in "${p.quizTitle}"`}
         />
       </div>
 
@@ -699,7 +723,7 @@ export default function AdminView() {
               <button
                 onClick={handleExport}
                 className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-50 transition-colors dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-700"
-                title="Download backup JSON"
+                title="Full catalog: bundled papers + your saved edits (use as public/quizzes.json)"
               >
                 <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -802,10 +826,10 @@ export default function AdminView() {
             Live refresh for all users: after you deploy an updated{" "}
             <span className="font-mono text-[11px] text-slate-600 dark:text-slate-300">quizzes.json</span>, increment{" "}
             <span className="font-mono text-[11px] text-slate-600 dark:text-slate-300">settings/quiz_data.revision</span>{" "}
-            in Firestore (see Remove on a bundled card for full steps).
+            in Firestore after each deploy.
           </p>
           <div className="grid gap-3 sm:grid-cols-2">
-            {bundledQuizzes.map((quiz) => {
+            {visibleBundledQuizzes.map((quiz) => {
               const cats = [...new Set(quiz.questions.map((q) => q.category).filter(Boolean))];
               return (
                 <div
@@ -861,13 +885,13 @@ export default function AdminView() {
                         onClick={() =>
                           savedQuizIds.has(quiz.id)
                             ? setConfirmAction({ kind: "remove-override", id: quiz.id, title: quiz.title })
-                            : setConfirmAction({ kind: "bundled-global-info", id: quiz.id, title: quiz.title })
+                            : setConfirmAction({ kind: "exclude-bundled", id: quiz.id, title: quiz.title })
                         }
                         className="inline-flex items-center justify-center gap-1 rounded-lg border border-red-200 bg-red-50 px-2 py-1.5 text-[10px] font-semibold text-red-700 hover:bg-red-100 transition-colors dark:border-red-800 dark:bg-red-950/40 dark:text-red-300 dark:hover:bg-red-900/30"
                         title={
                           savedQuizIds.has(quiz.id)
                             ? "Remove your saved copy for this device"
-                            : "How to remove this bundled paper for all users"
+                            : "Remove from next Export (quizzes.json); then replace in repo for everyone"
                         }
                       >
                         <svg className="h-3.5 w-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -884,6 +908,32 @@ export default function AdminView() {
               );
             })}
           </div>
+          {excludedBundledQuizzes.length > 0 && (
+            <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50/80 p-4 dark:border-amber-800 dark:bg-amber-950/30">
+              <p className="mb-3 text-sm font-semibold text-amber-900 dark:text-amber-200">
+                Excluded from next export ({excludedBundledQuizzes.length})
+              </p>
+              <ul className="space-y-2">
+                {excludedBundledQuizzes.map((q) => (
+                  <li key={q.id} className="flex items-center justify-between gap-2 text-sm text-slate-800 dark:text-slate-200">
+                    <span className="truncate">{q.title}</span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (unexcludeBundledQuizId(q.id)) {
+                          setExclusionVersion((v) => v + 1);
+                          showToast("Paper included in export again.");
+                        }
+                      }}
+                      className="shrink-0 text-xs font-semibold text-indigo-700 hover:underline dark:text-indigo-400"
+                    >
+                      Restore
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       )}
 

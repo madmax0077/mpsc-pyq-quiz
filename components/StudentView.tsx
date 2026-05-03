@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
 import { isQuestionCancelled, countScoredQuestions, optionText, normalizeQuiz } from "@/lib/questionUtils";
 import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
+import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
 import { recordStreak, getStreak } from "@/lib/streak";
@@ -12,27 +13,12 @@ import AdBanner from "./AdBanner";
 import ShareButton from "./ShareButton";
 import Confetti from "./Confetti";
 import Analytics from "./Analytics";
-import SearchBar from "./SearchBar";
-
-/**
- * Merge bundled `quizzes.json` with localStorage quizzes.
- * Same id → **local wins** so admin edits / uploaded papers persist for this browser.
- * Bundled-only ids stay on disk; extra local-only ids are appended.
- */
-function mergeBundledAndLocal(bundled: Quiz[], local: Quiz[]): Quiz[] {
-  const localById = new Map(local.map((q) => [q.id, q]));
-  const bundledIds = new Set(bundled.map((q) => q.id));
-  const merged: Quiz[] = [];
-  for (const b of bundled) {
-    merged.push(localById.get(b.id) ?? b);
-  }
-  for (const q of local) {
-    if (!bundledIds.has(q.id)) merged.push(q);
-  }
-  return merged;
-}
+import SearchBar, { type SearchNavigatePayload } from "./SearchBar";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
+
+const REGULAR_QUIZ_PAGE_SIZE = 10;
+const CATEGORY_QUIZ_PAGE_SIZE = 20;
 
 function seededShuffle<T>(arr: T[], seed: string): T[] {
   let h = 0;
@@ -283,13 +269,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
   }, [submitted, submittedPages]);
 
   const allSearchableQuestions = useMemo(() => {
-    const result: { question: Question; quizTitle: string }[] = [];
+    const result: { question: Question; quizTitle: string; quizId: string }[] = [];
     for (const quiz of examQuizzes) {
       const tag = quiz.tag || quiz.title;
-      for (const q of quiz.questions) result.push({ question: q, quizTitle: tag });
+      for (const q of quiz.questions) result.push({ question: q, quizTitle: tag, quizId: quiz.id });
     }
     return result;
-  }, [filteredQuizzes]);
+  }, [examQuizzes]);
 
 
   const [subjectTopics, setSubjectTopics] = useState<SubjectTopics>(() => getSubjectTopics());
@@ -364,24 +350,42 @@ export default function StudentView({ language = "english", challenge, homeKey =
     });
   }, [topicMap, selectQuiz]);
 
-  const navigateToQuestion = useCallback((question: Question) => {
-    if (!question.category) return;
-    const catQuiz = categoryQuizzes.find((cq) => cq.category === question.category);
-    if (!catQuiz) return;
-    const qIdx = catQuiz.questions.findIndex((q) => q.id === question.id);
-    if (qIdx === -1) return;
-    const perPg = 20;
-    const targetPage = Math.floor(qIdx / perPg);
-    setSelectedQuiz(catQuiz);
-    setAnswers({});
-    setSubmitted(false);
-    setScore(0);
-    setCurrentPage(targetPage);
-    setSubmittedPages(new Set());
-    setPageScores({});
-    setShowConfetti(false);
-    setScrollToQuestionId(question.id);
-  }, [categoryQuizzes]);
+  const navigateToQuestion = useCallback(
+    ({ question, quizId }: SearchNavigatePayload) => {
+      const regular = regularQuizzes.find((r) => r.id === quizId);
+      if (regular) {
+        const qIdx = regular.questions.findIndex((q) => q.id === question.id);
+        if (qIdx === -1) return;
+        const targetPage = Math.floor(qIdx / REGULAR_QUIZ_PAGE_SIZE);
+        setSelectedQuiz(regular);
+        setAnswers({});
+        setSubmitted(false);
+        setScore(0);
+        setCurrentPage(targetPage);
+        setSubmittedPages(new Set());
+        setPageScores({});
+        setShowConfetti(false);
+        setScrollToQuestionId(question.id);
+        return;
+      }
+      if (!question.category) return;
+      const catQuiz = categoryQuizzes.find((cq) => cq.category === question.category);
+      if (!catQuiz) return;
+      const qIdx = catQuiz.questions.findIndex((q) => q.id === question.id);
+      if (qIdx === -1) return;
+      const targetPage = Math.floor(qIdx / CATEGORY_QUIZ_PAGE_SIZE);
+      setSelectedQuiz(catQuiz);
+      setAnswers({});
+      setSubmitted(false);
+      setScore(0);
+      setCurrentPage(targetPage);
+      setSubmittedPages(new Set());
+      setPageScores({});
+      setShowConfetti(false);
+      setScrollToQuestionId(question.id);
+    },
+    [regularQuizzes, categoryQuizzes],
+  );
 
   useEffect(() => {
     if (!scrollToQuestionId || !selectedQuiz) return;
@@ -393,7 +397,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
         setTimeout(() => el.classList.remove("ring-2", "ring-indigo-400", "ring-offset-2"), 3000);
       }
       setScrollToQuestionId(null);
-    }, 150);
+    }, 350);
     return () => clearTimeout(timer);
   }, [scrollToQuestionId, selectedQuiz]);
 
@@ -432,7 +436,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
   const handleSubmitPage = () => {
     if (!selectedQuiz) return;
-    const perPage = selectedQuiz.isCategory ? 20 : QUESTIONS_PER_PAGE;
+    const perPage = selectedQuiz.isCategory ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE;
     const start = currentPage * perPage;
     const end = Math.min(start + perPage, selectedQuiz.questions.length);
     const pageQs = selectedQuiz.questions.slice(start, end);
@@ -463,7 +467,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
   };
 
   const handleNextSet = () => {
-    const perPage = selectedQuiz!.isCategory ? 20 : QUESTIONS_PER_PAGE;
+    const perPage = selectedQuiz!.isCategory ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE;
     const nextPage = currentPage + 1;
     const maxPage = Math.ceil(selectedQuiz!.questions.length / perPage) - 1;
     if (nextPage <= maxPage) {
@@ -896,8 +900,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
   /* --------- Quiz in progress / submitted --------- */
   const isCategoryQuiz = selectedQuiz.isCategory;
-  const QUESTIONS_PER_PAGE = 10;
-  const perPage = isCategoryQuiz ? 20 : QUESTIONS_PER_PAGE;
+  const perPage = isCategoryQuiz ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE;
   const total = selectedQuiz.questions.length;
   const scoredTotal = countScoredQuestions(selectedQuiz.questions);
   const answeredCount = Object.keys(answers).length;
