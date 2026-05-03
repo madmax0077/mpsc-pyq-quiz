@@ -51,6 +51,9 @@ MAIN = os.path.join(BASE, "public", "quizzes.json")
 NEW_FILES: list[str] = [
     # "public/group_c_combined_pre_2025_english.json",
     # "public/group_c_combined_pre_2025_marathi.json",
+    # After running scripts/build_gb_combine_pre_2024.py and QA in Admin:
+    # "public/gb_combine_pre_2024_english.json",
+    # "public/gb_combine_pre_2024_marathi.json",
 ]
 
 
