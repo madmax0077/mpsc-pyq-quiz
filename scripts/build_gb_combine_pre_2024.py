@@ -182,7 +182,9 @@ def merge_body_text(doc: fitz.Document) -> str:
 
 
 def clean_body(raw: str) -> str:
-    lines = []
+    """Strip noise; drop consecutive duplicate lines (double OCR text layers)."""
+    lines: list[str] = []
+    prev: str | None = None
     for ln in raw.splitlines():
         s = ln.strip()
         if not s:
@@ -193,6 +195,9 @@ def clean_body(raw: str) -> str:
             continue
         if "SPACE FOR ROUGH WORK" in s or "कच्च्या कामासाठी" in s:
             continue
+        if s == prev:
+            continue
+        prev = s
         lines.append(s)
     return "\n".join(lines)
 
@@ -448,6 +453,7 @@ def main() -> None:
     dl = os.path.join(os.path.expanduser("~"), "Downloads")
     candidates = [
         args.pdf.strip(),
+        os.path.join(dl, "Group_B_Combine_Pre_2024 (1) (1).pdf"),
         os.path.join(dl, "Group_B_Combine_Pre_2024 (1).pdf"),
         os.path.join(dl, "Group_B_Combine_Pre_2024.pdf"),
     ]
