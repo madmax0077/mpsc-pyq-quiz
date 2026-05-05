@@ -12,7 +12,6 @@ import {
   collection,
   limit,
   onSnapshot,
-  orderBy,
   query,
   serverTimestamp,
   where,
@@ -93,8 +92,12 @@ export async function submitScore(args: SubmitScoreArgs): Promise<"ok" | "skippe
  * the collection updates.
  *
  * Tie-break: scorePct desc → total desc → createdAt asc (earlier wins).
- * Limit: fetches up to 200 most-recent entries for the day; the per-user
- * grouping then surfaces the leaders.
+ *
+ * Implementation note: we deliberately use a single-field equality filter
+ * (no orderBy on a different field) so Firestore can serve this with the
+ * auto-created index — no composite index is required. Sorting and limiting
+ * happen client-side. A safety limit caps the daily fetch so the snapshot
+ * stays small even if traffic grows.
  */
 export function subscribeTodayLeaderboard(
   callback: (entries: LeaderboardEntry[]) => void,
@@ -103,8 +106,7 @@ export function subscribeTodayLeaderboard(
   const q = query(
     collection(db, COLLECTION),
     where("dateKey", "==", todayKey()),
-    orderBy("createdAt", "desc"),
-    limit(200),
+    limit(1000),
   );
   return onSnapshot(
     q,
