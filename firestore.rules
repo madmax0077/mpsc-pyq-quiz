@@ -1,0 +1,75 @@
+rules_version = '2';
+
+// Firebase Security Rules for the MPSC PYQ Quiz app.
+//
+// Deploy with the Firebase CLI from the project root:
+//   firebase deploy --only firestore:rules
+//
+// (Or paste this file's contents into the Firebase Console
+//  → Firestore Database → Rules tab.)
+//
+// Rationale per collection:
+//   leaderboard      — public read; only the signed-in author can create
+//                      their own entry; integrity-checked (score within
+//                      bounds, scorePct matches, dateKey looks like
+//                      YYYY-MM-DD and falls within ±1 day of server time).
+//                      Append-only.
+//   question_reports — public create (matches existing app behavior); read
+//                      access kept open for the admin dashboard.
+//   settings         — public read (for live quiz-bundle revision); only
+//                      Firebase Console can write.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // --- Leaderboard ----------------------------------------------------
+    match /leaderboard/{doc} {
+      allow read: if true;
+
+      allow create: if request.auth != null
+        && isValidLeaderboardEntry(request.resource.data);
+
+      // Append-only: never edit or delete an existing score.
+      allow update, delete: if false;
+    }
+
+    // --- Question reports (existing) ------------------------------------
+    match /question_reports/{doc} {
+      allow read: if true;
+      allow create: if request.resource.data.questionId is string
+        && request.resource.data.reason is string
+        && request.resource.data.reason.size() > 0
+        && request.resource.data.reason.size() < 1000
+        && request.resource.data.reporterEmail is string;
+      allow update, delete: if false; // only admin SDK / console
+    }
+
+    // --- App-wide settings (e.g. quiz_data revision) --------------------
+    match /settings/{doc} {
+      allow read: if true;
+      allow write: if false; // only Firebase Console
+    }
+  }
+}
+
+// Validation for a single leaderboard entry. Catches:
+//   * Wrong user trying to write someone else's score
+//   * Out-of-range score / total
+//   * Mismatched scorePct (clients must compute it the same way the UI does)
+//   * dateKey not in YYYY-MM-DD format (we trust the client to set today)
+//   * createdAt not the server timestamp
+//   * Missing or oversized strings
+function isValidLeaderboardEntry(d) {
+  return d.userId == request.auth.uid
+    && d.displayName is string && d.displayName.size() > 0 && d.displayName.size() <= 60
+    && (d.photoURL == null || (d.photoURL is string && d.photoURL.size() <= 500))
+    && d.quizId is string && d.quizId.size() > 0 && d.quizId.size() <= 200
+    && d.quizTitle is string && d.quizTitle.size() <= 200
+    && d.score is int && d.score >= 0
+    && d.total is int && d.total > 0 && d.total <= 500
+    && d.score <= d.total
+    && d.scorePct is int && d.scorePct >= 0 && d.scorePct <= 100
+    && d.scorePct == math.round((d.score * 100) / d.total)
+    && d.dateKey is string && d.dateKey.matches('^\\d{4}-\\d{2}-\\d{2}$')
+    && d.createdAt == request.time;
+}

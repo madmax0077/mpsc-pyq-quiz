@@ -5,6 +5,9 @@ import { useAuth } from "@/lib/auth-context";
 import type { Language } from "@/lib/types";
 import LoginPage from "@/components/LoginPage";
 import StudentView from "@/components/StudentView";
+import Leaderboard from "@/components/Leaderboard";
+
+type AppMode = "home" | "subject" | "topic" | "leaderboard";
 
 export default function HomeClient() {
   const { loading, studentUser, logoutStudent } = useAuth();
@@ -12,7 +15,7 @@ export default function HomeClient() {
   const [dark, setDark] = useState(false);
   const [homeKey, setHomeKey] = useState(0);
   const [challenge, setChallenge] = useState<{ quizId: string; name: string; score: number; total: number } | null>(null);
-  const [appMode, setAppMode] = useState<"home" | "subject" | "topic">("home");
+  const [appMode, setAppMode] = useState<AppMode>("home");
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
@@ -69,6 +72,13 @@ export default function HomeClient() {
 
           <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
             <nav className="hidden sm:flex items-center gap-1 text-xs font-semibold">
+              <button
+                onClick={() => { setAppMode("leaderboard"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-amber-50 hover:text-amber-600 transition-colors dark:text-slate-300 dark:hover:bg-amber-900/30 dark:hover:text-amber-400"
+              >
+                🏆 Leaderboard
+              </button>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/exams"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
@@ -156,6 +166,7 @@ export default function HomeClient() {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-5 w-full max-w-2xl">
+              <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
               {/* Subject Wise */}
               <button
                 onClick={() => setAppMode("subject")}
@@ -209,6 +220,19 @@ export default function HomeClient() {
               💡 Click the logo at any time to return to this screen
             </p>
           </div>
+        ) : appMode === "leaderboard" ? (
+          <div className="space-y-4 py-2 sm:py-4">
+            <button
+              onClick={() => { setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400"
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+              </svg>
+              Back to Home
+            </button>
+            <Leaderboard />
+          </div>
         ) : (
           <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} />
         )}
@@ -245,5 +269,36 @@ export default function HomeClient() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function LeaderboardTile({ onClick, className = "" }: { onClick: () => void; className?: string }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`group relative overflow-hidden rounded-2xl border-2 border-amber-200 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 p-5 sm:p-6 text-left shadow-sm hover:shadow-lg hover:border-amber-400 transition-all dark:from-amber-950/40 dark:via-yellow-950/40 dark:to-orange-950/40 dark:border-amber-800 dark:hover:border-amber-600 ${className}`}
+    >
+      <div className="flex items-center gap-4">
+        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 text-3xl text-white shadow-md">
+          🏆
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 mb-0.5">
+            <h3 className="text-lg sm:text-xl font-bold text-amber-700 dark:text-amber-300">
+              Today&apos;s Leaderboard
+            </h3>
+            <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
+              ● LIVE
+            </span>
+          </div>
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            See today&apos;s top 3 scorers and check your rank.
+          </p>
+        </div>
+        <svg className="h-5 w-5 shrink-0 text-amber-500 transition-transform group-hover:translate-x-1 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>
+      </div>
+    </button>
   );
 }

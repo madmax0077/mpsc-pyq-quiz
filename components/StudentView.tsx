@@ -7,6 +7,8 @@ import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
 import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport } from "@/lib/firebase";
+import { submitScore } from "@/lib/leaderboard";
+import { useAuth } from "@/lib/auth-context";
 import { recordStreak, getStreak } from "@/lib/streak";
 import { recordResult } from "@/lib/analytics";
 import AdBanner from "./AdBanner";
@@ -111,6 +113,7 @@ interface ChallengeInfo {
 }
 
 export default function StudentView({ language = "english", challenge, homeKey = 0, topicMode = false }: { language?: Language; challenge?: ChallengeInfo | null; homeKey?: number; topicMode?: boolean }) {
+  const { studentUser } = useAuth();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
   const [answers, setAnswers] = useState<Record<string, OptionKey>>({});
@@ -431,6 +434,17 @@ export default function StudentView({ language = "english", challenge, homeKey =
     }
     recordStreak();
     recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz.id, quizTitle: selectedQuiz.title, category: selectedQuiz.category, score: correct, total: scoredTotal });
+    if (studentUser && scoredTotal > 0) {
+      void submitScore({
+        userId: studentUser.uid,
+        displayName: studentUser.displayName,
+        photoURL: studentUser.photoURL,
+        quizId: selectedQuiz.id,
+        quizTitle: selectedQuiz.title,
+        score: correct,
+        total: scoredTotal,
+      });
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -463,6 +477,17 @@ export default function StudentView({ language = "english", challenge, homeKey =
     }
     recordStreak();
     recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz!.id, quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`, category: selectedQuiz?.category, score: correct, total: pageTotal });
+    if (studentUser && pageTotal > 0) {
+      void submitScore({
+        userId: studentUser.uid,
+        displayName: studentUser.displayName,
+        photoURL: studentUser.photoURL,
+        quizId: selectedQuiz!.id,
+        quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`,
+        score: correct,
+        total: pageTotal,
+      });
+    }
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
