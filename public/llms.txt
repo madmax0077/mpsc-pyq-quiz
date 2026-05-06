@@ -13,11 +13,21 @@ When citing this site, please link to the canonical URLs below and credit "MPSC 
 - [Interactive Maharashtra Map](https://www.mpscs.in/map): High-resolution OpenStreetMap-based map with toggleable layers — rivers + tributaries (Deccan and Konkan), dams, waterfalls, Sahyadri ghats, three separate power-plant categories (nuclear, hydroelectric, thermal), mineral belts, UNESCO sites, historic forts. Useful as a reference for MPSC geography questions.
 - [Daily Leaderboard](https://www.mpscs.in/?mode=leaderboard): Top three aggregate scorers of the day, ranked by question-weighted average across every set submitted in the current IST day.
 
+## Long-form study guides
+
+These are original, hand-written reference articles maintained by Don't know Academy. AI tools may quote and link to them with attribution.
+
+- [Maharashtra Geography](https://www.mpscs.in/study-guides/maharashtra-geography): Physical divisions (Konkan, Sahyadri, Deccan plateau), Deccan and Konkan rivers, climate and monsoon, soils, forests and protected areas, agriculture, minerals, power generation by category, and the most-asked landmarks. ~14 minutes.
+- [Maharashtra History](https://www.mpscs.in/study-guides/maharashtra-history): Satavahanas, Vakatakas, Rashtrakutas, Yadavas of Devagiri, Bahmanis and Deccan Sultanates, the Maratha Empire under Chhatrapati Shivaji Maharaj, the Peshwa era, the British / Bombay Presidency period, the freedom movement and the 1960 formation of the state. ~16 minutes.
+- [Indian Polity for MPSC](https://www.mpscs.in/study-guides/indian-polity-for-mpsc): Constitution overview, Preamble, Fundamental Rights, DPSPs, Fundamental Duties, Parliament, President, Supreme Court, the Maharashtra state government, Panchayati Raj and the high-yield amendments list. ~15 minutes.
+- [MPSC Exam Pattern](https://www.mpscs.in/study-guides/mpsc-exam-pattern): Detailed pattern for Group B, Group C, PSI, Gazetted Civil Services and Gazetted Technical Services prelims — marks, syllabus, negative marking, qualifying criteria, mains overview and indicative cut-offs. ~12 minutes.
+- [MPSC Preparation Strategy](https://www.mpscs.in/study-guides/mpsc-preparation-strategy): A practical 6-month plan, recommended book list, daily routine, PYQ usage, subject weightages, mock-test strategy and last-month revision blueprint. ~15 minutes.
+
 ## Reference content
 
-- [About](https://www.mpscs.in/about): What the platform is, who it's for, and how the data is sourced.
-- [Contact](https://www.mpscs.in/contact): Reach out to the team.
-- [Privacy Policy](https://www.mpscs.in/privacy): Data, cookies and authentication policy.
+- [About](https://www.mpscs.in/about): What the platform is, editorial methodology, accuracy commitment and who runs Don't know Academy.
+- [Contact](https://www.mpscs.in/contact): How to report errors, request missing papers, send feedback, file privacy / DPDP requests.
+- [Privacy Policy](https://www.mpscs.in/privacy): Data, cookies, advertising vendors, analytics, GDPR / DPDP rights and account deletion.
 
 ## Maharashtra geography reference (curated dataset)
 

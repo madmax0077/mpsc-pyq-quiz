@@ -35,13 +35,20 @@ export default function Home() {
           </p>
 
           {/* What's new — quick links to the new features (also good for internal SEO) */}
-          <div className="mx-auto mt-6 grid max-w-2xl gap-2 text-left sm:grid-cols-3">
+          <div className="mx-auto mt-6 grid max-w-3xl gap-2 text-left sm:grid-cols-2 lg:grid-cols-4">
             <a
               href="/exams"
               className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
             >
               <span className="block font-semibold text-slate-800">📚 PYQ papers</span>
               <span className="block text-xs text-slate-500">Browse {totalPapers} exam papers ({minYear}–{maxYear})</span>
+            </a>
+            <a
+              href="/study-guides"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
+            >
+              <span className="block font-semibold text-slate-800">📖 Study guides</span>
+              <span className="block text-xs text-slate-500">Geography, history, polity, exam pattern, strategy</span>
             </a>
             <a
               href="/map"
@@ -239,6 +246,53 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Study Guides — long-form internal-link section */}
+        <div className="border-t border-slate-100 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 id="study-guides" className="mb-2 text-2xl font-bold text-slate-900">
+              Long-form MPSC Study Guides
+            </h2>
+            <p className="text-sm text-slate-500">
+              Five comprehensive, exam-focused articles you can read in one sitting.
+            </p>
+            <p className="mt-4 text-slate-600">
+              The static base for every MPSC prelim — Maharashtra geography, Maharashtra history,
+              Indian polity, the exam pattern itself and a 6-month preparation plan — collected as
+              long-form reference articles. Each guide is between 12 and 16 minutes long, written
+              from the official syllabus and the NCERT base, and cross-linked with the matching
+              papers on <a href="/exams" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">/exams</a> and the layers of the
+              <a href="/map" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700"> interactive map</a>.
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <a href="/study-guides/maharashtra-geography" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50">
+                <p className="font-semibold text-slate-800">🗺️ Maharashtra Geography</p>
+                <p className="mt-1 text-xs text-slate-500">Konkan, Sahyadri, Deccan plateau, rivers, soils, agriculture, minerals, power, landmarks.</p>
+              </a>
+              <a href="/study-guides/maharashtra-history" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50">
+                <p className="font-semibold text-slate-800">🏛️ Maharashtra History</p>
+                <p className="mt-1 text-xs text-slate-500">Satavahanas, Yadavas, Maratha Empire under Chhatrapati Shivaji Maharaj, Peshwas, British era, 1960 state formation.</p>
+              </a>
+              <a href="/study-guides/indian-polity-for-mpsc" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50">
+                <p className="font-semibold text-slate-800">⚖️ Indian Polity for MPSC</p>
+                <p className="mt-1 text-xs text-slate-500">Constitution, Fundamental Rights, DPSPs, Parliament, state government, Panchayati Raj, key amendments.</p>
+              </a>
+              <a href="/study-guides/mpsc-exam-pattern" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50">
+                <p className="font-semibold text-slate-800">📋 MPSC Exam Pattern</p>
+                <p className="mt-1 text-xs text-slate-500">Group B, Group C, PSI, Gazetted CS &amp; TS prelims — marks, syllabus, negative marking, cut-offs.</p>
+              </a>
+              <a href="/study-guides/mpsc-preparation-strategy" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50 sm:col-span-2">
+                <p className="font-semibold text-slate-800">🎯 MPSC Preparation Strategy</p>
+                <p className="mt-1 text-xs text-slate-500">A practical 6-month study plan — book list, daily routine, PYQ analysis, mock-test approach, last-month revision blueprint.</p>
+              </a>
+            </div>
+            <p className="mt-6 text-sm">
+              <a href="/study-guides" className="font-semibold text-indigo-600 underline underline-offset-2 hover:text-indigo-700">
+                Open the study-guides hub &rarr;
+              </a>
+            </p>
+          </div>
+        </div>
+
         {/* FAQ for SEO */}
         <div className="border-t border-slate-100 py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -330,6 +384,8 @@ export default function Home() {
           </p>
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400">
             <a href="/exams" className="hover:text-indigo-600 hover:underline">Exam Papers</a>
+            <span>|</span>
+            <a href="/study-guides" className="hover:text-indigo-600 hover:underline">Study Guides</a>
             <span>|</span>
             <a href="/map" className="hover:text-indigo-600 hover:underline">Maharashtra Map</a>
             <span>|</span>
