@@ -52,6 +52,7 @@ type MapLibreMap = {
   on: (ev: string, ...args: unknown[]) => MapLibreMap;
   off: (ev: string, ...args: unknown[]) => MapLibreMap;
   remove: () => void;
+  resize: () => MapLibreMap;
   addControl: (ctrl: unknown, position?: string) => MapLibreMap;
   addSource: (id: string, src: Record<string, unknown>) => MapLibreMap;
   addLayer: (layer: Record<string, unknown>, beforeId?: string) => MapLibreMap;
@@ -90,6 +91,59 @@ declare global {
 
 let maplibrePromise: Promise<MapLibreModule> | null = null;
 
+/**
+ * Inject a stylesheet and resolve when it has finished loading. This matters
+ * because MapLibre's canvas measures the container at construction time, and
+ * if the maplibre-gl.css file hasn't applied yet the container can collapse
+ * to 0px and the map renders into a zero-size canvas (no tiles visible).
+ */
+function loadStylesheet(href: string): Promise<void> {
+  return new Promise((resolve) => {
+    const existing = document.querySelector<HTMLLinkElement>(`link[href="${href}"]`);
+    if (existing) {
+      // Browsers don't always fire `load` for already-cached stylesheets; if
+      // the sheet is already in the document, assume it's ready.
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      if ((existing as any).sheet) resolve();
+      else existing.addEventListener("load", () => resolve(), { once: true });
+      // Even if it errors, don't block — fall back to default browser styles.
+      existing.addEventListener("error", () => resolve(), { once: true });
+      return;
+    }
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    link.onload = () => resolve();
+    link.onerror = () => resolve(); // don't fail the whole map for a CSS hiccup
+    document.head.appendChild(link);
+  });
+}
+
+function loadScript(src: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`);
+    if (existing) {
+      if (window.maplibregl) {
+        resolve();
+        return;
+      }
+      existing.addEventListener("load", () => resolve(), { once: true });
+      existing.addEventListener(
+        "error",
+        () => reject(new Error("MapLibre script failed to load")),
+        { once: true },
+      );
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error("MapLibre script failed to load"));
+    document.head.appendChild(script);
+  });
+}
+
 function loadMapLibre(): Promise<MapLibreModule> {
   if (typeof window === "undefined") {
     return Promise.reject(new Error("MapLibre can only load in the browser"));
@@ -97,68 +151,50 @@ function loadMapLibre(): Promise<MapLibreModule> {
   if (window.maplibregl) return Promise.resolve(window.maplibregl);
   if (maplibrePromise) return maplibrePromise;
 
-  maplibrePromise = new Promise((resolve, reject) => {
-    if (!document.querySelector(`link[href="${MAPLIBRE_CSS_URL}"]`)) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = MAPLIBRE_CSS_URL;
-      document.head.appendChild(link);
-    }
-    if (window.maplibregl) {
-      resolve(window.maplibregl);
-      return;
-    }
-    const existing = document.querySelector<HTMLScriptElement>(`script[src="${MAPLIBRE_JS_URL}"]`);
-    if (existing) {
-      existing.addEventListener("load", () => {
-        if (window.maplibregl) resolve(window.maplibregl);
-        else reject(new Error("MapLibre loaded but global is missing"));
-      });
-      existing.addEventListener("error", () => reject(new Error("MapLibre script failed to load")));
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = MAPLIBRE_JS_URL;
-    script.async = true;
-    script.onload = () => {
-      if (window.maplibregl) resolve(window.maplibregl);
-      else reject(new Error("MapLibre loaded but global is missing"));
-    };
-    script.onerror = () => reject(new Error("MapLibre script failed to load"));
-    document.head.appendChild(script);
-  });
+  maplibrePromise = (async () => {
+    // Load both in parallel but await BOTH before constructing the Map.
+    await Promise.all([loadStylesheet(MAPLIBRE_CSS_URL), loadScript(MAPLIBRE_JS_URL)]);
+    if (!window.maplibregl) throw new Error("MapLibre loaded but global is missing");
+    return window.maplibregl;
+  })();
   return maplibrePromise;
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
-/*  Map style — free OpenStreetMap raster tiles, no API key needed.    */
+/*  Map style — free raster tiles, no API key needed.                   */
+/*                                                                       */
+/*  We use Carto's "voyager" basemap as the primary tile source: it's   */
+/*  CDN-hosted, very reliable, and free for non-commercial use without  */
+/*  attribution beyond the standard OSM/Carto credit. OSM tiles are     */
+/*  listed as a secondary URL so MapLibre can fall back automatically  */
+/*  if a Carto request fails.                                            */
 /* ──────────────────────────────────────────────────────────────────── */
 
-function buildOsmStyle(): Record<string, unknown> {
+function buildBaseStyle(): Record<string, unknown> {
   return {
     version: 8,
     glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
     sources: {
-      osm: {
+      basemap: {
         type: "raster",
         tiles: [
+          "https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+          "https://b.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+          "https://c.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+          "https://d.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
           "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
           "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
           "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png",
         ],
         tileSize: 256,
-        attribution: "© OpenStreetMap contributors",
+        attribution:
+          "© OpenStreetMap contributors © CARTO",
         maxzoom: 19,
       },
     },
     layers: [
-      {
-        id: "osm",
-        type: "raster",
-        source: "osm",
-        minzoom: 0,
-        maxzoom: 22,
-      },
+      { id: "background", type: "background", paint: { "background-color": "#e2e8f0" } },
+      { id: "basemap", type: "raster", source: "basemap", minzoom: 0, maxzoom: 22 },
     ],
   };
 }
@@ -308,13 +344,15 @@ export default function MaharashtraMap() {
     let cancelled = false;
     if (!containerRef.current) return;
 
+    let onWindowResize: (() => void) | null = null;
+
     loadMapLibre()
       .then((ml) => {
         if (cancelled || !containerRef.current) return;
         mlRef.current = ml;
         const map = new ml.Map({
           container: containerRef.current,
-          style: buildOsmStyle(),
+          style: buildBaseStyle(),
           center: MAHARASHTRA_CENTER,
           zoom: 6.4,
           pitch: 35,
@@ -329,13 +367,40 @@ export default function MaharashtraMap() {
         map.addControl(new ml.NavigationControl({ visualizePitch: true }), "top-right");
         map.addControl(new ml.ScaleControl({ unit: "metric" }));
 
+        // Surface tile/style errors to the console so we can diagnose blank
+        // canvases (e.g. when corporate firewalls block tile CDNs).
+        map.on("error", (ev: unknown) => {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const e: any = ev;
+          if (e?.error) console.warn("[map] error:", e.error?.message || e.error);
+        });
+
         map.on("load", () => {
           if (cancelled) return;
           mapRef.current = map;
           setLoading(false);
-          // Apply initial layer state.
           applyAllLayers(map, ml, markersRef.current, layers, setActiveDistrict);
+
+          // Belt-and-suspenders sizing: the parent container's CSS may have
+          // applied AFTER the canvas was constructed. Force a resize on the
+          // next tick and again after a short delay so the canvas matches
+          // the visible box.
+          requestAnimationFrame(() => {
+            try { map.easeTo({ duration: 0 }); } catch { /* noop */ }
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            try { (map as any).resize?.(); } catch { /* noop */ }
+          });
+          setTimeout(() => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            try { (map as any).resize?.(); } catch { /* noop */ }
+          }, 250);
         });
+
+        onWindowResize = () => {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          try { (map as any).resize?.(); } catch { /* noop */ }
+        };
+        window.addEventListener("resize", onWindowResize);
       })
       .catch((e: Error) => {
         if (cancelled) return;
@@ -345,6 +410,7 @@ export default function MaharashtraMap() {
 
     return () => {
       cancelled = true;
+      if (onWindowResize) window.removeEventListener("resize", onWindowResize);
       // Remove markers
       for (const arr of Object.values(markersRef.current)) {
         for (const m of arr) m.remove();
@@ -367,8 +433,11 @@ export default function MaharashtraMap() {
   const visibleCount = useMemo(() => Object.values(layers).filter(Boolean).length, [layers]);
 
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-      <div ref={containerRef} className="absolute inset-0" />
+    <div
+      className="relative h-full w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm dark:border-slate-700 dark:bg-slate-800"
+      style={{ minHeight: 480 }}
+    >
+      <div ref={containerRef} className="absolute inset-0" style={{ minHeight: 480 }} />
 
       {/* Loading overlay */}
       {loading && (
