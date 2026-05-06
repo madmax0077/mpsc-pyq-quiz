@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useAuth } from "@/lib/auth-context";
-import { subscribeTodayLeaderboard, type LeaderboardEntry } from "@/lib/leaderboard";
+import { subscribeTodayLeaderboard, type LeaderboardRow } from "@/lib/leaderboard";
 
 const PODIUM_TONES: Record<number, { ring: string; bg: string; chip: string; medal: string; label: string }> = {
   0: {
@@ -30,7 +30,7 @@ const PODIUM_TONES: Record<number, { ring: string; bg: string; chip: string; med
 
 export default function Leaderboard() {
   const { studentUser } = useAuth();
-  const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
+  const [rows, setRows] = useState<LeaderboardRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -38,8 +38,8 @@ export default function Leaderboard() {
     setLoading(true);
     setError(null);
     const unsub = subscribeTodayLeaderboard(
-      (rows) => {
-        setEntries(rows);
+      (next) => {
+        setRows(next);
         setLoading(false);
       },
       (err) => {
@@ -50,12 +50,12 @@ export default function Leaderboard() {
     return unsub;
   }, []);
 
-  const top3 = useMemo(() => entries.slice(0, 3), [entries]);
+  const top3 = useMemo(() => rows.slice(0, 3), [rows]);
   const myRank = useMemo(() => {
     if (!studentUser) return null;
-    const idx = entries.findIndex((e) => e.userId === studentUser.uid);
-    return idx === -1 ? null : { rank: idx + 1, entry: entries[idx], total: entries.length };
-  }, [entries, studentUser]);
+    const idx = rows.findIndex((r) => r.userId === studentUser.uid);
+    return idx === -1 ? null : { rank: idx + 1, row: rows[idx], total: rows.length };
+  }, [rows, studentUser]);
 
   const todayLabel = useMemo(
     () =>
@@ -77,7 +77,7 @@ export default function Leaderboard() {
             <span aria-hidden>🏆</span> Today&apos;s Top Scorers
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
-            {todayLabel} &middot; resets at midnight IST &middot; live updating
+            {todayLabel} &middot; aggregate of all your tests today &middot; resets midnight IST
           </p>
         </div>
         <span className="shrink-0 rounded-full bg-emerald-100 px-2.5 py-1 text-[10px] font-semibold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
@@ -103,7 +103,7 @@ export default function Leaderboard() {
 
       {!loading && !error && top3.length > 0 && (
         <>
-          <Podium entries={top3} highlightUserId={studentUser?.uid} />
+          <Podium rows={top3} highlightUserId={studentUser?.uid} />
 
           {/* Your-rank panel */}
           {studentUser ? (
@@ -111,13 +111,13 @@ export default function Leaderboard() {
               {myRank ? (
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3 min-w-0">
-                    <Avatar name={myRank.entry.displayName} src={myRank.entry.photoURL} size={40} />
+                    <Avatar name={myRank.row.displayName} src={myRank.row.photoURL} size={40} />
                     <div className="min-w-0">
                       <p className="text-sm font-semibold text-slate-800 dark:text-slate-100 truncate">
-                        You — {myRank.entry.displayName}
+                        You — {myRank.row.displayName}
                       </p>
                       <p className="text-xs text-slate-500 dark:text-slate-400 truncate">
-                        {myRank.entry.quizTitle}
+                        {myRank.row.attemptCount} {myRank.row.attemptCount === 1 ? "test" : "tests"} today &middot; latest: {myRank.row.latestQuizTitle}
                       </p>
                     </div>
                   </div>
@@ -126,9 +126,9 @@ export default function Leaderboard() {
                       Rank #{myRank.rank} of {myRank.total}
                     </p>
                     <p className="text-base font-bold text-slate-800 dark:text-slate-100">
-                      {myRank.entry.scorePct}%{" "}
+                      {myRank.row.scorePct}%{" "}
                       <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
-                        ({myRank.entry.score}/{myRank.entry.total})
+                        ({myRank.row.totalScore}/{myRank.row.totalQuestions})
                       </span>
                     </p>
                   </div>
@@ -162,22 +162,23 @@ function EmptyState() {
   );
 }
 
-function Podium({ entries, highlightUserId }: { entries: LeaderboardEntry[]; highlightUserId?: string }) {
+function Podium({ rows, highlightUserId }: { rows: LeaderboardRow[]; highlightUserId?: string }) {
   // For visual variety on desktop we present 2nd, 1st, 3rd in that horizontal order.
   // On mobile we stack in straight rank order.
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 sm:items-end">
-      {entries.map((entry, idx) => {
+      {rows.map((row, idx) => {
         const rank = idx; // 0=gold, 1=silver, 2=bronze
         const tone = PODIUM_TONES[rank];
-        const isMe = highlightUserId && entry.userId === highlightUserId;
+        const isMe = highlightUserId && row.userId === highlightUserId;
         // Visual height: 1st tallest, 2nd medium, 3rd shortest
         const heightClass = rank === 0 ? "sm:py-7" : rank === 1 ? "sm:py-5" : "sm:py-4";
         // Display order on sm+: silver | gold | bronze
         const order = rank === 0 ? "sm:order-2" : rank === 1 ? "sm:order-1" : "sm:order-3";
+        const attemptLabel = `${row.attemptCount} ${row.attemptCount === 1 ? "test" : "tests"} today`;
         return (
           <div
-            key={entry.id}
+            key={row.userId}
             className={`${order} relative rounded-2xl bg-gradient-to-br ${tone.bg} ring-2 ${tone.ring} ${heightClass} p-4 shadow-sm transition-transform hover:scale-[1.02]`}
           >
             <div className="absolute -top-2 left-3 flex items-center gap-1.5">
@@ -193,30 +194,30 @@ function Podium({ entries, highlightUserId }: { entries: LeaderboardEntry[]; hig
 
             <div className="flex flex-col items-center text-center pt-2">
               <div className="relative">
-                <Avatar name={entry.displayName} src={entry.photoURL} size={rank === 0 ? 72 : 60} />
+                <Avatar name={row.displayName} src={row.photoURL} size={rank === 0 ? 72 : 60} />
                 <div className="absolute -bottom-1 -right-1 text-2xl drop-shadow-sm" aria-hidden>
                   {tone.medal}
                 </div>
               </div>
               <p
                 className="mt-3 max-w-full truncate text-sm sm:text-base font-bold text-slate-800 dark:text-slate-100"
-                title={entry.displayName}
+                title={row.displayName}
               >
-                {entry.displayName}
+                {row.displayName}
               </p>
               <p
                 className="mt-0.5 text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 line-clamp-1"
-                title={entry.quizTitle}
+                title={attemptLabel}
               >
-                {entry.quizTitle}
+                {attemptLabel}
               </p>
               <div className="mt-3 flex items-baseline gap-1">
                 <span className="text-2xl sm:text-3xl font-extrabold text-slate-800 dark:text-slate-100">
-                  {entry.scorePct}%
+                  {row.scorePct}%
                 </span>
               </div>
               <p className="mt-0.5 text-[10px] sm:text-xs font-medium text-slate-500 dark:text-slate-400">
-                {entry.score}/{entry.total} correct
+                {row.totalScore}/{row.totalQuestions} correct
               </p>
             </div>
           </div>

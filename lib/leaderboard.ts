@@ -2,8 +2,11 @@
  * Today's-leaders Firestore module.
  *
  * Data model: each quiz attempt by a signed-in user is one document in the
- * `leaderboard` collection. The board displays only TODAY's entries (IST day
- * boundary), and ranks each user by their BEST attempt of the day.
+ * `leaderboard` collection (the LeaderboardEntry below). The board aggregates
+ * those raw entries client-side into per-user daily totals (LeaderboardRow):
+ * each user's score on the board is sum(correct) / sum(attempted) across ALL
+ * their submissions today, expressed as a percentage. As the user takes more
+ * tests, their aggregate naturally updates.
  *
  * Required Firestore rules — see firestore.rules.
  */
@@ -31,6 +34,7 @@ export function todayKey(date: Date = new Date()): string {
   }).format(date);
 }
 
+/** A single quiz-attempt document as stored in Firestore. */
 export interface LeaderboardEntry {
   id: string;
   userId: string;
@@ -44,6 +48,25 @@ export interface LeaderboardEntry {
   scorePct: number;
   dateKey: string;
   createdAt: Timestamp | null;
+}
+
+/** A per-user daily aggregate row computed client-side from LeaderboardEntry[]. */
+export interface LeaderboardRow {
+  userId: string;
+  displayName: string;
+  photoURL: string | null;
+  /** Sum of correct answers across ALL of today's attempts. */
+  totalScore: number;
+  /** Sum of attempted (non-cancelled) questions across ALL of today's attempts. */
+  totalQuestions: number;
+  /** Aggregate score percentage: round(totalScore / totalQuestions * 100). */
+  scorePct: number;
+  /** How many quiz attempts the user submitted today. */
+  attemptCount: number;
+  /** Most recent quiz title (for display context). */
+  latestQuizTitle: string;
+  /** Earliest submission millis (used for tie-break). */
+  earliestAt: number;
 }
 
 export interface SubmitScoreArgs {
@@ -88,10 +111,11 @@ export async function submitScore(args: SubmitScoreArgs): Promise<"ok" | "skippe
 
 /**
  * Subscribe to today's leaderboard. The callback receives the COMPLETE current
- * snapshot (sorted, deduped per-user with each user's best attempt) every time
- * the collection updates.
+ * snapshot, AGGREGATED per user (sum-of-correct over sum-of-attempted) and
+ * sorted by aggregate score percentage. The callback fires whenever any user
+ * adds a new attempt today, so live aggregates update automatically.
  *
- * Tie-break: scorePct desc → total desc → createdAt asc (earlier wins).
+ * Tie-break: scorePct desc → totalQuestions desc → earliest submission asc.
  *
  * Implementation note: we deliberately use a single-field equality filter
  * (no orderBy on a different field) so Firestore can serve this with the
@@ -100,7 +124,7 @@ export async function submitScore(args: SubmitScoreArgs): Promise<"ok" | "skippe
  * stays small even if traffic grows.
  */
 export function subscribeTodayLeaderboard(
-  callback: (entries: LeaderboardEntry[]) => void,
+  callback: (rows: LeaderboardRow[]) => void,
   onError?: (err: Error) => void,
 ): () => void {
   const q = query(
@@ -115,7 +139,7 @@ export function subscribeTodayLeaderboard(
         id: d.id,
         ...(d.data() as Omit<LeaderboardEntry, "id">),
       }));
-      callback(dedupeBestPerUser(all));
+      callback(aggregatePerUser(all));
     },
     (err) => {
       console.warn("subscribeTodayLeaderboard:", err);
@@ -126,22 +150,76 @@ export function subscribeTodayLeaderboard(
 }
 
 /**
- * For each userId keep a single entry — their BEST attempt of the day.
- * Ranking: scorePct desc → total desc → createdAt asc.
+ * Aggregate a flat list of today's attempts into one row per user.
+ *
+ * Rules:
+ *   - totalScore     = Σ score over the user's attempts today
+ *   - totalQuestions = Σ total over the user's attempts today
+ *   - scorePct       = round(totalScore / totalQuestions × 100)
+ *   - attemptCount   = number of attempts today
+ *   - displayName / photoURL come from the most recent attempt (so renames
+ *     and avatar changes stick)
+ *   - latestQuizTitle = title of the most recent attempt (display context)
+ *
+ * Sort: scorePct desc → totalQuestions desc → earliestAt asc.
  */
-function dedupeBestPerUser(entries: LeaderboardEntry[]): LeaderboardEntry[] {
-  const best = new Map<string, LeaderboardEntry>();
-  for (const e of entries) {
-    const prev = best.get(e.userId);
-    if (!prev || isBetter(e, prev)) best.set(e.userId, e);
-  }
-  return Array.from(best.values()).sort((a, b) => (isBetter(a, b) ? -1 : isBetter(b, a) ? 1 : 0));
-}
+function aggregatePerUser(entries: LeaderboardEntry[]): LeaderboardRow[] {
+  type Acc = LeaderboardRow & { latestAt: number };
+  const byUser = new Map<string, Acc>();
 
-function isBetter(a: LeaderboardEntry, b: LeaderboardEntry): boolean {
-  if (a.scorePct !== b.scorePct) return a.scorePct > b.scorePct;
-  if (a.total !== b.total) return a.total > b.total;
-  const at = a.createdAt?.toMillis() ?? Number.POSITIVE_INFINITY;
-  const bt = b.createdAt?.toMillis() ?? Number.POSITIVE_INFINITY;
-  return at < bt;
+  for (const e of entries) {
+    const ts = e.createdAt?.toMillis() ?? Number.POSITIVE_INFINITY;
+    const existing = byUser.get(e.userId);
+    if (!existing) {
+      byUser.set(e.userId, {
+        userId: e.userId,
+        displayName: e.displayName,
+        photoURL: e.photoURL,
+        totalScore: e.score,
+        totalQuestions: e.total,
+        scorePct: 0, // recomputed at the end
+        attemptCount: 1,
+        latestQuizTitle: e.quizTitle,
+        earliestAt: ts,
+        latestAt: ts,
+      });
+      continue;
+    }
+    existing.totalScore += e.score;
+    existing.totalQuestions += e.total;
+    existing.attemptCount += 1;
+    if (ts < existing.earliestAt) existing.earliestAt = ts;
+    if (ts > existing.latestAt) {
+      existing.latestAt = ts;
+      existing.displayName = e.displayName;
+      existing.photoURL = e.photoURL;
+      existing.latestQuizTitle = e.quizTitle;
+    }
+  }
+
+  const rows: LeaderboardRow[] = [];
+  for (const acc of byUser.values()) {
+    const scorePct =
+      acc.totalQuestions > 0
+        ? Math.round((acc.totalScore / acc.totalQuestions) * 100)
+        : 0;
+    rows.push({
+      userId: acc.userId,
+      displayName: acc.displayName,
+      photoURL: acc.photoURL,
+      totalScore: acc.totalScore,
+      totalQuestions: acc.totalQuestions,
+      scorePct,
+      attemptCount: acc.attemptCount,
+      latestQuizTitle: acc.latestQuizTitle,
+      earliestAt: acc.earliestAt,
+    });
+  }
+
+  rows.sort((a, b) => {
+    if (a.scorePct !== b.scorePct) return b.scorePct - a.scorePct;
+    if (a.totalQuestions !== b.totalQuestions) return b.totalQuestions - a.totalQuestions;
+    return a.earliestAt - b.earliestAt;
+  });
+  return rows;
 }
