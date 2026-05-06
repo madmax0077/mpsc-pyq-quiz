@@ -80,6 +80,13 @@ export default function HomeClient() {
               </button>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
+                href="/map"
+                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 transition-colors dark:text-slate-300 dark:hover:bg-emerald-900/30 dark:hover:text-emerald-400"
+              >
+                🗺️ Map
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a
                 href="/exams"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
@@ -259,6 +266,10 @@ export default function HomeClient() {
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/exams" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 Exams
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a href="/map" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                Map
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
