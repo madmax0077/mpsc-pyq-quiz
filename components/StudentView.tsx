@@ -20,7 +20,7 @@ import SearchBar, { type SearchNavigatePayload } from "./SearchBar";
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
 const REGULAR_QUIZ_PAGE_SIZE = 10;
-const CATEGORY_QUIZ_PAGE_SIZE = 20;
+const CATEGORY_QUIZ_PAGE_SIZE = 5;
 const TOPIC_QUIZ_PAGE_SIZE = 5;
 
 function seededShuffle<T>(arr: T[], seed: string): T[] {
