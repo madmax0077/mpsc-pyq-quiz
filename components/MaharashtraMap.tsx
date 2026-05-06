@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   DAMS,
-  DISTRICTS,
   FORTS,
   GHATS,
   MAHARASHTRA_BOUNDS,
@@ -13,7 +12,6 @@ import {
   RIVERS,
   UNESCO_SITES,
   WATERFALLS,
-  type DistrictMarker,
   type LatLng,
   type MineralPoi,
   type Poi,
@@ -23,31 +21,21 @@ import {
 /* ──────────────────────────────────────────────────────────────────── */
 /*  CDN loader for Leaflet 1.9.x                                        */
 /*                                                                       */
-/*  Leaflet is the most reliable 2D web-map library: ~140 KB gzipped,   */
-/*  zero peer-deps, decades of battle-testing. We lazy-load the script  */
-/*  + CSS from a CDN so the heavy library only ships when /map opens.   */
-/*  No npm install required.                                             */
+/*  Lazy-loaded from a CDN so the heavy library only ships when /map    */
+/*  opens. No npm install required.                                     */
 /* ──────────────────────────────────────────────────────────────────── */
 
 const LEAFLET_VERSION = "1.9.4";
 const LEAFLET_JS_URL = `https://unpkg.com/leaflet@${LEAFLET_VERSION}/dist/leaflet.js`;
 const LEAFLET_CSS_URL = `https://unpkg.com/leaflet@${LEAFLET_VERSION}/dist/leaflet.css`;
 
-// Permissive type definitions — we only use a small slice of Leaflet's API
-// and avoiding the @types/leaflet dependency keeps this file self-contained.
 type LeafletModule = {
   map: (el: HTMLElement, opts?: Record<string, unknown>) => LeafletMap;
   tileLayer: (url: string, opts?: Record<string, unknown>) => LeafletLayer;
   marker: (latlng: [number, number], opts?: Record<string, unknown>) => LeafletMarker;
   polyline: (latlngs: Array<[number, number]>, opts?: Record<string, unknown>) => LeafletLayer;
-  circleMarker: (latlng: [number, number], opts?: Record<string, unknown>) => LeafletMarker;
   divIcon: (opts: Record<string, unknown>) => unknown;
   control: {
-    layers: (
-      base: Record<string, LeafletLayer>,
-      overlays?: Record<string, LeafletLayer>,
-      opts?: Record<string, unknown>,
-    ) => LeafletControl;
     scale: (opts?: Record<string, unknown>) => LeafletControl;
   };
   latLngBounds: (sw: [number, number], ne: [number, number]) => unknown;
@@ -62,10 +50,8 @@ type LeafletMap = {
   fitBounds: (bounds: unknown, opts?: Record<string, unknown>) => LeafletMap;
   addLayer: (l: LeafletLayer | LeafletMarker) => LeafletMap;
   removeLayer: (l: LeafletLayer | LeafletMarker) => LeafletMap;
-  hasLayer: (l: LeafletLayer | LeafletMarker) => boolean;
   invalidateSize: () => LeafletMap;
   remove: () => void;
-  on: (ev: string, cb: (...a: unknown[]) => void) => LeafletMap;
 };
 
 type LeafletLayer = {
@@ -143,67 +129,10 @@ function loadLeaflet(): Promise<LeafletModule> {
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
-/*  Basemap providers — all free, no API key required.                  */
-/* ──────────────────────────────────────────────────────────────────── */
-
-type BasemapKey = "voyager" | "satellite" | "topo" | "osm";
-
-interface BasemapSpec {
-  key: BasemapKey;
-  label: string;
-  emoji: string;
-  url: string;
-  attribution: string;
-  maxZoom: number;
-  /** Crisper rendering on retina/HDPI displays. */
-  detectRetina: boolean;
-}
-
-const BASEMAPS: BasemapSpec[] = [
-  {
-    key: "voyager",
-    label: "Streets",
-    emoji: "🛣️",
-    url: "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
-    attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
-    maxZoom: 20,
-    detectRetina: true,
-  },
-  {
-    key: "satellite",
-    label: "Satellite",
-    emoji: "🛰️",
-    url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    attribution: "Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",
-    maxZoom: 19,
-    detectRetina: false,
-  },
-  {
-    key: "topo",
-    label: "Topographic",
-    emoji: "🗻",
-    url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
-    attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, USGS, NOAA, and the GIS user community",
-    maxZoom: 19,
-    detectRetina: false,
-  },
-  {
-    key: "osm",
-    label: "OSM",
-    emoji: "🗺️",
-    url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-    attribution: "&copy; OpenStreetMap contributors",
-    maxZoom: 19,
-    detectRetina: false,
-  },
-];
-
-/* ──────────────────────────────────────────────────────────────────── */
 /*  Layer toggles                                                       */
 /* ──────────────────────────────────────────────────────────────────── */
 
 type LayerKey =
-  | "districts"
   | "rivers"
   | "dams"
   | "waterfalls"
@@ -222,8 +151,7 @@ interface LayerSpec {
 }
 
 const LAYER_SPECS: LayerSpec[] = [
-  { key: "districts", label: "Districts", emoji: "🗺️", pill: "bg-indigo-100 text-indigo-700 border-indigo-200 dark:bg-indigo-900/40 dark:text-indigo-300 dark:border-indigo-700", defaultOn: true },
-  { key: "rivers", label: "Rivers", emoji: "🏞️", pill: "bg-sky-100 text-sky-700 border-sky-200 dark:bg-sky-900/40 dark:text-sky-300 dark:border-sky-700", defaultOn: true },
+  { key: "rivers", label: "Rivers + tributaries", emoji: "🏞️", pill: "bg-sky-100 text-sky-700 border-sky-200 dark:bg-sky-900/40 dark:text-sky-300 dark:border-sky-700", defaultOn: true },
   { key: "dams", label: "Dams", emoji: "🌊", pill: "bg-cyan-100 text-cyan-700 border-cyan-200 dark:bg-cyan-900/40 dark:text-cyan-300 dark:border-cyan-700", defaultOn: true },
   { key: "waterfalls", label: "Waterfalls", emoji: "💧", pill: "bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-900/40 dark:text-blue-300 dark:border-blue-700", defaultOn: true },
   { key: "ghats", label: "Ghats", emoji: "⛰️", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: true },
@@ -254,20 +182,42 @@ function divIconHtml(emoji: string, color: string, size = 32): string {
   `;
 }
 
-function districtPillHtml(name: string): string {
+function riverLabelHtml(name: string, isMain: boolean): string {
+  if (isMain) {
+    return `
+      <div style="
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        padding: 3px 11px;
+        background: rgba(14,165,233,.95);
+        color: #fff;
+        border-radius: 9999px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        box-shadow: 0 2px 10px rgba(0,0,0,.3);
+        font-family: system-ui, sans-serif;
+        white-space: nowrap;
+        pointer-events: none;
+      ">${escapeHtml(name)}</div>
+    `;
+  }
   return `
     <div style="
-      padding:4px 10px;border-radius:9999px;
-      background:rgba(79,70,229,.95);color:#fff;
-      font-size:11px;font-weight:600;letter-spacing:.01em;
-      box-shadow:0 4px 12px rgba(0,0,0,.2);
-      white-space:nowrap;cursor:pointer;
-      transition:transform .15s ease,background .15s ease;
-      font-family:system-ui,sans-serif;
-    "
-      onmouseover="this.style.transform='scale(1.05)';this.style.background='rgba(67,56,202,1)'"
-      onmouseout="this.style.transform='scale(1)';this.style.background='rgba(79,70,229,.95)'"
-    >${escapeHtml(name)}</div>
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      padding: 2px 8px;
+      background: rgba(186,230,253,.95);
+      color: #075985;
+      border-radius: 9999px;
+      font-size: 10px;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,.18);
+      font-family: system-ui, sans-serif;
+      white-space: nowrap;
+      pointer-events: none;
+    ">${escapeHtml(name)}</div>
   `;
 }
 
@@ -307,21 +257,35 @@ function escapeHtml(s: string): string {
 // Convert GeoJSON [lng, lat] to Leaflet [lat, lng]
 const ll = (c: LatLng): [number, number] => [c[1], c[0]];
 
+/**
+ * Pick the midpoint of a polyline path. For short paths (2 pts) it's the
+ * average; for longer paths it's the segment midpoint by index, which is
+ * close enough for label placement at our zoom levels.
+ */
+function pathMidpoint(path: LatLng[]): [number, number] {
+  if (path.length === 0) return [0, 0];
+  if (path.length === 1) return ll(path[0]);
+  if (path.length === 2) {
+    const a = path[0];
+    const b = path[1];
+    return [(a[1] + b[1]) / 2, (a[0] + b[0]) / 2];
+  }
+  const idx = Math.floor(path.length / 2);
+  return ll(path[idx]);
+}
+
 export default function MaharashtraMap() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<LeafletMap | null>(null);
   const lRef = useRef<LeafletModule | null>(null);
-  const basemapLayerRef = useRef<LeafletLayer | null>(null);
   const layerBucketsRef = useRef<Record<LayerKey, Array<LeafletLayer | LeafletMarker>>>({
-    districts: [], rivers: [], dams: [], waterfalls: [], ghats: [],
+    rivers: [], dams: [], waterfalls: [], ghats: [],
     nuclear: [], minerals: [], unesco: [], forts: [],
   });
 
   const [layers, setLayers] = useState<Record<LayerKey, boolean>>(
     () => Object.fromEntries(LAYER_SPECS.map((s) => [s.key, s.defaultOn])) as Record<LayerKey, boolean>,
   );
-  const [basemap, setBasemap] = useState<BasemapKey>("voyager");
-  const [activeDistrict, setActiveDistrict] = useState<DistrictMarker | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -341,15 +305,12 @@ export default function MaharashtraMap() {
           zoom: 7,
           minZoom: 6,
           maxZoom: 18,
-          // Default zoom control sits in top-left and clashes with our layer
-          // panel, so we re-place it bottom-right after construction.
           zoomControl: false,
           worldCopyJump: false,
           attributionControl: true,
         });
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         new (L as any).Control.Zoom({ position: "bottomright" }).addTo(map);
-        // Restrict pan to roughly Maharashtra envelope.
         map.setMaxBounds(
           L.latLngBounds(
             [MAHARASHTRA_BOUNDS[0][1] - 1, MAHARASHTRA_BOUNDS[0][0] - 1],
@@ -358,14 +319,21 @@ export default function MaharashtraMap() {
         );
         L.control.scale({ imperial: false, position: "bottomleft" }).addTo(map);
 
-        basemapLayerRef.current = applyBasemap(L, map, null, basemap);
+        // Single basemap: OpenStreetMap. detectRetina serves @2x tiles on
+        // HDPI screens for crisp rendering.
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution: "&copy; OpenStreetMap contributors",
+          maxZoom: 19,
+          detectRetina: true,
+          subdomains: ["a", "b", "c"],
+          crossOrigin: true,
+        }).addTo(map);
 
         mapRef.current = map;
         setLoading(false);
-        applyAllLayers(L, map, layerBucketsRef.current, layers, setActiveDistrict);
+        applyAllLayers(L, map, layerBucketsRef.current, layers);
 
-        // Defensive resize: if CSS applied late, the canvas may have been
-        // measured at the wrong size.
+        // Defensive resize after CSS settles.
         requestAnimationFrame(() => { try { map.invalidateSize(); } catch { /* noop */ } });
         setTimeout(() => { try { map.invalidateSize(); } catch { /* noop */ } }, 250);
 
@@ -396,16 +364,8 @@ export default function MaharashtraMap() {
     const map = mapRef.current;
     const L = lRef.current;
     if (!map || !L) return;
-    applyAllLayers(L, map, layerBucketsRef.current, layers, setActiveDistrict);
+    applyAllLayers(L, map, layerBucketsRef.current, layers);
   }, [layers]);
-
-  /* — React to basemap changes — */
-  useEffect(() => {
-    const map = mapRef.current;
-    const L = lRef.current;
-    if (!map || !L) return;
-    basemapLayerRef.current = applyBasemap(L, map, basemapLayerRef.current, basemap);
-  }, [basemap]);
 
   const visibleCount = useMemo(() => Object.values(layers).filter(Boolean).length, [layers]);
 
@@ -437,37 +397,7 @@ export default function MaharashtraMap() {
         </div>
       )}
 
-      {/* Basemap switcher — z-index above Leaflet's controls (which use 1000) */}
-      {!loading && !error && (
-        <div
-          className="absolute right-3 top-3 rounded-2xl border border-slate-200 bg-white/95 p-1.5 shadow-xl backdrop-blur dark:border-slate-700 dark:bg-slate-800/95"
-          style={{ zIndex: 1100 }}
-          onMouseDown={stopMapPropagation}
-          onClick={stopMapPropagation}
-          onWheel={stopMapPropagation}
-          onDoubleClick={stopMapPropagation}
-        >
-          <div className="flex items-center gap-1">
-            {BASEMAPS.map((b) => (
-              <button
-                key={b.key}
-                onClick={() => setBasemap(b.key)}
-                title={b.label}
-                className={`flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-xs font-semibold transition-colors ${
-                  basemap === b.key
-                    ? "bg-indigo-600 text-white shadow-sm"
-                    : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700"
-                }`}
-              >
-                <span aria-hidden>{b.emoji}</span>
-                <span className="hidden sm:inline">{b.label}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Layer toggle panel */}
+      {/* Layer toggle panel — z-index above Leaflet's controls (which use 1000) */}
       {!loading && !error && (
         <div
           className="absolute left-3 top-3 max-w-[260px] rounded-2xl border border-slate-200 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-slate-700 dark:bg-slate-800/95"
@@ -509,104 +439,27 @@ export default function MaharashtraMap() {
             })}
           </div>
           <p className="mt-2 text-[10px] text-slate-400 dark:text-slate-500">
-            Tip: scroll to zoom. Drag to pan. Click any district pill to fly there.
+            Tip: scroll to zoom. Drag to pan. Click any marker for details.
           </p>
-        </div>
-      )}
-
-      {/* Active district panel */}
-      {!loading && !error && activeDistrict && (
-        <div
-          className="absolute bottom-12 left-3 max-w-[260px] rounded-2xl border border-indigo-200 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-indigo-800 dark:bg-slate-800/95"
-          style={{ zIndex: 1100 }}
-          onMouseDown={stopMapPropagation}
-          onClick={stopMapPropagation}
-          onWheel={stopMapPropagation}
-          onDoubleClick={stopMapPropagation}
-        >
-          <p className="text-[10px] font-bold uppercase tracking-wider text-indigo-500 dark:text-indigo-400">
-            Focused district
-          </p>
-          <h3 className="mt-1 text-base font-extrabold text-slate-800 dark:text-slate-100">
-            {activeDistrict.name}
-          </h3>
-          <p className="mt-1 text-[11px] text-slate-500 dark:text-slate-400">
-            Lat {activeDistrict.coords[1].toFixed(2)} · Lng {activeDistrict.coords[0].toFixed(2)}
-          </p>
-          <button
-            onClick={() => {
-              setActiveDistrict(null);
-              mapRef.current?.flyTo(ll(MAHARASHTRA_CENTER), 7, { duration: 0.8 });
-            }}
-            className="mt-3 w-full rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-indigo-700"
-          >
-            ← Back to full state
-          </button>
         </div>
       )}
     </div>
   );
 }
 
-/**
- * Prevent mouse and wheel events on overlay panels from reaching the
- * underlying Leaflet map (otherwise the map starts dragging or zooming
- * when the user is just trying to click a layer toggle).
- */
-function stopMapPropagation(e: React.SyntheticEvent) {
-  e.stopPropagation();
-}
-
 /* ──────────────────────────────────────────────────────────────────── */
 /*  Layer-render helpers                                                */
 /* ──────────────────────────────────────────────────────────────────── */
-
-function applyBasemap(
-  L: LeafletModule,
-  map: LeafletMap,
-  current: LeafletLayer | null,
-  key: BasemapKey,
-): LeafletLayer {
-  if (current) current.remove();
-  const spec = BASEMAPS.find((b) => b.key === key)!;
-  const layer = L.tileLayer(spec.url, {
-    attribution: spec.attribution,
-    maxZoom: spec.maxZoom,
-    detectRetina: spec.detectRetina,
-    crossOrigin: true,
-    subdomains: spec.url.includes("{s}") ? ["a", "b", "c", "d"] : undefined,
-  });
-  layer.addTo(map);
-  return layer;
-}
 
 function applyAllLayers(
   L: LeafletModule,
   map: LeafletMap,
   buckets: Record<LayerKey, Array<LeafletLayer | LeafletMarker>>,
   layers: Record<LayerKey, boolean>,
-  onDistrictClick: (d: DistrictMarker) => void,
 ) {
   for (const arr of Object.values(buckets)) {
     for (const m of arr) m.remove();
     arr.length = 0;
-  }
-
-  if (layers.districts) {
-    for (const d of DISTRICTS) {
-      const icon = L.divIcon({
-        className: "mh-district-pill",
-        html: districtPillHtml(d.name),
-        iconSize: undefined as unknown as number[],
-      });
-      const m = L.marker(ll(d.coords), { icon });
-      m.on("click", () => {
-        onDistrictClick(d);
-        map.flyTo(ll(d.coords), Math.min(11, Math.max(9, d.zoom + 1)), { duration: 0.9 });
-      });
-      m.addTo(map);
-      buckets.districts.push(m);
-    }
   }
 
   if (layers.dams) addPois(L, map, buckets.dams, DAMS, "#0891b2", "🌊", "Dam");
@@ -631,18 +484,45 @@ function applyAllLayers(
   }
 
   if (layers.rivers) {
-    for (const r of RIVERS) {
-      const line = L.polyline(r.path.map(ll), {
-        color: "#0ea5e9",
-        weight: 4,
-        opacity: 0.85,
-        lineCap: "round",
-        lineJoin: "round",
-      });
-      line.addTo(map);
-      buckets.rivers.push(line);
-    }
+    // Draw tributaries first so the bolder main rivers render on top.
+    const tributaries = RIVERS.filter((r) => r.parent);
+    const mains = RIVERS.filter((r) => !r.parent);
+    for (const r of tributaries) addRiver(L, map, buckets.rivers, r, false);
+    for (const r of mains) addRiver(L, map, buckets.rivers, r, true);
   }
+}
+
+function addRiver(
+  L: LeafletModule,
+  map: LeafletMap,
+  bucket: Array<LeafletLayer | LeafletMarker>,
+  river: RiverFeature,
+  isMain: boolean,
+) {
+  const line = L.polyline(river.path.map(ll), {
+    color: isMain ? "#0284c7" : "#38bdf8",
+    weight: isMain ? 4 : 2.5,
+    opacity: isMain ? 0.9 : 0.8,
+    lineCap: "round",
+    lineJoin: "round",
+  });
+  line.addTo(map);
+  bucket.push(line);
+
+  // Name label at the midpoint.
+  const labelIcon = L.divIcon({
+    className: "mh-river-label",
+    html: riverLabelHtml(river.name, isMain),
+    iconSize: [0, 0] as unknown as number[],
+    iconAnchor: [0, 0] as unknown as number[],
+  });
+  const label = L.marker(pathMidpoint(river.path), {
+    icon: labelIcon,
+    interactive: false,
+    keyboard: false,
+  });
+  label.addTo(map);
+  bucket.push(label);
 }
 
 function addPois(
@@ -666,5 +546,8 @@ function addPois(
   }
 }
 
-// Re-export the rivers type so future work can extend.
+function stopMapPropagation(e: React.SyntheticEvent) {
+  e.stopPropagation();
+}
+
 export type { RiverFeature };

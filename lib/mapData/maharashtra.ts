@@ -27,6 +27,8 @@ export interface RiverFeature {
   name: string;
   /** Coarse polyline of the river path, [lng, lat] pairs. */
   path: LatLng[];
+  /** id of the parent river if this is a tributary; undefined for main rivers. */
+  parent?: string;
 }
 
 export interface MineralPoi extends Poi {
@@ -106,6 +108,7 @@ export const DISTRICTS: DistrictMarker[] = [
 /* ─────────────────────────────────────────────────────────────────── */
 
 export const RIVERS: RiverFeature[] = [
+  /* ─── Main rivers ─────────────────────────────────────────── */
   {
     id: "godavari",
     name: "Godavari",
@@ -179,6 +182,136 @@ export const RIVERS: RiverFeature[] = [
       [73.45, 18.10],
       [73.20, 18.05],
       [73.00, 17.99], // Mahad / Bankot
+    ],
+  },
+
+  /* ─── Krishna basin tributaries ───────────────────────────── */
+  {
+    id: "koyna",
+    name: "Koyna",
+    parent: "krishna",
+    path: [
+      [73.75, 17.40], // Koyna Dam
+      [73.95, 17.40],
+      [74.18, 17.30], // joins Krishna at Karad (Preeti Sangam)
+    ],
+  },
+  {
+    id: "venna",
+    name: "Venna",
+    parent: "krishna",
+    path: [
+      [73.69, 17.93], // Mahabaleshwar
+      [73.85, 17.78],
+      [74.00, 17.70], // joins Krishna near Mahuli (Satara)
+    ],
+  },
+  {
+    id: "panchganga",
+    name: "Panchganga",
+    parent: "krishna",
+    path: [
+      [74.00, 16.78], // forms near Kolhapur
+      [74.40, 16.72],
+      [74.70, 16.70], // joins Krishna at Kurundwad
+    ],
+  },
+  {
+    id: "warna",
+    name: "Warna",
+    parent: "krishna",
+    path: [
+      [73.78, 17.06], // Chandoli (Warna) Dam
+      [74.20, 16.95],
+      [74.62, 16.85], // joins Krishna near Sangli
+    ],
+  },
+
+  /* ─── Bhima basin tributaries ─────────────────────────────── */
+  {
+    id: "mula-mutha",
+    name: "Mula-Mutha",
+    parent: "bhima",
+    path: [
+      [73.86, 18.52], // Pune (Mula & Mutha confluence)
+      [74.05, 18.65],
+      [74.20, 18.74], // joins Bhima at Tulapur
+    ],
+  },
+  {
+    id: "indrayani",
+    name: "Indrayani",
+    parent: "bhima",
+    path: [
+      [73.55, 18.78], // Lonavala area
+      [73.90, 18.72],
+      [74.20, 18.74], // joins Bhima at Tulapur
+    ],
+  },
+  {
+    id: "nira",
+    name: "Nira",
+    parent: "bhima",
+    path: [
+      [73.85, 18.05],
+      [74.50, 18.00],
+      [75.10, 17.85], // joins Bhima south of Pune
+    ],
+  },
+
+  /* ─── Godavari basin tributaries ──────────────────────────── */
+  {
+    id: "pravara",
+    name: "Pravara",
+    parent: "godavari",
+    path: [
+      [73.75, 19.54], // Bhandardara (source area)
+      [74.50, 19.60],
+      [74.95, 19.55], // joins Godavari at Pravara Sangam (Toka)
+    ],
+  },
+  {
+    id: "manjira",
+    name: "Manjira",
+    parent: "godavari",
+    path: [
+      [75.50, 18.50],
+      [76.40, 18.40],
+      [77.40, 18.10], // exits to Telangana, joins Godavari downstream
+    ],
+  },
+  {
+    id: "purna-godavari",
+    name: "Purna",
+    parent: "godavari",
+    path: [
+      [76.40, 19.95],
+      [76.78, 19.65],
+      [77.30, 19.25], // joins Godavari near Nanded
+    ],
+  },
+
+  /* ─── Tapi basin tributaries ──────────────────────────────── */
+  {
+    id: "girna",
+    name: "Girna",
+    parent: "tapi",
+    path: [
+      [74.20, 20.45],
+      [74.90, 20.70],
+      [75.40, 20.95], // joins Tapi in Jalgaon district
+    ],
+  },
+
+  /* ─── Wainganga basin tributaries ─────────────────────────── */
+  {
+    id: "kanhan",
+    name: "Kanhan",
+    parent: "wainganga",
+    path: [
+      [78.85, 21.70], // Chhindwara hills
+      [79.20, 21.40],
+      [79.55, 21.00], // joins Wainganga north of Bhandara
     ],
   },
 ];

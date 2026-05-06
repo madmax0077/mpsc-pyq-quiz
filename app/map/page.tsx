@@ -3,9 +3,9 @@ import Link from "next/link";
 import MapPageClient from "./MapPageClient";
 
 export const metadata: Metadata = {
-  title: "Interactive Map of Maharashtra — Districts, Rivers, Forts, UNESCO sites",
+  title: "Interactive Map of Maharashtra — Rivers, Tributaries, Forts, UNESCO sites",
   description:
-    "Explore a high-resolution interactive map of Maharashtra with switchable Streets, Satellite, and Topographic basemaps. Toggle layers for rivers, dams, waterfalls, ghats, power plants, mineral deposits, UNESCO World Heritage sites, and historic forts. Click any district to fly there.",
+    "Explore a high-resolution OpenStreetMap-based map of Maharashtra. See major rivers (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga) and their tributaries with name labels, plus dams, waterfalls, ghats, power plants, mineral deposits, UNESCO World Heritage sites, and historic forts.",
   keywords: [
     "Maharashtra map",
     "Maharashtra districts map",
@@ -37,7 +37,7 @@ export default function MapPage() {
               <span aria-hidden>🗺️</span> Maharashtra — Interactive Map
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Streets · Satellite · Topographic &middot; Districts · Rivers · Dams · Forts · UNESCO &middot; Minerals
+              Rivers &amp; tributaries · Dams · Waterfalls · Ghats · Forts · UNESCO · Minerals
             </p>
           </div>
         </div>
@@ -50,20 +50,19 @@ export default function MapPage() {
         <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">About this map</h2>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            High-resolution 2D interactive map of Maharashtra useful for MPSC geography
-            preparation and casual exploration. Switch between Streets, Satellite, and
-            Topographic basemaps using the buttons in the top-right. The map currently covers
-            all 36 districts plus a starter set of well-known landmarks &mdash; major rivers
-            (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga), large dams (Koyna,
-            Jayakwadi, Bhandardara&hellip;), historic forts (Raigad, Sinhagad,
-            Pratapgad&hellip;), waterfalls, ghats, the Tarapur nuclear station, key hydro
-            projects, mineral belts (manganese, coal, bauxite, iron ore), and UNESCO sites
-            (Ajanta, Ellora, Elephanta, CSMT, Western Ghats). Use the layer panel on the left
-            to toggle what you want to see; click any district pill to fly to it.
+            High-resolution OpenStreetMap-based interactive map of Maharashtra useful for
+            MPSC geography preparation and casual exploration. The river layer shows the
+            seven major drainage systems &mdash; Godavari, Krishna, Bhima, Tapi, Wardha,
+            Wainganga, Savitri &mdash; plus their key tributaries (Koyna, Venna, Panchganga,
+            Warna, Mula-Mutha, Indrayani, Nira, Pravara, Manjira, Purna, Girna, Kanhan), each
+            with an inline name label. Other layers include large dams (Koyna, Jayakwadi,
+            Bhandardara&hellip;), historic forts (Raigad, Sinhagad, Pratapgad&hellip;),
+            waterfalls, ghats, the Tarapur nuclear station, key hydro projects, mineral
+            belts, and UNESCO sites (Ajanta, Ellora, Elephanta, CSMT, Western Ghats). Use
+            the layer panel on the left to toggle what you want to see.
           </p>
           <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
-            Streets &amp; OSM tiles &copy; OpenStreetMap contributors &copy; CARTO. Satellite
-            and Topographic tiles &copy; Esri.
+            Map tiles &copy; OpenStreetMap contributors.
           </p>
         </section>
       </main>
