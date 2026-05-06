@@ -21,6 +21,7 @@ const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
 const REGULAR_QUIZ_PAGE_SIZE = 10;
 const CATEGORY_QUIZ_PAGE_SIZE = 20;
+const TOPIC_QUIZ_PAGE_SIZE = 5;
 
 function seededShuffle<T>(arr: T[], seed: string): T[] {
   let h = 0;
@@ -103,6 +104,8 @@ interface DisplayQuiz {
   isCategory: boolean;
   category?: Category;
   quizCount?: number;
+  /** Override page size for paginated (per-set submit) quizzes. */
+  pageSize?: number;
 }
 
 interface ChallengeInfo {
@@ -348,8 +351,9 @@ export default function StudentView({ language = "english", challenge, homeKey =
       id: `topic-${category}-${topicName}`,
       title: topicName,
       questions: entry.questions,
-      isCategory: false,
+      isCategory: true,
       category,
+      pageSize: TOPIC_QUIZ_PAGE_SIZE,
     });
   }, [topicMap, selectQuiz]);
 
@@ -450,7 +454,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
   const handleSubmitPage = () => {
     if (!selectedQuiz) return;
-    const perPage = selectedQuiz.isCategory ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE;
+    const perPage = selectedQuiz.pageSize ?? (selectedQuiz.isCategory ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE);
     const start = currentPage * perPage;
     const end = Math.min(start + perPage, selectedQuiz.questions.length);
     const pageQs = selectedQuiz.questions.slice(start, end);
@@ -492,7 +496,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
   };
 
   const handleNextSet = () => {
-    const perPage = selectedQuiz!.isCategory ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE;
+    const perPage = selectedQuiz!.pageSize ?? (selectedQuiz!.isCategory ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE);
     const nextPage = currentPage + 1;
     const maxPage = Math.ceil(selectedQuiz!.questions.length / perPage) - 1;
     if (nextPage <= maxPage) {
@@ -925,7 +929,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
 
   /* --------- Quiz in progress / submitted --------- */
   const isCategoryQuiz = selectedQuiz.isCategory;
-  const perPage = isCategoryQuiz ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE;
+  const perPage = selectedQuiz.pageSize ?? (isCategoryQuiz ? CATEGORY_QUIZ_PAGE_SIZE : REGULAR_QUIZ_PAGE_SIZE);
   const total = selectedQuiz.questions.length;
   const scoredTotal = countScoredQuestions(selectedQuiz.questions);
   const answeredCount = Object.keys(answers).length;
