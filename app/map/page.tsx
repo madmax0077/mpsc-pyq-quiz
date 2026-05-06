@@ -16,11 +16,66 @@ export const metadata: Metadata = {
     "MPSC geography map",
   ],
   alternates: { canonical: "/map" },
+  openGraph: {
+    type: "article",
+    title: "Interactive Map of Maharashtra — MPSC Geography",
+    description:
+      "Toggleable layers for rivers, forts, nuclear / hydro / thermal plants, dams, waterfalls, ghats, UNESCO sites and minerals across Maharashtra.",
+    url: "https://www.mpscs.in/map",
+    images: ["/og-image.svg"],
+  },
+};
+
+const SITE_URL = "https://www.mpscs.in";
+
+const mapStructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/map#webpage`,
+      url: `${SITE_URL}/map`,
+      name: "Interactive Map of Maharashtra — Rivers, Forts, Power Plants, UNESCO sites",
+      description:
+        "High-resolution OpenStreetMap interactive map of Maharashtra with toggleable layers for rivers, forts, dams, waterfalls, ghats, nuclear / hydro / thermal power plants, mineral belts and UNESCO sites.",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      breadcrumb: { "@id": `${SITE_URL}/map#breadcrumb` },
+      inLanguage: "en-IN",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${SITE_URL}/map#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Maharashtra Map", item: `${SITE_URL}/map` },
+      ],
+    },
+    {
+      "@type": "ItemList",
+      name: "Map layers",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Rivers + tributaries (50+ Deccan + Konkan rivers, inline labels)" },
+        { "@type": "ListItem", position: 2, name: "Dams (Koyna, Jayakwadi, Bhandardara, Tansa, Ujani, Hatnur…)" },
+        { "@type": "ListItem", position: 3, name: "Waterfalls (Thoseghar, Vajrai, Lingmala, Dabhosa…)" },
+        { "@type": "ListItem", position: 4, name: "Sahyadri ghats (Tamhini, Amba, Malshej, Kasara, Bor, Varandha…)" },
+        { "@type": "ListItem", position: 5, name: "Nuclear power plants (Tarapur, Jaitapur)" },
+        { "@type": "ListItem", position: 6, name: "Hydroelectric plants (Koyna, Bhira, Bhivpuri, Khopoli, Pench, Tillari, Yeldari…)" },
+        { "@type": "ListItem", position: 7, name: "Thermal power plants (Chandrapur, Koradi, Khaperkheda, Mauda, Tiroda, Parli, Bhusawal, Trombay, Dahanu, JSW Jaigad…)" },
+        { "@type": "ListItem", position: 8, name: "Mineral belts (Manganese, Coal, Bauxite, Iron Ore, Limestone)" },
+        { "@type": "ListItem", position: 9, name: "UNESCO sites (Ajanta, Ellora, Elephanta, CSMT, Western Ghats)" },
+        { "@type": "ListItem", position: 10, name: "Historic forts (Raigad, Sinhagad, Pratapgad, Shivneri, Lohgad, Rajgad, Torna, Daulatabad, Panhala, Vijaydurg)" },
+      ],
+    },
+  ],
 };
 
 export default function MapPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50 dark:from-slate-900 dark:to-slate-950">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(mapStructuredData) }}
+      />
       <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-4 sm:px-6">
           <Link

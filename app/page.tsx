@@ -5,8 +5,8 @@ import { getQuizMeta } from "@/lib/quizMeta";
 const meta = getQuizMeta();
 
 export const metadata: Metadata = {
-  title: "MPSC PYQ QUIZ — Free Previous Year Question Practice",
-  description: `Free MPSC Previous Year Question practice — ${meta.totalQuestions}+ questions from ${meta.totalPapers} exam papers (${meta.minYear}–${meta.maxYear}) in English & Marathi. 100% free, instant scoring, detailed answers.`,
+  title: "MPSC PYQ QUIZ — Free PYQ Practice + Daily Leaderboard + Maharashtra Map",
+  description: `Free MPSC Previous Year Question practice — ${meta.totalQuestions}+ questions from ${meta.totalPapers} exam papers (${meta.minYear}–${meta.maxYear}) in English & Marathi. Daily aggregate leaderboard, interactive Maharashtra map (rivers, forts, nuclear / hydro / thermal plants, UNESCO sites). 100% free, instant scoring, detailed answers.`,
   alternates: { canonical: "/" },
 };
 
@@ -33,11 +33,31 @@ export default function Home() {
           <p className="mt-6 text-sm font-medium text-indigo-600">
             Sign in to start practicing — instant scoring, detailed answers, daily quizzes &amp; streak tracking.
           </p>
-          <p className="mt-3 text-sm text-slate-500">
-            <a href="/exams" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">
-              Browse all MPSC exam papers ({minYear}–{maxYear}) &rarr;
+
+          {/* What's new — quick links to the new features (also good for internal SEO) */}
+          <div className="mx-auto mt-6 grid max-w-2xl gap-2 text-left sm:grid-cols-3">
+            <a
+              href="/exams"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
+            >
+              <span className="block font-semibold text-slate-800">📚 PYQ papers</span>
+              <span className="block text-xs text-slate-500">Browse {totalPapers} exam papers ({minYear}–{maxYear})</span>
             </a>
-          </p>
+            <a
+              href="/map"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
+            >
+              <span className="block font-semibold text-slate-800">🗺️ Maharashtra map</span>
+              <span className="block text-xs text-slate-500">Rivers, forts, dams, UNESCO, power plants</span>
+            </a>
+            <a
+              href="/?mode=leaderboard"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
+            >
+              <span className="block font-semibold text-slate-800">🏆 Daily leaderboard</span>
+              <span className="block text-xs text-slate-500">Top 3 aggregate scorers of the day</span>
+            </a>
+          </div>
         </div>
 
         {/* Available Exam Papers */}
@@ -129,6 +149,96 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Interactive Maharashtra Map — SEO + internal link to /map */}
+        <div className="border-t border-slate-100 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="mb-2 text-2xl font-bold text-slate-900">
+              Interactive Map of Maharashtra
+            </h2>
+            <p className="text-sm text-slate-500">
+              Built specifically for MPSC geography — toggle layers, read inline river names, drop in to a fort.
+            </p>
+            <p className="mt-4 text-slate-600">
+              The <a href="/map" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">interactive map of Maharashtra</a> covers
+              every major river of the state on a single high-resolution OpenStreetMap basemap. The Deccan east-flowing
+              systems (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga, Painganga) and the Konkan west-flowing
+              coastal rivers (Damanganga, Vaitarna, Ulhas, Patalganga, Amba, Kundalika, Savitri, Vashishti, Shastri,
+              Kajli, Muchkundi, Gad, Karli, Terekhol) are drawn with thicker dark-blue lines, with 30+ tributaries
+              (Koyna, Venna, Panchganga, Warna, Yerla, Dudhganga, Pravara, Manjira, Purna, Mula-Mutha, Indrayani,
+              Nira, Pavna, Bhama, Ghod, Sina, Girna, Kanhan, Pench, Adan, Pus, Pinjal, Surya, Tansa, Bhatsa, …) drawn
+              slightly thinner. Every river carries an inline name label so you can revise drainage at a glance.
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">🌊 Dams &amp; waterfalls</p>
+                <p className="mt-1 text-xs text-slate-500">Koyna, Jayakwadi, Bhandardara, Tansa, Ujani, Hatnur, Thoseghar, Vajrai, Lingmala…</p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">⛰️ Sahyadri ghats</p>
+                <p className="mt-1 text-xs text-slate-500">Tamhini, Amba, Malshej, Kasara, Bor, Varandha, Kumbharli, Khambatki…</p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">☢️ Nuclear plants</p>
+                <p className="mt-1 text-xs text-slate-500">Tarapur (operating) · Jaitapur (proposed)</p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">🌀 Hydroelectric plants</p>
+                <p className="mt-1 text-xs text-slate-500">Koyna, Bhira, Bhivpuri, Khopoli, Ghatghar, Pench, Vaitarna, Tillari, Yeldari…</p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">🏭 Thermal plants</p>
+                <p className="mt-1 text-xs text-slate-500">Chandrapur STPS, Koradi, Khaperkheda, Mauda, Tiroda, Parli, Bhusawal, Trombay, Dahanu, JSW Jaigad…</p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">🚩 Historic forts</p>
+                <p className="mt-1 text-xs text-slate-500">Raigad, Sinhagad, Pratapgad, Shivneri, Lohgad, Rajgad, Torna, Daulatabad, Panhala, Vijaydurg</p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">🏛️ UNESCO sites</p>
+                <p className="mt-1 text-xs text-slate-500">Ajanta, Ellora, Elephanta, CSMT, Victorian Gothic / Art Deco, Western Ghats</p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white px-4 py-3">
+                <p className="font-semibold text-slate-800">⛏️ Mineral belts</p>
+                <p className="mt-1 text-xs text-slate-500">Manganese (Nagpur, Bhandara), Coal (Chandrapur, Wani), Bauxite (Kolhapur, Ratnagiri), Iron Ore (Sindhudurg, Gadchiroli)</p>
+              </div>
+            </div>
+            <p className="mt-6 text-sm">
+              <a href="/map" className="font-semibold text-indigo-600 underline underline-offset-2 hover:text-indigo-700">
+                Open the interactive Maharashtra map &rarr;
+              </a>
+            </p>
+          </div>
+        </div>
+
+        {/* Daily Leaderboard — SEO + internal link */}
+        <div className="border-t border-slate-100 bg-slate-50 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <h2 className="mb-2 text-2xl font-bold text-slate-900">
+              Daily Aggregate Leaderboard
+            </h2>
+            <p className="text-sm text-slate-500">
+              Rank yourself against every other MPSC aspirant practicing today.
+            </p>
+            <p className="mt-4 text-slate-600">
+              Sign in once and every quiz set you submit during the day counts towards your aggregate score. The
+              <a href="/?mode=leaderboard" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700"> daily leaderboard </a>
+              ranks the top three users by question-weighted average across all of their attempts that day, so the more
+              sets you solve, the more accurate your standing becomes. Your rank, attempts and current accuracy are
+              shown in a personal panel below the podium.
+            </p>
+            <div className="mt-4 grid gap-2 sm:grid-cols-3 text-sm text-slate-600">
+              <p>&#10003; Question-weighted average — not just a single best score</p>
+              <p>&#10003; Attempts counter so volume of practice is visible</p>
+              <p>&#10003; Resets every day at midnight IST</p>
+            </div>
+            <p className="mt-6 text-sm">
+              <a href="/?mode=leaderboard" className="font-semibold text-indigo-600 underline underline-offset-2 hover:text-indigo-700">
+                See today&apos;s top scorers &rarr;
+              </a>
+            </p>
+          </div>
+        </div>
+
         {/* FAQ for SEO */}
         <div className="border-t border-slate-100 py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -166,6 +276,26 @@ export default function Home() {
                   Yes, all answers are based on the official MPSC answer key (Set A) published after each exam.
                 </p>
               </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">How does the daily leaderboard work?</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  Every quiz set you submit during the day counts towards your aggregate score. The leaderboard ranks
+                  users by question-weighted average (sum of correct answers ÷ sum of attempted questions) across all
+                  of their attempts that day, so the more sets you solve the more accurate your standing becomes.
+                  Your rank resets at midnight IST. <a href="/?mode=leaderboard" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">Open today&apos;s leaderboard</a>.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-800">What does the interactive Maharashtra map include?</h3>
+                <p className="mt-1 text-sm text-slate-600">
+                  The <a href="/map" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">/map page</a> shows every major
+                  river of Maharashtra (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga, Painganga) and all the
+                  Konkan coastal rivers (Damanganga, Vaitarna, Ulhas, Patalganga, Amba, Kundalika, Savitri, Vashishti,
+                  Shastri, Karli, Terekhol) with 30+ tributaries and inline name labels. Toggleable layers add dams,
+                  waterfalls, ghats, separate Nuclear / Hydro / Thermal power plants, mineral belts, UNESCO sites and
+                  historic forts marked with the saffron flag.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -198,8 +328,12 @@ export default function Home() {
           <p className="mt-1 text-xs text-slate-400">
             Free MPSC previous year question practice for all aspirants
           </p>
-          <div className="mt-3 flex items-center justify-center gap-4 text-xs text-slate-400">
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400">
             <a href="/exams" className="hover:text-indigo-600 hover:underline">Exam Papers</a>
+            <span>|</span>
+            <a href="/map" className="hover:text-indigo-600 hover:underline">Maharashtra Map</a>
+            <span>|</span>
+            <a href="/?mode=leaderboard" className="hover:text-indigo-600 hover:underline">Daily Leaderboard</a>
             <span>|</span>
             <a href="/about" className="hover:text-indigo-600 hover:underline">About</a>
             <span>|</span>

@@ -1,7 +1,7 @@
 {
-  "name": "MPSC PYQ QUIZ",
+  "name": "MPSC PYQ QUIZ — PYQ + Leaderboard + Maharashtra Map",
   "short_name": "MPSC PYQ",
-  "description": "Free PYQ practice for MPSC aspirants",
+  "description": "Free MPSC previous year question practice with instant scoring, daily aggregate leaderboard and an interactive Maharashtra map (rivers, forts, nuclear / hydro / thermal plants, UNESCO sites).",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8fafc",
@@ -9,5 +9,25 @@
   "icons": [
     { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Browse exam papers",
+      "short_name": "Exams",
+      "url": "/exams",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Maharashtra map",
+      "short_name": "Map",
+      "url": "/map",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Daily leaderboard",
+      "short_name": "Leaderboard",
+      "url": "/?mode=leaderboard",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
   ]
 }

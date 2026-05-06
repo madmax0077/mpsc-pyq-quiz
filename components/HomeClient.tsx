@@ -28,6 +28,15 @@ export default function HomeClient() {
       setChallenge({ quizId: cq, name: cn || "A friend", score: parseInt(cs, 10), total: parseInt(ct, 10) });
       setAppMode("subject");
       window.history.replaceState({}, "", window.location.pathname);
+      return;
+    }
+    const mode = params.get("mode");
+    if (mode === "leaderboard") {
+      setAppMode("leaderboard");
+      window.history.replaceState({}, "", window.location.pathname);
+    } else if (mode === "subject" || mode === "topic") {
+      setAppMode(mode);
+      window.history.replaceState({}, "", window.location.pathname);
     }
   }, []);
 
