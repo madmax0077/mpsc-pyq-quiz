@@ -779,17 +779,54 @@ export const GHATS: Poi[] = [
 ];
 
 /* ─────────────────────────────────────────────────────────────────── */
-/*  Nuclear & major hydro power plants.                                */
+/*  Nuclear power plants.                                              */
 /* ─────────────────────────────────────────────────────────────────── */
 
-export const POWER_PLANTS: Poi[] = [
-  { id: "tarapur", name: "Tarapur Atomic Power Station", subtitle: "Palghar · Nuclear, ~1400 MW", coords: [72.66, 19.83] },
-  { id: "koyna-hydro", name: "Koyna Hydroelectric Project", subtitle: "Satara · Hydro, ~1960 MW", coords: [73.75, 17.40] },
-  { id: "ghatghar", name: "Ghatghar Pumped Storage", subtitle: "Ahmednagar · Hydro, 250 MW", coords: [73.65, 19.62] },
-  { id: "pench-hydro", name: "Pench Hydroelectric", subtitle: "Nagpur · Hydro, 160 MW", coords: [79.20, 21.60] },
-  { id: "bhira", name: "Bhira Hydroelectric (Tata)", subtitle: "Raigad · Hydro, 300 MW", coords: [73.36, 18.42] },
-  { id: "khopoli", name: "Khopoli Hydroelectric", subtitle: "Raigad · Hydro, 72 MW", coords: [73.34, 18.78] },
+export const NUCLEAR_PLANTS: Poi[] = [
+  { id: "tarapur", name: "Tarapur Atomic Power Station", subtitle: "Palghar · ~1400 MW (BWR + PHWR)", coords: [72.66, 19.83] },
+  { id: "jaitapur", name: "Jaitapur Nuclear Project (proposed)", subtitle: "Ratnagiri · 6 × 1650 MW EPR (planned)", coords: [73.32, 16.61] },
 ];
+
+/* ─────────────────────────────────────────────────────────────────── */
+/*  Hydroelectric power plants.                                        */
+/* ─────────────────────────────────────────────────────────────────── */
+
+export const HYDRO_PLANTS: Poi[] = [
+  { id: "koyna-hydro", name: "Koyna Hydroelectric Project", subtitle: "Satara · ~1960 MW (largest in MH)", coords: [73.75, 17.40] },
+  { id: "ghatghar", name: "Ghatghar Pumped Storage", subtitle: "Ahmednagar · 250 MW pumped storage", coords: [73.65, 19.62] },
+  { id: "pench-hydro", name: "Pench Hydroelectric", subtitle: "Nagpur · 160 MW", coords: [79.20, 21.60] },
+  { id: "bhira", name: "Bhira Hydroelectric (Tata)", subtitle: "Raigad · 300 MW", coords: [73.36, 18.42] },
+  { id: "khopoli", name: "Khopoli Hydroelectric (Tata)", subtitle: "Raigad · 72 MW", coords: [73.34, 18.78] },
+  { id: "bhivpuri", name: "Bhivpuri Hydroelectric (Tata)", subtitle: "Raigad · 75 MW (Andhra valley)", coords: [73.27, 18.96] },
+  { id: "vaitarna-hydro", name: "Vaitarna Hydroelectric", subtitle: "Nashik · 60 MW", coords: [73.32, 19.84] },
+  { id: "bhatghar", name: "Bhatghar Hydroelectric", subtitle: "Pune · Yerla / Velvandi small hydro", coords: [73.85, 18.18] },
+  { id: "tillari", name: "Tillari Hydroelectric", subtitle: "Sindhudurg · 66 MW", coords: [74.05, 15.85] },
+  { id: "yeldari", name: "Yeldari Hydroelectric", subtitle: "Parbhani · 22.5 MW (Purna)", coords: [76.72, 19.71] },
+];
+
+/* ─────────────────────────────────────────────────────────────────── */
+/*  Thermal power plants (coal / gas).                                 */
+/* ─────────────────────────────────────────────────────────────────── */
+
+export const THERMAL_PLANTS: Poi[] = [
+  { id: "chandrapur", name: "Chandrapur Super Thermal Power Station", subtitle: "Chandrapur · 3340 MW (MahaGenco)", coords: [79.30, 19.96] },
+  { id: "koradi", name: "Koradi Thermal Power Station", subtitle: "Nagpur · 2400 MW (MahaGenco)", coords: [79.10, 21.27] },
+  { id: "khaperkheda", name: "Khaperkheda Thermal Power Station", subtitle: "Nagpur · 1340 MW (MahaGenco)", coords: [78.99, 21.36] },
+  { id: "mauda", name: "Mauda Super Thermal Power Station", subtitle: "Nagpur · 2320 MW (NTPC)", coords: [79.40, 21.27] },
+  { id: "tiroda", name: "Tiroda Thermal Power Station", subtitle: "Gondia · 3300 MW (Adani Power)", coords: [80.07, 21.41] },
+  { id: "parli", name: "Parli Thermal Power Station", subtitle: "Beed · 1170 MW (MahaGenco)", coords: [76.55, 18.85] },
+  { id: "paras", name: "Paras Thermal Power Station", subtitle: "Akola · 500 MW (MahaGenco)", coords: [76.83, 20.50] },
+  { id: "bhusawal", name: "Bhusawal Thermal Power Station", subtitle: "Jalgaon · 1420 MW (Deepnagar)", coords: [75.78, 21.04] },
+  { id: "nashik-tps", name: "Nashik Thermal Power Station", subtitle: "Nashik · 910 MW (Eklahare)", coords: [73.85, 20.05] },
+  { id: "trombay", name: "Trombay Thermal Power Station", subtitle: "Mumbai · 1580 MW (Tata Power)", coords: [72.92, 19.00] },
+  { id: "dahanu", name: "Dahanu Thermal Power Station", subtitle: "Palghar · 500 MW (Adani)", coords: [72.73, 19.97] },
+  { id: "jaigad", name: "JSW Ratnagiri (Jaigad) Thermal", subtitle: "Ratnagiri · 1200 MW (JSW Energy)", coords: [73.21, 17.30] },
+  { id: "uran-gas", name: "Uran Gas Thermal Power Station", subtitle: "Raigad · 672 MW (gas-based)", coords: [72.94, 18.87] },
+];
+
+/** @deprecated kept for back-compat — the map now reads NUCLEAR_PLANTS,
+ *  HYDRO_PLANTS and THERMAL_PLANTS as separate layers. */
+export const POWER_PLANTS: Poi[] = [...NUCLEAR_PLANTS, ...HYDRO_PLANTS, ...THERMAL_PLANTS];
 
 /* ─────────────────────────────────────────────────────────────────── */
 /*  Mineral deposits — drives heat-style colouring on the map.         */

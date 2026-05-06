@@ -5,7 +5,7 @@ import MapPageClient from "./MapPageClient";
 export const metadata: Metadata = {
   title: "Interactive Map of Maharashtra — Rivers, Tributaries, Forts, UNESCO sites",
   description:
-    "Explore a high-resolution OpenStreetMap-based map of Maharashtra. See every major river — the Deccan systems (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga, Painganga) and the Konkan coastal rivers (Damanganga, Vaitarna, Ulhas, Patalganga, Amba, Kundalika, Savitri, Vashishti, Shastri, Kajli, Muchkundi, Gad, Karli, Terekhol) plus 30+ tributaries with name labels. Toggle layers for dams, waterfalls, ghats, power plants, minerals, UNESCO sites and historic forts (saffron flag).",
+    "Explore a high-resolution OpenStreetMap-based map of Maharashtra. See every major river — the Deccan systems (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga, Painganga) and the Konkan coastal rivers (Damanganga, Vaitarna, Ulhas, Patalganga, Amba, Kundalika, Savitri, Vashishti, Shastri, Kajli, Muchkundi, Gad, Karli, Terekhol) plus 30+ tributaries with name labels. Toggle separate layers for dams, waterfalls, ghats, nuclear plants (Tarapur), hydroelectric plants (Koyna, Bhira), thermal plants (Chandrapur, Koradi, Tiroda), minerals, UNESCO sites and historic forts (saffron flag).",
   keywords: [
     "Maharashtra map",
     "Maharashtra districts map",
@@ -37,7 +37,7 @@ export default function MapPage() {
               <span aria-hidden>🗺️</span> Maharashtra — Interactive Map
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Rivers &amp; tributaries · Dams · Waterfalls · Ghats · Forts · UNESCO · Minerals
+              Rivers · Dams · Waterfalls · Ghats · Nuclear / Hydro / Thermal plants · Forts · UNESCO · Minerals
             </p>
           </div>
         </div>
@@ -54,8 +54,9 @@ export default function MapPage() {
             MPSC geography preparation and casual exploration. The map opens with only the
             <strong> Rivers</strong> layer enabled so you can read the drainage clearly;
             tap any other pill in the layer panel on the left (or the <em>All</em> button)
-            to add dams, waterfalls, ghats, power plants, minerals, UNESCO sites and
-            historic forts.
+            to add dams, waterfalls, ghats, the three power-plant tabs
+            (☢️ <strong>Nuclear</strong>, 🌀 <strong>Hydroelectric</strong>,
+            🏭 <strong>Thermal</strong>), minerals, UNESCO sites and historic forts.
           </p>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
             <strong>Deccan / east-flowing rivers</strong> &mdash; Godavari, Krishna, Bhima,

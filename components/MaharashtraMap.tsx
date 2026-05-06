@@ -5,11 +5,13 @@ import {
   DAMS,
   FORTS,
   GHATS,
+  HYDRO_PLANTS,
   MAHARASHTRA_BOUNDS,
   MAHARASHTRA_CENTER,
   MINERALS,
-  POWER_PLANTS,
+  NUCLEAR_PLANTS,
   RIVERS,
+  THERMAL_PLANTS,
   UNESCO_SITES,
   WATERFALLS,
   type LatLng,
@@ -138,6 +140,8 @@ type LayerKey =
   | "waterfalls"
   | "ghats"
   | "nuclear"
+  | "hydro"
+  | "thermal"
   | "minerals"
   | "unesco"
   | "forts";
@@ -154,8 +158,10 @@ const LAYER_SPECS: LayerSpec[] = [
   { key: "rivers", label: "Rivers + tributaries", emoji: "🏞️", pill: "bg-sky-100 text-sky-700 border-sky-200 dark:bg-sky-900/40 dark:text-sky-300 dark:border-sky-700", defaultOn: true },
   { key: "dams", label: "Dams", emoji: "🌊", pill: "bg-cyan-100 text-cyan-700 border-cyan-200 dark:bg-cyan-900/40 dark:text-cyan-300 dark:border-cyan-700", defaultOn: false },
   { key: "waterfalls", label: "Waterfalls", emoji: "💧", pill: "bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-900/40 dark:text-blue-300 dark:border-blue-700", defaultOn: false },
-  { key: "ghats", label: "Ghats", emoji: "⛰️", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: false },
-  { key: "nuclear", label: "Power plants", emoji: "⚡", pill: "bg-yellow-100 text-yellow-700 border-yellow-200 dark:bg-yellow-900/40 dark:text-yellow-300 dark:border-yellow-700", defaultOn: false },
+  { key: "ghats", label: "Ghats", emoji: "⛰️", pill: "bg-stone-100 text-stone-700 border-stone-200 dark:bg-stone-900/40 dark:text-stone-300 dark:border-stone-700", defaultOn: false },
+  { key: "nuclear", label: "Nuclear plants", emoji: "☢️", pill: "bg-yellow-100 text-yellow-800 border-yellow-300 dark:bg-yellow-900/40 dark:text-yellow-300 dark:border-yellow-700", defaultOn: false },
+  { key: "hydro", label: "Hydro plants", emoji: "🌀", pill: "bg-teal-100 text-teal-700 border-teal-200 dark:bg-teal-900/40 dark:text-teal-300 dark:border-teal-700", defaultOn: false },
+  { key: "thermal", label: "Thermal plants", emoji: "🏭", pill: "bg-red-100 text-red-700 border-red-200 dark:bg-red-900/40 dark:text-red-300 dark:border-red-700", defaultOn: false },
   { key: "minerals", label: "Minerals", emoji: "⛏️", pill: "bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-900/40 dark:text-amber-300 dark:border-amber-700", defaultOn: false },
   { key: "unesco", label: "UNESCO sites", emoji: "🏛️", pill: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-300 dark:border-fuchsia-700", defaultOn: false },
   { key: "forts", label: "Historic forts", emoji: "🚩", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: false },
@@ -280,7 +286,8 @@ export default function MaharashtraMap() {
   const lRef = useRef<LeafletModule | null>(null);
   const layerBucketsRef = useRef<Record<LayerKey, Array<LeafletLayer | LeafletMarker>>>({
     rivers: [], dams: [], waterfalls: [], ghats: [],
-    nuclear: [], minerals: [], unesco: [], forts: [],
+    nuclear: [], hydro: [], thermal: [],
+    minerals: [], unesco: [], forts: [],
   });
 
   const [layers, setLayers] = useState<Record<LayerKey, boolean>>(
@@ -486,8 +493,10 @@ function applyAllLayers(
 
   if (layers.dams) addPois(L, map, buckets.dams, DAMS, "#0891b2", "🌊", "Dam");
   if (layers.waterfalls) addPois(L, map, buckets.waterfalls, WATERFALLS, "#2563eb", "💧", "Waterfall");
-  if (layers.ghats) addPois(L, map, buckets.ghats, GHATS, "#ea580c", "⛰️", "Ghat");
-  if (layers.nuclear) addPois(L, map, buckets.nuclear, POWER_PLANTS, "#ca8a04", "⚡", "Power plant");
+  if (layers.ghats) addPois(L, map, buckets.ghats, GHATS, "#78716c", "⛰️", "Ghat");
+  if (layers.nuclear) addPois(L, map, buckets.nuclear, NUCLEAR_PLANTS, "#eab308", "☢️", "Nuclear");
+  if (layers.hydro) addPois(L, map, buckets.hydro, HYDRO_PLANTS, "#0d9488", "🌀", "Hydro");
+  if (layers.thermal) addPois(L, map, buckets.thermal, THERMAL_PLANTS, "#dc2626", "🏭", "Thermal");
   if (layers.unesco) addPois(L, map, buckets.unesco, UNESCO_SITES, "#c026d3", "🏛️", "UNESCO");
   if (layers.forts) addPois(L, map, buckets.forts, FORTS, "#FF6A00", "🚩", "Fort");
 
