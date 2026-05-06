@@ -1396,31 +1396,35 @@ export default function StudentView({ language = "english", challenge, homeKey =
         </div>
       )}
 
-      {/* Category quiz pagination (set indicator) */}
+      {/* Category quiz pagination (set indicator) — free navigation between sets */}
       {isCategoryQuiz && totalPages > 1 && (
         <div className="flex items-center justify-center gap-1.5 sm:gap-2 flex-wrap">
-          {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i}
-              onClick={() => { setCurrentPage(i); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              disabled={!submittedPages.has(i) && i !== currentPage}
-              className={`h-8 sm:h-9 min-w-[2rem] sm:min-w-[2.25rem] rounded-lg px-1.5 sm:px-2 text-xs sm:text-sm font-medium transition-colors ${
-                currentPage === i
-                  ? "bg-indigo-600 text-white shadow-sm"
-                  : submittedPages.has(i)
-                    ? "bg-emerald-100 text-emerald-700 border border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-700"
-                    : "border border-slate-200 bg-white text-slate-400 cursor-not-allowed dark:border-slate-700 dark:bg-slate-800 dark:text-slate-600"
-              }`}
-            >
-              {submittedPages.has(i) ? (
-                <svg className="h-4 w-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-              ) : (
-                i + 1
-              )}
-            </button>
-          ))}
+          {Array.from({ length: totalPages }, (_, i) => {
+            const isCurrent = currentPage === i;
+            const isDone = submittedPages.has(i);
+            return (
+              <button
+                key={i}
+                onClick={() => { setCurrentPage(i); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                title={isDone ? `Set ${i + 1} — submitted` : isCurrent ? `Set ${i + 1} — current` : `Go to Set ${i + 1}`}
+                className={`h-8 sm:h-9 min-w-[2rem] sm:min-w-[2.25rem] rounded-lg px-1.5 sm:px-2 text-xs sm:text-sm font-medium transition-colors ${
+                  isCurrent
+                    ? "bg-indigo-600 text-white shadow-sm"
+                    : isDone
+                      ? "bg-emerald-100 text-emerald-700 border border-emerald-200 hover:bg-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-700 dark:hover:bg-emerald-900/50"
+                      : "border border-slate-200 bg-white text-slate-600 hover:border-indigo-300 hover:text-indigo-600 hover:bg-indigo-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:border-indigo-600 dark:hover:bg-slate-700"
+                }`}
+              >
+                {isDone ? (
+                  <svg className="h-4 w-4 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                ) : (
+                  i + 1
+                )}
+              </button>
+            );
+          })}
         </div>
       )}
 
