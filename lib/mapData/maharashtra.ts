@@ -7,9 +7,8 @@
  * loading it from MaharashtraMap.tsx.
  *
  * Structure: every layer (dams, waterfalls, ghats, nuclear, minerals, UNESCO,
- * forts) is a flat array of POI objects. Rivers are LineStrings. Districts
- * are point markers (centroid + zoom hint) until proper polygon GeoJSON is
- * added.
+ * forts) is a flat array of POI objects. Rivers are LineStrings with an
+ * optional `parent` field marking tributaries.
  */
 
 export type LatLng = [number, number]; // [lng, lat] — GeoJSON order
@@ -42,14 +41,6 @@ export interface MineralPoi extends Poi {
     | "Copper";
 }
 
-export interface DistrictMarker {
-  id: string;
-  name: string;
-  coords: LatLng;
-  /** Recommended flyTo zoom level for this district. */
-  zoom: number;
-}
-
 /* ─────────────────────────────────────────────────────────────────── */
 /*  Maharashtra envelope (used to restrict the map view).              */
 /* ─────────────────────────────────────────────────────────────────── */
@@ -58,49 +49,6 @@ export const MAHARASHTRA_CENTER: LatLng = [76.5, 19.0];
 export const MAHARASHTRA_BOUNDS: [LatLng, LatLng] = [
   [72.5, 15.5], // SW
   [80.9, 22.2], // NE
-];
-
-/* ─────────────────────────────────────────────────────────────────── */
-/*  36 districts — centroids + recommended zoom for flyTo().           */
-/* ─────────────────────────────────────────────────────────────────── */
-
-export const DISTRICTS: DistrictMarker[] = [
-  { id: "ahmednagar", name: "Ahmednagar", coords: [74.74, 19.09], zoom: 9 },
-  { id: "akola", name: "Akola", coords: [77.00, 20.71], zoom: 9 },
-  { id: "amravati", name: "Amravati", coords: [77.76, 20.93], zoom: 9 },
-  { id: "aurangabad", name: "Chhatrapati Sambhajinagar (Aurangabad)", coords: [75.34, 19.88], zoom: 9 },
-  { id: "beed", name: "Beed", coords: [75.76, 18.99], zoom: 9 },
-  { id: "bhandara", name: "Bhandara", coords: [79.65, 21.17], zoom: 9 },
-  { id: "buldhana", name: "Buldhana", coords: [76.18, 20.53], zoom: 9 },
-  { id: "chandrapur", name: "Chandrapur", coords: [79.30, 19.96], zoom: 9 },
-  { id: "dhule", name: "Dhule", coords: [74.78, 20.90], zoom: 9 },
-  { id: "gadchiroli", name: "Gadchiroli", coords: [80.00, 20.18], zoom: 9 },
-  { id: "gondia", name: "Gondia", coords: [80.20, 21.46], zoom: 9 },
-  { id: "hingoli", name: "Hingoli", coords: [77.15, 19.72], zoom: 10 },
-  { id: "jalgaon", name: "Jalgaon", coords: [75.57, 21.01], zoom: 9 },
-  { id: "jalna", name: "Jalna", coords: [75.88, 19.84], zoom: 9 },
-  { id: "kolhapur", name: "Kolhapur", coords: [74.24, 16.70], zoom: 9 },
-  { id: "latur", name: "Latur", coords: [76.57, 18.40], zoom: 9 },
-  { id: "mumbai-city", name: "Mumbai City", coords: [72.83, 18.95], zoom: 11 },
-  { id: "mumbai-suburban", name: "Mumbai Suburban", coords: [72.86, 19.13], zoom: 10 },
-  { id: "nagpur", name: "Nagpur", coords: [79.09, 21.15], zoom: 9 },
-  { id: "nanded", name: "Nanded", coords: [77.32, 19.15], zoom: 9 },
-  { id: "nandurbar", name: "Nandurbar", coords: [74.24, 21.37], zoom: 9 },
-  { id: "nashik", name: "Nashik", coords: [73.79, 19.99], zoom: 9 },
-  { id: "osmanabad", name: "Dharashiv (Osmanabad)", coords: [76.04, 18.18], zoom: 9 },
-  { id: "palghar", name: "Palghar", coords: [72.77, 19.69], zoom: 9 },
-  { id: "parbhani", name: "Parbhani", coords: [76.78, 19.26], zoom: 9 },
-  { id: "pune", name: "Pune", coords: [73.86, 18.52], zoom: 9 },
-  { id: "raigad", name: "Raigad", coords: [73.18, 18.51], zoom: 9 },
-  { id: "ratnagiri", name: "Ratnagiri", coords: [73.31, 16.99], zoom: 9 },
-  { id: "sangli", name: "Sangli", coords: [74.57, 16.85], zoom: 9 },
-  { id: "satara", name: "Satara", coords: [74.00, 17.69], zoom: 9 },
-  { id: "sindhudurg", name: "Sindhudurg", coords: [73.56, 16.13], zoom: 9 },
-  { id: "solapur", name: "Solapur", coords: [75.91, 17.66], zoom: 9 },
-  { id: "thane", name: "Thane", coords: [73.00, 19.22], zoom: 9 },
-  { id: "wardha", name: "Wardha", coords: [78.61, 20.74], zoom: 9 },
-  { id: "washim", name: "Washim", coords: [77.13, 20.11], zoom: 10 },
-  { id: "yavatmal", name: "Yavatmal", coords: [78.13, 20.39], zoom: 9 },
 ];
 
 /* ─────────────────────────────────────────────────────────────────── */
@@ -176,6 +124,28 @@ export const RIVERS: RiverFeature[] = [
     ],
   },
   {
+    id: "painganga",
+    name: "Painganga",
+    path: [
+      [76.20, 20.35], // Ajanta hills (source area)
+      [76.80, 20.15],
+      [77.40, 19.90],
+      [78.00, 19.70],
+      [78.45, 19.62], // joins Wardha at Wadhona
+    ],
+  },
+  {
+    id: "vaitarna",
+    name: "Vaitarna",
+    path: [
+      [73.55, 19.95], // Trimbakeshwar hills (source)
+      [73.40, 19.80], // Igatpuri area
+      [73.20, 19.60], // Vaitarna dam area
+      [73.00, 19.45],
+      [72.83, 19.30], // Arabian Sea (near Vasai-Bhayander)
+    ],
+  },
+  {
     id: "savitri",
     name: "Savitri",
     path: [
@@ -226,6 +196,76 @@ export const RIVERS: RiverFeature[] = [
       [74.62, 16.85], // joins Krishna near Sangli
     ],
   },
+  {
+    id: "yerla",
+    name: "Yerla",
+    parent: "krishna",
+    path: [
+      [74.20, 17.30], // Sangli district source
+      [74.40, 17.05],
+      [74.65, 16.85], // joins Krishna near Brahmnal
+    ],
+  },
+  {
+    id: "dudhganga",
+    name: "Dudhganga",
+    parent: "krishna",
+    path: [
+      [74.05, 16.55], // Sahyadri (Radhanagari)
+      [74.40, 16.62],
+      [74.70, 16.65], // joins Krishna near Kurundwad
+    ],
+  },
+  {
+    id: "hiranyakeshi",
+    name: "Hiranyakeshi",
+    parent: "krishna",
+    path: [
+      [74.00, 15.95], // Amboli source
+      [74.30, 16.05],
+      [74.55, 16.18], // joins Ghataprabha → Krishna
+    ],
+  },
+  {
+    id: "agrani",
+    name: "Agrani",
+    parent: "krishna",
+    path: [
+      [74.30, 17.00],
+      [74.55, 16.85],
+      [74.65, 16.78], // joins Krishna near Sangli
+    ],
+  },
+
+  /* ─── Koyna sub-tributaries ───────────────────────────────── */
+  {
+    id: "solshi",
+    name: "Solshi",
+    parent: "koyna",
+    path: [
+      [73.65, 17.48],
+      [73.72, 17.43], // joins Koyna
+    ],
+  },
+  {
+    id: "kandati",
+    name: "Kandati",
+    parent: "koyna",
+    path: [
+      [73.80, 17.52],
+      [73.78, 17.43], // joins Koyna
+    ],
+  },
+  {
+    id: "morna",
+    name: "Morna",
+    parent: "koyna",
+    path: [
+      [73.85, 17.20],
+      [73.95, 17.30],
+      [74.00, 17.35], // joins Koyna
+    ],
+  },
 
   /* ─── Bhima basin tributaries ─────────────────────────────── */
   {
@@ -256,6 +296,46 @@ export const RIVERS: RiverFeature[] = [
       [73.85, 18.05],
       [74.50, 18.00],
       [75.10, 17.85], // joins Bhima south of Pune
+    ],
+  },
+  {
+    id: "pavna",
+    name: "Pavna",
+    parent: "bhima",
+    path: [
+      [73.45, 18.80], // Lonavala source
+      [73.65, 18.65],
+      [73.85, 18.55], // joins Mula at Pune
+    ],
+  },
+  {
+    id: "bhama",
+    name: "Bhama",
+    parent: "bhima",
+    path: [
+      [73.85, 18.95],
+      [74.00, 18.85],
+      [74.20, 18.75], // joins Bhima at Tulapur
+    ],
+  },
+  {
+    id: "ghod",
+    name: "Ghod",
+    parent: "bhima",
+    path: [
+      [74.05, 19.10],
+      [74.40, 18.90],
+      [74.70, 18.65], // joins Bhima
+    ],
+  },
+  {
+    id: "sina",
+    name: "Sina",
+    parent: "bhima",
+    path: [
+      [74.80, 19.10], // Ahmednagar source
+      [75.30, 18.50],
+      [75.85, 17.70], // joins Bhima in Solapur
     ],
   },
 
@@ -290,6 +370,46 @@ export const RIVERS: RiverFeature[] = [
       [77.30, 19.25], // joins Godavari near Nanded
     ],
   },
+  {
+    id: "mula-godavari",
+    name: "Mula",
+    parent: "godavari",
+    path: [
+      [73.95, 19.40], // Sahyadri source
+      [74.50, 19.45],
+      [74.95, 19.50], // joins Pravara → Godavari near Toka
+    ],
+  },
+  {
+    id: "darna",
+    name: "Darna",
+    parent: "godavari",
+    path: [
+      [73.55, 19.80], // Igatpuri source
+      [73.70, 19.90],
+      [73.85, 19.95], // joins Godavari near Nashik
+    ],
+  },
+  {
+    id: "kadwa",
+    name: "Kadwa",
+    parent: "godavari",
+    path: [
+      [74.05, 20.10],
+      [74.20, 20.05],
+      [74.30, 19.95],
+    ],
+  },
+  {
+    id: "sindphana",
+    name: "Sindphana",
+    parent: "godavari",
+    path: [
+      [75.80, 19.00], // Beed
+      [76.00, 19.20],
+      [76.30, 19.30], // joins Godavari
+    ],
+  },
 
   /* ─── Tapi basin tributaries ──────────────────────────────── */
   {
@@ -302,6 +422,68 @@ export const RIVERS: RiverFeature[] = [
       [75.40, 20.95], // joins Tapi in Jalgaon district
     ],
   },
+  {
+    id: "purna-tapi",
+    name: "Purna",
+    parent: "tapi",
+    path: [
+      [76.50, 21.20], // Satpura source
+      [76.20, 21.10],
+      [75.85, 21.05], // joins Tapi at Changdev
+    ],
+  },
+  {
+    id: "panzhra",
+    name: "Panzhra",
+    parent: "tapi",
+    path: [
+      [74.10, 20.85], // Dhule source
+      [74.50, 20.90],
+      [74.80, 21.00], // joins Tapi
+    ],
+  },
+  {
+    id: "bori",
+    name: "Bori",
+    parent: "tapi",
+    path: [
+      [75.45, 20.50], // Jalgaon
+      [75.55, 20.80],
+      [75.60, 21.00], // joins Tapi
+    ],
+  },
+  {
+    id: "aner",
+    name: "Aner",
+    parent: "tapi",
+    path: [
+      [74.85, 20.85],
+      [75.05, 20.95],
+      [75.20, 21.05], // joins Tapi
+    ],
+  },
+
+  /* ─── Wardha basin tributaries ────────────────────────────── */
+  {
+    id: "yashoda",
+    name: "Yashoda",
+    parent: "wardha",
+    path: [
+      [78.30, 21.30],
+      [78.50, 21.00],
+      [78.60, 20.80], // joins Wardha near Wardha city
+    ],
+  },
+  {
+    id: "wenna-wardha",
+    name: "Wenna",
+    parent: "wardha",
+    path: [
+      [78.55, 21.05],
+      [78.62, 20.92],
+      [78.65, 20.80], // joins Wardha
+    ],
+  },
 
   /* ─── Wainganga basin tributaries ─────────────────────────── */
   {
@@ -312,6 +494,100 @@ export const RIVERS: RiverFeature[] = [
       [78.85, 21.70], // Chhindwara hills
       [79.20, 21.40],
       [79.55, 21.00], // joins Wainganga north of Bhandara
+    ],
+  },
+  {
+    id: "pench",
+    name: "Pench",
+    parent: "wainganga",
+    path: [
+      [78.95, 21.65],
+      [79.10, 21.45],
+      [79.30, 21.20], // joins Kanhan → Wainganga
+    ],
+  },
+  {
+    id: "bagh",
+    name: "Bagh",
+    parent: "wainganga",
+    path: [
+      [80.10, 21.10],
+      [79.85, 21.20],
+      [79.65, 21.15], // joins Wainganga
+    ],
+  },
+  {
+    id: "bavanthadi",
+    name: "Bavanthadi",
+    parent: "wainganga",
+    path: [
+      [80.30, 21.50],
+      [80.10, 21.40],
+      [79.85, 21.30], // joins Wainganga
+    ],
+  },
+
+  /* ─── Painganga sub-tributaries ───────────────────────────── */
+  {
+    id: "adan",
+    name: "Adan",
+    parent: "painganga",
+    path: [
+      [77.30, 20.35], // Washim source
+      [77.55, 20.10],
+      [77.80, 19.85], // joins Painganga
+    ],
+  },
+  {
+    id: "pus",
+    name: "Pus",
+    parent: "painganga",
+    path: [
+      [77.85, 20.30], // Yavatmal
+      [77.95, 20.00],
+      [78.05, 19.75], // joins Painganga
+    ],
+  },
+  {
+    id: "arunavati",
+    name: "Arunavati",
+    parent: "painganga",
+    path: [
+      [77.50, 19.95],
+      [77.75, 19.80],
+      [78.00, 19.70], // joins Painganga
+    ],
+  },
+
+  /* ─── Vaitarna sub-tributaries ────────────────────────────── */
+  {
+    id: "pinjal",
+    name: "Pinjal",
+    parent: "vaitarna",
+    path: [
+      [73.30, 19.85],
+      [73.20, 19.75],
+      [73.15, 19.60], // joins Vaitarna
+    ],
+  },
+  {
+    id: "surya",
+    name: "Surya",
+    parent: "vaitarna",
+    path: [
+      [73.05, 19.85], // Palghar
+      [73.00, 19.65],
+      [72.90, 19.45], // joins Vaitarna
+    ],
+  },
+  {
+    id: "tansa",
+    name: "Tansa",
+    parent: "vaitarna",
+    path: [
+      [73.30, 19.55], // Tansa dam area
+      [73.20, 19.45],
+      [73.05, 19.35], // joins Vaitarna
     ],
   },
 ];

@@ -158,7 +158,7 @@ const LAYER_SPECS: LayerSpec[] = [
   { key: "nuclear", label: "Power plants", emoji: "⚡", pill: "bg-yellow-100 text-yellow-700 border-yellow-200 dark:bg-yellow-900/40 dark:text-yellow-300 dark:border-yellow-700", defaultOn: false },
   { key: "minerals", label: "Minerals", emoji: "⛏️", pill: "bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-900/40 dark:text-amber-300 dark:border-amber-700", defaultOn: false },
   { key: "unesco", label: "UNESCO sites", emoji: "🏛️", pill: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-300 dark:border-fuchsia-700", defaultOn: true },
-  { key: "forts", label: "Historic forts", emoji: "🏰", pill: "bg-rose-100 text-rose-700 border-rose-200 dark:bg-rose-900/40 dark:text-rose-300 dark:border-rose-700", defaultOn: true },
+  { key: "forts", label: "Historic forts", emoji: "🚩", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: true },
 ];
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -189,14 +189,14 @@ function riverLabelHtml(name: string, isMain: boolean): string {
         transform: translate(-50%, -50%);
         display: inline-block;
         padding: 3px 11px;
-        background: rgba(14,165,233,.95);
+        background: rgba(12,74,110,.95);
         color: #fff;
         border-radius: 9999px;
         font-size: 11px;
         font-weight: 700;
-        letter-spacing: .04em;
+        letter-spacing: .05em;
         text-transform: uppercase;
-        box-shadow: 0 2px 10px rgba(0,0,0,.3);
+        box-shadow: 0 2px 10px rgba(0,0,0,.35);
         font-family: system-ui, sans-serif;
         white-space: nowrap;
         pointer-events: none;
@@ -207,13 +207,13 @@ function riverLabelHtml(name: string, isMain: boolean): string {
     <div style="
       transform: translate(-50%, -50%);
       display: inline-block;
-      padding: 2px 8px;
-      background: rgba(186,230,253,.95);
-      color: #075985;
+      padding: 1px 7px;
+      background: rgba(224,242,254,.95);
+      color: #0c4a6e;
       border-radius: 9999px;
       font-size: 10px;
       font-weight: 600;
-      box-shadow: 0 2px 6px rgba(0,0,0,.18);
+      box-shadow: 0 1px 5px rgba(0,0,0,.18);
       font-family: system-ui, sans-serif;
       white-space: nowrap;
       pointer-events: none;
@@ -467,7 +467,7 @@ function applyAllLayers(
   if (layers.ghats) addPois(L, map, buckets.ghats, GHATS, "#ea580c", "⛰️", "Ghat");
   if (layers.nuclear) addPois(L, map, buckets.nuclear, POWER_PLANTS, "#ca8a04", "⚡", "Power plant");
   if (layers.unesco) addPois(L, map, buckets.unesco, UNESCO_SITES, "#c026d3", "🏛️", "UNESCO");
-  if (layers.forts) addPois(L, map, buckets.forts, FORTS, "#e11d48", "🏰", "Fort");
+  if (layers.forts) addPois(L, map, buckets.forts, FORTS, "#FF6A00", "🚩", "Fort");
 
   if (layers.minerals) {
     for (const mn of MINERALS) {
@@ -500,9 +500,9 @@ function addRiver(
   isMain: boolean,
 ) {
   const line = L.polyline(river.path.map(ll), {
-    color: isMain ? "#0284c7" : "#38bdf8",
-    weight: isMain ? 4 : 2.5,
-    opacity: isMain ? 0.9 : 0.8,
+    color: isMain ? "#0c4a6e" : "#38bdf8",
+    weight: isMain ? 5 : 3,
+    opacity: isMain ? 0.95 : 0.8,
     lineCap: "round",
     lineJoin: "round",
   });
