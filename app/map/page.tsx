@@ -5,7 +5,7 @@ import MapPageClient from "./MapPageClient";
 export const metadata: Metadata = {
   title: "Interactive Map of Maharashtra — Rivers, Tributaries, Forts, UNESCO sites",
   description:
-    "Explore a high-resolution OpenStreetMap-based map of Maharashtra. See major rivers (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga, Painganga, Vaitarna) plus 30+ tributaries with name labels, dams, waterfalls, ghats, power plants, mineral deposits, UNESCO World Heritage sites, and historic forts marked with the saffron flag.",
+    "Explore a high-resolution OpenStreetMap-based map of Maharashtra. See every major river — the Deccan systems (Godavari, Krishna, Bhima, Tapi, Wardha, Wainganga, Painganga) and the Konkan coastal rivers (Damanganga, Vaitarna, Ulhas, Patalganga, Amba, Kundalika, Savitri, Vashishti, Shastri, Kajli, Muchkundi, Gad, Karli, Terekhol) plus 30+ tributaries with name labels. Toggle layers for dams, waterfalls, ghats, power plants, minerals, UNESCO sites and historic forts (saffron flag).",
   keywords: [
     "Maharashtra map",
     "Maharashtra districts map",
@@ -51,21 +51,28 @@ export default function MapPage() {
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">About this map</h2>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
             High-resolution OpenStreetMap-based interactive map of Maharashtra useful for
-            MPSC geography preparation and casual exploration. The river layer covers all the
-            major drainage systems of the state &mdash; Godavari, Krishna, Bhima, Tapi,
-            Wardha, Wainganga, Painganga, Vaitarna, Savitri &mdash; drawn with a thicker
-            line, plus 30+ tributaries drawn slightly thinner so the hierarchy is clear:
-            Krishna basin (Koyna, Venna, Panchganga, Warna, Yerla, Dudhganga, Hiranyakeshi,
-            Agrani &mdash; with Koyna&apos;s own sub-tributaries Solshi, Kandati, Morna),
-            Godavari basin (Pravara, Manjira, Purna, Mula, Darna, Kadwa, Sindphana), Bhima
-            basin (Mula-Mutha, Indrayani, Nira, Pavna, Bhama, Ghod, Sina), Tapi basin (Girna,
-            Purna, Panzhra, Bori, Aner), Wardha basin (Yashoda, Wenna), Wainganga basin
-            (Kanhan, Pench, Bagh, Bavanthadi), Painganga (Adan, Pus, Arunavati) and
-            Vaitarna (Pinjal, Surya, Tansa). Each river carries an inline name label. Other
-            layers include large dams, historic forts marked with a saffron flag (Raigad,
-            Sinhagad, Pratapgad&hellip;), waterfalls, ghats, the Tarapur nuclear station,
-            key hydro projects, mineral belts, and UNESCO sites. Use the layer panel on the
-            left to toggle what you want to see.
+            MPSC geography preparation and casual exploration. The map opens with only the
+            <strong> Rivers</strong> layer enabled so you can read the drainage clearly;
+            tap any other pill in the layer panel on the left (or the <em>All</em> button)
+            to add dams, waterfalls, ghats, power plants, minerals, UNESCO sites and
+            historic forts.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Deccan / east-flowing rivers</strong> &mdash; Godavari, Krishna, Bhima,
+            Tapi, Wardha, Wainganga, Painganga &mdash; are drawn with a thicker dark-blue
+            line, with their tributaries (Krishna: Koyna, Venna, Panchganga, Warna, Yerla,
+            Dudhganga, Hiranyakeshi, Agrani; Koyna sub-tribs Solshi, Kandati, Morna;
+            Godavari: Pravara, Manjira, Purna, Mula, Darna, Kadwa, Sindphana; Bhima:
+            Mula-Mutha, Indrayani, Nira, Pavna, Bhama, Ghod, Sina; Tapi: Girna, Purna,
+            Panzhra, Bori, Aner; Wardha: Yashoda, Wenna; Wainganga: Kanhan, Pench, Bagh,
+            Bavanthadi; Painganga: Adan, Pus, Arunavati) drawn slightly thinner.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Konkan / west-flowing coastal rivers</strong> &mdash; Damanganga,
+            Vaitarna, Ulhas, Patalganga, Amba, Kundalika, Savitri, Vashishti, Shastri,
+            Kajli, Muchkundi, Gad, Karli, Terekhol &mdash; all rise in the Sahyadri and
+            empty into the Arabian Sea, shown with their tributaries (Vaitarna: Pinjal,
+            Surya, Tansa; Ulhas: Bhatsa). Historic forts use a saffron flag marker.
           </p>
           <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
             Map tiles &copy; OpenStreetMap contributors.

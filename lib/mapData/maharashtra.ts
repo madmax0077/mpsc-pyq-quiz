@@ -590,6 +590,141 @@ export const RIVERS: RiverFeature[] = [
       [73.05, 19.35], // joins Vaitarna
     ],
   },
+
+  /* ─── Konkan coastal rivers (main) ────────────────────────── */
+  /* All originate in the Sahyadri (Western Ghats) and flow      */
+  /* west into the Arabian Sea, north → south.                   */
+  {
+    id: "damanganga",
+    name: "Damanganga",
+    path: [
+      [73.45, 20.25], // Sahyadri (Nashik / Palghar border)
+      [73.20, 20.30],
+      [72.95, 20.38],
+      [72.83, 20.42], // exits Maharashtra near Daman
+    ],
+  },
+  {
+    id: "ulhas",
+    name: "Ulhas",
+    path: [
+      [73.30, 18.95], // Karjat (source)
+      [73.15, 19.10],
+      [73.05, 19.25], // Kalyan
+      [72.95, 19.30],
+      [72.85, 19.32], // Vasai (Bassein) creek
+    ],
+  },
+  {
+    id: "patalganga",
+    name: "Patalganga",
+    path: [
+      [73.32, 18.78], // Khopoli (source)
+      [73.20, 18.82],
+      [73.05, 18.85],
+      [72.95, 18.88], // Karanja / Mumbai harbour
+    ],
+  },
+  {
+    id: "amba",
+    name: "Amba",
+    path: [
+      [73.40, 18.55], // Sahyadri above Pen
+      [73.20, 18.55],
+      [73.05, 18.55],
+      [72.95, 18.58], // Dharamtar creek
+    ],
+  },
+  {
+    id: "kundalika",
+    name: "Kundalika",
+    path: [
+      [73.40, 18.45], // Bhira (Sahyadri)
+      [73.20, 18.45], // Roha
+      [73.05, 18.45],
+      [72.95, 18.42], // Revdanda creek
+    ],
+  },
+  {
+    id: "vashishti",
+    name: "Vashishti",
+    path: [
+      [73.65, 17.55], // Sahyadri above Chiplun
+      [73.50, 17.55],
+      [73.30, 17.55],
+      [73.18, 17.58], // Dabhol creek
+    ],
+  },
+  {
+    id: "shastri",
+    name: "Shastri",
+    path: [
+      [73.65, 17.20], // Sahyadri near Sangameshwar
+      [73.50, 17.22],
+      [73.35, 17.25],
+      [73.20, 17.28], // Jaigad creek
+    ],
+  },
+  {
+    id: "kajli",
+    name: "Kajli",
+    path: [
+      [73.55, 17.05],
+      [73.40, 17.05],
+      [73.30, 17.02], // Ratnagiri coast
+    ],
+  },
+  {
+    id: "muchkundi",
+    name: "Muchkundi",
+    path: [
+      [73.65, 16.85], // Lanja area (Ratnagiri)
+      [73.45, 16.85],
+      [73.30, 16.85], // Purnagad creek
+    ],
+  },
+  {
+    id: "gad",
+    name: "Gad",
+    path: [
+      [73.95, 16.25], // Sahyadri (Sindhudurg)
+      [73.80, 16.22],
+      [73.65, 16.20],
+      [73.55, 16.18], // Arabian Sea coast
+    ],
+  },
+  {
+    id: "karli",
+    name: "Karli",
+    path: [
+      [73.85, 16.05], // Sahyadri
+      [73.70, 16.05],
+      [73.55, 16.00],
+      [73.45, 16.00], // Devbag (Malvan)
+    ],
+  },
+  {
+    id: "terekhol",
+    name: "Terekhol",
+    path: [
+      [74.05, 15.80], // Sahyadri (MH–Goa border)
+      [73.90, 15.78],
+      [73.78, 15.74],
+      [73.70, 15.72], // Arabian Sea (Terekhol fort)
+    ],
+  },
+
+  /* ─── Konkan basin tributaries ────────────────────────────── */
+  {
+    id: "bhatsa",
+    name: "Bhatsa",
+    parent: "ulhas",
+    path: [
+      [73.45, 19.40], // Sahyadri near Murbad
+      [73.25, 19.35],
+      [73.10, 19.32], // joins Ulhas near Bhiwandi
+    ],
+  },
 ];
 
 /* ─────────────────────────────────────────────────────────────────── */

@@ -152,13 +152,13 @@ interface LayerSpec {
 
 const LAYER_SPECS: LayerSpec[] = [
   { key: "rivers", label: "Rivers + tributaries", emoji: "🏞️", pill: "bg-sky-100 text-sky-700 border-sky-200 dark:bg-sky-900/40 dark:text-sky-300 dark:border-sky-700", defaultOn: true },
-  { key: "dams", label: "Dams", emoji: "🌊", pill: "bg-cyan-100 text-cyan-700 border-cyan-200 dark:bg-cyan-900/40 dark:text-cyan-300 dark:border-cyan-700", defaultOn: true },
-  { key: "waterfalls", label: "Waterfalls", emoji: "💧", pill: "bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-900/40 dark:text-blue-300 dark:border-blue-700", defaultOn: true },
-  { key: "ghats", label: "Ghats", emoji: "⛰️", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: true },
+  { key: "dams", label: "Dams", emoji: "🌊", pill: "bg-cyan-100 text-cyan-700 border-cyan-200 dark:bg-cyan-900/40 dark:text-cyan-300 dark:border-cyan-700", defaultOn: false },
+  { key: "waterfalls", label: "Waterfalls", emoji: "💧", pill: "bg-blue-100 text-blue-700 border-blue-200 dark:bg-blue-900/40 dark:text-blue-300 dark:border-blue-700", defaultOn: false },
+  { key: "ghats", label: "Ghats", emoji: "⛰️", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: false },
   { key: "nuclear", label: "Power plants", emoji: "⚡", pill: "bg-yellow-100 text-yellow-700 border-yellow-200 dark:bg-yellow-900/40 dark:text-yellow-300 dark:border-yellow-700", defaultOn: false },
   { key: "minerals", label: "Minerals", emoji: "⛏️", pill: "bg-amber-100 text-amber-700 border-amber-200 dark:bg-amber-900/40 dark:text-amber-300 dark:border-amber-700", defaultOn: false },
-  { key: "unesco", label: "UNESCO sites", emoji: "🏛️", pill: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-300 dark:border-fuchsia-700", defaultOn: true },
-  { key: "forts", label: "Historic forts", emoji: "🚩", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: true },
+  { key: "unesco", label: "UNESCO sites", emoji: "🏛️", pill: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200 dark:bg-fuchsia-900/40 dark:text-fuchsia-300 dark:border-fuchsia-700", defaultOn: false },
+  { key: "forts", label: "Historic forts", emoji: "🚩", pill: "bg-orange-100 text-orange-700 border-orange-200 dark:bg-orange-900/40 dark:text-orange-300 dark:border-orange-700", defaultOn: false },
 ];
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -407,10 +407,32 @@ export default function MaharashtraMap() {
           onWheel={stopMapPropagation}
           onDoubleClick={stopMapPropagation}
         >
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between mb-2 gap-2">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Layers ({visibleCount}/{LAYER_SPECS.length})
             </h3>
+            <div className="flex items-center gap-1">
+              <button
+                onClick={() =>
+                  setLayers(
+                    Object.fromEntries(LAYER_SPECS.map((s) => [s.key, true])) as Record<LayerKey, boolean>,
+                  )
+                }
+                className="rounded-md border border-emerald-200 bg-emerald-50 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 hover:bg-emerald-100 dark:border-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 dark:hover:bg-emerald-900/60"
+              >
+                All
+              </button>
+              <button
+                onClick={() =>
+                  setLayers(
+                    Object.fromEntries(LAYER_SPECS.map((s) => [s.key, s.key === "rivers"])) as Record<LayerKey, boolean>,
+                  )
+                }
+                className="rounded-md border border-slate-200 bg-slate-50 px-1.5 py-0.5 text-[10px] font-semibold text-slate-600 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
+              >
+                Reset
+              </button>
+            </div>
           </div>
           <div className="grid grid-cols-1 gap-1">
             {LAYER_SPECS.map((spec) => {
@@ -439,7 +461,7 @@ export default function MaharashtraMap() {
             })}
           </div>
           <p className="mt-2 text-[10px] text-slate-400 dark:text-slate-500">
-            Tip: scroll to zoom. Drag to pan. Click any marker for details.
+            Tap a layer to add it to the map. Scroll to zoom, drag to pan.
           </p>
         </div>
       )}
