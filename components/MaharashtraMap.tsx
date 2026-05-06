@@ -341,10 +341,14 @@ export default function MaharashtraMap() {
           zoom: 7,
           minZoom: 6,
           maxZoom: 18,
-          zoomControl: true,
+          // Default zoom control sits in top-left and clashes with our layer
+          // panel, so we re-place it bottom-right after construction.
+          zoomControl: false,
           worldCopyJump: false,
           attributionControl: true,
         });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        new (L as any).Control.Zoom({ position: "bottomright" }).addTo(map);
         // Restrict pan to roughly Maharashtra envelope.
         map.setMaxBounds(
           L.latLngBounds(
@@ -433,9 +437,16 @@ export default function MaharashtraMap() {
         </div>
       )}
 
-      {/* Basemap switcher */}
+      {/* Basemap switcher — z-index above Leaflet's controls (which use 1000) */}
       {!loading && !error && (
-        <div className="absolute right-3 top-3 z-10 rounded-2xl border border-slate-200 bg-white/95 p-1.5 shadow-xl backdrop-blur dark:border-slate-700 dark:bg-slate-800/95">
+        <div
+          className="absolute right-3 top-3 rounded-2xl border border-slate-200 bg-white/95 p-1.5 shadow-xl backdrop-blur dark:border-slate-700 dark:bg-slate-800/95"
+          style={{ zIndex: 1100 }}
+          onMouseDown={stopMapPropagation}
+          onClick={stopMapPropagation}
+          onWheel={stopMapPropagation}
+          onDoubleClick={stopMapPropagation}
+        >
           <div className="flex items-center gap-1">
             {BASEMAPS.map((b) => (
               <button
@@ -458,7 +469,14 @@ export default function MaharashtraMap() {
 
       {/* Layer toggle panel */}
       {!loading && !error && (
-        <div className="absolute left-3 top-3 z-10 max-w-[260px] rounded-2xl border border-slate-200 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-slate-700 dark:bg-slate-800/95">
+        <div
+          className="absolute left-3 top-3 max-w-[260px] rounded-2xl border border-slate-200 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-slate-700 dark:bg-slate-800/95"
+          style={{ zIndex: 1100 }}
+          onMouseDown={stopMapPropagation}
+          onClick={stopMapPropagation}
+          onWheel={stopMapPropagation}
+          onDoubleClick={stopMapPropagation}
+        >
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Layers ({visibleCount}/{LAYER_SPECS.length})
@@ -498,7 +516,14 @@ export default function MaharashtraMap() {
 
       {/* Active district panel */}
       {!loading && !error && activeDistrict && (
-        <div className="absolute bottom-12 right-3 z-10 max-w-[260px] rounded-2xl border border-indigo-200 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-indigo-800 dark:bg-slate-800/95">
+        <div
+          className="absolute bottom-12 left-3 max-w-[260px] rounded-2xl border border-indigo-200 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-indigo-800 dark:bg-slate-800/95"
+          style={{ zIndex: 1100 }}
+          onMouseDown={stopMapPropagation}
+          onClick={stopMapPropagation}
+          onWheel={stopMapPropagation}
+          onDoubleClick={stopMapPropagation}
+        >
           <p className="text-[10px] font-bold uppercase tracking-wider text-indigo-500 dark:text-indigo-400">
             Focused district
           </p>
@@ -521,6 +546,15 @@ export default function MaharashtraMap() {
       )}
     </div>
   );
+}
+
+/**
+ * Prevent mouse and wheel events on overlay panels from reaching the
+ * underlying Leaflet map (otherwise the map starts dragging or zooming
+ * when the user is just trying to click a layer toggle).
+ */
+function stopMapPropagation(e: React.SyntheticEvent) {
+  e.stopPropagation();
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
