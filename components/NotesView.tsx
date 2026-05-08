@@ -122,7 +122,10 @@ export default function NotesView({ onBack }: { onBack: () => void }) {
           </svg>
         </button>
         <div className="min-w-0 flex-1">
-          <h2 className="truncate text-xl font-bold text-slate-800 dark:text-slate-100">
+          <h2
+            lang={activeEntry ? "mr" : undefined}
+            className="font-devanagari-serif truncate text-xl font-bold text-slate-800 dark:text-slate-100"
+          >
             {activeEntry ? activeEntry.title : "📝 Notes"}
           </h2>
           <p className="truncate text-xs text-slate-500 dark:text-slate-400">
@@ -181,7 +184,10 @@ export default function NotesView({ onBack }: { onBack: () => void }) {
                     {n.emoji}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <h3 className="font-bold text-slate-800 group-hover:text-orange-700 dark:text-slate-100 dark:group-hover:text-orange-300">
+                    <h3
+                      lang="mr"
+                      className="font-devanagari-serif text-lg font-bold text-slate-800 group-hover:text-orange-700 dark:text-slate-100 dark:group-hover:text-orange-300"
+                    >
                       {n.title}
                     </h3>
                     <p className="mt-0.5 text-xs font-medium text-slate-400 dark:text-slate-500">

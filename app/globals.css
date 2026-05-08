@@ -22,6 +22,45 @@ body {
 }
 
 /* ----------------------------------------------------------------------
+ * Marathi typography
+ *
+ * Any element marked `lang="mr"` (or descendant of one) automatically
+ * picks up the Devanagari webfonts loaded in app/layout.tsx via
+ * next/font/google. Headings inside Marathi blocks switch to the
+ * editorial serif; everything else stays on the modern sans face.
+ *
+ * Tailwind utilities `font-devanagari` and `font-devanagari-serif` are
+ * also exposed by tailwind.config.ts for explicit overrides.
+ * -------------------------------------------------------------------- */
+[lang="mr"],
+[lang="mr"] * {
+  font-family:
+    var(--font-devanagari),
+    "Noto Sans Devanagari",
+    "Mangal",
+    "Nirmala UI",
+    system-ui,
+    sans-serif;
+  /* Devanagari glyphs are taller than Latin — give them a touch more
+   * leading and tracking so they don't feel cramped at body sizes. */
+  line-height: 1.7;
+  letter-spacing: 0.005em;
+}
+[lang="mr"]:is(h1, h2, h3, h4, h5, h6),
+[lang="mr"] :is(h1, h2, h3, h4, h5, h6) {
+  font-family:
+    var(--font-devanagari-serif),
+    "Noto Serif Devanagari",
+    "Sanskrit Text",
+    "Nirmala UI",
+    "Mangal",
+    serif;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.005em;
+}
+
+/* ----------------------------------------------------------------------
  * Notes copy-protection
  *
  * Applied via the .notes-no-copy wrapper that components/NotesView.tsx

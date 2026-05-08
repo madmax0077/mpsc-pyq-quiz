@@ -9,9 +9,37 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
+      // Inter (loaded via next/font in app/layout.tsx) for English UI;
+      // falls back to a clean system stack if the webfont fails.
       sans: [
-        "Segoe UI", "system-ui", "-apple-system", "BlinkMacSystemFont",
-        "Roboto", "Helvetica Neue", "Arial", "sans-serif",
+        "var(--font-sans)",
+        "Inter",
+        "Segoe UI",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif",
+      ],
+      // Modern Devanagari sans for Marathi body text.
+      devanagari: [
+        "var(--font-devanagari)",
+        "Noto Sans Devanagari",
+        "Mangal",
+        "Nirmala UI",
+        "system-ui",
+        "sans-serif",
+      ],
+      // Editorial Devanagari serif for Marathi headings / display text.
+      "devanagari-serif": [
+        "var(--font-devanagari-serif)",
+        "Noto Serif Devanagari",
+        "Sanskrit Text",
+        "Nirmala UI",
+        "Mangal",
+        "serif",
       ],
     },
     extend: {

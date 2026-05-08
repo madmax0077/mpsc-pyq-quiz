@@ -66,7 +66,7 @@ function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
         </h2>
         <p
           lang="mr"
-          className="mt-2 text-lg font-medium text-orange-50/90 sm:text-xl"
+          className="font-devanagari-serif mt-2 text-xl font-bold text-orange-50/95 sm:text-2xl"
         >
           महाराष्ट्र भूगोल — संपूर्ण नोट्स
         </p>
@@ -143,7 +143,7 @@ function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
                 </h3>
                 <p
                   lang="mr"
-                  className="text-sm text-slate-500 dark:text-slate-400"
+                  className="font-devanagari-serif text-base text-slate-500 dark:text-slate-400"
                 >
                   {part.titleMr}
                 </p>
@@ -198,7 +198,7 @@ function ChapterCard({
           </h4>
           <p
             lang="mr"
-            className="truncate text-sm text-slate-600 dark:text-slate-300"
+            className="font-devanagari-serif truncate text-base font-semibold text-slate-700 dark:text-slate-200"
           >
             {ch.titleMr}
           </p>
@@ -282,7 +282,7 @@ function ReaderView({
         </h2>
         <p
           lang="mr"
-          className="mt-1 text-base text-orange-50/90 sm:text-lg"
+          className="font-devanagari-serif mt-1 text-xl font-bold text-orange-50/95 sm:text-2xl"
         >
           {chapter.titleMr}
         </p>
@@ -318,7 +318,7 @@ function ReaderView({
             </p>
             <p
               lang="mr"
-              className="truncate text-xs text-slate-500 dark:text-slate-400"
+              className="font-devanagari-serif truncate text-sm text-slate-500 dark:text-slate-400"
             >
               {prev.titleMr}
             </p>
@@ -339,7 +339,7 @@ function ReaderView({
             </p>
             <p
               lang="mr"
-              className="truncate text-xs text-slate-500 dark:text-slate-400"
+              className="font-devanagari-serif truncate text-sm text-slate-500 dark:text-slate-400"
             >
               {next.titleMr}
             </p>

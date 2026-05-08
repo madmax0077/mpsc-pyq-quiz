@@ -1,8 +1,43 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { Inter, Noto_Sans_Devanagari, Noto_Serif_Devanagari } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 import { getQuizMeta } from "@/lib/quizMeta";
+
+/**
+ * Site-wide typography
+ * --------------------
+ * - Inter handles every English UI string (clean, modern, excellent number /
+ *   tabular feel for stats, scores, percentages).
+ * - Noto Sans Devanagari handles Marathi body text (clean, web-optimised,
+ *   high contrast at small sizes).
+ * - Noto Serif Devanagari handles Marathi headings / display text (matches
+ *   the editorial feel of the redesigned PDF cover and dividers).
+ *
+ * They are loaded via next/font/google so Next inlines preconnect headers,
+ * subsets the glyph ranges and ships zero CLS — no Google Fonts <link>
+ * needed in <head>.
+ */
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const notoSansDev = Noto_Sans_Devanagari({
+  subsets: ["devanagari", "latin"],
+  variable: "--font-devanagari",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const notoSerifDev = Noto_Serif_Devanagari({
+  subsets: ["devanagari", "latin"],
+  variable: "--font-devanagari-serif",
+  weight: ["400", "600", "700"],
+  display: "swap",
+});
 
 const SITE_URL = "https://www.mpscs.in";
 const SITE_NAME = "MPSC PYQ QUIZ";
@@ -263,7 +298,10 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${inter.variable} ${notoSansDev.variable} ${notoSerifDev.variable}`}
+    >
       <head>
         <meta name="google-site-verification" content="-OecjT9pqzPENGpM2Pva7bxV9XIMC2KY0ElKRcQjp3I" />
         <meta name="google-adsense-account" content="ca-pub-5084738834329206" />
