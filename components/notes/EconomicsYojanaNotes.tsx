@@ -323,7 +323,7 @@ export default function EconomicsYojanaNotes() {
                   {m.n}
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-sm font-semibold leading-snug text-slate-900 dark:text-slate-100 sm:text-base">
+                  <p className="whitespace-pre-line text-sm font-semibold leading-relaxed text-slate-900 dark:text-slate-100 sm:text-base">
                     {m.q}
                   </p>
                   {m.tag && (
