@@ -23,6 +23,12 @@ These are original, hand-written reference articles maintained by Don't know Aca
 - [MPSC Exam Pattern](https://www.mpscs.in/study-guides/mpsc-exam-pattern): Detailed pattern for Group B, Group C, PSI, Gazetted Civil Services and Gazetted Technical Services prelims — marks, syllabus, negative marking, qualifying criteria, mains overview and indicative cut-offs. ~12 minutes.
 - [MPSC Preparation Strategy](https://www.mpscs.in/study-guides/mpsc-preparation-strategy): A practical 6-month plan, recommended book list, daily routine, PYQ usage, subject weightages, mock-test strategy and last-month revision blueprint. ~15 minutes.
 
+## Topic packs
+
+These are condensed, high-yield topic packs combining a reference table with a built-in MCQ set. Optimised for last-week revision before MPSC, Rajyaseva, RTO AMVI and UPSC prelims.
+
+- [Newspapers — Founders, Editors & 100 MCQs](https://www.mpscs.in/newspapers): Hand-curated reference of 70+ Indian newspapers and 50+ editors organised in 6 historical groups (British / early period, Bengal Renaissance reformers, Maharashtra press, Nationalist Congress era, Revolutionary press, Gandhi era), followed by 100 unique multiple-choice questions with the correct answer highlighted. In Marathi (Devanagari) with English transliteration of editor names.
+
 ## Reference content
 
 - [About](https://www.mpscs.in/about): What the platform is, editorial methodology, accuracy commitment and who runs Don't know Academy.

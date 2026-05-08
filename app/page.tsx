@@ -6,7 +6,7 @@ const meta = getQuizMeta();
 
 export const metadata: Metadata = {
   title: "MPSC PYQ QUIZ — Free PYQ Practice + Daily Leaderboard + Maharashtra Map",
-  description: `Free MPSC Previous Year Question practice — ${meta.totalQuestions}+ questions from ${meta.totalPapers} exam papers (${meta.minYear}–${meta.maxYear}) in English & Marathi. Daily aggregate leaderboard, interactive Maharashtra map (rivers, forts, nuclear / hydro / thermal plants, UNESCO sites). 100% free, instant scoring, detailed answers.`,
+  description: `Free MPSC Previous Year Question practice — ${meta.totalQuestions}+ questions from ${meta.totalPapers} exam papers (${meta.minYear}–${meta.maxYear}) in English & Marathi. Daily aggregate leaderboard, interactive Maharashtra map (rivers, forts, nuclear / hydro / thermal plants, UNESCO sites), long-form study guides and topic packs (e.g. वृत्तपत्र — 70+ newspapers, 100 MCQs). 100% free, instant scoring, detailed answers.`,
   alternates: { canonical: "/" },
 };
 
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
 
           {/* What's new — quick links to the new features (also good for internal SEO) */}
-          <div className="mx-auto mt-6 grid max-w-3xl gap-2 text-left sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto mt-6 grid max-w-4xl gap-2 text-left sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             <a
               href="/exams"
               className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
@@ -49,6 +49,13 @@ export default function Home() {
             >
               <span className="block font-semibold text-slate-800">📖 Study guides</span>
               <span className="block text-xs text-slate-500">Geography, history, polity, exam pattern, strategy</span>
+            </a>
+            <a
+              href="/newspapers"
+              className="rounded-lg border border-orange-200 bg-orange-50 px-3 py-2 text-sm hover:border-orange-400 hover:bg-orange-100"
+            >
+              <span className="block font-semibold text-slate-800">🗞️ वृत्तपत्र · 100 MCQ</span>
+              <span className="block text-xs text-slate-500">70+ newspapers, 50+ editors + 100 questions</span>
             </a>
             <a
               href="/map"
@@ -293,6 +300,49 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Newspapers Topic Pack — SEO + internal link to /newspapers */}
+        <div className="border-t border-slate-100 bg-orange-50/40 py-12">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex rounded-full bg-orange-100 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-orange-700">
+                New topic pack
+              </span>
+              <span className="text-xs text-slate-500">Last-week revision · Marathi + English</span>
+            </div>
+            <h2 id="newspapers" className="mt-3 text-2xl font-bold text-slate-900">
+              वृत्तपत्र — संस्थापक, संपादक व 100 बहुपर्यायी प्रश्न
+            </h2>
+            <p className="mt-1 text-sm text-slate-500">
+              Indian newspapers — founders, editors and 100 MCQs for MPSC, Rajyaseva, RTO AMVI &amp; UPSC prelims.
+            </p>
+            <p className="mt-4 text-slate-600">
+              The <a href="/newspapers" className="text-orange-700 underline underline-offset-2 hover:text-orange-800">newspapers topic pack</a> is a single,
+              hand-curated revision sheet for the highest-yield <em>Modern Indian History</em> sub-topic — the press
+              and the freedom struggle. It collects <strong>70+ newspapers</strong> and <strong>50+ founders / editors</strong>
+              into <strong>6 historical groups</strong> (British &amp; early period, Bengal Renaissance reformers,
+              Maharashtra press, Nationalist Congress era, Revolutionary press, Gandhi era &amp; beyond) and pairs the
+              reference table with <strong>100 unique multiple-choice questions</strong>, with the correct answer pre-marked.
+              Every editor name is shown in Marathi (Devanagari) with English transliteration, so you can search and recall
+              equally well in either language.
+            </p>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <a href="/newspapers#reference" className="rounded-lg border border-orange-200 bg-white px-4 py-3 hover:border-orange-400 hover:bg-orange-50">
+                <p className="font-semibold text-slate-800">📖 संदर्भ तक्ता · Reference</p>
+                <p className="mt-1 text-xs text-slate-500">Hicky · Bal Shastri Jambhekar · Tilak · Agarkar · Raja Ram Mohan Roy · Tagore · Naoroji · Ghosh brothers · Subramania Iyer · Gandhi · Tilak · Azad · Shyamji Krishnavarma · Lala Hardayal · Annie Besant · Aurobindo Ghosh · Madam Cama …</p>
+              </a>
+              <a href="/newspapers#mcqs" className="rounded-lg border border-orange-200 bg-white px-4 py-3 hover:border-orange-400 hover:bg-orange-50">
+                <p className="font-semibold text-slate-800">📝 100 MCQ · Practice</p>
+                <p className="mt-1 text-xs text-slate-500">100 unique questions covering Bengal Gazette, Darpan, Kesari, Maratha, Sudharak, Indu Prakash, Amrit Bazar Patrika, The Hindu, Young India, Harijan, Al-Hilal, Comrade, Hamdard, Ghadar, Vande Mataram and more.</p>
+              </a>
+            </div>
+            <p className="mt-6 text-sm">
+              <a href="/newspapers" className="font-semibold text-orange-700 underline underline-offset-2 hover:text-orange-800">
+                Open the newspapers topic pack &rarr;
+              </a>
+            </p>
+          </div>
+        </div>
+
         {/* FAQ for SEO */}
         <div className="border-t border-slate-100 py-12">
           <div className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -386,6 +436,8 @@ export default function Home() {
             <a href="/exams" className="hover:text-indigo-600 hover:underline">Exam Papers</a>
             <span>|</span>
             <a href="/study-guides" className="hover:text-indigo-600 hover:underline">Study Guides</a>
+            <span>|</span>
+            <a href="/newspapers" className="hover:text-indigo-600 hover:underline">वृत्तपत्र · 100 MCQ</a>
             <span>|</span>
             <a href="/map" className="hover:text-indigo-600 hover:underline">Maharashtra Map</a>
             <span>|</span>
