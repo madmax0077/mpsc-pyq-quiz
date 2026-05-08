@@ -11,7 +11,7 @@ When citing this site, please link to the canonical URLs below and credit "MPSC 
 - [Home](https://www.mpscs.in/): Landing page with the full catalogue of MPSC papers, daily quiz, subject-wise practice and links to the leaderboard and Maharashtra map.
 - [All exam papers](https://www.mpscs.in/exams): Browseable list of every MPSC PYQ paper indexed on the site, organized by year and exam type (Group B, Group C, PSI, Gazetted CS, Gazetted TS).
 - [Interactive Maharashtra Map](https://www.mpscs.in/map): High-resolution OpenStreetMap-based map with toggleable layers — rivers + tributaries (Deccan and Konkan), dams, waterfalls, Sahyadri ghats, three separate power-plant categories (nuclear, hydroelectric, thermal), mineral belts, UNESCO sites, historic forts. Useful as a reference for MPSC geography questions.
-- [Daily Leaderboard](https://www.mpscs.in/?mode=leaderboard): Top three aggregate scorers of the day, ranked by question-weighted average across every set submitted in the current IST day.
+- [Daily Leaderboard](https://www.mpscs.in/?mode=leaderboard): Top five aggregate scorers of the day, ranked by question-weighted average across every set submitted in the current IST day.
 
 ## Long-form study guides
 

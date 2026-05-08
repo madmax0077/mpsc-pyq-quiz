@@ -75,7 +75,7 @@ export default function About() {
               <li>
                 <strong>Daily aggregate leaderboard</strong> ({""}
                 <Link href="/?mode=leaderboard">open it</Link>) — every set you submit during the
-                day counts towards your aggregate. The top three users are ranked by question-weighted
+                day counts towards your aggregate. The top five users are ranked by question-weighted
                 average across all of their attempts that day. It resets at midnight IST.
               </li>
               <li>

@@ -281,7 +281,7 @@ export default function RootLayout({
             name: "How does the daily leaderboard work?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Sign in once and every quiz set you submit during the day counts towards your aggregate score. The leaderboard ranks the top three users by question-weighted average across all daily attempts, so the more sets you solve, the more accurate your standing becomes.",
+              text: "Sign in once and every quiz set you submit during the day counts towards your aggregate score. The leaderboard ranks the top five users by question-weighted average across all daily attempts, so the more sets you solve, the more accurate your standing becomes.",
             },
           },
           {

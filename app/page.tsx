@@ -62,7 +62,7 @@ export default function Home() {
               className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
             >
               <span className="block font-semibold text-slate-800">🏆 Daily leaderboard</span>
-              <span className="block text-xs text-slate-500">Top 3 aggregate scorers of the day</span>
+              <span className="block text-xs text-slate-500">Top 5 aggregate scorers of the day</span>
             </a>
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function Home() {
             <p className="mt-4 text-slate-600">
               Sign in once and every quiz set you submit during the day counts towards your aggregate score. The
               <a href="/?mode=leaderboard" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700"> daily leaderboard </a>
-              ranks the top three users by question-weighted average across all of their attempts that day, so the more
+              ranks the top five users by question-weighted average across all of their attempts that day, so the more
               sets you solve, the more accurate your standing becomes. Your rank, attempts and current accuracy are
               shown in a personal panel below the podium.
             </p>

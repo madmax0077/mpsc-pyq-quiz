@@ -372,7 +372,7 @@ function LeaderboardTile({ onClick, className = "" }: { onClick: () => void; cla
             </span>
           </div>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            See today&apos;s top 3 scorers and check your rank.
+            See today&apos;s top 5 scorers and check your rank.
           </p>
         </div>
         <svg className="h-5 w-5 shrink-0 text-amber-500 transition-transform group-hover:translate-x-1 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

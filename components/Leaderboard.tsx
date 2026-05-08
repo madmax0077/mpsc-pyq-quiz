@@ -28,6 +28,23 @@ const PODIUM_TONES: Record<number, { ring: string; bg: string; chip: string; med
   },
 };
 
+// Tones for 4th & 5th — flatter, lower-emphasis than the podium so the medal
+// hierarchy still reads as the headline.
+const RUNNERUP_TONES: Record<number, { ring: string; bg: string; chip: string; label: string }> = {
+  3: {
+    ring: "ring-indigo-200 dark:ring-indigo-700",
+    bg: "from-indigo-50 to-white dark:from-indigo-900/30 dark:to-slate-800/40",
+    chip: "bg-indigo-500 text-white",
+    label: "4th",
+  },
+  4: {
+    ring: "ring-violet-200 dark:ring-violet-700",
+    bg: "from-violet-50 to-white dark:from-violet-900/30 dark:to-slate-800/40",
+    chip: "bg-violet-500 text-white",
+    label: "5th",
+  },
+};
+
 export default function Leaderboard() {
   const { studentUser } = useAuth();
   const [rows, setRows] = useState<LeaderboardRow[]>([]);
@@ -50,7 +67,9 @@ export default function Leaderboard() {
     return unsub;
   }, []);
 
-  const top3 = useMemo(() => rows.slice(0, 3), [rows]);
+  const top5 = useMemo(() => rows.slice(0, 5), [rows]);
+  const podiumRows = useMemo(() => top5.slice(0, 3), [top5]);
+  const runnerUpRows = useMemo(() => top5.slice(3), [top5]);
   const myRank = useMemo(() => {
     if (!studentUser) return null;
     const idx = rows.findIndex((r) => r.userId === studentUser.uid);
@@ -97,13 +116,17 @@ export default function Leaderboard() {
         </div>
       )}
 
-      {!loading && !error && top3.length === 0 && (
+      {!loading && !error && top5.length === 0 && (
         <EmptyState />
       )}
 
-      {!loading && !error && top3.length > 0 && (
+      {!loading && !error && top5.length > 0 && (
         <>
-          <Podium rows={top3} highlightUserId={studentUser?.uid} />
+          <Podium rows={podiumRows} highlightUserId={studentUser?.uid} />
+
+          {runnerUpRows.length > 0 && (
+            <RunnersUp rows={runnerUpRows} highlightUserId={studentUser?.uid} startRank={4} />
+          )}
 
           {/* Your-rank panel */}
           {studentUser ? (
@@ -219,6 +242,69 @@ function Podium({ rows, highlightUserId }: { rows: LeaderboardRow[]; highlightUs
               <p className="mt-0.5 text-[10px] sm:text-xs font-medium text-slate-500 dark:text-slate-400">
                 {row.totalScore}/{row.totalQuestions} correct
               </p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function RunnersUp({
+  rows,
+  highlightUserId,
+  startRank,
+}: {
+  rows: LeaderboardRow[];
+  highlightUserId?: string;
+  startRank: number;
+}) {
+  return (
+    <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {rows.map((row, idx) => {
+        const rank = startRank + idx; // 4, 5, ...
+        const tone = RUNNERUP_TONES[rank - 1] ?? RUNNERUP_TONES[3];
+        const isMe = highlightUserId && row.userId === highlightUserId;
+        const attemptLabel = `${row.attemptCount} ${row.attemptCount === 1 ? "test" : "tests"} today`;
+        return (
+          <div
+            key={row.userId}
+            className={`relative rounded-xl bg-gradient-to-br ${tone.bg} ring-1 ${tone.ring} p-3 sm:p-4 shadow-sm transition-transform hover:scale-[1.01]`}
+          >
+            <div className="absolute -top-2 left-3 flex items-center gap-1.5">
+              <span className={`rounded-full ${tone.chip} px-2 py-0.5 text-[10px] font-bold tracking-wide`}>
+                {tone.label}
+              </span>
+              {isMe && (
+                <span className="rounded-full bg-indigo-600 text-white px-2 py-0.5 text-[10px] font-bold tracking-wide">
+                  YOU
+                </span>
+              )}
+            </div>
+            <div className="flex items-center gap-3 pt-1">
+              <Avatar name={row.displayName} src={row.photoURL} size={44} />
+              <div className="min-w-0 flex-1">
+                <p
+                  className="truncate text-sm font-bold text-slate-800 dark:text-slate-100"
+                  title={row.displayName}
+                >
+                  {row.displayName}
+                </p>
+                <p
+                  className="mt-0.5 text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 line-clamp-1"
+                  title={attemptLabel}
+                >
+                  {attemptLabel}
+                </p>
+              </div>
+              <div className="text-right shrink-0">
+                <p className="text-lg sm:text-xl font-extrabold text-slate-800 dark:text-slate-100">
+                  {row.scorePct}%
+                </p>
+                <p className="text-[10px] sm:text-xs font-medium text-slate-500 dark:text-slate-400">
+                  {row.totalScore}/{row.totalQuestions}
+                </p>
+              </div>
             </div>
           </div>
         );
