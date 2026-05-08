@@ -3,28 +3,40 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   MH_GEO_CHAPTERS,
-  MH_GEO_IMAGE_HREF,
   MH_GEO_PARTS,
   MH_GEO_PDF_HREF,
   MH_GEO_TOTAL_PAGES,
   type MhGeoChapter,
 } from "@/lib/notesData/mhGeography";
+import contentData from "@/lib/notesData/mhGeographyContent.json";
 
 const TOTAL_CHAPTERS = MH_GEO_CHAPTERS.length;
 
+type RawSection = { page: number; text: string };
+type RawChapter = {
+  number: string;
+  titleEn: string;
+  titleMr: string;
+  pageStart: number;
+  pageEnd: number;
+  part: 1 | 2;
+  tip: string;
+  body: RawSection[];
+};
+
+const CONTENT = contentData as { chapters: RawChapter[] };
+const CONTENT_BY_NUMBER = new Map<string, RawChapter>(
+  CONTENT.chapters.map((c) => [c.number, c]),
+);
+
 export default function MhGeographyNotes() {
-  // null = browse view (hero + chapter grid)
-  // chapter object = reader view scrolled to that chapter
   const [active, setActive] = useState<MhGeoChapter | null>(null);
 
-  // Reset scroll when entering reader view or switching chapters
   useEffect(() => {
     if (active) {
-      // jump near top of the reader so the chapter banner is visible
       requestAnimationFrame(() => {
         const el = document.getElementById("mh-geo-reader-top");
-        if (el)
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
       });
     }
   }, [active?.number]);
@@ -38,91 +50,87 @@ export default function MhGeographyNotes() {
       />
     );
   }
-
   return <BrowseView onSelect={(c) => setActive(c)} />;
 }
 
 /* ------------------------------------------------------------------ */
-/* Browse view — cover + chapter grid                                 */
+/* Browse view                                                        */
 /* ------------------------------------------------------------------ */
 function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
   return (
     <article className="space-y-10">
       {/* Hero */}
-      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#12193A] via-[#1a2454] to-[#263256] p-8 text-white shadow-lg sm:p-10">
+      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0d1638] via-[#16265c] to-[#1f3175] p-8 text-white shadow-xl sm:p-10">
         <div
-          className="pointer-events-none absolute -right-10 -top-10 h-56 w-56 rounded-full bg-orange-500/20 blur-3xl"
+          className="pointer-events-none absolute -right-12 -top-12 h-64 w-64 rounded-full bg-orange-400/25 blur-3xl"
           aria-hidden
         />
         <div
-          className="pointer-events-none absolute -bottom-12 left-1/3 h-64 w-64 rounded-full bg-orange-400/10 blur-3xl"
+          className="pointer-events-none absolute -bottom-16 left-1/3 h-72 w-72 rounded-full bg-amber-300/15 blur-3xl"
           aria-hidden
         />
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-orange-300">
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-300">
           Don&apos;t know Academy · Notes
         </p>
         <h2 className="mt-3 text-4xl font-extrabold leading-tight sm:text-5xl">
-          Maharashtra <span className="text-orange-400">Geography</span>
+          Maharashtra <span className="text-amber-300">Geography</span>
         </h2>
         <p
           lang="mr"
-          className="font-devanagari-serif mt-2 text-xl font-bold text-orange-50/95 sm:text-2xl"
+          className="font-devanagari-serif mt-2 text-2xl font-bold text-amber-50/95 sm:text-3xl"
         >
           महाराष्ट्र भूगोल — संपूर्ण नोट्स
         </p>
-        <p className="mt-3 max-w-2xl text-sm text-slate-200/90 sm:text-base">
-          The complete Maharashtra geography revision pack — premium cover,
-          redesigned table of contents, clean chapter dividers and 83 pages
-          of focused content. {TOTAL_CHAPTERS} chapters · one focused study
-          session.
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-200/95 sm:text-base">
+          A typeset, copy-protected revision pack — every chapter rendered in
+          modern Noto Devanagari with calm colours, clear bullets and clean
+          spacing. {TOTAL_CHAPTERS} chapters · one focused study session.
         </p>
 
         <div className="mt-5 flex flex-wrap gap-2">
           <Pill>📚 MPSC · Rajyaseva · UPSC · RTO AMVI</Pill>
           <Pill>📖 {TOTAL_CHAPTERS} chapters</Pill>
-          <Pill>📄 {MH_GEO_TOTAL_PAGES} pages</Pill>
-          <Pill>🎨 2026 redesigned edition</Pill>
+          <Pill>📄 {MH_GEO_TOTAL_PAGES} pages of source</Pill>
+          <Pill>🎨 2026 typeset edition</Pill>
         </div>
 
         <div className="mt-6 flex flex-wrap gap-3">
           <a
             href={MH_GEO_PDF_HREF}
             download
-            className="rounded-lg bg-orange-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:-translate-y-0.5 hover:bg-orange-400 hover:shadow-md"
+            className="rounded-lg bg-amber-400 px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm transition-all hover:-translate-y-0.5 hover:bg-amber-300 hover:shadow-md"
           >
-            ⬇ Download redesigned PDF
+            ⬇ Download printable PDF
           </a>
           <button
             onClick={() => onSelect(MH_GEO_CHAPTERS[0])}
             className="rounded-lg bg-white/10 px-5 py-2.5 text-sm font-semibold text-white ring-1 ring-white/20 backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/15"
           >
-            📖 Read online
+            📖 Start reading
           </button>
         </div>
       </section>
 
       {/* About strip */}
-      <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+      <section className="rounded-2xl border border-amber-100 bg-gradient-to-br from-amber-50 to-orange-50 p-6 shadow-sm dark:border-amber-900/40 dark:from-slate-800 dark:to-slate-900">
         <div className="flex items-start gap-3">
           <span className="text-2xl" aria-hidden>
-            ℹ️
+            📓
           </span>
           <div>
             <h3 className="text-base font-bold text-slate-900 dark:text-slate-100">
-              About this notes pack
+              About this typeset edition
             </h3>
-            <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-              16 chapters spread across 83 pages — covering the formation of
-              Maharashtra, location and extent, political geography, river
-              systems, climate, forests, energy, transport, tourism and the
-              supplementary astronomy + space-launch chapters. Content is
-              packaged with a premium cover, redesigned table of contents,
-              chapter dividers and study tips so your revision flows in a
-              presentation-ready format.
+            <p className="mt-1.5 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+              The full Marathi notes have been re-rendered in Noto Serif &amp;
+              Sans Devanagari with consistent bullet styling and a calm cream /
+              navy / saffron palette tuned for long reading sessions.
+              Highlight boxes pull out exam-ready facts; chapter banners orient
+              you between sections.
             </p>
-            <p className="mt-2 text-xs text-slate-400 dark:text-slate-500">
-              Reading online? Pages stay copy-protected. Want to print or
-              revise offline? Use the Download button above.
+            <p className="mt-2 text-xs text-slate-500 dark:text-slate-500">
+              Pages stay copy-protected on screen. For offline revision use the
+              Download button above.
             </p>
           </div>
         </div>
@@ -133,9 +141,9 @@ function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
         const chs = MH_GEO_CHAPTERS.filter((c) => c.part === part.id);
         return (
           <section key={part.id}>
-            <header className="mb-4 flex flex-wrap items-end justify-between gap-2 border-l-4 border-orange-500 pl-3">
+            <header className="mb-4 flex flex-wrap items-end justify-between gap-2 border-l-4 border-amber-500 pl-3">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-orange-600 dark:text-orange-400">
+                <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
                   {part.label}
                 </p>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">
@@ -164,7 +172,7 @@ function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
 
       {/* Footer credit */}
       <section className="rounded-2xl border border-dashed border-slate-200 p-5 text-center text-xs text-slate-500 dark:border-slate-700 dark:text-slate-400">
-        Published by Don&apos;t know Academy · mpscs.in · 2026 edition · Free
+        Published by Don&apos;t know Academy · mpscs.in · 2026 typeset edition · Free
         for personal MPSC / Rajyaseva preparation. Redistribution prohibited.
       </section>
     </article>
@@ -185,11 +193,11 @@ function ChapterCard({
   return (
     <button
       onClick={onClick}
-      className="group relative flex min-h-[148px] flex-col overflow-hidden rounded-xl border-2 border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-400 hover:shadow-md dark:border-slate-700 dark:bg-slate-800 dark:hover:border-orange-500"
+      className="group relative flex min-h-[148px] flex-col overflow-hidden rounded-xl border-2 border-slate-200 bg-white p-4 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:border-amber-400 hover:shadow-md dark:border-slate-700 dark:bg-slate-800 dark:hover:border-amber-500"
     >
-      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-orange-500 to-red-600" />
+      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500" />
       <div className="flex items-start gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-orange-100 text-base font-extrabold text-orange-700 group-hover:bg-orange-500 group-hover:text-white dark:bg-orange-900/40 dark:text-orange-300">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-base font-extrabold text-amber-700 group-hover:bg-amber-500 group-hover:text-white dark:bg-amber-900/40 dark:text-amber-300">
           {ch.number}
         </span>
         <div className="min-w-0 flex-1">
@@ -212,7 +220,7 @@ function ChapterCard({
           {pageCount} {pageCount === 1 ? "page" : "pages"} · pp.{" "}
           {ch.pageStart}–{ch.pageEnd}
         </span>
-        <span className="text-orange-600 group-hover:text-orange-700 dark:text-orange-400">
+        <span className="text-amber-600 group-hover:text-amber-700 dark:text-amber-400">
           Read →
         </span>
       </div>
@@ -221,7 +229,7 @@ function ChapterCard({
 }
 
 /* ------------------------------------------------------------------ */
-/* Reader view — vertical scroll of page images for one chapter       */
+/* Reader view — typeset chapter content                              */
 /* ------------------------------------------------------------------ */
 function ReaderView({
   chapter,
@@ -232,16 +240,12 @@ function ReaderView({
   onBack: () => void;
   onSelect: (c: MhGeoChapter) => void;
 }) {
-  const pages = useMemo(() => {
-    const out: number[] = [];
-    for (let p = chapter.pageStart; p <= chapter.pageEnd; p++) out.push(p);
-    return out;
-  }, [chapter.pageStart, chapter.pageEnd]);
-
   const idx = MH_GEO_CHAPTERS.findIndex((c) => c.number === chapter.number);
   const prev = idx > 0 ? MH_GEO_CHAPTERS[idx - 1] : null;
   const next =
     idx < MH_GEO_CHAPTERS.length - 1 ? MH_GEO_CHAPTERS[idx + 1] : null;
+  const data = CONTENT_BY_NUMBER.get(chapter.number);
+  const sections = data?.body ?? [];
 
   return (
     <article id="mh-geo-reader-top" className="space-y-6">
@@ -255,7 +259,7 @@ function ReaderView({
             ← All chapters
           </button>
           <div className="min-w-0">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-orange-600 dark:text-orange-400">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
               Chapter {chapter.number} of {TOTAL_CHAPTERS}
             </p>
             <h3 className="truncate text-sm font-bold text-slate-900 dark:text-slate-100">
@@ -266,23 +270,29 @@ function ReaderView({
         <a
           href={MH_GEO_PDF_HREF}
           download
-          className="hidden shrink-0 rounded-lg bg-orange-500 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-orange-400 sm:inline-flex"
+          className="hidden shrink-0 rounded-lg bg-amber-500 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-amber-400 sm:inline-flex"
         >
           ⬇ Full PDF
         </a>
       </div>
 
       {/* Chapter banner */}
-      <section className="rounded-2xl bg-gradient-to-r from-[#12193A] to-[#263256] p-6 text-white">
-        <p className="text-[11px] font-semibold uppercase tracking-widest text-orange-300">
-          {chapter.part === 1 ? "Part 1 · Maharashtra Geography" : "Part 2 · Other Important Topics"}
+      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#0d1638] via-[#16265c] to-[#9c4221] p-6 text-white shadow-md sm:p-8">
+        <div
+          className="pointer-events-none absolute right-0 top-0 h-40 w-40 rounded-full bg-amber-300/20 blur-3xl"
+          aria-hidden
+        />
+        <p className="text-[11px] font-semibold uppercase tracking-widest text-amber-300">
+          {chapter.part === 1
+            ? "Part 1 · Maharashtra Geography"
+            : "Part 2 · Other Important Topics"}
         </p>
         <h2 className="mt-1.5 text-2xl font-extrabold sm:text-3xl">
           {chapter.titleEn}
         </h2>
         <p
           lang="mr"
-          className="font-devanagari-serif mt-1 text-xl font-bold text-orange-50/95 sm:text-2xl"
+          className="font-devanagari-serif mt-1 text-2xl font-bold text-amber-50/95 sm:text-3xl"
         >
           {chapter.titleMr}
         </p>
@@ -290,17 +300,22 @@ function ReaderView({
           💡 <strong>Study tip:</strong> {chapter.tip}
         </p>
         <p className="mt-3 text-xs text-slate-400">
-          Pages {chapter.pageStart}–{chapter.pageEnd} ·{" "}
+          Source pages {chapter.pageStart}–{chapter.pageEnd} ·{" "}
           {chapter.pageEnd - chapter.pageStart + 1}{" "}
           {chapter.pageEnd - chapter.pageStart + 1 === 1 ? "page" : "pages"}
         </p>
       </section>
 
-      {/* Page images */}
-      <div className="space-y-5">
-        {pages.map((p, i) => (
-          <PageImage key={p} page={p} eager={i === 0} />
-        ))}
+      {/* Typeset content */}
+      <div className="space-y-6">
+        {sections.length === 0 ? (
+          <div className="rounded-xl border border-dashed border-slate-200 bg-slate-50 p-6 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-800/40 dark:text-slate-400">
+            Typeset content for this chapter is being prepared. Please use the
+            downloadable PDF for now.
+          </div>
+        ) : (
+          sections.map((s) => <SectionCard key={s.page} section={s} />)
+        )}
       </div>
 
       {/* Prev / Next chapter nav */}
@@ -308,7 +323,7 @@ function ReaderView({
         {prev ? (
           <button
             onClick={() => onSelect(prev)}
-            className="rounded-xl border-2 border-slate-200 bg-white p-4 text-left transition-all hover:-translate-y-0.5 hover:border-orange-400 hover:shadow dark:border-slate-700 dark:bg-slate-800"
+            className="rounded-xl border-2 border-slate-200 bg-white p-4 text-left transition-all hover:-translate-y-0.5 hover:border-amber-400 hover:shadow dark:border-slate-700 dark:bg-slate-800"
           >
             <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
               ← Previous · Ch {prev.number}
@@ -329,7 +344,7 @@ function ReaderView({
         {next ? (
           <button
             onClick={() => onSelect(next)}
-            className="rounded-xl border-2 border-slate-200 bg-white p-4 text-right transition-all hover:-translate-y-0.5 hover:border-orange-400 hover:shadow dark:border-slate-700 dark:bg-slate-800"
+            className="rounded-xl border-2 border-slate-200 bg-white p-4 text-right transition-all hover:-translate-y-0.5 hover:border-amber-400 hover:shadow dark:border-slate-700 dark:bg-slate-800"
           >
             <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
               Next · Ch {next.number} →
@@ -347,12 +362,12 @@ function ReaderView({
         ) : (
           <button
             onClick={onBack}
-            className="rounded-xl border-2 border-orange-200 bg-orange-50 p-4 text-right transition-all hover:-translate-y-0.5 hover:border-orange-400 hover:shadow dark:border-orange-800 dark:bg-orange-900/30"
+            className="rounded-xl border-2 border-amber-200 bg-amber-50 p-4 text-right transition-all hover:-translate-y-0.5 hover:border-amber-400 hover:shadow dark:border-amber-800 dark:bg-amber-900/30"
           >
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-orange-600 dark:text-orange-400">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
               You finished the notes 🎉
             </p>
-            <p className="mt-1 text-sm font-bold text-orange-800 dark:text-orange-200">
+            <p className="mt-1 text-sm font-bold text-amber-800 dark:text-amber-200">
               Back to the chapter index
             </p>
           </button>
@@ -363,31 +378,145 @@ function ReaderView({
 }
 
 /* ------------------------------------------------------------------ */
-/* PageImage — lazy, copy-protected page renderer                     */
+/* Per-page typeset card                                              */
 /* ------------------------------------------------------------------ */
-function PageImage({ page, eager }: { page: number; eager: boolean }) {
+function SectionCard({ section }: { section: RawSection }) {
+  const blocks = useMemo(() => parseBlocks(section.text), [section.text]);
   return (
-    <figure className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800">
-      <img
-        src={MH_GEO_IMAGE_HREF(page)}
-        alt={`Maharashtra Geography — page ${page} of ${MH_GEO_TOTAL_PAGES}`}
-        loading={eager ? "eager" : "lazy"}
-        decoding="async"
-        draggable={false}
-        onContextMenu={(e) => e.preventDefault()}
-        onDragStart={(e) => e.preventDefault()}
-        className="block w-full select-none"
-        style={{
-          // Prevent iOS long-press save panel
-          WebkitTouchCallout: "none",
-          WebkitUserSelect: "none",
-          userSelect: "none",
-        }}
-      />
-      <figcaption className="border-t border-slate-100 bg-slate-50 px-3 py-1.5 text-center text-[11px] font-medium text-slate-400 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-500">
-        Page {page} / {MH_GEO_TOTAL_PAGES}
-      </figcaption>
+    <figure className="overflow-hidden rounded-2xl border border-amber-100 bg-[#FDF8F1] shadow-sm dark:border-slate-700 dark:bg-slate-800/60">
+      <div className="border-b border-amber-100/70 bg-white/70 px-4 py-2 text-[11px] font-semibold uppercase tracking-widest text-amber-700 dark:border-slate-700 dark:bg-slate-800 dark:text-amber-300">
+        Page {section.page} / {MH_GEO_TOTAL_PAGES}
+      </div>
+      <div
+        lang="mr"
+        className="font-devanagari space-y-3 px-5 py-5 text-[15px] leading-[1.85] text-slate-800 sm:px-7 sm:py-6 sm:text-base dark:text-slate-200"
+      >
+        {blocks.map((b, i) => (
+          <Block key={i} block={b} />
+        ))}
+      </div>
     </figure>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Block parsing & rendering                                          */
+/* ------------------------------------------------------------------ */
+type Block =
+  | { kind: "heading"; text: string }
+  | { kind: "highlight"; label: string; value: string }
+  | { kind: "bullet"; text: string }
+  | { kind: "numbered"; text: string }
+  | { kind: "para"; text: string };
+
+const HIGHLIGHT_KEYS = [
+  "उगम",
+  "लांबी",
+  "क्षेत्र",
+  "उपनद्या",
+  "क्षमता",
+  "स्थापना",
+  "स्थान",
+  "विस्तार",
+  "आकार",
+  "मार्ग",
+  "मुख्यालय",
+  "धरण",
+  "संगम",
+];
+
+function parseBlocks(text: string): Block[] {
+  const lines = text.split("\n");
+  const out: Block[] = [];
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!line) continue;
+
+    // A line that starts with "•" or "-" treated as a bullet
+    if (/^[•\-\u2022]\s*/.test(line)) {
+      const body = line.replace(/^[•\-\u2022]\s*/, "").trim();
+      if (!body) continue;
+      // If the bullet content is a "key : value" with a known highlight key,
+      // surface it as a highlight box.
+      const m = body.match(/^([\u0900-\u097F\s]{2,15}?)\s*[:：]\s*(.+)$/);
+      if (m && HIGHLIGHT_KEYS.some((k) => m[1].includes(k))) {
+        out.push({ kind: "highlight", label: m[1].trim(), value: m[2].trim() });
+        continue;
+      }
+      out.push({ kind: "bullet", text: body });
+      continue;
+    }
+
+    // Numbered list (1. / 2. / १. / २.)
+    if (/^(\d+|[०-९]+)[\.\)]\s/.test(line)) {
+      out.push({ kind: "numbered", text: line });
+      continue;
+    }
+
+    // A standalone short Marathi line that ends with no terminator and is
+    // before a body — promote to a heading-ish callout.
+    if (
+      line.length <= 40 &&
+      /[\u0900-\u097F]/.test(line) &&
+      !/[।.!?:]$/.test(line)
+    ) {
+      out.push({ kind: "heading", text: line });
+      continue;
+    }
+
+    out.push({ kind: "para", text: line });
+  }
+  return out;
+}
+
+function Block({ block }: { block: Block }) {
+  if (block.kind === "heading") {
+    return (
+      <h4
+        lang="mr"
+        className="font-devanagari-serif mt-4 border-l-4 border-amber-500 pl-3 text-lg font-bold text-[#12193A] dark:text-amber-200"
+      >
+        {block.text}
+      </h4>
+    );
+  }
+  if (block.kind === "highlight") {
+    return (
+      <div className="rounded-lg border-l-4 border-amber-500 bg-amber-50/80 px-4 py-2.5 dark:border-amber-400 dark:bg-amber-900/20">
+        <span
+          lang="mr"
+          className="font-devanagari-serif mr-2 text-sm font-bold uppercase tracking-wide text-amber-800 dark:text-amber-300"
+        >
+          {block.label}
+        </span>
+        <span lang="mr" className="font-devanagari text-slate-800 dark:text-slate-100">
+          {block.value}
+        </span>
+      </div>
+    );
+  }
+  if (block.kind === "bullet") {
+    return (
+      <p lang="mr" className="font-devanagari relative pl-6">
+        <span
+          aria-hidden
+          className="absolute left-1 top-[0.65em] inline-block h-1.5 w-1.5 rounded-full bg-amber-500"
+        />
+        {block.text}
+      </p>
+    );
+  }
+  if (block.kind === "numbered") {
+    return (
+      <p lang="mr" className="font-devanagari pl-2 font-medium text-slate-800 dark:text-slate-200">
+        {block.text}
+      </p>
+    );
+  }
+  return (
+    <p lang="mr" className="font-devanagari">
+      {block.text}
+    </p>
   );
 }
 
