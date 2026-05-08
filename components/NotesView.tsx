@@ -39,7 +39,7 @@ const NOTES_INDEX: NoteEntry[] = [
     title: "महाराष्ट्र भूगोल — संपूर्ण नोट्स",
     subtitle: "Maharashtra Geography — Complete Notes (2026)",
     blurb:
-      "16 chapters · 83 pages of Marathi geography revision notes — formation of Maharashtra, political and physical geography, rivers, climate, forests, energy, transport, tourism, astronomy and space launches. Read online (copy-protected) or download the printable PDF.",
+      "16 chapters · 83 pages of Marathi geography revision notes — formation of Maharashtra, political and physical geography, rivers, climate, forests, energy, transport, tourism, astronomy and space launches. Read online (copy-protected).",
     meta: "MPSC · Rajyaseva · RTO AMVI · UPSC · 2026 redesigned edition",
     accent: "from-[#12193A] to-orange-500",
   },

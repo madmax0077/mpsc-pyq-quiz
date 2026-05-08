@@ -1,11 +1,11 @@
 {
   "title_en": "Maharashtra Geography",
   "title_mr": "महाराष्ट्र भूगोल",
-  "edition": "2026 typeset",
-  "totalSourcePages": 83,
+  "edition": "2026",
+  "totalPages": 83,
+  "renderDpi": 150,
   "publishedBy": "Don't know Academy · mpscs.in",
-  "downloadPdf": "/notes/mh-geography/maharashtra-geography-redesigned.pdf",
-  "contentSource": "lib/notesData/mhGeographyContent.json",
+  "imagePathTemplate": "/notes/mh-geography/pages/page-{:03d}.jpg",
   "parts": [
     {
       "id": 1,
