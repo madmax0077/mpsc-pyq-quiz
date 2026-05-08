@@ -3,6 +3,7 @@
 import { useEffect, useState, type SyntheticEvent } from "react";
 import NewspaperNotes from "@/components/notes/NewspaperNotes";
 import MhGeographyNotes from "@/components/notes/MhGeographyNotes";
+import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
 
 /**
  * NotesView
@@ -20,7 +21,7 @@ import MhGeographyNotes from "@/components/notes/MhGeographyNotes";
  * 3. Append a new entry to NOTES_INDEX below.
  */
 
-type NoteSlug = "newspapers" | "mh-geography";
+type NoteSlug = "newspapers" | "mh-geography" | "economics-yojana";
 
 type NoteEntry = {
   slug: NoteSlug;
@@ -42,6 +43,16 @@ const NOTES_INDEX: NoteEntry[] = [
       "16 chapters · 83 pages of Marathi geography revision notes — formation of Maharashtra, political and physical geography, rivers, climate, forests, energy, transport, tourism, astronomy and space launches. Read online (copy-protected).",
     meta: "MPSC · Rajyaseva · RTO AMVI · UPSC · 2026 redesigned edition",
     accent: "from-[#12193A] to-orange-500",
+  },
+  {
+    slug: "economics-yojana",
+    emoji: "🏛️",
+    title: "अर्थशास्त्र — महत्त्वाच्या योजना",
+    subtitle: "Economics Yojana — Government Schemes & 62 PYQs",
+    blurb:
+      "29 केंद्र-शासित योजना — MGNREGA, DAY-NRLM, DAY-NULM, PMJDY, PM-Kisan, PMAY, Ayushman Bharat, PM-SVANidhi, PM Vishwakarma, Gati-Shakti, MISHTI, PM-SHRI आणि अधिक. प्रत्येक योजनेची सुरुवात, उद्दिष्टे, अंमलबजावणी मंत्रालय, अद्ययावत आकडेवारी (Dec 2023) आणि 62 PYQ MCQs उत्तरांसह.",
+    meta: "MPSC · Rajyaseva · STI · PSI · ASO · UPSC · ~15 min revision",
+    accent: "from-emerald-600 to-teal-700",
   },
   {
     slug: "newspapers",
@@ -224,6 +235,8 @@ function NoteContent({ slug }: { slug: NoteSlug }) {
       return <NewspaperNotes />;
     case "mh-geography":
       return <MhGeographyNotes />;
+    case "economics-yojana":
+      return <EconomicsYojanaNotes />;
     default:
       return null;
   }
