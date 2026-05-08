@@ -145,9 +145,6 @@ export default function Leaderboard() {
                     </div>
                   </div>
                   <div className="text-right shrink-0">
-                    <p className="text-xs font-medium text-indigo-600 dark:text-indigo-400">
-                      Rank #{myRank.rank} of {myRank.total}
-                    </p>
                     <p className="text-base font-bold text-slate-800 dark:text-slate-100">
                       {myRank.row.scorePct}%{" "}
                       <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
