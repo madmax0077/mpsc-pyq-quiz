@@ -105,6 +105,114 @@ def fix_stray_marks(text: str) -> str:
     return text.strip()
 
 
+# --------------------------------------------------------------------------- #
+# Word-level OCR fixes: the publisher PDF's non-Unicode font collapses three
+# different consonants (ह, व, त) into the dependent vowel sign "ि" inside
+# words. Each entry below lists a corrupted spelling that is INVALID
+# Devanagari (ि can't start a word and can't follow another vowel) so the
+# substitution is unambiguous. Applied as substring replacement so we catch
+# the corrupted form whether it stands alone or inside a longer compound
+# (e.g. "गृि" inside "गृिवनमाटण").
+# --------------------------------------------------------------------------- #
+WORD_FIXES: dict[str, str] = {
+    # Forms of "to be" (ह → ि) — "ि" after "आ"/"न" before "े"/"ी" is invalid
+    "आिे": "आहे",
+    "आिेस": "आहेस",
+    "आिेत": "आहेत",
+    "आिेना": "आहेना",
+    "नािी": "नाही",
+    "कािी": "काही",
+    "कािीिी": "काहीही",
+    "कोणतेिी": "कोणतेही",
+    "कोणत्यािी": "कोणत्याही",
+    "एकिी": "एकही",
+    "कोणतेि ": "कोणतेच ",  # trailing-space safer here
+    # ह-prefix corruptions
+    "गृि": "गृह",
+    "सिभाग": "सहभाग",
+    "सियोग": "सहयोग",
+    "सिकार": "सहकार",
+    "सिज": "सहज",
+    "सिा": "सहा",
+    "सिाय्य": "साहाय्य",
+    "मिा": "महा",
+    "मित्त्व": "महत्त्व",
+    "अिवाल": "अहवाल",
+    # Living / residing root: रािण → राहण
+    "रािण": "राहण",
+    "रािताना": "राहताना",
+    "रािते": "राहते",
+    "रािणार": "राहणार",
+    "रािणारे": "राहणारे",
+    "रािणाऱ्या": "राहणाऱ्या",
+    "रािणीमान": "राहणीमान",
+    "रािताि": "राहतात",  # ह + त both wrong
+    # होणे / होते / होतो (auxiliary forms — leading "ि" never starts a word)
+    "िोणार": "होणार",
+    "िोते": "होते",
+    "िोता": "होता",
+    "िोऊन": "होऊन",
+    "िोणे": "होणे",
+    "िोत": "होत",
+    "िोिू": "होऊ",
+    # Proper names
+    "जवािर": "जवाहर",
+    "नेिरू": "नेहरू",
+    "मिात्मा": "महात्मा",
+    # व → ि substitutions (verified context)
+    "सेिा": "सेवा",
+    "आिास": "आवास",
+    "सुरुिात": "सुरुवात",
+    "जीिन": "जीवन",
+    "ज्योिी": "ज्योती",
+    "नाि ": "नाव ",
+    "नाि,": "नाव,",
+    "नाि.": "नाव.",
+    "नाि\n": "नाव\n",
+    # त → ि substitutions
+    "पंिप्रधान": "पंतप्रधान",
+    # Other extremely-common cluster fixes
+    "पूिय": "पूर्व",
+    "तिमा": "विमा",
+    "जीिनज्योिी": "जीवनज्योती",
+    # घ → ि (open / opened)
+    "उिडली": "उघडली",
+    "उिडता": "उघडता",
+    "उिडणे": "उघडणे",
+    "उिडण्या": "उघडण्या",
+    "उिडण्याची": "उघडण्याची",
+    "उिडल्या": "उघडल्या",
+    "उिडल्यानांतर": "उघडल्यानंतर",
+    "उिडणऱ्या": "उघडणाऱ्या",
+    "उिडली.": "उघडली.",
+    # ह → ि (more common words)
+    "बािेर": "बाहेर",
+    "बेिर": "बेघर",
+    "मोिीम": "मोहीम",
+    "मोिीमेच्या": "मोहीमेच्या",
+    "लोिार": "लोहार",
+    "राितात": "राहतात",
+    "पोिच": "पोहच",
+    "पोिोच": "पोहोच",
+    "पोिोचण्याचे": "पोहोचण्याचे",
+    # "नाि" (= "नाव" = name) — context bounded variants we can be sure about
+    "नािाने": "नावाने",
+    "योजनेचे नाि": "योजनेचे नाव",
+}
+
+
+def apply_word_fixes(text: str) -> str:
+    """Apply curated OCR-corruption fixes to a single string. Substitutions
+    are simple substring replacements applied longest-first so that overlapping
+    keys (e.g. "जीिनज्योिी" before "जीिन") replace the larger match first."""
+    if not text:
+        return text
+    for src in sorted(WORD_FIXES, key=len, reverse=True):
+        if src in text:
+            text = text.replace(src, WORD_FIXES[src])
+    return text
+
+
 def clean_pdf_to_lines() -> List[str]:
     if not SOURCE_PDF.exists():
         raise SystemExit(f"Source PDF not found: {SOURCE_PDF}")
@@ -475,6 +583,7 @@ def build_groups(lines: List[str]) -> List[dict]:
                 continue
             # Repair OCR stray vowel marks (bare "ि" => "व", etc.)
             stripped = fix_stray_marks(stripped)
+            stripped = apply_word_fixes(stripped)
             if not stripped:
                 continue
             kind = "para"
@@ -548,8 +657,8 @@ def format_question_text(q: str) -> str:
     # Collapse any 3+ blank lines that may result
     text = re.sub(r"\n{2,}", "\n", text)
     # Repair OCR stray vowel marks per line so we don't accidentally
-    # collapse legitimate \n separators.
-    lines = [fix_stray_marks(ln) for ln in text.split("\n")]
+    # collapse legitimate \n separators, then apply word-level OCR fixes.
+    lines = [apply_word_fixes(fix_stray_marks(ln)) for ln in text.split("\n")]
     return "\n".join(ln for ln in lines if ln).strip()
 
 
@@ -704,12 +813,12 @@ def parse_mcqs(lines: List[str]) -> List[dict]:
     def flush():
         if cur_num is None:
             return
-        # Pad/truncate options to 4 and repair OCR stray marks
-        cleaned_opts = [fix_stray_marks(o) for o in cur_opts]
+        # Pad/truncate options to 4 and repair OCR stray marks + word fixes
+        cleaned_opts = [apply_word_fixes(fix_stray_marks(o)) for o in cur_opts]
         opts = (cleaned_opts + ["—", "—", "—", "—"])[:4]
         ans = answer_map.get(cur_num, 1)
         raw_q = " ".join(s.strip() for s in cur_q if s.strip())
-        tag = fix_stray_marks(cur_tag) if cur_tag else cur_tag
+        tag = apply_word_fixes(fix_stray_marks(cur_tag)) if cur_tag else cur_tag
         mcqs.append(
             {
                 "n": cur_num,
@@ -777,7 +886,7 @@ def parse_stats(lines: List[str]) -> List[str]:
     )
     chunk = lines[start + 1: end]
     flowed = [s for s in join_continuations(chunk) if s.strip()]
-    cleaned = [fix_stray_marks(s) for s in flowed]
+    cleaned = [apply_word_fixes(fix_stray_marks(s)) for s in flowed]
     # Drop tiny garbage lines (single chars left over from OCR layout)
     return [s for s in cleaned if len(s) >= 12 and DEVANAGARI.search(s)]
 
