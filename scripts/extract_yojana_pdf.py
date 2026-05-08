@@ -76,6 +76,35 @@ def is_noise(line: str) -> bool:
     return False
 
 
+# OCR fix-ups. The publisher's PDF uses a non-Unicode Marathi font that the
+# OCR pipeline mostly resolved correctly, but it consistently mis-reads the
+# consonant "व" (va, used as the conjunction "and") as the dependent vowel
+# sign "ि" (i). Visually they sit on the same baseline-stroke in this font.
+# A bare "ि" is invalid Devanagari so we substitute the intended "व".
+LONE_VOWEL_MARKS = "ािीुूेैोौंःृॅॉँ्"
+LONE_VA_RX = re.compile(r"(?<=\s)ि(?=\s)")
+TRAILING_LONE_MARK_RX = re.compile(r"\s+[" + re.escape(LONE_VOWEL_MARKS) + r"]\s*$")
+EMBEDDED_LONE_MARK_RX = re.compile(r"\s+[" + re.escape(LONE_VOWEL_MARKS) + r"]\s+")
+DEV_DIGIT_RX = re.compile(r"^[०-९]+$")
+
+
+def fix_stray_marks(text: str) -> str:
+    """Repair OCR artifacts: bare "ि" -> "व" (publisher-font confusion),
+    drop standalone trailing vowel marks ("... तयार करणारा े" -> "... तयार करणारा"),
+    and tidy spacing around stripped marks."""
+    if not text:
+        return text
+    # First, the va/i swap (must run before stripping standalone marks).
+    text = LONE_VA_RX.sub("व", text)
+    # Trailing dangling vowel mark
+    text = TRAILING_LONE_MARK_RX.sub("", text)
+    # Embedded standalone vowel mark surrounded by whitespace
+    text = EMBEDDED_LONE_MARK_RX.sub(" ", text)
+    # Collapse double spaces that may result
+    text = re.sub(r"[ \t]{2,}", " ", text)
+    return text.strip()
+
+
 def clean_pdf_to_lines() -> List[str]:
     if not SOURCE_PDF.exists():
         raise SystemExit(f"Source PDF not found: {SOURCE_PDF}")
@@ -436,6 +465,18 @@ def build_groups(lines: List[str]) -> List[dict]:
             # Drop very short junk lines (1-3 chars)
             if len(stripped) <= 3 and not DEVANAGARI.search(stripped):
                 continue
+            # Drop OCR'd table-header garbage that always starts with "ियोर्ट"
+            # ("Eligibility / Beneficiary" header, which is followed by the
+            # actual eligibility bullet just below).
+            if stripped.startswith("ियोर्ट"):
+                continue
+            # Drop pure-numeral leftovers like "११", "१३" (page numbers).
+            if DEV_DIGIT_RX.match(stripped):
+                continue
+            # Repair OCR stray vowel marks (bare "ि" => "व", etc.)
+            stripped = fix_stray_marks(stripped)
+            if not stripped:
+                continue
             kind = "para"
             # A pure-date line
             if MONTH_RX.search(stripped) and len(stripped) <= 28:
@@ -506,7 +547,10 @@ def format_question_text(q: str) -> str:
     text = INLINE_LABEL_RX.sub("\n", text)
     # Collapse any 3+ blank lines that may result
     text = re.sub(r"\n{2,}", "\n", text)
-    return text.strip()
+    # Repair OCR stray vowel marks per line so we don't accidentally
+    # collapse legitimate \n separators.
+    lines = [fix_stray_marks(ln) for ln in text.split("\n")]
+    return "\n".join(ln for ln in lines if ln).strip()
 
 
 # Manual overrides for questions whose option text could not be parsed
@@ -660,15 +704,17 @@ def parse_mcqs(lines: List[str]) -> List[dict]:
     def flush():
         if cur_num is None:
             return
-        # Pad/truncate options to 4
-        opts = (cur_opts + ["—", "—", "—", "—"])[:4]
+        # Pad/truncate options to 4 and repair OCR stray marks
+        cleaned_opts = [fix_stray_marks(o) for o in cur_opts]
+        opts = (cleaned_opts + ["—", "—", "—", "—"])[:4]
         ans = answer_map.get(cur_num, 1)
         raw_q = " ".join(s.strip() for s in cur_q if s.strip())
+        tag = fix_stray_marks(cur_tag) if cur_tag else cur_tag
         mcqs.append(
             {
                 "n": cur_num,
                 "q": format_question_text(raw_q),
-                "tag": cur_tag,
+                "tag": tag,
                 "opts": opts,
                 "correct": max(0, min(3, ans - 1)),
             }
@@ -731,8 +777,9 @@ def parse_stats(lines: List[str]) -> List[str]:
     )
     chunk = lines[start + 1: end]
     flowed = [s for s in join_continuations(chunk) if s.strip()]
+    cleaned = [fix_stray_marks(s) for s in flowed]
     # Drop tiny garbage lines (single chars left over from OCR layout)
-    return [s for s in flowed if len(s) >= 12 and DEVANAGARI.search(s)]
+    return [s for s in cleaned if len(s) >= 12 and DEVANAGARI.search(s)]
 
 
 # --------------------------------------------------------------------------- #
