@@ -1,0 +1,1211 @@
+{
+  "id": "gb_combine_pre_2024_en",
+  "title": "MPSC Group B Combined Pre 2024 (English)",
+  "createdAt": "2025-02-02T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "gb_combine_pre_2024_en_1",
+      "text": "Choose the option of correct statements from the following.\na. The first cotton mill in India was started in Mumbai.\nb. The first linen mill in India was started in Rishra.\nc. India's first cotton mill was started by Kawasji Nanabhai.",
+      "options": {
+        "A": "Only a and c",
+        "B": "Only a and b",
+        "C": "Only b and c",
+        "D": "a, b and c"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_2",
+      "text": "Who led the 31 July 1857 Revolt of 27th Regiment of Indian Soldier's at Kolhapur?\na. Ramaji Shirsat\nb. Nanasaheb Peshwa\nc. Rango Bapuji\nd. Bhima Naik",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only b and c",
+        "C": "Only b, c and d",
+        "D": "Only a"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_3",
+      "text": "Who among the following said that Sati is, 'Murder with the consent of the scriptures'?",
+      "options": {
+        "A": "Lord Bentinck",
+        "B": "Mahatma Phule",
+        "C": "Raja Rammohan Roy",
+        "D": "Ishwarchandra Vidyasagar"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_4",
+      "text": "Match the following pairs:\na. Prarthana Samaj - I. 1870\nb. Satyashodhak Samaj - II. 1875\nc. Sarvjanik Sabha - III. 1867\nd. Arya Samaj - IV. 1873",
+      "options": {
+        "A": "a-III, b-II, c-I, d-IV",
+        "B": "a-IV, b-II, c-I, d-III",
+        "C": "a-III, b-IV, c-I, d-II",
+        "D": "a-I, b-II, c-III, d-IV"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_5",
+      "text": "Which of the following personalities provided education, legal advice to labours by the establishment of organization 'Kamgar Hitvardhak Sabha' in 1909?\na. Bhivaji Nare\nb. Sitaram Bole\nc. Harihar Sonule\nd. Barr. Harishchandra Talcherkar",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only b and c",
+        "C": "Only a, b and d",
+        "D": "Only a, c and d"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_6",
+      "text": "Homerule means\nA. To acquire the right to govern our country\nB. Achieving self governance\nC. For the yoke of the British to break\nD. Resisting self-Government",
+      "options": {
+        "A": "Only A and C",
+        "B": "Only B",
+        "C": "A, B and C",
+        "D": "Only B and C"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_7",
+      "text": "Who was the first secretary of the Indian Association established by Surendranath Banarjee on 26th July 1876?",
+      "options": {
+        "A": "Prof. Sundar Raman",
+        "B": "W. S. Blunt",
+        "C": "Anand Mohan Bose",
+        "D": "Shishir Kumar Ghosh"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_8",
+      "text": "The State was lapsed by company government for not making proper arrangement of his descendants after his death by which of the following kings of Nagpur?",
+      "options": {
+        "A": "Raja Raghuji II",
+        "B": "Raja Raghuji III",
+        "C": "Shreemant Maloji Raje Bhosle",
+        "D": "Shreemant Appasaheb Raje Bhosle"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_9",
+      "text": "Who among the following made the statement 'The queen of Jhansi was the only male among all the rebels'?",
+      "options": {
+        "A": "John Lawrence",
+        "B": "Major Sergeant",
+        "C": "Hugh Rose",
+        "D": "Colin Campbell"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_10",
+      "text": "Which of the following personalities were related with establishment of 'British India Committee' for National Congress at London on 27 July 1889?\na. Philip Spratt, Brian Bradley\nb. Sir Allan Hume, Digby\nc. Dadabhai Naoroji, Womesh Chandra Banerjee\nd. Wedderburn, W. S. Kane",
+      "options": {
+        "A": "Only a and b",
+        "B": "Only b and c",
+        "C": "Only a, b and c",
+        "D": "Only b, c and d"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_11",
+      "text": "Match the pairs of Ghats and Roads in Maharashtra.\nGhat - Road\nA. Phonda - I. Mumbai - Nashik\nB. Malshej - II. Kolhapur - Kudal\nC. Hanumante - III. Thane - Ahmadnagar\nD. Thal - IV. Kolhapur - Panaji",
+      "options": {
+        "A": "A-II, B-III, C-IV, D-I",
+        "B": "A-IV, B-I, C-III, D-II",
+        "C": "A-III, B-I, C-IV, D-II",
+        "D": "A-IV, B-III, C-II, D-I"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_12",
+      "text": "The mountain range of Shambhu Mahadev lies between ______ rivers.",
+      "options": {
+        "A": "Tapi - Godavari",
+        "B": "Godavari - Bhima",
+        "C": "Bhima - Krishna",
+        "D": "Koyna - Krishna"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_13",
+      "text": "Observe the following statements and select the correct option.\na. Iron, gold and copper are found in igneous rocks.\nb. Minerals such as limestone and gypsum are found in sedimentary rocks.\nc. Minerals such as mica, garnet are not found in metamorphic rocks.",
+      "options": {
+        "A": "a and c are correct",
+        "B": "a, b and c are correct",
+        "C": "a and b are correct",
+        "D": "only b is correct"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_14",
+      "text": "Which of the following statement/s is/are correct?\na. Bhima river basin is a separate river basin in Maharashtra.\nb. Painganga river rises in Ajanta range.\nc. River Manjara is the tributary of Krishna.\nd. Sindphana river is a northern tributary of Godawari.",
+      "options": {
+        "A": "only a and b",
+        "B": "only b",
+        "C": "c and d",
+        "D": "a, b and c"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_15",
+      "text": "Total administrative divisions in Maharashtra, during 1960 and 2020 are ______ and ______ respectively.",
+      "options": {
+        "A": "4 and 8",
+        "B": "4 and 6",
+        "C": "5 and 7",
+        "D": "5 and 8"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_16",
+      "text": "Match the following:\nType of soil - Region\na. Black cotton soil - i. Konkan region\nb. Lateritic soil - ii. Eastern Vidharba\nc. Reddish brown soil - iii. Maharashtra's plateau region\nd. Coarse shallow soil - iv. Eastern side of Sahyadri",
+      "options": {
+        "A": "a-iii, b-ii, c-iv, d-i",
+        "B": "a-iii, b-i, c-ii, d-iv",
+        "C": "a-ii, b-iv, c-i, d-iii",
+        "D": "a-i, b-ii, c-iv, d-iii"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_17",
+      "text": "The region between which two rivers is called the Punjab Himalayas?",
+      "options": {
+        "A": "Indus - Sutlaj",
+        "B": "Sutlaj - Ganga",
+        "C": "Chenab - Yamuna",
+        "D": "Kali - Tista"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_18",
+      "text": "Very hot and dry dusty winds, which blow very strongly in the Western and North-Western parts of India is called as __________.",
+      "options": {
+        "A": "Norvester",
+        "B": "Loo winds",
+        "C": "Kalbaisakhi",
+        "D": "Tea winds"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_19",
+      "text": "Dry farming in India as defined by Swaminathan (1970) is, where mean annual rainfall is\na. More than 100 cm but less than 120 cm\nb. Less than 30 cm\nc. More than 200 cm\nd. Less than 100 cm but more than 40 cm",
+      "options": {
+        "A": "only a",
+        "B": "a and b",
+        "C": "only c",
+        "D": "only d"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_20",
+      "text": "According to Indian census, which of the following settlements are known as urban settlements?\na. There is a Municipal Corporation/Municipality.\nb. Population is more than 5000.\nc. 50% of the people are engaged in non-agricultural occupations.\nd. The population density is more than 400 per square km.",
+      "options": {
+        "A": "a, b and c",
+        "B": "b, c and d",
+        "C": "a, b and d",
+        "D": "All of the above"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_21",
+      "text": "Which of the following statements is true about the Consumer Price Index for Industrial Workers (CPI-IW)?\na. It applies to all workers in India, regardless of their sector.\nb. It is solely used to determine the minimum wage.\nc. It is based on fixed basket of goods and services which never changes.\nd. It helps to ensure that industrial workers receive fair wages and maintain a decent standard of living.",
+      "options": {
+        "A": "Only a",
+        "B": "Only c",
+        "C": "Only d",
+        "D": "Both a and b"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_22",
+      "text": "Which of the following is not a method of qualitative credit control of Central Bank?",
+      "options": {
+        "A": "Control on consumer credit",
+        "B": "Control through issuing directives",
+        "C": "Regulation of margin requirements",
+        "D": "Open market operations"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_23",
+      "text": "Which of the following statements are correct?\na. Indian Handicrafts Development Corporation was established in the year 1958.\nb. 'PM Vishwakarma Kaushal Samman' Scheme is Central Government sponsored scheme.",
+      "options": {
+        "A": "a is correct",
+        "B": "b is correct",
+        "C": "a and b are correct",
+        "D": "None of the above"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_24",
+      "text": "Which of the following are three important factors leading to change in the demographic study of India?",
+      "options": {
+        "A": "Birth rate, maternal mortality rate and migration",
+        "B": "Birth rate, death rate and infant mortality rate",
+        "C": "Birth rate, death rate and migration",
+        "D": "Birth rate, maternal mortality rate and infant mortality rate"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_25",
+      "text": "State the correct order of the top five largest economies/richest countries in the world as per the International Monetary Fund (IMF) data published in 2024.",
+      "options": {
+        "A": "China, USA, Germany, India and Japan",
+        "B": "USA, India, China, Japan and Germany",
+        "C": "Germany, USA, India, China and Japan",
+        "D": "USA, China, Germany, Japan and India"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_26",
+      "text": "Dr. Vijay Kelkar Committee Report is related to __________.",
+      "options": {
+        "A": "Administrative reforms",
+        "B": "Indirect tax reforms",
+        "C": "Trade reforms",
+        "D": "Financial sector reforms"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_27",
+      "text": "_________ introduced the concept of multidimensional poverty index to replace human poverty index.",
+      "options": {
+        "A": "Human Development Report 1997",
+        "B": "Planning Commission Report 2012",
+        "C": "Human Development Report 2010",
+        "D": "Suresh Tendulkar Committee Report 2009"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_28",
+      "text": "Consider the following statements:\na. Net National Product is always less than Gross National Product.\nb. Gross National Product includes depreciation while Net National Product does not include depreciation.\nWhich of the statement/s given above is/are correct?",
+      "options": {
+        "A": "Only a is correct",
+        "B": "Only b is correct",
+        "C": "a and b are correct",
+        "D": "a and b are incorrect"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_29",
+      "text": "Which of the following statement/s is/are correct about India's Budget 2023-24?\na. Millets have been addressed with the name 'Shree Anna'.\nb. Rs. 23,000 crore has been provided for enchancing 'Kisan Credit Card' facilities.\nc. 'National Live-stock Mission' has been allocated Rs. 1,000 crore.",
+      "options": {
+        "A": "Only a",
+        "B": "Only a and b",
+        "C": "Only b and c",
+        "D": "All of the above"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_30",
+      "text": "Which of the following is not an authorised platform for residents in India to execute permitted forex transactions electronically?",
+      "options": {
+        "A": "A recognised stock exchange",
+        "B": "A platform authorised by the Reserve Bank of India (RBI)",
+        "C": "Any online platform offering forex trading services",
+        "D": "A bank authorised by the RBI to deal in foreign exchange"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_31",
+      "text": "Which is the main objective of National Agricultural Cooperative Marketing Federation of India (NAFED)?\na. Credit distribution.\nb. To promote rural industrialization.\nc. To promote cooperative marketing of agricultural produce.\nd. To sell agricultural produce in cheaper cost.",
+      "options": {
+        "A": "Only b",
+        "B": "a and d",
+        "C": "Only c",
+        "D": "b and c"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_32",
+      "text": "Which of the following statement is correct regarding Indian Budget?\na. Indian budgetary documents shows total receipts and expenditure.\nb. Indian budgetary documents shows fiscal deficit.\nc. Indian budgetary documents shows primary deficit.\nd. Indian budgetary documents shows effective revenue deficit.",
+      "options": {
+        "A": "a and b",
+        "B": "c and d",
+        "C": "Only b",
+        "D": "All of the above"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_33",
+      "text": "Match the following:\nRevolution - Production\na. Green Revolution - i. Oil-seed Production\nb. Golden Revolution - ii. Fishery Production\nc. Blue Revolution - iii. Food Production\nd. Yellow Revolution - iv. Fruit Production",
+      "options": {
+        "A": "a-iv, b-iii, c-ii, d-i",
+        "B": "a-i, b-ii, c-iv, d-iii",
+        "C": "a-iii, b-iv, c-ii, d-i",
+        "D": "a-ii, b-i, c-iv, d-iii"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_34",
+      "text": "The Constitution of India defines the Union Budget under the Article",
+      "options": {
+        "A": "Article 112",
+        "B": "Article 113",
+        "C": "Article 116",
+        "D": "Article 120"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_35",
+      "text": "Which of the following statement is true?\na. Gross domestic product does not include the income earned by the nationals outside the country.\nb. Gross domestic product does include the income earned by the nationals outside the country.",
+      "options": {
+        "A": "Only a",
+        "B": "Only b",
+        "C": "Both a and b",
+        "D": "None of these"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_36",
+      "text": "Which of the following space research agencies have jointly launched 'International Satellite Mission' SWOT to survey Earth water?",
+      "options": {
+        "A": "NASA and CNES",
+        "B": "NASA and ISRO",
+        "C": "NASA and ESA",
+        "D": "NASA and JAXA"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_37",
+      "text": "Food Waste Index (FWI) Report 2024 is released by __________.",
+      "options": {
+        "A": "United Nations Environment Programme",
+        "B": "Food and Agriculture Organisation",
+        "C": "United Nations Agricultural Programme",
+        "D": "Intergovernmental Panel on Climate Change"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_38",
+      "text": "Who is the author of the book \"The Indian Navy @75 reminiscing the voyage\"?",
+      "options": {
+        "A": "Shobha De",
+        "B": "Commodore Dilip Donde",
+        "C": "Commodore Ranjit Rai",
+        "D": "Commodore K. S. Subramaniam"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_39",
+      "text": "What was the gharana of Ustad Rashid Khan?",
+      "options": {
+        "A": "Mewati",
+        "B": "Kirana",
+        "C": "Rampur-Sahaswan",
+        "D": "Lucknow"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_40",
+      "text": "Which of the following States has started 'Orunodoi 2.0' Scheme to alleviate poverty?",
+      "options": {
+        "A": "Manipur",
+        "B": "Nagaland",
+        "C": "Mizoram",
+        "D": "Assam"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_41",
+      "text": "What is the motto of Surya Kiran Aerobatic Team (SKAT)?",
+      "options": {
+        "A": "Sadaiva Sarvottama",
+        "B": "Nabh Sprusham Deeptum",
+        "C": "Shatrujeet",
+        "D": "Karm hi dharm"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_42",
+      "text": "Which of the following is/are works by Jon Fosse?\na. Boat house\nb. Melancholy I\nc. Raudt, Svart (Red, Black)",
+      "options": {
+        "A": "a, b, c",
+        "B": "Only a, b",
+        "C": "Only a",
+        "D": "Only a, c"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_43",
+      "text": "With which company did Survey of India sign an agreement to prepare 3D maps of cities in India?",
+      "options": {
+        "A": "Nexon",
+        "B": "Infosys",
+        "C": "Genesys International",
+        "D": "Freedom GPS"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_44",
+      "text": "Which of the following pairs of name of city and name of cricket stadium are matched properly?\na. Green Park Stadium - Kanpur\nb. Holkar Stadium - Indore\nc. M. A. Chidambaram Stadium - Chennai\nd. M. Chinnaswamy Stadium - Bengaluru",
+      "options": {
+        "A": "a, b, c, d",
+        "B": "Only a, b, c",
+        "C": "Only a, b",
+        "D": "Only b, c, d"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_45",
+      "text": "B. N. Goswami was associated to which of the following field?",
+      "options": {
+        "A": "Art History",
+        "B": "Ancient Indian History",
+        "C": "World History",
+        "D": "Literature"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_46",
+      "text": "Which of the following statements are incorrect about Lakshadweep?\na. The name Lakshadweep in Malayalam and Sanskrit means 'a hundred thousand islands'.\nb. It is India's second smallest Union Territory by area.\nc. Kavaratti is the principal town of this Union Territory.\nd. Agatti is capital of Lakshadweep.",
+      "options": {
+        "A": "a, b, c, d",
+        "B": "Only a, b, d",
+        "C": "Only a, d",
+        "D": "Only b, d"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_47",
+      "text": "Which Ministry of Union Government conducts the Campaign of \"Sangathan se Samriddhi\"?",
+      "options": {
+        "A": "Ministry of Home Affairs",
+        "B": "Ministry of Finance",
+        "C": "Ministry of Rural Development",
+        "D": "Ministry of Trade"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_48",
+      "text": "Who among the following coined the term 'quantum dots'?",
+      "options": {
+        "A": "Ekimov and Onuschenko",
+        "B": "Mark Reed",
+        "C": "L. E. Brus",
+        "D": "Efros"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_49",
+      "text": "Which of the following is anthem of African Union (AU)?",
+      "options": {
+        "A": "God bless Africa",
+        "B": "Blessed be the Land of Africa",
+        "C": "Let us all unite and celebrate together",
+        "D": "Ode to joy"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_50",
+      "text": "Which of the following statements are correct about the Maldives?\na. The population of Maldives belongs almost entirely to the Maldivian ethnic group.\nb. Islam is official religion of the State.\nc. The official language is Arabic.\nd. The head of State and Government is the President.",
+      "options": {
+        "A": "a, b, c, d",
+        "B": "Only a, b",
+        "C": "Only a, b, d",
+        "D": "Only b, c, d"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_51",
+      "text": "Which Schedule of the Indian Constitution contains the allocation of seats for each State and Union Territories in the Council of States?",
+      "options": {
+        "A": "First Schedule",
+        "B": "Second Schedule",
+        "C": "Third Schedule",
+        "D": "Fourth Schedule"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_52",
+      "text": "Under which Constitutional Amendment, the Gram Sabha has got constitutional status?",
+      "options": {
+        "A": "61st Amendment",
+        "B": "71st Amendment",
+        "C": "73rd Amendment",
+        "D": "74th Amendment"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_53",
+      "text": "Which of the following statement/s is/are correct regarding the Parliament of India?\nA. The 'Provisional Parliament', after independence was unicameral.\nB. The term of the members of Rajya Sabha is same as that of the members of the Senate in U.S.A.",
+      "options": {
+        "A": "Only A",
+        "B": "Only B",
+        "C": "Both A and B",
+        "D": "None of the above"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_54",
+      "text": "In which Article of the Constitution, the words Zilla Panchayat, Gram Sabha, Intermediate Village etc. related to Panchayat State are defined?",
+      "options": {
+        "A": "Article 243",
+        "B": "Article 244",
+        "C": "Article 245",
+        "D": "Article 242"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_55",
+      "text": "Consider the following statements.\na. At present, the Eighth Schedule of the Indian Constitution specifies 22 languages.\nb. Among them Konkani and Nepali languages were added by the 92nd Amendment Act of 2003.\nWhich of the statements given above is/are correct?",
+      "options": {
+        "A": "Only a",
+        "B": "Only b",
+        "C": "Both a and b",
+        "D": "None of the above"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_56",
+      "text": "The subject of 'Organization of Gram Panchayat' is included in Article ______ of the Constitution of India.",
+      "options": {
+        "A": "Article 39",
+        "B": "Article 40",
+        "C": "Article 42",
+        "D": "Article 41"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_57",
+      "text": "What is 'Munshi Ayyangar formula' related to?",
+      "options": {
+        "A": "Tax issues",
+        "B": "Communal issues",
+        "C": "Language issues",
+        "D": "None of the above"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_58",
+      "text": "The Constitution of India has provided for the Election Commission as per the following Article",
+      "options": {
+        "A": "Article 368",
+        "B": "Article 256",
+        "C": "Article 324",
+        "D": "Article 150"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_59",
+      "text": "Who is India's first woman Chief Election Commissioner?",
+      "options": {
+        "A": "Swaruparani",
+        "B": "V. S. Ramadevi",
+        "C": "Kamla Nehru",
+        "D": "Jaylalita"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_60",
+      "text": "Which Article in the Indian Constitution deals with the topic of State Legislature?",
+      "options": {
+        "A": "Article 22",
+        "B": "Article 168",
+        "C": "Article 380",
+        "D": "Article 25"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_61",
+      "text": "Who among the following has the power to elect the Advocate General of the State?",
+      "options": {
+        "A": "Chief Minister",
+        "B": "Governor",
+        "C": "State Election Commissioner",
+        "D": "State Public Service Commission"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_62",
+      "text": "Which of the following States has a Bicameral Legislature?",
+      "options": {
+        "A": "Andhra Pradesh, Bihar, Karnataka, Gujarat, Madhya Pradesh, Kerala",
+        "B": "Maharashtra, Telangana, Uttar Pradesh, Assam, Odisha, Gujarat",
+        "C": "Karnataka, Maharashtra, Telangana, Uttar Pradesh, Bihar, Tripura",
+        "D": "Andhra Pradesh, Bihar, Karnataka, Maharashtra, Telangana, Uttar Pradesh"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_63",
+      "text": "According to Article 154 of the Constitution, all the executive powers of the State have been entrusted to whom by the Constitution?",
+      "options": {
+        "A": "Chief Minister",
+        "B": "Governor",
+        "C": "High Court Judge",
+        "D": "Speaker of the Legislative Assembly"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_64",
+      "text": "District Judges are appointed by",
+      "options": {
+        "A": "The Chief Justice of High Court",
+        "B": "The State Public Service Commission",
+        "C": "The Chief Minister of State",
+        "D": "The Governor of State"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_65",
+      "text": "Which Article of the Constitution provides that every High Court will be a Court of Record?",
+      "options": {
+        "A": "Article 215",
+        "B": "Article 216",
+        "C": "Article 217",
+        "D": "Article 218"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_66",
+      "text": "Match the algae group with suitable example.\nAlgae group - Example\na. Chlorophyceae - i. Sargassum\nb. Phaeophyceae - ii. Botrydium\nc. Rhodophyceae - iii. Spirogyra\nd. Xanthophyceae - iv. Polysiphonia",
+      "options": {
+        "A": "a-i, b-ii, c-iii, d-iv",
+        "B": "a-ii, b-iv, c-i, d-iii",
+        "C": "a-iii, b-i, c-iv, d-ii",
+        "D": "a-iv, b-iii, c-ii, d-i"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_67",
+      "text": "Which of the following is called as fruit ripening hormone?",
+      "options": {
+        "A": "Auxin",
+        "B": "Gibberellin",
+        "C": "Ethylene",
+        "D": "Cytokinin"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_68",
+      "text": "Match the plant disease with causative agent.\nPlant disease - Causal agent\na. Loose smut of wheat - i. Taphrina maculans\nb. Black stem rust of wheat - ii. Cercosporidium personatum\nc. Tikka disease of groundnut - iii. Ustilago segetum\nd. Leaf spot of turmeric - iv. Puccinia graminis",
+      "options": {
+        "A": "a-i, b-ii, c-iv, d-iii",
+        "B": "a-ii, b-i, c-iii, d-iv",
+        "C": "a-iii, b-iv, c-ii, d-i",
+        "D": "a-iv, b-iii, c-i, d-ii"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_69",
+      "text": "Which of the following vaccine is given intradermally?",
+      "options": {
+        "A": "TT",
+        "B": "BCG",
+        "C": "Japanese Encephalitis",
+        "D": "Yellow fever"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_70",
+      "text": "The biomedical waste is segregated and safely disposed by using color coded bag. Which color coded bag is used for human anatomical waste?",
+      "options": {
+        "A": "Red bag",
+        "B": "Yellow bag",
+        "C": "Blue bag",
+        "D": "White translucent bag"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_71",
+      "text": "The deficiency of protein in diet is responsible for which disease?",
+      "options": {
+        "A": "Arthritis",
+        "B": "Diabetes",
+        "C": "Kwashiorkor",
+        "D": "Parkinson's"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_72",
+      "text": "The following are the characteristics of mammals\na. Hair present on the body.\nb. Three chambered heart.\nc. Mammary glands are present in females.\nd. Some mammals lay eggs.\nWhich of the statement given above is/are correct?",
+      "options": {
+        "A": "a and b only",
+        "B": "b, c and d",
+        "C": "a and c only",
+        "D": "a, c and d"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_73",
+      "text": "The class Pisces includes fishes because\na. They are completely adapted to aquatic life.\nb. They have three chambered heart.\nc. They are cold blooded animals.\nd. The body is covered with scales.",
+      "options": {
+        "A": "only a",
+        "B": "only a and b",
+        "C": "a, c and d",
+        "D": "a, b and c"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_74",
+      "text": "Name the poison found in nematoblast of Hydra.",
+      "options": {
+        "A": "Glutathione",
+        "B": "Hypnotoxin",
+        "C": "Malathion",
+        "D": "No poison is found"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_75",
+      "text": "Bronze is an alloy of",
+      "options": {
+        "A": "Cu/Sn",
+        "B": "Cu/Zn",
+        "C": "Cu/Pb",
+        "D": "Cu/Ni"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_76",
+      "text": "\"Zeolites\" are used as __________ in chemical industry.",
+      "options": {
+        "A": "Catalyst",
+        "B": "Lubricant",
+        "C": "Mordant",
+        "D": "Alloy"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_77",
+      "text": "How many grams of hydrogen can be obtained from two moles of formaldehyde (HCHO) considering 100% reaction and recovery?\n(Atomic weights: H = 1, C = 12, O = 16)",
+      "options": {
+        "A": "1 gram",
+        "B": "2 gram",
+        "C": "4 gram",
+        "D": "30 gram"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_78",
+      "text": "State whether the following statements are true or false.\ni. In \"Solar PV\" technology, solar radiation energy is directly converted into electrical energy.\nii. In \"Solar thermal\" technology, solar radiation energy is converted to heat energy.\niii. Biomass material contains nitrogen only.",
+      "options": {
+        "A": "False, False, False",
+        "B": "True, True, False",
+        "C": "True, True, True",
+        "D": "True, False, True"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_79",
+      "text": "What kind of waves are produced in a cylinder containing a liquid by moving its piston back and forth?",
+      "options": {
+        "A": "Longitudinal",
+        "B": "Transverse",
+        "C": "Both transverse and longitudinal",
+        "D": "Neither transverse nor longitudinal"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_80",
+      "text": "In electromagnetic spectrum what is the wavelength range of visible light?",
+      "options": {
+        "A": "1 mm to 700 nm",
+        "B": "0.1 m to 1 mm",
+        "C": "1 nm to 400 nm",
+        "D": "400 nm to 700 nm"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_81",
+      "text": "A train starts from station 'A' with some passengers. At station 'B', 50% of the passengers get down and 25 new get in. At station 'C', 40% of the passengers present in the train get down and 40 new get in. Now, the number of passengers present in train is 40% of those boarded at station 'A'. How many passengers got down at station 'B'?",
+      "options": {
+        "A": "140",
+        "B": "220",
+        "C": "275",
+        "D": "440"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_82",
+      "text": "Solve (3.49)² – (0.51)² / (3.49 – 0.51) = ?",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "1"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_83",
+      "text": "Sameer purchased some apples for a total cost of Rs. 360. If had he got discount of Rs. 3 on each apple, then he could have purchased 25% more apples. How many apples did Sameer originally purchase?",
+      "options": {
+        "A": "24",
+        "B": "30",
+        "C": "32",
+        "D": "20"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_84",
+      "text": "How many numbers between 150 and 500 are divisible by 11?",
+      "options": {
+        "A": "31",
+        "B": "32",
+        "C": "34",
+        "D": "36"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_85",
+      "text": "If the monthly income of family is ₹ 40,000, then what is the total expenditure of family on house rent, groceries and travel by looking at the circle below?\n(Saving: 40°, Grocery: 90°, Electricity: 50°, Travel: 70°, House Rent: 110°)",
+      "options": {
+        "A": "₹ 35,000",
+        "B": "₹ 30,000",
+        "C": "₹ 25,000",
+        "D": "₹ 20,000"
+      },
+      "explanation": "",
+      "correctAnswer": "B",
+      "imageUrl": "/question-images/gb-combine-pre-2024-q85.png"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_86",
+      "text": "'A' sells an article to 'B' at a profit of 10%. 'B' sells the article back to 'A' at a loss of 10%. So what happened in this transaction?",
+      "options": {
+        "A": "'A' neither losses nor gains",
+        "B": "'A' makes a profit of 11%",
+        "C": "'A' makes a profit of 20%",
+        "D": "'B' losses 20%"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_87",
+      "text": "If a square tile has side 30 cm, then how many tiles will be required to cover a plot of length 18 m and breadth 12 m?",
+      "options": {
+        "A": "720",
+        "B": "3200",
+        "C": "2400",
+        "D": "320"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_88",
+      "text": "If a train of length 700 m crosses a platform in 72 seconds with a speed of 80 km/hr. What is the length of platform?",
+      "options": {
+        "A": "700 m",
+        "B": "900 m",
+        "C": "600 m",
+        "D": "800 m"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_89",
+      "text": "If Bhushan completes a work in 80 days, but after 10 days of work Bhushan leaves and Niraj does the remaining work in 35 days. In how many days will Niraj alone complete the same work?",
+      "options": {
+        "A": "32",
+        "B": "38",
+        "C": "42",
+        "D": "40"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_90",
+      "text": "Five years ago the average age of Rekha and Neha was 34 years. Today the average age of Rekha, Neha and Niraj is 33 years. How old will Niraj be after 10 years?",
+      "options": {
+        "A": "31 years",
+        "B": "33 years",
+        "C": "30 years",
+        "D": "35 years"
+      },
+      "explanation": "",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_91",
+      "text": "Six labours prepare 9600 bricks in four days. How many bricks will be prepared by 18 labours in two days?",
+      "options": {
+        "A": "15300",
+        "B": "16400",
+        "C": "17500",
+        "D": "14400"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_92",
+      "text": "A train running at a speed of 54 km/h crosses a telegraph pole in 9 seconds. Find the length of the train.",
+      "options": {
+        "A": "130 metre",
+        "B": "132 metre",
+        "C": "135 metre",
+        "D": "140 metre"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_93",
+      "text": "Which digit will come next in the following number series?\n3, 6, 11, 18, _____",
+      "options": {
+        "A": "20",
+        "B": "24",
+        "C": "36",
+        "D": "27"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_94",
+      "text": "Amar went 4 km to the school in West direction from his house and then went 2 km in North direction towards bank. After taking money from the Bank Amar went 4 km to Bharat's house in East direction. So what is the distance between he and his house?",
+      "options": {
+        "A": "4 km",
+        "B": "3 km",
+        "C": "2 km",
+        "D": "1 km"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_95",
+      "text": "Read the following statements and choose the correct conclusion/s.\nStatements 1: All mogara are shewanti.\n                    2: All shewanti are flowers.\nConclusions A: All flowers are mogara.\n                    B: All flowers are shewanti.",
+      "options": {
+        "A": "Conclusion A is correct",
+        "B": "Conclusion B is correct",
+        "C": "Conclusion A and B both are correct",
+        "D": "Conclusion A and B both are wrong"
+      },
+      "explanation": "",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_96",
+      "text": "How many triangles are in the adjoining figure?",
+      "options": {
+        "A": "38",
+        "B": "60",
+        "C": "46",
+        "D": "42"
+      },
+      "explanation": "",
+      "correctAnswer": "B",
+      "imageUrl": "/question-images/gb-combine-pre-2024-q96.png"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_97",
+      "text": "If + means −, − means ×, ÷ means + and × means ÷, then 15 − 3 + 10 × 5 ÷ 5 = ?",
+      "options": {
+        "A": "42",
+        "B": "44",
+        "C": "48",
+        "D": "None of these"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_98",
+      "text": "In a certain code language, BREAKTHROUGH is written as EAOUHRBRGHKT. How is DISTRIBUTION written in that code language?",
+      "options": {
+        "A": "TISTBUONDIRI",
+        "B": "SITIBUONRIDI",
+        "C": "STTIBUDIONRI",
+        "D": "RISTTIBUDION"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_99",
+      "text": "Rohan is the son of Ramu. Ramu's father picked up to Rohan from the school and they went to Sachin uncle's house. Sachin's wife is sister of Rohan's mother. What is the relation of Sachin's wife with Rohan's father?",
+      "options": {
+        "A": "Sister",
+        "B": "Daughter",
+        "C": "Sister-in-law",
+        "D": "Mother-in-law"
+      },
+      "explanation": "",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "gb_combine_pre_2024_en_100",
+      "text": "Read the following information carefully and answer the question.\nI. Six students A, B, C, D, E and F participated in self evaluation test of Maths and Science.\nII. The total marks of A in Maths was just above C and marks in Science just above F.\nIII. B was just above C in Science but scored less than D in Maths.\nIV. F got more marks than D and E in Science but did not perform as well in Maths as D.\nV. No one is in between C and D in Maths and C and A in Science.\nWho got the highest marks in Science?",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "explanation": "",
+      "correctAnswer": "B"
+    }
+  ],
+  "language": "english",
+  "tag": "Group B Combined Pre 2024"
+}
