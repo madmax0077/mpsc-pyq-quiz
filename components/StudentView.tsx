@@ -199,8 +199,13 @@ export default function StudentView({ language = "english", challenge, homeKey =
   }, [language]);
 
   const filteredQuizzes = useMemo(() => {
-    if (language === "marathi") return quizzes.filter((q) => q.language === "marathi");
-    return quizzes.filter((q) => q.language !== "marathi");
+    // Topic-only quizzes (Topic Wise tab) are language-agnostic — they expose
+    // a topic-by-category catalogue that should be browsable in any UI
+    // language. Only language-filter the regular exam papers.
+    if (language === "marathi") {
+      return quizzes.filter((q) => q.topicOnly || q.language === "marathi");
+    }
+    return quizzes.filter((q) => q.topicOnly || q.language !== "marathi");
   }, [quizzes, language]);
 
   const examQuizzes = useMemo(() => filteredQuizzes.filter((q) => !q.topicOnly), [filteredQuizzes]);
