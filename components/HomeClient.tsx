@@ -6,8 +6,9 @@ import type { Language } from "@/lib/types";
 import LoginPage from "@/components/LoginPage";
 import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
+import NotesView from "@/components/NotesView";
 
-type AppMode = "home" | "subject" | "topic" | "leaderboard";
+type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes";
 
 export default function HomeClient() {
   const { loading, studentUser, logoutStudent } = useAuth();
@@ -33,6 +34,9 @@ export default function HomeClient() {
     const mode = params.get("mode");
     if (mode === "leaderboard") {
       setAppMode("leaderboard");
+      window.history.replaceState({}, "", window.location.pathname);
+    } else if (mode === "notes") {
+      setAppMode("notes");
       window.history.replaceState({}, "", window.location.pathname);
     } else if (mode === "subject" || mode === "topic") {
       setAppMode(mode);
@@ -81,6 +85,13 @@ export default function HomeClient() {
 
           <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
             <nav className="hidden sm:flex items-center gap-1 text-xs font-semibold">
+              <button
+                onClick={() => { setAppMode("notes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-orange-50 hover:text-orange-600 transition-colors dark:text-slate-300 dark:hover:bg-orange-900/30 dark:hover:text-orange-400"
+              >
+                📝 Notes
+              </button>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
               <button
                 onClick={() => { setAppMode("leaderboard"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-amber-50 hover:text-amber-600 transition-colors dark:text-slate-300 dark:hover:bg-amber-900/30 dark:hover:text-amber-400"
@@ -230,6 +241,46 @@ export default function HomeClient() {
                   </svg>
                 </div>
               </button>
+
+              {/* Notes */}
+              <button
+                onClick={() => setAppMode("notes")}
+                className="group relative overflow-hidden rounded-2xl border-2 border-orange-100 bg-gradient-to-br from-orange-50 via-amber-50 to-rose-50 p-8 text-left shadow-sm hover:shadow-lg hover:border-orange-300 transition-all dark:from-orange-950/50 dark:via-amber-950/50 dark:to-rose-950/50 dark:border-orange-800 dark:hover:border-orange-600 sm:col-span-2"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 text-white shadow-md">
+                    <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold text-orange-700 dark:text-orange-300">
+                        📝 Notes
+                      </h3>
+                      <span className="rounded-full bg-orange-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-orange-700 dark:bg-orange-900/40 dark:text-orange-300">
+                        New
+                      </span>
+                      <span
+                        className="hidden items-center gap-1 rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-700 sm:inline-flex dark:border-amber-800 dark:bg-amber-900/30 dark:text-amber-300"
+                        title="Read-only — copy disabled"
+                      >
+                        🔒 Read-only
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                      Curated revision notes by Don&apos;t know Academy. First in the series:
+                      <strong> वर्तमानपत्र — संस्थापक व संपादक</strong> (70+ newspapers, 50+ editors, 100 MCQs with answers).
+                    </p>
+                    <div className="mt-3 flex items-center text-xs font-semibold text-orange-500 dark:text-orange-400">
+                      Open Notes
+                      <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </button>
             </div>
 
             <p className="text-xs text-slate-400 dark:text-slate-600 text-center max-w-md">
@@ -248,6 +299,15 @@ export default function HomeClient() {
               Back to Home
             </button>
             <Leaderboard />
+          </div>
+        ) : appMode === "notes" ? (
+          <div className="py-2 sm:py-4">
+            <NotesView
+              onBack={() => {
+                setAppMode("home");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            />
           </div>
         ) : (
           <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} />

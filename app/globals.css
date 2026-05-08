@@ -20,3 +20,56 @@ body {
 ::selection {
   @apply bg-indigo-200 dark:bg-indigo-700;
 }
+
+/* ----------------------------------------------------------------------
+ * Notes copy-protection
+ *
+ * Applied via the .notes-no-copy wrapper that components/NotesView.tsx
+ * renders, plus the body class .notes-no-copy-active which is added in
+ * the same component's useEffect (and removed on unmount).
+ *
+ * Scope: ONLY the Notes screen — no impact on Subject Wise, Topic Wise,
+ * Leaderboard, /map, /exams or anywhere else.
+ *
+ * Disables: text selection, image drag, long-press callout,
+ * tap-highlight. Right-click / Ctrl+C / Ctrl+X / Ctrl+A / Ctrl+S /
+ * Ctrl+P / Ctrl+U / drag are blocked from JS in the same component.
+ * -------------------------------------------------------------------- */
+.notes-no-copy,
+.notes-no-copy * {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.notes-no-copy img,
+.notes-no-copy svg {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+/* Hide the selection highlight inside notes — even if a stylus or
+ * accessibility tool manages to make a selection, it's not visible. */
+.notes-no-copy ::selection {
+  background: transparent;
+}
+.notes-no-copy ::-moz-selection {
+  background: transparent;
+}
+/* While Notes is active, also block printing of the page entirely. */
+@media print {
+  body.notes-no-copy-active * {
+    visibility: hidden !important;
+  }
+  body.notes-no-copy-active::after {
+    content: "Printing is disabled on Notes pages.";
+    visibility: visible;
+    display: block;
+    padding: 2rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: #475569;
+  }
+}
