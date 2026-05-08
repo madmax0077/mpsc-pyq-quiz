@@ -1,0 +1,187 @@
+{
+  "title_en": "Maharashtra Geography",
+  "title_mr": "महाराष्ट्र भूगोल",
+  "edition": "2026",
+  "totalPages": 83,
+  "renderDpi": 150,
+  "originalAuthor": "Lokseva Academy · Appa Hatnure Sir",
+  "redesignedBy": "Don't know Academy · mpscs.in",
+  "downloadPdf": "/notes/mh-geography/maharashtra-geography-redesigned.pdf",
+  "imagePathTemplate": "/notes/mh-geography/pages/page-{:03d}.jpg",
+  "parts": [
+    {
+      "id": 1,
+      "label": "Part 1",
+      "title_en": "Maharashtra Geography",
+      "title_mr": "महाराष्ट्र भूगोल"
+    },
+    {
+      "id": 2,
+      "label": "Part 2",
+      "title_en": "Other Important Topics",
+      "title_mr": "इतर महत्त्वाचे घटक"
+    }
+  ],
+  "chapters": [
+    {
+      "number": "01",
+      "title_en": "Formation of Maharashtra",
+      "title_mr": "महाराष्ट्राची स्थापना",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "pageCount": 1,
+      "part": 1,
+      "tip": "Pin down 1 May 1960 and the Bombay Reorganisation Act."
+    },
+    {
+      "number": "02",
+      "title_en": "Location, Extent & Shape",
+      "title_mr": "महाराष्ट्र : स्थान, विस्तार व आकार",
+      "pageStart": 3,
+      "pageEnd": 4,
+      "pageCount": 2,
+      "part": 1,
+      "tip": "Memorise the lat/long extents for both India and Maharashtra."
+    },
+    {
+      "number": "03",
+      "title_en": "Political Geography",
+      "title_mr": "महाराष्ट्राचा राजकीय भूगोल",
+      "pageStart": 5,
+      "pageEnd": 9,
+      "pageCount": 5,
+      "part": 1,
+      "tip": "Map the 6 revenue divisions to their 36 districts."
+    },
+    {
+      "number": "04",
+      "title_en": "Structural Physical Geography",
+      "title_mr": "रचनात्मक प्राकृतिक भूगोल",
+      "pageStart": 10,
+      "pageEnd": 14,
+      "pageCount": 5,
+      "part": 1,
+      "tip": "Learn the 4 physiographic divisions and their highest peaks."
+    },
+    {
+      "number": "05",
+      "title_en": "Census of India & Maharashtra",
+      "title_mr": "भारताची व महाराष्ट्राची जनगणना",
+      "pageStart": 15,
+      "pageEnd": 23,
+      "pageCount": 9,
+      "part": 1,
+      "tip": "Memorise the 2011 census top-10 lists for Maharashtra."
+    },
+    {
+      "number": "06",
+      "title_en": "Migration",
+      "title_mr": "स्थलांतर",
+      "pageStart": 24,
+      "pageEnd": 24,
+      "pageCount": 1,
+      "part": 1,
+      "tip": "Push & pull factors with classic Indian examples."
+    },
+    {
+      "number": "07",
+      "title_en": "River Systems",
+      "title_mr": "नदीप्रणाली",
+      "pageStart": 25,
+      "pageEnd": 36,
+      "pageCount": 12,
+      "part": 1,
+      "tip": "Master Krishna, Godavari, Tapi, and the Konkan rivers."
+    },
+    {
+      "number": "08",
+      "title_en": "Mineral Wealth",
+      "title_mr": "खनिज संपत्ती",
+      "pageStart": 37,
+      "pageEnd": 40,
+      "pageCount": 4,
+      "part": 1,
+      "tip": "Mineral districts: Nagpur (Mn), Chandrapur (Coal)."
+    },
+    {
+      "number": "09",
+      "title_en": "Climate",
+      "title_mr": "हवामान",
+      "pageStart": 41,
+      "pageEnd": 47,
+      "pageCount": 7,
+      "part": 1,
+      "tip": "Climatic divisions: Konkan, Western Maharashtra, Marathwada, Vidarbha."
+    },
+    {
+      "number": "10",
+      "title_en": "Forests",
+      "title_mr": "वनसंपत्ती",
+      "pageStart": 48,
+      "pageEnd": 57,
+      "pageCount": 10,
+      "part": 1,
+      "tip": "Reserved forests, biosphere reserves & 6 tiger reserves."
+    },
+    {
+      "number": "11",
+      "title_en": "Energy Resources",
+      "title_mr": "महाराष्ट्रातील ऊर्जा साधनसंपत्ती",
+      "pageStart": 58,
+      "pageEnd": 63,
+      "pageCount": 6,
+      "part": 1,
+      "tip": "Hydro / Thermal / Nuclear plant locations + capacities."
+    },
+    {
+      "number": "12",
+      "title_en": "Transport & Communication",
+      "title_mr": "वाहतूक व दळणवळण",
+      "pageStart": 64,
+      "pageEnd": 70,
+      "pageCount": 7,
+      "part": 1,
+      "tip": "National highways through Maharashtra & major ports."
+    },
+    {
+      "number": "13",
+      "title_en": "Tourism",
+      "title_mr": "पर्यटन",
+      "pageStart": 71,
+      "pageEnd": 73,
+      "pageCount": 3,
+      "part": 1,
+      "tip": "World Heritage sites: Ajanta, Ellora, Elephanta, CSMT."
+    },
+    {
+      "number": "14",
+      "title_en": "Astronomy",
+      "title_mr": "खगोलशास्त्र",
+      "pageStart": 74,
+      "pageEnd": 78,
+      "pageCount": 5,
+      "part": 2,
+      "tip": "Solar system order, planet records, Indian space milestones."
+    },
+    {
+      "number": "15",
+      "title_en": "Atmosphere",
+      "title_mr": "वातावरण",
+      "pageStart": 79,
+      "pageEnd": 81,
+      "pageCount": 3,
+      "part": 2,
+      "tip": "Atmospheric layers in order of altitude."
+    },
+    {
+      "number": "16",
+      "title_en": "Space Launches",
+      "title_mr": "अवकाश प्रक्षेपण",
+      "pageStart": 82,
+      "pageEnd": 83,
+      "pageCount": 2,
+      "part": 2,
+      "tip": "ISRO chronology: SLV, ASLV, PSLV, GSLV, GSLV-Mk III, SSLV."
+    }
+  ]
+}

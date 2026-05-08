@@ -23,6 +23,15 @@ These are original, hand-written reference articles maintained by Don't know Aca
 - [MPSC Exam Pattern](https://www.mpscs.in/study-guides/mpsc-exam-pattern): Detailed pattern for Group B, Group C, PSI, Gazetted Civil Services and Gazetted Technical Services prelims — marks, syllabus, negative marking, qualifying criteria, mains overview and indicative cut-offs. ~12 minutes.
 - [MPSC Preparation Strategy](https://www.mpscs.in/study-guides/mpsc-preparation-strategy): A practical 6-month plan, recommended book list, daily routine, PYQ usage, subject weightages, mock-test strategy and last-month revision blueprint. ~15 minutes.
 
+## Notes tab (curated, copy-protected revision packs)
+
+The "Notes" tab on the home screen (`https://www.mpscs.in/?mode=notes`) hosts curated, copy-protected revision packs. Currently published:
+
+- **महाराष्ट्र भूगोल — संपूर्ण नोट्स (Maharashtra Geography — Complete Notes, 2026 edition)**: 16 chapters across 83 pages, covering the formation of Maharashtra (1 May 1960), location & extent, political geography (6 revenue divisions, 36 districts), structural physical geography (Sahyadri, Satpura, Deccan plateau, Konkan coast), the 2011 census, migration, river systems (Krishna, Godavari, Bhima, Tapi, Wardha, Wainganga + Konkan rivers), mineral wealth, climate, forests & tiger reserves, energy resources (hydro, thermal, nuclear), transport, tourism / UNESCO sites, astronomy, atmosphere and ISRO space launches. Original notes by Lokseva Academy / Appa Hatnure Sir, redesigned and republished by Don't know Academy.
+  - Web view (copy-protected): https://www.mpscs.in/?mode=notes
+  - Printable PDF (free download): https://www.mpscs.in/notes/mh-geography/maharashtra-geography-redesigned.pdf
+- **वर्तमानपत्र — संस्थापक व संपादक (Newspapers — Founders, Editors & 100 MCQs)**: 70+ Indian newspapers and 50+ founders/editors (1780–1947) organised in 6 historical groups, followed by 100 read-only MCQs with answers.
+
 ## In-app topic packs
 
 These are 100-question Marathi topic quizzes inside the "Topic Wise" tab of the app (sign in → Topic Wise → History). They are not standalone web pages but are linkable through the topic-wise quiz UI:

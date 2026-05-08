@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type SyntheticEvent } from "react";
 import NewspaperNotes from "@/components/notes/NewspaperNotes";
+import MhGeographyNotes from "@/components/notes/MhGeographyNotes";
 
 /**
  * NotesView
@@ -19,7 +20,7 @@ import NewspaperNotes from "@/components/notes/NewspaperNotes";
  * 3. Append a new entry to NOTES_INDEX below.
  */
 
-type NoteSlug = "newspapers";
+type NoteSlug = "newspapers" | "mh-geography";
 
 type NoteEntry = {
   slug: NoteSlug;
@@ -32,6 +33,16 @@ type NoteEntry = {
 };
 
 const NOTES_INDEX: NoteEntry[] = [
+  {
+    slug: "mh-geography",
+    emoji: "🗺️",
+    title: "महाराष्ट्र भूगोल — संपूर्ण नोट्स",
+    subtitle: "Maharashtra Geography — Complete Notes (2026)",
+    blurb:
+      "16 chapters · 83 pages of Marathi geography notes by Lokseva Academy / Appa Hatnure Sir, redesigned with a premium cover, fresh table of contents and chapter dividers. Read online (copy-protected) or download the printable PDF.",
+    meta: "MPSC · Rajyaseva · RTO AMVI · UPSC · 2026 redesigned edition",
+    accent: "from-[#12193A] to-orange-500",
+  },
   {
     slug: "newspapers",
     emoji: "🗞️",
@@ -205,6 +216,8 @@ function NoteContent({ slug }: { slug: NoteSlug }) {
   switch (slug) {
     case "newspapers":
       return <NewspaperNotes />;
+    case "mh-geography":
+      return <MhGeographyNotes />;
     default:
       return null;
   }
