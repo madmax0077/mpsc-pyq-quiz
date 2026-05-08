@@ -125,31 +125,6 @@ export default function StudyGuidesHub() {
           ))}
         </section>
 
-        <section className="mt-8">
-          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">Topic packs</h2>
-          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-            Condensed reference + built-in MCQs. Perfect for last-week revision.
-          </p>
-          <Link
-            href="/newspapers"
-            className="group mt-4 block rounded-2xl border border-orange-200 bg-orange-50 p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-400 hover:shadow-md dark:border-orange-800 dark:bg-orange-900/20 dark:hover:border-orange-600"
-          >
-            <div className="flex items-start gap-3">
-              <span className="text-3xl" aria-hidden>🗞️</span>
-              <div className="min-w-0 flex-1">
-                <h3 className="font-bold text-slate-800 group-hover:text-orange-700 dark:text-slate-100 dark:group-hover:text-orange-300">
-                  वृत्तपत्र — संस्थापक, संपादक व 100 MCQ
-                </h3>
-                <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-                  Indian newspapers — 70+ titles and 50+ founders/editors organised into 6 historical groups,
-                  paired with 100 MCQs and answers. Built for MPSC, Rajyaseva, RTO AMVI &amp; UPSC prelims.
-                </p>
-                <p className="mt-2 text-xs text-slate-400 dark:text-slate-500">~10 min revision · Marathi + English</p>
-              </div>
-            </div>
-          </Link>
-        </section>
-
         <section className="mt-12 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800">
           <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
             How to use these guides

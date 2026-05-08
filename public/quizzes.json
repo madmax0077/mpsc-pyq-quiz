@@ -52881,5 +52881,1515 @@
     ],
     "language": "marathi",
     "tag": "Assistant Pre 2011"
+  },
+  {
+    "id": "topic-newspapers-marathi",
+    "title": "वृत्तपत्र — संस्थापक व संपादक",
+    "createdAt": "2026-05-08T06:52:31.019Z",
+    "questions": [
+      {
+        "id": "topic-newspapers-marathi-q1",
+        "text": "बंगाल गॅझेट (1780) कोणी सुरू केले?",
+        "options": {
+          "A": "जेम्स हिकी",
+          "B": "राममोहन राय",
+          "C": "दादाभाई नौरोजी",
+          "D": "बंकीमचंद्र चॅटर्जी"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q2",
+        "text": "\"भारतीय वृत्तपत्रसृष्टीचे जनक\" कोणाला म्हटले जाते?",
+        "options": {
+          "A": "जेम्स ऑगस्टस हिकी",
+          "B": "राजा राममोहन राय",
+          "C": "बाळशास्त्री जांभेकर",
+          "D": "लोकमान्य टिळक"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q3",
+        "text": "बंगाल गॅझेट कोणत्या वर्षी सुरू झाले?",
+        "options": {
+          "A": "1757",
+          "B": "1780",
+          "C": "1818",
+          "D": "1858"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q4",
+        "text": "समाचार दर्पण कोणी सुरू केले?",
+        "options": {
+          "A": "राममोहन राय",
+          "B": "मार्शमेन",
+          "C": "हिकी",
+          "D": "बाळशास्त्री जांभेकर"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q5",
+        "text": "संवाद कौमुदी कोणी सुरू केले?",
+        "options": {
+          "A": "राजा राममोहन राय",
+          "B": "केशवचंद्र सेन",
+          "C": "द्वारकानाथ टागोर",
+          "D": "स्वामी विवेकानंद"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q6",
+        "text": "मिरात-उल-अखबार चे संस्थापक कोण?",
+        "options": {
+          "A": "राजा राममोहन राय",
+          "B": "मौलाना आझाद",
+          "C": "मोहम्मद अली",
+          "D": "गफार खाँ"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q7",
+        "text": "बंगदूत चे संस्थापक कोण?",
+        "options": {
+          "A": "बंकीमचंद्र चॅटर्जी",
+          "B": "द्वारकानाथ टागोर",
+          "C": "रवींद्रनाथ टागोर",
+          "D": "सुरेंद्रनाथ बॅनर्जी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q8",
+        "text": "दर्पण व दिग्दर्शन या वृत्तपत्रांचे संस्थापक कोण?",
+        "options": {
+          "A": "दादाभाई नौरोजी",
+          "B": "मोतीवाला",
+          "C": "बाळशास्त्री जांभेकर",
+          "D": "आगरकर"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q9",
+        "text": "रास्त गोफ्तार कोणी सुरू केले?",
+        "options": {
+          "A": "दादाभाई नौरोजी",
+          "B": "फरदुनजी मरझबान",
+          "C": "फिरोजशहा मेहता",
+          "D": "मोतीवाला"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q10",
+        "text": "सत्यप्रकाश चे संपादक कोण?",
+        "options": {
+          "A": "राममोहन राय",
+          "B": "करसनदास मुलजी",
+          "C": "केशवचंद्र सेन",
+          "D": "दयानंद सरस्वती"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q11",
+        "text": "हिंदू पॅट्रिएट चे संपादक कोण?",
+        "options": {
+          "A": "गिरीशचंद्र विद्यासागर",
+          "B": "गिरीशचंद्र घोष",
+          "C": "शिशिरकुमार घोष",
+          "D": "बारीन्द्र घोष"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q12",
+        "text": "इंडियन मिरर चे संपादक कोण?",
+        "options": {
+          "A": "रवींद्रनाथ टागोर",
+          "B": "देवेंद्रनाथ टागोर",
+          "C": "द्वारकानाथ टागोर",
+          "D": "दिनबंधू मित्र"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q13",
+        "text": "बंगाली वृत्तपत्राचे संपादक कोण?",
+        "options": {
+          "A": "शिशिरकुमार घोष",
+          "B": "गिरीशचंद्र घोष",
+          "C": "बारीन्द्र घोष",
+          "D": "सुरेंद्रनाथ बॅनर्जी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q14",
+        "text": "द टाईम्स ऑफ इंडिया चे संस्थापक कोण?",
+        "options": {
+          "A": "रॉबर्ट नाईट",
+          "B": "हिकी",
+          "C": "मार्शमेन",
+          "D": "राममोहन राय"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q15",
+        "text": "द स्टेट्समन कोणी सुरू केले?",
+        "options": {
+          "A": "हिकी",
+          "B": "रॉबर्ट नाईट",
+          "C": "मोतीलाल नेहरू",
+          "D": "नौरोजी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q16",
+        "text": "इंडिपेंडंट या वृत्तपत्राचे संस्थापक कोण?",
+        "options": {
+          "A": "पंडित नेहरू",
+          "B": "मोतीलाल नेहरू",
+          "C": "मालवीय",
+          "D": "गांधी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q17",
+        "text": "इंडियन ओपिनियन (1903) कोणी आणि कुठे सुरू केले?",
+        "options": {
+          "A": "म. गांधी — दक्षिण आफ्रिका",
+          "B": "म. गांधी — अहमदाबाद",
+          "C": "नेहरू — अलाहाबाद",
+          "D": "टिळक — पुणे"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q18",
+        "text": "यंग इंडिया कोणत्या वर्षी आणि कोणी सुरू केले?",
+        "options": {
+          "A": "1919 — म. गांधी",
+          "B": "1903 — गांधी",
+          "C": "1933 — गांधी",
+          "D": "1922 — मालवीय"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q19",
+        "text": "हरिजन (1933) कोठून प्रकाशित होत होते?",
+        "options": {
+          "A": "अहमदाबाद",
+          "B": "पुणे",
+          "C": "दिल्ली",
+          "D": "मुंबई"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q20",
+        "text": "नवजीवन (1933) कोणी सुरू केले?",
+        "options": {
+          "A": "म. गांधी",
+          "B": "नेहरू",
+          "C": "मालवीय",
+          "D": "पटेल"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q21",
+        "text": "वंदे मातरम् (1909) कोणी सुरू केले?",
+        "options": {
+          "A": "हरदयाल व श्यामजी कृष्णवर्मा",
+          "B": "मादाम कामा",
+          "C": "अरविंद घोष",
+          "D": "विवेकानंद"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q22",
+        "text": "कोलकाता येथील वंदे मातरम् चे संपादक कोण?",
+        "options": {
+          "A": "हरदयाल",
+          "B": "अरविंद घोष",
+          "C": "मादाम कामा",
+          "D": "बारीन्द्र घोष"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q23",
+        "text": "पॅरिसमधून प्रकाशित वंदे मातरम् कोणी सुरू केले?",
+        "options": {
+          "A": "हरदयाल",
+          "B": "मादाम भीकाजी कामा",
+          "C": "श्यामजी वर्मा",
+          "D": "लाला लजपतराय"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q24",
+        "text": "मुंबई समाचार कोणी सुरू केले?",
+        "options": {
+          "A": "मोतीवाला",
+          "B": "फरदुनजी मरझबान",
+          "C": "नौरोजी",
+          "D": "मेहता"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q25",
+        "text": "जामे जमशेद चे संस्थापक कोण?",
+        "options": {
+          "A": "पी. एम. मोतीवाला",
+          "B": "फरदुनजी मरझबान",
+          "C": "दादाभाई नौरोजी",
+          "D": "बेहरामजी मलबारी"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q26",
+        "text": "अल्-हिलाल कोणी सुरू केले?",
+        "options": {
+          "A": "मौलाना अबुल कलाम आझाद",
+          "B": "मोहम्मद अली",
+          "C": "गफार खाँ",
+          "D": "सय्यद अहमद खान"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q27",
+        "text": "अल्-बलाघ चे संपादक कोण?",
+        "options": {
+          "A": "मौलाना आझाद",
+          "B": "मोहम्मद अली",
+          "C": "गफार खाँ",
+          "D": "आग खान"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q28",
+        "text": "कॉम्रेड चे संपादक कोण?",
+        "options": {
+          "A": "मोहम्मद अली",
+          "B": "आझाद",
+          "C": "गफार खाँ",
+          "D": "शौकत अली"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q29",
+        "text": "हमदर्द कोणी सुरू केले?",
+        "options": {
+          "A": "शौकत अली",
+          "B": "मोहम्मद अली",
+          "C": "आझाद",
+          "D": "गफार खाँ"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q30",
+        "text": "पखतून चे संपादक कोण?",
+        "options": {
+          "A": "खान अब्दुल गफार खाँ",
+          "B": "मोहम्मद अली",
+          "C": "आझाद",
+          "D": "शौकत अली"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q31",
+        "text": "हिंदुस्तान टाईम्स चे संपादक कोण?",
+        "options": {
+          "A": "के. एम. पण्णीकर",
+          "B": "नेहरू",
+          "C": "मालवीय",
+          "D": "आझाद"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q32",
+        "text": "दी इंडियन स्पेक्टॅटर चे संपादक कोण?",
+        "options": {
+          "A": "दादाभाई नौरोजी",
+          "B": "बेहरामजी मलबारी",
+          "C": "फिरोजशहा मेहता",
+          "D": "मोतीवाला"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q33",
+        "text": "नॅशनल हेरॉल्ड कोणी सुरू केले?",
+        "options": {
+          "A": "मोतीलाल नेहरू",
+          "B": "जवाहरलाल नेहरू",
+          "C": "मालवीय",
+          "D": "आझाद"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q34",
+        "text": "बंगदर्शन चे संस्थापक कोण?",
+        "options": {
+          "A": "दादाभाई नौरोजी",
+          "B": "बंकीमचंद्र चॅटर्जी",
+          "C": "लो. टिळक",
+          "D": "गोखले"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q35",
+        "text": "अमृतबाझार पत्रिका कोणी सुरू केली?",
+        "options": {
+          "A": "मोतीलाल नेहरू",
+          "B": "शिशिरकुमार व मोतीलाल घोष",
+          "C": "गांधी",
+          "D": "मालवीय"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q36",
+        "text": "अमृतबाझार पत्रिका कोणत्या वर्षी सुरू झाली?",
+        "options": {
+          "A": "1858",
+          "B": "1868",
+          "C": "1881",
+          "D": "1890"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q37",
+        "text": "इंदूप्रकाश चे संपादक कोण?",
+        "options": {
+          "A": "आगरकर",
+          "B": "न्या. म. गो. रानडे",
+          "C": "गोखले",
+          "D": "लो. टिळक"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q38",
+        "text": "पायोनिअर हे कोणाचे मुखपत्र होते?",
+        "options": {
+          "A": "काँग्रेस",
+          "B": "मुस्लिम लीग",
+          "C": "इंग्रज सरकार",
+          "D": "क्रांतिकारक"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q39",
+        "text": "सुलभ समाचार चे संस्थापक कोण?",
+        "options": {
+          "A": "केशवचंद्र सेन",
+          "B": "विवेकानंद",
+          "C": "लो. टिळक",
+          "D": "गांधी"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q40",
+        "text": "द हिंदू चे संस्थापक कोण?",
+        "options": {
+          "A": "जी. सुब्रह्मण्यम् अय्यर",
+          "B": "गोखले",
+          "C": "पाल",
+          "D": "टागोर"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q41",
+        "text": "द हिंदू कोणत्या वर्षी सुरू झाले?",
+        "options": {
+          "A": "1868",
+          "B": "1878",
+          "C": "1881",
+          "D": "1885"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q42",
+        "text": "द हिंदू कोठून प्रकाशित होते?",
+        "options": {
+          "A": "कोलकाता",
+          "B": "मुंबई",
+          "C": "मद्रास",
+          "D": "दिल्ली"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q43",
+        "text": "केसरी (1881) कोणी सुरू केले?",
+        "options": {
+          "A": "गांधी",
+          "B": "लो. टिळक व आगरकर",
+          "C": "नेहरू",
+          "D": "मालवीय"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q44",
+        "text": "केसरी हे वृत्तपत्र कोणत्या भाषेत होते?",
+        "options": {
+          "A": "मराठी",
+          "B": "इंग्रजी",
+          "C": "संस्कृत",
+          "D": "हिंदी"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q45",
+        "text": "सुधारक चे संपादक कोण?",
+        "options": {
+          "A": "लो. टिळक",
+          "B": "गो. ग. आगरकर",
+          "C": "गोखले",
+          "D": "पाल"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q46",
+        "text": "मराठा (1881) हे कोणत्या भाषेत होते?",
+        "options": {
+          "A": "मराठी",
+          "B": "इंग्रजी",
+          "C": "हिंदी",
+          "D": "संस्कृत"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q47",
+        "text": "मराठा (1881) कोणी सुरू केले?",
+        "options": {
+          "A": "गोखले",
+          "B": "लो. टिळक व गो. कृ. गोखले",
+          "C": "गांधी",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q48",
+        "text": "तत्वबोधिनी पत्रिका कोणी सुरू केली?",
+        "options": {
+          "A": "देवेंद्रनाथ टागोर",
+          "B": "रवींद्रनाथ टागोर",
+          "C": "द्वारकानाथ टागोर",
+          "D": "राममोहन राय"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q49",
+        "text": "व्हॉईस ऑफ इंडिया कोणी सुरू केले?",
+        "options": {
+          "A": "दादाभाई नौरोजी",
+          "B": "पाल",
+          "C": "लो. टिळक",
+          "D": "गांधी"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q50",
+        "text": "न्यू इंडिया (1902) कोणी सुरू केले?",
+        "options": {
+          "A": "बिपिनचंद्र पाल",
+          "B": "अॅनी बेझंट",
+          "C": "नौरोजी",
+          "D": "लो. टिळक"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q51",
+        "text": "न्यू इंडिया (1914) कोणी सुरू केले?",
+        "options": {
+          "A": "पाल",
+          "B": "अॅनी बेझंट",
+          "C": "लो. टिळक",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q52",
+        "text": "कॉमन वील (1914) चे संस्थापक कोण?",
+        "options": {
+          "A": "गांधी",
+          "B": "अॅनी बेझंट",
+          "C": "पाल",
+          "D": "नौरोजी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q53",
+        "text": "इंडिया (1890) कोणी सुरू केले?",
+        "options": {
+          "A": "दादाभाई नौरोजी",
+          "B": "गांधी",
+          "C": "पाल",
+          "D": "लो. टिळक"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q54",
+        "text": "हिंदुस्तान रिव्ह्यू व स्टँडर्ड चे संपादक कोण?",
+        "options": {
+          "A": "सच्चिदानंद सिन्हा",
+          "B": "गांधी",
+          "C": "पाल",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q55",
+        "text": "मॉडर्न रिव्ह्यू चे संपादक कोण?",
+        "options": {
+          "A": "रवींद्रनाथ टागोर",
+          "B": "रामानंद चटर्जी",
+          "C": "पाल",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q56",
+        "text": "इंडियन सोशॉलॉजिस्ट कोणी आणि कुठून सुरू केले?",
+        "options": {
+          "A": "श्यामजी कृष्णवर्मा — लंडन",
+          "B": "पाल — कोलकाता",
+          "C": "गांधी — दक्षिण आफ्रिका",
+          "D": "लो. टिळक — पुणे"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q57",
+        "text": "युगांतर (1906) चे संस्थापक कोण?",
+        "options": {
+          "A": "भूपेंद्रनाथ दत्त व बारीन्द्र घोष",
+          "B": "गांधी",
+          "C": "पाल",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q58",
+        "text": "संध्या पत्र कोणाशी संबंधित आहे?",
+        "options": {
+          "A": "भूपेंद्रनाथ दत्त व इ. इ. बंडोपाध्याय",
+          "B": "गांधी",
+          "C": "पाल",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q59",
+        "text": "तलवार चे संपादक कोण?",
+        "options": {
+          "A": "वीरेंद्रनाथ चटोपाध्याय",
+          "B": "पाल",
+          "C": "गांधी",
+          "D": "लो. टिळक"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q60",
+        "text": "पंजाबी पीपल चे संस्थापक कोण?",
+        "options": {
+          "A": "लाला लजपतराय",
+          "B": "गांधी",
+          "C": "लो. टिळक",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q61",
+        "text": "बॉम्बे क्रॉनिकल कोणी सुरू केले?",
+        "options": {
+          "A": "फिरोजशहा मेहता",
+          "B": "गांधी",
+          "C": "पाल",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q62",
+        "text": "गदर पत्राचे संस्थापक कोण?",
+        "options": {
+          "A": "लाला हरदयाल",
+          "B": "गांधी",
+          "C": "पाल",
+          "D": "लो. टिळक"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q63",
+        "text": "गदर पार्टी कोठे स्थापन झाली?",
+        "options": {
+          "A": "लंडन",
+          "B": "पॅरिस",
+          "C": "सान फ्रान्सिस्को",
+          "D": "बर्लिन"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q64",
+        "text": "उद्बोधन चे संस्थापक कोण?",
+        "options": {
+          "A": "गांधी",
+          "B": "स्वामी विवेकानंद",
+          "C": "लो. टिळक",
+          "D": "केशवचंद्र सेन"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q65",
+        "text": "प्रबुद्ध भारत हे वृत्तपत्र कोणाचे होते?",
+        "options": {
+          "A": "स्वामी विवेकानंद",
+          "B": "दयानंद सरस्वती",
+          "C": "राममोहन राय",
+          "D": "केशवचंद्र सेन"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q66",
+        "text": "रिव्होल्यूशनरी कोणी सुरू केले?",
+        "options": {
+          "A": "सचिन्द्रनाथ संन्याल",
+          "B": "गांधी",
+          "C": "नेहरू",
+          "D": "पाल"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q67",
+        "text": "क्रांती पत्राचे संपादक कोण?",
+        "options": {
+          "A": "लो. टिळक",
+          "B": "मिरजकर, जोगळेकर व घाटे",
+          "C": "गांधी",
+          "D": "पाल"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q68",
+        "text": "लीडर चे संपादक कोण?",
+        "options": {
+          "A": "पं. मदनमोहन मालवीय",
+          "B": "गांधी",
+          "C": "नेहरू",
+          "D": "पाल"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q69",
+        "text": "जन्मभूमी पत्राचे संस्थापक कोण?",
+        "options": {
+          "A": "नेहरू",
+          "B": "पट्टाभि सीतारामय्या",
+          "C": "गांधी",
+          "D": "पटेल"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q70",
+        "text": "\"बिहारकेसरी\" म्हणून ओळखले जाणारे सच्चिदानंद सिन्हा यांचे वृत्तपत्र कोणते?",
+        "options": {
+          "A": "हिंदुस्तान रिव्ह्यू",
+          "B": "नवजीवन",
+          "C": "लीडर",
+          "D": "कॉम्रेड"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q71",
+        "text": "यंग इंडिया कोणत्या वर्षी सुरू झाले?",
+        "options": {
+          "A": "1903",
+          "B": "1909",
+          "C": "1919",
+          "D": "1933"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q72",
+        "text": "हरिजन कोणत्या वर्षी सुरू झाले?",
+        "options": {
+          "A": "1919",
+          "B": "1922",
+          "C": "1933",
+          "D": "1942"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q73",
+        "text": "केसरी (1881) कोणत्या ठिकाणाहून प्रकाशित होते?",
+        "options": {
+          "A": "पुणे",
+          "B": "मुंबई",
+          "C": "नाशिक",
+          "D": "नागपूर"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q74",
+        "text": "अमृतबाझार पत्रिका सुरू झाली तेव्हा ती कोणत्या भाषेत होती?",
+        "options": {
+          "A": "बंगाली (नंतर इंग्रजी)",
+          "B": "इंग्रजी",
+          "C": "हिंदी",
+          "D": "उर्दू"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q75",
+        "text": "भारतात पहिले मराठी वृत्तपत्र कोणते?",
+        "options": {
+          "A": "केसरी",
+          "B": "दर्पण",
+          "C": "सुधारक",
+          "D": "मराठा"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q76",
+        "text": "दर्पण कोणत्या वर्षी सुरू झाले?",
+        "options": {
+          "A": "1818",
+          "B": "1832",
+          "C": "1858",
+          "D": "1881"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q77",
+        "text": "द टेलिग्राफ चे संस्थापक कोण होते?",
+        "options": {
+          "A": "जेम्स हिकी",
+          "B": "रॉबर्ट नाईट",
+          "C": "मार्शमेन",
+          "D": "राममोहन राय"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q78",
+        "text": "द इंडियन वर्ल्ड चे संस्थापक कोण?",
+        "options": {
+          "A": "रॉबर्ट नाईट",
+          "B": "जेम्स हिकी",
+          "C": "मार्शमेन",
+          "D": "राममोहन राय"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q79",
+        "text": "द गॅझेट चे संस्थापक कोण?",
+        "options": {
+          "A": "जेम्स हिकी",
+          "B": "रॉबर्ट नाईट",
+          "C": "दादाभाई नौरोजी",
+          "D": "लो. टिळक"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q80",
+        "text": "मुंबई समाचार कोणत्या भाषेत आणि कोणत्या वर्षी सुरू झाले?",
+        "options": {
+          "A": "गुजराती — 1822",
+          "B": "मराठी — 1832",
+          "C": "हिंदी — 1858",
+          "D": "उर्दू — 1880"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q81",
+        "text": "\"भारतात आधुनिक पत्रकारितेचे जनक\" कोणाला म्हटले जाते?",
+        "options": {
+          "A": "हिकी",
+          "B": "राजा राममोहन राय",
+          "C": "लो. टिळक",
+          "D": "गांधी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q82",
+        "text": "हिंदू (मद्रास) चे सहसंस्थापक कोण?",
+        "options": {
+          "A": "अय्यर",
+          "B": "बी. राघवाचार्य",
+          "C": "नौरोजी",
+          "D": "पाल"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q83",
+        "text": "ज्ञानप्रबोधिनी चे संस्थापक कोण?",
+        "options": {
+          "A": "नवीनचंद्र राय",
+          "B": "गांधी",
+          "C": "पाल",
+          "D": "नेहरू"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q84",
+        "text": "संजीवनी चे संपादक कोण?",
+        "options": {
+          "A": "केशवचंद्र सेन",
+          "B": "विवेकानंद",
+          "C": "राममोहन राय",
+          "D": "लो. टिळक"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q85",
+        "text": "गांधींनी सुरू केलेल्या वृत्तपत्रांची योग्य कालक्रमानुसार मांडणी कोणती?",
+        "options": {
+          "A": "इंडियन ओपिनियन → यंग इंडिया → हरिजन",
+          "B": "यंग इंडिया → हरिजन → इंडियन ओपिनियन",
+          "C": "हरिजन → यंग इंडिया → इंडियन ओपिनियन",
+          "D": "इंडियन ओपिनियन → हरिजन → यंग इंडिया"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q86",
+        "text": "दादाभाई नौरोजी यांनी सुरू केलेले वृत्तपत्र कोणते नाही?",
+        "options": {
+          "A": "रास्त गोफ्तार",
+          "B": "व्हॉईस ऑफ इंडिया",
+          "C": "इंडिया (1890)",
+          "D": "हरिजन"
+        },
+        "correctAnswer": "D",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q87",
+        "text": "मौलाना आझाद यांनी सुरू केलेले वृत्तपत्र कोणते?",
+        "options": {
+          "A": "हमदर्द",
+          "B": "कॉम्रेड",
+          "C": "अल्-हिलाल व अल्-बलाघ",
+          "D": "पखतून"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q88",
+        "text": "मोहम्मद अली यांनी सुरू केलेल्या वृत्तपत्रांची जोडी कोणती?",
+        "options": {
+          "A": "अल्-हिलाल व अल्-बलाघ",
+          "B": "कॉम्रेड व हमदर्द",
+          "C": "पखतून व अल्-हिलाल",
+          "D": "नवजीवन व हरिजन"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q89",
+        "text": "पंजाबी पीपल हे वृत्तपत्र कोणत्या भाषेत होते?",
+        "options": {
+          "A": "पंजाबी",
+          "B": "इंग्रजी",
+          "C": "उर्दू",
+          "D": "हिंदी"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q90",
+        "text": "पायोनिअर हे वृत्तपत्र कोठून प्रकाशित होते?",
+        "options": {
+          "A": "कोलकाता",
+          "B": "अलाहाबाद",
+          "C": "मद्रास",
+          "D": "मुंबई"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q91",
+        "text": "कोणत्या वृत्तपत्रासाठी लो. टिळकांना \"केसरी प्रकरण\" म्हणून ओळखले जाणारे राजद्रोहाचे आरोप झाले?",
+        "options": {
+          "A": "केसरी",
+          "B": "मराठा",
+          "C": "सुधारक",
+          "D": "पंजाबी"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q92",
+        "text": "देशबंधू चितरंजन दास यांचे वृत्तपत्र कोणते?",
+        "options": {
+          "A": "नॅशनल हेरॉल्ड",
+          "B": "फॉरवर्ड",
+          "C": "स्टँडर्ड",
+          "D": "लीडर"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q93",
+        "text": "\"लोकमान्य\" म्हणून प्रसिद्ध झालेले बाळ गंगाधर टिळक कोणत्या जोडीच्या वृत्तपत्रांचे संस्थापक होते?",
+        "options": {
+          "A": "केसरी (मराठी) व मराठा (इंग्रजी)",
+          "B": "केसरी व सुधारक",
+          "C": "मराठा व इंदूप्रकाश",
+          "D": "केसरी व ज्ञानप्रबोधिनी"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q94",
+        "text": "मद्रास येथील \"द हिंदू\" स्थापन करणार्‍यांच्या गटाला काय म्हटले जाते?",
+        "options": {
+          "A": "Triplicane Six",
+          "B": "Madras Five",
+          "C": "Adyar Group",
+          "D": "Mylapore Club"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q95",
+        "text": "अॅनी बेझंट यांनी सुरू केलेल्या वृत्तपत्रांची जोडी कोणती?",
+        "options": {
+          "A": "न्यू इंडिया (1914) व कॉमन वील",
+          "B": "व्हॉईस ऑफ इंडिया व इंडिया",
+          "C": "हरिजन व यंग इंडिया",
+          "D": "नॅशनल हेरॉल्ड व लीडर"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q96",
+        "text": "सच्चिदानंद सिन्हा यांच्याशी संबंधित वृत्तपत्रांची जोडी कोणती?",
+        "options": {
+          "A": "हिंदुस्तान रिव्ह्यू व स्टँडर्ड",
+          "B": "नॅशनल हेरॉल्ड व लीडर",
+          "C": "कॉम्रेड व हमदर्द",
+          "D": "केसरी व मराठा"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q97",
+        "text": "कोणत्या क्रांतिकारी पत्राचे संपादक सचिन्द्रनाथ संन्याल होते?",
+        "options": {
+          "A": "युगांतर",
+          "B": "तलवार",
+          "C": "रिव्होल्यूशनरी",
+          "D": "संध्या"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q98",
+        "text": "\"बंगदर्शन\" हे वृत्तपत्र कोणत्या भाषेत होते?",
+        "options": {
+          "A": "बंगाली",
+          "B": "इंग्रजी",
+          "C": "हिंदी",
+          "D": "संस्कृत"
+        },
+        "correctAnswer": "A",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q99",
+        "text": "गांधींनी \"हरिजन\" वृत्तपत्र सुरू करण्यामागे प्रमुख उद्देश काय होता?",
+        "options": {
+          "A": "स्वराज्य चळवळ",
+          "B": "अस्पृश्यता निर्मूलन",
+          "C": "खादी प्रचार",
+          "D": "हिंदू-मुस्लिम ऐक्य"
+        },
+        "correctAnswer": "B",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      },
+      {
+        "id": "topic-newspapers-marathi-q100",
+        "text": "खालीलपैकी कोणती जोडी अयोग्य आहे?",
+        "options": {
+          "A": "केसरी — लो. टिळक",
+          "B": "हिंदुस्तान टाईम्स — के. एम. पण्णीकर",
+          "C": "नॅशनल हेरॉल्ड — मोतीलाल नेहरू",
+          "D": "बॉम्बे क्रॉनिकल — फिरोजशहा मेहता"
+        },
+        "correctAnswer": "C",
+        "explanation": "",
+        "category": "History",
+        "topic": "वृत्तपत्र — संस्थापक व संपादक",
+        "sourceTag": "Don't know Academy — Newspapers Topic Pack"
+      }
+    ],
+    "language": "marathi",
+    "topicOnly": true,
+    "tag": "Newspapers · वृत्तपत्र"
   }
 ]

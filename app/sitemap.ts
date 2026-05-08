@@ -35,12 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: `${SITE_URL}/newspapers`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
       url: `${SITE_URL}/study-guides/maharashtra-geography`,
       lastModified: now,
       changeFrequency: "monthly",

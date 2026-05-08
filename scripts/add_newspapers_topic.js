@@ -1,311 +1,26 @@
 /**
- * Curated dataset for /newspapers page.
- * Source: cleaned + grouped from the "वर्तमानपत्र 100 प्रश्न" PDF.
- * - 51 writer cards in 6 historical groups (covers 70+ newspapers)
- * - 100 unique MCQs (deduplicated + extended from the source 55)
+ * One-off script: appends a Newspapers topic quiz to public/quizzes.json.
  *
- * This file is consumed only by app/newspapers/page.tsx — keep it
- * data-only (no JSX) so it can also be reused by future quiz mode.
+ * After running, the History subject in the "Topic Wise" tab will show a
+ * new topic — "वृत्तपत्र — संस्थापक व संपादक" — with 100 MCQs (Marathi).
+ *
+ * Usage:
+ *   node scripts/add_newspapers_topic.js
+ *
+ * Idempotent — re-running replaces the existing entry.
  */
 
-export type Writer = {
-  name: string;
-  latin?: string;
-  papers: string[];
-};
+const fs = require("fs");
+const path = require("path");
 
-export type WriterGroup = {
-  title: string;
-  writers: Writer[];
-};
+const QUIZ_ID = "topic-newspapers-marathi";
+const TOPIC_NAME = "वृत्तपत्र — संस्थापक व संपादक";
+const CATEGORY = "History";
+const LANGUAGE = "marathi";
+const OPTION_KEYS = ["A", "B", "C", "D"];
 
-export type MCQ = {
-  q: string;
-  opts: [string, string, string, string];
-  correct: 0 | 1 | 2 | 3;
-};
-
-export const WRITER_GROUPS: WriterGroup[] = [
-  {
-    title: "अ · ब्रिटिश व प्रारंभिक काळ (1780 – 1850)",
-    writers: [
-      {
-        name: "जेम्स ऑगस्टस हिकी",
-        latin: "James A. Hicky",
-        papers: [
-          "बंगाल गॅझेट (1780) — भारतातील पहिले वृत्तपत्र",
-          "द गॅझेट",
-          "द टेलिग्राफ",
-          "द इंडियन वर्ल्ड",
-        ],
-      },
-      { name: "मार्शमेन", latin: "Marshman", papers: ["समाचार दर्पण (1818)"] },
-      {
-        name: "रॉबर्ट नाईट",
-        latin: "Robert Knight",
-        papers: ["द टाईम्स ऑफ इंडिया", "द स्टेट्समन"],
-      },
-      {
-        name: "इंग्रज सरकार",
-        latin: "British Govt.",
-        papers: ["पायोनिअर — इंग्रज सरकारचे मुखपत्र (अलाहाबाद)"],
-      },
-    ],
-  },
-  {
-    title: "आ · सुधारणावादी पुरुष (बंगाल प्रबोधन)",
-    writers: [
-      {
-        name: "राजा राममोहन राय",
-        latin: "Raja Ram Mohan Roy",
-        papers: ["संवाद कौमुदी", "मिरात-उल-अखबार"],
-      },
-      {
-        name: "द्वारकानाथ टागोर",
-        latin: "Dwarkanath Tagore",
-        papers: ["बंगदूत (प्रसन्न टागोर यांच्यासह)"],
-      },
-      {
-        name: "देवेंद्रनाथ टागोर",
-        latin: "Devendranath Tagore",
-        papers: ["इंडियन मिरर", "तत्वबोधिनी पत्रिका"],
-      },
-      {
-        name: "गिरीशचंद्र विद्यासागर",
-        latin: "G. C. Vidyasagar",
-        papers: ["हिंदू पॅट्रिएट"],
-      },
-      {
-        name: "करसनदास मुलजी",
-        latin: "Karsondas Mulji",
-        papers: ["सत्यप्रकाश"],
-      },
-      {
-        name: "केशवचंद्र सेन",
-        latin: "Keshab Chandra Sen",
-        papers: ["सुलभ समाचार", "संजीवनी"],
-      },
-      {
-        name: "स्वामी विवेकानंद",
-        latin: "Swami Vivekananda",
-        papers: ["उद्बोधन", "प्रबुद्ध भारत"],
-      },
-      {
-        name: "रामानंद चटर्जी",
-        latin: "Ramananda Chatterjee",
-        papers: ["मॉडर्न रिव्ह्यू"],
-      },
-    ],
-  },
-  {
-    title: "इ · महाराष्ट्रातील पत्रकारिता",
-    writers: [
-      {
-        name: "बाळशास्त्री जांभेकर",
-        latin: "Balshastri Jambhekar",
-        papers: ["दर्पण (1832) — पहिले मराठी वृत्तपत्र", "दिग्दर्शन"],
-      },
-      {
-        name: "न्या. म. गो. रानडे",
-        latin: "M. G. Ranade",
-        papers: ["इंदूप्रकाश"],
-      },
-      {
-        name: "लो. टिळक + गो. ग. आगरकर",
-        latin: "Tilak + Agarkar",
-        papers: ["केसरी (1881) — मराठी, पुणे"],
-      },
-      {
-        name: "लो. टिळक + गो. कृ. गोखले",
-        latin: "Tilak + Gokhale",
-        papers: ["मराठा (1881) — इंग्रजी, पुणे"],
-      },
-      { name: "गो. ग. आगरकर", latin: "G. G. Agarkar", papers: ["सुधारक"] },
-      {
-        name: "नवीनचंद्र राय",
-        latin: "Navinchandra Rai",
-        papers: ["ज्ञानप्रबोधिनी"],
-      },
-      {
-        name: "फरदुनजी मरझबान",
-        latin: "Fardunji Marzban",
-        papers: ["मुंबई समाचार (1822) — गुजराती"],
-      },
-      {
-        name: "पी. एम. मोतीवाला",
-        latin: "P. M. Motiwala",
-        papers: ["जामे जमशेद"],
-      },
-      {
-        name: "बेहरामजी मलबारी",
-        latin: "Behramji Malabari",
-        papers: ["दी इंडियन स्पेक्टॅटर"],
-      },
-      {
-        name: "फिरोजशहा मेहता",
-        latin: "Pherozshah Mehta",
-        papers: ["बॉम्बे क्रॉनिकल"],
-      },
-    ],
-  },
-  {
-    title: "ई · राष्ट्रवादी पत्रकारिता (काँग्रेस युग)",
-    writers: [
-      {
-        name: "दादाभाई नौरोजी",
-        latin: "Dadabhai Naoroji",
-        papers: ["रास्त गोफ्तार", "व्हॉईस ऑफ इंडिया", "इंडिया (1890)"],
-      },
-      {
-        name: "बंकीमचंद्र चॅटर्जी",
-        latin: "Bankimchandra Chatterjee",
-        papers: ["बंगदर्शन — बंगाली"],
-      },
-      {
-        name: "शिशिरकुमार + मोतीलाल घोष",
-        latin: "Ghosh Brothers",
-        papers: ["अमृतबाझार पत्रिका (1868)"],
-      },
-      {
-        name: "गिरीशचंद्र घोष",
-        latin: "Girish Chandra Ghosh",
-        papers: ["बंगाली"],
-      },
-      {
-        name: "जी. सुब्रह्मण्यम् अय्यर",
-        latin: "G. Subramania Iyer",
-        papers: ["द हिंदू (1878) — मद्रास"],
-      },
-      {
-        name: "बी. राघवाचार्य",
-        latin: "B. Raghavacharya",
-        papers: ["हिंदू (मद्रास, सहसंस्थापक)"],
-      },
-      {
-        name: "सच्चिदानंद सिन्हा",
-        latin: "Sachchidananda Sinha",
-        papers: ["हिंदुस्तान रिव्ह्यू", "स्टँडर्ड"],
-      },
-      {
-        name: "बिपिनचंद्र पाल",
-        latin: "Bipin Chandra Pal",
-        papers: ["न्यू इंडिया (1902)"],
-      },
-      {
-        name: "अॅनी बेझंट",
-        latin: "Annie Besant",
-        papers: ["न्यू इंडिया (1914)", "कॉमन वील (1914)"],
-      },
-      {
-        name: "पं. मदनमोहन मालवीय",
-        latin: "Madan Mohan Malaviya",
-        papers: ["लीडर — अलाहाबाद"],
-      },
-    ],
-  },
-  {
-    title: "उ · क्रांतिकारी पत्रकारिता",
-    writers: [
-      {
-        name: "श्यामजी कृष्णवर्मा",
-        latin: "Shyamji Krishnavarma",
-        papers: ["इंडियन सोशॉलॉजिस्ट — लंडन"],
-      },
-      {
-        name: "हरदयाल + श्यामजी कृष्णवर्मा",
-        papers: ["वंदे मातरम् (1909)"],
-      },
-      {
-        name: "मादाम भीकाजी कामा",
-        latin: "Madam Bhikaji Cama",
-        papers: ["वंदे मातरम् — पॅरिस"],
-      },
-      {
-        name: "अरविंद घोष",
-        latin: "Aurobindo Ghosh",
-        papers: ["वंदे मातरम् — कोलकाता"],
-      },
-      {
-        name: "लाला हरदयाल",
-        latin: "Lala Hardayal",
-        papers: ["गदर — सान फ्रान्सिस्को"],
-      },
-      {
-        name: "लाला लजपतराय",
-        latin: "Lala Lajpat Rai",
-        papers: ["पंजाबी पीपल"],
-      },
-      {
-        name: "भूपेंद्रनाथ दत्त + बारीन्द्र घोष",
-        papers: ["युगांतर (1906)"],
-      },
-      { name: "भूपेंद्रनाथ दत्त + बंडोपाध्याय", papers: ["संध्या"] },
-      {
-        name: "वीरेंद्रनाथ चटोपाध्याय",
-        latin: "Veerendranath Chattopadhyay",
-        papers: ["तलवार"],
-      },
-      {
-        name: "सचिन्द्रनाथ संन्याल",
-        latin: "Sachindranath Sanyal",
-        papers: ["रिव्होल्यूशनरी"],
-      },
-      { name: "मिरजकर + जोगळेकर + घाटे", papers: ["क्रांती"] },
-    ],
-  },
-  {
-    title: "ऊ · गांधी युग व नंतर (1900 – 1947)",
-    writers: [
-      {
-        name: "महात्मा गांधी",
-        latin: "M. K. Gandhi",
-        papers: [
-          "इंडियन ओपिनियन (1903) — दक्षिण आफ्रिका",
-          "यंग इंडिया (1919)",
-          "नवजीवन (1933)",
-          "हरिजन (1933) — पुणे",
-        ],
-      },
-      {
-        name: "मोतीलाल नेहरू",
-        latin: "Motilal Nehru",
-        papers: ["इंडिपेंडंट"],
-      },
-      {
-        name: "पं. जवाहरलाल नेहरू",
-        latin: "Jawaharlal Nehru",
-        papers: ["नॅशनल हेरॉल्ड"],
-      },
-      {
-        name: "पट्टाभि सीतारामय्या",
-        latin: "Pattabhi Sitaramayya",
-        papers: ["जन्मभूमी"],
-      },
-      {
-        name: "मौलाना अबुल कलाम आझाद",
-        latin: "Maulana Azad",
-        papers: ["अल्-हिलाल", "अल्-बलाघ"],
-      },
-      {
-        name: "मोहम्मद अली",
-        latin: "Mohammad Ali",
-        papers: ["कॉम्रेड", "हमदर्द"],
-      },
-      {
-        name: "खान अब्दुल गफार खाँ",
-        latin: "Khan Abdul Ghaffar Khan",
-        papers: ["पखतून"],
-      },
-      {
-        name: "के. एम. पण्णीकर",
-        latin: "K. M. Panikkar",
-        papers: ["हिंदुस्तान टाईम्स"],
-      },
-    ],
-  },
-];
-
-export const MCQS: MCQ[] = [
+// Source data — same MCQs that previously powered /newspapers (Marathi).
+const MCQS = [
   { q: "बंगाल गॅझेट (1780) कोणी सुरू केले?", opts: ["जेम्स हिकी", "राममोहन राय", "दादाभाई नौरोजी", "बंकीमचंद्र चॅटर्जी"], correct: 0 },
   { q: "\"भारतीय वृत्तपत्रसृष्टीचे जनक\" कोणाला म्हटले जाते?", opts: ["जेम्स ऑगस्टस हिकी", "राजा राममोहन राय", "बाळशास्त्री जांभेकर", "लोकमान्य टिळक"], correct: 0 },
   { q: "बंगाल गॅझेट कोणत्या वर्षी सुरू झाले?", opts: ["1757", "1780", "1818", "1858"], correct: 1 },
@@ -407,3 +122,42 @@ export const MCQS: MCQ[] = [
   { q: "गांधींनी \"हरिजन\" वृत्तपत्र सुरू करण्यामागे प्रमुख उद्देश काय होता?", opts: ["स्वराज्य चळवळ", "अस्पृश्यता निर्मूलन", "खादी प्रचार", "हिंदू-मुस्लिम ऐक्य"], correct: 1 },
   { q: "खालीलपैकी कोणती जोडी अयोग्य आहे?", opts: ["केसरी — लो. टिळक", "हिंदुस्तान टाईम्स — के. एम. पण्णीकर", "नॅशनल हेरॉल्ड — मोतीलाल नेहरू", "बॉम्बे क्रॉनिकल — फिरोजशहा मेहता"], correct: 2 },
 ];
+
+if (MCQS.length !== 100) {
+  console.error(`Expected 100 MCQs, got ${MCQS.length}`);
+  process.exit(1);
+}
+
+const questions = MCQS.map((m, i) => ({
+  id: `${QUIZ_ID}-q${i + 1}`,
+  text: m.q,
+  options: { A: m.opts[0], B: m.opts[1], C: m.opts[2], D: m.opts[3] },
+  correctAnswer: OPTION_KEYS[m.correct],
+  explanation: "",
+  category: CATEGORY,
+  topic: TOPIC_NAME,
+  sourceTag: "Don't know Academy — Newspapers Topic Pack",
+}));
+
+const quiz = {
+  id: QUIZ_ID,
+  title: TOPIC_NAME,
+  createdAt: new Date().toISOString(),
+  questions,
+  language: LANGUAGE,
+  topicOnly: true,
+  tag: "Newspapers · वृत्तपत्र",
+};
+
+const quizzesPath = path.join(__dirname, "..", "public", "quizzes.json");
+const quizzes = JSON.parse(fs.readFileSync(quizzesPath, "utf8"));
+
+const before = quizzes.length;
+const filtered = quizzes.filter((q) => q.id !== QUIZ_ID);
+filtered.push(quiz);
+
+fs.writeFileSync(quizzesPath, JSON.stringify(filtered, null, 2), "utf8");
+console.log(
+  `Wrote ${quiz.questions.length} questions for topic '${TOPIC_NAME}'.`,
+);
+console.log(`Quizzes: ${before} → ${filtered.length}`);

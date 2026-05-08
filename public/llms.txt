@@ -23,11 +23,11 @@ These are original, hand-written reference articles maintained by Don't know Aca
 - [MPSC Exam Pattern](https://www.mpscs.in/study-guides/mpsc-exam-pattern): Detailed pattern for Group B, Group C, PSI, Gazetted Civil Services and Gazetted Technical Services prelims — marks, syllabus, negative marking, qualifying criteria, mains overview and indicative cut-offs. ~12 minutes.
 - [MPSC Preparation Strategy](https://www.mpscs.in/study-guides/mpsc-preparation-strategy): A practical 6-month plan, recommended book list, daily routine, PYQ usage, subject weightages, mock-test strategy and last-month revision blueprint. ~15 minutes.
 
-## Topic packs
+## In-app topic packs
 
-These are condensed, high-yield topic packs combining a reference table with a built-in MCQ set. Optimised for last-week revision before MPSC, Rajyaseva, RTO AMVI and UPSC prelims.
+These are 100-question Marathi topic quizzes inside the "Topic Wise" tab of the app (sign in → Topic Wise → History). They are not standalone web pages but are linkable through the topic-wise quiz UI:
 
-- [Newspapers — Founders, Editors & 100 MCQs](https://www.mpscs.in/newspapers): Hand-curated reference of 70+ Indian newspapers and 50+ editors organised in 6 historical groups (British / early period, Bengal Renaissance reformers, Maharashtra press, Nationalist Congress era, Revolutionary press, Gandhi era), followed by 100 unique multiple-choice questions with the correct answer highlighted. In Marathi (Devanagari) with English transliteration of editor names.
+- **वृत्तपत्र — संस्थापक व संपादक** (History): 100 MCQs on 70+ Indian newspapers and 50+ founders/editors (1780–1947). Covers British / early-period press, Bengal Renaissance reformers, Maharashtra press (Bal Shastri Jambhekar, Tilak, Agarkar), Nationalist Congress press (Naoroji, the Ghosh brothers, Subramania Iyer), Revolutionary press (Shyamji Krishnavarma, Lala Hardayal, Madam Cama, Aurobindo Ghosh) and Gandhi-era press (Indian Opinion, Young India, Harijan, Al-Hilal, Comrade, Hamdard, National Herald).
 
 ## Reference content
 
