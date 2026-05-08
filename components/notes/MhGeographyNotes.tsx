@@ -71,10 +71,10 @@ function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
           महाराष्ट्र भूगोल — संपूर्ण नोट्स
         </p>
         <p className="mt-3 max-w-2xl text-sm text-slate-200/90 sm:text-base">
-          The full Lokseva Academy / Appa Hatnure Sir geography revision pack —
-          rebuilt with a premium cover, redesigned table of contents and clean
-          chapter dividers. {TOTAL_CHAPTERS} chapters, {MH_GEO_TOTAL_PAGES} pages,
-          one focused study session.
+          The complete Maharashtra geography revision pack — premium cover,
+          redesigned table of contents, clean chapter dividers and 83 pages
+          of focused content. {TOTAL_CHAPTERS} chapters · one focused study
+          session.
         </p>
 
         <div className="mt-5 flex flex-wrap gap-2">
@@ -112,12 +112,13 @@ function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
               About this notes pack
             </h3>
             <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-              Original Marathi notes are by{" "}
-              <strong>Lokseva Academy — Appa Hatnure Sir</strong>. Don&apos;t
-              know Academy has redesigned the cover, table of contents and
-              chapter dividers, added study tips, and embedded the original
-              pages page-for-page — so the content you revise is exactly what
-              your teacher wrote, in a presentation-ready package.
+              16 chapters spread across 83 pages — covering the formation of
+              Maharashtra, location and extent, political geography, river
+              systems, climate, forests, energy, transport, tourism and the
+              supplementary astronomy + space-launch chapters. Content is
+              packaged with a premium cover, redesigned table of contents,
+              chapter dividers and study tips so your revision flows in a
+              presentation-ready format.
             </p>
             <p className="mt-2 text-xs text-slate-400 dark:text-slate-500">
               Reading online? Pages stay copy-protected. Want to print or
@@ -163,9 +164,8 @@ function BrowseView({ onSelect }: { onSelect: (c: MhGeoChapter) => void }) {
 
       {/* Footer credit */}
       <section className="rounded-2xl border border-dashed border-slate-200 p-5 text-center text-xs text-slate-500 dark:border-slate-700 dark:text-slate-400">
-        Original notes © Lokseva Academy / Appa Hatnure Sir · 9011194443 ·
-        Redesigned & published by Don&apos;t know Academy · mpscs.in (2026
-        edition)
+        Published by Don&apos;t know Academy · mpscs.in · 2026 edition · Free
+        for personal MPSC / Rajyaseva preparation. Redistribution prohibited.
       </section>
     </article>
   );

@@ -4,8 +4,7 @@
   "edition": "2026",
   "totalPages": 83,
   "renderDpi": 150,
-  "originalAuthor": "Lokseva Academy · Appa Hatnure Sir",
-  "redesignedBy": "Don't know Academy · mpscs.in",
+  "publishedBy": "Don't know Academy · mpscs.in",
   "downloadPdf": "/notes/mh-geography/maharashtra-geography-redesigned.pdf",
   "imagePathTemplate": "/notes/mh-geography/pages/page-{:03d}.jpg",
   "parts": [

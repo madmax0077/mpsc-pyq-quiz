@@ -4,17 +4,19 @@ the website's Notes tab.
 
 Why this exists
 ---------------
-The source PDF (`Mh- geography.pdf` by Lokseva Academy / Appa Hatnure Sir) is
-laid out in the Shree-Dev7 legacy non-Unicode Marathi font. Its page text
-extracts as garbage, so we cannot re-typeset the body. Instead we:
+The source PDF is laid out in the Shree-Dev7 legacy non-Unicode Marathi font.
+Its page text extracts as garbage, so we cannot re-typeset the body. Instead
+we:
 
   1) render every original page to a high-quality JPG (the Marathi pixels
-     are preserved exactly — readers see the same content their teacher
-     printed),
-  2) wrap those page-images in a brand-new, professionally designed PDF
-     shell — bespoke saffron / navy cover, redesigned table of contents,
-     part dividers, chapter dividers, page footer with branding & page
-     numbers,
+     are preserved exactly — readers see the same content as the source)
+     and clean each page as it is rendered: crop the source's bottom
+     publication band, mask the small bottom-right circular logo, and
+     remove the diagonal grey watermark via colour thresholding,
+  2) wrap those cleaned page-images in a brand-new, professionally designed
+     PDF shell — bespoke saffron / navy cover, redesigned table of
+     contents, part dividers, chapter dividers, page footer with branding
+     & page numbers,
   3) emit the page-images into `public/notes/mh-geography/pages/` so the
      Next.js Notes tab can lazy-load them inside a copy-protected viewer.
 
@@ -32,6 +34,8 @@ from pathlib import Path
 from typing import List
 
 import fitz  # PyMuPDF
+import numpy as np
+from PIL import Image
 
 
 # --------------------------------------------------------------------------- #
@@ -105,10 +109,72 @@ PART_TITLES = {
 
 
 # --------------------------------------------------------------------------- #
-# Step 1 — render original pages to JPG
+# Step 1a — page cleaning (crop publisher band, mask logo, kill watermark)
+# --------------------------------------------------------------------------- #
+# These constants are calibrated to the source PDF (612pt x 792pt page,
+# rendered at RENDER_DPI). They are expressed as fractions so the same
+# pipeline works at any DPI.
+FOOTER_CROP_FRACTION = 0.067    # bottom strip removed (publisher band)
+LOGO_MASK_Y_FROM = 0.925        # bottom-right corner painted white from this
+LOGO_MASK_X_FROM = 0.78         #   y/x fraction of the post-crop image
+# Watermark thresholds — calibrated so we wipe the diagonal grey "Lokseva
+# Academy" stamp without touching darker grey detail (map outlines, district
+# boundaries, dotted scale arrows, sub-table rules).
+WATERMARK_NEUTRAL_TOL = 5       # |R-G|, |G-B|, |R-B| <= tol  -> neutral grey
+WATERMARK_MIN_VALUE = 140       # minimum component value treated as watermark
+WATERMARK_MAX_VALUE = 235       #   (above this is just paper, below is dark text)
+
+
+def clean_pixmap(pix: fitz.Pixmap) -> Image.Image:
+    """Crop the publisher footer band, kill the diagonal grey watermark, and
+    paint over the bottom-right circular logo. Returns a PIL image ready to
+    save as JPG."""
+    arr = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width, pix.n)
+    if pix.n == 4:
+        arr = arr[:, :, :3]
+    arr = arr.copy()
+
+    H, W, _ = arr.shape
+
+    # 1) Crop the bottom publisher band entirely.
+    crop_h = int(H * FOOTER_CROP_FRACTION)
+    arr = arr[: H - crop_h, :, :]
+    nH = arr.shape[0]
+
+    # 2) Watermark removal. The diagonal "Lokseva Academy" watermark is
+    #    rendered in mid-tone neutral grey. Body text is darker, paper is
+    #    near-white, and chapter/heading colours are non-neutral. So any
+    #    pixel that is (a) neutral (R≈G≈B) and (b) in the mid-grey value
+    #    range is replaced with white.
+    r = arr[:, :, 0].astype(int)
+    g = arr[:, :, 1].astype(int)
+    b = arr[:, :, 2].astype(int)
+    neutral = (
+        (np.abs(r - g) <= WATERMARK_NEUTRAL_TOL)
+        & (np.abs(g - b) <= WATERMARK_NEUTRAL_TOL)
+        & (np.abs(r - b) <= WATERMARK_NEUTRAL_TOL)
+    )
+    minc = np.minimum(np.minimum(r, g), b)
+    maxc = np.maximum(np.maximum(r, g), b)
+    mid = (minc >= WATERMARK_MIN_VALUE) & (maxc <= WATERMARK_MAX_VALUE)
+    arr[neutral & mid] = [255, 255, 255]
+
+    # 3) Logo mask — the small circular publisher logo always lives in the
+    #    bottom-right corner just above the footer. Body text never reaches
+    #    that region (there is always whitespace between content and the
+    #    publisher furniture), so painting the corner white is safe.
+    y_start = int(nH * LOGO_MASK_Y_FROM)
+    x_start = int(W * LOGO_MASK_X_FROM)
+    arr[y_start:, x_start:, :] = 255
+
+    return Image.fromarray(arr, mode="RGB")
+
+
+# --------------------------------------------------------------------------- #
+# Step 1 — render & clean original pages to JPG
 # --------------------------------------------------------------------------- #
 def render_pages() -> int:
-    print(f"Rendering {SOURCE_PDF.name} -> {PAGES_DIR}")
+    print(f"Rendering & cleaning {SOURCE_PDF.name} -> {PAGES_DIR}")
     PAGES_DIR.mkdir(parents=True, exist_ok=True)
 
     src = fitz.open(SOURCE_PDF)
@@ -118,12 +184,11 @@ def render_pages() -> int:
 
     for i, page in enumerate(src, start=1):
         out = PAGES_DIR / f"page-{i:03d}.jpg"
-        if out.exists() and out.stat().st_size > 10_000:
-            continue
         pix = page.get_pixmap(matrix=matrix, alpha=False)
-        pix.pil_save(out, format="JPEG", quality=JPG_QUALITY, optimize=True)
+        cleaned = clean_pixmap(pix)
+        cleaned.save(out, format="JPEG", quality=JPG_QUALITY, optimize=True)
         if i % 10 == 0 or i == n_pages:
-            print(f"  rendered {i:3d}/{n_pages}")
+            print(f"  cleaned {i:3d}/{n_pages}")
 
     src.close()
     print(f"  done. {n_pages} pages.")
@@ -230,28 +295,24 @@ def make_cover(doc: fitz.Document, font_dev: Path | None):
         page.insert_text((x, stats_y + 18), label, fontname="helv", fontsize=9, color=(0.78, 0.80, 0.86))
         x += 110
 
-    # Author / source band
-    band_y = PAGE_H - 220
+    # Publisher band — only Don't know Academy
+    band_y = PAGE_H - 200
     page.insert_text(
-        (60, band_y), "ORIGINAL NOTES",
+        (60, band_y), "PUBLISHED BY",
         fontname="hebo", fontsize=9, color=COL_SAFFRON,
     )
     page.insert_text(
-        (60, band_y + 18), "Lokseva Academy  ·  Appa Hatnure Sir",
-        fontname="hebo", fontsize=14, color=COL_WHITE,
+        (60, band_y + 22), "Don't know Academy",
+        fontname="hebo", fontsize=22, color=COL_WHITE,
     )
     page.insert_text(
-        (60, band_y + 35), "+91 9011194443  /  9011194446",
-        fontname="helv", fontsize=10, color=(0.78, 0.80, 0.86),
-    )
-
-    page.insert_text(
-        (60, band_y + 70), "REDESIGNED & PUBLISHED BY",
-        fontname="hebo", fontsize=9, color=COL_SAFFRON,
+        (60, band_y + 46), "mpscs.in",
+        fontname="hebo", fontsize=14, color=COL_SAFFRON,
     )
     page.insert_text(
-        (60, band_y + 88), "Don't know Academy  ·  mpscs.in",
-        fontname="hebo", fontsize=14, color=COL_WHITE,
+        (60, band_y + 78),
+        "Free for personal MPSC / Rajyaseva preparation. Redistribution prohibited.",
+        fontname="heit", fontsize=9, color=(0.78, 0.80, 0.86),
     )
 
     # Footer in cream band
@@ -530,7 +591,7 @@ def insert_original_page_image(
     draw_filled_rect(page, fitz.Rect(0, PAGE_H - 22, PAGE_W, PAGE_H), COL_CREAM)
     page.draw_line((20, PAGE_H - 22), (PAGE_W - 20, PAGE_H - 22), color=COL_LINE, width=0.5)
     page.insert_text((20, PAGE_H - 8),
-                     f"Original page {src_page_num} of 83",
+                     f"Page {src_page_num} of 83",
                      fontname="heit", fontsize=8, color=COL_INK_SOFT)
     centre_text = f"Chapter {chapter.number}"
     cw = fitz.get_text_length(centre_text, fontname="hebo", fontsize=8)
@@ -556,7 +617,7 @@ def make_back_cover(doc: fitz.Document, font_dev: Path | None):
 
     block = [
         ("All-in-one MPSC Geography revision pack",
-         "Original notes by Lokseva Academy / Appa Hatnure Sir, redesigned & " \
+         "16 chapters and 83 pages of curated Maharashtra geography, " \
          "presented by Don't know Academy."),
         ("Practice on mpscs.in",
          "MCQ quizzes, daily leaderboard, interactive Maharashtra map and " \
@@ -659,16 +720,30 @@ def build_redesigned_pdf():
     doc.set_toc(toc_entries)
 
     doc.set_metadata({
-        "title": "Maharashtra Geography - Complete Notes (Redesigned 2026 Edition)",
-        "author": "Lokseva Academy / Appa Hatnure Sir",
+        "title": "Maharashtra Geography - Complete Notes (2026 Edition)",
+        "author": "Don't know Academy",
         "subject": "MPSC Maharashtra Geography Revision Notes",
         "keywords": "MPSC, Maharashtra Geography, Rajyaseva, UPSC, RTO AMVI, Notes, Don't know Academy, mpscs.in",
         "creator": "Don't know Academy - mpscs.in",
-        "producer": "PyMuPDF redesign pipeline",
+        "producer": "Don't know Academy publishing pipeline",
     })
 
-    doc.save(str(REDESIGNED_PDF), deflate=True, garbage=4, clean=True)
+    # Save to a temp file first, then atomically replace. Avoids "file in
+    # use" errors when the previous PDF is open in the IDE / a viewer.
+    tmp_path = REDESIGNED_PDF.with_name("_redesigned.tmp.pdf")
+    if tmp_path.exists():
+        tmp_path.unlink()
+    doc.save(str(tmp_path), deflate=True, garbage=4, clean=True)
     doc.close()
+    try:
+        os.replace(tmp_path, REDESIGNED_PDF)
+    except PermissionError:
+        print(
+            f"  WARNING: Could not replace {REDESIGNED_PDF.name} (file is open\n"
+            f"  in another program). New PDF saved at: {tmp_path}\n"
+            f"  Close the open PDF and rename _redesigned.tmp.pdf manually."
+        )
+        return
     print(f"  saved: {REDESIGNED_PDF}  ({REDESIGNED_PDF.stat().st_size/1_048_576:.1f} MB)")
 
 
@@ -681,8 +756,7 @@ def write_manifest(n_pages: int):
         "edition": "2026",
         "totalPages": n_pages,
         "renderDpi": RENDER_DPI,
-        "originalAuthor": "Lokseva Academy · Appa Hatnure Sir",
-        "redesignedBy": "Don't know Academy · mpscs.in",
+        "publishedBy": "Don't know Academy · mpscs.in",
         "downloadPdf": "/notes/mh-geography/maharashtra-geography-redesigned.pdf",
         "imagePathTemplate": "/notes/mh-geography/pages/page-{:03d}.jpg",
         "parts": [
