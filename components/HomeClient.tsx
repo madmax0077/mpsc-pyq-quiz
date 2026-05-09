@@ -185,7 +185,7 @@ export default function HomeClient() {
           <div className="flex flex-col items-center gap-8 py-6 sm:py-10">
             <div className="text-center space-y-2">
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-800 dark:text-slate-100">
-                Let the Brain Battle Begin
+                LET THE BRAIN BATTLE BEGIN
               </h2>
               <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base">
                 Warm up those neurons. MPSC questions are waiting with a whistle and a stopwatch.
