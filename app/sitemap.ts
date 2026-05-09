@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getSeoQuestions } from "@/lib/questionSeo";
 
 const SITE_URL = "https://www.mpscs.in";
 
@@ -64,7 +65,12 @@ function toAbsoluteUrl(path: string): string {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const mergedEntries = [...LEGACY_SITEMAP_ENTRIES, ...ADDITIONAL_DISCOVERY_ENTRIES];
+  const questionEntries: SitemapEntryConfig[] = getSeoQuestions().map((question) => ({
+    path: `/questions/${question.id}`,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+  const mergedEntries = [...LEGACY_SITEMAP_ENTRIES, ...ADDITIONAL_DISCOVERY_ENTRIES, ...questionEntries];
   const seen = new Set<string>();
   return mergedEntries
     .filter((entry) => {

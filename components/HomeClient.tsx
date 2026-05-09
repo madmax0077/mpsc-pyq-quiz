@@ -3,12 +3,18 @@
 import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "@/lib/auth-context";
 import type { Language } from "@/lib/types";
-import LoginPage from "@/components/LoginPage";
 import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 
 type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes";
+const GUEST_NAME_KEY = "mpsc_guest_name";
+const GUEST_ID_KEY = "mpsc_guest_id";
+
+function makeGuestId() {
+  if (typeof crypto !== "undefined" && "randomUUID" in crypto) return `guest_${crypto.randomUUID()}`;
+  return `guest_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+}
 
 export default function HomeClient() {
   const { loading, studentUser, logoutStudent } = useAuth();
@@ -17,9 +23,21 @@ export default function HomeClient() {
   const [homeKey, setHomeKey] = useState(0);
   const [challenge, setChallenge] = useState<{ quizId: string; name: string; score: number; total: number } | null>(null);
   const [appMode, setAppMode] = useState<AppMode>("home");
+  const [guestName, setGuestName] = useState("");
+  const [guestId, setGuestId] = useState("");
+  const [guestNameInput, setGuestNameInput] = useState("");
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
+    const savedName = localStorage.getItem(GUEST_NAME_KEY) || "";
+    let savedId = localStorage.getItem(GUEST_ID_KEY) || "";
+    if (!savedId) {
+      savedId = makeGuestId();
+      localStorage.setItem(GUEST_ID_KEY, savedId);
+    }
+    setGuestName(savedName);
+    setGuestNameInput(savedName);
+    setGuestId(savedId);
     const params = new URLSearchParams(window.location.search);
     const cq = params.get("cq");
     const cs = params.get("cs");
@@ -47,8 +65,8 @@ export default function HomeClient() {
   useEffect(() => {
     const seo = document.getElementById("seo-landing");
     if (!seo) return;
-    seo.style.display = studentUser ? "none" : "";
-  }, [studentUser]);
+    seo.style.display = "none";
+  }, []);
 
   const toggleDark = useCallback(() => {
     const next = !dark;
@@ -68,10 +86,72 @@ export default function HomeClient() {
     );
   }
 
-  if (!studentUser) return <LoginPage />;
+  const displayName = studentUser?.displayName || guestName || "Aspirant";
+  const guestIdentity = studentUser
+    ? null
+    : guestId
+      ? { userId: guestId, displayName, photoURL: null }
+      : null;
+
+  const saveGuestName = () => {
+    const cleaned = guestNameInput.trim().slice(0, 40) || "Aspirant";
+    setGuestName(cleaned);
+    localStorage.setItem(GUEST_NAME_KEY, cleaned);
+    if (!guestId) {
+      const nextId = makeGuestId();
+      setGuestId(nextId);
+      localStorage.setItem(GUEST_ID_KEY, nextId);
+    }
+  };
+
+  const resetGuestName = () => {
+    setGuestName("");
+    setGuestNameInput("");
+    localStorage.removeItem(GUEST_NAME_KEY);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50 dark:from-slate-900 dark:to-slate-950">
+      {!studentUser && !guestName && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 px-4 backdrop-blur-sm">
+          <div className="w-full max-w-md rounded-3xl border border-white/60 bg-white p-6 shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+            <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-2xl text-white shadow-lg">
+              🎓
+            </div>
+            <h2 className="text-2xl font-black text-slate-900 dark:text-white">What should we call you?</h2>
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+              No login needed. Your name is only used for quiz progress and the daily leaderboard.
+            </p>
+            <input
+              value={guestNameInput}
+              onChange={(e) => setGuestNameInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") saveGuestName();
+              }}
+              placeholder="Enter your name"
+              className="mt-5 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-medium text-slate-800 outline-none transition focus:border-indigo-400 focus:bg-white focus:ring-4 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:ring-indigo-900/40"
+              autoFocus
+            />
+            <button
+              onClick={saveGuestName}
+              className="mt-4 w-full rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-3 text-sm font-bold text-white shadow-lg shadow-indigo-200 transition hover:from-indigo-700 hover:to-purple-700 dark:shadow-indigo-950/40"
+            >
+              Start Practicing
+            </button>
+            <button
+              onClick={() => {
+                setGuestNameInput("Aspirant");
+                setGuestName("Aspirant");
+                localStorage.setItem(GUEST_NAME_KEY, "Aspirant");
+              }}
+              className="mt-3 w-full text-xs font-semibold text-slate-400 hover:text-slate-600 dark:hover:text-slate-300"
+            >
+              Continue as Aspirant
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* ---- Top Navigation Bar ---- */}
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
@@ -155,7 +235,7 @@ export default function HomeClient() {
               <option value="marathi">मराठी</option>
             </select>
 
-            {studentUser.photoURL && (
+            {studentUser?.photoURL && (
               <img
                 src={studentUser.photoURL}
                 alt=""
@@ -165,15 +245,17 @@ export default function HomeClient() {
             )}
             <div className="hidden sm:block min-w-0">
               <p className="text-xs font-semibold text-slate-700 leading-tight truncate dark:text-slate-200">
-                {studentUser.displayName || "Aspirant"}
+                {displayName}
               </p>
-              <p className="text-[10px] text-slate-400 truncate dark:text-slate-500">{studentUser.email}</p>
+              <p className="text-[10px] text-slate-400 truncate dark:text-slate-500">
+                {studentUser?.email || "Guest mode"}
+              </p>
             </div>
             <button
-              onClick={logoutStudent}
+              onClick={studentUser ? logoutStudent : resetGuestName}
               className="shrink-0 rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 text-[11px] sm:text-xs font-medium text-slate-500 transition-colors hover:bg-red-50 hover:text-red-600 dark:text-slate-400 dark:hover:bg-red-900/30 dark:hover:text-red-400"
             >
-              Logout
+              {studentUser ? "Logout" : "Name"}
             </button>
           </div>
         </div>
@@ -330,7 +412,7 @@ export default function HomeClient() {
             />
           </div>
         ) : (
-          <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} />
+          <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} guestUser={guestIdentity} />
         )}
       </main>
 

@@ -26,8 +26,7 @@ service cloud.firestore {
     match /leaderboard/{doc} {
       allow read: if true;
 
-      allow create: if request.auth != null
-        && isValidLeaderboardEntry(request.resource.data);
+      allow create: if isValidLeaderboardEntry(request.resource.data);
 
       // Append-only: never edit or delete an existing score.
       allow update, delete: if false;
@@ -60,7 +59,7 @@ service cloud.firestore {
 //   * createdAt not the server timestamp
 //   * Missing or oversized strings
 function isValidLeaderboardEntry(d) {
-  return d.userId == request.auth.uid
+  return isValidLeaderboardUser(d.userId)
     && d.displayName is string && d.displayName.size() > 0 && d.displayName.size() <= 60
     && (d.photoURL == null || (d.photoURL is string && d.photoURL.size() <= 500))
     && d.quizId is string && d.quizId.size() > 0 && d.quizId.size() <= 200
@@ -72,4 +71,12 @@ function isValidLeaderboardEntry(d) {
     && d.scorePct == math.round((d.score * 100) / d.total)
     && d.dateKey is string && d.dateKey.matches('^\\d{4}-\\d{2}-\\d{2}$')
     && d.createdAt == request.time;
+}
+
+function isValidLeaderboardUser(userId) {
+  return userId is string
+    && (
+      (request.auth != null && userId == request.auth.uid)
+      || (request.auth == null && userId.matches('^guest_[A-Za-z0-9_-]{8,80}$'))
+    );
 }

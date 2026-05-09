@@ -67,8 +67,9 @@ export default function PrivacyPolicy() {
             <li>A stable, non-public user ID assigned by Firebase.</li>
           </ul>
           <p>
-            We do not receive your password. You can use the public pages of the site (the home
-            page, /exams, /map, /study-guides, /about, /contact, /privacy) without signing in.
+            We do not receive your password. You can use the public pages and quiz practice areas
+            without signing in. If you continue as a guest, we ask only for a display name and keep
+            a random guest ID in your browser so the daily leaderboard can work.
           </p>
 
           <h3>3.2 Quiz activity and progress</h3>
@@ -84,11 +85,11 @@ export default function PrivacyPolicy() {
             <li>The final score and language used.</li>
           </ul>
           <p>
-            If you are signed in, your daily aggregate score is also written to a public {""}
+            If you submit a quiz, your daily aggregate score is also written to a public {""}
             <code>leaderboard</code> collection in Firestore so the {""}
             <Link href="/?mode=leaderboard">daily leaderboard</Link> can rank participants. The
-            leaderboard publishes only your display name and profile picture (the same details
-            that already appear in your Google / Apple profile) — never your email address.
+            leaderboard publishes only your display name and, for signed-in users, profile picture
+            — never your email address.
           </p>
 
           <h3>3.3 Device and log information</h3>

@@ -115,7 +115,13 @@ interface ChallengeInfo {
   total: number;
 }
 
-export default function StudentView({ language = "english", challenge, homeKey = 0, topicMode = false }: { language?: Language; challenge?: ChallengeInfo | null; homeKey?: number; topicMode?: boolean }) {
+interface GuestUserInfo {
+  userId: string;
+  displayName: string;
+  photoURL: string | null;
+}
+
+export default function StudentView({ language = "english", challenge, homeKey = 0, topicMode = false, guestUser = null }: { language?: Language; challenge?: ChallengeInfo | null; homeKey?: number; topicMode?: boolean; guestUser?: GuestUserInfo | null }) {
   const { studentUser } = useAuth();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
@@ -443,11 +449,14 @@ export default function StudentView({ language = "english", challenge, homeKey =
     }
     recordStreak();
     recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz.id, quizTitle: selectedQuiz.title, category: selectedQuiz.category, score: correct, total: scoredTotal });
-    if (studentUser && scoredTotal > 0) {
+    const leaderboardUser = studentUser
+      ? { userId: studentUser.uid, displayName: studentUser.displayName, photoURL: studentUser.photoURL }
+      : guestUser;
+    if (leaderboardUser && scoredTotal > 0) {
       void submitScore({
-        userId: studentUser.uid,
-        displayName: studentUser.displayName,
-        photoURL: studentUser.photoURL,
+        userId: leaderboardUser.userId,
+        displayName: leaderboardUser.displayName,
+        photoURL: leaderboardUser.photoURL,
         quizId: selectedQuiz.id,
         quizTitle: selectedQuiz.title,
         score: correct,
@@ -486,11 +495,14 @@ export default function StudentView({ language = "english", challenge, homeKey =
     }
     recordStreak();
     recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz!.id, quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`, category: selectedQuiz?.category, score: correct, total: pageTotal });
-    if (studentUser && pageTotal > 0) {
+    const leaderboardUser = studentUser
+      ? { userId: studentUser.uid, displayName: studentUser.displayName, photoURL: studentUser.photoURL }
+      : guestUser;
+    if (leaderboardUser && pageTotal > 0) {
       void submitScore({
-        userId: studentUser.uid,
-        displayName: studentUser.displayName,
-        photoURL: studentUser.photoURL,
+        userId: leaderboardUser.userId,
+        displayName: leaderboardUser.displayName,
+        photoURL: leaderboardUser.photoURL,
         quizId: selectedQuiz!.id,
         quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`,
         score: correct,
