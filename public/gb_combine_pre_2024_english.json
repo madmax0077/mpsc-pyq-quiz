@@ -13,7 +13,8 @@
         "D": "a, b and c"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_2",
@@ -25,7 +26,8 @@
         "D": "Only a"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_3",
@@ -37,7 +39,8 @@
         "D": "Ishwarchandra Vidyasagar"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_4",
@@ -49,7 +52,8 @@
         "D": "a-I, b-II, c-III, d-IV"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_5",
@@ -61,7 +65,8 @@
         "D": "Only a, c and d"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_6",
@@ -73,7 +78,8 @@
         "D": "Only B and C"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_7",
@@ -85,7 +91,8 @@
         "D": "Shishir Kumar Ghosh"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_8",
@@ -97,7 +104,8 @@
         "D": "Shreemant Appasaheb Raje Bhosle"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_9",
@@ -109,7 +117,8 @@
         "D": "Colin Campbell"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_10",
@@ -121,7 +130,8 @@
         "D": "Only b, c and d"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_en_11",
@@ -133,7 +143,8 @@
         "D": "A-IV, B-III, C-II, D-I"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_12",
@@ -145,7 +156,8 @@
         "D": "Koyna - Krishna"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_13",
@@ -157,7 +169,8 @@
         "D": "only b is correct"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_14",
@@ -169,7 +182,8 @@
         "D": "a, b and c"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_15",
@@ -181,7 +195,8 @@
         "D": "5 and 8"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_16",
@@ -193,7 +208,8 @@
         "D": "a-i, b-ii, c-iv, d-iii"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_17",
@@ -205,7 +221,8 @@
         "D": "Kali - Tista"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_18",
@@ -217,7 +234,8 @@
         "D": "Tea winds"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_19",
@@ -229,7 +247,8 @@
         "D": "only d"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_20",
@@ -241,7 +260,8 @@
         "D": "All of the above"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_en_21",
@@ -253,7 +273,8 @@
         "D": "Both a and b"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_22",
@@ -265,7 +286,8 @@
         "D": "Open market operations"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_23",
@@ -277,7 +299,8 @@
         "D": "None of the above"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_24",
@@ -289,7 +312,8 @@
         "D": "Birth rate, maternal mortality rate and infant mortality rate"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_25",
@@ -301,7 +325,8 @@
         "D": "USA, China, Germany, Japan and India"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_26",
@@ -313,7 +338,8 @@
         "D": "Financial sector reforms"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_27",
@@ -325,7 +351,8 @@
         "D": "Suresh Tendulkar Committee Report 2009"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_28",
@@ -337,7 +364,8 @@
         "D": "a and b are incorrect"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_29",
@@ -349,7 +377,8 @@
         "D": "All of the above"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_30",
@@ -361,7 +390,8 @@
         "D": "A bank authorised by the RBI to deal in foreign exchange"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_31",
@@ -373,7 +403,8 @@
         "D": "b and c"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_32",
@@ -385,7 +416,8 @@
         "D": "All of the above"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_33",
@@ -397,7 +429,8 @@
         "D": "a-ii, b-i, c-iv, d-iii"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_34",
@@ -409,7 +442,8 @@
         "D": "Article 120"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_35",
@@ -421,7 +455,8 @@
         "D": "None of these"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_en_36",
@@ -433,7 +468,8 @@
         "D": "NASA and JAXA"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_37",
@@ -445,7 +481,8 @@
         "D": "Intergovernmental Panel on Climate Change"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_38",
@@ -457,7 +494,8 @@
         "D": "Commodore K. S. Subramaniam"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_39",
@@ -469,7 +507,8 @@
         "D": "Lucknow"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_40",
@@ -481,7 +520,8 @@
         "D": "Assam"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_41",
@@ -493,7 +533,8 @@
         "D": "Karm hi dharm"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_42",
@@ -505,7 +546,8 @@
         "D": "Only a, c"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_43",
@@ -517,7 +559,8 @@
         "D": "Freedom GPS"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_44",
@@ -529,7 +572,8 @@
         "D": "Only b, c, d"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_45",
@@ -541,7 +585,8 @@
         "D": "Literature"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_46",
@@ -553,7 +598,8 @@
         "D": "Only b, d"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_47",
@@ -565,7 +611,8 @@
         "D": "Ministry of Trade"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_48",
@@ -577,7 +624,8 @@
         "D": "Efros"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_49",
@@ -589,7 +637,8 @@
         "D": "Ode to joy"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_50",
@@ -601,7 +650,8 @@
         "D": "Only b, c, d"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_en_51",
@@ -613,7 +663,8 @@
         "D": "Fourth Schedule"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_52",
@@ -625,7 +676,8 @@
         "D": "74th Amendment"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_53",
@@ -637,7 +689,8 @@
         "D": "None of the above"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_54",
@@ -649,7 +702,8 @@
         "D": "Article 242"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_55",
@@ -661,7 +715,8 @@
         "D": "None of the above"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_56",
@@ -673,7 +728,8 @@
         "D": "Article 41"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_57",
@@ -685,7 +741,8 @@
         "D": "None of the above"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_58",
@@ -697,7 +754,8 @@
         "D": "Article 150"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_59",
@@ -709,7 +767,8 @@
         "D": "Jaylalita"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_60",
@@ -721,7 +780,8 @@
         "D": "Article 25"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_61",
@@ -733,7 +793,8 @@
         "D": "State Public Service Commission"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_62",
@@ -745,7 +806,8 @@
         "D": "Andhra Pradesh, Bihar, Karnataka, Maharashtra, Telangana, Uttar Pradesh"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_63",
@@ -757,7 +819,8 @@
         "D": "Speaker of the Legislative Assembly"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_64",
@@ -769,7 +832,8 @@
         "D": "The Governor of State"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_65",
@@ -781,7 +845,8 @@
         "D": "Article 218"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_en_66",
@@ -793,7 +858,8 @@
         "D": "a-iv, b-iii, c-ii, d-i"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_67",
@@ -805,7 +871,8 @@
         "D": "Cytokinin"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_68",
@@ -817,7 +884,8 @@
         "D": "a-iv, b-iii, c-i, d-ii"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_69",
@@ -829,7 +897,8 @@
         "D": "Yellow fever"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_70",
@@ -841,7 +910,8 @@
         "D": "White translucent bag"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_71",
@@ -853,7 +923,8 @@
         "D": "Parkinson's"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_72",
@@ -865,7 +936,8 @@
         "D": "a, c and d"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_73",
@@ -877,7 +949,8 @@
         "D": "a, b and c"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_74",
@@ -889,7 +962,8 @@
         "D": "No poison is found"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_75",
@@ -901,7 +975,8 @@
         "D": "Cu/Ni"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_76",
@@ -913,7 +988,8 @@
         "D": "Alloy"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_77",
@@ -925,7 +1001,8 @@
         "D": "30 gram"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_78",
@@ -937,7 +1014,8 @@
         "D": "True, False, True"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_79",
@@ -949,7 +1027,8 @@
         "D": "Neither transverse nor longitudinal"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_80",
@@ -961,7 +1040,8 @@
         "D": "400 nm to 700 nm"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_en_81",
@@ -973,7 +1053,8 @@
         "D": "440"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_82",
@@ -985,7 +1066,8 @@
         "D": "1"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_83",
@@ -997,7 +1079,8 @@
         "D": "20"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_84",
@@ -1009,7 +1092,8 @@
         "D": "36"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_85",
@@ -1022,7 +1106,8 @@
       },
       "explanation": "",
       "correctAnswer": "B",
-      "imageUrl": "/question-images/gb-combine-pre-2024-q85.png"
+      "imageUrl": "/question-images/gb-combine-pre-2024-q85.png",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_86",
@@ -1034,7 +1119,8 @@
         "D": "'B' losses 20%"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_87",
@@ -1046,7 +1132,8 @@
         "D": "320"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_88",
@@ -1058,7 +1145,8 @@
         "D": "800 m"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_89",
@@ -1070,7 +1158,8 @@
         "D": "40"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_90",
@@ -1082,7 +1171,8 @@
         "D": "35 years"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_91",
@@ -1094,7 +1184,8 @@
         "D": "14400"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_92",
@@ -1106,7 +1197,8 @@
         "D": "140 metre"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_93",
@@ -1118,7 +1210,8 @@
         "D": "27"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_94",
@@ -1130,7 +1223,8 @@
         "D": "1 km"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_95",
@@ -1142,7 +1236,8 @@
         "D": "Conclusion A and B both are wrong"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_96",
@@ -1155,7 +1250,8 @@
       },
       "explanation": "",
       "correctAnswer": "B",
-      "imageUrl": "/question-images/gb-combine-pre-2024-q96.png"
+      "imageUrl": "/question-images/gb-combine-pre-2024-q96.png",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_97",
@@ -1167,7 +1263,8 @@
         "D": "None of these"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_98",
@@ -1179,7 +1276,8 @@
         "D": "RISTTIBUDION"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_99",
@@ -1191,7 +1289,8 @@
         "D": "Mother-in-law"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_en_100",
@@ -1203,7 +1302,8 @@
         "D": "D"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     }
   ],
   "language": "english",

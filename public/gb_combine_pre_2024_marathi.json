@@ -13,7 +13,8 @@
         "D": "a, b आणि c"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_2",
@@ -25,7 +26,8 @@
         "D": "फक्त अ"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_3",
@@ -37,7 +39,8 @@
         "D": "ईश्वरचंद्र विद्यासागर"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_4",
@@ -49,7 +52,8 @@
         "D": "I II III IV"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_5",
@@ -61,7 +65,8 @@
         "D": "फक्त अ, क आणि ड"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_6",
@@ -73,7 +78,8 @@
         "D": "फक्त ब आणि क"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_7",
@@ -85,7 +91,8 @@
         "D": "शिशिर कुमार घोष"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_8",
@@ -97,7 +104,8 @@
         "D": "श्रीमंत आप्पासाहेब राजे भोसले"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_9",
@@ -109,7 +117,8 @@
         "D": "कॉलीन कॅम्पबेल"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_10",
@@ -121,7 +130,8 @@
         "D": "फक्त ब, क आणि ड"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "History"
     },
     {
       "id": "gb_combine_pre_2024_mr_11",
@@ -133,7 +143,8 @@
         "D": "IV III II I"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_12",
@@ -145,7 +156,8 @@
         "D": "कोयना - कृष्णा"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_13",
@@ -157,7 +169,8 @@
         "D": "फक्त ब बरोबर आहे"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_14",
@@ -169,7 +182,8 @@
         "D": "अ, ब आणि क"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_15",
@@ -181,7 +195,8 @@
         "D": "५ आणि ८"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_16",
@@ -193,7 +208,8 @@
         "D": "अ-i, ब-ii, क-iv, ड-iii"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_17",
@@ -205,7 +221,8 @@
         "D": "काली - तिस्ता"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_18",
@@ -217,7 +234,8 @@
         "D": "चहा वारे"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_19",
@@ -229,7 +247,8 @@
         "D": "फक्त ड"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_20",
@@ -241,7 +260,8 @@
         "D": "वरील सर्व"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Geography"
     },
     {
       "id": "gb_combine_pre_2024_mr_21",
@@ -253,7 +273,8 @@
         "D": "अ आणि ब दोन्ही"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_22",
@@ -265,7 +286,8 @@
         "D": "खुल्या बाजारातील व्यवहार"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_23",
@@ -277,7 +299,8 @@
         "D": "वरीलपैकी कोणतेही नाही"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_24",
@@ -289,7 +312,8 @@
         "D": "जन्म दर, माता मृत्यु दर आणि अर्भक मृत्यु दर"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_25",
@@ -301,7 +325,8 @@
         "D": "अमेरिका, चीन, जर्मनी, जपान आणि भारत"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_26",
@@ -313,7 +338,8 @@
         "D": "वित्तीय क्षेत्रातील सुधारणा"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_27",
@@ -325,7 +351,8 @@
         "D": "सुरेश तेंडुलकर समितीचा अहवाल २००९"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_28",
@@ -337,7 +364,8 @@
         "D": "अ आणि ब चूक आहेत"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_29",
@@ -349,7 +377,8 @@
         "D": "वरीलपैकी सर्व"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_30",
@@ -361,7 +390,8 @@
         "D": "परकीय चलनात व्यवहार करण्यासाठी भारतीय रिझर्व्ह बँकेने प्राधिकृत केलेली बँक"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_31",
@@ -373,7 +403,8 @@
         "D": "ब आणि क"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_32",
@@ -385,7 +416,8 @@
         "D": "वरील सर्व"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_33",
@@ -397,7 +429,8 @@
         "D": "अ-ii, ब-i, क-iv, ड-iii"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_34",
@@ -409,7 +442,8 @@
         "D": "अनुच्छेद १२०"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_35",
@@ -421,7 +455,8 @@
         "D": "यापैकी एकही नाही"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Economics"
     },
     {
       "id": "gb_combine_pre_2024_mr_36",
@@ -433,7 +468,8 @@
         "D": "नासा आणि जाक्सा"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_37",
@@ -445,7 +481,8 @@
         "D": "हवामान बदलाच्या समस्येवरील आंतरसरकारी परिषद"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_38",
@@ -457,7 +494,8 @@
         "D": "कमोडोर के. एस. सुब्रमनियम"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_39",
@@ -469,7 +507,8 @@
         "D": "लखनऊ"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_40",
@@ -481,7 +520,8 @@
         "D": "आसाम"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_41",
@@ -493,7 +533,8 @@
         "D": "कर्म ही धर्म"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_42",
@@ -505,7 +546,8 @@
         "D": "फक्त अ, क"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_43",
@@ -517,7 +559,8 @@
         "D": "फ्रीडम जी.पी.एस."
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_44",
@@ -529,7 +572,8 @@
         "D": "फक्त ब, क, ड"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_45",
@@ -541,7 +585,8 @@
         "D": "साहित्य"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_46",
@@ -553,7 +598,8 @@
         "D": "फक्त ब, ड"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_47",
@@ -565,7 +611,8 @@
         "D": "व्यापार मंत्रालय"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_48",
@@ -577,7 +624,8 @@
         "D": "एफ्रोस"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_49",
@@ -589,7 +637,8 @@
         "D": "ओड टू जॉय"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_50",
@@ -601,7 +650,8 @@
         "D": "फक्त ब, क, ड"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Current Affairs"
     },
     {
       "id": "gb_combine_pre_2024_mr_51",
@@ -613,7 +663,8 @@
         "D": "चौथी अनुसूची"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_52",
@@ -625,7 +676,8 @@
         "D": "७४ वी घटनादुरुस्ती"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_53",
@@ -637,7 +689,8 @@
         "D": "वरीलपैकी कोणतेही नाही"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_54",
@@ -649,7 +702,8 @@
         "D": "अनुच्छेद २४२"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_55",
@@ -661,7 +715,8 @@
         "D": "वरीलपैकी कोणतेही नाही"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_56",
@@ -673,7 +728,8 @@
         "D": "अनुच्छेद ४१"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_57",
@@ -685,7 +741,8 @@
         "D": "वरीलपैकी नाही"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_58",
@@ -697,7 +754,8 @@
         "D": "अनुच्छेद 150"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_59",
@@ -709,7 +767,8 @@
         "D": "जयललिता"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_60",
@@ -721,7 +780,8 @@
         "D": "अनुच्छेद २५"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_61",
@@ -733,7 +793,8 @@
         "D": "राज्य लोकसेवा आयोग"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_62",
@@ -745,7 +806,8 @@
         "D": "आंध्र प्रदेश, बिहार, कर्नाटक, महाराष्ट्र, तेलंगणा, उत्तर प्रदेश"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_63",
@@ -757,7 +819,8 @@
         "D": "विधानसभेचे सभापती"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_64",
@@ -769,7 +832,8 @@
         "D": "राज्याचे राज्यपाल"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_65",
@@ -781,7 +845,8 @@
         "D": "अनुच्छेद २१८"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Indian Polity"
     },
     {
       "id": "gb_combine_pre_2024_mr_66",
@@ -793,7 +858,8 @@
         "D": "अ-iv, ब-iii, क-ii, ड-i"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_67",
@@ -805,7 +871,8 @@
         "D": "सायटोकायनीन"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_68",
@@ -817,7 +884,8 @@
         "D": "अ-iv, ब-iii, क-i, ड-ii"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_69",
@@ -829,7 +897,8 @@
         "D": "पीत ज्वर"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_70",
@@ -841,7 +910,8 @@
         "D": "पांढरी पारदर्शक पिशवी"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_71",
@@ -853,7 +923,8 @@
         "D": "पार्किन्सन्स"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_72",
@@ -865,7 +936,8 @@
         "D": "अ, क आणि ड"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_73",
@@ -877,7 +949,8 @@
         "D": "अ, ब आणि क"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_74",
@@ -889,7 +962,8 @@
         "D": "कोणतेही विष सापडत नाही"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_75",
@@ -901,7 +975,8 @@
         "D": "Cu/Ni"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_76",
@@ -913,7 +988,8 @@
         "D": "मिश्रधातू"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_77",
@@ -925,7 +1001,8 @@
         "D": "३० ग्रॅम"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_78",
@@ -937,7 +1014,8 @@
         "D": "बरोबर, चूक, बरोबर"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_79",
@@ -949,7 +1027,8 @@
         "D": "अनुतरंग आणि अवतरंग दोन्हीपैकी नाही"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_80",
@@ -961,7 +1040,8 @@
         "D": "400 नॅनोमीटर ते 700 नॅनोमीटर"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Science"
     },
     {
       "id": "gb_combine_pre_2024_mr_81",
@@ -973,7 +1053,8 @@
         "D": "440"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_82",
@@ -985,7 +1066,8 @@
         "D": "1"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_83",
@@ -997,7 +1079,8 @@
         "D": "20"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_84",
@@ -1009,7 +1092,8 @@
         "D": "36"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_85",
@@ -1022,7 +1106,8 @@
       },
       "explanation": "",
       "correctAnswer": "B",
-      "imageUrl": "/question-images/gb-combine-pre-2024-q85.png"
+      "imageUrl": "/question-images/gb-combine-pre-2024-q85.png",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_86",
@@ -1034,7 +1119,8 @@
         "D": "'ब' चा २० टक्के तोटा झाला"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_87",
@@ -1046,7 +1132,8 @@
         "D": "320"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_88",
@@ -1058,7 +1145,8 @@
         "D": "800 मी"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_89",
@@ -1070,7 +1158,8 @@
         "D": "40"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_90",
@@ -1082,7 +1171,8 @@
         "D": "35 वर्षे"
       },
       "explanation": "",
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_91",
@@ -1094,7 +1184,8 @@
         "D": "14400"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_92",
@@ -1106,7 +1197,8 @@
         "D": "140 मीटर"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_93",
@@ -1118,7 +1210,8 @@
         "D": "27"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_94",
@@ -1130,7 +1223,8 @@
         "D": "1 किमी"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_95",
@@ -1142,7 +1236,8 @@
         "D": "निष्कर्ष अ व ब दोन्ही चुकीचे आहेत"
       },
       "explanation": "",
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_96",
@@ -1155,7 +1250,8 @@
       },
       "explanation": "",
       "correctAnswer": "B",
-      "imageUrl": "/question-images/gb-combine-pre-2024-q96.png"
+      "imageUrl": "/question-images/gb-combine-pre-2024-q96.png",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_97",
@@ -1167,7 +1263,8 @@
         "D": "यापैकी नाही"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_98",
@@ -1179,7 +1276,8 @@
         "D": "RISTTIBUDION"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_99",
@@ -1191,7 +1289,8 @@
         "D": "सासू"
       },
       "explanation": "",
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "category": "Aptitude"
     },
     {
       "id": "gb_combine_pre_2024_mr_100",
@@ -1203,7 +1302,8 @@
         "D": "D"
       },
       "explanation": "",
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "category": "Aptitude"
     }
   ],
   "language": "marathi",
