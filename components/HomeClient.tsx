@@ -182,23 +182,41 @@ export default function HomeClient() {
       {/* ---- Main Content ---- */}
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
         {appMode === "home" ? (
-          <div className="flex flex-col items-center gap-8 py-6 sm:py-10">
-            <div className="text-center space-y-2">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-800 dark:text-slate-100">
-                LET THE BRAIN BATTLE BEGIN
-              </h2>
-              <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base">
-                Warm up those neurons. MPSC questions are waiting with a whistle and a stopwatch.
-              </p>
-            </div>
+          <div className="flex flex-col items-center gap-8 py-4 sm:py-8">
+            <section className="relative w-full overflow-hidden rounded-[2rem] border border-white/70 bg-white/90 p-5 shadow-xl shadow-indigo-100/60 ring-1 ring-slate-900/5 dark:border-slate-700/70 dark:bg-slate-900/80 dark:shadow-black/20 sm:p-8">
+              <div className="absolute -left-24 -top-24 h-56 w-56 rounded-full bg-indigo-300/30 blur-3xl dark:bg-indigo-700/20" />
+              <div className="absolute -bottom-28 -right-16 h-64 w-64 rounded-full bg-emerald-300/30 blur-3xl dark:bg-emerald-700/20" />
+              <div className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+                <div className="text-center lg:text-left">
+                  <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.22em] text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300 lg:mx-0">
+                    <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
+                    Live Study Arena
+                  </div>
+                  <h2 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white sm:text-5xl">
+                    LET THE BRAIN BATTLE BEGIN
+                  </h2>
+                  <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-slate-600 dark:text-slate-300 sm:text-base lg:mx-0">
+                    Pick a mode, solve focused sets, and watch your preparation turn into daily momentum.
+                    PYQs, topic tests, notes and leaderboard now feel like one clean study cockpit.
+                  </p>
+                  <div className="mt-6 flex flex-wrap justify-center gap-2 lg:justify-start">
+                    <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-700">5-question topic sets</span>
+                    <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-700">Marathi + English</span>
+                    <span className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:ring-slate-700">Daily rank push</span>
+                  </div>
+                </div>
+                <StudyScene />
+              </div>
+            </section>
 
-            <div className="grid sm:grid-cols-2 gap-5 w-full max-w-2xl">
+            <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
               <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
               {/* Subject Wise */}
               <button
                 onClick={() => setAppMode("subject")}
-                className="group relative overflow-hidden rounded-2xl border-2 border-indigo-100 bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 p-8 text-left shadow-sm hover:shadow-lg hover:border-indigo-300 transition-all dark:from-indigo-950/50 dark:via-violet-950/50 dark:to-purple-950/50 dark:border-indigo-800 dark:hover:border-indigo-600"
+                className="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-100 dark:border-indigo-800 dark:from-indigo-950/50 dark:via-slate-900 dark:to-purple-950/50 dark:hover:border-indigo-600 dark:hover:shadow-black/20"
               >
+                <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-indigo-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-indigo-500/10" />
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md mb-4">
                   <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -221,8 +239,9 @@ export default function HomeClient() {
               {/* Topic Wise */}
               <button
                 onClick={() => setAppMode("topic")}
-                className="group relative overflow-hidden rounded-2xl border-2 border-emerald-100 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 p-8 text-left shadow-sm hover:shadow-lg hover:border-emerald-300 transition-all dark:from-emerald-950/50 dark:via-teal-950/50 dark:to-cyan-950/50 dark:border-emerald-800 dark:hover:border-emerald-600"
+                className="group relative overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-white to-cyan-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-100 dark:border-emerald-800 dark:from-emerald-950/50 dark:via-slate-900 dark:to-cyan-950/50 dark:hover:border-emerald-600 dark:hover:shadow-black/20"
               >
+                <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-emerald-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-emerald-500/10" />
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-md mb-4">
                   <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
@@ -245,8 +264,9 @@ export default function HomeClient() {
               {/* Notes */}
               <button
                 onClick={() => setAppMode("notes")}
-                className="group relative overflow-hidden rounded-2xl border-2 border-orange-100 bg-gradient-to-br from-orange-50 via-amber-50 to-rose-50 p-8 text-left shadow-sm hover:shadow-lg hover:border-orange-300 transition-all dark:from-orange-950/50 dark:via-amber-950/50 dark:to-rose-950/50 dark:border-orange-800 dark:hover:border-orange-600 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-orange-100 bg-gradient-to-br from-orange-50 via-white to-rose-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-orange-300 hover:shadow-xl hover:shadow-orange-100 dark:border-orange-800 dark:from-orange-950/50 dark:via-slate-900 dark:to-rose-950/50 dark:hover:border-orange-600 dark:hover:shadow-black/20 sm:col-span-2"
               >
+                <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-orange-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-orange-500/10" />
                 <div className="flex items-start gap-4">
                   <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 text-white shadow-md">
                     <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -356,8 +376,9 @@ function LeaderboardTile({ onClick, className = "" }: { onClick: () => void; cla
   return (
     <button
       onClick={onClick}
-      className={`group relative overflow-hidden rounded-2xl border-2 border-amber-200 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 p-5 sm:p-6 text-left shadow-sm hover:shadow-lg hover:border-amber-400 transition-all dark:from-amber-950/40 dark:via-yellow-950/40 dark:to-orange-950/40 dark:border-amber-800 dark:hover:border-amber-600 ${className}`}
+      className={`group relative overflow-hidden rounded-3xl border border-amber-200 bg-gradient-to-br from-amber-50 via-white to-orange-50 p-5 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-100 dark:border-amber-800 dark:from-amber-950/40 dark:via-slate-900 dark:to-orange-950/40 dark:hover:border-amber-600 dark:hover:shadow-black/20 sm:p-6 ${className}`}
     >
+      <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-amber-200/50 blur-2xl transition-transform group-hover:scale-125 dark:bg-amber-500/10" />
       <div className="flex items-center gap-4">
         <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 text-3xl text-white shadow-md">
           🏆
@@ -380,5 +401,35 @@ function LeaderboardTile({ onClick, className = "" }: { onClick: () => void; cla
         </svg>
       </div>
     </button>
+  );
+}
+
+function StudyScene() {
+  return (
+    <div className="study-scene mx-auto w-full max-w-sm" aria-hidden="true">
+      <div className="study-orbit">
+        <span className="study-chip study-chip-one">PYQ</span>
+        <span className="study-chip study-chip-two">Map</span>
+        <span className="study-chip study-chip-three">Notes</span>
+      </div>
+      <div className="study-stage">
+        <div className="study-book study-book-back" />
+        <div className="study-book study-book-mid" />
+        <div className="study-book study-book-front">
+          <span className="study-book-title">MPSC</span>
+          <span className="study-book-line" />
+          <span className="study-book-line short" />
+        </div>
+        <div className="study-lamp">
+          <span className="study-lamp-head" />
+          <span className="study-lamp-neck" />
+          <span className="study-lamp-glow" />
+        </div>
+        <div className="study-card">
+          <span>Daily</span>
+          <strong>Top 5</strong>
+        </div>
+      </div>
+    </div>
   );
 }
