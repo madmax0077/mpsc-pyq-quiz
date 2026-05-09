@@ -5,895 +5,895 @@
   "questions": [
     {
       "id": "gb_combine_pre_2024_mr_1",
-      "text": "Choose the option of correct statements from the following.\na. The first cotton mill in India was started in Mumbai.\nb. The first linen mill in India was started in Rishra.\nc. India's first cotton mill was started by Kawasji Nanabhai.",
+      "text": "खालीलपैकी योग्य विधानाच्या पर्यायाची निवड करा.\na. भारतात पहिली सुती कापडाची गिरणी मुंबई येथे सुरू झाली.\nb. भारतात पहिली तागाची गिरणी रिश्रा येथे सुरू झाली.\nc. भारतातील पहिली सुती कापड गिरणी कावसजी नानाभाई यांनी सुरू केली.",
       "options": {
-        "A": "Only a and c",
-        "B": "Only a and b",
-        "C": "Only b and c",
-        "D": "a, b and c"
+        "A": "फक्त a आणि c",
+        "B": "फक्त a आणि b",
+        "C": "फक्त b आणि c",
+        "D": "a, b आणि c"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_2",
-      "text": "Who led the 31 July 1857 Revolt of 27th Regiment of Indian Soldier's at Kolhapur?\na. Ramaji Shirsat\nb. Nanasaheb Peshwa\nc. Rango Bapuji\nd. Bhima Naik",
+      "text": "कोल्हापूर येथील २७ व्या पलटणीतील हिंदी शिपायांनी खालीलपैकी कोणाच्या नेतृत्वाखाली ३१ जुलै १८५७ चे बंड केले होते ?\nअ. रामजी शिरसाठ\nब. नानासाहेब पेशवे\nक. रंगो बापूजी\nड. भिमा नाईक",
       "options": {
-        "A": "Only a and b",
-        "B": "Only b and c",
-        "C": "Only b, c and d",
-        "D": "Only a"
+        "A": "फक्त अ आणि ब",
+        "B": "फक्त ब आणि क",
+        "C": "फक्त ब, क आणि ड",
+        "D": "फक्त अ"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_3",
-      "text": "Who among the following said that Sati is, 'Murder with the consent of the scriptures'?",
+      "text": "सतीप्रथेबद्दल 'शास्त्राच्या संमतीने केलेला खून', असे खालीलपैकी कोणी म्हटले आहे ?",
       "options": {
-        "A": "Lord Bentinck",
-        "B": "Mahatma Phule",
-        "C": "Raja Rammohan Roy",
-        "D": "Ishwarchandra Vidyasagar"
+        "A": "लॉर्ड बेंटिंक",
+        "B": "महात्मा फुले",
+        "C": "राजा राममोहन रॉय",
+        "D": "ईश्वरचंद्र विद्यासागर"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_4",
-      "text": "Match the following pairs:\na. Prarthana Samaj - I. 1870\nb. Satyashodhak Samaj - II. 1875\nc. Sarvjanik Sabha - III. 1867\nd. Arya Samaj - IV. 1873",
+      "text": "पुढील जोड्या लावा :\nअ. प्रार्थना समाज\nब. सत्यशोधक समाज\nक. सार्वजनिक सभा\nड. आर्य समाज\nI. १८७०\nII. १८७५\nIII. १८६७\nIV. १८७३",
       "options": {
-        "A": "a-III, b-II, c-I, d-IV",
-        "B": "a-IV, b-II, c-I, d-III",
-        "C": "a-III, b-IV, c-I, d-II",
-        "D": "a-I, b-II, c-III, d-IV"
+        "A": "III II I IV",
+        "B": "IV II I III",
+        "C": "III IV I II",
+        "D": "I II III IV"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_5",
-      "text": "Which of the following personalities provided education, legal advice to labours by the establishment of organization 'Kamgar Hitvardhak Sabha' in 1909?\na. Bhivaji Nare\nb. Sitaram Bole\nc. Harihar Sonule\nd. Barr. Harishchandra Talcherkar",
+      "text": "१९०९ मध्ये 'कामगार हितवर्धक सभा' या संघटनेची स्थापना करून कामगारांना शिक्षण, कायदेशीर सल्ला देण्याचे काम खालीलपैकी कोणत्या व्यक्तींनी केले होते ?\nअ. भिवाजी नरे\nब. सीताराम बोले\nक. हरीहर सोनुले\nड. बॅ. हरिश्चंद्र तालचेरकर",
       "options": {
-        "A": "Only a and b",
-        "B": "Only b and c",
-        "C": "Only a, b and d",
-        "D": "Only a, c and d"
+        "A": "फक्त अ आणि ब",
+        "B": "फक्त ब आणि क",
+        "C": "फक्त अ, ब आणि ड",
+        "D": "फक्त अ, क आणि ड"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_6",
-      "text": "Homerule means\nA. To acquire the right to govern our country\nB. Achieving self governance\nC. For the yoke of the British to break\nD. Resisting self-Government",
+      "text": "होमरूल म्हणजे\nअ. आपल्या देशाचा कारभार प्राप्त करून घेणे\nब. स्वराज्य प्राप्त करून घेणे\nक. इंग्रजांच्या जोखडांतून मुक्त होणे\nड. स्वशासनास प्रतिकार करणे",
       "options": {
-        "A": "Only A and C",
-        "B": "Only B",
-        "C": "A, B and C",
-        "D": "Only B and C"
+        "A": "फक्त अ आणि क",
+        "B": "फक्त ब",
+        "C": "अ, ब आणि क",
+        "D": "फक्त ब आणि क"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_7",
-      "text": "Who was the first secretary of the Indian Association established by Surendranath Banarjee on 26th July 1876?",
+      "text": "२६ जुलै १८७६ रोजी, सुरेन्द्रनाथ बॅनर्जी यांनी स्थापन केलेल्या इंडियन असोसिएशनचे पहिले सचिव कोण होते ?",
       "options": {
-        "A": "Prof. Sundar Raman",
-        "B": "W. S. Blunt",
-        "C": "Anand Mohan Bose",
-        "D": "Shishir Kumar Ghosh"
+        "A": "प्रा. सुंदर रामन",
+        "B": "डब्ल्यू. एस. ब्लंट",
+        "C": "आनंद मोहन बोस",
+        "D": "शिशिर कुमार घोष"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_8",
-      "text": "The State was lapsed by company government for not making proper arrangement of his descendants after his death by which of the following kings of Nagpur?",
+      "text": "खालीलपैकी नागपूरच्या कोणत्या राजाने आपल्या मृत्यूनंतरच्या वारसाची काहीच व्यवस्था न केल्याने कंपनी सरकारने त्यांचे राज्य खालसा केले होते ?",
       "options": {
-        "A": "Raja Raghuji II",
-        "B": "Raja Raghuji III",
-        "C": "Shreemant Maloji Raje Bhosle",
-        "D": "Shreemant Appasaheb Raje Bhosle"
+        "A": "राजा रघुजी दुसरा",
+        "B": "राजा रघुजी तिसरा",
+        "C": "श्रीमंत मालोजी राजे भोसले",
+        "D": "श्रीमंत आप्पासाहेब राजे भोसले"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_9",
-      "text": "Who among the following made the statement 'The queen of Jhansi was the only male among all the rebels'?",
+      "text": "‘झांशीची राणी म्हणजे सर्व बंडखोरांमधील एकमेव पुरुष होती’, हे विधान खालीलपैकी कोणी केले ?",
       "options": {
-        "A": "John Lawrence",
-        "B": "Major Sergeant",
-        "C": "Hugh Rose",
-        "D": "Colin Campbell"
+        "A": "जॉन लॉरेन्स",
+        "B": "मेजर सार्जंट",
+        "C": "ह्यू रोज",
+        "D": "कॉलीन कॅम्पबेल"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_10",
-      "text": "Which of the following personalities were related with establishment of 'British India Committee' for National Congress at London on 27 July 1889?\na. Philip Spratt, Brian Bradley\nb. Sir Allan Hume, Digby\nc. Dadabhai Naoroji, Womesh Chandra Banerjee\nd. Wedderburn, W. S. Kane",
+      "text": "२७ जुलै १८८९ रोजी लंडन येथे राष्ट्रीय काँग्रेसच्या 'ब्रिटिश इंडिया कमिटी' च्या स्थापने मध्ये खालीलपैकी कोणत्या व्यक्ती संबंधित होत्या ?\nअ. फिलिप स्प्रॅट, ब्रॅन ब्रॅडले\nब. सर ॲलन ह्यूम, डिग्बी\nक. दादाभाई नौरोजी, व्योमेशचंद्र बॅनर्जी\nड. वेडरबर्न, डब्ल्यू. एस. केन",
       "options": {
-        "A": "Only a and b",
-        "B": "Only b and c",
-        "C": "Only a, b and c",
-        "D": "Only b, c and d"
+        "A": "फक्त अ आणि ब",
+        "B": "फक्त ब आणि क",
+        "C": "फक्त अ, ब आणि क",
+        "D": "फक्त ब, क आणि ड"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_11",
-      "text": "Match the pairs of Ghats and Roads in Maharashtra.\nGhat - Road\nA. Phonda - I. Mumbai - Nashik\nB. Malshej - II. Kolhapur - Kudal\nC. Hanumante - III. Thane - Ahmadnagar\nD. Thal - IV. Kolhapur - Panaji",
+      "text": "महाराष्ट्रातील घाट व त्यावरील रस्ते यांच्या योग्य जोड्या लावा.\nअ. फोंडा\nब. माळशेज\nक. हनुमंते\nड. थळ\nI. मुंबई - नाशिक\nII. कोल्हापूर - कुडाळ\nIII. ठाणे - अहमदनगर\nIV. कोल्हापूर - पणजी",
       "options": {
-        "A": "A-II, B-III, C-IV, D-I",
-        "B": "A-IV, B-I, C-III, D-II",
-        "C": "A-III, B-I, C-IV, D-II",
-        "D": "A-IV, B-III, C-II, D-I"
+        "A": "II III IV I",
+        "B": "IV I III II",
+        "C": "III I IV II",
+        "D": "IV III II I"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_12",
-      "text": "The mountain range of Shambhu Mahadev lies between ______ rivers.",
+      "text": "शंभू महादेवाचे डोंगर रांग __________ नद्यांच्या दरम्यान आहेत.",
       "options": {
-        "A": "Tapi - Godavari",
-        "B": "Godavari - Bhima",
-        "C": "Bhima - Krishna",
-        "D": "Koyna - Krishna"
+        "A": "तापी - गोदावरी",
+        "B": "गोदावरी - भिमा",
+        "C": "भिमा - कृष्णा",
+        "D": "कोयना - कृष्णा"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_13",
-      "text": "Observe the following statements and select the correct option.\na. Iron, gold and copper are found in igneous rocks.\nb. Minerals such as limestone and gypsum are found in sedimentary rocks.\nc. Minerals such as mica, garnet are not found in metamorphic rocks.",
+      "text": "खालील विधानांचे निरीक्षण करून योग्य पर्याय निवडा.\nअ. अग्निजन्य खडकात - लोह, सोने, तांबे आढळते.\nब. स्तरित खडकात चुनखडक आणि जिप्सम सारखी खनिजे आढळतात.\nक. रूपांतरित खडकात अभ्रक, गार्नेट सारखी खनिजे आढळत नाहीत.",
       "options": {
-        "A": "a and c are correct",
-        "B": "a, b and c are correct",
-        "C": "a and b are correct",
-        "D": "only b is correct"
+        "A": "अ आणि क बरोबर आहेत",
+        "B": "अ, ब आणि क बरोबर आहेत",
+        "C": "अ आणि ब बरोबर आहेत",
+        "D": "फक्त ब बरोबर आहे"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_14",
-      "text": "Which of the following statement/s is/are correct?\na. Bhima river basin is a separate river basin in Maharashtra.\nb. Painganga river rises in Ajanta range.\nc. River Manjara is the tributary of Krishna.\nd. Sindphana river is a northern tributary of Godawari.",
+      "text": "खालीलपैकी कोणते विधान/ने बरोबर आहे/त ?\nअ. महाराष्ट्रात भिमा नदीचे स्वतंत्र खोरे आहे.\nब. पैनगंगा नदी अजिंठा रांगेत उगम पावते.\nक. मांजरा नदी ही कृष्णेची उपनदी आहे.\nड. सिंदफना नदी ही गोदावरीची उत्तरेकडील उपनदी आहे.",
       "options": {
-        "A": "only a and b",
-        "B": "only b",
-        "C": "c and d",
-        "D": "a, b and c"
+        "A": "फक्त अ आणि ब",
+        "B": "फक्त ब",
+        "C": "क आणि ड",
+        "D": "अ, ब आणि क"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_15",
-      "text": "Total administrative divisions in Maharashtra, during 1960 and 2020 are ______ and ______ respectively.",
+      "text": "महाराष्ट्रातील १९६० आणि २०२० मधील एकूण प्रशासकीय विभाग अनुक्रमे ______ व ______ आहेत.",
       "options": {
-        "A": "4 and 8",
-        "B": "4 and 6",
-        "C": "5 and 7",
-        "D": "5 and 8"
+        "A": "४ आणि ८",
+        "B": "४ आणि ६",
+        "C": "५ आणि ७",
+        "D": "५ आणि ८"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_16",
-      "text": "Match the following:\nType of soil - Region\na. Black cotton soil - i. Konkan region\nb. Lateritic soil - ii. Eastern Vidharba\nc. Reddish brown soil - iii. Maharashtra's plateau region\nd. Coarse shallow soil - iv. Eastern side of Sahyadri",
+      "text": "योग्य जोड्या जुळवा :\nअ. काळी कापसाची मृदा\nब. जांभी मृदा\nक. तांबडी मृदा\nड. भरड उथळ मृदा\ni. कोंकण प्रदेश\nii. पूर्व विदर्भ\niii. महाराष्ट्र पठारी प्रदेश\niv. सह्याद्रीचा पूर्व भाग",
       "options": {
-        "A": "a-iii, b-ii, c-iv, d-i",
-        "B": "a-iii, b-i, c-ii, d-iv",
-        "C": "a-ii, b-iv, c-i, d-iii",
-        "D": "a-i, b-ii, c-iv, d-iii"
+        "A": "अ-iii, ब-ii, क-iv, ड-i",
+        "B": "अ-iii, ब-i, क-ii, ड-iv",
+        "C": "अ-ii, ब-iv, क-i, ड-iii",
+        "D": "अ-i, ब-ii, क-iv, ड-iii"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_17",
-      "text": "The region between which two rivers is called the Punjab Himalayas?",
+      "text": "कोणत्या दोन नद्या दरम्यानच्या प्रदेशाला पंजाब हिमालय म्हणतात ?",
       "options": {
-        "A": "Indus - Sutlaj",
-        "B": "Sutlaj - Ganga",
-        "C": "Chenab - Yamuna",
-        "D": "Kali - Tista"
+        "A": "सिंधू - सतलज",
+        "B": "सतलज - गंगा",
+        "C": "चिनाब - यमुना",
+        "D": "काली - तिस्ता"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_18",
-      "text": "Very hot and dry dusty winds, which blow very strongly in the Western and North-Western parts of India is called as __________.",
+      "text": "पश्चिम आणि वायव्य भारतामध्ये अति उष्ण, कोरडे व धुळीचे वेगाने वाहणाऱ्या वाऱ्यांना __________ म्हणतात.",
       "options": {
-        "A": "Norvester",
-        "B": "Loo winds",
-        "C": "Kalbaisakhi",
-        "D": "Tea winds"
+        "A": "नॉर्वेस्टर",
+        "B": "लू वारे",
+        "C": "कालवैसाखी",
+        "D": "चहा वारे"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_19",
-      "text": "Dry farming in India as defined by Swaminathan (1970) is, where mean annual rainfall is\na. More than 100 cm but less than 120 cm\nb. Less than 30 cm\nc. More than 200 cm\nd. Less than 100 cm but more than 40 cm",
+      "text": "स्वामीनाथन (१९७०) यांच्या व्याख्येनुसार भारतातील कोरडवाहू शेती म्हणजे ज्या ठिकाणी सरासरी वार्षिक पर्जन्य हे\nअ. १०० सेमी पेक्षा जास्त पण १२० सेमी पेक्षा कमी\nब. ३० सेमी पेक्षा कमी\nक. २०० सेमी पेक्षा जास्त\nड. १०० सेमी पेक्षा कमी पण ४० सेमी पेक्षा जास्त",
       "options": {
-        "A": "only a",
-        "B": "a and b",
-        "C": "only c",
-        "D": "only d"
+        "A": "फक्त अ",
+        "B": "अ आणि ब",
+        "C": "फक्त क",
+        "D": "फक्त ड"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_20",
-      "text": "According to Indian census, which of the following settlements are known as urban settlements?\na. There is a Municipal Corporation/Municipality.\nb. Population is more than 5000.\nc. 50% of the people are engaged in non-agricultural occupations.\nd. The population density is more than 400 per square km.",
+      "text": "भारतीय जनगणनेनुसार खालीलपैकी कोणती वस्ती नागरी वस्ती म्हणून ओळखली जाते ?\nअ. महानगरपालिका/नगरपालिका असणे.\nब. ५००० पेक्षा जास्त लोकसंख्या आहे.\nक. ५०% लोक बिगर शेती व्यवसाय करणारे.\nड. लोकसंख्येची घनता दर चौ.कि.मी. ला ४०० पेक्षा जास्त.",
       "options": {
-        "A": "a, b and c",
-        "B": "b, c and d",
-        "C": "a, b and d",
-        "D": "All of the above"
+        "A": "अ, ब आणि क",
+        "B": "ब, क आणि ड",
+        "C": "अ, ब आणि ड",
+        "D": "वरील सर्व"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_21",
-      "text": "Which of the following statements is true about the Consumer Price Index for Industrial Workers (CPI-IW)?\na. It applies to all workers in India, regardless of their sector.\nb. It is solely used to determine the minimum wage.\nc. It is based on fixed basket of goods and services which never changes.\nd. It helps to ensure that industrial workers receive fair wages and maintain a decent standard of living.",
+      "text": "खालीलपैकी कोणते विधान औद्योगिक कामगारांसाठीच्या ग्राहक किंमत निर्देशांकाबद्दल खरे आहे ?\nअ. हे भारतातील सर्व कामगारांना लागू होते, मग त्यांचे कार्यक्षेत्र कोणतेही असो.\nब. केवळ किमान वेतन निश्चित करण्यासाठी हे वापरले जाते.\nक. हे वस्तु आणि सेवांच्या एका निश्चित बास्केटवर आधारित आहे जे कधीही बदलत नाही.\nड. औद्योगिक कामगारांना वाजवी वेतन मिळून त्यांचे जीवनमान चांगले राखण्यास हे मदत करते.",
       "options": {
-        "A": "Only a",
-        "B": "Only c",
-        "C": "Only d",
-        "D": "Both a and b"
+        "A": "फक्त अ",
+        "B": "फक्त क",
+        "C": "फक्त ड",
+        "D": "अ आणि ब दोन्ही"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_22",
-      "text": "Which of the following is not a method of qualitative credit control of Central Bank?",
+      "text": "खालीलपैकी कोणते मध्यवर्ती बँकेच्या गुणात्मक पत-नियंत्रणाचे साधन नाही ?",
       "options": {
-        "A": "Control on consumer credit",
-        "B": "Control through issuing directives",
-        "C": "Regulation of margin requirements",
-        "D": "Open market operations"
+        "A": "उपभोग कर्जाचे नियंत्रण",
+        "B": "आदेशांच्या मार्फत नियंत्रण",
+        "C": "कर्ज तारण सीमांचे नियमन",
+        "D": "खुल्या बाजारातील व्यवहार"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_23",
-      "text": "Which of the following statements are correct?\na. Indian Handicrafts Development Corporation was established in the year 1958.\nb. 'PM Vishwakarma Kaushal Samman' Scheme is Central Government sponsored scheme.",
+      "text": "खालील विधानांपैकी कोणते बरोबर आहे ?\nअ. भारतीय हस्तोद्योग विकास महामंडळाची स्थापना 1958 साली करण्यात आली.\nब. ‘पीएम विश्वकर्मा कौशल सन्मान’ योजना ही केंद्रशासन पुरस्कृत योजना आहे.",
       "options": {
-        "A": "a is correct",
-        "B": "b is correct",
-        "C": "a and b are correct",
-        "D": "None of the above"
+        "A": "अ बरोबर आहे",
+        "B": "ब बरोबर आहे",
+        "C": "अ आणि ब बरोबर आहेत",
+        "D": "वरीलपैकी कोणतेही नाही"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_24",
-      "text": "Which of the following are three important factors leading to change in the demographic study of India?",
+      "text": "भारतीय लोकसंख्येच्या अभ्यासात खालीलपैकी सतत बदलणारे तीन प्रमुख घटक कोणते आहेत ?",
       "options": {
-        "A": "Birth rate, maternal mortality rate and migration",
-        "B": "Birth rate, death rate and infant mortality rate",
-        "C": "Birth rate, death rate and migration",
-        "D": "Birth rate, maternal mortality rate and infant mortality rate"
+        "A": "जन्म दर, माता मृत्यु दर आणि स्थलांतर",
+        "B": "जन्म दर, मृत्यु दर आणि अर्भक मृत्यु दर",
+        "C": "जन्म दर, मृत्यु दर आणि स्थलांतर",
+        "D": "जन्म दर, माता मृत्यु दर आणि अर्भक मृत्यु दर"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_25",
-      "text": "State the correct order of the top five largest economies/richest countries in the world as per the International Monetary Fund (IMF) data published in 2024.",
+      "text": "आंतरराष्ट्रीय नाणेनिधी (IMF) च्या २०२४ मध्ये नमूद केलेल्या माहितीनुसार जगातील सर्वोच्च पांच सर्वात मोठ्या अर्थव्यवस्था/सर्वात श्रीमंत देशांचा योग्य क्रम लावा.",
       "options": {
-        "A": "China, USA, Germany, India and Japan",
-        "B": "USA, India, China, Japan and Germany",
-        "C": "Germany, USA, India, China and Japan",
-        "D": "USA, China, Germany, Japan and India"
+        "A": "चीन, अमेरिका, जर्मनी, भारत आणि जपान",
+        "B": "अमेरिका, भारत, चीन, जपान आणि जर्मनी",
+        "C": "जर्मनी, अमेरिका, भारत, चीन आणि जपान",
+        "D": "अमेरिका, चीन, जर्मनी, जपान आणि भारत"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_26",
-      "text": "Dr. Vijay Kelkar Committee Report is related to __________.",
+      "text": "डॉ. विजय केळकर समितीचा अहवाल हा _________ शी संबंधित आहे.",
       "options": {
-        "A": "Administrative reforms",
-        "B": "Indirect tax reforms",
-        "C": "Trade reforms",
-        "D": "Financial sector reforms"
+        "A": "प्रशासकीय सुधारणा",
+        "B": "अप्रत्यक्ष कर विषयक सुधारणा",
+        "C": "व्यापार विषयक सुधारणा",
+        "D": "वित्तीय क्षेत्रातील सुधारणा"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_27",
-      "text": "_________ introduced the concept of multidimensional poverty index to replace human poverty index.",
+      "text": "__________ मध्ये मानवी गरीबी निर्देशांकाच्या जागी बहुआयामी दारिद्र्य निर्देशांकाची संकल्पना मांडण्यात आली.",
       "options": {
-        "A": "Human Development Report 1997",
-        "B": "Planning Commission Report 2012",
-        "C": "Human Development Report 2010",
-        "D": "Suresh Tendulkar Committee Report 2009"
+        "A": "मानव विकास अहवाल १९९७",
+        "B": "नियोजन आयोगाचा अहवाल २०१२",
+        "C": "मानव विकास अहवाल २०१०",
+        "D": "सुरेश तेंडुलकर समितीचा अहवाल २००९"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_28",
-      "text": "Consider the following statements:\na. Net National Product is always less than Gross National Product.\nb. Gross National Product includes depreciation while Net National Product does not include depreciation.\nWhich of the statement/s given above is/are correct?",
+      "text": "खालील विधाने विचारात घ्या :\nअ. स्थूल राष्ट्रीय उत्पादनापेक्षा निव्वळ राष्ट्रीय उत्पादन नेहमीच कमी असते.\nब. स्थूल राष्ट्रीय उत्पादनात घसाऱ्याचा समावेश असतो, तर निव्वळ राष्ट्रीय उत्पादनात घसाऱ्याचा समावेश नसतो.\nवरीलपैकी कोणते/ती विधान/ने योग्य आहे/त ?",
       "options": {
-        "A": "Only a is correct",
-        "B": "Only b is correct",
-        "C": "a and b are correct",
-        "D": "a and b are incorrect"
+        "A": "फक्त अ बरोबर आहे",
+        "B": "फक्त ब बरोबर आहे",
+        "C": "अ आणि ब बरोबर आहेत",
+        "D": "अ आणि ब चूक आहेत"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_29",
-      "text": "Which of the following statement/s is/are correct about India's Budget 2023-24?\na. Millets have been addressed with the name 'Shree Anna'.\nb. Rs. 23,000 crore has been provided for enchancing 'Kisan Credit Card' facilities.\nc. 'National Live-stock Mission' has been allocated Rs. 1,000 crore.",
+      "text": "भारताच्या २०२३ - २४ च्या अर्थसंकल्पाबाबत खालीलपैकी कोणती विधान/ने बरोबर आहे/त ?\nअ. भरडधान्यास 'श्री अन्न' या नावाने सन्मानित करण्यात आले आहे.\nब. 'किसान क्रेडिट कार्ड' सुविधा वाढविण्यासाठी रुपये २३,००० कोटी तरतूद करण्यात आली आहे.\nक. 'राष्ट्रीय पशुधन मिशन' करिता रुपये १,००० कोटी तरतूद करण्यात आली.",
       "options": {
-        "A": "Only a",
-        "B": "Only a and b",
-        "C": "Only b and c",
-        "D": "All of the above"
+        "A": "केवळ अ",
+        "B": "केवळ अ आणि ब",
+        "C": "केवळ ब आणि क",
+        "D": "वरीलपैकी सर्व"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_30",
-      "text": "Which of the following is not an authorised platform for residents in India to execute permitted forex transactions electronically?",
+      "text": "भारतीय रहिवाशांसाठी खालीलपैकी कोणते परवानगी असलेले विदेशी चलन व्यवहार इलेक्ट्रॉनिक पद्धतीने पार पाडण्यासाठीचे अधिकृत व्यासपीठ नाही ?",
       "options": {
-        "A": "A recognised stock exchange",
-        "B": "A platform authorised by the Reserve Bank of India (RBI)",
-        "C": "Any online platform offering forex trading services",
-        "D": "A bank authorised by the RBI to deal in foreign exchange"
+        "A": "एक मान्यताप्राप्त स्टॉक एक्सचेंज",
+        "B": "भारतीय रिझर्व्ह बँक (RBI) द्वारे अधिकृत व्यासपीठ",
+        "C": "फॉरेक्स ट्रेडिंग सेवा देणारे कोणतेही ऑनलाइन व्यासपीठ",
+        "D": "परकीय चलनात व्यवहार करण्यासाठी भारतीय रिझर्व्ह बँकेने प्राधिकृत केलेली बँक"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_31",
-      "text": "Which is the main objective of National Agricultural Cooperative Marketing Federation of India (NAFED)?\na. Credit distribution.\nb. To promote rural industrialization.\nc. To promote cooperative marketing of agricultural produce.\nd. To sell agricultural produce in cheaper cost.",
+      "text": "भारतीय राष्ट्रीय कृषी सहकारी विपणन संस्थेचे मुख्य उद्दिष्ट कोणते आहे ?\nअ. कर्ज वाटप करणे.\nब. ग्रामीण औद्योगिकीकरणाला चालना देणे.\nक. कृषी मालाचे सहकारीत्वांवर विपणन करण्यास प्रोत्साहन देणे.\nड. स्वस्त दरात कृषी उत्पादन विकणे.",
       "options": {
-        "A": "Only b",
-        "B": "a and d",
-        "C": "Only c",
-        "D": "b and c"
+        "A": "फक्त ब",
+        "B": "अ आणि ड",
+        "C": "फक्त क",
+        "D": "ब आणि क"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_32",
-      "text": "Which of the following statement is correct regarding Indian Budget?\na. Indian budgetary documents shows total receipts and expenditure.\nb. Indian budgetary documents shows fiscal deficit.\nc. Indian budgetary documents shows primary deficit.\nd. Indian budgetary documents shows effective revenue deficit.",
+      "text": "भारतीय अर्थसंकल्पासंदर्भात खालीलपैकी कोणते विधान बरोबर आहे ?\nअ. भारतीय अर्थसंकल्पाचा दस्तऐवज एकूण जमा खर्च दर्शवितो.\nब. भारतीय अर्थसंकल्पाचा दस्तऐवज राजकोषीय तूट दर्शवितो.\nक. भारतीय अर्थसंकल्पाचा दस्तऐवज प्राथमिक तूट दर्शवितो.\nड. भारतीय अर्थसंकल्पाचा दस्तऐवज परिणामकारक महसूली तूट दर्शवितो.",
       "options": {
-        "A": "a and b",
-        "B": "c and d",
-        "C": "Only b",
-        "D": "All of the above"
+        "A": "अ आणि ब",
+        "B": "क आणि ड",
+        "C": "फक्त ब",
+        "D": "वरील सर्व"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_33",
-      "text": "Match the following:\nRevolution - Production\na. Green Revolution - i. Oil-seed Production\nb. Golden Revolution - ii. Fishery Production\nc. Blue Revolution - iii. Food Production\nd. Yellow Revolution - iv. Fruit Production",
+      "text": "जोड्या जुळवा :\nअ. हरित क्रांती\nब. सोनेरी क्रांती\nक. निळी क्रांती\nड. पिवळी क्रांती\ni. तेलबिया उत्पादन\nii. मत्स्य उत्पादन\niii. अन्नधान्य उत्पादन\niv. फळांचे उत्पादन",
       "options": {
-        "A": "a-iv, b-iii, c-ii, d-i",
-        "B": "a-i, b-ii, c-iv, d-iii",
-        "C": "a-iii, b-iv, c-ii, d-i",
-        "D": "a-ii, b-i, c-iv, d-iii"
+        "A": "अ-iv, ब-iii, क-ii, ड-i",
+        "B": "अ-i, ब-ii, क-iv, ड-iii",
+        "C": "अ-iii, ब-iv, क-ii, ड-i",
+        "D": "अ-ii, ब-i, क-iv, ड-iii"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_34",
-      "text": "The Constitution of India defines the Union Budget under the Article",
+      "text": "भारतीय संविधानातील अनुच्छेद ________ मध्ये केंद्रीय अर्थसंकल्पाची परिभाषा केली आहे.",
       "options": {
-        "A": "Article 112",
-        "B": "Article 113",
-        "C": "Article 116",
-        "D": "Article 120"
+        "A": "अनुच्छेद ११२",
+        "B": "अनुच्छेद ११३",
+        "C": "अनुच्छेद ११६",
+        "D": "अनुच्छेद १२०"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_35",
-      "text": "Which of the following statement is true?\na. Gross domestic product does not include the income earned by the nationals outside the country.\nb. Gross domestic product does include the income earned by the nationals outside the country.",
+      "text": "खालीलपैकी कोणते विधान सत्य आहे ?\nअ. स्थूल देशांतर्गत उत्पादनामध्ये नागरिकांनी देशाबाहेर कमावलेले उत्पन्न समाविष्ट नसते.\nब. स्थूल देशांतर्गत उत्पादनामध्ये नागरिकांनी देशाबाहेर कमावलेले उत्पन्न समाविष्ट असते.",
       "options": {
-        "A": "Only a",
-        "B": "Only b",
-        "C": "Both a and b",
-        "D": "None of these"
+        "A": "फक्त अ",
+        "B": "फक्त ब",
+        "C": "अ आणि ब दोन्ही",
+        "D": "यापैकी एकही नाही"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_36",
-      "text": "Which of the following space research agencies have jointly launched 'International Satellite Mission' SWOT to survey Earth water?",
+      "text": "खालीलपैकी कोणत्या अंतराळ संशोधन संस्थांनी भूगर्भातील पाण्याचे सर्वेक्षण करण्यासाठी संयुक्तपणे SWOT नावाची आंतरराष्ट्रीय उपग्रह मोहीम सुरू केली आहे ?",
       "options": {
-        "A": "NASA and CNES",
-        "B": "NASA and ISRO",
-        "C": "NASA and ESA",
-        "D": "NASA and JAXA"
+        "A": "नासा आणि सी.एन.ई.एस.",
+        "B": "नासा आणि इस्रो",
+        "C": "नासा आणि ई.एस.ए.",
+        "D": "नासा आणि जाक्सा"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_37",
-      "text": "Food Waste Index (FWI) Report 2024 is released by __________.",
+      "text": "अन्न कचरा निर्देशांक अहवाल २०२४ ________ यांनी प्रस्तुत केला आहे.",
       "options": {
-        "A": "United Nations Environment Programme",
-        "B": "Food and Agriculture Organisation",
-        "C": "United Nations Agricultural Programme",
-        "D": "Intergovernmental Panel on Climate Change"
+        "A": "संयुक्त राष्ट्रसंघ पर्यावरण कार्यक्रम",
+        "B": "अन्न आणि कृषी संघटना",
+        "C": "संयुक्त राष्ट्रसंघ कृषी कार्यक्रम",
+        "D": "हवामान बदलाच्या समस्येवरील आंतरसरकारी परिषद"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_38",
-      "text": "Who is the author of the book \"The Indian Navy @75 reminiscing the voyage\"?",
+      "text": "“द इंडियन नेव्ही @75 रेमिनिसिंग द व्हॉयेज” या पुस्तकाचे लेखक कोण आहेत ?",
       "options": {
-        "A": "Shobha De",
-        "B": "Commodore Dilip Donde",
-        "C": "Commodore Ranjit Rai",
-        "D": "Commodore K. S. Subramaniam"
+        "A": "शोभा डे",
+        "B": "कमोडोर दिलीप दोंदे",
+        "C": "कमोडोर रणजीत राय",
+        "D": "कमोडोर के. एस. सुब्रमनियम"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_39",
-      "text": "What was the gharana of Ustad Rashid Khan?",
+      "text": "उस्ताद रशीद खान यांचे घराणे कोणते होते ?",
       "options": {
-        "A": "Mewati",
-        "B": "Kirana",
-        "C": "Rampur-Sahaswan",
-        "D": "Lucknow"
+        "A": "मेवाती",
+        "B": "किराणा",
+        "C": "रामपूर-सहसवान",
+        "D": "लखनऊ"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_40",
-      "text": "Which of the following States has started 'Orunodoi 2.0' Scheme to alleviate poverty?",
+      "text": "खालीलपैकी कोणत्या राज्याने दारिद्र्य निर्मूलनासाठी ‘ओरुनोदोई 2.0’ ही योजना सुरू केली आहे ?",
       "options": {
-        "A": "Manipur",
-        "B": "Nagaland",
-        "C": "Mizoram",
-        "D": "Assam"
+        "A": "मणिपूर",
+        "B": "नागालँड",
+        "C": "मिझोरम",
+        "D": "आसाम"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_41",
-      "text": "What is the motto of Surya Kiran Aerobatic Team (SKAT)?",
+      "text": "सूर्य किरण या हवाई कसरती करणाऱ्या गटाचे बोधवाक्य काय आहे ?",
       "options": {
-        "A": "Sadaiva Sarvottama",
-        "B": "Nabh Sprusham Deeptum",
-        "C": "Shatrujeet",
-        "D": "Karm hi dharm"
+        "A": "सदैव सर्वोत्तम",
+        "B": "नभः स्पृशं दीप्तम्",
+        "C": "शत्रूजीत",
+        "D": "कर्म ही धर्म"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_42",
-      "text": "Which of the following is/are works by Jon Fosse?\na. Boat house\nb. Melancholy I\nc. Raudt, Svart (Red, Black)",
+      "text": "पुढीलपैकी कोणती/कोणत्या साहित्यकृती जॉन फॉसे यांच्या आहेत ?\nअ. बोट हाऊस\nब. मेलानकोली I\nक. रौड्ट, स्वार्ट (रेड, ब्लॅक)",
       "options": {
-        "A": "a, b, c",
-        "B": "Only a, b",
-        "C": "Only a",
-        "D": "Only a, c"
+        "A": "अ, ब, क",
+        "B": "फक्त अ, ब",
+        "C": "फक्त अ",
+        "D": "फक्त अ, क"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_43",
-      "text": "With which company did Survey of India sign an agreement to prepare 3D maps of cities in India?",
+      "text": "भारतातील शहरांचे 3D नकाशे तयार करण्यासाठी सर्वे ऑफ इंडियाने कोणत्या कंपनी सोबत करार केला आहे ?",
       "options": {
-        "A": "Nexon",
-        "B": "Infosys",
-        "C": "Genesys International",
-        "D": "Freedom GPS"
+        "A": "नेक्सॉन",
+        "B": "इन्फोसिस",
+        "C": "जेनिसिस इंटरनॅशनल",
+        "D": "फ्रीडम जी.पी.एस."
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_44",
-      "text": "Which of the following pairs of name of city and name of cricket stadium are matched properly?\na. Green Park Stadium - Kanpur\nb. Holkar Stadium - Indore\nc. M. A. Chidambaram Stadium - Chennai\nd. M. Chinnaswamy Stadium - Bengaluru",
+      "text": "पुढीलपैकी कोणत्या जोड्यांमध्ये शहरांची नावे आणि येथील क्रिकेट क्रीडांगणांची नावे योग्य जोडलेली आहेत ?\nअ. ग्रीन पार्क स्टेडियम - कानपूर\nब. होळकर स्टेडियम - इंदोर\nक. एम. ए. चिदंबरम स्टेडियम - चेन्नई\nड. एम. चिन्नास्वामी स्टेडियम - बेंगलोर",
       "options": {
-        "A": "a, b, c, d",
-        "B": "Only a, b, c",
-        "C": "Only a, b",
-        "D": "Only b, c, d"
+        "A": "अ, ब, क, ड",
+        "B": "फक्त अ, ब, क",
+        "C": "फक्त अ, ब",
+        "D": "फक्त ब, क, ड"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_45",
-      "text": "B. N. Goswami was associated to which of the following field?",
+      "text": "बी. एन. गोस्वामी हे खालीलपैकी कोणत्या क्षेत्राशी संबंधित होते ?",
       "options": {
-        "A": "Art History",
-        "B": "Ancient Indian History",
-        "C": "World History",
-        "D": "Literature"
+        "A": "कला इतिहास",
+        "B": "प्राचीन भारतीय इतिहास",
+        "C": "जागतिक इतिहास",
+        "D": "साहित्य"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_46",
-      "text": "Which of the following statements are incorrect about Lakshadweep?\na. The name Lakshadweep in Malayalam and Sanskrit means 'a hundred thousand islands'.\nb. It is India's second smallest Union Territory by area.\nc. Kavaratti is the principal town of this Union Territory.\nd. Agatti is capital of Lakshadweep.",
+      "text": "लक्षद्वीप संबंधी पुढील विधानांपैकी अयोग्य विधान कोणते ?\nअ. लक्षद्वीप म्हणजे मल्याळम् आणि संस्कृत भाषांमध्ये ‘लाख द्वीप’ होय.\nब. आकारमानानुसार हा भारताचा दुसऱ्या क्रमांकाचा सर्वात छोटा केंद्रशासित प्रदेश आहे.\nक. या केंद्रशासित प्रदेशाचे मुख्य शहर कवरत्ती हे आहे.\nड. अगाट्टी ही लक्षद्वीपची राजधानी आहे.",
       "options": {
-        "A": "a, b, c, d",
-        "B": "Only a, b, d",
-        "C": "Only a, d",
-        "D": "Only b, d"
+        "A": "अ, ब, क, ड",
+        "B": "फक्त अ, ब, ड",
+        "C": "फक्त अ, ड",
+        "D": "फक्त ब, ड"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_47",
-      "text": "Which Ministry of Union Government conducts the Campaign of \"Sangathan se Samriddhi\"?",
+      "text": "केंद्र सरकारच्या कोणत्या मंत्रालयाद्वारे ‘संघटन से समृद्धी’ हे अभियान चालविले जाते ?",
       "options": {
-        "A": "Ministry of Home Affairs",
-        "B": "Ministry of Finance",
-        "C": "Ministry of Rural Development",
-        "D": "Ministry of Trade"
+        "A": "गृह मंत्रालय",
+        "B": "वित्त मंत्रालय",
+        "C": "ग्रामीण विकास मंत्रालय",
+        "D": "व्यापार मंत्रालय"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_48",
-      "text": "Who among the following coined the term 'quantum dots'?",
+      "text": "पुढीलपैकी कोणी ‘पुंज (क्वांटम) कण’ ह्या शब्दाची निर्मिती केली आहे ?",
       "options": {
-        "A": "Ekimov and Onuschenko",
-        "B": "Mark Reed",
-        "C": "L. E. Brus",
-        "D": "Efros"
+        "A": "एकिमोव्ह आणि ओनुश्चेंको",
+        "B": "मार्क रीड",
+        "C": "एल. ई. ब्रुस",
+        "D": "एफ्रोस"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_49",
-      "text": "Which of the following is anthem of African Union (AU)?",
+      "text": "अफ्रिकन युनियनचे गीत (anthem) कोणते आहे ?",
       "options": {
-        "A": "God bless Africa",
-        "B": "Blessed be the Land of Africa",
-        "C": "Let us all unite and celebrate together",
-        "D": "Ode to joy"
+        "A": "गॉड ब्लेस अफ्रिका",
+        "B": "ब्लेसड् बी द लँड ऑफ अफ्रिका",
+        "C": "लेट अस ऑल युनायट अँड सेलिब्रेट टुगेदर",
+        "D": "ओड टू जॉय"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_50",
-      "text": "Which of the following statements are correct about the Maldives?\na. The population of Maldives belongs almost entirely to the Maldivian ethnic group.\nb. Islam is official religion of the State.\nc. The official language is Arabic.\nd. The head of State and Government is the President.",
+      "text": "मालदिवविषयी खालीलपैकी कोणते विधान योग्य आहे ?\nअ. मालदिव मधील लोकसंख्या बहुतांशी मालदिवीय वंश गटाची आहेत.\nब. इस्लाम हा राज्याचा अधिकृत धर्म आहे.\nक. अधिकृत भाषा अरेबिक आहे.\nड. राष्ट्रपती हे राज्य आणि शासन प्रमुख असतात.",
       "options": {
-        "A": "a, b, c, d",
-        "B": "Only a, b",
-        "C": "Only a, b, d",
-        "D": "Only b, c, d"
+        "A": "अ, ब, क, ड",
+        "B": "फक्त अ, ब",
+        "C": "फक्त अ, ब, ड",
+        "D": "फक्त ब, क, ड"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_51",
-      "text": "Which Schedule of the Indian Constitution contains the allocation of seats for each State and Union Territories in the Council of States?",
+      "text": "भारतीय राज्यघटनेच्या कोणत्या अनुसूचीमध्ये प्रत्येक घटक राज्य व केंद्रशासित प्रदेशासाठी राज्यसभेतील जागा वाटपाबाबतची तरतूद आहे ?",
       "options": {
-        "A": "First Schedule",
-        "B": "Second Schedule",
-        "C": "Third Schedule",
-        "D": "Fourth Schedule"
+        "A": "पहिली अनुसूची",
+        "B": "दुसरी अनुसूची",
+        "C": "तिसरी अनुसूची",
+        "D": "चौथी अनुसूची"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_52",
-      "text": "Under which Constitutional Amendment, the Gram Sabha has got constitutional status?",
+      "text": "कोणत्या घटनादुरुस्ती अन्वये ग्राम सभेला संविधानिक दर्जा प्राप्त झाला आहे ?",
       "options": {
-        "A": "61st Amendment",
-        "B": "71st Amendment",
-        "C": "73rd Amendment",
-        "D": "74th Amendment"
+        "A": "६१ वी घटनादुरुस्ती",
+        "B": "७१ वी घटनादुरुस्ती",
+        "C": "७३ वी घटनादुरुस्ती",
+        "D": "७४ वी घटनादुरुस्ती"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_53",
-      "text": "Which of the following statement/s is/are correct regarding the Parliament of India?\nA. The 'Provisional Parliament', after independence was unicameral.\nB. The term of the members of Rajya Sabha is same as that of the members of the Senate in U.S.A.",
+      "text": "भारतीय संसदेबाबत खालीलपैकी कोणती विधान/विधाने बरोबर आहेत ?\nअ. स्वातंत्र्यानंतरची ‘तात्पुरती संसद’ ही एकसदनी होती.\nब. राज्यसभा सदस्यांचा कार्यकाळ हा अमेरिकन सिनेटच्या सदस्यांप्रमाणे आहे.",
       "options": {
-        "A": "Only A",
-        "B": "Only B",
-        "C": "Both A and B",
-        "D": "None of the above"
+        "A": "फक्त अ",
+        "B": "फक्त ब",
+        "C": "अ आणि ब दोन्ही",
+        "D": "वरीलपैकी कोणतेही नाही"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_54",
-      "text": "In which Article of the Constitution, the words Zilla Panchayat, Gram Sabha, Intermediate Village etc. related to Panchayat State are defined?",
+      "text": "राज्यघटनेतील कोणत्या अनुच्छेदात पंचायत राज्याशी संबंधित असलेल्या जिल्हा पंचायत, ग्राम सभा, मध्यस्तर गाव इत्यादी शब्दांच्या व्याख्या दिलेल्या आहेत ?",
       "options": {
-        "A": "Article 243",
-        "B": "Article 244",
-        "C": "Article 245",
-        "D": "Article 242"
+        "A": "अनुच्छेद २४३",
+        "B": "अनुच्छेद २४४",
+        "C": "अनुच्छेद २४५",
+        "D": "अनुच्छेद २४२"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_55",
-      "text": "Consider the following statements.\na. At present, the Eighth Schedule of the Indian Constitution specifies 22 languages.\nb. Among them Konkani and Nepali languages were added by the 92nd Amendment Act of 2003.\nWhich of the statements given above is/are correct?",
+      "text": "खालील विधाने लक्षात घ्या.\na. सध्या भारतीय राज्यघटनेच्या ८ व्या परिशिष्टामध्ये २२ भाषा नमूद केलेल्या आहेत.\nb. त्यापैकी कोंकणी आणि नेपाळी या भाषांचा समावेश ९२ वी घटनादुरुस्ती अधिनियम, २००३ नुसार करण्यात आला.\nवरीलपैकी कोणते विधान/विधाने योग्य आहेत ?",
       "options": {
-        "A": "Only a",
-        "B": "Only b",
-        "C": "Both a and b",
-        "D": "None of the above"
+        "A": "फक्त a",
+        "B": "फक्त b",
+        "C": "a आणि b दोन्ही",
+        "D": "वरीलपैकी कोणतेही नाही"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_56",
-      "text": "The subject of 'Organization of Gram Panchayat' is included in Article ______ of the Constitution of India.",
+      "text": "‘ग्राम पंचायतीचे संघटन’ हा विषय भारतीय राज्यघटनेच्या ________ अनुच्छेदात आहे.",
       "options": {
-        "A": "Article 39",
-        "B": "Article 40",
-        "C": "Article 42",
-        "D": "Article 41"
+        "A": "अनुच्छेद ३९",
+        "B": "अनुच्छेद ४०",
+        "C": "अनुच्छेद ४२",
+        "D": "अनुच्छेद ४१"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_57",
-      "text": "What is 'Munshi Ayyangar formula' related to?",
+      "text": "‘मुन्शी-अय्यंगार सूत्र’ कशाशी संबंधित आहे ?",
       "options": {
-        "A": "Tax issues",
-        "B": "Communal issues",
-        "C": "Language issues",
-        "D": "None of the above"
+        "A": "कर समस्या",
+        "B": "सांप्रदायिक समस्या",
+        "C": "भाषा समस्या",
+        "D": "वरीलपैकी नाही"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_58",
-      "text": "The Constitution of India has provided for the Election Commission as per the following Article",
+      "text": "भारतीय संविधानात खालील अनुच्छेदानुसार निर्वाचन आयोगाची तरतूद केली आहे.",
       "options": {
-        "A": "Article 368",
-        "B": "Article 256",
-        "C": "Article 324",
-        "D": "Article 150"
+        "A": "अनुच्छेद 368",
+        "B": "अनुच्छेद 256",
+        "C": "अनुच्छेद 324",
+        "D": "अनुच्छेद 150"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_59",
-      "text": "Who is India's first woman Chief Election Commissioner?",
+      "text": "भारतातील पहिल्या महिला मुख्य निर्वाचन आयुक्त कोण आहेत ?",
       "options": {
-        "A": "Swaruparani",
-        "B": "V. S. Ramadevi",
-        "C": "Kamla Nehru",
-        "D": "Jaylalita"
+        "A": "स्वरूपाराणी",
+        "B": "व्ही. एस. रमादेवी",
+        "C": "कमला नेहरू",
+        "D": "जयललिता"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_60",
-      "text": "Which Article in the Indian Constitution deals with the topic of State Legislature?",
+      "text": "भारतीय राज्यघटनेतील कोणते अनुच्छेद राज्यविधीमंडळाशी संबंधित आहे ?",
       "options": {
-        "A": "Article 22",
-        "B": "Article 168",
-        "C": "Article 380",
-        "D": "Article 25"
+        "A": "अनुच्छेद २२",
+        "B": "अनुच्छेद १६८",
+        "C": "अनुच्छेद ३८०",
+        "D": "अनुच्छेद २५"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_61",
-      "text": "Who among the following has the power to elect the Advocate General of the State?",
+      "text": "राज्याच्या महाधिवक्त्याची निवड करण्याचा अधिकार खालीलपैकी कोणाला आहे ?",
       "options": {
-        "A": "Chief Minister",
-        "B": "Governor",
-        "C": "State Election Commissioner",
-        "D": "State Public Service Commission"
+        "A": "मुख्यमंत्री",
+        "B": "राज्यपाल",
+        "C": "राज्य निर्वाचन आयुक्त",
+        "D": "राज्य लोकसेवा आयोग"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_62",
-      "text": "Which of the following States has a Bicameral Legislature?",
+      "text": "खालीलपैकी कोणत्या राज्यांत द्विगृही विधीमंडळ आहे ?",
       "options": {
-        "A": "Andhra Pradesh, Bihar, Karnataka, Gujarat, Madhya Pradesh, Kerala",
-        "B": "Maharashtra, Telangana, Uttar Pradesh, Assam, Odisha, Gujarat",
-        "C": "Karnataka, Maharashtra, Telangana, Uttar Pradesh, Bihar, Tripura",
-        "D": "Andhra Pradesh, Bihar, Karnataka, Maharashtra, Telangana, Uttar Pradesh"
+        "A": "आंध्र प्रदेश, बिहार, कर्नाटक, गुजरात, मध्य प्रदेश, केरळ",
+        "B": "महाराष्ट्र, तेलंगणा, उत्तर प्रदेश, आसाम, ओडीशा, गुजरात",
+        "C": "कर्नाटक, महाराष्ट्र, तेलंगणा, उत्तर प्रदेश, बिहार, त्रिपुरा",
+        "D": "आंध्र प्रदेश, बिहार, कर्नाटक, महाराष्ट्र, तेलंगणा, उत्तर प्रदेश"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_63",
-      "text": "According to Article 154 of the Constitution, all the executive powers of the State have been entrusted to whom by the Constitution?",
+      "text": "घटनेतील अनुच्छेद १५४ प्रमाणे घटनेने राज्याचे सर्व कार्यकारी अधिकार कोणाकडे सोपविलेले आहेत ?",
       "options": {
-        "A": "Chief Minister",
-        "B": "Governor",
-        "C": "High Court Judge",
-        "D": "Speaker of the Legislative Assembly"
+        "A": "मुख्यमंत्री",
+        "B": "राज्यपाल",
+        "C": "उच्च न्यायालयाचे न्यायाधीश",
+        "D": "विधानसभेचे सभापती"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_64",
-      "text": "District Judges are appointed by",
+      "text": "जिल्हा न्यायाधीशाची नियुक्ती ________ द्वारा होते.",
       "options": {
-        "A": "The Chief Justice of High Court",
-        "B": "The State Public Service Commission",
-        "C": "The Chief Minister of State",
-        "D": "The Governor of State"
+        "A": "उच्च न्यायालयाचे मुख्य न्यायाधीश",
+        "B": "राज्य लोकसेवा आयोग",
+        "C": "राज्याचे मुख्यमंत्री",
+        "D": "राज्याचे राज्यपाल"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_65",
-      "text": "Which Article of the Constitution provides that every High Court will be a Court of Record?",
+      "text": "घटनेच्या कोणत्या अनुच्छेदामध्ये प्रत्येक उच्च न्यायालय हे अभिलेख न्यायालय असेल असे स्पष्ट करण्यात आले आहे ?",
       "options": {
-        "A": "Article 215",
-        "B": "Article 216",
-        "C": "Article 217",
-        "D": "Article 218"
+        "A": "अनुच्छेद २१५",
+        "B": "अनुच्छेद २१६",
+        "C": "अनुच्छेद २१७",
+        "D": "अनुच्छेद २१८"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_66",
-      "text": "Match the algae group with suitable example.\nAlgae group - Example\na. Chlorophyceae - i. Sargassum\nb. Phaeophyceae - ii. Botrydium\nc. Rhodophyceae - iii. Spirogyra\nd. Xanthophyceae - iv. Polysiphonia",
+      "text": "योग्य उदाहरणासह शैवाळ गट जुळवा.\nअ. हिरवे शैवाळ\nब. तपकिरी शैवाळ\nक. लाल शैवाळ\nड. पिवळे शैवाळ\ni. सरगॅसम\nii. बॉट्रीडियम\niii. स्पायरोगायरा\niv. पॉलिसायफोनिया",
       "options": {
-        "A": "a-i, b-ii, c-iii, d-iv",
-        "B": "a-ii, b-iv, c-i, d-iii",
-        "C": "a-iii, b-i, c-iv, d-ii",
-        "D": "a-iv, b-iii, c-ii, d-i"
+        "A": "अ-i, ब-ii, क-iii, ड-iv",
+        "B": "अ-ii, ब-iv, क-i, ड-iii",
+        "C": "अ-iii, ब-i, क-iv, ड-ii",
+        "D": "अ-iv, ब-iii, क-ii, ड-i"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_67",
-      "text": "Which of the following is called as fruit ripening hormone?",
+      "text": "खालीलपैकी कोणाला फळ पिकवणारे संप्रेरक असे म्हणतात ?",
       "options": {
-        "A": "Auxin",
-        "B": "Gibberellin",
-        "C": "Ethylene",
-        "D": "Cytokinin"
+        "A": "ऑक्सिन",
+        "B": "जिबरेलिन",
+        "C": "इथिलिन",
+        "D": "सायटोकायनीन"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_68",
-      "text": "Match the plant disease with causative agent.\nPlant disease - Causal agent\na. Loose smut of wheat - i. Taphrina maculans\nb. Black stem rust of wheat - ii. Cercosporidium personatum\nc. Tikka disease of groundnut - iii. Ustilago segetum\nd. Leaf spot of turmeric - iv. Puccinia graminis",
+      "text": "वनस्पतीरोग व रोगकारकाच्या जोड्या लावा.\nअ. गव्हाची सुटी काजळी\nब. गव्हाचा खोडावरील काळा तांबेरा\nक. भुईमुगाच्या पानावरील टिक्का\nड. हळदीच्या पानावरील ठिपका\ni. टॅफ्रीना मॅक्युलान्स\nii. सरकोस्पोरीडियम परसोनॅटम\niii. उस्टीलॅगो सेगेटम\niv. पक्सीनिया ग्रॅमीनिस",
       "options": {
-        "A": "a-i, b-ii, c-iv, d-iii",
-        "B": "a-ii, b-i, c-iii, d-iv",
-        "C": "a-iii, b-iv, c-ii, d-i",
-        "D": "a-iv, b-iii, c-i, d-ii"
+        "A": "अ-i, ब-ii, क-iv, ड-iii",
+        "B": "अ-ii, ब-i, क-iii, ड-iv",
+        "C": "अ-iii, ब-iv, क-ii, ड-i",
+        "D": "अ-iv, ब-iii, क-i, ड-ii"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_69",
-      "text": "Which of the following vaccine is given intradermally?",
+      "text": "खालीलपैकी कोणती लस त्वचेच्या थरामध्ये देण्यात येते ?",
       "options": {
-        "A": "TT",
-        "B": "BCG",
-        "C": "Japanese Encephalitis",
-        "D": "Yellow fever"
+        "A": "टी.टी.",
+        "B": "बी.सी.जी.",
+        "C": "जपानी एन्सेफेलाइटिस",
+        "D": "पीत ज्वर"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_70",
-      "text": "The biomedical waste is segregated and safely disposed by using color coded bag. Which color coded bag is used for human anatomical waste?",
+      "text": "बायोमेडिकल कचरा रंगीत कोडेड पिशवी वापरून वेगळा केला जातो आणि सुरक्षितपणे त्यांची विल्हेवाट लावली जाते. कोणती रंगीत कोडेड पिशवी मानवी शारीरिक कचऱ्यासाठी वापरली जाते ?",
       "options": {
-        "A": "Red bag",
-        "B": "Yellow bag",
-        "C": "Blue bag",
-        "D": "White translucent bag"
+        "A": "लाल पिशवी",
+        "B": "पिवळी पिशवी",
+        "C": "निळी पिशवी",
+        "D": "पांढरी पारदर्शक पिशवी"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_71",
-      "text": "The deficiency of protein in diet is responsible for which disease?",
+      "text": "आहारातील प्रथिनांची कमतरता कोणत्या आजारास कारणीभूत असते ?",
       "options": {
-        "A": "Arthritis",
-        "B": "Diabetes",
-        "C": "Kwashiorkor",
-        "D": "Parkinson's"
+        "A": "वातरोग",
+        "B": "मधुमेह",
+        "C": "क्वाशिओरकोर",
+        "D": "पार्किन्सन्स"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_72",
-      "text": "The following are the characteristics of mammals\na. Hair present on the body.\nb. Three chambered heart.\nc. Mammary glands are present in females.\nd. Some mammals lay eggs.\nWhich of the statement given above is/are correct?",
+      "text": "सस्तन प्राण्यांची लक्षणे खालील प्रमाणे असतात\nअ. अंगावर केस असतात.\nब. हृदयाला तीन कप्पे असतात.\nक. मादी मध्ये स्तनग्रंथी असतात.\nड. काही सस्तन प्राणी अंडी घालतात.\nवरीलपैकी कोणते विधान/विधाने बरोबर आहेत ?",
       "options": {
-        "A": "a and b only",
-        "B": "b, c and d",
-        "C": "a and c only",
-        "D": "a, c and d"
+        "A": "अ आणि ब फक्त",
+        "B": "ब, क आणि ड",
+        "C": "अ आणि क फक्त",
+        "D": "अ, क आणि ड"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_73",
-      "text": "The class Pisces includes fishes because\na. They are completely adapted to aquatic life.\nb. They have three chambered heart.\nc. They are cold blooded animals.\nd. The body is covered with scales.",
+      "text": "पायसेस या वर्गामध्ये मासे मोडतात कारण\nअ. ते पूर्णतः जलीय जीवनामध्ये रूपांतरीत झालेले आहेत.\nब. त्यांना हृदयाचे तीन कप्पे असतात.\nक. ते शीतरक्ताचे प्राणी आहेत.\nड. त्यांच्या शरीरावर खवले असतात.",
       "options": {
-        "A": "only a",
-        "B": "only a and b",
-        "C": "a, c and d",
-        "D": "a, b and c"
+        "A": "फक्त अ",
+        "B": "फक्त अ आणि ब",
+        "C": "अ, क आणि ड",
+        "D": "अ, ब आणि क"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_74",
-      "text": "Name the poison found in nematoblast of Hydra.",
+      "text": "हायड्राच्या नेमॅटोब्लास्टमध्ये सापडणाऱ्या विषाचे नाव सांगा.",
       "options": {
-        "A": "Glutathione",
-        "B": "Hypnotoxin",
-        "C": "Malathion",
-        "D": "No poison is found"
+        "A": "ग्लुटाथिओन",
+        "B": "हिप्नोटोक्सिन",
+        "C": "मॅलेथिऑन",
+        "D": "कोणतेही विष सापडत नाही"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_75",
-      "text": "Bronze is an alloy of",
+      "text": "ब्रॉन्झ हा खालील धातूचा मिश्रधातू आहे",
       "options": {
         "A": "Cu/Sn",
         "B": "Cu/Zn",
@@ -905,67 +905,67 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_76",
-      "text": "\"Zeolites\" are used as __________ in chemical industry.",
+      "text": "रासायनिक उद्योगांमध्ये \"झिओलाईट\" चा उपयोग ________ म्हणून करतात.",
       "options": {
-        "A": "Catalyst",
-        "B": "Lubricant",
-        "C": "Mordant",
-        "D": "Alloy"
+        "A": "उत्प्रेरक",
+        "B": "वंगण",
+        "C": "रंगबंधक",
+        "D": "मिश्रधातू"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_77",
-      "text": "How many grams of hydrogen can be obtained from two moles of formaldehyde (HCHO) considering 100% reaction and recovery?\n(Atomic weights: H = 1, C = 12, O = 16)",
+      "text": "१००% अभिक्रिया आणि पुनर्प्राप्ति लक्षात घेऊन, फॉर्मल्डिहाइडच्या (HCHO) दोन मोल पासून किती ग्रॅम हायड्रोजन मिळू शकेल ?\n(अणूभार : H = 1, C = 12, O = 16)",
       "options": {
-        "A": "1 gram",
-        "B": "2 gram",
-        "C": "4 gram",
-        "D": "30 gram"
+        "A": "१ ग्रॅम",
+        "B": "२ ग्रॅम",
+        "C": "४ ग्रॅम",
+        "D": "३० ग्रॅम"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_78",
-      "text": "State whether the following statements are true or false.\ni. In \"Solar PV\" technology, solar radiation energy is directly converted into electrical energy.\nii. In \"Solar thermal\" technology, solar radiation energy is converted to heat energy.\niii. Biomass material contains nitrogen only.",
+      "text": "खालील विधाने चूक की बरोबर ते सांगा.\ni. \"सोलर पी.व्ही.\" तंत्रज्ञानामध्ये, सूर्यापासून उत्सर्जित उर्जेचे सरळ विद्युत उर्जेत रूपांतर होते.\nii. \"सोलर औष्णिक\" तंत्रज्ञानामध्ये, सूर्यापासून उत्सर्जित उर्जेचे उष्णता उर्जेत रूपांतर होते.\niii. जैविक पदार्थामध्ये फक्त नायट्रोजन असतो.",
       "options": {
-        "A": "False, False, False",
-        "B": "True, True, False",
-        "C": "True, True, True",
-        "D": "True, False, True"
+        "A": "चूक, चूक, चूक",
+        "B": "बरोबर, बरोबर, चूक",
+        "C": "बरोबर, बरोबर, बरोबर",
+        "D": "बरोबर, चूक, बरोबर"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_79",
-      "text": "What kind of waves are produced in a cylinder containing a liquid by moving its piston back and forth?",
+      "text": "दट्ट्या पुढे मागे हलवून द्रव असलेल्या सिलेंडरमध्ये कोणत्या प्रकारचे तरंग निर्माण होतात ?",
       "options": {
-        "A": "Longitudinal",
-        "B": "Transverse",
-        "C": "Both transverse and longitudinal",
-        "D": "Neither transverse nor longitudinal"
+        "A": "अनुतरंग",
+        "B": "अवतरंग",
+        "C": "अनुतरंग आणि अवतरंग दोन्ही",
+        "D": "अनुतरंग आणि अवतरंग दोन्हीपैकी नाही"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_80",
-      "text": "In electromagnetic spectrum what is the wavelength range of visible light?",
+      "text": "विद्युतचुंबकीय वर्णपटामध्ये दृश्य प्रकाशाच्या तरंगलांबीची व्याप्ती किती असते ?",
       "options": {
-        "A": "1 mm to 700 nm",
-        "B": "0.1 m to 1 mm",
-        "C": "1 nm to 400 nm",
-        "D": "400 nm to 700 nm"
+        "A": "1 मिलीमीटर ते 700 नॅनोमीटर",
+        "B": "0.1 मीटर ते 1 मिलीमीटर",
+        "C": "1 नॅनोमीटर ते 400 नॅनोमीटर",
+        "D": "400 नॅनोमीटर ते 700 नॅनोमीटर"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_81",
-      "text": "A train starts from station 'A' with some passengers. At station 'B', 50% of the passengers get down and 25 new get in. At station 'C', 40% of the passengers present in the train get down and 40 new get in. Now, the number of passengers present in train is 40% of those boarded at station 'A'. How many passengers got down at station 'B'?",
+      "text": "स्थानक A पासून काही प्रवाशांसह एक रेल्वेगाडी सुटते. B स्थानकावर 50% प्रवासी उतरतात व 25 नवीन चढतात. C स्थानकावर रेल्वेगाडीत उपस्थित असलेल्यांपैकी 40% प्रवासी उतरतात व 40 नवीन चढतात. आता रेल्वेगाडीत उपस्थित प्रवाशांची संख्या स्थानक A वर चढलेल्या प्रवाशांच्या 40% इतकी आहे, तर किती प्रवासी स्थानक B वर उतरले ?",
       "options": {
         "A": "140",
         "B": "220",
@@ -977,7 +977,7 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_82",
-      "text": "Solve (3.49)² – (0.51)² / (3.49 – 0.51) = ?",
+      "text": "सोडवा (3.49)² − (0.51)² / (3.49 − 0.51) = ?",
       "options": {
         "A": "4",
         "B": "3",
@@ -989,7 +989,7 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_83",
-      "text": "Sameer purchased some apples for a total cost of Rs. 360. If had he got discount of Rs. 3 on each apple, then he could have purchased 25% more apples. How many apples did Sameer originally purchase?",
+      "text": "समीरने एकूण रु. 360 ला काही सफरचंद खरेदी केले. जर त्याला प्रत्येक सफरचंदावर रु. 3 ची सूट मिळाली असती, तर तो 25% अधिक सफरचंद खरेदी करू शकला असता, तर समीरने मुळात किती सफरचंद खरेदी केले ?",
       "options": {
         "A": "24",
         "B": "30",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_84",
-      "text": "How many numbers between 150 and 500 are divisible by 11?",
+      "text": "150 व 500 या संख्यांमधील किती संख्यांना 11 ने भाग जातो ?",
       "options": {
         "A": "31",
         "B": "32",
@@ -1013,7 +1013,7 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_85",
-      "text": "If the monthly income of family is ₹ 40,000, then what is the total expenditure of family on house rent, groceries and travel by looking at the circle below?\n(Saving: 40°, Grocery: 90°, Electricity: 50°, Travel: 70°, House Rent: 110°)",
+      "text": "जर एका कुटुंबाचे मासिक उत्पन्न ₹ 40,000 असेल तर त्या कुटुंबाने घरभाडे, किराणामाल व प्रवासावर एकूण किती खर्च केला हे खालील वर्तुळाकृतीचे अवलोकन करून काढा.\n(वर्तुळातील आकडे अंशात्मक कोन दर्शवितात)",
       "options": {
         "A": "₹ 35,000",
         "B": "₹ 30,000",
@@ -1026,19 +1026,19 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_86",
-      "text": "'A' sells an article to 'B' at a profit of 10%. 'B' sells the article back to 'A' at a loss of 10%. So what happened in this transaction?",
+      "text": "'अ' ने 'ब' ला एक वस्तु १० टक्के नफ्याने विकली. 'ब' ने तीच वस्तु परत 'अ' ला १० टक्के तोट्याने विकली, तर या व्यवहारामध्ये काय झाले ?",
       "options": {
-        "A": "'A' neither losses nor gains",
-        "B": "'A' makes a profit of 11%",
-        "C": "'A' makes a profit of 20%",
-        "D": "'B' losses 20%"
+        "A": "'अ' चा ना नफा ना तोटा झाला",
+        "B": "'अ' चा ११ टक्के नफा झाला",
+        "C": "'अ' चा २० टक्के नफा झाला",
+        "D": "'ब' चा २० टक्के तोटा झाला"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_87",
-      "text": "If a square tile has side 30 cm, then how many tiles will be required to cover a plot of length 18 m and breadth 12 m?",
+      "text": "18 मी लांब व 12 मी रुंद असलेली जागा व्यापण्यासाठी 30 सेंमी बाजु असलेल्या चौरसाकृती किती फरशा लागतील ?",
       "options": {
         "A": "720",
         "B": "3200",
@@ -1050,19 +1050,19 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_88",
-      "text": "If a train of length 700 m crosses a platform in 72 seconds with a speed of 80 km/hr. What is the length of platform?",
+      "text": "तासाला 80 किमी वेगाने जाणारी 700 मी लांबीची एक आगगाडी एक प्लॅटफॉर्म 72 सेकंदात ओलांडते तर प्लॅटफॉर्मची लांबी किती ?",
       "options": {
-        "A": "700 m",
-        "B": "900 m",
-        "C": "600 m",
-        "D": "800 m"
+        "A": "700 मी",
+        "B": "900 मी",
+        "C": "600 मी",
+        "D": "800 मी"
       },
       "explanation": "",
       "correctAnswer": "B"
     },
     {
       "id": "gb_combine_pre_2024_mr_89",
-      "text": "If Bhushan completes a work in 80 days, but after 10 days of work Bhushan leaves and Niraj does the remaining work in 35 days. In how many days will Niraj alone complete the same work?",
+      "text": "भूषण एक काम 80 दिवसात पूर्ण करतो, परंतु 10 दिवस काम केल्यानंतर भूषण निघून गेला व उर्वरित काम निरज ने 35 दिवसात पूर्ण केले तर एकटा निरज तेच काम किती दिवसात पूर्ण करेल ?",
       "options": {
         "A": "32",
         "B": "38",
@@ -1074,19 +1074,19 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_90",
-      "text": "Five years ago the average age of Rekha and Neha was 34 years. Today the average age of Rekha, Neha and Niraj is 33 years. How old will Niraj be after 10 years?",
+      "text": "पाच वर्षांपूर्वी रेखा व नेहाचे सरासरी वय 34 वर्षे होते. आज रेखा, नेहा व निरज चे सरासरी वय 33 वर्षे आहे. 10 वर्षांनंतर निरजचे वय किती असेल ?",
       "options": {
-        "A": "31 years",
-        "B": "33 years",
-        "C": "30 years",
-        "D": "35 years"
+        "A": "31 वर्षे",
+        "B": "33 वर्षे",
+        "C": "30 वर्षे",
+        "D": "35 वर्षे"
       },
       "explanation": "",
       "correctAnswer": "A"
     },
     {
       "id": "gb_combine_pre_2024_mr_91",
-      "text": "Six labours prepare 9600 bricks in four days. How many bricks will be prepared by 18 labours in two days?",
+      "text": "सहा मजूर चार दिवसात 9600 विटा बनवितात तर 18 मजूर दोन दिवसात किती विटा बनवतील ?",
       "options": {
         "A": "15300",
         "B": "16400",
@@ -1098,19 +1098,19 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_92",
-      "text": "A train running at a speed of 54 km/h crosses a telegraph pole in 9 seconds. Find the length of the train.",
+      "text": "54 किमी/तास वेगाने धावणारी ट्रेन 9 सेकंदात एक टेलीग्राफ पोल ओलांडते. ट्रेनची लांबी शोधा.",
       "options": {
-        "A": "130 metre",
-        "B": "132 metre",
-        "C": "135 metre",
-        "D": "140 metre"
+        "A": "130 मीटर",
+        "B": "132 मीटर",
+        "C": "135 मीटर",
+        "D": "140 मीटर"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_93",
-      "text": "Which digit will come next in the following number series?\n3, 6, 11, 18, _____",
+      "text": "खालील संख्या श्रेणीतील क्रमाने येणारी संख्या कोणती ?\n3, 6, 11, 18, ______.",
       "options": {
         "A": "20",
         "B": "24",
@@ -1122,31 +1122,31 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_94",
-      "text": "Amar went 4 km to the school in West direction from his house and then went 2 km in North direction towards bank. After taking money from the Bank Amar went 4 km to Bharat's house in East direction. So what is the distance between he and his house?",
+      "text": "अमर त्याच्या घरापासून पश्चिमेकडील शाळेकडे 4 किमी चालत गेला आणि तेथून 2 किमी उत्तरेकडील बँकेत गेला व बँकेतून पैसे घेतल्यानंतर अमर पूर्वेकडे 4 किमी अंतरावर असलेल्या भरतच्या घरी गेला तर तो आणि त्याचे घर यामधील अंतर किती ?",
       "options": {
-        "A": "4 km",
-        "B": "3 km",
-        "C": "2 km",
-        "D": "1 km"
+        "A": "4 किमी",
+        "B": "3 किमी",
+        "C": "2 किमी",
+        "D": "1 किमी"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_95",
-      "text": "Read the following statements and choose the correct conclusion/s.\nStatements 1: All mogara are shewanti.\n                    2: All shewanti are flowers.\nConclusions A: All flowers are mogara.\n                    B: All flowers are shewanti.",
+      "text": "पुढील विधाने वाचून योग्य निष्कर्ष निवडा.\nविधान १ : सर्व मोगरा शेवंती आहेत.\n२ : सर्व शेवंती फुले आहेत.\nनिष्कर्ष अ : सर्व फुले मोगरा आहेत.\nब : सर्व फुले शेवंती आहेत.",
       "options": {
-        "A": "Conclusion A is correct",
-        "B": "Conclusion B is correct",
-        "C": "Conclusion A and B both are correct",
-        "D": "Conclusion A and B both are wrong"
+        "A": "निष्कर्ष अ बरोबर आहे",
+        "B": "निष्कर्ष ब बरोबर आहे",
+        "C": "निष्कर्ष अ व ब दोन्ही बरोबर आहेत",
+        "D": "निष्कर्ष अ व ब दोन्ही चुकीचे आहेत"
       },
       "explanation": "",
       "correctAnswer": "D"
     },
     {
       "id": "gb_combine_pre_2024_mr_96",
-      "text": "How many triangles are in the adjoining figure?",
+      "text": "शेजारील आकृतीत किती त्रिकोण आहेत ?",
       "options": {
         "A": "38",
         "B": "60",
@@ -1159,19 +1159,19 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_97",
-      "text": "If + means −, − means ×, ÷ means + and × means ÷, then 15 − 3 + 10 × 5 ÷ 5 = ?",
+      "text": "जर + म्हणजे -, - म्हणजे x, ÷ म्हणजे + आणि x म्हणजे ÷, तर 15 - 3 + 10 x 5 ÷ 5 = ?",
       "options": {
         "A": "42",
         "B": "44",
         "C": "48",
-        "D": "None of these"
+        "D": "यापैकी नाही"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_98",
-      "text": "In a certain code language, BREAKTHROUGH is written as EAOUHRBRGHKT. How is DISTRIBUTION written in that code language?",
+      "text": "जर एखाद्या सांकेतिक भाषेत, BREAKTHROUGH हे EAOUHRBRGHKT असे लिहितात, तर त्याच सांकेतिक भाषेत DISTRIBUTION हे कसे लिहाल ?",
       "options": {
         "A": "TISTBUONDIRI",
         "B": "SITIBUONRIDI",
@@ -1183,19 +1183,19 @@
     },
     {
       "id": "gb_combine_pre_2024_mr_99",
-      "text": "Rohan is the son of Ramu. Ramu's father picked up to Rohan from the school and they went to Sachin uncle's house. Sachin's wife is sister of Rohan's mother. What is the relation of Sachin's wife with Rohan's father?",
+      "text": "रोहन रामूचा मुलगा आहे. रामूच्या बाबांनी रोहनला शाळेतून घेतले आणि ते सचिन काकांच्या घरी गेले. सचिनची पत्नी रोहनच्या आईची बहिण आहे. सचिनच्या पत्नीचे रोहनच्या वडिलांशी नाते काय ?",
       "options": {
-        "A": "Sister",
-        "B": "Daughter",
-        "C": "Sister-in-law",
-        "D": "Mother-in-law"
+        "A": "बहिण",
+        "B": "मुलगी",
+        "C": "मेहुणी",
+        "D": "सासू"
       },
       "explanation": "",
       "correctAnswer": "C"
     },
     {
       "id": "gb_combine_pre_2024_mr_100",
-      "text": "Read the following information carefully and answer the question.\nI. Six students A, B, C, D, E and F participated in self evaluation test of Maths and Science.\nII. The total marks of A in Maths was just above C and marks in Science just above F.\nIII. B was just above C in Science but scored less than D in Maths.\nIV. F got more marks than D and E in Science but did not perform as well in Maths as D.\nV. No one is in between C and D in Maths and C and A in Science.\nWho got the highest marks in Science?",
+      "text": "खालील माहिती काळजीपूर्वक वाचा आणि प्रश्नाचे उत्तर द्या.\nI. A, B, C, D, E आणि F या सहा विद्यार्थ्यांनी गणित आणि विज्ञानाच्या स्वयं मूल्यमापन चाचणीत सहभाग घेतला.\nII. A चे गणितातील एकूण गुण C च्या अगदी वर आहेत आणि विज्ञानातील गुण F च्या अगदी वर आहेत.\nIII. B हा विज्ञानात C च्या अगदी वर आहे परंतु गणितात D पेक्षा कमी गुण मिळाले आहेत.\nIV. F ने विज्ञानात D व E पेक्षा जास्त गुण मिळविले परंतु D प्रमाणे त्याची गणितात प्रगती नाही.\nV. गणितात C व D च्या मध्ये कोणीही नाही आणि विज्ञानात C आणि A च्या मध्ये कोणीही नाही.\nतर विज्ञानात कोणी सर्वात जास्त गुण मिळविले ?",
       "options": {
         "A": "A",
         "B": "B",
