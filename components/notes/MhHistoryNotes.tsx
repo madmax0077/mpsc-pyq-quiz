@@ -49,9 +49,9 @@ function ChapterBlocks({ blocks }: { blocks: MhHistoryBlock[] }) {
           return (
             <h4
               key={i}
-              className="font-devanagari-serif scroll-mt-24 pt-3 text-lg font-extrabold text-orange-700 dark:text-orange-300 sm:text-xl"
+              className="font-devanagari-serif scroll-mt-24 rounded-xl border border-orange-200 bg-orange-50 px-4 py-3 text-lg font-extrabold text-orange-950 shadow-sm dark:border-orange-800/60 dark:bg-orange-950/30 dark:text-orange-200 sm:text-xl"
             >
-              <span aria-hidden className="mr-2 text-orange-400">
+              <span aria-hidden className="mr-2 text-orange-600 dark:text-orange-300">
                 ❖
               </span>
               {b.text}
@@ -117,8 +117,12 @@ function ChapterSection({
     >
       {/* Banner */}
       <div
-        className={`relative bg-gradient-to-r ${chapter.accent} p-5 text-white sm:p-6`}
+        className={`relative bg-gradient-to-r ${chapter.accent} p-5 text-white shadow-inner sm:p-6`}
       >
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-slate-950/35"
+        />
         <div
           aria-hidden
           className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10 blur-2xl"
@@ -131,22 +135,22 @@ function ChapterSection({
             {chapter.icon}
           </span>
           <div className="min-w-0 flex-1">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/80">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/95 drop-shadow">
               प्रकरण {ROMAN_TO_DEV[index + 1] ?? index + 1} ·
               Chapter {index + 1}
             </p>
             <h3
               lang="mr"
-              className="font-devanagari-serif mt-1 text-2xl font-extrabold leading-tight sm:text-3xl"
+              className="font-devanagari-serif mt-1 text-2xl font-extrabold leading-tight text-white drop-shadow-[0_2px_3px_rgba(0,0,0,0.7)] sm:text-3xl"
             >
               {chapter.titleMr}
             </h3>
-            <p className="mt-1 text-sm font-medium text-white/90 sm:text-base">
+            <p className="mt-1 text-sm font-semibold text-white drop-shadow sm:text-base">
               {chapter.titleEn}
             </p>
             <p
               lang="mr"
-              className="font-devanagari-serif mt-2 text-sm text-white/85 sm:text-[15px]"
+              className="font-devanagari-serif mt-2 text-sm font-medium text-white/95 drop-shadow sm:text-[15px]"
             >
               {chapter.subtitleMr}
             </p>
@@ -154,7 +158,7 @@ function ChapterSection({
         </div>
 
         {/* Tip strip */}
-        <div className="relative mt-4 flex items-start gap-2 rounded-xl bg-white/10 px-3 py-2 ring-1 ring-white/20 backdrop-blur">
+        <div className="relative mt-4 flex items-start gap-2 rounded-xl bg-white/20 px-3 py-2 text-white shadow-sm ring-1 ring-white/30 backdrop-blur">
           <span aria-hidden className="text-base">
             💡
           </span>
