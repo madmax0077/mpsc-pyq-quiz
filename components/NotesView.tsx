@@ -3,6 +3,7 @@
 import { useEffect, useState, type SyntheticEvent } from "react";
 import NewspaperNotes from "@/components/notes/NewspaperNotes";
 import MhGeographyNotes from "@/components/notes/MhGeographyNotes";
+import MhHistoryNotes from "@/components/notes/MhHistoryNotes";
 import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
 
 /**
@@ -21,7 +22,11 @@ import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
  * 3. Append a new entry to NOTES_INDEX below.
  */
 
-type NoteSlug = "newspapers" | "mh-geography" | "economics-yojana";
+type NoteSlug =
+  | "newspapers"
+  | "mh-geography"
+  | "mh-history"
+  | "economics-yojana";
 
 type NoteEntry = {
   slug: NoteSlug;
@@ -34,6 +39,16 @@ type NoteEntry = {
 };
 
 const NOTES_INDEX: NoteEntry[] = [
+  {
+    slug: "mh-history",
+    emoji: "🏛️",
+    title: "आधुनिक महाराष्ट्राचा इतिहास",
+    subtitle: "Modern Maharashtra History — Complete Marathi Notes",
+    blurb:
+      "13 प्रकरणे — माऊंट स्टुअर्ट एल्फिन्स्टन, ख्रिस्ती मिशनरी, सामाजिक व धार्मिक सुधारणा (मानव धर्म ते आर्य समाज), मराठी वृत्तपत्रांचा इतिहास, प्रमुख समाज सुधारक, १८५७ चा उठाव, महात्मा फुले व सत्यशोधक समाज, आद्य व क्रांतिकारी चळवळ, दलित चळवळ, गांधी युगातील सत्याग्रह, मराठवाडा मुक्ती संग्राम आणि संयुक्त महाराष्ट्र चळवळ.",
+    meta: "MPSC · Rajyaseva · STI · PSI · ASO · UPSC · ~30 min revision",
+    accent: "from-[#FF671F] via-[#D9482F] to-[#046A38]",
+  },
   {
     slug: "mh-geography",
     emoji: "🗺️",
@@ -235,6 +250,8 @@ function NoteContent({ slug }: { slug: NoteSlug }) {
       return <NewspaperNotes />;
     case "mh-geography":
       return <MhGeographyNotes />;
+    case "mh-history":
+      return <MhHistoryNotes />;
     case "economics-yojana":
       return <EconomicsYojanaNotes />;
     default:
