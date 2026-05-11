@@ -400,7 +400,7 @@ export default function HomeClient() {
               </svg>
               Back to Home
             </button>
-            <Leaderboard />
+            <Leaderboard guestUserId={guestIdentity?.userId} />
           </div>
         ) : appMode === "notes" ? (
           <div className="py-2 sm:py-4">

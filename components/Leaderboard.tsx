@@ -45,7 +45,7 @@ const RUNNERUP_TONES: Record<number, { ring: string; bg: string; chip: string; l
   },
 };
 
-export default function Leaderboard() {
+export default function Leaderboard({ guestUserId }: { guestUserId?: string | null }) {
   const { studentUser } = useAuth();
   const [rows, setRows] = useState<LeaderboardRow[]>([]);
   const [loading, setLoading] = useState(true);
@@ -71,10 +71,11 @@ export default function Leaderboard() {
   const podiumRows = useMemo(() => top5.slice(0, 3), [top5]);
   const runnerUpRows = useMemo(() => top5.slice(3), [top5]);
   const myRank = useMemo(() => {
-    if (!studentUser) return null;
-    const idx = rows.findIndex((r) => r.userId === studentUser.uid);
+    const activeUserId = studentUser?.uid || guestUserId;
+    if (!activeUserId) return null;
+    const idx = rows.findIndex((r) => r.userId === activeUserId);
     return idx === -1 ? null : { rank: idx + 1, row: rows[idx], total: rows.length };
-  }, [rows, studentUser]);
+  }, [rows, studentUser, guestUserId]);
 
   const todayLabel = useMemo(
     () =>
@@ -122,14 +123,14 @@ export default function Leaderboard() {
 
       {!loading && !error && top5.length > 0 && (
         <>
-          <Podium rows={podiumRows} highlightUserId={studentUser?.uid} />
+          <Podium rows={podiumRows} highlightUserId={studentUser?.uid || guestUserId || undefined} />
 
           {runnerUpRows.length > 0 && (
-            <RunnersUp rows={runnerUpRows} highlightUserId={studentUser?.uid} startRank={4} />
+            <RunnersUp rows={runnerUpRows} highlightUserId={studentUser?.uid || guestUserId || undefined} startRank={4} />
           )}
 
           {/* Your-rank panel */}
-          {studentUser ? (
+          {studentUser || guestUserId ? (
             <div className="mt-6 rounded-xl border border-indigo-100 bg-indigo-50/60 p-4 dark:border-indigo-900/60 dark:bg-indigo-900/20">
               {myRank ? (
                 <div className="flex items-center justify-between gap-3">
@@ -161,7 +162,7 @@ export default function Leaderboard() {
             </div>
           ) : (
             <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800 dark:border-amber-900/60 dark:bg-amber-900/20 dark:text-amber-200">
-              Sign in to compete and appear on today&apos;s leaderboard.
+              Enter your name to compete and appear on today&apos;s leaderboard.
             </div>
           )}
         </>
