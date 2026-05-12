@@ -2,12 +2,17 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "@/lib/auth-context";
-import type { Language } from "@/lib/types";
+import type { Category, Language } from "@/lib/types";
 import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 
 type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes";
+
+const GK_MARATHON_TOPIC: { category: Category; topic: string } = {
+  category: "Current Affairs",
+  topic: "GK 2025-26 Marathon",
+};
 const GUEST_NAME_KEY = "mpsc_guest_name";
 const GUEST_ID_KEY = "mpsc_guest_id";
 
@@ -23,6 +28,7 @@ export default function HomeClient() {
   const [homeKey, setHomeKey] = useState(0);
   const [challenge, setChallenge] = useState<{ quizId: string; name: string; score: number; total: number } | null>(null);
   const [appMode, setAppMode] = useState<AppMode>("home");
+  const [pendingDirectTopic, setPendingDirectTopic] = useState<{ category: Category; topic: string } | null>(null);
   const [guestName, setGuestName] = useState("");
   const [guestId, setGuestId] = useState("");
   const [guestNameInput, setGuestNameInput] = useState("");
@@ -155,7 +161,7 @@ export default function HomeClient() {
       {/* ---- Top Navigation Bar ---- */}
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
-          <button onClick={() => { setHomeKey((k) => k + 1); setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0 shrink-0">
+          <button onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0 shrink-0">
             <img src="/logo.png" alt="MPSC Logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
             <div className="text-left">
               <h1 className="text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
@@ -293,6 +299,48 @@ export default function HomeClient() {
 
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
               <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
+
+              {/* GK 2025-26 — last 6 months current affairs */}
+              <button
+                onClick={() => {
+                  setPendingDirectTopic(GK_MARATHON_TOPIC);
+                  setAppMode("topic");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="group relative overflow-hidden rounded-3xl border border-fuchsia-200 bg-gradient-to-br from-fuchsia-50 via-white to-violet-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-fuchsia-400 hover:shadow-xl hover:shadow-fuchsia-100 dark:border-fuchsia-800 dark:from-fuchsia-950/40 dark:via-slate-900 dark:to-violet-950/40 dark:hover:border-fuchsia-600 dark:hover:shadow-black/20 sm:col-span-2"
+              >
+                <div className="absolute right-0 top-0 h-32 w-32 rounded-bl-full bg-fuchsia-300/40 blur-3xl transition-transform group-hover:scale-125 dark:bg-fuchsia-500/10" />
+                <div className="absolute left-0 bottom-0 h-24 w-24 rounded-tr-full bg-violet-300/30 blur-2xl dark:bg-violet-500/10" />
+                <div className="relative flex items-start gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-fuchsia-500 to-violet-600 text-2xl text-white shadow-md">
+                    🆕
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold text-fuchsia-700 dark:text-fuchsia-300">
+                        GK 2025-26 Marathon
+                      </h3>
+                      <span className="rounded-full bg-fuchsia-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-fuchsia-700 dark:bg-fuchsia-900/40 dark:text-fuchsia-300">
+                        New
+                      </span>
+                      <span className="hidden items-center gap-1 rounded-full border border-violet-200 bg-violet-50 px-2 py-0.5 text-[10px] font-semibold text-violet-700 sm:inline-flex dark:border-violet-800 dark:bg-violet-900/30 dark:text-violet-300">
+                        🎯 Top 500
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                      Last 6 months Current Affairs (2025-26) — the most-asked GK MCQs covering sports,
+                      science, awards, politics, schemes and economy. Practice in 5-question sets.
+                    </p>
+                    <div className="mt-3 flex items-center text-xs font-semibold text-fuchsia-500 dark:text-fuchsia-400">
+                      Start the marathon
+                      <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </button>
+
               {/* Subject Wise */}
               <button
                 onClick={() => setAppMode("subject")}
@@ -320,7 +368,7 @@ export default function HomeClient() {
 
               {/* Topic Wise */}
               <button
-                onClick={() => setAppMode("topic")}
+                onClick={() => { setPendingDirectTopic(null); setAppMode("topic"); }}
                 className="group relative overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-white to-cyan-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-100 dark:border-emerald-800 dark:from-emerald-950/50 dark:via-slate-900 dark:to-cyan-950/50 dark:hover:border-emerald-600 dark:hover:shadow-black/20"
               >
                 <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-emerald-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-emerald-500/10" />
@@ -412,7 +460,7 @@ export default function HomeClient() {
             />
           </div>
         ) : (
-          <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} guestUser={guestIdentity} />
+          <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} guestUser={guestIdentity} directTopic={pendingDirectTopic} />
         )}
       </main>
 

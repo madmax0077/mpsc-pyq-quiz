@@ -121,7 +121,7 @@ interface GuestUserInfo {
   photoURL: string | null;
 }
 
-export default function StudentView({ language = "english", challenge, homeKey = 0, topicMode = false, guestUser = null }: { language?: Language; challenge?: ChallengeInfo | null; homeKey?: number; topicMode?: boolean; guestUser?: GuestUserInfo | null }) {
+export default function StudentView({ language = "english", challenge, homeKey = 0, topicMode = false, guestUser = null, directTopic = null }: { language?: Language; challenge?: ChallengeInfo | null; homeKey?: number; topicMode?: boolean; guestUser?: GuestUserInfo | null; directTopic?: { category: Category; topic: string } | null }) {
   const { studentUser } = useAuth();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
@@ -350,6 +350,22 @@ export default function StudentView({ language = "english", challenge, homeKey =
     setPageScores({});
     setShowConfetti(false);
   }, []);
+
+  useEffect(() => {
+    if (!directTopic || selectedQuiz) return;
+    const key = `${directTopic.category}|||${directTopic.topic}`;
+    if (!topicMap.has(key)) return;
+    const entry = topicMap.get(key)!;
+    if (entry.questions.length === 0) return;
+    selectQuiz({
+      id: `topic-${directTopic.category}-${directTopic.topic}`,
+      title: directTopic.topic,
+      questions: entry.questions,
+      isCategory: true,
+      category: directTopic.category,
+      pageSize: TOPIC_QUIZ_PAGE_SIZE,
+    });
+  }, [directTopic, topicMap, selectedQuiz, selectQuiz]);
 
   const startTopicQuiz = useCallback((category: Category, topicName: string) => {
     const key = `${category}|||${topicName}`;

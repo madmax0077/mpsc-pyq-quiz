@@ -35,3 +35,12 @@ next-env.d.ts
 android/app/src/main/assets/public/
 ios/App/App/public/
 assets/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+
+# GK 2025-26 video extraction pipeline (large frame dumps, OCR JSONL, etc.)
+_gk_frames/
+_gk_questions.json
+_gk_parse_report.txt

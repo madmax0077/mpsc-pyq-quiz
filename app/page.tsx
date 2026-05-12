@@ -37,6 +37,13 @@ export default function Home() {
           {/* What's new — quick links to the new features (also good for internal SEO) */}
           <div className="mx-auto mt-6 grid max-w-3xl gap-2 text-left sm:grid-cols-2 lg:grid-cols-4">
             <a
+              href="/?mode=topic"
+              className="rounded-lg border border-fuchsia-200 bg-fuchsia-50 px-3 py-2 text-sm hover:border-fuchsia-400 hover:bg-fuchsia-100 sm:col-span-2 lg:col-span-4"
+            >
+              <span className="block font-semibold text-fuchsia-800">🆕 GK 2025-26 Marathon — Last 6 months Current Affairs (Top 500 MCQs)</span>
+              <span className="block text-xs text-fuchsia-700">Sports, science, awards, politics, schemes, economy — practice in 5-question sets under Topic Wise → Current Affairs → GK 2025-26 Marathon.</span>
+            </a>
+            <a
               href="/exams"
               className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
             >
