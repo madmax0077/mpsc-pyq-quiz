@@ -370,6 +370,14 @@ FIXES: dict[str, dict] = {
         note="Source video answer: Uttarakhand. (Note: the 6th edition of Dharma Guardian was held in Japan in Feb-Mar 2025; the India-leg of the exercise has been held in Rajasthan/Uttarakhand in past editions.)",
     ),
 
+    # ============ Late user-flagged correction ============
+    'q11': dict(
+        text="Who are the Chief Guests at India's 77th Republic Day celebrations?",
+        opts=dict(A='Emmanuel Macron', B='Antonio da Costa', C='Ursula von der Leyen', D='Both B & C'),
+        answer='D',
+        note="77th Republic Day chief guests (Jan 26, 2026) — both Antonio Costa (President, European Council) and Ursula von der Leyen (President, European Commission) attended on behalf of the EU.",
+    ),
+
     # ============ OCR digit/letter confusion clean-ups ============
     'q12': dict(
         text="What is India's rank in the 'Global Hunger Index' 2025?",
