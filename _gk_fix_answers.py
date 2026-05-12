@@ -376,7 +376,11 @@ def main() -> None:
             q['options'] = dict(fix['opts'])
             structurally_fixed += 1
         q['correctAnswer'] = fix['answer']
-        q['explanation'] = fix['note']
+        # Explanations are intentionally left empty for the GK quiz so the
+        # quiz only shows the standard correct/incorrect feedback. The
+        # `note` strings in the FIXES dict remain in code as a paper trail
+        # of the source used to verify each answer.
+        q['explanation'] = ''
         fixed += 1
 
     print(f'Patched {fixed} questions ({structurally_fixed} with full text/option rewrite).')
