@@ -20,9 +20,14 @@ PATH = 'public/quizzes.json'
 
 FIXES: dict[str, dict] = {
     # ============ Answer-only corrections (text + options already clean) ============
-    'q13': dict(answer='A', note='Henley Passport Index Feb 2026 — India 75th (Indian Express/Hindu).'),
+    'q13': dict(
+        text="What is India's rank in the 'Henley Passport Index' released in February 2026?",
+        opts=dict(A='75th', B='77th', C='83rd', D='85th'),
+        answer='A',
+        note='Henley Passport Index Feb 2026 — India 75th (Indian Express/Hindu).',
+    ),
     'q14': dict(answer='B', note='Padma Awards 2026 — 131 conferred (PIB).'),
-    'q15': dict(answer='B', note='ICC Women World Cup 2025 — India beat South Africa by 52 runs (ESPN/Wikipedia).'),
+    # (q15 receives a full text/option rewrite further below in the OCR clean-up block)
     'q20': dict(answer='C', note='Khelo India Beach Games 2026 — Karnataka topped medal tally (Olympics.com).'),
     'q28': dict(answer='D', note='2025 World Food Prize — Mariangela Hungria (worldfoodprize.org).'),
     'q34': dict(answer='B', note='ICC Women World Cup 2025 winner — India (ESPN/Wikipedia).'),
@@ -37,7 +42,12 @@ FIXES: dict[str, dict] = {
     'q185': dict(answer='B', note='SLINEX — annual India-Sri Lanka bilateral naval exercise (PIB).'),
     'q201': dict(answer='B', note='Kabak Yano (Mt Kilimanjaro summiteer) — from Arunachal Pradesh (Assam Tribune).'),
     'q218': dict(answer='C', note='Controller General of Accounts (Sept 2025) — T.C.A. Kalyani (CGA.nic.in/PIB).'),
-    'q221': dict(answer='D', note='8th Commonwealth Youth Games 2027 — Malta (Commonwealth Sport).'),
+    'q221': dict(
+        text='Which country has been selected to host the 8th edition of the Commonwealth Youth Games in 2027?',
+        opts=dict(A='India', B='Australia', C='Canada', D='Malta'),
+        answer='D',
+        note='8th Commonwealth Youth Games 2027 — Malta (Commonwealth Sport).',
+    ),
     'q229': dict(answer='B', note='35th DG NCC (Oct 2025) — Lt Gen Virendra Vats (PIB).'),
     'q234': dict(answer='C', note='2025 Asian Archery Championships — India topped medal tally with 6 gold (Olympics.com).'),
     'q245': dict(answer='B', note='BWF Sudirman Cup 2025 — China won 4th consecutive title (Olympics.com).'),
@@ -51,7 +61,12 @@ FIXES: dict[str, dict] = {
     'q268': dict(answer='A', note='World Archery Championships 2025 — held in Gwangju, South Korea (Olympics.com).'),
     'q280': dict(answer='B', note='GP Birla Memorial Award (Jul 2025) — ISRO Chairman V. Narayanan (The Hindu/Telangana Today).'),
     'q294': dict(answer='B', note='83rd Golden Globes Best Motion Picture (Drama) — Hamnet (Hollywood Reporter/NPR).'),
-    'q65': dict(answer='B', note='Budget 2026-27 — Ministry of Youth Affairs & Sports total outlay Rs 4,479.88 crore (PIB).'),
+    'q65': dict(
+        text='How much budget has been allocated for the Khelo India Mission in the Union Budget 2026-27?',
+        opts=dict(A='Rs 500 crore', B='Rs 4,479 crore', C='Rs 1,500 crore', D='Rs 2,000 crore'),
+        answer='B',
+        note='Budget 2026-27 — Ministry of Youth Affairs & Sports total outlay Rs 4,479.88 crore (PIB).',
+    ),
 
     # ============ Structural rewrites (broken OCR options) ============
     'q8': dict(
@@ -353,6 +368,68 @@ FIXES: dict[str, dict] = {
         opts=dict(A='Rajasthan', B='Uttarakhand', C='Himachal Pradesh', D='Arunachal Pradesh'),
         answer='B',
         note="Source video answer: Uttarakhand. (Note: the 6th edition of Dharma Guardian was held in Japan in Feb-Mar 2025; the India-leg of the exercise has been held in Rajasthan/Uttarakhand in past editions.)",
+    ),
+
+    # ============ OCR digit/letter confusion clean-ups ============
+    'q12': dict(
+        text="What is India's rank in the 'Global Hunger Index' 2025?",
+        opts=dict(A='99th', B='102nd', C='106th', D='126th'),
+        answer='B',
+        note='India ranked 102nd in Global Hunger Index 2025.',
+    ),
+    'q15': dict(
+        text="Who won the 13th edition of the ICC Women's World Cup 2025 by defeating South Africa in the final?",
+        opts=dict(A='South Africa', B='India', C='Australia', D='Bangladesh'),
+        answer='B',
+        note='India beat South Africa by 52 runs at DY Patil Stadium, Navi Mumbai (Nov 2, 2025) (ESPN/Wikipedia).',
+    ),
+    'q18': dict(
+        text='Who has become the 11th Member of ASEAN in October 2025?',
+        opts=dict(A='Namibia', B='Ecuador', C='Timor-Leste', D='Thailand'),
+        answer='C',
+        note='Timor-Leste became the 11th member of ASEAN in October 2025.',
+    ),
+    'q34': dict(
+        text="Who won the 13th edition of the ICC Women's World Cup 2025?",
+        opts=dict(A='South Africa', B='India', C='Australia', D='Bangladesh'),
+        answer='B',
+        note="India won its maiden ICC Women's WC 2025, beating South Africa in the final.",
+    ),
+    'q152': dict(
+        text="What is India's rank in the 2025 Economic Freedom Index?",
+        opts=dict(A='115th', B='124th', C='128th', D='131st'),
+        answer='C',
+        note='India ranked 128th in the 2025 Economic Freedom Index.',
+    ),
+    'q160': dict(
+        text='In which country has Google opened its largest AI infrastructure hardware engineering centre outside the United States?',
+        opts=dict(A='India', B='Taiwan', C='Spain', D='Japan'),
+        answer='B',
+        note='Google opened its largest AI infra hardware engineering centre outside US in Taipei, Taiwan (Nov 2025).',
+    ),
+    'q172': dict(
+        text="What is India's rank in the Global Investment Risk and Resilience Index 2025?",
+        opts=dict(A='96th', B='102nd', C='104th', D='112th'),
+        answer='C',
+        note='India ranked 104th in Global Investment Risk and Resilience Index 2025.',
+    ),
+    'q263': dict(
+        text='DRDO successfully test-fired which missile at the KK Ranges in Ahilya Nagar, Maharashtra?',
+        opts=dict(A='Agni-V Missile', B='BrahMos', C='MPATGM', D='Pralay Missile'),
+        answer='D',
+        note='DRDO test-fired the Pralay short-range ballistic missile at KK Ranges, Ahilyanagar (Ahmednagar), Maharashtra.',
+    ),
+    'q270': dict(
+        text='Which football club recently won the 125th edition of the Indian Football Association (IFA) Shield?',
+        opts=dict(A='Bengaluru FC', B='East Bengal', C='Mohun Bagan Super Giant', D='NorthEast United'),
+        answer='C',
+        note='Mohun Bagan Super Giant won the 125th IFA Shield (2025).',
+    ),
+    'q318': dict(
+        text="What is India's rank in the 'World Happiness Report 2026'?",
+        opts=dict(A='105th', B='113th', C='116th', D='118th'),
+        answer='C',
+        note="India ranked 116th in the World Happiness Report 2026.",
     ),
 }
 
