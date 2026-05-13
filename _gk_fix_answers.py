@@ -528,8 +528,8 @@ FIXES: dict[str, dict] = {
     'q143': dict(
         text='Who has been appointed as the CEO of NITI Aayog?',
         opts=dict(A='Suman Bery', B='BVR Subrahmanyam', C='Nidhi Chhibber', D='None Of These'),
-        answer='B',
-        note='BVR Subrahmanyam continues as NITI Aayog CEO; tenure extended (PIB).',
+        answer='C',
+        note='Nidhi Chhibber (1994-batch IAS, DG-DMEO) given additional charge as CEO of NITI Aayog effective Feb 24, 2026 — after BVR Subrahmanyam tenure ended (Livemint/ET/CNBC TV18).',
     ),
     'q151': dict(
         text='Which state government launched the Green to Gold initiative to promote industrial hemp cultivation?',
