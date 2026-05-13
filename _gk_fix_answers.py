@@ -383,6 +383,18 @@ FIXES: dict[str, dict] = {
         answer='B',
         note="56th IFFI (Nov 2025) — Golden Peacock for Best Film went to 'Skin of Youth' (Vietnamese film by Ash Mayfair).",
     ),
+    'q75': dict(
+        text="Which state has become the second state after Mizoram to attain full functional literacy status?",
+        opts=dict(A='Tamil Nadu', B='Kerala', C='Goa', D='Rajasthan'),
+        answer='C',
+        note="Goa became the second state after Mizoram to attain full functional literacy under ULLAS (Nav Bharat Saaksharta) — declared in 2025.",
+    ),
+    'q191': dict(
+        text="On which date is International Literacy Day 2025 celebrated?",
+        opts=dict(A='7th September', B='8th September', C='9th September', D='12th September'),
+        answer='B',
+        note="International Literacy Day is observed every year on 8 September (UNESCO).",
+    ),
 
     # ============ OCR digit/letter confusion clean-ups ============
     'q12': dict(
