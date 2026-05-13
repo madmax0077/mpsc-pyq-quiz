@@ -82656,7 +82656,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q67",
-        "text": "Who has become the Chief Minister of Bihar for the lOth time?",
+        "text": "Who has become the Chief Minister of Bihar for the 10th time?",
         "options": {
           "A": "Tejasvi Yadav",
           "B": "Nitish Kumar",
@@ -82843,7 +82843,7 @@
           "C": "Bronze",
           "D": "No medal"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -82901,7 +82901,7 @@
           "A": "25th",
           "B": "38th",
           "C": "39th",
-          "D": "4lst"
+          "D": "41st"
         },
         "correctAnswer": "B",
         "explanation": "",
@@ -82911,11 +82911,11 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q88",
-        "text": "Which train has officially become the fastest train in India, operating at a maximum speed of",
+        "text": "Which train has officially become the fastest train in India, operating at a maximum speed of 180 km/h?",
         "options": {
           "A": "Tejas Express",
           "B": "Namo Bharat",
-          "C": "Shatabadi Express",
+          "C": "Shatabdi Express",
           "D": "Vande Bharat"
         },
         "correctAnswer": "D",
@@ -82960,7 +82960,7 @@
         "options": {
           "A": "Sri Lanka",
           "B": "Bangladesh",
-          "C": "India 30",
+          "C": "India",
           "D": "China"
         },
         "correctAnswer": "D",
@@ -83008,7 +83008,7 @@
           "C": "Rajasthan",
           "D": "Haryana"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83128,7 +83128,7 @@
           "C": "Operation Midnight Hammer",
           "D": "Operation Hawk"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83173,7 +83173,7 @@
           "C": "Bronze Medal",
           "D": "None of the above"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83198,10 +83198,10 @@
         "id": "topic-current-affairs-gk-2025-26-marathon-q109",
         "text": "The NISAR Earth observation Satellite was launched from which rocket?",
         "options": {
-          "A": "GSLV-FL6",
-          "B": "GSLV-FL9",
-          "C": "PSLV-CGO",
-          "D": "LVM3-M4"
+          "A": "GSLV-F16",
+          "B": "PSLV-C60",
+          "C": "LVM3-M4",
+          "D": "SSLV-D3"
         },
         "correctAnswer": "A",
         "explanation": "",
@@ -83211,14 +83211,14 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q110",
-        "text": "Which states 24 coastal villages have been recognized by UNESCO as Tsunami Ready ?",
+        "text": "Which state's 24 coastal villages have been recognized by UNESCO as Tsunami Ready?",
         "options": {
           "A": "Andhra Pradesh",
           "B": "Tamil Nadu",
           "C": "Odisha",
           "D": "Kerala"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83228,12 +83228,12 @@
         "id": "topic-current-affairs-gk-2025-26-marathon-q111",
         "text": "Simone Biles, who received the Laureus Sportswomen of the year Award 2025, is associated with which sport?",
         "options": {
-          "A": "Artistic gymnastics",
+          "A": "Artistic Gymnastics",
           "B": "Tennis",
           "C": "Badminton",
           "D": "Baseball"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83263,7 +83263,7 @@
           "C": "Jayshree Venkatesan",
           "D": "Vandana Shiva"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83278,7 +83278,7 @@
           "C": "Rajasthan",
           "D": "Odisha"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83488,7 +83488,7 @@
           "C": "Chilika Lake, Odisha",
           "D": "Sundarbans, West Bengal"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83533,7 +83533,7 @@
           "C": "India",
           "D": "Czechia"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83608,7 +83608,7 @@
           "C": "Nidhi Chhibber",
           "D": "None Of These"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83698,7 +83698,7 @@
           "C": "Punjab",
           "D": "Sikkim"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83758,7 +83758,7 @@
           "C": "Indira Nooyi",
           "D": "Dr. Tessy Thomas"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "D",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83848,7 +83848,7 @@
           "C": "BIRSA 101",
           "D": "HematoGene"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83859,11 +83859,11 @@
         "text": "Banu Mushtaq, who won the International Booker Prize 2025, is the first winner from which Indian state?",
         "options": {
           "A": "Kerala",
-          "B": "Tamil Nadu 1\"1\"\"19",
+          "B": "Tamil Nadu",
           "C": "Karnataka",
           "D": "Maharashtra"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -83871,7 +83871,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q166",
-        "text": "Which country has officially announced its withdrawal from",
+        "text": "Which country has officially announced its withdrawal from UNESCO?",
         "options": {
           "A": "Argentina",
           "B": "USA",
@@ -83983,7 +83983,7 @@
           "C": "Venezuela",
           "D": "China"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84024,8 +84024,8 @@
         "text": "What is India's rank in the 2025 Corruption Perception Index?",
         "options": {
           "A": "88th",
-          "B": "9Oth",
-          "C": "9lst",
+          "B": "90th",
+          "C": "91st",
           "D": "93rd"
         },
         "correctAnswer": "C",
@@ -84088,7 +84088,7 @@
           "C": "Jannik Sinner",
           "D": "Daniil Medvedev"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84148,7 +84148,7 @@
           "C": "Thailand",
           "D": "Singapore"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84186,10 +84186,10 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q193",
-        "text": "Who has won the Pro Kabbadi League 2025 title?",
+        "text": "Who has won the Pro Kabaddi League 2025 title?",
         "options": {
           "A": "Gujarat Giants",
-          "B": "Dabang Delhi",
+          "B": "Dabang Delhi K.C.",
           "C": "Jaipur Pink Panthers",
           "D": "Puneri Paltan"
         },
@@ -84201,10 +84201,10 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q194",
-        "text": "4L. In which state will India's first, largest drone city be established?",
+        "text": "In which state will India's first, largest drone city be established?",
         "options": {
           "A": "Telangana",
-          "B": "Tamilnadu",
+          "B": "Tamil Nadu",
           "C": "Andhra Pradesh",
           "D": "Rajasthan"
         },
@@ -84373,7 +84373,7 @@
           "C": "Shakti",
           "D": "Kalpana 3202"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84396,10 +84396,10 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q210",
-        "text": "Who won the Best Film at the 7Oth Filmfare Awards 2025?",
+        "text": "Who won the Best Film at the 70th Filmfare Awards 2025?",
         "options": {
-          "A": "a2th Fail",
-          "B": "Lapata Ladies",
+          "A": "12th Fail",
+          "B": "Laapataa Ladies",
           "C": "Jawaan",
           "D": "Animal"
         },
@@ -84433,7 +84433,7 @@
           "C": "Bihar",
           "D": "Gujarat"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84583,7 +84583,7 @@
           "C": "Heritage Foods Limited",
           "D": "Parag Milk Foods"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84591,14 +84591,14 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q223",
-        "text": "Which state government has launched Indias first drone based artificial rain trial?",
+        "text": "Which state government has launched India's first drone-based artificial rain trial?",
         "options": {
           "A": "Rajasthan",
           "B": "Gujarat",
           "C": "Punjab",
           "D": "Haryana"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84621,7 +84621,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q225",
-        "text": "Who has been elected the new President of",
+        "text": "Who has been elected the new President of Interpol?",
         "options": {
           "A": "Kim Jong Yang",
           "B": "Lucas Philippe",
@@ -84748,7 +84748,7 @@
           "C": "Nepal",
           "D": "Thailand"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84771,14 +84771,14 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q235",
-        "text": "Which citys traditional Zari Poshak received GI recognition in November 2025?",
+        "text": "Which city's traditional Zari Poshak received GI recognition in November 2025?",
         "options": {
           "A": "Varanasi",
           "B": "Meerut",
           "C": "Mathura",
           "D": "Lucknow"
         },
-        "correctAnswer": "A",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84805,7 +84805,7 @@
         "options": {
           "A": "5th",
           "B": "7th",
-          "C": "1Oth",
+          "C": "10th",
           "D": "14th"
         },
         "correctAnswer": "C",
@@ -84823,7 +84823,7 @@
           "C": "Dispur",
           "D": "Gangtok"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -84876,9 +84876,9 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q247",
-        "text": "Who has been appointed as the next Director General of",
+        "text": "Who has been appointed as the next Director General of UNESCO?",
         "options": {
-          "A": "Khaled ElEnany",
+          "A": "Khaled El-Enany",
           "B": "Audrey Azoulay",
           "C": "Antonio Guterres",
           "D": "Kristalina Georgieva"
@@ -84921,7 +84921,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q251",
-        "text": "Who will be appointed as the new President of",
+        "text": "Who will be appointed as the new President of BCCI?",
         "options": {
           "A": "Sourav Ganguly",
           "B": "Jay Shah",
@@ -84958,7 +84958,7 @@
           "C": "Akshay Kumar",
           "D": "Vidya Balan"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -85048,7 +85048,7 @@
           "C": "MPATGM",
           "D": "Pralay Missile"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -85101,10 +85101,10 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q268",
-        "text": "India's Men's compound Archery team won its firstrever gold medal at the World Archery Championships 2025 held in which country?",
+        "text": "India's Men's compound Archery team won its first-ever gold medal at the World Archery Championships 2025 held in which country?",
         "options": {
           "A": "South Korea",
-          "B": "Japan UNDUA ou0",
+          "B": "Japan",
           "C": "China",
           "D": "Malaysia"
         },
@@ -85138,7 +85138,7 @@
           "C": "Bronze Medal",
           "D": "No Medal"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -85146,14 +85146,14 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q272",
-        "text": "Which has become the 2Gth country to eliminate Trachoma as public health problem in October 2025?",
+        "text": "Which has become the 26th country to eliminate Trachoma as a public health problem in October 2025?",
         "options": {
           "A": "India",
-          "B": "Fiii",
+          "B": "Fiji",
           "C": "Burundi",
           "D": "Timor Leste"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -85213,7 +85213,7 @@
           "C": "Third",
           "D": "Fourth"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -85303,7 +85303,7 @@
           "C": "West Bengal",
           "D": "Odisha"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -85341,14 +85341,14 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q286",
-        "text": "India defeated which country to win the first ever Womens T20 Blind World Cup 2025 held in Colombo?",
+        "text": "India defeated which country to win the first ever Women's T20 Blind World Cup 2025 held in Colombo?",
         "options": {
           "A": "Sri Lanka",
           "B": "Australia",
           "C": "Nepal",
-          "D": "Bangladesh T20"
+          "D": "Bangladesh"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -85611,7 +85611,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q306",
-        "text": "Who has been crowned as the 7Znd Miss World 2025?",
+        "text": "Who has been crowned as the 72nd Miss World 2025?",
         "options": {
           "A": "Nandini Gupta",
           "B": "Victoria Kjaer Theilvig",
@@ -85671,7 +85671,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q310",
-        "text": "Which district has become India's first fully Solar powered distrlct?",
+        "text": "Which district has become India's first fully Solar powered district?",
         "options": {
           "A": "Kutch",
           "B": "Ladakh",
