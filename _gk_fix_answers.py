@@ -61,6 +61,12 @@ FIXES: dict[str, dict] = {
     'q268': dict(answer='A', note='World Archery Championships 2025 — held in Gwangju, South Korea (Olympics.com).'),
     'q280': dict(answer='B', note='GP Birla Memorial Award (Jul 2025) — ISRO Chairman V. Narayanan (The Hindu/Telangana Today).'),
     'q294': dict(answer='B', note='83rd Golden Globes Best Motion Picture (Drama) — Hamnet (Hollywood Reporter/NPR).'),
+    'q147': dict(
+        text='From which date will it be mandatory for all electric vehicles in India to be equipped with the Acoustic Vehicle Alerting System?',
+        opts=dict(A='October 1, 2025', B='October 1, 2026', C='October 1, 2027', D='October 1, 2028'),
+        answer='C',
+        note='MoRTH draft notification — new EVs from Oct 1, 2026 and ALL existing EVs from Oct 1, 2027 (Telegraph India/Economic Times/Times of India).',
+    ),
     'q65': dict(
         text='How much budget has been allocated for the Khelo India Mission in the Union Budget 2026-27?',
         opts=dict(A='Rs 500 crore', B='Rs 4,479 crore', C='Rs 1,500 crore', D='Rs 2,000 crore'),
