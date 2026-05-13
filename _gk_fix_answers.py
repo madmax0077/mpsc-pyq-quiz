@@ -67,6 +67,12 @@ FIXES: dict[str, dict] = {
         answer='C',
         note='MoRTH draft notification — new EVs from Oct 1, 2026 and ALL existing EVs from Oct 1, 2027 (Telegraph India/Economic Times/Times of India).',
     ),
+    'q198': dict(
+        text='Which state became the first in India to achieve 100% digitisation of voter rolls under the Special Intensive Revision (SIR)?',
+        opts=dict(A='Rajasthan', B='Gujarat', C='Bihar', D='West Bengal'),
+        answer='A',
+        note='Rajasthan became the first state to complete 100% digitisation of electoral rolls under SIR, announced Dec 6, 2025 by CEO Navin Mahajan (Business Standard).',
+    ),
     'q65': dict(
         text='How much budget has been allocated for the Khelo India Mission in the Union Budget 2026-27?',
         opts=dict(A='Rs 500 crore', B='Rs 4,479 crore', C='Rs 1,500 crore', D='Rs 2,000 crore'),
@@ -171,12 +177,7 @@ FIXES: dict[str, dict] = {
         answer='C',
         note='Ekatha 2025 — bilateral naval exercise between Indian Navy and Maldives National Defence Force (PIB).',
     ),
-    'q198': dict(
-        text='Which state became the first in India to achieve 100% digitisation of voter rolls under the Special Intensive Revision (SIR)?',
-        opts=dict(A='Rajasthan', B='Gujarat', C='Bihar', D='West Bengal'),
-        answer='C',
-        note='Bihar achieved near-complete digitisation through SIR exercise launched June 24, 2025 (ECI/PIB).',
-    ),
+    # NOTE: q198 fix appears earlier in this dict (answer: A = Rajasthan, per Dec 2025 Business Standard).
     'q202': dict(
         text='Who has won the first Chess eSports World Cup 2025?',
         opts=dict(A='D. Gukesh', B='R. Praggnanandhaa', C='Magnus Carlsen', D='Divya Deshmukh'),
