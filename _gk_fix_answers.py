@@ -377,6 +377,12 @@ FIXES: dict[str, dict] = {
         answer='D',
         note="77th Republic Day chief guests (Jan 26, 2026) — both Antonio Costa (President, European Council) and Ursula von der Leyen (President, European Commission) attended on behalf of the EU.",
     ),
+    'q71': dict(
+        text="Which film has won the prestigious Golden Peacock Award for Best Film at the 56th International Film Festival of India?",
+        opts=dict(A='Toxic', B='Skin of Youth', C='Gondhal', D="My Daughter's Hair"),
+        answer='B',
+        note="56th IFFI (Nov 2025) — Golden Peacock for Best Film went to 'Skin of Youth' (Vietnamese film by Ash Mayfair).",
+    ),
 
     # ============ OCR digit/letter confusion clean-ups ============
     'q12': dict(
