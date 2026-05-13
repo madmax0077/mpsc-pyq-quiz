@@ -743,6 +743,95 @@ FIXES: dict[str, dict] = {
         answer='C',
         note='Diu became India\'s first fully solar-powered district (PIB/MNRE).',
     ),
+
+    # ============ Final audit q1..q65 (Google verification) ============
+    # Answer corrections
+    'q39': dict(
+        text='P. Narayanan received the Padma Vibhushan in 2026 for his contributions to which field?',
+        opts=dict(A='Art', B='Literature and Education', C='Public Affairs', D='Medicine'),
+        answer='B',
+        note='Veteran journalist P. Narayanan awarded Padma Vibhushan 2026 in Literature and Education category (PIB/Hindu).',
+    ),
+    'q53': dict(
+        text='Who has recently made history by becoming the first Indian to receive the prestigious Kenton R. Miller Award?',
+        opts=dict(A='Sonali Ghosh', B='Purnima Devi Burman', C='Vandana Shiva', D='Sunita Narain'),
+        answer='A',
+        note='Dr. Sonali Ghosh, Field Director of Kaziranga National Park, became the first Indian to win the IUCN WCPA Kenton Miller Award 2025 (HT/IUCN).',
+    ),
+    'q55': dict(
+        text='Who was awarded the Indira Gandhi Prize for Peace, Disarmament & Development for 2024?',
+        opts=dict(A='Angela Merkel', B='Michelle Bachelet', C='Malala Yousafzai', D='Brenda Reynolds'),
+        answer='B',
+        note='Indira Gandhi Prize 2024 — former Chilean President Michelle Bachelet (The Hindu/Hindustan Times).',
+    ),
+    'q62': dict(
+        text="Which city is ranked India's dirtiest in the Swachh Survekshan 2025 report?",
+        opts=dict(A='Chennai', B='Ludhiana', C='Madurai', D='Bengaluru'),
+        answer='C',
+        note='Madurai was ranked the dirtiest among 10-lakh+ population cities in Swachh Survekshan 2025 (Deccan Herald/Indian Express).',
+    ),
+
+    # OCR cleanups (q1..q65)
+    'q6': dict(
+        text="Which Team won the 10th edition of the ICC Men's T20 World Cup in 2026?",
+        opts=dict(A='New Zealand', B='Australia', C='South Africa', D='India'),
+        answer='D',
+        note='India beat New Zealand in the ICC Men\'s T20 World Cup 2026 final at Narendra Modi Stadium, Ahmedabad — their 3rd T20 WC title (ICC/Indian Express).',
+    ),
+    'q9': dict(
+        text='Who won the SASTRA Ramanujan Prize in 2025?',
+        opts=dict(A='Alexander Dunn', B='Alexander Smith', C='Ruixiang Zhang', D='Yunqing Tang'),
+        answer='B',
+        note='Dr. Alexander Smith of Northwestern University won the 2025 SASTRA Ramanujan Prize (The Hindu/SASTRA).',
+    ),
+    'q19': dict(
+        text="Who won the 2025 Booker Prize for his novel 'Flesh'?",
+        opts=dict(A='Banu Mushtaq', B='David Szalay', C='Laszlo Krasznahorkai', D='Gitanjali Shree'),
+        answer='B',
+        note='Hungarian-British author David Szalay won the 2025 Booker Prize for "Flesh" (BBC/Booker Prizes).',
+    ),
+    'q22': dict(
+        text="Where was the 'India AI Impact Summit 2026' held?",
+        opts=dict(A='New Delhi', B='Bengaluru', C='Bhopal', D='Hyderabad'),
+        answer='A',
+        note='India AI Impact Summit 2026 held at Bharat Mandapam, New Delhi (Feb 16-20, 2026) (PIB).',
+    ),
+    'q36': dict(
+        text='Which country hosted the G20 Summit 2025?',
+        opts=dict(A='Brazil', B='South Africa', C='India', D='Indonesia'),
+        answer='B',
+        note='G20 Leaders\' Summit 2025 hosted by South Africa in Johannesburg (Nov 22-23, 2025).',
+    ),
+    'q38': dict(
+        text='Who has been appointed as the new Chief of Research & Analysis Wing (RAW)?',
+        opts=dict(A='Parag Jain', B='Ravi Sinha', C='Praveen Sood', D='Samir V Kamat'),
+        answer='A',
+        note='Parag Jain (1989-batch IPS) appointed RAW chief on July 1, 2025, succeeding Ravi Sinha (ET/India Today).',
+    ),
+    'q42': dict(
+        text='What is the rank of India in the Global Innovation Index 2025?',
+        opts=dict(A='38th', B='40th', C='42nd', D='35th'),
+        answer='A',
+        note='India ranked 38th in WIPO Global Innovation Index 2025, up from 39th in 2024 (WIPO).',
+    ),
+    'q43': dict(
+        text="India's first dedicated 'Glass Museum' is being developed at?",
+        opts=dict(A='Firozabad', B='Lucknow', C='Dehradun', D='Bengaluru'),
+        answer='A',
+        note="India's first Glass Museum being built in Firozabad, Uttar Pradesh (~70% complete as of Jan 2026) (Indian Express/ET).",
+    ),
+    'q56': dict(
+        text='Which has become the 1st South Asian country to join the UN Water Convention?',
+        opts=dict(A='Maldives', B='Sri Lanka', C='Bangladesh', D='India'),
+        answer='C',
+        note='Bangladesh became the first South Asian country (and 56th globally) to accede to the UN Water Convention on June 20, 2025 (UN/Prothom Alo).',
+    ),
+    'q58': dict(
+        text='Which countries will jointly host the 2026 Hockey World Cup?',
+        opts=dict(A='Germany & France', B='India & Sri Lanka', C='France & Germany', D='Belgium & Netherlands'),
+        answer='D',
+        note='FIH Hockey World Cup 2026 co-hosted by Belgium (Wavre) and the Netherlands (Amstelveen) from Aug 15-30, 2026 (FIH).',
+    ),
 }
 
 

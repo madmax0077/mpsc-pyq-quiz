@@ -81861,7 +81861,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q6",
-        "text": "Which Team won the lOth edition of the ICC Men's T2O World Cup in 2026?",
+        "text": "Which Team won the 10th edition of the ICC Men's T20 World Cup in 2026?",
         "options": {
           "A": "New Zealand",
           "B": "Australia",
@@ -81893,7 +81893,7 @@
         "id": "topic-current-affairs-gk-2025-26-marathon-q9",
         "text": "Who won the SASTRA Ramanujan Prize in 2025?",
         "options": {
-          "A": "4 Alexander Dunn",
+          "A": "Alexander Dunn",
           "B": "Alexander Smith",
           "C": "Ruixiang Zhang",
           "D": "Yunqing Tang"
@@ -82011,7 +82011,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q19",
-        "text": "Who won the 2025 Booker Prize for his novel 'Flesh ?",
+        "text": "Who won the 2025 Booker Prize for his novel 'Flesh'?",
         "options": {
           "A": "Banu Mushtaq",
           "B": "David Szalay",
@@ -82056,7 +82056,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q22",
-        "text": "Where was the India Al Impact Summit 2026' held?",
+        "text": "Where was the 'India AI Impact Summit 2026' held?",
         "options": {
           "A": "New Delhi",
           "B": "Bengaluru",
@@ -82266,7 +82266,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q36",
-        "text": "Which country hosted the G2O Summit 2025?",
+        "text": "Which country hosted the G20 Summit 2025?",
         "options": {
           "A": "Brazil",
           "B": "South Africa",
@@ -82300,7 +82300,7 @@
         "options": {
           "A": "Parag Jain",
           "B": "Ravi Sinha",
-          "C": "Praveen Sood Research",
+          "C": "Praveen Sood",
           "D": "Samir V Kamat"
         },
         "correctAnswer": "A",
@@ -82318,7 +82318,7 @@
           "C": "Public Affairs",
           "D": "Medicine"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -82344,7 +82344,7 @@
         "text": "What is the rank of India in the Global Innovation Index 2025?",
         "options": {
           "A": "38th",
-          "B": "4Oth",
+          "B": "40th",
           "C": "42nd",
           "D": "35th"
         },
@@ -82356,7 +82356,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q43",
-        "text": "Indias first dedicated Glass Museum' is being developed at?",
+        "text": "India's first dedicated 'Glass Museum' is being developed at?",
         "options": {
           "A": "Firozabad",
           "B": "Lucknow",
@@ -82498,7 +82498,7 @@
           "C": "Vandana Shiva",
           "D": "Sunita Narain"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -82523,12 +82523,12 @@
         "id": "topic-current-affairs-gk-2025-26-marathon-q55",
         "text": "Who was awarded the Indira Gandhi Prize for Peace, Disarmament & Development for 2024?",
         "options": {
-          "A": "Angela Markel",
+          "A": "Angela Merkel",
           "B": "Michelle Bachelet",
           "C": "Malala Yousafzai",
           "D": "Brenda Reynolds"
         },
-        "correctAnswer": "C",
+        "correctAnswer": "B",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
@@ -82536,7 +82536,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q56",
-        "text": "Which has become the lst South Asian country to join the UN Water Convention?",
+        "text": "Which has become the 1st South Asian country to join the UN Water Convention?",
         "options": {
           "A": "Maldives",
           "B": "Sri Lanka",
@@ -82566,7 +82566,7 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q58",
-        "text": "Which countries will jointly host the 2026? Hockey World Cup",
+        "text": "Which countries will jointly host the 2026 Hockey World Cup?",
         "options": {
           "A": "Germany & France",
           "B": "India & Sri Lanka",
@@ -82603,7 +82603,7 @@
           "C": "Madurai",
           "D": "Bengaluru"
         },
-        "correctAnswer": "D",
+        "correctAnswer": "C",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
