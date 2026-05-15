@@ -25,7 +25,7 @@ const MODES: { id: Mode; label: string; icon: string; tag: string; tag2: string 
   { id: "flash",  label: "Flashcards", icon: "🧠", tag: "20 key facts",       tag2: "Tap to flip" },
 ];
 
-const METRICS: Metric[] = ["population", "growth", "sexRatio", "literacy", "density"];
+const METRICS: Metric[] = ["population", "growth", "sexRatio", "childSexRatio", "literacy", "density"];
 
 export default function CensusGameClient() {
   const [mode, setMode] = useState<Mode>("reveal");
@@ -96,6 +96,7 @@ function StateBanner() {
         <StatCell icon="📈" label="Decadal growth" value={`${STATE_TOTALS.decadalGrowth}%`} />
         <StatCell icon="🏙️" label="Density" value={`${STATE_TOTALS.density}/km²`} />
         <StatCell icon="⚖️" label="Sex ratio" value={`${STATE_TOTALS.sexRatio}`} />
+        <StatCell icon="👶" label="Child sex ratio (0–6)" value={`${STATE_TOTALS.childSexRatio}`} />
         <StatCell icon="📚" label="Literacy" value={`${STATE_TOTALS.literacy}%`} />
         <StatCell icon="👨" label="Male literacy" value={`${STATE_TOTALS.maleLiteracy}%`} />
         <StatCell icon="👩" label="Female literacy" value={`${STATE_TOTALS.femaleLiteracy}%`} />
@@ -241,6 +242,10 @@ function Callout({ metric, view }: { metric: Metric; view: "top" | "bottom" | "a
       return "👉 Konkan dominates: Ratnagiri (1122), Sindhudurg (1036) — the only two districts with sex ratio > 1000.";
     if (metric === "sexRatio" && view === "bottom")
       return "👉 Mumbai City (832), Mumbai Suburban (860), Thane (886) — urban + male-migration belt has the worst sex ratios.";
+    if (metric === "childSexRatio" && view === "top")
+      return "👉 Tribal/forest belts of Vidarbha lead: Gadchiroli (961), Gondia (956), Chandrapur (953). Healthy child sex ratios above the state average of 894.";
+    if (metric === "childSexRatio" && view === "bottom")
+      return "👉 ⚠️ Beed (807) — lowest child sex ratio in Maharashtra. Jalgaon (842), Ahmadnagar (852), Buldhana (855), Aurangabad (858) follow. Sugar-belt districts show alarmingly skewed CSR (a key social indicator).";
     if (metric === "literacy" && view === "top")
       return "👉 Mumbai Suburban (89.91%) tops the list. Nagpur, Akola, Amravati show Vidarbha's strong literacy belt.";
     if (metric === "literacy" && view === "bottom")
@@ -503,15 +508,15 @@ function generateQuestions(): MCQ[] {
     };
   };
 
-  // 5 extreme questions
-  const metrics: Metric[] = ["population", "growth", "sexRatio", "literacy", "density"];
+  // 4 extreme questions (including child sex ratio)
+  const metrics: Metric[] = ["population", "growth", "sexRatio", "childSexRatio", "literacy", "density"];
   const shuffledMetrics = shuffle(metrics);
-  for (let i = 0; i < 3; i++) out.push(buildExtreme(shuffledMetrics[i], i % 2 === 0 ? "max" : "min"));
+  for (let i = 0; i < 4; i++) out.push(buildExtreme(shuffledMetrics[i], i % 2 === 0 ? "max" : "min"));
   // 2 rank questions
   out.push(buildRank());
   out.push(buildRank());
-  // 5 value questions
-  const valueMetrics = shuffle(metrics).slice(0, 5);
+  // value questions across the remaining metrics
+  const valueMetrics = shuffle(metrics).slice(0, 4);
   valueMetrics.forEach((m) => out.push(buildValue(m)));
 
   return shuffle(out).slice(0, 10);

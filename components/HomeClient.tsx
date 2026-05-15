@@ -346,8 +346,8 @@ export default function HomeClient() {
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
                       <strong className="font-semibold text-sky-700 dark:text-sky-300">Memorize all 35 districts</strong> — population,
-                      sex ratio, literacy, density &amp; decadal growth. 4 game modes: Top-10/Bottom-10 reveal,
-                      Rank Race, MCQ Quiz and Flashcards.
+                      sex ratio, child sex ratio (0–6), literacy, density &amp; decadal growth. 4 game modes:
+                      Top-10/Bottom-10 reveal, Rank Race, MCQ Quiz and Flashcards.
                     </p>
 
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">

@@ -5,15 +5,17 @@ import CensusGameClient from "./CensusGameClient";
 export const metadata: Metadata = {
   title: "Maharashtra Census 2011 — Memorize-it Game (Rank, Quiz, Flashcards)",
   description:
-    "Master Maharashtra Census 2011 the fun way. All 35 districts — population, sex ratio, literacy, decadal growth, density. Top-10 & bottom-10 leaderboards, rank-race, MCQ quiz and flashcards built for MPSC/UPSC aspirants.",
+    "Master Maharashtra Census 2011 the fun way. All 35 districts — population, sex ratio, child sex ratio (0–6), literacy, decadal growth, density. Top-10 & bottom-10 leaderboards, rank-race, MCQ quiz and flashcards built for MPSC/UPSC aspirants.",
   keywords: [
     "Maharashtra Census 2011",
     "Maharashtra district population 2011",
     "Maharashtra census memorization",
     "MPSC census 2011 questions",
     "Maharashtra sex ratio district wise",
+    "Maharashtra child sex ratio district wise",
     "Maharashtra literacy rate district wise",
     "Maharashtra population density",
+    "Beed lowest child sex ratio",
     "MPSC general studies Census 2011",
   ],
   alternates: { canonical: "/census-2011-maharashtra" },
@@ -88,7 +90,7 @@ export default function CensusGamePage() {
               <span aria-hidden>📊</span> Maharashtra Census 2011 — Memorize-it Game
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              All 35 districts · Population · Sex Ratio · Literacy · Density · Decadal Growth
+              All 35 districts · Population · Sex Ratio · Child Sex Ratio · Literacy · Density · Decadal Growth
             </p>
           </div>
         </div>
@@ -107,7 +109,7 @@ export default function CensusGamePage() {
             Thane only on 1 August 2014, so its population is included inside Thane&apos;s figure).
           </p>
           <ul className="mt-3 list-disc pl-6 text-sm text-slate-600 dark:text-slate-300 space-y-1">
-            <li><strong>Reveal mode</strong> — top 10 / bottom 10 by population, sex ratio, literacy, density, decadal growth.</li>
+            <li><strong>Reveal mode</strong> — top 10 / bottom 10 by population, sex ratio, <strong>child sex ratio (0–6)</strong>, literacy, density, decadal growth.</li>
             <li><strong>Rank Race</strong> — drag-sort 5 random districts in the right order for a metric. Beat your best score.</li>
             <li><strong>Quiz</strong> — 10 MCQs per round across all metrics (which district has highest literacy? lowest sex ratio? etc.).</li>
             <li><strong>Flashcards</strong> — 20 high-yield one-liner facts (highest, lowest, state totals).</li>
@@ -116,6 +118,12 @@ export default function CensusGamePage() {
             <strong>State headline numbers (Census 2011):</strong> total population 11.24 crore (2nd in India after UP),
             decadal growth 15.99%, density 365/km², sex ratio 929, child sex ratio 894, literacy 82.34% (M 88.38%, F 75.87%),
             urban share 45.22%.
+          </p>
+          <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Child sex ratio (0–6) extremes:</strong> Gadchiroli has the <em>highest</em> CSR (961) — typical of
+            tribal Vidarbha districts — while <strong>Beed</strong> records the <em>lowest</em> CSR in the state at just{" "}
+            <strong>807</strong>, followed by Jalgaon (842), Ahmadnagar (852), Buldhana (855) and Aurangabad (858). The
+            Marathwada sugar belt&apos;s skewed CSR is a frequently asked MPSC GS question.
           </p>
           <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
             Data source: Census of India 2011 / census2011.co.in.
