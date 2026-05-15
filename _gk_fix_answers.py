@@ -219,10 +219,10 @@ FIXES: dict[str, dict] = {
         note="India's BRICS 2026 theme: 'Building for Resilience, Innovation, Cooperation and Sustainability' (MEA/NDTV).",
     ),
     'q230': dict(
-        text='Which city has become the first in India to fully operationalize the Real Time Flood Forecasting and Spatial Decision Support System (IFLOWS)?',
+        text='Which city has become the first in India to fully operationalize the Real Time Flood Forecasting and Spatial Decision Support System (RTFF & SDSS)?',
         opts=dict(A='Chennai', B='Mumbai', C='Hyderabad', D='Bengaluru'),
-        answer='B',
-        note='IFLOWS-Mumbai is the Integrated Flood Warning System (Real-time + Spatial Decision Support) — Mumbai (PIB).',
+        answer='A',
+        note='Chennai RTFF & SDSS became fully operational on Oct 22, 2025 — first-of-its-kind in India (The Hindu / Times Now / Chronicle India, Oct 2025).',
     ),
     'q231': dict(
         text="Which is the world's most populous city according to the UN World Urbanization Prospects 2025 report?",

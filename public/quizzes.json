@@ -84696,14 +84696,14 @@
       },
       {
         "id": "topic-current-affairs-gk-2025-26-marathon-q230",
-        "text": "Which city has become the first in India to fully operationalize the Real Time Flood Forecasting and Spatial Decision Support System (IFLOWS)?",
+        "text": "Which city has become the first in India to fully operationalize the Real Time Flood Forecasting and Spatial Decision Support System (RTFF & SDSS)?",
         "options": {
           "A": "Chennai",
           "B": "Mumbai",
           "C": "Hyderabad",
           "D": "Bengaluru"
         },
-        "correctAnswer": "B",
+        "correctAnswer": "A",
         "explanation": "",
         "category": "Current Affairs",
         "topic": "GK 2025-26 Marathon",
