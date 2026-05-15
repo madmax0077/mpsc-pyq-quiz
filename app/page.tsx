@@ -65,6 +65,13 @@ export default function Home() {
               <span className="block text-xs text-slate-500">Rivers, forts, dams, UNESCO, power plants</span>
             </a>
             <a
+              href="/census-2011-maharashtra"
+              className="rounded-lg border border-sky-200 bg-gradient-to-r from-sky-50 to-cyan-50 px-3 py-2 text-sm hover:border-sky-400 hover:from-sky-100 hover:to-cyan-100"
+            >
+              <span className="block font-semibold text-sky-800">📊 Census 2011 game</span>
+              <span className="block text-xs text-sky-700">All 35 districts — memorize in 4 modes</span>
+            </a>
+            <a
               href="/?mode=leaderboard"
               className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
             >

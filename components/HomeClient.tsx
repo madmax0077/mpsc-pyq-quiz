@@ -193,6 +193,13 @@ export default function HomeClient() {
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
+                href="/census-2011-maharashtra"
+                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-600 transition-colors dark:text-slate-300 dark:hover:bg-sky-900/30 dark:hover:text-sky-400"
+              >
+                📊 Census
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a
                 href="/exams"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
@@ -299,6 +306,74 @@ export default function HomeClient() {
 
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
               <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
+
+              {/* Census 2011 Memory Game */}
+              <a
+                href="/census-2011-maharashtra"
+                className="group relative overflow-hidden rounded-3xl border border-sky-200/80 bg-gradient-to-br from-sky-50 via-cyan-50 to-blue-50 p-7 text-left shadow-sm ring-1 ring-sky-100/50 transition-all hover:-translate-y-1 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-200/60 dark:border-sky-900/70 dark:from-sky-950/40 dark:via-cyan-950/40 dark:to-blue-950/40 dark:ring-sky-900/30 dark:hover:border-sky-600 dark:hover:shadow-black/40 sm:col-span-2"
+              >
+                <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-sky-300/60 via-cyan-300/40 to-blue-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-sky-500/15 dark:via-cyan-500/10 dark:to-blue-500/15" />
+                <div className="absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-gradient-to-tr from-blue-300/40 via-sky-200/40 to-cyan-200/30 blur-3xl dark:from-blue-500/15 dark:via-sky-500/10 dark:to-cyan-500/10" />
+                <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
+
+                <div className="relative flex items-start gap-5">
+                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 via-cyan-500 to-blue-600 shadow-lg shadow-sky-300/40 ring-2 ring-white/60 dark:shadow-sky-900/40 dark:ring-sky-300/20">
+                    <span className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-base shadow ring-1 ring-sky-200 dark:bg-slate-800 dark:ring-sky-700">
+                      📊
+                    </span>
+                    <div className="flex flex-col items-center leading-none text-white">
+                      <span className="text-[9px] font-bold uppercase tracking-widest opacity-90">All</span>
+                      <span className="text-2xl font-black tracking-tight drop-shadow-sm">35</span>
+                      <span className="text-[8px] font-semibold uppercase tracking-wider opacity-80">Dists</span>
+                    </div>
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1.5 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-sky-700 via-cyan-700 to-blue-700 bg-clip-text text-transparent dark:from-sky-300 dark:via-cyan-300 dark:to-blue-300 sm:text-2xl">
+                        Census 2011 Memory Game
+                      </h3>
+                      <span className="relative inline-flex items-center gap-1 rounded-full bg-sky-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                        <span className="relative flex h-2 w-2">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                        </span>
+                        New
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-full border border-cyan-300/80 bg-cyan-100/80 px-2 py-0.5 text-[10px] font-semibold text-cyan-800 dark:border-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-200">
+                        🎓 Maharashtra GS
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                      <strong className="font-semibold text-sky-700 dark:text-sky-300">Memorize all 35 districts</strong> — population,
+                      sex ratio, literacy, density &amp; decadal growth. 4 game modes: Top-10/Bottom-10 reveal,
+                      Rank Race, MCQ Quiz and Flashcards.
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        🏆 Top / Bottom 10
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        🎯 Rank Race
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        ❓ 10-Q quiz
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        🧠 Flashcards
+                      </span>
+                    </div>
+
+                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-sky-300/40 transition-all group-hover:shadow-lg group-hover:shadow-sky-400/50 dark:shadow-sky-900/40">
+                      Play the game
+                      <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
 
               {/* GK 2025-26 — last 6 months current affairs */}
               <button
