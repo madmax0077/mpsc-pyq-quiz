@@ -144,8 +144,45 @@ export const RIVER_META: Record<string, RiverMeta> = {
   },
 
   /* Wardha sub-tributaries */
-  yashoda: { basin: "Godavari", origin: "Satpura foothills", mouth: "Joins Wardha near Wardha city", districts: ["Wardha"] },
+  yashoda: { basin: "Godavari", origin: "Satpura foothills (Madhya Pradesh)", mouth: "Joins Wardha near Wardha city", districts: ["Wardha"] },
   "wenna-wardha": { basin: "Godavari", origin: "Wardha district hills", mouth: "Joins Wardha", districts: ["Wardha"] },
+  bor: {
+    basin: "Godavari",
+    lengthKm: 65,
+    origin: "Hills near Hingani (Wardha)",
+    mouth: "Joins Wardha in Wardha district",
+    districts: ["Wardha", "Nagpur"],
+    note: "Bor Wildlife Sanctuary / Bor Dam are on this river.",
+  },
+  "jam-wardha": {
+    basin: "Godavari",
+    origin: "Pench plateau, north of Wardha district",
+    mouth: "Joins Wardha in Wardha district",
+    districts: ["Wardha", "Nagpur"],
+  },
+  bembla: {
+    basin: "Godavari",
+    lengthKm: 95,
+    origin: "Yavatmal hills",
+    mouth: "Joins Wardha in Yavatmal district",
+    districts: ["Yavatmal"],
+    note: "Bembla / Babhulgaon Dam is on the Bembla — one of the major irrigation projects of Yavatmal.",
+  },
+  nirguda: {
+    basin: "Godavari",
+    origin: "Yavatmal–Chandrapur hills",
+    mouth: "Joins Wardha east of Yavatmal",
+    districts: ["Yavatmal", "Chandrapur"],
+    note: "Frequently asked in MPSC PYQs as a tributary of Wardha (Excise Sub-Ord. Pre 2017 Q25).",
+  },
+  erai: {
+    basin: "Godavari",
+    lengthKm: 96,
+    origin: "Chimur hills (Chandrapur)",
+    mouth: "Joins Wardha just upstream of Chandrapur",
+    districts: ["Chandrapur"],
+    note: "Erai / Irai Dam supplies water to Chandrapur city & the Chandrapur Super Thermal Power Station.",
+  },
 
   /* Wainganga sub-tributaries */
   kanhan: {

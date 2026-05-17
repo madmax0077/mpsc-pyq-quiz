@@ -500,6 +500,61 @@ export const RIVERS: RiverFeature[] = [
       [78.65, 20.80], // joins Wardha
     ],
   },
+  /* Bor – joins Wardha in Wardha district; Bor Wildlife Sanctuary on it. */
+  {
+    id: "bor",
+    name: "Bor",
+    parent: "wardha",
+    path: [
+      [78.65, 21.05],
+      [78.74, 20.85],
+      [78.77, 20.74], // joins Wardha
+    ],
+  },
+  /* Jam – small tributary in Wardha district. */
+  {
+    id: "jam-wardha",
+    name: "Jam",
+    parent: "wardha",
+    path: [
+      [78.65, 21.22],
+      [78.65, 21.15],
+      [78.64, 21.11], // joins Wardha
+    ],
+  },
+  /* Bembla – important Yavatmal-district tributary; Bembla Dam on it. */
+  {
+    id: "bembla",
+    name: "Bembla",
+    parent: "wardha",
+    path: [
+      [78.13, 20.59],
+      [78.20, 20.58],
+      [78.27, 20.57], // joins Wardha
+    ],
+  },
+  /* Nirguda – classic MPSC PYQ tributary (Excise 2017 Q25). */
+  {
+    id: "nirguda",
+    name: "Nirguda",
+    parent: "wardha",
+    path: [
+      [78.76, 20.06],
+      [78.95, 19.98],
+      [79.11, 19.91], // joins Wardha east of Yavatmal
+    ],
+  },
+  /* Erai – joins Wardha at Chandrapur (Erai Dam reservoir). */
+  {
+    id: "erai",
+    name: "Erai",
+    parent: "wardha",
+    path: [
+      [79.27, 20.12],
+      [79.29, 19.99],
+      [79.30, 19.87], // joins Wardha just upstream of Chandrapur
+    ],
+  },
 
   /* ─── Wainganga basin tributaries ─────────────────────────── */
   {
