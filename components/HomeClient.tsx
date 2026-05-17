@@ -382,75 +382,6 @@ export default function HomeClient() {
                 </div>
               </a>
 
-              {/* Rivers of Maharashtra — interactive district-wise 2D map */}
-              <a
-                href="/rivers-maharashtra"
-                className="group relative overflow-hidden rounded-3xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50 via-teal-50 to-emerald-50 p-7 text-left shadow-sm ring-1 ring-cyan-100/50 transition-all hover:-translate-y-1 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-200/60 dark:border-cyan-900/70 dark:from-cyan-950/40 dark:via-teal-950/40 dark:to-emerald-950/40 dark:ring-cyan-900/30 dark:hover:border-cyan-600 dark:hover:shadow-black/40 sm:col-span-2"
-              >
-                <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-cyan-300/60 via-teal-300/40 to-emerald-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-cyan-500/15 dark:via-teal-500/10 dark:to-emerald-500/15" />
-                <div className="absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-gradient-to-tr from-emerald-300/40 via-teal-200/40 to-cyan-200/30 blur-3xl dark:from-emerald-500/15 dark:via-teal-500/10 dark:to-cyan-500/10" />
-                <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
-
-                <div className="relative flex items-start gap-5">
-                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 via-teal-500 to-emerald-600 shadow-lg shadow-cyan-300/40 ring-2 ring-white/60 dark:shadow-cyan-900/40 dark:ring-cyan-300/20">
-                    <span className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-base shadow ring-1 ring-cyan-200 dark:bg-slate-800 dark:ring-cyan-700">
-                      🏞️
-                    </span>
-                    <div className="flex flex-col items-center leading-none text-white">
-                      <span className="text-[9px] font-bold uppercase tracking-widest opacity-90">All</span>
-                      <span className="text-2xl font-black tracking-tight drop-shadow-sm">50+</span>
-                      <span className="text-[8px] font-semibold uppercase tracking-wider opacity-80">Rivers</span>
-                    </div>
-                  </div>
-
-                  <div className="min-w-0 flex-1">
-                    <div className="mb-1.5 flex flex-wrap items-center gap-2">
-                      <h3 className="text-xl font-bold bg-gradient-to-r from-cyan-700 via-teal-700 to-emerald-700 bg-clip-text text-transparent dark:from-cyan-300 dark:via-teal-300 dark:to-emerald-300 sm:text-2xl">
-                        Rivers of Maharashtra
-                      </h3>
-                      <span className="relative inline-flex items-center gap-1 rounded-full bg-cyan-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
-                        <span className="relative flex h-2 w-2">
-                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
-                          <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
-                        </span>
-                        New
-                      </span>
-                      <span className="inline-flex items-center gap-1 rounded-full border border-teal-300/80 bg-teal-100/80 px-2 py-0.5 text-[10px] font-semibold text-teal-800 dark:border-teal-700 dark:bg-teal-900/40 dark:text-teal-200">
-                        🗺️ District-wise 2D map
-                      </span>
-                    </div>
-                    <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-teal-700 dark:text-teal-300">Every major river plotted with names</strong> on
-                      a district-aware 2D map — Godavari, Krishna, Tapi and 14 Konkan rivers
-                      with their tributaries, colour-coded by basin. Click any river for
-                      origin, length, mouth &amp; districts.
-                    </p>
-
-                    <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
-                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
-                        🟣 Godavari
-                      </span>
-                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
-                        🟢 Krishna
-                      </span>
-                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
-                        🟠 Tapi
-                      </span>
-                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
-                        🔵 Konkan
-                      </span>
-                    </div>
-
-                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-cyan-600 to-teal-500 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-cyan-300/40 transition-all group-hover:shadow-lg group-hover:shadow-cyan-400/50 dark:shadow-cyan-900/40">
-                      Open the rivers map
-                      <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
               {/* GK 2025-26 — last 6 months current affairs */}
               <button
                 onClick={() => {
@@ -615,6 +546,79 @@ export default function HomeClient() {
                   </div>
                 </div>
               </button>
+
+              {/* Rivers of Maharashtra — district-wise 2D map + 100-Q quiz (placed last per user request) */}
+              <a
+                href="/rivers-maharashtra"
+                className="group relative overflow-hidden rounded-3xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50 via-teal-50 to-emerald-50 p-7 text-left shadow-sm ring-1 ring-cyan-100/50 transition-all hover:-translate-y-1 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-200/60 dark:border-cyan-900/70 dark:from-cyan-950/40 dark:via-teal-950/40 dark:to-emerald-950/40 dark:ring-cyan-900/30 dark:hover:border-cyan-600 dark:hover:shadow-black/40 sm:col-span-2"
+              >
+                <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-cyan-300/60 via-teal-300/40 to-emerald-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-cyan-500/15 dark:via-teal-500/10 dark:to-emerald-500/15" />
+                <div className="absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-gradient-to-tr from-emerald-300/40 via-teal-200/40 to-cyan-200/30 blur-3xl dark:from-emerald-500/15 dark:via-teal-500/10 dark:to-cyan-500/10" />
+                <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
+
+                <div className="relative flex items-start gap-5">
+                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 via-teal-500 to-emerald-600 shadow-lg shadow-cyan-300/40 ring-2 ring-white/60 dark:shadow-cyan-900/40 dark:ring-cyan-300/20">
+                    <span className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-base shadow ring-1 ring-cyan-200 dark:bg-slate-800 dark:ring-cyan-700">
+                      🏞️
+                    </span>
+                    <div className="flex flex-col items-center leading-none text-white">
+                      <span className="text-[9px] font-bold uppercase tracking-widest opacity-90">All</span>
+                      <span className="text-2xl font-black tracking-tight drop-shadow-sm">50+</span>
+                      <span className="text-[8px] font-semibold uppercase tracking-wider opacity-80">Rivers</span>
+                    </div>
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1.5 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-cyan-700 via-teal-700 to-emerald-700 bg-clip-text text-transparent dark:from-cyan-300 dark:via-teal-300 dark:to-emerald-300 sm:text-2xl">
+                        Rivers of Maharashtra
+                      </h3>
+                      <span className="relative inline-flex items-center gap-1 rounded-full bg-cyan-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                        <span className="relative flex h-2 w-2">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                        </span>
+                        New
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-full border border-teal-300/80 bg-teal-100/80 px-2 py-0.5 text-[10px] font-semibold text-teal-800 dark:border-teal-700 dark:bg-teal-900/40 dark:text-teal-200">
+                        🗺️ District-wise 2D map
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-full border border-emerald-300/80 bg-emerald-100/80 px-2 py-0.5 text-[10px] font-semibold text-emerald-800 dark:border-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200">
+                        🎯 100 MCQs
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                      <strong className="font-semibold text-teal-700 dark:text-teal-300">Every major river plotted with names</strong> on
+                      a clean district-aware 2D map — Godavari, Krishna, Tapi &amp;
+                      14 Konkan rivers, basin-colour-coded. Plus a{" "}
+                      <strong>100-question quiz</strong> on which river is a tributary
+                      of which (origins &amp; confluences too).
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
+                        🟣 Godavari
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
+                        🟢 Krishna
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
+                        🟠 Tapi
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-cyan-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-cyan-900/40">
+                        🔵 Konkan
+                      </span>
+                    </div>
+
+                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-cyan-600 to-teal-500 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-cyan-300/40 transition-all group-hover:shadow-lg group-hover:shadow-cyan-400/50 dark:shadow-cyan-900/40">
+                      Open map &amp; take the quiz
+                      <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
 
             <p className="text-xs text-slate-400 dark:text-slate-600 text-center max-w-md">

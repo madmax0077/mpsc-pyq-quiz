@@ -91,7 +91,7 @@ export default function RiversMaharashtraPage() {
               <span aria-hidden>🏞️</span> Rivers of Maharashtra
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              District-wise 2D map · Godavari · Krishna · Tapi · Konkan · 50+ rivers with name labels
+              District-wise 2D map · 50+ rivers · 100-question tributary quiz
             </p>
           </div>
           <Link
