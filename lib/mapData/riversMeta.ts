@@ -126,6 +126,14 @@ export const RIVER_META: Record<string, RiverMeta> = {
     districts: ["Bhandara", "Gondia", "Chandrapur", "Gadchiroli"],
     note: "Most important river of east Vidarbha. Gosikhurd / Indira Sagar Dam is on Wainganga.",
   },
+  pranhita: {
+    basin: "Godavari",
+    lengthKm: 113,
+    origin: "Confluence of Wardha + Wainganga at Seoni-Sironcha (Gadchiroli)",
+    mouth: "Joins Godavari at Kaleshwaram (MH–Telangana border)",
+    districts: ["Gadchiroli"],
+    note: "Carries the combined discharge of the Wardha & Wainganga systems into the Godavari — largest tributary of the Godavari by volume.",
+  },
   painganga: {
     basin: "Godavari",
     lengthKm: 676,

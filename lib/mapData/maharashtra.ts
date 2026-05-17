@@ -123,6 +123,22 @@ export const RIVERS: RiverFeature[] = [
       [79.30, 19.96],
     ],
   },
+  /* Pranhita: formed by the Wardha-Wainganga confluence at Seoni-Sironcha
+   * (Gadchiroli), flows ~113 km south on the Maharashtra–Telangana border
+   * and joins the Godavari at Kaleshwaram. The detailed OSM geometry in
+   * /public/maharashtra-rivers-paths.json overrides this coarse fallback. */
+  {
+    id: "pranhita",
+    name: "Pranhita",
+    parent: "godavari",
+    path: [
+      [79.82, 19.58], // Wardha-Wainganga confluence (Seoni-Sironcha)
+      [79.85, 19.40],
+      [79.93, 19.20],
+      [79.92, 19.00],
+      [79.91, 18.83], // joins Godavari at Kaleshwaram
+    ],
+  },
   {
     id: "painganga",
     name: "Painganga",
