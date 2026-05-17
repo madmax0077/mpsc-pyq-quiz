@@ -31,7 +31,7 @@ import {
 } from "@/lib/mapData/riversMeta";
 
 /* ──────────────────────────────────────────────────────────────────── */
-/*  Districts JSON shape                                                */
+/*  Districts + detailed-rivers JSON shapes                             */
 /* ──────────────────────────────────────────────────────────────────── */
 
 type LonLat = [number, number];
@@ -44,6 +44,17 @@ interface DistrictsFile {
     polygons: LonLat[][]; // outer rings only
   }>;
 }
+
+/**
+ * Detailed river paths sourced from OpenStreetMap (Overpass API).
+ *
+ *   { riverId: [ segment, segment, … ] }
+ *
+ * Each segment is an array of [lng, lat] pairs. Multiple segments mean
+ * the river is rendered as several disconnected SVG sub-paths joined by
+ * `M …` in a single `<path d>`.
+ */
+type RiverPathsFile = Record<string, LonLat[][]>;
 
 /* ──────────────────────────────────────────────────────────────────── */
 /*  Geometry helpers                                                    */
@@ -84,32 +95,38 @@ function ringToPath(
   return d + "Z";
 }
 
-function pathOfRiver(
-  river: EnrichedRiver,
+function pathOfSegments(
+  segments: LonLat[][],
   project: (lng: number, lat: number) => [number, number],
 ): string {
   let d = "";
-  for (let i = 0; i < river.path.length; i++) {
-    const [x, y] = project(river.path[i][0], river.path[i][1]);
-    d += (i === 0 ? "M" : "L") + x.toFixed(4) + " " + y.toFixed(4) + " ";
+  for (const seg of segments) {
+    if (seg.length === 0) continue;
+    for (let i = 0; i < seg.length; i++) {
+      const [x, y] = project(seg[i][0], seg[i][1]);
+      d += (i === 0 ? "M" : "L") + x.toFixed(3) + " " + y.toFixed(3) + " ";
+    }
   }
   return d.trimEnd();
 }
 
-function riverMidpoint(
-  river: EnrichedRiver,
+/** Pick the visually-best label anchor: midpoint of the longest segment. */
+function labelAnchor(
+  segments: LonLat[][],
   project: (lng: number, lat: number) => [number, number],
 ): [number, number] {
-  const p = river.path;
-  if (p.length === 0) return [0, 0];
-  if (p.length === 1) return project(p[0][0], p[0][1]);
-  if (p.length === 2) {
-    const a = project(p[0][0], p[0][1]);
-    const b = project(p[1][0], p[1][1]);
+  if (segments.length === 0) return [0, 0];
+  let longest = segments[0];
+  for (const s of segments) if (s.length > longest.length) longest = s;
+  if (longest.length === 0) return [0, 0];
+  if (longest.length === 1) return project(longest[0][0], longest[0][1]);
+  if (longest.length === 2) {
+    const a = project(longest[0][0], longest[0][1]);
+    const b = project(longest[1][0], longest[1][1]);
     return [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
   }
-  const idx = Math.floor(p.length / 2);
-  return project(p[idx][0], p[idx][1]);
+  const idx = Math.floor(longest.length / 2);
+  return project(longest[idx][0], longest[idx][1]);
 }
 
 /* ──────────────────────────────────────────────────────────────────── */
@@ -121,23 +138,50 @@ const PAD = 18;
 
 export default function MaharashtraRiversMap2D() {
   const [data, setData] = useState<DistrictsFile | null>(null);
+  const [detailedPaths, setDetailedPaths] = useState<RiverPathsFile | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  /* Load the districts JSON once. */
+  /* Load districts + detailed river paths in parallel. */
   useEffect(() => {
     let cancelled = false;
-    fetch("/maharashtra-districts-simple.json")
-      .then((r) => {
+    Promise.all([
+      fetch("/maharashtra-districts-simple.json").then((r) => {
         if (!r.ok) throw new Error(`Failed to load districts: ${r.status}`);
-        return r.json();
+        return r.json() as Promise<DistrictsFile>;
+      }),
+      // Detailed paths are best-effort: if the fetch fails or returns 404,
+      // we fall back to the coarse hand-curated polylines.
+      fetch("/maharashtra-rivers-paths.json")
+        .then((r) => (r.ok ? (r.json() as Promise<RiverPathsFile>) : null))
+        .catch(() => null),
+    ])
+      .then(([d, rp]) => {
+        if (cancelled) return;
+        setData(d);
+        if (rp) setDetailedPaths(rp);
       })
-      .then((d: DistrictsFile) => { if (!cancelled) setData(d); })
       .catch((e: Error) => { if (!cancelled) setError(e.message || String(e)); });
     return () => { cancelled = true; };
   }, []);
 
-  const enriched = useMemo(() => getEnrichedRivers(), []);
+  const enrichedRaw = useMemo(() => getEnrichedRivers(), []);
   const grouped = useMemo(() => groupRiversByBasin(), []);
+
+  /**
+   * Merge the coarse RIVERS data with the detailed OSM paths. Every
+   * river has a `segments` array of [lng,lat] polyline segments.
+   */
+  type RiverShape = EnrichedRiver & { segments: LonLat[][]; isDetailed: boolean };
+  const enriched: RiverShape[] = useMemo(() => {
+    return enrichedRaw.map((r) => {
+      const det = detailedPaths?.[r.id];
+      if (det && det.length > 0) {
+        return { ...r, segments: det, isDetailed: true };
+      }
+      // Fallback: wrap the coarse single polyline as one segment.
+      return { ...r, segments: [r.path], isDetailed: false };
+    });
+  }, [enrichedRaw, detailedPaths]);
 
   /* Projection + initial viewBox derived from the districts bounds. */
   const projection = useMemo(() => {
@@ -265,10 +309,12 @@ export default function MaharashtraRiversMap2D() {
   useEffect(() => {
     if (!selectedRiver || !baseViewBox) return;
     let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-    for (const [lng, lat] of selectedRiver.path) {
-      const [x, y] = projectScaled(lng, lat);
-      if (x < minX) minX = x; if (x > maxX) maxX = x;
-      if (y < minY) minY = y; if (y > maxY) maxY = y;
+    for (const seg of selectedRiver.segments) {
+      for (const [lng, lat] of seg) {
+        const [x, y] = projectScaled(lng, lat);
+        if (x < minX) minX = x; if (x > maxX) maxX = x;
+        if (y < minY) minY = y; if (y > maxY) maxY = y;
+      }
     }
     if (!isFinite(minX)) return;
     const pad = 80;
@@ -309,16 +355,14 @@ export default function MaharashtraRiversMap2D() {
 
   const riverShapes = useMemo(() => {
     if (!projection || !baseViewBox) return [];
+    const projectToSvg = (lng: number, lat: number): [number, number] => {
+      const [u, v] = projection.project(lng, lat);
+      return [u * baseViewBox.scale, v * baseViewBox.scale];
+    };
     return enriched.map((r) => ({
       r,
-      d: pathOfRiver(r, (lng, lat) => {
-        const [u, v] = projection.project(lng, lat);
-        return [u * baseViewBox.scale, v * baseViewBox.scale];
-      }),
-      label: riverMidpoint(r, (lng, lat) => {
-        const [u, v] = projection.project(lng, lat);
-        return [u * baseViewBox.scale, v * baseViewBox.scale];
-      }),
+      d: pathOfSegments(r.segments, projectToSvg),
+      label: labelAnchor(r.segments, projectToSvg),
     }));
   }, [enriched, projection, baseViewBox]);
 
