@@ -72,6 +72,13 @@ export default function Home() {
               <span className="block text-xs text-sky-700">All 35 districts — memorize in 4 modes</span>
             </a>
             <a
+              href="/rivers-maharashtra"
+              className="rounded-lg border border-cyan-200 bg-gradient-to-r from-cyan-50 to-teal-50 px-3 py-2 text-sm hover:border-cyan-400 hover:from-cyan-100 hover:to-teal-100"
+            >
+              <span className="block font-semibold text-teal-800">🏞️ Rivers of Maharashtra</span>
+              <span className="block text-xs text-teal-700">50+ rivers · district-wise 2D map with names</span>
+            </a>
+            <a
               href="/?mode=leaderboard"
               className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
             >
@@ -226,6 +233,10 @@ export default function Home() {
             <p className="mt-6 text-sm">
               <a href="/map" className="font-semibold text-indigo-600 underline underline-offset-2 hover:text-indigo-700">
                 Open the interactive Maharashtra map &rarr;
+              </a>
+              <span className="mx-2 text-slate-300">|</span>
+              <a href="/rivers-maharashtra" className="font-semibold text-teal-700 underline underline-offset-2 hover:text-teal-800">
+                Rivers-only district-wise map &rarr;
               </a>
             </p>
           </div>
