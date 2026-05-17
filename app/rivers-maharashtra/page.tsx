@@ -3,12 +3,15 @@ import Link from "next/link";
 import RiversPageClient from "./RiversPageClient";
 
 export const metadata: Metadata = {
-  title: "Rivers of Maharashtra — Interactive District-wise 2D Map (Godavari, Krishna, Tapi, Konkan)",
+  title: "Rivers of Maharashtra — District-wise 2D Map + MPSC PYQ Quiz",
   description:
-    "Every major river of Maharashtra plotted on an interactive 2D district-wise map with names visible on the path. Godavari basin (Godavari, Pravara, Manjira, Purna, Wardha, Wainganga, Painganga, Pranhita, Kanhan, Pench), Krishna basin (Krishna, Koyna, Bhima, Indrayani, Mula-Mutha, Pavna, Nira, Sina, Panchganga, Warna, Dudhganga), Tapi basin (Tapi, Purna, Girna, Panzhra) and west-flowing Konkan rivers (Damanganga, Vaitarna, Ulhas, Patalganga, Amba, Kundalika, Savitri, Vashishti, Shastri, Kajli, Gad, Karli, Terekhol). Built for MPSC, UPSC and state PSC geography preparation.",
+    "Every major river of Maharashtra plotted on a district-wise 2D map with names visible on the path — Godavari, Krishna, Tapi and Konkan basins. Below the map is a curated MPSC Previous-Year Question (PYQ) quiz on rivers, drawn from Civil Services, Group B, Group C, PSI, STI, Sub-Ord. Group B, Asst. and Excise papers (2010 – 2025). Each question is tagged with the exact exam and year it appeared in.",
   keywords: [
     "Maharashtra rivers map",
     "rivers of Maharashtra district wise",
+    "MPSC rivers PYQ",
+    "MPSC Previous Year Questions rivers",
+    "MPSC geography rivers",
     "Godavari basin Maharashtra",
     "Krishna basin Maharashtra",
     "Tapi basin Maharashtra",
@@ -16,16 +19,15 @@ export const metadata: Metadata = {
     "Bhima tributaries",
     "Wainganga Wardha Pranhita",
     "Panchganga Kolhapur",
-    "MPSC geography rivers",
     "UPSC Maharashtra rivers",
     "Maharashtra drainage system",
   ],
   alternates: { canonical: "/rivers-maharashtra" },
   openGraph: {
     type: "article",
-    title: "Rivers of Maharashtra — Interactive District-wise Map",
+    title: "Rivers of Maharashtra — District-wise Map + MPSC PYQ Quiz",
     description:
-      "Every major river and tributary in Maharashtra plotted with names on a district-aware 2D map. Filter by basin, click any river for origin, length, mouth and districts.",
+      "Every major river of Maharashtra plotted with names on a district-aware 2D map, plus an MPSC Previous-Year Questions quiz on rivers drawn from real exam papers (2010 – 2025).",
     url: "https://www.mpscs.in/rivers-maharashtra",
     images: ["/og-image.svg"],
   },
@@ -91,7 +93,7 @@ export default function RiversMaharashtraPage() {
               <span aria-hidden>🏞️</span> Rivers of Maharashtra
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              District-wise 2D map · 50+ rivers · 100-question tributary quiz
+              District-wise 2D map · 50+ rivers · MPSC PYQ quiz (2010–2025)
             </p>
           </div>
           <Link
@@ -148,14 +150,16 @@ export default function RiversMaharashtraPage() {
 
         {/* About / SEO context */}
         <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">About this map</h2>
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">About this map &amp; the PYQ quiz</h2>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
             A district-aware 2D map of Maharashtra showing every major river and its
             tributaries with <strong>names visible directly on the path</strong>. Rivers are
             colour-coded by drainage <em>basin</em>: purple for the Godavari system, teal for
             the Krishna system, amber for the Tapi system, and sky-blue for the west-flowing
-            Konkan rivers. Tap any river on the map (or any item in the sidebar) for its
-            origin, mouth, length, the districts it traverses and an MPSC-grade one-liner.
+            Konkan rivers. Drag the map to pan, scroll the wheel (or use the +/− buttons)
+            to zoom. Below the map is the <strong>MPSC PYQ Rivers Quiz</strong> — every
+            question is taken from a real MPSC paper between 2010 and 2025, with the exam
+            and year tagged on every question.
           </p>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
             <strong>Godavari basin (purple).</strong> The Godavari rises at Brahmagiri,

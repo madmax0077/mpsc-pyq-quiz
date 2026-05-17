@@ -25,7 +25,7 @@ const RiverTributaryQuiz = dynamic(() => import("@/components/RiverTributaryQuiz
   ssr: false,
   loading: () => (
     <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8 text-center text-sm text-slate-500 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400">
-      Preparing the 100-question quiz…
+      Preparing the MPSC PYQ quiz…
     </div>
   ),
 });
@@ -33,26 +33,26 @@ const RiverTributaryQuiz = dynamic(() => import("@/components/RiverTributaryQuiz
 export default function RiversPageClient() {
   return (
     <>
-      <div className="h-[78vh] min-h-[560px] w-full">
+      <div className="w-full">
         <MaharashtraRiversMap2D />
       </div>
 
-      {/* 100-question tributary quiz */}
+      {/* MPSC PYQ quiz on Maharashtra rivers */}
       <section className="mt-8 sm:mt-10">
         <div className="mb-4 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h2 className="flex items-center gap-2 text-xl font-bold text-slate-900 dark:text-slate-50 sm:text-2xl">
-              <span aria-hidden>🎯</span> Rivers of Maharashtra — 100-Question Quiz
+              <span aria-hidden>🎯</span> MPSC Rivers PYQ — Previous Year Questions
             </h2>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-              100 MPSC-grade MCQs on{" "}
-              <strong>which river is a tributary of which</strong>, plus origins
-              &amp; confluences. Tracks your score live, shows feedback after
-              every answer.
+              Every question below is a <strong>real Previous-Year Question</strong>{" "}
+              from an MPSC paper (Civil Services, Group B, Group C, PSI, STI,
+              Sub-Ord. Group B, Asst., Excise · 2010 – 2025). Each one is tagged
+              with the exact exam &amp; year it came from.
             </p>
           </div>
           <span className="inline-flex items-center gap-1 rounded-full bg-teal-100 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-teal-700 dark:bg-teal-900/40 dark:text-teal-300">
-            🏆 100 questions
+            📜 MPSC PYQs
           </span>
         </div>
         <RiverTributaryQuiz />

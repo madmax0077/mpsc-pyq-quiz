@@ -1,271 +1,64 @@
 "use client";
 
 /**
- * RiverTributaryQuiz — 100-question MCQ quiz about which river is a
- * tributary of which.
+ * RiverTributaryQuiz — MPSC PYQ quiz on Maharashtra rivers.
  *
- * Questions are generated deterministically (seeded RNG) from
- * lib/mapData/maharashtra.ts (parent links) + lib/mapData/riversMeta.ts
- * (origin / mouth metadata), then trimmed to exactly 100. The mix is:
- *   - "X is a tributary of which river?"
- *   - "Which of these IS a tributary of Y?"
- *   - "Which of these is NOT a tributary of Y?"
- *   - "Where does X originate?"
- *   - "Where does X meet its main river?"
- *
- * The quiz lives entirely inside this component — its own progress,
- * score and per-question feedback are kept in local state.
+ * Every question is a real Previous-Year Question from an MPSC paper
+ * (2010 – 2025), hand-curated from /public/*.json. Each one carries an
+ * exam tag like "MPSC PSI Pre 2010" so candidates can see exactly where
+ * the question came from.
  */
 
 import { useMemo, useState, useCallback } from "react";
-import { RIVERS } from "@/lib/mapData/maharashtra";
-import { RIVER_META, BASIN_COLOR, BASIN_LABEL, type Basin } from "@/lib/mapData/riversMeta";
+import { RIVER_PYQS, type RiverPyq } from "@/lib/mapData/riverPyqs";
 
-interface Question {
-  id: string;
-  type: "tributaryOf" | "isTributaryOf" | "notTributaryOf" | "origin" | "mouth";
-  prompt: string;
-  options: string[];
-  answerIndex: number;
-  explanation?: string;
-}
-
-/* — Tiny seeded RNG (Mulberry32) so the quiz order is deterministic. */
-function mulberry32(seed: number) {
-  let a = seed >>> 0;
-  return function () {
-    a = (a + 0x6D2B79F5) >>> 0;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-function shuffle<T>(arr: T[], rng: () => number): T[] {
-  const a = arr.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(rng() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-/* — Build the full question bank. */
-function buildQuestions(): Question[] {
-  const rng = mulberry32(20260517); // fixed seed → stable order
-  const out: Question[] = [];
-
-  // Map: river id → display name
-  const nameOf: Record<string, string> = {};
-  for (const r of RIVERS) nameOf[r.id] = r.name;
-
-  // Parent map: from RIVERS' explicit parent field …
-  const parentOf: Record<string, string> = {};
-  for (const r of RIVERS) if (r.parent) parentOf[r.id] = r.parent;
-
-  // … plus a few conceptual additions that aren't in RIVERS as
-  // explicit parents but are universally taught as tributaries:
-  const conceptualParents: Array<[string, string, string]> = [
-    // [tribId, parentId, displayName for the parent in MCQ]
-    ["bhima", "krishna", "Krishna"],
-    ["wainganga", "wardha", "Wardha"], // Wainganga + Wardha → Pranhita → Godavari
-    ["painganga", "wardha", "Wardha"], // Painganga joins Wardha at Wadhona
-    ["kanhan", "wainganga", "Wainganga"], // already there as parent, double-safe
-  ];
-  for (const [trib, par] of conceptualParents) {
-    if (!parentOf[trib]) parentOf[trib] = par;
-  }
-
-  // Inverse: parent → tributary list
-  const tribsOf: Record<string, string[]> = {};
-  for (const [trib, par] of Object.entries(parentOf)) {
-    (tribsOf[par] ||= []).push(trib);
-  }
-
-  // All "main" river ids worth using as wrong-answer distractors
-  // (every river that is itself a known main — i.e. someone's parent
-  // OR has no parent of its own AND is in RIVER_META).
-  const mainIds = new Set<string>();
-  for (const par of Object.keys(tribsOf)) mainIds.add(par);
-  for (const r of RIVERS) {
-    if (!r.parent && RIVER_META[r.id]) mainIds.add(r.id);
-  }
-  // Friendly names for the main rivers (may differ slightly from data id)
-  const mainList = Array.from(mainIds);
-
-  /* — Helper: pick N distractors from `pool` excluding `exclude` */
-  const pickDistractors = (pool: string[], excludeSet: Set<string>, n: number): string[] => {
-    const cand = shuffle(pool.filter((p) => !excludeSet.has(p)), rng);
-    return cand.slice(0, n);
-  };
-
-  /* ─── Type A: "X is a tributary of which river?" ─── */
-  const aTribs = shuffle(Object.keys(parentOf), rng);
-  for (const trib of aTribs) {
-    const par = parentOf[trib];
-    if (!par || !nameOf[trib]) continue;
-    const parName = nameOf[par] || par;
-    const distractors = pickDistractors(mainList, new Set([par, trib]), 3).map((id) => nameOf[id] || id);
-    const options = shuffle([parName, ...distractors], rng);
-    const answerIndex = options.indexOf(parName);
-    if (answerIndex < 0) continue;
-    out.push({
-      id: `A-${trib}`,
-      type: "tributaryOf",
-      prompt: `The ${nameOf[trib]} river is a tributary of which river?`,
-      options,
-      answerIndex,
-      explanation: RIVER_META[trib]?.mouth
-        ? `${nameOf[trib]} joins the ${parName} — ${RIVER_META[trib]?.mouth}.`
-        : `${nameOf[trib]} is a tributary of the ${parName}.`,
-    });
-  }
-
-  /* ─── Type B: "Which of these IS a tributary of Y?" ─── */
-  const bParents = shuffle(Object.keys(tribsOf).filter((p) => tribsOf[p].length >= 2), rng);
-  for (const par of bParents) {
-    const tribs = shuffle(tribsOf[par], rng);
-    const parName = nameOf[par] || par;
-    // Produce up to 2 questions per parent for variety
-    const wanted = Math.min(2, tribs.length);
-    for (let i = 0; i < wanted; i++) {
-      const correct = tribs[i];
-      // Distractors: rivers that are NOT tributaries of par
-      const allOtherRiverIds = RIVERS.filter((r) => !tribsOf[par].includes(r.id) && r.id !== par && r.id !== correct).map((r) => r.id);
-      const wrongs = pickDistractors(allOtherRiverIds, new Set(), 3).map((id) => nameOf[id] || id);
-      if (wrongs.length < 3) continue;
-      const correctName = nameOf[correct] || correct;
-      const options = shuffle([correctName, ...wrongs], rng);
-      const answerIndex = options.indexOf(correctName);
-      out.push({
-        id: `B-${par}-${i}`,
-        type: "isTributaryOf",
-        prompt: `Which of the following is a tributary of the ${parName}?`,
-        options,
-        answerIndex,
-        explanation: `${correctName} is a tributary of the ${parName}.`,
-      });
-    }
-  }
-
-  /* ─── Type C: "Which of these is NOT a tributary of Y?" ─── */
-  const cParents = shuffle(Object.keys(tribsOf).filter((p) => tribsOf[p].length >= 3), rng);
-  for (const par of cParents) {
-    const parName = nameOf[par] || par;
-    const tribs = shuffle(tribsOf[par], rng);
-    // Pick 3 real tributaries + 1 NON-tributary as the answer
-    const correctTribs = tribs.slice(0, 3).map((id) => nameOf[id] || id);
-    const nonTribPool = RIVERS.filter((r) => !tribsOf[par].includes(r.id) && r.id !== par).map((r) => r.id);
-    const wrong = pickDistractors(nonTribPool, new Set(), 1)[0];
-    if (!wrong) continue;
-    const wrongName = nameOf[wrong] || wrong;
-    const options = shuffle([...correctTribs, wrongName], rng);
-    const answerIndex = options.indexOf(wrongName);
-    out.push({
-      id: `C-${par}`,
-      type: "notTributaryOf",
-      prompt: `Which of the following is NOT a tributary of the ${parName}?`,
-      options,
-      answerIndex,
-      explanation: `${wrongName} is not a tributary of the ${parName}. The other three are.`,
-    });
-  }
-
-  /* ─── Type D: "Where does X originate?" ─── */
-  const originRivers = shuffle(
-    RIVERS.filter((r) => RIVER_META[r.id]?.origin),
-    rng,
-  );
-  for (const r of originRivers) {
-    const correct = RIVER_META[r.id]!.origin!;
-    const otherOrigins = Array.from(
-      new Set(
-        RIVERS
-          .filter((x) => x.id !== r.id && RIVER_META[x.id]?.origin && RIVER_META[x.id]!.origin !== correct)
-          .map((x) => RIVER_META[x.id]!.origin!),
-      ),
-    );
-    if (otherOrigins.length < 3) continue;
-    const wrongs = shuffle(otherOrigins, rng).slice(0, 3);
-    const options = shuffle([correct, ...wrongs], rng);
-    const answerIndex = options.indexOf(correct);
-    out.push({
-      id: `D-${r.id}`,
-      type: "origin",
-      prompt: `Where does the ${r.name} river originate?`,
-      options,
-      answerIndex,
-      explanation: `${r.name} originates at ${correct}.`,
-    });
-  }
-
-  /* ─── Type E: "Where does X meet its main river?" ─── */
-  const mouthRivers = shuffle(
-    RIVERS.filter((r) => r.parent && RIVER_META[r.id]?.mouth),
-    rng,
-  );
-  for (const r of mouthRivers) {
-    const correct = RIVER_META[r.id]!.mouth!;
-    const otherMouths = Array.from(
-      new Set(
-        RIVERS
-          .filter((x) => x.id !== r.id && RIVER_META[x.id]?.mouth && RIVER_META[x.id]!.mouth !== correct)
-          .map((x) => RIVER_META[x.id]!.mouth!),
-      ),
-    );
-    if (otherMouths.length < 3) continue;
-    const wrongs = shuffle(otherMouths, rng).slice(0, 3);
-    const options = shuffle([correct, ...wrongs], rng);
-    const answerIndex = options.indexOf(correct);
-    out.push({
-      id: `E-${r.id}`,
-      type: "mouth",
-      prompt: `Where does the ${r.name} meet its main river?`,
-      options,
-      answerIndex,
-      explanation: `${r.name}: ${correct}`,
-    });
-  }
-
-  // Deterministic final shuffle, then take exactly 100 questions.
-  const final = shuffle(out, rng).slice(0, 100);
-  return final;
-}
-
-/* ──────────────────────────────────────────────────────────────────── */
-/*  UI                                                                  */
-/* ──────────────────────────────────────────────────────────────────── */
-
-function basinForRiver(name: string): Basin | null {
-  const r = RIVERS.find((x) => x.name === name);
-  if (!r) return null;
-  return RIVER_META[r.id]?.basin ?? null;
-}
+type Letter = "A" | "B" | "C" | "D";
 
 interface SavedAnswer {
   questionId: string;
-  pickedIndex: number;
+  picked: Letter;
   correct: boolean;
 }
 
+const LETTERS: Letter[] = ["A", "B", "C", "D"];
+
+/* Small colour scheme for the exam-year chips: keeps them visually
+ * distinct without overwhelming the question itself. */
+function chipColor(year: number): string {
+  const palette = [
+    "bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-200",
+    "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-200",
+    "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200",
+    "bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-200",
+    "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200",
+    "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200",
+  ];
+  return palette[year % palette.length];
+}
+
 export default function RiverTributaryQuiz() {
-  const questions = useMemo(() => buildQuestions(), []);
+  /* The PYQs are sorted by year ascending then by exam — so a learner
+   * naturally progresses from oldest to newest. */
+  const questions = useMemo<RiverPyq[]>(() => {
+    return RIVER_PYQS.slice().sort((a, b) =>
+      a.year !== b.year ? a.year - b.year : a.exam.localeCompare(b.exam),
+    );
+  }, []);
+
   const [idx, setIdx] = useState(0);
-  const [picked, setPicked] = useState<number | null>(null);
+  const [picked, setPicked] = useState<Letter | null>(null);
   const [answers, setAnswers] = useState<SavedAnswer[]>([]);
   const [done, setDone] = useState(false);
 
   const q = questions[idx];
-
   const score = useMemo(() => answers.filter((a) => a.correct).length, [answers]);
 
   const submit = useCallback(() => {
-    if (picked === null || !q) return;
-    const correct = picked === q.answerIndex;
+    if (!picked || !q) return;
+    const correct = picked === q.answer;
     setAnswers((prev) => {
       const next = prev.filter((a) => a.questionId !== q.id);
-      next.push({ questionId: q.id, pickedIndex: picked, correct });
+      next.push({ questionId: q.id, picked, correct });
       return next;
     });
   }, [picked, q]);
@@ -325,19 +118,22 @@ export default function RiverTributaryQuiz() {
                     {ok ? "✓" : "✗"}
                   </span>
                   <div className="min-w-0">
-                    <p className="font-semibold text-slate-800 dark:text-slate-100">Q{i + 1}. {qq.prompt}</p>
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${chipColor(qq.year)}`}>{qq.exam}</span>
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{qq.topic}</span>
+                    </div>
+                    <p className="mt-1 whitespace-pre-line font-semibold text-slate-800 dark:text-slate-100">
+                      Q{i + 1}. {qq.text}
+                    </p>
                     <p className="mt-1 text-slate-600 dark:text-slate-300">
-                      <span className="font-semibold text-emerald-700 dark:text-emerald-300">Correct:</span> {qq.options[qq.answerIndex]}
+                      <span className="font-semibold text-emerald-700 dark:text-emerald-300">Correct:</span> {qq.answer}. {qq.options[qq.answer]}
                       {!ok && a && (
                         <>
                           <span className="mx-1 text-slate-300">·</span>
-                          <span className="font-semibold text-rose-700 dark:text-rose-300">You:</span> {qq.options[a.pickedIndex]}
+                          <span className="font-semibold text-rose-700 dark:text-rose-300">You:</span> {a.picked}. {qq.options[a.picked]}
                         </>
                       )}
                     </p>
-                    {qq.explanation && (
-                      <p className="mt-0.5 text-[11px] italic text-slate-500 dark:text-slate-400">{qq.explanation}</p>
-                    )}
                   </div>
                 </li>
               );
@@ -357,24 +153,19 @@ export default function RiverTributaryQuiz() {
     );
   }
 
-  const correctName = q.options[q.answerIndex];
-  const correctBasin = basinForRiver(correctName);
-  const accent = correctBasin ? BASIN_COLOR[correctBasin] : "#0d9488";
+  /* ───── Question screen ───── */
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800 sm:p-7">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-full bg-teal-100 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-teal-700 dark:bg-teal-900/40 dark:text-teal-300">
             Q {idx + 1} / {questions.length}
           </span>
+          <span className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${chipColor(q.year)}`}>{q.exam}</span>
           <span className="hidden text-[11px] font-medium text-slate-500 dark:text-slate-400 sm:inline">
-            {q.type === "tributaryOf" && "Tributary → Main"}
-            {q.type === "isTributaryOf" && "Pick a tributary"}
-            {q.type === "notTributaryOf" && "Spot the non-tributary"}
-            {q.type === "origin" && "River origin"}
-            {q.type === "mouth" && "Confluence point"}
+            {q.topic}
           </span>
         </div>
         <div className="flex items-center gap-2 text-xs font-semibold">
@@ -390,21 +181,21 @@ export default function RiverTributaryQuiz() {
       {/* Progress bar */}
       <div className="mb-5 h-1.5 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700">
         <div
-          className="h-full rounded-full transition-all"
-          style={{ width: `${((idx + (submitted ? 1 : 0)) / questions.length) * 100}%`, background: accent }}
+          className="h-full rounded-full bg-gradient-to-r from-teal-500 to-cyan-500 transition-all"
+          style={{ width: `${((idx + (submitted ? 1 : 0)) / questions.length) * 100}%` }}
         />
       </div>
 
       {/* Question */}
-      <h3 className="text-base font-semibold leading-relaxed text-slate-900 dark:text-slate-50 sm:text-lg">
-        {q.prompt}
+      <h3 className="whitespace-pre-line text-base font-semibold leading-relaxed text-slate-900 dark:text-slate-50 sm:text-lg">
+        {q.text}
       </h3>
 
       {/* Options */}
       <div className="mt-4 grid gap-2.5">
-        {q.options.map((opt, i) => {
-          const isCorrect = i === q.answerIndex;
-          const isPicked = picked === i;
+        {LETTERS.map((L) => {
+          const isCorrect = L === q.answer;
+          const isPicked = picked === L;
           let cls = "border-slate-200 bg-white text-slate-800 hover:border-teal-300 hover:bg-teal-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:hover:border-teal-700 dark:hover:bg-teal-900/30";
           if (submitted) {
             if (isCorrect) cls = "border-emerald-400 bg-emerald-50 text-emerald-900 dark:border-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-100";
@@ -415,17 +206,17 @@ export default function RiverTributaryQuiz() {
           }
           return (
             <button
-              key={opt + i}
-              onClick={() => !submitted && setPicked(i)}
+              key={L}
+              onClick={() => !submitted && setPicked(L)}
               disabled={submitted}
-              className={`group flex items-center gap-3 rounded-xl border px-4 py-3 text-left text-sm font-medium transition-all ${cls}`}
+              className={`group flex items-start gap-3 rounded-xl border px-4 py-3 text-left text-sm font-medium transition-all ${cls}`}
             >
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-current text-xs font-bold">
-                {String.fromCharCode(65 + i)}
+              <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-current text-xs font-bold">
+                {L}
               </span>
-              <span className="flex-1">{opt}</span>
-              {submitted && isCorrect && <span className="text-emerald-600 dark:text-emerald-300">✓</span>}
-              {submitted && isPicked && !isCorrect && <span className="text-rose-600 dark:text-rose-300">✗</span>}
+              <span className="flex-1 whitespace-pre-line">{q.options[L]}</span>
+              {submitted && isCorrect && <span className="mt-1 text-emerald-600 dark:text-emerald-300">✓</span>}
+              {submitted && isPicked && !isCorrect && <span className="mt-1 text-rose-600 dark:text-rose-300">✗</span>}
             </button>
           );
         })}
@@ -436,13 +227,12 @@ export default function RiverTributaryQuiz() {
         <div className="min-h-[28px] text-sm">
           {showCorrect && (
             <p className="font-semibold text-emerald-700 dark:text-emerald-300">
-              ✓ Correct!{q.explanation ? ` ${q.explanation}` : ""}
+              ✓ Correct! Answer: <span className="underline">{q.answer}. {q.options[q.answer]}</span>
             </p>
           )}
           {showWrong && (
             <p className="font-semibold text-rose-700 dark:text-rose-300">
-              ✗ Not quite. Answer: <span className="underline">{q.options[q.answerIndex]}</span>
-              {q.explanation ? `. ${q.explanation}` : ""}
+              ✗ Not quite. Correct: <span className="underline">{q.answer}. {q.options[q.answer]}</span>
             </p>
           )}
         </div>
@@ -465,14 +255,6 @@ export default function RiverTributaryQuiz() {
           )}
         </div>
       </div>
-
-      {/* Tiny legend (basin colour of correct answer) */}
-      {correctBasin && submitted && (
-        <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-slate-50 px-2.5 py-0.5 text-[10px] font-semibold text-slate-600 dark:bg-slate-900/40 dark:text-slate-300">
-          <span className="inline-block h-2 w-2 rounded-full" style={{ background: accent }} />
-          {BASIN_LABEL[correctBasin]}
-        </div>
-      )}
     </div>
   );
 }

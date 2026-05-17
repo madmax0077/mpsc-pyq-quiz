@@ -547,7 +547,7 @@ export default function HomeClient() {
                 </div>
               </button>
 
-              {/* Rivers of Maharashtra — district-wise 2D map + 100-Q quiz (placed last per user request) */}
+              {/* Rivers of Maharashtra — district-wise 2D map + MPSC PYQ quiz (placed last per user request) */}
               <a
                 href="/rivers-maharashtra"
                 className="group relative overflow-hidden rounded-3xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50 via-teal-50 to-emerald-50 p-7 text-left shadow-sm ring-1 ring-cyan-100/50 transition-all hover:-translate-y-1 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-200/60 dark:border-cyan-900/70 dark:from-cyan-950/40 dark:via-teal-950/40 dark:to-emerald-950/40 dark:ring-cyan-900/30 dark:hover:border-cyan-600 dark:hover:shadow-black/40 sm:col-span-2"
@@ -584,15 +584,15 @@ export default function HomeClient() {
                         🗺️ District-wise 2D map
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-full border border-emerald-300/80 bg-emerald-100/80 px-2 py-0.5 text-[10px] font-semibold text-emerald-800 dark:border-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200">
-                        🎯 100 MCQs
+                        📜 MPSC PYQs
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
                       <strong className="font-semibold text-teal-700 dark:text-teal-300">Every major river plotted with names</strong> on
                       a clean district-aware 2D map — Godavari, Krishna, Tapi &amp;
-                      14 Konkan rivers, basin-colour-coded. Plus a{" "}
-                      <strong>100-question quiz</strong> on which river is a tributary
-                      of which (origins &amp; confluences too).
+                      14 Konkan rivers, basin-colour-coded. Plus a curated{" "}
+                      <strong>MPSC Previous-Year Questions quiz</strong> on
+                      Maharashtra rivers from 2010 – 2025 papers, tagged by exam &amp; year.
                     </p>
 
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
