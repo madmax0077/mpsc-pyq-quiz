@@ -117,7 +117,7 @@ export default function LoginPage() {
           )}
         </div>
 
-        <AdBanner slot="1234567890" format="horizontal" className="mt-6" />
+        <AdBanner slot="2180278102" format="horizontal" className="mt-6" />
 
         <p className="mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
           Secure access &middot; Your data stays in your browser

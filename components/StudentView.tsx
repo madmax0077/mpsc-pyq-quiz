@@ -911,7 +911,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
               </div>
             )}
 
-            <AdBanner slot="2345678901" format="horizontal" />
+            <AdBanner slot="2180278102" format="horizontal" />
 
             {/* Regular Quizzes */}
             {regularQuizzes.length > 0 && (
@@ -1390,7 +1390,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 )}
               </div>
             </div>
-            {showAdAfter && <AdBanner slot="4567890123" format="horizontal" className="my-2" />}
+            {showAdAfter && <AdBanner slot="2180278102" format="horizontal" className="my-2" />}
             </div>
           );
         })}
@@ -1478,7 +1478,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
             </div>
           ) : (
             <div className="space-y-4">
-              <AdBanner slot="3456789012" format="horizontal" />
+              <AdBanner slot="2180278102" format="horizontal" />
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 <button
                   onClick={() => {
@@ -1521,7 +1521,7 @@ export default function StudentView({ language = "english", challenge, homeKey =
             </div>
           ) : (
             <div className="space-y-4">
-              <AdBanner slot="3456789012" format="horizontal" />
+              <AdBanner slot="2180278102" format="horizontal" />
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 {currentPage < totalPages - 1 && (
                   <button
