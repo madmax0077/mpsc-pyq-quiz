@@ -6,6 +6,9 @@ import type { Category, Language } from "@/lib/types";
 import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
+import AdBanner from "@/components/AdBanner";
+
+const AD_SLOT = "2180278102";
 
 type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes";
 
@@ -311,6 +314,9 @@ export default function HomeClient() {
               </div>
             </section>
 
+            {/* Ad — below hero, above tiles */}
+            <AdBanner slot={AD_SLOT} format="horizontal" className="w-full max-w-3xl" />
+
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
               <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
 
@@ -455,6 +461,11 @@ export default function HomeClient() {
                   </div>
                 </div>
               </button>
+
+              {/* Ad — between featured tiles and subject/topic tiles */}
+              <div className="sm:col-span-2">
+                <AdBanner slot={AD_SLOT} format="horizontal" />
+              </div>
 
               {/* Subject Wise */}
               <button
@@ -621,6 +632,9 @@ export default function HomeClient() {
               </a>
             </div>
 
+            {/* Ad — below all tiles */}
+            <AdBanner slot={AD_SLOT} format="horizontal" className="w-full max-w-3xl" />
+
             <p className="text-xs text-slate-400 dark:text-slate-600 text-center max-w-md">
               💡 Click the logo at any time to return to this screen
             </p>
@@ -651,6 +665,11 @@ export default function HomeClient() {
           <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} guestUser={guestIdentity} directTopic={pendingDirectTopic} />
         )}
       </main>
+
+      {/* Ad — above footer */}
+      <div className="mx-auto max-w-4xl px-4 pb-4 sm:px-6">
+        <AdBanner slot={AD_SLOT} format="horizontal" />
+      </div>
 
       {/* ---- Footer ---- */}
       <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">
