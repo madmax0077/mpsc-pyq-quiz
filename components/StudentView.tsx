@@ -911,8 +911,6 @@ export default function StudentView({ language = "english", challenge, homeKey =
               </div>
             )}
 
-            <AdBanner slot="2180278102" format="horizontal" />
-
             {/* Regular Quizzes */}
             {regularQuizzes.length > 0 && (
               <div>
@@ -1203,7 +1201,6 @@ export default function StudentView({ language = "english", challenge, homeKey =
       <div className="space-y-4">
         {pageQuestions.map((q, localIdx) => {
           const globalIdx = currentPage * perPage + localIdx;
-          const showAdAfter = (localIdx + 1) % 5 === 0 && localIdx < pageQuestions.length - 1;
           const userAnswer = answers[q.id];
           const qSubmitted = isCategoryQuiz ? isPageSubmitted : submitted;
           const qCancelled = isQuestionCancelled(q);
@@ -1390,7 +1387,6 @@ export default function StudentView({ language = "english", challenge, homeKey =
                 )}
               </div>
             </div>
-            {showAdAfter && <AdBanner slot="2180278102" format="horizontal" className="my-2" />}
             </div>
           );
         })}

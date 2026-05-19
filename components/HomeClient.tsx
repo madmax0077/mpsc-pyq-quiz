@@ -314,9 +314,6 @@ export default function HomeClient() {
               </div>
             </section>
 
-            {/* Ad — below hero, above tiles */}
-            <AdBanner slot={AD_SLOT} format="horizontal" className="w-full max-w-3xl" />
-
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
               <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
 
@@ -461,11 +458,6 @@ export default function HomeClient() {
                   </div>
                 </div>
               </button>
-
-              {/* Ad — between featured tiles and subject/topic tiles */}
-              <div className="sm:col-span-2">
-                <AdBanner slot={AD_SLOT} format="horizontal" />
-              </div>
 
               {/* Subject Wise */}
               <button
@@ -631,9 +623,6 @@ export default function HomeClient() {
                 </div>
               </a>
             </div>
-
-            {/* Ad — below all tiles */}
-            <AdBanner slot={AD_SLOT} format="horizontal" className="w-full max-w-3xl" />
 
             <p className="text-xs text-slate-400 dark:text-slate-600 text-center max-w-md">
               💡 Click the logo at any time to return to this screen

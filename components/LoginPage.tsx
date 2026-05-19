@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { signInWithGoogle, signInWithApple } from "@/lib/firebase";
-import AdBanner from "./AdBanner";
 
 export default function LoginPage() {
   const [googleError, setGoogleError] = useState("");
@@ -116,8 +115,6 @@ export default function LoginPage() {
             <p className="mt-3 text-center text-sm text-red-500">{googleError}</p>
           )}
         </div>
-
-        <AdBanner slot="2180278102" format="horizontal" className="mt-6" />
 
         <p className="mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
           Secure access &middot; Your data stays in your browser
