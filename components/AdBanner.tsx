@@ -3,44 +3,59 @@
 import { useEffect, useRef } from "react";
 
 interface AdBannerProps {
-  slot: string;
+  /** Real AdSense slot ID from your account (AdSense → Ads → By ad unit).
+   *  Leave empty to rely on Google Auto Ads (enabled via AdSense dashboard). */
+  slot?: string;
   format?: "auto" | "rectangle" | "horizontal" | "vertical";
   className?: string;
 }
 
 const PUBLISHER_ID = "ca-pub-5084738834329206";
 
+/** Placeholder slot IDs that must NOT be sent to AdSense — they cause silent
+ *  failures and can interfere with Auto Ads page scanning. */
+const FAKE_SLOTS = new Set([
+  "1234567890",
+  "2345678901",
+  "3456789012",
+  "4567890123",
+  "0000000000",
+  "9999999999",
+]);
+
+function isValidSlot(slot?: string): boolean {
+  if (!slot) return false;
+  if (FAKE_SLOTS.has(slot)) return false;
+  // AdSense slot IDs are 10-digit numbers
+  return /^\d{10}$/.test(slot);
+}
+
 export default function AdBanner({
   slot,
   format = "auto",
   className = "",
 }: AdBannerProps) {
-  const adRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
 
   useEffect(() => {
+    if (!isValidSlot(slot)) return;
     if (pushed.current) return;
     try {
       const w = window as unknown as { adsbygoogle?: unknown[] };
-      if (w.adsbygoogle) {
-        w.adsbygoogle.push({});
-        pushed.current = true;
-      }
+      (w.adsbygoogle = w.adsbygoogle || []).push({});
+      pushed.current = true;
     } catch {
-      // AdSense not loaded yet or blocked by ad-blocker
+      // AdSense not loaded or blocked by ad-blocker
     }
-  }, []);
+  }, [slot]);
 
-  if (PUBLISHER_ID.includes("XXXXXXXXXX")) {
-    return (
-      <div className={`flex items-center justify-center rounded-lg border border-dashed border-slate-200 bg-slate-50 px-4 py-3 ${className}`}>
-        <p className="text-xs text-slate-400">Ad space — will appear after AdSense approval</p>
-      </div>
-    );
-  }
+  // ── No valid slot: render nothing so Google Auto Ads can scan the page
+  //    without hitting broken <ins> elements.
+  //    Enable Auto Ads at: AdSense → Ads → By site → toggle On → Save
+  if (!isValidSlot(slot)) return null;
 
   return (
-    <div ref={adRef} className={`overflow-hidden ${className}`}>
+    <div className={`overflow-hidden ${className}`}>
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
