@@ -85763,5 +85763,750 @@
     "language": "english",
     "topicOnly": true,
     "tag": "GK 2025-26 Marathon"
+  },
+  {
+    "id": "topic-current-affairs-india-defence-exercises",
+    "title": "India Defence Exercises with Other Countries — 49 MCQs",
+    "createdAt": "2026-05-23T10:30:00+00:00",
+    "questions": [
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q1",
+        "text": "Exercise 'Yudh Abhyas' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "China",
+          "B": "UAE",
+          "C": "USA",
+          "D": "Myanmar"
+        },
+        "correctAnswer": "C",
+        "explanation": "Yudh Abhyas is an annual joint army exercise between India and the United States, held alternately in the two countries since 2004.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q2",
+        "text": "Exercise 'Garuda Shakti' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Indonesia",
+          "B": "Thailand",
+          "C": "Kazakhstan",
+          "D": "South Africa"
+        },
+        "correctAnswer": "A",
+        "explanation": "Garuda Shakti is a special-forces joint exercise between the Indian Army and the Indonesian Army (Kopassus).",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q3",
+        "text": "Exercise 'Mitra Shakti' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Russia",
+          "B": "France",
+          "C": "Sri Lanka",
+          "D": "Bhutan"
+        },
+        "correctAnswer": "C",
+        "explanation": "Mitra Shakti is a bilateral army exercise between India and Sri Lanka focused on counter-insurgency and counter-terrorism.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q4",
+        "text": "Exercise 'Hand-in-Hand' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "China",
+          "B": "Canada",
+          "C": "Vietnam",
+          "D": "Indonesia"
+        },
+        "correctAnswer": "A",
+        "explanation": "Hand-in-Hand is a joint army exercise between India and China focused on counter-terrorism in semi-urban terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q5",
+        "text": "Exercise 'Nomadic Elephant' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Oman",
+          "B": "Russia",
+          "C": "Mongolia",
+          "D": "Vietnam"
+        },
+        "correctAnswer": "C",
+        "explanation": "Nomadic Elephant is an annual joint army exercise between India and Mongolia focused on counter-insurgency operations under UN mandate.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q6",
+        "text": "Exercise 'Surya Kiran' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Russia",
+          "B": "Nepal",
+          "C": "Thailand",
+          "D": "Sri Lanka"
+        },
+        "correctAnswer": "B",
+        "explanation": "Surya Kiran is a battalion-level joint exercise between the Indian Army and the Nepalese Army, conducted alternately in the two countries.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q7",
+        "text": "Exercise 'Shakti' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Iran",
+          "B": "France",
+          "C": "Oman",
+          "D": "Indonesia"
+        },
+        "correctAnswer": "B",
+        "explanation": "Exercise Shakti is a biennial joint army exercise between India and France focused on counter-terrorism in mountainous terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q8",
+        "text": "Exercise 'Indra' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Russia",
+          "B": "Kyrgyzstan",
+          "C": "Uzbekistan",
+          "D": "Saudi Arabia"
+        },
+        "correctAnswer": "A",
+        "explanation": "INDRA is a tri-service joint exercise (Army, Navy and Air Force) between India and Russia, held since 2003.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q9",
+        "text": "Exercise 'Varuna' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "France",
+          "B": "Brazil",
+          "C": "Australia",
+          "D": "Canada"
+        },
+        "correctAnswer": "A",
+        "explanation": "Varuna is a bilateral naval exercise between the Indian Navy and the French Navy, held annually since 2001.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q10",
+        "text": "Exercise 'Malabar' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Oman",
+          "B": "USA",
+          "C": "Malaysia",
+          "D": "South Korea"
+        },
+        "correctAnswer": "B",
+        "explanation": "Malabar began as a bilateral India–USA naval exercise in 1992; it is now a Quad exercise also including Japan and Australia.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q11",
+        "text": "Exercise 'SIMBEX' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Singapore",
+          "B": "UAE",
+          "C": "Oman",
+          "D": "Kazakhstan"
+        },
+        "correctAnswer": "A",
+        "explanation": "SIMBEX (Singapore India Maritime Bilateral Exercise) is an annual naval exercise between India and Singapore, the longest-running such exercise for the Indian Navy.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q12",
+        "text": "Exercise 'SLINEX' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Israel",
+          "B": "Sri Lanka",
+          "C": "Mongolia",
+          "D": "Uzbekistan"
+        },
+        "correctAnswer": "B",
+        "explanation": "SLINEX (Sri Lanka India Naval Exercise) is a biennial naval exercise between India and Sri Lanka.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q13",
+        "text": "Exercise 'JIMEX' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Oman",
+          "B": "Japan",
+          "C": "Uzbekistan",
+          "D": "Sri Lanka"
+        },
+        "correctAnswer": "B",
+        "explanation": "JIMEX (Japan India Maritime Exercise) is a bilateral naval exercise between India and Japan, held since 2012.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q14",
+        "text": "Exercise 'Konkan' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Saudi Arabia",
+          "B": "Israel",
+          "C": "UK",
+          "D": "Oman"
+        },
+        "correctAnswer": "C",
+        "explanation": "Konkan is an annual bilateral naval exercise between the Indian Navy and the British Royal Navy, held since 2004.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q15",
+        "text": "Exercise 'AUSINDEX' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Australia",
+          "B": "Japan",
+          "C": "UAE",
+          "D": "Kazakhstan"
+        },
+        "correctAnswer": "A",
+        "explanation": "AUSINDEX is a biennial bilateral maritime exercise between India and Australia, initiated in 2015.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q16",
+        "text": "Exercise 'IBSAMAR' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Singapore",
+          "B": "Indonesia",
+          "C": "Brazil and South Africa",
+          "D": "Seychelles"
+        },
+        "correctAnswer": "C",
+        "explanation": "IBSAMAR is a trilateral naval exercise between India, Brazil and South Africa under the IBSA Dialogue Forum.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q17",
+        "text": "Exercise 'CORPAT' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Thailand",
+          "B": "France",
+          "C": "Kyrgyzstan",
+          "D": "Germany"
+        },
+        "correctAnswer": "A",
+        "explanation": "India–Thailand CORPAT (Coordinated Patrol) is a biannual coordinated patrol along the maritime boundary in the Andaman Sea.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q18",
+        "text": "Exercise 'Bongosagar' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "UK",
+          "B": "Bangladesh",
+          "C": "Brazil",
+          "D": "Seychelles"
+        },
+        "correctAnswer": "B",
+        "explanation": "Bongosagar is a bilateral naval exercise between India and Bangladesh held in the Bay of Bengal, first conducted in 2019.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q19",
+        "text": "Exercise 'Sampriti' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "UAE",
+          "B": "Malaysia",
+          "C": "Egypt",
+          "D": "Bangladesh"
+        },
+        "correctAnswer": "D",
+        "explanation": "Sampriti is a biennial joint army exercise between India and Bangladesh, held alternately in the two countries.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q20",
+        "text": "Exercise 'Dharma Guardian' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Uzbekistan",
+          "B": "Bangladesh",
+          "C": "Seychelles",
+          "D": "Japan"
+        },
+        "correctAnswer": "D",
+        "explanation": "Dharma Guardian is an annual joint army exercise between India and Japan focused on counter-terrorism in jungle/semi-urban terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q21",
+        "text": "Exercise 'Tiger Triumph' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Mongolia",
+          "B": "Israel",
+          "C": "USA",
+          "D": "Seychelles"
+        },
+        "correctAnswer": "C",
+        "explanation": "Tiger Triumph is the first-ever tri-service joint humanitarian assistance and disaster relief (HADR) exercise between India and the United States.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q22",
+        "text": "Exercise 'Ekuverin' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Egypt",
+          "B": "Maldives",
+          "C": "Mongolia",
+          "D": "Malaysia"
+        },
+        "correctAnswer": "B",
+        "explanation": "Ekuverin (meaning 'friends') is a bilateral army exercise between India and the Maldives, held annually since 2009.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q23",
+        "text": "Exercise 'Al Nagah' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "South Africa",
+          "B": "Uzbekistan",
+          "C": "Russia",
+          "D": "Oman"
+        },
+        "correctAnswer": "D",
+        "explanation": "Al Nagah is a bilateral army exercise between India and Oman focused on counter-terrorism in mountainous terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q24",
+        "text": "Exercise 'Desert Eagle' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Bangladesh",
+          "B": "Indonesia",
+          "C": "Japan",
+          "D": "UAE"
+        },
+        "correctAnswer": "D",
+        "explanation": "Desert Eagle is a bilateral air-force exercise between the Indian Air Force and the UAE Air Force.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q25",
+        "text": "Exercise 'Bold Kurukshetra' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Egypt",
+          "B": "Singapore",
+          "C": "Australia",
+          "D": "Nepal"
+        },
+        "correctAnswer": "B",
+        "explanation": "Bold Kurukshetra is a bilateral armoured-corps exercise between the Indian Army and the Singapore Army.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q26",
+        "text": "Exercise 'VINBAX' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Saudi Arabia",
+          "B": "Seychelles",
+          "C": "Vietnam",
+          "D": "Iran"
+        },
+        "correctAnswer": "C",
+        "explanation": "VINBAX is a bilateral army exercise between India and Vietnam, focused on UN peacekeeping operations.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q27",
+        "text": "Exercise 'KAZIND' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Nepal",
+          "B": "Australia",
+          "C": "Kazakhstan",
+          "D": "Brazil"
+        },
+        "correctAnswer": "C",
+        "explanation": "KAZIND is a biennial joint army exercise between India and Kazakhstan focused on counter-terrorism under UN mandate.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q28",
+        "text": "Exercise 'Khanjar' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "South Korea",
+          "B": "Kyrgyzstan",
+          "C": "Vietnam",
+          "D": "Egypt"
+        },
+        "correctAnswer": "B",
+        "explanation": "Khanjar is a special-forces joint exercise between the Indian Army and the Kyrgyz Scorpion special forces.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q29",
+        "text": "Exercise 'Maitree' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Egypt",
+          "B": "Thailand",
+          "C": "Myanmar",
+          "D": "France"
+        },
+        "correctAnswer": "B",
+        "explanation": "Maitree is a bilateral army exercise between India and Thailand focused on counter-terrorism in jungle terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q30",
+        "text": "Exercise 'Prabal Dostyk' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Myanmar",
+          "B": "Mongolia",
+          "C": "Canada",
+          "D": "Kazakhstan"
+        },
+        "correctAnswer": "D",
+        "explanation": "Prabal Dostyk is a joint army exercise between India and Kazakhstan, the precursor to the present KAZIND series.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q31",
+        "text": "Exercise 'Ajeya Warrior' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Bhutan",
+          "B": "Singapore",
+          "C": "Seychelles",
+          "D": "UK"
+        },
+        "correctAnswer": "D",
+        "explanation": "Ajeya Warrior is a biennial joint army exercise between India and the United Kingdom focused on counter-terrorism in semi-urban terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q32",
+        "text": "Exercise 'Lamitye' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Bhutan",
+          "B": "USA",
+          "C": "Seychelles",
+          "D": "UK"
+        },
+        "correctAnswer": "C",
+        "explanation": "Lamitye (meaning 'friendship' in Creole) is a biennial joint army exercise between India and the Seychelles.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q33",
+        "text": "Exercise 'Naseem Al Bahr' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Bhutan",
+          "B": "Japan",
+          "C": "Brazil",
+          "D": "Oman"
+        },
+        "correctAnswer": "D",
+        "explanation": "Naseem Al Bahr ('Sea Breeze') is a bilateral naval exercise between India and Oman held since 1993.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q34",
+        "text": "Exercise 'SITMEX' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "USA",
+          "B": "Maldives",
+          "C": "Singapore and Thailand",
+          "D": "Brazil"
+        },
+        "correctAnswer": "C",
+        "explanation": "SITMEX is a trilateral naval exercise between India, Singapore and Thailand, initiated in 2019.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q35",
+        "text": "Exercise 'Cope India' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "UAE",
+          "B": "Germany",
+          "C": "Canada",
+          "D": "USA"
+        },
+        "correctAnswer": "D",
+        "explanation": "Cope India is a bilateral air-force exercise between the Indian Air Force and the US Air Force.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q36",
+        "text": "Exercise 'Eastern Bridge' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "USA",
+          "B": "Australia",
+          "C": "Nepal",
+          "D": "Oman"
+        },
+        "correctAnswer": "D",
+        "explanation": "Eastern Bridge is a bilateral air-force exercise between the Indian Air Force and the Royal Air Force of Oman.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q37",
+        "text": "Exercise 'Blue Flag' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Australia",
+          "B": "Bangladesh",
+          "C": "Israel",
+          "D": "Oman"
+        },
+        "correctAnswer": "C",
+        "explanation": "Blue Flag is a multinational air-combat exercise hosted by Israel, in which the Indian Air Force participates.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q38",
+        "text": "Exercise 'Sea Dragon' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Russia",
+          "B": "Iran",
+          "C": "China",
+          "D": "USA"
+        },
+        "correctAnswer": "D",
+        "explanation": "Sea Dragon is a US-led multinational anti-submarine warfare exercise in which the Indian Navy participates.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q39",
+        "text": "Exercise 'Pitch Black' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Australia",
+          "B": "Kyrgyzstan",
+          "C": "Oman",
+          "D": "South Africa"
+        },
+        "correctAnswer": "A",
+        "explanation": "Pitch Black is a biennial multinational air-combat exercise hosted by the Royal Australian Air Force; India participates with its IAF contingent.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q40",
+        "text": "Exercise 'RIMPAC' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Australia",
+          "B": "UK",
+          "C": "USA",
+          "D": "Japan"
+        },
+        "correctAnswer": "C",
+        "explanation": "RIMPAC (Rim of the Pacific) is the world's largest international maritime exercise, hosted biennially by the United States Pacific Fleet at Hawaii.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q41",
+        "text": "Exercise 'Cutlass Express' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Malaysia",
+          "B": "Israel",
+          "C": "Singapore",
+          "D": "East African nations"
+        },
+        "correctAnswer": "D",
+        "explanation": "Cutlass Express is a US-led multinational maritime exercise in the Western Indian Ocean involving East African nations; India participates as an observer/partner.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q42",
+        "text": "Exercise 'IMCOR' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Vietnam",
+          "B": "Myanmar",
+          "C": "Brazil",
+          "D": "Kyrgyzstan"
+        },
+        "correctAnswer": "B",
+        "explanation": "IMCOR (India–Myanmar Coordinated Patrol) is a biannual coordinated maritime patrol along the India–Myanmar maritime boundary in the Andaman Sea.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q43",
+        "text": "Exercise 'Harimau Shakti' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "UAE",
+          "B": "Sri Lanka",
+          "C": "Thailand",
+          "D": "Malaysia"
+        },
+        "correctAnswer": "D",
+        "explanation": "Harimau Shakti is a bilateral army exercise between India and Malaysia focused on counter-insurgency in jungle terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q44",
+        "text": "Exercise 'Desert Flag' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "UAE",
+          "B": "Germany",
+          "C": "Nepal",
+          "D": "Seychelles"
+        },
+        "correctAnswer": "A",
+        "explanation": "Desert Flag is a multinational air-combat exercise hosted by the UAE Air Force; the Indian Air Force participates.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q45",
+        "text": "Exercise 'Cyclone' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Egypt",
+          "B": "Saudi Arabia",
+          "C": "Sri Lanka",
+          "D": "Bangladesh"
+        },
+        "correctAnswer": "A",
+        "explanation": "Exercise Cyclone is a bilateral special-forces exercise between India and Egypt focused on counter-terrorism in desert terrain.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q46",
+        "text": "Exercise 'Dustlik' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Iran",
+          "B": "UK",
+          "C": "France",
+          "D": "Uzbekistan"
+        },
+        "correctAnswer": "D",
+        "explanation": "Dustlik (meaning 'friendship') is an annual joint army exercise between India and Uzbekistan focused on counter-terrorism.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q47",
+        "text": "Exercise 'Yudha Vijay' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Singapore",
+          "B": "Mongolia",
+          "C": "South Korea",
+          "D": "Indonesia"
+        },
+        "correctAnswer": "D",
+        "explanation": "Yudha Vijay is a bilateral special-forces exercise between the Indian Army and the Indonesian Army.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q48",
+        "text": "Exercise 'Vajra Prahar' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Germany",
+          "B": "Iran",
+          "C": "Bangladesh",
+          "D": "USA"
+        },
+        "correctAnswer": "D",
+        "explanation": "Vajra Prahar is an annual joint special-forces exercise between Indian Army Special Forces and US Army Green Berets.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      },
+      {
+        "id": "topic-current-affairs-india-defence-exercises-q49",
+        "text": "Exercise 'Shinyuu Maitri' is a joint military exercise conducted between India and which country?",
+        "options": {
+          "A": "Bangladesh",
+          "B": "Kazakhstan",
+          "C": "Japan",
+          "D": "Malaysia"
+        },
+        "correctAnswer": "C",
+        "explanation": "Shinyuu Maitri (meaning 'friendship') is a bilateral air-force exercise between the Indian Air Force and the Japan Air Self-Defense Force.",
+        "category": "Current Affairs",
+        "topic": "India Defence Exercises",
+        "sourceTag": "india-defence-exercises"
+      }
+    ],
+    "language": "english",
+    "topicOnly": true,
+    "tag": "India Defence Exercises"
   }
 ]
