@@ -86508,5 +86508,3000 @@
     "language": "english",
     "topicOnly": true,
     "tag": "India Defence Exercises"
+  },
+  {
+    "id": "topic-geography-mh-minerals",
+    "title": "महाराष्ट्र खनिज संपत्ती — मराठी MCQ",
+    "createdAt": "2026-05-24T12:30:00+00:00",
+    "questions": [
+      {
+        "id": "topic-geography-mh-minerals-q1",
+        "text": "महाराष्ट्राच्या एकूण भौगोलिक क्षेत्रापैकी किती टक्के क्षेत्रात खनिजे आढळतात?",
+        "options": {
+          "A": "१२%",
+          "B": "१०%",
+          "C": "१२.३३%",
+          "D": "१५%"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: १२.३३%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q2",
+        "text": "खनिजांच्या दृष्टीने महाराष्ट्रातील सर्वात समृद्ध विभाग कोणता?",
+        "options": {
+          "A": "छत्रपती संभाजीनगर विभाग",
+          "B": "अमरावती विभाग",
+          "C": "पुणे विभाग",
+          "D": "नागपूर विभाग (पूर्व विदर्भ)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: नागपूर विभाग (पूर्व विदर्भ).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q3",
+        "text": "खनिजांच्या दृष्टीने दुसऱ्या क्रमांकाचा समृद्ध विभाग कोणता?",
+        "options": {
+          "A": "कोकण (दक्षिण कोकण)",
+          "B": "परभणी",
+          "C": "सोलापूर",
+          "D": "नाशिक"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: कोकण (दक्षिण कोकण).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q4",
+        "text": "महाराष्ट्र राज्य खनिकर्म महामंडळाची (MSMC) स्थापना कधी झाली?",
+        "options": {
+          "A": "१९७०",
+          "B": "१९५५",
+          "C": "१९७३",
+          "D": "१९८५"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: १९७३.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q5",
+        "text": "महाराष्ट्र राज्य खनिकर्म महामंडळाचे मुख्यालय कुठे आहे?",
+        "options": {
+          "A": "नंदुरबार",
+          "B": "नागपूर",
+          "C": "परभणी",
+          "D": "अकोला"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q6",
+        "text": "इंडियन ब्युरो ऑफ माईन्स (Indian Bureau of Mines) चे मुख्यालय कुठे आहे?",
+        "options": {
+          "A": "नागपूर",
+          "B": "यवतमाळ",
+          "C": "नांदेड",
+          "D": "बुलढाणा"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q7",
+        "text": "जांभा खडक (Laterite Rock) प्रामुख्याने कोणत्या जिल्ह्यात आढळतो?",
+        "options": {
+          "A": "रत्नागिरी, सिंधुदुर्ग, रायगड, कोल्हापूर",
+          "B": "यवतमाळ",
+          "C": "धुळे",
+          "D": "सोलापूर"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: रत्नागिरी, सिंधुदुर्ग, रायगड, कोल्हापूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q8",
+        "text": "धारवाड प्रणालीचे खडक कोणत्या जिल्ह्यात आढळतात?",
+        "options": {
+          "A": "नांदेड",
+          "B": "पुणे",
+          "C": "चंद्रपूर",
+          "D": "भंडारा, गोंदिया, कोल्हापूर"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: भंडारा, गोंदिया, कोल्हापूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q9",
+        "text": "गोंडवाना प्रणालीचे खडक कशासाठी प्रसिद्ध आहेत?",
+        "options": {
+          "A": "दगडी कोळसा साठ्यांसाठी",
+          "B": "कायनाईट",
+          "C": "हिरे",
+          "D": "क्रोमाईट"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: दगडी कोळसा साठ्यांसाठी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q10",
+        "text": "विंध्यन प्रणालीचे खडक कोणत्या जिल्ह्यात आढळतात?",
+        "options": {
+          "A": "तांबे",
+          "B": "अभ्रक",
+          "C": "बॅराईट्स",
+          "D": "चंद्रपूर (चुनखडीसाठी प्रसिद्ध)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: चंद्रपूर (चुनखडीसाठी प्रसिद्ध).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q11",
+        "text": "लोहखनिजाचे सर्वाधिक साठे कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "पालघर",
+          "B": "रत्नागिरी",
+          "C": "अमरावती",
+          "D": "गडचिरोली (एटापल्ली, सुरजागड)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: गडचिरोली (एटापल्ली, सुरजागड).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q12",
+        "text": "देशाच्या एकूण लोहखनिजाच्या साठ्यापैकी महाराष्ट्रात किती टक्के साठे आहेत?",
+        "options": {
+          "A": "५%",
+          "B": "२०%",
+          "C": "१%",
+          "D": "१०%"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: २०%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q13",
+        "text": "लोहखनिजाचे प्रामुख्याने कोणते चार प्रकार पडतात?",
+        "options": {
+          "A": "मॅग्नेटाईट, हेमेटाईट, लिमोनाईट, सिडेराईट",
+          "B": "रत्नागिरी",
+          "C": "सातारा",
+          "D": "सांगली"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: मॅग्नेटाईट, हेमेटाईट, लिमोनाईट, सिडेराईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q14",
+        "text": "महाराष्ट्रात प्रामुख्याने कोणत्या प्रकारचे लोहखनिज आढळते?",
+        "options": {
+          "A": "सिडेराईट",
+          "B": "मॅग्नेटाईट",
+          "C": "हेमेटाईट (Hematite)",
+          "D": "टॅकोनाईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: हेमेटाईट (Hematite).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q15",
+        "text": "सिंधुदुर्ग जिल्ह्यातील कोणते बंदर लोहखनिजाच्या निर्यातीसाठी प्रसिद्ध आहे?",
+        "options": {
+          "A": "न्हावा-शेवा",
+          "B": "जयगड बंदर",
+          "C": "रेड्डी बंदर",
+          "D": "मुंबई बंदर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: रेड्डी बंदर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q16",
+        "text": "रेड्डी बंदरातून लोहखनिज कोणत्या देशाला निर्यात केले जाते?",
+        "options": {
+          "A": "दक्षिण कोरिया",
+          "B": "चीन",
+          "C": "जपान",
+          "D": "जर्मनी"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: जपान.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q17",
+        "text": "गोंदिया जिल्ह्यात लोहखनिजाच्या खाणी कोणत्या तालुक्यात आहेत?",
+        "options": {
+          "A": "गोरेगाव",
+          "B": "बुलढाणा",
+          "C": "वर्धा",
+          "D": "रायगड"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: गोरेगाव.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q18",
+        "text": "चंद्रपूर जिल्ह्यात लोहखनिज कुठे मिळते?",
+        "options": {
+          "A": "लोहारा, असोला, देवलगाव",
+          "B": "पालघर",
+          "C": "जळगाव",
+          "D": "गोंदिया"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: लोहारा, असोला, देवलगाव.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q19",
+        "text": "विदर्भात लोहखनिज कोणत्या खडकात आढळते?",
+        "options": {
+          "A": "हेमेटाईट",
+          "B": "लिमोनाईट",
+          "C": "टॅकोनाईट खडक",
+          "D": "सिडेराईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: टॅकोनाईट खडक.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q20",
+        "text": "कोकणात लोहखनिज कोणत्या खडकात आढळते?",
+        "options": {
+          "A": "कडाप्पा प्रणाली",
+          "B": "जांभा खडक",
+          "C": "टॅकोनाईट खडक",
+          "D": "विंध्यन प्रणाली"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: जांभा खडक.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q21",
+        "text": "मँगनीजचे सर्वाधिक साठे महाराष्ट्रात कुठे आहेत?",
+        "options": {
+          "A": "बीड",
+          "B": "चंद्रपूर",
+          "C": "भंडारा व नागपूर",
+          "D": "बुलढाणा"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: भंडारा व नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q22",
+        "text": "भारतातील एकूण मँगनीज साठ्यांपैकी महाराष्ट्रात किती टक्के साठा आहे?",
+        "options": {
+          "A": "४०%",
+          "B": "१८%",
+          "C": "७%",
+          "D": "२१%"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: ४०%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q23",
+        "text": "आशिया खंडातील सर्वात मोठी मँगनीजची खाण कोणती?",
+        "options": {
+          "A": "नागपूर",
+          "B": "डोंगरी बुद्रुक (जि. भंडारा)",
+          "C": "रायगड",
+          "D": "हिंगोली"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: डोंगरी बुद्रुक (जि. भंडारा).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q24",
+        "text": "मँगनीजचे साठे कोणत्या प्रणालीच्या खडकात आढळतात?",
+        "options": {
+          "A": "रायगड",
+          "B": "धारवाड खडक",
+          "C": "यवतमाळ",
+          "D": "छत्रपती संभाजीनगर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: धारवाड खडक.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q25",
+        "text": "MOIL (Manganese Ore India Limited) चे मुख्यालय कुठे आहे?",
+        "options": {
+          "A": "बीड",
+          "B": "नागपूर",
+          "C": "धुळे",
+          "D": "हिंगोली"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q26",
+        "text": "मँगनीजचा मुख्य उपयोग कोणत्या उद्योगात होतो?",
+        "options": {
+          "A": "खत कारखाने",
+          "B": "लोह-पोलाद उद्योग (Ferro-Manganese)",
+          "C": "वस्त्र उद्योग",
+          "D": "विजेच्या दिव्याची तार बनवण्यासाठी"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: लोह-पोलाद उद्योग (Ferro-Manganese).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q27",
+        "text": "एक टन पोलाद तयार करण्यासाठी साधारण किती मँगनीज लागते?",
+        "options": {
+          "A": "हिंगोली",
+          "B": "चंद्रपूर",
+          "C": "वर्धा",
+          "D": "१० किलो"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: १० किलो.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q28",
+        "text": "तुमसर हे मँगनीज शुद्धीकरणाचे केंद्र कोणत्या जिल्ह्यात आहे?",
+        "options": {
+          "A": "मुंबई",
+          "B": "वर्धा",
+          "C": "भंडारा",
+          "D": "अहमदनगर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: भंडारा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q29",
+        "text": "सावनेर, रामटेक ही मँगनीज क्षेत्रे कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "नागपूर",
+          "B": "रायगड",
+          "C": "बुलढाणा",
+          "D": "लातूर"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q30",
+        "text": "सिंधुदुर्ग जिल्ह्यात मँगनीज कुठे आढळते?",
+        "options": {
+          "A": "फोंडा, कणकवली, सावंतवाडी",
+          "B": "पालघर",
+          "C": "बीड",
+          "D": "बुलढाणा"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: फोंडा, कणकवली, सावंतवाडी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q31",
+        "text": "मँगनीजचा वापर आणखी कोणत्या गोष्टीत होतो?",
+        "options": {
+          "A": "काच रंगवणे, बॅटरी, ब्लीचिंग पावडर",
+          "B": "गडचिरोली",
+          "C": "नांदेड",
+          "D": "अहमदनगर"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: काच रंगवणे, बॅटरी, ब्लीचिंग पावडर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q32",
+        "text": "बॉक्साईटपासून कोणता धातू मिळवला जातो?",
+        "options": {
+          "A": "पालघर",
+          "B": "परभणी",
+          "C": "नाशिक",
+          "D": "ॲल्युमिनियम"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: ॲल्युमिनियम.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q33",
+        "text": "महाराष्ट्रात बॉक्साईटचे सर्वाधिक साठे कुठे आहेत?",
+        "options": {
+          "A": "सातारा",
+          "B": "ठाणे",
+          "C": "परभणी",
+          "D": "कोल्हापूर (शाहूवाडी, राधानगरी)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: कोल्हापूर (शाहूवाडी, राधानगरी).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q34",
+        "text": "देशाच्या एकूण साठ्यापैकी किती टक्के बॉक्साईट महाराष्ट्रात आहे?",
+        "options": {
+          "A": "१५%",
+          "B": "७०%",
+          "C": "८०%",
+          "D": "२१%"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: २१%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q35",
+        "text": "बॉक्साईट प्रामुख्याने कोणत्या खडकात आढळते?",
+        "options": {
+          "A": "धारवाड प्रणाली",
+          "B": "विंध्यन प्रणाली",
+          "C": "बेसाल्ट खडक",
+          "D": "जांभा खडक"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: जांभा खडक.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q36",
+        "text": "दापोली, मंडणगड हे बॉक्साईट क्षेत्र कोणत्या जिल्ह्यात आहे?",
+        "options": {
+          "A": "सोलापूर",
+          "B": "सातारा",
+          "C": "रायगड",
+          "D": "रत्नागिरी"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: रत्नागिरी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q37",
+        "text": "मुरुड-जंजिरा, रोहा हे बॉक्साईट क्षेत्र कुठे आहे?",
+        "options": {
+          "A": "पालघर",
+          "B": "कोल्हापूर",
+          "C": "वाशिम",
+          "D": "रायगड"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: रायगड.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q38",
+        "text": "बॉक्साईटचे साठे प्रामुख्याने कोणत्या प्रशासकीय विभागात आढळतात?",
+        "options": {
+          "A": "नागपूर विभाग",
+          "B": "कोकण विभाग",
+          "C": "अमरावती विभाग",
+          "D": "नाशिक विभाग"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: कोकण विभाग.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q39",
+        "text": "कोल्हापूरच्या बॉक्साईटवर आधारित ॲल्युमिनियम प्रकल्प कुठे आहे?",
+        "options": {
+          "A": "बेळगाव (कर्नाटक)",
+          "B": "बीड",
+          "C": "मुंबई",
+          "D": "चंद्रपूर"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: बेळगाव (कर्नाटक).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q40",
+        "text": "पालघर जिल्ह्यात बॉक्साईट कुठे सापडते?",
+        "options": {
+          "A": "तुंगार टेकड्या",
+          "B": "वाशिम",
+          "C": "अहमदनगर",
+          "D": "नांदेड"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: तुंगार टेकड्या.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q41",
+        "text": "महाराष्ट्रात दगडी कोळशाचे साठे कोणत्या नदीच्या खोऱ्यात आढळतात?",
+        "options": {
+          "A": "वर्धा आणि वैनगंगा खोरे",
+          "B": "गोदावरी खोरे",
+          "C": "वर्धा-वैनगंगा खोरे",
+          "D": "कृष्णा खोरे"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: वर्धा आणि वैनगंगा खोरे.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q42",
+        "text": "महाराष्ट्रात कोळशाचे साठे कोणत्या खडकात आहेत?",
+        "options": {
+          "A": "टॅकोनाईट खडक",
+          "B": "जांभा खडक",
+          "C": "कडाप्पा प्रणाली",
+          "D": "गोंडवाना प्रणाली"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: गोंडवाना प्रणाली.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q43",
+        "text": "कोळशाचा सर्वात उच्च प्रतीचा प्रकार कोणता?",
+        "options": {
+          "A": "बिट्युमिनस",
+          "B": "लिग्नाईट",
+          "C": "अँथ्रासाईट (Anthracite)",
+          "D": "पीट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: अँथ्रासाईट (Anthracite).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q44",
+        "text": "महाराष्ट्रात मिळणारा कोळसा प्रामुख्याने कोणत्या प्रतीचा आहे?",
+        "options": {
+          "A": "पीट",
+          "B": "अँथ्रासाईट",
+          "C": "लिग्नाईट",
+          "D": "बिट्युमिनस (Bituminous)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: बिट्युमिनस (Bituminous).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q45",
+        "text": "'बल्लारपूर' ही भारतातील एक मोठी कोळसा खाण कोणत्या जिल्ह्यात आहे?",
+        "options": {
+          "A": "चंद्रपूर",
+          "B": "वर्धा",
+          "C": "मुंबई",
+          "D": "अमरावती"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: चंद्रपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q46",
+        "text": "'माजरी', 'घुग्गुस' या कोळसा खाणी कुठे आहेत?",
+        "options": {
+          "A": "चंद्रपूर",
+          "B": "यवतमाळ",
+          "C": "धाराशिव",
+          "D": "अकोला"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: चंद्रपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q47",
+        "text": "'कामठी', 'उमरेड' खाणी कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "सोलापूर",
+          "B": "नागपूर",
+          "C": "भंडारा",
+          "D": "परभणी"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q48",
+        "text": "'वणी' हे कोळसा क्षेत्र कोणत्या जिल्ह्यात आहे?",
+        "options": {
+          "A": "बीड",
+          "B": "यवतमाळ",
+          "C": "बुलढाणा",
+          "D": "जालना"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: यवतमाळ.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q49",
+        "text": "दगडी कोळशाचा सर्वाधिक वापर कुठे होतो?",
+        "options": {
+          "A": "साखर उद्योग",
+          "B": "रसायन उद्योग",
+          "C": "काच उद्योग",
+          "D": "औष्णिक वीज केंद्रे (Thermal Power)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: औष्णिक वीज केंद्रे (Thermal Power).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q50",
+        "text": "राज्याच्या एकूण वीजनिर्मितीपैकी किती टक्के वीज कोळशावर आधारित आहे?",
+        "options": {
+          "A": "१५%",
+          "B": "५०%",
+          "C": "सुमारे ७०%",
+          "D": "३०%"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: सुमारे ७०%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q51",
+        "text": "काळे सोने (Black Gold) कशाला म्हटले जाते?",
+        "options": {
+          "A": "तांबे",
+          "B": "दगडी कोळसा",
+          "C": "पायराईट",
+          "D": "कायनाईट"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: दगडी कोळसा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q52",
+        "text": "कोळसा उत्पादनात देशात महाराष्ट्राचा वाटा किती टक्के आहे?",
+        "options": {
+          "A": "४%",
+          "B": "१०%",
+          "C": "१८%",
+          "D": "६०%"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: ४%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q53",
+        "text": "महाराष्ट्रात चुनखडीचे सर्वाधिक साठे कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "रायगड",
+          "B": "सातारा",
+          "C": "यवतमाळ",
+          "D": "छत्रपती संभाजीनगर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: यवतमाळ.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q54",
+        "text": "राज्याच्या एकूण खनिज संपत्तीत चुनखडीचा वाटा किती टक्के आहे?",
+        "options": {
+          "A": "७%",
+          "B": "४%",
+          "C": "१०%",
+          "D": "९%"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: ९%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q55",
+        "text": "चुनखडी प्रामुख्याने कोणत्या खडकात आढळते?",
+        "options": {
+          "A": "विंध्यन प्रणाली",
+          "B": "कडाप्पा प्रणाली",
+          "C": "गोंडवाना प्रणाली",
+          "D": "बेसाल्ट खडक"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: विंध्यन प्रणाली.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q56",
+        "text": "'राजूर' हे चुनखडीसाठी प्रसिद्ध असलेले ठिकाण कोणत्या जिल्ह्यात आहे?",
+        "options": {
+          "A": "यवतमाळ",
+          "B": "चंद्रपूर",
+          "C": "वाशिम",
+          "D": "वर्धा"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: यवतमाळ.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q57",
+        "text": "चुनखडीचा सर्वाधिक वापर कोणत्या उद्योगात होतो?",
+        "options": {
+          "A": "रसायन उद्योग",
+          "B": "सिमेंट उद्योग",
+          "C": "खत कारखाने",
+          "D": "रसायन उद्योग"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: सिमेंट उद्योग.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q58",
+        "text": "'कडल' व 'मारेगाव' (चुनखडी खाणी) कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "अमरावती",
+          "B": "गोंदिया",
+          "C": "ठाणे",
+          "D": "यवतमाळ"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: यवतमाळ.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q59",
+        "text": "डोलोमाईटमध्ये चुनखडीसोबत कोणता मुख्य घटक असतो?",
+        "options": {
+          "A": "नंदुरबार",
+          "B": "मॅग्नेशियम",
+          "C": "मुंबई",
+          "D": "पालघर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: मॅग्नेशियम.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q60",
+        "text": "डोलोमाईटचे साठे प्रामुख्याने कोणत्या दोन जिल्ह्यात आढळतात?",
+        "options": {
+          "A": "सोलापूर",
+          "B": "पुणे",
+          "C": "सांगली",
+          "D": "यवतमाळ आणि रत्नागिरी"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: यवतमाळ आणि रत्नागिरी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q61",
+        "text": "डोलोमाईटचा साठा महाराष्ट्रात किती टक्के आहे?",
+        "options": {
+          "A": "४०%",
+          "B": "१%",
+          "C": "७%",
+          "D": "६०%"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: १%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q62",
+        "text": "डोलोमाईटचा वापर प्रामुख्याने कुठे होतो?",
+        "options": {
+          "A": "काच उद्योग (Glass Industry)",
+          "B": "काच उद्योग",
+          "C": "ॲल्युमिनियम उद्योग",
+          "D": "लोह-पोलाद आणि खत कारखान्यात"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: लोह-पोलाद आणि खत कारखान्यात.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q63",
+        "text": "क्रोमाईट (Chromite) कोणत्या जिल्ह्यात आढळते?",
+        "options": {
+          "A": "अकोला",
+          "B": "छत्रपती संभाजीनगर",
+          "C": "भंडारा, गोंदिया, रत्नागिरी, सिंधुदुर्ग",
+          "D": "कोल्हापूर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: भंडारा, गोंदिया, रत्नागिरी, सिंधुदुर्ग.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q64",
+        "text": "देशातील एकूण क्रोमाईट पैकी किती टक्के साठा महाराष्ट्रात आहे?",
+        "options": {
+          "A": "१८%",
+          "B": "१०%",
+          "C": "१२%",
+          "D": "३५%"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: १०%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q65",
+        "text": "क्रोमाईटचा उपयोग कशासाठी होतो?",
+        "options": {
+          "A": "औष्णिक वीज केंद्रे",
+          "B": "स्टेनलेस स्टील आणि रसायन उद्योग",
+          "C": "खत कारखाने",
+          "D": "जलविद्युत प्रकल्प"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: स्टेनलेस स्टील आणि रसायन उद्योग.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q66",
+        "text": "कायनाईट (Kyanite) कोणत्या जिल्ह्यात आढळते?",
+        "options": {
+          "A": "सातारा",
+          "B": "भंडारा (साकोली) व गोंदिया",
+          "C": "नागपूर",
+          "D": "सोलापूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: भंडारा (साकोली) व गोंदिया.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q67",
+        "text": "देशातील एकूण कायनाईट साठ्यांपैकी महाराष्ट्रात किती साठा आहे?",
+        "options": {
+          "A": "७०%",
+          "B": "२%",
+          "C": "१५%",
+          "D": "२१%"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: १५%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q68",
+        "text": "कायनाईटचा मुख्य उपयोग काय आहे?",
+        "options": {
+          "A": "रसायन उद्योग",
+          "B": "स्टेनलेस स्टील आणि रसायन उद्योग",
+          "C": "लोह-पोलाद उद्योग (Ferro-Manganese)",
+          "D": "उच्च तापमान उद्योग (Refractory/सिरामिक)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: उच्च तापमान उद्योग (Refractory/सिरामिक).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q69",
+        "text": "सिलिका वाळू (Silica Sand) प्रामुख्याने कुठे आढळते?",
+        "options": {
+          "A": "पालघर",
+          "B": "बुलढाणा",
+          "C": "गडचिरोली",
+          "D": "सिंधुदुर्ग (वेंगर्ला, मालवण)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: सिंधुदुर्ग (वेंगर्ला, मालवण).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q70",
+        "text": "सिलिका वाळूचा वापर कोणत्या उद्योगात होतो?",
+        "options": {
+          "A": "काच उद्योग (Glass Industry)",
+          "B": "सिमेंट उद्योग",
+          "C": "ॲल्युमिनियम उद्योग",
+          "D": "साखर उद्योग"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: काच उद्योग (Glass Industry).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q71",
+        "text": "तांबे (Copper) महाराष्ट्रात कुठे आढळते?",
+        "options": {
+          "A": "चंद्रपूर (सिंदेवाही) आणि नागपूर (पुल्लर परसोडी)",
+          "B": "जळगाव",
+          "C": "रायगड",
+          "D": "गडचिरोली"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: चंद्रपूर (सिंदेवाही) आणि नागपूर (पुल्लर परसोडी).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q72",
+        "text": "टंगस्टन (Tungsten) कुठे आढळते?",
+        "options": {
+          "A": "रायगड",
+          "B": "अहमदनगर",
+          "C": "नागपूर (अगरगाव)",
+          "D": "चंद्रपूर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: नागपूर (अगरगाव).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q73",
+        "text": "टंगस्टनचा उपयोग कशात होतो?",
+        "options": {
+          "A": "बुलढाणा",
+          "B": "लातूर",
+          "C": "यवतमाळ",
+          "D": "विजेच्या दिव्याची तार (Filament) बनवण्यासाठी"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: विजेच्या दिव्याची तार (Filament) बनवण्यासाठी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q74",
+        "text": "सिलीमनाईट (Sillimanite) कुठे आढळते?",
+        "options": {
+          "A": "बीड",
+          "B": "गोंदिया, भंडारा",
+          "C": "नागपूर",
+          "D": "हिंगोली"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: गोंदिया, भंडारा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q75",
+        "text": "अभ्रक (Mica) कुठे आढळते?",
+        "options": {
+          "A": "सिंधुदुर्ग (कुडाळ), नागपूर, गडचिरोली",
+          "B": "जालना",
+          "C": "कोल्हापूर",
+          "D": "अकोला"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: सिंधुदुर्ग (कुडाळ), नागपूर, गडचिरोली.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q76",
+        "text": "अभ्रकाचा मुख्य गुणधर्म काय आहे?",
+        "options": {
+          "A": "बुलढाणा",
+          "B": "नंदुरबार",
+          "C": "परभणी",
+          "D": "विद्युत दुर्वाहक (Insulator)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: विद्युत दुर्वाहक (Insulator).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q77",
+        "text": "इल्मेनाईट (Ilmenite) चे साठे कुठे आढळतात?",
+        "options": {
+          "A": "अहमदनगर",
+          "B": "धाराशिव",
+          "C": "रत्नागिरीच्या किनाऱ्यावरील वाळूत",
+          "D": "पालघर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: रत्नागिरीच्या किनाऱ्यावरील वाळूत.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q78",
+        "text": "बेराईट्स (Barytes) कोणत्या जिल्ह्यात आढळते?",
+        "options": {
+          "A": "नाशिक",
+          "B": "सोलापूर",
+          "C": "कोल्हापूर",
+          "D": "नंदुरबार"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: कोल्हापूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q79",
+        "text": "युरेनियमचे साठे महाराष्ट्रात कुठे सापडण्याची शक्यता आहे?",
+        "options": {
+          "A": "सोलापूर",
+          "B": "सांगली",
+          "C": "गोंदिया",
+          "D": "रायगड"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: गोंदिया.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q80",
+        "text": "हिरे (Diamonds) सापडण्याची शक्यता कुठे वर्तवली गेली आहे?",
+        "options": {
+          "A": "सिंधुदुर्ग",
+          "B": "गडचिरोली (वैरागड)",
+          "C": "धाराशिव",
+          "D": "पुणे"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: गडचिरोली (वैरागड).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q81",
+        "text": "प्लॅटिनमचे साठे कुठे आहेत?",
+        "options": {
+          "A": "यवतमाळ",
+          "B": "कोल्हापूर",
+          "C": "हिंगोली",
+          "D": "भंडारा"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: भंडारा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q82",
+        "text": "सोन्याचे साठे कोणत्या नदीच्या खोऱ्यात सापडण्याची शक्यता आहे?",
+        "options": {
+          "A": "वर्धा-वैनगंगा खोरे",
+          "B": "कन्हान नदी",
+          "C": "भिवपूर (नागपूर - वैनगंगा खोरे)",
+          "D": "तापी खोरे"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: भिवपूर (नागपूर - वैनगंगा खोरे).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q83",
+        "text": "ग्राफाइटचे (Graphite) साठे कुठे आढळतात?",
+        "options": {
+          "A": "धाराशिव",
+          "B": "सिंधुदुर्ग",
+          "C": "जळगाव",
+          "D": "चंद्रपूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: सिंधुदुर्ग.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q84",
+        "text": "चुनखडीचे सर्वाधिक साठे कोणत्या प्रशासकीय विभागात आहेत?",
+        "options": {
+          "A": "नागपूर विभाग",
+          "B": "नाशिक विभाग",
+          "C": "अमरावती विभाग (यवतमाळमुळे)",
+          "D": "कोकण विभाग"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: अमरावती विभाग (यवतमाळमुळे).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q85",
+        "text": "खनिजांवर आधारित सर्वाधिक उद्योग कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "धुळे",
+          "B": "नागपूर व चंद्रपूर",
+          "C": "परभणी",
+          "D": "कोल्हापूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: नागपूर व चंद्रपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q86",
+        "text": "फेल्सपार (Feldspar) खनिज कुठे आढळते?",
+        "options": {
+          "A": "लातूर",
+          "B": "यवतमाळ",
+          "C": "रायगड",
+          "D": "सिंधुदुर्ग (कडावल)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: सिंधुदुर्ग (कडावल).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q87",
+        "text": "कोणत्या खनिजाच्या साठ्यात महाराष्ट्र देशात अग्रेसर (पहिल्या क्रमांकावर) आहे?",
+        "options": {
+          "A": "फेल्सपार",
+          "B": "मँगनीज",
+          "C": "बॉक्साईट",
+          "D": "बॅराईट्स"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: मँगनीज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q88",
+        "text": "कोणत्या खनिजाला 'मूर्खांचे सोने' (Fool's Gold) म्हणतात?",
+        "options": {
+          "A": "सिलीमनाईट",
+          "B": "पायराईट",
+          "C": "अभ्रक",
+          "D": "मँगनीज"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: पायराईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q89",
+        "text": "दगडी कोळशापासून गॅस मिळवण्याचा प्रकल्प कुठे आहे?",
+        "options": {
+          "A": "अकोला",
+          "B": "अहमदनगर",
+          "C": "हिंगोली",
+          "D": "वरोरा (चंद्रपूर)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: वरोरा (चंद्रपूर).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q90",
+        "text": "लोहखनिजाचे शुद्धीकरण करणारा 'निस्पात' प्रकल्प कुठे आहे?",
+        "options": {
+          "A": "डोलवी (रायगड)",
+          "B": "सोलापूर",
+          "C": "गडचिरोली",
+          "D": "नाशिक"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: डोलवी (रायगड).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q91",
+        "text": "ट्रिक: 'भंडारा-नागपूर' हे जिल्हे कोणत्या खनिजांसाठी नेहमी जोडीने येतात?",
+        "options": {
+          "A": "बॅराईट्स",
+          "B": "टंगस्टन",
+          "C": "इल्मेनाईट",
+          "D": "मँगनीज आणि कोळसा"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: मँगनीज आणि कोळसा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q92",
+        "text": "ट्रिक: 'कोल्हापूर' म्हणलं की डोळ्यासमोर कोणतं खनिज आलं पाहिजे?",
+        "options": {
+          "A": "चुनखडी",
+          "B": "फेल्सपार",
+          "C": "बॉक्साईट",
+          "D": "डोलोमाईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: बॉक्साईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q93",
+        "text": "ट्रिक: 'यवतमाळ' म्हटलं की कोणतं खनिज?",
+        "options": {
+          "A": "क्रोमाईट",
+          "B": "चुनखडी (Limestone)",
+          "C": "सिलिका वाळू",
+          "D": "ग्राफाइट"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: चुनखडी (Limestone).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q94",
+        "text": "ट्रिक: 'गडचिरोली' म्हटलं की कोणतं खनिज?",
+        "options": {
+          "A": "तांबे",
+          "B": "अभ्रक",
+          "C": "मँगनीज",
+          "D": "लोहखनिज (Iron Ore)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: लोहखनिज (Iron Ore).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q95",
+        "text": "पूर्व विदर्भातील खनिजे कोणत्या बंदरातून निर्यात होतात?",
+        "options": {
+          "A": "रत्नागिरी बंदर",
+          "B": "मुंबई बंदर",
+          "C": "मुंबई व न्हावा-शेवा",
+          "D": "जयगड बंदर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: मुंबई व न्हावा-शेवा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q96",
+        "text": "दक्षिण कोकणातील खनिजे कोणत्या बंदरातून निर्यात होतात?",
+        "options": {
+          "A": "रेवस बंदर",
+          "B": "मुंबई बंदर",
+          "C": "रेड्डी बंदर",
+          "D": "दिघी बंदर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: रेड्डी बंदर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q97",
+        "text": "जांभा खडकाची निर्मिती कोणत्या प्रक्रियेतून होते?",
+        "options": {
+          "A": "नाशिक",
+          "B": "रायगड",
+          "C": "यवतमाळ",
+          "D": "लीचिंग (Leaching - अति पर्जन्यामुळे)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: लीचिंग (Leaching - अति पर्जन्यामुळे).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q98",
+        "text": "महाराष्ट्रात एकूण किती जिल्ह्यांमध्ये खनिजांचे प्रामुख्याने साठे आहेत?",
+        "options": {
+          "A": "११ ते १२ जिल्हे",
+          "B": "बीड",
+          "C": "अकोला",
+          "D": "बुलढाणा"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: ११ ते १२ जिल्हे.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q99",
+        "text": "राज्याच्या एकूण महसुलात खनिज संपत्तीचा वाटा किती आहे?",
+        "options": {
+          "A": "२५%",
+          "B": "१%",
+          "C": "सुमारे ४%",
+          "D": "३५%"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: सुमारे ४%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q101",
+        "text": "गडचिरोली जिल्ह्यातील 'सुरजागड' टेकड्या कोणत्या खनिजासाठी प्रसिद्ध आहेत?",
+        "options": {
+          "A": "लोहखनिज",
+          "B": "ग्राफाइट",
+          "C": "युरेनियम",
+          "D": "तांबे"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: लोहखनिज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q102",
+        "text": "चंद्रपूर जिल्ह्यातील 'लोहारा' आणि 'असोला' येथे कशाचे साठे आहेत?",
+        "options": {
+          "A": "हिरे",
+          "B": "बॉक्साईट",
+          "C": "पायराईट",
+          "D": "लोहखनिज"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: लोहखनिज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q103",
+        "text": "देवलगाव आणि भामरागड (गडचिरोली) कोणत्या खनिजासाठी ओळखले जातात?",
+        "options": {
+          "A": "दगडी कोळसा",
+          "B": "लोहखनिज",
+          "C": "ग्राफाइट",
+          "D": "टंगस्टन"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: लोहखनिज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q104",
+        "text": "भंडाऱ्यातील 'डोंगरी बुद्रुक' या आशियातील सर्वात मोठ्या खाणीत कोणते खनिज मिळते?",
+        "options": {
+          "A": "सोने",
+          "B": "तांबे",
+          "C": "मँगनीज",
+          "D": "ग्राफाइट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: मँगनीज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q105",
+        "text": "'सीतासावंगी' आणि 'चिखला' या मँगनीजच्या खाणी कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "भंडारा",
+          "B": "मुंबई",
+          "C": "पुणे",
+          "D": "रत्नागिरी"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: भंडारा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q106",
+        "text": "नागपूर जिल्ह्यातील 'मनसर' आणि 'रामटेक' येथे कोणते खनिज आढळते?",
+        "options": {
+          "A": "मँगनीज",
+          "B": "दगडी कोळसा",
+          "C": "सोने",
+          "D": "टंगस्टन"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: मँगनीज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q107",
+        "text": "'गुमगाव' आणि 'कांद्री' येथील खाणी कशासाठी प्रसिद्ध आहेत?",
+        "options": {
+          "A": "मँगनीज (नागपूर)",
+          "B": "फेल्सपार",
+          "C": "सिलिका वाळू",
+          "D": "ग्राफाइट"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: मँगनीज (नागपूर).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q108",
+        "text": "नागपूर जिल्ह्यातील 'कांपटी' (Kamthi) आणि 'उमरेड' येथे कशाच्या खाणी आहेत?",
+        "options": {
+          "A": "जिप्सम",
+          "B": "दगडी कोळसा",
+          "C": "बॉक्साईट",
+          "D": "युरेनियम"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: दगडी कोळसा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q109",
+        "text": "चंद्रपूर जिल्ह्यातील 'घुग्गुस', 'माजरी', आणि 'बल्लारपूर' कशासाठी प्रसिद्ध आहेत?",
+        "options": {
+          "A": "कायनाईट",
+          "B": "दगडी कोळसा",
+          "C": "अभ्रक",
+          "D": "हिरे"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: दगडी कोळसा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q110",
+        "text": "यवतमाळ जिल्ह्यातील 'वणी' हे ठिकाण कोणत्या खनिजासाठी प्रसिद्ध आहे?",
+        "options": {
+          "A": "रुटाईल",
+          "B": "अभ्रक",
+          "C": "बॅराईट्स",
+          "D": "दगडी कोळसा व चुनखडी"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: दगडी कोळसा व चुनखडी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q111",
+        "text": "नागपूर जवळील 'सिलेवाडा' (Silewara) कोळसा खाण कोणत्या नदीच्या खोऱ्यात येते?",
+        "options": {
+          "A": "पैनगंगा खोरे",
+          "B": "तापी खोरे",
+          "C": "कन्हान नदी",
+          "D": "भीमा खोरे"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: कन्हान नदी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q112",
+        "text": "यवतमाळ जिल्ह्यातील 'राजूर', 'कडल', आणि 'मारेगाव' कशासाठी प्रसिद्ध आहेत?",
+        "options": {
+          "A": "चुनखडी (Limestone)",
+          "B": "कायनाईट",
+          "C": "जिप्सम",
+          "D": "बॉक्साईट"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: चुनखडी (Limestone).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q113",
+        "text": "चंद्रपूर जिल्ह्यातील 'वरोरा' आणि 'राजुरा' तालुक्यात कशाचे साठे आहेत?",
+        "options": {
+          "A": "जिप्सम",
+          "B": "हिरे",
+          "C": "अभ्रक",
+          "D": "चुनखडी"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: चुनखडी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q114",
+        "text": "भंडाऱ्यातील 'पवनी' (Pauni) तालुका कोणत्या खनिजासाठी ओळखला जातो?",
+        "options": {
+          "A": "युरेनियम",
+          "B": "इल्मेनाईट",
+          "C": "जिप्सम",
+          "D": "क्रोमाईट"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: क्रोमाईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q115",
+        "text": "नागपूर जिल्ह्यातील 'अगरगाव' येथे कोणत्या मौल्यवान खनिजाचे साठे आहेत?",
+        "options": {
+          "A": "इल्मेनाईट",
+          "B": "कायनाईट",
+          "C": "टंगस्टन",
+          "D": "हिरे"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: टंगस्टन.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q116",
+        "text": "तांबे (Copper) खनिजाचे साठे चंद्रपूर मधील 'सिंदेवाही' आणि नागपूर मधील कोणत्या ठिकाणी आहेत?",
+        "options": {
+          "A": "गडचिरोली",
+          "B": "मुंबई",
+          "C": "पुल्लर परसोडी",
+          "D": "बीड"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: पुल्लर परसोडी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q117",
+        "text": "'कायनाईट-सिलीमनाईट' चे साठे भंडाऱ्यातील कोणत्या तालुक्यात आहेत?",
+        "options": {
+          "A": "जळगाव",
+          "B": "पुणे",
+          "C": "यवतमाळ",
+          "D": "साकोली"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: साकोली.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q118",
+        "text": "विदर्भात लोहखनिज प्रामुख्याने कोणत्या प्रकारच्या खडकात आढळते?",
+        "options": {
+          "A": "मॅग्नेटाईट",
+          "B": "सिडेराईट",
+          "C": "टॅकोनाईट खडक",
+          "D": "लिमोनाईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: टॅकोनाईट खडक.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q119",
+        "text": "विदर्भातील खनिज संपत्ती कोणत्या बंदरामार्गे निर्यात केली जाते?",
+        "options": {
+          "A": "मुंबई व न्हावा-शेवा",
+          "B": "रेवस बंदर",
+          "C": "दिघी बंदर",
+          "D": "रत्नागिरी बंदर"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: मुंबई व न्हावा-शेवा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q120",
+        "text": "महाराष्ट्रात मॅग्नेटाईट प्रकाराचे लोहखनिज अतिशय कमी प्रमाणात कोठे आढळते?",
+        "options": {
+          "A": "सिंधुदुर्ग",
+          "B": "गोंदिया",
+          "C": "भंडारा",
+          "D": "वर्धा"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: गोंदिया.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q121",
+        "text": "सिंधुदुर्ग जिल्ह्यातील रेडी, तिरवडे आणि खानोली हे भाग कशासाठी प्रसिद्ध आहेत?",
+        "options": {
+          "A": "कायनाईट",
+          "B": "लोहखनिज",
+          "C": "दगडी कोळसा",
+          "D": "तांबे"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: लोहखनिज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q122",
+        "text": "सिंधुदुर्ग जिल्ह्यातील लोहखनिज प्रामुख्याने कोणत्या बंदरावरून निर्यात होते?",
+        "options": {
+          "A": "मुंबई बंदर",
+          "B": "रेवस बंदर",
+          "C": "जयगड बंदर",
+          "D": "रेडी बंदर"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: रेडी बंदर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q123",
+        "text": "रत्नागिरी जिल्ह्यातील 'मंडणगड' आणि 'दापोली' येथे कोणते खनिज मिळते?",
+        "options": {
+          "A": "बॉक्साईट",
+          "B": "बॅराईट्स",
+          "C": "रुटाईल",
+          "D": "टंगस्टन"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: बॉक्साईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q124",
+        "text": "रायगड जिल्ह्यातील 'श्रीवर्धन', 'मुरुड', आणि 'रोहा' कशासाठी ओळखले जातात?",
+        "options": {
+          "A": "लोहखनिज",
+          "B": "रुटाईल",
+          "C": "बॉक्साईट",
+          "D": "कायनाईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: बॉक्साईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q125",
+        "text": "पालघर जिल्ह्यातील 'तुंगार टेकड्यांवर' कशाचे साठे आढळतात?",
+        "options": {
+          "A": "युरेनियम",
+          "B": "पायराईट",
+          "C": "बॉक्साईट",
+          "D": "ग्राफाइट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: बॉक्साईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q126",
+        "text": "सिंधुदुर्ग जिल्ह्यातील 'फोंडा' आणि 'कणकवली' येथे कोणते खनिज सापडते?",
+        "options": {
+          "A": "पायराईट",
+          "B": "मँगनीज",
+          "C": "सोने",
+          "D": "बॉक्साईट"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: मँगनीज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q127",
+        "text": "'क्रोमाईट' खनिजाचे साठे सिंधुदुर्ग जिल्ह्यात कुठे आढळतात?",
+        "options": {
+          "A": "नांदेड",
+          "B": "धुळे",
+          "C": "कणकवली आणि वागदा",
+          "D": "नाशिक"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: कणकवली आणि वागदा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q128",
+        "text": "काच कारखान्यात वापरली जाणारी 'सिलिका वाळू' रत्नागिरीत कुठे मिळते?",
+        "options": {
+          "A": "अमरावती",
+          "B": "पालघर",
+          "C": "गडचिरोली",
+          "D": "कशेडी घाट आणि राजापूर"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: कशेडी घाट आणि राजापूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q129",
+        "text": "सिंधुदुर्ग जिल्ह्यातील 'वेंगुर्ला' आणि 'मालवण' किनारपट्टीवर कोणती वाळू मिळते?",
+        "options": {
+          "A": "तांबे",
+          "B": "कायनाईट",
+          "C": "इल्मेनाईट",
+          "D": "सिलिका वाळू"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: सिलिका वाळू.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q130",
+        "text": "'इल्मेनाईट' (Ilmenite) खनिजाचे साठे रत्नागिरीतील कोणत्या किनारपट्टीवर आहेत?",
+        "options": {
+          "A": "गोंदिया",
+          "B": "नांदेड",
+          "C": "मालगुंड, पूर्णगड, आणि जयगड",
+          "D": "सातारा"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: मालगुंड, पूर्णगड, आणि जयगड.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q131",
+        "text": "सिंधुदुर्ग जिल्ह्यातील 'कडावल' येथे कोणते खनिज मिळते?",
+        "options": {
+          "A": "मँगनीज",
+          "B": "प्लॅटिनम",
+          "C": "लोहखनिज",
+          "D": "फेल्सपार (Feldspar)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: फेल्सपार (Feldspar).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q132",
+        "text": "'अभ्रक' (Mica) चे साठे सिंधुदुर्ग जिल्ह्यात कुठे आहेत?",
+        "options": {
+          "A": "पुणे",
+          "B": "चंद्रपूर",
+          "C": "कुडाळ आणि सावंतवाडी",
+          "D": "नागपूर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: कुडाळ आणि सावंतवाडी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q133",
+        "text": "कोकणात खनिजे प्रामुख्याने कोणत्या खडकात आढळतात?",
+        "options": {
+          "A": "कडाप्पा प्रणाली",
+          "B": "गोंडवाना प्रणाली",
+          "C": "धारवाड प्रणाली",
+          "D": "जांभा खडक (Laterite)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: जांभा खडक (Laterite).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q134",
+        "text": "महाराष्ट्रातील 'बॉम्बे हाय' तेलक्षेत्र मुंबई किनाऱ्यापासून किती अंतरावर आहे?",
+        "options": {
+          "A": "वर्धा",
+          "B": "सुमारे १७६ किमी वायव्येला",
+          "C": "हिंगोली",
+          "D": "चंद्रपूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: सुमारे १७६ किमी वायव्येला.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q135",
+        "text": "बॉम्बे हाय येथील खनिज तेल वाहून नेण्यासाठी कोणती पाईपलाईन वापरली जाते?",
+        "options": {
+          "A": "नाशिक",
+          "B": "पुणे",
+          "C": "उरण पाईपलाईन",
+          "D": "रत्नागिरी"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: उरण पाईपलाईन.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q136",
+        "text": "रत्नागिरीत कोणत्या खनिजाचे साठे 'रिया' किनारपट्टीच्या वाळूत सापडतात?",
+        "options": {
+          "A": "इल्मेनाईट व रुटाईल",
+          "B": "टंगस्टन",
+          "C": "अभ्रक",
+          "D": "कायनाईट"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: इल्मेनाईट व रुटाईल.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q137",
+        "text": "सिंधुदुर्ग जिल्ह्यात ग्राफाइटचे साठे कोठे आढळण्याची शक्यता आहे?",
+        "options": {
+          "A": "नागपूर",
+          "B": "सावंतवाडी",
+          "C": "छत्रपती संभाजीनगर",
+          "D": "पालघर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: सावंतवाडी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q138",
+        "text": "बॉक्साईट खनिजाचे साठे जांभा खडकाच्या कोणत्या थरात आढळतात?",
+        "options": {
+          "A": "वरच्या थरात",
+          "B": "रायगड",
+          "C": "जालना",
+          "D": "वर्धा"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: वरच्या थरात.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q139",
+        "text": "दक्षिण कोकणातील खनिज संपत्तीला कोणत्या रेल्वेचा सर्वाधिक फायदा झाला आहे?",
+        "options": {
+          "A": "लातूर",
+          "B": "कोकण रेल्वे",
+          "C": "बुलढाणा",
+          "D": "चंद्रपूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: कोकण रेल्वे.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q140",
+        "text": "कोकणातील नद्यांच्या मुखाशी कोणत्या प्रकारची वाळू मोठ्या प्रमाणावर मिळते?",
+        "options": {
+          "A": "अमरावती",
+          "B": "नागपूर",
+          "C": "सातारा",
+          "D": "बांधकामाची वाळू (रेती)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: बांधकामाची वाळू (रेती).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q141",
+        "text": "कोल्हापूर जिल्ह्यातील 'उदगिरी' आणि 'धनगरवाडी' बॉक्साईट खाणी कोणत्या तालुक्यात आहेत?",
+        "options": {
+          "A": "कोल्हापूर",
+          "B": "शाहूवाडी",
+          "C": "रत्नागिरी",
+          "D": "नंदुरबार"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: शाहूवाडी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q142",
+        "text": "'राधानगरी' आणि 'चंदगड' (कोल्हापूर) कशासाठी प्रसिद्ध आहेत?",
+        "options": {
+          "A": "बॉक्साईट",
+          "B": "सोने",
+          "C": "अभ्रक",
+          "D": "हिरे"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: बॉक्साईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q143",
+        "text": "सातारा जिल्ह्यातील कोयना खोरे आणि 'महाबळेश्वर' पठारावर कोणते खनिज आढळते?",
+        "options": {
+          "A": "बॉक्साईट",
+          "B": "क्रोमाईट",
+          "C": "ग्राफाइट",
+          "D": "युरेनियम"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: बॉक्साईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q144",
+        "text": "सांगली जिल्ह्यातील कोणत्या तालुक्यात बॉक्साईटचे साठे आहेत?",
+        "options": {
+          "A": "ठाणे",
+          "B": "शिराळा",
+          "C": "भंडारा",
+          "D": "धाराशिव"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: शिराळा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q145",
+        "text": "'बॅराईट्स' (Barytes) खनिजाचे साठे कोल्हापूर जिल्ह्यात कोठे आढळतात?",
+        "options": {
+          "A": "वर्धा",
+          "B": "भुदरगड",
+          "C": "ठाणे",
+          "D": "अमरावती"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: भुदरगड.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q146",
+        "text": "'उन्हपदेव' आणि 'सुनपदेव' हे गरम पाण्याचे झरे कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "बीड",
+          "B": "धुळे",
+          "C": "जळगाव",
+          "D": "पुणे"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: जळगाव.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q147",
+        "text": "भूऔष्णिक ऊर्जेचे (Geothermal) साठे खान्देशात कोठे आढळतात?",
+        "options": {
+          "A": "जालना",
+          "B": "सिंधुदुर्ग",
+          "C": "धाराशिव",
+          "D": "जळगाव"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: जळगाव.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q148",
+        "text": "पश्चिम महाराष्ट्रात कोणत्या प्रकारचा खडक सर्वाधिक आढळतो?",
+        "options": {
+          "A": "कडाप्पा प्रणाली",
+          "B": "धारवाड प्रणाली",
+          "C": "बेसाल्ट खडक",
+          "D": "टॅकोनाईट खडक"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: बेसाल्ट खडक.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q149",
+        "text": "बेसाल्ट खडकामुळे पश्चिम महाराष्ट्रात कोणत्या खनिजाची कमतरता आहे?",
+        "options": {
+          "A": "सोलापूर",
+          "B": "वर्धा",
+          "C": "परभणी",
+          "D": "धातू खनिजे (Metallic Minerals)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: धातू खनिजे (Metallic Minerals).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q150",
+        "text": "पुणे आणि अहमदनगर जिल्ह्यात बांधकामासाठी कोणता दगड सर्वाधिक वापरला जातो?",
+        "options": {
+          "A": "अकोला",
+          "B": "काळा बेसाल्ट दगड",
+          "C": "नाशिक",
+          "D": "रत्नागिरी"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: काळा बेसाल्ट दगड.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q151",
+        "text": "महाराष्ट्र राज्य खनिकर्म महामंडळ (MSMC) ची स्थापना कोणत्या वर्षी झाली?",
+        "options": {
+          "A": "१९७३",
+          "B": "१९९०",
+          "C": "१९८०",
+          "D": "१९६५"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: १९७३.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q152",
+        "text": "MSMC चे मुख्यालय कोठे आहे?",
+        "options": {
+          "A": "कोल्हापूर",
+          "B": "सातारा",
+          "C": "परभणी",
+          "D": "नागपूर"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q153",
+        "text": "महाराष्ट्राच्या एकूण महसुलात खनिज क्षेत्राचा वाटा साधारण किती टक्के असतो?",
+        "options": {
+          "A": "पालघर",
+          "B": "४ ते ५ टक्के",
+          "C": "वर्धा",
+          "D": "ठाणे"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: ४ ते ५ टक्के.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q154",
+        "text": "इंडियन ब्युरो ऑफ माईन्स (IBM) चे विभागीय कार्यालय महाराष्ट्रात कोठे आहे?",
+        "options": {
+          "A": "रत्नागिरी",
+          "B": "हिंगोली",
+          "C": "नाशिक",
+          "D": "नागपूर"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: नागपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q155",
+        "text": "महाराष्ट्रात एकूण किती जिल्ह्यांमध्ये खनिजांचे व्यावसायिक उत्खनन होते?",
+        "options": {
+          "A": "११ ते १२ जिल्हे",
+          "B": "धुळे",
+          "C": "अमरावती",
+          "D": "गोंदिया"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: ११ ते १२ जिल्हे.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q156",
+        "text": "खनिजांवर आधारित सर्वाधिक उद्योग महाराष्ट्रातील कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "नागपूर व चंद्रपूर",
+          "B": "अकोला",
+          "C": "रत्नागिरी",
+          "D": "सातारा"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: नागपूर व चंद्रपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q157",
+        "text": "महाराष्ट्रातील कोणत्या प्रशासकीय विभागात खनिजांचे साठे सर्वात कमी आहेत?",
+        "options": {
+          "A": "पुणे विभाग",
+          "B": "कोकण विभाग",
+          "C": "पुणे व नाशिक विभाग",
+          "D": "अमरावती विभाग"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: पुणे व नाशिक विभाग.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q158",
+        "text": "'खनिज विकास निधी' प्रामुख्याने कोणत्या कामासाठी वापरला जातो?",
+        "options": {
+          "A": "नागपूर",
+          "B": "खाणग्रस्त भागाच्या पुनर्वसनासाठी",
+          "C": "छत्रपती संभाजीनगर",
+          "D": "जळगाव"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: खाणग्रस्त भागाच्या पुनर्वसनासाठी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q159",
+        "text": "राज्याच्या एकूण वीजनिर्मितीपैकी किती टक्के वीज कोळशावर आधारित औष्णिक प्रकल्पातून मिळते?",
+        "options": {
+          "A": "१८%",
+          "B": "२%",
+          "C": "सुमारे ७०%",
+          "D": "१०%"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: सुमारे ७०%.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q160",
+        "text": "'निस्पात' हा लोहखनिज शुद्धीकरण प्रकल्प महाराष्ट्रात कोठे आहे?",
+        "options": {
+          "A": "सातारा",
+          "B": "अकोला",
+          "C": "नंदुरबार",
+          "D": "डोलवी (रायगड)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: डोलवी (रायगड).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q161",
+        "text": "लोह-पोलाद उद्योगात 'फ्लक्स' (Flux) म्हणून कोणत्या खनिजाचा वापर होतो?",
+        "options": {
+          "A": "ग्राफाइट",
+          "B": "सिलीमनाईट",
+          "C": "चुनखडी आणि डोलोमाईट",
+          "D": "लोहखनिज"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: चुनखडी आणि डोलोमाईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q162",
+        "text": "महाराष्ट्रातील मँगनीजचा सर्वाधिक वापर कोणत्या उद्योगात होतो?",
+        "options": {
+          "A": "फेरो-मँगनीज (पोलाद उद्योग)",
+          "B": "रसायन उद्योग",
+          "C": "ॲल्युमिनियम उद्योग",
+          "D": "वस्त्र उद्योग"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: फेरो-मँगनीज (पोलाद उद्योग).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q163",
+        "text": "कोल्हापूरच्या बॉक्साईटवर आधारित ॲल्युमिनियम प्रकल्प कुठे उभारण्यात आला आहे?",
+        "options": {
+          "A": "बेळगाव (कर्नाटक)",
+          "B": "कोल्हापूर",
+          "C": "बुलढाणा",
+          "D": "रायगड"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: बेळगाव (कर्नाटक).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q164",
+        "text": "महाराष्ट्रातील दगडी कोळसा प्रामुख्याने कोणत्या दर्जाचा आहे?",
+        "options": {
+          "A": "लिग्नाईट",
+          "B": "अँथ्रासाईट",
+          "C": "नॉन-कोकिंग / बिट्युमिनस",
+          "D": "पीट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: नॉन-कोकिंग / बिट्युमिनस.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q165",
+        "text": "दगडी कोळशापासून 'गॅस' मिळवण्याचा प्रकल्प महाराष्ट्रात कुठे आहे?",
+        "options": {
+          "A": "जालना",
+          "B": "मुंबई",
+          "C": "वरोरा (चंद्रपूर)",
+          "D": "अमरावती"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: वरोरा (चंद्रपूर).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q166",
+        "text": "विजेच्या दिव्याची तार (Filament) बनवण्यासाठी भंडाऱ्यातील कोणते खनिज वापरले जाते?",
+        "options": {
+          "A": "बॅराईट्स",
+          "B": "प्लॅटिनम",
+          "C": "टंगस्टन",
+          "D": "डोलोमाईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: टंगस्टन.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q167",
+        "text": "उच्च तापमान सहन करणाऱ्या सिरामिक विटा बनवण्यासाठी कोणते खनिज वापरतात?",
+        "options": {
+          "A": "इल्मेनाईट",
+          "B": "जिप्सम",
+          "C": "कायनाईट",
+          "D": "पायराईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: कायनाईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q168",
+        "text": "महाराष्ट्रात सिमेंटचे सर्वाधिक कारखाने कोणत्या जिल्ह्यात आहेत?",
+        "options": {
+          "A": "सोलापूर",
+          "B": "नागपूर",
+          "C": "पालघर",
+          "D": "चंद्रपूर"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: चंद्रपूर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q169",
+        "text": "स्टेनलेस स्टील बनवण्यासाठी कोणते खनिज वापरले जाते जे भंडाऱ्यात मिळते?",
+        "options": {
+          "A": "क्रोमाईट",
+          "B": "युरेनियम",
+          "C": "डोलोमाईट",
+          "D": "चुनखडी"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: क्रोमाईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q170",
+        "text": "काच रंगवण्यासाठी किंवा बॅटरीमध्ये कोणते खनिज वापरतात?",
+        "options": {
+          "A": "तांबे",
+          "B": "मँगनीज",
+          "C": "चुनखडी",
+          "D": "लोहखनिज"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: मँगनीज.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q171",
+        "text": "तेल विहिरींच्या ड्रिलिंगमध्ये (Drilling Mud) वजन वाढवण्यासाठी कोणते खनिज वापरतात?",
+        "options": {
+          "A": "बॅराईट्स",
+          "B": "पायराईट",
+          "C": "हिरे",
+          "D": "कायनाईट"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: बॅराईट्स.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q172",
+        "text": "काच उद्योगात (Glass Industry) सिंधुदुर्गातील कोणत्या खनिजाचा वापर होतो?",
+        "options": {
+          "A": "सिलिका वाळू",
+          "B": "चुनखडी",
+          "C": "जिप्सम",
+          "D": "दगडी कोळसा"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: सिलिका वाळू.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q173",
+        "text": "टायटॅनियम धातू मिळवण्यासाठी रत्नागिरीतील कोणते खनिज वापरतात?",
+        "options": {
+          "A": "सोने",
+          "B": "इल्मेनाईट",
+          "C": "प्लॅटिनम",
+          "D": "पायराईट"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: इल्मेनाईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q174",
+        "text": "सिमेंट लवकर सुकण्यासाठी त्यात काय मिसळले जाते?",
+        "options": {
+          "A": "इल्मेनाईट",
+          "B": "सिलिका वाळू",
+          "C": "बॉक्साईट",
+          "D": "पायराईट"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: बॉक्साईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q175",
+        "text": "सिमेंट सेट होण्याचा वेळ वाढवण्यासाठी त्यात काय मिसळले जाते?",
+        "options": {
+          "A": "जिप्सम",
+          "B": "लोहखनिज",
+          "C": "सोने",
+          "D": "प्लॅटिनम"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: जिप्सम.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q176",
+        "text": "तांबे आणि जस्त मिसळून काय तयार होते?",
+        "options": {
+          "A": "वर्धा",
+          "B": "बुलढाणा",
+          "C": "अकोला",
+          "D": "पितळ (Brass)"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: पितळ (Brass).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q177",
+        "text": "महाराष्ट्रात युरेनियमचे साठे सापडण्याची शक्यता कुठे वर्तवली गेली आहे?",
+        "options": {
+          "A": "गोंदिया",
+          "B": "अहमदनगर",
+          "C": "सांगली",
+          "D": "यवतमाळ"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: गोंदिया.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q178",
+        "text": "हिरे (Diamonds) सापडण्याची शक्यता कोणत्या जिल्ह्यात आहे?",
+        "options": {
+          "A": "गडचिरोली (वैरागड)",
+          "B": "मुंबई",
+          "C": "अमरावती",
+          "D": "परभणी"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: गडचिरोली (वैरागड).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q179",
+        "text": "'पांढरे सोने' (Platinum) चे साठे महाराष्ट्रात कुठे सापडण्याची शक्यता आहे?",
+        "options": {
+          "A": "चंद्रपूर",
+          "B": "भंडारा",
+          "C": "धाराशिव",
+          "D": "नागपूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: भंडारा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q180",
+        "text": "सोन्याचे साठे कोणत्या नदीच्या खोऱ्यात सापडण्याची शक्यता आहे?",
+        "options": {
+          "A": "कृष्णा खोरे",
+          "B": "भिवपूर (नागपूर - वैनगंगा खोरे)",
+          "C": "तापी खोरे",
+          "D": "भीमा खोरे"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: भिवपूर (नागपूर - वैनगंगा खोरे).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q181",
+        "text": "महाराष्ट्रातील खनिजांची निर्मिती प्रामुख्याने कोणत्या काळात झाली?",
+        "options": {
+          "A": "हिंगोली",
+          "B": "बुलढाणा",
+          "C": "धारवाड व गोंडवाना काळ",
+          "D": "लातूर"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: धारवाड व गोंडवाना काळ.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q182",
+        "text": "गोंडवाना खडकातील खनिजे कोणत्या नदीच्या खोऱ्यात आढळतात?",
+        "options": {
+          "A": "पैनगंगा खोरे",
+          "B": "भीमा खोरे",
+          "C": "तापी खोरे",
+          "D": "वर्धा-वैनगंगा खोरे"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: वर्धा-वैनगंगा खोरे.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q183",
+        "text": "जांभा खडकाची निर्मिती महाराष्ट्राच्या कोणत्या भागात झाली आहे?",
+        "options": {
+          "A": "नंदुरबार",
+          "B": "अतिपर्जन्याच्या कोकण आणि सह्याद्रीच्या घाटमाथ्यावर",
+          "C": "सोलापूर",
+          "D": "गोंदिया"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: अतिपर्जन्याच्या कोकण आणि सह्याद्रीच्या घाटमाथ्यावर.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q184",
+        "text": "धारवाड खडक प्रणाली महाराष्ट्रात प्रामुख्याने कोठे आढळते?",
+        "options": {
+          "A": "पूर्व विदर्भ आणि दक्षिण कोकण",
+          "B": "गोंदिया",
+          "C": "सांगली",
+          "D": "वाशिम"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: पूर्व विदर्भ आणि दक्षिण कोकण.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q185",
+        "text": "विंध्यन खडक प्रणाली महाराष्ट्रात कोठे आढळते?",
+        "options": {
+          "A": "चंद्रपूर (चुनखडीसाठी)",
+          "B": "टंगस्टन",
+          "C": "मँगनीज",
+          "D": "प्लॅटिनम"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: चंद्रपूर (चुनखडीसाठी).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q186",
+        "text": "'काळे सोने' कशाला म्हणतात?",
+        "options": {
+          "A": "कायनाईट",
+          "B": "प्लॅटिनम",
+          "C": "दगडी कोळसा",
+          "D": "हिरे"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: दगडी कोळसा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q187",
+        "text": "'मूर्खांचे सोने' (Fool's Gold) कशाला म्हणतात?",
+        "options": {
+          "A": "कायनाईट",
+          "B": "फेल्सपार",
+          "C": "सिलीमनाईट",
+          "D": "पायराईट"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: पायराईट.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q188",
+        "text": "एक टन पोलाद तयार करण्यासाठी साधारण किती किलो मँगनीज लागते?",
+        "options": {
+          "A": "नागपूर",
+          "B": "१० किलो",
+          "C": "बुलढाणा",
+          "D": "गडचिरोली"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: १० किलो.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q189",
+        "text": "एक टन ॲल्युमिनियम तयार करण्यासाठी किती टन बॉक्साईट लागते?",
+        "options": {
+          "A": "पालघर",
+          "B": "नाशिक",
+          "C": "कोल्हापूर",
+          "D": "५ ते ६ टन"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: ५ ते ६ टन.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q190",
+        "text": "'रेड्डी' बंदरावरून जपानला लोहखनिज का निर्यात केले जाते?",
+        "options": {
+          "A": "चीन",
+          "B": "कारण तिथल्या लोहखनिजाचा दर्जा जपानच्या तंत्रज्ञानासाठी योग्य आहे.",
+          "C": "ब्रिटन",
+          "D": "दक्षिण कोरिया"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: कारण तिथल्या लोहखनिजाचा दर्जा जपानच्या तंत्रज्ञानासाठी योग्य आहे..",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q191",
+        "text": "ट्रिक: बॉक्साईटचे जिल्हे कसे लक्षात ठेवायचे?",
+        "options": {
+          "A": "संपूर्ण कोकण पट्टी + कोल्हापूर, सातारा, सांगली (सह्याद्रीचा घाटमाथा).",
+          "B": "अकोला",
+          "C": "गोंदिया",
+          "D": "धुळे"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: संपूर्ण कोकण पट्टी + कोल्हापूर, सातारा, सांगली (सह्याद्रीचा घाटमाथा)..",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q192",
+        "text": "ट्रिक: चुनखडीचे जिल्हे कसे लक्षात ठेवायचे?",
+        "options": {
+          "A": "हिंगोली",
+          "B": "नंदुरबार",
+          "C": "मुंबई",
+          "D": "यवतमाळ आणि चंद्रपूर (विदर्भाचा मध्य भाग)."
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: यवतमाळ आणि चंद्रपूर (विदर्भाचा मध्य भाग)..",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q193",
+        "text": "ट्रिक: मँगनीजचे जिल्हे?",
+        "options": {
+          "A": "यवतमाळ",
+          "B": "परभणी",
+          "C": "मुंबई",
+          "D": "भंडारा-नागपूर (विदर्भ) आणि सिंधुदुर्ग (कोकण)."
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: भंडारा-नागपूर (विदर्भ) आणि सिंधुदुर्ग (कोकण)..",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q194",
+        "text": "महाराष्ट्रात खनिजांचे सर्वाधिक उत्पादन कोणत्या प्रशासकीय विभागात होते?",
+        "options": {
+          "A": "अमरावती विभाग",
+          "B": "नागपूर विभाग",
+          "C": "कोकण विभाग",
+          "D": "पुणे विभाग"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: नागपूर विभाग.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q195",
+        "text": "महाराष्ट्रातील कोणत्या दोन जिल्ह्यांत खनिजांचे शून्य (०%) व्यावसायिक उत्पादन होते?",
+        "options": {
+          "A": "गोंदिया",
+          "B": "पालघर",
+          "C": "जालना व वाशिम (मराठवाडा/पश्चिम विदर्भ)",
+          "D": "हिंगोली"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: जालना व वाशिम (मराठवाडा/पश्चिम विदर्भ).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q196",
+        "text": "लाटांपासून वीजनिर्मितीचा प्रकल्प महाराष्ट्रात कुठे राबवला गेला?",
+        "options": {
+          "A": "गडचिरोली",
+          "B": "ठाणे",
+          "C": "घारापुरी (एलिफंटा)",
+          "D": "नंदुरबार"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: घारापुरी (एलिफंटा).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q197",
+        "text": "बायोगॅस निर्मितीत महाराष्ट्राचा देशात कितवा क्रमांक लागतो?",
+        "options": {
+          "A": "हिंगोली",
+          "B": "गडचिरोली",
+          "C": "अहमदनगर",
+          "D": "दुसरा"
+        },
+        "correctAnswer": "D",
+        "explanation": "योग्य उत्तर: दुसरा.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q198",
+        "text": "महाराष्ट्रातील पहिला अणुऊर्जा प्रकल्प कोणता?",
+        "options": {
+          "A": "तारापूर (पालघर)",
+          "B": "धाराशिव",
+          "C": "सातारा",
+          "D": "छत्रपती संभाजीनगर"
+        },
+        "correctAnswer": "A",
+        "explanation": "योग्य उत्तर: तारापूर (पालघर).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q199",
+        "text": "'उन्हावरे' (Unhavare) हे गरम पाण्याचे झरे कुठे आहेत?",
+        "options": {
+          "A": "जळगाव",
+          "B": "रायगड",
+          "C": "रत्नागिरी",
+          "D": "बुलढाणा"
+        },
+        "correctAnswer": "C",
+        "explanation": "योग्य उत्तर: रत्नागिरी.",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      },
+      {
+        "id": "topic-geography-mh-minerals-q200",
+        "text": "आशिया खंडातील सर्वात मोठा पवन ऊर्जा प्रकल्प कुठे आहे?",
+        "options": {
+          "A": "अकोला",
+          "B": "वनकुसवडे (सातारा)",
+          "C": "सोलापूर",
+          "D": "गडचिरोली"
+        },
+        "correctAnswer": "B",
+        "explanation": "योग्य उत्तर: वनकुसवडे (सातारा).",
+        "category": "Geography",
+        "topic": "महाराष्ट्र खनिज संपत्ती",
+        "sourceTag": "mh-minerals"
+      }
+    ],
+    "language": "marathi",
+    "topicOnly": true,
+    "tag": "महाराष्ट्र खनिज संपत्ती"
   }
 ]
