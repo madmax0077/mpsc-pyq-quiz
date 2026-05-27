@@ -3,6 +3,14 @@ import { getSeoQuestions } from "@/lib/questionSeo";
 
 const SITE_URL = "https://www.mpscs.in";
 
+/**
+ * Question pages per chunk. Keep this comfortably under Google's per-sitemap
+ * limit (50 000) and well under any build-time memory limit. 2 000 keeps each
+ * generated XML under ~500 KB which Vercel and Google both handle without
+ * issue.
+ */
+const QUESTIONS_PER_SITEMAP = 2000;
+
 type ChangeFrequency = MetadataRoute.Sitemap[number]["changeFrequency"];
 
 type SitemapEntryConfig = {
@@ -12,11 +20,11 @@ type SitemapEntryConfig = {
 };
 
 /**
- * Dynamic sitemap — always serves an up-to-date copy with the current
- * `lastModified` timestamp. This file replaces `public/sitemap.xml`.
+ * Hard-coded static-page entries.
  *
- * IMPORTANT: Keep all legacy entries intact (as requested), and only append
- * additional high-value public discovery URLs.
+ * IMPORTANT: Keep all legacy entries intact — these are the pages Google has
+ * already indexed and we do not want to break inbound links or rankings.
+ * Append only; never reorder or remove.
  */
 const LEGACY_SITEMAP_ENTRIES: SitemapEntryConfig[] = [
   { path: "/", changeFrequency: "daily", priority: 1.0 },
@@ -55,7 +63,6 @@ const LEGACY_SITEMAP_ENTRIES: SitemapEntryConfig[] = [
 ];
 
 const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
-  // Dedicated landing mode used across the site and llms.txt references.
   { path: "/?mode=leaderboard", changeFrequency: "daily", priority: 0.9 },
 ];
 
@@ -63,26 +70,63 @@ function toAbsoluteUrl(path: string): string {
   return path === "/" ? SITE_URL : `${SITE_URL}${path}`;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+/**
+ * `generateSitemaps` runs once at build time and returns the list of chunk
+ * ids. Next.js then invokes `sitemap({ id })` for each id and writes the
+ * result to `out/sitemap/{id}.xml`, plus a top-level `out/sitemap.xml`
+ * index linking to every chunk.
+ *
+ * Chunk id 0  -> static pages (always present, even if there are zero
+ *                question pages).
+ * Chunk id 1+ -> question pages, in batches of QUESTIONS_PER_SITEMAP.
+ */
+export async function generateSitemaps(): Promise<Array<{ id: number }>> {
+  let questionChunks = 0;
+  try {
+    const questions = getSeoQuestions();
+    questionChunks = Math.ceil(questions.length / QUESTIONS_PER_SITEMAP);
+  } catch {
+    questionChunks = 0;
+  }
+  const totalChunks = 1 + questionChunks; // 1 static + N question chunks
+  return Array.from({ length: totalChunks }, (_, i) => ({ id: i }));
+}
+
+export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
   const now = new Date();
-  const questionEntries: SitemapEntryConfig[] = getSeoQuestions().map((question) => ({
-    path: `/questions/${question.id}`,
-    changeFrequency: "monthly",
+
+  if (id === 0) {
+    const staticEntries = [...LEGACY_SITEMAP_ENTRIES, ...ADDITIONAL_DISCOVERY_ENTRIES];
+    const seen = new Set<string>();
+    return staticEntries
+      .filter((entry) => {
+        if (seen.has(entry.path)) return false;
+        seen.add(entry.path);
+        return true;
+      })
+      .map(({ path, changeFrequency, priority }) => ({
+        url: toAbsoluteUrl(path),
+        lastModified: now,
+        changeFrequency,
+        priority,
+      }));
+  }
+
+  let questions: ReturnType<typeof getSeoQuestions> = [];
+  try {
+    questions = getSeoQuestions();
+  } catch {
+    return [];
+  }
+
+  const chunkIndex = id - 1;
+  const start = chunkIndex * QUESTIONS_PER_SITEMAP;
+  const slice = questions.slice(start, start + QUESTIONS_PER_SITEMAP);
+
+  return slice.map((question) => ({
+    url: `${SITE_URL}/questions/${question.id}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
-  const mergedEntries = [...LEGACY_SITEMAP_ENTRIES, ...ADDITIONAL_DISCOVERY_ENTRIES, ...questionEntries];
-  const seen = new Set<string>();
-  return mergedEntries
-    .filter((entry) => {
-      const key = entry.path;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    })
-    .map(({ path, changeFrequency, priority }) => ({
-      url: toAbsoluteUrl(path),
-      lastModified: now,
-      changeFrequency,
-      priority,
-    }));
 }
