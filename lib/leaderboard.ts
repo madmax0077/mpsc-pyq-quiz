@@ -127,9 +127,23 @@ export function subscribeTodayLeaderboard(
   callback: (rows: LeaderboardRow[]) => void,
   onError?: (err: Error) => void,
 ): () => void {
+  return subscribeLeaderboardByDate(todayKey(), callback, onError);
+}
+
+/**
+ * Admin-only: subscribe to the AGGREGATED leaderboard for an arbitrary day
+ * (YYYY-MM-DD in IST). Returns the full ranked list (not just the top five
+ * the aspirant UI shows). Same Firestore query shape as the aspirant
+ * subscription so no new index is required.
+ */
+export function subscribeLeaderboardByDate(
+  dateKey: string,
+  callback: (rows: LeaderboardRow[]) => void,
+  onError?: (err: Error) => void,
+): () => void {
   const q = query(
     collection(db, COLLECTION),
-    where("dateKey", "==", todayKey()),
+    where("dateKey", "==", dateKey),
     limit(1000),
   );
   return onSnapshot(
@@ -142,7 +156,40 @@ export function subscribeTodayLeaderboard(
       callback(aggregatePerUser(all));
     },
     (err) => {
-      console.warn("subscribeTodayLeaderboard:", err);
+      console.warn("subscribeLeaderboardByDate:", err);
+      onError?.(err);
+      callback([]);
+    },
+  );
+}
+
+/**
+ * Admin-only: subscribe to the RAW per-attempt entries for an arbitrary day
+ * (YYYY-MM-DD in IST). Unlike the aggregated view, each entry corresponds to
+ * one quiz submission, so the admin can drill into "which quiz did this user
+ * take and when".
+ */
+export function subscribeAttemptsByDate(
+  dateKey: string,
+  callback: (entries: LeaderboardEntry[]) => void,
+  onError?: (err: Error) => void,
+): () => void {
+  const q = query(
+    collection(db, COLLECTION),
+    where("dateKey", "==", dateKey),
+    limit(1000),
+  );
+  return onSnapshot(
+    q,
+    (snap) => {
+      const all: LeaderboardEntry[] = snap.docs.map((d) => ({
+        id: d.id,
+        ...(d.data() as Omit<LeaderboardEntry, "id">),
+      }));
+      callback(all);
+    },
+    (err) => {
+      console.warn("subscribeAttemptsByDate:", err);
       onError?.(err);
       callback([]);
     },
