@@ -73,23 +73,21 @@ function toAbsoluteUrl(path: string): string {
 /**
  * `generateSitemaps` runs once at build time and returns the list of chunk
  * ids. Next.js then invokes `sitemap({ id })` for each id and writes the
- * result to `out/sitemap/{id}.xml`, plus a top-level `out/sitemap.xml`
- * index linking to every chunk.
+ * result to `out/sitemap/{id}.xml`.
  *
- * Chunk id 0  -> static pages (always present, even if there are zero
- *                question pages).
- * Chunk id 1+ -> question pages, in batches of QUESTIONS_PER_SITEMAP.
+ * IMPORTANT: question pages (`/questions/<id>`) are intentionally NOT
+ * listed in any sitemap until each page carries a substantive explanation.
+ * Listing 6,000+ thin pages is what triggered Google AdSense's
+ * "Low value content" / "thin content at scale" flag. Once explanations
+ * are added per question, we can re-introduce question chunks here.
+ *
+ * Chunk id 0 -> static pages (homepage, /exams, /map, /study-guides, etc.).
  */
 export async function generateSitemaps(): Promise<Array<{ id: number }>> {
-  let questionChunks = 0;
-  try {
-    const questions = getSeoQuestions();
-    questionChunks = Math.ceil(questions.length / QUESTIONS_PER_SITEMAP);
-  } catch {
-    questionChunks = 0;
-  }
-  const totalChunks = 1 + questionChunks; // 1 static + N question chunks
-  return Array.from({ length: totalChunks }, (_, i) => ({ id: i }));
+  // Suppress unused-import warning while question chunks are disabled.
+  void QUESTIONS_PER_SITEMAP;
+  void getSeoQuestions;
+  return [{ id: 0 }];
 }
 
 export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
@@ -112,21 +110,5 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
       }));
   }
 
-  let questions: ReturnType<typeof getSeoQuestions> = [];
-  try {
-    questions = getSeoQuestions();
-  } catch {
-    return [];
-  }
-
-  const chunkIndex = id - 1;
-  const start = chunkIndex * QUESTIONS_PER_SITEMAP;
-  const slice = questions.slice(start, start + QUESTIONS_PER_SITEMAP);
-
-  return slice.map((question) => ({
-    url: `${SITE_URL}/questions/${question.id}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  return [];
 }

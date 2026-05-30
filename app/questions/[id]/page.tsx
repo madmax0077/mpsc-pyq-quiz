@@ -22,6 +22,12 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: `${titleText} | MPSC Question`,
     description,
     alternates: { canonical: `/questions/${question.id}` },
+    // Until each question page carries its own detailed explanation, keep
+    // them out of the search index to satisfy AdSense / Google "minimum
+    // content" requirements. Users can still reach them via direct links;
+    // we just don't promote them to Google. `follow: true` so equity from
+    // any inbound link is still passed back to the main site.
+    robots: { index: false, follow: true },
     openGraph: {
       title: `${titleText} | MPSC PYQ QUIZ`,
       description,
