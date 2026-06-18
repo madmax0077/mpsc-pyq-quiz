@@ -88196,5 +88196,2909 @@
     "language": "marathi",
     "topicOnly": true,
     "tag": "महाराष्ट्र खनिज संपत्ती"
+  },
+  {
+    "id": "rto-amvi-auto-engg",
+    "title": "RTO AMVI — Automobile Engineering (Past Papers)",
+    "createdAt": "2026-06-19T00:00:00.000Z",
+    "topicOnly": true,
+    "tag": "RTO AMVI",
+    "questions": [
+      {
+        "id": "rto-amvi-auto-engg-dlk-q001",
+        "text": "Which one is the low-pressure steam generator ?",
+        "options": {
+          "A": "Benson steam generator",
+          "B": "Loeffler steam generator",
+          "C": "Volex steam generator",
+          "D": "none of these"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 1. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q003",
+        "text": "Compressor capacity is expressed in",
+        "options": {
+          "A": "m3/kg",
+          "B": "KW",
+          "C": "KWh",
+          "D": "m3/min"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 3. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q005",
+        "text": "The performance of a reciprocating compressor is expressed by",
+        "options": {
+          "A": "adiabatic work",
+          "B": "isothermal work",
+          "C": "isothermal work /indicated work",
+          "D": "none of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 5. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q006",
+        "text": "Air conditioning controls",
+        "options": {
+          "A": "temperature only",
+          "C": "motion of air and humidity",
+          "B": "humidity only",
+          "D": "All the above three factors"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 6. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q008",
+        "text": "In a double acting compressor; the air is compressed",
+        "options": {
+          "A": "in a single cylinder",
+          "B": "in two cylinders",
+          "C": "in two stages on one side",
+          "D": "in a single cylinder on both sides"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 8. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q009",
+        "text": "In a compressor, the volume of air sucked during the suction stroke is known as",
+        "options": {
+          "A": "free air delivered",
+          "B": "swept volume",
+          "C": "compressor capacity",
+          "D": "none of the above"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 9. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q010",
+        "text": "The ratio of delivery pressure to suction pressure of air is called",
+        "options": {
+          "A": "volumetric efficiency",
+          "B": "expansion ratio",
+          "C": "compression efficiency",
+          "D": "compression ratio"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 10. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q011",
+        "text": "In a two-stage air compressor, an intercooler is placed",
+        "options": {
+          "A": "before L.P. cylinder",
+          "B": "after H.P. cylinder",
+          "C": "in between L.P. and H.P. cylinder",
+          "D": "none of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 11. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q012",
+        "text": "1 ton of refrigeration is the",
+        "options": {
+          "A": "mass of refrigerant flow per second",
+          "B": "mass of refrigeration unit",
+          "C": "rate of ice formed per second",
+          "D": "heat extraction at a rate of 3.5 kJ per second"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 12. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q014",
+        "text": "The process of supplying the intake air to the engine cylinder, at a density greater than the density of surrounding atmospheric air, is known as",
+        "options": {
+          "A": "Supercharging",
+          "B": "Scavenging",
+          "C": "Detonation",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 14. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q015",
+        "text": "The ratio of heat extracted from refrigerant to work supply is called",
+        "options": {
+          "A": "coefficient of performance of heat pump",
+          "B": "coefficient of performance of refrigerator",
+          "C": "refrigeration efficiency",
+          "D": "relative coefficient of performance"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 15. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q016",
+        "text": "What is the refrigerant used in a house-hold refrigerator ?",
+        "options": {
+          "A": "Freon-22",
+          "B": "Freon-11",
+          "C": "Freon-12",
+          "D": "NH3"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 16. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q019",
+        "text": "A domestic refrigerator has an expansion device in the form of a/an",
+        "options": {
+          "A": "Automatic expansion valve",
+          "B": "Hand operated expansion valve",
+          "C": "Float valve",
+          "D": "Capillary tubes"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 19. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q022",
+        "text": "Absolute humidity is defined as",
+        "options": {
+          "A": "Weight of water vapour present in unit volume of air",
+          "B": "Weight of water vapour present in 1 Kg of air",
+          "C": "Weight of moist air per m 3 of volume",
+          "D": "none of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 22. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q023",
+        "text": "The function of a governor of steam engine is to",
+        "options": {
+          "A": "save steam",
+          "B": "control the speed",
+          "C": "provide safety to the people around",
+          "D": "maintain constant load on the engine"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 23. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q024",
+        "text": "Humidostat is a device which is sensitive to",
+        "options": {
+          "A": "Moisture changes",
+          "B": "Temperature changes",
+          "C": "Moisture and temperature changes",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 24. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q027",
+        "text": "If the end portion of a beam is extended beyond the support, it is known as",
+        "options": {
+          "A": "Cantilever beam",
+          "B": "Continuous beam",
+          "C": "Overhanging beam",
+          "D": "Fixed beam"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 27. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q030",
+        "text": "Deflection of a Cantilever beam, measured at its free end, subjected to uniform load intensity 'w' over a span '' is given as (E = Young's Modulus; I = Moment of Inertia about Neutral axis)",
+        "options": {
+          "A": "wl4 /6 EI",
+          "B": "wl4 /8 EI",
+          "C": "WI4 4EI",
+          "D": "Wl4 /16 EI"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 30. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q036",
+        "text": "What are the main raw materials required for production ofpig iron ?",
+        "options": {
+          "A": "Iron, coal and flux",
+          "B": "Iron ore, coke and lime stone",
+          "C": "Iron ore, cooking coal and flux",
+          "D": "Iron ore, coal and dolomite"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 36. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q037",
+        "text": "What are the main constituents of Babbitt metal used in industry ?",
+        "options": {
+          "A": "Copper-tin-antimony",
+          "B": "Copper-tin-phosphorus",
+          "C": "Copper-tin-nickel",
+          "D": "Copper-zinc-nickel"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 37. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q038",
+        "text": "Which metal is used for a wide variety of small components of electrical equipment, buses, ordnance work and bolts, rods, tubes, etc?",
+        "options": {
+          "A": "Monel metal",
+          "B": "Bell metal",
+          "C": "Muntz metal",
+          "D": "Gun metal"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 38. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q039",
+        "text": "Which of the following is a chipless machining process ?",
+        "options": {
+          "A": "Knurling",
+          "B": "Metal spinning",
+          "C": "Hobbing",
+          "D": "Lapping"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 39. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q040",
+        "text": "For which engineering purposes, uranium, thorium, plutonium, zirconium, beryllium, niobium and their alloys are primarily used ?",
+        "options": {
+          "A": "Electronic Engineering",
+          "B": "Nuclear Engineering",
+          "C": "Telecommunication Engineering",
+          "D": "Computer Engineering"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 40. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q042",
+        "text": "Tumbling is done to",
+        "options": {
+          "A": "remove blow holes",
+          "C": "clean the casting",
+          "B": "create hard surface",
+          "D": "fill-up the blow holes"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 42. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q043",
+        "text": "What is the temperature of metal in hot working process at which new grains are formed ?",
+        "options": {
+          "A": "Below the recrystallisation temperature",
+          "B": "Above the recrystallisation temperature",
+          "C": "At melting temperature",
+          "D": "Above melting temperature"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 43. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q044",
+        "text": "Withdrawal of the pattern from the sand of the mould, without breaking the mould, is possible by providing",
+        "options": {
+          "A": "shrinkage allowance",
+          "B": "draft",
+          "C": "rapping allowance",
+          "D": "finish allowance"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 44. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q045",
+        "text": "The process used for making large-diameter pipes, hollow propeller shafts O gun barrels, is",
+        "options": {
+          "A": "Centrifugal casting",
+          "B": "Forging",
+          "C": "Rolling",
+          "D": "Die-casting"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 45. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q046",
+        "text": "Which heat treatment is applied to remove stresses and improve the mechanical properties and increase machinability ?",
+        "options": {
+          "A": "Normalising",
+          "B": "Hardening",
+          "C": "Tempering",
+          "D": "Annealing"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 46. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q048",
+        "text": "What device is used for holding and rotating a hollow piece of work that has been previously drilled or bored ?",
+        "options": {
+          "A": "Collet chuck",
+          "B": "Mandrel",
+          "C": "Lathe centre",
+          "D": "Catch plate"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 48. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q049",
+        "text": "In metric standard, the reciprocal of the diametral pitch (related to circular pitch by p = π·m) of a spur gear is best described as",
+        "options": {
+          "A": "Addendum",
+          "B": "Dedendum",
+          "C": "Module",
+          "D": "Backlash"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 49. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q050",
+        "text": "Study the following statements: (A) Tailstock of Engine-Lathe is replaced by turret in turret lathe (B) Turret lathe is used for very small precision jobs (C) Turret lathe can be tape controlled",
+        "options": {
+          "A": "A and B are true",
+          "B": "A and C are true",
+          "C": "B and are true",
+          "D": "All are true"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 50. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q051",
+        "text": "A method of grinding external cylindrical surfaces, in which the work is supported among a regulating wheel, grinding wheel and a work rest blade; is known as",
+        "options": {
+          "A": "Snagging grinding",
+          "B": "Cylindrical grinding",
+          "C": "Centreless grinding",
+          "D": "Form grinding"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 51. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q052",
+        "text": "Small internal gear teeth are cut in one operation by a tool having a number of cutting edges equal to the number of teeth on the gear: Name the tool",
+        "options": {
+          "A": "Milling tool",
+          "B": "Hobbing tool",
+          "C": "Broaching tool",
+          "D": "Reaming tool"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 52. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q053",
+        "text": "The device, used for dividing the periphery of the gear blank into a desired number of equal parts, is",
+        "options": {
+          "A": "Combination head",
+          "B": "Dividing head",
+          "C": "Multiple head",
+          "D": "Periphery head"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 53. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q054",
+        "text": "It is essential to do annealing and pickling, after performing",
+        "options": {
+          "A": "drilling",
+          "B": "grinding",
+          "C": "metal spinning",
+          "D": "broaching"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 54. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q055",
+        "text": "The number of collars are provided to carry a fixed axial load in a flat collar bearing",
+        "options": {
+          "A": "to reduce frictional torque",
+          "B": "to increase frictional torque",
+          "C": "to increase intensity of pressure",
+          "D": "to decrease intensity of pressure"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 55. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q056",
+        "text": "For the same pitch, the efficiency of screw jack with square threads is",
+        "options": {
+          "A": "more than that with V-threads",
+          "B": "less than that with V-threads",
+          "C": "same as that with V-threads",
+          "D": "dependent only on the load on the jack"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 56. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q057",
+        "text": "The friction acting on body while in motion; is called",
+        "options": {
+          "A": "Static friction",
+          "B": "Dry static friction",
+          "C": "Dynamic friction",
+          "D": "Static and dynamic friction"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 57. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q058",
+        "text": "Hartnell governor is",
+        "options": {
+          "A": "Spring-loaded type governor",
+          "B": "Dead-weight-loaded type governor",
+          "C": "Pendulum type governor",
+          "D": "Inertia governor"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 58. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q059",
+        "text": "For the same mass of flywheel",
+        "options": {
+          "A": "the disc type flywheel is preferable",
+          "B": "the rim type flywheel is preferable",
+          "C": "preference will depend upon the type of the prime mover",
+          "D": "any type is equally preferable"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 59. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q060",
+        "text": "For the same maximum fluctuation energy of a flywheel, if the mean speed of rotation is more",
+        "options": {
+          "A": "the size of the flywheel is reduced",
+          "B": "the size of the flywheel is increased",
+          "C": "the size of the flywheel is not dependent on the speed and is unaffected",
+          "D": "working is safer"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 60. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q061",
+        "text": "Angular acceleration of a link AB is found by dividing the",
+        "options": {
+          "A": "centripetal component of acceleration of B relative to A by length AB",
+          "B": "linear velocity of B relative to A by length AB",
+          "C": "total acceleration of B relative to A by length AB",
+          "D": "tangential component of acceleration of B relative to A by length AB"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 61. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q062",
+        "text": "Kennedy's theorem states that, if three rigid inks have . plane motion, their instantaneous centres lie on",
+        "options": {
+          "A": "triangle",
+          "B": "a point",
+          "C": "a straight line",
+          "D": "none of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 62. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q063",
+        "text": "bolt and nut forms",
+        "options": {
+          "A": "a turning pair",
+          "C": "sliding pair",
+          "B": "spherical pair",
+          "D": "screw pair"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 63. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q064",
+        "text": "The motion of a rotating shaft in foot step bearing, constitutes between the elements of a kinematic pair",
+        "options": {
+          "A": "successfully constrained motion",
+          "B": "completely constrained motion",
+          "C": "incompletely constrained motion",
+          "D": "unsuccessfully constrained motion"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 64. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q065",
+        "text": "A perfect fluid is",
+        "options": {
+          "A": "compressible and gaseous",
+          "C": "incompressible and frictionless",
+          "B": "a real fluid",
+          "D": "one which obeys perfect gas laws"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 65. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q066",
+        "text": "Continuity equation deals with the law of conservation of",
+        "options": {
+          "A": "mass",
+          "B": "momentum",
+          "C": "energy",
+          "D": "none of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 66. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q067",
+        "text": "Select the correct statement",
+        "options": {
+          "A": "Absolute pressure = (Gauge pressure - Atmospheric pressure)",
+          "B": "Gauge pressure = (Absolute pressure - Atmospheric pressure)",
+          "C": "Absolute pressure = (Atmospheric pressure + Vacuum pressure)",
+          "D": "Gauge pressure = (Atmospheric pressure + Vacuum pressure)"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 67. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q068",
+        "text": "All fluids exert",
+        "options": {
+          "A": "pressure in the direction of flow only",
+          "B": "pressure in the direction of force of gravity",
+          "C": "equal pressure in all directions",
+          "D": "equal pressure only in x, y and z planes"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 68. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q069",
+        "text": "A fluid is a substance that",
+        "options": {
+          "A": "always expands until it fills any container",
+          "B": "is practically incompressible",
+          "C": "cannot remain at rest under action of any shear force",
+          "D": "cannot be subjected to shear force"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 69. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q073",
+        "text": "High head of water is required for",
+        "options": {
+          "A": "Francis turbine",
+          "C": "Pelton wheel",
+          "B": "Propeller turbine",
+          "D": "Kaplan turbine"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 73. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q074",
+        "text": "The relation between hydraulic efficiency (h) mechanical efficiency (Im) and overall efficiency (13) is",
+        "options": {
+          "A": "nh = mo X Im",
+          "B": "no = Ih X nm",
+          "C": "no = (nm nh)",
+          "D": "None of the above"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 74. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q075",
+        "text": "The primary fuel used in nuclear power plant is",
+        "options": {
+          "A": "U235",
+          "B": "U238",
+          "C": "P239",
+          "D": "P233"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 75. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q076",
+        "text": "Which of the following is not a non-conventional energy source ?",
+        "options": {
+          "A": "Solar energy",
+          "B": "Wind energy",
+          "C": "Coal",
+          "D": "Bio-gas"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 76. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q079",
+        "text": "Direct energy conversion system include",
+        "options": {
+          "A": "Magnetohydrodynamic system",
+          "B": "Geothermal system",
+          "C": "Tidal power system",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 79. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q083",
+        "text": "Energy may be defined as",
+        "options": {
+          "A": "A \"push' Or \"pull\"",
+          "B": "The product of force and velocity",
+          "C": "The capacity to do work",
+          "D": "The product of mass and acceleration"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 83. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q084",
+        "text": "Which of the following is NOT a thermal prime mover",
+        "options": {
+          "A": "Water turbine",
+          "B": "Steam turbine",
+          "C": "Gas turbine",
+          "D": "Petrol engine"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 84. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q085",
+        "text": "In a Theoretical Rankine cycle, expansion is assumed to be",
+        "options": {
+          "A": "polytropic",
+          "B": "hyperbolic",
+          "C": "isentropic",
+          "D": "isothermal"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 85. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q087",
+        "text": "A short chimney is provided for",
+        "options": {
+          "A": "Lancashire Boiler",
+          "C": "Locomotive Boiler",
+          "B": "Babcock and Wilcox Boiler",
+          "D": "Cochran Boiler"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 87. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q089",
+        "text": "Of the following four fuels, the highest calorific value is possessed by",
+        "options": {
+          "A": "Kerosene",
+          "B": "Diesel",
+          "C": "Petrol",
+          "D": "Vegetable oil"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 89. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q092",
+        "text": "The testing equipment which gives a very close approximation of a road test in garage is called",
+        "options": {
+          "A": "Engine dynamometer",
+          "C": "Engine tester",
+          "B": "Chassis dynamometer",
+          "D": "Tachometer"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 92. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q093",
+        "text": "Tar spots from a car body are removed by",
+        "options": {
+          "A": "Rubber brush and water",
+          "B": "Soft sponge",
+          "C": "Special cleaning agents",
+          "D": "Soap containing agents"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 93. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q094",
+        "text": "In the differential, the distance between adjacent meshing teeth in the driving and driven gear is called as",
+        "options": {
+          "A": "toe",
+          "B": "heel",
+          "C": "back lash",
+          "D": "clearance"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 94. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q095",
+        "text": "When the car is being lifted for servicing",
+        "options": {
+          "A": "never allow passengers to remain in a car",
+          "B": "see all doors are closed",
+          "C": "engage the mechanical lock, if available",
+          "D": "all of the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 95. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q099",
+        "text": "If your car is involved in an accident and injured the person, then you should",
+        "options": {
+          "A": "report to the nearest police station and take the person to the hospital",
+          "B": "need not report to the police station but make arrangement for admitting person to hospital",
+          "C": "need not take the person to hospital but only report to the police station",
+          "D": "take the person to the hospital and then report to the nearest police station"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 99. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q100",
+        "text": "Road tax is dependent on which of the following factors? (A) Vehicle weight (B) R.L.W. (C) Passengers allowed / seating capacity (D) Permit obtained",
+        "options": {
+          "A": "All above are correct",
+          "B": "(A) (B) & (C) are correct",
+          "C": "(A) & (B) are correct",
+          "D": "(A) alone is correct"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 100. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q101",
+        "text": "ARAI. is situated at",
+        "options": {
+          "A": "Ahmednagar",
+          "C": "Nagpur",
+          "B": "Mumbai",
+          "D": "Pune"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 101. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q103",
+        "text": "Which of the following company is not engaged in the manufacture of tyres in India ?",
+        "options": {
+          "A": "JK",
+          "B": "MRF",
+          "C": "L & T",
+          "D": "Modi"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 103. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q105",
+        "text": "Which is the Diesel engine vehicle ?",
+        "options": {
+          "A": "Matiz",
+          "C": "Sumo",
+          "B": "Maruti Gipsy",
+          "D": "Contessa"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 105. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q106",
+        "text": "In Spark Ignition Engines, combustion completes in",
+        "options": {
+          "A": "six stages",
+          "B": "three stages",
+          "C": "four stages",
+          "D": "eight stages"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 106. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q107",
+        "text": "Octane Number is determined by comparing the performance of petrol with following hydrocarbons",
+        "options": {
+          "A": "Iso Octane",
+          "B": "Mixture of Normal Heptane and Iso Octane",
+          "C": "Mixture of Methane and Ethane",
+          "D": "Alpha Methyl Napthalene"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 107. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q110",
+        "text": "Relative efficiency is the ratio of",
+        "options": {
+          "A": "Brake Power to Indicated Power",
+          "B": "Mechanical efficiency to Thermal efficiency",
+          "C": "Actual thermal efficiency to Volumetric efficiency",
+          "D": "Actual thermal efficiency to Air-standard efficiency"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 110. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q111",
+        "text": "The cylinder liners are made by",
+        "options": {
+          "A": "Centrifugal casting",
+          "C": "Press-working",
+          "B": "Moulding",
+          "D": "Forging"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 111. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q112",
+        "text": "Generally valves are made from",
+        "options": {
+          "A": "Cast iron",
+          "C": "Nickel chrome steel",
+          "B": "Cast steel",
+          "D": "Aluminium alloy"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 112. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q114",
+        "text": "Choke valve is used in carburettor",
+        "options": {
+          "A": "to supply chemically correct air fuel mixture",
+          "B": "to supply rich air fuel mixture",
+          "C": "to supply lean air fuel mixture",
+          "D": "to supply oil and fuel mixture"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 114. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q116",
+        "text": "The term scavenging is associated with",
+        "options": {
+          "A": "Four-stroke cycle engines",
+          "B": "Two stroke 'cycle engines",
+          "C": "Steam engines",
+          "D": "Gas turbines"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 116. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q117",
+        "text": "To measure Brake Power of the Auto Engines following device is used",
+        "options": {
+          "A": "Indicator",
+          "B": "Dynamometer",
+          "C": "Hydrometer",
+          "D": "Watt meter"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 117. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q118",
+        "text": "How do you get friction power for single cylinder constant speed diesel engine when only brake dynamometer and fuel measurement arrangements are available ?",
+        "options": {
+          "A": "By Morse Test",
+          "B": "By Motoring Test",
+          "C": "By difference between I.P. and B.P",
+          "D": "By Willan's Line Method"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 118. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q121",
+        "text": "Modern Car Engine uses the following lubricating system",
+        "options": {
+          "A": "Petrol-oil system",
+          "B": "Pressurised lubricating system",
+          "C": "Splash lubricating system",
+          "D": "All above lubricating systems"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 121. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q124",
+        "text": "Engine cam shaft speed in four stroke Auto engine is",
+        "options": {
+          "A": "Double the speed of crank shaft",
+          "B": "Equal to the speed of crank shaft",
+          "C": "Half the crank shaft speed",
+          "D": "Four times crank shaft speed"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 124. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q127",
+        "text": "Which one of the following applies to a single plate clutch? (Number of driven plates / Number of driving surfaces)",
+        "options": {
+          "A": "One / One",
+          "B": "One / Two",
+          "C": "Two / One",
+          "D": "Two / Two"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 127. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q130",
+        "text": "The universal joint in the propeller shaft is necessary to",
+        "options": {
+          "A": "provide an easy method to disconnect the drive line",
+          "B": "carry engine torque to the drive wheels",
+          "C": "reduce a smooth turning drive line",
+          "D": "allow drive wheel suspension free movement"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 130. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q131",
+        "text": "Which type of rear axle is best suited for heavy vehicles ?",
+        "options": {
+          "A": "Full floating axle",
+          "B": "Quarter floating axle",
+          "C": "Semi floating axle",
+          "D": "Three quarter floating axle"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 131. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q133",
+        "text": "The pistons in the front wheel cylinders as compared to those in rear wheel cylinders in hydraulic brake system are",
+        "options": {
+          "A": "larger",
+          "B": "smaller",
+          "C": "of the same size",
+          "D": "none of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 133. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q134",
+        "text": "Operating of double declutching is necessary for changing lower gear to",
+        "options": {
+          "A": "decrease the speed of lay-shaft",
+          "B": "decrease the speed of main shaft",
+          "C": "increase the speed of lay shaft",
+          "D": "increase the speed of main shaft"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 134. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q136",
+        "text": "The tilting of front wheel away from the vertical is known as",
+        "options": {
+          "A": "Castor",
+          "B": "Camber",
+          "C": "Toe-in",
+          "D": "Toe-out"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 136. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q137",
+        "text": "Which one of the following converts the rotary motion of steering wheel into a reciprocating motion ?",
+        "options": {
+          "A": "Steering box",
+          "B": "Track rod",
+          "C": "Track arm",
+          "D": "Stub axle"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 137. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q138",
+        "text": "The resistance of air while running a vehicle depends upon",
+        "options": {
+          "A": "Unladen weight of the vehicle",
+          "B": "Kerb weight of the vehicle",
+          "C": "Laden weight of the vehicle",
+          "D": "Body shape of the vehicle"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 138. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q141",
+        "text": "The racing car uses smaller wheels because",
+        "options": {
+          "A": "the weight of the part of vehicle springs",
+          "B": "the weight of front, rear axle and tyres",
+          "C": "it lowers the centre of gravity and larger steering lock angles",
+          "D": "it looks good and as a fashion 142 The spring weight term used in automobile refer to"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 141. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q143",
+        "text": "The lay-out of vehicle shows",
+        "options": {
+          "A": "different parts used in vehicles",
+          "B": "different components of chassis",
+          "C": "different assemblies and parts of vehicles",
+          "D": "shape, size and types of chassis"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 143. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q144",
+        "text": "The wiper motor is of",
+        "options": {
+          "A": "series wound type",
+          "B": "shunt wound type",
+          "C": "series and shunt wound type",
+          "D": "series and parallel wound type"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 144. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q145",
+        "text": "The angle between the actual path and desired path of a vehicle is known as",
+        "options": {
+          "A": "camber angle",
+          "B": "castor angle",
+          "C": "slip angle",
+          "D": "King pin angle"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 145. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q149",
+        "text": "Noisy valve operation is due to",
+        "options": {
+          "A": "loose nuts and bolts of engine head",
+          "B": "worn out head packing",
+          "C": "worn out valve springs",
+          "D": "wrongly adjusted tappet"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 149. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-dlk-q150",
+        "text": "Hard starting when engine is cold due to",
+        "options": {
+          "A": "cold atmosphere",
+          "B": "less water in radiator",
+          "C": "faulty choke operation",
+          "D": "none of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 150. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-DLK"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q003",
+        "text": "The correct order in which the four operations occur in four stroke engine is",
+        "options": {
+          "A": "suction, compression, power; exhaust",
+          "B": "suction, power, compression, exhaust",
+          "C": "compression, power, suction, exhaust",
+          "D": "exhaust; compression, suction, power"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 3. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q004",
+        "text": "Stroke means piston movement from",
+        "options": {
+          "A": "BDC to TDC",
+          "C": "Both (BDC to TDC and TDC to BDC)",
+          "B": "TDC to BDC",
+          "D": "Neither (BDC to TDC nor TDC to BDC)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 4. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q005",
+        "text": "The fuel in the float chamber is kept at a constant level by the action of",
+        "options": {
+          "A": "Float and needle valve",
+          "B": "Main jet",
+          "C": "Fuel punp",
+          "D": "Opening of throttle valve"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 5. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q006",
+        "text": "Stalling of S.I. Engine after high speed driving can be caused by",
+        "options": {
+          "A": "Vapour lock",
+          "B": "Incorrect ignition timing",
+          "C": "Malfunctioning of carburettor",
+          "D": "Malfunctioning of spark plug"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 6. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q007",
+        "text": "Assertion (A): A knock occurs in II phase of combustion in diesel engine. Reason (R): Because of longer delay period.",
+        "options": {
+          "A": "A is true, R is not true",
+          "B": "A is not true, R is true",
+          "C": "Both are not true",
+          "D": "A is true and R is the reason of A"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 7. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q008",
+        "text": "When air-fuel mnixture ignites before the spark, the phenomenon is called as",
+        "options": {
+          "A": "Detonation",
+          "B": "Normal Ignition",
+          "C": "Pre-ignition",
+          "D": "Auto-ignition"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 8. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q010",
+        "text": "To remove cylinder liners from engine block, use",
+        "options": {
+          "A": "Wooden hammer and chisel",
+          "B": "Pullers",
+          "C": "Pressure screw, pusher and twister",
+          "D": "Mallet and vice grip"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 10. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q013",
+        "text": "Why wet battery is required to supply current to starter motor ?",
+        "options": {
+          "A": "To have high voltage",
+          "B": "To have low voltage and very high current",
+          "C": "To have smooth operation",
+          "D": "To reduce cost"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 13. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q022",
+        "text": "Clutch slips due to (a) Oil on friction plate (b) Worn-out clutch lining (c) Weak pressure springs",
+        "options": {
+          "A": "(a) alone is correct",
+          "B": "(a) and (b) are correct",
+          "C": "(a) and (c) are correct",
+          "D": "All (a), (b) and (c) are correct"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 22. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q024",
+        "text": "Rear axle of HCVs is equipped with the following arrangement",
+        "options": {
+          "A": "semi- -floating",
+          "B": "three quarter-floating",
+          "C": "fully-floating",
+          "D": "a quarter-floating"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 24. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q029",
+        "text": "The brake system which is the most efficient among the given, is",
+        "options": {
+          "A": "Mechanical brake system",
+          "B": "Hydraulic brake system",
+          "C": "Vacuum servo brake system",
+          "D": "Air brake system"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 29. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q030",
+        "text": "Select the better arrangement of shoes for manually operated hydraulic brake system",
+        "options": {
+          "A": "one leading, one trailing shoe",
+          "B": "both leading shoes",
+          "C": "both trailing shoes",
+          "D": "Any of the arrangement"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 30. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q031",
+        "text": "The purpose of tyre rotation on automobiles is to",
+        "options": {
+          "A": "avoid ply separation",
+          "B": "get better ride",
+          "C": "equalise wear",
+          "D": "decrease heat dissipation in tyre 32., Which of the following pair(s) is/are correctly matched ? (a) Spark plug 1 mm CB: point 0.3 mm condenser 12 V - 0.2 uF 3 L.T. 12 V (a), (b) & (c)"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 31. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q036",
+        "text": "While cornering, centrifugal force' prOd. uces a movement of vehicle about a longitudinal axis, which is called as",
+        "options": {
+          "A": "Bouncing",
+          "B": "Pitching",
+          "C": "Rolling",
+          "D": "Gyroscopic effect"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 36. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q037",
+        "text": "Maruti 1000 passenger car is having followi ing layout",
+        "options": {
+          "A": "Front Engine Rear Wheel Drive",
+          "B": "Rear Engine Rear Wheel Drive",
+          "C": "Front Engine Front Wheel Drive",
+          "D": "Rear Engine Front Wheel Drire"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 37. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q039",
+        "text": "In conventional layout; clutch is mounted between",
+        "options": {
+          "A": "Engine and Gear box",
+          "B": "Gear box and propeller shaft",
+          "C": "Propeller shaft and final drive",
+          "D": "Final drive and differential"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 39. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q041",
+        "text": "Which piston ring wears faster than the other ring",
+        "options": {
+          "A": "Top compression ring",
+          "B": "Lower compression ring",
+          "C": "Oil control ring",
+          "D": "Oil scraper ring"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 41. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q042",
+        "text": "Pitch and tone of electric horn is adljusted by",
+        "options": {
+          "A": "air gap",
+          "B": "contact gap",
+          "C": "air gap and contact gap respectivel",
+          "D": "contact g4p2 and air gap) respectivel"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 42. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q045",
+        "text": "A bent wheel of the car should be",
+        "options": {
+          "A": "welded",
+          "C": "straightened",
+          "B": "heated",
+          "D": "discarded"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 45. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q046",
+        "text": "The process of removing all of the old brake fluid from the hydraulic system is called",
+        "options": {
+          "A": "bleeding",
+          "B": "cleaning",
+          "C": "changing",
+          "D": "flushing"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 46. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q047",
+        "text": "A warped pressure plate should be",
+        "options": {
+          "A": "retempered",
+          "C": "replaced",
+          "B": "straightened",
+          "D": "refaced"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 47. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q048",
+        "text": "Painting cracks occur due to",
+        "options": {
+          "A": "thin layer of paint",
+          "B": "thick layer of paint",
+          "C": "improper paint viscosity",
+          "D": "wrong setting of air pressure during painting"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 48. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q049",
+        "text": "Front wheel alignment is adjusted by altering",
+        "options": {
+          "A": "angle of track arm",
+          "B": "length of track arm",
+          "C": "distance between king pins",
+          "D": "position of the drag link"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 49. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q051",
+        "text": "motor vehicle designed for physically handicapped person is called",
+        "options": {
+          "A": "contract carriage",
+          "B": "stage carriage",
+          "C": "invalid carriage",
+          "D": "articulate carriage"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 51. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q053",
+        "text": "Secretary of Regional Transport Authority is",
+        "options": {
+          "A": "RT.O",
+          "B": "Transport Minister",
+          "C": "Transport Commissioner",
+          "D": "IM.V"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 53. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q056",
+        "text": "Who is the administrative in-charge at State Transport Depot ?",
+        "options": {
+          "A": "Depot Controller",
+          "B": "Asst: Traffic Supdt",
+          "C": "Depot Manager",
+          "D": "Asst; Workshop Supdt"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 56. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q062",
+        "text": "The total strain energy stored in a body is termed as",
+        "options": {
+          "A": "Resilience",
+          "B": "Proof resilience",
+          "C": "Modulus of resilience",
+          "D": "Toughness"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 62. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q063",
+        "text": "According to Euler s theory, the strength of a column against buckling is dependent upon",
+        "options": {
+          "A": "Modulus of elasticity",
+          "B": "Bulk modulus",
+          "C": "Cross-section area of column",
+          "D": "None of above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 63. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q064",
+        "text": "In a beam at a place where the shear force is maximum, the bending moment will be",
+        "options": {
+          "A": "Maximum",
+          "B": "Minimum",
+          "C": "Zero",
+          "D": "Neither maximum nor minimum"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 64. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q066",
+        "text": "Maximum shear stress in Mohr' s circle is",
+        "options": {
+          "A": "Equal to radius of Mohr'$ circle",
+          "B": "Greater than radius of Mohr' s circle",
+          "C": "Less than radius of Mohr' s circle",
+          "D": "None of above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 66. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q071",
+        "text": "Working of metals at temperature below their recrystallisation temperature is defined as",
+        "options": {
+          "A": "Hot working",
+          "B": "Cold working",
+          "C": "Hot spinning",
+          "D": "Cold spinning"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 71. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q072",
+        "text": "Hollow cylindrical bodies like water pipes, gun barrels etc , can be manufactured by",
+        "options": {
+          "A": "Investment casting",
+          "B": "Die casting",
+          "C": "Centrifugal casting",
+          "D": "Shell moulding"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 72. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q073",
+        "text": "Split nut in lead screw mechanism of lathe has",
+        "options": {
+          "A": "Vee",
+          "B": "Square",
+          "C": "Buttress",
+          "D": "Acme threads"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 73. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q076",
+        "text": "Thermoplastic material such as cellulose nitrate, polystyrene are cast by",
+        "options": {
+          "A": "Continuous casling",
+          "B": "Centrifugal casting",
+          "C": "Injection moulding",
+          "D": "Die casting"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 76. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q079",
+        "text": "What are the changes of metal structure dimension in hot rolling process as the metal passes through the rolls ?",
+        "options": {
+          "A": "Reduced in thickness and increased in length",
+          "B": "Reduced in thickness and in length",
+          "C": "Increased in thickness and reduced in length",
+          "D": "Increased in thickness and in length"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 79. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q080",
+        "text": "Which process is used to produce tools, gear blanks, crankshafts, connecting rods, gears etc 2",
+        "options": {
+          "A": "Forging",
+          "B": "Snit thing",
+          "C": "Swaging",
+          "D": "Fullering"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 80. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q081",
+        "text": "Which is the process of removing thick layers of metal by means of Cold Chisel ?",
+        "options": {
+          "A": "Cutting",
+          "B": "Sawing",
+          "C": "Chipping",
+          "D": "None of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 81. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q082",
+        "text": "Drill size before tapping is derived from the formula where 'D' is diameter of tap drill size, 'T' is diameter of tap to be used and '4' is depth of cut",
+        "options": {
+          "A": "D=T+ 2d",
+          "B": "D-= T-2d",
+          "C": "D=T + 3d",
+          "D": "D=T-3d"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 82. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q084",
+        "text": "Which cutting tool is used for enlarging or finishing a hole previously drilled, bored or cored to give a good finish and an accurate dimension ?",
+        "options": {
+          "A": "Parallel shank twist drill",
+          "B": "Taper shank core drill",
+          "C": "Surface grinder",
+          "D": "Multi-tooth twist cutter 85 Precision grinders are those that finish parts to a rery accurate dimensions. One of the grinders is"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 84. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q087",
+        "text": "The purpose of annealing is to",
+        "options": {
+          "A": "refine structure",
+          "C": "improve machinability",
+          "B": "reduce softness",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 87. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q088",
+        "text": "Choose the wrong statement from the following",
+        "options": {
+          "A": "The shaper, in comparison to the planer, is easier to operate and about three times quicker in action",
+          "B": "In a shaper, the metal is removed during the forward stroke",
+          "C": "The shaper is best suited for cutting keyways and splines on shafts",
+          "D": "In case of planer, reciprocating motion is given to the cutting tool"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 88. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q093",
+        "text": "A dynamometer fitted on an internal combustion engine measures",
+        "options": {
+          "A": "the brake horse power",
+          "B": "the brake torque",
+          "C": "the indicated horse power",
+          "D": "the indicated torque"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 93. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q100",
+        "text": "In case of Pivot bearing, the wear is",
+        "options": {
+          "A": "Maximum at the centre of the contact area",
+          "B": "Zero at the centre of the contact area",
+          "C": "Uniform throughout the contact area",
+          "D": "Zero al the maxinum radius of the contact area"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 100. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q102",
+        "text": "Falling drops of rain acquire spherical shape on account of",
+        "options": {
+          "A": "Viscosity",
+          "B": "Surface Tension",
+          "C": "Adhesion and cohesion",
+          "D": "Compressibility"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 102. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q103",
+        "text": "The standard atmospheric pressure of air is (a) 760 mm of mercury (b) 10.33 metres of water column (c) 1.0332 atm (d) 101.325 kN/m²",
+        "options": {
+          "A": "(a) alone is correct",
+          "C": "(a), (b) & (c) are correct",
+          "B": "(a) & (b) are correct",
+          "D": "All are correct"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 103. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q104",
+        "text": "The centre of gravity of the volume of the liquid dispersed by an immersed body is called as",
+        "options": {
+          "A": "Centre of pressure",
+          "B": "Meta-centre",
+          "C": "Centre of buoyancy",
+          "D": "Centre of gravity"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 104. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q105",
+        "text": "Which of the followi ing represents steady uniform flow 2",
+        "options": {
+          "A": "Flow through a diverging duct at increasing rate",
+          "B": "Flow through a diverging duct at any decreasing rate",
+          "C": "Flow through a long pipe at constant rate",
+          "D": "Flow through a long pipe at decreasing rate"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 105. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q106",
+        "text": "Cavitation in hydraulic turbine results in",
+        "options": {
+          "A": "Noise and vibration",
+          "B": "Reduction of discharge",
+          "C": "Drop in output and efficiency",
+          "D": "All of the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 106. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q107",
+        "text": "For pumping ViScous Oil, the pump used is",
+        "options": {
+          "A": "Centrifugal pump",
+          "B": "Reciprocae ting punp",
+          "C": "Turbine pump",
+          "D": "Screw pump"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 107. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q108",
+        "text": "pump which does not come in category of positive displacement pump is",
+        "options": {
+          "A": "Reciprocating pump",
+          "B": "Gear pump",
+          "C": "Vane punip",
+          "D": "Centrifugal pump"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 108. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q109",
+        "text": "The water lurbine' selected lor head varying from 50) m to 150 n is",
+        "options": {
+          "A": "Bulb Turbine",
+          "B": "Propeller Turbine",
+          "C": "Pelton Whee[",
+          "D": "Franeis Turbine"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 109. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q110",
+        "text": "Airy vessels are provided in reciprocal ting pump to",
+        "options": {
+          "A": "store air discharged by pump",
+          "B": "obtain continuous discharge from the pump",
+          "C": "increase the pressure of water",
+          "D": "safeguard the pump"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 110. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q115",
+        "text": "When can we have windmill for power ?",
+        "options": {
+          "A": "When high velocity wind (not cyclonic) for long duration of day is available",
+          "B": "Cyclonic wind is available",
+          "C": "Low velocity wind is constantly available",
+          "D": "Movement of air occurs"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 115. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q119",
+        "text": "The fuel mostly used in steam boilers is",
+        "options": {
+          "A": "Peat",
+          "B": "Coking bituminous coal",
+          "C": "Non-coking bituminous coal",
+          "D": "Brown coal"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 119. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q121",
+        "text": "Morse test is carried out to determine the IP of a",
+        "options": {
+          "A": "single cylinder petrol engine",
+          "B": "single cylinder diesel engine",
+          "C": "Multi cylinder engine",
+          "D": "Double acting steam engine"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 121. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q122",
+        "text": "The device for smoothing out the power impulses from the engine is called",
+        "options": {
+          "A": "Fly wheel",
+          "B": "Clutch",
+          "C": "Torque convertor",
+          "D": "Differential"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 122. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q123",
+        "text": "Which one of the statements is correct? (i) Petrol engine is a reciprocating engine (ii) Petrol engine is a high speed engine (iii) Petrol engine uses petrol as fuel (iv) Petrol engine is an internal combustion engine",
+        "options": {
+          "A": "All four are correct",
+          "B": "only (i) is correct",
+          "C": "only (iv) is correct",
+          "D": "All are wrong"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 123. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q124",
+        "text": "To develop high voltage for spark plug of petrol engine",
+        "options": {
+          "A": "Distributor is installed",
+          "B": "Carburettor is installed",
+          "C": "Battery is installed",
+          "D": "Ignition coil is installed"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 124. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q127",
+        "text": "The actual volume of fresh charge taken into four stroke-petrol engine is",
+        "options": {
+          "A": "Less than stroke volume",
+          "B": "Equal to stroke volume",
+          "C": "Equal to stroke volume + clearance volume",
+          "D": "Does not depend upon stroke volume"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 127. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q128",
+        "text": "A two stroke I.C. engine is identified by",
+        "options": {
+          "A": "the size of the engine",
+          "B": "size of the flywheel",
+          "C": "type of cooling system",
+          "D": "absence of valves"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 128. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q132",
+        "text": "What is thermal efficiency of a heat engine",
+        "options": {
+          "A": "It is the ratio of brake power to indicated power",
+          "B": "It is the ratio Of work output to heat supplied",
+          "C": "It is the ratio of heat rejected to heat supplied",
+          "D": "It is the ratio of work output to heat rejected"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 132. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q133",
+        "text": "Compression ratio of a petrol engine is",
+        "options": {
+          "A": "Higher than that of diesel engine",
+          "B": "Lower than that of diesel engine",
+          "C": "Equal to that of diesel engine",
+          "D": "None of the above"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 133. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q134",
+        "text": "I12 a condensing steam engine",
+        "options": {
+          "A": "the pressure in the condenser is above atmospheric pressure",
+          "B": "the pressure in the condenser is below atmospheric pressure",
+          "C": "the pressure is equal to atmospheric pressure",
+          "D": "complete vacuum exists in the condenser"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 134. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q135",
+        "text": "With increase in compression ratio, the thermal efficiency of the Otto cycle",
+        "options": {
+          "A": "Decreases",
+          "B": "Does not change",
+          "C": "Cannot be predicted unless 'γ' (adiabatic index) is known",
+          "D": "Increases"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 135. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q136",
+        "text": "As the compression ratio increases, the volumetric efficiency of the compressor",
+        "options": {
+          "A": "decreases",
+          "B": "increases",
+          "C": "remains same",
+          "D": "becomes unpredictable"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 136. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q141",
+        "text": "Refrigeration is based on",
+        "options": {
+          "A": "First law of thermodynamics",
+          "C": "Dalton's law",
+          "B": "Second law of thermodynamics",
+          "D": "Boyle's law"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 141. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q142",
+        "text": "In a domestic refrigerator, the following compressor is used",
+        "options": {
+          "A": "Rotary",
+          "B": "Reciprocating",
+          "C": "Centrifugal",
+          "D": "None of the above"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 142. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q147",
+        "text": "Human body dissipates heat in the form of",
+        "options": {
+          "A": "Sensible heat only",
+          "B": "Latent heat only",
+          "C": "Both sensible and latent heat",
+          "D": "None of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 147. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q148",
+        "text": "The method commonly used for dehumidifying air is",
+        "options": {
+          "A": "Heating",
+          "B": "Cooling",
+          "C": "Heating and Cooling",
+          "D": "To spray steam in the air"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 148. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q149",
+        "text": "Refrigerant used in vapour absorption refrigerator is",
+        "options": {
+          "A": "Freon-12",
+          "B": "Water",
+          "C": "Ammonia",
+          "D": "F-11"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 149. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-nsb-q150",
+        "text": "If a window air conditioner is kept at the centre of a closed room, then the temperature of the room will",
+        "options": {
+          "A": "increase",
+          "B": "decrease",
+          "C": "not change",
+          "D": "Unpredictable"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 150. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-NSB"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q001",
+        "text": "The property by which a body regains its original shape after removal of force is defined as",
+        "options": {
+          "A": "plasticity",
+          "B": "elasticity",
+          "C": "ductility",
+          "D": "malleability"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 1. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q013",
+        "text": "Which one of the following process is preferred for improving the surface finish of a job 2",
+        "options": {
+          "A": "Milling",
+          "B": "Turning",
+          "C": "Super finishing",
+          "D": "Drilling"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 13. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q015",
+        "text": "In which process the principle of electrolysis is used to remove metal from workpiece ?",
+        "options": {
+          "A": "EDM (Electrodischarge Machining)",
+          "B": "ECM (Electrochemical Machining)",
+          "C": "EDG (Electrodischarge Grinding)",
+          "D": "USM (Ultrasonic Machining)"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 15. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q016",
+        "text": "Hot short phenomenon occurs in steel because of excess amount of",
+        "options": {
+          "A": "manganese",
+          "B": "sulphur",
+          "C": "silicon",
+          "D": "phosphorus"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 16. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q017",
+        "text": "For holding irregular shaped work and carrying out eccentric turning suitable. is most",
+        "options": {
+          "A": "four jaw chuck",
+          "C": "collet chuck",
+          "B": "three jaw chuck",
+          "D": "face plate"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 17. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q019",
+        "text": "Extrusion is a type of operation",
+        "options": {
+          "A": "Hot Working and Cold Working",
+          "C": "Casting",
+          "B": "Welding",
+          "D": "Fitting"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 19. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q033",
+        "text": "The ratio of pitch diameter to the number of teeth, in a gear drive is termed as",
+        "options": {
+          "A": "circular pitch",
+          "B": "gear ratio",
+          "C": "module",
+          "D": "none of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 33. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q042",
+        "text": "Viscosity has the dimensions where F is force, L is length and T is time",
+        "options": {
+          "A": "F·L⁻²·T",
+          "B": "F·L⁻¹·T⁻¹",
+          "C": "F·L·T⁻²",
+          "D": "F·L²·T"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 42. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q051",
+        "text": "Which of the following does not relate to a spark ignition engine ?",
+        "options": {
+          "A": "Ignition coil",
+          "B": "Spark plug",
+          "C": "Distributor",
+          "D": "Fuel injector"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 51. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q052",
+        "text": "The ideal cycle on which steam engine works is",
+        "options": {
+          "A": "Carnot cycle",
+          "B": "Rankine cycle",
+          "C": "Otto cycle",
+          "D": "Joule cycle"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 52. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q063",
+        "text": "Consider the following statements (A) Efforts are made to harness non conventional energy sources for power generation: (R) The conventional energy sources will be exhausted soon: Now select the answer from the following alternatives",
+        "options": {
+          "A": "Both (A) and (R) are true; but (R) is not the correct reason for (A)",
+          "B": "(A) is true, but (R) is false",
+          "C": "(R) is true, but (A) is false",
+          "D": "Both (A) and (R) are true and (R) is the correct reason for (A)"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 63. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q073",
+        "text": "The clearance volume in Reciprocating air compressor is provided to",
+        "options": {
+          "A": "reduce the work done kg of air delivered",
+          "B": "increase the volumetric efficiency of compressor",
+          "C": "accommodate valves in the head of the compressor",
+          "D": "create turbulence in the air to be delivered"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 73. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q074",
+        "text": "What should be the intermediate pressure (P_i) in two stage compression for minimum work of compression, where P_a is suction pressure and P_d is delivery pressure?",
+        "options": {
+          "B": "P_i = P_a",
+          "D": "P_i = P_a / P_d",
+          "A": "P_i = √(P_a · P_d)",
+          "C": "P_i = P_a × P_d"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 74. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q083",
+        "text": "The duration of the ignition lag in an engine depends 0n the factors like",
+        "options": {
+          "A": "chemical nature of fuel",
+          "B": "mixture ratio",
+          "C": "electrode gap",
+          "D": "all the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 83. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q087",
+        "text": "Which one of the following method for determination of engine friction is oly applicable for diesel engines and also the gross fuel consumption is plotted against brake power and it is extended backwards to zero fuel consumption ?",
+        "options": {
+          "A": "Morse test",
+          "B": "Motoring method",
+          "C": "Deceleration method",
+          "D": "William' s line method"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 87. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q100",
+        "text": "The part that tends to keep the valve closed is called the",
+        "options": {
+          "A": "valve guide",
+          "B": "valve retainer",
+          "C": "valve spring",
+          "D": "valve lifter"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 100. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q103",
+        "text": "The pressure in the vicinity of main jet of a carburettor remains",
+        "options": {
+          "A": "above atmospheric pressure",
+          "B": "equal to atmospheric pressure",
+          "C": "much below atmospheric pressure",
+          "D": "very high pressure"
+        },
+        "correctAnswer": "C",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 103. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q106",
+        "text": "The firing order of an I.C. engine depends upon",
+        "options": {
+          "A": "design of crankshaft",
+          "B": "no. of cylinders",
+          "C": "arrangement of cylinders",
+          "D": "all of the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 106. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q109",
+        "text": "What is Vapour Lock ?",
+        "options": {
+          "A": "Phenomenon of irregular supply of petrol due to vapour formation at higher temp",
+          "B": "Phenomenon of cut off diesel supply",
+          "C": "Phenomenon of overflow of petrol",
+          "D": "Phenomenon of 'icing on venturi"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 109. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q115",
+        "text": "The brake pipes in hydraulic brake system are made of",
+        "options": {
+          "A": "rubber",
+          "B": "steel",
+          "C": "pvc",
+          "D": "aluminium"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 115. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q116",
+        "text": "Trafficators are lights used for",
+        "options": {
+          "A": "heavy traffic",
+          "B": "light traffic",
+          "C": "reversing the car in traffic",
+          "D": "indicating the direction in which it turns"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 116. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q131",
+        "text": "Capacity of storage battery to convert chemical energy into electrical energy is tested by",
+        "options": {
+          "A": "hydrometer test",
+          "B": "high discharge test",
+          "C": "specific gravity test",
+          "D": "arc test"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 131. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q133",
+        "text": "Car pulls to one side while braking due to",
+        "options": {
+          "A": "frame misaligned",
+          "B": "loose rear springs",
+          "C": "unequal load in car",
+          "D": "brake grabs"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 133. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q134",
+        "text": "During battery charging, the electrolyte becomes",
+        "options": {
+          "A": "colder",
+          "B": "thinner",
+          "C": "lighter",
+          "D": "heavier"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 134. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q136",
+        "text": "Humming noise in the differential is due to improper tooth contact between",
+        "options": {
+          "A": "drive pinion and ring gear",
+          "B": "axle and side gear",
+          "C": "pinion and gears",
+          "D": "shafts and bearings"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 136. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q142",
+        "text": "In which of the following documents, the details of the vehicle tax are recorded ?",
+        "options": {
+          "A": "RC. Book",
+          "B": "TC. Book",
+          "C": "Driving licence",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 142. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q146",
+        "text": "Which are the three colour lights used in traffic signal ?",
+        "options": {
+          "A": "Red; Green and Black",
+          "B": "Blue, Green and Red",
+          "C": "Blue, Pink and Green",
+          "D": "Red; Green and Amber"
+        },
+        "correctAnswer": "D",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 146. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      },
+      {
+        "id": "rto-amvi-auto-engg-ayt-q150",
+        "text": "Gross vehicle weight means",
+        "options": {
+          "A": "weight of the load carried by the vehicle only",
+          "B": "total weight of the vehicle and load",
+          "C": "weight of the vehicle chassis only",
+          "D": "none of the above"
+        },
+        "correctAnswer": "B",
+        "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 150. Maharashtra Public Service Commission.",
+        "category": "Science",
+        "topic": "Automobile Engineering",
+        "sourceTag": "RTO-AMVI-AYT"
+      }
+    ]
   }
 ]
