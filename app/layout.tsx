@@ -322,14 +322,14 @@ export default function RootLayout({
           }}
         />
         {/*
-          Google AdSense JS loader is intentionally REMOVED during the
-          approval phase.  Shipping the loader along with placeholder
-          slot IDs across every page (including /admin and thin SEO
-          pages) was causing repeated "Low value content" rejections.
+          Google AdSense loader is intentionally NOT shipped during the
+          approval phase.  We rely on the verification meta tag above
+          (google-adsense-account) + /ads.txt for site-ownership checks.
 
-          Verification meta tag below + /ads.txt are enough for Google to
-          confirm site ownership.  Once the AdSense account is approved
-          and at least one real Ad Unit exists, re-add the loader here:
+          After AdSense approves the site, enable Auto Ads from
+          AdSense -> Ads -> By site -> mpscs.in -> toggle ON, then
+          re-add the loader below (no <ins> / slot IDs needed for
+          Auto Ads):
 
           <script
             async
