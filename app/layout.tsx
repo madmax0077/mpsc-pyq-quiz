@@ -321,11 +321,22 @@ export default function RootLayout({
             __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')})();`,
           }}
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5084738834329206"
-          crossOrigin="anonymous"
-        />
+        {/*
+          Google AdSense JS loader is intentionally REMOVED during the
+          approval phase.  Shipping the loader along with placeholder
+          slot IDs across every page (including /admin and thin SEO
+          pages) was causing repeated "Low value content" rejections.
+
+          Verification meta tag below + /ads.txt are enough for Google to
+          confirm site ownership.  Once the AdSense account is approved
+          and at least one real Ad Unit exists, re-add the loader here:
+
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5084738834329206"
+            crossOrigin="anonymous"
+          />
+        */}
       </head>
       <body className="font-sans dark:bg-slate-900">
         <AuthProvider>{children}</AuthProvider>

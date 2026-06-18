@@ -6,9 +6,6 @@ import type { Category, Language } from "@/lib/types";
 import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
-import AdBanner from "@/components/AdBanner";
-
-const AD_SLOT = "2180278102";
 
 type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes";
 
@@ -655,10 +652,7 @@ export default function HomeClient() {
         )}
       </main>
 
-      {/* Ad — above footer */}
-      <div className="mx-auto max-w-4xl px-4 pb-4 sm:px-6">
-        <AdBanner slot={AD_SLOT} format="horizontal" />
-      </div>
+      {/* Ad slot temporarily removed during AdSense approval phase. */}
 
       {/* ---- Footer ---- */}
       <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">

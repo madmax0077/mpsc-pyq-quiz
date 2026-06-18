@@ -1,69 +1,30 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
+/**
+ * AdBanner is intentionally a NO-OP component during the AdSense approval
+ * phase.  We were rendering <ins data-ad-slot="…"> with placeholder slot IDs,
+ * which made the Google AdSense crawler flag the site for "Low value content"
+ * because every page contained broken/empty ad units.
+ *
+ * Approval checklist (do NOT undo until ALL are true):
+ *   1. AdSense account status = "Ready" (green check) for mpscs.in.
+ *   2. You have created at least one Ad Unit in:
+ *      AdSense → Ads → By ad unit → Display ads.
+ *      Each unit gives you a real 10-digit `data-ad-slot` value.
+ *   3. `ads.txt` is still served at https://www.mpscs.in/ads.txt.
+ *   4. The <meta name="google-adsense-account"> tag is still in app/layout.tsx.
+ *
+ * Once all four are true, replace this stub with the previous implementation
+ * AND only render ads on content-rich pages (study guides, exams index, home
+ * footer). Never place an ad within ~300px of an action button (Submit,
+ * Retake, Next Set) — AdSense rejects that as "encourages accidental clicks".
+ */
 interface AdBannerProps {
-  /** Real AdSense slot ID from your account (AdSense → Ads → By ad unit).
-   *  Leave empty to rely on Google Auto Ads (enabled via AdSense dashboard). */
   slot?: string;
   format?: "auto" | "rectangle" | "horizontal" | "vertical";
   className?: string;
 }
 
-const PUBLISHER_ID = "ca-pub-5084738834329206";
-
-/** Placeholder slot IDs that must NOT be sent to AdSense — they cause silent
- *  failures and can interfere with Auto Ads page scanning. */
-const FAKE_SLOTS = new Set([
-  "1234567890",
-  "2345678901",
-  "3456789012",
-  "4567890123",
-  "0000000000",
-  "9999999999",
-]);
-
-function isValidSlot(slot?: string): boolean {
-  if (!slot) return false;
-  if (FAKE_SLOTS.has(slot)) return false;
-  // AdSense slot IDs are 10-digit numbers
-  return /^\d{10}$/.test(slot);
-}
-
-export default function AdBanner({
-  slot,
-  format = "auto",
-  className = "",
-}: AdBannerProps) {
-  const pushed = useRef(false);
-
-  useEffect(() => {
-    if (!isValidSlot(slot)) return;
-    if (pushed.current) return;
-    try {
-      const w = window as unknown as { adsbygoogle?: unknown[] };
-      (w.adsbygoogle = w.adsbygoogle || []).push({});
-      pushed.current = true;
-    } catch {
-      // AdSense not loaded or blocked by ad-blocker
-    }
-  }, [slot]);
-
-  // ── No valid slot: render nothing so Google Auto Ads can scan the page
-  //    without hitting broken <ins> elements.
-  //    Enable Auto Ads at: AdSense → Ads → By site → toggle On → Save
-  if (!isValidSlot(slot)) return null;
-
-  return (
-    <div className={`overflow-hidden ${className}`}>
-      <ins
-        className="adsbygoogle"
-        style={{ display: "block" }}
-        data-ad-client={PUBLISHER_ID}
-        data-ad-slot={slot}
-        data-ad-format={format}
-        data-full-width-responsive="true"
-      />
-    </div>
-  );
+export default function AdBanner(_props: AdBannerProps) {
+  return null;
 }

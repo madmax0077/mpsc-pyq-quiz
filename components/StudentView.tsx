@@ -11,7 +11,6 @@ import { submitScore } from "@/lib/leaderboard";
 import { useAuth } from "@/lib/auth-context";
 import { recordStreak, getStreak } from "@/lib/streak";
 import { recordResult } from "@/lib/analytics";
-import AdBanner from "./AdBanner";
 import ShareButton from "./ShareButton";
 import Confetti from "./Confetti";
 import Analytics from "./Analytics";
@@ -1474,7 +1473,6 @@ export default function StudentView({ language = "english", challenge, homeKey =
             </div>
           ) : (
             <div className="space-y-4">
-              <AdBanner slot="2180278102" format="horizontal" />
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 <button
                   onClick={() => {
@@ -1517,7 +1515,6 @@ export default function StudentView({ language = "english", challenge, homeKey =
             </div>
           ) : (
             <div className="space-y-4">
-              <AdBanner slot="2180278102" format="horizontal" />
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 {currentPage < totalPages - 1 && (
                   <button
