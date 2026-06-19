@@ -7,7 +7,7 @@ import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 
-type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes";
+type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes" | "rto-amvi";
 
 const GK_MARATHON_TOPIC: { category: Category; topic: string } = {
   category: "Current Affairs",
@@ -62,7 +62,7 @@ export default function HomeClient() {
     } else if (mode === "notes") {
       setAppMode("notes");
       window.history.replaceState({}, "", window.location.pathname);
-    } else if (mode === "subject" || mode === "topic") {
+    } else if (mode === "subject" || mode === "topic" || mode === "rto-amvi") {
       setAppMode(mode);
       window.history.replaceState({}, "", window.location.pathname);
     }
@@ -547,6 +547,43 @@ export default function HomeClient() {
                 </div>
               </button>
 
+              {/* RTO AMVI — separate exam section */}
+              <button
+                onClick={() => { setAppMode("rto-amvi"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className="group relative overflow-hidden rounded-3xl border border-amber-200 bg-gradient-to-br from-amber-50 via-white to-yellow-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-100 dark:border-amber-800 dark:from-amber-950/40 dark:via-slate-900 dark:to-yellow-950/40 dark:hover:border-amber-500 dark:hover:shadow-black/20 sm:col-span-2"
+              >
+                <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-amber-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-amber-500/10" />
+                <div className="flex items-start gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md">
+                    <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0M19.5 18.75a1.5 1.5 0 01-3 0M2.25 15.75v-6A2.25 2.25 0 014.5 7.5h15a2.25 2.25 0 012.25 2.25v6a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25zM5.25 11.25h13.5" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold text-amber-700 dark:text-amber-300">
+                        🚗 RTO AMVI
+                      </h3>
+                      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
+                        New
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-full border border-orange-200 bg-orange-50 px-2 py-0.5 text-[10px] font-semibold text-orange-700 dark:border-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
+                        Free
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                      Assistant Motor Vehicle Inspector exam preparation. Section: <strong>Automobile Engineering</strong> — practice past paper MCQs covering IC engines, fuels, gears, brakes, fluid mechanics, vehicle layout and more.
+                    </p>
+                    <div className="mt-3 flex items-center text-xs font-semibold text-amber-600 dark:text-amber-400">
+                      Open RTO AMVI section
+                      <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </button>
+
               {/* Rivers of Maharashtra — district-wise 2D map + MPSC PYQ quiz (placed last per user request) */}
               <a
                 href="/rivers-maharashtra"
@@ -646,6 +683,34 @@ export default function HomeClient() {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             />
+          </div>
+        ) : appMode === "rto-amvi" ? (
+          <div className="space-y-4 py-2 sm:py-4">
+            <button
+              onClick={() => { setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-amber-600 dark:text-slate-300 dark:hover:text-amber-400"
+            >
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+              </svg>
+              Back to Home
+            </button>
+            <div className="rounded-2xl border border-amber-200/70 bg-gradient-to-r from-amber-50 via-white to-yellow-50 p-5 dark:border-amber-800/70 dark:from-amber-950/30 dark:via-slate-900 dark:to-yellow-950/30">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0M19.5 18.75a1.5 1.5 0 01-3 0M2.25 15.75v-6A2.25 2.25 0 014.5 7.5h15a2.25 2.25 0 012.25 2.25v6a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25zM5.25 11.25h13.5" />
+                  </svg>
+                </div>
+                <div className="min-w-0">
+                  <h2 className="text-lg font-bold text-amber-700 dark:text-amber-300">RTO AMVI</h2>
+                  <p className="text-xs text-slate-600 dark:text-slate-400">
+                    Assistant Motor Vehicle Inspector exam · Section: Automobile Engineering
+                  </p>
+                </div>
+              </div>
+            </div>
+            <StudentView language="english" challenge={null} homeKey={homeKey} topicMode={false} guestUser={guestIdentity} directTopic={null} examFilter="RTO_AMVI" />
           </div>
         ) : (
           <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} guestUser={guestIdentity} directTopic={pendingDirectTopic} />

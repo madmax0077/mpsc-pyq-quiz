@@ -120,7 +120,28 @@ interface GuestUserInfo {
   photoURL: string | null;
 }
 
-export default function StudentView({ language = "english", challenge, homeKey = 0, topicMode = false, guestUser = null, directTopic = null }: { language?: Language; challenge?: ChallengeInfo | null; homeKey?: number; topicMode?: boolean; guestUser?: GuestUserInfo | null; directTopic?: { category: Category; topic: string } | null }) {
+export default function StudentView({
+  language = "english",
+  challenge,
+  homeKey = 0,
+  topicMode = false,
+  guestUser = null,
+  directTopic = null,
+  examFilter = null,
+}: {
+  language?: Language;
+  challenge?: ChallengeInfo | null;
+  homeKey?: number;
+  topicMode?: boolean;
+  guestUser?: GuestUserInfo | null;
+  directTopic?: { category: Category; topic: string } | null;
+  /**
+   * When set (e.g. "RTO_AMVI"), only show quizzes belonging to that exam
+   * section and skip the MPSC subject/category browser. When null (default),
+   * show MPSC content and explicitly hide any quizzes from other exams.
+   */
+  examFilter?: string | null;
+}) {
   const { studentUser } = useAuth();
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
@@ -204,14 +225,26 @@ export default function StudentView({ language = "english", challenge, homeKey =
   }, [language]);
 
   const filteredQuizzes = useMemo(() => {
+    // First, apply the exam-section filter. A separate exam (e.g. RTO AMVI)
+    // must NEVER leak into the default MPSC views; conversely, when the user
+    // explicitly opens an exam section we only show that exam's quizzes.
+    const byExam = quizzes.filter((q) => {
+      const t = q.examType;
+      if (examFilter) {
+        return t === examFilter;
+      }
+      // MPSC default mode: hide anything tagged with a non-MPSC examType.
+      return !t || t === "MPSC";
+    });
+
     // Topic-only quizzes (Topic Wise tab) are language-agnostic — they expose
     // a topic-by-category catalogue that should be browsable in any UI
     // language. Only language-filter the regular exam papers.
     if (language === "marathi") {
-      return quizzes.filter((q) => q.topicOnly || q.language === "marathi");
+      return byExam.filter((q) => q.topicOnly || q.language === "marathi");
     }
-    return quizzes.filter((q) => q.topicOnly || q.language !== "marathi");
-  }, [quizzes, language]);
+    return byExam.filter((q) => q.topicOnly || q.language !== "marathi");
+  }, [quizzes, language, examFilter]);
 
   const examQuizzes = useMemo(() => filteredQuizzes.filter((q) => !q.topicOnly), [filteredQuizzes]);
 
@@ -850,8 +883,8 @@ export default function StudentView({ language = "english", challenge, homeKey =
               </button>
             )}
 
-            {/* Category Quizzes */}
-            {categoryQuizzes.length > 0 && (
+            {/* Category Quizzes — only for MPSC, hidden inside dedicated exam sections. */}
+            {!examFilter && categoryQuizzes.length > 0 && (
               <div>
                 <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">Practice by Subject</h2>
                 <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">Auto-grouped from categorized questions across all quizzes.</p>
@@ -913,8 +946,14 @@ export default function StudentView({ language = "english", challenge, homeKey =
             {/* Regular Quizzes */}
             {regularQuizzes.length > 0 && (
               <div>
-                <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">All Quizzes</h2>
-                <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">Full question papers as uploaded by admin.</p>
+                <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">
+                  {examFilter === "RTO_AMVI" ? "Automobile Engineering — Past Papers" : "All Quizzes"}
+                </h2>
+                <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
+                  {examFilter === "RTO_AMVI"
+                    ? "Practice full past papers for the RTO AMVI Automobile Engineering exam."
+                    : "Full question papers as uploaded by admin."}
+                </p>
                 <div className="grid gap-3 sm:grid-cols-2">
                   {regularQuizzes.map((quiz) => (
                     <button
@@ -947,7 +986,9 @@ export default function StudentView({ language = "english", challenge, homeKey =
             {/* Share CTA */}
             <div className="rounded-xl border border-indigo-100 bg-gradient-to-r from-indigo-50 to-violet-50 p-5 text-center dark:from-indigo-950/30 dark:to-violet-950/30 dark:border-indigo-800">
               <p className="mb-3 text-sm font-medium text-slate-600 dark:text-slate-300">
-                Know someone preparing for MPSC? Help them practice for free!
+                {examFilter === "RTO_AMVI"
+                  ? "Know someone preparing for RTO AMVI? Help them practice for free!"
+                  : "Know someone preparing for MPSC? Help them practice for free!"}
               </p>
               <ShareButton />
             </div>

@@ -41,6 +41,16 @@ export interface Quiz {
   language?: Language;
   tag?: string;
   topicOnly?: boolean;
+  /**
+   * Identifies the exam this quiz belongs to. Unset / "MPSC" means a regular
+   * MPSC paper (default behaviour). Other values create separate exam sections
+   * that are only visible inside their own dedicated home-page entry point
+   * (e.g. "RTO_AMVI"). MPSC views explicitly exclude non-MPSC quizzes so the
+   * subject/category breakdowns stay clean.
+   */
+  examType?: string;
+  /** Optional subject grouping inside an exam section (e.g. "Automobile Engineering"). */
+  subject?: string;
 }
 
 export type AppMode = "admin" | "student";

@@ -88198,11 +88198,13 @@
     "tag": "महाराष्ट्र खनिज संपत्ती"
   },
   {
-    "id": "rto-amvi-auto-engg",
-    "title": "RTO AMVI — Automobile Engineering (Past Papers)",
+    "id": "rto-amvi-auto-engg-dlk",
+    "title": "RTO AMVI — Automobile Engineering (Code DLK)",
     "createdAt": "2026-06-19T00:00:00.000Z",
-    "topicOnly": true,
+    "language": "english",
     "tag": "RTO AMVI",
+    "examType": "RTO_AMVI",
+    "subject": "Automobile Engineering",
     "questions": [
       {
         "id": "rto-amvi-auto-engg-dlk-q001",
@@ -88215,8 +88217,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 1. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88230,8 +88230,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 3. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88245,8 +88243,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 5. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88260,8 +88256,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 6. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88275,8 +88269,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 8. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88290,8 +88282,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 9. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88305,8 +88295,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 10. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88320,8 +88308,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 11. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88335,8 +88321,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 12. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88350,8 +88334,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 14. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88365,8 +88347,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 15. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88380,8 +88360,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 16. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88395,8 +88373,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 19. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88410,8 +88386,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 22. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88425,8 +88399,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 23. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88440,8 +88412,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 24. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88455,8 +88425,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 27. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88470,8 +88438,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 30. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88485,8 +88451,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 36. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88500,8 +88464,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 37. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88515,8 +88477,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 38. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88530,8 +88490,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 39. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88545,8 +88503,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 40. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88560,8 +88516,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 42. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88575,8 +88529,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 43. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88590,8 +88542,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 44. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88605,8 +88555,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 45. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88620,8 +88568,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 46. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88635,8 +88581,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 48. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88650,8 +88594,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 49. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88665,8 +88607,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 50. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88680,8 +88620,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 51. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88695,8 +88633,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 52. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88710,8 +88646,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 53. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88725,8 +88659,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 54. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88740,8 +88672,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 55. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88755,8 +88685,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 56. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88770,8 +88698,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 57. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88785,8 +88711,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 58. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88800,8 +88724,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 59. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88815,8 +88737,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 60. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88830,8 +88750,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 61. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88845,8 +88763,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 62. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88860,8 +88776,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 63. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88875,8 +88789,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 64. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88890,8 +88802,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 65. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88905,8 +88815,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 66. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88920,8 +88828,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 67. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88935,8 +88841,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 68. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88950,8 +88854,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 69. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88965,8 +88867,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 73. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88980,8 +88880,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 74. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -88995,8 +88893,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 75. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89010,8 +88906,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 76. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89025,8 +88919,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 79. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89040,8 +88932,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 83. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89055,8 +88945,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 84. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89070,8 +88958,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 85. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89085,8 +88971,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 87. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89100,8 +88984,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 89. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89115,8 +88997,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 92. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89130,8 +89010,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 93. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89145,8 +89023,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 94. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89160,8 +89036,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 95. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89175,8 +89049,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 99. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89190,8 +89062,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 100. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89205,8 +89075,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 101. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89220,8 +89088,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 103. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89235,8 +89101,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 105. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89250,8 +89114,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 106. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89265,8 +89127,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 107. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89280,8 +89140,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 110. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89295,8 +89153,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 111. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89310,8 +89166,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 112. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89325,8 +89179,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 114. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89340,8 +89192,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 116. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89355,8 +89205,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 117. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89370,8 +89218,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 118. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89385,8 +89231,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 121. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89400,8 +89244,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 124. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89415,8 +89257,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 127. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89430,8 +89270,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 130. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89445,8 +89283,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 131. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89460,8 +89296,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 133. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89475,8 +89309,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 134. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89490,8 +89322,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 136. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89505,8 +89335,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 137. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89520,8 +89348,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 138. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89535,8 +89361,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 141. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89550,8 +89374,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 143. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89565,8 +89387,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 144. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89580,8 +89400,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 145. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89595,8 +89413,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 149. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
       },
       {
@@ -89610,10 +89426,19 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: DLK), Question 150. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-DLK"
-      },
+      }
+    ]
+  },
+  {
+    "id": "rto-amvi-auto-engg-nsb",
+    "title": "RTO AMVI — Automobile Engineering (Code NSB)",
+    "createdAt": "2026-06-19T00:00:00.000Z",
+    "language": "english",
+    "tag": "RTO AMVI",
+    "examType": "RTO_AMVI",
+    "subject": "Automobile Engineering",
+    "questions": [
       {
         "id": "rto-amvi-auto-engg-nsb-q003",
         "text": "The correct order in which the four operations occur in four stroke engine is",
@@ -89625,8 +89450,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 3. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89640,8 +89463,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 4. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89655,8 +89476,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 5. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89670,8 +89489,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 6. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89685,8 +89502,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 7. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89700,8 +89515,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 8. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89715,8 +89528,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 10. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89730,8 +89541,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 13. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89745,8 +89554,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 22. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89760,8 +89567,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 24. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89775,8 +89580,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 29. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89790,8 +89593,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 30. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89805,8 +89606,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 31. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89820,8 +89619,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 36. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89835,8 +89632,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 37. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89850,8 +89645,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 39. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89865,8 +89658,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 41. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89880,8 +89671,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 42. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89895,8 +89684,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 45. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89910,8 +89697,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 46. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89925,8 +89710,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 47. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89940,8 +89723,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 48. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89955,8 +89736,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 49. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89970,8 +89749,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 51. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -89985,8 +89762,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 53. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90000,8 +89775,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 56. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90015,8 +89788,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 62. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90030,8 +89801,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 63. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90045,8 +89814,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 64. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90060,8 +89827,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 66. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90075,8 +89840,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 71. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90090,8 +89853,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 72. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90105,8 +89866,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 73. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90120,8 +89879,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 76. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90135,8 +89892,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 79. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90150,8 +89905,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 80. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90165,8 +89918,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 81. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90180,8 +89931,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 82. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90195,8 +89944,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 84. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90210,8 +89957,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 87. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90225,8 +89970,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 88. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90240,8 +89983,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 93. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90255,8 +89996,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 100. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90270,8 +90009,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 102. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90285,8 +90022,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 103. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90300,8 +90035,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 104. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90315,8 +90048,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 105. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90330,8 +90061,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 106. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90345,8 +90074,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 107. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90360,8 +90087,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 108. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90375,8 +90100,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 109. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90390,8 +90113,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 110. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90405,8 +90126,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 115. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90420,8 +90139,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 119. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90435,8 +90152,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 121. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90450,8 +90165,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 122. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90465,8 +90178,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 123. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90480,8 +90191,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 124. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90495,8 +90204,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 127. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90510,8 +90217,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 128. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90525,8 +90230,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 132. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90540,8 +90243,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 133. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90555,8 +90256,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 134. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90570,8 +90269,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 135. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90585,8 +90282,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 136. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90600,8 +90295,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 141. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90615,8 +90308,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 142. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90630,8 +90321,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 147. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90645,8 +90334,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 148. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90660,8 +90347,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 149. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
       },
       {
@@ -90675,10 +90360,19 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: NSB), Question 150. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-NSB"
-      },
+      }
+    ]
+  },
+  {
+    "id": "rto-amvi-auto-engg-ayt",
+    "title": "RTO AMVI — Automobile Engineering (Code AYT)",
+    "createdAt": "2026-06-19T00:00:00.000Z",
+    "language": "english",
+    "tag": "RTO AMVI",
+    "examType": "RTO_AMVI",
+    "subject": "Automobile Engineering",
+    "questions": [
       {
         "id": "rto-amvi-auto-engg-ayt-q001",
         "text": "The property by which a body regains its original shape after removal of force is defined as",
@@ -90690,8 +90384,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 1. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90705,8 +90397,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 13. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90720,8 +90410,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 15. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90735,8 +90423,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 16. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90750,8 +90436,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 17. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90765,8 +90449,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 19. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90780,8 +90462,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 33. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90795,8 +90475,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 42. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90810,8 +90488,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 51. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90825,8 +90501,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 52. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90840,8 +90514,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 63. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90855,8 +90527,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 73. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90870,8 +90540,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 74. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90885,8 +90553,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 83. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90900,8 +90566,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 87. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90915,8 +90579,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 100. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90930,8 +90592,6 @@
         },
         "correctAnswer": "C",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 103. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90945,8 +90605,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 106. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90960,8 +90618,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 109. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90975,8 +90631,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 115. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -90990,8 +90644,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 116. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -91005,8 +90657,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 131. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -91020,8 +90670,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 133. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -91035,8 +90683,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 134. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -91050,8 +90696,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 136. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -91065,8 +90709,6 @@
         },
         "correctAnswer": "A",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 142. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -91080,8 +90722,6 @@
         },
         "correctAnswer": "D",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 146. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       },
       {
@@ -91095,8 +90735,6 @@
         },
         "correctAnswer": "B",
         "explanation": "Source: RTO AMVI — Automobile Engineering question paper (Code: AYT), Question 150. Maharashtra Public Service Commission.",
-        "category": "Science",
-        "topic": "Automobile Engineering",
         "sourceTag": "RTO-AMVI-AYT"
       }
     ]
