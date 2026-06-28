@@ -2,7 +2,6 @@
 
 import { useEffect, useState, type SyntheticEvent } from "react";
 import NewspaperNotes from "@/components/notes/NewspaperNotes";
-import MhGeographyNotes from "@/components/notes/MhGeographyNotes";
 import MhHistoryNotes from "@/components/notes/MhHistoryNotes";
 import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
 
@@ -24,7 +23,6 @@ import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
 
 type NoteSlug =
   | "newspapers"
-  | "mh-geography"
   | "mh-history"
   | "economics-yojana";
 
@@ -48,16 +46,6 @@ const NOTES_INDEX: NoteEntry[] = [
       "13 प्रकरणे — माऊंट स्टुअर्ट एल्फिन्स्टन, ख्रिस्ती मिशनरी, सामाजिक व धार्मिक सुधारणा (मानव धर्म ते आर्य समाज), मराठी वृत्तपत्रांचा इतिहास, प्रमुख समाज सुधारक, १८५७ चा उठाव, महात्मा फुले व सत्यशोधक समाज, आद्य व क्रांतिकारी चळवळ, दलित चळवळ, गांधी युगातील सत्याग्रह, मराठवाडा मुक्ती संग्राम आणि संयुक्त महाराष्ट्र चळवळ.",
     meta: "MPSC · Rajyaseva · STI · PSI · ASO · UPSC · ~30 min revision",
     accent: "from-[#FF671F] via-[#D9482F] to-[#046A38]",
-  },
-  {
-    slug: "mh-geography",
-    emoji: "🗺️",
-    title: "महाराष्ट्र भूगोल — संपूर्ण नोट्स",
-    subtitle: "Maharashtra Geography — Complete Notes (2026)",
-    blurb:
-      "16 chapters · 83 pages of Marathi geography revision notes — formation of Maharashtra, political and physical geography, rivers, climate, forests, energy, transport, tourism, astronomy and space launches. Read online (copy-protected).",
-    meta: "MPSC · Rajyaseva · RTO AMVI · UPSC · 2026 redesigned edition",
-    accent: "from-[#12193A] to-orange-500",
   },
   {
     slug: "economics-yojana",
@@ -248,8 +236,6 @@ function NoteContent({ slug }: { slug: NoteSlug }) {
   switch (slug) {
     case "newspapers":
       return <NewspaperNotes />;
-    case "mh-geography":
-      return <MhGeographyNotes />;
     case "mh-history":
       return <MhHistoryNotes />;
     case "economics-yojana":
