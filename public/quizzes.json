@@ -92142,7 +92142,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 1. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 1. Maharashtra Public Service Commission.\n\nBenson, Loeffler, and Velox are all high-pressure water-tube steam generators that operate at or near critical pressures. Therefore, none of the listed options are low-pressure steam generators. Low-pressure boilers typically include fire-tube designs like Cornish or Lancashire boilers."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q002",
@@ -92155,7 +92155,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 2. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 2. Maharashtra Public Service Commission.\n\nA compressor's primary function is to increase the pressure of a gas. The compression ratio is defined as the absolute discharge pressure divided by the absolute suction pressure. Since discharge pressure must be higher than suction pressure, this ratio is always strictly greater than 1.0."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q003",
@@ -92168,7 +92168,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 3. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 3. Maharashtra Public Service Commission.\n\nCompressor capacity is defined as the actual volume of free air delivered (FAD) per unit of time at intake conditions. It is typically expressed in cubic meters per minute (m³/min) or cubic feet per minute (CFM). KW and KWh are units of power and energy, not volume flow rate."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q004",
@@ -92181,7 +92181,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 4. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 4. Maharashtra Public Service Commission.\n\nClearance volume is the small space left between the piston and cylinder head at top dead center. High-pressure air trapped here expands during the suction stroke, delaying the intake of fresh air. This directly reduces the actual volume of air drawn in, thus lowering the volumetric efficiency."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q005",
@@ -92194,7 +92194,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 5. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 5. Maharashtra Public Service Commission.\n\nThe ideal, most efficient compression process is isothermal (constant temperature), which requires the minimum possible work. Therefore, the performance or 'isothermal efficiency' of a reciprocating compressor is expressed as the ratio of ideal isothermal work to the actual indicated work."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q006",
@@ -92207,7 +92207,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 6. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 6. Maharashtra Public Service Commission.\n\nTrue air conditioning goes beyond simple cooling. It involves the simultaneous control of temperature (heating or cooling), humidity (adding or removing moisture), and air motion/purity to maintain desired human comfort or industrial conditions. Thus, it controls all three factors."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q007",
@@ -92220,7 +92220,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 7. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 7. Maharashtra Public Service Commission.\n\nMulti-stage compression with intercooling cools the gas between stages back to its initial intake temperature. This brings the overall compression curve closer to the ideal isothermal process, significantly reducing the total mechanical work required compared to single-stage adiabatic compression."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q008",
@@ -92233,7 +92233,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 8. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 8. Maharashtra Public Service Commission.\n\nIn a double-acting reciprocating compressor, the piston acts on the air during both its forward and return strokes within the same cylinder. This means air is drawn in and compressed on both sides of the piston, effectively doubling the output for a given cylinder size."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q009",
@@ -92246,7 +92246,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 9. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 9. Maharashtra Public Service Commission.\n\nSwept volume, also known as piston displacement, is the theoretical geometric volume swept by the piston during one complete stroke (Area × Stroke length). 'Free air delivered' is the actual useful air delivered, which is always less than the swept volume."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q010",
@@ -92259,7 +92259,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 10. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 10. Maharashtra Public Service Commission.\n\nThe compression ratio in a compressor is defined as the absolute delivery (discharge) pressure divided by the absolute suction (intake) pressure. This is different from IC engines, where compression ratio is a ratio of volumes."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q011",
@@ -92272,7 +92272,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 11. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 11. Maharashtra Public Service Commission.\n\nIn a two-stage air compressor, the intercooler is placed between the Low Pressure (L.P.) cylinder and the High Pressure (H.P.) cylinder. Its purpose is to cool the partially compressed air from the L.P. stage before it enters the H.P. stage, saving compression work."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q012",
@@ -92285,7 +92285,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 12. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 12. Maharashtra Public Service Commission.\n\nOne ton of refrigeration (TR) is defined as the rate of heat extraction required to freeze one ton (2000 lbs) of pure water at 0°C into ice at 0°C in 24 hours. In SI units, this is exactly equivalent to a heat extraction rate of 3.5 kW (or 3.5 kJ per second)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q013",
@@ -92298,7 +92298,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 13. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 13. Maharashtra Public Service Commission.\n\nHousehold refrigerators universally work on the Vapor Compression Cycle (VCC). They use a mechanical compressor to circulate a refrigerant (like Freon or R-134a) that absorbs heat in the evaporator and releases it in the condenser. Vapor absorption is mostly used in industrial or RV settings."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q014",
@@ -92311,7 +92311,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 14. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 14. Maharashtra Public Service Commission.\n\nTo jump the gap between the spark plug electrodes under the high pressure of the combustion chamber, a very high voltage is required. The ignition coil steps up the 12V battery voltage to a range of 12,000 to 20,000 volts (12 to 20 kV), making 12 to 15 kV the correct range."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q015",
@@ -92324,7 +92324,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 15. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 15. Maharashtra Public Service Commission.\n\nThe Coefficient of Performance (C.O.P.) of a refrigerator is the ratio of the desired output (heat extracted from the refrigerated space) to the required input (mechanical work supplied to the compressor). It is a measure of cooling efficiency."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q016",
@@ -92337,7 +92337,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 16. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 16. Maharashtra Public Service Commission.\n\nFreon-12 (R-12) was the standard refrigerant used in household refrigerators for decades due to its excellent thermodynamic properties and safety. (Note: It has since been phased out due to ozone depletion, but historically R-12 is the correct answer for this vintage of questions)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q017",
@@ -92350,7 +92350,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 17. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 17. Maharashtra Public Service Commission.\n\nThe Bell-Coleman cycle, also known as the reversed Brayton cycle or reversed Joule cycle, is the standard thermodynamic cycle used for air refrigeration systems, commonly found in aircraft cabin cooling. It uses air as the refrigerant."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q018",
@@ -92363,7 +92363,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 18. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 18. Maharashtra Public Service Commission.\n\nC.O.P. = (Refrigerating Effect) / (Work Input). 1 Ton of Refrigeration = 3.5 kW. If C.O.P. is 3.5, then Work Input = 3.5 kW / 3.5 = 1.00 kW. Therefore, the minimum power needed to run the machine is 1.00 KW."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q019",
@@ -92376,7 +92376,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 19. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 19. Maharashtra Public Service Commission.\n\nDomestic refrigerators typically use a capillary tube as the expansion device. It is a simple, fixed-length, narrow copper tube that drops the pressure of the liquid refrigerant without any moving parts, making it highly reliable and cheap for small appliances."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q020",
@@ -92389,7 +92389,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 20. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 20. Maharashtra Public Service Commission.\n\nPackage type air conditioners are self-contained units commonly used for commercial spaces, restaurants, or large halls. They typically have cooling capacities ranging from 3 tons up to around 20 tons. Anything larger usually requires a central chiller plant."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q021",
@@ -92402,7 +92402,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 21. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 21. Maharashtra Public Service Commission.\n\nThe Celsius and Fahrenheit scales intersect at -40 degrees. Using the conversion formula F = (C × 9/5) + 32, if we set C = -40, then F = (-40 × 9/5) + 32 = -72 + 32 = -40. Therefore, -40°C is exactly equal to -40°F."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q022",
@@ -92415,7 +92415,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 22. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 22. Maharashtra Public Service Commission.\n\nAbsolute humidity is defined as the actual mass (weight) of water vapor present in a unit volume of moist air, usually expressed in grams per cubic meter (g/m³). Specific humidity, on the other hand, is the mass of water vapor per kg of dry air."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q023",
@@ -92428,7 +92428,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 23. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 23. Maharashtra Public Service Commission.\n\nThe primary function of a governor in any engine (steam or IC) is to control the mean speed by regulating the fuel or steam supply according to the varying load on the engine. It ensures the engine runs at a relatively constant speed regardless of load."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q024",
@@ -92441,7 +92441,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 24. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 24. Maharashtra Public Service Commission.\n\nA humidostat (or hygrostat) is an electronic or mechanical device that is sensitive to changes in moisture (humidity) in the air. It is used to automatically control humidifiers or dehumidifiers to maintain a set humidity level."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q025",
@@ -92454,7 +92454,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 25. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 25. Maharashtra Public Service Commission.\n\nElongation (ΔL) = (P × L) / (A × E). Area A = π/4 × 20² = 314.16 mm². P = 30,000 N, L = 500 mm, E = 200,000 N/mm². ΔL = (30000 × 500) / (314.16 × 200000) = 15,000,000 / 62,832,000 = 0.2387 mm. Thus, 0.239 mm is the correct answer."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q026",
@@ -92467,7 +92467,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 26. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 26. Maharashtra Public Service Commission.\n\nStress (σ) = Load / Area = 10,000 N / 50 mm² = 200 N/mm². Strain (ε) = Stress / Young's Modulus (E) = 200 / 200,000 = 0.001. Therefore, the strain in the bar is 0.001."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q027",
@@ -92480,7 +92480,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 27. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 27. Maharashtra Public Service Commission.\n\nAn overhanging beam is one in which one or both of the end portions extend freely beyond the supports. A cantilever is fixed at one end and completely free at the other, while a continuous beam has more than two supports."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q028",
@@ -92493,7 +92493,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 28. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 28. Maharashtra Public Service Commission.\n\nThe Moment of Inertia (I) for a rectangular section about the centroidal axis parallel to its width (b) is given by I = (b × d³) / 12. Here, b = 300 mm, d = 200 mm. I = (300 × 200³) / 12 = (300 × 8,000,000) / 12 = 2,400,000,000 / 12 = 200 × 10⁶ mm⁴."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q029",
@@ -92506,7 +92506,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 29. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 29. Maharashtra Public Service Commission.\n\nSection Modulus (Z) is the ratio of Moment of Inertia (I) to the distance from the neutral axis to the extreme fiber (y_max). For a circle, I = πD⁴/64 and y_max = D/2. Therefore, Z = (πD⁴/64) / (D/2) = πD³/32."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q030",
@@ -92519,7 +92519,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 30. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 30. Maharashtra Public Service Commission.\n\nFor a cantilever beam of length 'l' carrying a uniformly distributed load 'w' over its entire span, the maximum deflection at the free end is given by the standard structural formula: δ = wl⁴ / 8EI."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q031",
@@ -92532,7 +92532,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 31. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 31. Maharashtra Public Service Commission.\n\nIn a cantilever beam that is rigidly fixed at one end, the fixed support prevents any rotation or translation. Therefore, the slope (angle of rotation) at the fixed end is always exactly zero (0°), regardless of the load applied at the free end."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q032",
@@ -92545,7 +92545,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 32. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 32. Maharashtra Public Service Commission.\n\nFor a simply supported beam of span 'l' carrying a uniformly distributed load 'w' across its entire length, the maximum deflection occurs at the center and is given by the standard formula: δ = (5/384) × (wl⁴/EI)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q033",
@@ -92558,7 +92558,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 33. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 33. Maharashtra Public Service Commission.\n\nAccording to Euler's column theory, the critical buckling load (P) for a long column with both ends hinged (pinned) is given by the formula P = π²EI / l², where E is Young's modulus, I is the minimum moment of inertia, and l is the actual length."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q034",
@@ -92571,7 +92571,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 34. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 34. Maharashtra Public Service Commission.\n\nHoop stress (σ) = (P × d) / (2 × t). First, convert pressure head to pressure: P = ρgh = 10000 N/m³ × 120 m = 1.2 × 10⁶ N/m² = 1.2 N/mm². Given σ = 24 N/mm² and d = 800 mm. 24 = (1.2 × 800) / (2 × t) => 24 = 960 / 2t => 48t = 960 => t = 20 mm."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q035",
@@ -92584,7 +92584,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 35. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 35. Maharashtra Public Service Commission.\n\nResinoid bonds (made from synthetic resins) are extremely strong and elastic. They allow grinding wheels to be made very thin (like cut-off wheels) while operating safely at high speeds without shattering, unlike brittle vitrified bonds."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q036",
@@ -92597,7 +92597,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 36. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 36. Maharashtra Public Service Commission.\n\nPig iron is produced in a blast furnace. The primary raw materials fed into the top of the furnace are iron ore (the source of iron), coke (to provide heat and act as a reducing agent), and limestone (to act as a flux and remove impurities as slag)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q037",
@@ -92610,7 +92610,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 37. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 37. Maharashtra Public Service Commission.\n\nBabbitt metal is a soft, white metal alloy used primarily for bearing surfaces. The most common tin-based Babbitt (genuine Babbitt) consists mainly of Copper, Tin, and Antimony. It provides excellent friction reduction and embeds dirt particles safely."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q038",
@@ -92623,7 +92623,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 38. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 38. Maharashtra Public Service Commission.\n\nMuntz metal is a type of alpha-beta brass consisting of about 60% copper and 40% zinc, with traces of iron. It is highly resistant to corrosion and is widely used for architectural extrusions, condenser tubes, ordinance work, and electrical equipment components."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q039",
@@ -92636,7 +92636,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 39. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 39. Maharashtra Public Service Commission.\n\nMetal spinning is a chipless cold-forming process where a flat metal disc is rotated on a lathe and pressed against a mandrel to form a hollow, axisymmetric shape. Knurling, hobbing, and lapping all involve some form of material removal or cutting."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q040",
@@ -92649,7 +92649,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 40. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 40. Maharashtra Public Service Commission.\n\nMetals like uranium, thorium, and plutonium are radioactive fuels. Zirconium, beryllium, and niobium have very low neutron-absorption cross-sections and high-temperature strength. Together, these are the primary materials used in Nuclear Engineering for reactor cores and cladding."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q041",
@@ -92662,7 +92662,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 41. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 41. Maharashtra Public Service Commission.\n\nExtrusion is a bulk deformation process where a hot or cold metal billet is forced by high mechanical pressure to flow through a shaped die, taking the cross-sectional profile of the die. It changes shape purely by plastic deformation, without removing chips."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q042",
@@ -92675,7 +92675,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 42. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 42. Maharashtra Public Service Commission.\n\nTumbling (or barrel finishing) is a mass-finishing process where rough castings or forgings are placed in a rotating barrel with abrasives. The tumbling action rubs the parts together to clean the casting, remove sand, scale, and sharp flash."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q043",
@@ -92688,7 +92688,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 43. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 43. Maharashtra Public Service Commission.\n\nHot working of metals is defined as plastic deformation carried out at a temperature above the metal's recrystallization temperature. At this temperature, the metal continuously forms new, strain-free grains as it is deformed, preventing work-hardening."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q044",
@@ -92701,7 +92701,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 44. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 44. Maharashtra Public Service Commission.\n\nDraft allowance is a slight taper or angle provided on the vertical sides of a pattern. This taper makes it much easier to withdraw the pattern from the sand mold without damaging or breaking the fragile vertical sand walls."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q045",
@@ -92714,7 +92714,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 45. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 45. Maharashtra Public Service Commission.\n\nCentrifugal casting involves pouring molten metal into a rapidly spinning cylindrical mold. The centrifugal force throws the metal outward against the mold walls, producing dense, high-quality hollow cylindrical shapes like large pipes and gun barrels without needing a core."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q046",
@@ -92727,7 +92727,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 46. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 46. Maharashtra Public Service Commission.\n\nAnnealing is a heat treatment process that involves heating the metal to a specific temperature, holding it, and then cooling it very slowly in the furnace. Its primary purpose is to relieve internal stresses, soften the metal, and significantly improve machinability."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q047",
@@ -92740,7 +92740,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 47. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 47. Maharashtra Public Service Commission.\n\nIn metal cutting theory, the two basic mechanisms are Orthogonal (2D) cutting, where the cutting edge is perfectly perpendicular to the direction of tool travel, and Oblique (3D) cutting, where the cutting edge is inclined at an angle to the direction of travel."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q048",
@@ -92753,7 +92753,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 48. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 48. Maharashtra Public Service Commission.\n\nA mandrel is a slightly tapered, hardened steel shaft. It is inserted into a previously drilled or bored hole of a workpiece to securely hold it between lathe centers, ensuring that the newly machined outer surface is perfectly concentric with the inner hole."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q049",
@@ -92766,7 +92766,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 49. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 49. Maharashtra Public Service Commission.\n\nModule (m) is defined as the pitch diameter divided by the number of teeth (D/T). Circular pitch (Pc) is πD/T, which equals π × m. Therefore, the module is directly proportional to the reciprocal of diametral pitch, and represents the size of the gear tooth in metric systems."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q050",
@@ -92779,7 +92779,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 50. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 50. Maharashtra Public Service Commission.\n\nTurret lathes replace the standard tailstock with a multi-station rotatable turret, allowing multiple tools to be used in rapid sequence. They are designed for mass production, not 'very small precision jobs' (which use instrument lathes). They can also be CNC (tape) controlled. Thus, A and C are true."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q051",
@@ -92792,7 +92792,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 51. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 51. Maharashtra Public Service Commission.\n\nCentreless grinding is a process where the workpiece is not held between centers or in a chuck. Instead, it is supported by a work-rest blade and sits between a high-speed grinding wheel and a slower regulating wheel, which controls the rotation and feed of the work."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q052",
@@ -92805,7 +92805,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 52. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 52. Maharashtra Public Service Commission.\n\nA broaching tool (broach) has a series of progressively larger cutting teeth. To cut internal gear teeth or splines in a single pass, a specialized internal broach is pulled or pushed through the hole, cutting the entire profile simultaneously."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q053",
@@ -92818,7 +92818,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 53. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 53. Maharashtra Public Service Commission.\n\nA dividing head (or indexing head) is a specialized milling machine attachment. It is used to securely hold a workpiece and accurately rotate (index) it through specific angles, allowing the periphery to be divided into an equal number of parts for cutting gear teeth or splines."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q054",
@@ -92831,7 +92831,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 54. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 54. Maharashtra Public Service Commission.\n\nMetal spinning severely cold-works the metal, causing it to become hard and brittle (work-hardened). To prevent cracking during deep spinning, the process must be paused to anneal (soften) the metal, followed by pickling to remove the oxide scale formed during heating."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q055",
@@ -92844,7 +92844,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 55. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 55. Maharashtra Public Service Commission.\n\nIn a flat collar bearing, the total axial thrust load is distributed across multiple collars. By increasing the number of collars, the contact area increases, which decreases the intensity of pressure on each individual collar, preventing excessive wear and overheating."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q056",
@@ -92857,7 +92857,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 56. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 56. Maharashtra Public Service Commission.\n\nSquare threads have a thread angle of 0°, meaning all the applied force goes into lifting the load. V-threads have an angled flank, which creates a radial bursting force that increases friction. Therefore, for the same pitch, square threads are more efficient than V-threads."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q057",
@@ -92870,7 +92870,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 57. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 57. Maharashtra Public Service Commission.\n\nDynamic friction (also known as kinetic friction) is the opposing force of friction that acts on a body when it is actually in motion sliding over another surface. Static friction acts only when the body is at rest and resisting initial movement."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q058",
@@ -92883,7 +92883,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 58. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 58. Maharashtra Public Service Commission.\n\nThe Hartnell governor is a classic example of a spring-loaded centrifugal governor. It uses a helical spring to provide the controlling downward force on the sleeve, opposing the outward centrifugal force of the rotating bell-crank balls."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q059",
@@ -92896,7 +92896,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 59. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 59. Maharashtra Public Service Commission.\n\nFor the same mass, a rim-type flywheel concentrates almost all its mass at the outer edge (maximum radius). Since Moment of Inertia I = mr², maximizing the radius drastically increases the energy storage capacity compared to a solid disc of the same mass."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q060",
@@ -92909,7 +92909,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 60. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 60. Maharashtra Public Service Commission.\n\nFlywheel energy fluctuation is proportional to I × ω². If the mean speed of rotation (ω) is higher, the required Moment of Inertia (I) to store the same amount of energy is much lower. Therefore, a higher speed allows the size and mass of the flywheel to be reduced."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q061",
@@ -92922,7 +92922,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 61. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 61. Maharashtra Public Service Commission.\n\nThe tangential component of acceleration of point B relative to point A is given by a_t = α × AB, where α is the angular acceleration. Therefore, the angular acceleration α is found by dividing the tangential component of acceleration by the length of the link AB."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q062",
@@ -92935,7 +92935,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 62. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 62. Maharashtra Public Service Commission.\n\nAronhold-Kennedy's theorem states that if three rigid bodies (links) are in relative plane motion with respect to one another, their three instantaneous centers of velocity must all lie on the same straight line."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q063",
@@ -92948,7 +92948,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 63. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 63. Maharashtra Public Service Commission.\n\nA bolt and a nut form a screw pair (or helical pair). The relative motion between them is a combination of independent rotation and translation that are strictly linked together by the pitch of the threads."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q064",
@@ -92961,7 +92961,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 64. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 64. Maharashtra Public Service Commission.\n\nIn a foot step bearing, a vertical shaft rotates while resting on a bottom pad. Gravity and the bearing walls prevent it from moving in any direction other than rotating about its vertical axis. Because the motion is restricted to exactly one type by the geometry alone, it is completely constrained."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q065",
@@ -92974,7 +92974,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 65. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 65. Maharashtra Public Service Commission.\n\nA perfect (or ideal) fluid is a theoretical fluid that is assumed to be both perfectly incompressible (constant density) and completely frictionless (zero viscosity). Real fluids always have some viscosity and compressibility."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q066",
@@ -92987,7 +92987,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 66. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 66. Maharashtra Public Service Commission.\n\nThe continuity equation in fluid mechanics (A1V1 = A2V2 for incompressible fluids) is a mathematical expression of the law of conservation of mass. It states that the mass of fluid entering a pipe must equal the mass leaving it."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q067",
@@ -93000,7 +93000,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 67. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 67. Maharashtra Public Service Commission.\n\nAbsolute pressure is the total pressure measured from absolute zero (a perfect vacuum). Gauge pressure is measured relative to the local atmospheric pressure. Therefore, Gauge pressure = Absolute pressure - Atmospheric pressure."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q068",
@@ -93013,7 +93013,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 68. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 68. Maharashtra Public Service Commission.\n\nAccording to Pascal's Law, a fluid at rest in a closed container exerts equal pressure in all directions at any given point. This is the fundamental principle behind hydraulic systems."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q069",
@@ -93026,7 +93026,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 69. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 69. Maharashtra Public Service Commission.\n\nThe defining physical characteristic of any fluid (liquid or gas) is that it cannot resist even the slightest shear (tangential) force when at rest. It will continuously deform and flow as long as a shear force is applied."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q070",
@@ -93039,7 +93039,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 70. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 70. Maharashtra Public Service Commission.\n\nA pump is a mechanical machine driven by an external power source (like an electric motor). It takes this mechanical energy and converts it into hydraulic energy (pressure and kinetic energy) to lift or move a fluid."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q071",
@@ -93052,7 +93052,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 71. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 71. Maharashtra Public Service Commission.\n\nThe purpose of governing a hydraulic turbine is to maintain the rotational speed of the turbine runner absolutely constant under all varying load conditions on the generator. This is done by automatically adjusting the water flow rate."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q072",
@@ -93065,7 +93065,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 72. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 72. Maharashtra Public Service Commission.\n\nThe volute (spiral) casing of a centrifugal pump gradually increases in cross-sectional area towards the delivery pipe. This design slows down the high-velocity water leaving the impeller, smoothly converting its kinetic energy into useful pressure energy."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q073",
@@ -93078,7 +93078,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 73. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 73. Maharashtra Public Service Commission.\n\nThe Pelton wheel is an impulse turbine specifically designed to operate efficiently under very high heads of water (typically above 250 meters) and relatively low discharge rates. Francis and Kaplan turbines are used for medium and low heads, respectively."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q074",
@@ -93091,7 +93091,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 74. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 74. Maharashtra Public Service Commission.\n\nOverall efficiency (η_o) of a turbine is the ratio of the final shaft power output to the total water power input. It is the product of the hydraulic efficiency (water to runner) and the mechanical efficiency (runner to shaft). Thus, η_o = η_h × η_m."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q075",
@@ -93104,7 +93104,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 75. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 75. Maharashtra Public Service Commission.\n\nUranium-235 (U-235) is the only naturally occurring fissile isotope. It is the primary fuel used in commercial nuclear power plants because it can easily sustain a nuclear fission chain reaction when bombarded with thermal neutrons."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q076",
@@ -93117,7 +93117,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 76. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 76. Maharashtra Public Service Commission.\n\nCoal is a fossil fuel and is the most traditional, conventional source of energy used globally for centuries. Solar, wind, and bio-gas are modern, renewable, and non-conventional energy sources."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q077",
@@ -93130,7 +93130,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 77. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 77. Maharashtra Public Service Commission.\n\nGeothermal power plants utilize natural steam or hot water from deep underground. Because they do not require boilers, fuel purchasing, or complex fuel-handling infrastructure, their capital and generation costs are generally the least among conventional thermal and nuclear plants."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q078",
@@ -93143,7 +93143,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 78. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 78. Maharashtra Public Service Commission.\n\nThe solar constant is the average rate at which solar radiant energy is received outside the Earth's atmosphere on a surface normal to the incident rays. The internationally accepted standard value is approximately 1353 W/m² (or 1.353 kW/m²)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q079",
@@ -93156,7 +93156,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 79. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 79. Maharashtra Public Service Commission.\n\nMagnetohydrodynamic (MHD) generation is a direct energy conversion system. It generates electricity directly by passing a high-temperature, electrically conducting plasma through a strong magnetic field, completely bypassing the traditional boiler-turbine-generator mechanical steps."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q080",
@@ -93169,7 +93169,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 80. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 80. Maharashtra Public Service Commission.\n\nIn Maharashtra, the coastal and high-altitude areas are favorable for wind energy. Deogad (in Sindhudurg district) is a prominent coastal location where wind energy farms have been successfully established and put into use."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q081",
@@ -93182,7 +93182,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 81. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 81. Maharashtra Public Service Commission.\n\nCoal remains the backbone of India's energy sector. It is the most important and widely used commercial source of energy, accounting for over 50% of the country's total primary energy consumption and the vast majority of its electricity generation."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q082",
@@ -93195,7 +93195,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 82. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 82. Maharashtra Public Service Commission.\n\nSupercharging is the process of using a mechanical compressor (supercharger) or an exhaust-driven turbine (turbocharger) to force air into the engine cylinders at a pressure higher than atmospheric. This increases the air density and allows more fuel to be burned, boosting power."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q083",
@@ -93208,7 +93208,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 83. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 83. Maharashtra Public Service Commission.\n\nIn physics and engineering, energy is fundamentally defined as the capacity or ability of a physical system to do work. Work is done when a force moves an object over a distance."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q084",
@@ -93221,7 +93221,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 84. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 84. Maharashtra Public Service Commission.\n\nA thermal prime mover converts heat energy (from burning fuel) into mechanical work. Steam turbines, gas turbines, and petrol engines all burn fuel to create heat. A water turbine (hydraulic prime mover) uses the potential/kinetic energy of falling water, not heat."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q085",
@@ -93234,7 +93234,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 85. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 85. Maharashtra Public Service Commission.\n\nThe theoretical Rankine cycle is the ideal cycle for vapor power plants. In this ideal cycle, the expansion of the high-pressure steam through the turbine is assumed to be perfectly reversible and adiabatic, which means it is an isentropic (constant entropy) process."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q086",
@@ -93247,7 +93247,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 86. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 86. Maharashtra Public Service Commission.\n\nCompression Ignition (C.I.) engines, or diesel engines, rely solely on the heat of highly compressed air to ignite the injected fuel. To achieve the required auto-ignition temperature, they must operate at high compression ratios, typically in the range of 12:1 to 20:1."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q087",
@@ -93260,7 +93260,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 87. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 87. Maharashtra Public Service Commission.\n\nA Locomotive boiler is a mobile, horizontal, multi-tubular fire-tube boiler. Because it is mounted on a moving train, it cannot have a tall chimney. Instead, it uses a short chimney and relies on the exhaust steam blast to create the necessary artificial draft."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q088",
@@ -93273,7 +93273,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 88. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 88. Maharashtra Public Service Commission.\n\nDiesel engines operate at much higher peak cylinder pressures (due to high compression ratios) than petrol engines. To withstand these massive forces, the cylinder block, head, and moving parts must be built much heavier and stronger, making them 2 to 3 times heavier than a similar petrol engine."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q089",
@@ -93286,7 +93286,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 89. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 89. Maharashtra Public Service Commission.\n\nAmong common liquid fuels, petrol (gasoline) has the highest calorific value by mass, typically around 45 to 47 MJ/kg. Diesel and kerosene are slightly lower (around 43-45 MJ/kg), and vegetable oils are significantly lower."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q090",
@@ -93299,7 +93299,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 90. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 90. Maharashtra Public Service Commission.\n\nSpark Ignition (S.I.) engines burn a pre-mixed, highly volatile air-fuel mixture that combusts very rapidly. Their lighter components and fast combustion process allow them to operate efficiently at high speeds, typically in the range of 3000 to 5000 r.p.m. for standard passenger cars."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q091",
@@ -93312,7 +93312,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 91. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 91. Maharashtra Public Service Commission.\n\nWhen servicing a standard automotive air cleaner with a dry paper filter element, it cannot be washed with water or oil, as this destroys the porous paper structure. It must be gently tapped/blown out with air, or entirely replaced if heavily soiled."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q092",
@@ -93325,7 +93325,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 92. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 92. Maharashtra Public Service Commission.\n\nA chassis dynamometer (often called a 'rolling road') allows a vehicle to be driven on stationary rollers in a garage. It measures the actual power delivered to the drive wheels, simulating real-world road loads, aerodynamic drag, and speeds without leaving the shop."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q093",
@@ -93338,7 +93338,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 93. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 93. Maharashtra Public Service Commission.\n\nTar spots on a car body are sticky, petroleum-based asphalt residues thrown up from the road. They cannot be removed by simple soap or water. They require special solvent-based cleaning agents (tar removers) that dissolve the hydrocarbons without damaging the clear coat."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q094",
@@ -93351,7 +93351,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 94. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 94. Maharashtra Public Service Commission.\n\nIn gear terminology, backlash is the slight clearance or free play between the mating teeth of two gears (like the drive pinion and ring gear in a differential). A specific amount of backlash is essential to allow for lubrication and thermal expansion."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q095",
@@ -93364,7 +93364,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 95. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 95. Maharashtra Public Service Commission.\n\nSafety is paramount when lifting a car on a hydraulic hoist. Passengers must exit the vehicle to prevent weight shifts, doors must be closed to prevent structural twisting or catching on the lift, and mechanical safety locks must be engaged to prevent catastrophic hydraulic failure."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q096",
@@ -93377,7 +93377,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 96. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 96. Maharashtra Public Service Commission.\n\nAccording to the Indian Motor Vehicles Act, a 'medium goods vehicle' is any goods carriage whose gross vehicle weight (GVW) is more than 6,000 kg but does not exceed 12,000 kg. Vehicles above 12,000 kg are classified as heavy goods vehicles."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q097",
@@ -93390,7 +93390,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 97. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 97. Maharashtra Public Service Commission.\n\nUnder the Motor Vehicles Act, if the registered owner of a motor vehicle changes their permanent address, they are legally required to intimate the new address to the registering authority (RTO) within 30 days (1 month) to update the Registration Certificate (RC)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q098",
@@ -93403,7 +93403,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 98. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 98. Maharashtra Public Service Commission.\n\nFor passenger comfort and safety, the Motor Vehicles Act stipulates minimum seating dimensions. In standard stage carriages (buses), the minimum approximate seating area allocated per passenger seat is 400x400 mm, making 420 x 420 mm the closest correct regulatory approximation in the options."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q099",
@@ -93416,7 +93416,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 99. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 99. Maharashtra Public Service Commission.\n\nIf involved in a motor accident causing injury, the driver's first legal and moral duty under the Motor Vehicles Act is to secure medical attention for the injured person by taking them to a hospital, and then report the incident to the nearest police station within 24 hours."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q100",
@@ -93429,7 +93429,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 100. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 100. Maharashtra Public Service Commission.\n\nRoad tax in India is calculated based on multiple factors depending on the vehicle category. For commercial vehicles, it heavily depends on the Unladen Weight, Registered Laden Weight (RLW), and the passenger seating capacity. Therefore, all the listed factors are correct."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q101",
@@ -93442,7 +93442,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 101. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 101. Maharashtra Public Service Commission.\n\nThe Automotive Research Association of India (A.R.A.I.) is the premier automotive R&D, testing, and certification institute in India. It is headquartered in Pune, Maharashtra."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q102",
@@ -93455,7 +93455,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 102. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 102. Maharashtra Public Service Commission.\n\nTELCO (now Tata Motors) is famous for manufacturing trucks, buses, and passenger cars. However, they are not primarily known for manufacturing agricultural tractors (which is the domain of companies like Mahindra or TAFE). Therefore, the pair TELCO — Tractors and Trucks is incorrect."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q103",
@@ -93468,7 +93468,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 103. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 103. Maharashtra Public Service Commission.\n\nJ.K. Tyres, M.R.F. (Madras Rubber Factory), and Modi Rubber are all well-known tyre manufacturing companies in India. L & T (Larsen & Toubro) is a major technology, engineering, construction, and manufacturing conglomerate, but it does not manufacture automotive tyres."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q104",
@@ -93481,7 +93481,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 104. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 104. Maharashtra Public Service Commission.\n\nThe Petroleum Conservation Research Association (P.C.R.A.) is a registered society set up under the Ministry of Petroleum and Natural Gas, Government of India. While its registered head office is in New Delhi, its western regional office is situated in Mumbai."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q105",
@@ -93494,7 +93494,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 105. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 105. Maharashtra Public Service Commission.\n\nThe Tata Sumo is a highly popular multi-utility vehicle (MUV) in India that was originally launched with a rugged 2.0-liter diesel engine. The Matiz, Maruti Gypsy, and Contessa (classic) were primarily known for their petrol engines."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q106",
@@ -93507,7 +93507,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 106. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 106. Maharashtra Public Service Commission.\n\nIn an S.I. engine, the combustion process is generally divided into three distinct stages: 1) Ignition lag (preparation phase), 2) Propagation of flame (rapid pressure rise), and 3) After-burning (combustion continues during the expansion stroke)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q107",
@@ -93520,7 +93520,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 107. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 107. Maharashtra Public Service Commission.\n\nOctane number is a measure of a fuel's resistance to knock. It is determined by comparing the fuel's anti-knock performance in a standard test engine to a reference mixture of Iso-octane (which has an octane rating of 100) and Normal Heptane (which has an octane rating of 0)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q108",
@@ -93533,7 +93533,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 108. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 108. Maharashtra Public Service Commission.\n\nDiesel fuel is a heavier fractional distillate of petroleum than petrol. It evaporates at much higher temperatures. The standard boiling range for automotive diesel oil is approximately 200°C to 375°C."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q109",
@@ -93546,7 +93546,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 109. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 109. Maharashtra Public Service Commission.\n\nThe valve face is the machined surface that seals against the valve seat in the cylinder head. To provide a secure, gas-tight seal and allow for good heat transfer, the valve face angle is typically ground to either 30° or 45°."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q110",
@@ -93559,7 +93559,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 110. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 110. Maharashtra Public Service Commission.\n\nRelative efficiency (also called efficiency ratio) is a measure of how close an actual engine comes to its theoretical ideal. It is defined as the ratio of the actual indicated thermal efficiency of the engine to the theoretical air-standard efficiency of its thermodynamic cycle."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q111",
@@ -93572,7 +93572,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 111. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 111. Maharashtra Public Service Commission.\n\nCylinder liners are subjected to high wear and require a very dense, uniform, and hard-wearing grain structure. Centrifugal casting spins the molten cast iron, forcing impurities to the center and creating a highly dense, flawless outer cylinder wall perfect for liners."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q112",
@@ -93585,7 +93585,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 112. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 112. Maharashtra Public Service Commission.\n\nEngine valves (especially exhaust valves) operate in extremely harsh conditions, enduring high temperatures, corrosive exhaust gases, and constant mechanical pounding. They are typically forged from high-heat-resistant alloys like Nickel-chrome steel or Silicon-chrome steel."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q113",
@@ -93598,7 +93598,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 113. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 113. Maharashtra Public Service Commission.\n\nThe spark plug gap is the distance between the center and side electrodes. A correct gap is crucial for a strong spark. For standard automotive S.I. engines, the gap is typically set between 0.45 mm to 1.00 mm, depending on the ignition system's voltage capacity."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q114",
@@ -93611,7 +93611,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 114. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 114. Maharashtra Public Service Commission.\n\nThe choke valve is a butterfly valve located at the air intake of the carburetor. When closed (choked), it severely restricts the incoming air, causing a high vacuum that pulls extra fuel from the main jet. This supplies a very rich air-fuel mixture required for starting a cold engine."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q115",
@@ -93624,7 +93624,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 115. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 115. Maharashtra Public Service Commission.\n\nPetrol is commonly modeled as Octane (C8H18). The balanced chemical equation for the complete stoichiometric combustion of octane with oxygen is: 2 C8H18 + 25 O2 -> 16 CO2 + 18 H2O. This ensures all carbon turns to CO2 and all hydrogen to H2O with no leftover oxygen."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q116",
@@ -93637,7 +93637,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 116. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 116. Maharashtra Public Service Commission.\n\nScavenging is the process of using the incoming fresh air-fuel charge to actively push the spent exhaust gases out of the cylinder. This is a critical and defining characteristic of Two-stroke cycle engines, which do not have a dedicated exhaust stroke."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q117",
@@ -93650,7 +93650,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 117. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 117. Maharashtra Public Service Commission.\n\nA dynamometer is a device specifically designed to measure the torque and rotational speed (RPM) of an engine simultaneously. From these two measurements, the actual usable power delivered at the crankshaft (Brake Power) is calculated."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q118",
@@ -93663,7 +93663,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 118. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 118. Maharashtra Public Service Commission.\n\nWillan's Line Method involves running a diesel engine at a constant speed and plotting the gross fuel consumption against the brake power. By extrapolating this straight line backwards to zero fuel consumption, the negative intercept on the power axis represents the friction power."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q119",
@@ -93676,7 +93676,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 119. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 119. Maharashtra Public Service Commission.\n\nInternal combustion engines are notoriously inefficient. In a typical multi-cylinder automotive engine, only about 25 to 45 percent of the total heat energy in the fuel is converted into useful mechanical work at the crankshaft. The rest is lost to exhaust, cooling water, and friction."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q120",
@@ -93689,7 +93689,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 120. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 120. Maharashtra Public Service Commission.\n\nTorque is not constant across the RPM range; it peaks at a certain speed and then drops off as the engine struggles to breathe (volumetric efficiency drops) at very high speeds. Therefore, at 6000 r.p.m., the torque will be less than the 4 NM produced at 4000 r.p.m., making 2 NM the only logical answer."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q121",
@@ -93702,7 +93702,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 121. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 121. Maharashtra Public Service Commission.\n\nModern car engines use a pressurized (or forced-feed) lubricating system. An oil pump forces oil under high pressure through galleries to the main bearings, connecting rod bearings, and camshaft, ensuring a constant protective oil film under heavy loads."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q122",
@@ -93715,7 +93715,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 122. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 122. Maharashtra Public Service Commission.\n\nIf a petrol engine fails to start, it could be due to a severely rich mixture (flooding the engine), a severely lean mixture (not enough fuel to ignite), or a worn/eaten spark plug electrode failing to spark. A defective condenser usually causes poor running or point pitting, but rarely prevents a cold start entirely. Thus (B), (C), and (A) are the primary culprits."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q123",
@@ -93728,7 +93728,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 123. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 123. Maharashtra Public Service Commission.\n\nIn an updraft carburetor, air flows upwards. The throttle valve is at the top (controlling flow to the manifold). The choke valve must be placed before the venturi to restrict incoming air. Therefore, the choke is located below the throttle and venturi."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q124",
@@ -93741,7 +93741,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 124. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 124. Maharashtra Public Service Commission.\n\nIn a four-stroke engine, each cylinder requires the valves to open only once every two revolutions of the crankshaft (one complete cycle). Therefore, the camshaft, which operates the valves, must rotate at exactly half the speed of the crankshaft."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q125",
@@ -93754,7 +93754,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 125. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 125. Maharashtra Public Service Commission.\n\nDiesel engines do not use a throttle valve to restrict air. They always take in a full cylinder of air. To control the speed and power (governing), the fuel injection pump varies the 'quantity' of fuel injected per stroke. This changes the air-fuel ratio, which is known as Quality Governing."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q126",
@@ -93767,7 +93767,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 126. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 126. Maharashtra Public Service Commission.\n\nDuring battery charging, the chemical reaction generates heat. If the electrolyte gets too hot, it can warp the lead plates and permanently damage the battery. The temperature should be carefully monitored and must not exceed 51.6°C (125°F)."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q127",
@@ -93780,7 +93780,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 127. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 127. Maharashtra Public Service Commission.\n\nA single plate clutch consists of one driven plate (the friction disc) sandwiched between the engine flywheel and the pressure plate. Because both sides of this single driven plate have friction lining that engages, there are two driving surfaces. Hence, One / Two."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q128",
@@ -93793,7 +93793,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 128. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 128. Maharashtra Public Service Commission.\n\nA synchromesh gearbox uses brass friction cones (synchronizer rings) to smoothly match the rotational speed of the gear and the main shaft before the dog teeth engage. This prevents gear clash and grinding during shifting."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q129",
@@ -93806,7 +93806,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 129. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 129. Maharashtra Public Service Commission.\n\nGears act as levers. When a small gear (fewer teeth) drives a larger gear (more teeth), the larger gear turns slower but with greater force. Therefore, the result is a reduction in speed and a proportional increase in torque."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q130",
@@ -93819,7 +93819,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 130. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 130. Maharashtra Public Service Commission.\n\nThe propeller shaft connects the rigidly mounted gearbox to the rear axle, which constantly moves up and down with the suspension. The universal joint (U-joint) is a flexible coupling that allows the drive line to transmit torque at varying angles as the suspension moves."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q131",
@@ -93832,7 +93832,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 131. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 131. Maharashtra Public Service Commission.\n\nIn a full-floating rear axle, the wheel hub is mounted entirely on the axle casing using two bearings. The axle shaft only transmits torque and carries zero vehicle weight. If the shaft breaks, the wheel stays on. This robust design is essential for heavy commercial vehicles."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q132",
@@ -93845,7 +93845,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 132. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 132. Maharashtra Public Service Commission.\n\nIn a differential, the speed of the crown wheel (cage) is always the exact average of the speeds of the two inner sun gears (wheels). If Crown = 400 and Outer = 420, then 400 = (420 + Inner) / 2 => 800 = 420 + Inner => Inner = 380 rev/min."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q133",
@@ -93858,7 +93858,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 133. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 133. Maharashtra Public Service Commission.\n\nWhen a vehicle brakes, weight transfers to the front wheels, giving them more traction. To prevent the lightly-loaded rear wheels from locking up and skidding, the front brakes must apply more force. Therefore, front wheel cylinders have larger pistons than rear ones."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q134",
@@ -93871,7 +93871,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 134. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 134. Maharashtra Public Service Commission.\n\nWhen shifting to a lower gear, the engine and lay-shaft must spin faster to match the road speed of the main shaft. Double declutching involves releasing the clutch in neutral and revving the engine to increase the speed of the lay-shaft before engaging the lower gear."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q135",
@@ -93884,7 +93884,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 135. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 135. Maharashtra Public Service Commission.\n\nBrake fade is the loss of braking power due to extreme heat. Disc brakes have their friction pads and rotors exposed to the open air, allowing them to cool much faster than enclosed drum brakes. Therefore, disc brakes have a high resistance to fade."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q136",
@@ -93897,7 +93897,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 136. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 136. Maharashtra Public Service Commission.\n\nCamber is the inward or outward tilt of the front wheels when viewed from the front of the vehicle. If the top of the wheel tilts away from the vertical (outwards), it is called positive camber."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q137",
@@ -93910,7 +93910,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 137. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 137. Maharashtra Public Service Commission.\n\nThe steering box is the primary mechanism at the base of the steering column. It uses gears (like a worm and sector or rack and pinion) to convert the driver's rotary motion of the steering wheel into the lateral (reciprocating) motion needed to push the track rods."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q138",
@@ -93923,7 +93923,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 138. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 138. Maharashtra Public Service Commission.\n\nAir resistance (aerodynamic drag) is determined by the frontal area, the square of the vehicle's speed, and the aerodynamic drag coefficient. The drag coefficient is entirely dependent on the body shape of the vehicle, not its weight."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q139",
@@ -93936,7 +93936,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 139. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 139. Maharashtra Public Service Commission.\n\nTorsion is the twisting force applied to a chassis when wheels go over uneven bumps. A closed, continuous tubular section (like a pipe) offers the highest structural resistance to twisting (torsion) compared to open channel or flat sections."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q140",
@@ -93949,7 +93949,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 140. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 140. Maharashtra Public Service Commission.\n\nThe grooves and patterns on a tyre tread are designed to channel water away from the contact patch, preventing hydroplaning. This ensures the rubber maintains a positive grip on the road surface, while also helping to dissipate heat."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q141",
@@ -93962,7 +93962,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 141. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 141. Maharashtra Public Service Commission.\n\nRacing cars use smaller diameter wheels to significantly lower the vehicle's center of gravity. A lower center of gravity drastically reduces weight transfer during cornering, allowing for higher cornering speeds and better handling stability."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q142",
@@ -93975,7 +93975,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 142. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 142. Maharashtra Public Service Commission.\n\nSprung weight refers to all the parts of the automobile that are supported by the suspension springs (e.g., the chassis, engine, body, and passengers). Unsprung weight includes the wheels, tires, brakes, and solid axles that move with the bumps."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q143",
@@ -93988,7 +93988,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 143. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 143. Maharashtra Public Service Commission.\n\nA vehicle layout diagram is a top-down or isometric schematic that shows the physical arrangement and relative positions of all the major assemblies and parts of the vehicle, including the engine, transmission, driveline, and axles on the chassis."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q144",
@@ -94001,7 +94001,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 144. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 144. Maharashtra Public Service Commission.\n\nWindshield wiper motors require a high starting torque to move heavy wiper blades across dry glass, but they must also run at a relatively constant speed once moving. A shunt-wound DC motor provides good speed regulation and sufficient torque for this application."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q145",
@@ -94014,7 +94014,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 145. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 145. Maharashtra Public Service Commission.\n\nWhen a vehicle corners, the tires deform and slip sideways slightly. The slip angle is the angle between the actual direction the tire is traveling and the direction the wheel is pointing. It is crucial for generating cornering force."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q146",
@@ -94027,7 +94027,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 146. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 146. Maharashtra Public Service Commission.\n\nThe specific gravity of the electrolyte (sulfuric acid and water mixture) in a lead-acid battery indicates its state of charge. A fully charged healthy battery will have a specific gravity reading of approximately 1.26 to 1.28 at room temperature."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q147",
@@ -94040,7 +94040,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 147. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 147. Maharashtra Public Service Commission.\n\nHard steering (heavy steering effort) is most commonly caused by under-inflated tires (low tyre pressure). Soft tires create a much larger contact patch with the road, drastically increasing the friction and resistance when turning the wheel."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q148",
@@ -94053,7 +94053,7 @@
         },
         "correctAnswer": "B",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 148. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 148. Maharashtra Public Service Commission.\n\nIf the splines on the main shaft of the gearbox become worn, burred, or twisted, the gear hubs or synchronizer sleeves will bind and stick when the driver tries to slide them along the shaft, resulting in very hard gear shifting."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q149",
@@ -94066,7 +94066,7 @@
         },
         "correctAnswer": "D",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 149. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 149. Maharashtra Public Service Commission.\n\nTappets (valve lifters) require a precise clearance gap to allow for thermal expansion of the valve stem. If this tappet clearance is wrongly adjusted (too loose), the cam will slam into the lifter rather than pushing it smoothly, causing a loud clicking or noisy valve operation."
       },
       {
         "id": "rto-amvi-auto-engg-2005-q150",
@@ -94079,7 +94079,7 @@
         },
         "correctAnswer": "C",
         "sourceTag": "RTO-AMVI-2005",
-        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 150. Maharashtra Public Service Commission."
+        "explanation": "Source: RTO AMVI 2005 — Automobile Engineering question paper, Question 150. Maharashtra Public Service Commission.\n\nWhen a carburetor engine is cold, the fuel does not vaporize easily. The choke valve must close to restrict air and pull a rich fuel mixture into the cylinders. If the choke operation is faulty and stays open, the mixture will be too lean, causing hard starting."
       }
     ]
   }
