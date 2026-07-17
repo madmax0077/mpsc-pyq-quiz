@@ -7,6 +7,8 @@ export type SeoQuestion = {
   text: string;
   options: Question["options"];
   correctAnswer?: Question["correctAnswer"];
+  /** Explanation carried straight from the quiz JSON (may be empty). */
+  explanation?: string;
   category?: Question["category"];
   topic?: string;
   quizId: string;
@@ -39,6 +41,7 @@ export function getSeoQuestions(): SeoQuestion[] {
         text: plainText(question.text),
         options: question.options,
         correctAnswer: question.correctAnswer,
+        explanation: (question.explanation || "").trim() || undefined,
         category: question.category,
         topic: question.topic,
         quizId: quiz.id,

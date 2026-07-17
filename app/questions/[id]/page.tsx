@@ -72,17 +72,27 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const question = getSeoQuestion(params.id);
   if (!question) return {};
   const titleText = question.text.length > 86 ? `${question.text.slice(0, 86)}...` : question.text;
-  const description = `${question.text} Practice this MPSC question with options and answer on MPSC PYQ QUIZ.`;
+  // Prefer the hand/generator-written explanation as the meta description
+  // because it is unique per question; fall back to the question stem when
+  // no explanation exists (about 24% of the set).
+  const rawDescription = question.explanation && question.explanation.length > 60
+    ? question.explanation
+    : `${question.text} Practice this MPSC previous-year question with detailed options and correct answer on MPSC PYQ QUIZ.`;
+  const description = rawDescription.length > 300
+    ? `${rawDescription.slice(0, 297)}...`
+    : rawDescription;
+  const canIndex = Boolean(question.explanation && question.explanation.length > 60);
   return {
     title: `${titleText} | MPSC Question`,
     description,
     alternates: { canonical: `/questions/${question.id}` },
-    // Until each question page carries its own detailed explanation, keep
-    // them out of the search index to satisfy AdSense / Google "minimum
-    // content" requirements. Users can still reach them via direct links;
-    // we just don't promote them to Google. `follow: true` so equity from
-    // any inbound link is still passed back to the main site.
-    robots: { index: false, follow: true },
+    // Once the per-question explanation is populated (roughly 76% of the
+    // set), the page comfortably clears Google's minimum-content bar and
+    // can be indexed.  Questions still without an explanation stay
+    // `noindex` to avoid pushing thin pages into search.
+    robots: canIndex
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     openGraph: {
       title: `${titleText} | MPSC PYQ QUIZ`,
       description,
@@ -146,6 +156,17 @@ export default function QuestionSeoPage({ params }: PageProps) {
           <p className="mt-5 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-800">
             Correct answer: {question.correctAnswer}
           </p>
+        )}
+
+        {question.explanation && (
+          <section className="mt-4 rounded-2xl border border-indigo-100 bg-indigo-50/60 px-5 py-4">
+            <h2 className="text-sm font-bold uppercase tracking-wide text-indigo-700">
+              Explanation
+            </h2>
+            <p className="mt-2 whitespace-pre-line text-sm leading-7 text-slate-800">
+              {question.explanation}
+            </p>
+          </section>
         )}
 
         <section className="mt-8 space-y-5 text-sm leading-7 text-slate-700">
