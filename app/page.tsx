@@ -17,8 +17,10 @@ export default function Home() {
     <>
       <HomeClient />
 
-      {/* Static SEO content — always present in HTML for search engine crawlers.
-          Hidden by HomeClient on mount via document.getElementById. */}
+      {/* Long-form informational section shown to every visitor below the
+          interactive UI.  Kept in the HTML for search-engine crawlers AND
+          rendered for real users — hiding it via JavaScript would look like
+          cloaking to Google/AdSense. */}
       <section id="seo-landing" className="bg-white text-slate-800">
         {/* Hero */}
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
@@ -421,6 +423,10 @@ export default function Home() {
             <a href="/contact" className="hover:text-indigo-600 hover:underline">Contact</a>
             <span>|</span>
             <a href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy Policy</a>
+            <span>|</span>
+            <a href="/terms" className="hover:text-indigo-600 hover:underline">Terms</a>
+            <span>|</span>
+            <a href="/disclaimer" className="hover:text-indigo-600 hover:underline">Disclaimer</a>
           </div>
         </div>
       </section>

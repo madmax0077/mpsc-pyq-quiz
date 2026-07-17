@@ -68,11 +68,12 @@ export default function HomeClient() {
     }
   }, []);
 
-  useEffect(() => {
-    const seo = document.getElementById("seo-landing");
-    if (!seo) return;
-    seo.style.display = "none";
-  }, []);
+  // NOTE (AdSense fix): we used to hide the #seo-landing section from real
+  // users after mount, keeping it visible only to search-engine crawlers.
+  // Google/AdSense uses a real Chrome browser for review, so it saw the
+  // content appear and then vanish - a classic cloaking pattern that has
+  // been contributing to repeated AdSense rejections.  The SEO section is
+  // now shown to everyone below the interactive UI.
 
   const toggleDark = useCallback(() => {
     const next = !dark;

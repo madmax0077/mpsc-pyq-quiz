@@ -60,6 +60,8 @@ const LEGACY_SITEMAP_ENTRIES: SitemapEntryConfig[] = [
   { path: "/about", changeFrequency: "monthly", priority: 0.6 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.5 },
   { path: "/privacy", changeFrequency: "yearly", priority: 0.4 },
+  { path: "/terms", changeFrequency: "yearly", priority: 0.4 },
+  { path: "/disclaimer", changeFrequency: "yearly", priority: 0.4 },
 ];
 
 const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
@@ -71,23 +73,35 @@ function toAbsoluteUrl(path: string): string {
 }
 
 /**
+ * Question pages that are eligible for the sitemap.  We include ONLY the
+ * ones that carry a substantive explanation (>= 60 chars) so the sitemap
+ * mirrors the `canIndex` logic in `app/questions/[id]/page.tsx`.  Thin
+ * question pages remain `noindex` and are deliberately excluded from the
+ * sitemap so Google AdSense does not see 1,300+ low-content URLs listed.
+ */
+function getIndexableQuestions() {
+  return getSeoQuestions().filter(
+    (q) => q.explanation && q.explanation.length > 60,
+  );
+}
+
+/**
  * `generateSitemaps` runs once at build time and returns the list of chunk
  * ids. Next.js then invokes `sitemap({ id })` for each id and writes the
  * result to `out/sitemap/{id}.xml`.
  *
- * IMPORTANT: question pages (`/questions/<id>`) are intentionally NOT
- * listed in any sitemap until each page carries a substantive explanation.
- * Listing 6,000+ thin pages is what triggered Google AdSense's
- * "Low value content" / "thin content at scale" flag. Once explanations
- * are added per question, we can re-introduce question chunks here.
- *
- * Chunk id 0 -> static pages (homepage, /exams, /map, /study-guides, etc.).
+ * Chunk id 0            -> static pages (home, /exams, /map, /about, ...).
+ * Chunk id 1, 2, ...    -> question pages that have substantive
+ *                          explanations, chunked at QUESTIONS_PER_SITEMAP.
  */
 export async function generateSitemaps(): Promise<Array<{ id: number }>> {
-  // Suppress unused-import warning while question chunks are disabled.
-  void QUESTIONS_PER_SITEMAP;
-  void getSeoQuestions;
-  return [{ id: 0 }];
+  const indexable = getIndexableQuestions();
+  const questionChunkCount = Math.ceil(indexable.length / QUESTIONS_PER_SITEMAP);
+  const chunks: Array<{ id: number }> = [{ id: 0 }];
+  for (let i = 0; i < questionChunkCount; i += 1) {
+    chunks.push({ id: i + 1 });
+  }
+  return chunks;
 }
 
 export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
@@ -110,5 +124,14 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
       }));
   }
 
-  return [];
+  const chunkIndex = id - 1;
+  const indexable = getIndexableQuestions();
+  const start = chunkIndex * QUESTIONS_PER_SITEMAP;
+  const slice = indexable.slice(start, start + QUESTIONS_PER_SITEMAP);
+  return slice.map((question) => ({
+    url: `${SITE_URL}/questions/${question.id}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
 }

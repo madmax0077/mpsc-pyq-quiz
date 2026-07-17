@@ -210,7 +210,42 @@ export default function QuestionSeoPage({ params }: PageProps) {
             Practice more questions
           </Link>
         </div>
+
+        <section className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700">
+          <h2 className="text-base font-bold text-slate-900">About MPSC PYQ QUIZ</h2>
+          <p className="mt-2 leading-7">
+            <strong>MPSC PYQ QUIZ</strong> is a free educational platform by{" "}
+            <Link href="/about" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">Don&apos;t know Academy</Link>{" "}
+            that helps Maharashtra Public Service Commission aspirants practice with previous-year
+            questions. We source every paper from the official MPSC releases, tag each question by
+            subject, and provide explanations for as many questions as we can. The platform is
+            independent and not affiliated with MPSC or the Government of Maharashtra — please read
+            our <Link href="/disclaimer" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700">Disclaimer</Link> for
+            the full statement.
+          </p>
+        </section>
       </article>
+
+      <footer className="mx-auto mt-10 max-w-3xl px-2 pb-10 text-center">
+        <p className="text-xs text-slate-400">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
+        <div className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400">
+          <Link href="/" className="hover:text-indigo-600 hover:underline">Home</Link>
+          <span>|</span>
+          <Link href="/exams" className="hover:text-indigo-600 hover:underline">Exam papers</Link>
+          <span>|</span>
+          <Link href="/study-guides" className="hover:text-indigo-600 hover:underline">Study guides</Link>
+          <span>|</span>
+          <Link href="/about" className="hover:text-indigo-600 hover:underline">About</Link>
+          <span>|</span>
+          <Link href="/contact" className="hover:text-indigo-600 hover:underline">Contact</Link>
+          <span>|</span>
+          <Link href="/privacy" className="hover:text-indigo-600 hover:underline">Privacy</Link>
+          <span>|</span>
+          <Link href="/terms" className="hover:text-indigo-600 hover:underline">Terms</Link>
+          <span>|</span>
+          <Link href="/disclaimer" className="hover:text-indigo-600 hover:underline">Disclaimer</Link>
+        </div>
+      </footer>
     </main>
   );
 }
