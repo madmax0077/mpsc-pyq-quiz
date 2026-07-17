@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Toggleable layers for rivers, forts, nuclear / hydro / thermal plants, dams, waterfalls, ghats, UNESCO sites and minerals across Maharashtra.",
     url: "https://www.mpscs.in/map",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

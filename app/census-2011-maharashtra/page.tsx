@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       "All 35 Maharashtra districts in one fun memory game: top-10 & bottom-10 lists, rank-race, MCQ quiz, flashcards.",
     url: "https://www.mpscs.in/census-2011-maharashtra",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 

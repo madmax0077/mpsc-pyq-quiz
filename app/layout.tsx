@@ -101,7 +101,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "MPSC PYQ QUIZ — Free PYQ practice, daily leaderboard, interactive Maharashtra map",
@@ -112,7 +112,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MPSC PYQ QUIZ — Free PYQ Practice + Maharashtra Map",
     description: DESCRIPTION,
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

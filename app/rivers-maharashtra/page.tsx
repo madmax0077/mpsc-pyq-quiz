@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     description:
       "Every major river of Maharashtra plotted with names on a district-aware 2D map, plus an MPSC Previous-Year Questions quiz on rivers drawn from real exam papers (2010 – 2025).",
     url: "https://www.mpscs.in/rivers-maharashtra",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 };
 
