@@ -49,7 +49,7 @@ export default function LoginPage() {
         <Link href="/" className="mb-8 block text-center no-underline">
           <img
             src="/logo.png"
-            alt="MPSC Logo"
+            alt="MPSC PYQ QUIZ logo"
             className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white"
           />
           <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
@@ -120,14 +120,18 @@ export default function LoginPage() {
           Secure access &middot; Your data stays in your browser
         </p>
 
-        <nav className="mt-6 flex items-center justify-center gap-3 text-xs text-slate-400 dark:text-slate-500">
+        <nav className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs text-slate-400 dark:text-slate-500">
           <Link href="/about" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">About</Link>
           <span>|</span>
           <Link href="/contact" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Contact</Link>
           <span>|</span>
           <Link href="/exams" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Exams</Link>
           <span>|</span>
-          <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy Policy</Link>
+          <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy</Link>
+          <span>|</span>
+          <Link href="/terms" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Terms</Link>
+          <span>|</span>
+          <Link href="/disclaimer" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Disclaimer</Link>
         </nav>
       </div>
     </div>

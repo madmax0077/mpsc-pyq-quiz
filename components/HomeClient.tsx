@@ -163,7 +163,7 @@ export default function HomeClient() {
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
           <button onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0 shrink-0">
-            <img src="/logo.png" alt="MPSC Logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
+            <img src="/logo.png" alt="MPSC PYQ QUIZ logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
             <div className="text-left">
               <h1 className="text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
               <p className="text-[9px] sm:text-[10px] font-medium text-slate-400 dark:text-slate-500">Don&apos;t know Academy</p>
@@ -747,8 +747,20 @@ export default function HomeClient() {
                 Map
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a href="/study-guides" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                Study guides
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Privacy Policy
+                Privacy
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a href="/terms" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                Terms
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a href="/disclaimer" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                Disclaimer
               </a>
             </div>
           </div>

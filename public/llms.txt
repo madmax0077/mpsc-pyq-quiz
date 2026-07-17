@@ -43,6 +43,8 @@ These are 100-question Marathi topic quizzes inside the "Topic Wise" tab of the 
 - [About](https://www.mpscs.in/about): What the platform is, editorial methodology, accuracy commitment and who runs Don't know Academy.
 - [Contact](https://www.mpscs.in/contact): How to report errors, request missing papers, send feedback, file privacy / DPDP requests.
 - [Privacy Policy](https://www.mpscs.in/privacy): Data, cookies, advertising vendors, analytics, GDPR / DPDP rights and account deletion.
+- [Terms of Service](https://www.mpscs.in/terms): Rules for using the platform — accounts, acceptable use, intellectual property, disclaimers, limitation of liability, governing law.
+- [Disclaimer](https://www.mpscs.in/disclaimer): Editorial disclaimer, not-affiliated-with-MPSC statement, source of answer keys, no-guarantee-of-outcomes statement, advertising and third-party-link disclosure.
 
 ## Maharashtra geography reference (curated dataset)
 

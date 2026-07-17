@@ -110,10 +110,58 @@ export default function QuestionSeoPage({ params }: PageProps) {
   const practiceUrl = "/?mode=subject";
   const ctx = buildContext(question);
 
+  const breadcrumbItems: Array<{ name: string; item: string }> = [
+    { name: "Home", item: SITE_URL },
+    { name: "Exams", item: `${SITE_URL}/exams` },
+  ];
+  if (question.category) {
+    breadcrumbItems.push({ name: question.category, item: `${SITE_URL}/exams` });
+  }
+  breadcrumbItems.push({
+    name: "Question",
+    item: `${SITE_URL}/questions/${question.id}`,
+  });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbItems.map((entry, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: entry.name,
+          item: entry.item,
+        })),
+      },
+      question.explanation && question.explanation.length > 60
+        ? {
+            "@type": "QAPage",
+            mainEntity: {
+              "@type": "Question",
+              name: question.text,
+              text: question.text,
+              answerCount: 1,
+              inLanguage: question.language === "marathi" ? "mr" : "en",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: question.explanation,
+                inLanguage: question.language === "marathi" ? "mr" : "en",
+              },
+            },
+          }
+        : null,
+    ].filter(Boolean),
+  };
+
   return (
     <main className="min-h-screen bg-slate-50 px-4 py-10 text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <article className="mx-auto max-w-3xl rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/60 sm:p-8">
-        <nav className="mb-4 text-xs text-slate-500">
+        <nav className="mb-4 text-xs text-slate-500" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-indigo-600">Home</Link>
           <span className="mx-1.5">/</span>
           <Link href="/exams" className="hover:text-indigo-600">Exams</Link>

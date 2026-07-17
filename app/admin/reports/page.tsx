@@ -64,7 +64,7 @@ export default function AdminReportsPage() {
       <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-slate-50 px-4 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
         <div className="w-full max-w-md">
           <div className="mb-8 text-center">
-            <img src="/logo.png" alt="MPSC Logo" className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white" />
+            <img src="/logo.png" alt="MPSC PYQ QUIZ logo" className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white" />
             <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
             <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Admin Access Required</p>
           </div>
@@ -97,7 +97,7 @@ export default function AdminReportsPage() {
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
           <Link href="/" className="flex items-center gap-3 no-underline">
-            <img src="/logo.png" alt="MPSC Logo" className="h-10 w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
+            <img src="/logo.png" alt="MPSC PYQ QUIZ logo" className="h-10 w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
             <div>
               <h1 className="text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
               <p className="text-[10px] font-medium text-slate-400 dark:text-slate-500">Admin &mdash; Reports</p>

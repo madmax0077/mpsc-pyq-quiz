@@ -186,7 +186,7 @@ export default function AdminTodayPage() {
           <div className="mb-8 text-center">
             <img
               src="/logo.png"
-              alt="MPSC Logo"
+              alt="MPSC PYQ QUIZ logo"
               className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white"
             />
             <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
@@ -249,7 +249,7 @@ export default function AdminTodayPage() {
           <Link href="/" className="flex items-center gap-3 no-underline">
             <img
               src="/logo.png"
-              alt="MPSC Logo"
+              alt="MPSC PYQ QUIZ logo"
               className="h-10 w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700"
             />
             <div>

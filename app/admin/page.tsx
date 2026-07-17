@@ -35,7 +35,7 @@ export default function AdminPage() {
         <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
           <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6">
             <Link href="/" className="flex items-center gap-3 no-underline">
-              <img src="/logo.png" alt="MPSC Logo" className="h-10 w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
+              <img src="/logo.png" alt="MPSC PYQ QUIZ logo" className="h-10 w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
               <div>
                 <h1 className="text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
                 <p className="text-[10px] font-medium text-slate-400 dark:text-slate-500">Admin Panel</p>
@@ -95,7 +95,7 @@ export default function AdminPage() {
         <div className="mb-8 text-center">
           <img
             src="/logo.png"
-            alt="MPSC Logo"
+            alt="MPSC PYQ QUIZ logo"
             className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white"
           />
           <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>

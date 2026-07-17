@@ -45,17 +45,13 @@ const DESCRIPTION =
   "Free MPSC Previous Year Question practice — Group B, Group C, PSI, Gazetted papers with subject-wise quizzes, instant scoring & detailed answers. Now includes a daily aggregate leaderboard and an interactive Maharashtra map (rivers, forts, dams, UNESCO sites, nuclear / hydro / thermal plants). 100% free for all aspirants.";
 
 /**
- * Social / profile links used both in the footer and in the
- * Organization schema as sameAs entries. Adding the canonical
- * URLs here gives Google a strong identity signal and also acts
- * as a backlink anchor for the brand.
+ * Verified profile links used in the Organization schema as sameAs
+ * entries.  Every URL here must actually resolve — a broken sameAs
+ * URL hurts Google's E-E-A-T signal.  Only add a new entry after
+ * confirming the account exists and points back to this site.
  */
 const SAME_AS = [
   "https://github.com/madmax0077/mpsc-pyq-quiz",
-  "https://www.youtube.com/@dontknowacademy",
-  "https://x.com/mpscs_in",
-  "https://www.facebook.com/mpscs.in",
-  "https://www.instagram.com/mpscs.in",
 ];
 
 export const metadata: Metadata = {
@@ -143,11 +139,6 @@ export default function RootLayout({
         description: `Free MPSC Previous Year Question practice — ${qm.totalQuestions}+ questions from ${qm.totalPapers} exam papers (${qm.minYear}–${qm.maxYear}) with instant scoring, a daily aggregate leaderboard and an interactive map of Maharashtra. Available in English and Marathi.`,
         publisher: { "@id": `${SITE_URL}/#org` },
         inLanguage: ["en", "mr"],
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${SITE_URL}/exams?q={search_term_string}`,
-          "query-input": "required name=search_term_string",
-        },
       },
       {
         "@type": "EducationalOrganization",

@@ -62,6 +62,8 @@ const LEGACY_SITEMAP_ENTRIES: SitemapEntryConfig[] = [
   { path: "/privacy", changeFrequency: "yearly", priority: 0.4 },
   { path: "/terms", changeFrequency: "yearly", priority: 0.4 },
   { path: "/disclaimer", changeFrequency: "yearly", priority: 0.4 },
+  { path: "/rivers-maharashtra", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/census-2011-maharashtra", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
