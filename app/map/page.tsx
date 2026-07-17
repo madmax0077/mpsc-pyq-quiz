@@ -105,13 +105,16 @@ export default function MapPage() {
         <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
           <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">About this map</h2>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-            High-resolution OpenStreetMap-based interactive map of Maharashtra useful for
-            MPSC geography preparation and casual exploration. The map opens with only the
-            <strong> Rivers</strong> layer enabled so you can read the drainage clearly;
-            tap any other pill in the layer panel on the left (or the <em>All</em> button)
-            to add dams, waterfalls, ghats, the three power-plant tabs
-            (☢️ <strong>Nuclear</strong>, 🌀 <strong>Hydroelectric</strong>,
-            🏭 <strong>Thermal</strong>), minerals, UNESCO sites and historic forts.
+            High-resolution OpenStreetMap-based interactive map of Maharashtra built
+            specifically for MPSC geography preparation and casual exploration. The map
+            opens with only the <strong>Rivers</strong> layer enabled so you can read the
+            drainage clearly; tap any other pill in the layer panel on the left (or the
+            <em>All</em> button) to add dams, waterfalls, ghats, the three power-plant
+            categories (☢️ <strong>Nuclear</strong>, 🌀 <strong>Hydroelectric</strong>,
+            🏭 <strong>Thermal</strong>), mineral belts, UNESCO sites and historic forts.
+            The base tiles are streamed from OpenStreetMap, so every zoom level is razor
+            sharp — pan to Konkan for the coastal rivers, zoom out to see the full state
+            drainage, or fly to a specific district to check the layers around it.
           </p>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
             <strong>Deccan / east-flowing rivers</strong> &mdash; Godavari, Krishna, Bhima,
@@ -132,6 +135,117 @@ export default function MapPage() {
           </p>
           <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
             Map tiles &copy; OpenStreetMap contributors.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">Why an interactive map for MPSC Geography?</h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Every MPSC preliminary paper in the last decade has carried at least eight to
+            twelve questions from Maharashtra Geography. The recurring themes are drainage
+            (which river rises where, which tributary joins which mainstem, which basin a
+            district belongs to), the Sahyadri and its ghats (which pass connects which
+            district-pair on either side of the crest), the state&apos;s power infrastructure
+            (which category of plant, which fuel, which capacity), mineral belts, forest
+            cover and UNESCO-designated heritage sites. Reading these as a bullet list in a
+            textbook is a slow way to internalise them; seeing them plotted on a single map
+            is a fast way. That is why the map was built.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            The map is organised as ten independently toggleable layers so an aspirant can
+            revise one theme at a time without visual overload. A typical revision session
+            starts with only the <strong>Rivers</strong> layer on to trace the six major
+            basins, then adds <strong>Dams</strong> to see the storage nodes on each river,
+            then adds one of the three power-plant layers to see how the drainage supports
+            the state&apos;s energy grid, and finally adds <strong>Forts</strong> and
+            <strong> UNESCO</strong> to overlay the historic and cultural map on top of the
+            physical one. The whole cycle takes about ten minutes and covers roughly half of
+            a typical MPSC Geography section by itself.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">Layer-by-layer notes for revision</h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>🏔️ Ghats.</strong> The Sahyadri range runs roughly 750 km north to south
+            through Maharashtra, dividing the Konkan coastal strip from the Deccan plateau.
+            The major ghats that MPSC asks about, from north to south, are Thal (Nashik ↔
+            Mumbai), Kasara (Mumbai ↔ Nashik via the Igatpuri corridor), Malshej (Pune ↔
+            Thane), Bor (part of the Khandala corridor on the Mumbai-Pune expressway),
+            Tamhini (Pune ↔ Konkan), Varandha (Bhor ↔ Mahad), Kumbharli (Karad ↔ Chiplun),
+            Amba (Kolhapur ↔ Ratnagiri) and Fonda (Belgaum ↔ Goa border). Each ghat maps to
+            a specific district-pair, which is exactly the pairing MPSC tests.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>💧 Dams.</strong> Maharashtra has more large dams than any other state
+            in India (2,000+ of every size and 60+ major storages). The ten dams asked
+            most frequently in MPSC PYQs are Koyna (Krishna basin, ~1,960 MW hydro),
+            Jayakwadi (Godavari, Aurangabad, largest reservoir by volume), Bhandardara /
+            Wilson (Pravara, one of India&apos;s oldest concrete dams from 1926), Tansa and
+            Upper Vaitarna (Mumbai&apos;s primary drinking-water sources), Khadakwasla and
+            Panshet (Pune water supply), Chandoli / Warna (Krishna sub-basin), Manjara
+            (Godavari sub-basin), Ujani (Bhima, Solapur) and Hatnur (Tapi). Learn each dam
+            with its river and its district; that triplet is almost always the answer key.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>☢️ Nuclear plants.</strong> Only two are relevant to Maharashtra: the
+            operational Tarapur Atomic Power Station (Palghar district, four units — TAPS-1
+            and 2 are original BWRs from 1969, TAPS-3 and 4 are indigenous 540 MW PHWRs
+            commissioned in 2005–06, total ~1,400 MW), and the proposed Jaitapur Nuclear
+            Project (Ratnagiri district, six units of 1,650 MW EPRs planned in
+            collaboration with France&apos;s EDF — this will become the world&apos;s largest
+            nuclear plant if built).
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>🌀 Hydroelectric plants.</strong> Koyna (~1,960 MW across four stages,
+            in Satara district, by far the largest hydro in the state), Bhira (300 MW, Tata
+            Power, Raigad), Khopoli (72 MW, Tata Power), Bhivpuri (75 MW, Tata Power),
+            Ghatghar (250 MW pumped storage, Ahmednagar), Pench (160 MW, Nagpur), Vaitarna
+            (60 MW), Tillari (66 MW, Sindhudurg) and Yeldari (22.5 MW, Parbhani).
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>🏭 Thermal plants.</strong> Chandrapur STPS (3,340 MW, MahaGenco — the
+            state&apos;s largest), Koradi (2,400 MW, Nagpur), Khaperkheda (1,340 MW,
+            Nagpur), Mauda STPS (2,320 MW, NTPC), Tiroda (3,300 MW, Adani, Gondia),
+            Parli (1,170 MW, Beed), Paras (500 MW, Akola), Bhusawal (1,420 MW, Jalgaon),
+            Nashik / Eklahare (910 MW), Trombay (1,580 MW, Tata Mumbai), Dahanu (500 MW,
+            Adani Palghar), JSW Ratnagiri / Jaigad (1,200 MW) and Uran gas-based (672 MW).
+            Cluster them mentally into the Vidarbha cluster (Chandrapur, Koradi,
+            Khaperkheda, Mauda, Tiroda), the Marathwada cluster (Parli, Paras) and the
+            western cluster (Trombay, Dahanu, Jaigad).
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>🏛️ UNESCO sites &amp; forts.</strong> Ajanta Caves (Aurangabad district,
+            Buddhist caves 200 BCE–650 CE), Ellora Caves (Aurangabad, syncretic Buddhist +
+            Hindu + Jain caves, including the Kailasa temple at Cave 16), Elephanta Caves
+            (Mumbai harbour, 5th–8th century Shaiva caves), Chhatrapati Shivaji Maharaj
+            Terminus (CSMT, Mumbai, Victorian Gothic railway station), the Victorian Gothic
+            and Art Deco Ensembles of Mumbai and the natural Western Ghats. The historic
+            forts layer shows Raigad (Chhatrapati Shivaji Maharaj&apos;s capital, coronation
+            1674), Sinhagad (Tanaji&apos;s battle), Pratapgad (Battle of Pratapgad 1659),
+            Shivneri (birthplace of Chhatrapati Shivaji Maharaj), Lohgad, Rajgad, Torna
+            (first fort captured by Shivaji), Daulatabad (Devagiri, the medieval Yadava
+            capital), Panhala (largest fort in the Deccan) and the Vijaydurg sea fort.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/30">
+          <h2 className="text-lg font-bold text-indigo-800 dark:text-indigo-200">Study-cycle suggestion</h2>
+          <p className="mt-2 text-sm text-indigo-900/80 dark:text-indigo-200/90 leading-relaxed">
+            Pair a fifteen-minute session on this map with the {""}
+            <Link href="/study-guides/maharashtra-geography" className="underline underline-offset-2 hover:text-indigo-900 dark:hover:text-indigo-100">
+              Maharashtra Geography study guide
+            </Link>{" "}
+            and a ten-question drill from the Topic Wise mode on the {""}
+            <Link href="/" className="underline underline-offset-2 hover:text-indigo-900 dark:hover:text-indigo-100">home page</Link>.
+            Repeat this cycle three times in a fortnight and Maharashtra Geography stops
+            being a weak spot — a scoring bump of four to six marks is a common outcome
+            reported by our users. For a district-wise view of the rivers alone, visit our
+            dedicated {""}
+            <Link href="/rivers-maharashtra" className="underline underline-offset-2 hover:text-indigo-900 dark:hover:text-indigo-100">
+              Rivers of Maharashtra
+            </Link>{" "}
+            page.
           </p>
         </section>
       </main>

@@ -115,20 +115,62 @@ export default function ExamsPage() {
           <h3 className="mb-4 text-lg font-bold text-slate-800 dark:text-slate-100">About MPSC Exams</h3>
           <div className="prose prose-slate max-w-none text-sm dark:prose-invert">
             <p>
-              The Maharashtra Public Service Commission (MPSC) conducts competitive examinations for recruitment to various government posts in Maharashtra. The major exams include:
+              The Maharashtra Public Service Commission (MPSC) is the constitutional authority
+              established under Article 315 of the Constitution of India. It is headquartered
+              in Mumbai and is responsible for recruiting candidates to civil services and
+              civil posts under the Government of Maharashtra. Every year the MPSC conducts
+              seven to ten major recruitment examinations covering both the classical
+              generalist services and specialised technical / departmental services. The
+              major exams for which previous-year papers are archived on MPSC PYQ QUIZ
+              include:
             </p>
             <ul>
-              <li><strong>MPSC Group B (Subordinate Services)</strong> — For posts like Deputy Collector (Dy. Collector), Deputy Superintendent of Police (Dy. SP), and other Group B officers.</li>
-              <li><strong>MPSC Group C (Subordinate Services)</strong> — For posts like Tax Assistant, Clerk, and other Group C positions.</li>
-              <li><strong>MPSC PSI (Police Sub-Inspector)</strong> — For recruitment to the Police Sub-Inspector cadre in Maharashtra.</li>
-              <li><strong>MPSC Gazetted Civil Services</strong> — For higher administrative posts in Maharashtra state government.</li>
-              <li><strong>MPSC Gazetted Technical Services</strong> — For technical posts requiring specialized qualifications.</li>
+              <li><strong>MPSC Group B (Subordinate Services)</strong> — combined preliminary examination for Deputy Collector, Deputy Superintendent of Police (DySP), Assistant Regional Transport Officer, Section Officer / Assistant Section Officer and equivalent Group B gazetted / non-gazetted posts.</li>
+              <li><strong>MPSC Group C (Subordinate Services)</strong> — combined preliminary examination for Industry Inspector, Sub-Registrar &amp; Inspector of Stamps, Tax Assistant, Technical Assistant and equivalent Group C posts.</li>
+              <li><strong>MPSC PSI (Police Sub-Inspector)</strong> — direct recruitment to the Police Sub-Inspector cadre in Maharashtra Police, one of the largest state police forces in India.</li>
+              <li><strong>MPSC Gazetted Civil Services (formerly State Services)</strong> — the flagship examination for higher gazetted administrative posts including Deputy Collector, DySP (State), BDO, Tehsildar, Assistant Commissioner (Sales Tax), Assistant Director (School Education) and roughly forty other cadres.</li>
+              <li><strong>MPSC Gazetted Technical Services</strong> — for gazetted technical posts requiring specialised engineering, agriculture, veterinary or forestry qualifications.</li>
+              <li><strong>MPSC RTO Assistant Motor Vehicle Inspector (AMVI)</strong> — specialised technical examination for Motor Vehicles Department recruitment, with a dedicated automobile-engineering paper alongside General Studies.</li>
             </ul>
             <p>
-              All preliminary exams consist of objective-type (MCQ) questions on General Studies covering subjects like Indian Polity, History of India and Maharashtra, Geography, General Science, Current Affairs, Economics, and Environment.
+              All preliminary examinations use the objective (MCQ) format with negative
+              marking of one-fourth mark per wrong answer. The General Studies syllabus
+              covers Indian Polity, History of India and Maharashtra, Physical, Human and
+              Economic Geography of India and Maharashtra, General Science, Current Affairs
+              (national and state), Environment and Ecology, Indian Economy and Maharashtra
+              Economy, Basic Numeracy and Mental Ability. Papers are set in both English
+              and Marathi in parallel — aspirants can attempt either version and both
+              language versions appear on this platform for every paper archived.
             </p>
             <p>
-              Practicing with previous year question papers is one of the most effective strategies for MPSC preparation. It helps you understand the exam pattern, frequently asked topics, difficulty level, and time management.
+              Practising previous-year papers is widely acknowledged to be the single most
+              productive activity in MPSC preparation. Three reasons make PYQ practice
+              disproportionately valuable: (i) MPSC recycles roughly 20 to 30 percent of its
+              factual anchors — the same dates, articles, ratios, districts and events
+              appear across paper cycles with only the option-craft rearranged; (ii) the
+              option-framing style is highly consistent across years, so aspirants who have
+              seen the traps once learn to anticipate them; and (iii) the cognitive load per
+              question is roughly a quarter of a fresh coaching-institute mock, allowing an
+              aspirant to build stamina for the 100-question 90-minute prelim by starting
+              with familiar territory. Our platform surfaces the entire archive above by
+              year and by paper, with a dedicated Topic Wise practice mode for aspirants who
+              prefer to drill a single subject at a time.
+            </p>
+            <p>
+              For a preparation roadmap that lays out how to sequence PYQ practice against
+              full-length mocks and syllabus reading, see our detailed {""}
+              <Link href="/study-guides/mpsc-preparation-strategy" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700 dark:text-indigo-400">
+                MPSC Preparation Strategy guide
+              </Link>{" "}
+              and the {""}
+              <Link href="/study-guides/mpsc-exam-pattern" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700 dark:text-indigo-400">
+                MPSC Exam Pattern guide
+              </Link>. For subject-specific deep dives, our {""}
+              <Link href="/study-guides" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700 dark:text-indigo-400">
+                Study Guides hub
+              </Link>{" "}
+              carries long-form articles on Indian Polity, Maharashtra Geography and
+              Maharashtra History.
             </p>
           </div>
         </div>

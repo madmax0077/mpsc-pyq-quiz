@@ -164,6 +164,69 @@ export default function StudyGuidesHub() {
             {" "}and we&apos;ll fix it within 48 hours.
           </p>
         </section>
+
+        <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">
+            Why long-form guides beat scattered notes
+          </h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Most MPSC study material online is a jumble of one-line facts pulled from
+            various coaching-institute handouts. That format is convenient to skim but
+            hostile to retention — the human brain remembers structured, causal narratives
+            far better than isolated bullet points. Our study guides are written as
+            self-contained arcs: for Geography, we start from the geological formation of
+            the Deccan Trap and end at present-day power and mineral distribution; for
+            History, we walk from the Satavahanas of Junnar-Paithan-Nashik through the
+            Maratha coronation at Raigad in 1674 and the Peshwa era to the 1960 Samyukta
+            Maharashtra reorganisation; for Polity, we start with the Constituent Assembly
+            debates and end at the working constitutional bodies as of 2026. This narrative
+            spine is what makes the material re-readable, and re-reading is what MPSC
+            success actually rewards.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Each guide takes twelve to sixteen minutes to read in full, which fits into a
+            single evening study session. During the last-month revision cycle the guides
+            act as a rapid re-loader — most aspirants can re-read the entire five-guide set
+            in a single Saturday afternoon and walk into the exam hall with the major
+            factual anchors freshly rehearsed. That is a deliberate design choice, not an
+            accident of length.
+          </p>
+        </section>
+
+        <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">
+            The MPSC prelims syllabus at a glance
+          </h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Across the five major MPSC preliminary examinations (Group B, Group C, PSI,
+            Gazetted Civil Services, Gazetted Technical Services), the General Studies
+            syllabus is broadly identical. It has ten major weightage buckets:{" "}
+            <strong>Indian Polity and Governance</strong> (roughly 12–18 marks in a 100-mark
+            paper), <strong>Modern Indian History (with special emphasis on Maharashtra)</strong>{" "}
+            (10–15 marks), <strong>Physical, Human and Economic Geography of India and
+            Maharashtra</strong> (10–15 marks), <strong>General Science</strong> (10–15 marks),
+            <strong> Current Affairs — National and State</strong> (10–15 marks),{" "}
+            <strong>Indian and Maharashtra Economy</strong> (8–12 marks), <strong>Environment
+            and Ecology</strong> (5–8 marks), <strong>Basic Numeracy and Mental Ability</strong>{" "}
+            (5–10 marks), <strong>Marathi Grammar and Comprehension</strong> (5–10 marks) and
+            <strong> English Grammar and Comprehension</strong> (5–10 marks). No single
+            subject dominates, so an aspirant who scores 60 percent across ten sections will
+            comfortably clear the cut-off in most years — whereas an aspirant who scores 90
+            percent in one section but 30 percent in three others typically will not.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            The five study guides above cover the three heaviest content-based subjects
+            (Polity, Geography, History) with the depth necessary to hit that 60-percent
+            floor comfortably, plus the meta-guides on exam pattern and preparation
+            strategy to help you plan the remaining seven sections. For hands-on practice,
+            use the {""}
+            <Link href="/exams" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700 dark:text-indigo-400">
+              previous-year papers
+            </Link>{" "}
+            page — every paper carries the official Set A answer key and the option-by-option
+            explanations we have added for indexed questions.
+          </p>
+        </section>
       </main>
 
       <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">

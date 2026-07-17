@@ -129,6 +129,144 @@ export default function CensusGamePage() {
             Data source: Census of India 2011 / census2011.co.in.
           </p>
         </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">Why Census 2011 still matters for MPSC (2026 papers)</h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Census 2011 remains the <strong>official reference dataset</strong> for every
+            MPSC preliminary and mains paper conducted after it. The 2021 Census cycle was
+            postponed because of COVID-19 and, as of 2026, is still in the field-work phase;
+            the Registrar General&apos;s office has not released final tables. MPSC therefore
+            continues to draw all population, sex-ratio, literacy, decadal-growth and
+            urbanisation questions from Census 2011. Aspirants who ignore this dataset lose
+            three to five easy marks per paper — Census questions are almost purely factual,
+            they never involve reasoning, and the answers are compact numeric facts that
+            reward pure memorisation.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            MPSC frames Census questions in five recurring patterns: (1) top-and-bottom
+            rankings — highest / lowest district for a metric; (2) state-versus-India
+            comparisons — Maharashtra&apos;s rank on a given metric; (3) intra-district
+            comparisons — sex ratio vs. child sex ratio for the same district; (4) decadal
+            change — which district grew fastest or slowest between 2001 and 2011; and (5)
+            derived indicators — urbanisation share, tribal population share, literacy gender
+            gap. This game covers all five patterns across its four modes.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">High-yield extremes to memorise</h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Population.</strong> Highest: Thane (1.11 crore, effectively still
+            includes Palghar); Pune (0.94 crore); Mumbai Suburban (0.94 crore); Mumbai City
+            (0.31 crore). Lowest: Sindhudurg (8.5 lakh); Gadchiroli (10.7 lakh); Ratnagiri
+            (16.2 lakh); Hingoli (11.8 lakh).
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Sex ratio (females per 1,000 males).</strong> Highest: Ratnagiri (1,122),
+            Sindhudurg (1,036) — the two Konkan districts with historic out-migration of
+            working-age males to Mumbai. Lowest: Mumbai City (838), Mumbai Suburban (860),
+            Thane (886) — the migration-magnet districts that pull in male-heavy workforce.
+            The Konkan-vs-Mumbai contrast is a favourite MPSC framing.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Child sex ratio (females per 1,000 males, 0–6).</strong> Highest:
+            Gadchiroli (961), Chandrapur (953) — tribal-belt districts. Lowest: Beed (807),
+            Jalgaon (842), Ahmadnagar (852), Buldhana (855), Aurangabad (858) — the
+            Marathwada sugar-belt cluster. The state CSR of 894 is well below the national
+            average of 919, which is why MPSC repeatedly frames CSR items on Maharashtra.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Literacy.</strong> Highest: Mumbai Suburban (89.9%), Mumbai City
+            (89.2%), Nagpur (89.5%), Pune (86.2%). Lowest: Nandurbar (64.4%), Beed (76.5%),
+            Jalna (73.6%), Hingoli (77.0%). The state figure of 82.34 % puts Maharashtra
+            comfortably above the national average of 74 %, with an urban-rural gap of
+            about 11 percentage points.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Population density (persons per sq. km).</strong> Highest: Mumbai City
+            (20,634), Mumbai Suburban (20,925), Thane (1,157). Lowest: Gadchiroli (74),
+            Sindhudurg (163), Ratnagiri (196). The state density of 365 is close to the
+            national average of 382.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <strong>Decadal growth 2001-11 (%).</strong> Highest: Thane (35.9%), Pune
+            (30.4%), Aurangabad (27.3%). Lowest: Sindhudurg (-2.3% — one of the very few
+            districts in India that recorded negative growth), Ratnagiri (0.8%), Hingoli
+            (17.4%). The state figure was 15.99 % against a national 17.7 %.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">Understanding the Census methodology</h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            The Census of India is conducted every ten years under the Census Act, 1948, by
+            the Office of the Registrar General and Census Commissioner of India (ORGI),
+            functioning under the Ministry of Home Affairs. Census 2011 was the 15th
+            national census (7th since independence) and was carried out in two phases: the
+            House-listing operation from April to September 2010, and the Population
+            Enumeration from 9 to 28 February 2011 (with a revisional round from 1 to 5
+            March 2011).
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            The Census de facto counts every individual — resident, migrant, homeless —
+            physically present in the country on Census night. The reference date for all
+            demographic attributes is <strong>1 March 2011, 00:00 hrs</strong>. Data is
+            released in successive tabulation series: the Provisional Population Totals
+            (March 2011), the Primary Census Abstract (2013), the language tables (2018)
+            and religion, migration and household-amenities series. MPSC has asked about all
+            of these — memorise Census 2011&apos;s <strong>reference date</strong>, its
+            <strong> Commissioner</strong> (C. Chandramouli), and the two headline national
+            numbers (population 121.09 crore, decadal growth 17.7%).
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            One frequently confused point: Palghar district was carved out of Thane on
+            <strong> 1 August 2014</strong>, which is <strong>after</strong> Census 2011.
+            Palghar therefore does not have its own Census 2011 numbers — its population
+            is embedded inside Thane&apos;s figure. Similarly Osmanabad was renamed to
+            Dharashiv and Aurangabad to Chhatrapati Sambhajinagar; but the Census data
+            still uses the pre-rename district names, and MPSC follows the Census
+            nomenclature in its official answer keys.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">Six-district Konkan &amp; six-region Maharashtra breakdown</h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Maharashtra is administratively organised into six revenue divisions —
+            <strong> Konkan</strong> (Mumbai City, Mumbai Suburban, Thane, Palghar, Raigad,
+            Ratnagiri, Sindhudurg), <strong>Nashik</strong> (Nashik, Dhule, Jalgaon,
+            Nandurbar, Ahmadnagar), <strong>Pune</strong> (Pune, Satara, Sangli, Solapur,
+            Kolhapur), <strong>Aurangabad / Marathwada</strong> (Aurangabad, Beed, Jalna,
+            Osmanabad, Nanded, Parbhani, Latur, Hingoli), <strong>Amravati / West Vidarbha</strong>
+            (Amravati, Akola, Buldhana, Yavatmal, Washim), and <strong>Nagpur / East Vidarbha</strong>
+            (Nagpur, Wardha, Bhandara, Gondia, Chandrapur, Gadchiroli). MPSC frequently asks
+            regional questions along these six-division lines — which region has the
+            highest tribal population share (East Vidarbha and Nashik divisions), which has
+            the largest sugarcane belt (Pune division), which has the fastest urbanisation
+            (Konkan).
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/30">
+          <h2 className="text-lg font-bold text-indigo-800 dark:text-indigo-200">Study-cycle suggestion</h2>
+          <p className="mt-2 text-sm text-indigo-900/80 dark:text-indigo-200/90 leading-relaxed">
+            A ten-minute session with the Quiz mode above, followed by a five-minute
+            Rank-Race round on the same day, is enough to cover three metrics thoroughly.
+            Repeat across five sessions and you cover the entire dataset. Pair the game
+            with the {""}
+            <Link href="/study-guides/maharashtra-geography" className="underline underline-offset-2 hover:text-indigo-900 dark:hover:text-indigo-100">
+              Maharashtra Geography study guide
+            </Link>{" "}
+            for the geographic context of each extreme, and revisit the {""}
+            <Link href="/map" className="underline underline-offset-2 hover:text-indigo-900 dark:hover:text-indigo-100">
+              interactive Maharashtra map
+            </Link>{" "}
+            to visualise the divisions. Once the game feels easy, attempt a five-question
+            Topic Wise set from the home page under Geography &rarr; Maharashtra Census — you
+            should be at 4/5 or better before you move on.
+          </p>
+        </section>
       </main>
 
       <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">

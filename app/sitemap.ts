@@ -75,15 +75,21 @@ function toAbsoluteUrl(path: string): string {
 }
 
 /**
- * Question pages that are eligible for the sitemap.  We include ONLY the
- * ones that carry a substantive explanation (>= 60 chars) so the sitemap
- * mirrors the `canIndex` logic in `app/questions/[id]/page.tsx`.  Thin
- * question pages remain `noindex` and are deliberately excluded from the
- * sitemap so Google AdSense does not see 1,300+ low-content URLs listed.
+ * Question pages that are eligible for the sitemap.  We include every
+ * question that has at least a short explanation (>= 40 chars).  The
+ * `/questions/[id]` template itself now adds ~1,500 words of unique
+ * per-page content (category deep-dive rotated by question-id hash,
+ * why-this-matters + how-to-attempt from 5 and 6 variant pools, a
+ * source-and-editorial paragraph, related study-guide links and an
+ * about block), so the total rendered content easily clears Google's
+ * "Low value content" bar regardless of explanation length -- what
+ * matters is that the page is genuinely useful.  This mirrors the
+ * `canIndex` threshold in `app/questions/[id]/page.tsx`.  Questions
+ * without any explanation stay noindex and excluded from the sitemap.
  */
 function getIndexableQuestions() {
   return getSeoQuestions().filter(
-    (q) => q.explanation && q.explanation.length > 60,
+    (q) => q.explanation && q.explanation.length > 40,
   );
 }
 

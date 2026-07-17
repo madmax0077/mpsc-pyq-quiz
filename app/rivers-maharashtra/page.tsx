@@ -203,6 +203,83 @@ export default function RiversMaharashtraPage() {
             Maharashtra geography references.
           </p>
         </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">
+            Why the drainage system is a top MPSC topic
+          </h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            The drainage of Maharashtra is the single most-tested Geography sub-topic in
+            MPSC preliminary papers. In the last decade at least one rivers-related
+            question has appeared in every combined preliminary examination — Group B,
+            Group C, PSI and Gazetted Civil Services included. The reasons are structural.
+            Maharashtra is drained by six major river systems that together define its
+            agricultural zones, its hydro power capacity, its drinking-water infrastructure
+            and its administrative boundaries. Roughly 92 percent of the state drains east
+            through the Godavari, Krishna and their tributaries into the Bay of Bengal;
+            the remaining 8 percent drains west through the Tapi and the fourteen short
+            Konkan rivers into the Arabian Sea. Knowing which district falls into which
+            drainage basin lets you answer nearly every state-geography question that
+            references agriculture, dams or water disputes.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            The MPSC also frequently asks about specific confluences and sangams that
+            carry religious and cultural significance. The Preeti Sangam at Karad (where
+            Koyna joins Krishna), the Bhima-Krishna confluence at Kudalasangama (in
+            neighbouring Karnataka but originating in Maharashtra), the Wardha-Wainganga
+            confluence at Sironcha (which becomes the Pranhita), the Panchganga confluence
+            at Kolhapur (where five streams — Kasari, Kumbhi, Tulsi, Bhogavati and
+            Saraswati — merge) and the Godavari&apos;s own point of origin at Brahmagiri
+            near Trimbakeshwar are all recurring PYQ material.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+          <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">
+            Rivers, dams and the state&apos;s water disputes
+          </h2>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Maharashtra has more large dams than any other Indian state (2,000+ of every
+            size and 60+ major reservoirs). The mapping between rivers and their principal
+            dams is a favourite MPSC pairing question: Koyna → Krishna basin (Satara);
+            Jayakwadi (Nathsagar) → Godavari (Aurangabad); Bhandardara / Wilson Dam →
+            Pravara (Ahmadnagar); Ujani → Bhima (Solapur); Manjara → Manjra (Beed);
+            Khadakwasla &amp; Panshet → Mutha (Pune); Warna / Chandoli → Warna (Sangli);
+            Girna → Girna (Nashik/Jalgaon); Hatnur → Tapi (Jalgaon); Upper Vaitarna &amp;
+            Tansa → Konkan rivers (Mumbai&apos;s primary drinking-water sources). Every one
+            of these has appeared in a MPSC prelim in the last ten years.
+          </p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Inter-state water disputes are the political-geography half of the drainage
+            topic. The Krishna Water Dispute Tribunal (KWDT-I under Justice Bachawat, 1969
+            and KWDT-II under Justice Brijesh Kumar, 2010) apportions the Krishna between
+            Maharashtra, Karnataka, Andhra Pradesh and Telangana. The Godavari Water
+            Dispute Tribunal award (1980) similarly partitions the Godavari across five
+            states. Within Maharashtra, the Krishna-Marathwada Stabilisation Project,
+            the Kolhapur-style bandharas and the Tembhu, Takari and Mhaisal lift-irrigation
+            schemes all reflect the state&apos;s attempts to move water from the surplus
+            western basins to the deficit Marathwada districts.
+          </p>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-indigo-200 bg-indigo-50 p-5 dark:border-indigo-800 dark:bg-indigo-900/30">
+          <h2 className="text-lg font-bold text-indigo-800 dark:text-indigo-200">
+            Use this page effectively
+          </h2>
+          <p className="mt-2 text-sm text-indigo-900/80 dark:text-indigo-200/90 leading-relaxed">
+            Open this rivers map alongside the full {""}
+            <Link href="/map" className="underline underline-offset-2 hover:text-indigo-900 dark:hover:text-indigo-100">
+              Maharashtra map
+            </Link>{" "}
+            (which adds power plants, dams, forts and UNESCO sites), then read the {""}
+            <Link href="/study-guides/maharashtra-geography" className="underline underline-offset-2 hover:text-indigo-900 dark:hover:text-indigo-100">
+              Maharashtra Geography study guide
+            </Link>{" "}
+            for the geological and climatic context. Finally, attempt the PYQ quiz on this
+            same page — every question is drawn from a real MPSC paper and pairs cleanly
+            with the visual reference above.
+          </p>
+        </section>
       </main>
 
       <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">
