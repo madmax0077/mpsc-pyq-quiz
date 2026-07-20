@@ -313,21 +313,19 @@ export default function RootLayout({
           }}
         />
         {/*
-          Google AdSense loader is intentionally NOT shipped during the
-          approval phase.  We rely on the verification meta tag above
-          (google-adsense-account) + /ads.txt for site-ownership checks.
-
-          After AdSense approves the site, enable Auto Ads from
-          AdSense -> Ads -> By site -> mpscs.in -> toggle ON, then
-          re-add the loader below (no <ins> / slot IDs needed for
-          Auto Ads):
-
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5084738834329206"
-            crossOrigin="anonymous"
-          />
+          Google AdSense loader — Auto Ads.
+          Site was approved on 20 July 2026 (attempt 9).  With Auto Ads
+          enabled from AdSense -> Ads -> By site -> mpscs.in, Google
+          picks placements automatically from a single loader script; no
+          per-slot <ins> tags or data-ad-slot IDs are needed.  Publisher
+          ID is also mirrored in /ads.txt and the google-adsense-account
+          meta tag above.
         */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5084738834329206"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="font-sans dark:bg-slate-900">
         <AuthProvider>{children}</AuthProvider>
