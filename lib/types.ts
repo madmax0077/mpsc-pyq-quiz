@@ -19,6 +19,8 @@ export type Category = (typeof CATEGORIES)[number];
 export interface Question {
   id: string;
   text: string;
+  /** Original paper number to display; when set, it is shown instead of the position index so numbering survives skipped/removed items. */
+  number?: number;
   options: Record<OptionKey, string>;
   /** Absent when {@link cancelled} is true (MPSC dropped the item; no official key). */
   correctAnswer?: OptionKey;

@@ -1286,7 +1286,7 @@ export default function StudentView({
                               ? "bg-indigo-100 text-indigo-700"
                               : "bg-slate-100 text-slate-600"
                   }`}>
-                    {globalIdx + 1}
+                    {q.number ?? globalIdx + 1}
                   </span>
                   <p className="select-text font-medium text-slate-800 leading-relaxed whitespace-pre-line dark:text-slate-100">{q.text}</p>
                 </div>
