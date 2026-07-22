@@ -99708,5 +99708,2818 @@
         "number": 100
       }
     ]
+  },
+  {
+    "id": "group_b_pre_2026_en",
+    "title": "MPSC Group B Combined Pre 2026 (English)",
+    "questions": [
+      {
+        "id": "gbp26-1",
+        "text": "Read the following statements and select the correct option about the work of Hon. Gopal Krishna Gokhale.\nA. He was the Secretary of Sarvajanik Sabha in 1887.\nB. He was the Editor of Pune Sarvajanik Sabha quarterly.\nC. He was the member of Central Legislative Council in 1900.\nD. He was elected as Secretary of Indian National Congress in 1895.",
+        "options": {
+          "A": "C and D are correct",
+          "B": "A, B and D are correct",
+          "C": "A, C and D are correct",
+          "D": "A and B are correct"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Gokhale was Secretary of the Sarvajanik Sabha in 1887 (A), editor of its Pune quarterly (B) and was elected Secretary of the Indian National Congress in 1895 (D). Statement C slips — he entered the Central Legislative Council only in 1902, not 1900 — so A, B and D form the correct set.",
+        "category": "History",
+        "number": 1
+      },
+      {
+        "id": "gbp26-2",
+        "text": "On October 31, 1920, the first session of the All India Trade Union Congress was held in Mumbai under the Presidency of Lala Lajpat Rai. Who among the following was not present at this session?\na. Motilal Nehru\nb. Avantikabai Gokhale\nc. Mahatma Gandhi\nd. Vitthalbhai Patel",
+        "options": {
+          "A": "Only a",
+          "B": "Only b and d",
+          "C": "Only c",
+          "D": "Only b"
+        },
+        "correctAnswer": "C",
+        "explanation": "The right pick is option C. The question asks who was absent from the first AITUC session of October 1920, and that is Mahatma Gandhi. Motilal Nehru, Avantikabai Gokhale and Vitthalbhai Patel were all associated with that gathering, so only 'c' answers the 'not present' angle.",
+        "category": "History",
+        "number": 2
+      },
+      {
+        "id": "gbp26-3",
+        "text": "Identify the social reformer from the following information.\na. He was an Assistant Professor at Elphinstone College.\nb. He started the first Marathi magazine named Digdarshan in 1840 A. D.\nc. The British Government appointed him as the 'Justice of the Peace' in 1840.",
+        "options": {
+          "A": "Balshastri Jambhekar",
+          "B": "Gopal Ganesh Aagarkar",
+          "C": "Mahadev Govind Ranade",
+          "D": "Vishnushastri Chiplunkar"
+        },
+        "correctAnswer": "A",
+        "explanation": "Working through it, option A is the one. Balshastri Jambhekar started the first Marathi magazine 'Digdarshan' in 1840, taught at Elphinstone College and was made a Justice of the Peace — the three clues point straight to him, the father of Marathi journalism.",
+        "category": "History",
+        "number": 3
+      },
+      {
+        "id": "gbp26-4",
+        "text": "What was the purpose of Maharshi Dhondo Keshav Karve behind establishing women's university in 1916 A. D.?\na. Providing higher education to women.\nb. Teaching singing to women.\nc. Making women self-reliant.",
+        "options": {
+          "A": "Only a",
+          "B": "Only b",
+          "C": "Only a and c",
+          "D": "a, b and c"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Per the official key, all three aims — providing higher education to women, teaching them the art of music, and making them self-reliant — are taken as Karve's purposes behind the 1916 women's university, so 'a, b and c' is treated as correct.",
+        "category": "History",
+        "number": 4
+      },
+      {
+        "id": "gbp26-5",
+        "text": "Which of the following changes took place in India due to colonialism?\na. Growth of Nationalism\nb. End of Medieval Reign\nc. Growth of Urbanisation in India\nd. Growth in Indigenous Industry",
+        "options": {
+          "A": "Only a and b",
+          "B": "Only b and c",
+          "C": "Only a, b and c",
+          "D": "Only b, c and d"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Colonialism did fuel nationalism, ended medieval-style reigns and sped up urbanisation (a, b, c). What it did NOT do was grow indigenous industry — in fact it drained it — so 'd' is excluded and a, b and c stand.",
+        "category": "History",
+        "number": 5
+      },
+      {
+        "id": "gbp26-6",
+        "text": "\"The people here will not be satisfied with just getting an education, they will not be satisfied with a share in the governance. In fact they will try to establish their right to all the governance\" said ______ in a letter sent to ______.",
+        "options": {
+          "A": "Lord Macaulay – Public Education Committee",
+          "B": "Mount Stuart Elphinstone – Court of Directors",
+          "C": "George Rusell Clerk – British Parliament",
+          "D": "Lord Amherst – Governor General"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. The prophetic line about Indians one day claiming a right to all governance was written by Mountstuart Elphinstone in a letter to the Court of Directors. Tie the quote to Elphinstone and the Company's Court to lock the pair.",
+        "category": "History",
+        "number": 6
+      },
+      {
+        "id": "gbp26-7",
+        "text": "Which of the following statement is incorrect?\na. Bhagat Singh and Rajguru assassinated British Officer Saunders.\nb. Anant Laxman Kanhere assassinated Jackson, the District Collector of Nashik.\nc. Chaphekar assassinated Rand, the Commissioner of Mumbai.",
+        "options": {
+          "A": "Only c",
+          "B": "Only b",
+          "C": "Only a",
+          "D": "b and c"
+        },
+        "correctAnswer": "A",
+        "explanation": "Working through it, option A is the one. The task is to spot the wrong statement, and that is 'c' — Rand was the Commissioner of Pune, not Mumbai, and the Chapekar brothers shot him there. Statements a and b are accurate, so only c is incorrect.",
+        "category": "History",
+        "number": 7
+      },
+      {
+        "id": "gbp26-8",
+        "text": "Who among the following commented on the Morley-Minto Reforms Act of 1909 that, \"This is useless like the udder of a bull; one can never milk it for getting the milk of public welfare\"?",
+        "options": {
+          "A": "Surendranath Banerjee",
+          "B": "R. C. Mujumdar",
+          "C": "Lokmanya Tilak",
+          "D": "Lala Lajpat Rai"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The stinging remark that the Morley-Minto Reforms were as useless as the udder of a bull came from Lokmanya Tilak. That vivid, sarcastic style is a giveaway for Tilak among the four leaders.",
+        "category": "History",
+        "number": 8
+      },
+      {
+        "id": "gbp26-9",
+        "text": "Who made the statement, \"If the uprising had even one capable leader, British rule over India would have been destroyed\", regarding the 1857 uprising ?",
+        "options": {
+          "A": "Lord Canning",
+          "B": "Sir Hugh Rose",
+          "C": "John Lawrence",
+          "D": "Lord Dalhousie"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The observation that a single capable leader could have ended British rule in 1857 is credited to John Lawrence. Anchor the 1857 'one capable leader' line to Lawrence to separate it from Canning and Dalhousie.",
+        "category": "History",
+        "number": 9
+      },
+      {
+        "id": "gbp26-10",
+        "text": "Lokmanya Tilak sent _________ to Nepal to learn how to make rifles and cartridges.",
+        "options": {
+          "A": "Dadasaheb Khaparde and N. C. Kelkar",
+          "B": "Shridhar Ane and Shripad Kulkarni",
+          "C": "Hanamantrao Kulkarni and Krishnaji Prabhakar Khadilkar",
+          "D": "Krishnaji Prabhakar Khadilkar and Dadasaheb Khaparde"
+        },
+        "correctAnswer": "C",
+        "explanation": "The right pick is option C. Tilak sent Hanamantrao Kulkarni and Krishnaji Prabhakar Khadilkar to Nepal to learn rifle and cartridge making. Pair the Nepal arms-training mission with this duo to keep it distinct from Khaparde and Kelkar.",
+        "category": "History",
+        "number": 10
+      },
+      {
+        "id": "gbp26-11",
+        "text": "Which glacier in Siachen Ladakh drains into the river Shyok ?",
+        "options": {
+          "A": "Hispar",
+          "B": "Rimo",
+          "C": "Zemu",
+          "D": "Drang-Drung"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Among Siachen–Ladakh glaciers, it is the Rimo glacier that drains into the Shyok river. Hispar and Zemu lie in other ranges, so the Shyok link fixes the answer on Rimo.",
+        "category": "Geography",
+        "number": 11
+      },
+      {
+        "id": "gbp26-12",
+        "text": "Consider the following statements :\na. Decadal growth of population from 2001 to 2011 in Maharashtra was 15.99 per cent.\nb. As per 2011 census Muslim population concentration in Maharashtra was 10.6 per cent out of 122372972 total population.\nc. The highest agricultural density was found in Kerala State as per 2011 census.\nd. As per 2011 census, top ten States in child sex ratio in the age group 0 – 6 are Sikkim, Arunachal Pradesh, Jammu and Kashmir, Chhattisgarh, Manipur, Nagaland, Rajasthan, Madhya Pradesh etc.",
+        "options": {
+          "A": "a, b and d are correct",
+          "B": "b, c and d are correct",
+          "C": "a and c are correct",
+          "D": "a, b, c and d are correct"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Statements a and c hold — Maharashtra's 2001–11 decadal growth was 15.99 per cent, and Kerala recorded the highest agricultural density in the 2011 census. The Muslim-share and child-sex-ratio lists (b, d) don't match, so a and c is the set.",
+        "category": "Geography",
+        "number": 12
+      },
+      {
+        "id": "gbp26-13",
+        "text": "Which of the following pair/s is/are incorrect ?\nAdministrative Division/District – Lake/Reservoir\nA. Ch. Sambhaji Nagar – Dharashiv – Tavraja\nB. Nagpur – Bhandara – Umarzari\nC. Amravati – Washim – Chikhali\nD. Konkan – Sindhudurg – Shivdav",
+        "options": {
+          "A": "Only A",
+          "B": "A and B",
+          "C": "B and D",
+          "D": "B, C and D"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. The mismatched Division–District–Lake pairs are A and B, where the reservoir does not sit in the stated district. Pairs C and D check out, so the 'incorrect' set is A and B.",
+        "category": "Geography",
+        "number": 13
+      },
+      {
+        "id": "gbp26-14",
+        "text": "Match the following correct pairs of rivers and tributaries.\nRiver - Tributaries\na. Tapi - i. Bindusara\nb. Purna - ii. Bori\nc. Sindhpana - iii. Nalganga\nd. Manjra - iv. Gharni",
+        "options": {
+          "A": "a-iv, b-iii, c-i, d-ii",
+          "B": "a-ii, b-iv, c-iii, d-i",
+          "C": "a-ii, b-iii, c-i, d-iv",
+          "D": "a-iv, b-ii, c-i, d-iii"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The correct river–tributary links are Tapi–Bori, Purna–Nalganga, Sindhphana–Bindusara and Manjra–Gharni, i.e. a-ii, b-iii, c-i, d-iv. Fix the Sindhphana–Bindusara pair first and the rest fall into place.",
+        "category": "Geography",
+        "number": 14
+      },
+      {
+        "id": "gbp26-15",
+        "text": "Identify the district from the following statements regarding Maharashtra.\na. The city of lakes is located in this district.\nb. There is an ammunition and weapons manufacturing factory in this district.\nc. A Tehsil is famous for its metal objects and carvings on them.\nd. Mushi grass is found in large quantities in this district.",
+        "options": {
+          "A": "Raigarh",
+          "B": "Pune",
+          "C": "Thane",
+          "D": "Amravati"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The clues — the 'city of lakes', an ordnance/ammunition factory and the other markers — all point to Thane district. Reading the set of hints together rather than one line rules out the look-alike options.",
+        "category": "Geography",
+        "number": 15
+      },
+      {
+        "id": "gbp26-16",
+        "text": "Which of the following mountain ranges/hills are located in the north-eastern part of Maharashtra ?\na. Satmala\nb. Galna\nc. Akrani\nd. Darkesa",
+        "options": {
+          "A": "a and b",
+          "B": "b and c",
+          "C": "only c",
+          "D": "only d"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Of the listed hills, only 'd' (Darkesa) lies in the north-eastern part of Maharashtra; Satmala, Galna and Akrani belong to other regions. So 'only d' is the fit.",
+        "category": "Geography",
+        "number": 16
+      },
+      {
+        "id": "gbp26-17",
+        "text": "Which of the following pair comes under the concept of 'urban agglomeration' ?",
+        "options": {
+          "A": "Thane – Nashik",
+          "B": "Mumbai – Navi Mumbai",
+          "C": "Satara – Sangli",
+          "D": "Nagpur – Chandrapur"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Urban agglomeration means a core city fused with its adjoining urban outgrowths, and Mumbai–Navi Mumbai captures exactly that contiguous built-up spread. The other pairs are separate towns, not one agglomeration.",
+        "category": "Geography",
+        "number": 17
+      },
+      {
+        "id": "gbp26-18",
+        "text": "In which district of North Maharashtra, the 150 MW solar power project is located ?",
+        "options": {
+          "A": "Dhule",
+          "B": "Jalgaon",
+          "C": "Nashik",
+          "D": "Nandurbar"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. In North Maharashtra the 150 MW solar power project is located in Dhule district. Tag the North-Maharashtra solar figure to Dhule to keep it apart from the neighbouring districts.",
+        "category": "Geography",
+        "number": 18
+      },
+      {
+        "id": "gbp26-19",
+        "text": "The part of the Konkan coast that is of low-lying, flat topography along the shores of the Arabian Sea is known as __.",
+        "options": {
+          "A": "Khalati",
+          "B": "Valati",
+          "C": "Bhabar",
+          "D": "Khavlati plain"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. The low-lying, flat stretch of the Konkan coast along the Arabian Sea is called the Khalati. It contrasts with the higher inland Konkan belt, so the 'low and flat' cue points to Khalati.",
+        "category": "Geography",
+        "number": 19
+      },
+      {
+        "id": "gbp26-20",
+        "text": "Match the Mango varieties developed by Dr. Balasaheb Sawant Konkan Krishi Vidyapeeth with their release year.\nVariety - Release Year\nA. Ratna - i. 1992\nB. Sindhu - ii. 1999\nC. Konkan Ruchi - iii. 1981\nD. Konkan Samrat - iv. 2014",
+        "options": {
+          "A": "iv, ii, iii, i",
+          "B": "ii, iii, i, iv",
+          "C": "i, iv, iii, ii",
+          "D": "iii, i, ii, iv"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. The Konkan Krishi Vidyapeeth mango releases line up as Ratna–1981, Sindhu–1992, Konkan Ruchi–1999 and Konkan Samrat–2014, i.e. A-iii, B-i, C-ii, D-iv. Ordering by release year makes the matching straightforward.",
+        "category": "Geography",
+        "number": 20
+      },
+      {
+        "id": "gbp26-21",
+        "text": "In Indian Economy, after 2004-05, number of workers in Indian agriculture are declining. What type of change it is ?",
+        "options": {
+          "A": "Change in the employability",
+          "B": "Change in income",
+          "C": "Structural change",
+          "D": "Change in the infrastructure"
+        },
+        "correctAnswer": "C",
+        "explanation": "The right pick is option C. When the share of workers in agriculture keeps falling after 2004-05 while other sectors absorb them, that is a structural change in the economy — a shift in the make-up of the workforce, not a mere cyclical dip.",
+        "category": "Economics",
+        "number": 21
+      },
+      {
+        "id": "gbp26-22",
+        "text": "Match the quantitative measures of monetary policy with its corresponding objectives.\nQuantitative measures - Objectives\na. Bank rate - i. Maintaining certain minimum reserves with RBI\nb. Cash reserve ratio - ii. Buying and selling eligible securities by RBI\nc. Statutory liquidity ratio - iii. Rediscount rate\nd. Open market operation - iv. Maintaining liquid assets in the form of cash, gold and securities with RBI",
+        "options": {
+          "A": "ii, iv, iii, i",
+          "B": "iii, i, iv, ii",
+          "C": "iii, iv, i, ii",
+          "D": "i, iii, ii, iv"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. The links are Bank rate–rediscount rate, Cash reserve ratio–minimum reserves with RBI, Statutory liquidity ratio–liquid assets in cash/gold/securities, and Open market operation–buying and selling securities, i.e. a-iii, b-i, c-iv, d-ii.",
+        "category": "Economics",
+        "number": 22
+      },
+      {
+        "id": "gbp26-23",
+        "text": "Which limitations/difficulties arise in National Income estimation in India ?\na. Absence of data on income distribution.\nb. Unreported illegal income.\nc. The output of monetised sector.\nd. Non availability of data about income of small producers.",
+        "options": {
+          "A": "a only",
+          "B": "b and c",
+          "C": "a, b and d",
+          "D": "All of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The genuine hurdles in estimating India's national income are the absence of income-distribution data, unreported illegal income and the large non-monetised/self-consumed output (a, b, d). The remaining item does not belong, so a, b and d is correct.",
+        "category": "Economics",
+        "number": 23
+      },
+      {
+        "id": "gbp26-24",
+        "text": "Dr. S. Mahendra Dev and C. Ravi have attempted to calculate population below poverty line on the basis of expenditure on ___________.\na. Clothing\nb. Health\nc. Energy consumption\nd. Education",
+        "options": {
+          "A": "a, b and c",
+          "B": "b, c and d",
+          "C": "b and d",
+          "D": "a and c"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Dr. S. Mahendra Dev and C. Ravi worked out the below-poverty-line population using expenditure on health and education (b, d), moving beyond the pure food/clothing line. So b and d is the pair.",
+        "category": "Economics",
+        "number": 24
+      },
+      {
+        "id": "gbp26-25",
+        "text": "What is dividend in the concept of demographic dividend ?",
+        "options": {
+          "A": "Profit due to population",
+          "B": "Rising share of working age population",
+          "C": "Declining death rate",
+          "D": "Increasing adult population"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. The 'dividend' in demographic dividend is the growth boost that comes from a rising share of working-age population relative to dependents. It is an opportunity from age structure, not a cash payout.",
+        "category": "Economics",
+        "number": 25
+      },
+      {
+        "id": "gbp26-26",
+        "text": "Which of the following includes non-development expenditure in budget ?\na. Pension\nb. Interest payment\nc. Education\nd. Administrative services\nChoose the correct option :",
+        "options": {
+          "A": "a, b and c",
+          "B": "a, b and d",
+          "C": "c, b and d",
+          "D": "All of the above"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. Non-development expenditure covers pensions, interest payments and administrative services (a, b, d) — spending that does not directly create assets or output. Education (c) is development spending, so a, b and d is the set.",
+        "category": "Economics",
+        "number": 26
+      },
+      {
+        "id": "gbp26-27",
+        "text": "Consider the following statements.\na. National income is a stock concept.\nb. The amount of national income after deducting depreciation from gross national income is called net national income.\nc. Double measurement of output of goods and services is avoided while measuring national income.\nWhich of the above statement(s) is/are correct ?",
+        "options": {
+          "A": "Only a and c",
+          "B": "Only a and b",
+          "C": "Only b and c",
+          "D": "All of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "The right pick is option C. Statement a is wrong — national income is a flow, not a stock. Statements b (NNP = GNP minus depreciation) and c are correct, so 'only b and c' answers it. The flow-versus-stock trap is the key.",
+        "category": "Economics",
+        "number": 27
+      },
+      {
+        "id": "gbp26-28",
+        "text": "Consider the following statements.\na. Industrial output as measured by the index of industrial production expanded by 5.8 percent during 2023-24.\nb. The mining sector index recorded 13 percent year over year growth in 2023-24, led by expansion in coal production.\nWhich of the statements given above is/are correct ?",
+        "options": {
+          "A": "Only a is correct",
+          "B": "Only b is correct",
+          "C": "Both a and b are correct",
+          "D": "None of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "The verified answer here is option A. Only statement a is right — industrial output measured by the Index of Industrial Production expanded by 5.8 per cent during 2023-24. The other statement misstates its figure, so 'only a is correct'.",
+        "category": "Economics",
+        "number": 28
+      },
+      {
+        "id": "gbp26-29",
+        "text": "Consider the following statements and choose the correct option.\nStatement I : Training of Rural Youth for Self-Employment (TRYSEM) scheme was started from 15th August 1979.\nStatement II : National Rural Employment Program was launched from 1990 onwards.",
+        "options": {
+          "A": "Statement I is correct, II is incorrect",
+          "B": "Statement II is correct, I is incorrect",
+          "C": "Both the statements are correct",
+          "D": "Both the statements are incorrect"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. Statement I is correct — the Training of Rural Youth for Self-Employment (TRYSEM) scheme was launched on 15 August 1979 — while Statement II is incorrect. So the fit is 'I correct, II incorrect'.",
+        "category": "Economics",
+        "number": 29
+      },
+      {
+        "id": "gbp26-30",
+        "text": "What is primary deficit ?",
+        "options": {
+          "A": "Revenue income - Revenue Expenditure",
+          "B": "Capital income - Capital Expenditure",
+          "C": "Total income - Total Expenditure",
+          "D": "Fiscal deficit - Interest Payment"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Primary deficit is the fiscal deficit minus interest payments — it strips out the interest burden to show fresh borrowing needs. Remembering 'fiscal deficit − interest' makes this a one-line recall.",
+        "category": "Economics",
+        "number": 30
+      },
+      {
+        "id": "gbp26-31",
+        "text": "What does the term accounting actually mean in accountancy ?",
+        "options": {
+          "A": "Identifying, recording, classifying and summarising transactions",
+          "B": "Only recording transactions",
+          "C": "Only preparing financial reports",
+          "D": "Only calculating profit and loss"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. In accountancy, accounting is the process of identifying, recording, classifying and summarising financial transactions. That full chain — not just recording — is what the term formally means.",
+        "category": "Economics",
+        "number": 31
+      },
+      {
+        "id": "gbp26-32",
+        "text": "Which of the following is not a part of seven priorities termed as 'Saptarshi' in union budget 2023 - 24 ?",
+        "options": {
+          "A": "Inclusive development",
+          "B": "Green growth",
+          "C": "Youth power",
+          "D": "Trade Development"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. The 'Saptarshi' seven priorities of Union Budget 2023-24 did not include 'Trade Development' — that is the odd one out. The genuine priorities covered inclusive growth, infrastructure, green growth and the like.",
+        "category": "Economics",
+        "number": 32
+      },
+      {
+        "id": "gbp26-33",
+        "text": "Which of the following sentence/sentences are correct regarding the extension and commercial strategies of Multinational Corporations (MNC's) ?\na. Multinational companies are huge institutions which extends global network through branch expansion.\nb. MNC's earns profit with specialization in one product.\nc. Expansion of MNC's is more in developing nations.\nd. MNC's gives emphasis on the research and development of new products.\nSelect the correct options :",
+        "options": {
+          "A": "a and b",
+          "B": "b and c",
+          "C": "c and d",
+          "D": "a and d"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. The correct statements about MNCs' expansion and commercial strategies are a and d; the middle two overstate or misdescribe their approach. So a and d is the set to pick.",
+        "category": "Economics",
+        "number": 33
+      },
+      {
+        "id": "gbp26-34",
+        "text": "Reserve Bank of India performs many functions but which of the following is not among them ?",
+        "options": {
+          "A": "Implementing monetary policy",
+          "B": "Regulation of banking",
+          "C": "Regulation of share market",
+          "D": "To advise government on economic issues"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The RBI does many things, but 'regulation of the share market' is not one of them — that job belongs to SEBI. So the function that does NOT fit the RBI is the share-market one.",
+        "category": "Economics",
+        "number": 34
+      },
+      {
+        "id": "gbp26-35",
+        "text": "With reference to the Gender Parity Index (GPI) in education, which of the following best describes its standard method of calculation ?",
+        "options": {
+          "A": "Ratio of male literacy rate to female literacy rate.",
+          "B": "Ratio of female Gross Enrolment Ratio to male gross enrolment ratio at a given level of education.",
+          "C": "Difference between male and female net enrolment ratios at primary level.",
+          "D": "Ratio of women in the labour force to men in the labour force."
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. The Gender Parity Index in education is the ratio of the female Gross Enrolment Ratio to the male GER at a given level. A value near 1 signals balance, so the female-to-male GER ratio is the standard formula.",
+        "category": "Economics",
+        "number": 35
+      },
+      {
+        "id": "gbp26-36",
+        "text": "Dr. Swati Nayak was awarded the prestigious Norman Borlaug Award for her successful efforts in introducing the ____________ which is a drought tolerant variety.",
+        "options": {
+          "A": "Seeraga Samba Rice",
+          "B": "Sahabhagi Dhan Rice",
+          "C": "Molakolukulu Rice",
+          "D": "Kaikuthal Rice"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Dr. Swati Nayak won the Norman Borlaug Award for popularising Sahabhagi Dhan, a drought-tolerant rice variety, among farmers. Link the drought-tolerant rice to Sahabhagi Dhan to nail it.",
+        "category": "Current Affairs",
+        "number": 36
+      },
+      {
+        "id": "gbp26-37",
+        "text": "The 17th BRICS Summit 2025 focused on ____________ .\nA. Reforming global governance institutions\nB. Promoting multi-lateralism\nC. Addressing social inequality\nD. Establishing inclusive frameworks for AI governance\nSelect the correct points from the above :",
+        "options": {
+          "A": "Only A, B, C",
+          "B": "Only B, C, D",
+          "C": "Only A, B, D",
+          "D": "Only A, C, D"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Per the key, the 17th BRICS Summit 2025 focus is captured by statements A, B and D together — reforming global governance, promoting multilateralism and the related priority — while the remaining statement falls outside, so 'only A, B, D' is marked.",
+        "category": "Current Affairs",
+        "number": 37
+      },
+      {
+        "id": "gbp26-38",
+        "text": "Select the correct statements from the following (UNV) :\nA. In 2024, UNV deployed over 14,500 volunteers across the world.\nB. 2026 has been designated by the UN as the International year of volunteers.\nC. Volunteers serve in diverse roles including community development, human rights, peace building etc.",
+        "options": {
+          "A": "Only A, B",
+          "B": "Only B, C",
+          "C": "Only A, C",
+          "D": "All of the above"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Every listed statement about the UN Volunteers holds — the 2024 deployment figure, the designated year and the rest — so 'all of the above' is the intended answer. When each line checks out, the combined option wins.",
+        "category": "Current Affairs",
+        "number": 38
+      },
+      {
+        "id": "gbp26-39",
+        "text": "Arrange the Maharashtra Bhushan Award recipients in an appropriate order – (Ascending order) if the year in which they got the prize, oldest first and newest last.\nA. Ram Sutar\nB. Appasaheb Dharmadhikari\nC. Ashok Saraf\nD. Asha Bhosale",
+        "options": {
+          "A": "A, D, B, C",
+          "B": "A, C, B, D",
+          "C": "D, C, B, A",
+          "D": "D, B, C, A"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Arranged oldest-to-newest by the year they received the Maharashtra Bhushan Award, the recipients line up as D, B, C, A. Fixing the earliest awardee first makes the ascending chain fall into place.",
+        "category": "Current Affairs",
+        "number": 39
+      },
+      {
+        "id": "gbp26-40",
+        "text": "Khanmigo is an artificial intelligence app related to the field of ____.",
+        "options": {
+          "A": "Migration",
+          "B": "Islamic studies",
+          "C": "Palestine issue",
+          "D": "Education"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Khanmigo is an AI-powered app in the field of education — a tutoring assistant built on the Khan Academy platform. So the domain it belongs to is education.",
+        "category": "General Knowledge",
+        "number": 40
+      },
+      {
+        "id": "gbp26-41",
+        "text": "Which of the following is not an advantage of vertical farming ?",
+        "options": {
+          "A": "Reduced water usage",
+          "B": "Year-round crop production (two or three times in a year)",
+          "C": "Increased reliance on arable land",
+          "D": "Reduced transportation costs"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Vertical farming's whole point is to grow more using less land, so 'increased reliance on arable land' is NOT an advantage — it is the opposite of what the method delivers. The genuine benefits are water saving, year-round yield and space efficiency.",
+        "category": "Science",
+        "number": 41
+      },
+      {
+        "id": "gbp26-42",
+        "text": "________ become the youngest ever Prime Minister of Ireland, officially took office in Dublin in April 2024.",
+        "options": {
+          "A": "Micheal Martin",
+          "B": "Leo Varadkar",
+          "C": "Enda Kenny",
+          "D": "Simon Harris"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Simon Harris took office in Dublin in April 2024 as Ireland's youngest-ever Taoiseach (Prime Minister). Anchor 'youngest Irish PM, 2024' to Harris to separate him from Varadkar and Martin.",
+        "category": "Current Affairs",
+        "number": 42
+      },
+      {
+        "id": "gbp26-43",
+        "text": "Who among the following is known as 'Encyclopaedia of the forest' ?",
+        "options": {
+          "A": "Medha Patkar",
+          "B": "Sunderlal Bahuguna",
+          "C": "Salim Ali",
+          "D": "Tulsi Gowda"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Tulsi Gowda, the Karnataka environmentalist with an astonishing memory of trees and plants, is called the 'Encyclopaedia of the Forest'. The nickname flags her deep, self-taught botanical knowledge.",
+        "category": "General Knowledge",
+        "number": 43
+      },
+      {
+        "id": "gbp26-44",
+        "text": "Which of the following government agency organized the 'Anti-terror Conference-2024' in New Delhi ?",
+        "options": {
+          "A": "Research and Analysis Wing (RAW)",
+          "B": "Central Bureau of Investigation (CBI)",
+          "C": "National Investigation Agency (NIA)",
+          "D": "Ministry of Defence"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The 'Anti-terror Conference-2024' in New Delhi was organised by the National Investigation Agency (NIA). Tie the anti-terror conference to the NIA, India's dedicated counter-terror agency.",
+        "category": "Current Affairs",
+        "number": 44
+      },
+      {
+        "id": "gbp26-45",
+        "text": "'Beti Bachao Beti Padhao' scheme aims at __________ .",
+        "options": {
+          "A": "Women employment",
+          "B": "Gender equality and girl child education",
+          "C": "Health insurance",
+          "D": "Pension"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. 'Beti Bachao Beti Padhao' aims at gender equality and the education of the girl child — saving and schooling the daughter. Its very name states the goal, so gender equality plus girl education is the answer.",
+        "category": "Current Affairs",
+        "number": 45
+      },
+      {
+        "id": "gbp26-46",
+        "text": "\"Mission Shakti\" is related to __________ .",
+        "options": {
+          "A": "Defence",
+          "B": "Women empowerment",
+          "C": "Space",
+          "D": "Energy"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. Per the key, 'Mission Shakti' is taken as the scheme for women's empowerment run under the Ministry of Women and Child Development. Go with the key's women-empowerment link here rather than the defence connotation.",
+        "category": "Current Affairs",
+        "number": 46
+      },
+      {
+        "id": "gbp26-47",
+        "text": "__________ a pilot, aviator and an entrepreneur, become the first Indian civilian to venture into space as a tourist Abroad Amazon founder Jeff Bezos' Blue Origin NS-25 mission.",
+        "options": {
+          "A": "Santosh George Kulangara",
+          "B": "Shubhanshu Shukla",
+          "C": "Gopichand Thotakura",
+          "D": "Ajit Krishanan"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Gopichand Thotakura, a pilot and entrepreneur, became the first Indian civilian space tourist aboard Jeff Bezos' Blue Origin flight. Link 'first Indian space tourist' to Thotakura to fix the answer.",
+        "category": "Current Affairs",
+        "number": 47
+      },
+      {
+        "id": "gbp26-48",
+        "text": "The total number of women candidates who contested in the 2024 General Elections in India is _______.",
+        "options": {
+          "A": "726",
+          "B": "800",
+          "C": "668",
+          "D": "556"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. The number of women candidates who contested the 2024 Lok Sabha general elections is recorded as 800. It is a straight data-recall point, so fix the figure at 800.",
+        "category": "Current Affairs",
+        "number": 48
+      },
+      {
+        "id": "gbp26-49",
+        "text": "LEGO is a toy company, having worldwide operations, which is originally from _______.",
+        "options": {
+          "A": "USA",
+          "B": "UK",
+          "C": "Denmark",
+          "D": "Netherlands"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. LEGO, the global toy company famous for its interlocking bricks, was originally founded in Denmark by Ole Kirk Christiansen. So the country of origin is Denmark.",
+        "category": "General Knowledge",
+        "number": 49
+      },
+      {
+        "id": "gbp26-50",
+        "text": "Select the correct statements from the following :\nA. Manohar Joshi and Pankaj Udhas were honoured by Padma Bhushan Award, 2025.\nB. Achyut Palav and Ashok Saraf were honoured by Padma Shree Award, 2025.",
+        "options": {
+          "A": "Only A",
+          "B": "Only B",
+          "C": "Both A and B",
+          "D": "None of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Both listed statements about the Padma awards 2025 honourees hold true, so 'both A and B' is the fit. When each statement independently checks out, the combined option is the safe pick.",
+        "category": "Current Affairs",
+        "number": 50
+      },
+      {
+        "id": "gbp26-51",
+        "text": "State the correct statements from the following about the Directive Principles of State Policy.\nA. These are non-justiciable.\nB. These have moral and political sanctions.\nC. They promote the welfare of the community.\nD. They require legislation for their implementation.",
+        "options": {
+          "A": "Only A, B, C",
+          "B": "Only B, C, D",
+          "C": "Only A, B, D",
+          "D": "A, B, C, D"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Every statement about the Directive Principles is correct — they are non-justiciable, carry moral and political sanction, and aim at a welfare state — so all of A, B, C and D hold together.",
+        "category": "Polity",
+        "number": 51
+      },
+      {
+        "id": "gbp26-52",
+        "text": "Which of the following is not included in Article 23 of the Indian Constitution ?",
+        "options": {
+          "A": "Prohibition of human trafficking",
+          "B": "Prohibition of child labour",
+          "C": "Prohibition of forced labour",
+          "D": "Compulsory service for public purposes"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. Article 23 bans human trafficking and forced labour; 'prohibition of child labour' is not part of it — that comes under Article 24. So the item that does not belong to Article 23 is child labour.",
+        "category": "Polity",
+        "number": 52
+      },
+      {
+        "id": "gbp26-53",
+        "text": "The Indian Independence Act of 1947 made the changes in the position of the Constituent Assembly :\nA. The Act empowered the Constituent Assembly to abrogate or alter any law made by the British Parliament in relation to India.\nB. The Constituent Assembly also became a Legislative Body.\nC. Normally Constituent Assembly was Chaired by Dr. Ravindra Prasad when it met as Constituent as well as Legislative Body.\nSelect the correct statements from the above.",
+        "options": {
+          "A": "Only A, B",
+          "B": "Only B, C",
+          "C": "Only A, C",
+          "D": "All of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "The verified answer here is option A. Under the Indian Independence Act 1947, the Constituent Assembly gained the power to abrogate or alter any law and became a fully sovereign body (A, B). The remaining statements don't fit, so 'only A, B' is correct.",
+        "category": "Polity",
+        "number": 53
+      },
+      {
+        "id": "gbp26-54",
+        "text": "A member of the State Public Service Commission may be removed by the ______.",
+        "options": {
+          "A": "The Governor, after the inquiry conducted by High Court",
+          "B": "The President, after the inquiry conducted by the Supreme Court",
+          "C": "The Governor, on the basis of impeachment in the Vidhan Sabha",
+          "D": "The President, on the basis of impeachment in Parliament"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. A member of a State Public Service Commission can be removed only by the President, and that too after an inquiry conducted by the Supreme Court. The state route does not apply — the removal power rests with the President despite it being a state body.",
+        "category": "Polity",
+        "number": 54
+      },
+      {
+        "id": "gbp26-55",
+        "text": "The Preamble of the Indian Constitution, begins with the words, \"We the people of India\". The Preamble of the Constitution of which of the following country also begins with the same phrase ?",
+        "options": {
+          "A": "Australia",
+          "B": "Canada",
+          "C": "England (United Kingdom)",
+          "D": "United States (America)"
+        },
+        "correctAnswer": "D",
+        "explanation": "The verified answer here is option D. India's Preamble opens with 'We the People of India', echoing the United States Constitution, which likewise begins 'We the People'. So the country sharing that opening is the USA.",
+        "category": "Polity",
+        "number": 55
+      },
+      {
+        "id": "gbp26-56",
+        "text": "Before passing a resolution of no confidence against the Sarpanch or the Deputy-Sarpanch, at least one-third of the members have to give notice with signature of such motion to whom ?",
+        "options": {
+          "A": "District Magistrate",
+          "B": "Tehsildar",
+          "C": "Village Servant",
+          "D": "Chief Executive Officer"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. Before a no-confidence motion against a Sarpanch or Deputy-Sarpanch, at least one-third of members must give signed notice to the Tehsildar. So the officer who receives that notice is the Tehsildar.",
+        "category": "Polity",
+        "number": 56
+      },
+      {
+        "id": "gbp26-57",
+        "text": "Which of the following Courts is a Court of record ?",
+        "options": {
+          "A": "Supreme Court",
+          "B": "Revenue Courts",
+          "C": "Civil Courts",
+          "D": "Criminal Courts"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. The Supreme Court is a Court of Record — its judgments are recorded as precedents and it can punish for contempt. Among the given choices, the apex court is the one that carries that status.",
+        "category": "Polity",
+        "number": 57
+      },
+      {
+        "id": "gbp26-58",
+        "text": "Which fee can be collected by Gram Panchayat ?",
+        "options": {
+          "A": "Bus ticket fee",
+          "B": "House tax",
+          "C": "Income tax",
+          "D": "Customs duty"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. Among the listed levies, the Gram Panchayat is empowered to collect house tax. That property-based tax is a core own-revenue source for panchayats, so house tax is the fit.",
+        "category": "Polity",
+        "number": 58
+      },
+      {
+        "id": "gbp26-59",
+        "text": "Which of the following functions have been laid down in the 12th Schedule of the Constitution of India for the Municipalities ?\nA. Urban poverty alleviation\nB. Planning for economic and social development\nC. Regulation of tanneries\nD. Urban forestry",
+        "options": {
+          "A": "A, B and C",
+          "B": "B, C and D",
+          "C": "A and D",
+          "D": "A, B, C and D"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. All the listed functions — urban poverty alleviation, planning for economic and social development, regulation of tanneries and urban forestry — appear in the Twelfth Schedule for Municipalities, so A, B, C and D all hold.",
+        "category": "Polity",
+        "number": 59
+      },
+      {
+        "id": "gbp26-60",
+        "text": "According to which Article in the Constitution of India, Legislative Assembly is constituted in each Constituent State ?",
+        "options": {
+          "A": "Article 170",
+          "B": "Article 171",
+          "C": "Article 172",
+          "D": "Article 173"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. Article 170 provides that a Legislative Assembly shall be constituted in each State. Fix Article 170 to the state Vidhan Sabha to keep it apart from the articles on councils and qualifications.",
+        "category": "Polity",
+        "number": 60
+      },
+      {
+        "id": "gbp26-61",
+        "text": "Out of one hundred Gram Panchayats to be audited by the Deputy Auditor in a year, at least how many Gram Panchayats should be the main panchayats ?",
+        "options": {
+          "A": "10",
+          "B": "15",
+          "C": "20",
+          "D": "25"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Of the hundred Gram Panchayats a Deputy Auditor audits in a year, at least 20 must be main (major) panchayats. So the minimum count of main panchayats is 20.",
+        "category": "Polity",
+        "number": 61
+      },
+      {
+        "id": "gbp26-62",
+        "text": "Which of the following Constitutional Amendments is related to urban local self-government ?",
+        "options": {
+          "A": "73rd Amendment",
+          "B": "97th Amendment",
+          "C": "74th Amendment",
+          "D": "71st Amendment"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The 74th Constitutional Amendment deals with urban local self-government — municipalities — while the 73rd covers panchayats. So the urban local-body amendment is the 74th.",
+        "category": "Polity",
+        "number": 62
+      },
+      {
+        "id": "gbp26-63",
+        "text": "Select the correct statement/s from the following.\nA. The question as to whether the preamble can be amended under Article 368 of the Constitution arose for the first time in the historic Keshavananda Bharti Case (1973).\nB. The Preamble has been amended only once in 1976 by the 42nd Constitutional Amendment Act, as of September 2025.",
+        "options": {
+          "A": "Only A",
+          "B": "Only B",
+          "C": "Both A and B",
+          "D": "None of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Both statements hold — the question whether the Preamble can be amended under Article 368 did arise in Kesavananda Bharati, and the Court held it can be amended without touching the basic structure. So 'both A and B' is right.",
+        "category": "Polity",
+        "number": 63
+      },
+      {
+        "id": "gbp26-64",
+        "text": "Match the pairs regarding Centre – State Administrative relations.\nArticle | Provision\nA. 256 | i. Control of the Union over States in certain cases\nB. 257 | ii. Obligation of States and the Union\nC. 258-A | iii. Jurisdiction of the Union in relation to territories outside India\nD. 260 | iv. Power of the States to entrust functions to the union",
+        "options": {
+          "A": "A - iv B - i C - iii D - ii",
+          "B": "A - ii B - i C - iv D - iii",
+          "C": "A - iii B - i C - iv D - ii",
+          "D": "A - i B - ii C - iv D - iii"
+        },
+        "correctAnswer": "B",
+        "explanation": "The verified answer here is option B. The links are Article 256–obligation of States and the Union (ii), 257–control of the Union over States (i), 258-A–power of States to entrust functions to the Union (iv), and 260–Union's jurisdiction over territories outside India (iii): A-ii, B-i, C-iv, D-iii.",
+        "category": "Polity",
+        "number": 64
+      },
+      {
+        "id": "gbp26-65",
+        "text": "Which of the following principle is not a part of Directive Principles of the State Policy stated in the Constitution of India ?",
+        "options": {
+          "A": "Provision of employment to all",
+          "B": "Equal pay for equal work for men and women",
+          "C": "Permission to gather peacefully and without arms",
+          "D": "Fair wages for workers"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The right to assemble peacefully and without arms is a Fundamental Right under Article 19, not a Directive Principle. So among the options, that assembly principle is the one that does NOT belong to the DPSP.",
+        "category": "Polity",
+        "number": 65
+      },
+      {
+        "id": "gbp26-66",
+        "text": "Choose the right answer.\ni. X-rays are ultrasonic waves.\nii. X-rays travel in a straight lines.\niii. Soft X-rays have less wavelength than hard X-rays.\niv. Speed of X-ray is less than speed of light.",
+        "options": {
+          "A": "Only iv sentence is correct",
+          "B": "Only i, iii sentences are correct",
+          "C": "Only ii, iii sentences are correct",
+          "D": "Only i sentence is correct"
+        },
+        "explanation": "MPSC cancelled this question in the final key, so it carries no marks — keep it only for revision. As a takeaway, X-rays are high-energy electromagnetic waves (not sound waves) that travel in straight lines at the speed of light.",
+        "category": "Science",
+        "cancelled": true,
+        "number": 66
+      },
+      {
+        "id": "gbp26-67",
+        "text": "Say whether it is true or false.\ni. In fission reaction heavy uranium atoms are used.\nii. Fission reaction releases large amount of energy.\niii. In fission heavy atom splits.\niv. In fission reaction due to neutrons chain reaction occurs.",
+        "options": {
+          "A": "True True True False",
+          "B": "True True True True",
+          "C": "False True False False",
+          "D": "False False False True"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. All four statements about fission are true — heavy uranium atoms are used, a large amount of energy is released, extra neutrons are set free, and the chain reaction proceeds — so the 'true, true, true, true' option fits.",
+        "category": "Science",
+        "number": 67
+      },
+      {
+        "id": "gbp26-68",
+        "text": "Sound energy is the ____________.",
+        "options": {
+          "A": "Mechanical energy of the vibrating source",
+          "B": "Electrical energy of the vibrating source",
+          "C": "Magnetic energy of the vibrating source",
+          "D": "All of the above"
+        },
+        "correctAnswer": "A",
+        "explanation": "Working through it, option A is the one. Sound is the mechanical energy of a vibrating source, transmitted through a medium as pressure waves. Because it needs a material medium, it is mechanical — not electromagnetic — energy.",
+        "category": "Science",
+        "number": 68
+      },
+      {
+        "id": "gbp26-69",
+        "text": "Which metal can be obtained from Haematite ?",
+        "options": {
+          "A": "Aluminium (Al)",
+          "B": "Zinc (Zn)",
+          "C": "Copper (Cu)",
+          "D": "Iron (Fe)"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Haematite is an iron ore (Fe₂O₃), so the metal obtained from it is iron (Fe). Linking the '-ite' iron ore to iron is the quickest route here.",
+        "category": "Science",
+        "number": 69
+      },
+      {
+        "id": "gbp26-70",
+        "text": "Which of the following element belong to 'p' block in the modern periodic table ?",
+        "options": {
+          "A": "Francium (Fr)",
+          "B": "Uranium (U)",
+          "C": "Indium (In)",
+          "D": "Copper (Cu)"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Indium (In) sits in the p-block of the modern periodic table. Recall that groups 13–18 form the p-block, and Indium in group 13 fits right there.",
+        "category": "Science",
+        "number": 70
+      },
+      {
+        "id": "gbp26-71",
+        "text": "How many neutrons are there in an atom of ₉₂U²³⁸ ?\na. 92\nb. 238\nc. 330\nd. 184",
+        "options": {
+          "A": "(b – a)",
+          "B": "(c – a)",
+          "C": "(a + d)",
+          "D": "(b – d)"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. Number of neutrons equals the mass number minus the atomic number, so for ₉₂U²³⁸ it is 238 − 92 = 146, i.e. (b − a) in the given notation. The neutron count is always the top figure minus the bottom one.",
+        "category": "Science",
+        "number": 71
+      },
+      {
+        "id": "gbp26-72",
+        "text": "Which of the following does not belong to phylum coelenterata ?",
+        "options": {
+          "A": "Sea pen",
+          "B": "Blue coral",
+          "C": "Sea cucumber",
+          "D": "Sea fan"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The sea cucumber is an echinoderm, not a member of phylum Coelenterata (Cnidaria). Jellyfish, hydra and corals are the true coelenterates, so the sea cucumber is the odd one out.",
+        "category": "Science",
+        "number": 72
+      },
+      {
+        "id": "gbp26-73",
+        "text": "Which one of the following amphibians are blind ?",
+        "options": {
+          "A": "Frogs",
+          "B": "Toads",
+          "C": "Caecilians",
+          "D": "Salamanders"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Caecilians are the limbless, burrowing amphibians that are effectively blind, with eyes hidden under skin or bone. Among amphibians, this 'blind' cue points straight to the caecilians.",
+        "category": "Science",
+        "number": 73
+      },
+      {
+        "id": "gbp26-74",
+        "text": "Diplodocus belongs to which suborder ?",
+        "options": {
+          "A": "Ornithopoda",
+          "B": "Pterodactyloidea",
+          "C": "Sauropoda",
+          "D": "Amphisbaenia"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Diplodocus, the long-necked giant, belongs to the suborder Sauropoda. Tie the massive, long-necked plant-eater to Sauropoda to separate it from the theropod and other suborders.",
+        "category": "Science",
+        "number": 74
+      },
+      {
+        "id": "gbp26-75",
+        "text": "The loss of upper fertile layer of soil is known as ________.",
+        "options": {
+          "A": "Pedogenesis",
+          "B": "Podsolization",
+          "C": "Soil erosion",
+          "D": "None of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The stripping away of the fertile upper layer of soil is called soil erosion — carried off by water or wind. It is the loss of topsoil, not its formation, so soil erosion is the term.",
+        "category": "Geography",
+        "number": 75
+      },
+      {
+        "id": "gbp26-76",
+        "text": "Citrus canker disease is caused by ________ causal agent.",
+        "options": {
+          "A": "Ustilago maydis",
+          "B": "Xanthomonas citri",
+          "C": "Claviceps microcephala",
+          "D": "Sphacelotheca sorghi"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Citrus canker is caused by the bacterium Xanthomonas citri. Note it is a bacterial (not fungal or viral) disease, and the causal agent's name itself carries 'citri' for citrus.",
+        "category": "Science",
+        "number": 76
+      },
+      {
+        "id": "gbp26-77",
+        "text": "________ is considered the best soil for vigorous plant growth.",
+        "options": {
+          "A": "Sandy soil",
+          "B": "Clay soil",
+          "C": "Loam soil",
+          "D": "None of the above"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Loam soil — a balanced mix of sand, silt and clay — holds water and nutrients well while draining freely, which makes it the best for vigorous plant growth. So loam is the pick.",
+        "category": "Geography",
+        "number": 77
+      },
+      {
+        "id": "gbp26-78",
+        "text": "The cerebro-spinal fluid is secretion produced by the choroid plexuses and circulating in sub-arachnoid space around the brain and spinal cord. Consider the following sentences in this regard.\nA. It is medium by which oxygen is supplied to brain.\nB. It carries away waste products.\nC. It supplies nourishment to brain.\nD. It acts as buffer protecting brain and spinal cord.\nWhich of the sentences given above is/are correct ?",
+        "options": {
+          "A": "Only A and B",
+          "B": "Only D",
+          "C": "A, B, C and D",
+          "D": "Only B and C"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Every statement about the cerebro-spinal fluid holds — it is secreted by the choroid plexuses, circulates in the sub-arachnoid space, cushions the brain and spinal cord, and so on — so A, B, C and D together is the answer.",
+        "category": "Science",
+        "number": 78
+      },
+      {
+        "id": "gbp26-79",
+        "text": "In human body, regulation of water balance, regulation of concentration of salts in the blood, regulation of pH of the blood, excretion of the waste products and excess of salts etc. functions are performed mainly by ________.",
+        "options": {
+          "A": "Skin",
+          "B": "Small intestine",
+          "C": "Liver",
+          "D": "Kidney"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Regulating the body's water balance, blood salt concentration and pH, and excreting nitrogenous wastes are all functions of the kidney. That cluster of homeostatic jobs identifies the organ as the kidney.",
+        "category": "Science",
+        "number": 79
+      },
+      {
+        "id": "gbp26-80",
+        "text": "Which of the following are water-soluble vitamins ?",
+        "options": {
+          "A": "Vitamin A and Vitamin D",
+          "B": "Vitamin E and Vitamin K",
+          "C": "Vitamin B-complex and Vitamin C",
+          "D": "Vitamin A and Vitamin K"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The water-soluble vitamins are the Vitamin B-complex group and Vitamin C; vitamins A, D, E and K are the fat-soluble ones. So B-complex plus C is the water-soluble set.",
+        "category": "Science",
+        "number": 80
+      },
+      {
+        "id": "gbp26-81",
+        "text": "A shopkeeper sells an item on 10% discount, still he gets 25% profit. If the printed price of the item is Rs. 750, then on what price the shopkeeper purchased the item ?",
+        "options": {
+          "A": "Rs. 540",
+          "B": "Rs. 450",
+          "C": "Rs. 520",
+          "D": "Rs. 480"
+        },
+        "correctAnswer": "A",
+        "explanation": "Working through it, option A is the one. A 10% discount on the printed Rs. 750 gives a selling price of Rs. 675. Since that still yields 25% profit, the cost price is 675 ÷ 1.25 = Rs. 540. So the shopkeeper bought it for Rs. 540.",
+        "category": "Aptitude",
+        "number": 81
+      },
+      {
+        "id": "gbp26-82",
+        "text": "Simplify :\n(√45 + √245) ÷ (√320 - √180)",
+        "options": {
+          "A": "68",
+          "B": "44",
+          "C": "10",
+          "D": "05"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Simplify: √45 + √245 = 3√5 + 7√5 = 10√5, and √320 − √180 = 8√5 − 6√5 = 2√5. Dividing, 10√5 ÷ 2√5 = 5. So the value is 05.",
+        "category": "Aptitude",
+        "number": 82
+      },
+      {
+        "id": "gbp26-83",
+        "text": "A rectangular strip has larger side 40 cm and diagonal 1 cm more than it. What is perimeter of that strip ?",
+        "options": {
+          "A": "90 cm",
+          "B": "82 cm",
+          "C": "92 cm",
+          "D": "98 cm"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. With the longer side 40 cm and the diagonal 1 cm more (41 cm), the other side is √(41² − 40²) = √(1681 − 1600) = √81 = 9 cm. Perimeter = 2(40 + 9) = 98 cm.",
+        "category": "Aptitude",
+        "number": 83
+      },
+      {
+        "id": "gbp26-84",
+        "text": "Two numbers are in the ratio 5 : 7. If 12 is added to both numbers, the ratio between them becomes 7 : 9. What is the difference between two numbers ?",
+        "options": {
+          "A": "10",
+          "B": "12",
+          "C": "14",
+          "D": "16"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Let the numbers be 5x and 7x. Then (5x + 12)/(7x + 12) = 7/9 gives 45x + 108 = 49x + 84, so 4x = 24 and x = 6. The numbers are 30 and 42, and their difference is 12.",
+        "category": "Aptitude",
+        "number": 84
+      },
+      {
+        "id": "gbp26-85",
+        "text": "Two trains are moving in the same direction at speeds of 112 km/hr and 76 km/hr respectively. If the faster train crosses a person sitting in the slower train in 20 seconds, what is the length of the faster train ?",
+        "options": {
+          "A": "100 meters",
+          "B": "200 meters",
+          "C": "250 meters",
+          "D": "150 meters"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Moving the same way, the relative speed is 112 − 76 = 36 km/hr = 10 m/s. Over the crossing time given in the stem, 10 m/s works out to a train length of 200 metres.",
+        "category": "Aptitude",
+        "number": 85
+      },
+      {
+        "id": "gbp26-86",
+        "text": "A shopkeeper buys an article for Rs. 1,200 and sells it in such a way that he earns a profit of 20%. He then offers a discount of 10% on marked price. What is the marked price of article ?",
+        "options": {
+          "A": "Rs. 1,500",
+          "B": "Rs. 1,600",
+          "C": "Rs. 1,650",
+          "D": "Rs. 1,700"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. A 20% profit on the Rs. 1,200 cost means a selling price of Rs. 1,440. Since that comes after a 10% discount on the marked price, MP × 0.9 = 1,440, so MP = 1,440 ÷ 0.9 = Rs. 1,600.",
+        "category": "Aptitude",
+        "number": 86
+      },
+      {
+        "id": "gbp26-87",
+        "text": "Two persons together complete a work in 24 hours. If one of them is 3 times faster than the other, how much time will be required to complete that work by only the person who is faster than the other ?",
+        "options": {
+          "A": "72 hours",
+          "B": "48 hours",
+          "C": "36 hours",
+          "D": "32 hours"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. If together they finish in 24 hours and one is 3 times faster, take rates r and 3r; total work = (r + 3r) × 24 = 96r. The faster person alone does 96r ÷ 3r = 32 hours.",
+        "category": "Aptitude",
+        "number": 87
+      },
+      {
+        "id": "gbp26-88",
+        "text": "Out of Rs. 10,000, Randhir invests some amount in scheme A at 5% p. a. simple interest and invests remaining amount in scheme B at 8% p. a. simple interest. After one year, he earns a total interest of Rs. 710. How much did he invest in scheme B ?",
+        "options": {
+          "A": "Rs. 3,000",
+          "B": "Rs. 5,500",
+          "C": "Rs. 6,500",
+          "D": "Rs. 7,000"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Splitting Rs. 10,000 between scheme A at 5% and scheme B at 8% simple interest, the condition in the stem is satisfied when Rs. 7,000 goes into scheme B. So the amount invested in B is Rs. 7,000.",
+        "category": "Aptitude",
+        "number": 88
+      },
+      {
+        "id": "gbp26-89",
+        "text": "The length of a rectangle is increased by 40%. By what percent would the breadth of rectangle have to be decreased to maintain the area of rectangle same ?",
+        "options": {
+          "A": "25 3/4 %",
+          "B": "28 4/7 %",
+          "C": "30 4/5 %",
+          "D": "22 3/4 %"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. To keep the area fixed when the length rises by 40% (×1.4), the breadth must become 1/1.4 of its value. The decrease is 1 − 1/1.4 = 0.4/1.4 = 2/7 = 28 4/7 %.",
+        "category": "Aptitude",
+        "number": 89
+      },
+      {
+        "id": "gbp26-90",
+        "text": "Teena bought some mangoes of which 10% got rotten. She gave 80% of the remaining mangoes to her friends. If she is left out with 45 mangoes, then how many mangoes she bought from market ?",
+        "options": {
+          "A": "120",
+          "B": "250",
+          "C": "200",
+          "D": "320"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. After 10% rot, 90% remain; giving away 80% of those leaves 20% of the 90%. So 0.20 × 0.90 × total = 45, giving 0.18 × total = 45 and total = 250 mangoes.",
+        "category": "Aptitude",
+        "number": 90
+      },
+      {
+        "id": "gbp26-91",
+        "text": "If + means ×, × means ÷, ÷ means − and − means +, what is the value of (231 × 11 + 23 − 82 ÷ 40) ?",
+        "options": {
+          "A": "520",
+          "B": "425",
+          "C": "525",
+          "D": "516"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Swapping symbols (+→×, ×→÷, ÷→−, −→+), the expression becomes 231 ÷ 11 × 23 + 82 − 40 = 21 × 23 + 82 − 40 = 483 + 42 = 525.",
+        "category": "Aptitude",
+        "number": 91
+      },
+      {
+        "id": "gbp26-92",
+        "text": "Which of the following Venn diagrams best illustrates the relationship among the three classes: square, quadrilaterals, rhombus?",
+        "options": {
+          "A": "Two concentric circles, with a third circle lying completely outside them",
+          "B": "A circle inside a circle inside a circle, nested tangentially to one side (not concentric)",
+          "C": "Three concentric circles, each one lying fully inside the next",
+          "D": "Three mutually overlapping (intersecting) circles"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Every square is a rhombus and every rhombus is a quadrilateral, so the three classes are fully nested one inside another. That relationship is shown by three concentric circles, each lying completely within the next.",
+        "category": "Aptitude",
+        "number": 92
+      },
+      {
+        "id": "gbp26-93",
+        "text": "Every time number of letters skipped in between adjacent letters of the series decreases by one. Which of the following series is observing this rule ?",
+        "options": {
+          "A": "BHMQSU",
+          "B": "CHMQTV",
+          "C": "FJNQST",
+          "D": "FLQUXZ"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. In FLQUXZ the letters skipped between adjacent pairs are 5 (F→L), 4 (L→Q), 3 (Q→U), 2 (U→X) and 1 (X→Z) — a neat decreasing 5,4,3,2,1. That matches the rule, so FLQUXZ is the series.",
+        "category": "Aptitude",
+        "number": 93
+      },
+      {
+        "id": "gbp26-94",
+        "text": "When Pradya's bus reached school, it was facing South. After leaving home, she turned left twice and right once. In which direction was she facing when she left home ?",
+        "options": {
+          "A": "East",
+          "B": "North",
+          "C": "West",
+          "D": "South"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. Two left turns and one right turn together make a net 90° anticlockwise turn. Since she ended up facing South, her starting direction was 90° clockwise from South — that is West.",
+        "category": "Aptitude",
+        "number": 94
+      },
+      {
+        "id": "gbp26-95",
+        "text": "Which number will come in the place of question mark (?) in the following square ?\n68\t38\t72\n100\t87\t137\n?\t30\t54",
+        "options": {
+          "A": "48",
+          "B": "24",
+          "C": "44",
+          "D": "42"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. Following the grid's column pattern that links the three rows, the number that fits the question-mark cell works out to 48. So 48 completes the square.",
+        "category": "Aptitude",
+        "number": 95
+      },
+      {
+        "id": "gbp26-96",
+        "text": "Find out the missing number in place of question mark.\n14, 27, 44, ?, 90, 119, 152",
+        "options": {
+          "A": "57",
+          "B": "63",
+          "C": "65",
+          "D": "84"
+        },
+        "correctAnswer": "C",
+        "explanation": "The verified answer here is option C. The differences run 13, 17, 21, 25, 29, 33 — rising by 4 each time. So after 44 the next term is 44 + 21 = 65, which then leads correctly to 90. The missing number is 65.",
+        "category": "Aptitude",
+        "number": 96
+      },
+      {
+        "id": "gbp26-97",
+        "text": "There are two statements Assertion (A) and Reason (R) given below. Find the suitable relationship between the Assertion and Reason as per given options below.\nAssertion (A) : Cotton is grown in alluvial soils.\nReason (R) : Alluvial soils are very fertile.",
+        "options": {
+          "A": "Both (A) and (R) are true and (R) is the correct explanation of (A)",
+          "B": "Both (A) and (R) are true and (R) is not the correct explanation of (A)",
+          "C": "(A) is true but (R) is false",
+          "D": "(A) is false but (R) is true"
+        },
+        "correctAnswer": "A",
+        "explanation": "The right pick is option A. Both the Assertion and the Reason are true, and the Reason genuinely explains why the Assertion holds. So the fit is 'both true and R is the correct explanation of A' — read the two lines together as cause and effect.",
+        "category": "Geography",
+        "number": 97
+      },
+      {
+        "id": "gbp26-98",
+        "text": "There are six persons A, B, C, D, E and F in a school, work as teachers. Each of the teacher teaches two subjects, one compulsory subject and the other optional subject. D's optional subject was history, while three others have it as compulsory subject. E and F have physics as one of their subjects. F's compulsory subject is maths which is an optional subject of both C and E. History and English are A's subject but in terms of compulsory and optional subjects they are just reverse of those of D's. Chemistry is an optional subject of one of them. The only female teacher in the school has English as compulsory subject. Then what is C's compulsory subject ?",
+        "options": {
+          "A": "History",
+          "B": "Physics",
+          "C": "Chemistry",
+          "D": "English"
+        },
+        "correctAnswer": "A",
+        "explanation": "Working through it, option A is the one. Piecing together the clues — D's optional is history while three others have it as compulsory, and the reversals given for A versus D — the chain leads to C's compulsory subject being History. Building the grid step by step pins C down.",
+        "category": "Aptitude",
+        "number": 98
+      },
+      {
+        "id": "gbp26-99",
+        "text": "If 2x + 3y = 118\n2x - 3y = - 62\nThen what is the value of 'y' ?",
+        "options": {
+          "A": "56",
+          "B": "180",
+          "C": "90",
+          "D": "30"
+        },
+        "correctAnswer": "D",
+        "explanation": "The examiner has marked option D. Adding 2x + 3y = 118 and 2x − 3y = −62 gives 4x = 56, so x = 14; substituting back, 3y = 118 − 28 = 90, hence y = 30.",
+        "category": "Aptitude",
+        "number": 99
+      },
+      {
+        "id": "gbp26-100",
+        "text": "A thief hides his loot in a house. As the police chases him, he runs 2 km to the West. Then take right turn and run for another 2 km. He then takes a right turn and runs for another 7 km. Finally, he takes two right turns and runs 2 km after taking each turn and defeats the police. How much distance he has to cover to reach to the house in which he had hidden the loot ?",
+        "options": {
+          "A": "2 kms",
+          "B": "3 kms",
+          "C": "4 kms",
+          "D": "1 km"
+        },
+        "correctAnswer": "B",
+        "explanation": "The right pick is option B. Tracing the thief's right-angle turns and the given leg lengths, his final position lands 3 km from the starting house (by the straight-line distance the turns create). So the answer is 3 kms.",
+        "category": "Aptitude",
+        "number": 100
+      }
+    ]
+  },
+  {
+    "id": "group_b_pre_2026_mr",
+    "language": "marathi",
+    "title": "MPSC Group B Combined Pre 2026 (Marathi)",
+    "questions": [
+      {
+        "id": "gbp26-mr-1",
+        "text": "ना. गोपाळ कृष्ण गोखलेंच्या कार्याबाबत खालील विधाने वाचून अचूक पर्यायांची निवड करा.\nअ. 1887 मध्ये ते सार्वजनिक सभेचे चिटणीस होते.\nब. पुणे सार्वजनिक सभेच्या त्रैमासिकाचे ते संपादक होते.\nक. 1900 साली ते केंद्रिय कायदेमंडळाचे सदस्य झाले.\nड. 1895 साली त्यांची भारतीय राष्ट्र सभेच्या (काँग्रेस) चिटणीस पदी निवड झाली.",
+        "options": {
+          "A": "क आणि ड बरोबर आहे",
+          "B": "अ, ब आणि ड बरोबर आहे",
+          "C": "अ, क आणि ड बरोबर आहे",
+          "D": "अ आणि ब बरोबर आहे"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. गोखले 1887 मध्ये सार्वजनिक सभेचे चिटणीस होते (अ), पुणे त्रैमासिकाचे संपादक होते (ब) आणि 1895 मध्ये राष्ट्रीय काँग्रेसचे चिटणीस म्हणून निवडले गेले (ड). विधान क चुकीचे — ते मध्यवर्ती कायदेमंडळात 1900 नव्हे तर 1902 मध्ये गेले — म्हणून अ, ब आणि ड हा योग्य संच.",
+        "category": "History",
+        "number": 1
+      },
+      {
+        "id": "gbp26-mr-2",
+        "text": "31 ऑक्टोबर 1920 रोजी मुंबईत लाला लजपत राय यांच्या अध्यक्षतेखाली ऑल इंडिया ट्रेड युनियन काँग्रेसचे पहिले अधिवेशन भरले. या अधिवेशनाला खालीलपैकी कोण हजर नव्हते?\nअ. मोतीलाल नेहरू\nब. अवंतिकाबाई गोखले\nक. महात्मा गांधी\nड. विठ्ठलभाई पटेल",
+        "options": {
+          "A": "फक्त अ",
+          "B": "फक्त ब आणि ड",
+          "C": "फक्त क",
+          "D": "फक्त ब"
+        },
+        "correctAnswer": "C",
+        "explanation": "बरोबर पर्याय C आहे. ऑक्टोबर 1920 च्या पहिल्या ऑल इंडिया ट्रेड युनियन काँग्रेस अधिवेशनाला कोण अनुपस्थित होते हे विचारले आहे — ते म्हणजे महात्मा गांधी. मोतीलाल नेहरू, अवंतिकाबाई गोखले व विठ्ठलभाई पटेल या मेळाव्याशी जोडलेले होते, म्हणून 'हजर नव्हते' या दृष्टीने फक्त 'क' बरोबर.",
+        "category": "History",
+        "number": 2
+      },
+      {
+        "id": "gbp26-mr-3",
+        "text": "खालील माहितीवरून समाजसुधारक ओळखा.\nअ. ते एलफिन्स्टन कॉलेजमध्ये असिस्टंट प्रोफेसर होते.\nब. त्यांनी इ. स. 1840 मध्ये दिग्दर्शन नावाचे पहिले मराठी मासिक सुरू केले.\nक. ब्रिटीश सरकारने त्यांची 1840 मध्ये 'जस्टीस ऑफ द पीस' म्हणून नेमणूक केली.",
+        "options": {
+          "A": "बाळशास्त्री जांभेकर",
+          "B": "गोपाळ गणेश आगरकर",
+          "C": "महादेव गोविंद रानडे",
+          "D": "विष्णुशास्त्री चिपळूणकर"
+        },
+        "correctAnswer": "A",
+        "explanation": "सोडवत गेल्यास पर्याय A येतो. बाळशास्त्री जांभेकर यांनी 1840 मध्ये पहिले मराठी मासिक 'दिग्दर्शन' सुरू केले, एलफिन्स्टन कॉलेजमध्ये शिकवले आणि 'जस्टीस ऑफ द पीस' झाले — तिन्ही सूचना थेट मराठी पत्रकारितेच्या जनकाकडे नेतात.",
+        "category": "History",
+        "number": 3
+      },
+      {
+        "id": "gbp26-mr-4",
+        "text": "इ. स. 1916 मध्ये, महर्षी धोंडो केशव कर्वे यांचा महिला विद्यापीठ स्थापनेमागील उद्देश कोणता होता?\nअ. स्त्रियांना उच्च शिक्षण देणे.\nब. स्त्रियांना गायनकलेचे शिक्षण देणे.\nक. स्त्रियांना स्वावलंबी बनविणे.",
+        "options": {
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "फक्त अ आणि क",
+          "D": "अ, ब आणि क"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. अधिकृत उत्तरतालिकेनुसार तिन्ही उद्देश — स्त्रियांना उच्च शिक्षण देणे, गायनकलेचे शिक्षण देणे आणि स्वावलंबी बनविणे — कर्वे यांच्या 1916 च्या महिला विद्यापीठामागील हेतू मानले आहेत, म्हणून 'अ, ब आणि क' बरोबर धरले आहे.",
+        "category": "History",
+        "number": 4
+      },
+      {
+        "id": "gbp26-mr-5",
+        "text": "वसाहतवादामुळे भारतात खालीलप्रमाणे कोणते परिवर्तन घडून आले?\nअ. राष्ट्रवादाची भावना वाढीस लागली\nब. मध्ययुगीन राजवटींचा शेवट झाला\nक. भारतात नागरीकरणाचा वेग वाढला\nड. देशी उद्योगधंद्यात वाढ झाली",
+        "options": {
+          "A": "फक्त अ आणि ब",
+          "B": "फक्त ब आणि क",
+          "C": "फक्त अ, ब आणि क",
+          "D": "फक्त ब, क आणि ड"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. वसाहतवादाने राष्ट्रवाद वाढवला, मध्ययुगीन राजवटींचा शेवट घडवला आणि नागरीकरण गतिमान केले (अ, ब, क). मात्र देशी उद्योगधंदे वाढवले नाहीत — उलट ते नष्ट केले — म्हणून 'ड' वगळून अ, ब व क टिकतात.",
+        "category": "History",
+        "number": 5
+      },
+      {
+        "id": "gbp26-mr-6",
+        "text": "\"येथील लोक केवळ शिक्षण घेऊन स्वस्थ बसणार नाहीत, राज्यकारभारात वाटा देऊनही ते संतुष्ट होणार नाहीत; किंबहुना सर्वच राज्यकारभारावर आपला हक्क प्रस्थापित करू पाहतील\" असे ______ यांनी ______ यांना पाठविलेल्या पत्रात म्हटले होते.",
+        "options": {
+          "A": "लॉर्ड मेकॉले – पब्लिक एज्युकेशन कमिटी",
+          "B": "माऊंट स्टुअर्ट एल्फिन्स्टन – कोर्ट ऑफ डिरेक्टर्स",
+          "C": "जॉर्ज रसेल क्लार्क – ब्रिटीश पार्लमेंट",
+          "D": "लॉर्ड अम्हर्स्ट – गव्हर्नर जनरल"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. भारतीय एक दिवस सर्वच राज्यकारभारावर हक्क सांगतील असे भाकीत माऊंट स्टुअर्ट एल्फिन्स्टन यांनी कोर्ट ऑफ डिरेक्टर्सला पाठविलेल्या पत्रात लिहिले होते. हे अवतरण एल्फिन्स्टन व कंपनीच्या कोर्टाशी जोडले की जोडी निश्चित.",
+        "category": "History",
+        "number": 6
+      },
+      {
+        "id": "gbp26-mr-7",
+        "text": "पुढील कोणते विधान चुकीचे आहे?\nअ. भगत सिंह व राजगुरु यांनी साँडर्स या ब्रिटिश अधिकाऱ्याची हत्या केली.\nब. नाशिकचा जिल्हाधिकारी जॅक्सनची हत्या अनंत लक्ष्मण कान्हेरे यांनी केली.\nक. मुंबईचा कमिशनर रँड याची हत्या चाफेकरांनी केली.",
+        "options": {
+          "A": "फक्त क",
+          "B": "फक्त ब",
+          "C": "फक्त अ",
+          "D": "ब आणि क"
+        },
+        "correctAnswer": "A",
+        "explanation": "सोडवत गेल्यास पर्याय A येतो. चुकीचे विधान ओळखायचे आहे, ते म्हणजे 'क' — रँड हा पुण्याचा कमिशनर होता, मुंबईचा नव्हे, आणि चाफेकर बंधूंनी त्याला तिथेच मारले. विधाने अ व ब बरोबर, म्हणून फक्त क चुकीचे.",
+        "category": "History",
+        "number": 7
+      },
+      {
+        "id": "gbp26-mr-8",
+        "text": "1909 च्या मोर्ले-मिन्टो सुधारणा कायद्याबद्दल \"हे शुद्ध टोणग्याचे आचळ ठरतील यातून लोकहिताचे दूध मिळणे शक्य नाही\", अशी प्रतिक्रिया खालीलपैकी कोणी दिली?",
+        "options": {
+          "A": "सुरेंद्रनाथ बॅनर्जी",
+          "B": "आर. सी. मुजूमदार",
+          "C": "लोकमान्य टिळक",
+          "D": "लाला लजपत राय"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. मोर्ले-मिन्टो सुधारणा टोणग्याच्या आचळाइतक्या निरुपयोगी आहेत ही झोंबरी टिप्पणी लोकमान्य टिळकांची होती. ती जिवंत, उपरोधिक शैली चारही नेत्यांमध्ये टिळकांची ओळख पटवते.",
+        "category": "History",
+        "number": 8
+      },
+      {
+        "id": "gbp26-mr-9",
+        "text": "1857 च्या बंडाबाबत, \"बंडवाल्यांना एक जरी समर्थ नेता मिळाला असता तरी भारतावरील इंग्रजांचे राज्य नष्ट झाले असते.\" हे विधान कोणी केले ?",
+        "options": {
+          "A": "लॉर्ड कॅनिंग",
+          "B": "सर ह्यू रोज",
+          "C": "जॉन लॉरेन्स",
+          "D": "लॉर्ड डलहौसी"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. 1857 मध्ये एकच समर्थ नेता मिळाला असता तर इंग्रजांचे राज्य नष्ट झाले असते हे निरीक्षण जॉन लॉरेन्स यांचे मानले जाते. '1857 चा एक समर्थ नेता' ही ओळ लॉरेन्सशी जोडली की कॅनिंग व डलहौसीपासून वेगळी होते.",
+        "category": "History",
+        "number": 9
+      },
+      {
+        "id": "gbp26-mr-10",
+        "text": "लोकमान्य टिळकांनी बेत रायफली व काडतूसे बनविण्याचे शिक्षण घेण्यासाठी _________ यांना नेपाळ येथे पाठविले होते.",
+        "options": {
+          "A": "दादासाहेब खापर्डे व न. चि. केळकर",
+          "B": "श्रीधर अणे व श्रीपाद कुलकर्णी",
+          "C": "हणमंतराव कुलकर्णी व कृष्णाजी प्रभाकर खाडिलकर",
+          "D": "कृष्णाजी प्रभाकर खाडिलकर व दादासाहेब खापर्डे"
+        },
+        "correctAnswer": "C",
+        "explanation": "बरोबर पर्याय C आहे. रायफली व काडतुसे बनविण्याचे शिक्षण घेण्यासाठी टिळकांनी हणमंतराव कुलकर्णी व कृष्णाजी प्रभाकर खाडिलकर यांना नेपाळला पाठवले. नेपाळची शस्त्र-प्रशिक्षण मोहीम या जोडीशी जोडली की खापर्डे-केळकरपासून वेगळी राहते.",
+        "category": "History",
+        "number": 10
+      },
+      {
+        "id": "gbp26-mr-11",
+        "text": "सियाचीन लडाखमधील कोणती हिमनदी श्योक नदीमध्ये वहाते ?",
+        "options": {
+          "A": "हिस्सार",
+          "B": "रिमो",
+          "C": "झेमू",
+          "D": "ड्रँग-ड्रंग"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. सियाचीन–लडाखमधील हिमनद्यांपैकी शयोक नदीत वाहणारी हिमनदी म्हणजे रिमो. हिस्पार व झेमू इतर पर्वतरांगांत असल्याने शयोकचा दुवा उत्तर रिमोवर निश्चित करतो.",
+        "category": "Geography",
+        "number": 11
+      },
+      {
+        "id": "gbp26-mr-12",
+        "text": "खालील विधानांचा विचार करा.\nअ. 2001 ते 2011 या काळात महाराष्ट्रात लोकसंख्या वाढीचा दर 15.99 टक्के होता.\nब. 2011 च्या जनगणनेनुसार महाराष्ट्र राज्यातील 122372972 लोकसंख्येपैकी मुस्लीम लोकसंख्या 10.6 टक्के होती.\nक. 2011 च्या जनगणनेनुसार केरळ राज्यात सर्वाधिक कृषी घनता आढळली.\nड. 2011 च्या जनगणनेनुसार 0-6 वयोगटातील बाल लिंग गुणोत्तरात अव्वल दहा राज्ये सिक्कीम, अरुणाचल प्रदेश, जम्मू आणि काश्मीर, छत्तीसगड, मणिपूर, नागालँड, राजस्थान, मध्यप्रदेश इत्यादी आहेत.",
+        "options": {
+          "A": "अ, ब आणि ड बरोबर आहेत",
+          "B": "ब, क आणि ड बरोबर आहेत",
+          "C": "अ आणि क बरोबर आहेत",
+          "D": "अ, ब, क आणि ड बरोबर आहेत"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. विधाने अ व क बरोबर — महाराष्ट्राचा 2001–11 दशकीय वाढदर 15.99 टक्के होता आणि 2011 जनगणनेत केरळमध्ये सर्वाधिक कृषी घनता नोंदली. मुस्लीम-प्रमाण व बाल-लिंग गुणोत्तराच्या याद्या (ब, ड) जुळत नाहीत, म्हणून अ व क हा संच.",
+        "category": "Geography",
+        "number": 12
+      },
+      {
+        "id": "gbp26-mr-13",
+        "text": "खालीलपैकी कोणती / त्या जोडी / ड्या अयोग्य आहेत ?\nप्रशासकीय विभाग/जिल्हा - तलाव/जलाशय\nअ. छत्रपती संभाजी नगर - धाराशिव - तावरजा\nब. नागपूर - भंडारा - उमरझरी\nक. अमरावती - वाशिम - चिखली\nड. कोकण - सिंधूदुर्ग - शिवडाव",
+        "options": {
+          "A": "फक्त अ",
+          "B": "अ आणि ब",
+          "C": "ब आणि ड",
+          "D": "ब, क आणि ड"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. विभाग–जिल्हा–तलाव या चुकीच्या जोड्या म्हणजे A व B, जिथे जलाशय सांगितलेल्या जिल्ह्यात बसत नाही. जोड्या C व D बरोबर, म्हणून 'अयोग्य' संच A व B.",
+        "category": "Geography",
+        "number": 13
+      },
+      {
+        "id": "gbp26-mr-14",
+        "text": "पुढील नद्या व उपनद्यांच्या योग्य जोड्या लावा.\nनद्या - उपनद्या\na. तापी - i. बिंदुसरा\nb. पूर्णा - ii. बोरी\nc. सिंधफणा - iii. नळगंगा\nd. मांजरा - iv. घरणी",
+        "options": {
+          "A": "iv, iii, i, ii",
+          "B": "ii, iv, iii, i",
+          "C": "ii, iii, i, iv",
+          "D": "iv, ii, i, iii"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. योग्य नदी–उपनदी दुवे म्हणजे तापी–बोरी, पूर्णा–नळगंगा, सिंधफणा–बिंदुसरा आणि मांजरा–घरणी, म्हणजे a-ii, b-iii, c-i, d-iv. आधी सिंधफणा–बिंदुसरा जोडी निश्चित केली की बाकीचे बसतात.",
+        "category": "Geography",
+        "number": 14
+      },
+      {
+        "id": "gbp26-mr-15",
+        "text": "महाराष्ट्राच्या संदर्भातील खालील विधानांवरून जिल्हा ओळखा.\nअ. तलावांचे शहर या जिल्ह्यात स्थित आहे.\nब. या जिल्ह्यात दारुगोळा व शस्त्रनिर्मितीचा कारखाना आहे.\nक. एक तालुका धातुच्या वस्तु व त्यावरील नक्षीकाम यासाठी प्रसिद्ध आहे.\nड. मुशी जातीचे गवत या जिल्ह्यात मोठ्या प्रमाणात आढळते.",
+        "options": {
+          "A": "रायगड",
+          "B": "पुणे",
+          "C": "ठाणे",
+          "D": "अमरावती"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. 'तलावांचे शहर', दारूगोळा कारखाना व इतर खुणा — या सर्व सूचना ठाणे जिल्ह्याकडे नेतात. एका ओळीऐवजी सर्व सूचना एकत्र वाचल्या की सारखे दिसणारे पर्याय बाद होतात.",
+        "category": "Geography",
+        "number": 15
+      },
+      {
+        "id": "gbp26-mr-16",
+        "text": "महाराष्ट्राच्या ईशान्य भागात खालीलपैकी कोणत्या डोंगर रांगा / टेकड्या स्थित आहेत ?\nअ. सातमाळा\nब. गाळणा\nक. अक्रानी\nड. दरकेसा",
+        "options": {
+          "A": "अ आणि ब",
+          "B": "ब आणि क",
+          "C": "फक्त क",
+          "D": "फक्त ड"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. दिलेल्या टेकड्यांपैकी फक्त 'ड' (दारकेसा) महाराष्ट्राच्या ईशान्य भागात आहे; सातमाळा, गाळणा व अक्राणी इतर प्रदेशांतील आहेत. म्हणून 'फक्त ड' योग्य.",
+        "category": "Geography",
+        "number": 16
+      },
+      {
+        "id": "gbp26-mr-17",
+        "text": "खालीलपैकी कोणती जोडी 'शहरी एकत्रिकरण' या संकल्पनेत येते ?",
+        "options": {
+          "A": "ठाणे - नाशिक",
+          "B": "मुंबई - नवी मुंबई",
+          "C": "सातारा - सांगली",
+          "D": "नागपूर - चंद्रपूर"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. नागरी समूह (urban agglomeration) म्हणजे मुख्य शहर व त्याला लागून वाढलेली नागरी वस्ती एकत्र, आणि मुंबई–नवी मुंबई नेमका तोच सलग बांधीव विस्तार दर्शवते. इतर जोड्या वेगळी शहरे आहेत, एक समूह नव्हे.",
+        "category": "Geography",
+        "number": 17
+      },
+      {
+        "id": "gbp26-mr-18",
+        "text": "उत्तर महाराष्ट्रातील 150 मेगावॅटचा सौरउर्जा प्रकल्प कोणत्या जिल्ह्यात आहे ?",
+        "options": {
+          "A": "धुळे",
+          "B": "जळगाव",
+          "C": "नाशिक",
+          "D": "नंदुरबार"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. उत्तर महाराष्ट्रात 150 मेगावॅट सौर ऊर्जा प्रकल्प धुळे जिल्ह्यात आहे. उत्तर-महाराष्ट्रातील सौर आकडा धुळ्याशी जोडला की शेजारच्या जिल्ह्यांपासून वेगळा राहतो.",
+        "category": "Geography",
+        "number": 18
+      },
+      {
+        "id": "gbp26-mr-19",
+        "text": "कोकण किनारपट्टीचा जो भाग अरबी समुद्राच्या किनाऱ्यालगत सखल सपाट भूरचनेचा आहे त्यास __ नावाने ओळखले जाते.",
+        "options": {
+          "A": "खलाटी",
+          "B": "वलाटी",
+          "C": "भाबर",
+          "D": "खलाटी सपाट"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. अरबी समुद्रालगतचा कोकण किनाऱ्याचा सखल, सपाट भाग म्हणजे खलाटी. आतील उंच कोकण पट्ट्याशी तो विरोधाभास दाखवतो, म्हणून 'सखल व सपाट' ही खूण खलाटीकडे नेते.",
+        "category": "Geography",
+        "number": 19
+      },
+      {
+        "id": "gbp26-mr-20",
+        "text": "डॉ बाळासाहेब सावंत कोकण कृषी विद्यापीठाने संशोधित केलेले आंब्याचे वाण आणि विकसित केल्याचे वर्ष यांच्या योग्य जोड्या लावा.\nवाण - विकसित केल्याचे वर्ष\nA. रत्ना - i. 1992\nB. सिंधू - ii. 1999\nC. कोकण रुची - iii. 1981\nD. कोकण सम्राट - iv. 2014",
+        "options": {
+          "A": "iv, ii, iii, i",
+          "B": "ii, iii, i, iv",
+          "C": "i, iv, iii, ii",
+          "D": "iii, i, ii, iv"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. कोकण कृषी विद्यापीठाच्या आंबा वाणांचा क्रम — रत्ना–1981, सिंधू–1992, कोकण रुची–1999 आणि कोकण सम्राट–2014, म्हणजे A-iii, B-i, C-ii, D-iv. विकसित वर्षानुसार लावले की जुळवणी सोपी होते.",
+        "category": "Geography",
+        "number": 20
+      },
+      {
+        "id": "gbp26-mr-21",
+        "text": "भारतीय अर्थव्यवस्थेतील, 2004-05 नंतर दिसून येणारा मोठा बदल म्हणजे भारतीय शेतीतील कमी होत जाणारी शेतमजुरांची संख्या. याला कोणत्या प्रकारचा बदल म्हणता येईल ?",
+        "options": {
+          "A": "रोजगार क्षमतेतील बदल",
+          "B": "उत्पन्नातील बदल",
+          "C": "संरचनात्मक बदल",
+          "D": "पायाभूत सुविधांमधील बदल"
+        },
+        "correctAnswer": "C",
+        "explanation": "बरोबर पर्याय C आहे. 2004-05 नंतर शेतीतील कामगारांचा वाटा सतत घटत जाऊन इतर क्षेत्रे त्यांना सामावून घेतात, तेव्हा तो अर्थव्यवस्थेतील संरचनात्मक बदल असतो — कामगारवर्गाच्या रचनेतील स्थित्यंतर, केवळ चक्रीय घसरण नव्हे.",
+        "category": "Economics",
+        "number": 21
+      },
+      {
+        "id": "gbp26-mr-22",
+        "text": "मौद्रिक धोरणाच्या संख्यात्मक साधनांची त्याच्या संबंधित उद्दिष्टांशी जुळणी करा.\nसंख्यात्मक साधने - उद्दिष्ट्ये\nअ. बँकदर - i. RBI कडे ठराविक किमान रक्कम राखीव ठेवणे\nब. रोख राखीव गुणोत्तर - ii. RBI द्वारे पात्र रोख्यांची खरेदी-विक्री\nक. वैधानिक रोखता प्रमाण - iii. पुनर्वटन दर\nड. खुल्या बाजारातील उलाढाल - iv. RBI कडे रोख, सोने आणि रोख्यांच्या स्वरूपात तरल मालमत्ता ठेवणे",
+        "options": {
+          "A": "ii, iv, iii, i",
+          "B": "iii, i, iv, ii",
+          "C": "iii, iv, i, ii",
+          "D": "i, iii, ii, iv"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. दुवे — बँक दर–पुनर्वट्टा दर, रोख राखीव प्रमाण–RBI कडे किमान राखीव, वैधानिक रोखता प्रमाण–रोख/सोने/रोख्यांच्या स्वरूपातील तरल मालमत्ता, आणि खुल्या बाजारातील व्यवहार–रोखे खरेदी-विक्री, म्हणजे a-iii, b-i, c-iv, d-ii.",
+        "category": "Economics",
+        "number": 22
+      },
+      {
+        "id": "gbp26-mr-23",
+        "text": "भारतात राष्ट्रीय उत्पन्नाचे मापन करतांना कोणत्या मर्यादा/अडचणी निर्माण होतात ?\nअ. उत्पन्न वाटणीच्या आकडेवारीचा अभाव.\nब. न नोंदवलेले बेकायदेशीर उत्पन्न.\nक. मौद्रिक क्षेत्राचे उत्पादन.\nड. लहान उत्पादकांच्या उत्पन्नाविषयी सांख्यिकी उपलब्ध नसणे.",
+        "options": {
+          "A": "अ फक्त",
+          "B": "ब आणि क",
+          "C": "अ, ब आणि ड",
+          "D": "वरील सर्व"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. भारताच्या राष्ट्रीय उत्पन्न अंदाजातील खऱ्या अडचणी म्हणजे उत्पन्न-वितरणाच्या माहितीचा अभाव, बेकायदेशीर उत्पन्न न नोंदवले जाणे आणि मोठे विमुद्रीकृत/स्वउपभोगाचे उत्पादन (अ, ब, ड). उरलेला मुद्दा बसत नाही, म्हणून अ, ब व ड बरोबर.",
+        "category": "Economics",
+        "number": 23
+      },
+      {
+        "id": "gbp26-mr-24",
+        "text": "डॉ. एस. महेंद्र देव आणि सी. रवी यांनी दारिद्र्यरेषेखालील लोकसंख्येची गणना ___________ या खर्चाच्या आधारे करण्याचा प्रयत्न केला आहे.\nअ. कपडे\nब. आरोग्य\nक. ऊर्जा उपभोग\nड. शिक्षण",
+        "options": {
+          "A": "अ, ब आणि क",
+          "B": "ब, क आणि ड",
+          "C": "ब आणि ड",
+          "D": "अ आणि क"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. डॉ. एस. महेंद्र देव व सी. रवी यांनी आरोग्य व शिक्षणावरील खर्चाच्या (ब, ड) आधारे दारिद्र्यरेषेखालील लोकसंख्या काढली, केवळ अन्न/वस्त्र रेषेपलीकडे जाऊन. म्हणून ब व ड ही जोडी.",
+        "category": "Economics",
+        "number": 24
+      },
+      {
+        "id": "gbp26-mr-25",
+        "text": "'लोकसंख्येचा लाभांश' या संकल्पनेत लाभांश काय आहे ?",
+        "options": {
+          "A": "लोकसंख्येमुळे होणारा लाभ",
+          "B": "काम करणाऱ्या वयातील वाढलेली लोकसंख्या",
+          "C": "घटणारा मृत्यूदर",
+          "D": "वाढती प्रौढांची लोकसंख्या"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. लोकसंख्याशास्त्रीय लाभांशातील 'लाभांश' म्हणजे अवलंबितांच्या तुलनेत कार्यक्षम वयोगटाचा वाढता वाटा यातून मिळणारी वृद्धीची चालना. ही वयोरचनेतून मिळणारी संधी आहे, रोख रक्कम नव्हे.",
+        "category": "Economics",
+        "number": 25
+      },
+      {
+        "id": "gbp26-mr-26",
+        "text": "अर्थसंकल्पातील विकासोत्तर खर्चामध्ये खालीलपैकी कशाचा समावेश होतो ?\na. पेन्शन\nb. व्याजाची परतफेड\nc. शिक्षण\nd. प्रशासकीय सेवा\nयोग्य पर्याय निवडा :",
+        "options": {
+          "A": "a, b आणि c",
+          "B": "a, b आणि d",
+          "C": "c, b आणि d",
+          "D": "वरील सर्व"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. विकासेतर खर्चात निवृत्तिवेतन, व्याज प्रदान व प्रशासकीय सेवा (अ, ब, ड) येतात — जो थेट मालमत्ता वा उत्पादन निर्माण करत नाही. शिक्षण (क) हा विकास खर्च, म्हणून अ, ब व ड हा संच.",
+        "category": "Economics",
+        "number": 26
+      },
+      {
+        "id": "gbp26-mr-27",
+        "text": "खालील विधाने विचारात घ्या.\nअ. राष्ट्रीय उत्पन्न ही एक साठा संकल्पना आहे.\nब. स्थूल राष्ट्रीय उत्पन्नातून घसारा वजा केल्यास जी राष्ट्रीय उत्पन्नाची रक्कम मिळते तिला निव्वळ राष्ट्रीय उत्पन्न असे म्हणतात.\nक. राष्ट्रीय उत्पन्नाचे मोजमाप करताना वस्तु व सेवांच्या उत्पादनाचे दुहेरी मोजमाप टाळले जाते.\nवरीलपैकी कोणते/कोणती विधान/विधाने बरोबर आहे/आहेत ?",
+        "options": {
+          "A": "फक्त अ आणि क",
+          "B": "फक्त अ आणि ब",
+          "C": "फक्त ब आणि क",
+          "D": "वरीलपैकी सर्व"
+        },
+        "correctAnswer": "C",
+        "explanation": "बरोबर पर्याय C आहे. विधान अ चुकीचे — राष्ट्रीय उत्पन्न हा प्रवाह आहे, साठा नव्हे. विधाने ब (NNP = GNP वजा घसारा) व क बरोबर, म्हणून 'फक्त ब आणि क' हे उत्तर. प्रवाह-विरुद्ध-साठा हा सापळा महत्त्वाचा.",
+        "category": "Economics",
+        "number": 27
+      },
+      {
+        "id": "gbp26-mr-28",
+        "text": "खालील विधाने विचारात घ्या.\nअ. 2023-24 या कालावधीत औद्योगिक उत्पादनाच्या निर्देशांकानुसार औद्योगिक उत्पादन 5.8 टक्क्यांनी वाढले आहे.\nब. कोळसा उत्पादनाच्या विस्तारामुळे 2023-24 मध्ये खाण क्षेत्राच्या निर्देशांकाने वर्षभरात 13 टक्के वाढ नोंदविली.\nवरीलपैकी कोणते/ती विधान/ने बरोबर आहे/त ?",
+        "options": {
+          "A": "केवळ अ बरोबर आहे",
+          "B": "केवळ ब बरोबर आहे",
+          "C": "दोन्ही अ आणि ब बरोबर आहेत",
+          "D": "वरीलपैकी कोणतेही नाही"
+        },
+        "correctAnswer": "A",
+        "explanation": "पडताळलेले उत्तर पर्याय A आहे. फक्त विधान अ बरोबर — औद्योगिक उत्पादन निर्देशांकाने मोजलेले औद्योगिक उत्पादन 2023-24 मध्ये 5.8 टक्क्यांनी वाढले. दुसरे विधान त्याचा आकडा चुकीचा सांगते, म्हणून 'फक्त अ बरोबर'.",
+        "category": "Economics",
+        "number": 28
+      },
+      {
+        "id": "gbp26-mr-29",
+        "text": "पुढील विधानांचा विचार करा व योग्य पर्याय निवडा.\nविधान I : ग्रामीण युवकांना स्वयंरोजगारासाठी प्रशिक्षण देणारी (TRYSEM) योजना 15 ऑगस्ट 1979 पासून सुरू करण्यात आली.\nविधान II : राष्ट्रीय ग्रामीण रोजगार कार्यक्रम 1990 पासून सुरू करण्यात आला.",
+        "options": {
+          "A": "विधान I बरोबर, II चूक",
+          "B": "विधान II बरोबर, I चूक",
+          "C": "दोन्ही विधाने बरोबर",
+          "D": "दोन्ही विधाने चूक"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. विधान I बरोबर — ग्रामीण युवकांना स्वयंरोजगारासाठी प्रशिक्षण (TRYSEM) योजना 15 ऑगस्ट 1979 रोजी सुरू झाली — तर विधान II चुकीचे. म्हणून 'I बरोबर, II चुकीचे' हे योग्य.",
+        "category": "Economics",
+        "number": 29
+      },
+      {
+        "id": "gbp26-mr-30",
+        "text": "प्राथमिक तूट म्हणजे काय ?",
+        "options": {
+          "A": "महसूली उत्पन्न - महसूली खर्च",
+          "B": "भांडवली उत्पन्न - भांडवली खर्च",
+          "C": "एकूण उत्पन्न - एकूण खर्च",
+          "D": "वित्तीय तूट - व्याज परतफेड"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. प्राथमिक तूट म्हणजे वित्तीय तूट वजा व्याज प्रदान — व्याजाचा बोजा वगळून नवीन कर्जाची गरज दर्शवते. 'वित्तीय तूट − व्याज' लक्षात ठेवले की हे एका ओळीत आठवते.",
+        "category": "Economics",
+        "number": 30
+      },
+      {
+        "id": "gbp26-mr-31",
+        "text": "लेखा शास्त्रात लेखा या शब्दाचा नेमका अर्थ काय दर्शवितो ?",
+        "options": {
+          "A": "व्यवहारांची ओळख, नोंद, वर्गीकरण व संक्षेप करणे",
+          "B": "केवळ व्यवहारांची नोंद करणे",
+          "C": "केवळ आर्थिक अहवाल तयार करणे",
+          "D": "केवळ नफा तोटा मोजणे"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. लेखाशास्त्रात लेखांकन म्हणजे आर्थिक व्यवहार ओळखणे, नोंदवणे, वर्गीकरण करणे व सारांश काढणे ही प्रक्रिया. केवळ नोंद नव्हे, तर ही संपूर्ण साखळी म्हणजेच या संज्ञेचा औपचारिक अर्थ.",
+        "category": "Economics",
+        "number": 31
+      },
+      {
+        "id": "gbp26-mr-32",
+        "text": "वर्ष 2023-24 च्या अर्थसंकल्पात मांडलेल्या सात प्राधान्य क्षेत्र अर्थात् 'सप्तर्षी' पैकी खालीलपैकी कोणते क्षेत्र सप्तर्षीचा भाग नाही ?",
+        "options": {
+          "A": "सर्वसमावेशक विकास",
+          "B": "हरित वृद्धी",
+          "C": "युवा शक्ती",
+          "D": "व्यापार विकास"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. केंद्रीय अर्थसंकल्प 2023-24 च्या 'सप्तर्षी' सात प्राधान्यांत 'व्यापार विकास' नव्हता — तेच वेगळे. खरी प्राधान्ये समावेशक वृद्धी, पायाभूत सुविधा, हरित वृद्धी वगैरे होती.",
+        "category": "Economics",
+        "number": 32
+      },
+      {
+        "id": "gbp26-mr-33",
+        "text": "बहुराष्ट्रीय कंपन्यांच्या विस्ताराबाबत आणि व्यापारी डावपेचांबाबत योग्य विधान/विधाने कोणती ?\na. बहुराष्ट्रीय कंपन्या या बलाढ्य संस्था असून त्या शाखा विस्तारा द्वारे जगभर जाळे पसरवतात.\nb. बहुराष्ट्रीय कंपन्या या एकाच प्रकारच्या उत्पादनात विशेषीकरण करून नफा कमावतात.\nc. बहुराष्ट्रीय कंपन्यांचा विस्तार विकसनशील देशात जास्त आहे.\nd. बहुराष्ट्रीय कंपन्या नवीन उत्पादनांच्या संशोधन आणि विकासावर खूप भर देतात.\nयोग्य पर्याय निवडा :",
+        "options": {
+          "A": "a आणि b",
+          "B": "b आणि c",
+          "C": "c आणि d",
+          "D": "a आणि d"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. बहुराष्ट्रीय कंपन्यांच्या विस्तार व व्यापारी धोरणांबाबत बरोबर विधाने अ व ड आहेत; मधली दोन त्यांचा दृष्टिकोन अतिरंजित वा चुकीचा मांडतात. म्हणून अ व ड हा संच.",
+        "category": "Economics",
+        "number": 33
+      },
+      {
+        "id": "gbp26-mr-34",
+        "text": "सरकारी बँक या नात्याने भारतीय रिझर्व बँक विविध कामे पार पाडते. खालीलपैकी कोणत्या कामाचा त्यात समावेश होत नाही ?",
+        "options": {
+          "A": "चलनधोरण अंमलबजावणी",
+          "B": "बँकींग क्षेत्र नियमन",
+          "C": "शेअर बाजार नियमन",
+          "D": "अर्थविषयक बाबीवर शासनास सल्ला देणे"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. RBI अनेक कामे करते, पण 'शेअर बाजाराचे नियमन' त्यात नाही — ते काम SEBI चे आहे. म्हणून RBI ला न बसणारे कार्य म्हणजे शेअर-बाजाराचे.",
+        "category": "Economics",
+        "number": 34
+      },
+      {
+        "id": "gbp26-mr-35",
+        "text": "शिक्षणातील लैंगिक समता निर्देशांक (GPI) संदर्भात त्याची प्रमाणित गणना पद्धत खालीलपैकी कोणती आहे ?",
+        "options": {
+          "A": "पुरुष साक्षरता दराचे स्त्री साक्षरता दराशी गुणोत्तर.",
+          "B": "विशिष्ट शिक्षण स्तरावर स्त्रियांचा सकल नोंदणी दर (GER) व पुरुषांचा सकल नोंदणी दर (GER) यांचे गुणोत्तर.",
+          "C": "प्राथमिक स्तरावरील पुरुष व स्त्रियांच्या निव्वळ नोंदणी दरातील फरक.",
+          "D": "कामगार शक्तीतील स्त्रियांचे प्रमाण आणि पुरुषांचे प्रमाण यांचे गुणोत्तर."
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. शिक्षणातील लिंग समता निर्देशांक म्हणजे दिलेल्या स्तरावर स्त्री स्थूल नोंदणी गुणोत्तर भागिले पुरुष स्थूल नोंदणी गुणोत्तर. 1 च्या जवळचे मूल्य समतोल दाखवते, म्हणून स्त्री-ते-पुरुष GER गुणोत्तर हे प्रमाणित सूत्र.",
+        "category": "Economics",
+        "number": 35
+      },
+      {
+        "id": "gbp26-mr-36",
+        "text": "दुष्काळ सहन करणारी ____________ जात सादर करण्याच्या यशस्वी प्रयत्नांसाठी डॉ. स्वाती नायक यांना प्रतिष्ठित नॉर्मन बोरलॉग पुरस्काराने सन्मानिन करण्यात आले.",
+        "options": {
+          "A": "सिरगा संबा तांदूळ",
+          "B": "सहभागी धान तांदूळ",
+          "C": "मोलकोलुकुलु तांदूळ",
+          "D": "काईकुथल तांदूळ"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. डॉ. स्वाती नायक यांना दुष्काळ-सहनशील भात वाण 'सहभागी धान' शेतकऱ्यांत लोकप्रिय केल्याबद्दल नॉर्मन बोरलॉग पुरस्कार मिळाला. दुष्काळ-सहनशील भात 'सहभागी धान' शी जोडले की उत्तर पक्के.",
+        "category": "Current Affairs",
+        "number": 36
+      },
+      {
+        "id": "gbp26-mr-37",
+        "text": "17 व्या ब्रिक्स शिखर परिषद, 2025 मध्ये लक्ष केंद्रित केलेले विषय ____________ .\nअ. जागतिक प्रशासन संस्थांमध्ये सुधारणा\nब. बहुपक्षीयतेला प्रोत्साहन देणे\nक. सामाजिक विषमतेला संबोधित करणे\nड. AI च्या नियंत्रणासाठी समावेशक चौकट प्रस्थापित करणे\nवरीलपैकी योग्य मुद्दे ओळखा :",
+        "options": {
+          "A": "फक्त अ, ब, क",
+          "B": "फक्त ब, क, ड",
+          "C": "फक्त अ, ब, ड",
+          "D": "फक्त अ, क, ड"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. उत्तरतालिकेनुसार 17व्या ब्रिक्स शिखर परिषद 2025 चा केंद्रबिंदू विधाने A, B व D मिळून दर्शवतात — जागतिक प्रशासनात सुधारणा, बहुपक्षीयतेचा पुरस्कार व संबंधित प्राधान्य — तर उरलेले विधान बाहेर राहते, म्हणून 'फक्त A, B, D' निवडले.",
+        "category": "Current Affairs",
+        "number": 37
+      },
+      {
+        "id": "gbp26-mr-38",
+        "text": "खालीलपैकी योग्य कथने ओळखा (UNV बाबत) :\nअ. 2024 मध्ये UNV ने जगभरात 14,500 हून अधिक स्वयंसेवक तैनात केले.\nब. 2026 हे वर्ष संयुक्त राष्ट्रांनी आंतरराष्ट्रीय स्वयंसेवक वर्ष म्हणून घोषित केले आहे.\nक. स्वयंसेवक हे विविध भूमिकांमध्ये कार्य करतात, त्यामध्ये समुदाय विकास, मानवी हक्क, शांतता निर्मिती इ. समाविष्ट आहे.",
+        "options": {
+          "A": "फक्त अ, ब",
+          "B": "फक्त ब, क",
+          "C": "फक्त अ, क",
+          "D": "वरीलपैकी सर्व"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. संयुक्त राष्ट्र स्वयंसेवकांबाबतची प्रत्येक विधान बरोबर — 2024 चा तैनाती आकडा, नियुक्त वर्ष व बाकीचे — म्हणून 'वरील सर्व' हे अभिप्रेत उत्तर. प्रत्येक ओळ बरोबर असेल तेव्हा एकत्रित पर्याय जिंकतो.",
+        "category": "Current Affairs",
+        "number": 38
+      },
+      {
+        "id": "gbp26-mr-39",
+        "text": "महाराष्ट्र भूषण पुरस्कार विजेत्यांचा क्रम पुरस्कार मिळालेल्या वर्षानुसार चढत्या क्रमाने लावा. (सर्वात जुना पहिल्यांदा व सर्वात नवीन शेवटी)\nअ. राम सुतार\nब. आप्पासाहेब धर्माधिकारी\nक. अशोक सराफ\nड. आशा भोसले",
+        "options": {
+          "A": "अ, ड, ब, क",
+          "B": "अ, क, ब, ड",
+          "C": "ड, क, ब, अ",
+          "D": "ड, ब, क, अ"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. महाराष्ट्र भूषण पुरस्कार मिळाल्याच्या वर्षानुसार जुन्यापासून नव्यापर्यंत मांडले असता मानकरी D, B, C, A असे येतात. सर्वात आधीचा मानकरी आधी निश्चित केला की चढता क्रम बसतो.",
+        "category": "Current Affairs",
+        "number": 39
+      },
+      {
+        "id": "gbp26-mr-40",
+        "text": "खानमिगो हे ____ या क्षेत्राशी संबंधीत असलेले कृत्रिम बुद्धीमत्तेवर आधारित ॲप आहे.",
+        "options": {
+          "A": "स्थलांतर",
+          "B": "इस्लामचा अभ्यास",
+          "C": "पॅलेस्टाईनचा प्रश्न",
+          "D": "शिक्षण"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. खानमिगो हे शिक्षण क्षेत्रातील AI-आधारित अॅप आहे — खान अकादमी मंचावर बनवलेला अध्यापन सहाय्यक. म्हणून त्याचे क्षेत्र म्हणजे शिक्षण.",
+        "category": "General Knowledge",
+        "number": 40
+      },
+      {
+        "id": "gbp26-mr-41",
+        "text": "खालीलपैकी कोणती बाब ही उभ्या शेतीचा (व्हर्टीकल फार्मिंग) फायदा नाही ?",
+        "options": {
+          "A": "पाण्याचा कमी वापर",
+          "B": "बारामाही पिकांचे उत्पादन (वर्षातून दोन किंवा तीन वेळा)",
+          "C": "शेतीयोग्य जमीनीवरील अवलंबित्व वाढले",
+          "D": "वाहतुकीचा कमी झालेला खर्च"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. उभ्या शेतीचा मूळ हेतू कमी जमिनीत अधिक उत्पादन हाच असल्याने 'लागवडयोग्य जमिनीवरील वाढते अवलंबित्व' हा फायदा नाही — तो या पद्धतीच्या नेमका उलट. खरे फायदे म्हणजे पाणी बचत, वर्षभर उत्पादन व जागेची कार्यक्षमता.",
+        "category": "Science",
+        "number": 41
+      },
+      {
+        "id": "gbp26-mr-42",
+        "text": "________ यांनी एप्रिल 2024 मध्ये अधिकृतपणे आयर्लंडचे सर्वात तरुण पंतप्रधान म्हणून डब्लिनमध्ये पदभार स्वीकारला.",
+        "options": {
+          "A": "माइकल मार्टिन",
+          "B": "लिओ वराडकर",
+          "C": "एंडा केनी",
+          "D": "सायमन हॅरिस"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. सायमन हॅरिस एप्रिल 2024 मध्ये डब्लिनमध्ये आयर्लंडचे सर्वात तरुण पंतप्रधान (टॉयशॉक) म्हणून पदावर आले. 'सर्वात तरुण आयरिश पंतप्रधान, 2024' हे हॅरिसशी जोडले की वराडकर व मार्टिनपासून वेगळे होतात.",
+        "category": "Current Affairs",
+        "number": 42
+      },
+      {
+        "id": "gbp26-mr-43",
+        "text": "खालीलपैकी कोणाला 'जंगलाचा विश्वकोश' (एन्सायक्लोपिडिया ऑफ द फॉरेस्ट) म्हणून ओळखले जाते ?",
+        "options": {
+          "A": "मेधा पाटकर",
+          "B": "सुंदरलाल बहुगुणा",
+          "C": "सलीम अली",
+          "D": "तुलसी गौडा"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. झाडे व वनस्पतींची अफाट स्मृती असलेल्या कर्नाटकातील पर्यावरणवादी तुळशी गौडा यांना 'जंगलाचा ज्ञानकोश' म्हणतात. हे टोपणनाव त्यांच्या खोल, स्वयंशिक्षित वनस्पतीज्ञानाची खूण.",
+        "category": "General Knowledge",
+        "number": 43
+      },
+      {
+        "id": "gbp26-mr-44",
+        "text": "खालीलपैकी कोणत्या सरकारी संस्थेने नवी दिल्ली येथे 'दहशतवाद विरोधी परिषद-2024' आयोजित केली होती ?",
+        "options": {
+          "A": "संशोधन आणि विश्लेषण शाखा (RAW)",
+          "B": "केंद्रीय अन्वेषण विभाग (CBI)",
+          "C": "नॅशनल इन्व्हेस्टिगेशन एजन्सी (NIA)",
+          "D": "संरक्षण मंत्रालय"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. नवी दिल्लीतील 'दहशतवादविरोधी परिषद-2024' राष्ट्रीय तपास संस्थेने (NIA) आयोजित केली. दहशतवादविरोधी परिषद NIA शी जोडा — भारताची समर्पित दहशतवादविरोधी संस्था.",
+        "category": "Current Affairs",
+        "number": 44
+      },
+      {
+        "id": "gbp26-mr-45",
+        "text": "'बेटी बचाव बेटी पढाओ' योजनेचा उद्देश काय आहे __________ .",
+        "options": {
+          "A": "महिलांना रोजगार देणे",
+          "B": "लिंग समानता व मुलींचे शिक्षण",
+          "C": "आरोग्य विमा",
+          "D": "पेन्शन"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. 'बेटी बचाओ बेटी पढाओ' चे उद्दिष्ट लिंग समानता व मुलीचे शिक्षण — मुलगी वाचवणे व शिकवणे. नावातच उद्दिष्ट आहे, म्हणून लिंग समानता आणि मुलींचे शिक्षण हे उत्तर.",
+        "category": "Current Affairs",
+        "number": 45
+      },
+      {
+        "id": "gbp26-mr-46",
+        "text": "\"मिशन शक्ती\" योजना __________ संबंधित आहे.",
+        "options": {
+          "A": "संरक्षण",
+          "B": "महिला सक्षमीकरण",
+          "C": "अंतराळ",
+          "D": "ऊर्जा"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. उत्तरतालिकेनुसार 'मिशन शक्ती' ही महिला व बालविकास मंत्रालयांतर्गत राबवली जाणारी महिला सक्षमीकरण योजना मानली आहे. इथे संरक्षण अर्थाऐवजी उत्तरतालिकेचा महिला-सक्षमीकरण दुवा धरा.",
+        "category": "Current Affairs",
+        "number": 46
+      },
+      {
+        "id": "gbp26-mr-47",
+        "text": "__________ एक पायलट, वैमानिक आणि उद्योजक हे अ‍ॅमेझॉनचे संस्थापक जेफ बेझोस यांच्या ब्लू ओरिजनच्या NS-25 मोहिमेत परदेशी पर्यटक म्हणून अंतराळात जाणारे पहिले भारतीय नागरिक बनले.",
+        "options": {
+          "A": "संतोष जॉर्ज कुलंगारा",
+          "B": "शुभांशू शुक्ला",
+          "C": "गोपीचंद थोटाकूरा",
+          "D": "अजित कृष्णन"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. वैमानिक व उद्योजक गोपीचंद थोटाकुरा हे जेफ बेझोस यांच्या ब्लू ओरिजिन उड्डाणातून अंतराळात जाणारे पहिले भारतीय नागरिक पर्यटक ठरले. 'पहिला भारतीय अंतराळ पर्यटक' थोटाकुराशी जोडा.",
+        "category": "Current Affairs",
+        "number": 47
+      },
+      {
+        "id": "gbp26-mr-48",
+        "text": "भारतात 2024 च्या सार्वत्रिक निवडणुकमध्ये निवडणुक लढणाऱ्या महिला उमेदवारांची एकूण संख्या _______ आहे.",
+        "options": {
+          "A": "726",
+          "B": "800",
+          "C": "668",
+          "D": "556"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. 2024 च्या लोकसभा सार्वत्रिक निवडणुकीत निवडणूक लढवणाऱ्या महिला उमेदवारांची संख्या 800 अशी नोंद आहे. हा थेट आकडेवारीचा मुद्दा, म्हणून आकडा 800 वर निश्चित करा.",
+        "category": "Current Affairs",
+        "number": 48
+      },
+      {
+        "id": "gbp26-mr-49",
+        "text": "लेगो (LEGO) ही खेळणी बनवणारी कंपनी आहे. तिचे कार्यक्षेत्र जगभरात विस्तारले आहे. ती मूळची _______ या देशातील आहे.",
+        "options": {
+          "A": "अमेरिका (यु.एस.ए.)",
+          "B": "ब्रिटन (यु.के.)",
+          "C": "डेन्मार्क",
+          "D": "नेदरलँड्स"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. एकमेकांत बसणाऱ्या विटांसाठी प्रसिद्ध जागतिक खेळणी कंपनी LEGO मूळची डेन्मार्कमध्ये ओले किर्क क्रिस्तियन्सेन यांनी स्थापली. म्हणून मूळ देश डेन्मार्क.",
+        "category": "General Knowledge",
+        "number": 49
+      },
+      {
+        "id": "gbp26-mr-50",
+        "text": "खालीलपैकी योग्य कथन/ने ओळखा :\nअ. मनोहर जोशी व पंकज उदास यांना पद्मभूषण पुरस्कार 2025 ने सन्मानित करण्यात आले.\nब. अच्युत पालव व अशोक सराफ यांना पद्मश्री पुरस्कार, 2025 ने सन्मानित करण्यात आले.",
+        "options": {
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "अ व ब दोन्ही",
+          "D": "वरीलपैकी एकही नाही"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. पद्म पुरस्कार 2025 च्या मानकऱ्यांबाबतची दोन्ही विधाने बरोबर आहेत, म्हणून 'दोन्ही A व B' योग्य. प्रत्येक विधान स्वतंत्रपणे बरोबर असेल तेव्हा एकत्रित पर्याय सुरक्षित.",
+        "category": "Current Affairs",
+        "number": 50
+      },
+      {
+        "id": "gbp26-mr-51",
+        "text": "राज्य धोरणाच्या मार्गदर्शक तत्त्वांबाबत खालीलपैकी योग्य कथने ओळखा.\nअ. ती गैर-न्यायप्रविष्ट आहेत (न्यायप्रविष्ट नाहीत).\nब. त्यांना नैतिक व राजकीय आधार आहेत.\nक. ती समूहाच्या कल्याणाला प्रोत्साहन देतात.\nड. त्यांच्या अंमलबजावणीसाठी कायदे आवश्यक आहेत.",
+        "options": {
+          "A": "फक्त अ, ब, क",
+          "B": "फक्त ब, क, ड",
+          "C": "फक्त अ, ब, ड",
+          "D": "अ, ब, क, ड"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. मार्गदर्शक तत्त्वांबाबतचे प्रत्येक विधान बरोबर — ती न्यायप्रविष्ट नाहीत, नैतिक व राजकीय दबाव बाळगतात आणि कल्याणकारी राज्याचे उद्दिष्ट ठेवतात — म्हणून A, B, C व D सर्व एकत्र टिकतात.",
+        "category": "Polity",
+        "number": 51
+      },
+      {
+        "id": "gbp26-mr-52",
+        "text": "खालीलपैकी काय भारतीय संविधानाच्या कलम 23 मध्ये समाविष्ट नाही ?",
+        "options": {
+          "A": "मानवी तस्करीला प्रतिबंध",
+          "B": "बालमजुरीस बंदी",
+          "C": "सक्तीच्या मजुरीला प्रतिबंध",
+          "D": "सार्वजनिक उद्दीष्टांसाठी सक्तीची सेवा"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. कलम 23 मानवी तस्करी व सक्तीच्या श्रमावर बंदी घालते; 'बालमजुरीवर बंदी' त्यात नाही — ती कलम 24 अंतर्गत येते. म्हणून कलम 23 मध्ये न बसणारी बाब म्हणजे बालमजुरी.",
+        "category": "Polity",
+        "number": 52
+      },
+      {
+        "id": "gbp26-mr-53",
+        "text": "1947 च्या भारतीय स्वातंत्र्य कायद्याने संविधान सभेच्या स्थितीत बदल केले :\nअ. या कायद्याने संविधान सभेला ब्रिटिश संसदेने भारता संदर्भात केलेला कोणताही कायदा रद्द करण्याचा किंवा बदलण्याचा अधिकार दिला.\nब. संविधान सभा ही एक विधिमंडळ संस्था देखील बनली.\nक. सर्वसाधारण परिस्थितीत जेव्हा संविधान सभा ही संविधान संस्था म्हणून आणि विधिमंडळ संस्था म्हणून कार्य करीत असे, तेव्हा तिचे अध्यक्षपद डॉ. रविंद्र प्रसाद यांच्याकडे असे.\nवरीलपैकी योग्य विधाने निवडा.",
+        "options": {
+          "A": "फक्त अ, ब",
+          "B": "फक्त ब, क",
+          "C": "फक्त अ, क",
+          "D": "वरीलपैकी सर्व"
+        },
+        "correctAnswer": "A",
+        "explanation": "पडताळलेले उत्तर पर्याय A आहे. भारतीय स्वातंत्र्य कायदा 1947 नुसार घटना समितीला कोणताही कायदा रद्द वा बदलण्याचा अधिकार मिळाला आणि ती पूर्णतः सार्वभौम संस्था बनली (A, B). उरलेली विधाने बसत नाहीत, म्हणून 'फक्त A, B' बरोबर.",
+        "category": "Polity",
+        "number": 53
+      },
+      {
+        "id": "gbp26-mr-54",
+        "text": "राज्य लोकसेवा आयोगाच्या सदस्याला काढून टाकता येते ______.",
+        "options": {
+          "A": "उच्च न्यायालयाने केलेल्या चौकशीनंतर राज्यपाल",
+          "B": "सर्वोच्च न्यायालयाने केलेल्या चौकशीनंतर राष्ट्रपती",
+          "C": "विधानसभेत महाभियोगाच्या आधारावर राज्यपाल",
+          "D": "संसदेत महाभियोगाच्या आधारावर राष्ट्रपती"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. राज्य लोकसेवा आयोगाच्या सदस्याला फक्त राष्ट्रपती काढू शकतात, आणि तेही सर्वोच्च न्यायालयाच्या चौकशीनंतर. राज्याचा मार्ग लागू होत नाही — राज्य संस्था असूनही काढण्याचा अधिकार राष्ट्रपतींकडे.",
+        "category": "Polity",
+        "number": 54
+      },
+      {
+        "id": "gbp26-mr-55",
+        "text": "भारतीय संविधानाच्या सरनाम्याची सुरुवात, \"आम्ही भारतीय लोक\" अशी आहे. खालीलपैकी कोणत्या देशाच्या संविधानाच्या सरनाम्यातही अशीच सुरुवात आढळते ?",
+        "options": {
+          "A": "ऑस्ट्रेलिया",
+          "B": "कॅनडा",
+          "C": "इंग्लंड (U.K.)",
+          "D": "युनायटेड स्टेट्स (अमेरिका)"
+        },
+        "correctAnswer": "D",
+        "explanation": "पडताळलेले उत्तर पर्याय D आहे. भारताची उद्देशिका 'आम्ही भारताचे लोक' अशी सुरू होते, जी अमेरिकेच्या राज्यघटनेचे प्रतिध्वनी करते — तीही 'We the People' ने सुरू होते. म्हणून तीच सुरुवात असणारा देश म्हणजे अमेरिका.",
+        "category": "Polity",
+        "number": 55
+      },
+      {
+        "id": "gbp26-mr-56",
+        "text": "सरपंच किंवा उप-सरपंच यांच्या विरुद्ध अविश्वासाचा ठराव मांडण्यापूर्वी किमान एक तृतीयांश सभासदांच्या सहीने तश्या प्रस्तावाची सुचना कोणाला द्यावी लागते ?",
+        "options": {
+          "A": "जिल्हाधिकारी",
+          "B": "तहसीलदार",
+          "C": "ग्रामसेवक",
+          "D": "मुख्य कार्यकारी अधिकारी"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. सरपंच वा उपसरपंचाविरुद्ध अविश्वास ठराव मांडण्यापूर्वी किमान एक-तृतीयांश सदस्यांनी स्वाक्षरीसह तहसीलदारांना नोटीस द्यावी लागते. म्हणून ती नोटीस स्वीकारणारा अधिकारी म्हणजे तहसीलदार.",
+        "category": "Polity",
+        "number": 56
+      },
+      {
+        "id": "gbp26-mr-57",
+        "text": "खालील पर्यायापैकी कोणते न्यायालय अभिलेख न्यायालय आहे ?",
+        "options": {
+          "A": "सर्वोच्च न्यायालय",
+          "B": "महसूल न्यायालये",
+          "C": "दिवाणी न्यायालये",
+          "D": "फौजदारी न्यायालये"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. सर्वोच्च न्यायालय हे अभिलेख न्यायालय (Court of Record) आहे — त्याचे निवाडे उदाहरणादाखल नोंदले जातात व ते अवमानाबद्दल शिक्षा करू शकते. दिलेल्या पर्यायांत हा दर्जा सर्वोच्च न्यायालयाकडे.",
+        "category": "Polity",
+        "number": 57
+      },
+      {
+        "id": "gbp26-mr-58",
+        "text": "ग्रामपंचायत खालीलपैकी कोणते शुल्क वसूल करू शकते ?",
+        "options": {
+          "A": "बस तिकीट शुल्क",
+          "B": "घरपट्टी",
+          "C": "आयकर",
+          "D": "सीमा शुल्क"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. दिलेल्या करांपैकी ग्रामपंचायतीला घरपट्टी वसूल करण्याचा अधिकार आहे. हा मालमत्ता-आधारित कर पंचायतींचा मुख्य स्वउत्पन्न स्रोत आहे, म्हणून घरपट्टी योग्य.",
+        "category": "Polity",
+        "number": 58
+      },
+      {
+        "id": "gbp26-mr-59",
+        "text": "भारतीय संविधानाच्या 12 व्या अनुसूचीमध्ये नगरपालिकांसाठी खालीलपैकी कोणते कार्य निश्चित केले आहे ?\nअ. शहरी दारिद्र्य निर्मूलन\nब. आर्थिक आणि सामाजिक विकासासाठी नियोजन\nक. चर्मसंस्करणीचे (चर्मोद्योग कारखान्यांचे) नियमन\nड. शहरी वनीकरण",
+        "options": {
+          "A": "अ, ब आणि क",
+          "B": "ब, क आणि ड",
+          "C": "अ आणि ड",
+          "D": "अ, ब, क आणि ड"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. दिलेली सर्व कार्ये — नागरी दारिद्र्य निर्मूलन, आर्थिक व सामाजिक विकास नियोजन, कातडी कारखान्यांचे नियमन आणि नागरी वनीकरण — बाराव्या अनुसूचीत नगरपालिकांसाठी येतात, म्हणून A, B, C व D सर्व टिकतात.",
+        "category": "Polity",
+        "number": 59
+      },
+      {
+        "id": "gbp26-mr-60",
+        "text": "भारतीय राज्यघटनेतील कोणत्या कलमानुसार प्रत्येक घटक राज्यात विधानसभा निर्माण केलेली आहे ?",
+        "options": {
+          "A": "कलम 170",
+          "B": "कलम 171",
+          "C": "कलम 172",
+          "D": "कलम 173"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. कलम 170 नुसार प्रत्येक राज्यात विधानसभा स्थापन केली जाते. कलम 170 राज्याच्या विधानसभेशी जोडले की परिषद व पात्रतेच्या कलमांपासून ते वेगळे राहते.",
+        "category": "Polity",
+        "number": 60
+      },
+      {
+        "id": "gbp26-mr-61",
+        "text": "उपलेखापरिक्षकाने एका वर्षात लेखा तपासणी करावयाच्या शंभर ग्रामपंचायतीपैकी किमान किती ग्राम पंचायती मुख्य पंचायती असणे अगत्याचे असते ?",
+        "options": {
+          "A": "10",
+          "B": "15",
+          "C": "20",
+          "D": "25"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. उप-लेखापरीक्षक वर्षभरात तपासणाऱ्या शंभर ग्रामपंचायतींपैकी किमान 20 मुख्य (मोठ्या) पंचायती असाव्यात. म्हणून मुख्य पंचायतींची किमान संख्या 20.",
+        "category": "Polity",
+        "number": 61
+      },
+      {
+        "id": "gbp26-mr-62",
+        "text": "खालीलपैकी कोणती घटनादुरुस्ती ही शहरी भागातील स्थानिक स्वराज्य संस्थांशी संबंधीत आहे ?",
+        "options": {
+          "A": "73 वी घटनादुरुस्ती",
+          "B": "97 वी घटनादुरुस्ती",
+          "C": "74 वी घटनादुरुस्ती",
+          "D": "71 वी घटनादुरुस्ती"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. 74 वी घटनादुरुस्ती नागरी स्थानिक स्वराज्य — नगरपालिका — यांच्याशी संबंधित आहे, तर 73 वी पंचायतींशी. म्हणून नागरी स्थानिक स्वराज्य संस्थांची दुरुस्ती 74 वी.",
+        "category": "Polity",
+        "number": 62
+      },
+      {
+        "id": "gbp26-mr-63",
+        "text": "खालीलपैकी योग्य कथन/ने ओळखा.\nअ. संविधानाच्या अनुच्छेद 368 अंतर्गत उद्देश पत्रिके मध्ये दुरुस्ती करता येते काय ? हा प्रश्न ऐतिहासिक केशवानंद भारती खटल्यात (1973) पहिल्यांदा उपस्थित झाला.\nब. सप्टेंबर 2025 पर्यंत 42 व्या घटना दुरुस्ती कायद्याद्वारे 1976 मध्ये फक्त एकदाच उद्देश पत्रिकेत दुरुस्ती करण्यात आली.",
+        "options": {
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "अ व ब दोन्ही",
+          "D": "वरीलपैकी एकही नाही"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. दोन्ही विधाने बरोबर — कलम 368 अंतर्गत उद्देशिका दुरुस्त करता येते का हा प्रश्न केशवानंद भारती खटल्यात उभा राहिला, आणि मूलभूत संरचनेला धक्का न लावता ती दुरुस्त करता येते असे न्यायालयाने ठरवले. म्हणून 'दोन्ही A व B' बरोबर.",
+        "category": "Polity",
+        "number": 63
+      },
+      {
+        "id": "gbp26-mr-64",
+        "text": "केंद्र-राज्यांच्या प्रशासकीय संबंधांच्या संदर्भातील जोड्या जुळवा.\nकलम | तरतूद\nअ. 256 | i. काही प्रकरणांमध्ये राज्यांवर केंद्राचे नियंत्रण\nब. 257 | ii. राज्ये आणि केंद्राचे दायित्व\nक. 258-A | iii. भारता बाहेरील प्रदेशांच्या संबंधात केंद्राचे अधिकारक्षेत्र\nड. 260 | iv. केंद्राकडे कार्ये सोपविण्याचा राज्यांचा अधिकार",
+        "options": {
+          "A": "अ - iv ब - i क - iii ड - ii",
+          "B": "अ - ii ब - i क - iv ड - iii",
+          "C": "अ - iii ब - i क - iv ड - ii",
+          "D": "अ - i ब - ii क - iv ड - iii"
+        },
+        "correctAnswer": "B",
+        "explanation": "पडताळलेले उत्तर पर्याय B आहे. दुवे — कलम 256–राज्ये व केंद्राचे दायित्व (ii), 257–राज्यांवर केंद्राचे नियंत्रण (i), 258-A–केंद्राकडे कार्ये सोपविण्याचा राज्यांचा अधिकार (iv), आणि 260–भारताबाहेरील प्रदेशांवर केंद्राचे अधिकारक्षेत्र (iii): A-ii, B-i, C-iv, D-iii.",
+        "category": "Polity",
+        "number": 64
+      },
+      {
+        "id": "gbp26-mr-65",
+        "text": "खालीलपैकी कोणते तत्व भारतीय राज्यघटनेतील राज्य धोरणाच्या मार्गदर्शक तत्वाचा भाग नाही ?",
+        "options": {
+          "A": "सर्वांसाठी रोजगाराच्या तरतूदी",
+          "B": "स्त्री-पुरुषांना समान कामासाठी समान वेतन",
+          "C": "शांततेने व शस्त्राशिवाय एकत्र जमण्याची परवानगी",
+          "D": "कामगारांसाठी योग्य वेतन"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. शांततेने व निःशस्त्र एकत्र जमण्याचा अधिकार हा कलम 19 अंतर्गत मूलभूत हक्क आहे, मार्गदर्शक तत्त्व नव्हे. म्हणून पर्यायांतील ते एकत्र-जमण्याचे तत्त्व मार्गदर्शक तत्त्वांत बसत नाही.",
+        "category": "Polity",
+        "number": 65
+      },
+      {
+        "id": "gbp26-mr-66",
+        "text": "योग्य उत्तर निवडा.\ni. क्ष-किरण हे श्राव्यातीत/अल्ट्रासोनिक लहरी आहेत.\nii. क्ष-किरण सरळ रेषेत प्रवास करतात.\niii. सॉफ्ट क्ष-किरण ची तरंग लांबी हार्ड क्ष-किरणांपेक्षा कमी असते.\niv. क्ष-किरणांचा वेग हा प्रकाशाच्या वेगापेक्षा कमी असतो.",
+        "options": {
+          "A": "फक्त iv वाक्य बरोबर आहे",
+          "B": "फक्त i, iii वाक्ये बरोबर आहेत",
+          "C": "फक्त ii, iii वाक्ये बरोबर आहेत",
+          "D": "फक्त i वाक्य बरोबर आहे"
+        },
+        "explanation": "MPSC ने अंतिम उत्तरतालिकेत हा प्रश्न रद्द केला आहे, त्यामुळे याला गुण नाहीत — फक्त उजळणीसाठी ठेवा. लक्षात ठेवण्याजोगे — क्ष-किरण ही उच्च-ऊर्जेची विद्युतचुंबकीय लहर आहे (ध्वनिलहर नव्हे), जी सरळ रेषेत प्रकाशाच्या वेगाने प्रवास करते.",
+        "category": "Science",
+        "cancelled": true,
+        "number": 66
+      },
+      {
+        "id": "gbp26-mr-67",
+        "text": "खालील विधाने सत्य की असत्य ते लिहा.\ni. विखंडन (fission) अभिक्रियेमध्ये जड युरेनियम अणू वापरतात.\nii. विखंडन (fission) अभिक्रियेमध्ये खूप ऊर्जा बाहेर पडते.\niii. विखंडन अभिक्रियेमध्ये जड अणू विभागतात.\niv. विखंडन अभिक्रियेमध्ये न्युट्रान्समुळे श्रृंखला अभिक्रिया घडते.",
+        "options": {
+          "A": "सत्य सत्य सत्य असत्य",
+          "B": "सत्य सत्य सत्य सत्य",
+          "C": "असत्य सत्य असत्य असत्य",
+          "D": "असत्य असत्य असत्य सत्य"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. विखंडनाबाबतची चारही विधाने बरोबर — जड युरेनियम अणू वापरले जातात, मोठ्या प्रमाणात ऊर्जा मुक्त होते, अतिरिक्त न्यूट्रॉन बाहेर पडतात आणि साखळी अभिक्रिया चालते — म्हणून 'खरे, खरे, खरे, खरे' हा पर्याय योग्य.",
+        "category": "Science",
+        "number": 67
+      },
+      {
+        "id": "gbp26-mr-68",
+        "text": "ध्वनी ऊर्जा म्हणजे ____________.",
+        "options": {
+          "A": "यांत्रिक ऊर्जेचा कंपन करणारा स्रोत",
+          "B": "विद्युत ऊर्जेचा कंपन करणारा स्रोत",
+          "C": "चुंबकीय ऊर्जेचा कंपन करणारा स्रोत",
+          "D": "वरीलपैकी सर्व"
+        },
+        "correctAnswer": "A",
+        "explanation": "सोडवत गेल्यास पर्याय A येतो. ध्वनी म्हणजे कंपन पावणाऱ्या स्रोताची यांत्रिक ऊर्जा, जी माध्यमातून दाब-लहरींच्या रूपात पसरते. माध्यम लागते म्हणून ती यांत्रिक ऊर्जा आहे — विद्युतचुंबकीय नव्हे.",
+        "category": "Science",
+        "number": 68
+      },
+      {
+        "id": "gbp26-mr-69",
+        "text": "हॅमेटाईट पासून कोणता धातू मिळवला जातो ?",
+        "options": {
+          "A": "ॲल्युमिनिअम (Al)",
+          "B": "झिंक (Zn)",
+          "C": "कॉपर (Cu)",
+          "D": "लोखंड/आयर्न (Fe)"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. हेमॅटाइट हे लोहाचे खनिज (Fe₂O₃) आहे, म्हणून त्यातून मिळणारा धातू म्हणजे लोह (Fe). हेमॅटाइट लोह-खनिज लोहाशी जोडणे हा इथला झटपट मार्ग.",
+        "category": "Science",
+        "number": 69
+      },
+      {
+        "id": "gbp26-mr-70",
+        "text": "खालीलपैकी कोणते मूलद्रव्य आवर्तसारणी मधील 'पी' गणात समावेश आहे ?",
+        "options": {
+          "A": "फ्रान्सशियम (Fr)",
+          "B": "युरॅनियम (U)",
+          "C": "इंडियम (In)",
+          "D": "कॉपर (Cu)"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. इंडियम (In) आधुनिक आवर्तसारणीच्या p-गटात असते. गट 13–18 हे p-गट बनवतात हे आठवा, आणि गट 13 मधील इंडियम नेमके तिथे बसते.",
+        "category": "Science",
+        "number": 70
+      },
+      {
+        "id": "gbp26-mr-71",
+        "text": "₉₂U²³⁸ च्या अणूमध्ये किती न्यूट्रॉन्स असतात ?\nअ. 92\nब. 238\nक. 330\nड. 184",
+        "options": {
+          "A": "(ब – अ)",
+          "B": "(क – अ)",
+          "C": "(अ + ड)",
+          "D": "(ब – ड)"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. न्यूट्रॉनची संख्या म्हणजे वस्तुमानांक वजा अणुक्रमांक, म्हणून ₉₂U²³⁸ साठी ती 238 − 92 = 146, म्हणजे दिलेल्या संकेतात (b − a). न्यूट्रॉन संख्या नेहमी वरचा आकडा वजा खालचा आकडा.",
+        "category": "Science",
+        "number": 71
+      },
+      {
+        "id": "gbp26-mr-72",
+        "text": "खालीलपैकी कोणता कोएलेंटेरेटा फायलमशी संबंधित नाही ?",
+        "options": {
+          "A": "समुद्री पेन (सी पेन)",
+          "B": "ब्लू कोरल",
+          "C": "समुद्री काकडी (सी कुकुम्बर)",
+          "D": "सी फॅन"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. समुद्री काकडी हा एकायनोडर्म आहे, सीलेंटरेटा (नायडेरिया) संघाचा सदस्य नव्हे. जेलीफिश, हायड्रा व प्रवाळ हे खरे सीलेंटरेट, म्हणून समुद्री काकडी वेगळी.",
+        "category": "Science",
+        "number": 72
+      },
+      {
+        "id": "gbp26-mr-73",
+        "text": "खालीलपैकी कोणते उभयचर प्राणी आंधळे आहेत ?",
+        "options": {
+          "A": "बेडूक",
+          "B": "टॉड्स",
+          "C": "सीसीलीयन",
+          "D": "सॅलॅमँडर्स"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. सिसिलियन हे पाय नसलेले, बिळे खणणारे उभयचर असून ते जवळपास अंध असतात — त्यांचे डोळे त्वचेखाली वा हाडाखाली लपलेले. उभयचरांत हा 'अंध' संकेत थेट सिसिलियनकडे नेतो.",
+        "category": "Science",
+        "number": 73
+      },
+      {
+        "id": "gbp26-mr-74",
+        "text": "डिप्लोडोकस कोणत्या सब-ऑर्डरशी संबंधित आहे ?",
+        "options": {
+          "A": "ऑर्निथोपोडा",
+          "B": "टेरोडक्टायलोडिया",
+          "C": "सोरोपोडा",
+          "D": "ॲम्फिस्बेनिया"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. लांब मानेचा महाकाय डिप्लोडोकस हा सॉरोपोडा उपगणात मोडतो. लांब मानेचा, प्रचंड शाकाहारी प्राणी सॉरोपोडाशी जोडला की थेरोपोड व इतर उपगणांपासून वेगळा होतो.",
+        "category": "Science",
+        "number": 74
+      },
+      {
+        "id": "gbp26-mr-75",
+        "text": "मातीचा/मृदेचा उपजाऊ स्तरांच्या नुकसानीस ________ म्हणतात.",
+        "options": {
+          "A": "मृदाजनन",
+          "B": "पॉडझोलायझेशन (मातीच्या निर्मितीची प्रक्रिया)",
+          "C": "मातीची धूप",
+          "D": "वरीलपैकी काहीही नाही"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. मातीचा सुपीक वरचा थर निघून जाणे म्हणजे मृदा अपक्षरण (soil erosion) — पाणी वा वाऱ्याने वाहून जाणे. हा वरच्या मातीचा ऱ्हास आहे, निर्मिती नव्हे, म्हणून मृदा अपक्षरण ही संज्ञा.",
+        "category": "Geography",
+        "number": 75
+      },
+      {
+        "id": "gbp26-mr-76",
+        "text": "लिंबू वरील कँकर रोग ________ या रोगकारका मुळे होतो.",
+        "options": {
+          "A": "उस्टींलँगो मायडीस",
+          "B": "झॅनथोमोनास सिट्राय",
+          "C": "क्लॅव्हिसेप्स मायक्रोसेफॅला",
+          "D": "स्पेसलॉथेका सोरघी"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. सिट्रस कँकर हा रोग झँथोमोनास सिट्री या जीवाणूमुळे होतो. लक्षात घ्या हा जीवाणूजन्य (बुरशी वा विषाणूजन्य नव्हे) रोग आहे, आणि रोगकारकाच्या नावातच लिंबूवर्गीयांसाठी 'सिट्री' आहे.",
+        "category": "Science",
+        "number": 76
+      },
+      {
+        "id": "gbp26-mr-77",
+        "text": "________ वनस्पतीच्या जोमदार वाढीसाठी सर्वोत्तम मृदा/माती आहे.",
+        "options": {
+          "A": "वालुकामय माती",
+          "B": "चिकन माती",
+          "C": "लोम माती",
+          "D": "वरीलपैकी काहीही नाही"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. पोयटा माती (loam) — वाळू, गाळ व चिकणमातीचे संतुलित मिश्रण — पाणी व अन्नद्रव्ये चांगली धरून ठेवते आणि मोकळा निचराही करते, म्हणून जोमदार वनस्पती वाढीसाठी ती सर्वोत्तम. म्हणून पोयटा माती हा पर्याय.",
+        "category": "Geography",
+        "number": 77
+      },
+      {
+        "id": "gbp26-mr-78",
+        "text": "प्रमस्तिष्कमेरू द्रव हा मेंदूच्या पोकळीतील कोरोईड प्लेक्सस् मध्ये तयार झालेला व सबअॅराक्नाईड पोकळीमधून मेंदू व मज्जारज्जू सभोवती फिरणारा द्रव पदार्थ आहे. याबाबत खालील विधाने विचारार्थ घ्या.\nअ. मेंदूला प्राणवायू (ऑक्सिजन) पुरवण्याचे तो माध्यम आहे.\nब. तो टाकाऊ पदार्थ दूर वाहून नेतो.\nक. तो मेंदूला पोषण पुरवितो.\nड. तो, मेंदू व मज्जारज्जू साठी आघातप्रतिबंधक म्हणून काम करतो.\nवरीलपैकी कोणती/कोणते विधान/विधाने बरोबर आहेत ?",
+        "options": {
+          "A": "फक्त अ व ब",
+          "B": "फक्त ड",
+          "C": "अ, ब, क आणि ड",
+          "D": "फक्त ब आणि क"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. मस्तिष्क-मेरुद्रवाबाबतचे प्रत्येक विधान बरोबर — तो कोरॉइड प्लेक्ससद्वारे स्रवतो, सब-अॅरॅक्नॉइड अवकाशात फिरतो, मेंदू व मेरुरज्जूला उशीसारखा आधार देतो वगैरे — म्हणून A, B, C व D मिळून हे उत्तर.",
+        "category": "Science",
+        "number": 78
+      },
+      {
+        "id": "gbp26-mr-79",
+        "text": "मानवाच्या शरीरामध्ये, पाण्याच्या संतुलनाचे नियंत्रण, रक्तातील क्षारांच्या प्रमाणाचे नियंत्रण, रक्ताच्या सामूचे (pH) नियंत्रण, टाकाऊ पदार्थांचे व अतिरिक्त क्षारांचे शरीराबाहेर उत्सर्जन इ. कार्ये प्रामुख्याने ________ करते.",
+        "options": {
+          "A": "त्वचा",
+          "B": "लहान आंतडे",
+          "C": "यकृत",
+          "D": "मूत्रपिंड"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. शरीरातील पाण्याचा समतोल, रक्तातील क्षारांचे प्रमाण व pH यांचे नियमन आणि नत्रयुक्त टाकाऊ पदार्थांचे उत्सर्जन ही सर्व मूत्रपिंडाची कार्ये आहेत. या समस्थितीच्या कामांचा समूह अवयव म्हणून मूत्रपिंड ओळखतो.",
+        "category": "Science",
+        "number": 79
+      },
+      {
+        "id": "gbp26-mr-80",
+        "text": "खालीलपैकी कोणती जीवनसत्त्वे पाण्यात विद्राव्य आहेत ?",
+        "options": {
+          "A": "जीवनसत्त्व A आणि जीवनसत्त्व D",
+          "B": "जीवनसत्त्व E आणि जीवनसत्त्व K",
+          "C": "जीवनसत्त्व B समूह आणि जीवनसत्त्व C",
+          "D": "जीवनसत्त्व A आणि जीवनसत्त्व K"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. पाण्यात विरघळणारी जीवनसत्त्वे म्हणजे ब-समूह (B-complex) व क जीवनसत्त्व; अ, ड, ई व के ही स्निग्धांत विरघळणारी. म्हणून ब-समूह अधिक क हा पाण्यात विरघळणारा संच.",
+        "category": "Science",
+        "number": 80
+      },
+      {
+        "id": "gbp26-mr-81",
+        "text": "एका वस्तूवर दुकानदार ग्राहकास 10% सूट देतो, तरीही त्यास 25% नफा होतो, जर वस्तूची छापील किंमत 750 रुपये असेल तर दुकानदाराने ती वस्तू किती किंमतीला खरेदी केली असेल ?",
+        "options": {
+          "A": "रु. 540",
+          "B": "रु. 450",
+          "C": "रु. 520",
+          "D": "रु. 480"
+        },
+        "correctAnswer": "A",
+        "explanation": "सोडवत गेल्यास पर्याय A येतो. छापील 750 रुपयांवर 10% सूट दिल्यास विक्री किंमत 675 रुपये होते. यावरही 25% नफा मिळतो, म्हणून खरेदी किंमत = 675 ÷ 1.25 = 540 रुपये. म्हणून दुकानदाराने ती 540 रुपयांना विकत घेतली.",
+        "category": "Aptitude",
+        "number": 81
+      },
+      {
+        "id": "gbp26-mr-82",
+        "text": "सोडवा :\n(√45 + √245) ÷ (√320 - √180)",
+        "options": {
+          "A": "68",
+          "B": "44",
+          "C": "10",
+          "D": "05"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. सोपे करा: √45 + √245 = 3√5 + 7√5 = 10√5, आणि √320 − √180 = 8√5 − 6√5 = 2√5. भागाकार केल्यास 10√5 ÷ 2√5 = 5. म्हणून मूल्य 05.",
+        "category": "Aptitude",
+        "number": 82
+      },
+      {
+        "id": "gbp26-mr-83",
+        "text": "एका आयताकृती पट्टीची मोठी बाजू 40 से.मी. आहे व कर्ण त्यापेक्षा 1 से.मी. ने मोठा आहे. त्या पट्टीची परिमिती किती ?",
+        "options": {
+          "A": "90 से.मी.",
+          "B": "82 से.मी.",
+          "C": "92 से.मी.",
+          "D": "98 से.मी."
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. मोठी बाजू 40 सेमी आणि कर्ण 1 सेमी अधिक (41 सेमी) असल्याने दुसरी बाजू = √(41² − 40²) = √(1681 − 1600) = √81 = 9 सेमी. परिमिती = 2(40 + 9) = 98 सेमी.",
+        "category": "Aptitude",
+        "number": 83
+      },
+      {
+        "id": "gbp26-mr-84",
+        "text": "दोन संख्या 5 : 7 या प्रमाणात आहे. जर दोन्ही संख्यांमध्ये 12 मिळविले तर त्याचे प्रमाण 7 : 9 होते. मूळ दोन संख्यांमधील फरक किती आहे ?",
+        "options": {
+          "A": "10",
+          "B": "12",
+          "C": "14",
+          "D": "16"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. संख्या 5x व 7x माना. मग (5x + 12)/(7x + 12) = 7/9 वरून 45x + 108 = 49x + 84, म्हणून 4x = 24 व x = 6. संख्या 30 व 42, आणि त्यांचा फरक 12.",
+        "category": "Aptitude",
+        "number": 84
+      },
+      {
+        "id": "gbp26-mr-85",
+        "text": "दोन रेल्वेगाड्या एकाच दिशेने अनुक्रमे 112 किलोमीटर/ताशी व 76 किलोमीटर/ताशी या वेगाने धावत आहेत. वेगवान गाडी ही धीम्या गाडीत बसलेल्या एका व्यक्तीला 20 सेकंदात ओलांडते तर वेगवान गाडीची लांबी किती ?",
+        "options": {
+          "A": "100 मीटर",
+          "B": "200 मीटर",
+          "C": "250 मीटर",
+          "D": "150 मीटर"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. एकाच दिशेने जाताना सापेक्ष वेग = 112 − 76 = 36 किमी/तास = 10 मी/सेकंद. प्रश्नात दिलेल्या ओलांडण्याच्या वेळेत 10 मी/सेकंदने रेल्वेची लांबी 200 मीटर येते.",
+        "category": "Aptitude",
+        "number": 85
+      },
+      {
+        "id": "gbp26-mr-86",
+        "text": "एक दुकानदार एक वस्तुची खरेदी रु. 1,200 मध्ये करतो व ती विकतो जेणेकरून त्याला 20% नफा होईल. नंतर तो मार्क केलेल्या किंमतीवर 10% सूट देतो. वस्तुची मार्क केलेली किंमत किती आहे ?",
+        "options": {
+          "A": "रु. 1,500",
+          "B": "रु. 1,600",
+          "C": "रु. 1,650",
+          "D": "रु. 1,700"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. 1,200 रुपये खर्चावर 20% नफा म्हणजे विक्री किंमत 1,440 रुपये. ती चिन्हांकित किमतीवर 10% सूट दिल्यानंतरची असल्याने MP × 0.9 = 1,440, म्हणून MP = 1,440 ÷ 0.9 = 1,600 रुपये.",
+        "category": "Aptitude",
+        "number": 86
+      },
+      {
+        "id": "gbp26-mr-87",
+        "text": "दोन व्यक्ती एक काम एकत्रितपणे 24 तासात पूर्ण करू शकतात. जर त्यांच्यातील वेगाने काम करणारी व्यक्ती दुसऱ्या व्यक्तीपेक्षा 3 पट वेगाने काम करत असेल तर फक्त वेगाने काम करणारी व्यक्ती ते काम किती वेळात पूर्ण करेल ?",
+        "options": {
+          "A": "72 तास",
+          "B": "48 तास",
+          "C": "36 तास",
+          "D": "32 तास"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. दोघे मिळून 24 तासांत काम संपवतात व एक 3 पट वेगवान असेल, तर वेग r व 3r माना; एकूण काम = (r + 3r) × 24 = 96r. वेगवान व्यक्ती एकटी 96r ÷ 3r = 32 तासांत करते.",
+        "category": "Aptitude",
+        "number": 87
+      },
+      {
+        "id": "gbp26-mr-88",
+        "text": "रणधिर जवळ 10,000 रुपये होते. त्यापैकी काही रक्कम तो स्कीम A मध्ये 5% द.सा.द.शे. सरळ व्याज दराने गुंतवितो तर उर्वरित रक्कम स्कीम B मध्ये 8% द.सा.द.शे. सरळ व्याज दराने गुंतवितो. जर त्याला एक वर्षानंतर 710 रुपये व्याज मिळाले तर त्याने स्कीम B मध्ये किती गुंतवणूक केली ?",
+        "options": {
+          "A": "रु. 3,000",
+          "B": "रु. 5,500",
+          "C": "रु. 6,500",
+          "D": "रु. 7,000"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. 10,000 रुपये योजना A (5%) व योजना B (8% साधे व्याज) यांत विभागताना, प्रश्नातील अट योजना B मध्ये 7,000 रुपये घातल्यावर पूर्ण होते. म्हणून B मध्ये गुंतवलेली रक्कम 7,000 रुपये.",
+        "category": "Aptitude",
+        "number": 88
+      },
+      {
+        "id": "gbp26-mr-89",
+        "text": "जर एका आयताची लांबी 40% नी वाढवली. तर आयताचे क्षेत्रफळ तेवढेच राहण्यासाठी आयताची रुंदी किती टक्क्यांनी कमी करावी लागेल ?",
+        "options": {
+          "A": "25 3/4 %",
+          "B": "28 4/7 %",
+          "C": "30 4/5 %",
+          "D": "22 3/4 %"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. लांबी 40% ने वाढल्यावर (×1.4) क्षेत्रफळ कायम ठेवण्यासाठी रुंदी तिच्या 1/1.4 पट व्हावी लागते. घट = 1 − 1/1.4 = 0.4/1.4 = 2/7 = 28 4/7 %.",
+        "category": "Aptitude",
+        "number": 89
+      },
+      {
+        "id": "gbp26-mr-90",
+        "text": "टिना हिने काही आंबे खरेदी केले. त्यातील 10% आंबे सडके होते. शिल्लक आंब्यांपैकी 80% आंबे तिने मित्रांना दिले. जर तिच्याकडे 45 आंबे उरले असतील तर तिने बाजारातून एकूण किती आंबे खरेदी केले ?",
+        "options": {
+          "A": "120",
+          "B": "250",
+          "C": "200",
+          "D": "320"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. 10% सडल्यावर 90% शिल्लक; त्यातील 80% दिल्यावर 90% चे 20% उरतात. म्हणून 0.20 × 0.90 × एकूण = 45, म्हणजे 0.18 × एकूण = 45 आणि एकूण = 250 आंबे.",
+        "category": "Aptitude",
+        "number": 90
+      },
+      {
+        "id": "gbp26-mr-91",
+        "text": "जर + म्हणजे ×, × म्हणजे ÷, ÷ म्हणजे − आणि − म्हणजे +, तर (231 × 11 + 23 − 82 ÷ 40) ची किंमत किती ?",
+        "options": {
+          "A": "520",
+          "B": "425",
+          "C": "525",
+          "D": "516"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. चिन्हे बदलल्यावर (+→×, ×→÷, ÷→−, −→+) अभिव्यक्ती होते 231 ÷ 11 × 23 + 82 − 40 = 21 × 23 + 82 − 40 = 483 + 42 = 525.",
+        "category": "Aptitude",
+        "number": 91
+      },
+      {
+        "id": "gbp26-mr-92",
+        "text": "खालीलपैकी कोणती वेन आकृती चौरस, चौकोन व समभुज चौकोन या तीन वर्गांमधील संबंध सर्वोत्तम दर्शवते?",
+        "options": {
+          "A": "दोन एककेंद्री वर्तुळे, आणि तिसरे वर्तुळ त्यांच्या पूर्णपणे बाहेर",
+          "B": "वर्तुळात वर्तुळ, त्यात आणखी वर्तुळ — एका बाजूला निगडित (एककेंद्री नव्हे)",
+          "C": "तीन एककेंद्री वर्तुळे, प्रत्येक पुढील वर्तुळाच्या आत पूर्णपणे",
+          "D": "तीन परस्पर छेदणारी (एकमेकांत मिसळणारी) वर्तुळे"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. प्रत्येक चौरस हा समभुज चौकोन आहे आणि प्रत्येक समभुज चौकोन हा चौकोन आहे, म्हणून तिन्ही वर्ग एकात एक पूर्णपणे सामावलेले. हा संबंध तीन एककेंद्री वर्तुळांनी दर्शवला जातो, प्रत्येक पुढील वर्तुळाच्या आत पूर्णपणे.",
+        "category": "Aptitude",
+        "number": 92
+      },
+      {
+        "id": "gbp26-mr-93",
+        "text": "अक्षरांमधील वगळलेल्या अक्षरांची संख्या प्रत्येक वेळी एकाने कमी होत जाते. या नियमाचे पालन करणारी खालीलपैकी कोणती अक्षरमालिका आहे ?",
+        "options": {
+          "A": "BHMQSU",
+          "B": "CHMQTV",
+          "C": "FJNQST",
+          "D": "FLQUXZ"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. FLQUXZ मध्ये लगतच्या अक्षरांमध्ये वगळलेली अक्षरे 5 (F→L), 4 (L→Q), 3 (Q→U), 2 (U→X) व 1 (X→Z) — नीट घटता 5,4,3,2,1. हे नियमाशी जुळते, म्हणून FLQUXZ ही मालिका.",
+        "category": "Aptitude",
+        "number": 93
+      },
+      {
+        "id": "gbp26-mr-94",
+        "text": "प्रज्ञाची बस शाळेत पोहोचली तेव्हा दक्षिणेकडे तोंड करून उभी होती. घरून निघाल्यावर ती दोन वेळा डावीकडे एक वेळा उजवीकडे वळली तर घरून निघताना तिचे तोंड/चेहरा कोणत्या दिशेला होता ?",
+        "options": {
+          "A": "पूर्व",
+          "B": "उत्तर",
+          "C": "पश्चिम",
+          "D": "दक्षिण"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. दोन डावी वळणे व एक उजवे वळण मिळून निव्वळ 90° घड्याळाच्या उलट दिशेने वळण होते. शेवटी ती दक्षिणेकडे तोंड करून होती, म्हणून सुरुवातीची दिशा दक्षिणेपासून 90° घड्याळाच्या दिशेने — म्हणजे पश्चिम.",
+        "category": "Aptitude",
+        "number": 94
+      },
+      {
+        "id": "gbp26-mr-95",
+        "text": "खालील चौरसात प्रश्न चिन्हाच्या (?) जागी कोणती संख्या येईल ?\n68\t38\t72\n100\t87\t137\n?\t30\t54",
+        "options": {
+          "A": "48",
+          "B": "24",
+          "C": "44",
+          "D": "42"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. तिन्ही ओळींना जोडणाऱ्या स्तंभाच्या पॅटर्ननुसार प्रश्नचिन्हाच्या घरात बसणारी संख्या 48 येते. म्हणून 48 ने चौरस पूर्ण होतो.",
+        "category": "Aptitude",
+        "number": 95
+      },
+      {
+        "id": "gbp26-mr-96",
+        "text": "प्रश्न चिन्हाच्या ठिकाणी योग्य अंक शोधा.\n14, 27, 44, ?, 90, 119, 152",
+        "options": {
+          "A": "57",
+          "B": "63",
+          "C": "65",
+          "D": "84"
+        },
+        "correctAnswer": "C",
+        "explanation": "पडताळलेले उत्तर पर्याय C आहे. फरक 13, 17, 21, 25, 29, 33 असे — प्रत्येक वेळी 4 ने वाढतात. म्हणून 44 नंतरचे पद 44 + 21 = 65, जे पुढे बरोबर 90 कडे नेते. गहाळ संख्या 65.",
+        "category": "Aptitude",
+        "number": 96
+      },
+      {
+        "id": "gbp26-mr-97",
+        "text": "खालील दोन विधानांपैकी एक प्रतिपादन (A) व एक कारण (R) असे दिले आहेत. प्रतिपादन व कारण या दोघांतील परस्पर संबंध खाली दिलेल्या पर्यायी उत्तरांमधून शोधा.\nप्रतिपादन (A) : कापसाची गाळाच्या जमिनीत वाढ होते.\nकारण (R) : गाळाच्या जमिनी ह्या खूप सुपीक असतात.",
+        "options": {
+          "A": "(A) व (R) हे दोन्ही बरोबर आहे आणि (R) हे (A) चे अचूक स्पष्टीकरण आहे",
+          "B": "(A) व (R) हे दोन्ही बरोबर आहे आणि (R) हे (A) चे अचूक स्पष्टीकरण नाही",
+          "C": "(A) हे बरोबर परंतु (R) हे चूक आहे",
+          "D": "(A) हे चूक परंतु (R) हे बरोबर आहे"
+        },
+        "correctAnswer": "A",
+        "explanation": "बरोबर पर्याय A आहे. विधान (A) व कारण (R) दोन्ही बरोबर आहेत, आणि कारण खरोखर विधान का बरोबर आहे हे स्पष्ट करते. म्हणून 'दोन्ही बरोबर व R हे A चे योग्य स्पष्टीकरण' हे योग्य — दोन्ही ओळी कारण-परिणाम म्हणून एकत्र वाचा.",
+        "category": "Geography",
+        "number": 97
+      },
+      {
+        "id": "gbp26-mr-98",
+        "text": "एका शाळेमध्ये A, B, C, D, E आणि F अशा सहा व्यक्ती शिक्षक म्हणून कार्यरत आहेत. प्रत्येक शिक्षक दोन विषय शिकवतात त्यापैकी एक अनिवार्य विषय आहे आणि दुसरा ऐच्छिक विषय आहे. D चा ऐच्छिक विषय इतिहास आहे जो की इतर तीन जणांचा अनिवार्य विषय आहे. E आणि F यांचा दोन पैकी एक विषय भौतिकशास्त्र आहे. F चा गणित हा अनिवार्य विषय असून तो C आणि E चा ऐच्छिक विषय आहे. इतिहास आणि इंग्रजी हे A चे विषय आहेत, परंतु अनिवार्य आणि ऐच्छिक विषय म्हणून ते D च्या अगदी उलट आहेत. रसायनशास्त्र हे केवळ एका शिक्षकाचा ऐच्छिक विषय आहे. यामध्ये शाळेतील एकमेव महिला शिक्षिकेचा अनिवार्य विषय इंग्रजी आहे, तर C चा अनिवार्य विषय कोणता आहे ?",
+        "options": {
+          "A": "इतिहास",
+          "B": "भौतिकशास्त्र",
+          "C": "रसायनशास्त्र",
+          "D": "इंग्रजी"
+        },
+        "correctAnswer": "A",
+        "explanation": "सोडवत गेल्यास पर्याय A येतो. सूचना जुळवत — D चा ऐच्छिक विषय इतिहास तर इतर तिघांचा तो अनिवार्य, आणि A व D साठी दिलेली अदलाबदल — साखळी C चा अनिवार्य विषय इतिहास असल्याकडे नेते. तक्ता टप्प्याटप्प्याने बांधला की C निश्चित होतो.",
+        "category": "Aptitude",
+        "number": 98
+      },
+      {
+        "id": "gbp26-mr-99",
+        "text": "जर 2x + 3y = 118\n2x - 3y = - 62\nतर 'y' ची किंमत किती ?",
+        "options": {
+          "A": "56",
+          "B": "180",
+          "C": "90",
+          "D": "30"
+        },
+        "correctAnswer": "D",
+        "explanation": "आयोगाने पर्याय D स्वीकारला आहे. 2x + 3y = 118 व 2x − 3y = −62 बेरीज केल्यास 4x = 56, म्हणून x = 14; पुन्हा घातल्यास 3y = 118 − 28 = 90, म्हणून y = 30.",
+        "category": "Aptitude",
+        "number": 99
+      },
+      {
+        "id": "gbp26-mr-100",
+        "text": "एक चोर एका घरात त्याची लूट लपवतो. पोलिस त्याचा पाठलाग करत असतांना, तो पश्चिमे कडे 2 किमी धावतो आणि नंतर उजवीकडे वळतो आणि आणखी 2 किमी धावतो. नंतर तो उजवीकडे वळतो आणि आणखी 7 किमी धावतो. शेवटी, तो उजवीकडे दोन वळणे घेतो आणि प्रत्येक वळण घेतल्यावर 2 किमी धावतो आणि पोलिसांना हरवतो. ज्या घरात त्याने लूट लपवली होती, त्या घरात पोहचण्यासाठी त्याला किती अंतर चालावे लागेल ?",
+        "options": {
+          "A": "2 किमी",
+          "B": "3 किमी",
+          "C": "4 किमी",
+          "D": "1 किमी"
+        },
+        "correctAnswer": "B",
+        "explanation": "बरोबर पर्याय B आहे. चोराची काटकोन वळणे व दिलेल्या टप्प्यांच्या लांबीचा माग काढल्यास त्याची अंतिम जागा सुरुवातीच्या घरापासून 3 किमी (वळणांमुळे तयार होणाऱ्या सरळ-रेषेतील अंतराने) येते. म्हणून उत्तर 3 किमी.",
+        "category": "Aptitude",
+        "number": 100
+      }
+    ]
   }
 ]
