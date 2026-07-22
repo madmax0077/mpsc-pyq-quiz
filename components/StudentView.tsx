@@ -274,17 +274,26 @@ export default function StudentView({
     return result;
   }, [filteredQuizzes]);
 
-  const regularQuizzes = useMemo<DisplayQuiz[]>(
-    () =>
-      examQuizzes.map((q) => ({
+  const regularQuizzes = useMemo<DisplayQuiz[]>(() => {
+    // Show papers newest-year-first so the list reads in a tidy chronological
+    // order. Year is parsed from the title (e.g. "... Pre 2026 ..."); papers
+    // without a detectable year (year = 0) sink to the bottom. Ties keep their
+    // original array order via a stable index-based tie-breaker.
+    const yearOf = (title: string): number => {
+      const m = title.match(/\b(19|20)\d{2}\b/);
+      return m ? parseInt(m[0], 10) : 0;
+    };
+    return examQuizzes
+      .map((q, idx) => ({ q, idx, year: yearOf(q.title) }))
+      .sort((a, b) => b.year - a.year || a.idx - b.idx)
+      .map(({ q }) => ({
         id: q.id,
         title: q.title,
         questions: q.questions,
         isCategory: false,
         quizCount: q.questions.length,
-      })),
-    [examQuizzes],
-  );
+      }));
+  }, [examQuizzes]);
 
   const dailyQuiz = useMemo<DisplayQuiz | null>(() => {
     const pool: Question[] = [];
