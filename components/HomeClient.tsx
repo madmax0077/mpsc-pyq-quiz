@@ -7,7 +7,7 @@ import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 
-type AppMode = "home" | "subject" | "topic" | "leaderboard" | "notes" | "rto-amvi";
+type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi";
 
 const GK_MARATHON_TOPIC: { category: Category; topic: string } = {
   category: "Current Affairs",
@@ -62,7 +62,7 @@ export default function HomeClient() {
     } else if (mode === "notes") {
       setAppMode("notes");
       window.history.replaceState({}, "", window.location.pathname);
-    } else if (mode === "subject" || mode === "topic" || mode === "rto-amvi") {
+    } else if (mode === "subject" || mode === "topic" || mode === "topic-tests" || mode === "rto-amvi") {
       setAppMode(mode);
       window.history.replaceState({}, "", window.location.pathname);
     }
@@ -322,18 +322,18 @@ export default function HomeClient() {
                   setAppMode("topic");
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
-                className="group relative overflow-hidden rounded-3xl border border-amber-200/80 bg-gradient-to-br from-amber-50 via-rose-50 to-pink-50 p-7 text-left shadow-sm ring-1 ring-amber-100/50 transition-all hover:-translate-y-1 hover:border-rose-400 hover:shadow-xl hover:shadow-rose-200/60 dark:border-rose-900/70 dark:from-amber-950/40 dark:via-rose-950/40 dark:to-pink-950/40 dark:ring-rose-900/30 dark:hover:border-rose-600 dark:hover:shadow-black/40 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-br from-slate-50 via-white to-slate-100 p-7 text-left shadow-sm ring-1 ring-slate-200/50 transition-all hover:-translate-y-1 hover:border-slate-400 hover:shadow-xl hover:shadow-slate-200/60 dark:border-slate-700/70 dark:from-slate-900/60 dark:via-slate-900 dark:to-slate-800/60 dark:ring-slate-700/30 dark:hover:border-slate-500 dark:hover:shadow-black/40 sm:col-span-2"
               >
-                {/* warm glow corners */}
-                <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-amber-300/60 via-orange-300/40 to-rose-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-amber-500/15 dark:via-orange-500/10 dark:to-rose-500/15" />
-                <div className="absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-gradient-to-tr from-pink-300/40 via-rose-200/40 to-amber-200/30 blur-3xl dark:from-pink-500/15 dark:via-rose-500/10 dark:to-amber-500/10" />
+                {/* subtle graphite glow corners */}
+                <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-slate-300/60 via-slate-200/40 to-slate-400/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-slate-600/20 dark:via-slate-500/10 dark:to-slate-700/20" />
+                <div className="absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-gradient-to-tr from-slate-400/40 via-slate-200/40 to-slate-300/30 blur-3xl dark:from-slate-700/20 dark:via-slate-500/10 dark:to-slate-600/10" />
                 {/* subtle moving sheen on hover */}
                 <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
 
                 <div className="relative flex items-start gap-5">
                   {/* Big "500" badge */}
-                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-rose-600 shadow-lg shadow-rose-300/40 ring-2 ring-white/60 dark:shadow-rose-900/40 dark:ring-rose-300/20">
-                    <span className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-base shadow ring-1 ring-rose-200 dark:bg-slate-800 dark:ring-rose-700">
+                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-600 via-slate-700 to-slate-900 shadow-lg shadow-slate-400/40 ring-2 ring-white/60 dark:shadow-slate-950/40 dark:ring-slate-500/20">
+                    <span className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-base shadow ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-600">
                       🔥
                     </span>
                     <div className="flex flex-col items-center leading-none text-white">
@@ -345,41 +345,41 @@ export default function HomeClient() {
 
                   <div className="min-w-0 flex-1">
                     <div className="mb-1.5 flex flex-wrap items-center gap-2">
-                      <h3 className="text-xl font-bold bg-gradient-to-r from-rose-700 via-orange-700 to-amber-700 bg-clip-text text-transparent dark:from-rose-300 dark:via-orange-300 dark:to-amber-300 sm:text-2xl">
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-600 bg-clip-text text-transparent dark:from-slate-100 dark:via-white dark:to-slate-300 sm:text-2xl">
                         GK 2025-26 Marathon
                       </h3>
                       {/* Pulsing NEW badge */}
-                      <span className="relative inline-flex items-center gap-1 rounded-full bg-rose-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                      <span className="relative inline-flex items-center gap-1 rounded-full bg-slate-700 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
                         <span className="relative flex h-2 w-2">
                           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
                           <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
                         </span>
                         New
                       </span>
-                      <span className="inline-flex items-center gap-1 rounded-full border border-amber-300/80 bg-amber-100/80 px-2 py-0.5 text-[10px] font-semibold text-amber-800 dark:border-amber-700 dark:bg-amber-900/40 dark:text-amber-200">
+                      <span className="inline-flex items-center gap-1 rounded-full border border-slate-300/80 bg-slate-100/80 px-2 py-0.5 text-[10px] font-semibold text-slate-700 dark:border-slate-600 dark:bg-slate-800/60 dark:text-slate-200">
                         📰 Current Affairs
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-rose-700 dark:text-rose-300">Last 6 months</strong> Current Affairs (2025-26) — the
+                      <strong className="font-semibold text-slate-800 dark:text-slate-200">Last 6 months</strong> Current Affairs (2025-26) — the
                       most-asked GK MCQs covering sports, science, awards, politics,
                       schemes and economy. Practice in 5-question sets.
                     </p>
 
                     {/* stats row */}
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
-                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-amber-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-rose-900/40">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-slate-200/70 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-slate-700/50">
                         ✅ 264 verified
                       </span>
-                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-amber-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-rose-900/40">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-slate-200/70 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-slate-700/50">
                         ⚡ 5-Q sets
                       </span>
-                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-amber-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-rose-900/40">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-slate-200/70 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-slate-700/50">
                         🎯 Exam-ready
                       </span>
                     </div>
 
-                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-rose-600 to-orange-500 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-rose-300/40 transition-all group-hover:shadow-lg group-hover:shadow-rose-400/50 dark:shadow-rose-900/40">
+                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-slate-700 to-slate-900 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-slate-400/40 transition-all group-hover:shadow-lg group-hover:shadow-slate-500/50 dark:shadow-slate-950/40">
                       Start the marathon
                       <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -389,6 +389,8 @@ export default function HomeClient() {
                 </div>
               </button>
 
+              {/* Study modes — aligned in one row of three equal tiles */}
+              <div className="grid gap-5 sm:col-span-2 sm:grid-cols-3">
               {/* Subject Wise */}
               <button
                 onClick={() => setAppMode("subject")}
@@ -426,16 +428,84 @@ export default function HomeClient() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-emerald-700 dark:text-emerald-300 mb-2">
-                  🎯 Topic Wise
+                  🎯 Topic Wise (PYQ)
                 </h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Practice curated topic-wise question sets. Select a subject, then dive into specific topics added by admin.
+                  Previous-year questions segregated into granular topics. Pick a subject, then drill into a specific topic.
                 </p>
                 <div className="mt-4 flex items-center text-xs font-semibold text-emerald-500 dark:text-emerald-400">
                   Explore Topics
                   <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
+                </div>
+              </button>
+
+              {/* Topic Tests — curated chapter-wise sets (other than PYQ) */}
+              <button
+                onClick={() => { setPendingDirectTopic(null); setAppMode("topic-tests"); }}
+                className="group relative overflow-hidden rounded-3xl border border-amber-100 bg-gradient-to-br from-amber-50 via-white to-orange-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl hover:shadow-amber-100 dark:border-amber-800 dark:from-amber-950/50 dark:via-slate-900 dark:to-orange-950/50 dark:hover:border-amber-600 dark:hover:shadow-black/20"
+              >
+                <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-amber-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-amber-500/10" />
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md mb-4">
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" />
+                  </svg>
+                </div>
+                <div className="mb-2 flex flex-wrap items-center gap-2">
+                  <h3 className="text-xl font-bold text-amber-700 dark:text-amber-300">
+                    📖 Topic Tests
+                  </h3>
+                  <span className="rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-700 dark:border-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
+                    Other than PYQ
+                  </span>
+                </div>
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Curated chapter-wise practice sets — Science tests, key schemes, newspapers and more, kept separate from PYQ.
+                </p>
+                <div className="mt-4 flex items-center text-xs font-semibold text-amber-500 dark:text-amber-400">
+                  Browse Tests
+                  <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </div>
+              </button>
+              </div>
+
+              {/* RTO AMVI — separate exam section */}
+              <button
+                onClick={() => { setAppMode("rto-amvi"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className="group relative overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-100 dark:border-blue-800 dark:from-blue-950/40 dark:via-slate-900 dark:to-sky-950/40 dark:hover:border-blue-500 dark:hover:shadow-black/20 sm:col-span-2"
+              >
+                <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-blue-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-blue-500/10" />
+                <div className="flex items-start gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-sky-600 text-white shadow-md">
+                    <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0M19.5 18.75a1.5 1.5 0 01-3 0M2.25 15.75v-6A2.25 2.25 0 014.5 7.5h15a2.25 2.25 0 012.25 2.25v6a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25zM5.25 11.25h13.5" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold text-blue-700 dark:text-blue-300">
+                        🚗 RTO AMVI
+                      </h3>
+                      <span className="rounded-full bg-blue-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+                        New
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700 dark:border-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">
+                        Free
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                      Assistant Motor Vehicle Inspector exam preparation. Section: <strong>Automobile Engineering</strong> — practice past paper MCQs covering IC engines, fuels, gears, brakes, fluid mechanics, vehicle layout and more.
+                    </p>
+                    <div className="mt-3 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400">
+                      Open RTO AMVI section
+                      <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
               </button>
 
@@ -472,43 +542,6 @@ export default function HomeClient() {
                     </p>
                     <div className="mt-3 flex items-center text-xs font-semibold text-orange-500 dark:text-orange-400">
                       Open Notes
-                      <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </button>
-
-              {/* RTO AMVI — separate exam section */}
-              <button
-                onClick={() => { setAppMode("rto-amvi"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                className="group relative overflow-hidden rounded-3xl border border-amber-200 bg-gradient-to-br from-amber-50 via-white to-yellow-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-100 dark:border-amber-800 dark:from-amber-950/40 dark:via-slate-900 dark:to-yellow-950/40 dark:hover:border-amber-500 dark:hover:shadow-black/20 sm:col-span-2"
-              >
-                <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-amber-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-amber-500/10" />
-                <div className="flex items-start gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md">
-                    <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0M19.5 18.75a1.5 1.5 0 01-3 0M2.25 15.75v-6A2.25 2.25 0 014.5 7.5h15a2.25 2.25 0 012.25 2.25v6a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25zM5.25 11.25h13.5" />
-                    </svg>
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="mb-1 flex flex-wrap items-center gap-2">
-                      <h3 className="text-xl font-bold text-amber-700 dark:text-amber-300">
-                        🚗 RTO AMVI
-                      </h3>
-                      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
-                        New
-                      </span>
-                      <span className="inline-flex items-center gap-1 rounded-full border border-orange-200 bg-orange-50 px-2 py-0.5 text-[10px] font-semibold text-orange-700 dark:border-orange-800 dark:bg-orange-900/30 dark:text-orange-300">
-                        Free
-                      </span>
-                    </div>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Assistant Motor Vehicle Inspector exam preparation. Section: <strong>Automobile Engineering</strong> — practice past paper MCQs covering IC engines, fuels, gears, brakes, fluid mechanics, vehicle layout and more.
-                    </p>
-                    <div className="mt-3 flex items-center text-xs font-semibold text-amber-600 dark:text-amber-400">
-                      Open RTO AMVI section
                       <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -714,7 +747,7 @@ export default function HomeClient() {
             <StudentView language="english" challenge={null} homeKey={homeKey} topicMode={false} guestUser={guestIdentity} directTopic={null} examFilter="RTO_AMVI" />
           </div>
         ) : (
-          <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic"} guestUser={guestIdentity} directTopic={pendingDirectTopic} />
+          <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic" || appMode === "topic-tests"} topicSource={appMode === "topic-tests" ? "catalog" : "pyq"} guestUser={guestIdentity} directTopic={pendingDirectTopic} />
         )}
       </main>
 

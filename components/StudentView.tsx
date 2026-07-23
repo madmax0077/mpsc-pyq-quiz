@@ -120,11 +120,21 @@ interface GuestUserInfo {
   photoURL: string | null;
 }
 
+/**
+ * Subjects hidden from the PYQ "Topic Wise" browser. English & Marathi are
+ * language-skill sections rather than knowledge topics, and Current Affairs is
+ * time-sensitive (served instead by the GK Marathon / Topic Tests), so all
+ * three are excluded from the PYQ topic catalogue. The questions still exist
+ * inside the full exam papers.
+ */
+const PYQ_HIDDEN_SUBJECTS = new Set<Category>(["English", "Marathi", "Current Affairs"]);
+
 export default function StudentView({
   language = "english",
   challenge,
   homeKey = 0,
   topicMode = false,
+  topicSource = "pyq",
   guestUser = null,
   directTopic = null,
   examFilter = null,
@@ -133,6 +143,13 @@ export default function StudentView({
   challenge?: ChallengeInfo | null;
   homeKey?: number;
   topicMode?: boolean;
+  /**
+   * Which topic catalogue the Topic-wise browser draws from:
+   * - "pyq"     → topics discovered on previous-year exam papers (default).
+   * - "catalog" → the curated "topic-only" practice sets (chapter tests, etc.).
+   * These are kept as two distinct tabs so PYQ topics and curated sets never mix.
+   */
+  topicSource?: "pyq" | "catalog";
   guestUser?: GuestUserInfo | null;
   directTopic?: { category: Category; topic: string } | null;
   /**
@@ -342,11 +359,14 @@ export default function StudentView({
     setSubjectTopics(getSubjectTopics());
   }, [homeKey]);
 
-  const topicMap = useMemo(() => {
+  // Build two independent topic catalogues so PYQ topics and the curated
+  // "topic-only" practice sets never bleed into each other.
+  const buildTopicMap = useCallback((quizList: Quiz[], hideLanguageSubjects: boolean) => {
     const map = new Map<string, { category: Category; topic: string; questions: Question[] }>();
-    for (const quiz of filteredQuizzes) {
+    for (const quiz of quizList) {
       for (const q of quiz.questions) {
         if (!q.category || !q.topic) continue;
+        if (hideLanguageSubjects && PYQ_HIDDEN_SUBJECTS.has(q.category)) continue;
         const key = `${q.category}|||${q.topic}`;
         if (!map.has(key)) map.set(key, { category: q.category, topic: q.topic, questions: [] });
         const entry = map.get(key)!;
@@ -356,11 +376,27 @@ export default function StudentView({
       }
     }
     return map;
-  }, [filteredQuizzes]);
+  }, []);
+
+  // PYQ topics: from real exam papers only (topic-only sets excluded), and
+  // without the English/Marathi language subjects.
+  const pyqTopicMap = useMemo(
+    () => buildTopicMap(filteredQuizzes.filter((q) => !q.topicOnly), true),
+    [filteredQuizzes, buildTopicMap],
+  );
+  // Curated topic sets: the pre-existing "topic-only" quizzes, kept exactly as
+  // they were (their own subjects & topics, all languages).
+  const catalogTopicMap = useMemo(
+    () => buildTopicMap(filteredQuizzes.filter((q) => q.topicOnly), false),
+    [filteredQuizzes, buildTopicMap],
+  );
+  const topicMap = topicSource === "catalog" ? catalogTopicMap : pyqTopicMap;
+  const hideLangSubjects = topicSource !== "catalog";
 
   const topicCountsByCategory = useMemo(() => {
     const counts: Record<string, { topicCount: number; questionCount: number }> = {};
     for (const cat of CATEGORIES) {
+      if (hideLangSubjects && PYQ_HIDDEN_SUBJECTS.has(cat)) continue;
       const registeredTopics = new Set(subjectTopics[cat] || []);
       for (const [, entry] of topicMap) {
         if (entry.category === cat) registeredTopics.add(entry.topic);
@@ -371,7 +407,7 @@ export default function StudentView({
       counts[cat] = { topicCount: registeredTopics.size, questionCount };
     }
     return counts;
-  }, [topicMap, subjectTopics]);
+  }, [topicMap, subjectTopics, hideLangSubjects]);
 
   useEffect(() => {
     if (challenge && quizzes.length > 0 && !selectedQuiz) {
@@ -395,9 +431,10 @@ export default function StudentView({
   useEffect(() => {
     if (!directTopic || selectedQuiz) return;
     const key = `${directTopic.category}|||${directTopic.topic}`;
-    if (!topicMap.has(key)) return;
-    const entry = topicMap.get(key)!;
-    if (entry.questions.length === 0) return;
+    // A deep-linked topic (e.g. the GK Marathon tile) may live in either the
+    // PYQ or the curated catalogue, so resolve it against both.
+    const entry = pyqTopicMap.get(key) || catalogTopicMap.get(key);
+    if (!entry || entry.questions.length === 0) return;
     selectQuiz({
       id: `topic-${directTopic.category}-${directTopic.topic}`,
       title: directTopic.topic,
@@ -406,7 +443,7 @@ export default function StudentView({
       category: directTopic.category,
       pageSize: TOPIC_QUIZ_PAGE_SIZE,
     });
-  }, [directTopic, topicMap, selectedQuiz, selectQuiz]);
+  }, [directTopic, pyqTopicMap, catalogTopicMap, selectedQuiz, selectQuiz]);
 
   const startTopicQuiz = useCallback((category: Category, topicName: string) => {
     const key = `${category}|||${topicName}`;
@@ -598,6 +635,13 @@ export default function StudentView({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [homeKey]);
 
+  // Switching between the PYQ and curated-catalogue tabs must start at the
+  // subject list, never a stale topic drill-down from the other catalogue.
+  useEffect(() => {
+    setTopicStep("subjects");
+    setTopicCategory(null);
+  }, [topicSource]);
+
   const openReportModal = (qId: string, qText: string) => {
     if (reportedIds.has(qId)) {
       setReportToast("You already reported this question.");
@@ -648,11 +692,18 @@ export default function StudentView({
         return (
           <div className="space-y-6">
             <div>
-              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">{"\uD83C\uDFAF"} Topic Wise Practice</h2>
-              <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Select a subject to browse available topics</p>
+              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
+                {topicSource === "catalog" ? `${"\uD83D\uDCD6"} Topic Tests` : `${"\uD83C\uDFAF"} Topic Wise Practice`}
+              </h2>
+              <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                {topicSource === "catalog"
+                  ? "Curated chapter-wise practice sets — select a subject to browse tests"
+                  : "Previous-year questions grouped by topic — select a subject to begin"}
+              </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {CATEGORIES.map((cat) => {
+                if (hideLangSubjects && PYQ_HIDDEN_SUBJECTS.has(cat)) return null;
                 const info = topicCountsByCategory[cat] || { topicCount: 0, questionCount: 0 };
                 const colors = CATEGORY_COLORS[cat];
                 if (info.topicCount === 0) return null;
