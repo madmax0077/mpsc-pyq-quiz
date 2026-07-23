@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Inter, Noto_Sans_Devanagari, Noto_Serif_Devanagari } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
@@ -330,6 +331,7 @@ export default function RootLayout({
       <body className="font-sans dark:bg-slate-900">
         <AuthProvider>{children}</AuthProvider>
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );
