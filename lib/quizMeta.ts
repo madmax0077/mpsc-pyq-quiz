@@ -28,12 +28,12 @@ export interface QuizMeta {
   examTitles: string[];
 }
 
-function extractYear(title: string): number {
+export function extractYear(title: string): number {
   const match = title.match(/\b(20\d{2})\b/);
   return match ? parseInt(match[1]) : 0;
 }
 
-function extractType(title: string): string {
+export function extractType(title: string): string {
   const t = title.toLowerCase();
   if (t.includes("excise")) return "Sub Inspector Excise";
   if (t.includes("group b & c") || t.includes("group b and c"))
@@ -56,7 +56,7 @@ function extractType(title: string): string {
   return "General";
 }
 
-function cleanTitle(title: string): string {
+export function cleanTitle(title: string): string {
   return title
     .replace(/\s*\(English\)\s*/i, "")
     .replace(/\s*\(Marathi\)\s*/i, "")
@@ -90,7 +90,7 @@ const CATEGORY_MAP: Record<string, string> = {
   "marathi": "Marathi",
 };
 
-function normalizeCategory(cat: string): string {
+export function normalizeCategory(cat: string): string {
   return CATEGORY_MAP[cat.toLowerCase()] || cat;
 }
 

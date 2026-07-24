@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getSeoQuestions } from "@/lib/questionSeo";
+import { getExamPapers } from "@/lib/examPapers";
 
 const SITE_URL = "https://www.mpscs.in";
 
@@ -116,7 +117,18 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
   const now = new Date();
 
   if (id === 0) {
-    const staticEntries = [...LEGACY_SITEMAP_ENTRIES, ...ADDITIONAL_DISCOVERY_ENTRIES];
+    // Per-paper landing pages (/exams/<slug>) — generated from quizzes.json.
+    const paperEntries: SitemapEntryConfig[] = getExamPapers().map((p) => ({
+      path: `/exams/${p.slug}`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }));
+
+    const staticEntries = [
+      ...LEGACY_SITEMAP_ENTRIES,
+      ...ADDITIONAL_DISCOVERY_ENTRIES,
+      ...paperEntries,
+    ];
     const seen = new Set<string>();
     return staticEntries
       .filter((entry) => {

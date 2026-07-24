@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getQuizMeta } from "@/lib/quizMeta";
+import { getSlugByTitle } from "@/lib/examPapers";
 
 const meta = getQuizMeta();
 
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 
 export default function ExamsPage() {
   const { exams, years, totalQuestions, totalPapers } = meta;
+  const slugByTitle = getSlugByTitle();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/50 dark:from-slate-900 dark:to-slate-950">
@@ -75,24 +77,43 @@ export default function ExamsPage() {
                 MPSC {year} Question Papers
               </h3>
               <div className="space-y-4">
-                {yearExams.map((exam) => (
-                  <article key={exam.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-                    <div className="flex items-start justify-between gap-3">
-                      <div>
-                        <h4 className="font-semibold text-slate-800 dark:text-slate-100">{exam.title}</h4>
-                        <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{exam.description}</p>
+                {yearExams.map((exam) => {
+                  const slug = slugByTitle.get(exam.title);
+                  const card = (
+                    <>
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <h4 className="font-semibold text-slate-800 dark:text-slate-100">{exam.title}</h4>
+                          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{exam.description}</p>
+                        </div>
+                        <span className="shrink-0 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
+                          {exam.questions} Qs
+                        </span>
                       </div>
-                      <span className="shrink-0 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
-                        {exam.questions} Qs
-                      </span>
-                    </div>
-                    <div className="mt-3 flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
-                      <span className="rounded bg-slate-100 px-2 py-0.5 font-medium dark:bg-slate-700">{exam.type}</span>
-                      <span>English + Marathi</span>
-                      <span>Official Answer Key (Set A)</span>
-                    </div>
-                  </article>
-                ))}
+                      <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                        <span className="rounded bg-slate-100 px-2 py-0.5 font-medium dark:bg-slate-700">{exam.type}</span>
+                        <span>English + Marathi</span>
+                        <span>Official Answer Key (Set A)</span>
+                        {slug && (
+                          <span className="ml-auto font-semibold text-indigo-600 dark:text-indigo-400">View paper &amp; answers →</span>
+                        )}
+                      </div>
+                    </>
+                  );
+                  return slug ? (
+                    <Link
+                      key={exam.title}
+                      href={`/exams/${slug}`}
+                      className="block rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-colors hover:border-indigo-300 hover:bg-indigo-50/40 dark:border-slate-700 dark:bg-slate-800 dark:hover:border-indigo-700 dark:hover:bg-indigo-900/20"
+                    >
+                      {card}
+                    </Link>
+                  ) : (
+                    <article key={exam.title} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+                      {card}
+                    </article>
+                  );
+                })}
               </div>
             </section>
           );
