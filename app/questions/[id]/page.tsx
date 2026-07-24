@@ -359,6 +359,19 @@ export default function QuestionSeoPage({ params }: PageProps) {
   const guides = relatedGuides(question.category);
   const intro = introBlock(question);
 
+  // schema.org datePublished — use the quiz's own createdAt when it is a valid
+  // date, otherwise fall back to a fixed launch date so the field is never empty.
+  const publishedIso = (() => {
+    const d = question.createdAt ? new Date(question.createdAt) : null;
+    return d && !Number.isNaN(d.getTime()) ? d.toISOString() : "2024-01-01T00:00:00.000Z";
+  })();
+  const editorialAuthor = {
+    "@type": "Organization",
+    name: "Don't know Academy",
+    url: SITE_URL,
+  };
+  const answerLang = question.language === "marathi" ? "mr" : "en";
+
   const breadcrumbItems: Array<{ name: string; item: string }> = [
     { name: "Home", item: SITE_URL },
     { name: "Exams", item: `${SITE_URL}/exams` },
@@ -388,11 +401,17 @@ export default function QuestionSeoPage({ params }: PageProps) {
               name: question.text,
               text: question.text,
               answerCount: 1,
-              inLanguage: question.language === "marathi" ? "mr" : "en",
+              inLanguage: answerLang,
+              author: editorialAuthor,
+              datePublished: publishedIso,
               acceptedAnswer: {
                 "@type": "Answer",
                 text: question.explanation,
-                inLanguage: question.language === "marathi" ? "mr" : "en",
+                url: `${SITE_URL}/questions/${question.id}#accepted-answer`,
+                inLanguage: answerLang,
+                author: editorialAuthor,
+                datePublished: publishedIso,
+                upvoteCount: 0,
               },
             },
           }
@@ -459,7 +478,7 @@ export default function QuestionSeoPage({ params }: PageProps) {
         )}
 
         {question.explanation && (
-          <section className="mt-4 rounded-2xl border border-indigo-100 bg-indigo-50/60 px-5 py-4">
+          <section id="accepted-answer" className="mt-4 rounded-2xl border border-indigo-100 bg-indigo-50/60 px-5 py-4">
             <h2 className="text-sm font-bold uppercase tracking-wide text-indigo-700">Explanation</h2>
             <p className="mt-2 whitespace-pre-line text-sm leading-7 text-slate-800">
               {question.explanation}

@@ -14,6 +14,8 @@ export type SeoQuestion = {
   quizId: string;
   quizTitle: string;
   language?: Quiz["language"];
+  /** Quiz creation timestamp, used for schema.org datePublished. */
+  createdAt?: string;
 };
 
 let cache: SeoQuestion[] | null = null;
@@ -47,6 +49,7 @@ export function getSeoQuestions(): SeoQuestion[] {
         quizId: quiz.id,
         quizTitle: quiz.title,
         language: quiz.language,
+        createdAt: quiz.createdAt,
       });
     }
   }
