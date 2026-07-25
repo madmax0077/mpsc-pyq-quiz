@@ -56901,7 +56901,7 @@
       },
       {
         "id": 56,
-        "text": "Jignesh bought 100 shares of one company at price Rs. 1288.55 each and on the same day he sold at price Rs. 1338.45. If broker's commission is 0.001% on buying amount and selling amount then how much profit Jignesh got?",
+        "text": "Jignesh bought 100 shares of one company at price Rs. 1288.55 each and on the same day he sold at price Rs. 1338.45. If broker's commission is 0.1% on buying amount and selling amount then how much profit Jignesh got?",
         "options": {
           "A": "Rs. 3827.25",
           "B": "Rs. 4827.25",
@@ -57251,7 +57251,7 @@
       },
       {
         "id": 81,
-        "text": "Solve: [(78/13 × 49/42) + (25/(5×3) × 63/35)] ÷ (2×2×2 / 4×2×16) = _______.",
+        "text": "Solve: [(78/13 × 49/42) + (25/(5×3) × 63/35)] ÷ ((2×2×2) / (4×2×16)) = _______.",
         "options": {
           "A": "16",
           "B": "1.6",
@@ -58239,91 +58239,91 @@
     "questions": [
       {
         "id": 1,
-        "text": "The satellite launched by India in September 2007 will be used for _______.",
+        "text": "सप्टेंबर 2007 मध्ये भारताने प्रक्षेपित केलेला उपग्रह _______ साठी उपयोगी ठरणार आहे.",
         "options": {
-          "A": "Communication",
-          "B": "Agricultural Research",
-          "C": "Land Measurement",
-          "D": "Reconnaissance"
+          "A": "दळणवळण",
+          "B": "कृषी संशोधना",
+          "C": "भूमापन",
+          "D": "हेरगिरी"
         },
         "correctAnswer": "A",
-        "explanation": "Marked correct: Communication. The year 2007 anchors this question — the correct option is the fact that dates to that year. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "उत्तर: दळणवळण. सप्टेंबर 2007 मध्ये प्रक्षेपित INSAT-4CR उपग्रह दळणवळण, हवामान व शिक्षणासाठी वापरला जातो — हा तारीख-उपग्रह जोडणी स्मरणात ठेवा.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 2,
-        "text": "The special feature of the 'Revolt of 1857 AD' was the _______ unity.",
+        "text": "इ.स. 1857 च्या उठावाचे वैशिष्ट्य _______ ऐक्य होते.",
         "options": {
-          "A": "Hindu-Muslim",
-          "B": "Maratha-Sikh",
-          "C": "English-Muslim",
-          "D": "English-Maratha"
+          "A": "हिंदू-मुस्लिम",
+          "B": "मराठा-शिख",
+          "C": "इंग्रज-मुस्लिम",
+          "D": "इंग्रज-मराठा"
         },
         "correctAnswer": "A",
-        "explanation": "This maps to \"Hindu-Muslim\". The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. The Revolt of 1857 began on 10 May 1857 at Meerut; it is regarded as India's first war of independence. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: हिंदू-मुस्लिम. 1857 च्या उठावात धर्मनिरपेक्ष एकता दिसली; ब्रिटिशांनी या ऐक्याचे विभाजन करून शासन टिकवण्याचा प्रयत्न केला.",
         "category": "History",
         "topic": "Revolt of 1857"
       },
       {
         "id": 3,
-        "text": "In 1907, Maharshi Karve established the institution _______ at Hingane.",
+        "text": "1907 मध्ये, महर्षी कर्वे यांनी हिंगणे येथे _______ या संस्थेची स्थापना केली.",
         "options": {
-          "A": "Mahila Vidyalaya",
-          "B": "Anath Balikashram",
-          "C": "Maharashtra Gram Prathamik Shikshan Mandal",
-          "D": "Samata Manch"
+          "A": "महिला विद्यालय",
+          "B": "अनाथ बालिकाश्रम",
+          "C": "महाराष्ट्र ग्राम प्राथमिक शिक्षण मंडळ",
+          "D": "समता मंच"
         },
         "correctAnswer": "A",
-        "explanation": "Mahila Vidyalaya matches the question. The year 1907 anchors this question — the correct option is the fact that dates to that year. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "उत्तर: महिला विद्यालय. महर्षी कर्वे यांनी 1907 मध्ये हिंगणे येथे स्त्री शिक्षणासाठी महिला विद्यालयाची स्थापना केली — वर्ष आणि ठिकाण एकत्र लक्षात ठेवा.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 4,
-        "text": "Family Planning programme was intensively implemented during _______ five year plan for controlling growth of population in India.",
+        "text": "भारतातील लोकसंख्या वाढ नियंत्रित करण्यासाठी _______ पंचवार्षिक योजनेत कुटुंब नियोजन कार्यक्रमावर भर देण्यात आला होता.",
         "options": {
-          "A": "4th (Fourth)",
-          "B": "5th (Fifth)",
-          "C": "6th (Sixth)",
-          "D": "None of these"
+          "A": "चौथ्या",
+          "B": "पाचव्या",
+          "C": "सहाव्या",
+          "D": "वरीलपैकी कोणत्याही नाही"
         },
         "correctAnswer": "B",
-        "explanation": "Option B carries the right answer — 5th (Fifth). India's Five Year Plans (1951–2017) ran from the First (1951–56) under Nehru to the Twelfth (2012–17); post-2017 planning shifted to three-year action agendas under NITI Aayog. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: पाचव्या. पाचव्या पंचवार्षिक योजनेत (1974–79) कुटुंब नियोजन कार्यक्रमाला प्राधान्य दिले; 'कुटुंब नियोजन' ऐकल्यावर पाचवी योजना लक्षात येऊ.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": 5,
-        "text": "_______ assassinated Jackson, the collector of Nashik in 1909 A.D.",
+        "text": "_______ यांनी इ.स. 1909 मध्ये नाशिकचे कलेक्टर जॅक्सन यांचा वध केला.",
         "options": {
-          "A": "Khudiram Bose",
-          "B": "Anant Kanhere",
-          "C": "Bhupendranath",
-          "D": "Barindra Ghosh"
+          "A": "खुदीराम बोस",
+          "B": "अनंत कान्हेरे",
+          "C": "भूपेंद्रनाथ",
+          "D": "बारिंद्र घोष"
         },
         "correctAnswer": "B",
-        "explanation": "\"Anant Kanhere\" is the option marked correct in the official key. The year 1909 anchors this question — the correct option is the fact that dates to that year. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "उत्तर: अनंत कान्हेरे. 1909 मध्ये नाशिकचे कलेक्टर जॅक्सन यांचा अनंत कान्हेरे यांनी वध केला; खुदीराम बोस 1908 मध्ये निकोलसन-केनेडी हत्येत सहभागी होते.",
         "category": "History",
         "topic": "Revolutionary Movement"
       },
       {
         "id": 6,
-        "text": "Who is the administrative head of Panchayat-Samiti?",
+        "text": "पंचायत समितीचा प्रशासकीय प्रमुख कोण असतो?",
         "options": {
-          "A": "Block Development Officer",
-          "B": "Speaker",
-          "C": "Chief Executive Officer",
-          "D": "Deputy-Speaker"
+          "A": "गटविकास अधिकारी",
+          "B": "सभापती",
+          "C": "मुख्य कार्यकारी अधिकारी",
+          "D": "उप-सभापती"
         },
         "correctAnswer": "A",
-        "explanation": "The exam key confirms \"Block Development Officer\". This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: गटविकास अधिकारी. पंचायत समितीचा प्रशासकीय प्रमुख BDO असतो; सभापती राजकीय प्रमुख, तर CEO जिल्हा परिषदेचा प्रशासकीय प्रमुख असतो.",
         "category": "Indian Polity",
         "topic": "Panchayati Raj"
       },
       {
         "id": 7,
-        "text": "How many members are elected to the Rajya Sabha from the States as well as Union Territories together?",
+        "text": "राज्यसभेत राज्यांकडून तसेच केंद्रशासित प्रदेशांकडून एकूण किती सदस्य निवडले जातात?",
         "options": {
           "A": "226",
           "B": "238",
@@ -58331,7 +58331,7 @@
           "D": "228"
         },
         "correctAnswer": "B",
-        "explanation": "Reading the stem carefully, the answer is 238. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "उत्तर: **238**. राज्यसभेत 28 राज्यांकडून 229 व 2 केंद्रशासित प्रदेशांकडून 9 असे एकूण **238** सदस्य निवडले जातात — ही संख्या वारंवार विचारली जाते.",
         "category": "Indian Polity",
         "topic": "Parliament"
       },
@@ -58345,13 +58345,13 @@
           "D": "45"
         },
         "correctAnswer": "B",
-        "explanation": "\"63\" is the accurate option. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: **63**. (65)² − (16)² = (65+16)(65−16) = 81 × 49, म्हणून √3969 = **63** — हे a²−b² सूत्र लक्षात ठेवल्यास गणना जलद होते.",
         "category": "Aptitude",
         "topic": "Number System & Simplification"
       },
       {
         "id": 9,
-        "text": "What is the maximum strength of the Rajya Sabha?",
+        "text": "राज्यसभेमध्ये कमाल किती सदस्य असू शकतात?",
         "options": {
           "A": "250",
           "B": "200",
@@ -58359,27 +58359,27 @@
           "D": "252"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is 250. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: **250**. राज्यसभेतील कमाल सदस्यसंख्या **250** (कलम 80); 238 निवडले जातात, 12 राष्ट्रपती नामनिर्देशित करतात — ही संख्या वारंवार विचारली जाते.",
         "category": "Indian Polity",
         "topic": "Parliament"
       },
       {
         "id": 10,
-        "text": "The first session of National Congress was held in _______.",
+        "text": "राष्ट्रीय काँग्रेसच्या पहिल्या अधिवेशनाचे आयोजन _______ येथे झाले.",
         "options": {
-          "A": "Mumbai",
-          "B": "Kolkatta",
-          "C": "Chennai",
-          "D": "Delhi"
+          "A": "मुंबई",
+          "B": "कोलकत्ता",
+          "C": "चेन्नई",
+          "D": "दिल्ली"
         },
         "correctAnswer": "A",
-        "explanation": "Working through the options, Mumbai is the correct one. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: मुंबई. 1885 मध्ये दादाभाई नौरोजींच्या अध्यक्षतेखाली राष्ट्रीय काँग्रेसचे पहिले अधिवेशन मुंबईत (गोकुलदास तेजपाल) झाले.",
         "category": "History",
         "topic": "Rise of Nationalism & INC"
       },
       {
         "id": 11,
-        "text": "A wire of length 6.27 m is bent to form a circle, then what is the radius of the circle?",
+        "text": "6.27 मी. लांबीची वायर वाकवून वर्तुळ तयार केले, तर त्या वर्तुळाची त्रिज्या किती?",
         "options": {
           "A": "0.1 m",
           "B": "1.0 m",
@@ -58387,125 +58387,125 @@
           "D": "0.0314 m"
         },
         "correctAnswer": "B",
-        "explanation": "1.0 m is the correct option here. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "उत्तर: **1.0 m**. वर्तुळाची परिमिती 2πr = 6.27, म्हणून r = 6.27 ÷ (2 × 3.14) ≈ **1.0 m** — परिमिती ÷ 2π हे सूत्र वर्तुळ-प्रश्नांत नेहमी वापरा.",
         "category": "Aptitude",
         "topic": "Mensuration & Geometry"
       },
       {
         "id": 12,
-        "text": "Who wrote the book 'Poverty and Un-British Rule in India'?",
+        "text": "'Poverty and Un-British Rule in India' हा ग्रंथ कोणी लिहिला?",
         "options": {
-          "A": "Justice Ranade",
-          "B": "Dadabhai Naoroji",
-          "C": "Firozshah Mehta",
-          "D": "Swatantryaveer Savarkar"
+          "A": "न्यायमूर्ती रानडे",
+          "B": "दादाभाई नौरोजी",
+          "C": "फिरोजशाह मेहता",
+          "D": "स्वातंत्र्यवीर सावरकर"
         },
         "correctAnswer": "B",
-        "explanation": "This resolves to Dadabhai Naoroji. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: दादाभाई नौरोजी. 'Poverty and Un-British Rule in India' (1901) मध्ये 'भारतीय धनाचे निष्कर्षण' सिद्ध केले — 'Grand Old Man of India' म्हणून ओळख.",
         "category": "History",
         "topic": "Rise of Nationalism & INC"
       },
       {
         "id": 13,
-        "text": "Name the hockey player, who was banned for three matches in opening match of Hockey World Cup.",
+        "text": "हॉकी विश्वचषकाच्या सलामी सामन्यात या खेळाडूवर तीन सामन्यांकरिता बंदी घातली गेली. त्याचे नाव सांगा.",
         "options": {
-          "A": "Shivendra Singh",
-          "B": "Sandip Singh",
-          "C": "Rajpal Singh",
-          "D": "Gurindar Singh"
+          "A": "शिवेंद्र सिंग",
+          "B": "संदीप सिंग",
+          "C": "राजपाल सिंग",
+          "D": "गुरिंदर सिंग"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is Shivendra Singh. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "उत्तर: शिवेंद्र सिंग. हॉकी विश्वचष्काच्या सलामी सामन्यात शिवेंद्र सिंगवर तीन सामन्यांची बंदी घातली गेली — 2010 पर्यंतच्या चालू घडामोडींचा प्रश्न.",
         "category": "Current Affairs",
         "topic": "Sports"
       },
       {
         "id": 14,
-        "text": "Morle-Minto Reforms Act was passed in _______.",
+        "text": "मॉर्ले-मिंटो सुधारणा कायदा _______ मध्ये पास झाला.",
         "options": {
-          "A": "1909 A.D.",
-          "B": "1911 A.D.",
-          "C": "1919 A.D.",
-          "D": "1935 A.D."
+          "A": "इ.स. 1909",
+          "B": "इ.स. 1911",
+          "C": "इ.स. 1919",
+          "D": "इ.स. 1935"
         },
         "correctAnswer": "A",
-        "explanation": "\"1909 A.D.\" is the option marked correct in the official key. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: इ.स. 1909. मॉर्ले-मिंटो सुधारणा कायदा 1909 मध्ये पारित झाला; स्वतंत्र मतदानार्हता व विस्तारित विधानसभा हे मुख्य वैशिष्ट्य.",
         "category": "History",
         "topic": "Constitutional Development (British Acts)"
       },
       {
         "id": 15,
-        "text": "Modern Biotechnology works on _______ level.",
+        "text": "आधुनिक जैवतंत्रज्ञान _______ पातळीवर कार्य करते.",
         "options": {
-          "A": "Colloidal",
-          "B": "Atom",
-          "C": "Molecule",
-          "D": "Substance"
+          "A": "कलिल",
+          "B": "अणू",
+          "C": "रेणू",
+          "D": "पदार्थ"
         },
         "correctAnswer": "C",
-        "explanation": "The examiner has marked Molecule as the correct response. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "उत्तर: रेणू. आधुनिक जैवतंत्रज्ञान DNA, प्रोटीन व जीन हाताळण्यासाठी **रेणू** पातळीवर कार्य करते — अणूपेक्षा रेणू हा अचूक शब्द; अशा संज्ञा स्मरणात ठेवा.",
         "category": "Science",
         "topic": "Cell Biology & Genetics"
       },
       {
         "id": 16,
-        "text": "What is the name of the President of Second World Marathi Sahitya Sammelan?",
+        "text": "दुसऱ्या मराठी विश्वसाहित्य सम्मेलनाच्या अध्यक्षांचे नाव काय?",
         "options": {
-          "A": "Mangesh Padgoankar",
-          "B": "Dr. V. B. Deshpande",
-          "C": "Gangadhar Pantawane",
-          "D": "Dhananjay Datar"
+          "A": "मंगेश पाडगावकर",
+          "B": "डॉ. व्ही. बी. देशपांडे",
+          "C": "गंगाधर पंतावणे",
+          "D": "धनंजय दातार"
         },
         "correctAnswer": "A",
-        "explanation": "Mangesh Padgoankar is the correct option here. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: मंगेश पाडगावकर. दुसऱ्या मराठी विश्वसाहित्य सम्मेलनाचे (1989, पुणे) अध्यक्ष मंगेश पाडगावकर होते — कवी, भाषांतरकार व साहित्यिक.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       },
       {
         "id": 17,
-        "text": "Which is the lowest tier of Panchayat Raj Institutions?",
+        "text": "पंचायत राज व्यवस्थेतील कनिष्ठ स्तर कोणता?",
         "options": {
-          "A": "Panchayat Samiti",
-          "B": "Zilla Parishad",
-          "C": "Municipal Council",
-          "D": "Gram Panchayat"
+          "A": "पंचायत समिती",
+          "B": "जिल्हा परिषद",
+          "C": "नगरपालिका",
+          "D": "ग्राम पंचायत"
         },
         "correctAnswer": "D",
-        "explanation": "For this question, the correct option reads: Gram Panchayat. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "उत्तर: ग्राम पंचायत. पंचायत राजचा कनिष्ठ स्तर ग्राम पंचायत, मध्यम पंचायत समिती, वरिष्ठ जिल्हा परिषद — वरच्या दोन स्तरांवर गोंधळू नका.",
         "category": "Indian Polity",
         "topic": "Panchayati Raj"
       },
       {
         "id": 18,
-        "text": "The Sarpanch and the Deputy-Sarpanch are elected by:",
+        "text": "सरपंच व उपसरपंच यांची निवड कोण करते?",
         "options": {
-          "A": "Members of Gram Panchayat",
-          "B": "Gramsabha",
-          "C": "Gramsevak",
-          "D": "Block Development Officer"
+          "A": "ग्रामपंचायतीचे सभासद",
+          "B": "ग्रामसभा",
+          "C": "ग्रामसेवक",
+          "D": "गटविकास अधिकारी"
         },
         "correctAnswer": "A",
-        "explanation": "The right answer is Members of Gram Panchayat (option A). Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: ग्रामपंचायतीचे सभासद. सरपंच व उपसरपंचाची निवड ग्रामपंचायतीच्या निवडून आलेल्या सभासदांमधून होते; ग्रामसभा धोरण ठरवते.",
         "category": "Indian Polity",
         "topic": "Panchayati Raj"
       },
       {
         "id": 19,
-        "text": "In which district of Maharashtra the longest railway tunnel in Asian continent is located?",
+        "text": "आशिया खंडातील सर्वात लांब रेल्वे बोगदा महाराष्ट्रातील कोणत्या जिल्ह्यात आहे?",
         "options": {
-          "A": "Sindhudurg",
-          "B": "Raigad",
-          "C": "Ratnagiri",
-          "D": "Thane"
+          "A": "सिंधुदुर्ग",
+          "B": "रायगड",
+          "C": "रत्नागिरी",
+          "D": "ठाणे"
         },
         "correctAnswer": "C",
-        "explanation": "Ratnagiri is the correct option here. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "उत्तर: रत्नागिरी. कोकण रेल्वेतील करबुळे–थोकळ बोगदा (6.5 किमी) आशियातील सर्वात लांब रेल्वे बोगद्यांपैकी एक — रत्नागिरी जिल्ह्यात.",
         "category": "Geography",
         "topic": "Maharashtra Physical Geography"
       },
       {
         "id": 20,
-        "text": "The Women's University for the female education was established by Maharshi Karve in _______.",
+        "text": "महर्षी कर्वे यांनी स्त्री शिक्षणासाठी महिला विद्यापीठाची स्थापना _______ साली केली.",
         "options": {
           "A": "1893",
           "B": "1907",
@@ -58513,181 +58513,181 @@
           "D": "1916"
         },
         "correctAnswer": "D",
-        "explanation": "The right answer is 1916 (option D). A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: **1916**. महर्षी कर्वे यांनी 1916 मध्ये पुण्यात (हिंगणे) भारतातील पहिले महिला विद्यापीठ स्थापले — 1907 चे महिला विद्यालय वेगळे.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 21,
-        "text": "Which scheme was rejected by the Cabinet Mission Plan?",
+        "text": "कॅबिनेट मिशन योजनेने कोणती योजना फेटाळली?",
         "options": {
-          "A": "Partition of India",
-          "B": "Creation of Pakistan",
-          "C": "Both (1) and (2)",
-          "D": "Neither of them"
+          "A": "भारताची फाळणी",
+          "B": "पाकिस्तानची निर्मिती",
+          "C": "वरील (1) आणि (2) दोन्ही",
+          "D": "यापैकी कोणतीही नाही"
         },
         "correctAnswer": "C",
-        "explanation": "Reading the stem carefully, the answer is Both (1) and (2). The Cabinet Mission (March 1946) proposed a three-tier federal structure and led to the formation of India's Constituent Assembly on 9 December 1946. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "उत्तर: वरील (1) आणि (2) दोन्ही. कॅबिनेट मिशन (1946) भारताची फाळणी व स्वतंत्र पाकिस्तान दोन्ही नाकारले; संघराज्याची योजना मांडली.",
         "category": "History",
         "topic": "Constitutional Development (British Acts)"
       },
       {
         "id": 22,
-        "text": "Which animal is declared as National aquatic animal?",
+        "text": "राष्ट्रीय जलचर प्राणी म्हणून कोणत्या प्राण्यास घोषित करण्यात आले आहे?",
         "options": {
-          "A": "Crocodile",
-          "B": "Hyppopotamus",
-          "C": "Dolphin",
-          "D": "Tortoise"
+          "A": "मगर",
+          "B": "पाणघोडा",
+          "C": "डॉल्फिन",
+          "D": "कासव"
         },
         "correctAnswer": "C",
-        "explanation": "Dolphin matches the question. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: डॉल्फिन. गंगा नदीतील सुसू (Platanista gangetica) ला 2009 मध्ये भारताचा राष्ट्रीय जलचर प्राणी म्हणून घोषित केले — मगर वेगळा प्रकार.",
         "category": "Science",
         "topic": "Zoology (Animal Biology)"
       },
       {
         "id": 23,
-        "text": "Who wrote the book 'Dongarichya Turungatil 101 Divas'?",
+        "text": "'डोंगरीच्या तुरुंगातील 101 दिवस' हे पुस्तक कोणी लिहिले?",
         "options": {
-          "A": "Lokmanya Tilak",
-          "B": "Gopal Ganesh Agarkar",
-          "C": "Justice Ranade",
-          "D": "Vishnushastri Chiplunkar"
+          "A": "लोकमान्य टिळक",
+          "B": "गोपाळ गणेश आगरकर",
+          "C": "न्यायमूर्ती रानडे",
+          "D": "विष्णूशास्त्री चिपळूणकर"
         },
         "correctAnswer": "B",
-        "explanation": "The examiner has marked Gopal Ganesh Agarkar as the correct response. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "उत्तर: गोपाळ गणेश आगरकर. 'डोंगरीच्या तुरुंगातील 101 दिवस' — आगरकर यांच्या तुरुंगवासाची आठवण; लोकमान्य टिळकांचे 'Geeta Rahasya' वेगळे.",
         "category": "History",
         "topic": "Maharashtra in Freedom Struggle"
       },
       {
         "id": 24,
-        "text": "Yashwantrao Chavan Maharashtra Open University is at _______.",
+        "text": "यशवंतराव चव्हाण महाराष्ट्र मुक्त विद्यापीठ _______ येथे आहे.",
         "options": {
-          "A": "Mumbai",
-          "B": "Pune",
-          "C": "Nagpur",
-          "D": "Nashik"
+          "A": "मुंबई",
+          "B": "पुणे",
+          "C": "नागपूर",
+          "D": "नाशिक"
         },
         "correctAnswer": "D",
-        "explanation": "The right pick is option D: Nashik. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: नाशिक. यशवंतराव चव्हाण महाराष्ट्र मुक्त विद्यापीठ (YCMOU) 1989 पासून नाशिक येथे कार्यरत — भारतातील पहिले मुक्त विद्यापीठ.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       },
       {
         "id": 25,
-        "text": "In Seventh Five Year Plan for the purpose of _______ development new plan has been introduced.",
+        "text": "सातव्या पंचवार्षिक योजनेत _______ विकासाला चालना मिळण्यासाठी नवीन योजना तयार करण्यात आली.",
         "options": {
-          "A": "Agriculture",
-          "B": "Fishing",
-          "C": "Industries",
-          "D": "Mining"
+          "A": "शेती",
+          "B": "मासेमारी",
+          "C": "कारखाने",
+          "D": "खाणकाम"
         },
         "correctAnswer": "A",
-        "explanation": "For this question, the correct option reads: Agriculture. India's Five Year Plans (1951–2017) ran from the First (1951–56) under Nehru to the Twelfth (2012–17); post-2017 planning shifted to three-year action agendas under NITI Aayog. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "उत्तर: शेती. सातव्या पंचवार्षिक योजनेत (1985–90) शेती व ग्रामीण विकासाला चालना देण्यासाठी नवीन योजना तयार करण्यात आल्या — 'हरित क्रांती'चा कालखंड.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": 26,
-        "text": "Solve: 25/5 × 125/10 + 36/12 + 64/32 = _______.",
+        "text": "सोडवा: 25/5 × 125/10 + 36/12 + 64/32 = _______.",
         "options": {
           "A": "6.75",
           "B": "0.675",
           "C": "67.5",
-          "D": "None of the above"
+          "D": "यापैकी एकही नाही"
         },
         "correctAnswer": "C",
-        "explanation": "The correct choice is \"67.5\". Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: **67.5**. 25/5 × 125/10 + 36/12 + 64/32 = 5 × 12.5 + 3 + 2 = 62.5 + 5 = **67.5** — प्रथम गुणाकार, मग बेरीज क्रमाने सोडवा.",
         "category": "Aptitude",
         "topic": "Number System & Simplification"
       },
       {
         "id": 27,
-        "text": "Oldest fold mountain range in India is _______.",
+        "text": "भारतातील सर्वात जुन्या निकृष्ट पर्वतरांगा _______ आहेत.",
         "options": {
-          "A": "Vindhya Mountain range",
-          "B": "Satpura Mountain range",
-          "C": "Aravalli Mountain range",
-          "D": "Sahyadri Mountain range"
+          "A": "विंध्य पर्वतरांगा",
+          "B": "सातपुडा पर्वतरांगा",
+          "C": "अरवली पर्वतरांगा",
+          "D": "सह्याद्री पर्वतरांगा"
         },
         "correctAnswer": "C",
-        "explanation": "The official Set A key selects Aravalli Mountain range. The Aravalli range in Rajasthan is one of the oldest fold mountain systems in the world; Guru Shikhar (Mount Abu) is its highest point at 1,722 m. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "उत्तर: अरवली पर्वतरांगा. राजस्थानातील अरवली भारतातील सर्वात जुन्या निकृष्ट (घसारलेल्या) पर्वतरांगांपैकी एक — गुरुशिखर सर्वोच्च शिखर.",
         "category": "Geography",
         "topic": "Indian Physical Geography"
       },
       {
         "id": 28,
-        "text": "Elephant belongs to class:",
+        "text": "हत्ती हा कोणत्या प्रकारचा प्राणी आहे?",
         "options": {
-          "A": "Carnivorous",
-          "B": "Herbivorous",
-          "C": "Insectivorous",
-          "D": "Omnivorous"
+          "A": "मांसाहारी",
+          "B": "शाकाहारी",
+          "C": "कीटकाहारी",
+          "D": "सर्वभक्षक"
         },
         "correctAnswer": "B",
-        "explanation": "Option B carries the right answer — Herbivorous. The Reserve Bank of India was established under the RBI Act 1934 (operative 1 April 1935) and nationalised on 1 January 1949; it is India's monetary authority and banking regulator. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: शाकाहारी. हत्ती मुख्यत्वे गवत, पाने व फळे खातात, म्हणून **शाकाहारी**; मांसाहारी किंवा सर्वभक्षक म्हणून चुकीचे — प्राणी-आहाराची वर्गवारी लक्षात ठेवा.",
         "category": "Science",
         "topic": "Zoology (Animal Biology)"
       },
       {
         "id": 29,
-        "text": "In which district of Maharashtra coal is found?",
+        "text": "महाराष्ट्रात कोणत्या जिल्ह्यात दगडी कोळसा सापडतो?",
         "options": {
-          "A": "Bhandara",
-          "B": "Chandrapur",
-          "C": "Yavatmal",
-          "D": "Ratnagiri"
+          "A": "भंडारा",
+          "B": "चंद्रपूर",
+          "C": "यवतमाळ",
+          "D": "रत्नागिरी"
         },
         "correctAnswer": "B",
-        "explanation": "Chandrapur is the correct option here. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "उत्तर: चंद्रपूर. महाराष्ट्रातील दगडी कोळसाचे सर्वात मोठे भंडार चंद्रपूर (वर्धा उपघाट) व यवतमाळ जिल्ह्यात — चंद्रपूर हा मुख्य उत्तर.",
         "category": "Geography",
         "topic": "Minerals & Industries"
       },
       {
         "id": 30,
-        "text": "Who is electing Sarpanch?",
+        "text": "सरपंचाची निवड कोण करते?",
         "options": {
-          "A": "Gram Sabha",
-          "B": "Adult voters of the village",
-          "C": "Member of Gram Panchayat",
-          "D": "All of these"
+          "A": "ग्रामसभा",
+          "B": "गावातील प्रौढ मतदार",
+          "C": "ग्रामपंचायतीचे सदस्य",
+          "D": "वरील सर्व"
         },
         "correctAnswer": "C",
-        "explanation": "The correct choice is \"Member of Gram Panchayat\". Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: ग्रामपंचायतीचे सदस्य. सरपंचाची निवड ग्रामपंचायतीच्या निवडून आलेल्या सदस्यांमधून होते; ग्रामसभा थेट सरपंच निवडत नाही.",
         "category": "Indian Polity",
         "topic": "Panchayati Raj"
       },
       {
         "id": 31,
-        "text": "'Brahmos' is the name of _______.",
+        "text": "'ब्रह्मोस' हे _______ चे नाव आहे.",
         "options": {
-          "A": "Missile",
-          "B": "Submarine",
-          "C": "Fighter Ship",
-          "D": "Satellite"
+          "A": "क्षेपणास्त्र",
+          "B": "पाणबुडी",
+          "C": "लढावू जहाज",
+          "D": "उपग्रह"
         },
         "correctAnswer": "A",
-        "explanation": "Marked correct: Missile. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "उत्तर: **क्षेपणास्त्र**. भारत-रशिया संयुक्त प्रकल्पातील 'ब्रह्मोस' हे पार-स्वर-सागरी क्षेपणास्त्र आहे — सैन्यदलाच्या शस्त्रसाठ्यातील हे नाव वारंवार विचारले जाते.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 32,
-        "text": "Who is known as 'Martin Luther of Maharashtra'?",
+        "text": "महाराष्ट्राचे 'मार्टिन ल्युथर' असे कोणास म्हटले जाते?",
         "options": {
-          "A": "Lokahitawadi",
-          "B": "Vishnushastri Pandit",
-          "C": "Jagannath Shankarsheth",
-          "D": "Mahatma Phule"
+          "A": "लोकहितवादी",
+          "B": "विष्णूशास्त्री पंडित",
+          "C": "जगन्नाथ शंकरशेठ",
+          "D": "महात्मा फुले"
         },
         "correctAnswer": "D",
-        "explanation": "Answer: Mahatma Phule. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: **महात्मा फुले**. जातीय समता, शिक्षण व स्त्रीमुक्तीच्या लढ्यात त्यांची भूमिका 'मार्टिन ल्युथर'शी तुलना करण्यासारखी आहे — महाराष्ट्राच्या सामाजिक सुधारणा इतिहासात हे नाव अत्यंत महत्त्वाचे.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 33,
-        "text": "Of the 150 trees in an orchard 12% are mango trees. What is the number of other kinds of trees in the orchard?",
+        "text": "फळबागेतील 150 झाडांपैकी 12% झाडे आंब्याची आहेत. तर बागेत इतर प्रकारची किती झाडे आहेत?",
         "options": {
           "A": "132",
           "B": "138",
@@ -58695,13 +58695,13 @@
           "D": "24"
         },
         "correctAnswer": "A",
-        "explanation": "The right pick is option A: 132. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "उत्तर: **132**. आंब्याची झाडे = 150 × 12% = 18, म्हणून इतर प्रकारची झाडे = 150 − 18 = **132** — पर्याय \"132\" शी जुळते; 'इतर' म्हणजे 100% − 12% = 88% झाडे.",
         "category": "Aptitude",
         "topic": "Percentage, Profit & Loss"
       },
       {
         "id": 34,
-        "text": "Eleventh Five Year Plan targets an average GDP growth of:",
+        "text": "अकराव्या पंचवार्षिक योजनेमध्ये सरासरी वार्षिक सकल देशांतर्गत उत्पादन (GDP) वाढ _______ ठरवण्यात आली आहे.",
         "options": {
           "A": "7%",
           "B": "8%",
@@ -58709,13 +58709,13 @@
           "D": "10%"
         },
         "correctAnswer": "C",
-        "explanation": "The verified answer is 9%. India's Five Year Plans (1951–2017) ran from the First (1951–56) under Nehru to the Twelfth (2012–17); post-2017 planning shifted to three-year action agendas under NITI Aayog. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: **9%**. अकराव्या पंचवार्षिक योजनेत (2007–2012) सरासरी वार्षिक GDP वाढ 9% ठरवण्यात आली होती — पंचवार्षिक योजनांच्या लक्ष्यांकांची नोंद परीक्षेत उपयोगी.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": 35,
-        "text": "Write fraction form of 0.005:",
+        "text": "0.005 हा दशांश अंक अपूर्णांकात लिहा.",
         "options": {
           "A": "5/10",
           "B": "5/100",
@@ -58723,21 +58723,21 @@
           "D": "5/1000"
         },
         "correctAnswer": "D",
-        "explanation": "The correct choice is \"5/1000\". This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "उत्तर: **5/1000**. 0.005 = 5 ÷ 1000, कारण दशांशस्थान तिसऱ्या स्थानापर्यंत 5 आहे — म्हणून अपूर्णांक **5/1000** — पर्याय D शी जुळते; 5/100 = 0.05 असते.",
         "category": "Aptitude",
         "topic": "Number System & Simplification"
       },
       {
         "id": 36,
-        "text": "Dayana Mendoza who was adjudged Miss Universe 2008 is citizen of _______.",
+        "text": "2008 या वर्षीची विश्वसुंदरी डायना मेंडोझा कोणत्या देशाची नागरिक आहे?",
         "options": {
-          "A": "India",
-          "B": "Venezuela",
-          "C": "Britain",
-          "D": "Mexico"
+          "A": "भारत",
+          "B": "व्हेनेझुएला",
+          "C": "ब्रिटन",
+          "D": "मेक्सिको"
         },
         "correctAnswer": "B",
-        "explanation": "This maps to \"Venezuela\". The year 2008 anchors this question — the correct option is the fact that dates to that year. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: **व्हेनेझुएला**. 2008 मध्ये डायना मेंडोझा या व्हेनेझुएलाच्या स्पर्धकाला Miss Universe 2008 विजय मिळाला — त्या कालखंडातील सौंदर्यस्पर्धा नोंदी ठेवा.",
         "category": "Current Affairs",
         "topic": "Awards & Honours"
       },
@@ -58751,153 +58751,153 @@
           "D": "1000 erg/s"
         },
         "correctAnswer": "A",
-        "explanation": "Correct: option A — \"746 W\". Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "उत्तर: **746 W**. 1 Horse Power (H.P.) = 746 वॅट — हे विजेच्या एकक रूपांतरणातील मूलभूत सूत्र आहे; 1000 W किंवा erg/s हे पर्यायी चुकीचे आहेत.",
         "category": "Science",
         "topic": "Mechanics & Motion"
       },
       {
         "id": 38,
-        "text": "Degradation of _______ in food is called putrefaction.",
+        "text": "अन्नातील _______ चे विघटन 'पूयन' (कुजणे) असे म्हणतात.",
         "options": {
-          "A": "Fats",
-          "B": "Proteins",
-          "C": "Carbohydrates",
-          "D": "Pectins"
+          "A": "मेद",
+          "B": "प्रथिने",
+          "C": "कर्बोदके",
+          "D": "पेक्टिन"
         },
         "correctAnswer": "B",
-        "explanation": "Straight to the answer: Proteins. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: **प्रथिने**. अन्नातील प्रथिनांचे जैविक विघटन 'पूयन' (कुजणे) म्हणतात — मेदाचे 'स्वाद', कर्बोदकांचे 'आतपन' हे भ्रमित करू नका.",
         "category": "Science",
         "topic": "Zoology (Animal Biology)"
       },
       {
         "id": 39,
-        "text": "Name the winning team of IPL-2009 tournament.",
+        "text": "IPL-2009 मधील विजेता संघ कोणता?",
         "options": {
-          "A": "Mumbai Indians",
-          "B": "Rajasthan Royals",
-          "C": "Chennai Super Kings",
-          "D": "Deccan Chargers, Hyderabad"
+          "A": "मुंबई इंडियन्स",
+          "B": "राजस्थान रॉयल्स",
+          "C": "चेन्नई सुपर किंग्स",
+          "D": "डेक्कन चार्जर्स, हैद्राबाद"
         },
         "correctAnswer": "D",
-        "explanation": "The definitive answer is Deccan Chargers, Hyderabad. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "उत्तर: **डेक्कन चार्जर्स, हैद्राबाद**. IPL 2009 दक्षिण आफ्रिकेत झाला; अंतिम सामन्यात डेक्कन चार्जर्स विजेता ठरले — 2009 चा विजेता संघ व त्याचे शहर एकत्र लक्षात ठेवा.",
         "category": "Current Affairs",
         "topic": "Sports"
       },
       {
         "id": 40,
-        "text": "Arrange the creeks in Kokan from North to South direction.",
+        "text": "कोकणातील खाड्यांचा उत्तरेकडून दक्षिणेकडे क्रम लावा.",
         "options": {
-          "A": "Rajapuri, Dabhol, Jaigad, Terekhol",
-          "B": "Dabhol, Rajapuri, Jaigad, Terekhol",
-          "C": "Dabhol, Jaigad, Rajapuri, Terekhol",
-          "D": "Terekhol, Jaigad, Dabhol, Rajapuri"
+          "A": "राजापुरी, दाभोळ, जयगड, तेरेखोल",
+          "B": "दाभोळ, राजापुरी, जयगड, तेरेखोल",
+          "C": "दाभोळ, जयगड, राजापुरी, तेरेखोल",
+          "D": "तेरेखोल, जयगड, दाभोळ, राजापुरी"
         },
         "correctAnswer": "A",
-        "explanation": "Option A — Rajapuri, Dabhol, Jaigad, Terekhol — is the right pick here. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: **राजापुरी, दाभोळ, जयगड, तेरेखोल**. कोकणातील ही खाडी उत्तरेकडून दक्षिणेकडे या क्रमाने येतात — महाराष्ट्र भूगोलातील किनारपट्टीचा क्रम लक्षात ठेवा.",
         "category": "Geography",
         "topic": "Maharashtra Rivers & Dams"
       },
       {
         "id": 41,
-        "text": "Dr. Babasaheb Ambedkar with his followers embraced the Buddhism at _______.",
+        "text": "डॉ. बाबासाहेब आंबेडकरांनी _______ येथे आपल्या अनुयायांसह बौद्ध धर्म स्वीकारला.",
         "options": {
-          "A": "Nagpur",
-          "B": "Mahad",
-          "C": "Nashik",
-          "D": "Aurangabad"
+          "A": "नागपूर",
+          "B": "महाड",
+          "C": "नाशिक",
+          "D": "औरंगाबाद"
         },
         "correctAnswer": "A",
-        "explanation": "\"Nagpur\" is the accurate option. Dr. B. R. Ambedkar (1891–1956) chaired the Drafting Committee of the Constitution and became India's first Law Minister; he championed the rights of the depressed classes. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "उत्तर: **नागपूर**. 14 ऑक्टोबर 1956 रोजी डॉ. बाबासाहेब आंबेडकरांनी नागपूर येथे दीक्षाभूमीवर बौद्ध धर्म स्वीकारला — ही तारीख व ठिकाण दोन्ही महत्त्वाची.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 42,
-        "text": "Rajarshi Shahu Maharaj was the President of Non-Brahmin Social Conference in 1920 at _______.",
+        "text": "राजर्षी शाहू महाराजांनी 1920 साली _______ येथे झालेल्या ब्राह्मणेतर सामाजिक परिषदेचे अध्यक्षपद भूषविले.",
         "options": {
-          "A": "Hubli",
-          "B": "Kolhapur",
-          "C": "Belgaum",
-          "D": "Mangaon"
+          "A": "हुबळी",
+          "B": "कोल्हापूर",
+          "C": "बेळगाव",
+          "D": "माणगाव"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is Hubli. The year 1920 anchors this question — the correct option is the fact that dates to that year. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: **हुबळी**. 1920 मध्ये राजर्षी शाहू महाराजांनी हुबळी येथील ब्राह्मणेतर सामाजिक परिषदेचे अध्यक्षपद स्वीकारले — कोल्हापूर त्यांचे राज्य, परंतु परिषद हुबळीला.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 43,
-        "text": "Speed of the boat on calm water is 15 km/hr, the boat comes to original place after 6 hrs 45 min travelling 45 km distance in the opposite direction of water flow. Find speed of water flow.",
+        "text": "संथ पाण्यात एका बोटीचा वेग ताशी 15 कि.मी. आहे. ती बोट 6 तास 45 मिनिटात प्रवाहाच्या विरुद्ध दिशेने 45 कि.मी. जाऊन प्रवाहाच्या दिशेने परत मूळ जागी येते. तर प्रवाहाचा वेग काढा.",
         "options": {
-          "A": "5 km/hr",
-          "B": "6 km/hr",
-          "C": "9 km/hr",
-          "D": "3 km/hr"
+          "A": "5 कि.मी./ताशी",
+          "B": "6 कि.मी./ताशी",
+          "C": "9 कि.मी./ताशी",
+          "D": "3 कि.मी./ताशी"
         },
         "correctAnswer": "A",
-        "explanation": "The right answer is 5 km/hr (option A). The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: **5 कि.मी./ताशी**. 45/(15−x) + 45/(15+x) = 6.75 तास; समीकरण सोडवल्यास x = **5** — प्रवाहाचा वेग 5 कि.मी./ताशी — पर्याय A शी जुळते.",
         "category": "Aptitude",
         "topic": "Time, Speed & Distance"
       },
       {
         "id": 44,
-        "text": "Madam Cama raised the question of India's independence at the International Socialist Conference held at Stuttgart in _______.",
+        "text": "_________ मधील स्टुटगार्ट येथे भरलेल्या अंतरराष्ट्रीय समाजवादी परिषदेत मादाम कामा यांनी भारताच्या स्वातंत्र्याचा प्रश्न उपस्थित केला.",
         "options": {
-          "A": "France",
-          "B": "Germany",
-          "C": "England",
-          "D": "Greece"
+          "A": "फ्रान्स",
+          "B": "जर्मनी",
+          "C": "इंग्लंड",
+          "D": "ग्रीस"
         },
         "correctAnswer": "B",
-        "explanation": "Germany matches the question. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: **जर्मनी**. स्टुटगार्ट (जर्मनी) येथील अंतरराष्ट्रीय समाजवादी परिषदेत भारतीय क्रांतिकारक मादाम कामा यांनी भारताच्या स्वातंत्र्याचा प्रश्न उपस्थित केला.",
         "category": "History",
         "topic": "Revolutionary Movement"
       },
       {
         "id": 45,
-        "text": "Which was the main objective of the Second Five Year Plan?",
+        "text": "दुसऱ्या पंचवार्षिक योजनेचे मुख्य उद्दिष्ट कोणते होते?",
         "options": {
-          "A": "Industrialization",
-          "B": "Agricultural Development",
-          "C": "Increase in Export",
-          "D": "Construction of Dams"
+          "A": "औद्योगिकरण",
+          "B": "शेती विकास",
+          "C": "निर्यात वाढ",
+          "D": "धरणे बांधणे"
         },
         "correctAnswer": "A",
-        "explanation": "Marked correct: Industrialization. India's Five Year Plans (1951–2017) ran from the First (1951–56) under Nehru to the Twelfth (2012–17); post-2017 planning shifted to three-year action agendas under NITI Aayog. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "उत्तर: **औद्योगिकरण**. दुसऱ्या पंचवार्षिक योजनेत (1956–61) महालनोबिस मॉडेलच्या आधारे औद्योगिकरणावर भर — पहिली योजना कृषीवर, दुसरी उद्योगावर.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": 46,
-        "text": "Who among the following has been appointed the National Security Advisor by the Government of India?",
+        "text": "भारत सरकारने राष्ट्रीय सुरक्षा सल्लागार म्हणून कोणाची नेमणूक केली आहे?",
         "options": {
-          "A": "Brijesh Mishra",
-          "B": "M. K. Narayanan",
-          "C": "Soli Sorabji",
-          "D": "T. K. Nair"
+          "A": "ब्रिजेश मिश्रा",
+          "B": "एम.के. नारायणन",
+          "C": "सोली सोराबजी",
+          "D": "टि.के. नायर"
         },
         "correctAnswer": "B",
-        "explanation": "Option B — M. K. Narayanan — is the right pick here. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: **एम.के. नारायणन**. 2005 मध्ये त्यांना राष्ट्रीय सुरक्षा सल्लागार (NSA) म्हणून नेमणूक मिळाली — ब्रिजेश मिश्रा यापूर्वीचे NSA होते.",
         "category": "Current Affairs",
         "topic": "National Appointments & Reports"
       },
       {
         "id": 47,
-        "text": "The State of _______ is the largest producer of Rubber in India.",
+        "text": "भारतात _______ या राज्यात सर्वात जास्त रबराचे उत्पादन होते.",
         "options": {
-          "A": "Karnataka",
-          "B": "Tamilnadu",
-          "C": "Tripura",
-          "D": "Kerala"
+          "A": "कर्नाटक",
+          "B": "तामिळनाडू",
+          "C": "त्रिपुरा",
+          "D": "केरळ"
         },
         "correctAnswer": "D",
-        "explanation": "The right pick is option D: Kerala. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "उत्तर: **केरळ**. भारतात सर्वाधिक नैसर्गिक रबर उत्पादन केरळात होते — उष्ण, आर्द व पावसाळी हवामान रबर वृक्षांसाठी अनुकूल; कर्नाटक व तामिळनाडू दुसऱ्या क्रमांकावर.",
         "category": "Geography",
         "topic": "Agriculture & Soils"
       },
       {
         "id": 48,
-        "text": "A dishonest trader uses a 900 gram weight instead of a 1 kilogram weight. Find the percentage profit due to this cheating.",
+        "text": "एका अप्रामाणिक व्यापारी 1 कि.ग्रॅ. वजनाऐवजी 900 ग्रॅ. वजन वापरतो. या फसवणुकीमुळे शेकडा नफा काढा.",
         "options": {
           "A": "9%",
           "B": "10%",
@@ -58905,41 +58905,41 @@
           "D": "100%"
         },
         "correctAnswer": "B",
-        "explanation": "The correct choice is \"10%\". MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "उत्तर: **10%**. 1 कि.ग्रॅ. ऐवजी 900 ग्रॅ. वापरल्यास नफा = (1000−900)/1000 × 100 = **10%** — पर्याय \"10%\" शी जुळते; हे वजन-फसवणुकीचे मानक सूत्र.",
         "category": "Aptitude",
         "topic": "Percentage, Profit & Loss"
       },
       {
         "id": 49,
-        "text": "What is the original name of Rajarshi Shahu Maharaj?",
+        "text": "राजर्षी शाहू महाराजांचे मूळ नाव काय?",
         "options": {
-          "A": "Yeshwantrao",
-          "B": "Prataprao",
-          "C": "Shivajirao",
-          "D": "None of the above"
+          "A": "यशवंतराव",
+          "B": "प्रतापराव",
+          "C": "शिवाजीराव",
+          "D": "वरीलपैकी कोणतेही नाही"
         },
         "correctAnswer": "A",
-        "explanation": "Answer: Yeshwantrao. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: **यशवंतराव**. राजर्षी शाहू महाराजांचे मूळ नाव यशवंतराव होते — 'शाहू' हे त्यांना दिलेले उपाधी नाव; कोल्हापूरच्या सामाजिक सुधारणा इतिहासात हे मूलभूत.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 50,
-        "text": "_______ five year plan of Government of India will be implemented from the year 2007 to 2012.",
+        "text": "भारत सरकारची _______ पंचवार्षिक योजना 2007 सालापासून 2012 सालापर्यंत अंमलात आणली जाईल.",
         "options": {
-          "A": "Eleventh",
-          "B": "Tenth",
-          "C": "Thirteenth",
-          "D": "Fifteenth"
+          "A": "अकरावी",
+          "B": "दहावी",
+          "C": "तेरावी",
+          "D": "पंधरावी"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is Eleventh. India's Five Year Plans (1951–2017) ran from the First (1951–56) under Nehru to the Twelfth (2012–17); post-2017 planning shifted to three-year action agendas under NITI Aayog. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "उत्तर: **अकरावी**. 2007–2012 कालावधीसाठी अकरावी पंचवार्षिक योजना अंमलात आणली — दहावी (2002–07) नंतरची ही योजना; तारखा-योजना जोडणी लक्षात ठेवा.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": 51,
-        "text": "Eleventh Five year plan intends to incur _______% of the total plan outlay on social services.",
+        "text": "अकराव्या पंचवार्षिक योजनेत एकूण प्रस्तावित खर्चाच्या _______% खर्च सामाजिक सेवांसाठी निर्धारित केला आहे.",
         "options": {
           "A": "10.5%",
           "B": "30.3%",
@@ -58947,41 +58947,41 @@
           "D": "61.2%"
         },
         "correctAnswer": "B",
-        "explanation": "The verified pick here is 30.3%. India's Five Year Plans (1951–2017) ran from the First (1951–56) under Nehru to the Twelfth (2012–17); post-2017 planning shifted to three-year action agendas under NITI Aayog. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: **30.3%**. अकराव्या योजनेत एकूण प्रस्तावित खर्चापैकी 30.3% सामाजिक सेवांसाठी (शिक्षण, आरोग्य इ.) निर्धारित — हा अचूक आकडा लक्षात ठेवा.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": 52,
-        "text": "Water runs into a tank at the rate of 2 litres every 5 seconds and simultaneously runs out at the rate of 1 litre every 10 seconds. If tank capacity is 90,000 litres then how much time it takes to fill the tank?",
+        "text": "एका टाकीत 2 लीटर प्रति 5 सेकंद या दराने पाणी भरते व त्याच वेळी 1 लीटर प्रति 10 सेकंद या दराने पाणी बाहेर जाते. जर ती टाकी 90,000 लीटर क्षमतेची असेल तर ती किती वेळात भरेल?",
         "options": {
-          "A": "2500 minutes",
-          "B": "3000 minutes",
-          "C": "5000 minutes",
-          "D": "4000 minutes"
+          "A": "2500 मिनिटे",
+          "B": "3000 मिनिटे",
+          "C": "5000 मिनिटे",
+          "D": "4000 मिनिटे"
         },
         "correctAnswer": "C",
-        "explanation": "The intended answer is 5000 minutes. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "उत्तर: **5000 मिनिटे**. निव्वळ भरण दर = 2/5 − 1/10 = 0.3 L/s; वेळ = 90000 ÷ 0.3 = 300000 से. = **5000 मिनिटे** — पर्याय C शी जुळते; बाहेर जाणारे पाणी वजा करा.",
         "category": "Aptitude",
         "topic": "Time & Work"
       },
       {
         "id": 53,
-        "text": "What is the provision in Indian Constitution about citizenship?",
+        "text": "भारतीय राज्यघटनेतील नागरिकत्वासंबंधी तरतूद काय?",
         "options": {
-          "A": "A single citizenship",
-          "B": "A double citizenship",
-          "C": "Both of these",
-          "D": "Neither of these"
+          "A": "एकेरी नागरिकत्व",
+          "B": "दुहेरी नागरिकत्व",
+          "C": "हे दोन्हीही",
+          "D": "यापैकी काहीही नाही"
         },
         "correctAnswer": "A",
-        "explanation": "A single citizenship matches the question. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: **एकेरी नागरिकत्व**. भारतीय राज्यघटनेनुसार (भाग II) भारतात एकच नागरिकत्व आहे — USAसारखे दुहेरी नागरिकत्व येथे मान्य नाही.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": 54,
-        "text": "Father's age is equal to sum of mother's and son's age and average of ages of all three is 20. Then calculate father's age.",
+        "text": "वडीलांचे वय हे आई व मुलाच्या वयांच्या बेरीजेइतके आहे व त्या तिघांच्या वयांची सरासरी 20 आहे. तर वडीलांचे वय काढा.",
         "options": {
           "A": "45",
           "B": "40",
@@ -58989,83 +58989,83 @@
           "D": "35"
         },
         "correctAnswer": "C",
-        "explanation": "30 is the correct option here. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "उत्तर: **30**. तिघांची वय बेरीज = 20 × 3 = 60; वडील = आई + मुलगा, म्हणून वडील = 60 ÷ 2 = **30** वर्षे — पर्याय C शी जुळते; सरासरी × 3 = एकूण वय.",
         "category": "Aptitude",
         "topic": "Ratio, Proportion & Averages"
       },
       {
         "id": 55,
-        "text": "Agarkar was under the influence of western writer _______.",
+        "text": "आगरकरांवर _______ या पाश्चात्य लेखकाचा प्रभाव होता.",
         "options": {
-          "A": "Spencer",
-          "B": "Rousseau",
-          "C": "Shakespeare",
-          "D": "Martin Luther"
+          "A": "स्पेन्सर",
+          "B": "रुसो",
+          "C": "शेक्सपियर",
+          "D": "मार्टिन ल्यूथर"
         },
         "correctAnswer": "A",
-        "explanation": "The verified answer is Spencer. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: **स्पेन्सर**. गोपाळ कृष्ण गोखले यांचे शिष्य ज्ञानेश्वरराव आगरकर यांच्यावर हर्बर्ट स्पेन्सर यांच्या 'सर्व्हायव्हल ऑफ द फिटेस्ट' विचारांचा प्रभाव होता.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 56,
-        "text": "Jignesh bought 100 shares of one company at price Rs. 1288.55 each and on the same day he sold at price Rs. 1338.45. If broker's commission is 0.001% on buying amount and selling amount then how much profit Jignesh got?",
+        "text": "जिग्नेशने एका कंपनीचे 100 शेअर्स प्रत्येकी 1288.55 रु. या दराने घेतले व त्याच दिवशी प्रत्येकी 1338.45 रु. या दराने विकले. जर दलालाचे कमिशन 0.1% खरेदी किंमत व विक्री किंमत या दोन्हीवर असेल तर जिग्नेशला किती नफा झाला?",
         "options": {
-          "A": "Rs. 3827.25",
-          "B": "Rs. 4827.25",
-          "C": "Rs. 4727.30",
-          "D": "Rs. 4527.25"
+          "A": "3827.25 रु.",
+          "B": "4827.25 रु.",
+          "C": "4727.30 रु.",
+          "D": "4527.25 रु."
         },
         "correctAnswer": "C",
-        "explanation": "The intended answer is Rs. 4727.30. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "उत्तर: **4727.30 रु.**. साधा नफा = 100 × (1338.45 − 1288.55) = 4990; दलाली 0.1% = 262.70; शुद्ध नफा = 4990 − 262.70 = **4727.30 रु.** — पर्याय C.",
         "category": "Aptitude",
         "topic": "Percentage, Profit & Loss"
       },
       {
         "id": 57,
-        "text": "Who has written the autobiography 'Dreams from my father'?",
+        "text": "'ड्रीम्स फ्रॉम माय फादर' हे आत्मचरित्र कोणी लिहिले?",
         "options": {
-          "A": "Indira Gandhi",
-          "B": "Barack Obama",
-          "C": "Sheikh Hasina",
-          "D": "Benazir Bhutto"
+          "A": "इंदिरा गांधी",
+          "B": "बराक ओबामा",
+          "C": "शेख हसिना",
+          "D": "बेनाझीर भुट्टे"
         },
         "correctAnswer": "B",
-        "explanation": "Barack Obama is the correct option here. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: **बराक ओबामा**. 'Dreams from My Father' हे अमेरिकेच्या 44 व्या राष्ट्राध्यक्ष बराक ओबामा यांचे आत्मचरित्र — 1995 मध्ये प्रकाशित.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       },
       {
         "id": 58,
-        "text": "Ramakant was present on 198 days in School Academic Year. His presentee was 90%. Find out the number of working days of the school in that year.",
+        "text": "रमाकांत एका शालेय वर्षात 198 दिवस उपस्थित होता. त्याची वर्षातील उपस्थिती 90% असल्यास शाळा त्या वर्षी किती दिवस भरली?",
         "options": {
-          "A": "220 days",
-          "B": "210 days",
-          "C": "200 days",
-          "D": "215 days"
+          "A": "220 दिवस",
+          "B": "210 दिवस",
+          "C": "200 दिवस",
+          "D": "215 दिवस"
         },
         "correctAnswer": "A",
-        "explanation": "The right answer is 220 days (option A). Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "उत्तर: **220 दिवस**. 90% उपस्थिती × एकूण दिवस = 198, म्हणून एकूण = 198 ÷ 0.90 = **220 दिवस** — पर्याय A शी जुळते; उपस्थिती % वरून एकूण दिवस काढा.",
         "category": "Aptitude",
         "topic": "Percentage, Profit & Loss"
       },
       {
         "id": 59,
-        "text": "Who advices the Governor to dissolve the Legislative Assembly?",
+        "text": "विधानसभेचे विसर्जन करण्याचा सल्ला राज्यपालांना कोण देतो?",
         "options": {
-          "A": "Chief Minister",
-          "B": "Prime Minister",
-          "C": "Home Minister",
-          "D": "Lokayukta"
+          "A": "मुख्यमंत्री",
+          "B": "प्रधानमंत्री",
+          "C": "गृहमंत्री",
+          "D": "लोकायुक्त"
         },
         "correctAnswer": "A",
-        "explanation": "\"Chief Minister\" is the fact the question is pointing at. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: **मुख्यमंत्री**. विधानसभेचे विसर्जन करण्याचा सल्ला राज्यपालांना मुख्यमंत्री देतात (कलम 174) — राज्यपाल स्वतः विधानसभा विसर्जित करू शकतात.",
         "category": "Indian Polity",
         "topic": "State Government"
       },
       {
         "id": 60,
-        "text": "In India the alternating current (A.C.) changes its direction _______ times within one second.",
+        "text": "भारतात प्रत्यावर्ती धारेची (A.C.) दिशा एका सेकंदात _______ वेळा बदलते.",
         "options": {
           "A": "10",
           "B": "50",
@@ -59073,167 +59073,167 @@
           "D": "100"
         },
         "correctAnswer": "D",
-        "explanation": "Answer: 100. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "उत्तर: **100**. भारतात AC वारंवारता 50 Hz; प्रत्येक चक्रात धारा दोनदा दिशा बदलते, म्हणून 50 × 2 = **100** वेळा/सेकंद — पर्याय D शी जुळते.",
         "category": "Science",
         "topic": "Electricity & Magnetism"
       },
       {
         "id": 61,
-        "text": "The name Kanu Sanyal is related to _______.",
+        "text": "कानू सन्याल कशाशी संबंधित होते?",
         "options": {
-          "A": "Sport",
-          "B": "Bio-technology",
-          "C": "Film",
-          "D": "Peasant Workers Movement"
+          "A": "क्रीडा",
+          "B": "जैवतंत्रज्ञान",
+          "C": "चित्रपट",
+          "D": "कष्टकरी-शेतकरी चळवळ"
         },
         "correctAnswer": "D",
-        "explanation": "The intended answer is Peasant Workers Movement. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: कष्टकरी-शेतकरी चळवळ. कानू सन्याल हे नक्सलवादी चळवळीचे प्रमुख नेते होते; 1967 मध्ये नक्सलबरी येथील शेतकरी-कामगार संघर्षाचे नेतृत्व करून भारतीय क्रांतिकारी चळवळीत महत्त्वाची भूमिका बजावली.",
         "category": "History",
         "topic": "Revolutionary Movement"
       },
       {
         "id": 62,
-        "text": "Who appoints the Judges of High Court?",
+        "text": "उच्च न्यायालयाच्या न्यायाधीशांची नियुक्ती कोण करतात?",
         "options": {
-          "A": "Governor",
-          "B": "President",
-          "C": "Chief Minister",
-          "D": "Prime-Minister"
+          "A": "राज्यपाल",
+          "B": "राष्ट्रपती",
+          "C": "मुख्यमंत्री",
+          "D": "पंतप्रधान"
         },
         "correctAnswer": "B",
-        "explanation": "Reading the stem carefully, the answer is President. There are 25 High Courts in India as of 2026; the oldest is the Calcutta High Court (established 1862), followed by Bombay and Madras (also 1862). This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "उत्तर: राष्ट्रपती. भारतीय राज्यघटनेनुसार उच्च न्यायालयाच्या न्यायाधीशांची नियुक्ती राष्ट्रपती करतात; परंतु नियुक्तीपूर्वी भारताच्या सर्वोच्च न्यायालयाचा सल्ला घेणे अनिवार्य — राज्यपालाचा यात थेट संबंध नाही.",
         "category": "Indian Polity",
         "topic": "Judiciary"
       },
       {
         "id": 63,
-        "text": "Maharshi Karve was remarried with widow from _______.",
+        "text": "महर्षी कर्वेंनी _______ येथील विधवेशी पुनर्विवाह केला होता.",
         "options": {
-          "A": "Seva Sadan",
-          "B": "Sharada Sadan",
-          "C": "Anath Balikaashram",
-          "D": "Mukti Sadan"
+          "A": "सेवा सदन",
+          "B": "शारदा सदन",
+          "C": "अनाथ बालिकाश्रम",
+          "D": "मुक्ती सदन"
         },
         "correctAnswer": "B",
-        "explanation": "The right pick is option B: Sharada Sadan. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: शारदा सदन. महर्षी कर्वे यांनी 1893 मध्ये विधवा सत्यभामाबाई जोशी यांच्याशी शारदा सदन, पुणे येथे विधवा पुनर्विवाह केला; हा सामाजिक सुधारणेचा ऐतिहासिक क्षण — विधवा पुनर्विवाहासाठी त्यांनी अनेक वर्षे प्रयत्न केले.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 64,
-        "text": "The Bhakra Nangal dam has been constructed on the river _______.",
+        "text": "भाख्रा-नांगल धरण _______ नदीवर बांधले आहे.",
         "options": {
-          "A": "Sutlej",
-          "B": "Ravi",
-          "C": "Beas",
-          "D": "Ganga"
+          "A": "सतलज",
+          "B": "रावी",
+          "C": "बियास",
+          "D": "गंगा"
         },
         "correctAnswer": "A",
-        "explanation": "For this question, the correct option reads: Sutlej. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "उत्तर: सतलज. भाख्रा-नांगल धरण हिमालयातील **सतलज** नदीवर बांधले आहे; हे पंजाब, हरियाणा व राजस्थान यांना सिंचन व विद्युतपुरवठा करते — भारतातील सर्वात मोठ्या बहुउद्देशीय धरणांपैकी एक.",
         "category": "Geography",
         "topic": "Indian Rivers & Drainage"
       },
       {
         "id": 65,
-        "text": "Which of the following is not a place of Ashtavinayaka?",
+        "text": "खालीलपैकी कोणते ठिकाण अष्टविनायकांपैकी नाही?",
         "options": {
-          "A": "Pali",
-          "B": "Ranjangaon",
-          "C": "Morgaon",
-          "D": "Ganpatipule"
+          "A": "पाली",
+          "B": "रांजणगाव",
+          "C": "मोरगाव",
+          "D": "गणपतीपुळे"
         },
         "correctAnswer": "D",
-        "explanation": "The official Set A key selects Ganpatipule. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: गणपतीपुळे. पाली, रांजणगाव व मोरगाव हे महाराष्ट्रातील **अष्टविनायक** मंदिरांपैकी आहेत; **गणपतीपुळे** हे रत्नागिरीतील समुद्रकिनारी पर्यटनस्थळ आहे, अष्टविनायक यादीत नाही.",
         "category": "Geography",
         "topic": "Maharashtra Physical Geography"
       },
       {
         "id": 66,
-        "text": "Who among the following was the founder member of Swaraj Party?",
+        "text": "खालीलपैकी स्वराज्य पक्षाचे संस्थापक सदस्य कोण होते?",
         "options": {
-          "A": "Mahatma Gandhi",
-          "B": "Lokmanya Tilak",
-          "C": "Chittaranjan Das",
-          "D": "Justice Ranade"
+          "A": "महात्मा गांधी",
+          "B": "लोकमान्य टिळक",
+          "C": "चित्तरंजन दास",
+          "D": "न्यायमूर्ती रानडे"
         },
         "correctAnswer": "C",
-        "explanation": "\"Chittaranjan Das\" is what the question is looking for. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: चित्तरंजन दास. 1923 मध्ये चित्तरंजन दास व मोतीलाल नेहरू यांनी स्वराज्य पक्षाची स्थापना केली; 'देशरत्न' म्हणून ओळखले जात — महात्मा गांधी व टिळक हे स्वराज्य पक्षाचे संस्थापक नव्हते.",
         "category": "History",
         "topic": "Rise of Nationalism & INC"
       },
       {
         "id": 67,
-        "text": "_______ is the Chair Person of the Planning Commission of India.",
+        "text": "भारतीय नियोजन मंडळाचे अध्यक्ष _______ असतात.",
         "options": {
-          "A": "President of India",
-          "B": "Vice-President of India",
-          "C": "Finance Minister of India",
-          "D": "Prime Minister of India"
+          "A": "भारताचे राष्ट्रपती",
+          "B": "भारताचे उपराष्ट्रपती",
+          "C": "भारताचे वित्तमंत्री",
+          "D": "भारताचे पंतप्रधान"
         },
         "correctAnswer": "D",
-        "explanation": "The right pick is option D: Prime Minister of India. The Prime Minister of India, appointed by the President under Article 75, is the head of government and leader of the majority in the Lok Sabha. The Planning Commission was set up on 15 March 1950 by an executive resolution and dissolved on 1 January 2015 to be replaced by NITI Aayog. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: भारताचे पंतप्रधान. 1950 पासून **नियोजन मंडळाचे** अध्यक्षपद पंतप्रधानांकडे होते; 2015 नंतर नियोजन मंडळ रद्द करून त्याच्या जागी NITI Aayog स्थापन झाले.",
         "category": "Indian Polity",
         "topic": "Union Executive"
       },
       {
         "id": 68,
-        "text": "In which district National Defence Academy is located?",
+        "text": "राष्ट्रीय संरक्षण प्रबोधनी कोणत्या जिल्ह्यात आहे?",
         "options": {
-          "A": "Thane",
-          "B": "Pune",
-          "C": "Nashik",
-          "D": "Kolhapur"
+          "A": "ठाणे",
+          "B": "पुणे",
+          "C": "नाशिक",
+          "D": "कोल्हापूर"
         },
         "correctAnswer": "B",
-        "explanation": "The examiner has marked Pune as the correct response. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "उत्तर: पुणे. राष्ट्रीय संरक्षण प्रबोधनी (NDA) **खडकवासला**, पुणे जिल्ह्यात आहे — भारतीय सशस्त्र दलांचे संयुक्त प्रशिक्षण केंद्र; सेना, नौदल व वायुसेनेचे अधिकारी येथे प्रशिक्षित होतात.",
         "category": "Geography",
         "topic": "Maharashtra Districts & Administration"
       },
       {
         "id": 69,
-        "text": "In which country did the Swine Flu epidemic originate in 2009?",
+        "text": "'स्वाईन फ्लू' रोगाची साथ 2009 मध्ये सर्वप्रथम कोणत्या देशात आली?",
         "options": {
-          "A": "France",
-          "B": "South Africa",
-          "C": "Japan",
-          "D": "Mexico"
+          "A": "फ्रान्स",
+          "B": "दक्षिण आफ्रिका",
+          "C": "जपान",
+          "D": "मेक्सिको"
         },
         "correctAnswer": "D",
-        "explanation": "The right pick is option D: Mexico. The year 2009 anchors this question — the correct option is the fact that dates to that year. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: मेक्सिको. 2009 मध्ये H1N1 **स्वाईन फ्लू**ची साथ सर्वप्रथम मेक्सिकोत उद्भवली; नंतर ती जागतिक महामारी बनली — WHO ने जून 2009 मध्ये महामारी घोषित केली.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       },
       {
         "id": 70,
-        "text": "_______ wrote poetry under the penname of 'Govindagraj'.",
+        "text": "'गोविंदाग्रज' ह्या टोपणनावाने _______ यांनी कविता लिहिल्या.",
         "options": {
-          "A": "G. N. Dandekar",
-          "B": "V. V. Shirwadkar",
-          "C": "Ram Ganesh Gadkari",
-          "D": "A. R. Deshpande"
+          "A": "गो. नी. दांडेकर",
+          "B": "वि. वा. शिरवाडकर",
+          "C": "राम गणेश गडकरी",
+          "D": "आ. रा. देशपांडे"
         },
         "correctAnswer": "C",
-        "explanation": "This maps to \"Ram Ganesh Gadkari\". The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "उत्तर: राम गणेश गडकरी. '**गोविंदाग्रज**' हे टोपणनाव राम गणेश गडकरी यांचे होते; 'एकाच प्याल्यात', 'पुनःप्रसन्न' सारख्या नाटकांनी त्यांनी मराठी साहित्य व नाट्यक्षेत्र समृद्ध केले.",
         "category": "History",
         "topic": "Art, Literature & Culture"
       },
       {
         "id": 71,
-        "text": "Period of Eighth Five Year Plan was _______.",
+        "text": "आठव्या पंचवार्षिक योजनेचा कालावधी _______ होता.",
         "options": {
-          "A": "1992 to 1997",
-          "B": "1990 to 1995",
-          "C": "1991 to 1996",
-          "D": "None of these"
+          "A": "1992 ते 1997",
+          "B": "1990 ते 1995",
+          "C": "1991 ते 1996",
+          "D": "वरीलपैकी कोणताही नाही"
         },
         "correctAnswer": "A",
-        "explanation": "Marked correct: 1992 to 1997. India's Five Year Plans (1951–2017) ran from the First (1951–56) under Nehru to the Twelfth (2012–17); post-2017 planning shifted to three-year action agendas under NITI Aayog. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: 1992 ते 1997. **आठवी** पंचवार्षिक योजना 1991 च्या आर्थिक सुधारणांनंतर 1992–97 या कालावधीत राबवली; उद्दिष्ट उच्च वाढ दर व उदारीकरणासह आर्थिक सुधारणा.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": 72,
-        "text": "Decimal fraction form of 245/20 = _______.",
+        "text": "245/20 चे दशांश अपूर्णांक रूप _______.",
         "options": {
           "A": "12.25",
           "B": "1.225",
@@ -59241,35 +59241,35 @@
           "D": "0.1225"
         },
         "correctAnswer": "A",
-        "explanation": "The exam key confirms \"12.25\". The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: 12.25. 245 ÷ 20 = 49 ÷ 4 = **12.25** — पर्याय \"12.25\" शी जुळते; अपूर्णांक 245/20 लिहिल्यास 49/4 = 12.25, म्हणून दशांश उत्तर 12.25.",
         "category": "Aptitude",
         "topic": "Number System & Simplification"
       },
       {
         "id": 73,
-        "text": "Who was the first editor of the newspaper 'Kesari'?",
+        "text": "'केसरी' या वृत्तपत्राचे पहिले संपादक कोण होते?",
         "options": {
-          "A": "Lokmanya Tilak",
-          "B": "Gopal Ganesh Agarkar",
-          "C": "Balshastri Jambhekar",
-          "D": "Dr. Bhau Daji Lad"
+          "A": "लोकमान्य टिळक",
+          "B": "गोपाळ गणेश आगरकर",
+          "C": "बाळशास्त्री जांभेकर",
+          "D": "डॉ. भाऊ दाजी लाड"
         },
         "correctAnswer": "B",
-        "explanation": "\"Gopal Ganesh Agarkar\" is what the question is looking for. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: गोपाळ गणेश आगरकर. '**केसरी**' वृत्तपत्राचे पहिले संपादक गोपाळ गणेश आगरकर होते; 1881 मध्ये टिळक-आगरकर यांच्या भागीदारीत सुरू, नंतर टिळकांनी संपादन सांभाळले.",
         "category": "History",
         "topic": "Maharashtra in Freedom Struggle"
       },
       {
         "id": 74,
-        "text": "_______ is used as catalyst in the manufacture of sulphur trioxide (SO₃).",
+        "text": "सल्फर ट्रायऑक्साइड (SO₃) च्या उत्पादनासाठी _______ चा उत्प्रेरक म्हणून उपयोग करतात.",
         "options": {
-          "A": "Vanadium pentoxide (V₂O₅)",
-          "B": "Manganese dioxide (MnO₂)",
-          "C": "Calcium carbonate (CaCO₃)",
-          "D": "Silver nitrate (AgNO₃)"
+          "A": "व्हॅनॅडियम पेंटॉक्साइड (V₂O₅)",
+          "B": "मँगनीज डायऑक्साइड (MnO₂)",
+          "C": "कॅल्शियम कार्बोनेट (CaCO₃)",
+          "D": "सिल्व्हर नायट्रेट (AgNO₃)"
         },
         "correctAnswer": "A",
-        "explanation": "The verified answer is Vanadium pentoxide (V₂O₅). The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: व्हॅनॅडियम पेंटॉक्साइड (V₂O₅). संपर्क प्रक्रियेत SO₂ → SO₃ रूपांतरासाठी **V₂O₅** उत्प्रेरक म्हणून वापरले जाते; हे सल्फ्युरिक अम्ल उत्पादनाच्या Contact Process चे महत्त्वाचे टप्पे.",
         "category": "Science",
         "topic": "Chemical Bonding & Reactions"
       },
@@ -59280,30 +59280,30 @@
           "A": "0",
           "B": "1",
           "C": "360",
-          "D": "None of these"
+          "D": "या पैकी कोणतेही नाही"
         },
         "correctAnswer": "B",
-        "explanation": "For this question, the correct option reads: 1. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: 1. कोणत्याही शून्येतर संख्येचा शून्यांश घातांक 1 असतो: 5⁰ = 1, 8⁰ = 1, 9⁰ = 1; म्हणून 5⁰ × 8⁰ × 9⁰ = 1 × 1 × 1 = **1** — पर्याय \"1\" शी जुळते.",
         "category": "Aptitude",
         "topic": "Number System & Simplification"
       },
       {
         "id": 76,
-        "text": "Where did Lala Hardayal established the Gadar Organisation?",
+        "text": "लाला हरदयाळ यांनी गदर संघटनेची स्थापना कोठे केली?",
         "options": {
-          "A": "Canada (America)",
-          "B": "Holland",
-          "C": "France",
-          "D": "Russia"
+          "A": "कॅनडा (अमेरिका)",
+          "B": "हॉलंड",
+          "C": "फ्रान्स",
+          "D": "रशिया"
         },
         "correctAnswer": "A",
-        "explanation": "Option A carries the right answer — Canada (America). For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "उत्तर: कॅनडा (अमेरिका). लाला हरदयाळ यांनी 1913 मध्ये **कॅनडाच्या** सॅन फ्रान्सिस्को येथे गदर पार्टीची स्थापना केली; भारतीय स्वातंत्र्यलढ्याची ही परदेशातील प्रभावी संस्था.",
         "category": "History",
         "topic": "Revolutionary Movement"
       },
       {
         "id": 77,
-        "text": "In Pune, Mahatma Phule started first school for girls in _______.",
+        "text": "पुणे येथे महात्मा फुल्यांनी मुलींची पहिली शाळा इ.स. _______ मध्ये काढली.",
         "options": {
           "A": "1848",
           "B": "1851",
@@ -59311,13 +59311,13 @@
           "D": "1883"
         },
         "correctAnswer": "A",
-        "explanation": "You want 1848 on this one. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: 1848. महात्मा फुल्यांनी पुण्यात **1848** मध्ये भारतातील पहिली मुलींची शाळा सुरू केली — स्त्रीशिक्षण व सामाजिक समता यासाठी त्यांचा हा ऐतिहासिक पाऊल.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 78,
-        "text": "The first Indian Railway train from Mumbai to Thane was started in _______.",
+        "text": "भारतातील पहिली रेल्वे गाडी मुंबई ते ठाणे दरम्यान इ.स. _______ मध्ये सुरु झाली.",
         "options": {
           "A": "1835",
           "B": "1850",
@@ -59325,13 +59325,13 @@
           "D": "1870"
         },
         "correctAnswer": "C",
-        "explanation": "Correct: option C — \"1853\". The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: 1853. मुंबई–ठाणे 34 कि.मी. रेल्वे **16 एप्रिल 1853** रोजी सुरू झाली — भारतातील पहिली रेल्वे; 400 प्रवासी व 14 डबे असलेली 'सह्याद्री' ही पहिली गाडी होती.",
         "category": "History",
         "topic": "British Expansion & Governors-General"
       },
       {
         "id": 79,
-        "text": "Total districts in Maharashtra are _______.",
+        "text": "महाराष्ट्रात एकूण _______ जिल्हे आहेत.",
         "options": {
           "A": "26",
           "B": "31",
@@ -59339,27 +59339,27 @@
           "D": "35"
         },
         "correctAnswer": "D",
-        "explanation": "Correct: option D — \"35\". For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: 35. 2010 पर्यंत महाराष्ट्रात **35** जिल्हे होते; नंतर पालघर (2014) व झाला (2022) जोडल्याने आता 36 जिल्हे — PSI 2010 पेपरसाठी उत्तर 35.",
         "category": "Geography",
         "topic": "Maharashtra Districts & Administration"
       },
       {
         "id": 80,
-        "text": "Dr. Ambedkar decided to burn 'Manu Smruti' at _______.",
+        "text": "डॉ. बाबासाहेब आंबेडकरांनी _______ ठिकाणी 'मनुस्मृती' चे दहन करण्याचा निर्णय घेतला.",
         "options": {
-          "A": "Mahad",
-          "B": "Pune",
-          "C": "Pandharpur",
-          "D": "Satara"
+          "A": "महाड",
+          "B": "पुणे",
+          "C": "पंढरपूर",
+          "D": "सातारा"
         },
         "correctAnswer": "A",
-        "explanation": "\"Mahad\" is the option marked correct in the official key. The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. Dr. B. R. Ambedkar (1891–1956) chaired the Drafting Committee of the Constitution and became India's first Law Minister; he championed the rights of the depressed classes. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "उत्तर: महाड. डॉ. बाबासाहेब आंबेडकरांनी **1927** मध्ये महाड येथे चवदार तळे सत्याग्रहात 'मनुस्मृती' दहन करण्याचा निर्णय घेतला — जातभेद नष्ट करण्याचा ऐतिहासिक संकल्प.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 81,
-        "text": "Solve: [(78/13 × 49/42) + (25/(5×3) × 63/35)] ÷ (2×2×2 / 4×2×16) = _______.",
+        "text": "सोडवा: [(78/13 × 49/42) + (25/(5×3) × 63/35)] ÷ ((2×2×2) / (4×2×16)) = _______.",
         "options": {
           "A": "16",
           "B": "1.6",
@@ -59367,41 +59367,41 @@
           "D": "320"
         },
         "correctAnswer": "C",
-        "explanation": "Marked correct: 160. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "उत्तर: 160. (78/13 × 49/42) + (25/15 × 63/35) = (6×7/6) + (5/3×9/5) = 7 + 3 = 10; 10 ÷ (8/128) = 10 × 16 = **160** — पर्याय \"160\" शी जुळते.",
         "category": "Aptitude",
         "topic": "Number System & Simplification"
       },
       {
         "id": 82,
-        "text": "The words 'Socialist' and 'Secular' were incorporated in the Preamble of the Indian Constitution through which constitutional amendment?",
+        "text": "भारतीय संविधानाच्या प्रस्तावनेत 'समाजवादी' व 'धर्मनिरपेक्ष' हे शब्द कितव्या घटनादुरुस्तीनंतर समाविष्ट करण्यात आले?",
         "options": {
-          "A": "73rd",
-          "B": "26th",
-          "C": "42nd",
-          "D": "61st"
+          "A": "73 व्या",
+          "B": "26 व्या",
+          "C": "42 व्या",
+          "D": "61 व्या"
         },
         "correctAnswer": "C",
-        "explanation": "For this question, the correct option reads: 42nd. The Preamble was amended once — by the 42nd Amendment (1976) — which added the words Socialist, Secular and Integrity. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: 42 व्या. **42वी** घटनादुरुस्ती (1976, आणीबाणी काळ) ने प्रस्तावनेत 'समाजवादी', 'धर्मनिरपेक्ष' व 'अखंडता' शब्द जोडले — प्रस्तावनेत एकमेव दुरुस्ती.",
         "category": "Indian Polity",
         "topic": "Constitutional Amendments"
       },
       {
         "id": 83,
-        "text": "Using the SONAR, sound pulses are emitted at the surface of sea water. The echo is heard after 4 seconds. Find the depth of the sea. (Velocity of sound in sea water is 1550 m/s).",
+        "text": "सोनार यंत्रणा वापरून समुद्राच्या पाण्याच्या पृष्ठभागावर ध्वनीतरंग सोडण्यात आले. त्याचा प्रतिध्वनी 4 सेकंदानंतर ऐकू आला. तर त्या ठिकाणाची समुद्राची खोली काढा. (ध्वनीचा समुद्राच्या पाण्यातील वेग 1550 मी./से.)",
         "options": {
-          "A": "3100 m",
-          "B": "6200 m",
-          "C": "24800 m",
-          "D": "1550 m"
+          "A": "3100 मीटर",
+          "B": "6200 मीटर",
+          "C": "24800 मीटर",
+          "D": "1550 मीटर"
         },
         "correctAnswer": "A",
-        "explanation": "The verified pick here is 3100 m. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "उत्तर: 3100 मीटर. खोली = (ध्वनीवेग × वेळ) ÷ 2 = (1550 × 4) ÷ 2 = **3100 मी.** — प्रतिध्वनीसाठी ध्वनी जात-येण्याचा वेळ दुप्पट; पर्याय \"3100 मीटर\" शी जुळते.",
         "category": "Science",
         "topic": "Optics & Sound"
       },
       {
         "id": 84,
-        "text": "What is the difference in the averages of numbers from 1 to 20 and numbers from 1 to 10?",
+        "text": "क्रमशः 1 ते 20 संख्यांची सरासरी व क्रमशः 1 ते 10 संख्यांची सरासरी यातील फरक काय?",
         "options": {
           "A": "10.5",
           "B": "5",
@@ -59409,265 +59409,265 @@
           "D": "10"
         },
         "correctAnswer": "B",
-        "explanation": "\"5\" is the option marked correct in the official key. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: 5. 1–20 ची सरासरी = n(n+1)/2n = 21/2 = 10.5; 1–10 ची = 11/2 = 5.5; फरक = 10.5 − 5.5 = **5** — पर्याय \"5\" शी जुळते.",
         "category": "Aptitude",
         "topic": "Ratio, Proportion & Averages"
       },
       {
         "id": 85,
-        "text": "A protein molecule is made up of _______.",
+        "text": "प्रथिन रेणू _______ यांचा बनलेला असतो.",
         "options": {
-          "A": "Lipid",
-          "B": "Amino acids",
-          "C": "Carbohydrates",
-          "D": "Nucleic acids"
+          "A": "लिपिड",
+          "B": "अमिनो आम्ले",
+          "C": "कार्बोदके",
+          "D": "न्यूक्लिक अम्ले"
         },
         "correctAnswer": "B",
-        "explanation": "The right pick is option B: Amino acids. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "उत्तर: अमिनो आम्ले. प्रथिने हे **अमिनो आम्लांच्या** साखळीने बनलेले असतात; पेप्टाइड बंधांनी जोडलेले रेणू — शरीरातील वाढ, दुरुस्ती व रोगप्रतिकारासाठी आवश्यक.",
         "category": "Science",
         "topic": "Cell Biology & Genetics"
       },
       {
         "id": 86,
-        "text": "Maharshi Karve was honoured as 'Bharat Ratna' and '_______ ' by Government of India.",
+        "text": "महर्षी कर्वे यांना भारत सरकारकडून 'भारतरत्न' व '_______' या पदवीने गौरविण्यात आले.",
         "options": {
-          "A": "Padmashree",
-          "B": "Padmabhushan",
-          "C": "Bharat Mitra",
-          "D": "L.L.D"
+          "A": "पद्मश्री",
+          "B": "पद्मभूषण",
+          "C": "भारत मित्र",
+          "D": "एल. एल. डी."
         },
         "correctAnswer": "B",
-        "explanation": "\"Padmabhushan\" is the accurate option. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: पद्मभूषण. महर्षी कर्वे यांना **1955** मध्ये भारतरत्न व **1958** मध्ये पद्मभूषण या पदवीने गौरवले — स्त्रीशिक्षण, विधवा पुनर्विवाह व सामाजिक सुधारणेसाठी.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 87,
-        "text": "Who established the 'Scheduled Caste Federation'?",
+        "text": "'शेड्युल्ड कास्ट फेडरेशन' ची स्थापना कोणी केली?",
         "options": {
-          "A": "Maharshi Vitthal Ramaji Shinde",
-          "B": "Rajarshi Shahu Maharaj",
-          "C": "Dr. Babasaheb Ambedkar",
-          "D": "Ramanand Saraswati"
+          "A": "महर्षी विठ्ठल रामजी शिंदे",
+          "B": "राजर्षी शाहू महाराज",
+          "C": "डॉ. बाबासाहेब आंबेडकर",
+          "D": "रामानंद सरस्वती"
         },
         "correctAnswer": "C",
-        "explanation": "The examination key marks Dr. Babasaheb Ambedkar as the correct choice. Dr. B. R. Ambedkar (1891–1956) chaired the Drafting Committee of the Constitution and became India's first Law Minister; he championed the rights of the depressed classes. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: डॉ. बाबासाहेब आंबेडकर. **1942** मध्ये डॉ. आंबेडकरांनी 'शेड्युल्ड कास्ट फेडरेशन'ची स्थापना केली — दलित समाजाच्या राजकीय संघटनाचा पाया; पुढे 1956 मध्ये रिपब्लिकन पार्टी ऑफ इंडिया.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 88,
-        "text": "_______ are known as the power houses of the cells.",
+        "text": "_______ यांना पेशीचे उर्जाकेंद्र असे म्हणतात.",
         "options": {
-          "A": "Lysosomes",
-          "B": "Centrosomes",
-          "C": "Mitochondria",
-          "D": "Vacuoles"
+          "A": "लयसोसोम",
+          "B": "केंद्रक",
+          "C": "तंतुकणिका",
+          "D": "रिक्तिका"
         },
         "correctAnswer": "C",
-        "explanation": "Mitochondria matches the question. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: तंतुकणिका. **मायटोकॉन्ड्रिया** (तंतुकणिका) पेशीचे उर्जाकेंद्र; ATP उत्पादनाची श्वसनक्रिया येथे होते — 'पेशीचे उर्जाकेंद्र' म्हणून ओळख; केंद्रक व लयसोसोम नाही.",
         "category": "Science",
         "topic": "Cell Biology & Genetics"
       },
       {
         "id": 89,
-        "text": "A committee to study the causes of farmer's suicide in Maharashtra was formed under the chairmanship of _______.",
+        "text": "महाराष्ट्रातील शेतकऱ्यांच्या आत्महत्येची कारणे शोधण्यासाठी _______ यांच्या अध्यक्षतेखाली समिती स्थापन करण्यात आली.",
         "options": {
-          "A": "Dr. Bhalchandra Mungekar",
-          "B": "Dr. Vijay Bhatkar",
-          "C": "Dr. Narendra Jadhav",
-          "D": "Dr. Vasant Gowarikar"
+          "A": "डॉ. भालचंद्र मुणगेकर",
+          "B": "डॉ. विजय भटकर",
+          "C": "डॉ. नरेंद्र जाधव",
+          "D": "डॉ. वसंत गोवारीकर"
         },
         "correctAnswer": "C",
-        "explanation": "The verified answer is Dr. Narendra Jadhav. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: डॉ. नरेंद्र जाधव. महाराष्ट्रातील शेतकरी आत्महत्येची कारणे शोधण्यासाठी **डॉ. नरेंद्र जाधव** अध्यक्षस्थानी समिती स्थापन झाली — कर्ज, सिंचन व बाजारभाव यांचा अभ्यास.",
         "category": "Current Affairs",
         "topic": "National Appointments & Reports"
       },
       {
         "id": 90,
-        "text": "Which of the following is not the example of protozoa?",
+        "text": "खालीलपैकी कोणते उदाहरण प्रोटोझोआ या संघप्रकारात येत नाही?",
         "options": {
-          "A": "Hydra",
-          "B": "Amoeba",
-          "C": "Plasmodium",
-          "D": "Euglena"
+          "A": "हायड्रा",
+          "B": "अमीबा",
+          "C": "प्लासमोडियम",
+          "D": "युग्लिना"
         },
         "correctAnswer": "A",
-        "explanation": "This maps to \"Hydra\". This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: हायड्रा. अमीबा, प्लासमोडियम व युग्लिना हे **प्रोटोझोआ** (एककोशिकीय) आहेत; **हायड्रा** हे सिलेंटेरेटा (कोएलेंटेरेटा) संघात येते — बहुकोशिकीय प्राणी.",
         "category": "Science",
         "topic": "Zoology (Animal Biology)"
       },
       {
         "id": 91,
-        "text": "The All India Khilafat Conference was held at _______ in 1919.",
+        "text": "1919 मध्ये अखिल भारतीय खिलाफत परिषद _______ येथे झाली.",
         "options": {
-          "A": "Delhi",
-          "B": "Calcutta",
-          "C": "Bombay",
-          "D": "Madras"
+          "A": "दिल्ली",
+          "B": "कलकत्ता",
+          "C": "मुंबई",
+          "D": "मद्रास"
         },
         "correctAnswer": "A",
-        "explanation": "\"Delhi\" is what the question is looking for. The year 1919 anchors this question — the correct option is the fact that dates to that year. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: दिल्ली. 1919 मध्ये अखिल भारतीय खिलाफत परिषद दिल्लीत भरली; खिलाफत आंदोलनाच्या पार्श्वभूमीवरील ही तारीख-ठिकाण जोडी MPSC मध्ये वारंवार विचारली जाते.",
         "category": "History",
         "topic": "Gandhian Mass Movements"
       },
       {
         "id": 92,
-        "text": "Who founded the 'Bahishkrut Hitakarini Sabha'?",
+        "text": "'बहिष्कृत हितकारिणी सभा'ची स्थापना कोणी केली?",
         "options": {
-          "A": "Mahatma Phule",
-          "B": "Maharshi Vitthal Ramaji Shinde",
-          "C": "Dr. Babasaheb Ambedkar",
-          "D": "Rajarshi Shahu Maharaj"
+          "A": "महात्मा फुले",
+          "B": "महर्षी विठ्ठल रामजी शिंदे",
+          "C": "डॉ. बाबासाहेब आंबेडकर",
+          "D": "राजर्षी शाहू महाराज"
         },
         "correctAnswer": "C",
-        "explanation": "The right answer is Dr. Babasaheb Ambedkar (option C). Dr. B. R. Ambedkar (1891–1956) chaired the Drafting Committee of the Constitution and became India's first Law Minister; he championed the rights of the depressed classes. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "उत्तर: डॉ. बाबासाहेब आंबेडकर. 1924 मध्ये त्यांनी 'बहिष्कृत हितकारिणी सभा' स्थापून दलित हितासाठी संघटित कार्य सुरू केले — सामाजिक सुधारणा चळवळीत हे त्यांचे महत्त्वाचे पाऊल.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 93,
-        "text": "In which year the 'Chavdar Tale Satyagraha' was started in Mahad?",
+        "text": "महाड येथील 'चवदार तळे' सत्याग्रह कोणत्या वर्षी सुरू करण्यात आला?",
         "options": {
-          "A": "1923 A.D.",
-          "B": "1925 A.D.",
-          "C": "1926 A.D.",
-          "D": "1927 A.D."
+          "A": "इ.स. 1923",
+          "B": "इ.स. 1925",
+          "C": "इ.स. 1926",
+          "D": "इ.स. 1927"
         },
         "correctAnswer": "D",
-        "explanation": "\"1927 A.D.\" is the fact the question is pointing at. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "उत्तर: इ.स. 1927. महाड येथील चवदार तळे सत्याग्रह 20 मार्च 1927 रोजी सुरू झाला; 'मी पण पाणी प्यायला येतो' या घोषणेसह आंबेडकरी चळवळीतील ही तारीख उजळून लक्षात ठेवा.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 94,
-        "text": "Pre-Monsoon Showers in Maharashtra are known as _______.",
+        "text": "मान्सूनपूर्व पडणाऱ्या पावसाच्या सरींना महाराष्ट्रात _______ म्हणतात.",
         "options": {
-          "A": "Cherry-Blossom-Showers",
-          "B": "Kalbaisakhi",
-          "C": "Norwesters",
-          "D": "Mango-Showers"
+          "A": "चेरी-ब्लॉसम सरी",
+          "B": "कालबैसाखी",
+          "C": "नॉर्वेस्टर",
+          "D": "आम्रसरी"
         },
         "correctAnswer": "D",
-        "explanation": "The verified answer is Mango-Showers. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: आम्रसरी. मान्सूनपूर्व पडणाऱ्या या पावसाच्या सरींना महाराष्ट्रात आम्रसरी (Mango Showers) म्हणतात — आंब्याच्या फुलोऱ्यासाठी उपयुक्त असल्याने हे नाव पडले.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": 95,
-        "text": "There is a bicameral legislature in _______.",
+        "text": "_______ राज्याचे विधानमंडळ द्विसदनीय आहे.",
         "options": {
-          "A": "Assam",
-          "B": "Uttar Pradesh",
-          "C": "Punjab",
-          "D": "Tamilnadu"
+          "A": "आसाम",
+          "B": "उत्तर प्रदेश",
+          "C": "पंजाब",
+          "D": "तामिळनाडू"
         },
         "correctAnswer": "B",
-        "explanation": "Correct: option B — \"Uttar Pradesh\". Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "उत्तर: उत्तर प्रदेश. या राज्यात विधानसभा व विधान परिषद असलेले द्विसदनीय विधानमंडळ आहे; पर्यायातील आसाम, पंजाब व तामिळनाडू सध्या एकसदनीय — ही यादी लक्षात ठेवा.",
         "category": "Indian Polity",
         "topic": "State Government"
       },
       {
         "id": 96,
-        "text": "Find the odd word.",
+        "text": "वेगळा शब्द निवडा.",
         "options": {
-          "A": "Potatoes",
-          "B": "Rice",
-          "C": "Oil seeds",
-          "D": "Jawar"
+          "A": "बटाटे",
+          "B": "तांदूळ",
+          "C": "तेलबिया",
+          "D": "ज्वारी"
         },
         "correctAnswer": "C",
-        "explanation": "\"Oil seeds\" is the fact the question is pointing at. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: तेलबिया. बटाटे, तांदूळ, ज्वारी — हे थेट खाद्यपदार्थ; तेलबिया तेल काढण्यासाठी — म्हणून वर्गातून **तेलबिया** वेगळा शब्द, पर्याय C योग्य.",
         "category": "Aptitude",
         "topic": "Analogy & Classification"
       },
       {
         "id": 97,
-        "text": "Which of the following newspaper was not started by Dr. Ambedkar?",
+        "text": "खालील वृत्तपत्रांपैकी कोणते वृत्तपत्र डॉ. आंबेडकरांनी सुरू केले नव्हते?",
         "options": {
-          "A": "Bahishkrit Bharat",
-          "B": "Janata Patra",
-          "C": "Samata Patra",
-          "D": "Nava Jawan"
+          "A": "बहिष्कृत भारत",
+          "B": "जनता",
+          "C": "समता",
+          "D": "नवजवान"
         },
         "correctAnswer": "D",
-        "explanation": "Straight to the answer: Nava Jawan. Dr. B. R. Ambedkar (1891–1956) chaired the Drafting Committee of the Constitution and became India's first Law Minister; he championed the rights of the depressed classes. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "उत्तर: नवजवान. डॉ. आंबेडकरांनी 'बहिष्कृत भारत', 'जनता' व 'समता' ही वृत्तपत्रे सुरू केली; 'नवजवान' त्यांच्या वृत्तपत्रांच्या यादीत नाही — म्हणून हा अपवाद.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 98,
-        "text": "Area wise largest State of India (as in 2001) is _______.",
+        "text": "आकारमानाने भारतातील सर्वात मोठे राज्य (2001 नुसार) _______ आहे.",
         "options": {
-          "A": "Madhya Pradesh",
-          "B": "Uttar Pradesh",
-          "C": "Rajasthan",
-          "D": "Karnataka"
+          "A": "मध्य प्रदेश",
+          "B": "उत्तर प्रदेश",
+          "C": "राजस्थान",
+          "D": "कर्नाटक"
         },
         "correctAnswer": "C",
-        "explanation": "\"Rajasthan\" is the option marked correct in the official key. The year 2001 anchors this question — the correct option is the fact that dates to that year. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: राजस्थान. 2001 च्या जनगणनेनुसार क्षेत्रफळाने राजस्थान भारतातील सर्वात मोठे राज्य होते; नंतरच्या राज्य पुनर्रचनेनंतरही हे स्थान कायम राहिले.",
         "category": "Geography",
         "topic": "Indian Physical Geography"
       },
       {
         "id": 99,
-        "text": "A cylindrical pot has a height of 10 cm and a diameter of 16 cm. How many litres of milk it can hold?",
+        "text": "एक वृत्तचित्र आकाराच्या भांड्याची उंची 10 से.मी. आणि व्यास 16 से.मी. आहे. तर त्यात किती लीटर दूध मावेल?",
         "options": {
-          "A": "2 litres",
-          "B": "1.5 litres",
-          "C": "1.75 litres",
-          "D": "2.25 litres"
+          "A": "2 लीटर",
+          "B": "1.5 लीटर",
+          "C": "1.75 लीटर",
+          "D": "2.25 लीटर"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is 2 litres. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "उत्तर: 2 लीटर. त्रिज्याः 8 से.मी., उंची 10 — खंड = π × 8² × 10 = **640π** ≈ 2010 से.मी.³; 1000 से.मी.³ = 1 लीटर, म्हणून ≈ **2 लीटर** — पर्याय A.",
         "category": "Aptitude",
         "topic": "Mensuration & Geometry"
       },
       {
         "id": 100,
-        "text": "Who has the power to call the Gram Sabha?",
+        "text": "ग्रामसभा बोलावण्याचा अधिकार कोणास आहे?",
         "options": {
-          "A": "Sarpanch",
-          "B": "Gramsevak",
-          "C": "B.D.O.",
-          "D": "Tahasildar"
+          "A": "सरपंच",
+          "B": "ग्रामसेवक",
+          "C": "गटविकास अधिकारी",
+          "D": "तहसिलदार"
         },
         "correctAnswer": "A",
-        "explanation": "Reading the stem carefully, the answer is Sarpanch. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "उत्तर: सरपंच. ग्रामपंचायतीच्या अध्यक्ष म्हणून सरपंचाला ग्रामसभा बोलावण्याचा अधिकार आहे — 73 व्या घटन दुरुस्तीनुसार ग्रामीण स्वराज्यात ही केंद्रीय भूमिका.",
         "category": "Indian Polity",
         "topic": "Panchayati Raj"
       },
       {
         "id": 101,
-        "text": "At what temperature °C and °F both has same value?",
+        "text": "कोणत्या तापमानाला °C आणि °F या दोन्ही तापमापकांचे मूल्य समान असते?",
         "options": {
           "A": "4°C",
-          "B": "−4°C",
-          "C": "−40°C",
+          "B": "-4°C",
+          "C": "-40°C",
           "D": "+40°C"
         },
         "correctAnswer": "C",
-        "explanation": "\"−40°C\" is the fact the question is pointing at. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: -40°C. F = (9/5)C + 32 सूत्रात C = F ठेवल्यास **C = −40** मिळते — या एकमेव बिंदूवर सेल्सियस व फॅरेनहाइट स्केलचे मूल्य समान.",
         "category": "Science",
         "topic": "Heat & Thermodynamics"
       },
       {
         "id": 102,
-        "text": "How many members can be nominated by the Governor in Legislative Assembly?",
+        "text": "विधानसभेत राज्यपाल किती सदस्यांची नियुक्ती करू शकतात?",
         "options": {
-          "A": "Only one",
-          "B": "One sixth of the total number of members present in the Assembly",
-          "C": "One twelfth of the total number of members present in the Assembly",
-          "D": "Only twelve"
+          "A": "फक्त एक",
+          "B": "विधानसभेच्या एकूण सदस्य संख्येच्या 1/6",
+          "C": "विधानसभेच्या एकूण सदस्य संख्येच्या 1/12",
+          "D": "फक्त बारा"
         },
         "correctAnswer": "A",
-        "explanation": "The paper's official answer is Only one. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "उत्तर: फक्त एक. राज्यपाल विधानसभेत **फक्त एक** सदस्य नामनिर्देशित करू शकतो — साहित्य, कला, विज्ञान किंवा सहकार क्षेत्रातील विशेषज्ञासाठी.",
         "category": "Indian Polity",
         "topic": "State Government"
       },
       {
         "id": 103,
-        "text": "The term of the member of the Legislative Council is _______ years.",
+        "text": "विधान परिषदेतील सभासदाचा कार्यकाल _______ वर्षे असतो.",
         "options": {
           "A": "5",
           "B": "6",
@@ -59675,307 +59675,307 @@
           "D": "4½"
         },
         "correctAnswer": "B",
-        "explanation": "\"6\" is the option marked correct in the official key. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: 6. राज्य विधान परिषद सदस्याचा कार्यकाल **6 वर्षे** असतो; सदस्यांचा एक-तृतीयांश दर दोन वर्षांनी निवडला जातो — लोकसभेच्या 5 वर्षांपेक्षा एक वर्ष जास्त.",
         "category": "Indian Polity",
         "topic": "State Government"
       },
       {
         "id": 104,
-        "text": "L.P.G. contains the chemical components _______.",
+        "text": "एल.पी.जी. (L.P.G.) मध्ये _______ हे घटक असतात.",
         "options": {
-          "A": "Methane and Butane",
-          "B": "Methane and Ethane",
-          "C": "Methane and Ethanol",
-          "D": "Butane and Isobutane"
+          "A": "मिथेन आणि ब्युटेन",
+          "B": "मिथेन आणि इथेन",
+          "C": "मिथेन आणि इथेनॉल",
+          "D": "ब्युटेन आणि आयसोब्युटेन"
         },
         "correctAnswer": "D",
-        "explanation": "The examination key marks Butane and Isobutane as the correct choice. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: ब्युटेन आणि आयसोब्युटेन. LPG मध्ये प्रामुख्याने या दोन हायड्रोकार्बनचे मिश्रण असते; मिथेन नैसर्गिक वायूमध्ये असतो — LPG घटक म्हणून लक्षात ठेवा.",
         "category": "Science",
         "topic": "Organic Chemistry"
       },
       {
         "id": 105,
-        "text": "Leakage of poisonous gas Methyl Isocyanide from a factory took lives of thousands at _______.",
+        "text": "_______ येथील कारखान्यातील मिथाइल आयसोसायनाइडच्या विषारी वायू गळतीमुळे हजारो जणांचा बळी गेला.",
         "options": {
-          "A": "Bhuj",
-          "B": "Bhopal",
-          "C": "Mumbai",
-          "D": "Bhuvaneshwar"
+          "A": "भुज",
+          "B": "भोपाळ",
+          "C": "मुंबई",
+          "D": "भुवनेश्वर"
         },
         "correctAnswer": "B",
-        "explanation": "The official Set A key selects Bhopal. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: भोपाळ. 2–3 डिसेंबर 1984 ला Union Carbide कारखान्यातून मिथाइल आयसोसायनाइड गळती झाली — जगातील सर्वात मोठ्या औद्योगिक आपत्तींपैकी एक.",
         "category": "Environment",
         "topic": "Pollution"
       },
       {
         "id": 106,
-        "text": "Who founded the 'Balhatya Pratibandhak Gruha' at Pune?",
+        "text": "पुणे येथे 'बालहत्या प्रतिबंधक गृह' कोणी स्थापन केले?",
         "options": {
-          "A": "Maharshi Dhondo Keshav Karve",
-          "B": "Ramabai Ranade",
-          "C": "Mahatma Jyotirao Phule",
-          "D": "Ishwarchandra Vidyasagar"
+          "A": "महर्षी धोंडो केशव कर्वे",
+          "B": "रमाबाई रानडे",
+          "C": "महात्मा ज्योतिराव फुले",
+          "D": "ईश्वरचंद्र विद्यासागर"
         },
         "correctAnswer": "C",
-        "explanation": "\"Mahatma Jyotirao Phule\" is what the question is looking for. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "उत्तर: महात्मा ज्योतिराव फुले. पुण्यात 'बालहत्या प्रतिबंधक गृह' 1863 मध्ये त्यांनी स्त्री शिक्षण व बालसंरक्षणासाठी स्थापले — सामाजिक सुधारणा चळवळीतील महत्त्वाची संस्था.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 107,
-        "text": "Coastal region of _______ State receives rainfall due to North-East Monsoon winds.",
+        "text": "_______ राज्याच्या तटबंदीवरील भागात ईशान्य मोसमी वाऱ्यांमुळे पाऊस पडतो.",
         "options": {
-          "A": "Goa",
-          "B": "Punjab",
-          "C": "Maharashtra",
-          "D": "Tamilnadu"
+          "A": "गोवा",
+          "B": "पंजाब",
+          "C": "महाराष्ट्र",
+          "D": "तामिळनाडू"
         },
         "correctAnswer": "D",
-        "explanation": "\"Tamilnadu\" is what the question is looking for. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: तामिळनाडू. पूर्वेकडील तटबंदीवर ईशान्य मोसमी वा-यांमुळे अक्टोबर–डिसेंबर पाऊस पडतो; महाराष्ट्र-कोकणात मुख्यतः **पश्चिम** मान्सून.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": 108,
-        "text": "The weight of human brain is approximately _______ grams.",
+        "text": "मानवी मेंदूचे वजन सुमारे _______ ग्रॅम असते.",
         "options": {
-          "A": "800 to 1000",
-          "B": "1300 to 1400",
-          "C": "1500 to 1600",
-          "D": "500 to 600"
+          "A": "800 ते 1000",
+          "B": "1300 ते 1400",
+          "C": "1500 ते 1600",
+          "D": "500 ते 600"
         },
         "correctAnswer": "B",
-        "explanation": "Marked correct: 1300 to 1400. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "उत्तर: 1300 ते 1400. प्रौढ मानवाच्या मेंदूचे सरासरी वजन सुमारे **1300–1400 ग्रॅम** असते — शरीराच्या एकूण वजनाच्या सुमारे 2% एवढे; हे अनुमानित मानक मर्यादा.",
         "category": "Science",
         "topic": "Human Physiology"
       },
       {
         "id": 109,
-        "text": "Nilima invested Rs. 60,000 in a nationalised bank for 2 years at the rate of 8.5 p.c. p.a. at compound interest. What amount will Nilima receive from the bank at the end of 2 years?",
+        "text": "निलिमाने राष्ट्रीयकृत बँकेत 60,000 रुपये द.सा.द.शे. 8.5 दराने चक्रवाढ व्याजाने 2 वर्षांसाठी गुंतवले, तर निलिमाला बँकेकडून मुदतीनंतर किती रक्कम मिळेल?",
         "options": {
-          "A": "Rs. 70,433.5",
-          "B": "Rs. 70,200",
-          "C": "Rs. 70,933.5",
-          "D": "Rs. 70,633.5"
+          "A": "70,433.5 रुपये",
+          "B": "70,200 रुपये",
+          "C": "70,933.5 रुपये",
+          "D": "70,633.5 रुपये"
         },
         "correctAnswer": "D",
-        "explanation": "The paper's official answer is Rs. 70,633.5. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "उत्तर: 70,633.5 रुपये. मुद्दल ₹60000, दर 8.5%, 2 वर्ष — रक्कम = 60000 × (1.085)² = 60000 × **1.177225** = **70633.5**; पर्याय D शी जुळते.",
         "category": "Aptitude",
         "topic": "Simple & Compound Interest"
       },
       {
         "id": 110,
-        "text": "What is the name of fighter aircraft that President Pratibha Patil has flown?",
+        "text": "राष्ट्रपती प्रतिभा पाटील यांनी कोणत्या लढाऊ विमानाने गगनभरारी मारली?",
         "options": {
-          "A": "Mig 29",
-          "B": "Sukhoi 30 MKI",
-          "C": "Jaguar",
-          "D": "C-Harrier"
+          "A": "मिग 29",
+          "B": "सुखोई 30 एम.के.आय.",
+          "C": "जगुआर",
+          "D": "सी-हॅरियर"
         },
         "correctAnswer": "B",
-        "explanation": "\"Sukhoi 30 MKI\" is what the question is looking for. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: सुखोई 30 एम.के.आय. 2009 मध्ये राष्ट्रपती प्रतिभा पाटील या भारतीय राष्ट्रप्रमुख म्हणून Sukhoi-30 MKI वरून गगनभरारी केली — ऐतिहासिक क्षण.",
         "category": "Current Affairs",
         "topic": "Defence & Security"
       },
       {
         "id": 111,
-        "text": "Who convenes the meeting of the Gram Panchayat and the Gram Sabha and presides over them?",
+        "text": "ग्रामसभा व ग्रामपंचायतीच्या सभा आमंत्रित करून त्याचे अध्यक्षस्थान कोण भूषवतो?",
         "options": {
-          "A": "Sarpanch",
-          "B": "Deputy Sarpanch",
-          "C": "Gramsevak",
-          "D": "Member"
+          "A": "सरपंच",
+          "B": "उपसरपंच",
+          "C": "ग्रामसेवक",
+          "D": "सदस्य"
         },
         "correctAnswer": "A",
-        "explanation": "This maps to \"Sarpanch\". This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "उत्तर: सरपंच. ग्रामसभा व ग्रामपंचायत सभा बोलावून त्यांचे अध्यक्षस्थान सरपंच भूषवतो — ग्रामपंचायत कायद्यानुसार ही ग्रामीण प्रशासनातील मुख्य जबाबदारी.",
         "category": "Indian Polity",
         "topic": "Panchayati Raj"
       },
       {
         "id": 112,
-        "text": "Who gave the slogan 'Do or Die'?",
+        "text": "'करा किंवा मरा' ही घोषणा कोणी दिली?",
         "options": {
-          "A": "Rashbihari Bose",
-          "B": "Motilal Nehru",
-          "C": "Mahatma Gandhi",
-          "D": "Bankimchandra Chatterjee"
+          "A": "रासबिहारी बोस",
+          "B": "मोतीलाल नेहरू",
+          "C": "महात्मा गांधी",
+          "D": "बंकिमचंद्र चटर्जी"
         },
         "correctAnswer": "C",
-        "explanation": "The examiner has marked Mahatma Gandhi as the correct response. Mahatma Gandhi (1869–1948) led the Non-Cooperation (1920), Civil Disobedience (1930) and Quit India (1942) movements, using satyagraha as the primary political method. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: महात्मा गांधी. 8 ऑगस्ट 1942 रोजी भारत छोडो चळवळीत 'करा किंवा मरा' (Do or Die) घोषणा गांधीजींनी दिली — स्वातंत्र्यलढ्यातील अत्यंत प्रसिद्ध घोषवाक्य.",
         "category": "History",
         "topic": "Gandhian Mass Movements"
       },
       {
         "id": 113,
-        "text": "Who had opposed the woman reservation bill in Parliament?",
+        "text": "संसदेत महिला राखीव विधेयकास कोणी विरोध केला?",
         "options": {
-          "A": "Bharatiya Janata Party",
-          "B": "Shiv Sena",
-          "C": "Bahujan Samaj Party",
-          "D": "Nationalist Congress Party"
+          "A": "भारतीय जनता पक्ष",
+          "B": "शिवसेना",
+          "C": "बहुजन समाज पक्ष",
+          "D": "राष्ट्रवादी काँग्रेस पक्ष"
         },
         "correctAnswer": "C",
-        "explanation": "Working through the options, Bahujan Samaj Party is the correct one. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "उत्तर: बहुजन समाज पक्ष. महिला आरक्षण विधेयकावर BSP ने संसदेत विरोध नोंदवला होता — राजकीय पक्षांचे या विधेयकावरील वेगळे मते सध्याच्या घडामोडींसाठी उपयुक्त.",
         "category": "Indian Polity",
         "topic": "Parliament"
       },
       {
         "id": 114,
-        "text": "Hepatitis B is caused by _______.",
+        "text": "हेपॅटिटिस B _______ मुळे होते.",
         "options": {
           "A": "HAV",
           "B": "HIV",
           "C": "HBV",
-          "D": "None of the above"
+          "D": "यापैकी कोणतेही नाही"
         },
         "correctAnswer": "C",
-        "explanation": "The verified answer is HBV. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: HBV. Hepatitis B **Hepatitis B Virus (HBV)** मुळे होते; HAV Hepatitis A साठी, HIV AIDS साठी — वेगवेगळ्या विषाणांची लघुरूपे (abbreviation) गोंधळू नका.",
         "category": "Science",
         "topic": "Diseases & Health"
       },
       {
         "id": 115,
-        "text": "_______ receives highest rainfall in India.",
+        "text": "_______ येथे भारतात सर्वात जास्त पाऊस पडतो.",
         "options": {
-          "A": "Konkan",
-          "B": "Malbar",
-          "C": "Cherapunji",
-          "D": "Gujrat"
+          "A": "कोकण",
+          "B": "मलबार",
+          "C": "चेरापुंजी",
+          "D": "गुजरात"
         },
         "correctAnswer": "C",
-        "explanation": "Marked correct: Cherapunji. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "उत्तर: चेरापुंजी. मेघालयातील चेरापुंजी (सोहरा) येथे भारतात सर्वाधिक वार्षिक पाऊस पडतो — उत्तर-पूर्व मान्सूनच्या झपाट्यामुळे हे सर्वाधिक पर्जन्यमानाचे ठिकाण.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": 116,
-        "text": "Who is contained in the President's electoral college?",
+        "text": "राष्ट्रपतींच्या निर्वाचन मंडळात _______ यांचा समावेश होतो.",
         "options": {
-          "A": "Both the houses of Parliaments and all Legislatures of the States",
-          "B": "Both the houses of Parliaments and Legislative assemblies",
-          "C": "Only Lok Sabha and Legislative assemblies",
-          "D": "Both the houses of Parliaments and State Councils"
+          "A": "संसदेची दोन्ही गृहे व राज्यातील सर्व विधानमंडळे",
+          "B": "संसदेची दोन्ही गृहे आणि राज्यातील विधानसभा",
+          "C": "फक्त लोकसभा व राज्यांच्या विधानसभा",
+          "D": "संसदेची दोन्ही गृहे व राज्यातील विधान परिषद"
         },
         "correctAnswer": "B",
-        "explanation": "The intended answer is Both the houses of Parliaments and Legislative assemblies. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: संसदेची दोन्ही गृहे आणि राज्यातील विधानसभा. राष्ट्रपती निवडणूक मंडळ = लोकसभा + राज्यसभा + **राज्य विधानसभा** सदस्य; विधान **परिषद** समाविष्ट नाही.",
         "category": "Indian Polity",
         "topic": "Union Executive"
       },
       {
         "id": 117,
-        "text": "What is the name of the party of Bangladesh Prime Minister Sheikh Hasina?",
+        "text": "बांगलादेशाच्या पंतप्रधान शेख हसीना यांच्या पक्षाचे नाव सांगा.",
         "options": {
-          "A": "Awami Ligue",
-          "B": "Bangladesh Nationalist Party",
-          "C": "Bangladesh People Party",
-          "D": "Jamat-e-Islami"
+          "A": "आवामी लीग",
+          "B": "बांगलादेश नॅशनलिस्ट पार्टी",
+          "C": "बांगलादेश पीपल्स पार्टी",
+          "D": "जमात-ए-इस्लाम"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is Awami Ligue. The Prime Minister of India, appointed by the President under Article 75, is the head of government and leader of the majority in the Lok Sabha. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "उत्तर: आवामी लीग. बांगलादेशच्या पंतप्रधान शेख हसीना Awami League (आवामी लीग) पक्षाच्या नेत्या — 1971 च्या स्वातंत्र्य चळवळीत या पक्षाची अग्रणी भूमिका.",
         "category": "Current Affairs",
         "topic": "International Affairs & Summits"
       },
       {
         "id": 118,
-        "text": "Who among the following film actors established a new political party in August 2008?",
+        "text": "खालीलपैकी कोणत्या चित्रपट अभिनेत्याने ऑगस्ट 2008 मध्ये नवीन राजकीय पक्ष स्थापन केला?",
         "options": {
-          "A": "Rajnikant",
-          "B": "Govinda",
-          "C": "Kamal Hassan",
-          "D": "Chiranjeevi"
+          "A": "रजनीकांत",
+          "B": "गोविंदा",
+          "C": "कमल हासन",
+          "D": "चिरंजीवी"
         },
         "correctAnswer": "D",
-        "explanation": "\"Chiranjeevi\" is the fact the question is pointing at. The year 2008 anchors this question — the correct option is the fact that dates to that year. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: चिरंजीवी. ऑगस्ट 2008 मध्ये तेलुगू अभिनेता चिरंजीवींनी 'Praja Rajyam Party' स्थापन केली — दक्षिण भारतीय चित्रपट व राजकारणाचा संगम.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       },
       {
         "id": 119,
-        "text": "What was the surname of famous 'Tamasha' artist Chandrakant Dhawalpurikar?",
+        "text": "प्रसिद्ध तमाशा कलावंत चंद्रकांत ढवळपुरीकर यांचे आडनाव काय होते?",
         "options": {
-          "A": "Belhekar",
-          "B": "Jadhav",
-          "C": "Kadam",
-          "D": "Mohite"
+          "A": "बेल्हेकर",
+          "B": "जाधव",
+          "C": "कदम",
+          "D": "मोहिते"
         },
         "correctAnswer": "B",
-        "explanation": "For this question, the correct option reads: Jadhav. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "उत्तर: जाधव. प्रसिद्ध तमाशा कलावंत चंद्रकांत ढवळपुरीकर यांचे आडनाव **जाधव** होते — महाराष्ट्रीय लोकनृत्य व तमाशा कलाकारांची नावे अभ्यासात ठेवा.",
         "category": "History",
         "topic": "Art, Literature & Culture"
       },
       {
         "id": 120,
-        "text": "Which of the following contains more proportion of calcium?",
+        "text": "खालीलपैकी कशात कॅल्शियमचे प्रमाण अधिक असते?",
         "options": {
-          "A": "Pulses",
-          "B": "Vegetable Oil",
-          "C": "Milk",
-          "D": "Orange"
+          "A": "डाळी",
+          "B": "खाद्य तेल (वनस्पतीजन्य तेल)",
+          "C": "दूध",
+          "D": "संत्री"
         },
         "correctAnswer": "C",
-        "explanation": "This maps to \"Milk\". This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: दूध. हाडे व दातांसाठी कॅल्शियम दूधात डाळ, खाद्य तेल व संत्र्यापेक्षा **अधिक** — दैनंदिन आहारात सर्वसुलभ व पौष्टिक स्रोत म्हणून ओळखले जाते.",
         "category": "Science",
         "topic": "Nutrition"
       },
       {
         "id": 121,
-        "text": "What is the reason for increase in judicial activism?",
+        "text": "न्यायालयाची सक्रियता वाढण्याचे कारण काय?",
         "options": {
-          "A": "The growth of population and courts",
-          "B": "Public interest litigations",
-          "C": "Globalizations and liberalization",
-          "D": "Corruption"
+          "A": "लोकसंख्येचा व न्यायालयाचा झालेला विस्तार",
+          "B": "जनहितार्थ होणाऱ्या याचिका",
+          "C": "जागतिकीकरण व उदारीकरण",
+          "D": "भ्रष्टाचार"
         },
         "correctAnswer": "B",
-        "explanation": "Straight to the answer: Public interest litigations. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "उत्तर: जनहितार्थ होणाऱ्या याचिका. PIL मुळे न्यायालये सामाजिक न्यायासाठी सक्रिय झाली; कोणत्याही नागरिकाला सार्वजनिक हिताच्या प्रश्नांत याचिका दाखल करता येते.",
         "category": "Indian Polity",
         "topic": "Judiciary"
       },
       {
         "id": 122,
-        "text": "Who has started the strike against Court decision in case of Lokmanya Tilak's imprisonment in June 1908?",
+        "text": "1908 मध्ये लोकमान्य टिळकांवरील खटल्याची सुनावणी झाली. त्यावेळी त्यांच्या कैदेच्या निषेधार्थ कोणी संप पुकारला?",
         "options": {
-          "A": "The workers of Bombay",
-          "B": "The workers of Poona",
-          "C": "The workers of Calcutta",
-          "D": "None of them"
+          "A": "मुंबईमधील कामगारांनी",
+          "B": "पुणे येथील कामगारांनी",
+          "C": "कलकत्ता येथील कामगारांनी",
+          "D": "वरील पैकी कोणीही नाही"
         },
         "correctAnswer": "A",
-        "explanation": "\"The workers of Bombay\" is the fact the question is pointing at. The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. Bal Gangadhar Tilak (1856–1920), 'Lokmanya', was a Maratha extremist leader, founder of the Sarvajanik Ganeshotsav (1893) and Shivaji Utsav (1895), and editor of Kesari and The Mahratta. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: मुंबईमधील कामगारांनी. 1908 मध्ये टिळकांच्या खटल्यावेळी **मुंबईच्या कामगारांनी** संप पुकारला — हा सामाजिक-राजकीय आंदोलनाचा ऐतिहासिक क्षण.",
         "category": "History",
         "topic": "Maharashtra in Freedom Struggle"
       },
       {
         "id": 123,
-        "text": "Which type of soil is observed on the coastal region of Konkan?",
+        "text": "कोंकण किनारपट्टीवर कोणत्या प्रकारची मृदा आढळते?",
         "options": {
-          "A": "Alluvial soil",
-          "B": "Regur soil",
-          "C": "Red soil",
-          "D": "Black soil"
+          "A": "गाळाची मृदा",
+          "B": "रेगूर मृदा",
+          "C": "तांबडी मृदा",
+          "D": "काळी मृदा"
         },
         "correctAnswer": "C",
-        "explanation": "The correct answer is Red soil. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "उत्तर: तांबडी मृदा. कोंकण किनारपट्टीवर उच्च तापमान व पर्जन्यमानामुळे **तांबडी (लॅटराइट)** मृदा आढळते; गाळाची मृदा नदीच्या खोऱ्यांत, रेगूर दख्खनात.",
         "category": "Geography",
         "topic": "Agriculture & Soils"
       },
       {
         "id": 124,
-        "text": "Maximum gap between two sessions of Parliament can be of _______.",
+        "text": "संसदेच्या दोन अधिवेशनामधील कालावधी जास्तीत जास्त _______ असाव.",
         "options": {
-          "A": "three months",
-          "B": "two months",
-          "C": "six months",
-          "D": "twelve months"
+          "A": "तीन महिने",
+          "B": "दोन महिने",
+          "C": "सहा महिने",
+          "D": "बारा महिने"
         },
         "correctAnswer": "C",
-        "explanation": "\"six months\" is the option marked correct in the official key. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: सहा महिने. कलम 85 नुसार संसदेच्या दोन अधिवेशनांमधील कालावधी **जास्तीत जास्त सहा महिने** असावा — ही संवैधानिक मर्यादा लक्षात ठेवा.",
         "category": "Indian Polity",
         "topic": "Parliament"
       },
       {
         "id": 125,
-        "text": "'The Muslim League' was founded in the year _______.",
+        "text": "'मुस्लिम लीग'ची स्थापना _______ या वर्षी झाली.",
         "options": {
           "A": "1906",
           "B": "1908",
@@ -59983,13 +59983,13 @@
           "D": "1919"
         },
         "correctAnswer": "A",
-        "explanation": "The right answer is 1906 (option A). The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "उत्तर: 1906. **मुस्लिम लीग**ची स्थापना 30 डिसेंबर 1906 रोजी धाका येथे झाली — वर्ष आणि स्थापना-ठिकाण एकत्र स्मरणात ठेवा.",
         "category": "History",
         "topic": "Rise of Nationalism & INC"
       },
       {
         "id": 126,
-        "text": "If (3, m) satisfy the equation 3x + 5y = 29 the value of m = _______.",
+        "text": "जर (3, m) हा बिंदू 3x + 5y = 29 या समीकरणाचे समाधान करतो, तर m = _______.",
         "options": {
           "A": "−4",
           "B": "+4",
@@ -59997,209 +59997,209 @@
           "D": "−3"
         },
         "correctAnswer": "B",
-        "explanation": "Option B — +4 — is the right pick here. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: +4. x = 3 ठेवल्यास 3(3) + 5m = 29, म्हणून 5m = 20 व **m = +4** — पर्याय \"+4\" शी जुळते.",
         "category": "Aptitude",
         "topic": "Algebra & Equations"
       },
       {
         "id": 127,
-        "text": "Maharshi Karve was born in the village _______ of Ratnagiri District.",
+        "text": "महर्षी कर्वे यांचा जन्म रत्नागिरी जिल्ह्यात _______ या गावी झाला.",
         "options": {
-          "A": "Dapoli",
-          "B": "Murud",
-          "C": "Shekhali",
-          "D": "Khed"
+          "A": "दापोली",
+          "B": "मुरुड",
+          "C": "शेखली",
+          "D": "खेड"
         },
         "correctAnswer": "C",
-        "explanation": "Shekhali is the correct option here. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "उत्तर: शेखली. महर्षी कर्वे यांचा जन्म रत्नागिरी जिल्ह्यातील **शेखली** या गावी झाला — स्त्रीशिक्षणाच्या या महान समाजसुधारकाचे मूळ गाव.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 128,
-        "text": "Who was the founder of the city of Agra?",
+        "text": "आग्रा शहराचे संस्थापक कोण होते?",
         "options": {
-          "A": "Mohammad Tughlaq",
-          "B": "Alauddin Khilji",
-          "C": "Sikandar Lodhi",
-          "D": "Ibrahim Lodhi"
+          "A": "मोहम्मद तुघलक",
+          "B": "अल्लाऊद्दीन खिल्जी",
+          "C": "सिकंदर लोधी",
+          "D": "ईब्राहिम लोधी"
         },
         "correctAnswer": "C",
-        "explanation": "The definitive answer is Sikandar Lodhi. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: सिकंदर लोधी. **सिकंदर लोधी** (1489–1517) याने आग्रा शहराची स्थापना केली; तो दिल्ली सल्तनततील लोधी वंशाचा दुसरा शासक होता.",
         "category": "History",
         "topic": "Medieval India"
       },
       {
         "id": 129,
-        "text": "G. G. Agarkar had started _______ Newspaper.",
+        "text": "गो. ग. आगरकरांनी _______ हे वृत्तपत्र सुरु केले.",
         "options": {
-          "A": "Dnyanasindhu",
-          "B": "Dnyanaprakash",
-          "C": "Shatapatre",
-          "D": "Sudharak"
+          "A": "ज्ञानसिंधु",
+          "B": "ज्ञानप्रकाश",
+          "C": "शतपत्रे",
+          "D": "सुधारक"
         },
         "correctAnswer": "D",
-        "explanation": "Straight to the answer: Sudharak. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "उत्तर: सुधारक. गोपाळ गणेश आगरकरांनी **'सुधारक'** हे वृत्तपत्र सुरू केले — सामाजिक सुधारणा व शिक्षण या विषयांवर त्यांचे विचार प्रसिद्ध.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 130,
-        "text": "The cost of 15 cycles is Rs. 16,500/-. Find the cost of 11 cycles.",
+        "text": "15 सायकलींची किंमत 16,500/- रु. आहे, तर 11 सायकलींची किंमत काढा.",
         "options": {
-          "A": "Rs. 12,200/-",
-          "B": "Rs. 12,100/-",
-          "C": "Rs. 13,000/-",
-          "D": "Rs. 12,400/-"
+          "A": "12,200/- रु.",
+          "B": "12,100/- रु.",
+          "C": "13,000/- रु.",
+          "D": "12,400/- रु."
         },
         "correctAnswer": "B",
-        "explanation": "The verified pick here is Rs. 12,100/-. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: 12,100/- रु. 16,500 ÷ 15 = ₹1,100 प्रति सायकल, म्हणून 11 × 1,100 = **₹12,100** — पर्याय \"12,100/- रु.\" शी जुळते.",
         "category": "Aptitude",
         "topic": "Ratio, Proportion & Averages"
       },
       {
         "id": 131,
-        "text": "The modern periodic table is based on _______.",
+        "text": "आधुनिक आवर्तसारणी _______ यावर आधारित आहे.",
         "options": {
-          "A": "the principle of octaves",
-          "B": "the atomic number of elements",
-          "C": "the atomic mass of elements",
-          "D": "the presence of triods of elements"
+          "A": "अष्टकाचे तत्व",
+          "B": "मुलद्रव्यांचे अणुअंक",
+          "C": "मुलद्रव्याचे अणुवस्तुमान",
+          "D": "मुलद्रव्यांच्या त्रिकांचे अस्तित्व"
         },
         "correctAnswer": "B",
-        "explanation": "For this question, the correct option reads: the atomic number of elements. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "उत्तर: मुलद्रव्यांचे अणुअंक. आधुनिक आवर्तसारणी **अणुअंक** (Z) वर आधारित आहे; मेंडेल्येव्हने प्रथम अणुवस्तुमानानुसार मांडली होती.",
         "category": "Science",
         "topic": "Atomic Structure & Periodic Table"
       },
       {
         "id": 132,
-        "text": "Dr. Ambedkar demanded for _______ in Round Table Conference.",
+        "text": "डॉ. आंबेडकरांनी गोलमेज परिषदेत _______ ची मागणी केली.",
         "options": {
-          "A": "Separate electorate",
-          "B": "Reservation",
-          "C": "Education for women",
-          "D": "Temple Entry"
+          "A": "स्वतंत्र मतदारसंघ",
+          "B": "आरक्षण",
+          "C": "स्त्री-शिक्षण",
+          "D": "मंदिर प्रवेश"
         },
         "correctAnswer": "A",
-        "explanation": "\"Separate electorate\" is what the question is looking for. Dr. B. R. Ambedkar (1891–1956) chaired the Drafting Committee of the Constitution and became India's first Law Minister; he championed the rights of the depressed classes. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: स्वतंत्र मतदारसंघ. गोलमेज परिषदेत डॉ. आंबेडकरांनी **स्वतंत्र मतदारसंघ**ची मागणी केली — दलितांना स्वतंत्र राजकीय प्रतिनिधित्व हा मुख्य मुद्दा.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 133,
-        "text": "In 1899 A.D. _______ started 'Anatha Balikashram'.",
+        "text": "इ.स. 1899 मध्ये _______ यांनी 'अनाथ बालिकाश्रम'ची स्थापना केली.",
         "options": {
-          "A": "Mahatma Phule",
-          "B": "Shahu Maharaj",
-          "C": "Dhondo Keshav Karve",
-          "D": "Sayajirao Gaikawad"
+          "A": "महात्मा फुले",
+          "B": "शाहू महाराज",
+          "C": "धंडो केशव कर्वे",
+          "D": "सयाजीराव गायकवाड"
         },
         "correctAnswer": "C",
-        "explanation": "Option C carries the right answer — Dhondo Keshav Karve. The year 1899 anchors this question — the correct option is the fact that dates to that year. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "उत्तर: धंडो केशव कर्वे. **1899** मध्ये महर्षी कर्वे यांनी पुण्यात 'अनाथ बालिकाश्रम'ची स्थापना केली — स्त्रीशिक्षण व विधवा पुनर्विवाहासाठी.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 134,
-        "text": "Who was given 'Rajiv Gandhi Khel Ratna Award 2007'?",
+        "text": "'राजीव गांधी खेळरत्न पुरस्कार 2007' कोणाला प्रदान करण्यात आला?",
         "options": {
-          "A": "Abhinav Bindra",
-          "B": "M. S. Dhoni",
-          "C": "Sania Mirza",
-          "D": "Sachin Tendulkar"
+          "A": "अभिनव बिंद्रा",
+          "B": "एम. एस. धोनी",
+          "C": "सानिया मिर्जा",
+          "D": "सचिन तेंडुलकर"
         },
         "correctAnswer": "B",
-        "explanation": "For this question, the correct option reads: M. S. Dhoni. Mahatma Gandhi (1869–1948) led the Non-Cooperation (1920), Civil Disobedience (1930) and Quit India (1942) movements, using satyagraha as the primary political method. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: एम. एस. धोनी. **2007** चा राजीव गांधी खेळरत्न पुरस्कार एम. एस. धोनी यांना मिळाला; त्यावर्षी T20 विश्वचषक विजयाचे श्रेय.",
         "category": "Current Affairs",
         "topic": "Awards & Honours"
       },
       {
         "id": 135,
-        "text": "What is the range of Agni – III ballistic missile?",
+        "text": "अग्नी-III या क्षेपणास्त्राचा पल्ला किती आहे?",
         "options": {
-          "A": "3500 km",
-          "B": "5000 km",
-          "C": "3000 km",
-          "D": "2000 km"
+          "A": "3500 कि.मी.",
+          "B": "5000 कि.मी.",
+          "C": "3000 कि.मी.",
+          "D": "2000 कि.मी."
         },
         "correctAnswer": "A",
-        "explanation": "Answer: 3500 km. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "उत्तर: 3500 कि.मी. भारतीय **अग्नी-III** क्षेपणास्त्राचा पल्ला सुमारे **3500 कि.मी.** आहे — हे मध्यमांतराचे (IRBM) क्षेपणास्त्र.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 136,
-        "text": "Hamas is a militant organisation fighting against which of the following countries?",
+        "text": "हमास या लष्करी संघटनेचा खालीलपैकी कोणत्या देशाशी संघर्ष सुरू आहे?",
         "options": {
-          "A": "Sudan",
-          "B": "Israel",
-          "C": "Brazil",
-          "D": "Syria"
+          "A": "सुदान",
+          "B": "इस्त्राएल",
+          "C": "ब्राझिल",
+          "D": "सिरीया"
         },
         "correctAnswer": "B",
-        "explanation": "Option B — Israel — is the right pick here. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: इस्त्राएल. **हमास** ही पॅलेस्टिनी संघटना **इस्त्राएल**शी सशस्त्र संघर्षात आहे — गाजा पट्टी व पश्चिम किनारा हे मुख्य संघर्षक्षेत्र.",
         "category": "Current Affairs",
         "topic": "Defence & Security"
       },
       {
         "id": 137,
-        "text": "What is contained in a parliamentary form of government?",
+        "text": "संसदीय शासन व्यवस्थेस नेमके कोणते विधान लागू पडते?",
         "options": {
-          "A": "The Executive controls the legislature",
-          "B": "The Legislature controls the executive",
-          "C": "The Judiciary controls the executive",
-          "D": "The Legislature controls the judiciary"
+          "A": "विधीमंडळास कार्यकारी मंडळ नियंत्रित करते",
+          "B": "कार्यकारी मंडळास विधीमंडळ नियंत्रित करते",
+          "C": "कार्यकारी मंडळास न्यायमंडळ नियंत्रित करते",
+          "D": "न्यायमंडळास विधीमंडळ नियंत्रित करते"
         },
         "correctAnswer": "B",
-        "explanation": "The right answer is The Legislature controls the executive (option B). This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "उत्तर: कार्यकारी मंडळास विधीमंडळ नियंत्रित करते. संसदीय शासनात **विधीमंडळ कार्यकारी मंडळावर नियंत्रण** ठेवते — पंतप्रधान संसदेस जबाबदार.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": 138,
-        "text": "NABARD is a _______.",
+        "text": "NABARD हे _______ आहे.",
         "options": {
-          "A": "Board",
-          "B": "Bank",
-          "C": "Bureau",
-          "D": "Department"
+          "A": "बोर्ड",
+          "B": "बँक",
+          "C": "ब्यूरो",
+          "D": "विभाग"
         },
         "correctAnswer": "B",
-        "explanation": "Straight to the answer: Bank. NABARD (National Bank for Agriculture and Rural Development) was set up on 12 July 1982 on the recommendation of the Sivaraman Committee to serve as the apex development bank for rural India. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: बँक. **NABARD** (1982) ही ग्रामीण व कृषी विकासासाठीची **राष्ट्रीय शिखर बँक** आहे — 'National Bank' नावातच उत्तर दडले.",
         "category": "Economics",
         "topic": "Money & Banking"
       },
       {
         "id": 139,
-        "text": "In photosynthesis, water and carbon dioxide combine to form _______.",
+        "text": "प्रकाशसंश्लेषण क्रियेत कार्बन डायऑक्साइड व पाणी यांचे संयुग होऊन _______ तयार होतात.",
         "options": {
-          "A": "Carbon",
-          "B": "Carbohydrates",
-          "C": "Nitrogen",
-          "D": "Hydrogen"
+          "A": "कार्बन",
+          "B": "कार्बोहायड्रेट्स",
+          "C": "नायट्रोजन",
+          "D": "हायड्रोजन"
         },
         "correctAnswer": "B",
-        "explanation": "You want Carbohydrates on this one. Photosynthesis converts light energy into chemical energy stored in glucose; the overall equation is 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂, driven by chlorophyll in chloroplasts. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "उत्तर: कार्बोहायड्रेट्स. प्रकाशसंश्लेषणात CO₂ व H₂O मधून **ग्लucose/कार्बोहायड्रेट** तयार होतात; 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂.",
         "category": "Science",
         "topic": "Botany (Plant Biology)"
       },
       {
         "id": 140,
-        "text": "Who was the commander of a battalion 'Rani of Jhansi' in Azad Hind Sena?",
+        "text": "आझाद हिंद सेनेतील 'झाशीची राणी' या पथकाच्या प्रमुख कोण होत्या?",
         "options": {
-          "A": "Dr. Lakshmi Swaminathan",
-          "B": "Sarojini Naidu",
-          "C": "Shanti Ghosh",
-          "D": "Pritilata Waddedar"
+          "A": "डॉ. लक्ष्मी स्वामीनाथन",
+          "B": "सरोजिनी नायडू",
+          "C": "शांती घोष",
+          "D": "प्रीतीलता वड्डेदार"
         },
         "correctAnswer": "A",
-        "explanation": "The verified pick here is Dr. Lakshmi Swaminathan. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: डॉ. लक्ष्मी स्वामीनाथन. आझाद हिंद सेनेतील **'झाशीची राणी'** पथकाच्या प्रमुख **डॉ. लक्ष्मी स्वामीनाथन** होत्या — नेताजी सुभाषचंद्र बोस यांच्या सेनेतील.",
         "category": "History",
         "topic": "Revolutionary Movement"
       },
       {
         "id": 141,
-        "text": "Solve: 35.05 / 2.5 = _______.",
+        "text": "सोडवा: 35.05 / 2.5 = _______.",
         "options": {
           "A": "140.2",
           "B": "14.02",
@@ -60207,111 +60207,111 @@
           "D": "3.2"
         },
         "correctAnswer": "B",
-        "explanation": "Straight to the answer: 14.02. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "उत्तर: 14.02. 35.05 ÷ 2.5 = 350.5 ÷ 25 = **14.02** — पर्याय \"14.02\" शी जुळते; दशांश स्थानाची काळजी घ्या.",
         "category": "Aptitude",
         "topic": "Number System & Simplification"
       },
       {
         "id": 142,
-        "text": "In _______ Dhondo Keshav Karve started 'Vidhava Vivahottejak Mandal'.",
+        "text": "______ मध्ये धंडो केशव कर्वे यांनी 'विधवा विवाहोत्तेजक मंडळ'ची स्थापना केली.",
         "options": {
-          "A": "1873 AD",
-          "B": "1887 AD",
-          "C": "1893 AD",
-          "D": "1899 AD"
+          "A": "इ.स. 1873",
+          "B": "इ.स. 1887",
+          "C": "इ.स. 1893",
+          "D": "इ.स. 1899"
         },
         "correctAnswer": "C",
-        "explanation": "This one comes to 1893 AD. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: इ.स. 1893. महर्षी कर्वे यांनी **1893** मध्ये 'विधवा विवाहोत्तेजक मंडळ'ची स्थापना केली — 1899 मध्ये अनाथ बालिकाश्रम.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": 143,
-        "text": "_______ is a thermal power station in Maharashtra.",
+        "text": "______ महाराष्ट्रातील औष्णिक विद्युत केंद्र आहे.",
         "options": {
-          "A": "Trombay",
-          "B": "Dabhol",
-          "C": "Jayakwadi",
-          "D": "Tarapur"
+          "A": "ट्रॉम्बे",
+          "B": "दाभोळ",
+          "C": "जायकवाडी",
+          "D": "तारापूर"
         },
         "correctAnswer": "B",
-        "explanation": "\"Dabhol\" is the fact the question is pointing at. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "उत्तर: दाभोळ. महाराष्ट्रातील **दाभोळ** (रत्नागिरी) हे **औष्णिक** (कोळसा/गॅस) विद्युत केंद्र; ट्रॉम्बे-तारापूर अणुऊर्जा, जायकवाडी जलविद्युत.",
         "category": "Geography",
         "topic": "Minerals & Industries"
       },
       {
         "id": 144,
-        "text": "Which is the structural formula of Acetylene?",
+        "text": "खालीलपैकी असिटिलिनचे रचना सूत्र कोणते?",
         "options": {
           "A": "H−C=C−H",
           "B": "H−C≡C−H",
-          "C": "H₂C=CH₂ (Ethylene structure)",
-          "D": "CH₄ (Methane-like structure)"
+          "C": "H₂C=CH₂",
+          "D": "CH₄"
         },
         "correctAnswer": "B",
-        "explanation": "The correct choice is \"H−C≡C−H\". The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: H−C≡C−H. **असिटिलिन** (C₂H₂) मध्ये कार्बन-कार्बन **त्रिबंध** (≡) असतो — H−C≡C−H; H−C=C−H मध्ये दुबंध.",
         "category": "Science",
         "topic": "Organic Chemistry"
       },
       {
         "id": 145,
-        "text": "The 'Queen's Proclamation' was declared in _______.",
+        "text": "राणीचा जाहीरनामा _______ मध्ये प्रसिद्ध झाला.",
         "options": {
-          "A": "November - 1858",
-          "B": "December - 1885",
-          "C": "October - 1905",
-          "D": "August - 1947"
+          "A": "नोव्हेंबर 1858",
+          "B": "डिसेंबर 1885",
+          "C": "ऑक्टोबर 1905",
+          "D": "ऑगस्ट 1947"
         },
         "correctAnswer": "A",
-        "explanation": "Marked correct: November - 1858. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "उत्तर: नोव्हेंबर 1858. **1857** च्या उठावानंतर **1 नोव्हेंबर 1858** रोजी राणीचा जाहीरनामा प्रसिद्ध झाला — भारतीय साम्राज्याची स्थापना.",
         "category": "History",
         "topic": "British Expansion & Governors-General"
       },
       {
         "id": 146,
-        "text": "Sound waves do not travel through _______.",
+        "text": "ध्वनीतरंगाचे प्रसारण _______ मधून होत नाही.",
         "options": {
-          "A": "Solids",
-          "B": "Liquids",
-          "C": "Gases",
-          "D": "Vacuum"
+          "A": "ठोस",
+          "B": "द्रव",
+          "C": "वायू",
+          "D": "निर्वात"
         },
         "correctAnswer": "D",
-        "explanation": "The paper's official answer is Vacuum. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: निर्वात. ध्वनीतरंगांना प्रसारणासाठी **माध्यम** लागते; **निर्वात** (vacuum) मध्ये ध्वनी प्रसारित होत नाही.",
         "category": "Science",
         "topic": "Optics & Sound"
       },
       {
         "id": 147,
-        "text": "Who among the following Peshwa's was popularly known as a Nanasaheb?",
+        "text": "खालीलपैकी नानासाहेब पेशवा म्हणून कोणाला ओळखले जाते?",
         "options": {
-          "A": "Baji Rao",
-          "B": "Balaji Vishwanath",
-          "C": "Balaji Baji Rao",
-          "D": "Raghunath Rao"
+          "A": "बाजीराव",
+          "B": "बाळाजी विश्वनाथ",
+          "C": "बाळाजी बाजीराव",
+          "D": "रघुनाथराव"
         },
         "correctAnswer": "C",
-        "explanation": "The exam key confirms \"Balaji Baji Rao\". The Peshwa was the prime minister of the Maratha empire; after 1713 the office became hereditary in the Bhat family of Chitpavan Brahmins from Konkan. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "उत्तर: बाळाजी बाजीराव. **नानासाहेब पेशवा** म्हणून **बाळाजी बाजीराव** (1740–1761) ओळखले जात; ते तिसरे पेशवे होते.",
         "category": "History",
         "topic": "Maratha Empire"
       },
       {
         "id": 148,
-        "text": "Which of the following rivers in Maharashtra is flowing westward?",
+        "text": "खालीलपैकी कोणती नदी महाराष्ट्रात पश्चिमेकडे वाहते?",
         "options": {
-          "A": "Tapi",
-          "B": "Godavari",
-          "C": "Krishna",
-          "D": "Bhima"
+          "A": "तपी",
+          "B": "गोदावरी",
+          "C": "कृष्णा",
+          "D": "भीमा"
         },
         "correctAnswer": "A",
-        "explanation": "The official Set A key selects Tapi. The Tapi river is one of only three major peninsular rivers that flow west; it rises at Multai in MP and drains into the Arabian Sea through Gujarat. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "योग्य उत्तर: तपी. **तपी** नदी महाराष्ट्रातून **पश्चिमे**कडे वाहते; गोदावरी, कृष्णा व भीमा पूर्वेकडे वाहतात.",
         "category": "Geography",
         "topic": "Maharashtra Rivers & Dams"
       },
       {
         "id": 149,
-        "text": "Out of total area of India, it is necessary to have _______ per cent area under forest.",
+        "text": "भारताच्या एकूण भूप्रदेशापैकी रक्के _______ टक्के प्रदेश वनाखाली असणे आवश्यक आहे.",
         "options": {
           "A": "32",
           "B": "30",
@@ -60319,21 +60319,21 @@
           "D": "33"
         },
         "correctAnswer": "D",
-        "explanation": "The verified answer is 33. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "उत्तर: 33. राष्ट्रीय वन धोरणानुसार भारताच्या एकूण भूप्रदेशाच्या **33%** क्षेत्र **वनाखाली** असावे — हे धोरणातील लक्ष्य.",
         "category": "Environment",
         "topic": "Biodiversity & Conservation"
       },
       {
         "id": 150,
-        "text": "The exponent of Economic Drain Theory was:",
+        "text": "आर्थिक निःसरणाचा सिद्धांत _______ यांनी मांडला.",
         "options": {
-          "A": "Dadabhai Naoroji",
-          "B": "Ganesh Joshi",
-          "C": "Gopal Hari Deshmukh",
-          "D": "M.G. Ranade"
+          "A": "दादाभाई नौरोजी",
+          "B": "गणेश जोशी",
+          "C": "गोपाळ हरी देशमुख",
+          "D": "म. ग. रानडे"
         },
         "correctAnswer": "A",
-        "explanation": "The verified answer is Dadabhai Naoroji. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: दादाभाई नौरोजी. **'भारतीय धनाचे निष्कर्षण'** (Drain of Wealth) सिद्धांत **दादाभाई नौरोजी** यांनी मांडला — 'Grand Old Man of India'.",
         "category": "History",
         "topic": "Rise of Nationalism & INC"
       }
