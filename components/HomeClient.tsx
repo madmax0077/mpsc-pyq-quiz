@@ -6,8 +6,9 @@ import type { Category, Language } from "@/lib/types";
 import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
+import MockTestView from "@/components/MockTestView";
 
-type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi";
+type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi" | "mock";
 
 const GK_MARATHON_TOPIC: { category: Category; topic: string } = {
   category: "Current Affairs",
@@ -62,7 +63,7 @@ export default function HomeClient() {
     } else if (mode === "notes") {
       setAppMode("notes");
       window.history.replaceState({}, "", window.location.pathname);
-    } else if (mode === "subject" || mode === "topic" || mode === "topic-tests" || mode === "rto-amvi") {
+    } else if (mode === "subject" || mode === "topic" || mode === "topic-tests" || mode === "rto-amvi" || mode === "mock") {
       setAppMode(mode);
       window.history.replaceState({}, "", window.location.pathname);
     }
@@ -314,6 +315,70 @@ export default function HomeClient() {
 
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
               <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
+
+              {/* Mock Test — full-length timed test (Set A pattern) */}
+              <button
+                onClick={() => { setAppMode("mock"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className="group relative overflow-hidden rounded-3xl border border-violet-200/80 bg-gradient-to-br from-violet-50 via-white to-purple-50 p-7 text-left shadow-sm ring-1 ring-violet-100/50 transition-all hover:-translate-y-1 hover:border-violet-400 hover:shadow-xl hover:shadow-violet-200/60 dark:border-violet-900/70 dark:from-violet-950/40 dark:via-slate-900 dark:to-purple-950/40 dark:ring-violet-900/30 dark:hover:border-violet-600 dark:hover:shadow-black/40 sm:col-span-2"
+              >
+                <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-violet-300/60 via-purple-300/40 to-fuchsia-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-violet-500/15 dark:via-purple-500/10 dark:to-fuchsia-500/15" />
+                <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
+
+                <div className="relative flex items-start gap-5">
+                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 via-purple-600 to-fuchsia-600 shadow-lg shadow-violet-300/40 ring-2 ring-white/60 dark:shadow-violet-950/40 dark:ring-violet-500/20">
+                    <span className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-base shadow ring-1 ring-violet-200 dark:bg-slate-800 dark:ring-violet-600">
+                      ⏱️
+                    </span>
+                    <div className="flex flex-col items-center leading-none text-white">
+                      <span className="text-2xl font-black tracking-tight drop-shadow-sm">100</span>
+                      <span className="text-[8px] font-semibold uppercase tracking-wider opacity-80">Qs</span>
+                    </div>
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1.5 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-violet-700 via-purple-700 to-fuchsia-700 bg-clip-text text-transparent dark:from-violet-300 dark:via-purple-300 dark:to-fuchsia-300 sm:text-2xl">
+                        Mock Test
+                      </h3>
+                      <span className="relative inline-flex items-center gap-1 rounded-full bg-violet-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                        <span className="relative flex h-2 w-2">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                        </span>
+                        New
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-full border border-violet-300/80 bg-violet-100/80 px-2 py-0.5 text-[10px] font-semibold text-violet-800 dark:border-violet-700 dark:bg-violet-900/40 dark:text-violet-200">
+                        🕒 Timed · Set A pattern
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                      <strong className="font-semibold text-violet-700 dark:text-violet-300">Full-length 100-question mock</strong> in real
+                      exam conditions — choose <strong>Rajyaseva</strong>, <strong>Combine Group B</strong> or
+                      <strong> Group C</strong>. Real subject weightage, a countdown timer and 1/4 negative marking.
+                      Current Affairs comes from the GK Marathon set.
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-violet-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-violet-900/40">
+                        ⏱️ 120 / 60 min
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-violet-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-violet-900/40">
+                        ➖ Negative marking
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-violet-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-violet-900/40">
+                        🔀 Randomised each attempt
+                      </span>
+                    </div>
+
+                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-violet-300/40 transition-all group-hover:shadow-lg group-hover:shadow-violet-400/50 dark:shadow-violet-950/40">
+                      Start a mock test
+                      <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </button>
 
               {/* GK 2025-26 — last 6 months current affairs */}
               <button
@@ -746,6 +811,10 @@ export default function HomeClient() {
             </div>
             <StudentView language="english" challenge={null} homeKey={homeKey} topicMode={false} guestUser={guestIdentity} directTopic={null} examFilter="RTO_AMVI" />
           </div>
+        ) : appMode === "mock" ? (
+          <MockTestView
+            onExit={() => { setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+          />
         ) : (
           <StudentView language={language} challenge={challenge} homeKey={homeKey} topicMode={appMode === "topic" || appMode === "topic-tests"} topicSource={appMode === "topic-tests" ? "catalog" : "pyq"} guestUser={guestIdentity} directTopic={pendingDirectTopic} />
         )}
