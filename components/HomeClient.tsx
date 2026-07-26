@@ -7,8 +7,12 @@ import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 import MockTestView from "@/components/MockTestView";
+import AdUnit from "@/components/AdUnit";
 
 type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi" | "mock";
+
+/** In-flow display ad on the landing page (below the Topic Tests section). */
+const LANDING_AD_SLOT = "2086515932";
 
 const GK_MARATHON_TOPIC: { category: Category; topic: string } = {
   category: "Current Affairs",
@@ -467,6 +471,11 @@ export default function HomeClient() {
                   </svg>
                 </div>
               </button>
+              </div>
+
+              {/* In-flow ad — centered, below the Topic Tests (non-PYQ) section */}
+              <div className="sm:col-span-2">
+                <AdUnit slot={LANDING_AD_SLOT} minHeight={250} className="w-full" />
               </div>
 
               {/* GK 2025-26 — last 6 months current affairs */}

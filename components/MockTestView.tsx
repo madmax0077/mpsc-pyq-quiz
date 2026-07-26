@@ -21,11 +21,10 @@ import {
 type Stage = "select" | "running" | "reveal" | "result";
 
 /**
- * Two display ad units shown on the interstitial before results.
- * Replace these with the real data-ad-slot IDs from
- * AdSense → Ads → By ad unit → Display ads.
+ * Display ad shown on the interstitial before results.
+ * data-ad-slot from AdSense → Ads → By ad unit → Display ads.
  */
-const RESULT_AD_SLOTS = ["5827404689", "2086515932"] as const;
+const RESULT_AD_SLOT = "5827404689";
 
 /** Seconds the user waits on the ad interstitial before results unlock. */
 const REVEAL_SECONDS = 7;
@@ -129,6 +128,8 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   const [confirmSubmit, setConfirmSubmit] = useState(false);
   const [revealLeft, setRevealLeft] = useState(REVEAL_SECONDS);
   const submittedRef = useRef(false);
+  /** Wall-clock time (ms) at which the result unlocks. */
+  const revealEndRef = useRef(0);
 
   // Load the merged quiz catalog once.
   useEffect(() => {
@@ -153,17 +154,26 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     if (submittedRef.current) return;
     submittedRef.current = true;
     setResult(scoreMock(questions, ans));
+    revealEndRef.current = Date.now() + REVEAL_SECONDS * 1000;
     setRevealLeft(REVEAL_SECONDS);
     setStage("reveal");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  // Countdown on the ad interstitial before the result unlocks.
+  // Countdown on the ad interstitial before the result unlocks. Uses a fixed
+  // wall-clock end time so it always waits the full REVEAL_SECONDS, immune to
+  // re-renders, dev double-invokes and background-tab timer throttling.
   useEffect(() => {
-    if (stage !== "reveal" || revealLeft <= 0) return;
-    const id = setTimeout(() => setRevealLeft((s) => s - 1), 1000);
-    return () => clearTimeout(id);
-  }, [stage, revealLeft]);
+    if (stage !== "reveal") return;
+    const tick = () => {
+      const left = Math.max(0, Math.ceil((revealEndRef.current - Date.now()) / 1000));
+      setRevealLeft(left);
+      if (left <= 0) clearInterval(id);
+    };
+    const id = setInterval(tick, 250);
+    tick();
+    return () => clearInterval(id);
+  }, [stage]);
 
   // Countdown timer while running.
   useEffect(() => {
@@ -297,8 +307,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
           </p>
         </div>
 
-        <AdUnit slot={RESULT_AD_SLOTS[0]} className="mt-6" minHeight={250} />
-        <AdUnit slot={RESULT_AD_SLOTS[1]} className="mt-6" minHeight={250} />
+        <AdUnit slot={RESULT_AD_SLOT} className="mt-6" minHeight={250} />
 
         {/* Clear separation from the ads to avoid accidental clicks (AdSense policy). */}
         <div className="mt-10 flex justify-center border-t border-slate-100 pt-8 dark:border-slate-800">
