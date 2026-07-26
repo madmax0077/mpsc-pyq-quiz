@@ -300,7 +300,8 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
         <AdUnit slot={RESULT_AD_SLOTS[0]} className="mt-6" minHeight={250} />
         <AdUnit slot={RESULT_AD_SLOTS[1]} className="mt-6" minHeight={250} />
 
-        <div className="mt-6 flex justify-center">
+        {/* Clear separation from the ads to avoid accidental clicks (AdSense policy). */}
+        <div className="mt-10 flex justify-center border-t border-slate-100 pt-8 dark:border-slate-800">
           <button
             onClick={() => {
               setStage("result");
