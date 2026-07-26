@@ -28,7 +28,7 @@ type Stage = "select" | "running" | "reveal" | "result";
 const RESULT_AD_SLOTS = ["5827404689", "2086515932"] as const;
 
 /** Seconds the user waits on the ad interstitial before results unlock. */
-const REVEAL_SECONDS = 5;
+const REVEAL_SECONDS = 7;
 
 interface MockTestViewProps {
   onExit: () => void;
