@@ -45613,7 +45613,8 @@
         "correctAnswer": "A",
         "explanation": "Marked correct: Option A. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
         "category": "Economics",
-        "topic": "Other"
+        "topic": "Other",
+        "cancelled": true
       },
       {
         "id": "csg_pre_2025_en_49",
@@ -46159,7 +46160,8 @@
         "correctAnswer": "A",
         "explanation": "Reading the stem carefully, the answer is Option A. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
         "category": "Current Affairs",
-        "topic": "Other"
+        "topic": "Other",
+        "cancelled": true
       },
       {
         "id": "csg_pre_2025_en_88",
@@ -46354,21 +46356,21 @@
     "questions": [
       {
         "id": "csg_pre_2025_mr_1",
-        "text": "जातिभेद विवेकसार' हे पुस्तक _________ यांनी लिहीले.",
+        "text": "'जातीभेद विवेकसार' हे पुस्तक _________ यांनी लिहिले.",
         "options": {
           "A": "महात्मा ज्योतिबा फुले",
           "B": "तुकाराम तात्या पडवळ",
           "C": "विठ्ठल रामजी शिंदे",
-          "D": "भाउराव पायगोंडा पाटील"
+          "D": "भाऊराव पायगोंडा पाटील"
         },
         "correctAnswer": "B",
-        "explanation": "अंतिम उत्तर तुकाराम तात्या पडवळ आहे. अशा प्रकारचे प्रश्न MPSC मध्ये केवळ पर्यायांची फेरजुळवाणी करून पुन:पुन्हा येतात — प्रश्नातील मुख्य पदावर लक्ष केंद्रित करणे पुरेसे असते.",
+        "explanation": "योग्य उत्तर: तुकाराम तात्या पडवळ. 'जातीभेद विवेकसार' हे सामाजिक सुधारणा व जातीय भेदभावाविरुद्धचे महत्त्वाचे मराठी ग्रंथ तुकाराम तात्या पडवळ यांनी लिहिले. ते सत्यशोधक चळवळीचे सहकारी होते आणि जातीय भेदभाव व छुआछूत यांच्या विरोधात लेखन केले.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": "csg_pre_2025_mr_2",
-        "text": "पंचशील तत्वांचा पुरस्कार प्रथम भारत व चीन या देशांनी केला तेव्हा भारताचे पंतप्रधान व चीनचे पंतप्रधान कोण होते ?\nअ. पंडित नेहरू व चाउ-एन-लाय\nब. पंडित नेहरू व डॉ. सन-यत-सेन\nक. इंदिरा गांधी व माओ-त्से-तुंग\nड. पंडित नेहरू व माओ-त्से-तुंग",
+        "text": "पंचशील तत्त्वांचा स्वीकार प्रथम भारत व चीन या देशांनी केला तेव्हा भारताचे पंतप्रधान व चीनचे पंतप्रधान कोण होते?\nअ. पंडित नेहरू व चाऊ एन-लाई\nब. पंडित नेहरू व डॉ. सन-यत-सेन\nक. इंदिरा गांधी व माओ-त्से-तुंग\nड. पंडित नेहरू व माओ-त्से-तुंग",
         "options": {
           "A": "अ आणि ब",
           "B": "क आणि अ",
@@ -46376,55 +46378,55 @@
           "D": "फक्त अ"
         },
         "correctAnswer": "D",
-        "explanation": "पर्यायांतून योग्य निवड आहे फक्त अ. महात्मा गांधी (1869–1948) यांनी असहकार (1920), सविनय कायदेभंग (1930) व चले जाव (1942) चळवळींचे नेतृत्व केले; सत्याग्रह हे त्यांचे प्रमुख राजकीय साधन होते. जवाहरलाल नेहरू (1889–1964) हे भारताचे पहिले पंतप्रधान (1947–1964) होते; ते नियोजित अर्थव्यवस्था व अलिप्ततावादी परराष्ट्र धोरणाचे शिल्पकार मानले जातात. इतर पर्याय शब्दशैलीत सारखे दिसतात; प्रश्नाशी पाच सेकंदांची मानसिक तपासणी करून त्यांना बाद करता येते.",
+        "explanation": "योग्य उत्तर: फक्त अ. पंचशील तत्त्वांचा स्वीकार प्रथम 1954 मध्ये भारताचे पंतप्रधान पंडित जवाहर्लाल नेहरू आणि चीनचे परराष्ट्रमंत्री चाऊ एन-लाई यांच्यात झाला. डॉ. सन यात-सेन किंवा माओ-त्से-तुंग यांचा या कराराशी संबंध नव्हता.",
         "category": "History",
         "topic": "Post-Independence India"
       },
       {
         "id": "csg_pre_2025_mr_3",
-        "text": "'विधवा वपन अनाचार' हे पुस्तक _________ यांनी लिहीले.",
+        "text": "'विधवा वपन अनाचार' हे पुस्तक _________ यांनी लिहिले.",
         "options": {
           "A": "व्यंकटेश रंगो कट्टी",
           "B": "विष्णुशास्त्री पंडित",
-          "C": "बाळशास्त्री जाम्भेकर",
+          "C": "बाळशास्त्री जांभेकर",
           "D": "गोपाळ गणेश आगरकर"
         },
         "correctAnswer": "A",
-        "explanation": "प्रश्न विचारतो त्याप्रमाणे उत्तर व्यंकटेश रंगो कट्टी येते. MPSC ची पद्धत — प्रश्नात एक निश्चित तथ्य ठेवायचे व तीन जवळचे भासणारे पर्याय ठेवायचे — तथ्याशी जुळणारा पर्याय नेहमीच बरोबर असतो.",
+        "explanation": "योग्य उत्तर: व्यंकटेश रंगो कट्टी. 'विधवा वपन अनाचार' हे विधवांच्या पुनर्विवाहाविरुद्धच्या रूढींवर लिहिलेले सामाजिक सुधारणा ग्रंथ व्यंकटेश रंगो कट्टी यांचे आहे. त्यांनी विधवा पुनर्विवाहाच्या हक्कासाठी सक्रिय प्रचार केला.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": "csg_pre_2025_mr_4",
-        "text": "11 एप्रिल 1942 रोजी कॉंग्रेस वर्किंग कमिटीने _________ नाकारण्यासाठी ठराव पारीत केला.",
+        "text": "11 एप्रिल 1942 रोजी काँग्रेस वर्किंग कमिटीने नाकारण्यासाठी ठराव पारीत केला.",
         "options": {
           "A": "क्रिप्स प्रस्ताव",
           "B": "अलिगड योजना",
-          "C": "कर्झन योजना",
-          "D": "लतिफ कोजना"
+          "C": "कर्जन योजना",
+          "D": "लतिफ योजना"
         },
         "correctAnswer": "A",
-        "explanation": "बरोबर पर्याय म्हणजे क्रिप्स प्रस्ताव. प्रश्नात 1942 या वर्षाचा उल्लेख असून हे उत्तर त्या कालावधीशी जुळते. तीन चुकीचे पर्याय हे MPSC च्या या विषयासाठीच्या ठराविक distractor संचातून येतात — एक कालक्रमानुसार जवळचा, एक विषयानुसार जवळचा व एक जवळचा-दिसणारा invented.",
+        "explanation": "योग्य उत्तर: क्रिप्स प्रस्ताव. 11 एप्रिल 1942 रोजी काँग्रेस वर्किंग कमिटीने ब्रिटिश सरकारने सर स्टॅफर्ड क्रिप्स यांच्या माध्यमातून पाठवलेला स्वराज्य देण्याचा प्रस्ताव नाकारला. दुसऱ्या महायुद्धाच्या पार्श्वभूमीवर हा प्रस्ताव आला होता.",
         "category": "History",
         "topic": "Gandhian Mass Movements"
       },
       {
         "id": "csg_pre_2025_mr_5",
-        "text": "मवाळांना शांत करण्यासाठी आणि मुस्लिमांचे समर्थन मिळवण्यासाठी इंग्रज सरकारने इंडियन कोन्सिल अॅक्ट, 1909 च्या द्वारे _________ केल्या.",
+        "text": "मध्यस्थांना शांत करण्यासाठी आणि मुस्लिमांचे समर्थन मिळवण्यासाठी इंग्रज सरकारने इंडियन काउन्सिल अधिनियम, 1909 च्या द्वारे _________ सादर केले.",
         "options": {
           "A": "मॉर्ले-मिंटो सुधारणा",
-          "B": "मॉंटेग्यू चेम्सफर्ड सुधारणा",
+          "B": "माँटेग्यू-चेम्सफोर्ड सुधारणा",
           "C": "भारतीय शिक्षण सुधारणा",
           "D": "भारतीय नागरी सेवा सुधारणा"
         },
         "correctAnswer": "A",
-        "explanation": "पर्याय A — मॉर्ले-मिंटो सुधारणा — हे इथे बरोबर उत्तर आहे. प्रश्नात 1909 या वर्षाचा उल्लेख असून हे उत्तर त्या कालावधीशी जुळते. MPSC पूर्व परीक्षेसाठी हे तथ्य एका ओळीत नोंदवा — दीर्घकाळ लक्षात राहते.",
+        "explanation": "योग्य उत्तर: मॉर्ले-मिंटो सुधारणा. इंडियन काउन्सिल अधिनियम, 1909 अंतर्गत मॉर्ले-मिंटो सुधारणा जाहीर झाल्या; त्यात मध्यस्थांना शांत करण्यासाठी आणि मुस्लिम समुदायाला स्वतंत्र मतदानाची तरतूद करण्यासाठी 'प्रत्येक मत' ही संकल्पना आणली.",
         "category": "History",
         "topic": "Constitutional Development (British Acts)"
       },
       {
         "id": "csg_pre_2025_mr_6",
-        "text": "\"सुधारकांना आपले आईवडील, पत्नी, मुली आणि देशबंधव अशा सर्व निकटवर्तीयांचा विरोध पत्करून जाण्याचा प्रवास करावा लागतो.\" हे सांगणारे वामनराव माधवराव कोल्हटकर हे समाज सुधारक _________ येथील होते.",
+        "text": "\"सुधारकांना आपले आई-वडील, पत्नी, मुली आणि देशबांधव अशा सर्व निकटवर्तीयांचा विरोध पत्करून जगण्याचा प्रवास करावा लागतो.\" हे सांगणारे वामनराव माधवराव कोल्हटकर हे समाजसुधारक _________ येथील होते.",
         "options": {
           "A": "विदर्भ",
           "B": "मराठवाडा",
@@ -46432,27 +46434,27 @@
           "D": "कोल्हापूर"
         },
         "correctAnswer": "A",
-        "explanation": "प्रश्नाची अपेक्षा विदर्भ या पर्यायात पूर्ण होते. तीन चुकीचे पर्याय हे 'जवळपासच्या पदावली'चे आहेत; स्तंभातील नेमक्या शब्दाशी जुळवून बघितल्यास ते लगेच बाद होतात.",
+        "explanation": "योग्य उत्तर: विदर्भ. वामनराव माधवराव कोल्हटकर हे विदर्भातील प्रसिद्ध समाजसुधारक होते. त्यांनी स्त्रीशिक्षण, विधवा पुनर्विवाह आणि सामाजिक अन्यायाविरुद्ध कठोर लढा दिला.",
         "category": "History",
         "topic": "Maharashtra Social Reformers"
       },
       {
         "id": "csg_pre_2025_mr_7",
-        "text": "पुढील राजे व त्यांची राजघराणी यांच्या जोड्या जुळवा.\nअ. अपराजीत - I. पल्लव\nब. आदित्य – I - II. चोळ\nक. विजयालय - III. चोळ राज घराण्याचा संस्थापक\nड. भोज – I - IV. गुर्जर",
+        "text": "पुढील राजे व त्यांची राजघराणे यांच्या जोड्या जुळवा.\nअ. अपराजीत — i. पल्लव\nब. आदित्य — ii. चोळ\nक. विजयालय — iii. चोळ राजघराण्याचा संस्थापक\nड. भोज — iv. गुर्जर",
         "options": {
-          "A": "अ – II, ब – III, क – I, ड – IV",
-          "B": "अ – I, ब – II, क – III, ड – IV",
-          "C": "अ – IV, ब – III, क – II, ड – I",
-          "D": "अ – I, ब – II, क – IV, ड – III"
+          "A": "अ-ii, ब-iii, क-i, ड-iv",
+          "B": "अ-i, ब-ii, क-iii, ड-iv",
+          "C": "अ-iv, ब-iii, क-ii, ड-i",
+          "D": "अ-i, ब-ii, क-iv, ड-iii"
         },
         "correctAnswer": "B",
-        "explanation": "प्रश्नाची अपेक्षा अ – I, ब – II, क – III, ड – IV या पर्यायात पूर्ण होते. वरील योग्य जोडणी अधिकृत उत्तरकिल्लीतील स्तंभ-अ व स्तंभ-ब यांच्यातील प्रत्येक जोडीशी जुळते. या प्रकारच्या प्रश्नात नियमित तथ्य-वाचन बुद्धिमान shortcut पेक्षा जास्त फळ देते — स्रोत एकदा नीट वाचणे हेच गुण मिळवण्याचे साधन आहे.",
+        "explanation": "योग्य उत्तर: अ-i, ब-ii, क-iii, ड-iv. अपराजीत पल्लव राजघराण्याशी, आदित्य चोळ घराण्याशी आणि विजयालय हा चोळ राजघराण्याचा संस्थापक होता. भोज गुर्जर-प्रतिहार राजघराण्याशी संबंधित राजा होता.",
         "category": "History",
         "topic": "Ancient India"
       },
       {
         "id": "csg_pre_2025_mr_8",
-        "text": "खालीलपैकी कृष्णदेवराय यांच्याशी संबंधित योग्य विधाने कोणती ?\nअ. विजयनगरच्या साम्राज्याचा सत्ताधीश कृष्णदेवराय याने 'अमुक्तमाल्यदा' हा काव्य ग्रंथ लिहिला.\nब. 'आंध्र भोज', 'अभिनव भोज' असे या राजास संबोधले जात असे.\nक. पेद्दना हा महान तेलगू कवी कृष्णदेवरायाच्या दरबारात होता.\nड. कृष्णदेवराय हा संगम राजघराण्यातील होता.",
+        "text": "खालीलपैकी कृष्णदेवराय यांच्याशी संबंधित योग्य विधाने कोणती?\nअ. विजयनगर साम्राज्याचा सत्ताधीश कृष्णदेवराय याने 'अमुक्तमाल्यदा' हा काव्यग्रंथ लिहिला.\nब. 'आंध्र भोज', 'अभिनव भोज' असे या राजास संबोधले जात असे.\nक. पेद्दना हा महान तेलगू कवी कृष्णदेवरायाच्या दरबारात होता.\nड. कृष्णदेवराय हा संगम राजघराण्यातील होता.",
         "options": {
           "A": "फक्त अ आणि ब",
           "B": "फक्त ब आणि क",
@@ -46460,13 +46462,13 @@
           "D": "फक्त ब, क आणि ड"
         },
         "correctAnswer": "C",
-        "explanation": "या प्रश्नासाठी बरोबर पर्याय आहे: फक्त अ, ब आणि क. तीन चुकीचे पर्याय हे MPSC च्या या विषयासाठीच्या ठराविक distractor संचातून येतात — एक कालक्रमानुसार जवळचा, एक विषयानुसार जवळचा व एक जवळचा-दिसणारा invented.",
+        "explanation": "योग्य उत्तर: फक्त अ, ब आणि क. कृष्णदेवराय यांनी 'अमुक्तमाल्यदा' हा काव्यग्रंथ लिहिला, त्याला 'आंध्र भोज' व 'अभिनव भोज' म्हटले जात होते आणि पेद्दना त्यांच्या दरबारात होता. ते संगम नव्हे तर तुळुव वंशातील राजे होते, म्हणून विधान ड चुक आहे.",
         "category": "History",
         "topic": "Medieval India"
       },
       {
         "id": "csg_pre_2025_mr_9",
-        "text": "_________ या समाजाचे सदस्य होण्यासाठी; \"व्यक्तीला, ख्रिस्चनांनी बनवलेला पाव व मुस्लिमांच्या हातातील पाणी पिणे बंधनकारक होते\".",
+        "text": "_________ या समाजाचे सदस्य होण्यासाठी; \"व्यक्तीला ख्रिश्चनांनी बनवलेला पाव व मुस्लिमांच्या हातातील पाणी पिणे बंधनकारक होते.\"",
         "options": {
           "A": "ब्राह्मो समाज",
           "B": "आर्य समाज",
@@ -46474,13 +46476,13 @@
           "D": "सत्यशोधक समाज"
         },
         "correctAnswer": "C",
-        "explanation": "प्रश्न विचारतो त्याप्रमाणे उत्तर प्रार्थना समाज येते. MPSC ची संपादकीय सवय अशी की हा विषय दर दोन वर्षांच्या चक्रात परत विचारला जातो, त्यामुळे तो एकदा पाहणे बरेचसे पुरेसे असते.",
+        "explanation": "योग्य उत्तर: प्रार्थना समाज. डॉ. आत्माराम पांडुरंग यांनी स्थापन केलेल्या प्रार्थना समाजात सदस्य होण्यासाठी ख्रिश्चनांनी बनवलेला पाव व मुस्लिमांच्या हातातील पाणी पिणे बंधनकारक होते. हे मुंबईतील सामाजिक सुधारणा चळवळीचे महत्त्वाचे स्थान आहे.",
         "category": "History",
         "topic": "Socio-Religious Reform Movements"
       },
       {
         "id": "csg_pre_2025_mr_10",
-        "text": "मुघलकालीन न्यायव्यवस्थेतील शिक्षा आणि शिक्षेचे स्वरूप यांच्या अचूक जोड्या जुळवा.\nस्तंभ 'अ' (शिक्षा): अ. हद्द, ब. ताझीर, क. किस्सास, ड. तशहीर\nस्तंभ 'ब' (शिक्षेचे स्वरूप): i. जशास तसे, ii. मानहानी, धिंड काढणे, iii. ताकीद, समज वा हद्दपार, iv. मृत्युदंड, हातपाय तोडणे",
+        "text": "मुघलकालीन न्यायव्यवस्थेतील शिक्षा आणि शिक्षेचे स्वरूप यांच्या अचूक जोड्या जुळवा.\nस्तंभ 'अ' (शिक्षा):\nअ. हद्द\nब. ताझीर\nक. किसास\nड. तशहीर\nस्तंभ 'ब' (शिक्षेचे स्वरूप):\ni. जशास तसे\nii. मानहानी, धिंड काढणे\niii. ताकीद, समज वा हद्दपार\niv. मृत्युदंड, हातपाय तोडणे",
         "options": {
           "A": "अ-iii, ब-i, क-iv, ड-ii",
           "B": "अ-ii, ब-iii, क-i, ड-iv",
@@ -46488,139 +46490,139 @@
           "D": "अ-iii, ब-i, क-ii, ड-iv"
         },
         "correctAnswer": "C",
-        "explanation": "पर्याय C: अ-iv, ब-iii, क-i, ड-ii — हेच योग्य आहे. वरील योग्य जोडणी अधिकृत उत्तरकिल्लीतील स्तंभ-अ व स्तंभ-ब यांच्यातील प्रत्येक जोडीशी जुळते. अशा प्रश्नांसाठी उपयुक्त सवय — पर्याय तपासण्याआधी प्रश्नात नमूद वर्ष, विशेषनाम किंवा संख्येला अधोरेखित करा.",
+        "explanation": "योग्य उत्तर: अ-iv, ब-iii, क-i, ड-ii. मुघल न्यायव्यवस्थेत हद्द म्हणजे मृत्युदंड किंवा हातपाय तोडणे, ताजीर म्हणजे ताकीद किंवा हद्दपार, किसास म्हणजे जशास तसे आणि तशहीर म्हणजे मानहानी व धिंड काढणे अशा शिक्षा होत.",
         "category": "History",
         "topic": "Medieval India"
       },
       {
         "id": "csg_pre_2025_mr_11",
-        "text": "Which of the following books was published by combining four famous speeches delivered by Barrister Chittaranjan Das in 1917?",
+        "text": "बॅरि. चित्तरंजन दास यांनी 1917 मध्ये केलेल्या चार प्रसिद्ध भाषणांना एकत्र करून खालीलपैकी कोणते पुस्तक प्रसिद्ध करण्यात आले?",
         "options": {
-          "A": "Indians of India",
-          "B": "India for Indians",
-          "C": "India and Indians",
-          "D": "Indians for India"
+          "A": "इंडियन्स ऑफ इंडिया",
+          "B": "इंडिया फॉर इंडियन्स",
+          "C": "इंडिया अँड इंडियन्स",
+          "D": "इंडियन्स फॉर इंडिया"
         },
         "correctAnswer": "B",
-        "explanation": "The examiner has marked India for Indians as the correct response. The year 1917 anchors this question — the correct option is the fact that dates to that year. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: इंडिया फॉर इंडियन्स. देशबंधु चित्तरंजन दास यांनी 1917 मधील चार प्रसिद्ध भाषणे एकत्र करून 'India for Indians' हे पुस्तक प्रसिद्ध केले. ते स्वातंत्र्य चळवळीचे महत्त्वाचे साहित्य आहे.",
         "category": "History",
         "topic": "Rise of Nationalism & INC"
       },
       {
         "id": "csg_pre_2025_mr_12",
-        "text": "Who was the Lieutenant General who played a guiding role in the merger of Hyderabad State?",
+        "text": "हैदराबाद संस्थान विलीनीकरणात मार्गदर्शक म्हणून भूमिका बजावणारे लेफ्टनंट जनरल कोण होते?",
         "options": {
-          "A": "K. M. Cariappa",
-          "B": "Rajendra Singh",
-          "C": "S. M. Srinagesh",
-          "D": "Sir Robert Lockhart"
+          "A": "के. एम. करीअप्पा",
+          "B": "राजेंद्र सिंग",
+          "C": "एस. एम. श्रीनागेश",
+          "D": "सर रॉबर्ट लॉकहार्ट"
         },
         "correctAnswer": "B",
-        "explanation": "Marked correct: Rajendra Singh. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: राजेंद्र सिंग. ऑपरेशन पोलो अंतर्गत हैदराबाद संस्थानाचे विलीनीकरण करताना लेफ्टनंट जनरल राजेंद्र सिंग यांनी मार्गदर्शक भूमिका बजावली. ते हैदराबाद लष्करी प्रशासनात महत्त्वाचे नेतृत्व करीत होते.",
         "category": "History",
         "topic": "Post-Independence India"
       },
       {
         "id": "csg_pre_2025_mr_13",
-        "text": "Mughal Emperor Akbar bestowed the title of \"Khan-e-Khanan\" to whom in A.D. 1584?",
+        "text": "मुघल बादशहा अकबराने इ.स. 1584 मध्ये 'खान-ए-खानान' ही पदवी कोणाला दिली होती?",
         "options": {
-          "A": "Abul Fazal",
-          "B": "Miya Tansen",
-          "C": "Abdul Rahim",
-          "D": "Hakim Humam"
+          "A": "अबुल फजल",
+          "B": "मिया तानसेन",
+          "C": "अब्दुल रहीम",
+          "D": "हकीम हुमाम"
         },
         "correctAnswer": "C",
-        "explanation": "\"Abdul Rahim\" is the fact the question is pointing at. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: अब्दुल रहीम. अकबराने 1584 मध्ये अब्दुल रहीम खान-ए-खानानला 'खान-ए-खानान' ही पदवी दिली. ते अब्दुर रहीम खान-ए-खानान होते आणि तुलसीदासांचे भक्त व प्रतिभाशाली कवीही होते.",
         "category": "History",
         "topic": "Medieval India"
       },
       {
         "id": "csg_pre_2025_mr_14",
-        "text": "In 1877, 'The Great Delhi Darbar' was held, who described it as, 'An Indian Parliament'?",
+        "text": "सन 1877 मध्ये भरलेल्या 'महान दिल्ली दरबार'ाचे 'भारतीय संसद' म्हणून वर्णन कोणी केले?",
         "options": {
-          "A": "M. G. Ranade",
-          "B": "K. T. Telang",
-          "C": "S. H. Chiplunkar",
-          "D": "G. V. Joshi"
+          "A": "म. गो. रानडे",
+          "B": "के. टी. तेलंग",
+          "C": "एस. एच. चिपळूणकर",
+          "D": "ग. वा. जोशी"
         },
         "correctAnswer": "D",
-        "explanation": "\"G. V. Joshi\" is the accurate option. The year 1877 anchors this question — the correct option is the fact that dates to that year. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: ग. वा. जोशी. 1877 च्या महान दिल्ली दरबाराला गोपाळ विनायक जोशी यांनी 'भारतीय संसद' म्हणून वर्णन केले. तो दरबार व्हायसरॉय लॉर्ड लिटन याने आयोजित केला होता.",
         "category": "History",
         "topic": "British Expansion & Governors-General"
       },
       {
         "id": "csg_pre_2025_mr_15",
-        "text": "Who set up the separate department called, 'diwan-i-amir-i-kohi'?",
+        "text": "'दिवान-ए-अमीर-ए-कोही' नावाचे स्वतंत्र खाते कोणी स्थापन केले?",
         "options": {
-          "A": "Alauddin Khalji",
-          "B": "Muhammad bin Tughlaq",
-          "C": "Balban",
-          "D": "Firoz Shah Tughlaq"
+          "A": "अलाउद्दीन खिलजी",
+          "B": "मुहम्मद बिन तुघलक",
+          "C": "बलबन",
+          "D": "फिरोज शाह तुघलक"
         },
         "correctAnswer": "B",
-        "explanation": "This resolves to Muhammad bin Tughlaq. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: मुहम्मद बिन तुघलक. मुहम्मद बिन तुघलकाने शेतीचे विकास व कर संचालनासाठी 'दीवान-ए-अमीर-ए-कोही' हे स्वतंत्र खाते स्थापन केले. त्याने अभिज्ञ शासनाचे प्रयोग केले होते.",
         "category": "History",
         "topic": "Medieval India"
       },
       {
         "id": "csg_pre_2025_mr_16",
-        "text": "The Tropic of Cancer is going through which States of India?",
+        "text": "कर्कवृत्त भारताच्या कोणत्या राज्यांमधून जाते?",
         "options": {
-          "A": "Gujarat – Madhya Pradesh – Tripura – Mizoram",
-          "B": "Gujarat – Maharashtra – West Bengal – Tripura",
-          "C": "Maharashtra – Bihar – West Bengal – Mizoram",
-          "D": "Gujarat – Bihar – Tripura – West Bengal"
+          "A": "गुजरात – मध्य प्रदेश – त्रिपुरा – मिझोराम",
+          "B": "गुजरात – महाराष्ट्र – पश्चिम बंगाल – त्रिपुरा",
+          "C": "महाराष्ट्र – बिहार – पश्चिम बंगाल – मिझोराम",
+          "D": "गुजरात – बिहार – त्रिपुरा – पश्चिम बंगाल"
         },
         "correctAnswer": "A",
-        "explanation": "Working through the options, Gujarat – Madhya Pradesh – Tripura – Mizoram is the correct one. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: गुजरात – मध्य प्रदेश – त्रिपुरा – मिझोराम. कर्कवृत्त (कर्क रेखा) भारतात उत्तर-दक्षिण दिशेने गुजरात, मध्य प्रदेश, त्रिपुरा आणि मिझोराम या राज्यांतून जाते. हे 23.5° उत्तर अक्षांशावर आहे.",
         "category": "Geography",
         "topic": "Indian Physical Geography"
       },
       {
         "id": "csg_pre_2025_mr_17",
-        "text": "Match the following.\nBiosphere Reserve - Establishment Year\na. Nilgiri - I. 2011\nb. Sundarban - II. 2008\nc. Kutch - III. 1989\nd. Panna - IV. 1986",
+        "text": "योग्य जोड्या लावा.\nजैवमंडल राखीव क्षेत्र — स्थापना वर्ष\nअ. निलगिरी — i. 2011\nब. सुंदरबन — ii. 2008\nक. कच्छ — iii. 1989\nड. पन्ना — iv. 1986",
         "options": {
-          "A": "a-I, b-II, c-III, d-IV",
-          "B": "a-IV, b-III, c-II, d-I",
-          "C": "a-II, b-III, c-IV, d-I",
-          "D": "a-III, b-IV, c-I, d-II"
+          "A": "अ-i, ब-ii, क-iii, ड-iv",
+          "B": "अ-iv, ब-iii, क-ii, ड-i",
+          "C": "अ-ii, ब-iii, क-iv, ड-i",
+          "D": "अ-iii, ब-iv, क-i, ड-ii"
         },
         "correctAnswer": "B",
-        "explanation": "The definitive answer is a-IV, b-III, c-II, d-I. The year 2011 anchors this question — the correct option is the fact that dates to that year. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: अ-iv, ब-iii, क-ii, ड-i. नीलगिरी 1986, सुंदरबन 2008, कच्छ 1989 आणि पन्ना 2011 मध्ये स्थापन झाले. हे युनेस्कोच्या मान्यता प्राप्त जैवमंडल राखीव क्षेत्र आहेत.",
         "category": "Environment",
         "topic": "Biodiversity & Conservation"
       },
       {
         "id": "csg_pre_2025_mr_18",
-        "text": "Match the following.\nRiver Confluence - Rivers\na. Prakashe - I. Tapi-Panzara\nb. Mudavad - II. Tapi-Gomati\nc. Mahuli - III. Bhima-Indrayani\nd. Tulapur - IV. Krishna-Venna",
+        "text": "योग्य जोड्या जुळवा.\nनदी संगमस्थळ — नद्या\nअ. प्रकाशे — i. तापी-पांझरा\nब. मुडावद — ii. तापी-गोमती\nक. माहूली — iii. भीमा-इंद्रायणी\nड. तुळापूर — iv. कृष्णा-वेण्णा",
         "options": {
-          "A": "a-I, b-II, c-III, d-IV",
-          "B": "a-II, b-I, c-IV, d-III",
-          "C": "a-III, b-IV, c-II, d-I",
-          "D": "a-IV, b-III, c-II, d-I"
+          "A": "अ-i, ब-ii, क-iii, ड-iv",
+          "B": "अ-ii, ब-i, क-iv, ड-iii",
+          "C": "अ-iii, ब-iv, क-ii, ड-i",
+          "D": "अ-iv, ब-iii, क-ii, ड-i"
         },
         "correctAnswer": "B",
-        "explanation": "a-II, b-I, c-IV, d-III matches the question. The Krishna river rises at Mahabaleshwar in the Sahyadri and flows east across Maharashtra, Karnataka, Telangana and Andhra Pradesh before draining into the Bay of Bengal. The Bhima river, the largest tributary of the Krishna, rises at Bhimashankar in Pune district and joins the Krishna in Karnataka after crossing Solapur. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: अ-ii, ब-i, क-iv, ड-iii. प्रकाशे येथील तापी-गोमती, मुडावद येथील तापी-पांझरा, माहुली येथील कृष्णा-वेण्णा आणि तुळापूर येथील भीमा-इंद्रायणी या नद्या मिळतात. तुळापूर हे छत्रपती संभाजी महाराज यांच्या शहीद स्थानाशी जोडले आहे.",
         "category": "Geography",
         "topic": "Maharashtra Rivers & Dams"
       },
       {
         "id": "csg_pre_2025_mr_19",
-        "text": "According to the 2011 census, which Union Territory has the highest percentage of scheduled tribe population?",
+        "text": "2011 च्या जनगणनेनुसार, कोणत्या केंद्रशासित प्रदेशात अनुसूचित जमातीच्या लोकसंख्येची टक्केवारी सर्वाधिक आहे?",
         "options": {
-          "A": "Chandigarh",
-          "B": "Lakshadweep",
-          "C": "Dadra-Nagar Haveli",
-          "D": "Delhi"
+          "A": "चंदीगड",
+          "B": "लक्षद्वीप",
+          "C": "दादरा-नगर हवेली",
+          "D": "दिल्ली"
         },
         "correctAnswer": "B",
-        "explanation": "\"Lakshadweep\" is the option marked correct in the official key. The year 2011 anchors this question — the correct option is the fact that dates to that year. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: लक्षद्वीप. 2011 च्या जनगणनेनुसार लक्षद्वीप या केंद्रशासित प्रदेशात अनुसूचित जमातीच्या लोकसंख्येची टक्केवारी सर्वाधिक आहे. लहान एकूण लोकसंख्या असूनही तेथील अनुसूचित जमातीचे प्रमाण जास्त आहे.",
         "category": "Geography",
         "topic": "Population & Census"
       },
       {
         "id": "csg_pre_2025_mr_20",
-        "text": "According to the 2011 census of India, the State of Rajasthan had the lowest literacy rate of _________.",
+        "text": "2011 च्या भारतीय जनगणनेनुसार, राजस्थान राज्याचा साक्षरता दर सर्वात कमी _________ इतका होता.",
         "options": {
           "A": "55.42%",
           "B": "61.8%",
@@ -46628,181 +46630,181 @@
           "D": "65.39%"
         },
         "correctAnswer": "C",
-        "explanation": "\"66.11%\" is the accurate option. India's literacy rate per Census 2011 was 74.04% (male 82.14%, female 65.46%); Maharashtra recorded 82.34%. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: 66.11%. 2011 च्या जनगणनेनुसार राजस्थान राज्याचा साक्षरता दर 66.11% होऊन सर्वात कमी होता. त्याच वर्षी भारताचा एकूण साक्षरता दर 74.04% होता.",
         "category": "Geography",
         "topic": "Population & Census"
       },
       {
         "id": "csg_pre_2025_mr_21",
-        "text": "Which one of the following statements is false?",
+        "text": "खालीलपैकी कोणते विधान चुकीचे आहे?",
         "options": {
-          "A": "The Northern tip of main land India is Defdar in Ladakh.",
-          "B": "The Southern tip of main land India is Kanniyakumari in Tamil Nadu.",
-          "C": "The Eastern tip of main land India is Kibithu in Assam.",
-          "D": "The Western tip of main land India is Ghuar mota in Gujarat."
+          "A": "भारताच्या मुख्य भूमीचे उत्तरेकडील टोक लडाखमधील दफ्दार आहे.",
+          "B": "भारताच्या मुख्य भूमीचे दक्षिणेकडील टोक तामिळनाडूमधील कन्याकुमारी आहे.",
+          "C": "भारताच्या मुख्य भूमीचे पूर्वेकडील टोक आसाममधील किबिथू आहे.",
+          "D": "भारताच्या मुख्य भूमीचे पश्चिमेकडील टोक गुजरातमधील गुहार मोता आहे."
         },
         "correctAnswer": "C",
-        "explanation": "The correct answer is The Eastern tip of main land India is Kibithu in Assam. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: भारताच्या मुख्य भूमीचे पूर्वेकडील टोक आसाममधील किबिथू आहे. हा वाक्यांश चुक आहे; किबिथू हे अरुणाचल प्रदेशातील लोहित नदी किनाऱ्यावर आहे, आसाममध्ये नाही. मुख्य भूमीचे पूर्वेकडील टोक किबिथू आहे.",
         "category": "Geography",
         "topic": "Other"
       },
       {
         "id": "csg_pre_2025_mr_22",
-        "text": "_________ Monsoon winds blow in Maharashtra from June to September.",
+        "text": "जून ते सप्टेंबर या काळात महाराष्ट्रात _________ मोसमी वारे वाहतात.",
         "options": {
-          "A": "South east",
-          "B": "North west",
-          "C": "South west",
-          "D": "North east"
+          "A": "आग्नेय",
+          "B": "वायव्य",
+          "C": "नैऋत्य",
+          "D": "ईशान्य"
         },
         "correctAnswer": "C",
-        "explanation": "The definitive answer is South west. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: नैऋत्य. जून ते सप्टेंबर या काळात महाराष्ट्रात नैऋत्य (दक्षिणपश्चिम) मान्सून वारे वाहतात. अरबी समुद्रातून येणारे हे वारे पावसाचा मुख्य स्रोत आहेत.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": "csg_pre_2025_mr_23",
-        "text": "Consider the following statements.\na. The temperature of the troposphere generally decreases with increasing altitude.\nb. The troposphere is heated not by absorption of incoming short wave solar radiation but by transfer of heat from the earth's surface.\nNow state whether:",
+        "text": "खालील विधानांचा विचार करा.\nअ. तापमंडळाचे तापमान सामान्यतः वाढत्या उंचीबरोबर कमी होते.\nब. तापमंडळ हे सूर्याकडून येणाऱ्या लघु-तरंग सौरप्रारणाच्या शोषणाने नव्हे, तर पृथ्वीच्या पृष्ठभागावरून होणाऱ्या उष्णतेच्या वहनाने तापवले जाते.\nआता सांगा की:",
         "options": {
-          "A": "Both the statements are correct and second is the correct explanation of the first",
-          "B": "Neither of the statements is correct",
-          "C": "Both the statements are correct, but the second is not the correct explanation of the first",
-          "D": "The first statement is correct, but second is not the correct"
+          "A": "दोन्ही विधाने बरोबर आहेत आणि दुसरे विधान पहिल्या विधानाचे योग्य स्पष्टीकरण आहे",
+          "B": "दोन्ही विधाने चुकीची आहेत",
+          "C": "दोन्ही विधाने बरोबर आहेत, परंतु दुसरे विधान पहिल्या विधानाचे योग्य स्पष्टीकरण नाही",
+          "D": "पहिले विधान बरोबर आहे, परंतु दुसरे चुक आहे"
         },
         "correctAnswer": "A",
-        "explanation": "The paper's official answer is Both the statements are correct and second is the correct explanation of the first. Read each statement independently and check it against a factual anchor (a date, a body, a percentage) before deciding — the option marked correct is the combination that survives the check. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "योग्य उत्तर: दोन्ही विधाने बरोबर आहेत आणि दुसरे विधान पहिल्या विधानाचे योग्य स्पष्टीकरण आहे. तापमंडळाचे तापमान उंची वाढणे कमी होते आणि ते सूर्याकडून येणाऱ्या लघु-तरंग सौरप्रारणाने नाही, तर पृथ्वीवरील उष्णतेच्या वहनाने तापवले जाते.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": "csg_pre_2025_mr_24",
-        "text": "Which of the following rock types is a hydrous rock formed by chemical processes?",
+        "text": "खालीलपैकी कोणता खडकांचा प्रकार रासायनिक प्रक्रियेद्वारे निर्मित जलजन्य खडक आहे?",
         "options": {
-          "A": "Gypsum",
-          "B": "Shale",
-          "C": "Granite",
-          "D": "Pumice"
+          "A": "जिप्सम",
+          "B": "शेल",
+          "C": "ग्रॅनाईट",
+          "D": "पंकाश्म"
         },
         "correctAnswer": "A",
-        "explanation": "The definitive answer is Gypsum. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: जिप्सम. जिप्सम हे रासायनिक साचयने निर्मित जलजन्य खडक आहे; उदाहरणार्थ, समुद्राच्या पाण्यातील कॅल्शियम सल्फेट साचल्याने ते बनते. शेल आणि ग्रॅनाईट भौगोलिक व मॅग्मॅटिक खडक आहेत.",
         "category": "Geography",
         "topic": "Geomorphology & Physical Geography"
       },
       {
         "id": "csg_pre_2025_mr_25",
-        "text": "Which one of the following statements is/are not correct?\na. Tropical cyclones are formed in the 30° Latitude region North and South of the equator.\nb. The diameter of a tropical cyclone can range from 300 to 1500 km and even more.\nc. Tropical cyclones can have wind speed of 50 to 60 km per hour and even more.\nd. Tropical cyclones flow clockwise direction in the Northern hemisphere.",
+        "text": "खालीलपैकी कोणते विधान/विधाने अचूक नाहीत?\nअ. विषुववृत्ताच्या उत्तर व दक्षिणेकडे 30° अक्षवृत्तीय प्रदेशात उष्णकटिबंधीय आवर्ते निर्माण होतात.\nब. उष्णकटिबंधीय आवर्ताचा व्यास 300 ते 1500 कि.मी. आणि त्यापेक्षाही अधिक असू शकतो.\nक. उष्णकटिबंधीय आवर्ताचा वेग दर तास 50 ते 60 कि.मी. आणि त्यापेक्षाही अधिक असू शकतो.\nड. उष्णकटिबंधीय आवर्ते उत्तर गोलार्धात घड्याळाच्या काट्यांच्या दिशेने वाहतात.",
         "options": {
-          "A": "Only a",
-          "B": "Only b and c",
-          "C": "Only d",
-          "D": "Only b and d"
+          "A": "फक्त अ",
+          "B": "फक्त ब आणि क",
+          "C": "फक्त ड",
+          "D": "फक्त ब आणि ड"
         },
         "correctAnswer": "D",
-        "explanation": "The verified pick here is Only b and d. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: फक्त ब आणि ड. उष्णकटिबंधीय आवर्ते उत्तर गोलार्धात घड्याळाच्या काट्यांच्या उलट दिशेने (वामावर्त) वाहतात, घड्याळाच्या दिशेने नाही. तसेच त्यांचा व्यास व वेग या वाक्यांशातील प्रमाणे नेहमीच असत नाहीत.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": "csg_pre_2025_mr_26",
-        "text": "Which of the following rivers are the tributaries of the Sindhu river?\nA. Jhelum, Chenab, Kosi, Sutlej\nB. Gandak, Kosi, Ghagra, Son\nC. Sutlej, Beas, Ravi, Chenab\nD. Kabul, Kurram, Swat, Jhelum",
+        "text": "खालीलपैकी कोणत्या नद्या सिंधू नदीच्या उपनद्या आहेत?\nअ. झेलम, चिनाब, कोसी, सतलज\nब. गंडक, कोसी, घाग्रा, सोन\nक. सतलज, बियास, रावी, चिनाब\nड. काबुल, कुर्रम, स्वात, झेलम",
         "options": {
-          "A": "A and B are correct",
-          "B": "C and D are correct",
-          "C": "B and D are correct",
-          "D": "A and C are correct"
+          "A": "अ आणि ब बरोबर आहेत",
+          "B": "क आणि ड बरोबर आहेत",
+          "C": "ब आणि ड बरोबर आहेत",
+          "D": "अ आणि क बरोबर आहेत"
         },
         "correctAnswer": "B",
-        "explanation": "The right answer is C and D are correct (option B). Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: क आणि ड बरोबर आहेत. सतलज, बियास, रावी आणि चिनाब ही सिंधू नदीच्या मुख्य उपनद्या आहेत. काबुल, कुर्रम, स्वात आणि झेलम हीही सिंधू नदी कळ्यात मिळणारी उपनद्या आहेत.",
         "category": "Geography",
         "topic": "Indian Rivers & Drainage"
       },
       {
         "id": "csg_pre_2025_mr_27",
-        "text": "Match the Indian States/Union Territory (List – I) with their Sex-Ratio (List – II).\nList-I (States/Union Territory): a. Kerala, b. Tamil Nadu, c. Puducherry, d. Andhra Pradesh\nList-II (Sex-Ratio, Census – 2011): i. 996, ii. 1037, iii. 1084, iv. 993",
+        "text": "भारतीय घटक राज्ये/केंद्रशासित प्रदेश (यादी-I) व त्यांचे लिंग-गुणोत्तर (यादी-II) यांच्या जोड्या लावा.\nयादी-I (घटक राज्ये/केंद्रशासित प्रदेश):\nअ. केरळ\nब. तामिळनाडू\nक. पुदुच्चेरी\nड. आंध्र प्रदेश\nयादी-II (लिंग गुणोत्तर, जनगणना 2011):\ni. 996\nii. 1037\niii. 1084\niv. 993",
         "options": {
-          "A": "a-ii, b-iii, c-i, d-iv",
-          "B": "a-iv, b-i, c-ii, d-iii",
-          "C": "a-i, b-ii, c-iv, d-iii",
-          "D": "a-iii, b-i, c-ii, d-iv"
+          "A": "अ-ii, ब-iii, क-i, ड-iv",
+          "B": "अ-iv, ब-i, क-ii, ड-iii",
+          "C": "अ-i, ब-ii, क-iv, ड-iii",
+          "D": "अ-iii, ब-i, क-ii, ड-iv"
         },
         "correctAnswer": "D",
-        "explanation": "The right answer is a-iii, b-i, c-ii, d-iv (option D). The year 2011 anchors this question — the correct option is the fact that dates to that year. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: अ-iii, ब-i, क-ii, ड-iv. 2011 च्या जनगणनेनुसार केरळ (1084), तामिळनाडू (996), पुदुच्चेरी (1037) आणि आंध्र प्रदेश (993) या प्रदेशांच्या लिंग गुणोत्तराची जोडी आहे.",
         "category": "Geography",
         "topic": "Population & Census"
       },
       {
         "id": "csg_pre_2025_mr_28",
-        "text": "Which of the following is the reason of the storms in Arabian sea and Bay of Bengal on the border of the Indian Peninsula?",
+        "text": "भारतीय द्विपकल्पाच्या सीमेवरील बंगालचा उपसागर आणि अरबी समुद्रात खालीलपैकी कोणत्या कारणाने वादळाची निर्मिती होते?",
         "options": {
-          "A": "Due to decrease in temperature and increase in air pressure",
-          "B": "Due to increase in temperature and decrease in air pressure",
-          "C": "Increase in temperature and air pressure",
-          "D": "Decrease in temperature and air pressure"
+          "A": "तापमान कमी होऊन हवेचा दाब वाढल्याने",
+          "B": "तापमान वाढून हवेचा दाब कमी झाल्याने",
+          "C": "तापमान व हवेचा दाब वाढल्याने",
+          "D": "तापमान व हवेचा दाब कमी झाल्याने"
         },
         "correctAnswer": "B",
-        "explanation": "Straight to the answer: Due to increase in temperature and decrease in air pressure. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: तापमान वाढून हवेचा दाब कमी झाल्याने. बंगालच्या उपसागर आणि अरबी समुद्रात समुद्राचे तापमान वाढले की हवा वरती उडून दाब कमी होतो आणि वादळे निर्माण होतात.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": "csg_pre_2025_mr_29",
-        "text": "Kalsubai is the highest mountain peak in Maharashtra located in which of the following mountain ranges?",
+        "text": "कळसुबाई हे महाराष्ट्रातील सर्वोच्च पर्वत शिखर खालीलपैकी कोणत्या पर्वतरांगेत स्थित आहे?",
         "options": {
-          "A": "Sahyadri",
-          "B": "Shambhu Mahadeo",
-          "C": "Satpuda",
-          "D": "Balaghat"
+          "A": "सह्याद्री",
+          "B": "शंभू महादेव",
+          "C": "सातपुडा",
+          "D": "बालाघाट"
         },
         "correctAnswer": "A",
-        "explanation": "Option A — Sahyadri — is the right pick here. The Sahyadri (Western Ghats) is a UNESCO World Heritage biodiversity hotspot running ~1,600 km along India's west coast and defines the Konkan-Deccan divide in Maharashtra. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: सह्याद्री. कळसुबाई (1646 मी.) हे महाराष्ट्रातील सर्वोच्च शिखर आहे आणि ते सह्याद्री (पश्चिम घाट) पर्वतरांगेत स्थित आहे. ते नाशिक व अहमदनगर जिल्ह्यांच्या सिमेवर आहे.",
         "category": "Geography",
         "topic": "Maharashtra Physical Geography"
       },
       {
         "id": "csg_pre_2025_mr_30",
-        "text": "Match the following.\nOcean - Trench\na. Pacific ocean - i. Java Trench\nb. Atlantic ocean - ii. Mariana Trench\nc. Indian ocean - iii. Eurasian Trench\nd. Arctic ocean - iv. Puerto Rico Trench",
+        "text": "योग्य जोड्या जुळवा.\nमहासागर — गर्ता\nअ. प्रशांत महासागर — i. जावा गर्ता\nब. अटलांटिक महासागर — ii. मरियाना गर्ता\nक. हिंदी महासागर — iii. युरेशियन गर्ता\nड. आर्क्टिक महासागर — iv. प्युर्टो रिको गर्ता",
         "options": {
-          "A": "a-iv, b-iii, c-ii, d-i",
-          "B": "a-i, b-ii, c-iii, d-iv",
-          "C": "a-ii, b-iv, c-i, d-iii",
-          "D": "a-ii, b-iii, c-iv, d-i"
+          "A": "अ-iv, ब-iii, क-ii, ड-i",
+          "B": "अ-i, ब-ii, क-iii, ड-iv",
+          "C": "अ-ii, ब-iv, क-i, ड-iii",
+          "D": "अ-ii, ब-iii, क-iv, ड-i"
         },
         "correctAnswer": "C",
-        "explanation": "\"a-ii, b-iv, c-i, d-iii\" is what the question is looking for. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: अ-ii, ब-iv, क-i, ड-iii. प्रशांत महासागरात मरियाना खोरी, अटलांटिकमध्ये प्युएर्तो रिको खोरी, हिंद महासागरात जावा खोरी आणि आर्क्टिकमध्ये युरेशियन खोरी आहे. मरियाना ही जगातील सर्वात खोली खोरी आहे.",
         "category": "Geography",
         "topic": "Oceanography"
       },
       {
         "id": "csg_pre_2025_mr_31",
-        "text": "Match the pollutants given in List – I with their effects given in List – II.\nList-I (Pollutants): a. Phosphate fertilizers in water, b. Methane in air, c. Synthetic detergents in water, d. Nitrogen oxides in air\nList-II (Effects of Pollutants): i. Biochemical oxygen demand level increase, ii. Acid Rain, iii. Global warming, iv. Eutrophication",
+        "text": "यादी-I मध्ये दिलेल्या प्रदूषकांची यादी-II मध्ये दिलेल्या त्यांच्या परिणामांशी जोड्या लावा.\nयादी-I (प्रदूषके):\nअ. पाण्यातील फॉस्फेट खते\nब. हवेतील मिथेन\nक. पाण्यातील कृत्रिम अपमार्जके\nड. हवेतील नायट्रोजन ऑक्साईड\nयादी-II (प्रदूषकांचे परिणाम):\ni. पाण्याची जैवरासायनिक ऑक्सीजन मागणी (BOD) पातळी वाढते\nii. आम्ल पर्जन्य\niii. जागतिक तापमान वाढ\niv. अन्नतिरेक / सुपोषण",
         "options": {
-          "A": "a-ii, b-i, c-iv, d-iii",
-          "B": "a-iv, b-iii, c-i, d-ii",
-          "C": "a-iii, b-ii, c-iv, d-i",
-          "D": "a-i, b-iii, c-ii, d-iv"
+          "A": "अ-ii, ब-i, क-iv, ड-iii",
+          "B": "अ-iv, ब-iii, क-i, ड-ii",
+          "C": "अ-iii, ब-ii, क-iv, ड-i",
+          "D": "अ-i, ब-iii, क-ii, ड-iv"
         },
         "correctAnswer": "B",
-        "explanation": "Correct: option B — \"a-iv, b-iii, c-i, d-ii\". The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: अ-iv, ब-iii, क-i, ड-ii. पाण्यातील फॉस्फेट खते अन्नतिरेक करतात, हवेतील मिथेन जागतिक तापमान वाढवते, कृत्रिम अपमार्जके BOD वाढवतात आणि नायट्रोजन ऑक्साईड आम्ल पर्जन्यास कारणीभूत होतात.",
         "category": "Environment",
         "topic": "Pollution"
       },
       {
         "id": "csg_pre_2025_mr_32",
-        "text": "Which of the following animal is not declared as a critically endangered species of reptile and amphibian of India?",
+        "text": "भारतातील सरपटणारे प्राणी आणि उभयचर प्राण्यांच्या अत्यंत धोक्यात असलेल्या प्रजाती म्हणून खालीलपैकी कोणता प्राणी घोषित केलेला नाही?",
         "options": {
-          "A": "Gharial",
-          "B": "Bengal Florican",
-          "C": "Four-toed River Terrapin",
-          "D": "Leatherback turtles"
+          "A": "घारियल",
+          "B": "बंगाल फ्लोरिकन",
+          "C": "फोर-टूड रिव्हर टेरापिन",
+          "D": "लेथरबॅक कासव"
         },
         "correctAnswer": "B",
-        "explanation": "The definitive answer is Bengal Florican. The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: बंगाल फ्लोरिकन. घारियल, फोर-टूड रिव्हर टेरापिन आणि लेथरबॅक कासव हे सर्पणारे व उभयचर प्राण्यांत अत्यंत धोक्यात असलेल्या प्रजाती म्हणून घोषित आहेत. बंगाल फ्लोरिकन हा पक्षी आहे, सर्पणारा नाही.",
         "category": "Environment",
         "topic": "Biodiversity & Conservation"
       },
       {
         "id": "csg_pre_2025_mr_33",
-        "text": "Which of the following acronyms has been used by Biologists to describe the factors that threaten to biodiversity?",
+        "text": "जैवविविधतेला धोका निर्माण करणाऱ्या घटकांबाबत जीवशास्त्रज्ञांनी खालीलपैकी कोणता संक्षिप्त शब्द प्रयोग केला?",
         "options": {
           "A": "EIA",
           "B": "IUCN",
@@ -46810,55 +46812,55 @@
           "D": "HIPPO"
         },
         "correctAnswer": "D",
-        "explanation": "The official Set A key selects HIPPO. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: HIPPO. जैवविविधतेला धोका निर्माण करणाऱ्या घटकांसाठी जीवशास्त्रज्ञांनी HIPPO हा शब्द प्रयोग केला: Habitat loss, Invasive species, Pollution, Population, Overharvesting.",
         "category": "Environment",
         "topic": "Biodiversity & Conservation"
       },
       {
         "id": "csg_pre_2025_mr_34",
-        "text": "Which of the following is an example of a renewable energy resource?",
+        "text": "खालीलपैकी कोणते एक पुनर्नवीकरणीय ऊर्जा संसाधनाचे उदाहरण आहे?",
         "options": {
-          "A": "Rock-Coal",
-          "B": "Mineral Oil/Petroleum",
-          "C": "Natural Gas",
-          "D": "Geothermal energy"
+          "A": "दगडी कोळसा",
+          "B": "खनिज तेल / पेट्रोलियम",
+          "C": "नैसर्गिक वायू",
+          "D": "भूऔष्णिक ऊर्जा"
         },
         "correctAnswer": "D",
-        "explanation": "The examination key marks Geothermal energy as the correct choice. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: भूऔष्णिक ऊर्जा. भूऔष्णिक ऊर्जा पृथ्वीच्या आतील उष्णतेवरून मिळते आणि ती पुनर्नवीकरणीय आहे. दगडी कोळस, खनिज तेल आणि नैसर्गिक वायू हे नवीकरणासाध्य नाहीत.",
         "category": "Environment",
         "topic": "Renewable Energy"
       },
       {
         "id": "csg_pre_2025_mr_35",
-        "text": "As per the Hazardous Waste (Management, Handling and Transboundary Movement) Rules, 2008, the _________ shall be the nodal Ministry to deal with the transboundary movement of the hazardous wastes and to grant permission for transit of the hazardous wastes through any part of India.",
+        "text": "धोकादायक कचरा (व्यवस्थापन, हाताळणी आणि सीमापार वाहतूक) नियम, 2008 नुसार _________ हे धोकादायक कचऱ्याच्या सीमापार वाहतुकीशी संबंधित आणि भारताच्या कोणत्याही भागातून धोकादायक कचऱ्याच्या वाहतुकीची परवानगी देणारे नोडल मंत्रालय असेल.",
         "options": {
-          "A": "Ministry of Environment and Forests, Govt. of India",
-          "B": "Ministry of Home Affairs, Govt. of India",
-          "C": "Ministry of External Affairs, Govt. of India",
-          "D": "Ministry of Commerce and Industry, Govt. of India"
+          "A": "पर्यावरण आणि वन मंत्रालय, भारत सरकार",
+          "B": "गृह मंत्रालय, भारत सरकार",
+          "C": "परराष्ट्र मंत्रालय, भारत सरकार",
+          "D": "वाणिज्य आणि उद्योग मंत्रालय, भारत सरकार"
         },
         "correctAnswer": "A",
-        "explanation": "This resolves to Ministry of Environment and Forests, Govt. of India. The year 2008 anchors this question — the correct option is the fact that dates to that year. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: पर्यावरण आणि वन मंत्रालय, भारत सरकार. धोकादायक कचरा (व्यवस्थापन, हाताळणी आणि सीमापार वाहतूक) नियम, 2008 नुसार धोकादायक कचऱ्याच्या सीमापार वाहतुकी व परवानगीसाठी पर्यावरण व वन मंत्रालय हे नोडल मंत्रालय आहे.",
         "category": "Environment",
         "topic": "Environmental Laws & Conventions"
       },
       {
         "id": "csg_pre_2025_mr_36",
-        "text": "Identify the correct statement/s from the following regarding Food Security Bill, 2013.\nA. The Bill provides food safety benefits to the 50% of the urban population and 75% of the rural population.\nB. Beneficiaries will be provided rice at Rs. 3/-kg, coarse grains at Re. 1/-kg and wheat at Rs. 2/-kg per month.",
+        "text": "अन्न सुरक्षा विधेयक, 2013 च्या संदर्भात खालीलपैकी योग्य विधान/ने ओळखा.\nअ. हे विधेयक शहरी भागातील 50% आणि ग्रामीण भागातील 75% लोकसंख्येला अन्न सुरक्षेचा लाभ उपलब्ध करून देतो.\nब. लाभार्थ्यांना दरमाह प्र.कि.रु. 3 प्रमाणे तांदूळ, प्र.कि.रु. 1 प्रमाणे भरड धान्य व प्र.कि.रु. 2 प्रमाणे गहू उपलब्ध होणार आहे.",
         "options": {
-          "A": "Both A and B are correct",
-          "B": "Both A and B are incorrect",
-          "C": "Only A is correct",
-          "D": "Only B is correct"
+          "A": "अ आणि ब दोन्ही बरोबर आहेत",
+          "B": "अ आणि ब दोन्ही चूक आहेत",
+          "C": "फक्त अ बरोबर आहे",
+          "D": "फक्त ब बरोबर आहे"
         },
         "correctAnswer": "B",
-        "explanation": "Both A and B are incorrect matches the question. The year 2013 anchors this question — the correct option is the fact that dates to that year. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: अ आणि ब दोन्ही चूक आहेत. NFSA 2013 अंतर्गत तांदूळ ₹3, गहू ₹2 आणि भरड धान्य ₹1 प्रति किलो आहे; वाक्यांशात गहू व भरड धान्य यांच्या दरांची अदलाबदल केली आहे. तसेच कव्हरेज व लाभार्थी निश्चितीकरणाची तपशीलवार मांडणीही परीक्षेचा भाग आहे.",
         "category": "Economics",
         "topic": "Public Finance & Budget"
       },
       {
         "id": "csg_pre_2025_mr_37",
-        "text": "The term sustainable development first came into prominence in the World Conservation Strategy presented in _________.",
+        "text": "शाश्वत विकास ही संकल्पना _________ मध्ये सादर केलेल्या जागतिक संवर्धन धोरणात प्रथम प्रचलित झाली.",
         "options": {
           "A": "1980",
           "B": "1987",
@@ -46866,125 +46868,125 @@
           "D": "1992"
         },
         "correctAnswer": "A",
-        "explanation": "Reading the stem carefully, the answer is 1980. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: 1980. शाश्वत विकास ही संकल्पना प्रथम 1980 मधील IUCN व UNEP च्या 'World Conservation Strategy' मध्ये प्रचलित झाली. 1987 मधील Brundtland Report ने तिला व्यापक लोकप्रसिद्धी मिळाली.",
         "category": "Environment",
         "topic": "Climate Change & Global Warming"
       },
       {
         "id": "csg_pre_2025_mr_38",
-        "text": "What is India's position in the Sustainable Development Goals Index released in 2020?",
+        "text": "2020 मध्ये जाहीर करण्यात आलेल्या शाश्वत विकास लक्ष्ये निर्देशांकात भारत कोणत्या स्थानावर आहे?",
         "options": {
-          "A": "117th",
-          "B": "17th",
-          "C": "40th",
-          "D": "125th"
+          "A": "117 व्या",
+          "B": "17 व्या",
+          "C": "40 व्या",
+          "D": "125 व्या"
         },
         "correctAnswer": "A",
-        "explanation": "The verified pick here is 117th. The year 2020 anchors this question — the correct option is the fact that dates to that year. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: 117 व्या. 2020 मध्ये जाहीर केलेल्या Sustainable Development Goals Index मध्ये भारताचे स्थान 117 वे आहे. हे स्थान देशाच्या विकास लक्ष्यांच्या प्राप्तीसाठी सुधारणेची गरज दर्शवते.",
         "category": "Economics",
         "topic": "Growth, Inflation & Indicators"
       },
       {
         "id": "csg_pre_2025_mr_39",
-        "text": "\"Economic growth is the increase in output only\" whose statement was this?",
+        "text": "'आर्थिक वृद्धी म्हणजे फक्त उत्पादनात होणारी वाढ' हे विधान कोणी केले?",
         "options": {
-          "A": "Prof. Edison",
-          "B": "Prof. Kindleberger",
-          "C": "A.D. Gorwala",
-          "D": "Prof. Joseph Schumpeter"
+          "A": "प्रो. एडिसन",
+          "B": "प्रो. किंडलबर्जर",
+          "C": "ए.डी. गोरवाला",
+          "D": "प्रो. जोसेफ शुंपिटर"
         },
         "correctAnswer": "B",
-        "explanation": "The verified pick here is Prof. Kindleberger. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: प्रो. किंडलबर्जर. प्रो. चार्ल्स किंडलबर्जर यांनी आर्थिक वृद्धी म्हणजे केवळ उत्पादनात होणारी वाढ म्हणून परिभाषित केली. त्यांनी उत्पादन-वृद्धी व आर्थिक कल्यान यातील फरक ओळखून दिला.",
         "category": "Economics",
         "topic": "Growth, Inflation & Indicators"
       },
       {
         "id": "csg_pre_2025_mr_40",
-        "text": "Consider the following statements and choose the correct option regarding Indian economy.\nA. Considering the economic changes in India after globalisation, 'Trickle Down Theory' is precisely applicable to Indian economy.\nB. The high growth rate of Indian economy after globalisation, especially since 2005, poses question about applicability of the 'Trickle Down Theory'.",
+        "text": "भारतीय अर्थव्यवस्थेबाबत खालील विधाने विचारात घेऊन योग्य पर्याय निवडा.\nअ. जागतिकीकरणानंतर भारतीय अर्थव्यवस्थेतील बदल लक्षात घेता 'ट्रिकल डाऊन थिअरी' भारतीय अर्थव्यवस्थेला तंतोतंत लागू होते.\nब. जागतिकीकरणानंतर विशेषतः 2005 पासून भारताने गाठलेला उच्च विकास दर 'ट्रिकल डाऊन थिअरी' वर प्रश्नचिन्ह उपस्थित करतो.",
         "options": {
-          "A": "Statement A is correct",
-          "B": "Statement B is correct",
-          "C": "Both statements A and B are correct",
-          "D": "Both statements A and B are incorrect"
+          "A": "विधान अ बरोबर आहे",
+          "B": "विधान ब बरोबर आहे",
+          "C": "दोन्ही विधाने अ आणि ब बरोबर आहेत",
+          "D": "दोन्ही विधाने अ आणि ब चुकीची आहेत"
         },
         "correctAnswer": "B",
-        "explanation": "The correct answer is Statement B is correct. The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. Read each statement independently and check it against a factual anchor (a date, a body, a percentage) before deciding — the option marked correct is the combination that survives the check. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: विधान ब बरोबर आहे. जागतिकीकरणानंतर 2005 पासून भारताने गाठलेला उच्च विकास दर 'ट्रिकल डाऊन थिअरी'वर प्रश्नचिन्ह उभे करतो; वृद्धीचे फायदे सर्वस्तरांपर्यंत पोहोचले नाहीत. ट्रिकल डाऊन थिअरी म्हणजे वृद्धीचे फायदे खालच्या स्तरापर्यंत 'थळकून' जातात.",
         "category": "Economics",
         "topic": "Industry, Trade & Reforms"
       },
       {
         "id": "csg_pre_2025_mr_41",
-        "text": "\"About 40% of the population of the developing world did not benefit from economic growth during the 1950's and 1960's.\" Who made this statement?",
+        "text": "'विकसनशील जगामधील जवळजवळ 40% लोकसंख्येला 1950 आणि 1960 च्या दशकांमध्ये झालेल्या आर्थिक वृद्धीचा लाभ झालेला नाही' हे विधान कोणाचे आहे?",
         "options": {
-          "A": "Robert McNamara",
-          "B": "Robert Clover",
-          "C": "Charles Kindleberger",
-          "D": "Jean Dreze"
+          "A": "रॉबर्ट मॅकनामारा",
+          "B": "रॉबर्ट क्लोवर",
+          "C": "चार्ल्स किंडलबर्जर",
+          "D": "जीन ड्रेझ"
         },
         "correctAnswer": "A",
-        "explanation": "\"Robert McNamara\" is the fact the question is pointing at. The year 1950 anchors this question — the correct option is the fact that dates to that year. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: रॉबर्ट मॅकनामारा. वर्ल्ड बँकचे अध्यक्ष रॉबर्ट मॅकनामारा यांनी 1950 व 1960 च्या दशकांत विकासामुळे जवळजवळ 40% लोकसंख्येला लाभ मिळालेला नाही, असा दावा केलेला आहे.",
         "category": "Economics",
         "topic": "Poverty & Unemployment"
       },
       {
         "id": "csg_pre_2025_mr_42",
-        "text": "Which one of the following National Mission was not included in the National Climate Action Program?",
+        "text": "राष्ट्रीय हवामान विषयक कृती कार्यक्रमांमध्ये खालीलपैकी कोणत्या राष्ट्रीय अभियानाचा समावेश केला नव्हता?",
         "options": {
-          "A": "National Solar Mission",
-          "B": "National Sustainable Habitat Mission",
-          "C": "National Water Mission",
-          "D": "National Health Mission"
+          "A": "राष्ट्रीय सौर अभियान",
+          "B": "राष्ट्रीय शाश्वत वसतिस्थान अभियान",
+          "C": "राष्ट्रीय जल अभियान",
+          "D": "राष्ट्रीय आरोग्य अभियान"
         },
         "correctAnswer": "D",
-        "explanation": "The exam key confirms \"National Health Mission\". Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: राष्ट्रीय आरोग्य अभियान. राष्ट्रीय हवामान कृती कार्यक्रम (NAPCC) मध्ये राष्ट्रीय सौर अभियान, जल अभियान आणि शाश्वत वसतिस्थान अभियान आहेत. राष्ट्रीय आरोग्य अभियान हे हवामान कार्यक्रमाचे भाग नाही.",
         "category": "Environment",
         "topic": "Climate Change & Global Warming"
       },
       {
         "id": "csg_pre_2025_mr_43",
-        "text": "Which of the following is/are reason/s for the existence of poverty even after seven decades of Independence in India?\nA. More dependency of Economy on the agricultural sector.\nB. Shortage of employment opportunities in manufacturing sector.\nC. High growth rate of agriculture in comparison with developed countries.",
+        "text": "स्वातंत्र्याच्या 7 दशकानंतरही भारतात अस्तित्वात असलेल्या दारिद्र्याची खालीलपैकी कोणते/ती कारण/कारणे आहेत?\nअ. अर्थव्यवस्था मोठ्या प्रमाणात कृषी क्षेत्रावर अवलंबून.\nब. उत्पादन क्षेत्रातील रोजगार संधीची कमतरता.\nक. विकसित देशांच्या तुलनेत शेती विकासाचा अधिक दर.",
         "options": {
-          "A": "Statements A and C are correct",
-          "B": "Statements A and B are correct",
-          "C": "Only statement A is correct",
-          "D": "Only statement B is correct"
+          "A": "विधाने अ आणि क बरोबर आहेत",
+          "B": "विधाने अ आणि ब बरोबर आहेत",
+          "C": "केवळ विधान अ बरोबर आहे",
+          "D": "केवळ विधान ब बरोबर आहे"
         },
         "correctAnswer": "B",
-        "explanation": "The definitive answer is Statements A and B are correct. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: विधाने अ आणि ब बरोबर आहेत. भारतीय अर्थव्यवस्था कृषीवर अधिक अवलंबून आहे आणि उत्पादन क्षेत्रात रोजगार संधीचे प्रमाण कमी आहे. विधान क असे म्हणते की विकसित देशांच्या तुलनेत शेती विकासाचा दर अधिक आहे, जे दारिद्र्याचे कारण म्हणून योग्य नाही.",
         "category": "Economics",
         "topic": "Poverty & Unemployment"
       },
       {
         "id": "csg_pre_2025_mr_44",
-        "text": "Program/s implemented under the Integrated Child Development Services Scheme _________.\nA. Nutrition supplemental program\nB. Health check-up\nC. Worker's training\nD. Gender inequality",
+        "text": "एकात्मिक बाल विकास सेवा योजने अंतर्गत राबविण्यात येणारा/येणारे कार्यक्रम _________.\nअ. पूरक पोषण आहार कार्यक्रम\nब. आरोग्य तपासणी\nक. कामगार प्रशिक्षण\nड. स्त्री-पुरुष असमानता",
         "options": {
-          "A": "Only A, C",
-          "B": "Only C, D",
-          "C": "Only A, B",
-          "D": "A, B and C"
+          "A": "फक्त अ, क",
+          "B": "फक्त क, ड",
+          "C": "फक्त अ, ब",
+          "D": "अ, ब आणि क"
         },
         "correctAnswer": "C",
-        "explanation": "The correct choice is \"Only A, B\". Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: फक्त अ, ब. एकात्मिक बाल विकास सेवा (ICDS) योजने अंतर्गत पूरक पोषण आहार आणि आरोग्य तपासणी हे कार्यक्रम चालविले जातात. कामगार प्रशिक्षण आणि स्त्री-पुरुष असमानता हे ICDS चे मुख्य घटक नाहीत.",
         "category": "Economics",
         "topic": "Poverty & Unemployment"
       },
       {
         "id": "csg_pre_2025_mr_45",
-        "text": "As per the 2011 Census, 13% of the total urban population of the country was living in which of the following cities in 2011?\na. Mumbai\nb. Chennai\nc. Kolkata\nd. Delhi",
+        "text": "2011 च्या जनगणनेनुसार, सन 2011 मध्ये देशातील एकूण शहरी लोकसंख्येपैकी 13% लोकसंख्या खालीलपैकी कोणत्या शहरांत राहात होती?\nअ. मुंबई\nब. चेन्नई\nक. कलकत्ता\nड. दिल्ली",
         "options": {
-          "A": "a and d",
-          "B": "a, c and d",
-          "C": "a, b and d",
-          "D": "a, b and c"
+          "A": "अ आणि ड",
+          "B": "अ, क आणि ड",
+          "C": "अ, ब आणि ड",
+          "D": "अ, ब आणि क"
         },
         "correctAnswer": "B",
-        "explanation": "\"a, c and d\" is the accurate option. The year 2011 anchors this question — the correct option is the fact that dates to that year. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: अ, क आणि ड. 2011 च्या जनगणनेनुसार देशातील एकूण शहरी लोकसंख्येपैकी 13% लोक मुंबई, कोलकाता आणि दिल्ली या तीन महानगरांमध्ये राहत होते. चेन्नई या यादीत समावेश नाही.",
         "category": "Economics",
         "topic": "Population & Demography"
       },
       {
         "id": "csg_pre_2025_mr_46",
-        "text": "As per the 2011 Census, India's population percentage is _________ of the total Global population.",
+        "text": "2011 च्या जनगणनेनुसार, भारताची लोकसंख्या एकूण जागतिक लोकसंख्येच्या _________ टक्के आहे.",
         "options": {
           "A": "2.4",
           "B": "17.5",
@@ -46992,69 +46994,70 @@
           "D": "25.1"
         },
         "correctAnswer": "B",
-        "explanation": "The right pick is option B: 17.5. The year 2011 anchors this question — the correct option is the fact that dates to that year. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: 17.5. 2011 च्या जनगणनेनुसार भारताची लोकसंख्या जगातील एकूण लोकसंख्येच्या 17.5% होती. त्याच वर्षी भारत जगात लोकसंख्येने दुसऱ्या क्रमांकावर होता.",
         "category": "Economics",
         "topic": "Population & Demography"
       },
       {
         "id": "csg_pre_2025_mr_47",
-        "text": "Which of the following statement/s is/are correct in relation to India's National Population Policy, 2000?\nA. Stabilizing the population of the country by 2050 with maximum two children norm.\nB. Universal immunization.\nC. Reduction of infant mortality rate below 30% per thousand.",
+        "text": "भारताच्या राष्ट्रीय लोकसंख्या धोरण, 2000 संदर्भात खालीलपैकी कोणते/कोणती विधान/विधाने बरोबर आहेत/आहे?\nअ. जास्तीत जास्त दोन अपत्ये नुसार 2050 सालापर्यंत देशाच्या लोकसंख्येत स्थिरता आणणे.\nब. सार्वत्रिक लसीकरण.\nक. अर्भक मृत्युचे प्रमाण प्रति हजार 30% पेक्षा खाली आणणे.",
         "options": {
-          "A": "Statements A, B and C are correct",
-          "B": "Statements A and C are correct",
-          "C": "Only statement A is correct",
-          "D": "Only statement B is correct"
+          "A": "विधाने अ, ब आणि क बरोबर आहेत",
+          "B": "विधाने अ आणि क बरोबर आहेत",
+          "C": "केवळ विधान अ बरोबर आहे",
+          "D": "केवळ विधान ब बरोबर आहे"
         },
         "correctAnswer": "D",
-        "explanation": "The exam key confirms \"Only statement B is correct\". The year 2000 anchors this question — the correct option is the fact that dates to that year. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: केवळ विधान ब बरोबर आहे. राष्ट्रीय लोकसंख्या धोरण, 2000 मध्ये सार्वत्रिक लसीकरण हे एक महत्त्वाचे उद्दिष्ट आहे. विधान अ मधील 2050 वर्ष आणि विधान क मधील 30% या प्रमाणे चुक आहेत.",
         "category": "Economics",
         "topic": "Population & Demography"
       },
       {
         "id": "csg_pre_2025_mr_48",
-        "text": "[Question Cancelled]",
+        "text": "जमीन धारणेची मर्यादा म्हणजे एखादा व्यक्ती स्वतःच्या नावे किती जमीन धारण करू शकतो याची वैधानिक परिपूर्ण मर्यादा होय. जमीन धारणेची मर्यादा लादण्याचे खालीलपैकी कोणते दोन पैलू आहेत?\nअ. भविष्यातील अधिग्रहणावर मर्यादा\nब. एकत्रित जमीन मालकी मर्यादा\nक. विद्यमान जमीन धारणेवर मर्यादा\nड. रूपांतरावर मर्यादा",
         "options": {
-          "A": "Option A",
-          "B": "Option B",
-          "C": "Option C",
-          "D": "Option D"
+          "A": "अ आणि ब",
+          "B": "ब आणि क",
+          "C": "क आणि ड",
+          "D": "अ आणि क"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is Option A. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "हा प्रश्न आयोगाने रद्द केला आहे, त्यामुळे सर्व उमेदवारांना यासाठी गुण देण्यात आले.",
         "category": "Economics",
-        "topic": "Other"
+        "topic": "Other",
+        "cancelled": true
       },
       {
         "id": "csg_pre_2025_mr_49",
-        "text": "Consider the following statements:\nA. Gender Development Index is a composite index of health, education, empowerment and labour market.\nB. When the above four factors are considered together, inequality in women and men has adverse impact on Human Development Index.",
+        "text": "खालील विधाने विचारात घ्या.\nअ. लिंगाधारित मानव विकास निर्देशांक हा आरोग्य, शिक्षण, सबलीकरण आणि श्रम बाजार यांचा संयुक्त निर्देशांक आहे.\nब. वरील चार घटकांचा विचार केल्यास स्त्री-पुरुषातील असमानतेमुळे मानव विकासावर प्रतिकूल परिणाम होतो.",
         "options": {
-          "A": "Only A is correct",
-          "B": "Only B is correct",
-          "C": "Both A and B are correct",
-          "D": "Both A and B are incorrect"
+          "A": "फक्त अ बरोबर आहे",
+          "B": "फक्त ब बरोबर आहे",
+          "C": "अ आणि ब दोन्ही बरोबर आहेत",
+          "D": "अ आणि ब दोन्ही चूक आहेत"
         },
         "correctAnswer": "C",
-        "explanation": "The correct choice is \"Both A and B are correct\". This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: अ आणि ब दोन्ही बरोबर आहेत. लिंगाधारित मानव विकास निर्देशांक हा आरोग्य, शिक्षण, सबलीकरण आणि श्रम बाजार यांचा संयुक्त निर्देशांक आहे. या घटकांत स्त्री-पुरुष असमानतेमुळे मानव विकासावर प्रतिकूल परिणाम होतो.",
         "category": "Economics",
         "topic": "Poverty & Unemployment"
       },
       {
         "id": "csg_pre_2025_mr_50",
-        "text": "Which of the following was the main objective of the 20 point programme announced on 26 June, 1975?\nA. To improve the standard of living.\nB. To help the people living below the poverty line (Poverty alleviation).",
+        "text": "26 जून, 1975 रोजी जाहीर केलेल्या 20 कलमी कार्यक्रमाचा मुख्य हेतु पुढीलपैकी कोणता होता?\nअ. राहणीमानाच्या दर्जात सुधारणा करणे.\nब. दारिद्र्य रेषेखालील लोकांना साहाय्य करणे (दारिद्र्य निर्मूलन).",
         "options": {
-          "A": "Only A is correct",
-          "B": "Only B is correct",
-          "C": "Both A and B are correct",
-          "D": "None of the above"
+          "A": "फक्त अ बरोबर आहे",
+          "B": "फक्त ब बरोबर आहे",
+          "C": "अ आणि ब दोन्ही बरोबर आहेत",
+          "D": "वरीलपैकी नाही"
         },
         "correctAnswer": "C",
-        "explanation": "This one comes to Both A and B are correct. The year 1975 anchors this question — the correct option is the fact that dates to that year. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: अ आणि ब दोन्ही बरोबर आहेत. 26 जून, 1975 रोजी जाहीर केलेल्या 20 कलमी कार्यक्रमाचा मुख्य हेतु राहणीमानाच्या दर्जात सुधारणा करणे आणि दारिद्र्य रेषेखालील लोकांना साहाय्य करून दारिद्र्य निर्मूलन करणे हे होते.",
         "category": "Economics",
         "topic": "Economic Planning & Five Year Plans"
       },
       {
         "id": "csg_pre_2025_mr_51",
-        "text": "The ratio of lengths to radii of two rods of same material is 1 : 2 and 2 : 3. If temperature difference between two ends of the rod is same, then what will be the ratio of heat flow?",
+        "text": "एकाच पदार्थाच्या दोन रॉडच्या लांबी आणि त्रिज्येचे गुणोत्तर अनुक्रमे 1 : 2 आणि 2 : 3 आहे. जर रॉडच्या दोन्ही टोकांमधील तापमानातील फरक समान असेल, तर उष्णता प्रवाहाचे गुणोत्तर किती असेल?",
         "options": {
           "A": "3 : 2",
           "B": "4 : 3",
@@ -47062,13 +47065,13 @@
           "D": "8 : 9"
         },
         "correctAnswer": "D",
-        "explanation": "\"8 : 9\" is the fact the question is pointing at. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: 8 : 9. समान पदार्थाच्या रॉडमध्ये स्थिर अवस्थेत उष्णता प्रवाह H ∝ A/L ∝ r²/L असतो. L₁ : L₂ = 1 : 2 आणि r₁ : r₂ = 2 : 3 असल्याने H₁/H₂ = (2/3)² × (2/1) = 8/9 मिळते.",
         "category": "Science",
         "topic": "Heat & Thermodynamics"
       },
       {
         "id": "csg_pre_2025_mr_52",
-        "text": "In the network of resistances shown below, Current through the battery will be _________.\n[Circuit with 1Ω, 2Ω, 2Ω, 3Ω, 4Ω resistors and 2V battery]",
+        "text": "खालील दिलेल्या रोधकांच्या नेटवर्कमध्ये बॅटरीमधून विद्युतधारा _________ असेल.",
         "options": {
           "A": "1.5 A",
           "B": "3.5 A",
@@ -47076,167 +47079,167 @@
           "D": "1.0 A"
         },
         "correctAnswer": "D",
-        "explanation": "The right pick is option D: 1.0 A. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: 1.0 A. विद्युत परिपथात एकूण प्रतिकार R समजून ओहमच्या नियमानुसार I = V/R मोजता येते. रोधकांच्या श्रेणी-समांतर जोडणीवरून समतुल्य प्रतिकार काढून विद्युतधारा 1.0 A येते.",
         "category": "Science",
         "topic": "Electricity & Magnetism"
       },
       {
         "id": "csg_pre_2025_mr_53",
-        "text": "Which physical quantity conserved during collision?",
+        "text": "खालीलपैकी कोणती भौतिक राशी टक्कराच्या दरम्यान अक्षय राहते?",
         "options": {
-          "A": "Mass",
-          "B": "Momentum",
-          "C": "Time",
-          "D": "Length"
+          "A": "वस्तुमान",
+          "B": "संवेग",
+          "C": "वेळ",
+          "D": "लांबी"
         },
         "correctAnswer": "B",
-        "explanation": "The definitive answer is Momentum. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: संवेग. टक्कर दरम्यान बाह्य बल नसल्यास संवेग संरक्षित राहतो (संवेग संरक्षणाचा नियम). वस्तुमान, वेळ आणि लांबी टक्करानंतर बदलू शकतात, पण संवेग p = mv टक्करपूर्वी-नंतर समान राहतो.",
         "category": "Science",
         "topic": "Mechanics & Motion"
       },
       {
         "id": "csg_pre_2025_mr_54",
-        "text": "Which of the following confirms that the universe is not static but expanding?",
+        "text": "खालीलपैकी कोणत्या निरीक्षणाद्वारे विश्व स्थिर नसून ते विस्तारित आहे याबद्दल पुष्टी मिळते?",
         "options": {
-          "A": "Red shift in the light coming from distant galaxies",
-          "B": "Blue shift in the light coming from distant galaxies",
-          "C": "Bending of light while passing near to the Black hole",
-          "D": "Constancy of velocity of light"
+          "A": "दूरवरच्या आकाशगंगांमधून येणाऱ्या प्रकाशात आढळणारे लाल रंगाकडील विस्थापन",
+          "B": "दूरवरच्या आकाशगंगांमधून येणाऱ्या प्रकाशात आढळणारे निळ्या रंगाकडील विस्थापन",
+          "C": "कृष्ण विवराच्या जवळून जाताना होणारे प्रकाशाचे वक्रीभवन",
+          "D": "प्रकाशाच्या वेगाची स्थिरता"
         },
         "correctAnswer": "A",
-        "explanation": "\"Red shift in the light coming from distant galaxies\" is the option marked correct in the official key. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: दूरवरच्या आकाशगंगांमधून येणाऱ्या प्रकाशात आढळणारे लाल रंगाकडील विस्थापन. हबलच्या निरीक्षणानुसार दूरच्या आकाशगंगांच्या प्रकाशाची तरंगलांबी लाल बाजूकडे वळते (लाल विस्थापन), ज्यामुळे विश्व विस्तारित आहे हे सिद्ध होते.",
         "category": "Science",
         "topic": "Modern & Nuclear Physics"
       },
       {
         "id": "csg_pre_2025_mr_55",
-        "text": "Neutrino particle is emitted in the process of _________.",
+        "text": "_________ प्रक्रियेत न्युट्रीनो कण उत्सर्जित होतो.",
         "options": {
-          "A": "α-decay",
-          "B": "β-decay",
-          "C": "γ-decay",
-          "D": "X-ray"
+          "A": "अल्फा क्षय",
+          "B": "बीटा क्षय",
+          "C": "गॅमा क्षय",
+          "D": "एक्स-रे"
         },
         "correctAnswer": "B",
-        "explanation": "\"β-decay\" is the accurate option. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: बीटा क्षय. β-क्षयात न्यूक्लियसातील एक न्यूट्रॉन प्रोटॉनमध्ये बदलतो आणि इलेक्ट्रॉन (β कण) उत्सर्जित होतो; n → p + e⁻ + ν̄e. अल्फा व गॅमा क्षयात न्यूट्रिनो उत्सर्जित होत नाही.",
         "category": "Science",
         "topic": "Modern & Nuclear Physics"
       },
       {
         "id": "csg_pre_2025_mr_56",
-        "text": "What is the effect of increase in temperature on viscosity of gases?",
+        "text": "तापमान वाढीचा परिणाम वायूंच्या स्निग्धतेवर कसा होतो?",
         "options": {
-          "A": "Viscosity increases",
-          "B": "Viscosity decreases",
-          "C": "Viscosity remains constant",
-          "D": "Viscosity becomes negative"
+          "A": "स्निग्धता वाढते",
+          "B": "स्निग्धता कमी होते",
+          "C": "स्निग्धता स्थिर राहते",
+          "D": "स्निग्धता ऋण होते"
         },
         "correctAnswer": "A",
-        "explanation": "The right pick is option A: Viscosity increases. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: स्निग्धता वाढते. वायूंमध्ये तापमान वाढल्यास अणूंची गती व संघर्ष वारंवारता वाढते, त्यामुळे स्निग्धता वाढते. (द्रवांमध्ये उलट — तापमान वाढल्यास स्निग्धता कमी होते.)",
         "category": "Science",
         "topic": "Heat & Thermodynamics"
       },
       {
         "id": "csg_pre_2025_mr_57",
-        "text": "Stomata will open if there is accumulation of the following element in the guard cells _________.",
+        "text": "जर संरक्षक पेशींमध्ये खालीलपैकी _________ घटक जमा झाला, तर रंध्र उघडतील.",
         "options": {
-          "A": "Magnesium",
-          "B": "Potassium",
-          "C": "Iron",
-          "D": "Zinc"
+          "A": "मॅग्नेशियम",
+          "B": "पोटॅशियम",
+          "C": "लोखंड",
+          "D": "जस्त"
         },
         "correctAnswer": "B",
-        "explanation": "The correct answer is Potassium. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: पोटॅशियम. संरक्षक पेशींच्या विश्राम अवस्थेत K⁺ बाहेर असते; क्रिया विद्युतक्षम दरम्यान Na⁺ आत येतो आणि K⁺ आत येऊन पेशी अधिक धनात्मक होते, ज्यामुळे K⁺-नियंत्रित रंध्र उघडतात.",
         "category": "Science",
         "topic": "Botany (Plant Biology)"
       },
       {
         "id": "csg_pre_2025_mr_58",
-        "text": "Citrus canker is caused by which type of pathogen?",
+        "text": "सायट्रस (लिंबू) कॅन्कर हा रोग कोणत्या प्रकारच्या रोगजनकामुळे होतो?",
         "options": {
-          "A": "Bacteria",
-          "B": "Fungi",
-          "C": "Virus",
-          "D": "Nematode"
+          "A": "जीवाणू",
+          "B": "बुरशी",
+          "C": "विषाणू",
+          "D": "निमॅटोड"
         },
         "correctAnswer": "A",
-        "explanation": "The official Set A key selects Bacteria. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: जीवाणू. सायट्रस (लिंबू) कॅन्कर हा Xanthomonas citri या जीवाणूमुळे होणारा रोग आहे; पाने, फळे व फांद्या लाल-तपकिरी डागांनी प्रभावित होतात. हा बुरशी, विषाणू किंवा निमॅटोडजन्य रोग नाही.",
         "category": "Science",
         "topic": "Botany (Plant Biology)"
       },
       {
         "id": "csg_pre_2025_mr_59",
-        "text": "Which of the following statements are correct regarding Spirogyra algae?\na. It is commonly called as Pond scum.\nb. It grows in Marine water.\nc. Its cell consist spiral shaped chloroplast.\nd. It belong in family Zygnemataceae.",
+        "text": "स्पायरोगायरा या शैवालासंबंधी खालीलपैकी कोणती विधाने अचूक आहेत?\nअ. सामान्यतः त्याला तलावातील घाण असे म्हणतात.\nब. ते सागरी पाण्यात वाढते.\nक. त्याच्या पेशीमध्ये सर्पिलाकार हरितलवके असतात.\nड. ते झिग्नेमाटेसी कुटुंबातील आहे.",
         "options": {
-          "A": "a, b and c",
-          "B": "b, c and d",
-          "C": "a, c and d",
-          "D": "a, b and d"
+          "A": "अ, ब आणि क",
+          "B": "ब, क आणि ड",
+          "C": "अ, क आणि ड",
+          "D": "अ, ब आणि ड"
         },
         "correctAnswer": "C",
-        "explanation": "Option C — a, c and d — is the right pick here. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: अ, क आणि ड. स्पायरोगायरा (ज्याला 'तलावातील घाण' म्हणतात) सागरी नसून ताज्या पाण्यात वाढते; त्याच्या पेशीत सर्पिलाकार हरितलवके असतात आणि तो झिग्नेमाटेसी कुटुंबातील आहे.",
         "category": "Science",
         "topic": "Botany (Plant Biology)"
       },
       {
         "id": "csg_pre_2025_mr_60",
-        "text": "The categories of sclereids are _________.\na. Macrosclereids\nb. Osteosclereids\nc. Tracheids\nd. Asterosclereids\nWhich of the statements given above is/are correct?",
+        "text": "स्क्लेराईड्सच्या श्रेणी _________ आहेत.\nअ. मॅक्रोस्क्लेराईड्स\nब. ओस्टिओस्क्लेराईड्स\nक. ट्रॅकिड्स\nड. अस्टेरोस्क्लेराईड्स\nवरीलपैकी कोणते विधान/विधाने बरोबर आहेत?",
         "options": {
-          "A": "Only a",
-          "B": "Only a and b",
-          "C": "a, b and d",
-          "D": "a, b and c"
+          "A": "फक्त अ",
+          "B": "फक्त अ आणि ब",
+          "C": "अ, ब आणि ड",
+          "D": "अ, ब आणि क"
         },
         "correctAnswer": "C",
-        "explanation": "The examination key marks a, b and d as the correct choice. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: अ, ब आणि ड. स्क्लेराईड्सच्या प्रकारांमध्ये मॅक्रोस्क्लेराईड्स, ओस्टिओस्क्लेराईड्स व अस्टेरोस्क्लेराईड्स येतात. ट्रॅकिड्स हे जलवाहिन्या (xylem) मधील वाहक ऊतक आहे, स्क्लेराईड्सचा प्रकार नाही.",
         "category": "Science",
         "topic": "Botany (Plant Biology)"
       },
       {
         "id": "csg_pre_2025_mr_61",
-        "text": "Which of the following sets of hormones regulate menstrual cycle?",
+        "text": "खालीलपैकी हार्मोन्सचा कोणता संच मासिक पाळीचे नियमन करतात?",
         "options": {
-          "A": "FSH, LH, estrogen and progesterone",
-          "B": "Estrogen, testosterone, LH and Corticosterone",
-          "C": "Cortisol, estrogen, progesterone and FSH",
-          "D": "Dihydrotestosterone, estrogen, progesterone and FSH"
+          "A": "FSH, LH, इस्ट्रोजेन व प्रोजेस्टेरॉन",
+          "B": "इस्ट्रोजेन, टेस्टोस्टेरॉन, LH व कॉर्टीकोस्टेरॉन",
+          "C": "कॉर्टीसोल, इस्ट्रोजेन, प्रोजेस्टेरॉन व FSH",
+          "D": "डायहायड्रोटेस्टोस्टेरॉन, इस्ट्रोजेन, प्रोजेस्टेरॉन व FSH"
         },
         "correctAnswer": "A",
-        "explanation": "The examination key marks FSH, LH, estrogen and progesterone as the correct choice. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: FSH, LH, इस्ट्रोजेन व प्रोजेस्टेरॉन. FSH व LH ही पिट्युटरी ग्रंथीची हार्मोन्स मासिक पाळीच्या चक्राचे नियमन करतात; इस्ट्रोजेन ग्राफिका व प्रोजेस्टेरॉन गर्भाशयाच्या तयारीसाठी महत्त्वाची आहेत.",
         "category": "Science",
         "topic": "Human Physiology"
       },
       {
         "id": "csg_pre_2025_mr_62",
-        "text": "Flowers, leaves and seeds of which plant are used to prepare a narcotics 'Marijuana'?",
+        "text": "कोणत्या झाडाची फुले, पाने व बिया वापरून 'मारीजुआना' हे अंमली पदार्थ तयार करतात?",
         "options": {
-          "A": "Cannabis Sativa",
-          "B": "Nicotiana tabacum",
-          "C": "Opium Poppy",
-          "D": "Mentha Spicata"
+          "A": "कॅनाबीस सॅटीव्हा",
+          "B": "निकोटियाना टबॅकम",
+          "C": "ओपीयम",
+          "D": "मेंथा स्पिकाटा"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is Cannabis Sativa. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: कॅनाबीस सॅटीव्हा. या झाडाची फुले, पाने व बिया वापरून 'मारीजुआना' (भांग/गांजा) हे अंमली पदार्थ तयार केले जातात. निकोटियाना तंबाखू, ओपीयम पॉपी व मेंथा वेगळ्या स्रोतांमधून येतात.",
         "category": "Science",
         "topic": "Botany (Plant Biology)"
       },
       {
         "id": "csg_pre_2025_mr_63",
-        "text": "The main objective/s of \"Human Genome Project 1990\" was/were _________.\na. To identify 20,000 to 25,000 genes in human.\nb. To determine the sequence of 5 billion base pairs in DNA.\nc. To incorporate new genomic knowledge into research and medicine.\nd. To develop cloning of animals.",
+        "text": "'मानवी जीनोम प्रकल्प 1990' चे मुख्य उद्दिष्ट/उद्दिष्टे _________ होते.\nअ. मानवातील 20,000 ते 25,000 जनुके ओळखणे.\nब. डी.एन.ए. मधील 5 billion बेस पेअर्सचा क्रम निश्चित करणे.\nक. नव्याने प्राप्त जीनोमिक ज्ञानाचा संशोधन व औषधशास्त्रात समावेश करणे.\nड. प्राण्यांचे क्लोनिंग विकसित करणे.",
         "options": {
-          "A": "Only b and d",
-          "B": "Only a and c",
-          "C": "Only a",
-          "D": "Only b"
+          "A": "फक्त ब आणि ड",
+          "B": "फक्त अ आणि क",
+          "C": "फक्त अ",
+          "D": "फक्त ब"
         },
         "correctAnswer": "C",
-        "explanation": "\"Only a\" is the accurate option. DNA (deoxyribonucleic acid) is a double helix carrying genetic instructions; its structure was proposed by Watson and Crick in 1953. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: फक्त अ. मानवी जीनोम प्रकल्पाचे मुख्य उद्दिष्ट मानवातील सुमारे 20,000–25,000 जनुकांची ओळख होते. विधान 'ब' मध्ये 5 billion बेस पेअर्स असे चुकीचे आहे (मानवी जीनोम ~3 billion), 'क' व 'ड' मुख्य उद्दिष्टे नाहीत.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": "csg_pre_2025_mr_64",
-        "text": "In prokaryotic genetic code, which is the initial code for N-formyl methionine?",
+        "text": "प्रोकॅरियोटमधील आनुवंशिक संहितेत N-फॉर्मिल मिथायोनिनसाठी प्रारंभिक संकेत कोणता?",
         "options": {
           "A": "TTG",
           "B": "CUG",
@@ -47244,209 +47247,209 @@
           "D": "AUG"
         },
         "correctAnswer": "D",
-        "explanation": "\"AUG\" is the option marked correct in the official key. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: AUG. प्रोकॅरियोट्समध्ये N-फॉर्मिल मिथायोनिन (fMet) साठी AUG हा प्रारंभिक कॉडॉन असतो. TTG, CUG व GGC हे मिथायोनिन/प्रारंभिक संकेतासाठी वापरले जात नाहीत.",
         "category": "Science",
         "topic": "Cell Biology & Genetics"
       },
       {
         "id": "csg_pre_2025_mr_65",
-        "text": "Which of the following options does not involve use of carbon in any form for energy production?\nA. Wood\nB. Biogas\nC. Geothermal source\nD. Coal",
+        "text": "ऊर्जा उत्पादनासाठी खालीलपैकी कोणता/ते पर्याय कोणत्याही स्वरूपात कार्बनाचा वापर करीत नाहीत?\nअ. लाकूड\nब. बायोगॅस\nक. भूऔष्णिक स्रोत\nड. कोळसा",
         "options": {
-          "A": "Both A and B",
-          "B": "Both B and C",
-          "C": "Only C",
-          "D": "Only D"
+          "A": "अ आणि ब दोन्ही",
+          "B": "ब आणि क दोन्ही",
+          "C": "फक्त क",
+          "D": "फक्त ड"
         },
         "correctAnswer": "C",
-        "explanation": "The correct answer is Only C. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: फक्त क. भूऔष्णिक (geothermal) ऊर्जा पृथ्वीच्या अंतर्गत उष्णतेवर आधारित असून तिच्या उत्पादनात कार्बनाचा वापर होत नाही. लाकूड, बायोगॅस व कोळसा हे कार्बन-आधारित इंधन आहेत.",
         "category": "Environment",
         "topic": "Renewable Energy"
       },
       {
         "id": "csg_pre_2025_mr_66",
-        "text": "Which chemical bond is formed between Mg and Cl atoms during formation of compound MgCl₂?\na. Covalent bond\nb. Ionic bond\nc. Coordinate covalent bond\nd. Metallic bond",
+        "text": "MgCl₂ संयुगाची निर्मिती होतांना Mg व Cl अणुंमध्ये कोणता रासायनिक बंध तयार होतो?\nअ. सहसंयोजक बंध\nब. आयनिक बंध\nक. समन्वय सहसंयोजक बंध\nड. धातू बंध",
         "options": {
-          "A": "Only d",
-          "B": "Only a",
-          "C": "Only a and c",
-          "D": "Only b"
+          "A": "फक्त ड",
+          "B": "फक्त अ",
+          "C": "फक्त अ आणि क",
+          "D": "फक्त ब"
         },
         "correctAnswer": "D",
-        "explanation": "Only b matches the question. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: फक्त ब. MgCl₂ निर्मिती होताना Mg दोन इलेक्ट्रॉन देऊन Mg²⁺ आयन बनतो आणि Cl प्रत्येकी एक इलेक्ट्रॉन स्वीकारून Cl⁻ बनतात; त्यांच्यात आयनिक बंध तयार होतो. सहसंयोजक व धातू बंध येथे लागू नाहीत.",
         "category": "Science",
         "topic": "Chemical Bonding & Reactions"
       },
       {
         "id": "csg_pre_2025_mr_67",
-        "text": "Which of the following is used as a substitute for wool in the production of commercial fibers?",
+        "text": "व्यावसायिक तंतुंच्या उत्पादनात लोकरीला पर्याय म्हणून खालीलपैकी कोणाचा वापर केला जातो?",
         "options": {
-          "A": "Dacron",
-          "B": "Teflon",
-          "C": "Polyacrylonitrile",
-          "D": "Caprolactam"
+          "A": "डॅक्रॉन",
+          "B": "टेफ्लॉन",
+          "C": "पॉलीअक्रिलोनायट्राईल",
+          "D": "कॅप्रोलॅक्टम"
         },
         "correctAnswer": "C",
-        "explanation": "The correct choice is \"Polyacrylonitrile\". Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: पॉलीअक्रिलोनायट्राईल. हे संयुग (उदा. ऑरलॉन) व्यावसायिक तंतू/सिंथेटिक फायबर म्हणून लोकरीचा पर्याय म्हणून वापरले जाते. डॅक्रॉन पॉलिएस्टर, टेफ्लॉन PTFE आणि कॅप्रोलॅक्टम नायलॉन-6 साठी वापरले जाते.",
         "category": "Science",
         "topic": "Organic Chemistry"
       },
       {
         "id": "csg_pre_2025_mr_68",
-        "text": "Which of the following medicine can be classified as both Analgesics and Antipyretics?\nA. Veronal\nB. Benadryl\nC. Penicillin\nD. Paracetamol",
+        "text": "खालीलपैकी कोणत्या औषधाचे वर्गीकरण वेदनाशामक आणि ज्वरशामक असे केले जाऊ शकते?\nअ. वेरोनल\nब. बेनेड्रील\nक. पेनिसिलिन\nड. पॅरासिटामॉल",
         "options": {
-          "A": "Only A",
-          "B": "Both A and D",
-          "C": "Both B and C",
-          "D": "Only D"
+          "A": "फक्त अ",
+          "B": "अ आणि ड दोन्ही",
+          "C": "ब आणि क दोन्ही",
+          "D": "फक्त ड"
         },
         "correctAnswer": "D",
-        "explanation": "Straight to the answer: Only D. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: फक्त ड. पॅरासिटामॉल हे वेदनाशामक (analgesic) व ज्वरशामक (antipyretic) औषध आहे. वेरोनल बार्बिट्युरेट sedative, बेनेड्रील antihistamine आणि पेनिसिलिन antibiotic आहे.",
         "category": "Science",
         "topic": "Diseases & Health"
       },
       {
         "id": "csg_pre_2025_mr_69",
-        "text": "Match the correct pairs:\nA. Monosaccharide - i. Raffinose\nB. Disaccharide - ii. Starch\nC. Trisaccharide - iii. Glucose\nD. Polysaccharide - iv. Sucrose",
+        "text": "योग्य जोड्या लावा.\nअ. मोनोसॅकराइड — i. रॅफिनोज\nब. डायसॅकराइड — ii. स्टार्च\nक. ट्रायसॅकराइड — iii. ग्लुकोज\nड. पॉलीसॅकराइड — iv. सुक्रोज",
         "options": {
-          "A": "A – iii, B – ii, C – i, D – iv",
-          "B": "A – ii, B – i, C – iii, D – iv",
-          "C": "A – iv, B – iii, C – ii, D – i",
-          "D": "A – iii, B – iv, C – i, D – ii"
+          "A": "अ — iii, ब — ii, क — i, ड — iv",
+          "B": "अ — ii, ब — i, क — iii, ड — iv",
+          "C": "अ — iv, ब — iii, क — ii, ड — i",
+          "D": "अ — iii, ब — iv, क — i, ड — ii"
         },
         "correctAnswer": "D",
-        "explanation": "A – iii, B – iv, C – i, D – ii matches the question. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: अ — iii, ब — iv, क — i, ड — ii. मोनोसॅकराइड = ग्लुकोज, डायसॅकराइड = सुक्रोज, ट्रायसॅकराइड = रॅफिनोज, पॉलीसॅकराइड = स्टार्च. ही जोडी शर्करांच्या संरचनेनुसार अचूक आहे.",
         "category": "Science",
         "topic": "Nutrition"
       },
       {
         "id": "csg_pre_2025_mr_70",
-        "text": "The isotopes of hydrogen and their respective mass ratio are _________.",
+        "text": "हायड्रोजनचे समस्थानिके आणि त्यांचे अनुक्रमे वस्तुमान गुणोत्तर _________ आहेत.",
         "options": {
-          "A": "Deuterium, Protium, Tritium; 1 : 2 : 3",
-          "B": "Tritium, Deuterium, Protium; 2 : 3 : 1",
-          "C": "Tritium, Protium, Deuterium; 2 : 3 : 1",
-          "D": "Protium, Deuterium, Tritium; 1 : 2 : 3"
+          "A": "ड्युटेरियम, प्रोटियम, ट्रिटियम; 1 : 2 : 3",
+          "B": "ट्रिटियम, ड्युटेरियम, प्रोटियम; 2 : 3 : 1",
+          "C": "ट्रिटियम, प्रोटियम, ड्युटेरियम; 2 : 3 : 1",
+          "D": "प्रोटियम, ड्युटेरियम, ट्रिटियम; 1 : 2 : 3"
         },
         "correctAnswer": "D",
-        "explanation": "This maps to \"Protium, Deuterium, Tritium; 1 : 2 : 3\". In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: प्रोटियम, ड्युटेरियम, ट्रिटियम; 1 : 2 : 3. हायडrogenचे हे तीन समस्थानिके आहेत; त्यांच्या न्यूक्लियमांमध्ये क्रमाने 0, 1 व 2 न्यूट्रॉन असल्याने वस्तुमान गुणोत्तर 1 : 2 : 3 असते.",
         "category": "Science",
         "topic": "Atomic Structure & Periodic Table"
       },
       {
         "id": "csg_pre_2025_mr_71",
-        "text": "Which of the following Constitution Amendment Acts provided for the formation of the 'Metropolitan Planning Committee'?",
+        "text": "खालीलपैकी कोणत्या घटनादुरुस्ती कायद्याने 'महानगर नियोजन समिती'च्या स्थापनेची तरतूद केली आहे?",
         "options": {
-          "A": "42nd Constitution Amendment Act",
-          "B": "44th Constitution Amendment Act",
-          "C": "73rd Constitution Amendment Act",
-          "D": "74th Constitution Amendment Act"
+          "A": "42 वा घटनादुरुस्ती कायदा",
+          "B": "44 वा घटनादुरुस्ती कायदा",
+          "C": "73 वा घटनादुरुस्ती कायदा",
+          "D": "74 वा घटनादुरुस्ती कायदा"
         },
         "correctAnswer": "D",
-        "explanation": "Option D — 74th Constitution Amendment Act — is the right pick here. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: 74 वा घटनादुरुस्ती कायदा. 1992 मधील 74 व्या घटनादुरुस्तीने नगरपालिका कायदा 1992 अंतर्गत प्रत्येक 3 lakh लोकसंख्येपेक्षा जास्त शहरासाठी 'महानगर नियोजन समिती' स्थापन करण्याची तरतूद केली.",
         "category": "Indian Polity",
         "topic": "Constitutional Amendments"
       },
       {
         "id": "csg_pre_2025_mr_72",
-        "text": "Identify the incorrect pair/s of the various Committees constituted under the Indian Constituent Assembly and its Chairmans.\nA. Steering Committee – Rajendra Prasad\nB. Advisory Committee – Vallabhbhai Patel\nC. Central Rights Committee – J. B. Kripalani\nD. Fundamental Rights Sub-Committee – Jawaharlal Nehru",
+        "text": "भारतीय संविधान समिती अंतर्गत स्थापन करण्यात आलेल्या विविध समिती व तिचे अध्यक्ष यांच्या अयोग्य जोड्या ओळखा.\nअ. सुकाणू समिती — राजेन्द्र प्रसाद\nब. सल्लागार समिती — वल्लभभाई पटेल\nक. केंद्रीय अधिकार समिती — जे. बी. कृपलानी\nड. मूलभूत हक्क उपसमिती — जवाहर्लाल नेहरू",
         "options": {
-          "A": "A and C",
-          "B": "B and D",
-          "C": "C and D",
-          "D": "A and B"
+          "A": "अ आणि क",
+          "B": "ब आणि ड",
+          "C": "क आणि ड",
+          "D": "अ आणि ब"
         },
         "correctAnswer": "C",
-        "explanation": "This one comes to C and D. Jawaharlal Nehru (1889–1964) served as India's first Prime Minister (1947–1964) and is regarded as the architect of modern India's planned economy and foreign policy. The Constituent Assembly first met on 9 December 1946; it adopted the Constitution on 26 November 1949 (Constitution Day) and it came into force on 26 January 1950. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: क आणि ड. केंद्रीय अधिकार समितीचे अध्यक्ष जवाहर्लाल नेहरू होते, जे. बी. कृपलानी नव्हेत; मूलभूत हक्क उपसमितीचे अध्यक्ष जे. बी. कृपलानी होते, नेहरू नव्हेत. सुकाणू समिती — राजेन्द्र प्रसाद व सल्लागार समिती — वल्लभभाई पटेल या जोड्या बरोबर आहेत.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_73",
-        "text": "Select the correct statement/s from the following.\nA. The Vice-President shall hold office for a term of five years from the date on which he enters upon his office.\nB. A Vice-President may, by writing under his hand addressed to the President, resign his office.\nC. A Vice-President may be removed from his office by a resolution of House of the People passed by a majority of all the then members of the House of People and approved by the Council of States.",
+        "text": "खालीलपैकी योग्य विधान/विधाने निवडा.\nअ. उपराष्ट्रपती, ज्या दिनांकास आपले पद ग्रहण करील त्या दिनांकापासून पाच वर्षाच्या अवधीपर्यंत ते पद धारण करील.\nब. उपराष्ट्रपती, राष्ट्रपतीस संबोधून आपल्या हाताने लिहून आपल्या पदाचा राजीनामा देऊ शकेल.\nक. लोकसभेच्या त्यावेळच्या सर्व सदस्यांच्या बहुमताने पारित झालेल्या आणि राज्यसभेने संमत केलेल्या ठरावाद्वारे उपराष्ट्रपतीस त्यांच्या पदावरून दूर करता येईल.",
         "options": {
-          "A": "Only A",
-          "B": "Only B, C",
-          "C": "Only A, C",
-          "D": "Only A, B"
+          "A": "फक्त अ",
+          "B": "फक्त ब, क",
+          "C": "फक्त अ, क",
+          "D": "फक्त अ, ब"
         },
         "correctAnswer": "D",
-        "explanation": "Correct: option D — \"Only A, B\". The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: फक्त अ, ब. अनुच्छेद 64 नुसार उपराष्ट्रपती पद ग्रहण केलेल्या दिनांकापासून 5 वर्ष पद धारण करतो; अनुच्छेद 67 नुसार तो राष्ट्रपतीस लिहून राजीनामा देऊ शकतो. उपराष्ट्रपतीला लोकसभा-राज्यसभेच्या संयुक्त बैठकीने हटवता येत नाही.",
         "category": "Indian Polity",
         "topic": "Union Executive"
       },
       {
         "id": "csg_pre_2025_mr_74",
-        "text": "Identify the incorrect statement/s from the following about provisions for Anglo-Indian Community.\nA. Article 335 is related to Representation of the Anglo-Indian Community in the Legislative Assembly.\nB. Grants if any, were made for the benefit of the Anglo-Indian Community in respect of education in the financial year ending on the 31st March, 1948, the same shall be given for the first three financial years after the commencement of the Constitution.\nC. During every succeeding period of three years, the grants may be less 10%, than that, for the immediately preceding period of three years.",
+        "text": "अँग्लो-इंडियन समुदायासाठी तरतुदींबाबत खालीलपैकी अयोग्य विधान/विधाने ओळखा.\nअ. अनुच्छेद 335 हे राज्यांच्या विधानसभांमध्ये अँग्लो-इंडियन समाजाचे प्रतिनिधित्वाशी निगडीत आहे.\nब. अँग्लो-इंडियन समाजाच्या लाभाकरीता 31 मार्च, 1948 रोजी संपन्न होणाऱ्या वित्तीय वर्षात शिक्षणाबाबत दिली गेली होती अशी काही अनुदाने असतील, तर तीच अनुदाने संविधानाच्या प्रारंभानंतर पहिल्या तीन वित्तीय वर्षात संघराज्य व प्रत्येक राज्य यांच्याकडून दिली जातील.\nक. दर तीन वर्षाच्या अनुवर्ती कालावधीत, लगतपूर्व तीन वर्षाच्या कालावधीतील अनुदानापेक्षा दहा टक्क्याने कमी असू शकतील.",
         "options": {
-          "A": "Only A",
-          "B": "Only B and C",
-          "C": "Only C",
-          "D": "All of the above"
+          "A": "फक्त अ",
+          "B": "फक्त ब आणि क",
+          "C": "फक्त क",
+          "D": "वरीलपैकी सर्व"
         },
         "correctAnswer": "A",
-        "explanation": "For this question, the correct option reads: Only A. The stem's reference to Article 335 maps directly onto this option. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: फक्त अ. अनुच्छेद 335 राज्यांच्या विधानसभांमध्ये अँग्लो-इंडियन प्रतिनिधित्वाशी निगडीत नाही; तो सेवा व नोकरीतील आरक्षणाशी संबंधित आहे. विधाने 'ब' व 'क' अनुच्छेद 336–337 नुसार अँग्लो-इंडियन समुदायाच्या अनुदानांबाबत बरोबर आहेत.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_75",
-        "text": "Which of the following are related to Article 1 to 4 of Part I of the Constitution of India?\na. The union and its territory\nb. About the Fundamental Rights\nc. About the Justice\nd. Regarding duties",
+        "text": "खालीलपैकी कोणते भारताच्या राज्यघटनेच्या भाग I मधील कलम 1 ते 4 शी संबंधित आहेत?\nअ. संघराज्य व त्याच्या राज्यक्षेत्राशी\nब. मूलभूत अधिकारांविषयी\nक. न्यायाविषयी\nड. कर्तव्यांविषयी",
         "options": {
-          "A": "Only b and d",
-          "B": "Only c and a",
-          "C": "Only a",
-          "D": "Only a and b"
+          "A": "फक्त ब आणि ड",
+          "B": "फक्त क आणि अ",
+          "C": "फक्त अ",
+          "D": "फक्त अ आणि ब"
         },
         "correctAnswer": "C",
-        "explanation": "The verified answer is Only a. Fundamental Rights are enshrined in Part III (Articles 12–35) of the Constitution and were largely drawn from the US Bill of Rights. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: फक्त अ. महाराष्ट्र राज्यघटनेच्या भाग I मधील कलम 1–4 'संघराज्य व त्याच्या राज्यक्षेत्राशी' संबंधित आहेत. मूलभूत अधिकार भाग III मध्ये, न्याय भाग VI मध्ये व कर्तव्ये भाग IV-A मध्ये आहेत.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_76",
-        "text": "Identify the States without special status under Article 371 and its Sub-Articles of the Constitution of India.",
+        "text": "भारताच्या राज्यघटनेतील अनुच्छेद 371 व त्याच्या उप-अनुच्छेदानुसार विशेष दर्जा नसलेली राज्ये ओळखा.",
         "options": {
-          "A": "Nagaland, Assam",
-          "B": "Manipur, Sikkim",
-          "C": "Mizoram, Nagaland",
-          "D": "Tripura, Jharkhand"
+          "A": "नागालॅंड, आसाम",
+          "B": "मणिपूर, सिक्कीम",
+          "C": "मिझोराम, नागालॅंड",
+          "D": "त्रिपुरा, झारखंड"
         },
         "correctAnswer": "D",
-        "explanation": "For this question, the correct option reads: Tripura, Jharkhand. The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: त्रिपुरा, झारखंड. अनुच्छेद 371 व त्याच्या उप-अनुच्छेदांनुसार नागालंड (371A), आसाम (371B), मणिपूर (371C), सिक्कीम (371F), मिझोराम (371G) इ. राज्यांना विशेष दर्जा आहे; त्रिपुरा व झारखंड यांना हा विशेष दर्जा नाही.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_77",
-        "text": "The First Lok Adalat Camp after Independence was held in which State in 1982?",
+        "text": "स्वातंत्र्यानंतरचा पहिला लोक अदालत कॅम्प 1982 साली कोणत्या राज्यात भरविण्यात आला होता?",
         "options": {
-          "A": "Maharashtra",
-          "B": "Gujarat",
-          "C": "Andhra Pradesh",
-          "D": "Punjab"
+          "A": "महाराष्ट्र",
+          "B": "गुजरात",
+          "C": "आंध्र प्रदेश",
+          "D": "पंजाब"
         },
         "correctAnswer": "B",
-        "explanation": "This resolves to Gujarat. The year 1982 anchors this question — the correct option is the fact that dates to that year. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: गुजरात. स्वातंत्र्यानंतरचा पहिला लोक अदालत कॅम्प 1982 मध्ये गुजरात राज्यात (विशेषतः सौराष्ट्र भागात) भरविण्यात आला; हा न्यायालयीन प्रक्रियेचा विकल्प म्हणून सुरू झाला.",
         "category": "Indian Polity",
         "topic": "Judiciary"
       },
       {
         "id": "csg_pre_2025_mr_78",
-        "text": "B. Pattabhi Sitaramayya was a Chairman of the following Committees.\nA. House Committee\nB. Committee on Chief Commissioner's Provinces\nC. Adhoc Committee on Citizenship\nD. Adhoc Committee on Supreme Court",
+        "text": "बी. पट्टाभी सीतारामय्या हे खालील समितीचे अध्यक्ष होते.\nअ. सभागृह समिती\nब. मुख्य आयुक्तांच्या प्रांताबाबत समिती\nक. नागरिकत्वाबाबत तदर्थ समिती\nड. सर्वोच्च न्यायालयाबाबत तदर्थ समिती",
         "options": {
-          "A": "Only A, B",
-          "B": "Only C, D",
-          "C": "Only A, D",
-          "D": "Only B, C"
+          "A": "फक्त अ, ब",
+          "B": "फक्त क, ड",
+          "C": "फक्त अ, ड",
+          "D": "फक्त ब, क"
         },
         "correctAnswer": "A",
-        "explanation": "The examination key marks Only A, B as the correct choice. The Supreme Court of India was inaugurated on 28 January 1950 and sits in New Delhi; it consists of the Chief Justice and 33 other judges (34 total, per 2019 expansion). For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: फक्त अ, ब. बी. पट्टाभी सीतारामय्या यांनी संविधान सभेतील सभागृह समिती व मुख्य आयुक्तांच्या प्रांताबाबत समितीचे अध्यक्षपद सांभाळले. नागरिकत्व व सर्वोच्च न्यायालयाबाबतच्या तदर्थ समितींचे अध्यक्षपद त्यांच्याकडे नव्हते.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_79",
-        "text": "The 'National Commission for Protection of Child Rights' (NCPCR) in India was established in which year?",
+        "text": "भारतात राष्ट्रीय बाल अधिकार संरक्षण आयोग (NCPCR) ची स्थापना कोणत्या वर्षी करण्यात आली?",
         "options": {
           "A": "2001",
           "B": "2005",
@@ -47454,13 +47457,13 @@
           "D": "2010"
         },
         "correctAnswer": "C",
-        "explanation": "This maps to \"2007\". For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: 2007. राष्ट्रीय बाल अधिकार संरक्षण आयोग (NCPCR) ची स्थापना 2007 मध्ये 'राष्ट्रीय आयोग संरक्षण बाल अधिकार कायदा, 2005' अंतर्गत करण्यात आली; बाल हक्कांचे संरक्षण व निरीक्षण हे त्याचे मुख्य कार्य आहे.",
         "category": "Indian Polity",
         "topic": "Constitutional & Statutory Bodies"
       },
       {
         "id": "csg_pre_2025_mr_80",
-        "text": "The 'Protection of Children from Sexual Offences' (POCSO) Act was enacted in India in which year?",
+        "text": "लैंगिक अत्याचारापासून बालकांचे संरक्षण (POCSO) कायदा भारतात कोणत्या वर्षी लागू करण्यात आला?",
         "options": {
           "A": "2009",
           "B": "2012",
@@ -47468,13 +47471,13 @@
           "D": "2018"
         },
         "correctAnswer": "B",
-        "explanation": "The official Set A key selects 2012. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: 2012. 'लैंगिक अत्याचारापासून बालकांचे संरक्षण' (POCSO) कायदा 2012 मध्ये लागू झाला; 18 वर्षांखालील मुलांच्या लैंगिक अत्याचारासाठी विशेष कायदा व दंडाची तरतूद करतो.",
         "category": "Indian Polity",
         "topic": "Constitutional & Statutory Bodies"
       },
       {
         "id": "csg_pre_2025_mr_81",
-        "text": "When was the National Commission for Women established in India?",
+        "text": "राष्ट्रीय महिला आयोगाची स्थापना भारतात केव्हा झाली?",
         "options": {
           "A": "1990",
           "B": "1991",
@@ -47482,273 +47485,274 @@
           "D": "1993"
         },
         "correctAnswer": "C",
-        "explanation": "1992 matches the question. The National Commission for Women is a statutory body established under the NCW Act 1990 to review safeguards for women and recommend legislation. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: 1992. राष्ट्रीय महिला आयोगाची स्थापना 31 जानेवारी 1992 रोजी झाली; 'राष्ट्रीय महिला आयोग कायदा, 1990' अंतर्गत महिलांच्या हक्कांचे संरक्षण व धोरणात्मक शिफारसी करण्यासाठी हे statutory आयोग काम करते.",
         "category": "Indian Polity",
         "topic": "Constitutional & Statutory Bodies"
       },
       {
         "id": "csg_pre_2025_mr_82",
-        "text": "Which of the following functions were performed by Constituent Assembly on January 24, 1950?\nA. Adopted the National Flag\nB. Adopted the National Anthem\nC. Adopted the National Song\nD. Elected Dr. Rajendra Prasad as a First President of India",
+        "text": "खालीलपैकी कोणती कार्ये 24 जानेवारी, 1950 रोजी संविधान सभेने केली आहेत?\nअ. राष्ट्रध्वजाचा स्वीकार\nब. राष्ट्रगानाचा स्वीकार\nक. राष्ट्रगीताचा स्वीकार\nड. डॉ. राजेन्द्र प्रसाद यांची भारताचे प्रथम राष्ट्रपती म्हणून निवड",
         "options": {
-          "A": "Only A, B, C",
-          "B": "Only A, B, D",
-          "C": "Only A, C, D",
-          "D": "Only B, C, D"
+          "A": "फक्त अ, ब, क",
+          "B": "फक्त अ, ब, ड",
+          "C": "फक्त अ, क, ड",
+          "D": "फक्त ब, क, ड"
         },
         "correctAnswer": "D",
-        "explanation": "Only B, C, D matches the question. The President of India is the head of state, elected indirectly through an electoral college via a single-transferable-vote proportional-representation system. The Constituent Assembly first met on 9 December 1946; it adopted the Constitution on 26 November 1949 (Constitution Day) and it came into force on 26 January 1950. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: फक्त ब, क, ड. 24 जानेवारी 1950 रोजी संविधान सभेने 'जन गण मन' (राष्ट्रगान), 'वंदे मातरम्' (राष्ट्रगीत) स्वीकारले आणि डॉ. राजेन्द्र प्रसाद यांची प्रथम राष्ट्रपती म्हणून निवड झाली. राष्ट्रध्वजाचा स्वीकार 22 जुलै 1947 रोजी झाला होता.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_83",
-        "text": "Select the correct statements from the following.\nA. The Constituent Assembly was constituted in November, 1946 under the Cabinet Mission Plan.\nB. Cabinet Mission rejected the idea of two Constituent Assemblies.\nC. The Cripps Proposal was accepted by the Muslim League.",
+        "text": "खालीलपैकी योग्य विधाने ओळखा.\nअ. कॅबिनेट मिशन योजनेनुसार नोव्हेंबर, 1946 मध्ये संविधान सभा निर्माण करण्यात आली होती.\nब. कॅबिनेट मिशनने दोन संविधान सभेच्या विचारांना नकार दिला.\nक. मुस्लिम लीगने क्रिप्स प्रस्ताव स्वीकारला होता.",
         "options": {
-          "A": "Only A, B",
-          "B": "Only B, C",
-          "C": "Only A, C",
-          "D": "All of the above"
+          "A": "फक्त अ, ब",
+          "B": "फक्त ब, क",
+          "C": "फक्त अ, क",
+          "D": "वरीलपैकी सर्व"
         },
         "correctAnswer": "A",
-        "explanation": "The exam key confirms \"Only A, B\". The Cabinet Mission (March 1946) proposed a three-tier federal structure and led to the formation of India's Constituent Assembly on 9 December 1946. The Constituent Assembly first met on 9 December 1946; it adopted the Constitution on 26 November 1949 (Constitution Day) and it came into force on 26 January 1950. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: फक्त अ, ब. कॅबिनेट मिशन योजनेनुसार नोव्हेंबर 1946 मध्ये संविधान सभा निर्माण झाली; मिशनने दोन संविधान सभांच्या कल्पनेला नकार दिला. मुस्लिम लीगने क्रिप्स प्रस्ताव स्वीकारला नव्हता, त्यामुळे विधान 'क' चुकीचे आहे.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_84",
-        "text": "In which country, the concept of Modern Constitutionalism was started?",
+        "text": "आधुनिक संविधानवाद या संकल्पनेची सुरुवात कोणत्या देशात झाली?",
         "options": {
-          "A": "America",
-          "B": "England",
-          "C": "France",
-          "D": "India"
+          "A": "अमेरिका",
+          "B": "इंग्लंड",
+          "C": "फ्रान्स",
+          "D": "भारत"
         },
         "correctAnswer": "A",
-        "explanation": "Marked correct: America. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: अमेरिका. आधुनिक संविधानवाद — लिखित संविधान, शक्तींचे वर्गीकरण, न्यायिक पुनरावलोकन — याची सुरुवात 1787 च्या अमेरिकी संविधानासह झाली. इंग्लंडात unwritten constitution, फ्रान्स व भारतात नंतरच्या काळात.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": "csg_pre_2025_mr_85",
-        "text": "Identify the correct statement/s from the following.\nA. A person who holds, or who has held office as President shall, subject to the other provisions of the Constitution, be eligible for re-election to that office.\nB. No person shall be eligible for election as President unless he is qualified for election as a member of the Council of the States.",
+        "text": "खालीलपैकी योग्य विधान/ने ओळखा.\nअ. जी व्यक्ती राष्ट्रपती म्हणून पद धारण करीत असेल अथवा जिने असे पद धारण केलेले आहे, ती व्यक्ती संविधानाच्या अन्य तरतुदींना अधीन राहून त्या पदासाठी होणाऱ्या फेरनिवडणुकीस पात्र असेल.\nब. कोणतीही व्यक्ती राज्यसभेचा सदस्य म्हणून निवडून येण्यास अर्हता प्राप्त असल्याखेरीज राष्ट्रपती पदाच्या निवडणुकीस पात्र असणार नाही.",
         "options": {
-          "A": "Only A",
-          "B": "Only B",
-          "C": "Both A and B",
-          "D": "None of the above"
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "अ व ब दोन्ही",
+          "D": "वरीलपैकी एकही नाही"
         },
         "correctAnswer": "A",
-        "explanation": "Answer: Only A. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: फक्त अ. अनुच्छेद 57 नुसार राष्ट्रपती पद धारण करणारी किंवा केलेली व्यक्ती पुनर्निवडणुकीस पात्र आहे. अनुच्छेद 58 नुसार राष्ट्रपती पदासाठी लोकसभेच्या सदस्य होण्याची पात्रता लागते, राज्यसभेची नाही — म्हणून 'ब' चुकीचे.",
         "category": "Indian Polity",
         "topic": "Union Executive"
       },
       {
         "id": "csg_pre_2025_mr_86",
-        "text": "Which of the following statement is correct?\nA. The applications for the Sixth National Water Awards sought on 15 November 2024.\nB. National Water Awards are given under nine categories.\nC. Ministry of Jal Shakti has been organising the National Water Awards since year 2016.",
+        "text": "खालीलपैकी कोणते विधान बरोबर आहे?\nअ. सहाव्या राष्ट्रीय जल पुरस्कारांकरीता आवेदनपत्रे दि. 15 नोव्हेंबर 2024 रोजी मागविण्यात आली.\nब. राष्ट्रीय जल पुरस्कार नऊ प्रकारांमध्ये प्रदान केला जातो.\nक. जल शक्ती मंत्रालयाद्वारे राष्ट्रीय जल पुरस्कार 2016 वर्षापासून देण्यात येतात.",
         "options": {
-          "A": "A, B and C are correct",
-          "B": "A, B and C are incorrect",
-          "C": "A and B are correct",
-          "D": "B and C are correct"
+          "A": "अ, ब आणि क बरोबर आहेत",
+          "B": "अ, ब आणि क चूक आहेत",
+          "C": "अ व ब बरोबर आहेत",
+          "D": "ब व क बरोबर आहेत"
         },
         "correctAnswer": "B",
-        "explanation": "A, B and C are incorrect is the correct option here. The year 2024 anchors this question — the correct option is the fact that dates to that year. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: अ, ब आणि क चूक आहेत. सहाव्या राष्ट्रीय जल पुरस्कारांसाठी अर्जाची अंतिम तारीख 15 नोव्हेंबर 2024 नव्हती; पुरस्कार 11 (नऊ नव्हती) प्रकारांमध्ये दिले जातात; आणि हे पुरस्कार 2018 पासून (2016 नव्हे) जल शक्ती मंत्रालयाद्वारे दिले जातात.",
         "category": "Current Affairs",
         "topic": "Government Schemes & Yojanas"
       },
       {
         "id": "csg_pre_2025_mr_87",
-        "text": "[Question Cancelled]",
+        "text": "जागतिक शांतता निर्देशांक 2024 नुसार खालील राष्ट्रांची रँकिंग चढत्या क्रमाने लावा.\nअ. आयर्लंड\nब. ऑस्ट्रिया\nक. आईसलँड\nड. न्यूझिलंड",
         "options": {
-          "A": "Option A",
-          "B": "Option B",
-          "C": "Option C",
-          "D": "Option D"
+          "A": "अ, ब, क, ड",
+          "B": "क, अ, ब, ड",
+          "C": "क, ब, अ, ड",
+          "D": "ब, क, ड, अ"
         },
         "correctAnswer": "A",
-        "explanation": "This resolves to Option A. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "हा प्रश्न आयोगाने रद्द केला आहे, त्यामुळे सर्व उमेदवारांना यासाठी गुण देण्यात आले.",
         "category": "Current Affairs",
-        "topic": "Other"
+        "topic": "Other",
+        "cancelled": true
       },
       {
         "id": "csg_pre_2025_mr_88",
-        "text": "Gukesh D. is one of the most outstanding chess player of the country. His achievements are, —\nA. Gold medal in FIDE World Chess Championship held in Singapore in 2024.\nB. Gold medal in FIDE 45th Chess Olympiad (Open Team) held in Singapore in 2024.\nC. Gold Medal in FIDE 45th Chess Olympiad (Individual) held in Budapest in 2024.\nConsider the above statements and select the correct statements.",
+        "text": "गुकेश डी. हे देशातील सर्वात उत्कृष्ट बुद्धिबळपटूपैकी एक आहेत. त्यांची कामगिरी अशी आहे,\nअ. 2024 मध्ये सिंगापूर येथे झालेल्या FIDE जागतिक बुद्धिबळ स्पर्धेत सुवर्णपदक मिळविले.\nब. 2024 मध्ये सिंगापूर येथे झालेल्या FIDE 45 व्या बुद्धिबळ ऑलिंपियाड (ओपन टीम) मध्ये सुवर्णपदक मिळविले.\nक. 2024 मध्ये बुडापेस्ट येथे झालेल्या FIDE 45 व्या बुद्धिबळ ऑलिंपियाड (वैयक्तिक) मध्ये सुवर्णपदक मिळविले.\nवरील कथने लक्षात घ्या आणि योग्य कथने ओळखा.",
         "options": {
-          "A": "Only A, B",
-          "B": "Only B, C",
-          "C": "Only A, C",
-          "D": "All of the above"
+          "A": "फक्त अ, ब",
+          "B": "फक्त ब, क",
+          "C": "फक्त अ, क",
+          "D": "वरीलपैकी सर्व"
         },
         "correctAnswer": "C",
-        "explanation": "\"Only A, C\" is the fact the question is pointing at. The year 2024 anchors this question — the correct option is the fact that dates to that year. Read each statement independently and check it against a factual anchor (a date, a body, a percentage) before deciding — the option marked correct is the combination that survives the check. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: फक्त अ, क. 2024 मध्ये गुकेश D यांनी सिंगापूर येथे FIDE जागतिक बुद्धिबळ स्पर्धा जिंकली. 45 व्या बुद्धिबळ ऑलिंपियाड बुडापेस्टमध्ये झाले; सिंगापूरमध्ये ऑलिंपियाड झाले नाही, म्हणून 'ब' चुकीचे.",
         "category": "Current Affairs",
         "topic": "Sports"
       },
       {
         "id": "csg_pre_2025_mr_89",
-        "text": "Identify the correct statement/s:\nA. January 22 is celebrated as 'National Girl Child Day' in India.\nB. National Girl Child Day celebrated from 2008 to spread awareness about girl child rights.\nC. Beti Bachao Beti Padhao Scheme launched in 2015.",
+        "text": "योग्य विधान/विधाने ओळखा.\nअ. भारतामध्ये 22 जानेवारी 'राष्ट्रीय बालिका दिन' म्हणून साजरा केला जातो.\nब. राष्ट्रीय बालिका दिन हा 2008 पासून बालिकेच्या अधिकार जागृतीसाठी साजरा केला जातो.\nक. बेटी बचाओ बेटी पढाओ योजना 2015 मध्ये सुरू करण्यात आली.",
         "options": {
-          "A": "Only A, B",
-          "B": "Only B, C",
-          "C": "Only A, C",
-          "D": "All of the above"
+          "A": "फक्त अ, ब",
+          "B": "फक्त ब, क",
+          "C": "फक्त अ, क",
+          "D": "वरीलपैकी सर्व"
         },
         "correctAnswer": "B",
-        "explanation": "The correct choice is \"Only B, C\". The year 2008 anchors this question — the correct option is the fact that dates to that year. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: फक्त ब, क. राष्ट्रीय बालिका दिन 24 जानेवारी (22 जानेवारी नव्हे) साजरा केला जातो; 2008 पासून बालिकेच्या अधिकार जागृतीसाठी. 'बेटी बचाक बेटी पढाक' योजना 2015 मध्ये सुरू झाली.",
         "category": "Current Affairs",
         "topic": "Government Schemes & Yojanas"
       },
       {
         "id": "csg_pre_2025_mr_90",
-        "text": "Match the pairs (BRICS Summits):\nA. 16th BRICS Summit - i. New Delhi\nB. 15th BRICS Summit - ii. Beijing\nC. 14th BRICS Summit - iii. Johannesburg\nD. 13th BRICS Summit - iv. Kazan",
+        "text": "जोड्या लावा (ब्रिक्स शिखर परिषद):\nअ. 16 वी ब्रिक्स शिखर परिषद — i. नवी दिल्ली\nब. 15 वी ब्रिक्स शिखर परिषद — ii. बीजिंग\nक. 14 वी ब्रिक्स शिखर परिषद — iii. जोहान्सबर्ग\nड. 13 वी ब्रिक्स शिखर परिषद — iv. कझान",
         "options": {
-          "A": "A-iv, B-i, C-ii, D-iii",
-          "B": "A-iii, B-ii, C-i, D-iv",
-          "C": "A-ii, B-iii, C-iv, D-i",
-          "D": "A-iv, B-iii, C-ii, D-i"
+          "A": "अ-iv, ब-i, क-ii, ड-iii",
+          "B": "अ-iii, ब-ii, क-i, ड-iv",
+          "C": "अ-ii, ब-iii, क-iv, ड-i",
+          "D": "अ-iv, ब-iii, क-ii, ड-i"
         },
         "correctAnswer": "D",
-        "explanation": "The definitive answer is A-iv, B-iii, C-ii, D-i. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: अ-iv, ब-iii, क-ii, ड-i. 16 वी ब्रिक्स शिखर परिषद 2024 — कझान, 15 वी — 2023 जोहान्सबर्ग, 14 वी — 2022 बीजिंग, 13 वी — 2021 नवी दिल्ली. ही जोडी अधिकृत क्रमानुसार बरोबर आहे.",
         "category": "Current Affairs",
         "topic": "International Affairs & Summits"
       },
       {
         "id": "csg_pre_2025_mr_91",
-        "text": "Which of the following items will receive free of cost to the beneficiaries of Akshay Anna Yojana?\nA. Rice\nB. Sugar\nC. Red chilli powder\nD. Turmeric\nE. Jowar",
+        "text": "अक्षय अन्न योजनेमध्ये लाभार्थ्यांना खालीलपैकी कोणती वस्तू मोफत मिळेल?\nअ. तांदूळ\nब. साखर\nक. लाल मिरची पावडर\nड. हळद\nइ. जवार",
         "options": {
-          "A": "Only A, B, C",
-          "B": "Only C, D, E",
-          "C": "Only A, B, E",
-          "D": "All of the above"
+          "A": "फक्त अ, ब, क",
+          "B": "फक्त क, ड, इ",
+          "C": "फक्त अ, ब, इ",
+          "D": "वरीलपैकी सर्व"
         },
         "correctAnswer": "D",
-        "explanation": "The paper's official answer is All of the above. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: वरीलपैकी सर्व. अक्षय अन्न योजनेत लाभार्थ्यांना तांदूळ, साखर, लाल मिरची पौडर, हळद आणि जवार — ही सर्व अन्नपूर्ण योजनेची वस्तू मोफत मिळते. म्हणून सर्व पाच वस्तू योग्य.",
         "category": "Current Affairs",
         "topic": "Government Schemes & Yojanas"
       },
       {
         "id": "csg_pre_2025_mr_92",
-        "text": "Identify the correct statements regarding Bhagwan Birsa Munda Road Linking Scheme.\nA. This scheme was started by Maharashtra Government.\nB. This scheme was only launched to connect the tribal villages.\nC. This scheme was made to connect tribal areas with primary health centres and Ashram schools through main roads.\nD. This scheme was discontinued by Govt. of Maharashtra in January 2025.",
+        "text": "भगवान बिरसा मुंडा जोडरस्ते योजनेविषयी योग्य विधाने ओळखा.\nअ. ही योजना महाराष्ट्र सरकारने सुरू केली आहे.\nब. ही योजना फक्त आदिवासी गावांना जोडण्यासाठी केली आहे.\nक. या योजनेद्वारे आदिवासी भागांना प्राथमिक आरोग्य केंद्रे आणि आश्रमशाळांशी मुख्य रस्त्याने जोडण्यासाठी बनवली आहे.\nड. ही योजना महाराष्ट्र सरकारने जानेवारी 2025 मध्ये बंद केली.",
         "options": {
-          "A": "A, B",
-          "B": "B, C",
-          "C": "A, B, C",
-          "D": "A, C and D"
+          "A": "अ, ब",
+          "B": "ब, क",
+          "C": "अ, ब, क",
+          "D": "अ, क आणि ड"
         },
         "correctAnswer": "C",
-        "explanation": "The official Set A key selects A, B, C. The year 2025 anchors this question — the correct option is the fact that dates to that year. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: अ, ब, क. भगवान बिरसा मुंडा जोडरस्ते योजना महाराष्ट्र सरकारने आदिवासी गावांना मुख्य रस्त्याने जोडण्यासाठी सुरू केली; आश्रमशाळा व प्राथमिक आरोग्य केंद्रांशी संपर्क हा उद्देश आहे. जानेवारी 2025 मध्ये बंद केली असे 'ड' चुकीचे.",
         "category": "Current Affairs",
         "topic": "Government Schemes & Yojanas"
       },
       {
         "id": "csg_pre_2025_mr_93",
-        "text": "Which party has won in the General elections of Maldives held in April 2024?",
+        "text": "मालदिवमध्ये एप्रिल 2024 मध्ये झालेल्या सार्वत्रिक निवडणुकामध्ये कोणत्या राजकीय पक्षाचा विजय झाला?",
         "options": {
-          "A": "People's National Congress",
-          "B": "Maldives National Congress",
-          "C": "Awami League",
-          "D": "Democratic Party"
+          "A": "पीपल्स नॅशनल काँग्रेस",
+          "B": "मालदिव नॅशनल काँग्रेस",
+          "C": "अवामी लीग",
+          "D": "डेमॉक्रॅटिक पार्टी"
         },
         "correctAnswer": "A",
-        "explanation": "The exam key confirms \"People's National Congress\". The year 2024 anchors this question — the correct option is the fact that dates to that year. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: पीपल्स न्याशनल कांग्रेस. मालदीवमध्ये एप्रिल 2024 च्या सार्वत्रिक निवडणुकीत मोहम्मद मुईजू यांच्या पीपल्स न्याशनल कांग्रेस (PNC) ने विजय मिळविला; त्यांनी अवामी लीगचे सरकार पडविले.",
         "category": "Current Affairs",
         "topic": "International Affairs & Summits"
       },
       {
         "id": "csg_pre_2025_mr_94",
-        "text": "According to the Indus Water Treaty of 1960, India uses water of _________ rivers.",
+        "text": "सिंधू जल करार 1960 नुसार भारत _______ नद्यांचे पाणी वापरू शकतो.",
         "options": {
-          "A": "Sutlej, Indus, Ravi",
-          "B": "Ravi, Jhelum, Indus",
-          "C": "Sutlej, Beas, Ravi",
-          "D": "Ravi, Chenab, Indus"
+          "A": "सतलज, इंडस (सिंधू), रावी",
+          "B": "रावी, झेलम, इंडस (सिंधू)",
+          "C": "सतलज, बियास, रावी",
+          "D": "रावी, चिनाब, इंडस (सिंधू)"
         },
         "correctAnswer": "C",
-        "explanation": "The correct choice is \"Sutlej, Beas, Ravi\". The year 1960 anchors this question — the correct option is the fact that dates to that year. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: सतलज, बियास, रावी. 1960 च्या सिंधू जल करारानुसार पंजाब, हरियाणा, राजस्थान, दिल्ली व जम्मू-कश्मीर या भारतीय राज्यांना सतलज, बियास व रावी नद्यांचे पाणी वापरता येते. चिनाब, झेलम व सिंधू पाकिस्तानला.",
         "category": "Geography",
         "topic": "Indian Rivers & Drainage"
       },
       {
         "id": "csg_pre_2025_mr_95",
-        "text": "What is the meaning of 'guillotine' in the Indian Budget Process?\na. Raising taxes to fill Government deficits.\nb. Remaining budgetary demands for grants are put to vote without further discussion.\nc. Reserve Bank's support during financial crises.\nd. Rejection by the Parliament at the end of the budget.\nWhich of the statement given above is/are correct?",
+        "text": "भारतीय अर्थसंकल्प प्रक्रियेत 'गिलोटिन' चा अर्थ काय आहे?\nअ. सरकारी तूट भरून काढण्यासाठी कर वाढवणे.\nब. अर्थसंकल्पातील अनुदानाच्या उर्वरित मागण्या पुढील चर्चेशिवाय मतदानासाठी ठेवणे.\nक. आर्थिक संकटाच्या वेळी रिझर्व्ह बँकेची मदत.\nड. अर्थसंकल्पाच्या शेवटी संसदेकडून नकार.\nवरीलपैकी कोणते विधान/विधाने बरोबर आहेत?",
         "options": {
-          "A": "Only b",
-          "B": "Only c and d",
-          "C": "Only a, b and c",
-          "D": "Only a"
+          "A": "फक्त ब",
+          "B": "फक्त क आणि ड",
+          "C": "फक्त अ, ब आणि क",
+          "D": "फक्त अ"
         },
         "correctAnswer": "A",
-        "explanation": "\"Only b\" is the option marked correct in the official key. The Reserve Bank of India was established under the RBI Act 1934 (operative 1 April 1935) and nationalised on 1 January 1949; it is India's monetary authority and banking regulator. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: फक्त ब. अर्थसंकल्प प्रक्रियेत 'गिलोटिन' म्हणजे अनुदानाच्या उर्वरित मागण्या पुढील चर्चा शिवाय मतदानासाठी ठेवणे. कर वाढ, RBI मदत किंवा अर्थसंकल्प नकार — हे गिलोटिनचे अर्थ नाहीत.",
         "category": "Economics",
         "topic": "Public Finance & Budget"
       },
       {
         "id": "csg_pre_2025_mr_96",
-        "text": "Which of the following books are written by Maruti Chitampalli?\nA. Ratva\nB. Pakhar Maya\nC. Chakwa Chandan\nD. Phulvanti\nE. Janglacha Paus",
+        "text": "मारुती चितमपल्ली यांनी खालीलपैकी कोणते ग्रंथ लिहिले आहेत?\nअ. रातव\nब. पाखर माया\nक. चकवा चंदन\nड. फुलवंती\nइ. जंगलाचा पाऊस",
         "options": {
-          "A": "Only A, B, C",
-          "B": "Only B, D, E",
-          "C": "Only A, D, B",
-          "D": "All of the above"
+          "A": "फक्त अ, ब, क",
+          "B": "फक्त ब, ड, इ",
+          "C": "फक्त अ, ड, ब",
+          "D": "वरीलपैकी सर्व"
         },
         "correctAnswer": "A",
-        "explanation": "This resolves to Only A, B, C. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: फक्त अ, ब, क. मारुती चितामपल्ली यांनी 'रातव', 'पाखर माया' व 'चकवा चंदन' हे ग्रंथ लिहिले आहेत. 'फुलवंती' व 'जंगलाचा पाऊस' हे त्यांचे नाहीत.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       },
       {
         "id": "csg_pre_2025_mr_97",
-        "text": "The President of India Draupadi Murmu inaugurated Kaushal Bhawan the new building at the ministry of skill development and entrepreneurship, on 24th January, 2024 at",
+        "text": "भारताच्या राष्ट्रपती द्रौपदी मुर्मू यांनी 24 जानेवारी, 2024 रोजी कोणत्या ठिकाणी कौशल भवन या कौशल्य विकास आणि उद्योजकता मंत्रालयाच्या नवीन इमारतीचे उद्घाटन केले?",
         "options": {
-          "A": "New Delhi",
-          "B": "Hyderabad",
-          "C": "Bengaluru",
-          "D": "Lucknow"
+          "A": "नवी दिल्ली",
+          "B": "हैद्राबाद",
+          "C": "बंगळूरू",
+          "D": "लखनौ"
         },
         "correctAnswer": "A",
-        "explanation": "The verified answer is New Delhi. The President of India is the head of state, elected indirectly through an electoral college via a single-transferable-vote proportional-representation system. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: नवी दिल्ली. राष्ट्रपती द्रौपदी मुर्मू यांनी 24 जानेवारी 2024 रोजी नवी दिल्लीमध्ये कौशल्य विकास व उद्योजकता मंत्रालयाच्या 'कौशल भवन' इमारतीचे उद्घाटन केले.",
         "category": "Current Affairs",
         "topic": "Government Schemes & Yojanas"
       },
       {
         "id": "csg_pre_2025_mr_98",
-        "text": "Select the correct statement/s from the following:\nA. A key highlight of the Union Budget 2025–26 is the launch of a Nuclear Energy Mission, which is focused on research and development of Small Modular Reactors (SMRs).\nB. To facilitate the implementation of the Nuclear Energy Mission, amendments to the Atomic Energy Act and Civil Liability for Nuclear Damage Act will be taken up by the Parliament.\nC. These Amendments are expected to encourage foreign sector investments in nuclear power projects.",
+        "text": "खालीलपैकी योग्य विधान/विधाने ओळखा.\nअ. 2025-26 च्या केंद्रीय अर्थसंकल्पातील प्रमुख आकर्षण म्हणजे अणू ऊर्जा अभियानाची सुरुवात, जे लघु मॉड्युलर अणु भट्ट्यांच्या (SMR) संशोधन आणि विकासावर केंद्रीत आहे.\nब. अणू ऊर्जा अभियानाच्या अंमलबजावणीला चालना देण्यासाठी, अणू ऊर्जा कायदा आणि आण्विक नुकसानीसाठी नागरी दायित्व कायद्यातील सुधारणा संसदेत मांडल्या जातील.\nक. या सुधारणामुळे अणू ऊर्जा प्रकल्पामध्ये परकीय क्षेत्रातील गुंतवणुकीला प्रोत्साहन मिळेल, अशी अपेक्षा आहे.",
         "options": {
-          "A": "Only A, B",
-          "B": "Only B, C",
-          "C": "Only A, C",
-          "D": "All of the above"
+          "A": "फक्त अ, ब",
+          "B": "फक्त ब, क",
+          "C": "फक्त अ, क",
+          "D": "वरीलपैकी सर्व"
         },
         "correctAnswer": "D",
-        "explanation": "\"All of the above\" is the accurate option. The year 2025 anchors this question — the correct option is the fact that dates to that year. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: वरीलपैकी सर्व. 2025-26 केंद्रीय अर्थसंकल्पात अणू ऊर्जा अभियान — लघु मॉड्युलर अणु भट्ट्यांच्या (SMR) संशोधनावर केंद्रित — हे प्रमुख आकर्षण आहे; अणू ऊर्जा कायदा व CNLDL सुधारणा मांडल्या जातील व परकीय गुंतवणूकीला प्रोत्साहन मिळेल.",
         "category": "Current Affairs",
         "topic": "Government Schemes & Yojanas"
       },
       {
         "id": "csg_pre_2025_mr_99",
-        "text": "Select the correct statement/s from the following:\nA. INS Vikrant officially joined the Indian Navy's Western Naval Command in August 2024.\nB. INS Vikrant (INS – I) is an aircraft carrier in service with the Indian Navy. It is the first ship of its kind to be built in Tamil Nadu.",
+        "text": "खालीलपैकी योग्य विधान/ने ओळखा.\nअ. ऑगस्ट 2024 मध्ये आयएनएस विक्रांत अधिकृतपणे भारतीय नौदलाच्या पश्चिम नौदल कमांडमध्ये सामील झाली.\nब. आयएनएस विक्रांत (आयएनएस-1) ही भारतीय नौदलात सेवेत असलेली एक विमानवाहू नौका आहे. तामिळनाडूमध्ये बांधलेले हे अशा प्रकारचे पहिले जहाज आहे.",
         "options": {
-          "A": "Only A",
-          "B": "Only B",
-          "C": "Both A and B",
-          "D": "None of the above"
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "अ व ब दोन्ही",
+          "D": "वरीलपैकी एकही नाही"
         },
         "correctAnswer": "A",
-        "explanation": "This one comes to Only A. The year 2024 anchors this question — the correct option is the fact that dates to that year. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: फक्त अ. ऑगस्ट 2024 मध्ये INS Vikrant अधिकृतपणे भारतीय नौदलाच्या पश्चिम नौदल कमांडमध्ये सामिल झाली. 'INS-1' हे नाव चुकीचे; INS Vikrant (R11) हे तमिळणाडूमध्ये बांधलेले पहिले स्वदेशी विमानवाहक नौके आहे, पण विधान 'ब' मधील तपशील पूर्णपणे अचूक नाही.",
         "category": "Current Affairs",
         "topic": "Defence & Security"
       },
       {
         "id": "csg_pre_2025_mr_100",
-        "text": "Chief Justice of India, Bhushan Gawai which is not true about him?",
+        "text": "भारताचे मुख्य न्यायाधीश भूषण गवई यांच्या बाबत काय खरे नाही?",
         "options": {
-          "A": "He was born on 24th November 1960.",
-          "B": "He practiced in Constitutional Law and Administrative Law.",
-          "C": "He was appointed as Government Pleader and Public Prosecutor for Nagpur Bench in January 2005.",
-          "D": "He was elevated as a Judge of the Supreme Court of India in May 2019."
+          "A": "त्यांचा जन्म 24 नोव्हेंबर 1960 रोजी झाला.",
+          "B": "त्यांनी संवैधानिक कायदा व प्रशासकीय कायदा मध्ये प्रॅक्टीस केली आहे.",
+          "C": "जानेवारी 2005 रोजी त्यांची नागपूर खंडपीठात सरकारी अधिवक्ता आणि सरकारी वकील म्हणून नियुक्ती झाली.",
+          "D": "त्यांना मे, 2019 रोजी भारताच्या सर्वोच्च न्यायालयाचे न्यायाधीश म्हणून बढती देण्यात आली."
         },
         "correctAnswer": "C",
-        "explanation": "This maps to \"He was appointed as Government Pleader and Public Prosecutor for Nagpur Bench in January 2005.\". The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: जानेवारी 2005 रोजी त्यांची नागपूर खंडपीठात सरकारी अधिवक्ता आणि सरकारी वकील म्हणून नियुक्ती झाली. हे विधान खोटे आहे; न्यायमूर्ती भूषण गवाई यांचे जन्म 24 नोव्हेम्बर 1960, संवैधानिक/प्रशासकीय कायद्यात सामज्जा व मे, 2019 मध्ये SC न्यायाधीश पदावर बढती — हे बरोबर आहेत.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       }
