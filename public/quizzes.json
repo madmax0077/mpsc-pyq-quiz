@@ -25873,7 +25873,8 @@
         "correctAnswer": "A",
         "explanation": "n=1, l=0, m=0, s=+1/2 is the correct option here. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
         "category": "Science",
-        "topic": "Atomic Structure & Periodic Table"
+        "topic": "Atomic Structure & Periodic Table",
+        "cancelled": true
       },
       {
         "id": 47,
@@ -25915,7 +25916,8 @@
         "correctAnswer": "A",
         "explanation": "The intended answer is In the raster data model, the basic building block is the individual cell. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
         "category": "Science",
-        "topic": "Science & Technology (IT/Space)"
+        "topic": "Science & Technology (IT/Space)",
+        "cancelled": true
       },
       {
         "id": 50,
@@ -26601,7 +26603,8 @@
         "correctAnswer": "A",
         "explanation": "The intended answer is Only a, b and c. The year 2021 anchors this question — the correct option is the fact that dates to that year. Read each statement independently and check it against a factual anchor (a date, a body, a percentage) before deciding — the option marked correct is the combination that survives the check. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
         "category": "Current Affairs",
-        "topic": "Awards & Honours"
+        "topic": "Awards & Honours",
+        "cancelled": true
       },
       {
         "id": 99,
@@ -26640,7 +26643,7 @@
     "questions": [
       {
         "id": 1,
-        "text": "Match the correct pair:\na. Unhaalyaat bharpoor paani pyaave - I. Sthalavaachak Kriyaavisheshan\nb. Jase karaave tase bharaave - II. Kaalavaachak Kriyaavisheshan\nk. Hallee mahagaai zhaali aahe - III. Reeteevaachak Kriyaavisheshan\nd. Pudhe patangan aahe - IV. Parinamavaachak Kriyaavisheshan",
+        "text": "योग्य जोड्या जुळवा.\nअ. उन्हाळ्यात भरपूर पाणी प्यावे\nब. जसे करावे तसे भरावे\nक. हल्ली महागाई झाली आहे\nड. पुढे पटांगण आहे\nI. स्थलवाचक क्रियाविशेषण\nII. कालवाचक क्रियाविशेषण\nIII. रीतीवाचक क्रियाविशेषण\nIV. परिणामवाचक क्रियाविशेषण",
         "options": {
           "A": "IV, II, III, I",
           "B": "IV, III, II, I",
@@ -26648,203 +26651,203 @@
           "D": "I, III, IV, II"
         },
         "correctAnswer": "B",
-        "explanation": "Working through the options, IV, III, II, I is the correct one. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: IV, III, II, I. 'जसे करावे तसे भरावे' हे रीतीवाचक, 'हल्ली महागाई झाली आहे' मध्ये 'हल्ली' कालवाचक, 'पुढे पटांगण आहे' मध्ये 'पुढे' स्थलवाचक, तर 'उन्हाळ्यात भरपूर पाणी प्यावे' हे उन्हाळ्याच्या परिस्थितीनुसारचे सूचनात्मक वाक्य असल्याने परिणामवाचक क्रियाविशेषणाशी जुळते. क्रियाविशेषणाचे हे चार प्रकार — स्थल, काल, रीती आणि परिणाम — वेगळे ओळखणे मराठी व्याकरणात महत्त्वाचे आहे.",
         "category": "Marathi",
         "topic": "व्याकरण (Grammar)"
       },
       {
         "id": 2,
-        "text": "Jya vyanjananchaa uchchaar kartaanaa havaa adhik pramaanaat vaaparali jaate tya vyanjanannaa kaay mhanataat?",
+        "text": "ज्या व्यंजनांचा उच्चार करतांना हवा अधिक प्रमाणात वापरली जाते, त्या व्यंजनांना काय म्हणतात?",
         "options": {
-          "A": "Mahaapraan vyanjane",
-          "B": "Alpapraan vyanjane",
-          "C": "Sanyukt vyanjane",
-          "D": "Kanthy vyanjane"
+          "A": "महाप्राण व्यंजने",
+          "B": "अल्पप्राण व्यंजने",
+          "C": "संयुक्त व्यंजने",
+          "D": "कंठ्य व्यंजने"
         },
         "correctAnswer": "A",
-        "explanation": "Working through the options, Mahaapraan vyanjane is the correct one. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: महाप्राण व्यंजने. उच्चार करतांना ज्या व्यंजनांमध्ये हवेचा प्रवाह जास्त असतो, ती महाप्राण म्हणतात; उदाहरणार्थ ख, घ, छ, झ, ठ, ड, ध, भ. अल्पप्राण व्यंजनांमध्ये हवेचा प्रवाह कमी असतो; उदा. क, ग, च, ज. हा वर्गीकरणाचा नियम संस्कृत-मराठी उच्चारशास्त्राचा मूलभूत भाग आहे.",
         "category": "Marathi",
         "topic": "व्याकरण (Grammar)"
       },
       {
         "id": 3,
-        "text": "'Ik' pratyayaant shabd hrasva astataat. Ya niyamaachaa aadhaar gheun pudheel shabdaateel shuddha 'shabd' olakha.",
+        "text": "'ईक' प्रत्ययांत शब्द ह्रस्व असतात. या नियमाचा आधार घेऊन पुढील शब्दातील शुद्ध 'शब्द' ओळखा.",
         "options": {
-          "A": "Bhaugolik",
-          "B": "Saahityik",
-          "C": "Saamajeek",
-          "D": "Praasangeek"
+          "A": "भौगोलीक",
+          "B": "साहित्यिक",
+          "C": "सामाजीक",
+          "D": "प्रासंगीक"
         },
         "correctAnswer": "B",
-        "explanation": "The correct choice is \"Saahityik\". Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: साहित्यिक. 'ईक' प्रत्ययांत शब्दाचा अंतिम स्वर ह्रस्व (लघु) असावा; 'साहित्य + इक = साहित्यिक' येथे 'इ' ह्रस्व आहे. 'भौगोलीक', 'सामाजीक', 'प्रासंगीक' या रूपांमध्ये 'ई' दीर्घ असल्याने ती चुकीची आहेत; योग्य रूपे अनुक्रमे भौगोलिक, सामाजिक, प्रासंगिक आहेत.",
         "category": "Marathi",
         "topic": "व्याकरण (Grammar)"
       },
       {
         "id": 4,
-        "text": "'Aajanma' ya saamasik shabdaachaa samaas olakhaa.",
+        "text": "'आजन्म' या सामासिक शब्दाचा समास ओळखा.",
         "options": {
-          "A": "Aluk tatpurush samaas",
-          "B": "Karmdhaaray samaas",
-          "C": "Avyayeebhaav samaas",
-          "D": "Dvigu samaas"
+          "A": "अलुक तत्पुरुष समास",
+          "B": "कर्मधारय समास",
+          "C": "अव्ययीभाव समास",
+          "D": "द्विगु समास"
         },
         "correctAnswer": "C",
-        "explanation": "\"Avyayeebhaav samaas\" is what the question is looking for. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: अव्ययीभाव समास. 'आजन्म' म्हणजे 'जन्मापासूनच' — पहिले पद (आ) अव्यय असून ते दुसऱ्या पदावर (जन्म) प्रभाव टाकत नाही, फक्त अर्थ पूर्ण करते. अव्यय + विशेषण/संज्ञा या रचनेतील समास अव्ययीभाव समास म्हणून ओळखला जातो.",
         "category": "Marathi",
         "topic": "समास व संधी"
       },
       {
         "id": 5,
-        "text": "(Passage-based) Maanavi svabhaavache mool svaroop samajnyaasaathi aavashyak aslele ghatak konte?",
+        "text": "मानवी स्वभावाचे मूळ स्वरूप समजण्यासाठी आवश्यक असलेले घटक कोणते?",
         "options": {
-          "A": "Pruthviche sarvageen ashtailutva jaannyaachi ichchhaa",
-          "B": "Dnyaanche utkhanan, sanshodhan va manan hone",
-          "C": "Maanavi manaache bhaavtarang samajoon denaaree shakti",
-          "D": "Svabhaav pareekshanaalaa vidnyaanaachi jod"
+          "A": "पृथ्वीचे सर्वांगीण अष्टपैलूत्व जाणण्याची इच्छा",
+          "B": "ज्ञानाचे उत्खनन, संशोधन व मनन होणे",
+          "C": "मानवी मनाचे भावतरंग समजून देणारी शक्ती",
+          "D": "स्वभाव परिक्षणाला विज्ञानाची जोड"
         },
         "correctAnswer": "B",
-        "explanation": "Dnyaanche utkhanan, sanshodhan va manan hone matches the question. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: ज्ञानाचे उत्खनन, संशोधन व मनन होणे. मानवी स्वभावाचे खरे स्वरूप समजण्यासाठी केवळ बाह्य ज्ञान पुरेसे नाही; आत्मचिंतन, संशोधन आणि मनन या प्रक्रियांनीच अंतर्मनाची सखोल समज शक्य होते. हा विचार श्रीरामकृष्णांच्या साहित्यातील मानवी स्वभाव-विषयक दृष्टिकोनाशी सुसंगत आहे.",
         "category": "Marathi",
         "topic": "उतारा (Comprehension)"
       },
       {
         "id": 6,
-        "text": "(Passage-based) Maanavaachya shodhak buddhishi sambandhit aslelaa kamaal maryadaa konate?",
+        "text": "मानवाच्या शोधक बुद्धिशी संबंधित असलेली कमाल मर्यादा कोणती?",
         "options": {
-          "A": "Mhaisoorchya khaaneeteel pivalya daadtukadyaanche pruthakkaran",
-          "B": "Chandravaril maateebhondyaanche sanshodhan",
-          "C": "Srushteeteel hajaro ghatkaanche sanshodhan",
-          "D": "Sooryavaril sanshodhan"
+          "A": "म्हैसूरच्या खाणीतील पिवळ्या दगडतुकड्यांचे पृथक्करण",
+          "B": "चंद्रावरील मातीधोंड्यांचे संशोधन",
+          "C": "सृष्टीतील हजारो घटकांचे संशोधन",
+          "D": "सूर्यावरील संशोधन"
         },
         "correctAnswer": "D",
-        "explanation": "The definitive answer is Sooryavaril sanshodhan. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: सूर्यावरील संशोधन. मानवाच्या शोधक बुद्धीला पृथ्वीवरील, चंद्रावरील किंवा इतर घटकांचे संशोधन शक्य असले तरी सूर्याच्या अत्यंत प्रखर तापमान, विकिर आणि अंतरामुळे थेट सूर्यावर संशोधन करणे अशक्य आहे. म्हणूनच सूर्यसंशोधन ही मानवी शोध-बुद्धीची कमाल मर्यादा मानली जाते.",
         "category": "Marathi",
         "topic": "उतारा (Comprehension)"
       },
       {
         "id": 7,
-        "text": "(Passage-based) 'Vaidnyanikdrushtya zaalele maanavi sanshodhan apoornn aahe' ase Shreeramakrishnaanna kaa vaate?",
+        "text": "वैज्ञानिकदृष्ट्या झालेले मानवी संशोधन अपूर्ण आहे असे श्रीरामकृष्णांना का वाटते?",
         "options": {
-          "A": "Kaaran mukhya svabhaavache marma va jadanghadana ukalnyaat manushya asamarth tharla aahe mhanoon",
-          "B": "Manushya svabhaav mhanje jaldheesthali asnaare mrugajal aahe mhanoon",
-          "C": "Saamaajik manaachaa prashna aahe mhanoon",
-          "D": "Vidnyaanane khoop pragati keli mhanoon"
+          "A": "कारण मुख्य स्वभावाचे मर्म व जडणघडण उकलण्यात मनुष्य असमर्थ ठरला आहे म्हणून",
+          "B": "मनुष्य स्वभाव म्हणजे जळीस्थळी असणारे मृगजळ आहे म्हणून",
+          "C": "सामाजिक मनाचा प्रश्न आहे म्हणून",
+          "D": "विज्ञानाने खूप प्रगती केली म्हणून"
         },
         "correctAnswer": "A",
-        "explanation": "Reading the stem carefully, the answer is Kaaran mukhya svabhaavache marma va jadanghadana ukalnyaat manushya asamarth tharla aahe mhanoon. The Krishna river rises at Mahabaleshwar in the Sahyadri and flows east across Maharashtra, Karnataka, Telangana and Andhra Pradesh before draining into the Bay of Bengal. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: कारण मुख्य स्वभावाचे मर्म व जडणघडण उकलण्यात मनुष्य असमर्थ ठरला आहे म्हणून. वैज्ञानिक संशोधनाने भौतिक जगाचे अनेक रहस्य उघडले, पण मानवाच्या मूळ स्वभावाचे, भाव-वृत्तीचे आणि आंतरिक जडण-घडणाचे मर्म अजूनही पूर्णपणे उकलले गेले नाही. श्रीरामकृष्णांना म्हणूनच वैज्ञानिक संशोधन अपूर्ण वाटते.",
         "category": "Marathi",
         "topic": "उतारा (Comprehension)"
       },
       {
         "id": 8,
-        "text": "(Passage-based) Maanavi svabhaavaroopi mrugajalaachya burkhyaat laplelaa saamaajik gahan prashna kontaa?",
+        "text": "मानवी स्वभावरूपी मृगजळाच्या बुरख्यात लपलेला सामाजिक गहन प्रश्न कोणता?",
         "options": {
-          "A": "Manushya manah patalaavar umatat jaanaare berevaaeet bhaavtarang",
-          "B": "Saadhya pavitraane trayasthaashi bolane, vaagne",
-          "C": "Maanasaachi labaadd ahamanyavruttee",
-          "D": "Samaajaateel daambhik, khotarade, bhondu svabhaavaachi maanase olakhayachi kashi?"
+          "A": "मनुष्य मनःपटलावर उमटत जाणारे बरेवाईट भावतरंग",
+          "B": "सावध पवित्र्याने त्रयस्थाशी बोलणे, वागणे",
+          "C": "माणसाची लबाड अहंमन्यवृत्ती",
+          "D": "समाजातील दांभिक, खोटारडे, भोंदू स्वभावाची माणसे ओळखायची कशी?"
         },
         "correctAnswer": "D",
-        "explanation": "Answer: Samaajaateel daambhik, khotarade, bhondu svabhaavaachi maanase olakhayachi kashi?. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: समाजातील दांभिक, खोटारडे, भोंदू स्वभावाची माणसे ओळखायची कशी? मानवी स्वभावाच्या 'मृगजळ' सारख्या अस्पष्टतेमध्ये लपलेला खरा सामाजिक प्रश्न हा आहे — बाह्यरूपाने सज्जन दिसणाऱ्या पण दांभिक, खोटारडे किंवा भोंदू लोकांना कसे ओळखावे. हा प्रश्न समाजातील सत्य-असत्य ओळखण्याच्या गरजेवर केंद्रित आहे.",
         "category": "Marathi",
         "topic": "उतारा (Comprehension)"
       },
       {
         "id": 9,
-        "text": "(Passage-based) Aaple man-svabhaav-vichaar paripakva karnaari Shreeramakrishnanna abhipret aslelaa shakti kontee?",
+        "text": "आपले मन-स्वभाव-विचार परिपक्व करणारी श्रीरामकृष्णांना अभिप्रेत असलेली शक्ती कोणती?",
         "options": {
-          "A": "Mrugajal aslele aantarman",
-          "B": "Sajjad prayatnawaad",
-          "C": "Saarya srushteet bhraman karnaari aatmashakti",
-          "D": "Ahamanyavruttee"
+          "A": "मृगजळ असलेले आंतरमन",
+          "B": "सज्जड प्रयत्नवाद",
+          "C": "साऱ्या सृष्टीत भ्रमण करणारी आत्मशक्ती",
+          "D": "अहंमन्यवृत्ती"
         },
         "correctAnswer": "C",
-        "explanation": "The correct answer is Saarya srushteet bhraman karnaari aatmashakti. The Krishna river rises at Mahabaleshwar in the Sahyadri and flows east across Maharashtra, Karnataka, Telangana and Andhra Pradesh before draining into the Bay of Bengal. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: साऱ्या सृष्टीत भ्रमण करणारी आत्मशक्ती. श्रीरामकृष्णांना मन, स्वभाव आणि विचार परिपक्व करण्यासाठी केवळ बाह्य प्रयत्न पुरेसे नाहीत; सृष्टीच्या विविध रूपांत भ्रमण करणारी आंतरिक आत्मशक्तीच खरी परिवर्तनाची साधना आहे. ही शक्ती आत्म-साक्षात्कार आणि आंतरिक परिपक्वतेचे साधन मानली जाते.",
         "category": "Marathi",
         "topic": "उतारा (Comprehension)"
       },
       {
         "id": 10,
-        "text": "'Hatabal' yaa shabdache vibhakti pratyayaachya sahaayyaane honare panchamee bahuvreehee samaasaache roop konte?",
+        "text": "'हतबल' या शब्दाचे विभक्ती प्रत्ययाच्या साहाय्याने होणारे पंचमी बहुव्रीही समासाचे रूप कोणते?",
         "options": {
-          "A": "Hatabal zaalela aahe to",
-          "B": "Haataatoon bal gelela",
-          "C": "Haataat aahe bal jyaachya to",
-          "D": "Gele aahe bal jyaatoon to"
+          "A": "हतबल झालेला आहे तो",
+          "B": "हातातून बल गेलेला",
+          "C": "हातात आहे बल ज्याच्या तो",
+          "D": "गेले आहे बल ज्यातून तो"
         },
         "correctAnswer": "D",
-        "explanation": "The correct choice is \"Gele aahe bal jyaatoon to\". In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: गेले आहे बल ज्यातून तो. 'हतबल' हा पंचमी बहुव्रीही समास आहे; विभक्ती प्रत्ययाने 'बल' (शक्ती) + 'हत' (नष्ट) या पदांचा विसर्ग होऊन 'हतबल' तयार होतो. अर्थ: ज्यातून बल (शक्ती) गेले आहे तो — म्हणजे ज्याच्यातून शक्ती नष्ट झाली आहे तो.",
         "category": "Marathi",
         "topic": "समास व संधी"
       },
       {
         "id": 11,
-        "text": "'Malaa pareekshet pahilaa varg milhaavaa.' Yaa vaakyaachaa prakaar olakhaa.",
+        "text": "'मला परीक्षेत पहिला वर्ग मिळावा.' या वाक्याचा प्रकार ओळखा.",
         "options": {
-          "A": "Hokaarthee",
-          "B": "Sanketaarthee",
-          "C": "Aadnyaarthee",
-          "D": "Vishyaarthee"
+          "A": "होकारार्थी",
+          "B": "संकेतार्थी",
+          "C": "आज्ञार्थी",
+          "D": "विषयार्थी"
         },
         "correctAnswer": "D",
-        "explanation": "\"Vishyaarthee\" is the accurate option. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: विषयार्थी. 'मला परीक्षेत पहिला वर्ग मिळावा' या वाक्यात वक्ता स्वतःची इच्छा किंवा अपेक्षा व्यक्त करतो, प्रश्न विचारत नाही आणि आदेशही देत नाही. अशा इच्छा/अपेक्षा व्यक्त करणाऱ्या वाक्यांना विषयार्थी वाक्य म्हणतात.",
         "category": "Marathi",
         "topic": "व्याकरण (Grammar)"
       },
       {
         "id": 12,
-        "text": "Var, khaalee, pudhe hee kriyaavisheshan avyaye jevhaa svatantra na yetaa shabdaalaa jodoon yetaat tevhaa tyaannaa kaay mhatale jaate?",
+        "text": "वर, खाली, पुढे ही क्रियाविशेषण अव्यये जेव्हा स्वतंत्र न येता शब्दाला जोडून येतात, तेव्हा त्यांना काय म्हटले जाते?",
         "options": {
-          "A": "Ubhayaanvayee avyay",
-          "B": "Keval prayogee avyay",
-          "C": "Shabdayogee avyay",
-          "D": "Kriyaavisheshan avyay"
+          "A": "उभयान्वयी अव्यय",
+          "B": "केवल प्रयोगी अव्यय",
+          "C": "शब्दयोगी अव्यय",
+          "D": "क्रियाविशेषण अव्यय"
         },
         "correctAnswer": "C",
-        "explanation": "Option C carries the right answer — Shabdayogee avyay. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: शब्दयोगी अव्यय. 'वर', 'खाली', 'पुढे' ही क्रियाविशेषण अव्यये स्वतंत्रपणे न येता इतर शब्दाशी जोडली जातात तेव्हा ती शब्दयोगी अव्यये होतात; उदा. 'मेजवर', 'खाली बस', 'पुढे जा'. स्वतंत्र येणारी 'वर', 'खाली' ही केवल प्रयोगी अव्यये असतात.",
         "category": "Marathi",
         "topic": "व्याकरण (Grammar)"
       },
       {
         "id": 13,
-        "text": "'Udyaapaasoon bus va railwesevaa suroo hoeel.' Yaa vaakyaachaa rachanenoosaar prakaar olakhaa.",
+        "text": "'उद्यापासून बस व रेल्वेसेवा सुरू होईल.' या वाक्याचा रचनेनुसार प्रकार ओळखा.",
         "options": {
-          "A": "Sanketaarthee",
-          "B": "Keval vaakya",
-          "C": "Mishra vaakya",
-          "D": "Sanyukt vaakya"
+          "A": "संकेतार्थी",
+          "B": "केवल वाक्य",
+          "C": "मिश्र वाक्य",
+          "D": "संयुक्त वाक्य"
         },
         "correctAnswer": "D",
-        "explanation": "Reading the stem carefully, the answer is Sanyukt vaakya. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: संयुक्त वाक्य. 'उद्यापासून बस व रेल्वेसेवा सुरू होईल' या वाक्यात 'बस सेवा सुरू होईल' आणि 'रेल्वे सेवा सुरू होईल' ही दोन स्वतंत्र उपवाक्ये 'आणि' या जोडणीने एकत्र केली आहेत. दोन किंवा अधिक स्वतंत्र उपवाक्यांनी बनलेले वाक्य संयुक्त वाक्य म्हणतात.",
         "category": "Marathi",
         "topic": "व्याकरण (Grammar)"
       },
       {
         "id": 14,
-        "text": "Shreemant vhaave ase konaala vaatat naahi?\nYaa vaakyaache vidhaanaarthee vaakyaat roopantar karaa.\na. Gareeb vhaave ase malaa vaatate.\nb. Shreemant vhaave ase malaa ajibaat vaatat naahi.\nc. Shreemant vhaave ase sarvaanna vaatate.\nd. Gareeb vhaave ase anekanna vaatate.",
+        "text": "श्रीमंत व्हावे असे कोणाला वाटत नाही?\nया वाक्याचे विधानार्थी वाक्यात रूपांतर करा.\nअ. गरीब व्हावे असे मला वाटते.\nब. श्रीमंत व्हावे असे मला अजिबात वाटत नाही.\nक. श्रीमंत व्हावे असे सर्वांना वाटते.\nड. गरीब व्हावे असे अनेकांना वाटते.",
         "options": {
-          "A": "a barobar",
-          "B": "a va d barobar",
-          "C": "k barobar",
-          "D": "d barobar"
+          "A": "अ बरोबर",
+          "B": "अ व ड बरोबर",
+          "C": "क बरोबर",
+          "D": "ड बरोबर"
         },
         "correctAnswer": "C",
-        "explanation": "This one comes to k barobar. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "योग्य उत्तर: क बरोबर. प्रश्नार्थी वाक्य 'श्रीमंत व्हावे असे कोणाला वाटत नाही?' याचा विधानार्थी अर्थ 'श्रीमंत व्हावे असे सर्वांना वाटते' असा होतो — म्हणजे प्रत्येकजण श्रीमंत होण्याची इच्छा बाळगतो. 'श्रीमंत व्हावे असे सर्वांना वाटते' हे वाक्य (क) हाच योग्य रूपांतर आहे.",
         "category": "Marathi",
         "topic": "व्याकरण (Grammar)"
       },
       {
         "id": 15,
-        "text": "Khaaleelaiki 'Kanadi' shabdaanchaa gat olakhaa.\na. Arj, hukoom\nb. Bhaakari, toop\nc. Pagaar, tambaakhoo\nd. Tulaal, ghee",
+        "text": "खालीलपैकी 'कानडी' शब्दांचा गट ओळखा.\nअ. अर्ज, हुकूम\nब. भाकरी, तूप\nक. पगार, तंबाखू\nड. दलाल, घी",
         "options": {
-          "A": "Fakat a va d barobar",
-          "B": "Fakat a va b barobar",
-          "C": "Fakat b barobar",
-          "D": "Fakat d barobar"
+          "A": "फक्त अ व ड बरोबर",
+          "B": "फक्त अ व ब बरोबर",
+          "C": "फक्त ब बरोबर",
+          "D": "फक्त ड बरोबर"
         },
         "correctAnswer": "C",
-        "explanation": "Straight to the answer: Fakat b barobar. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: फक्त ब बरोबर. 'कानडी' शब्द म्हणजे कन्नड भाषेतून मराठीमध्ये आलेले शब्द. 'भाकरी' आणि 'तूप' हे कन्नड मूळचे शब्द आहेत. 'अर्ज', 'हुकूम' (फारसी), 'पगार', 'तंबाखू' (पोर्तुगीज/फारसी) आणि 'दलाल', 'घी' (अरबी/संस्कृत) हे कन्नड शब्द नाहीत.",
         "category": "Marathi",
         "topic": "शब्दसंग्रह व समानार्थी शब्द"
       },
@@ -26858,7 +26861,7 @@
           "D": "All of the above"
         },
         "correctAnswer": "B",
-        "explanation": "\"Only a and c\" is what the question is looking for. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: Only a and c. 'PROMENADE' (फिरण्याची वाट) आणि 'PROMISCUOUS' (असंयमित) या शब्दांची शुद्ध spelling आहे. 'PROMINANCE' चुक आहे — योग्य रूप 'PROMINENCE' आहे, अंतर्भूत 'e' असावा हा सामान्य spelling नियम लक्षात ठेवा.",
         "category": "English",
         "topic": "Vocabulary"
       },
@@ -26872,7 +26875,7 @@
           "D": "IV, III, II, I"
         },
         "correctAnswer": "B",
-        "explanation": "Answer: IV, III, I, II. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: IV, III, I, II. Déjà vu (पूर्वानुभव झाल्यसारखे वाटणे) → IV, Fratricide (भावु-बाहिणी वध) → III, De jure (कायदेनुसार) → I, Regicide (राजा-राणी वध) → II. प्रत्येक शब्दाचा अर्थ जोड्याशी योग्यपणे जुळतो.",
         "category": "English",
         "topic": "Vocabulary"
       },
@@ -26886,7 +26889,7 @@
           "D": "carried out"
         },
         "correctAnswer": "B",
-        "explanation": "The verified pick here is carried off. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: carried off. 'Carried off' म्हणजे पदके/जितणे मिळवणे — 'She carried off four awards' म्हणजे तीने चार पुरस्कार जितले. 'Carried away' म्हणजे आकर्षित होणे, 'carried on' म्हणजे पुढे चाळू ठेवणे, 'carried out' म्हणजे अमलात आणणे; पदके साठी 'carried off' योग्य आहे.",
         "category": "English",
         "topic": "Grammar"
       },
@@ -26900,7 +26903,7 @@
           "D": "a, b and c"
         },
         "correctAnswer": "D",
-        "explanation": "This resolves to a, b and c. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: a, b and c. Complex वाक्य म्हणजे एक मुख्य वाक्य आणि एक अथवा अधिक आश्रित उपवाक्य. (a) 'that Mohan is a bank manager' — noun clause, (b) 'What you told me' — noun clause, (c) 'because he was very weak' — कारणार्थी उपवाक्य. ही तीने complex वाक्य आहेत.",
         "category": "English",
         "topic": "Grammar"
       },
@@ -26914,7 +26917,7 @@
           "D": "a, b and c"
         },
         "correctAnswer": "A",
-        "explanation": "Straight to the answer: Only c. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: Only c. 'The Kapoors are our neighbours' मध्ये कुटुंबाच्या नावाला 'The' योग्यपणे वापरले आहे. (a) 'the life' चुक आहे — 'I was tired of life' योग्य आहे. (b) 'The both' वा 'the half night' दोनही व्याकरणदृष्ट्या चुक आहेत.",
         "category": "English",
         "topic": "Grammar"
       },
@@ -26928,7 +26931,7 @@
           "D": "All of the above"
         },
         "correctAnswer": "D",
-        "explanation": "Straight to the answer: All of the above. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: All of the above. Diet and Nutrition passage मध्ये पोषण, उर्जा, रोग प्रतिबंध, पोषक द्रव्यांचे प्रकार आणि संतुलित आहार या विषयांचा उल्लेख आहे. म्हणून passage चा focus एकाच विषयावर नाही, तर पोषण व आहारशी संबंधित सर्व बाबी सांगते.",
         "category": "English",
         "topic": "Reading Comprehension"
       },
@@ -26942,7 +26945,7 @@
           "D": "a, b, c, e"
         },
         "correctAnswer": "C",
-        "explanation": "a, b, e is the correct option here. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: a, b, e. पोष्टीक द्रव्यांची कमी preservatives वापरण्याने, refined आहार घेतल्याने वा फुले-भाज्या कापण्यांत खाण्यापर्यंत लाम्ब वेळ ठेवल्याने होते. Pesticides वा chemical खते वापरण्याने व wholesome आहार घेतल्याने पोष्टीक कमी होत नाही — म्हणून c वा d चुक आहेत.",
         "category": "English",
         "topic": "Reading Comprehension"
       },
@@ -26956,7 +26959,7 @@
           "D": "Only d"
         },
         "correctAnswer": "D",
-        "explanation": "Reading the stem carefully, the answer is Only d. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: Only d. 'Well balanced diet' म्हणजे असे आहार जे सर्व अवश्यक पोषक द्रव्ये (प्रोटीन, कार्बोहाइड्रेट, चरबी, विटामिन, खनिज) योग्य प्रमाणात पुरवते. केवळ विविध आहार घेतला की संतुलित आहार होत नाही — सर्व पोषक द्रव्यांची पूर्ती महत्वाची आहे.",
         "category": "English",
         "topic": "Reading Comprehension"
       },
@@ -26970,7 +26973,7 @@
           "D": "Undersupply"
         },
         "correctAnswer": "D",
-        "explanation": "Undersupply matches the question. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: Undersupply. Passage मध्ये 'Undersupply' शब्दाचा अर्थ आहे 'अवश्यक प्रमाणात पुरवठा नाही' — म्हणजे गेल्या प्रमाणापेक्षा कमी पुरवठा. 'Deficiency' म्हणजे कमी, पण passage मध्ये 'not supplied in required quantity' साठी 'Undersupply' वापरला आहे.",
         "category": "English",
         "topic": "Reading Comprehension"
       },
@@ -26984,7 +26987,7 @@
           "D": "Only b and c"
         },
         "correctAnswer": "A",
-        "explanation": "Only a, b and d is the correct option here. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: Only a, b and d. अवश्यक पोषक द्रव्यांची कमी मृत्यु किंवा गंभीर रोग करू शकते (a), oxygen वा पाणी मानवी कोशिकासाठी महत्वाचे आहेत (b), आहार चांगले आरोग्यसाठी महत्वाचा आहे (d). पण पोष्टीक कमीमुळे होणारे काही रोग परत सुधरू शकतात — म्हणून (c) चुक आहे.",
         "category": "English",
         "topic": "Reading Comprehension"
       },
@@ -26998,7 +27001,7 @@
           "D": "isn't it?"
         },
         "correctAnswer": "C",
-        "explanation": "The examiner has marked aren't I? as the correct response. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: aren't I? 'I am extremely happy' या वाक्याचे tag question साठी व्याकरणात exception आहे — 'aren't I?' वापरावे लागते, 'am I?' नही. 'Isn't I?' व्याकरणदृष्ट्या चुक आहे; 'I am' साठी tag question 'aren't I?' हा नियम लक्षात ठेवा.",
         "category": "English",
         "topic": "Grammar"
       },
@@ -27012,7 +27015,7 @@
           "D": "had been working"
         },
         "correctAnswer": "D",
-        "explanation": "For this question, the correct option reads: had been working. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: had been working. Akshay बॉलीवुड मध्ये आल्यांतर तो hotels मध्ये पांच वर्ष काम करत होता — एक आधीच सुरू जाळेले वा पुढिल क्रियेपूर्वी चाळू राहिलेले काम. Past Perfect Continuous (had been + -ing) हा भूतकाळातील चाळू काम दर्शवण्यासाठी योग्य tense आहे.",
         "category": "English",
         "topic": "Grammar"
       },
@@ -27026,7 +27029,7 @@
           "D": "Point at which a meeting concludes."
         },
         "correctAnswer": "A",
-        "explanation": "Answer: Point at which further development is blocked. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: Point at which further development is blocked. 'Impasse' म्हणजे बंध — negotiations पुडे जात नाही, कोई मार्ग उभा रहात नाही. French मूळचा शब्द आहे; तयाचा अर्थ 'अगला विकास थंबलेला बिंदू' असा होतो. Profit, break-even किंवा meeting समाप्ती या अर्थांशी संबंधित नाही.",
         "category": "English",
         "topic": "Vocabulary"
       },
@@ -27040,7 +27043,7 @@
           "D": "Conjunction"
         },
         "correctAnswer": "C",
-        "explanation": "This resolves to Preposition. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: Preposition. 'Don't go near the edge' मध्ये 'near' हा शब्द 'edge' हे संज्या शब्दशी संबंध दर्शवतो — म्हणजे स्थानाचे संबंध. अशा स्थान-संबंधी शब्दांना Preposition (संबंधबोचक अव्यय) म्हणतात; ते क्रियापदशी जोडलेले आहेत.",
         "category": "English",
         "topic": "Grammar"
       },
@@ -27054,153 +27057,153 @@
           "D": "All of the above"
         },
         "correctAnswer": "C",
-        "explanation": "The definitive answer is Only c. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: Only c. 'Garrulous' म्हणजे खूप बोलणारे, वा 'Loquacious' वा 'Talkative' हे दोनही तयाचे समानार्थी शब्द आहेत. 'Gauge' म्हणजे मापणे किंवा आकरण, बोलणार्य शब्दाचा समानार्थी नाही — म्हणून ते Garrulous चा synonym नाही.",
         "category": "English",
         "topic": "Vocabulary"
       },
       {
         "id": 31,
-        "text": "Which of the following features of the Indian Constitution are inconsistent with the Federal principle?\na. One Constitution for the States\nb. Single citizenship\nc. More legislative power to the Centre\nd. Appointment of Governor by the Centre\ne. States field of legislation cannot be invaded by the Centre",
+        "text": "भारतीय संविधानाच्या वैशिष्ट्यांपैकी, संघराज्याच्या तत्त्वाशी पुढीलपैकी कोणती वैशिष्ट्ये सुसंगत नाहीत?\nअ. सर्व घटक राज्यांसाठी एक संविधान\nब. एकल नागरिकत्व\nक. केंद्राला अधिक कायदे निर्मितीचे अधिकार\nड. केंद्राद्वारे राज्यपालांची नेमणूक\nइ. राज्यांच्या कायदे निर्मितीच्या क्षेत्रावर केंद्राचे अतिक्रमण होऊ शकत नाही",
         "options": {
-          "A": "a, b, c, d, e",
-          "B": "a, b, c, d",
-          "C": "a, c, d",
-          "D": "b, c, e"
+          "A": "अ, ब, क, ड, इ",
+          "B": "अ, ब, क, ड",
+          "C": "अ, क, ड",
+          "D": "ब, क, इ"
         },
         "correctAnswer": "B",
-        "explanation": "The correct answer is a, b, c, d. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: अ, ब, क, ड. संघराज्याचे तत्त्व म्हणजे केंद्र व राज्य मध्ये शक्तीचे विभाजन; पण एक संविधान, एक नागरिकत्व, केंद्राला अधिक कायदे-निर्मिती अधिकार वा केंद्राद्वारे राज्यपाल नेमणूक हा भारतीय तंत्राचे एकतंत्रिय (एकच राज्य) वैशिष्ट्ये आहेत. राज्यांच्या कायदे-निर्मिती क्षेतरावर केंद्राचे अतिक्रमण न हो शकते हा संघराज्याचे तत्त्व आहे — म्हणून इ योग्य नाही.",
         "category": "Indian Polity",
         "topic": "Constitutional Framework & Preamble"
       },
       {
         "id": 32,
-        "text": "Consider the following statements:\na. 'Fundamental Duties' is a salient feature of the Indian Constitution.\nb. These were added by the 44th Constitutional Amendment Act in the Constitution.",
+        "text": "खालील विधाने विचारात घ्या:\nअ. मूलभूत कर्तव्ये हे भारतीय संविधानाचे वैशिष्ट्य आहे.\nब. ती संविधानात 44 व्या संविधान दुरुस्ती कायद्याद्वारे अंतर्भूत करण्यात आली.",
         "options": {
-          "A": "Only a is correct",
-          "B": "a is correct, b is wrong",
-          "C": "Both a and b are correct",
-          "D": "Both a and b are wrong"
+          "A": "फक्त अ बरोबर आहे",
+          "B": "अ बरोबर आहे, ब चूक आहे",
+          "C": "अ आणि ब दोन्ही बरोबर आहेत",
+          "D": "अ आणि ब दोन्ही चूक आहेत"
         },
         "correctAnswer": "B",
-        "explanation": "The exam key confirms \"a is correct, b is wrong\". Fundamental Duties (Article 51A, Part IV-A) were added by the 42nd Amendment (1976) on the recommendation of the Swaran Singh Committee; the 86th Amendment (2002) took the count from ten to eleven. Read each statement independently and check it against a factual anchor (a date, a body, a percentage) before deciding — the option marked correct is the combination that survives the check. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: अ बरोबर आहे, ब चूक आहे. मूलभूत कर्तव्ये हे भारतीय संविधानाचे वैशिष्ट्य आहेत (अ) — ते कलम 51A अंतर्गत आहेत. पण ती 44वी नाही, तर 42वी संविधान दुरुस्ती काय्द्या 1976 द्वारे (स्वरण सिंह समितीच्या शिफारसीवर) समावेश केले गेले; म्हणून ब चुक आहे.",
         "category": "Indian Polity",
         "topic": "DPSP & Fundamental Duties"
       },
       {
         "id": 33,
-        "text": "Which Article of the Constitution provides for the Finance Commission?",
+        "text": "संविधानाच्या कोणत्या कलमानुसार वित्त आयोगाची स्थापना केली जाते?",
         "options": {
-          "A": "Article 324",
-          "B": "Article 280",
-          "C": "Article 224",
-          "D": "Article 380"
+          "A": "कलम 324",
+          "B": "कलम 280",
+          "C": "कलम 224",
+          "D": "कलम 380"
         },
         "correctAnswer": "B",
-        "explanation": "\"Article 280\" is the accurate option. Article 280 provides for the Finance Commission, constituted every five years to recommend distribution of tax revenues between the Union and States. The Finance Commission (Article 280) is constituted every five years by the President to recommend distribution of tax revenues between the Union and States and grants-in-aid. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: कलम 280. संविधानाच्या कलम 280 अनुसार राष्ट्रपती प्रत्येक पांच वर्षांनी वित्त आयोगाची स्थापना करतो. हा आयोग केंद्र व राज्यांमध्ये कर-उद्दिश्या वा अनुदान वितरणाबद्दल शिफारसा देतो. कलम 324 — निर्वाचन आयोग, 224 — उच्च न्यायलय, 380 — हा कलम संविधानात नाही.",
         "category": "Indian Polity",
         "topic": "Constitutional & Statutory Bodies"
       },
       {
         "id": 34,
-        "text": "What among the following is not true about the Public Accounts Committee?\na. The Committee was set up in 1921.\nb. Its main function is to examine the annual reports of CAG.\nc. It consists of 15 Lok Sabha members and 7 Rajya Sabha members.\nd. The term of the office of the Public Accounts Committee is one year.",
+        "text": "लोकलेखा समितीच्या बाबतीत खालीलपैकी कोणते विधान/विधाने सत्य नाहीत?\nअ. या समितीची स्थापना 1921 मध्ये झाली.\nब. भारताच्या नियंत्रक आणि महालेखा परीक्षकाच्या वार्षिक अहवालांचे परीक्षण करणे हे या समितीचे प्रमुख कार्य आहे.\nक. या समितीत 15 लोकसभा सदस्य आणि 7 राज्यसभा सदस्य आहेत.\nड. लोकलेखा समितीच्या कार्यालयाचा कालावधी हा एक वर्षाचा आहे.",
         "options": {
-          "A": "Only a",
-          "B": "Only b",
-          "C": "Only c and d",
-          "D": "All are true"
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "फक्त क आणि ड",
+          "D": "वरील सर्व विधाने सत्य आहेत"
         },
         "correctAnswer": "D",
-        "explanation": "The verified pick here is All are true. The Comptroller and Auditor General (CAG, Articles 148–151) is appointed by the President for a six-year tenure or until 65 years, and audits all Union and State receipts and expenditure. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: वरील सर्व विधाने सत्य आहेत. लोकलेखा समिती 1921 मध्ये स्थापन जाळी; CAG चे वार्षिक अहवाल तीचे मुख्य कार्य आहे; तयात 15 लोकसभा वा 7 राज्यसभा सदस्य आहेत; समितीच्या कार्यालयाची मुदत एक वर्ष आहे. सर्व विधाने वास्तविक बरोबर आहेत.",
         "category": "Indian Polity",
         "topic": "Parliament"
       },
       {
         "id": 35,
-        "text": "Which of the following statements are correct about Lok Sabha sessions?\na. Lok Sabha shall meet at least twice in a year.\nb. Interval between two consecutive sessions shall be less than six months.\nc. The President summons the Lok Sabha to meet.\nd. Speaker of Lok Sabha will decide time and place of Lok Sabha session.",
+        "text": "लोकसभा अधिवेशनांसंबंधी पुढीलपैकी योग्य विधाने कोणती आहेत?\nअ. लोकसभेचे वर्षातून किमान दोन वेळा अधिवेशन भरवावे.\nब. दोन पाठोपाठच्या अधिवेशनांमधील कालावधी 6 महिन्यांपेक्षा कमी असावा.\nक. लोकसभेचे अधिवेशन राष्ट्रपती बोलावतात.\nड. लोकसभेच्या अधिवेशनाची वेळ आणि जागा लोकसभेचे सभापती ठरवतात.",
         "options": {
-          "A": "a, b, c and d",
-          "B": "Only a, b and c",
-          "C": "Only a, c and d",
-          "D": "Only a and b"
+          "A": "अ, ब, क आणि ड",
+          "B": "फक्त अ, ब आणि क",
+          "C": "फक्त अ, क आणि ड",
+          "D": "फक्त अ आणि ब"
         },
         "correctAnswer": "B",
-        "explanation": "The verified pick here is Only a, b and c. The Election Commission of India (Article 324) is a permanent constitutional body; it superintends, directs and controls all elections to Parliament, State Legislatures, President and Vice-President. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: फक्त अ, ब आणि क. लोकसभेचे वर्षातून किमान दोन अधिवेशन भरावे (अ), दोन अधिवेशनांमध्ये कालावधी 6 महिन्यांपेक्षा कमी असावा (ब), अधिवेशन राष्ट्रपती बोलवतात (क) — हे सर्व बरोबर आहेत. पण अधिवेशनाच्या वेळ व स्थळाचे निर्धारण राष्ट्रपती करतात, लोकसभा सभापती नही — म्हणून ड चुक आहे.",
         "category": "Indian Polity",
         "topic": "Parliament"
       },
       {
         "id": 36,
-        "text": "Consider the following statements and choose the correct option.\na. A Constitutional Amendment Bill can be introduced in the Parliament only.\nb. The President must give assent to the Constitutional Amendment Bill after it is duly passed by the Parliament and ratified by State Legislatures, where necessary.\nc. Constitutional Amendment process is laid down in Article 365.",
+        "text": "खालील विधाने विचारात घ्या आणि योग्य पर्याय निवडा.\nअ. संविधानदुरुस्ती विधेयक फक्त संसदेमध्ये मांडले जाऊ शकते.\nब. संसदेने संमत केल्यावर आणि गरज असेल तिथे राज्य विधीमंडळांनी मान्यता दिल्यावर संविधानदुरुस्ती विधेयकास राष्ट्रपतीने संमती दिलीच पाहिजे.\nक. संविधानदुरुस्ती प्रक्रिया कलम 365 मध्ये दिलेली आहे.",
         "options": {
-          "A": "Only a and c",
-          "B": "Only a and b",
-          "C": "Only b and c",
-          "D": "All of the above"
+          "A": "फक्त अ आणि क",
+          "B": "फक्त अ आणि ब",
+          "C": "फक्त ब आणि क",
+          "D": "वरील सर्व"
         },
         "correctAnswer": "B",
-        "explanation": "The exam key confirms \"Only a and b\". The stem's reference to Article 365 maps directly onto this option. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: फक्त अ आणि ब. संविधान दुरुस्ती विधेयक केवळ संसदेत मांडले जाऊ शकते (अ), संसद व गरज असेल तर राज्य विधीमंडळांची मान्यता मिळाल्या नंतर राष्ट्रपतींची संमती महत्वाची आहे (ब). पण दुरुस्ती प्रक्रिया कलम 368 मध्ये आहे, कलम 365 नही — म्हणून क चुक आहे.",
         "category": "Indian Polity",
         "topic": "Constitutional Amendments"
       },
       {
         "id": 37,
-        "text": "The Chairman of National Human Rights Commission is appointed by the President on the recommendation of a Committee of certain persons. Who among the following is/are not member of that Committee?\na. The Prime Minister\nb. The Home Minister\nc. The Leader of the Opposition Party in the Lok Sabha\nd. The Chairman of Rajya Sabha",
+        "text": "राष्ट्रीय मानवाधिकार आयोगाच्या अध्यक्षाची नियुक्ती काही व्यक्तिंच्या समितीच्या शिफारशीवरून राष्ट्रपती द्वारे केली जाते. खालीलपैकी कोण या समितीचा सदस्य नाही?\nअ. पंतप्रधान\nब. गृहमंत्री\nक. लोकसभेतील विरोधीपक्ष नेता\nड. राज्यसभेचा अध्यक्ष",
         "options": {
-          "A": "Only a",
-          "B": "Only b and d",
-          "C": "Only c",
-          "D": "Only d"
+          "A": "फक्त अ",
+          "B": "फक्त ब आणि ड",
+          "C": "फक्त क",
+          "D": "फक्त ड"
         },
         "correctAnswer": "D",
-        "explanation": "\"Only d\" is what the question is looking for. The Prime Minister of India, appointed by the President under Article 75, is the head of government and leader of the majority in the Lok Sabha. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: फक्त ड. राष्ट्रीय मानवाधिकार आयोगाच्या अध्यक्षाच्या नियुक्तीसाठी पंतप्रधान, गृहमंत्री वा लोकसभेतील विरोधीपक्ष नेते या समितीचे सदस्य आहेत. राज्यसभेचा अध्यक्ष या समितीत नही — ते केवळ NHRC अध्यक्ष नियुक्तीसाठी योग्य उत्तर आहे.",
         "category": "Indian Polity",
         "topic": "Constitutional & Statutory Bodies"
       },
       {
         "id": 38,
-        "text": "Which of the following is an exclusive power of Rajya Sabha?",
+        "text": "फक्त राज्यसभेचा विशेष अधिकार पुढीलपैकी कोणता आहे?",
         "options": {
-          "A": "Impeachment of President",
-          "B": "Setting up of All India Services",
-          "C": "Electoral power for Vice President's Election",
-          "D": "Power related to introduce the Finance bill"
+          "A": "राष्ट्रपतींचा महाभियोग",
+          "B": "अखिल भारतीय सेवांची निर्मिती",
+          "C": "उपराष्ट्रपतींच्या निवडणूकांमधील अधिकार",
+          "D": "वित्त विधेयक सादर करण्यासंबंधीचे अधिकार"
         },
         "correctAnswer": "B",
-        "explanation": "The correct choice is \"Setting up of All India Services\". A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: अखिल भारतीय सेवांची निर्मिती. कलम 312 अनुसार अखिल भारतीय सेवा (IAS, IPS, IFS) निर्मिती करण्याचा अधिकार केवळ राज्यसभेला आहे — हा तीचा विशेष अधिकार आहे. राष्ट्रपती महाभियोग, वित्त विधेयक वा उपराष्ट्रपती निवाडणूक अधिकार हे सर्व लोकसभेला किंवा दोन घरांसोबत संबंधित आहेत.",
         "category": "Indian Polity",
         "topic": "Parliament"
       },
       {
         "id": 39,
-        "text": "'To provide opportunities for education by Mother-Father or Guardian to their child or ward between the age of 6 and 14 years.' By which Constitutional Amendment Act was this Fundamental Duty added in the Constitution?",
+        "text": "'माता-पित्याने किंवा पालकाने 6 ते 14 वयोगटातील आपले अपत्य किंवा पाल्याला शिक्षणाची संधी उपलब्ध करून देणे' हे मूलभूत कर्तव्य कोणत्या संविधानदुरुस्ती कायद्याने संविधानात अंतर्भूत करण्यात आले?",
         "options": {
-          "A": "85th Constitutional Amendment Act, 2002",
-          "B": "82nd Constitutional Amendment Act, 2000",
-          "C": "86th Constitutional Amendment Act, 2002",
-          "D": "81st Constitutional Amendment Act, 2000"
+          "A": "85 वा संविधानदुरुस्ती कायदा, 2002",
+          "B": "82 वा संविधानदुरुस्ती कायदा, 2000",
+          "C": "86 वा संविधानदुरुस्ती कायदा, 2002",
+          "D": "81 वा संविधानदुरुस्ती कायदा, 2000"
         },
         "correctAnswer": "C",
-        "explanation": "Straight to the answer: 86th Constitutional Amendment Act, 2002. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: 86 वा संविधानदुरुस्ती कायदा, 2002. 6 ते 14 वयोगटातील मुलांसाठी शिक्षणाची संधी मिळवण्याचे माता-पितांचे कर्तव्य कलम 51A मध्ये 86वी दुरुस्तीने 2002 मध्ये समावेश केले. हे शिक्षण हक्काला मूलभूत हक्क (कलम 21A) बनवण्यासोबत जोडले गेले.",
         "category": "Indian Polity",
         "topic": "DPSP & Fundamental Duties"
       },
       {
         "id": 40,
-        "text": "Arrange the following Committees according to their establishment year in ascending order:\na. Ashok Mehta Committee\nb. Balwant Rai Mehta Committee\nc. G.V.K. Rao Committee\nd. K. Santhanam Committee",
+        "text": "खालील समित्या त्यांच्या स्थापना सालानुसार चढत्या क्रमाने लावा:\nअ. अशोक मेहता समिती\nब. बलवंत राय मेहता समिती\nक. जी.व्ही.के. राव समिती\nड. के. संथनम समिती",
         "options": {
-          "A": "b, c, d, a",
-          "B": "b, a, d, c",
-          "C": "b, a, c, d",
-          "D": "b, d, a, c"
+          "A": "ब, क, ड, अ",
+          "B": "ब, अ, ड, क",
+          "C": "ब, अ, क, ड",
+          "D": "ब, ड, अ, क"
         },
         "correctAnswer": "D",
-        "explanation": "This resolves to b, d, a, c. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: ब, ड, अ, क. बलवंतराय मेहता समिती (1957), क. संथनम समिती (1962), अशोक मेहता समिती (1977) वा GVK राव समिती (1985) या स्थापना वर्षांशही चढत्या क्रम: ब, ड, अ, क. ही सर्व समित्या पंचायती राज वा स्थानीय स्वराज्यशी संबंधित आहेत.",
         "category": "Indian Polity",
         "topic": "Panchayati Raj"
       },
       {
         "id": 41,
-        "text": "Two wires A and B are made of same material and having their lengths in the ratio 6:1 are connected in series. The P.D. across the wires are 3 V and 2 V respectively. Find RB/RA, where RA and RB are the radii of the 2 wires.",
+        "text": "एकाच धातूपासून बनवलेल्या दोन तारा A आणि B यांची लांबी 6:1 या प्रमाणात आहे. दोन्ही तारा एकसर पद्धतीने जोडलेली आहेत. दोन तारांमधील विभवांतर अनुक्रमे 3 V आणि 2 V आहे. जर RA आणि RB अनुक्रमे A आणि B तारांच्या त्रिज्या असतील, तर RB/RA = _______",
         "options": {
           "A": "1/4",
           "B": "1/2",
@@ -27208,153 +27211,155 @@
           "D": "1/6"
         },
         "correctAnswer": "B",
-        "explanation": "The verified pick here is 1/2. Aspirants who miss this item usually pick a nearby-sounding option; the fix is to read the stem twice before scanning the options.",
+        "explanation": "योग्य उत्तर: 1/2. एकाच धातूने बनवल्या तारांमध्ये प्रतिकार R = ρL/A. अनुक्रम जोडल्या असताान्त V = IR म्हणून RA/RB = VA/VB = 3/2. LA/LB = 6/1 असल्याने AB/AA = (RA/RB) × (LB/LA) = (3/2) × (1/6) = 1/4. त्रिज्या प्रमाण वरघ अनुपाती आहे, म्हणून RB/RA = √(AB/AA) = √(1/4) = 1/2.",
         "category": "Science",
         "topic": "Electricity & Magnetism"
       },
       {
         "id": 42,
-        "text": "Sound waves are longitudinal mechanical waves that can travel through which of the following mediums?",
+        "text": "ध्वनीतरंग ही यांत्रिकी अनुतरंग असून खालीलपैकी कोणत्या माध्यमातून ते प्रवास करतात?",
         "options": {
-          "A": "Gases",
-          "B": "Liquids",
-          "C": "Solids",
-          "D": "In all of above mediums"
+          "A": "वायू",
+          "B": "द्रव",
+          "C": "घन",
+          "D": "वरीलपैकी सर्व माध्यमातून"
         },
         "correctAnswer": "D",
-        "explanation": "Straight to the answer: In all of above mediums. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: वरीलपैकी सर्व माध्यमातून. ध्वनितरंग हे यांत्रिकी अनुतरंग आहे आणि त्याला प्रसार करण्यासाठी माध्यमाची गरज असते. वायू, द्रव व घन — या तीघही माध्यमांदून ध्वनि प्रवास करू शकतो; शून्यतेत मात्र ध्वनि प्रवास करत नाही.",
         "category": "Science",
         "topic": "Optics & Sound"
       },
       {
         "id": 43,
-        "text": "The focal lengths of two lenses are 2 m and 1 m, then the total power of a combination of these lenses is",
+        "text": "दोन भिंगांचे नाभीय अंतर हे 2 मीटर व 1 मीटर आहे, तर त्या भिंगांची परिणामी शक्ती किती असेल?",
         "options": {
-          "A": "3 D",
-          "B": "1.5 D",
-          "C": "1 D",
-          "D": "0.5 D"
+          "A": "3 डायॉप्टर",
+          "B": "1.5 डायॉप्टर",
+          "C": "1 डायॉप्टर",
+          "D": "0.5 डायॉप्टर"
         },
         "correctAnswer": "B",
-        "explanation": "Answer: 1.5 D. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "योग्य उत्तर: 1.5 डायॉप्टर. दोन भिंगे एकच स्थानावर जोडल्या असताान्त परिणामी शक्ति P = P1 + P2 = 1/f1 + 1/f2. f1 = 2 m वा f2 = 1 m असल्याने P = 1/2 + 1/1 = 0.5 + 1.0 = 1.5 डायॉप्टर. शक्ती एकत्रित करण्याचा हा नियम लक्षात ठेवा.",
         "category": "Science",
         "topic": "Optics & Sound"
       },
       {
         "id": 44,
-        "text": "The chemical reagent used to remove permanent hardness of water is/are",
+        "text": "पाण्याची चिरस्थायी कठोरता दूर करण्यासाठी हा/हे अभिकारक वापरतात.",
         "options": {
-          "A": "only washing soda",
-          "B": "only sodium hexametaphosphate",
-          "C": "Both (1) and (2)",
-          "D": "None of the above"
+          "A": "फक्त धुण्याचा सोडा",
+          "B": "फक्त सोडियम हेक्झामेटाफॉस्फेट",
+          "C": "(1) आणि (2) दोन्ही",
+          "D": "वरीलपैकी कोणतेही नाही"
         },
         "correctAnswer": "C",
-        "explanation": "The examiner has marked Both (1) and (2) as the correct response. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: (1) आणि (2) दोन्ही. पाण्याची चिरस्थायी कठोर्ता (Ca²⁺, Mg²⁺ ions) दूर करण्यासाठी धुण्याचा सोडा (Na₂CO₃) वा Sodium Hexametaphosphate दोन्ही वापरले जातात. ते ions chelate करून कठोर्ता दूर करतात; केवळ एकच पायूप्त नही.",
         "category": "Science",
         "topic": "Acids, Bases & Salts"
       },
       {
         "id": 45,
-        "text": "The resultant dipole moment in NF3 molecule is _______ and in the direction of _______ atom/s.",
+        "text": "NF3 च्या रेणुमध्ये परिणामी द्विध्रुव आघूर्ण _______ आणि _______ अणु/अणुंच्या दिशेला असतो.",
         "options": {
-          "A": "low, nitrogen",
-          "B": "high, fluorine",
-          "C": "high, nitrogen",
-          "D": "low, fluorine"
+          "A": "कमी, नायट्रोजन",
+          "B": "जास्त, फ्लोरीन",
+          "C": "जास्त, नायट्रोजन",
+          "D": "कमी, फ्लोरीन"
         },
         "correctAnswer": "D",
-        "explanation": "Answer: low, fluorine. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: कमी, फ्लोरीन. NF₃ मध्ये nitrogen (3.0) पेक्षा fluorine (4.0) अधिक विद्युत्रीण आहे. परिणामी द्विध्रुप आघूर्ण अधिक विद्युत्रीण atom (fluorine) कडे असतो; nitrogen कडे कमी विद्युत्रीण end आहे, म्हणून dipole fluorine दिशेला असतो.",
         "category": "Science",
         "topic": "Chemical Bonding & Reactions"
       },
       {
         "id": 46,
-        "text": "Which of the following set of quantum numbers is not possible?",
+        "text": "खालीलपैकी कोणता क्वांटम अंकांचा संच अशक्य आहे?",
         "options": {
-          "A": "n=1, l=0, m=0, s=+1/2",
-          "B": "n=4, l=0, m=3, s=-1/2",
-          "C": "n=1, l=1, m=0, s=-1/2",
-          "D": "n=3, l=2, m=2, s=+1/2"
+          "A": "n = 1, l = 0, m = 0, s = +1/2",
+          "B": "n = 4, l = 0, m = 3, s = -1/2",
+          "C": "n = 1, l = 1, m = 0, s = -1/2",
+          "D": "n = 3, l = 2, m = 2, s = +1/2"
         },
         "correctAnswer": "A",
-        "explanation": "n=1, l=0, m=0, s=+1/2 is the correct option here. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "हा प्रश्न आयोगाने रद्द केला आहे, त्यामुळे सर्व उमेदवारांना यासाठी गुण देण्यात आले.",
         "category": "Science",
-        "topic": "Atomic Structure & Periodic Table"
+        "topic": "Atomic Structure & Periodic Table",
+        "cancelled": true
       },
       {
         "id": 47,
-        "text": "Over which of the following latitudes is the Geostationary satellite set?",
+        "text": "खालीलपैकी कोणत्या अक्षवृत्तावर भूस्थिर उपग्रह अवकाशात स्थापित करण्यात येतो?",
         "options": {
-          "A": "The Equator",
-          "B": "The Tropic of Cancer",
-          "C": "The Antarctic Circle",
-          "D": "The Poles"
+          "A": "विषुववृत्त",
+          "B": "कर्कवृत्त",
+          "C": "अंटार्क्टिक वृत्त",
+          "D": "ध्रुव"
         },
         "correctAnswer": "A",
-        "explanation": "The exam key confirms \"The Equator\". In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: विषुववृत्त. भूस्थिर उपग्रह (Geostationary satellites) पृथ्वीसोबत एकच प्रदक्षिण वेगाने फिरतात म्हणून ते केवळ विषुववृत्त (Equator) वर स्थापन केले जातात, उंची 36,000 km आहे. कर्कवृत्त, अंटार्क्टिक वृत्त वा ध्रुव या कक्षेवर भूस्थिर उपग्रह स्थापन करता येत नही.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 48,
-        "text": "In interpreting the aerial photograph, the pair of adjacent aerial photographs is called",
+        "text": "हवाई छायाचित्रांचे परीक्षण करतांना जवळजवळच्या हवाई छायाचित्राच्या जोडीला _______ म्हणतात.",
         "options": {
-          "A": "Aerial photograph",
-          "B": "Stereoscope",
-          "C": "Texture",
-          "D": "Stereogram"
+          "A": "हवाई छायाचित्र",
+          "B": "स्टीरीओस्कोप",
+          "C": "टेक्स्चर",
+          "D": "स्टीरीओग्राम"
         },
         "correctAnswer": "D",
-        "explanation": "Marked correct: Stereogram. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: स्टीरीओग्राम. हवाई छायाचित्रातील जवळजवळ समकालीन जोडीला Stereogram म्हणतat; त्यामध्ये भूमिच्या रचनेला त्रिविम शक्य होते. Stereoscope हा दोन छायाचित्रे पाहण्याचे उपकरण आहे, ते Stereogram नाही.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 49,
-        "text": "State which of the following statements is true?",
+        "text": "खालीलपैकी कोणते विधान बरोबर आहे?",
         "options": {
-          "A": "In the raster data model, the basic building block is the individual cell.",
-          "B": "In the vector data model, the basic building block is the individual cell.",
-          "C": "In the vector data model, well-defined boundaries are represented.",
-          "D": "In the vector data model, locations are well represented."
+          "A": "जाळी सांख्यिकीय प्रतिमानात मूलभूत रचनाखंड हे स्वतंत्र जाळे असते.",
+          "B": "सदिश सांख्यिकीय प्रतिमानात मूलभूत रचनाखंड हे स्वतंत्र जाळे असते.",
+          "C": "सदिश सांख्यिकीय प्रतिमानात निश्चित सीमा दर्शविता येतात.",
+          "D": "सदिश सांख्यिकीय प्रतिमानात स्थानांची स्थिती स्पष्ट दर्शविता येते."
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is In the raster data model, the basic building block is the individual cell. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "हा प्रश्न आयोगाने रद्द केला आहे, त्यामुळे सर्व उमेदवारांना यासाठी गुण देण्यात आले.",
         "category": "Science",
-        "topic": "Science & Technology (IT/Space)"
+        "topic": "Science & Technology (IT/Space)",
+        "cancelled": true
       },
       {
         "id": 50,
-        "text": "What is the long form of the term 'HTML', used in relation to Internet?",
+        "text": "इंटरनेट संदर्भात वापरल्या जाणाऱ्या HTML या संबोधनाचे पूर्ण रूप काय आहे?",
         "options": {
-          "A": "Hyper Tool Markup Language",
-          "B": "Hybrid Text Making Language",
-          "C": "Hyper Text Markup Language",
-          "D": "Hybrid Test Making Language"
+          "A": "हायपर टूल मार्कअप लँग्वेज",
+          "B": "हायब्रीड टेक्स्ट मेकिंग लँग्वेज",
+          "C": "हायपर टेक्स्ट मार्कअप लँग्वेज",
+          "D": "हायब्रीड टेस्ट मेकिंग लँग्वेज"
         },
         "correctAnswer": "C",
-        "explanation": "The paper's official answer is Hyper Text Markup Language. HTML (Hyper Text Markup Language) is the standard markup language for creating web pages; tags describe document structure. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: हायपर टेक्स्ट मार्कअप लंग्वेज. HTML चे full form Hyper Text Markup Language आहे — हे web pagesची रचना (heading, paragraph, link) परिभाषित करण्यासाठी वापरले जाते. Hyper Tool, Hybrid Text किंवा Hybrid Test हा चुक आहेत.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 51,
-        "text": "The emergence of electronic commerce can be defined as",
+        "text": "इलेक्ट्रॉनिक कॉमर्सचा उदय कशाप्रकारे परिभाषित केला जाऊ शकतो?",
         "options": {
-          "A": "The transaction of business on the Internet",
-          "B": "Electronic education on the Internet",
-          "C": "Electrical methodologies for transaction",
-          "D": "Communication on the Internet"
+          "A": "इंटरनेटवर व्यवसायाचा व्यवहार",
+          "B": "इंटरनेटवर इलेक्ट्रॉनिक शिक्षण",
+          "C": "व्यवहारासाठी इलेक्ट्रिकल पद्धती",
+          "D": "इंटरनेटवर संवाद"
         },
         "correctAnswer": "A",
-        "explanation": "The definitive answer is The transaction of business on the Internet. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: इंटरनेटवर व्यवसायाचा व्यवहार. ई-कॉमर्स म्हणजे इंटरनेटद्वारे वस्तू-सेवा खरेदी-विक्री, देयके, ऑर्डर आणि व्यावसायिक व्यवहार करणे. हे फक्त ऑनलाइन शिक्षण, संवाद किंवा विद्युत पद्धतीने व्यवहार नाही, तर नेटवर्कवर चालणारा व्यावसायिक व्यवहार आहे.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 52,
-        "text": "What is the full form of ASCII?",
+        "text": "ASCII याचा फुल फॉर्म काय आहे?",
         "options": {
           "A": "All Standard Characters for Information Identity",
           "B": "American Standard Code for Information Interchange",
@@ -27362,139 +27367,139 @@
           "D": "American Standard Characters for Information Interchange"
         },
         "correctAnswer": "B",
-        "explanation": "The official Set A key selects American Standard Code for Information Interchange. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: American Standard Code for Information Interchange. ASCII हा संगणकात अक्षरे, अंक आणि विशेष चिन्हांना मानक 7-बिट (किंवा विस्तारित 8-बिट) संख्येत रूपांतरित करण्यासाठी वापरला जाणारा अमेरिकन मानक कोड आहे. संगणकीय मजकूर संचार आणि डेटा साठवणुकीसाठी हा जागतिकदृष्ट्या मूलभूत मानक आहे.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 53,
-        "text": "What is cyber bullying?",
+        "text": "सायबर बुरलींग म्हणजे काय?",
         "options": {
-          "A": "Spamming",
-          "B": "Scareware",
-          "C": "Threatening through Internet",
-          "D": "Adware"
+          "A": "स्पॅमिंग",
+          "B": "स्केअरवेअर",
+          "C": "इंटरनेट द्वारे धमकावणे",
+          "D": "अडवेअर"
         },
         "correctAnswer": "C",
-        "explanation": "Working through the options, Threatening through Internet is the correct one. This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: इंटरनेट द्वारे धमकावणे. सायबर बुलlying म्हणजे इंटरनेट, सोशल मीडिया, संदेश किंवा ई-मेलद्वारे एखाद्याला सतत त्रास देणे, धमकावणे किंवा अपमानित करणे. स्पॅमिंग, स्केअरवेअर आणि अ‍ॅडवेअर यापेक्षा ही वेगळी संकल्पना आहे.",
         "category": "Science",
         "topic": "Science & Technology (IT/Space)"
       },
       {
         "id": 54,
-        "text": "In the Western Himalayas, fruit gardens are developed due to",
+        "text": "पश्चिम हिमालयीन प्रदेशात फळबागा विकसित झाल्या आहेत कारण",
         "options": {
-          "A": "Soil in the Western Himalayan region being good for the growth of fruit gardens",
-          "B": "the Western Himalayan region receiving rainfall in winter, which is favourable for the growth of fruit gardens",
-          "C": "the amount of rainfall being generally low in the Western Himalayas",
-          "D": "Mountain climate being favourable for the growth of fruit gardens"
+          "A": "पश्चिम हिमालयातील मृदा फळबागांच्या वाढीसाठी उत्तम आहे",
+          "B": "पश्चिम हिमालयात हिवाळ्यात पडणारा पाऊस फळबागांच्या वाढीसाठी अनुकूल असतो",
+          "C": "पश्चिम हिमालयात सर्वसाधारण पावसाचे प्रमाण कमी असते",
+          "D": "पर्वतीय हवामान फळबागांना उपकारक असते"
         },
         "correctAnswer": "B",
-        "explanation": "Correct: option B — \"the Western Himalayan region receiving rainfall in winter, which is favourable for the growth of fruit gardens\". The Himalayas — the highest mountain system on earth — extend ~2,500 km from the Indus in the west to the Brahmaputra in the east across five countries. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: पश्चिम हिमालयात हिवाळ्यात पडणारा पाऊस फळबागांच्या वाढीसाठी अनुकूल असतो. पश्चिम हिमालयीन प्रदेशात (जम्मू-काश्मीर, हिमाचल) पश्चिमी व disturbances मुळे हिवाळ्यात पाऊस पडतो; हा पाऊस ओलावा देतो आणि सूर्यप्रकाशासह सफरचंद, नाशपाती, चेरी, बदाम इत्यादी फळबागांसाठी अत्यंत अनुकूल असतो.",
         "category": "Geography",
         "topic": "Indian Physical Geography"
       },
       {
         "id": 55,
-        "text": "Which of the following atmospheric conditions is responsible for the occurrence of the Indian climatic phenomena 'Retreating Monsoon'?",
+        "text": "मान्सूनची माघार ही भारतीय हवामानाची घटना खालीलपैकी कोणत्या वातावरणीय परिस्थितीचा परिणाम आहे?",
         "options": {
-          "A": "Expansion of high pressure belt from north-west to south-east direction in India.",
-          "B": "The south-west monsoon winds reach the foothills of the Himalayas, blocked by the Himalayan ranges, and then retreat from the Himalayas.",
-          "C": "Apparent movement of the Sun.",
-          "D": "Occurrence of steep pressure gradient in the Indian sub-continent."
+          "A": "भारताच्या वायव्य भागाकडून आग्नेय भागाकडे उच्च वायूभाराच्या पट्ट्याचा होणारा विस्तार.",
+          "B": "नैऋत्य मान्सून वारे हिमालय पर्वतरांगेला अडविले गेल्यावर तेथून त्यांची होणारी माघार.",
+          "C": "सूर्याचे भासमान भ्रमण.",
+          "D": "भारतीय उपखंडात निर्माण होणारे तीव्र वायूभाराचे उतार-चढाव."
         },
         "correctAnswer": "A",
-        "explanation": "Answer: Expansion of high pressure belt from north-west to south-east direction in India. The three wrong options are the standard distractor set MPSC uses for this topic — one is a chronological neighbour, one is a thematic near-miss and one is a plausible-sounding invention.",
+        "explanation": "योग्य उत्तर: भारताच्या वायव्य भागाकडून आग्नेय भागाकडे उच्च वायूभाराच्या पट्ट्याचा होणारा विस्तार. मान्सूनची माघार म्हणजे पावसाच्या हंगामाचा अंत; सप्टेंबर-ऑक्टोबरमध्ये सूर्य उत्तर गोलार्धात विषुववृत्ताकडे सरकतो, वायव्य भारतात उच्च वायूभार निर्माण होतो आणि तो वायव्य-आग्नेय दिशेने विस्तार पावतो, ज्यामुळे नैऋत्य मान्सून मागे हटतो.",
         "category": "Geography",
         "topic": "Climatology"
       },
       {
         "id": 56,
-        "text": "Arrange in correct order the following mountain ranges from the South to North.",
+        "text": "खालील पर्वतश्रेणींचा दक्षिणेकडून उत्तरेकडे असा अचूक क्रम ओळखा.",
         "options": {
-          "A": "Shivalik range, Greater Himalayas, Zaskar range, Pirpanjal range, Ladakh range, Karakoram range",
-          "B": "Shivalik range, Pirpanjal range, Greater Himalayas, Zaskar range, Ladakh range, Karakoram range",
-          "C": "Shivalik range, Zaskar range, Pirpanjal range, Ladakh range, Greater Himalayas, Karakoram range",
-          "D": "Shivalik range, Pirpanjal range, Zaskar range, Ladakh range, Karakoram range, Greater Himalayas"
+          "A": "शिवालिक पर्वत, बृहद हिमालय, झास्कर पर्वत, पीरपांजाल पर्वत, लडाख पर्वत, काराकोरम पर्वत",
+          "B": "शिवालिक पर्वत, पीरपांजाल पर्वत, बृहद हिमालय, झास्कर पर्वत, लडाख पर्वत, काराकोरम पर्वत",
+          "C": "शिवालिक पर्वत, झास्कर पर्वत, पीरपांजाल पर्वत, लडाख पर्वत, बृहद हिमालय, काराकोरम पर्वत",
+          "D": "शिवालिक पर्वत, पीरपांजाल पर्वत, झास्कर पर्वत, लडाख पर्वत, काराकोरम पर्वत, बृहद हिमालय"
         },
         "correctAnswer": "B",
-        "explanation": "\"Shivalik range, Pirpanjal range, Greater Himalayas, Zaskar range, Ladakh range, Karakoram range\" is the option marked correct in the official key. The Himalayas — the highest mountain system on earth — extend ~2,500 km from the Indus in the west to the Brahmaputra in the east across five countries. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: शिवालिक पर्वत, पीरपांजाल पर्वत, बृहद हिमालय, झास्कर पर्वत, लडाख पर्वत, काराकोरम पर्वत. हिमालयाच्या दक्षिणेकडून उत्तरेकडे क्रमाने सर्वात बाहेरील शिवालिक, नंतर पीरपांजाल, मध्यभागी बृहद (महान) हिमालय, पुढे झास्कर, लडाख आणि सर्वात उत्तरेस काराकोरम पर्वतरांगा येतात.",
         "category": "Geography",
         "topic": "Indian Physical Geography"
       },
       {
         "id": 57,
-        "text": "The periodical difference between the shortest day and the longest day in India is given below:\na. In south near Kanyakumari it is about 45 minutes.\nb. In north near Leh in Ladakh it is about 4 hours.\nWhy does this time difference take place?",
+        "text": "भारतातील सर्वात मोठा दिवस व सर्वात लहान दिवस यातील फरक\nअ. दक्षिण भागातील कन्याकुमारी जवळ सुमारे 45 मिनिटांचा.\nब. उत्तर भारतातील लेह (लडाख) जवळ 4 तासांचा आहे.\nअशा प्रकारे वेळेत फरक असण्याचे कारण काय आहे?",
         "options": {
-          "A": "Kanyakumari is situated near the equator and Leh is far away from the equator.",
-          "B": "Location of Kanyakumari is in the tropical hemisphere while Leh is located in the temperate hemisphere.",
-          "C": "The periodical difference between the day time and night time is minimum in South India while it goes on increasing towards North India.",
-          "D": "The axis of the Earth is inclined to the plane of the ecliptic at an angle of 66° 30' giving rise to increasing length of day and night from the equator to the poles."
+          "A": "कन्याकुमारी विषुववृत्ताजवळ तर लेह विषुववृत्तापासून दूर स्थित आहे.",
+          "B": "कन्याकुमारीचे स्थान उष्ण कटिबंधात तर लेहचे स्थान समशीतोष्ण कटिबंधात आहे.",
+          "C": "भारताच्या दक्षिणेकडील भागांत दिनमान व रात्रीमानाच्या कालावधीतील फरक कमी असतो तर उत्तरेकडील भागात तो जास्त होत जातो.",
+          "D": "पृथ्वीच्या अक्षाने पृथ्वीच्या कक्षेच्या पातळीशी 66° 30' चा कोन केला असल्यामुळे दिनमानाचा आणि रात्रीमानाचा कालावधी विषुववृत्ताकडून ध्रुवाकडे वाढत जातो."
         },
         "correctAnswer": "D",
-        "explanation": "The paper's official answer is The axis of the Earth is inclined to the plane of the ecliptic at an angle of 66° 30' giving rise to increasing length of day and night from the equator to the poles. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: पृथ्वीच्या अक्षाने पृथ्वीच्या कक्षेच्या पातळीशी 66° 30' चा कोन केला असल्यामुळे दिनमानाचा आणि रात्रीमानाचा कालावधी विषुववृत्ताकडून ध्रुवाकडे वाढत जातो. कन्याकुमारीजवळ दिवस-रात्र फरक ~45 मिनिटे, तर लेहजवळ ~4 तास; हे पृथ्वीच्या 23° 30' वाकलेल्या अक्षामुळे सूर्यप्रकाशाचा वितळ वाढत जातो.",
         "category": "Geography",
         "topic": "Indian Physical Geography"
       },
       {
         "id": 58,
-        "text": "Which of the following types of forests is found in areas above 1200 m altitude and receiving 400 cm and more amount of rainfall in the Sahyadris?",
+        "text": "सह्याद्रीच्या 1200 मी. पेक्षा जास्त उंच भागातील 400 सें.मी. किंवा त्यापेक्षा जास्त पर्जन्य असलेल्या विभागात खालीलपैकी कोणत्या प्रकारचे वन आढळते?",
         "options": {
-          "A": "Tropical evergreen forest",
-          "B": "Tropical semi-evergreen forest",
-          "C": "Sub-tropical evergreen forest",
-          "D": "Tropical humid deciduous forest"
+          "A": "उष्ण कटिबंधीय सदाहरित वने",
+          "B": "उष्ण कटिबंधीय अर्ध-सदाहरित वने",
+          "C": "उपोष्ण कटिबंधीय सदाहरित वने",
+          "D": "उष्ण कटिबंधीय आर्द्र पानझडी वने"
         },
         "correctAnswer": "C",
-        "explanation": "Sub-tropical evergreen forest is the correct option here. The Sahyadri (Western Ghats) is a UNESCO World Heritage biodiversity hotspot running ~1,600 km along India's west coast and defines the Konkan-Deccan divide in Maharashtra. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: उपोष्ण कटिबंधीय सदाहरित वने. सह्याद्रीच्या 1200 मी. पेक्षा जास्त उंची आणि 400 से.मी. किंवा अधिक पर्जन्य असलेल्या भागात (उदा. महाबळेश्वर, मुलशी) उष्ण कटिबंधीय नव्हे, तर उपोष्ण कटिबंधीय सदाहरित (चिरहरित) वने आढळतात; यात तेक, नागचाफा, बांबू इ. वृक्ष दिसतात.",
         "category": "Geography",
         "topic": "Indian Physical Geography"
       },
       {
         "id": 59,
-        "text": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (B).\n(A) Groundwater resource has been depleted intensively in Maharashtra.\n(B) There is a need for groundwater conservation in Maharashtra.",
+        "text": "खाली दोन विधाने दिली आहेत, त्यापैकी (अ) प्रतिपादन विधान असून (ब) हे त्याचे कारण आहे.\n(अ) महाराष्ट्रात भूगर्भजलाचा उपसा प्रचंड प्रमाणात होत असल्याने भूजलाचे साठे नष्ट होत आहेत.\n(ब) महाराष्ट्रात भूजलसंवर्धन करणे गरजेचे आहे.",
         "options": {
-          "A": "Both (A) and (B) are true and (B) is the correct explanation of (A)",
-          "B": "Both (A) and (B) are true but (B) is not the correct explanation of (A)",
-          "C": "(A) is true but (B) is false",
-          "D": "(A) is false but (B) is true"
+          "A": "(अ) आणि (ब) दोन्ही बरोबर आहेत आणि (ब) हे (अ) चे खरे स्पष्टीकरण आहे",
+          "B": "(अ) आणि (ब) हे दोन्ही बरोबर आहेत परंतु (ब) हे (अ) चे खरे स्पष्टीकरण नाही",
+          "C": "(अ) हे बरोबर आहे पण (ब) हे चूक आहे",
+          "D": "(अ) हे चूक आहे पण (ब) हे बरोबर आहे"
         },
         "correctAnswer": "B",
-        "explanation": "The paper's official answer is Both (A) and (B) are true but (B) is not the correct explanation of (A). The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: (अ) आणि (ब) हे दोन्ही बरोबर आहेत परंतु (ब) हे (अ) चे खरे स्पष्टीकरण नाही. (अ) सत्य आहे — महाराष्ट्रात अतिदोहनामुळे भूजल साठे कमी होत आहेत; (ब) देखील सत्य आहे — भूजलसंवर्धन गरजेचे आहे. पण (ब) हे (अ) चे कारण स्पष्ट करत नाही; ते (अ) च्या परिणामावर आधारित आवश्यक उपाय आहे.",
         "category": "Geography",
         "topic": "Maharashtra Rivers & Dams"
       },
       {
         "id": 60,
-        "text": "Why is the sex-ratio in the districts of Sindhudurg and Ratnagiri in Konkan maximum in Maharashtra?",
+        "text": "महाराष्ट्रातील सर्वात जास्त लिंग गुणोत्तर कोंकणातील सिंधुदुर्ग व रत्नागिरी जिल्ह्यात असण्याचे कारण",
         "options": {
-          "A": "Low rate of female foeticide in these districts of the Konkan",
-          "B": "Out-migration of male working population from these districts of Konkan to the industrial region of Mumbai",
-          "C": "Dowry is given to bride on the occasion of marriage",
-          "D": "The number of female children is increasing due to improvement in health and medical facilities in these districts"
+          "A": "कोंकणातील या जिल्ह्यात स्त्री-भ्रूण हत्येचे असलेले कमी प्रमाण",
+          "B": "कोंकणातील या जिल्ह्यातून मुंबईच्या औद्योगिक प्रदेशाकडे पुरुष कामगारांचे होणारे बाह्य स्थलांतर",
+          "C": "विवाहप्रसंगी वधूपक्षाला दिला जाणारा हुंडा",
+          "D": "या जिल्ह्यात आरोग्य व वैद्यकीय सुविधांमध्ये झालेल्या सुधारणांमुळे मुलींच्या संख्येत होणारी वाढ"
         },
         "correctAnswer": "B",
-        "explanation": "The right pick is option B: Out-migration of male working population from these districts of Konkan to the industrial region of Mumbai. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: कोंकणातील या जिल्ह्यातून मुंबईच्या औद्योगिक प्रदेशाकडे पुरुष कामगारांचे होणारे बाह्य स्थलांतर. सिंधुदुर्ग व रत्नागिरी जिल्ह्यांत पुरुष कामगार मुंबई-ठाणे औद्योगिक belt कडे कामासाठी स्थलांतरित होतात, परंतु स्त्रिया गावी राहतात; त्यामुळे लिंग गुणोत्तरात स्त्रियांचे प्रमाण वाढून अधिक दिसते.",
         "category": "Geography",
         "topic": "Population & Census"
       },
       {
         "id": 61,
-        "text": "A woman says, 'If you reverse my own age, the figures represent my father's age. He is of course older to me and the difference between our ages is three-eleventh of their sum.' The women's age is",
+        "text": "एक महिला म्हणते, 'जर माझ्या वयाच्या अंकांची उलटपालट केली तर ते माझ्या वडिलांचे वय दर्शविते. अर्थात माझे वडील माझ्यापेक्षा वयस्कर आहेत आणि आमच्या वयातील फरक हा आमच्या वयांच्या बेरजेच्या तीन-अकरांश आहे.' तर महिलेचे वय किती?",
         "options": {
-          "A": "45 years",
-          "B": "36 years",
-          "C": "37 years",
-          "D": "46 years"
+          "A": "45 वर्ष",
+          "B": "36 वर्ष",
+          "C": "37 वर्ष",
+          "D": "46 वर्ष"
         },
         "correctAnswer": "B",
-        "explanation": "For this question, the correct option reads: 36 years. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: 36 वर्ष. महिलेचे वय 10a+b आणि वडिलांचे 10b+a (अंक उलट). फरक = (10b+a) − (10a+b) = 9(b−a); बेरज = 11(a+b). दिले की फरक = (3/11) × बेरज, म्हणून 9(b−a) = 3(a+b), म्हणजे 3(b−a) = a+b → 2b = 4a → b = 2a. a = 3, b = 6 → महिला 36, वडील 63; फरक 27 = (3/11) × 99 ✓.",
         "category": "Aptitude",
         "topic": "Algebra & Equations"
       },
       {
         "id": 62,
-        "text": "There are 25 people in a group. If all shake hands with one another, how many handshakes are possible?",
+        "text": "25 जणाच्या समूहातील प्रत्येकाने एकमेकास हस्तांदोलन केल्यास एकूण हस्तांदोलनाची संख्या किती असेल?",
         "options": {
           "A": "125",
           "B": "625",
@@ -27502,27 +27507,27 @@
           "D": "300"
         },
         "correctAnswer": "D",
-        "explanation": "Straight to the answer: 300. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: 300. 25 जणांपैकी प्रत्येक जोडी एकदाच हस्तांदोलन करते; एकूण जोड्या = ²⁵C₂ = 25 × 24 ÷ 2 = 300. n व्यक्तींमध्ये n(n−1)/2 हस्तांदोलने — हे combination सूत्राचा थेट प्रश्न.",
         "category": "Aptitude",
         "topic": "Probability & Statistics"
       },
       {
         "id": 63,
-        "text": "P, Q, R, S, T, U and V are travelling in three different vehicles. There are at least two passengers in each vehicle (Car, Rickshaw, Lorry) and each vehicle has passengers of both the sexes. There are two Merchants, two Doctors and three Lawyers among them. R is a lady doctor and she does not travel with the pair of sisters, P and U. Q, a male merchant, travels with only V, a Lawyer in vehicle car. S is a male doctor. Two persons belonging to same profession do not travel in the same vehicle. P is not a merchant and travels in vehicle Rickshaw.\nIn which vehicle does R travel?",
+        "text": "खालील माहिती अभ्यासा आणि विचारलेल्या प्रश्नांची उत्तरे द्या.\nP, Q, R, S, T, U आणि V हे वेगवेगळ्या तीन वाहनाने प्रवास करतात. प्रत्येक वाहनात किमान दोन प्रवासी असतात. कार, रिक्षा आणि लॉरी ही वाहने असून प्रत्येक वाहनात दोन्ही लिंगांचे प्रवासी आहेत. त्यात दोन व्यापारी, दोन वैद्य आणि तीन वकील आहेत. R ही स्त्री वैद्य असून ती आपल्या दोन बहिणी P आणि U यांच्या समवेत प्रवास करीत नाही. Q हा पुरुष व्यापारी असून तो फक्त V, वकील, समवेत कारने प्रवास करतो. S हा पुरुष वैद्य आहे. एकाच व्यवसायाच्या दोन व्यक्ती एकाच वाहनाने प्रवास करीत नाहीत. P हे व्यापारी नाही आणि ते रिक्षाने प्रवास करते.\nR हे कोणत्या वाहनाने प्रवास करते?",
         "options": {
-          "A": "Car",
-          "B": "Rickshaw",
-          "C": "Lorry",
-          "D": "Rickshaw or Lorry"
+          "A": "कार",
+          "B": "रिक्षा",
+          "C": "लॉरी",
+          "D": "रिक्षा अथवा लॉरी"
         },
         "correctAnswer": "C",
-        "explanation": "Straight to the answer: Lorry. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: लॉरी. Q (व्यापारी) + V (वकील) कारमध्ये; P रिक्षेत; R (वैद्य) P, U बहिणींसोबत नाही; S (वैद्य) R सोबत नाही (समान व्यवसाय); वाटणी: कार — Q, V, S; रिक्षा — P, T; लॉरी — R, U. सर्व अटी पूर्ण होतात आणि R लॉरीत प्रवास करते.",
         "category": "Aptitude",
         "topic": "Puzzles"
       },
       {
         "id": 64,
-        "text": "What will be the mirror image of a clock at 3:37?",
+        "text": "3:37 वाजता घड्याळाची आरशातील प्रतिमा कोणती वेळ दर्शविते?",
         "options": {
           "A": "8:23",
           "B": "8:13",
@@ -27530,41 +27535,41 @@
           "D": "9:23"
         },
         "correctAnswer": "A",
-        "explanation": "The verified answer is 8:23. Add this correct option to your active-recall flashcard deck; MPSC repeats the underlying fact in some form every two to three prelim cycles.",
+        "explanation": "योग्य उत्तर: 8:23. आरशातील घड्याळाची सूत्र: 11:60 − दिलेली वेळ. 11:60 − 3:37 = 8:23 (कारण 60 − 37 = 23 मिनिटे, 11 − 3 = 8 तास). म्हणून 3:37 ची आरश प्रतिमा 8:23 दर्शवते.",
         "category": "Aptitude",
         "topic": "Clocks & Calendars"
       },
       {
         "id": 65,
-        "text": "Observe the following diagrams (A), (B), (C) - a rectangle 9x4, a parallelogram 6x6, and a triangle with base 8 and height 9.",
+        "text": "खालील आकृत्यांचे (A), (B) आणि (C) निरीक्षण करा:\n(A) आयत — बाजू 9 व 4\n(B) आयत/चौरस — बाजू 6 व 6\n(C) काटकोन त्रिकोण — पाया 8, उंची 9",
         "options": {
-          "A": "The area of all diagrams are different.",
-          "B": "The area of all diagrams are same.",
-          "C": "The perimeter of all diagrams are same.",
-          "D": "Diagram (A) and (B) have the same perimeter."
+          "A": "सर्व आकृत्यांचे क्षेत्रफळ भिन्न आहे.",
+          "B": "सर्व आकृत्यांचे क्षेत्रफळ समान आहे.",
+          "C": "सर्व आकृत्यांची परिमिती समान आहे.",
+          "D": "आकृती (A) व (B) ची परिमिती समान आहे."
         },
         "correctAnswer": "B",
-        "explanation": "Reading the stem carefully, the answer is The area of all diagrams are same. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: सर्व आकृत्यांचे क्षेत्रफळ समान आहे. (A) आयताचे क्षेत्रफळ = 9 × 4 = 36; (B) चे क्षेत्रफळ = 6 × 6 = 36; (C) काटकोन त्रिकोणाचे क्षेत्रफळ = ½ × 8 × 9 = 36. तिन्ही आकृत्यांचे क्षेत्रफळ 36 चौ. एकक असून समान आहे, मात्र त्यांच्या परिमिती वेगवेगळ्या आहेत.",
         "category": "Aptitude",
         "topic": "Mensuration & Geometry"
       },
       {
         "id": 66,
-        "text": "Anil, Sanjay, Sunil, Deepak, Mahesh, Prashant and Suresh are seated in a row. Sunil is seated between Deepak and Anil, Mahesh is seated between Prashant and Suresh and Sanjay is seated between Deepak and Prashant. Anil and Suresh are seated at both ends of the row, then where is Deepak seated?",
+        "text": "अनिल, संजय, सुनिल, दीपक, महेश, प्रशांत आणि सुरेश ही मुले एका रांगेत बसली आहेत. सुनिल, दीपक व अनिलच्या मध्ये; महेश हा प्रशांत व सुरेशच्या मध्ये; आणि संजय हा दीपक व प्रशांत यांच्यामध्ये आहे. अनिल व सुरेश दोन्ही टोकाला आहेत, तर दीपक कोठे बसला आहे?",
         "options": {
-          "A": "In the middle of Sunil and Sanjay",
-          "B": "In the middle of Anil and Sanjay",
-          "C": "In the middle of Sanjay and Mahesh",
-          "D": "In the middle of Sunil and Prashant"
+          "A": "सुनिल व संजय यांच्यामध्ये",
+          "B": "अनिल व संजय यांच्यामध्ये",
+          "C": "संजय व महेश यांच्यामध्ये",
+          "D": "सुनिल व प्रशांत यांच्यामध्ये"
         },
         "correctAnswer": "A",
-        "explanation": "The right answer is In the middle of Sunil and Sanjay (option A). MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: सुनिल व संजय यांच्यामध्ये. अनिल व सुरेश टोकांवर; माहेश प्रशांत-सुरेश दरम्यान; संजय दीपक-प्रशांत दरम्यान. क्रम: अनिल(1) — सुनिल(2) — दीपक(3) — संजय(4) — प्रशांत(5) — माहेश(6) — सुरेश(7). दीपक सुनिल व संजय यांच्या मध्ये आहे.",
         "category": "Aptitude",
         "topic": "Puzzles"
       },
       {
         "id": 67,
-        "text": "Which one of the following numbers will occupy the blank space?\n[Grid pattern: ?, 45, 29 / 15, 17, 21]",
+        "text": "खालील आकृतीत कर्णाने विभागलेल्या चार कप्प्यांत संख्या दिल्या आहेत. रिकाम्या जागी (?) कोणता अंक येईल?\nवरची ओळ: [ ? ] [ 45 / 29 ]\nखालची ओळ: [ 15 / 17 ] [ 21 ]",
         "options": {
           "A": "8",
           "B": "10",
@@ -27572,13 +27577,13 @@
           "D": "16"
         },
         "correctAnswer": "C",
-        "explanation": "The right answer is 14 (option C). The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: 14. समोरासमोरच्या कप्प्यांतील दोन संख्यांचा फरक पाहा — 45 − 29 = 16 आणि 17 − 15 = 2. या दोन फरकांची वजाबाकी 16 − 2 = 14 इतकी येते, म्हणून रिकाम्या जागी 14 हा अंक येईल.",
         "category": "Aptitude",
         "topic": "Puzzles"
       },
       {
         "id": 68,
-        "text": "The day after is Monday. The date tomorrow is 3. Then what will be the date on next Sunday?",
+        "text": "परव सोमवार आहे. उद्या 3 तारीख आहे. तर पुढच्या रविवारला कोणती तारीख असेल?",
         "options": {
           "A": "8",
           "B": "9",
@@ -27586,41 +27591,41 @@
           "D": "11"
         },
         "correctAnswer": "C",
-        "explanation": "This maps to \"10\". The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: 10. उद्या 3 तारीख → आज 2 तारीख; परव सोमवार → उद्या (3) रविवार. पुढचा रविवार = 3 + 7 = 10 तारीख. कॅलेंडर पायऱ्या: आज 2, उद्या 3 (रवि), पुढचा रविवार 10.",
         "category": "Aptitude",
         "topic": "Clocks & Calendars"
       },
       {
         "id": 69,
-        "text": "Statements:\nAll locks are keys.\nAll keys are doors.\nSome doors are windows.\nSome windows are floors.\nConclusions:\nI. Some keys are windows.\nII. Some floors are not doors.\nIII. Any locks are not windows.",
+        "text": "विधाने:\nसर्व कुलूपे किल्ल्या आहेत.\nसर्व किल्ल्या दरवाजे आहेत.\nकाही दरवाजे खिडक्या आहेत.\nकाही खिडक्या फर्श आहेत.\nनिष्कर्ष:\nI. काही किल्ल्या खिडक्या आहेत.\nII. काही फर्श दरवाजे नाहीत.\nIII. कोणतेही कुलूप खिडक्या नाहीत.",
         "options": {
-          "A": "None of the conclusions are correct",
-          "B": "Only conclusion I is correct",
-          "C": "Conclusions I and II are correct",
-          "D": "All conclusions are correct"
+          "A": "कोणताही निष्कर्ष बरोबर नाही",
+          "B": "फक्त निष्कर्ष I बरोबर आहे",
+          "C": "निष्कर्ष I व II बरोबर आहेत",
+          "D": "सर्व निष्कर्ष बरोबर आहेत"
         },
         "correctAnswer": "A",
-        "explanation": "\"None of the conclusions are correct\" is what the question is looking for. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: कोणताही निष्कर्ष बरोबर नाही. सर्व कुलूपे → किल्ले → दरवाजे; काही दरवाजे → खिडक्या; काही खिडक्या → फर्श. I: काही किल्ले खिडक्या — निश्चित नाही. II: काही फर्श दरवाजे नाहीत — सिद्ध होत नाही. III: कोणतेही कुलूप खिडक्या नाहीत — काही दरवाजे खिडक्या असल्याने कुलूप-दरवाजा-खिडकी शक्य, म्हणून III चुकीचा.",
         "category": "Aptitude",
         "topic": "Syllogism & Logical Deduction"
       },
       {
         "id": 70,
-        "text": "There are five Saturdays in a month of 30 days. What will be the first day of that month?",
+        "text": "30 दिवसांच्या एका महिन्यात पाच शनिवार आहेत. त्या महिन्याचा प्रथम दिवस कोणता असेल?",
         "options": {
-          "A": "Sunday",
-          "B": "Monday",
-          "C": "Wednesday",
-          "D": "Friday"
+          "A": "रविवार",
+          "B": "सोमवार",
+          "C": "बुधवार",
+          "D": "शुक्रवार"
         },
         "correctAnswer": "D",
-        "explanation": "Working through the options, Friday is the correct one. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: शुक्रवार. 30 दिवस = 4 आठवडे + 2 दिवस; 4 शनिवार निश्चित. 5वा शनिवार मिळवण्यासाठी महिना शुक्रवारी सुरू: 1 शुक्र, 2 शनि, … 30 शनि → शनिवार 2, 9, 16, 23, 30 = 5 शनिवार.",
         "category": "Aptitude",
         "topic": "Clocks & Calendars"
       },
       {
         "id": 71,
-        "text": "In the following number series a number is wrong. Select that number:\n3, 7, 16, 32, 56, 93, 142",
+        "text": "खाली दिलेल्या संख्याश्रेणीमध्ये एक संख्या चुकीची आहे. खालील पर्यायांमधून ती संख्या ओळखा:\n3, 7, 16, 32, 56, 93, 142",
         "options": {
           "A": "7",
           "B": "16",
@@ -27628,13 +27633,13 @@
           "D": "32"
         },
         "correctAnswer": "C",
-        "explanation": "\"56\" is the accurate option. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: 56. फरक: 4, 9, 16, 24, 37, 49 — पहिले तीन 2², 3², 4²; पुढे 5² = 25 असावा: 32 + 25 = 57 (56 नव्हे). म्हणून 56 चुकीचा; योग्य क्रम 3, 7, 16, 32, 57, 93, 142 (फरक +4², +5², +6², +7²).",
         "category": "Aptitude",
         "topic": "Number & Letter Series"
       },
       {
         "id": 72,
-        "text": "Insert the missing character.\n[Grid: XY=12, 10, IP / FJ=9, 8, ? / AC=?, 11, NV]",
+        "text": "गाळलेली जागा भरा.\nXY : 12, 10, IP\nFJ : 9, 8, ?\nAC : ?, 11, NV",
         "options": {
           "A": "DF, 8",
           "B": "SU, 4",
@@ -27642,13 +27647,13 @@
           "D": "GK, 2"
         },
         "correctAnswer": "C",
-        "explanation": "The examination key marks BG, 7 as the correct choice. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: BG, 7. XY: X(24)−12=12, Y(25)−15=10, तिसरा IP (I=9, P=16). FJ: F(6)+3=9, J(10)−2=8, तिसरा BG (B=2, G=7). AC: A(1)+6=7, C(3)+8=11, तिसरा NV (N=14, V=22). FJ मध्ये ? = 7.",
         "category": "Aptitude",
         "topic": "Coding-Decoding"
       },
       {
         "id": 73,
-        "text": "If 'P × Q' means P is sister of Q, 'P + Q' means P is mother of Q, 'P - Q' means P is father of Q, 'P ÷ Q' means P is brother of Q, 'P = Q' means P is daughter of Q, 'P > Q' means P is husband of Q, then which of the following represents 'B is the great-grandfather of R'?",
+        "text": "जर 'P × Q' म्हणजे P ही Q ची बहिण, 'P + Q' म्हणजे P ही Q ची आई, 'P - Q' म्हणजे P हे Q चे वडील, 'P ÷ Q' म्हणजे P हे Q चा भाऊ, 'P = Q' म्हणजे P ही Q ची कन्या, 'P > Q' म्हणजे P हे Q चे पती, तर खालीलपैकी कोणते सूत्र 'B हे R चे पंजोबा' म्हणून प्रस्तुत करते?",
         "options": {
           "A": "B - N + K × R",
           "B": "B > P = R",
@@ -27656,13 +27661,13 @@
           "D": "B - S + L - R"
         },
         "correctAnswer": "D",
-        "explanation": "The correct choice is \"B - S + L - R\". Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: B − S + L − R. B − S → B हे S चे वडील; S + L → S ही L ची आई; L − R → L हे R चे वडील. R चे वडील L, L ची आई S, S चे वडील B — अशा प्रकारे B हे R च्या वडिलांच्या आईचे वडील, म्हणजे R चा पंजोबा (वडिलांच्या बाजूचा आजोबा).",
         "category": "Aptitude",
         "topic": "Blood Relations"
       },
       {
         "id": 74,
-        "text": "Two metro trains are running for one and a half hours in opposite directions at a same speed of 264 kmph on a circular railway-track. If the distance of the track from the center-point is 23 km, then how many times will those metro trains pass each other?",
+        "text": "वर्तुळाकार रेल्वेपटरीवरून दोन मेट्रो ट्रेन परस्परांच्या विरुद्ध दिशेने ताशी 264 किमी समान वेगाने दीड तास धावत आहेत. जर केंद्रबिंदूपासूनचे पटरीचे अंतर 23 किमी असेल, तर त्या मेट्रो ट्रेन परस्परांना किती वेळा पास करतील?",
         "options": {
           "A": "4",
           "B": "5",
@@ -27670,13 +27675,13 @@
           "D": "7"
         },
         "correctAnswer": "B",
-        "explanation": "The definitive answer is 5. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: 5. सापेक्ष वेग = 264 + 264 = 528 km/h. 1.5 तासात एकत्र चाललेले अंतर = 528 × 1.5 = 792 km. परिघ = 2πr = 2 × (22/7) × 23 ≈ 144.57 km. मुलभूट भेटी = 792 ÷ 144.57 ≈ 5.48 → 5 वेळा.",
         "category": "Aptitude",
         "topic": "Time, Speed & Distance"
       },
       {
         "id": 75,
-        "text": "A can build a house alone in 15 days but B alone can build it in 10 days. A and B work on alternate days. If A works on the first day, in how many days will the house be built?",
+        "text": "A एकटा एक घर 15 दिवसात बांधू शकतो. तेच घर B एकटा 10 दिवसात बांधू शकतो. A आणि B हे एक दिवसाआड काम करीत असतील आणि A पहिल्या दिवशी काम करत असेल, तर ते घर बांधण्यासाठी किती दिवस लागतील?",
         "options": {
           "A": "12",
           "B": "13½",
@@ -27684,13 +27689,13 @@
           "D": "10⅔"
         },
         "correctAnswer": "A",
-        "explanation": "This resolves to 12. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: 12. A ची 1 दिवसाची काम = 1/15, B ची = 1/10. दोन दिवस (A, B पर्याय): 1/15 + 1/10 = 2/30 + 3/30 = 5/30 = 1/6. 6 चक्र = 12 दिवसात 6 × (1/6) = 1 (संपूर्ण काम).",
         "category": "Aptitude",
         "topic": "Time & Work"
       },
       {
         "id": 76,
-        "text": "Find the odd-man-out in the letter group series.\nXZB, DGJ, SWA, MRX, AGM",
+        "text": "अक्षरसमूह मालिकेतील विसंगत समूह ओळखा.\nXZB, DGJ, SWA, MRX, AGM",
         "options": {
           "A": "DGJ",
           "B": "SWA",
@@ -27698,13 +27703,13 @@
           "D": "MRX"
         },
         "correctAnswer": "D",
-        "explanation": "For this question, the correct option reads: MRX. Officer-cadre aspirants tend to lose marks here by over-thinking; the option that literally matches the fact in the stem is the right one.",
+        "explanation": "योग्य उत्तर: MRX. XZB (+2,−24), DGJ (+3,+3), SWA (+4,−22), AGM (+6,+6) — प्रत्येक गटात समान अंतर. MRX: M→R (+5), R→X (+6) — दुसरे अंतर +5 नसून +6; हा विसंगत गट.",
         "category": "Aptitude",
         "topic": "Analogy & Classification"
       },
       {
         "id": 77,
-        "text": "Select the correct option in place of the question mark in the given number structure.\n[Diagram: 6/2=72, 9=?, 7/6=5, with center values]",
+        "text": "दिलेल्या संख्या-संरचनेत प्रश्नार्थक चिन्हाच्या (?) जागी योग्य पर्याय निवडा.\nडावी आकृती: वर 6, बाजूला 2, तळाला 9, मध्यभागी 72\nउजवी आकृती: वर 7, बाजूला 6, तळाला 5, मध्यभागी ?",
         "options": {
           "A": "67",
           "B": "65",
@@ -27712,41 +27717,41 @@
           "D": "37"
         },
         "correctAnswer": "B",
-        "explanation": "\"65\" is the accurate option. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "योग्य उत्तर: 65. नियम — (वरचा अंक + बाजूचा अंक) × तळाचा अंक = मधले मूल्य. डावी आकृती: (6 + 2) × 9 = 72 ✓. त्याच नियमाने उजवी आकृती: (7 + 6) × 5 = 65. म्हणून ? = 65.",
         "category": "Aptitude",
         "topic": "Number & Letter Series"
       },
       {
         "id": 78,
-        "text": "Gaurav is older than Saurav but younger than Saurabh. Saurav is as old as Arnav but older than Pranav.\nWhich of the statements given below is/are correct?\na. Arnav is younger than Saurav.\nb. Arnav is older than Saurabh.\nc. Arnav is older than Pranav.\nd. Arnav is older than Gaurav.",
+        "text": "गौरव हा वयाने सौरवपेक्षा मोठा आहे परंतु सौरभपेक्षा लहान आहे. सौरव हा वयाने अर्णव एवढाच आहे परंतु तो प्रणवपेक्षा मोठा आहे.\nतर खाली दिलेल्या विधानांपैकी कोणते विधान / विधाने अचूक आहेत?\nअ. अर्णव हा सौरवपेक्षा लहान आहे.\nब. अर्णव हा सौरभपेक्षा मोठा आहे.\nक. अर्णव हा प्रणवपेक्षा मोठा आहे.\nड. अर्णव हा गौरवपेक्षा मोठा आहे.",
         "options": {
-          "A": "Only a and d",
-          "B": "Only b and c",
-          "C": "Only a",
-          "D": "Only c"
+          "A": "फक्त अ आणि ड",
+          "B": "फक्त ब आणि क",
+          "C": "फक्त अ",
+          "D": "फक्त क"
         },
         "correctAnswer": "D",
-        "explanation": "\"Only c\" is the option marked correct in the official key. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: फक्त क. क्रम: सौरभ > गौरव > सौरव = अर्णव > प्रणव. (क) अर्णव > प्रणव ✓. (अ) अर्णव < सौरव ✗ (समान). (ब) अर्णव > सौरभ ✗. (ड) अर्णव > गौरव ✗ (गौरव मोठा).",
         "category": "Aptitude",
         "topic": "Ranking & Ordering"
       },
       {
         "id": 79,
-        "text": "Six persons are sitting around a circular table. Anand is facing Heena, who is sitting to the left of Arvind and to the right of Sanjay. Suman is to the right of Arvind. Manoj is facing Arvind. If Heena and Manoj, Arvind and Sanjay mutually exchange their positions, who is now sitting next to the left of Manoj?",
+        "text": "एका वर्तुळाकार टेबलाभोवती सहा व्यक्ती बसलेल्या आहेत. आनंद हीनाच्या समोर असून, ती अरविंदच्या डाव्या बाजूला व संजयच्या उजव्या बाजूला बसलेली आहे. सुमन ही अरविंदच्या उजव्या बाजूस बसलेली आहे. मनोज अरविंदच्या समोर बसलेला आहे. जर हीना व मनोज, अरविंद आणि संजय यांनी आपसात आसनाची अदलाबदल केली, तर मनोजच्या डाव्या बाजूला शेजारी कोण बसलेला असेल?",
         "options": {
-          "A": "Sanjay",
-          "B": "Arvind",
-          "C": "Heena",
-          "D": "Suman"
+          "A": "संजय",
+          "B": "अरविंद",
+          "C": "हीना",
+          "D": "सुमन"
         },
         "correctAnswer": "B",
-        "explanation": "Arvind matches the question. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: अरविंद. 6 जण वर्तुळाकार: प्रारंभिक स्थान ठरवून (हीना अरविंदाच्या समोर, सुमन उजवीकडे, मनोज समोर) हीना↔मनोज व अरविंद↔संजय अदलाबदल केल्यावर मनोजच्या डाव्या बाजूला अरविंद बसतो.",
         "category": "Aptitude",
         "topic": "Puzzles"
       },
       {
         "id": 80,
-        "text": "If the codes given for alphabets are repeated serially for a whole sequence of alphabets then select the codes for the given words.\nA=□, B=#, C=O, D=△, E=θ\nFAIR WELL = ?",
+        "text": "वर्णाक्षरांसाठी दिलेले संकेत संपूर्ण मालिकेसाठी क्रमशः पुनरावृत्त केले असल्यास दिलेल्या शब्दाचे सांकेतिक रूप निवडा.\nA=□, B=#, C=O, D=△, E=θ\nFAIR WELL = ?",
         "options": {
           "A": "□□△OOθ##",
           "B": "□□△Oθ#△△",
@@ -27754,13 +27759,13 @@
           "D": "□□△θO#△△"
         },
         "correctAnswer": "A",
-        "explanation": "Option A — □□△OOθ## — is the right pick here. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: □□△OOθ##. A=□(1), B=#(2), C=O(3), D=△(4), E=θ(5), नंतर पुनरावृत्ती: F=□(6), A=#(7), I=△(9), R=O(18), W=O(23), E=θ(5), L=#(12). FAIR WELL = □□△OOθ##.",
         "category": "Aptitude",
         "topic": "Coding-Decoding"
       },
       {
         "id": 81,
-        "text": "While investigating about a stolen car, the police received information from different persons as follows:\na. The car number has four digits.\nb. The sum of digits of the car number is divisible by 4.\nc. The unit place digit of the car number is 4.",
+        "text": "चोरीला गेलेल्या चार चाकीचा शोध घेताना पोलिसांना तीन वेगवेगळ्या व्यक्तींकडून पुढील माहिती मिळाली:\nअ. गाडीचा क्रमांक चार अंकी आहे.\nब. गाडीच्या क्रमांकाच्या बेरजेला 4 ने भाग जातो.\nक. गाडीच्या क्रमांकाच्या एकक स्थानी 4 हा अंक आहे.",
         "options": {
           "A": "UPU 4054",
           "B": "WBB 3544",
@@ -27768,13 +27773,13 @@
           "D": "MPY 8324"
         },
         "correctAnswer": "B",
-        "explanation": "\"WBB 3544\" is what the question is looking for. This is a classic MPSC 'anchor-word' item — the stem contains one specific term (a proper noun, a date, an article number) that maps directly to only one option.",
+        "explanation": "योग्य उत्तर: WBB 3544. अटी: चार अंक, एकक स्थानी 4, बेरज 4 ने divisible. WBB 3544 → 3+5+4+4=16 (4 ने divisible), एकक 4 ✓. इतर पर्यायात बेरजा 4 ने divisible नाहीत.",
         "category": "Aptitude",
         "topic": "Puzzles"
       },
       {
         "id": 82,
-        "text": "18 teams have registered their names for the cricket competition. Every team has to play a match with another team. How many total matches will there be?",
+        "text": "एका क्रिकेट स्पर्धेसाठी वेगवेगळ्या 18 संघांनी आपले नाव नोंदविले आहे. प्रत्येक संघाने दुसऱ्या प्रत्येक संघाशी सामना खेळावयाचा आहे. तर एकूण सामने किती होतील?",
         "options": {
           "A": "179",
           "B": "163",
@@ -27782,13 +27787,13 @@
           "D": "153"
         },
         "correctAnswer": "D",
-        "explanation": "This resolves to 153. This exact fact has appeared in earlier MPSC prelims — practising the wording of the correct option is worth two to three easy marks per paper.",
+        "explanation": "योग्य उत्तर: 153. 18 संघ, प्रत्येक दुसऱ्या संघाशी एक सामना: ¹⁸C₂ = 18×17÷2 = 153. Round-robin स्पर्धेत n संघांसाठी n(n−1)/2 सामने.",
         "category": "Aptitude",
         "topic": "Probability & Statistics"
       },
       {
         "id": 83,
-        "text": "Select by using the following group of letters, the letter that comes third to the right of the letter that comes immediately to the left of the letter, that comes third to the right of the letter, immediately to the left of the letter B.\nA B C D E F G H",
+        "text": "पुढील अक्षरगट वापरून B अक्षराला लगेच डावीकडे असलेल्या अक्षराच्या उजवीकडून तिसऱ्या अक्षराला लगेच डावीकडे असलेल्या अक्षराच्या उजवीकडून तिसरे अक्षर निवडा.\nA B C D E F G H",
         "options": {
           "A": "E",
           "B": "F",
@@ -27796,13 +27801,13 @@
           "D": "H"
         },
         "correctAnswer": "B",
-        "explanation": "The correct choice is \"F\". Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: F. B चे लगेच डावे = A; A च्या उजवीकडे तिसरे = D (A→B→C→D); D चे लगेच डावे = C; C च्या उजवीकडे तिसरे = F (C→D→E→F).",
         "category": "Aptitude",
         "topic": "Ranking & Ordering"
       },
       {
         "id": 84,
-        "text": "Find the missing number in the series:\n43, 95, 167, ?, 373, 507",
+        "text": "मालिकेतील गाळलेला अंक शोधा:\n43, 95, 167, ?, 373, 507",
         "options": {
           "A": "261",
           "B": "259",
@@ -27810,13 +27815,13 @@
           "D": "257"
         },
         "correctAnswer": "A",
-        "explanation": "Correct: option A — \"261\". This kind of item rewards steady factual reading over aggressive shortcut techniques — the marks come from having read the source once, not from clever elimination.",
+        "explanation": "योग्य उत्तर: 261. फरक: 52, 72, 94, 112, 134 (प्रत्येकी +20, +22, +18, +22). 43+52=95, 95+72=167, 167+94=261, 261+112=373, 373+134=507. ? = 261.",
         "category": "Aptitude",
         "topic": "Number & Letter Series"
       },
       {
         "id": 85,
-        "text": "In the following English alphabet's letter groups series, which group will come in the place of the question mark (?)\nBZA, DYC, FXE, ?, JVI",
+        "text": "खाली दिलेल्या इंग्रजी वर्णमालेच्या अक्षर समूहाच्या श्रेणीमध्ये प्रश्नचिह्नाच्या (?) जागी कोणता समूह येईल?\nBZA, DYC, FXE, ?, JVI",
         "options": {
           "A": "WHG",
           "B": "HUG",
@@ -27824,13 +27829,13 @@
           "D": "UHG"
         },
         "correctAnswer": "C",
-        "explanation": "This one comes to HWG. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: HWG. BZA → DYC → FXE → ?: पहिले अक्षर +2 (B→D→F→H), मधले −1 (Z→Y→X→W), शेवटचे +2 (A→C→E→G). JVI पुढे +2,−1,+2 पॅटर्न पूर्ण.",
         "category": "Aptitude",
         "topic": "Number & Letter Series"
       },
       {
         "id": 86,
-        "text": "Match the correct pairs of Act and its Year for the environmental protection.\na. Air (Prevention and Control of Pollution) - I. 1974\nb. Wild Life Protection - II. 1980\nc. Water (Prevention and Control of Pollution) - III. 1981\nd. Forest Conservation - IV. 1972",
+        "text": "पर्यावरण संरक्षणासाठी करण्यात आलेले कायदे व त्यांचे वर्ष यांच्या योग्य जोड्या लावा.\nअ. हवा (प्रतिबंध व प्रदुषण नियंत्रण) - I. 1974\nब. वन्यजीव (संरक्षण) - II. 1980\nक. जल (प्रतिबंध व प्रदुषण नियंत्रण) - III. 1981\nड. वनसंवर्धन - IV. 1972",
         "options": {
           "A": "IV, II, III, I",
           "B": "II, I, IV, III",
@@ -27838,41 +27843,41 @@
           "D": "I, III, II, IV"
         },
         "correctAnswer": "C",
-        "explanation": "Reading the stem carefully, the answer is III, IV, I, II. The year 1974 anchors this question — the correct option is the fact that dates to that year. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. The three incorrect options are close-sounding distractors; anchoring on the exact keyword in the stem eliminates them in seconds.",
+        "explanation": "योग्य उत्तर: III, IV, I, II. जल (प्रतिबंध व प्रदुषण नियंत्रण) — 1974 (III); वन्यजीव (संरक्षण) — 1972 (IV); हवा (प्रतिबंध व प्रदुषण नियंत्रण) — 1981 (I); वनसंवर्धन — 1980 (II). पर्यावरण कायदे व त्यांची वर्षे अशी जोड्या.",
         "category": "Environment",
         "topic": "Environmental Laws & Conventions"
       },
       {
         "id": 87,
-        "text": "Kyoto Conference is concerned with:",
+        "text": "क्योटो परिषद _______ शी संबंधित आहे.",
         "options": {
-          "A": "limiting production of SO2",
-          "B": "developing alternatives to ozone depleting substances",
-          "C": "reducing emission of greenhouse gases",
-          "D": "reduction in use of energy"
+          "A": "SO2 च्या उत्पादनावर मर्यादा घालणे",
+          "B": "ओझोन क्षय थांबविण्यासाठी पर्यायी पदार्थाचा विकास करणे",
+          "C": "हरितगृह वायूंचे उत्सर्जन कमी करणे",
+          "D": "ऊर्जेचा वापर कमी करणे"
         },
         "correctAnswer": "C",
-        "explanation": "\"reducing emission of greenhouse gases\" is what the question is looking for. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: हरितगृह वायूंचे उत्सर्जन कमी करणे. 1997 मधील क्योटो प्रोटोकॉल (जपान) हरितगृह वायू (CO₂, CH₄, N₂O, HFCs इ.) उत्सर्जन कमी करण्यासाठी विकसनशील व विकसित देशांमध्ये बंधनकारक लक्ष्ये ठरवते. SO₂ किंवा ओझोन-क्षयकारी पदार्थ यापेक्षा वेगळे विषय.",
         "category": "Environment",
         "topic": "Climate Change & Global Warming"
       },
       {
         "id": 88,
-        "text": "Greenhouse effect is enhanced in the environment by the _______ gas.",
+        "text": "पर्यावरणात _______ वायूमुळे हरितगृह परिणाम वाढतो.",
         "options": {
           "A": "CO2",
           "B": "CO",
-          "C": "Fluorocarbons",
+          "C": "Fluorocarbons (फ्लुओरोकार्बन)",
           "D": "NO2"
         },
         "correctAnswer": "A",
-        "explanation": "This one comes to CO2. Note that the wrong options carry closely related terminology; a five-second sanity check against the stem is enough to eliminate them.",
+        "explanation": "योग्य उत्तर: CO2. कार्बन डायऑक्साइड (CO₂) हा सर्वात महत्त्वाचा हरितगृह वायू आहे; तो सूर्याचे infrared विकिरण शोषून पृथ्वीचे सरासरी तापमान वाढवतो. CO, NO₂, fluorocarbons देखील पर्यावरणीय प्रभाव ठेवतात, पण हरितगृह परिणामाचा मुख्य योगदान CO₂ चा.",
         "category": "Environment",
         "topic": "Climate Change & Global Warming"
       },
       {
         "id": 89,
-        "text": "Match the following pairs:\na. Chipko Movement - I. Fertilizer Industry\nb. Kerala Shastra Sahitya Parishad - II. Deforestation\nc. Soil Conservation Movement - III. Hydro Electricity Generating Project\nd. Bombay Protecting Committee - IV. Tawa River Project",
+        "text": "खालील जोड्या जुळवा:\nअ. चिपको आंदोलन - I. खत कारखाना\nब. केरळ शास्त्र साहित्य परिषद - II. वृक्षतोड\nक. मिट्टी बचाव आंदोलन - III. जलविद्युत निर्मिती केंद्र\nड. बॉम्बे बचाव कमिटी - IV. तवा नदी प्रकल्प",
         "options": {
           "A": "II, III, IV, I",
           "B": "I, IV, III, II",
@@ -27880,55 +27885,55 @@
           "D": "III, II, I, IV"
         },
         "correctAnswer": "A",
-        "explanation": "The right answer is II, III, IV, I (option A). The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: II, III, IV, I. चिपको — वृक्षतोड (II); केरळ शास्त्र साहित्य परिषद — जलविद्युत केंद्र (III); मिट्टी बचाव — तवा नदी (IV); बॉम्बे बचाव — खत कारखाना (I). हे भारतीय पर्यावरणीय आंदोलने व त्यांचे संबंधित प्रकल्प.",
         "category": "Environment",
         "topic": "Biodiversity & Conservation"
       },
       {
         "id": 90,
-        "text": "Depletion of ozone layer is due to oxide of",
+        "text": "ओझोन थराचा क्षय _______ च्या ऑक्साईडमुळे होतो.",
         "options": {
-          "A": "Carbon",
-          "B": "Phosphorus",
-          "C": "Nitrogen",
-          "D": "None of the above"
+          "A": "कार्बन",
+          "B": "फॉस्फरस",
+          "C": "नाइट्रोजन",
+          "D": "वरीलपैकी कोणतेही नाही"
         },
         "correctAnswer": "C",
-        "explanation": "\"Nitrogen\" is the accurate option. The examiner rewards precision on this item — every option is engineered to feel plausible, but only the marked one matches the exact wording of the source document.",
+        "explanation": "योग्य उत्तर: नाइट्रोजन. समताप मंडलातील ओझोन (O₃) चा क्षय nitrogen oxides (NO, NO₂ — वाहन व औद्योगिक उत्सर्ग) आणि CFCs मुळे होतो. NO₂ UV प्रकाशात NO + O मुक्त करून ओझोन विनाशास कारणीभूत.",
         "category": "Environment",
         "topic": "Pollution"
       },
       {
         "id": 91,
-        "text": "Abel Prize is related to the field of",
+        "text": "अबेल पारितोषिक _______ या क्षेत्राशी संबंधित आहे.",
         "options": {
-          "A": "Electronics",
-          "B": "Mathematics",
-          "C": "Mechanical Engineering",
-          "D": "Physics"
+          "A": "इलेक्ट्रॉनिक",
+          "B": "गणित",
+          "C": "यांत्रिक अभियांत्रिकी (मेकॅनिकल इंजिनियरिंग)",
+          "D": "भौतिक शास्त्र"
         },
         "correctAnswer": "B",
-        "explanation": "The paper's official answer is Mathematics. Because the underlying fact is short and specific, this item is fully recallable — the only trap is misreading the stem in a hurry.",
+        "explanation": "योग्य उत्तर: गणित. Abel Prize (अबेल पारितोषिक) नॉर्वेमधील Abel Prize समिती द्वारे गणितातील उत्कृष्ट योगदानासाठी दिला जातो; 2003 पासून सुरू. भौतिकशास्त्र, अभियांत्रिकी किंवा इलेक्ट्रॉनिक्सशी संबंधित नाही.",
         "category": "Current Affairs",
         "topic": "Awards & Honours"
       },
       {
         "id": 92,
-        "text": "The world's second largest sitting statue, the Statue of Equality has been erected in his memory.\na. Ramakrishna Paramhansa\nb. Ramdas Swami\nc. Aryabhatta\nd. Saint Ramanujacharya",
+        "text": "जगातील सर्वात मोठा दुसऱ्या क्रमांकाचा बैठा पुतळा, स्टॅच्यू ऑफ इक्वॅलिटी, यांच्या स्मृतीप्रीत्यर्थ उभारण्यात आला आहे.\nअ. रामकृष्ण परमहंस\nब. रामदास स्वामी\nक. आर्यभट्ट\nड. संत रामानुजाचार्य",
         "options": {
-          "A": "Only a",
-          "B": "Only c",
-          "C": "Only b",
-          "D": "Only d"
+          "A": "फक्त अ",
+          "B": "फक्त क",
+          "C": "फक्त ब",
+          "D": "फक्त ड"
         },
         "correctAnswer": "D",
-        "explanation": "Working through the options, Only d is the correct one. The Krishna river rises at Mahabaleshwar in the Sahyadri and flows east across Maharashtra, Karnataka, Telangana and Andhra Pradesh before draining into the Bay of Bengal. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: फक्त ड. Statue of Equality (समता की मूर्ति) — हैदराबादजवळ 216 फूट उंचाचा, संत रामानुजाचार्य (1017–1137) यांच्या स्मृतीप्रीत्यार्थ उभारलेला; जगातील दुसऱ्या क्रमांकाचा बैठा पुतळा. रामकृष्ण, रामदास, आर्यभट्ट यांच्याशी संबंध नाही.",
         "category": "Current Affairs",
         "topic": "Other"
       },
       {
         "id": 93,
-        "text": "Who is the author of the book 'By Many a Happy Accident: Recollections of a Life'?",
+        "text": "'By Many a Happy Accident: Recollections of a Life' ह्या पुस्तकाचे लेखक कोण आहे?",
         "options": {
           "A": "Priyanka Chopra Jonas",
           "B": "M. Hamid Ansari",
@@ -27936,27 +27941,27 @@
           "D": "Y. Mrunal"
         },
         "correctAnswer": "B",
-        "explanation": "This one comes to M. Hamid Ansari. For MPSC prelims, one line of revision is enough to lock this fact into memory — add it to your one-page factual notebook.",
+        "explanation": "योग्य उत्तर: M. Hamid Ansari. 'By Many a Happy Accident: Recollections of a Life' हे भारताचे माजी उपराष्ट्रपती M. Hamid Ansari यांचे आत्मचरित्र (2020). त्यांचे 50 वर्षांचे राजनैतिक-सांस्कृतिक अनुभव.",
         "category": "Current Affairs",
         "topic": "Persons in News & Books"
       },
       {
         "id": 94,
-        "text": "Consider the following statements:\na. Maharashtra Legislative Assembly passed 'Shakti' bill in December 2021.\nb. There is a provision of death penalty to rapist.\nc. There is a provision of 10 years imprisonment to acid attacker on women.\nd. This bill was submitted in the Assembly by the Finance Minister.\nWhich of the following statements are correct?",
+        "text": "खालील विधाने विचारात घ्या:\nअ. महाराष्ट्र विधानसभेने डिसेंबर 2021 मध्ये 'शक्ती' विधेयक मंजूर केले.\nब. यामध्ये बलात्काऱ्यास फाशीच्या शिक्षेची तरतूद आहे.\nक. महिलांवर असिड हल्ला करणाऱ्यास 10 वर्षाच्या शिक्षेची तरतूद आहे.\nड. विधानसभेत अर्थमंत्र्यांनी हे विधेयक सादर केले.\nयापैकी कोणती विधाने बरोबर आहेत?",
         "options": {
-          "A": "Only a, b and c",
-          "B": "Only a and b",
-          "C": "Only c and d",
-          "D": "Only a and d"
+          "A": "फक्त अ, ब आणि क",
+          "B": "फक्त अ आणि ब",
+          "C": "फक्त क आणि ड",
+          "D": "फक्त अ आणि ड"
         },
         "correctAnswer": "B",
-        "explanation": "The intended answer is Only a and b. The year 2021 anchors this question — the correct option is the fact that dates to that year. In MPSC PYQ analysis, this item type accounts for the largest cluster of 'easy marks lost due to misreading' — slow down the stem, and the option leaps out.",
+        "explanation": "योग्य उत्तर: फक्त अ आणि ब. डिसेंबर 2021 मध्ये महाराष्ट्र विधानसभेने 'शक्ती' कायदा मंजूर; बलात्कारास फाशीची तरतूद (अ, ब) बरोबर. अेसिड हल्ल्यासाठी 10 वर्षे शिक्षेची (क) व अर्थमंत्र्याने सादर (ड) — या दोन्ही चुकीच.",
         "category": "Current Affairs",
         "topic": "Other"
       },
       {
         "id": 95,
-        "text": "Match the pairs:\na. Sinopharm - I. America\nb. Covishield - II. Russia\nc. Sputnik - III. China\nd. Moderna - IV. India",
+        "text": "जोड्या जुळवा:\nअ. सायनोफार्म - I. अमेरिका\nब. कोविशिल्ड - II. रशिया\nक. स्पूटनिक - III. चीन\nड. मॉडर्ना - IV. भारत",
         "options": {
           "A": "II, IV, I, III",
           "B": "III, IV, II, I",
@@ -27964,13 +27969,13 @@
           "D": "I, IV, II, III"
         },
         "correctAnswer": "B",
-        "explanation": "\"III, IV, II, I\" is what the question is looking for. RNA (ribonucleic acid) is usually single-stranded and includes three main types — mRNA, tRNA and rRNA — that together carry out protein synthesis. The correct pairing above matches every column-A entry with its column-B partner as marked in the official key. The safest way to lock this item into recall is to write the correct option next to its associated year or body in your revision notebook and skim it weekly.",
+        "explanation": "योग्य उत्तर: III, IV, II, I. सायनोफार्म — चीन (III); Covishield — भारत (IV); Sputnik — रशिया (II); Moderna — अमेरिका (I). COVID-19 लस व त्यांचे उत्पादक देश.",
         "category": "Current Affairs",
         "topic": "Other"
       },
       {
         "id": 96,
-        "text": "Who received the Nobel Peace Prize in 2021?",
+        "text": "2021 मध्ये शांततेचे नोबेल पारितोषिक कोणास मिळाले?",
         "options": {
           "A": "David Card and Joshua Angrist",
           "B": "Maria Ressa and Dmitry Muratov",
@@ -27978,63 +27983,64 @@
           "D": "Kamala Harris"
         },
         "correctAnswer": "B",
-        "explanation": "Option B carries the right answer — Maria Ressa and Dmitry Muratov. The year 2021 anchors this question — the correct option is the fact that dates to that year. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: Maria Ressa and Dmitry Muratov. 2021 चे शांतता नोबेल: Maria Ressa (फिलीपीन्स, Rappler) व Dmitry Muratov (रशिया, Novaya Gazeta) — पत्रकारित्व व अभिव्यक्ती स्वातंत्त्यासाठी.",
         "category": "Current Affairs",
         "topic": "Awards & Honours"
       },
       {
         "id": 97,
-        "text": "In March 2021, Lok Sabha, Rajya Sabha TV were merged to form which TV?",
+        "text": "मार्च 2021 मध्ये लोकसभा, राज्यसभा टीव्ही कोणत्या टीव्हीमध्ये विलीन करण्यात आले?",
         "options": {
-          "A": "DD National TV",
-          "B": "Hindustan TV",
-          "C": "India TV",
-          "D": "Sansad TV"
+          "A": "DD National TV (डी.डी. नॅशनल टीव्ही)",
+          "B": "Hindustan TV (हिंदुस्थान टीव्ही)",
+          "C": "India TV (इंडिया टीव्ही)",
+          "D": "Sansad TV (संसद टीव्ही)"
         },
         "correctAnswer": "D",
-        "explanation": "Sansad TV matches the question. The year 2021 anchors this question — the correct option is the fact that dates to that year. A helpful anchoring habit for questions of this type is to underline the year, proper noun or numeric anchor in the stem before you scan the options.",
+        "explanation": "योग्य उत्तर: Sansad TV (संसद टीव्ही). मार्च 2021 मध्ये Lok Sabha TV व Rajya Sabha TV एकत्रित करून Sansad TV स्थापना; DD National किंवा इतर खासगी चॅनेल्स नव्हे.",
         "category": "Current Affairs",
         "topic": "Other"
       },
       {
         "id": 98,
-        "text": "Consider the following statements about 'Dadasaheb Phalke' Award:\na. Sponsored by the Directorate of Film Festivals.\nb. It is given for outstanding contribution to the development of Indian Cinema.\nc. Prize amount is Rs. 1 lakh.\nd. Award for the year 2021 has been given to Rajinikanth.\nWhich of the above statements are correct?",
+        "text": "दादासाहेब फाळके पुरस्काराबाबत खालील विधाने विचारात घ्या:\nअ. हा पुरस्कार Directorate of Film Festivals (डायरेक्टोरेट ऑफ फिल्म फेस्टिव्हल्स) द्वारे प्रायोजित आहे.\nब. तो भारतीय सिनेमाच्या विकासातील योगदानाबद्दल दिला जातो.\nक. या पुरस्काराचा निधी 1 लाख रुपये आहे.\nड. वर्ष 2021 चा पुरस्कार रजनीकांत यांना प्रदान करण्यात आला.\nवरीलपैकी कोणती विधाने बरोबर आहेत?",
         "options": {
-          "A": "Only a, b and c",
-          "B": "Only b, c and d",
-          "C": "Only a, b and d",
-          "D": "Only a, c and d"
+          "A": "फक्त अ, ब आणि क",
+          "B": "फक्त ब, क आणि ड",
+          "C": "फक्त अ, ब आणि ड",
+          "D": "फक्त अ, क आणि ड"
         },
         "correctAnswer": "A",
-        "explanation": "The intended answer is Only a, b and c. The year 2021 anchors this question — the correct option is the fact that dates to that year. Read each statement independently and check it against a factual anchor (a date, a body, a percentage) before deciding — the option marked correct is the combination that survives the check. MPSC's editorial habit for this topic is to test the same fact in two-year cycles, so seeing this once is often enough to catch it again.",
+        "explanation": "हा प्रश्न आयोगाने रद्द केला आहे, त्यामुळे सर्व उमेदवारांना यासाठी गुण देण्यात आले.",
         "category": "Current Affairs",
-        "topic": "Awards & Honours"
+        "topic": "Awards & Honours",
+        "cancelled": true
       },
       {
         "id": 99,
-        "text": "Consider the following statements about New Education Policy - 2020 (NEP - 2020). Which of the statements is not correct?",
+        "text": "नवीन शैक्षणिक धोरण 2020 (NEP - 2020) बाबत खालीलपैकी कोणते विधान बरोबर नाही?",
         "options": {
-          "A": "Approved in July 2020.",
-          "B": "Its aim is to make India a global knowledge superpower.",
-          "C": "It will replace Policy on Education 1986 (NPE - 1986).",
-          "D": "Instead of 10 + 2 there will be 7 + 4 + 3 + 1 pattern."
+          "A": "जुलै 2020 मध्ये मान्य करण्यात आली.",
+          "B": "तिचा उद्देश भारताला जागतिक ज्ञान महाशक्ती बनविणे आहे.",
+          "C": "NPE - 1986 ची जागा घेईल.",
+          "D": "10 + 2 ऐवजी 7 + 4 + 3 + 1 ची पद्धत असेल."
         },
         "correctAnswer": "D",
-        "explanation": "\"Instead of 10 + 2 there will be 7 + 4 + 3 + 1 pattern.\" is the accurate option. The year 2020 anchors this question — the correct option is the fact that dates to that year. Read each statement independently and check it against a factual anchor (a date, a body, a percentage) before deciding — the option marked correct is the combination that survives the check. The MPSC pattern for questions of this type is to plant one exact fact and three plausible-looking alternatives; the fact-based option is always the answer.",
+        "explanation": "योग्य उत्तर: 10 + 2 ऐवजी 7 + 4 + 3 + 1 ची पद्धत असेल. NEP 2020 (जुलै 2020) 10+2 ऐवजी 5+3+3+4 (21 वर्षे शालेय शिक्षण) आणते; 7+4+3+1 चुकीच वाक्य आहे. NPE 1986 ची जागा घेते; उद्देश भारताला जागतिक ज्ञान महाशक्ती बनविणे.",
         "category": "Current Affairs",
         "topic": "Government Schemes & Yojanas"
       },
       {
         "id": 100,
-        "text": "Which of the following statements is correct about the medal tally at the Tokyo 2020 Olympics?\na. Host country Japan secured first position.\nb. India secured 48th position with total seven medals.\nc. India secured three Gold Medals.",
+        "text": "टोकियो 2020 ऑलिम्पिक खेळातील पदकाबाबत खालीलपैकी कोणते विधान बरोबर आहे?\nअ. यजमान देश जपानने प्रथम स्थान प्राप्त केले.\nब. भारताने सात पदकासह 48 वे स्थान प्राप्त केले.\nक. भारताने तीन सुवर्णपदके ग्राह्य केली.",
         "options": {
-          "A": "Only a",
-          "B": "Only b",
-          "C": "Only c",
-          "D": "None of the above"
+          "A": "फक्त अ",
+          "B": "फक्त ब",
+          "C": "फक्त क",
+          "D": "वरीलपैकी एकही नाही"
         },
         "correctAnswer": "B",
-        "explanation": "The official Set A key selects Only b. The year 2020 anchors this question — the correct option is the fact that dates to that year. Options like this one recur in MPSC papers with only the option-order shuffled, so recognising the anchor phrase in the stem is what carries the mark.",
+        "explanation": "योग्य उत्तर: फक्त ब. Tokyo 2020 (2021): यजमान देश प्रथम नव्हे (अ चुकीच). भारताने 7 पदके (1 सुवर्ण-नेराज चोपडा, 2 रुपाली, 4 कंस्य) मिळवून 48वे स्थान (ब बरोबर). 3 सुवर्ण (क) चुकीच.",
         "category": "Current Affairs",
         "topic": "Sports"
       }
