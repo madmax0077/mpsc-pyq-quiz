@@ -5,6 +5,7 @@ import type { OptionKey, Quiz } from "@/lib/types";
 import { normalizeQuiz } from "@/lib/questionUtils";
 import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { getAllQuizzes } from "@/lib/storage";
+import AdUnit from "@/components/AdUnit";
 import {
   MOCK_CONFIGS,
   NEGATIVE_MARK,
@@ -17,7 +18,17 @@ import {
   type MockText,
 } from "@/lib/mockTest";
 
-type Stage = "select" | "running" | "result";
+type Stage = "select" | "running" | "reveal" | "result";
+
+/**
+ * Two display ad units shown on the interstitial before results.
+ * Replace these with the real data-ad-slot IDs from
+ * AdSense → Ads → By ad unit → Display ads.
+ */
+const RESULT_AD_SLOTS = ["5827404689", "2086515932"] as const;
+
+/** Seconds the user waits on the ad interstitial before results unlock. */
+const REVEAL_SECONDS = 5;
 
 interface MockTestViewProps {
   onExit: () => void;
@@ -116,6 +127,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   const [remaining, setRemaining] = useState(0);
   const [result, setResult] = useState<MockScore | null>(null);
   const [confirmSubmit, setConfirmSubmit] = useState(false);
+  const [revealLeft, setRevealLeft] = useState(REVEAL_SECONDS);
   const submittedRef = useRef(false);
 
   // Load the merged quiz catalog once.
@@ -141,9 +153,17 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     if (submittedRef.current) return;
     submittedRef.current = true;
     setResult(scoreMock(questions, ans));
-    setStage("result");
+    setRevealLeft(REVEAL_SECONDS);
+    setStage("reveal");
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  // Countdown on the ad interstitial before the result unlocks.
+  useEffect(() => {
+    if (stage !== "reveal" || revealLeft <= 0) return;
+    const id = setTimeout(() => setRevealLeft((s) => s - 1), 1000);
+    return () => clearTimeout(id);
+  }, [stage, revealLeft]);
 
   // Countdown timer while running.
   useEffect(() => {
@@ -253,6 +273,44 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+    );
+  }
+
+  /* ---------------------------- REVEAL STAGE ------------------------------ */
+  if (stage === "reveal" && result && config) {
+    const ready = revealLeft <= 0;
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+        <div className="rounded-3xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-violet-50 p-6 text-center shadow-sm dark:border-indigo-800 dark:from-indigo-950/40 dark:to-violet-950/40">
+          <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-300">
+            {config.label}
+          </p>
+          <h2 className="mt-2 text-2xl font-extrabold text-slate-900 dark:text-slate-100">
+            Your result is ready!
+          </h2>
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+            {ready
+              ? "Tap below to see your detailed scorecard."
+              : `Preparing your scorecard… please wait ${revealLeft}s.`}
+          </p>
+        </div>
+
+        <AdUnit slot={RESULT_AD_SLOTS[0]} className="mt-6" minHeight={250} />
+        <AdUnit slot={RESULT_AD_SLOTS[1]} className="mt-6" minHeight={250} />
+
+        <div className="mt-6 flex justify-center">
+          <button
+            onClick={() => {
+              setStage("result");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            disabled={!ready}
+            className="rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            {ready ? "View my result" : `View my result in ${revealLeft}s`}
+          </button>
         </div>
       </div>
     );
@@ -385,30 +443,32 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-6 sm:px-6">
         {/* Sticky status bar */}
-        <div className="sticky top-2 z-10 mb-5 flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/95 px-4 py-3 shadow-sm backdrop-blur dark:border-slate-700 dark:bg-slate-800/95">
-          <div className="min-w-0">
+        <div className="sticky top-2 z-10 mb-5 flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/95 px-4 py-2.5 shadow-sm backdrop-blur dark:border-slate-700 dark:bg-slate-800/95">
+          <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-bold text-slate-800 dark:text-slate-100">{config.shortLabel}</p>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               Answered {answeredCount}/{test.length}
             </p>
           </div>
-          <div
-            className={
-              "rounded-xl px-3 py-1.5 text-center font-mono text-lg font-bold tabular-nums " +
-              (lowTime
-                ? "bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300"
-                : "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300")
-            }
-            aria-live="polite"
-          >
-            {formatTime(remaining)}
+          <div className="flex shrink-0 items-center gap-2">
+            <div
+              className={
+                "rounded-lg px-2 py-1 text-center font-mono text-sm font-bold tabular-nums " +
+                (lowTime
+                  ? "bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300"
+                  : "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300")
+              }
+              aria-live="polite"
+            >
+              {formatTime(remaining)}
+            </div>
+            <button
+              onClick={() => setConfirmSubmit(true)}
+              className="rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700"
+            >
+              Submit
+            </button>
           </div>
-          <button
-            onClick={() => setConfirmSubmit(true)}
-            className="shrink-0 rounded-xl bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700"
-          >
-            Submit
-          </button>
         </div>
 
         {/* Current question (bilingual) */}
@@ -467,7 +527,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
             <span className="flex items-center gap-1"><span className="inline-block h-3 w-3 rounded bg-emerald-500" /> Answered</span>
             <span className="flex items-center gap-1"><span className="inline-block h-3 w-3 rounded bg-slate-200 dark:bg-slate-600" /> Not answered</span>
           </div>
-          <div className="grid grid-cols-8 gap-1.5 sm:grid-cols-10">
+          <div className="flex flex-wrap gap-1">
             {test.map((item) => {
               const done = !!answers[item.key];
               const isCurrent = item.key === current;
@@ -476,7 +536,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
                   key={item.key}
                   onClick={() => setCurrent(item.key)}
                   className={
-                    "aspect-square rounded-md text-xs font-bold transition-colors " +
+                    "flex h-7 w-7 items-center justify-center rounded text-[11px] font-bold transition-colors " +
                     (isCurrent ? "ring-2 ring-indigo-500 ring-offset-1 dark:ring-offset-slate-800 " : "") +
                     (done
                       ? "bg-emerald-500 text-white"

@@ -69,6 +69,7 @@ const LEGACY_SITEMAP_ENTRIES: SitemapEntryConfig[] = [
 
 const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
   { path: "/?mode=leaderboard", changeFrequency: "daily", priority: 0.9 },
+  { path: "/?mode=mock", changeFrequency: "weekly", priority: 0.9 },
 ];
 
 function toAbsoluteUrl(path: string): string {

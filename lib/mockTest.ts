@@ -53,7 +53,7 @@ export const MOCK_CONFIGS: MockConfig[] = [
   {
     id: "group-b",
     label: "GS Combine Group B Prelim",
-    shortLabel: "GS Group B",
+    shortLabel: "GS Combine Group B",
     durationMinutes: 60,
     description:
       "General Studies + intelligence-test pattern for the MPSC Combine Group B preliminary exam, including an aptitude/reasoning section.",
@@ -71,7 +71,7 @@ export const MOCK_CONFIGS: MockConfig[] = [
   {
     id: "group-c",
     label: "GS Combine Group C Prelim",
-    shortLabel: "GS Group C",
+    shortLabel: "GS Combine Group C",
     durationMinutes: 60,
     description:
       "General Studies + intelligence-test pattern for the MPSC Combine Group C preliminary exam, including an aptitude/reasoning section.",
@@ -251,7 +251,10 @@ export function buildMockTest(quizzes: Quiz[], config: MockConfig): BuildResult 
     if (take.length < wanted) shortfalls.push({ category: cat, wanted, got: take.length });
   }
 
-  const questions: MockQuestion[] = shuffle(picked).map((item, idx) => ({
+  // Keep the real-paper subject order (blueprint order). Questions are already
+  // randomised WITHIN each subject above; we do NOT shuffle across subjects, so
+  // the paper flows History → … → Aptitude → Current Affairs like the original.
+  const questions: MockQuestion[] = picked.map((item, idx) => ({
     key: idx + 1,
     questionId: item.id,
     category: item.category,
