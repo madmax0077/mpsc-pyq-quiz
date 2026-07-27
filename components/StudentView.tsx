@@ -15,8 +15,16 @@ import ShareButton from "./ShareButton";
 import Confetti from "./Confetti";
 import Analytics from "./Analytics";
 import SearchBar, { type SearchNavigatePayload } from "./SearchBar";
+import AdUnit from "./AdUnit";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
+
+/**
+ * Reusable in-content AdSense slot ("in-content-universal"). Rendered once at
+ * the bottom of the first question page across every quiz section
+ * (Subject Wise, Topic Wise, Topic Tests, RTO AMVI, GK Marathon, Question Set).
+ */
+const QUIZ_BOTTOM_AD_SLOT = "9336007499";
 
 const REGULAR_QUIZ_PAGE_SIZE = 10;
 const CATEGORY_QUIZ_PAGE_SIZE = 5;
@@ -1650,6 +1658,14 @@ export default function StudentView({
             </div>
           )}
         </>
+      )}
+
+      {/* In-content ad — first question page only, clearly separated from the
+          submit/nav controls above to avoid accidental clicks. */}
+      {currentPage === 0 && (
+        <div className="mt-10 border-t border-slate-200 pt-8 dark:border-slate-700">
+          <AdUnit slot={QUIZ_BOTTOM_AD_SLOT} />
+        </div>
       )}
     </div>
   );
