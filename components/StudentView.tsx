@@ -1500,6 +1500,14 @@ export default function StudentView({
         })}
       </div>
 
+      {/* In-content ad — directly below the last question on the first page
+          only, separated from the questions above to avoid accidental clicks. */}
+      {currentPage === 0 && (
+        <div className="mt-6 border-t border-slate-200 pt-6 dark:border-slate-700">
+          <AdUnit slot={QUIZ_BOTTOM_AD_SLOT} />
+        </div>
+      )}
+
       {/* Pagination - only for regular quizzes */}
       {!isCategoryQuiz && totalPages > 1 && (
         <div className="flex items-center justify-center gap-1.5 sm:gap-2 overflow-x-auto px-1 py-1">
@@ -1658,14 +1666,6 @@ export default function StudentView({
             </div>
           )}
         </>
-      )}
-
-      {/* In-content ad — first question page only, clearly separated from the
-          submit/nav controls above to avoid accidental clicks. */}
-      {currentPage === 0 && (
-        <div className="mt-10 border-t border-slate-200 pt-8 dark:border-slate-700">
-          <AdUnit slot={QUIZ_BOTTOM_AD_SLOT} />
-        </div>
       )}
     </div>
   );
