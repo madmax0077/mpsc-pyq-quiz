@@ -7,7 +7,7 @@ import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 import MockTestView from "@/components/MockTestView";
-import AdUnit from "@/components/AdUnit";
+import DisplayAd from "@/components/DisplayAd";
 
 type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi" | "mock";
 
@@ -475,7 +475,7 @@ export default function HomeClient() {
 
               {/* In-flow ad — centered, below the Topic Tests (non-PYQ) section */}
               <div className="sm:col-span-2">
-                <AdUnit slot={LANDING_AD_SLOT} minHeight={250} className="w-full" />
+                <DisplayAd adsenseSlot={LANDING_AD_SLOT} ezoicKey="landing" minHeight={250} className="w-full" />
               </div>
 
               {/* GK 2025-26 — last 6 months current affairs */}

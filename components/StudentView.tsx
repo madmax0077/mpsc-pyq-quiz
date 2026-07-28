@@ -15,7 +15,7 @@ import ShareButton from "./ShareButton";
 import Confetti from "./Confetti";
 import Analytics from "./Analytics";
 import SearchBar, { type SearchNavigatePayload } from "./SearchBar";
-import AdUnit from "./AdUnit";
+import DisplayAd from "./DisplayAd";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
@@ -1504,7 +1504,7 @@ export default function StudentView({
           only, separated from the questions above to avoid accidental clicks. */}
       {currentPage === 0 && (
         <div className="mt-6 border-t border-slate-200 pt-6 dark:border-slate-700">
-          <AdUnit slot={QUIZ_BOTTOM_AD_SLOT} />
+          <DisplayAd adsenseSlot={QUIZ_BOTTOM_AD_SLOT} ezoicKey="quizBottom" />
         </div>
       )}
 

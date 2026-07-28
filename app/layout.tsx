@@ -5,6 +5,7 @@ import { Inter, Noto_Sans_Devanagari, Noto_Serif_Devanagari } from "next/font/go
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 import { getQuizMeta } from "@/lib/quizMeta";
+import { IS_EZOIC, ADSENSE_CLIENT } from "@/lib/adsConfig";
 
 /**
  * Site-wide typography
@@ -314,19 +315,34 @@ export default function RootLayout({
           }}
         />
         {/*
-          Google AdSense loader — Auto Ads.
-          Site was approved on 20 July 2026 (attempt 9).  With Auto Ads
-          enabled from AdSense -> Ads -> By site -> mpscs.in, Google
-          picks placements automatically from a single loader script; no
-          per-slot <ins> tags or data-ad-slot IDs are needed.  Publisher
-          ID is also mirrored in /ads.txt and the google-adsense-account
-          meta tag above.
+          Ezoic connection + analytics scripts.
+          Always present so Ezoic can DETECT the integration and connect the
+          site. These serve NO ads on their own — Ezoic only fills placeholders
+          we explicitly show (none are configured yet), so this is safe to run
+          alongside AdSense during setup with no double-serving.
         */}
+        <script async src="//www.ezojs.com/ezoic/sa.min.js" />
         <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5084738834329206"
-          crossOrigin="anonymous"
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.ezstandalone=window.ezstandalone||{};ezstandalone.cmd=ezstandalone.cmd||[];",
+          }}
         />
+        <script async src="//ezoicanalytics.com/analytics.js" />
+
+        {/*
+          Google AdSense loader — Auto Ads. Stays ON while provider is
+          "adsense" (current). When we later switch NEXT_PUBLIC_AD_PROVIDER to
+          "ezoic", this is dropped and Auto Ads must be turned OFF in the
+          AdSense dashboard so the two systems never double-serve.
+        */}
+        {!IS_EZOIC && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+          />
+        )}
       </head>
       <body className="font-sans dark:bg-slate-900">
         <AuthProvider>{children}</AuthProvider>

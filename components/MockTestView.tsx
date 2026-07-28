@@ -5,7 +5,7 @@ import type { OptionKey, Quiz } from "@/lib/types";
 import { normalizeQuiz } from "@/lib/questionUtils";
 import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { getAllQuizzes } from "@/lib/storage";
-import AdUnit from "@/components/AdUnit";
+import DisplayAd from "@/components/DisplayAd";
 import {
   MOCK_CONFIGS,
   NEGATIVE_MARK,
@@ -307,7 +307,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
           </p>
         </div>
 
-        <AdUnit slot={RESULT_AD_SLOT} className="mt-6" minHeight={250} />
+        <DisplayAd adsenseSlot={RESULT_AD_SLOT} ezoicKey="mockResult" className="mt-6" minHeight={250} />
 
         {/* Clear separation from the ads to avoid accidental clicks (AdSense policy). */}
         <div className="mt-10 flex justify-center border-t border-slate-100 pt-8 dark:border-slate-800">
