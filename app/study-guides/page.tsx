@@ -53,6 +53,22 @@ const GUIDES = [
     minutes: 12,
   },
   {
+    href: "/study-guides/mpsc-group-c-syllabus",
+    emoji: "📝",
+    title: "MPSC Group C Syllabus",
+    blurb:
+      "Complete Group C Combined syllabus and exam pattern — prelims (100 questions/100 marks/1 hour), subject-wise weightage, detailed topics, mains, skill test and cut-off trends.",
+    minutes: 10,
+  },
+  {
+    href: "/study-guides/mpsc-negative-marking",
+    emoji: "➖",
+    title: "MPSC Negative Marking",
+    blurb:
+      "How the 1/4th negative-marking rule works across Group B, Group C, PSI, CSAT and Rajyaseva — with worked examples and a mathematically sound guessing strategy.",
+    minutes: 8,
+  },
+  {
     href: "/study-guides/mpsc-preparation-strategy",
     emoji: "🎯",
     title: "MPSC Preparation Strategy",

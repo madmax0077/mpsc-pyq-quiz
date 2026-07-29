@@ -174,6 +174,10 @@ export default function MpscExamPatternGuide() {
             <li>Mains: two papers, both 100 marks. Paper I common, Paper II stream-specific.</li>
             <li>Skill test for Clerk-Typist (Marathi typing 30 wpm, English 40 wpm).</li>
           </ul>
+          <p>
+            For the full topic-by-topic breakdown and subject-wise weightage, see our dedicated{" "}
+            <Link href="/study-guides/mpsc-group-c-syllabus">MPSC Group C Syllabus</Link> guide.
+          </p>
 
           <h3>6. Sub Inspector State Excise</h3>
           <p>
@@ -196,6 +200,11 @@ export default function MpscExamPatternGuide() {
             <li>If you have no idea, leaving it blank protects your score.</li>
             <li>Tick the OMR <em>after</em> double-checking the question number on every fifth row to avoid catastrophic shifts.</li>
           </ul>
+          <p>
+            For per-exam deduction tables, worked examples and the full expected-value guessing
+            strategy, read our dedicated{" "}
+            <Link href="/study-guides/mpsc-negative-marking">MPSC Negative Marking</Link> guide.
+          </p>
 
           <h3>8. Cut-off ranges (recent trends)</h3>
           <p>

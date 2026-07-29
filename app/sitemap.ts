@@ -70,6 +70,16 @@ const LEGACY_SITEMAP_ENTRIES: SitemapEntryConfig[] = [
 const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
   { path: "/?mode=leaderboard", changeFrequency: "daily", priority: 0.9 },
   { path: "/?mode=mock", changeFrequency: "weekly", priority: 0.9 },
+  {
+    path: "/study-guides/mpsc-group-c-syllabus",
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    path: "/study-guides/mpsc-negative-marking",
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
 ];
 
 function toAbsoluteUrl(path: string): string {
