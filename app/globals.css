@@ -249,6 +249,24 @@ body {
 }
 
 /* ----------------------------------------------------------------------
+ * Article (prose) tables
+ *
+ * The Tailwind Typography plugin styles tables, but wide multi-column
+ * tables can still overflow the viewport on small screens. Making the
+ * table a scroll container keeps the page layout intact — the table
+ * scrolls horizontally instead of pushing the whole page sideways.
+ * Desktop keeps the normal full-width rendering.
+ * -------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .prose table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ----------------------------------------------------------------------
  * Marathi typography
  *
  * Any element marked `lang="mr"` (or descendant of one) automatically
