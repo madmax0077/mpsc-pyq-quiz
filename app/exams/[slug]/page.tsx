@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getExamPaper, getExamPapers, type ExamPaperDetail } from "@/lib/examPapers";
+import DisplayAd from "@/components/DisplayAd";
+import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 const SITE_URL = "https://www.mpscs.in";
 
@@ -211,6 +213,14 @@ export default function ExamPaperPage({ params }: PageProps) {
             </div>
           </section>
         )}
+
+        {/* Mid-content ad — high viewability, between the subject breakdown and
+            the sample-question list that readers scroll through. */}
+        <DisplayAd
+          adsenseSlot={IN_CONTENT_AD_SLOT}
+          ezoicKey="contentInline"
+          className="mt-10"
+        />
 
         {/* Sample questions */}
         {paper.samples.length > 0 && (

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSeoQuestion, getSeoQuestions, type SeoQuestion } from "@/lib/questionSeo";
+import DisplayAd from "@/components/DisplayAd";
+import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 const SITE_URL = "https://www.mpscs.in";
 
@@ -485,6 +487,14 @@ export default function QuestionSeoPage({ params }: PageProps) {
             </p>
           </section>
         )}
+
+        {/* Mid-content ad — high viewability, right after the answer/explanation
+            that readers came for, before the supporting deep-dive sections. */}
+        <DisplayAd
+          adsenseSlot={IN_CONTENT_AD_SLOT}
+          ezoicKey="contentInline"
+          className="mt-8"
+        />
 
         <section className="mt-8 space-y-5 text-sm leading-7 text-slate-700">
           <div>

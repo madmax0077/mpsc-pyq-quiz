@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import DisplayAd from "@/components/DisplayAd";
+import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 export const metadata: Metadata = {
   title: "MPSC Preparation Strategy 2026 — 6-Month Study Plan, Books, PYQ & Mock-Test Routine",
@@ -168,6 +170,9 @@ export default function MpscPrepStrategyGuide() {
             <li><strong>20:00–22:00</strong> — revision of yesterday + answer-writing for mains aspirants.</li>
             <li><strong>One full-length mock every Saturday, no exceptions</strong>.</li>
           </ul>
+
+          {/* Mid-article ad — high viewability as the reader scrolls. */}
+          <DisplayAd adsenseSlot={IN_CONTENT_AD_SLOT} ezoicKey="contentInline" className="my-8 not-prose" />
 
           <h3>5. How to use PYQs the right way</h3>
           <p>

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import DisplayAd from "@/components/DisplayAd";
+import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 export const metadata: Metadata = {
   title: "Maharashtra History for MPSC — Satavahanas, Yadavas, Marathas, Peshwas, British Era & State Formation",
@@ -177,6 +179,9 @@ export default function MaharashtraHistoryGuide() {
             the Holkars of Indore and the Scindias of Gwalior. After 1818 most of these ruled as
             British &quot;princely states&quot; until 1947.
           </p>
+
+          {/* Mid-article ad — high viewability as the reader scrolls. */}
+          <DisplayAd adsenseSlot={IN_CONTENT_AD_SLOT} ezoicKey="contentInline" className="my-8 not-prose" />
 
           <h3>4. British Maharashtra (1818–1947)</h3>
 

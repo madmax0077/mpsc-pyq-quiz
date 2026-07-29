@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import DisplayAd from "@/components/DisplayAd";
+import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 export const metadata: Metadata = {
   title: "Maharashtra Geography for MPSC — Physical Divisions, Rivers, Climate, Soils & Resources",
@@ -221,6 +223,9 @@ export default function MaharashtraGeographyGuide() {
             <li><strong>Alluvial soil</strong> — narrow river valleys of Tapi, Godavari, Krishna, Bhima — intensively cropped.</li>
             <li><strong>Coastal sandy / saline soil</strong> — narrow coastal strips and tidal zones.</li>
           </ul>
+
+          {/* Mid-article ad — high viewability as the reader scrolls. */}
+          <DisplayAd adsenseSlot={IN_CONTENT_AD_SLOT} ezoicKey="contentInline" className="my-8 not-prose" />
 
           <h3>6. Forests and vegetation</h3>
           <p>

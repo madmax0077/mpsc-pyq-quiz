@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import DisplayAd from "@/components/DisplayAd";
+import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 export const metadata: Metadata = {
   title: "MPSC Exam Pattern — Group B, Group C, PSI, Gazetted CS & TS Prelims (Complete 2026 Guide)",
@@ -179,6 +181,9 @@ export default function MpscExamPatternGuide() {
             Prelims and negative marking are identical to PSI/STI/ASO above. Adds a physical
             standard test (height, chest, running).
           </p>
+
+          {/* Mid-article ad — high viewability as the reader scrolls. */}
+          <DisplayAd adsenseSlot={IN_CONTENT_AD_SLOT} ezoicKey="contentInline" className="my-8 not-prose" />
 
           <h3>7. How marks and negative marking really work</h3>
           <p>

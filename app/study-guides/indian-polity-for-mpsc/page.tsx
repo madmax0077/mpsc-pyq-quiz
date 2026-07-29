@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import DisplayAd from "@/components/DisplayAd";
+import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 export const metadata: Metadata = {
   title: "Indian Polity for MPSC — Constitution, Fundamental Rights, DPSPs, Parliament & State Government",
@@ -176,6 +178,9 @@ export default function PolityGuide() {
             <li><strong>Quorum</strong>: 1/10th of the total strength of either house.</li>
             <li><strong>Speaker of the Lok Sabha</strong> — elected from among its members; presides over joint sittings.</li>
           </ul>
+
+          {/* Mid-article ad — high viewability as the reader scrolls. */}
+          <DisplayAd adsenseSlot={IN_CONTENT_AD_SLOT} ezoicKey="contentInline" className="my-8 not-prose" />
 
           <h3>8. Judiciary</h3>
 

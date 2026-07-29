@@ -24,6 +24,12 @@ export const IS_ADSENSE = AD_PROVIDER === "adsense";
 export const ADSENSE_CLIENT = "ca-pub-5084738834329206";
 
 /**
+ * Reusable "in-content-universal" AdSense slot. Used for every in-content
+ * display unit (quiz pages + the SSG SEO pages). One slot renders many times.
+ */
+export const IN_CONTENT_AD_SLOT = "9336007499";
+
+/**
  * Ezoic standalone loader. This is Ezoic's documented script for
  * non-WordPress / non-Cloudflare sites (Next.js on Vercel = this path).
  * CONFIRM this exact src matches what your Ezoic dashboard shows before
@@ -45,6 +51,8 @@ export const EZOIC_PLACEHOLDERS = {
   landing: 0,
   /** Mock-test result reveal interstitial. */
   mockResult: 0,
+  /** Mid-content unit on SSG SEO pages (/questions, /exams, /study-guides). */
+  contentInline: 0,
 } as const;
 
 export type EzoicPlaceholderKey = keyof typeof EZOIC_PLACEHOLDERS;
