@@ -61,6 +61,14 @@ const GUIDES = [
     minutes: 10,
   },
   {
+    href: "/study-guides/mpsc-csat-preparation",
+    emoji: "🧮",
+    title: "MPSC CSAT Preparation",
+    blurb:
+      "Rajyaseva Paper II decoded — 80 questions, 200 marks, qualifying at 33%, the full syllabus, a topic checklist, the 90-second time plan and an eight-week schedule.",
+    minutes: 12,
+  },
+  {
     href: "/study-guides/mpsc-negative-marking",
     emoji: "➖",
     title: "MPSC Negative Marking",
