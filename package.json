@@ -8,6 +8,10 @@
     "postbuild": "node scripts/build-sitemap-index.mjs",
     "start": "next start",
     "lint": "next lint",
+    "csat:build": "node scripts/csat/build.mjs",
+    "csat:validate": "node scripts/csat/validate.mjs",
+    "csat:mutation": "node scripts/csat/mutation-test.mjs",
+    "csat:check": "node scripts/csat/build.mjs && node scripts/csat/validate.mjs && node scripts/csat/mutation-test.mjs",
     "cap:sync": "npx cap sync",
     "cap:android": "npx cap open android",
     "cap:ios": "npx cap open ios"

@@ -7,9 +7,10 @@ import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 import MockTestView from "@/components/MockTestView";
+import CsatView from "@/components/CsatView";
 import DisplayAd from "@/components/DisplayAd";
 
-type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi" | "mock";
+type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi" | "mock" | "csat";
 
 /** In-flow display ad on the landing page (below the Topic Tests section). */
 const LANDING_AD_SLOT = "2086515932";
@@ -73,7 +74,7 @@ export default function HomeClient() {
     } else if (mode === "notes") {
       setAppMode("notes");
       window.history.replaceState({}, "", window.location.pathname);
-    } else if (mode === "subject" || mode === "topic" || mode === "topic-tests" || mode === "rto-amvi" || mode === "mock") {
+    } else if (mode === "subject" || mode === "topic" || mode === "topic-tests" || mode === "rto-amvi" || mode === "mock" || mode === "csat") {
       setAppMode(mode);
       window.history.replaceState({}, "", window.location.pathname);
     }
@@ -630,6 +631,67 @@ export default function HomeClient() {
                 </div>
               </button>
 
+              {/* CSAT & Aptitude — training, topic practice and speed tests */}
+              <button
+                onClick={() => { setAppMode("csat"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className="group relative overflow-hidden rounded-3xl border border-sky-200/80 bg-gradient-to-br from-sky-50 via-white to-indigo-50 p-7 text-left shadow-sm ring-1 ring-sky-100/50 transition-all hover:-translate-y-1 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-200/60 dark:border-sky-900/70 dark:from-sky-950/40 dark:via-slate-900 dark:to-indigo-950/40 dark:ring-sky-900/30 dark:hover:border-sky-600 dark:hover:shadow-black/40 sm:col-span-2"
+              >
+                <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-sky-300/60 via-blue-300/40 to-indigo-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-sky-500/15 dark:via-blue-500/10 dark:to-indigo-500/15" />
+                <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
+
+                <div className="relative flex items-start gap-5">
+                  <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-200 via-blue-200 to-indigo-200 shadow-lg shadow-sky-200/50 ring-2 ring-white/60 dark:from-sky-300 dark:via-blue-300 dark:to-indigo-300 dark:shadow-sky-950/40 dark:ring-sky-500/20">
+                    <span className="absolute -top-2 -right-2 flex h-7 w-7 items-center justify-center rounded-full bg-white text-base shadow ring-1 ring-sky-200 dark:bg-slate-800 dark:ring-sky-600">
+                      🧠
+                    </span>
+                    <div className="flex flex-col items-center leading-none text-sky-900">
+                      <span className="text-2xl font-black tracking-tight drop-shadow-sm">20</span>
+                      <span className="text-[8px] font-semibold uppercase tracking-wider opacity-80">Topics</span>
+                    </div>
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+                    <div className="mb-1.5 flex flex-wrap items-center gap-2">
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-sky-600 via-blue-500 to-indigo-500 bg-clip-text text-transparent dark:from-sky-300 dark:via-blue-300 dark:to-indigo-300 sm:text-2xl">
+                        CSAT &amp; Aptitude
+                      </h3>
+                      <span className="relative inline-flex items-center gap-1 rounded-full bg-sky-400 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                        <span className="relative flex h-2 w-2">
+                          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                        </span>
+                        New
+                      </span>
+                    </div>
+                    <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                      <strong className="font-semibold text-sky-700 dark:text-sky-300">Learn, practise, then race the clock.</strong>{" "}
+                      Every CSAT topic explained in depth — concepts, formulas, shortcuts and traps —
+                      followed by 2,000+ solved practice questions in Marathi and English, plus a
+                      timed combined speed test.
+                    </p>
+
+                    <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        📖 Deep topic lessons
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        ✍️ Topic-wise practice
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        ⏱️ Combined speed test
+                      </span>
+                    </div>
+
+                    <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-sky-400 to-indigo-400 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-sky-200/50 transition-all group-hover:shadow-lg group-hover:shadow-sky-300/50 dark:shadow-sky-950/40">
+                      Open CSAT training
+                      <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </button>
+
               {/* Rivers of Maharashtra — district-wise 2D map + MPSC PYQ quiz */}
               <a
                 href="/rivers-maharashtra"
@@ -828,6 +890,11 @@ export default function HomeClient() {
           </div>
         ) : appMode === "mock" ? (
           <MockTestView
+            onExit={() => { setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+          />
+        ) : appMode === "csat" ? (
+          <CsatView
+            language={language}
             onExit={() => { setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
           />
         ) : (
