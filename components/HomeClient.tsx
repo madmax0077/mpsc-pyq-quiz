@@ -664,10 +664,10 @@ export default function HomeClient() {
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-sky-700 dark:text-sky-300">Learn, practise, then race the clock.</strong>{" "}
+                      <strong className="font-semibold text-sky-700 dark:text-sky-300">For MPSC and UPSC CSAT.</strong>{" "}
                       Every CSAT topic explained in depth — concepts, formulas, shortcuts and traps —
                       followed by 2,000+ solved practice questions in Marathi and English, plus a
-                      timed combined speed test.
+                      timed combined speed test for the qualifying aptitude paper.
                     </p>
 
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
@@ -679,6 +679,9 @@ export default function HomeClient() {
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
                         ⏱️ Combined speed test
+                      </span>
+                      <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
+                        MPSC + UPSC CSAT
                       </span>
                     </div>
 

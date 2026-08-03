@@ -316,9 +316,10 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
             CSAT &amp; Aptitude
           </h2>
           <p className="mt-2 max-w-2xl text-slate-600 dark:text-slate-300">
-            A complete CSAT workshop — learn each topic in depth, practise it question by question,
-            then test your speed across the whole syllabus. Every practice question is a genuine
-            item from MPSC previous-year papers.
+            A complete CSAT workshop for <strong className="font-semibold text-slate-800 dark:text-slate-100">MPSC and UPSC</strong> —
+            learn each topic in depth, practise question by question, then test your speed across
+            the syllabus. Built around MPSC Paper II topics; the same aptitude block is what UPSC
+            CSAT (Prelims Paper II) expects for the qualifying paper.
           </p>
         </div>
 

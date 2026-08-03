@@ -4,11 +4,17 @@ import DisplayAd from "@/components/DisplayAd";
 import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 
 export const metadata: Metadata = {
-  title: "MPSC CSAT Preparation 2026 — Paper II Syllabus, Pattern, Topics & Practice Questions",
+  title: "MPSC & UPSC CSAT Preparation 2026 — Syllabus, Topics & Free Practice",
   description:
-    "Complete MPSC CSAT (Rajyaseva Paper II) guide for 2026: 80 questions, 200 marks, qualifying at 33%, the full syllabus, topic-wise checklist, a 90-second-per-question time plan, an 8-week study schedule and free bilingual CSAT practice questions in Marathi and English.",
+    "Free CSAT aptitude practice for MPSC Rajyaseva Paper II and UPSC CSE Prelims Paper II: syllabus overlap, topic checklist, 90-second time plan, 8-week schedule and 2,000+ bilingual practice questions in Marathi and English.",
   keywords: [
     "MPSC CSAT",
+    "UPSC CSAT",
+    "UPSC CSAT practice",
+    "UPSC CSAT Paper 2",
+    "UPSC CSE CSAT",
+    "CSAT practice questions",
+    "free CSAT mock test",
     "MPSC CSAT syllabus",
     "MPSC CSAT preparation",
     "CSAT paper 2 MPSC",
@@ -16,7 +22,9 @@ export const metadata: Metadata = {
     "MPSC CSAT qualifying marks",
     "CSAT practice questions Marathi",
     "MPSC aptitude questions",
+    "UPSC aptitude practice",
     "एमपीएससी सीसॅट",
+    "यूपीएससी सीसॅट",
   ],
   alternates: { canonical: "/study-guides/mpsc-csat-preparation" },
 };
@@ -49,6 +57,10 @@ const FAQ: Array<{ q: string; a: string }> = [
   {
     q: "Which topics carry the most weight in CSAT?",
     a: "Comprehension is the largest single block in the paper, and basic numeracy plus data interpretation together form most of the remainder, with logical reasoning filling the rest. In practical terms, a candidate who reads accurately and is quick with percentages, ratios, averages, time-work, time-speed-distance and simple data tables has already secured a qualifying score without touching the harder reasoning sets.",
+  },
+  {
+    q: "Can UPSC aspirants practise CSAT here?",
+    a: "Yes for aptitude and reasoning. UPSC CSE Prelims Paper II (CSAT) and MPSC Rajyaseva Paper II share the same skill blocks — basic numeracy, logical reasoning, data interpretation and comprehension. Our free CSAT section is built for MPSC bilingually, but UPSC candidates can use the topic lessons, topic-wise practice and timed speed tests to clear the qualifying CSAT paper. Pattern details (marks, duration, cut-off) still differ, so always check the latest UPSC notification for the official Paper II rules.",
   },
 ];
 
@@ -120,15 +132,15 @@ export default function MpscCsatGuide() {
             </svg>
           </Link>
           <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC CSAT Preparation</h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~12 min read</p>
+            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC &amp; UPSC CSAT</h1>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Study Guide · ~12 min read</p>
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <article className="prose prose-slate max-w-none rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:prose-invert dark:border-slate-700 dark:bg-slate-800 sm:p-9">
-          <h2>MPSC CSAT Preparation — Paper II Syllabus, Strategy and Practice (2026)</h2>
+          <h2>MPSC &amp; UPSC CSAT Preparation — Syllabus, Strategy and Free Practice (2026)</h2>
           <p className="text-sm text-slate-500 dark:text-slate-400">
             Last updated: August 2026 · Reading time: ~12 minutes
           </p>
@@ -137,11 +149,13 @@ export default function MpscCsatGuide() {
             CSAT is the paper that eliminates candidates quietly. It carries no weight in the merit
             list, so it gets postponed month after month, and then a well-prepared General Studies
             paper is thrown away because the aptitude paper fell three marks short of the qualifying
-            line. This guide covers exactly what the MPSC CSAT paper contains, how much of it you
-            actually need, and a schedule that gets you safely past the qualifying mark without
-            eating into your GS time. When you are ready to practise, our{" "}
+            line. This guide covers what the MPSC CSAT paper contains, how it overlaps with{" "}
+            <strong>UPSC CSE Prelims Paper II (CSAT)</strong>, how much practice you actually need,
+            and a schedule that gets you safely past the qualifying mark without eating into your GS
+            time. When you are ready to practise, our{" "}
             <Link href="/?mode=csat">free CSAT training and practice section</Link> has lessons and
-            over 1,900 solved aptitude questions in Marathi and English.
+            over 2,000 solved aptitude questions in Marathi and English — useful for both MPSC and
+            UPSC CSAT aspirants.
           </p>
 
           <h3>1. What CSAT is, and why it matters more than its marks suggest</h3>
@@ -149,7 +163,25 @@ export default function MpscCsatGuide() {
             CSAT — the Civil Services Aptitude Test — is Paper II of the MPSC Gazetted Civil
             Services Combined preliminary examination, the exam most aspirants still call Rajyaseva.
             It is written on the same day as the General Studies paper, in offline OMR format, and
-            is set in both Marathi and English.
+            is set in both Marathi and English. The same skill set also powers{" "}
+            <strong>UPSC CSE Prelims Paper II</strong>, which is likewise a qualifying aptitude paper
+            for UPSC aspirants.
+          </p>
+
+          <h3>1A. MPSC CSAT vs UPSC CSAT — what overlaps</h3>
+          <p>
+            Pattern numbers differ (MPSC Paper II is typically 80 questions / 200 marks / 2 hours with
+            a 33% qualifying line; UPSC Paper II has its own official pattern and cut-off in the UPSC
+            notification). The <em>topics</em> largely do not: Class X numeracy, logical reasoning,
+            data interpretation and comprehension. If you are preparing for UPSC CSAT, use this site
+            for daily topic practice and timed speed tests, then confirm UPSC&apos;s official marks,
+            duration and negative marking from upsc.gov.in before exam day.
+          </p>
+          <p>
+            Start practising here:{" "}
+            <Link href="/?mode=csat">Open free CSAT &amp; Aptitude practice</Link> · or read the
+            short{" "}
+            <Link href="/study-guides/upsc-csat-practice">UPSC CSAT practice landing page</Link>.
           </p>
           <table>
             <thead>

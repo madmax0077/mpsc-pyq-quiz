@@ -90,6 +90,9 @@ export const metadata: Metadata = {
     // High-intent recruitment searches
     "MPSC Talathi", "Talathi exam", "Talithi exam", "Talathi Bharti 2026",
     "तलाठी परीक्षा", "MPSC Group C Talathi", "Talathi syllabus",
+    // CSAT — MPSC + UPSC
+    "UPSC CSAT", "UPSC CSAT practice", "UPSC CSAT Paper 2", "CSAT practice questions",
+    "free CSAT mock test", "UPSC aptitude practice",
   ],
   authors: [{ name: "Don't know Academy" }],
   creator: "Don't know Academy",

@@ -91,6 +91,11 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.85,
   },
+  {
+    path: "/study-guides/upsc-csat-practice",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
 ];
 
 function toAbsoluteUrl(path: string): string {

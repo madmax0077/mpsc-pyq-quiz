@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     "MPSC Talathi exam",
     "Talathi Bharti 2026",
     "Talithi exam",
+    "UPSC CSAT practice",
+    "UPSC CSAT Paper 2",
   ],
   alternates: { canonical: "/study-guides" },
 };
@@ -74,10 +76,18 @@ const GUIDES = [
   {
     href: "/study-guides/mpsc-csat-preparation",
     emoji: "🧮",
-    title: "MPSC CSAT Preparation",
+    title: "MPSC & UPSC CSAT Preparation",
     blurb:
-      "Rajyaseva Paper II decoded — 80 questions, 200 marks, qualifying at 33%, the full syllabus, a topic checklist, the 90-second time plan and an eight-week schedule.",
+      "Rajyaseva Paper II decoded — and how the same aptitude practice helps UPSC CSE CSAT. Syllabus, topic checklist, 90-second time plan and an eight-week schedule.",
     minutes: 12,
+  },
+  {
+    href: "/study-guides/upsc-csat-practice",
+    emoji: "🇮🇳",
+    title: "UPSC CSAT Practice",
+    blurb:
+      "Free UPSC CSAT Paper II aptitude practice — topic lessons, 2,000+ questions and timed speed tests in English and Marathi.",
+    minutes: 4,
   },
   {
     href: "/study-guides/mpsc-negative-marking",
