@@ -87,6 +87,9 @@ export const metadata: Metadata = {
     "MPSC exam pattern", "MPSC preparation strategy", "MPSC 6 month plan",
     "Chhatrapati Shivaji Maharaj history", "Maratha Empire", "Peshwa era",
     "Samyukta Maharashtra movement",
+    // High-intent recruitment searches
+    "MPSC Talathi", "Talathi exam", "Talithi exam", "Talathi Bharti 2026",
+    "तलाठी परीक्षा", "MPSC Group C Talathi", "Talathi syllabus",
   ],
   authors: [{ name: "Don't know Academy" }],
   creator: "Don't know Academy",

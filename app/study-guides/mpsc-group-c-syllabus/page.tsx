@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "MPSC group c mains exam pattern",
     "MPSC group c pre syllabus",
     "MPSC group c paper pattern",
+    "MPSC Talathi",
+    "Talathi exam",
+    "Talithi exam",
   ],
   alternates: { canonical: "/study-guides/mpsc-group-c-syllabus" },
 };
@@ -265,6 +268,10 @@ export default function MpscGroupCSyllabusGuide() {
           <h3>Next steps</h3>
           <ul>
             <li>Attempt the most recent <Link href="/exams">Group C prelims paper</Link> to set a baseline.</li>
+            <li>
+              Preparing for Talathi (तलाठी) / Talithi exam? Read the dedicated{" "}
+              <Link href="/study-guides/mpsc-talathi-exam">MPSC Talathi Exam</Link> guide.
+            </li>
             <li>Read the <Link href="/study-guides/mpsc-negative-marking">MPSC Negative Marking</Link> guide to stop losing marks to guessing.</li>
             <li>Compare all exams in the <Link href="/study-guides/mpsc-exam-pattern">MPSC Exam Pattern</Link> guide.</li>
           </ul>

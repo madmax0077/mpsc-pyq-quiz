@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "MPSC exam pattern",
     "Maharashtra geography for MPSC",
     "Maharashtra history for MPSC",
+    "MPSC Talathi exam",
+    "Talathi Bharti 2026",
+    "Talithi exam",
   ],
   alternates: { canonical: "/study-guides" },
 };
@@ -59,6 +62,14 @@ const GUIDES = [
     blurb:
       "Complete Group C Combined syllabus and exam pattern — prelims (100 questions/100 marks/1 hour), subject-wise weightage, detailed topics, mains, skill test and cut-off trends.",
     minutes: 10,
+  },
+  {
+    href: "/study-guides/mpsc-talathi-exam",
+    emoji: "🏞️",
+    title: "MPSC Talathi Exam",
+    blurb:
+      "Talathi (तलाठी) Bharti 2026 — syllabus blocks, exam pattern, land-revenue focus, a four-week plan, and how it overlaps with Group C. Also covers the common “Talithi exam” search spelling.",
+    minutes: 11,
   },
   {
     href: "/study-guides/mpsc-csat-preparation",

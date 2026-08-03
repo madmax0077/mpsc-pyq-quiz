@@ -86,6 +86,11 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.8,
   },
+  {
+    path: "/study-guides/mpsc-talathi-exam",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
 ];
 
 function toAbsoluteUrl(path: string): string {
