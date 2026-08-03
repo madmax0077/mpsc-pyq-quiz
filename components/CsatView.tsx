@@ -25,6 +25,13 @@ import {
   type CsatStream,
   type CsatTopic,
 } from "@/lib/csat";
+import {
+  csatStreamBlurb,
+  csatStreamLabel,
+  csatTopicLabel,
+  saveLanguage,
+  t,
+} from "@/lib/i18n";
 
 type Stage =
   | "home"
@@ -39,6 +46,7 @@ type Stage =
 interface CsatViewProps {
   onExit: () => void;
   language?: Language;
+  onLanguageChange?: (language: Language) => void;
 }
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
@@ -174,9 +182,17 @@ function QuestionCard({
   );
 }
 
-export default function CsatView({ onExit, language: initialLanguage = "english" }: CsatViewProps) {
+export default function CsatView({
+  onExit,
+  language: initialLanguage = "english",
+  onLanguageChange,
+}: CsatViewProps) {
   const [stage, setStage] = useState<Stage>("home");
   const [language, setLanguage] = useState<Language>(initialLanguage);
+
+  useEffect(() => {
+    setLanguage(initialLanguage);
+  }, [initialLanguage]);
   const [quizzes, setQuizzes] = useState<Quiz[] | null>(null);
   const [bank, setBank] = useState<CsatBank | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -309,17 +325,14 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
   if (stage === "home") {
     return (
       <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <BackLink label="Back to home" onClick={onExit} />
+        <BackLink label={t("backToHomeShort", language)} onClick={onExit} />
 
         <div className="mb-8">
           <h2 className="text-2xl font-extrabold text-slate-900 sm:text-3xl dark:text-slate-100">
-            CSAT &amp; Aptitude
+            {t("csatHome", language)}
           </h2>
           <p className="mt-2 max-w-2xl text-slate-600 dark:text-slate-300">
-            A complete CSAT workshop for <strong className="font-semibold text-slate-800 dark:text-slate-100">MPSC and UPSC</strong> —
-            learn each topic in depth, practise question by question, then test your speed across
-            the syllabus. Built around MPSC Paper II topics; the same aptitude block is what UPSC
-            CSAT (Prelims Paper II) expects for the qualifying paper.
+            {t("csatHomeIntro", language)}
           </p>
         </div>
 
@@ -334,7 +347,11 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
           {(["english", "marathi"] as Language[]).map((lang) => (
             <button
               key={lang}
-              onClick={() => setLanguage(lang)}
+              onClick={() => {
+                setLanguage(lang);
+                saveLanguage(lang);
+                onLanguageChange?.(lang);
+              }}
               className={
                 "rounded-lg px-4 py-1.5 text-sm font-semibold transition-colors " +
                 (language === lang
@@ -355,14 +372,13 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
           >
             <div className="mb-3 text-2xl">📖</div>
             <h3 className="text-base font-bold text-indigo-700 dark:text-indigo-300">
-              CSAT Training
+              {t("csatTraining", language)}
             </h3>
             <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-              Every topic explained in depth — concepts, formulas, shortcuts, worked examples and
-              the traps MPSC sets.
+              {t("deepLessons", language)}
             </p>
             <span className="mt-3 inline-block text-xs font-semibold text-indigo-500 dark:text-indigo-400">
-              {CSAT_TOPICS.length} topics →
+              {CSAT_TOPICS.length} {t("csatTopicsArrow", language)}
             </span>
           </button>
 
@@ -372,14 +388,19 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
           >
             <div className="mb-3 text-2xl">✍️</div>
             <h3 className="text-base font-bold text-emerald-700 dark:text-emerald-300">
-              Topic-wise Practice
+              {t("topicPractice", language)}
             </h3>
             <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-              Practise one topic at a time with instant feedback and an explanation after every
-              question.
+              {language === "marathi"
+                ? "एका वेळी एक टॉपिक — प्रत्येक प्रश्नानंतर त्वरित उत्तर आणि स्पष्टीकरण."
+                : "Practise one topic at a time with instant feedback and an explanation after every question."}
             </p>
             <span className="mt-3 inline-block text-xs font-semibold text-emerald-500 dark:text-emerald-400">
-              {totalAvailable > 0 ? `${totalAvailable} questions →` : "Loading…"}
+              {totalAvailable > 0
+                ? `${totalAvailable} ${t("questions", language)} →`
+                : language === "marathi"
+                  ? "लोड होत आहे…"
+                  : "Loading…"}
             </span>
           </button>
 
@@ -389,14 +410,13 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
           >
             <div className="mb-3 text-2xl">⏱️</div>
             <h3 className="text-base font-bold text-amber-700 dark:text-amber-300">
-              Combined Speed Practice
+              {t("speedTest", language)}
             </h3>
             <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-              A timed mixed test across all topics with {CSAT_NEGATIVE_MARK} negative marking, just
-              like the real paper.
+              {t("csatSpeedBlurb", language)} ({CSAT_NEGATIVE_MARK})
             </p>
             <span className="mt-3 inline-block text-xs font-semibold text-amber-500 dark:text-amber-400">
-              20 / 40 / 60 questions →
+              20 / 40 / 60 {t("questions", language)} →
             </span>
           </button>
         </div>
@@ -404,12 +424,12 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
         {/* Stream overview */}
         <div className="mt-10">
           <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-            What the syllabus covers
+            {language === "marathi" ? "अभ्यासक्रमात काय समाविष्ट आहे" : "What the syllabus covers"}
           </h3>
           <div className="grid gap-4 sm:grid-cols-3">
             {CSAT_STREAMS.map((stream) => {
-              const topics = CSAT_TOPICS.filter((t) => t.stream === stream.id);
-              const qs = topics.reduce((sum, t) => sum + (counts[t.id] ?? 0), 0);
+              const topics = CSAT_TOPICS.filter((tp) => tp.stream === stream.id);
+              const qs = topics.reduce((sum, tp) => sum + (counts[tp.id] ?? 0), 0);
               const accent = ACCENT[stream.accent];
               return (
                 <div
@@ -419,12 +439,14 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
                   <div className={`h-1.5 bg-gradient-to-r ${accent.bar}`} />
                   <div className="p-4">
                     <div className="text-xl">{stream.emoji}</div>
-                    <h4 className={`mt-1.5 text-sm font-bold ${accent.text}`}>{stream.name}</h4>
+                    <h4 className={`mt-1.5 text-sm font-bold ${accent.text}`}>
+                      {csatStreamLabel(stream.id, language)}
+                    </h4>
                     <p className="mt-1.5 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
-                      {stream.blurb}
+                      {csatStreamBlurb(stream.id, stream.blurb, language)}
                     </p>
                     <p className="mt-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">
-                      {topics.length} topics · {qs} questions
+                      {topics.length} {language === "marathi" ? "टॉपिक" : "topics"} · {qs} {t("questions", language)}
                     </p>
                   </div>
                 </div>
@@ -440,27 +462,29 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
   if (stage === "training") {
     return (
       <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <BackLink label="Back to CSAT home" onClick={() => goto("home")} />
+        <BackLink label={t("backToCsat", language)} onClick={() => goto("home")} />
 
         <div className="mb-6">
           <h2 className="text-2xl font-extrabold text-slate-900 dark:text-slate-100">
-            CSAT Training &amp; Topic Practice
+            {t("csatTraining", language)}
           </h2>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
-            Open a topic to read the full lesson, or jump straight into practice questions for it.
+            {language === "marathi"
+              ? "धडा वाचण्यासाठी किंवा थेट सराव करण्यासाठी टॉपिक उघडा."
+              : "Open a topic to read the full lesson, or jump straight into practice questions for it."}
           </p>
         </div>
 
         <div className="space-y-8">
           {CSAT_STREAMS.map((stream) => {
-            const topics = CSAT_TOPICS.filter((t) => t.stream === stream.id);
+            const topics = CSAT_TOPICS.filter((tp) => tp.stream === stream.id);
             const accent = ACCENT[stream.accent];
             return (
               <div key={stream.id}>
                 <div className="mb-3 flex items-center gap-2">
                   <span className="text-lg">{stream.emoji}</span>
                   <h3 className={`text-sm font-bold uppercase tracking-wide ${accent.text}`}>
-                    {stream.name}
+                    {csatStreamLabel(stream.id, language)}
                   </h3>
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2">
@@ -478,12 +502,14 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
                       >
                         <div className="flex items-start justify-between gap-3">
                           <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100">
-                            {topic.name}
+                            {csatTopicLabel(topic.id, topic.name, language)}
                           </h4>
                           <span
                             className={`shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold ${accent.chip}`}
                           >
-                            {lessonOnly ? "Lesson" : `${available} Qs`}
+                            {lessonOnly
+                              ? t("lessonOnly", language)
+                              : `${available} ${language === "marathi" ? "प्रश्न" : "Qs"}`}
                           </span>
                         </div>
                         <p className="mt-1.5 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
@@ -491,7 +517,7 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
                         </p>
                         {!lessonOnly && done > 0 && (
                           <p className="mt-2 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
-                            {done} of {available} attempted
+                            {done}/{available} {language === "marathi" ? "सोडवले" : "attempted"}
                           </p>
                         )}
                         <div className="mt-3 flex flex-wrap gap-2">
@@ -502,7 +528,7 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
                             }}
                             className="rounded-lg bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-indigo-700"
                           >
-                            Learn ({topic.minutes} min)
+                            {language === "marathi" ? `धडा वाचा (${topic.minutes} मि.)` : `Learn (${topic.minutes} min)`}
                           </button>
                           {!lessonOnly && (
                             <button
@@ -510,7 +536,7 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
                               disabled={available === 0 || !quizzes}
                               className="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-colors hover:border-indigo-300 hover:text-indigo-600 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-600 dark:text-slate-200"
                             >
-                              Practise
+                              {t("practice", language)}
                             </button>
                           )}
                         </div>
@@ -539,13 +565,13 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
 
     return (
       <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-        <BackLink label="Back to topics" onClick={() => goto("training")} />
+        <BackLink label={t("backToTopics", language)} onClick={() => goto("training")} />
 
         <span className={`inline-block rounded-full px-2.5 py-1 text-[11px] font-bold ${accent.chip}`}>
-          {stream.name}
+          {csatStreamLabel(stream.id, language)}
         </span>
         <h2 className="mt-3 text-2xl font-extrabold text-slate-900 sm:text-3xl dark:text-slate-100">
-          {activeTopic.name}
+          {csatTopicLabel(activeTopic.id, activeTopic.name, language)}
         </h2>
         <p className="mt-3 text-[15px] leading-7 text-slate-700 dark:text-slate-300">
           {lesson.intro}
@@ -733,7 +759,7 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
 
     return (
       <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-        <BackLink label="Back to topics" onClick={() => goto("training")} />
+        <BackLink label={t("backToTopics", language)} onClick={() => goto("training")} />
 
         <div className="mb-4 flex items-center justify-between gap-3">
           <div>
@@ -858,7 +884,7 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
   if (stage === "speed-config") {
     return (
       <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-        <BackLink label="Back to CSAT home" onClick={() => goto("home")} />
+        <BackLink label={t("backToCsat", language)} onClick={() => goto("home")} />
 
         <h2 className="text-2xl font-extrabold text-slate-900 dark:text-slate-100">
           Combined Speed Practice
@@ -1066,7 +1092,7 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
     const timed = stage === "speed-result";
     return (
       <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
-        <BackLink label="Back to CSAT home" onClick={() => goto("home")} />
+        <BackLink label={t("backToCsat", language)} onClick={() => goto("home")} />
 
         <h2 className="text-2xl font-extrabold text-slate-900 dark:text-slate-100">
           {timed ? "Speed Practice Result" : "Practice Summary"}
@@ -1172,9 +1198,14 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
                 seenCounts[topicSeenBucket(activeTopic.id, language)] ?? 0,
               );
               const all = counts[activeTopic.id] ?? 0;
+              const topicName = csatTopicLabel(activeTopic.id, activeTopic.name, language);
               return done >= all
-                ? `You have now been through all ${all} questions in ${activeTopic.name}.`
-                : `${done} of ${all} questions attempted in ${activeTopic.name}.`;
+                ? (language === "marathi"
+                  ? `आपण आता ${topicName} मधील सर्व ${all} प्रश्न सोडवले आहेत.`
+                  : `You have now been through all ${all} questions in ${topicName}.`)
+                : (language === "marathi"
+                  ? `${topicName} मध्ये ${done}/${all} प्रश्न सोडवले आहेत.`
+                  : `${done} of ${all} questions attempted in ${topicName}.`);
             })()}
           </p>
         )}
@@ -1184,7 +1215,7 @@ export default function CsatView({ onExit, language: initialLanguage = "english"
             onClick={() => goto("training")}
             className="rounded-xl border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-indigo-300 dark:border-slate-600 dark:text-slate-200"
           >
-            Back to topics
+            {t("backToTopics", language)}
           </button>
           {!timed && activeTopic && (
             <button

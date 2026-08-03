@@ -6,7 +6,7 @@ import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 export const metadata: Metadata = {
   title: "MPSC & UPSC CSAT Preparation 2026 — Syllabus, Topics & Free Practice",
   description:
-    "Free CSAT aptitude practice for MPSC Rajyaseva Paper II and UPSC CSE Prelims Paper II: syllabus overlap, topic checklist, 90-second time plan, 8-week schedule and 2,000+ bilingual practice questions in Marathi and English.",
+    "Free CSAT aptitude practice for MPSC Rajyaseva Paper II and UPSC CSE Prelims Paper II: syllabus overlap, topic checklist, 90-second time plan, 8-week schedule and 3,800+ bilingual practice questions with worked explanations in Marathi and English.",
   keywords: [
     "MPSC CSAT",
     "UPSC CSAT",
@@ -154,7 +154,7 @@ export default function MpscCsatGuide() {
             and a schedule that gets you safely past the qualifying mark without eating into your GS
             time. When you are ready to practise, our{" "}
             <Link href="/?mode=csat">free CSAT training and practice section</Link> has lessons and
-            over 2,000 solved aptitude questions in Marathi and English — useful for both MPSC and
+            over 3,800 solved aptitude questions with step-by-step explanations in Marathi and English — useful for both MPSC and
             UPSC CSAT aspirants.
           </p>
 

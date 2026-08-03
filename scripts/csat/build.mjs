@@ -36,7 +36,8 @@ const ROOT = path.resolve(__dirname, "..", "..");
 const OUT = path.join(ROOT, "public", "csat-questions.json");
 
 const SEED = 20260801;
-const TARGET_PER_TOPIC = 100;
+/** Bank size per practice topic (EN+MR share the same items). Was 100; raised to 200. */
+const TARGET_PER_TOPIC = 200;
 
 const GENERATORS = [
   percentageProfitLoss,
@@ -128,7 +129,7 @@ function buildTopic(mod, rng) {
   }
 
   out.forEach((item, i) => {
-    item.id = `csat-${topicId}-${String(i + 1).padStart(3, "0")}`;
+    item.id = `csat-${topicId}-${String(i + 1).padStart(4, "0")}`;
   });
 
   return out;

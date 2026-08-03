@@ -1228,15 +1228,17 @@ const SOLVERS = {
 
   "two-dice"(text) {
     const m = text.match(
-      /the sum of the numbers on them is (exactly (\d+)|(\d+) or more)/,
+      /the sum of the numbers on them is (exactly (\d+)|(\d+) or more|(\d+) or less)/,
     );
     if (!m) throw new Error("could not parse two-dice");
     const exact = m[2] !== undefined;
-    const target = Number(m[2] ?? m[3]);
+    const atMost = m[4] !== undefined;
+    const target = Number(m[2] ?? m[3] ?? m[4]);
     let fav = 0;
     for (let a = 1; a <= 6; a += 1) {
       for (let b = 1; b <= 6; b += 1) {
-        if (exact ? a + b === target : a + b >= target) fav += 1;
+        const sum = a + b;
+        if (exact ? sum === target : atMost ? sum <= target : sum >= target) fav += 1;
       }
     }
     return reduceFraction(fav, 36);
@@ -1249,7 +1251,10 @@ const SOLVERS = {
       "balls-from-bag",
     );
     const total = r + b + g;
-    if (/One ball is drawn at random/.test(text)) return reduceFraction(r, total);
+    if (/One ball is drawn at random/.test(text)) {
+      if (/it is blue\?/.test(text)) return reduceFraction(b, total);
+      return reduceFraction(r, total);
+    }
     if (/Two balls are drawn at random together/.test(text)) {
       // Route: sequential probability rather than combinations.
       const p = (r / total) * ((r - 1) / (total - 1));
@@ -1264,7 +1269,7 @@ const SOLVERS = {
 
   "cards-draw"(text) {
     const m = text.match(
-      /the card drawn is (a king|a heart|a face card|a red card|an ace|a spade|a red king|a black face card)\?/,
+      /the card drawn is (a king|a queen|a jack|a heart|a diamond|a club|a face card|a red card|a black card|an ace|a spade|a red king|a black king|a black face card|a red face card|a numbered card \(2 to 10\))\?/,
     );
     if (!m) throw new Error("could not parse cards-draw");
     // Route: build the actual 52-card pack and filter it.
@@ -1280,13 +1285,21 @@ const SOLVERS = {
     if (deck.length !== 52) throw new Error("pack is not 52 cards");
     const tests = {
       "a king": (c) => c.rank === "K",
+      "a queen": (c) => c.rank === "Q",
+      "a jack": (c) => c.rank === "J",
       "a heart": (c) => c.suit === "hearts",
+      "a diamond": (c) => c.suit === "diamonds",
+      "a club": (c) => c.suit === "clubs",
       "a face card": (c) => ["J", "Q", "K"].includes(c.rank),
       "a red card": (c) => c.red,
+      "a black card": (c) => !c.red,
       "an ace": (c) => c.rank === "A",
       "a spade": (c) => c.suit === "spades",
       "a red king": (c) => c.rank === "K" && c.red,
+      "a black king": (c) => c.rank === "K" && !c.red,
       "a black face card": (c) => ["J", "Q", "K"].includes(c.rank) && !c.red,
+      "a red face card": (c) => ["J", "Q", "K"].includes(c.rank) && c.red,
+      "a numbered card (2 to 10)": (c) => !["J", "Q", "K", "A"].includes(c.rank),
     };
     const fav = deck.filter(tests[m[1]]).length;
     return reduceFraction(fav, 52);
@@ -1313,7 +1326,7 @@ const SOLVERS = {
   "committee-selection"(text) {
     const [pickM, pickW, m, w] = grab(
       text,
-      /a committee of (\d+) men and (\d+) (?:woman|women) be formed from (\d+) men and (\d+) women/,
+      /a committee of (\d+) (?:man|men) and (\d+) (?:woman|women) be formed from (\d+) men and (\d+) women/,
       "committee-selection",
     );
     // Route: factorial form of nCr rather than the iterative product.
@@ -1325,20 +1338,29 @@ const SOLVERS = {
     const m = text.match(/letters of the word ([A-Z]+) be arranged/);
     if (!m) throw new Error("could not parse letter-arrangements");
     const word = m[1];
-    if (word.length > 8) throw new Error("word too long to enumerate");
-    // Route: enumerate every permutation and count the DISTINCT strings.
-    const seen = new Set();
-    const permute = (prefix, rest) => {
-      if (!rest.length) {
-        seen.add(prefix);
-        return;
-      }
-      for (let i = 0; i < rest.length; i += 1) {
-        permute(prefix + rest[i], rest.slice(0, i) + rest.slice(i + 1));
-      }
-    };
-    permute("", word);
-    return num(seen.size);
+    // Route: count letters from the printed word, then apply the multinomial
+    // formula. For short words we also enumerate distinct permutations as a
+    // cross-check so a wrong formula cannot hide.
+    const counts = new Map();
+    for (const ch of word) counts.set(ch, (counts.get(ch) || 0) + 1);
+    let ways = factorialOf(word.length);
+    for (const c of counts.values()) ways /= factorialOf(c);
+    ways = Math.round(ways);
+    if (word.length <= 8) {
+      const seen = new Set();
+      const permute = (prefix, rest) => {
+        if (!rest.length) {
+          seen.add(prefix);
+          return;
+        }
+        for (let i = 0; i < rest.length; i += 1) {
+          permute(prefix + rest[i], rest.slice(0, i) + rest.slice(i + 1));
+        }
+      };
+      permute("", word);
+      if (seen.size !== ways) throw new Error("multinomial and enumeration disagree");
+    }
+    return num(ways);
   },
 
   "central-tendency"(text) {

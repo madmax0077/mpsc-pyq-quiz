@@ -86,7 +86,7 @@ const GUIDES = [
     emoji: "🇮🇳",
     title: "UPSC CSAT Practice",
     blurb:
-      "Free UPSC CSAT Paper II aptitude practice — topic lessons, 2,000+ questions and timed speed tests in English and Marathi.",
+      "Free UPSC CSAT Paper II aptitude practice — topic lessons, 3,800+ questions with worked explanations and timed speed tests in English and Marathi.",
     minutes: 4,
   },
   {

@@ -6,7 +6,7 @@ import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
 export const metadata: Metadata = {
   title: "UPSC CSAT Practice Free — Paper II Aptitude Questions for CSE Prelims",
   description:
-    "Free UPSC CSAT practice online: topic lessons, 2,000+ aptitude and reasoning questions in English and Marathi, and timed speed tests for UPSC CSE Prelims Paper II. Built for MPSC CSAT, fully usable for UPSC CSAT qualifying practice.",
+    "Free UPSC CSAT practice online: topic lessons, 3,800+ aptitude and reasoning questions with worked explanations in English and Marathi, and timed speed tests for UPSC CSE Prelims Paper II. Built for MPSC CSAT, fully usable for UPSC CSAT qualifying practice.",
   keywords: [
     "UPSC CSAT",
     "UPSC CSAT practice",
@@ -100,7 +100,7 @@ export default function UpscCsatPracticePage() {
           <h3>What you get</h3>
           <ul>
             <li>Deep topic lessons with formulas, shortcuts and common traps</li>
-            <li>2,000+ practice questions with explanations</li>
+            <li>3,800+ practice questions with step-by-step explanations</li>
             <li>Topic-wise sets (5 to 50+ questions) with unseen-first practice</li>
             <li>Timed combined speed tests with negative marking</li>
           </ul>

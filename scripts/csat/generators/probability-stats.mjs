@@ -36,8 +36,8 @@ const twoDice = {
   difficulty: "moderate",
   cases() {
     const out = [];
-    for (const target of [5, 6, 7, 8, 9, 10, 11]) {
-      for (const mode of ["equals", "atleast"]) out.push({ target, mode });
+    for (const target of [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]) {
+      for (const mode of ["equals", "atleast", "atmost"]) out.push({ target, mode });
     }
     return out;
   },
@@ -46,7 +46,9 @@ const twoDice = {
     const pairs = [];
     for (let a = 1; a <= 6; a += 1) {
       for (let b = 1; b <= 6; b += 1) {
-        const hit = mode === "equals" ? a + b === target : a + b >= target;
+        const sum = a + b;
+        const hit =
+          mode === "equals" ? sum === target : mode === "atleast" ? sum >= target : sum <= target;
         if (hit) {
           favourable += 1;
           if (pairs.length < 8) pairs.push(`(${a},${b})`);
@@ -62,14 +64,28 @@ const twoDice = {
     const qEn =
       mode === "equals"
         ? `Two dice are thrown together. What is the probability that the sum of the numbers on them is exactly ${num(target)}?`
-        : `Two dice are thrown together. What is the probability that the sum of the numbers on them is ${num(target)} or more?`;
+        : mode === "atleast"
+          ? `Two dice are thrown together. What is the probability that the sum of the numbers on them is ${num(target)} or more?`
+          : `Two dice are thrown together. What is the probability that the sum of the numbers on them is ${num(target)} or less?`;
     const qMr =
       mode === "equals"
         ? `दोन फासे एकत्र टाकले असता त्यांवरील संख्यांची बेरीज नेमकी ${num(target)} येण्याची संभाव्यता किती?`
-        : `दोन फासे एकत्र टाकले असता त्यांवरील संख्यांची बेरीज ${num(target)} किंवा त्याहून अधिक येण्याची संभाव्यता किती?`;
+        : mode === "atleast"
+          ? `दोन फासे एकत्र टाकले असता त्यांवरील संख्यांची बेरीज ${num(target)} किंवा त्याहून अधिक येण्याची संभाव्यता किती?`
+          : `दोन फासे एकत्र टाकले असता त्यांवरील संख्यांची बेरीज ${num(target)} किंवा त्याहून कमी येण्याची संभाव्यता किती?`;
 
-    const condEn = mode === "equals" ? `add up to exactly ${num(target)}` : `add up to ${num(target)} or more`;
-    const condMr = mode === "equals" ? `बेरीज नेमकी ${num(target)} येते` : `बेरीज ${num(target)} किंवा अधिक येते`;
+    const condEn =
+      mode === "equals"
+        ? `add up to exactly ${num(target)}`
+        : mode === "atleast"
+          ? `add up to ${num(target)} or more`
+          : `add up to ${num(target)} or less`;
+    const condMr =
+      mode === "equals"
+        ? `बेरीज नेमकी ${num(target)} येते`
+        : mode === "atleast"
+          ? `बेरीज ${num(target)} किंवा अधिक येते`
+          : `बेरीज ${num(target)} किंवा कमी येते`;
 
     return {
       correct,
@@ -94,10 +110,10 @@ const ballsFromBag = {
   difficulty: "hard",
   cases() {
     const out = [];
-    for (const r of [3, 4, 5, 6]) {
-      for (const b of [2, 3, 4, 5]) {
-        for (const g of [2, 3, 4]) {
-          for (const want of ["one-red", "two-red"]) out.push({ r, b, g, want });
+    for (const r of [3, 4, 5, 6, 7, 8]) {
+      for (const b of [2, 3, 4, 5, 6]) {
+        for (const g of [2, 3, 4, 5]) {
+          for (const want of ["one-red", "two-red", "one-blue"]) out.push({ r, b, g, want });
         }
       }
     }
@@ -119,6 +135,23 @@ const ballsFromBag = {
         mr: {
           text: `एका पिशवीत ${num(r)} लाल, ${num(b)} निळे व ${num(g)} हिरवे चेंडू आहेत. त्यातून एक चेंडू यादृच्छिकपणे काढला. तो लाल असण्याची संभाव्यता किती?`,
           explanation: `एकूण चेंडू = ${num(r)} + ${num(b)} + ${num(g)} = ${num(total)}.\nप्रत्येक चेंडू निघण्याची शक्यता सारखीच असते, म्हणून ${num(total)} पैकी प्रत्येक निष्पत्तीचे वजन समान.\nअनुकूल निष्पत्ती (लाल चेंडू) = ${num(r)}.\nसंभाव्यता = ${num(r)}/${num(total)} = ${correct}.\nछेदात एकूण चेंडूंची संख्या यावी, रंगांची संख्या नव्हे — या चुकीमुळे सोपा गुण हातचा जातो.`,
+        },
+      };
+    }
+    if (want === "one-blue") {
+      const correct = frac(b, total);
+      const distractors = [frac(r, total), frac(g, total), frac(b + g, total)];
+      if (new Set([correct, ...distractors]).size !== 4) return null;
+      return {
+        correct,
+        distractors,
+        en: {
+          text: `A bag contains ${num(r)} red, ${num(b)} blue and ${num(g)} green balls. One ball is drawn at random. What is the probability that it is blue?`,
+          explanation: `Total number of balls = ${num(r)} + ${num(b)} + ${num(g)} = ${num(total)}.\nEvery ball is equally likely to be drawn.\nFavourable outcomes (a blue ball) = ${num(b)}.\nProbability = ${num(b)}/${num(total)} = ${correct}.\nKeep the denominator as the total number of balls.`,
+        },
+        mr: {
+          text: `एका पिशवीत ${num(r)} लाल, ${num(b)} निळे व ${num(g)} हिरवे चेंडू आहेत. त्यातून एक चेंडू यादृच्छिकपणे काढला. तो निळा असण्याची संभाव्यता किती?`,
+          explanation: `एकूण चेंडू = ${num(r)} + ${num(b)} + ${num(g)} = ${num(total)}.\nप्रत्येक चेंडू निघण्याची शक्यता सारखीच असते.\nअनुकूल निष्पत्ती (निळा चेंडू) = ${num(b)}.\nसंभाव्यता = ${num(b)}/${num(total)} = ${correct}.\nछेदात एकूण चेंडूंची संख्या ठेवा.`,
         },
       };
     }
@@ -152,13 +185,21 @@ const cards = {
   cases() {
     return [
       { kind: "king", fav: 4, en: "a king", mr: "राजा (king)" },
-      { kind: "heart", fav: 13, en: "a heart", mr: "इस्पिक नसलेले लाल — बदाम (heart)" },
+      { kind: "queen", fav: 4, en: "a queen", mr: "राणी (queen)" },
+      { kind: "jack", fav: 4, en: "a jack", mr: "गुलाम (jack)" },
+      { kind: "heart", fav: 13, en: "a heart", mr: "बदाम (heart)" },
+      { kind: "diamond", fav: 13, en: "a diamond", mr: "चौकट (diamond)" },
+      { kind: "club", fav: 13, en: "a club", mr: "किलवर (club)" },
       { kind: "face", fav: 12, en: "a face card", mr: "चित्र असलेले पान (face card)" },
       { kind: "red", fav: 26, en: "a red card", mr: "लाल रंगाचे पान" },
+      { kind: "black", fav: 26, en: "a black card", mr: "काळ्या रंगाचे पान" },
       { kind: "ace", fav: 4, en: "an ace", mr: "एक्का (ace)" },
       { kind: "spade", fav: 13, en: "a spade", mr: "इस्पिक (spade)" },
       { kind: "red-king", fav: 2, en: "a red king", mr: "लाल रंगाचा राजा" },
+      { kind: "black-king", fav: 2, en: "a black king", mr: "काळ्या रंगाचा राजा" },
       { kind: "black-face", fav: 6, en: "a black face card", mr: "काळ्या रंगाचे चित्र असलेले पान" },
+      { kind: "red-face", fav: 6, en: "a red face card", mr: "लाल रंगाचे चित्र असलेले पान" },
+      { kind: "numbered", fav: 36, en: "a numbered card (2 to 10)", mr: "क्रमांक असलेले पान (2 ते 10)" },
     ];
   },
   make({ fav, en, mr }) {
@@ -189,8 +230,8 @@ const coins = {
   difficulty: "moderate",
   cases() {
     const out = [];
-    for (const n of [2, 3, 4, 5]) {
-      for (const k of [0, 1, 2, 3]) {
+    for (const n of [2, 3, 4, 5, 6]) {
+      for (const k of [0, 1, 2, 3, 4, 5]) {
         for (const mode of ["exactly", "atleast"]) {
           if (k <= n) out.push({ n, k, mode });
         }
@@ -253,10 +294,12 @@ const committee = {
   difficulty: "hard",
   cases() {
     const out = [];
-    for (const m of [5, 6, 7, 8]) {
-      for (const w of [3, 4, 5]) {
-        for (const pickM of [2, 3]) {
-          for (const pickW of [1, 2]) out.push({ m, w, pickM, pickW });
+    for (const m of [5, 6, 7, 8, 9, 10]) {
+      for (const w of [3, 4, 5, 6]) {
+        for (const pickM of [1, 2, 3, 4]) {
+          for (const pickW of [1, 2, 3]) {
+            if (pickM <= m && pickW <= w) out.push({ m, w, pickM, pickW });
+          }
         }
       }
     }
@@ -300,21 +343,22 @@ const arrangements = {
   id: "letter-arrangements",
   difficulty: "hard",
   cases() {
-    return [
-      { word: "LEADER", letters: 6, repeats: [2] },
-      { word: "SCHOOL", letters: 6, repeats: [2] },
-      { word: "BANANA", letters: 6, repeats: [3, 2] },
-      { word: "PENCIL", letters: 6, repeats: [] },
-      { word: "LETTER", letters: 6, repeats: [2, 2] },
-      { word: "GARDEN", letters: 6, repeats: [] },
-      { word: "SUCCESS", letters: 7, repeats: [3, 2] },
-      { word: "MONDAY", letters: 6, repeats: [] },
-      { word: "ARRANGE", letters: 7, repeats: [2, 2] },
-      { word: "BALLOON", letters: 7, repeats: [2, 2] },
+    const words = [
+      "LEADER", "SCHOOL", "BANANA", "PENCIL", "LETTER", "GARDEN", "SUCCESS",
+      "MONDAY", "ARRANGE", "BALLOON", "COMMITTEE", "MISSISSIPPI", "MATHEMATICS",
+      "ASSASSINATION", "CALCUTTA", "INSTITUTE", "EXPERIMENT", "DAUGHTER",
+      "FATHER", "SISTER", "BROTHER", "ACCOUNT", "BOOKKEEP", "PARALLEL",
+      "APPLE", "ORANGE", "TEACHER", "STUDENT", "NUMBER", "PATTERN",
     ];
+    return words.map((word) => {
+      const counts = new Map();
+      for (const ch of word) counts.set(ch, (counts.get(ch) || 0) + 1);
+      const repeats = [...counts.values()].filter((c) => c > 1).sort((a, b) => b - a);
+      return { word, letters: word.length, repeats };
+    });
   },
   make({ word, letters, repeats }) {
-    const denom = repeats.reduce((acc, r) => acc * factorial(r), 1);
+    const denom = repeats.reduce((acc, r) => acc * factorial(r), 1) || 1;
     const ways = factorial(letters) / denom;
     if (!Number.isInteger(ways)) return null;
 
@@ -356,6 +400,9 @@ const centralTendency = {
       [4, 7, 7, 9, 13], [2, 5, 5, 8, 10], [6, 8, 8, 11, 17], [3, 3, 7, 9, 13],
       [5, 9, 11, 11, 14], [12, 15, 15, 18, 25], [7, 7, 10, 14, 22], [1, 4, 4, 6, 10],
       [8, 11, 11, 16, 19], [6, 6, 9, 12, 17], [10, 13, 13, 16, 23], [2, 6, 6, 9, 12],
+      [9, 12, 12, 15, 21], [3, 8, 8, 10, 16], [11, 14, 14, 17, 24], [5, 5, 9, 12, 18],
+      [4, 6, 6, 10, 14], [8, 8, 13, 15, 21], [1, 5, 5, 9, 15], [7, 10, 10, 13, 20],
+      [2, 2, 8, 11, 17], [9, 9, 12, 16, 22], [4, 9, 9, 12, 16], [6, 10, 10, 14, 20],
     ];
     for (const data of sets) {
       for (const want of ["mean", "median", "mode"]) out.push({ data, want });
@@ -425,9 +472,11 @@ const atLeastOne = {
   difficulty: "hard",
   cases() {
     const out = [];
-    for (const good of [3, 4, 5, 6]) {
-      for (const bad of [2, 3, 4]) {
-        for (const pick of [2, 3]) out.push({ good, bad, pick });
+    for (const good of [3, 4, 5, 6, 7, 8, 9]) {
+      for (const bad of [2, 3, 4, 5]) {
+        for (const pick of [2, 3, 4]) {
+          if (pick <= good + bad) out.push({ good, bad, pick });
+        }
       }
     }
     return out;

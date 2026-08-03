@@ -86,7 +86,7 @@ function pool(topicId, language) {
   return { bankCount, pyqCount, total: bankCount + pyqCount };
 }
 
-const TARGET = 100;
+const TARGET = 200;
 console.log("topic".padEnd(34) + "EN(bank+pyq=tot)".padEnd(24) + "MR(bank+pyq=tot)");
 console.log("-".repeat(80));
 

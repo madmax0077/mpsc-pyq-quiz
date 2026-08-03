@@ -16,6 +16,7 @@ import Confetti from "./Confetti";
 import Analytics from "./Analytics";
 import SearchBar, { type SearchNavigatePayload } from "./SearchBar";
 import DisplayAd from "./DisplayAd";
+import { categoryLabel, topicLabel, t } from "@/lib/i18n";
 
 const OPTION_KEYS: OptionKey[] = ["A", "B", "C", "D"];
 
@@ -752,12 +753,18 @@ export default function StudentView({
           <div className="space-y-6">
             <div>
               <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">
-                {topicSource === "catalog" ? `${"\uD83D\uDCD6"} Topic Tests` : `${"\uD83C\uDFAF"} Topic Wise Practice`}
+                {topicSource === "catalog"
+                  ? `📖 ${t("topicTestsHeading", language)}`
+                  : `🎯 ${t("topicWisePractice", language)}`}
               </h2>
               <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
                 {topicSource === "catalog"
-                  ? "Curated chapter-wise practice sets — select a subject to browse tests"
-                  : "Previous-year questions grouped by topic — select a subject to begin"}
+                  ? (language === "marathi"
+                    ? "प्रकरणनिहाय सराव संच — विषय निवडा आणि चाचण्या पहा"
+                    : "Curated chapter-wise practice sets — select a subject to browse tests")
+                  : (language === "marathi"
+                    ? "मागील वर्षांचे प्रश्न टॉपिकनुसार विभागलेले आहेत — विषय निवडून सुरू करा"
+                    : "Previous-year questions grouped by topic — select a subject to begin")}
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -782,16 +789,16 @@ export default function StudentView({
                         </div>
                         <div>
                           <h3 className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
-                            {cat}
+                            {categoryLabel(cat, language)}
                           </h3>
                           <p className="text-xs text-slate-500 dark:text-slate-400">
-                            {info.topicCount} topic{info.topicCount !== 1 ? "s" : ""} &middot; {info.questionCount} question{info.questionCount !== 1 ? "s" : ""}
+                            {info.topicCount} {language === "marathi" ? "टॉपिक" : (info.topicCount !== 1 ? "topics" : "topic")} &middot; {info.questionCount} {language === "marathi" ? "प्रश्न" : t("questions", language)}
                           </p>
                         </div>
                       </div>
                       <div className="mt-3 flex items-center justify-end">
                         <span className="text-xs font-medium text-indigo-500 group-hover:text-indigo-600 transition-colors flex items-center gap-1">
-                          View Topics
+                          {t("viewTopics", language)}
                           <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                           </svg>
@@ -830,9 +837,9 @@ export default function StudentView({
                 </svg>
               </button>
               <div>
-                <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">{topicCategory}</h2>
+                <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100">{categoryLabel(topicCategory, language)}</h2>
                 <p className="text-sm text-slate-500 dark:text-slate-400">
-                  {topicList.length} topic{topicList.length !== 1 ? "s" : ""} available
+                  {topicList.length} {language === "marathi" ? "टॉपिक उपलब्ध आहेत" : `topic${topicList.length !== 1 ? "s" : ""} available`}
                 </p>
               </div>
             </div>
@@ -864,7 +871,7 @@ export default function StudentView({
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex-1 min-w-0">
                           <h3 className="font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors dark:text-slate-100 dark:group-hover:text-emerald-400">
-                            {item.name}
+                            {topicLabel(item.name, language)}
                           </h3>
                         </div>
                         <svg className="h-5 w-5 shrink-0 mt-0.5 text-slate-300 group-hover:text-emerald-400 transition-colors dark:text-slate-600 dark:group-hover:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -873,10 +880,10 @@ export default function StudentView({
                       </div>
                       <div className="mt-3 flex items-center gap-2">
                         <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${colors.badge}`}>
-                          {topicCategory}
+                          {categoryLabel(topicCategory, language)}
                         </span>
                         <span className="text-xs text-slate-400 dark:text-slate-500">
-                          {item.questionCount} question{item.questionCount !== 1 ? "s" : ""}
+                          {item.questionCount} {t("questions", language)}
                         </span>
                       </div>
                     </div>
@@ -950,7 +957,7 @@ export default function StudentView({
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
                   </svg>
-                  <span className="hidden sm:inline">My Stats</span>
+                  <span className="hidden sm:inline">{t("myStats", language)}</span>
                 </button>
               </div>
             </div>
@@ -1005,8 +1012,12 @@ export default function StudentView({
             {/* Category Quizzes — only for MPSC, hidden inside dedicated exam sections. */}
             {!examFilter && categoryQuizzes.length > 0 && (
               <div>
-                <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">Practice by Subject</h2>
-                <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">Auto-grouped from categorized questions across all quizzes.</p>
+                <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">{t("practiceBySubject", language)}</h2>
+                <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
+                  {language === "marathi"
+                    ? "सर्व प्रश्नसंचांतील वर्गीकृत प्रश्नांवरून स्वयंचलित गट तयार केले आहेत."
+                    : "Auto-grouped from categorized questions across all quizzes."}
+                </p>
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {categoryQuizzes.map((cq) => {
                     const cat = cq.category!;
@@ -1039,16 +1050,16 @@ export default function StudentView({
                             </div>
                             <div>
                               <h3 className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
-                                {cq.title}
+                                {categoryLabel(cq.title, language)}
                               </h3>
                               <p className="text-xs text-slate-500 dark:text-slate-400">
-                                {attempted}/{totalQ} attempted
+                                {attempted}/{totalQ} {language === "marathi" ? "सोडवले" : "attempted"}
                               </p>
                             </div>
                           </div>
                           <div className="mt-3 flex items-center justify-end">
                             <span className="text-xs font-medium text-indigo-500 group-hover:text-indigo-600 transition-colors flex items-center gap-1">
-                              {progressPct >= 100 ? "Review All" : "Start Practice"}
+                              {progressPct >= 100 ? t("reviewAll", language) : t("startPractice", language)}
                               <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                               </svg>
@@ -1066,12 +1077,16 @@ export default function StudentView({
             {regularQuizzes.length > 0 && (
               <div>
                 <h2 className="mb-1 text-lg font-bold text-slate-800 dark:text-slate-100">
-                  {examFilter === "RTO_AMVI" ? "Automobile Engineering — Past Papers" : "All Quizzes"}
+                  {examFilter === "RTO_AMVI" ? t("autoPastPapers", language) : t("allQuizzes", language)}
                 </h2>
                 <p className="mb-4 text-sm text-slate-500 dark:text-slate-400">
                   {examFilter === "RTO_AMVI"
-                    ? "Practice full past papers for the RTO AMVI Automobile Engineering exam."
-                    : "Full question papers as uploaded by admin."}
+                    ? (language === "marathi"
+                      ? "आरटीओ AMVI ऑटोमोबाइल अभियांत्रिकी परीक्षेच्या पूर्ण प्रश्नपत्रिकांचा सराव करा."
+                      : "Practice full past papers for the RTO AMVI Automobile Engineering exam.")
+                    : (language === "marathi"
+                      ? "अॅडमिनने अपलोड केलेल्या पूर्ण प्रश्नपत्रिका."
+                      : "Full question papers as uploaded by admin.")}
                 </p>
                 <div className="grid gap-3 sm:grid-cols-2">
                   {regularQuizzes.map((quiz) => (
@@ -1246,7 +1261,7 @@ export default function StudentView({
                 disabled={reportSubmitting || !reportReason.trim() || !reportEmail.trim()}
                 className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {reportSubmitting ? "Submitting..." : "Submit Report"}
+                {reportSubmitting ? t("submitting", language) : t("submitReport", language)}
               </button>
             </div>
           </div>
@@ -1279,7 +1294,7 @@ export default function StudentView({
             </h2>
             {selectedQuiz.category && catStyle && (
               <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ${catStyle.badge}`}>
-                {selectedQuiz.category}
+                {categoryLabel(selectedQuiz.category, language)}
               </span>
             )}
           </div>
@@ -1691,7 +1706,7 @@ export default function StudentView({
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Submit Quiz ({answeredCount}/{total} answered)
+                {t("submitQuiz", language)} ({answeredCount}/{total} {t("answered", language)})
               </button>
             </div>
           ) : (
@@ -1713,7 +1728,7 @@ export default function StudentView({
                   onClick={goBack}
                   className="flex-1 rounded-xl bg-slate-100 px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-semibold text-slate-700 hover:bg-slate-200 transition-colors dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
                 >
-                  Back to Quizzes
+                  {t("backToQuizzes", language)}
                 </button>
               </div>
             </div>
@@ -1733,7 +1748,7 @@ export default function StudentView({
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Submit Set {currentPage + 1} ({pageAnsweredCount}/{pageQuestions.length} answered)
+                {t("submitSet", language)} {currentPage + 1} ({pageAnsweredCount}/{pageQuestions.length} {t("answered", language)})
               </button>
             </div>
           ) : (

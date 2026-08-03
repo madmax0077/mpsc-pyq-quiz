@@ -18,9 +18,11 @@ const WORDS = [
   "LAMP", "BOOK", "STAR", "FROG", "DESK", "RING", "SHIP", "TREE", "WIND", "GOLD",
   "HAND", "LEAF", "MOON", "NOSE", "PARK", "ROAD", "SALT", "TIME", "FISH", "BIRD",
   "CARD", "DOOR", "FIRE", "GATE", "HILL", "KITE", "LION", "MILK", "NAIL", "OVEN",
+  "PLUM", "RACE", "SONG", "TANK", "UNIT", "VOTE", "WOLF", "YARD", "ZONE", "BEAM",
+  "CLUB", "DRUM", "ECHO", "FARM", "GLOW", "HERB", "IRON", "JADE", "KEEP", "LACE",
 ];
 
-const PAIRS = WORDS.map((w, i) => [w, WORDS[(i + 7) % WORDS.length]]);
+const PAIRS = WORDS.map((w, i) => [w, WORDS[(i + 11) % WORDS.length]]);
 
 const shiftWord = (w, fn) =>
   [...w].map((ch, i) => letterAt(posOf(ch) + fn(i))).join("");
@@ -69,8 +71,8 @@ const uniformShift = {
   difficulty: "moderate",
   cases() {
     const out = [];
-    for (const k of [2, 3, 4, 5, 6, 7]) {
-      for (let i = 0; i < PAIRS.length; i += 3) out.push({ k, pair: i });
+    for (const k of [2, 3, 4, 5, 6, 7, 8, 9]) {
+      for (let i = 0; i < PAIRS.length; i += 1) out.push({ k, pair: i });
     }
     return out;
   },
@@ -113,8 +115,8 @@ const progressiveShift = {
   difficulty: "hard",
   cases() {
     const out = [];
-    for (const [s, d] of [[1, 1], [2, 1], [1, 2], [3, 2], [2, 3], [4, 1]]) {
-      for (let i = 1; i < PAIRS.length; i += 3) out.push({ s, d, pair: i });
+    for (const [s, d] of [[1, 1], [2, 1], [1, 2], [3, 2], [2, 3], [4, 1], [3, 1], [5, 1], [1, 3]]) {
+      for (let i = 0; i < PAIRS.length; i += 2) out.push({ s, d, pair: i });
     }
     return out;
   },
@@ -159,7 +161,7 @@ const reversal = {
   difficulty: "moderate",
   cases() {
     const out = [];
-    for (let i = 2; i < PAIRS.length; i += 2) out.push({ pair: i });
+    for (let i = 0; i < PAIRS.length; i += 1) out.push({ pair: i });
     return out;
   },
   make({ pair }) {
@@ -198,7 +200,7 @@ const opposite = {
   difficulty: "hard",
   cases() {
     const out = [];
-    for (let i = 0; i < PAIRS.length; i += 2) out.push({ pair: i });
+    for (let i = 0; i < PAIRS.length; i += 1) out.push({ pair: i });
     return out;
   },
   make({ pair }) {
@@ -241,6 +243,10 @@ const NUMBER_RULES = [
   { f: (n) => n * n * n + n, en: "cube the number and add the number itself", mr: "संख्येचा घन करून त्यात तीच संख्या मिळवणे", show: (n) => `${num(n)}³ + ${num(n)}` },
   { f: (n) => 2 * n * n, en: "square the number and double it", mr: "संख्येचा वर्ग करून तो दुप्पट करणे", show: (n) => `2 × ${num(n)}²` },
   { f: (n) => n * n + 2 * n, en: "square the number and add twice the number", mr: "संख्येचा वर्ग करून त्यात संख्येच्या दुप्पट मिळवणे", show: (n) => `${num(n)}² + 2 × ${num(n)}` },
+  { f: (n) => n * n * n - n, en: "cube the number and subtract the number itself", mr: "संख्येचा घन करून त्यातून तीच संख्या वजा करणे", show: (n) => `${num(n)}³ − ${num(n)}` },
+  { f: (n) => 3 * n * n, en: "square the number and multiply by 3", mr: "संख्येचा वर्ग करून तो तिप्पट करणे", show: (n) => `3 × ${num(n)}²` },
+  { f: (n) => n * (n + 1), en: "multiply the number by the next integer", mr: "संख्येला पुढच्या पूर्णांकाशी गुणणे", show: (n) => `${num(n)} × ${num(n + 1)}` },
+  { f: (n) => n * (n - 1), en: "multiply the number by the previous integer", mr: "संख्येला मागील पूर्णांकाशी गुणणे", show: (n) => `${num(n)} × ${num(n - 1)}` },
 ];
 
 const numberRule = {
@@ -249,7 +255,7 @@ const numberRule = {
   cases() {
     const out = [];
     for (let r = 0; r < NUMBER_RULES.length; r += 1) {
-      for (const start of [2, 3, 4, 5, 6]) out.push({ r, start });
+      for (const start of [2, 3, 4, 5, 6, 7, 8]) out.push({ r, start });
     }
     return out;
   },

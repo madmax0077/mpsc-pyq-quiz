@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "@/lib/auth-context";
 import type { Category, Language } from "@/lib/types";
+import { loadSavedLanguage, saveLanguage, t } from "@/lib/i18n";
 import StudentView from "@/components/StudentView";
 import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
@@ -47,6 +48,7 @@ export default function HomeClient() {
     }
     window.scrollTo(0, 0);
     setDark(document.documentElement.classList.contains("dark"));
+    setLanguage(loadSavedLanguage());
     const savedName = localStorage.getItem(GUEST_NAME_KEY) || "";
     let savedId = localStorage.getItem(GUEST_ID_KEY) || "";
     if (!savedId) {
@@ -188,56 +190,56 @@ export default function HomeClient() {
                 onClick={() => { setAppMode("notes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-orange-50 hover:text-orange-600 transition-colors dark:text-slate-300 dark:hover:bg-orange-900/30 dark:hover:text-orange-400"
               >
-                📝 Notes
+                📝 {t("notes", language)}
               </button>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <button
                 onClick={() => { setAppMode("leaderboard"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-amber-50 hover:text-amber-600 transition-colors dark:text-slate-300 dark:hover:bg-amber-900/30 dark:hover:text-amber-400"
               >
-                🏆 Leaderboard
+                🏆 {t("leaderboard", language)}
               </button>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/map"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 transition-colors dark:text-slate-300 dark:hover:bg-emerald-900/30 dark:hover:text-emerald-400"
               >
-                🗺️ Map
+                🗺️ {t("map", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/census-2011-maharashtra"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-600 transition-colors dark:text-slate-300 dark:hover:bg-sky-900/30 dark:hover:text-sky-400"
               >
-                📊 Census
+                📊 {t("census", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/rivers-maharashtra"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-cyan-50 hover:text-cyan-600 transition-colors dark:text-slate-300 dark:hover:bg-cyan-900/30 dark:hover:text-cyan-400"
               >
-                🏞️ Rivers
+                🏞️ {t("rivers", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/exams"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
-                Exams
+                {t("exams", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/about"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
-                About
+                {t("about", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/contact"
                 className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
-                Contact
+                {t("contact", language)}
               </a>
             </nav>
 
@@ -261,8 +263,13 @@ export default function HomeClient() {
 
             <select
               value={language}
-              onChange={(e) => setLanguage(e.target.value as Language)}
+              onChange={(e) => {
+                const next = e.target.value as Language;
+                setLanguage(next);
+                saveLanguage(next);
+              }}
               className="shrink-0 rounded-lg border border-slate-200 bg-white px-1.5 py-1 sm:px-2 sm:py-1.5 text-[11px] sm:text-xs font-medium text-slate-600 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+              aria-label="Language"
             >
               <option value="english">EN</option>
               <option value="marathi">मराठी</option>
@@ -281,14 +288,14 @@ export default function HomeClient() {
                 {displayName}
               </p>
               <p className="text-[10px] text-slate-400 truncate dark:text-slate-500">
-                {studentUser?.email || "Guest mode"}
+                {studentUser?.email || t("guestMode", language)}
               </p>
             </div>
             <button
               onClick={studentUser ? logoutStudent : resetGuestName}
               className="shrink-0 rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 text-[11px] sm:text-xs font-medium text-slate-500 transition-colors hover:bg-red-50 hover:text-red-600 dark:text-slate-400 dark:hover:bg-red-900/30 dark:hover:text-red-400"
             >
-              {studentUser ? "Logout" : "Name"}
+              {studentUser ? t("logout", language) : t("name", language)}
             </button>
           </div>
         </div>
@@ -303,6 +310,7 @@ export default function HomeClient() {
               <div className="absolute -bottom-28 -right-16 h-64 w-64 rounded-full bg-emerald-300/30 blur-3xl dark:bg-emerald-700/20" />
               <div className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                 <div className="text-center lg:text-left">
+                  {/* Brand / USP hero stays English in both languages. */}
                   <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.22em] text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300 lg:mx-0">
                     <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
                     Live Study Arena
@@ -325,7 +333,7 @@ export default function HomeClient() {
             </section>
 
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
-              <LeaderboardTile onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
+              <LeaderboardTile language={language} onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
 
               {/* Mock Test — full-length timed test (Set A pattern) */}
               <button
@@ -349,24 +357,21 @@ export default function HomeClient() {
                   <div className="min-w-0 flex-1">
                     <div className="mb-1.5 flex flex-wrap items-center gap-2">
                       <h3 className="text-xl font-bold bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 bg-clip-text text-transparent dark:from-violet-300 dark:via-purple-300 dark:to-fuchsia-300 sm:text-2xl">
-                        Mock Test
+                        {t("mockTest", language)}
                       </h3>
                       <span className="relative inline-flex items-center gap-1 rounded-full bg-violet-400 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
                         <span className="relative flex h-2 w-2">
                           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
-                          <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                          <span className="relative flex h-2 w-2 rounded-full bg-white" />
                         </span>
-                        New
+                        {t("newBadge", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-full border border-violet-300/80 bg-violet-100/80 px-2 py-0.5 text-[10px] font-semibold text-violet-800 dark:border-violet-700 dark:bg-violet-900/40 dark:text-violet-200">
-                        🕒 Timed · Set A pattern
+                        🕒 {t("mockTimed", language)}
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-violet-700 dark:text-violet-300">Full-length 100-question mock</strong> in real
-                      exam conditions — choose <strong>Rajyaseva</strong>, <strong>Combine Group B</strong> or
-                      <strong> Group C</strong>. Real subject weightage, a countdown timer and 1/4 negative marking.
-                      Current Affairs comes from the GK Marathon set.
+                      {t("mockDesc", language)}
                     </p>
 
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
@@ -374,15 +379,15 @@ export default function HomeClient() {
                         ⏱️ 120 / 60 min
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-violet-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-violet-900/40">
-                        ➖ Negative marking
+                        ➖ {t("negativeMarking", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-violet-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-violet-900/40">
-                        🔀 Randomised each attempt
+                        🔀 {t("randomised", language)}
                       </span>
                     </div>
 
                     <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-400 to-fuchsia-400 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-violet-200/50 transition-all group-hover:shadow-lg group-hover:shadow-violet-300/50 dark:shadow-violet-950/40">
-                      Start a mock test
+                      {t("mockStart", language)}
                       <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -405,13 +410,13 @@ export default function HomeClient() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-indigo-700 dark:text-indigo-300 mb-2">
-                  📚 Subject Wise
+                  {t("subjectWise", language)}
                 </h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Practice by full exam papers or subjects like History, Geography, Polity, Science and more.
+                  {t("subjectWiseDesc", language)}
                 </p>
                 <div className="mt-4 flex items-center text-xs font-semibold text-indigo-500 dark:text-indigo-400">
-                  Start Practicing
+                  {t("startPracticing", language)}
                   <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -430,13 +435,13 @@ export default function HomeClient() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-emerald-700 dark:text-emerald-300 mb-2">
-                  🎯 Topic Wise (PYQ)
+                  {t("topicWisePyq", language)}
                 </h3>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Previous-year questions segregated into granular topics. Pick a subject, then drill into a specific topic.
+                  {t("topicWiseDesc", language)}
                 </p>
                 <div className="mt-4 flex items-center text-xs font-semibold text-emerald-500 dark:text-emerald-400">
-                  Explore Topics
+                  {t("exploreTopics", language)}
                   <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -456,17 +461,17 @@ export default function HomeClient() {
                 </div>
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <h3 className="text-xl font-bold text-amber-700 dark:text-amber-300">
-                    📖 Topic Tests
+                    {t("topicTests", language)}
                   </h3>
                   <span className="rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-700 dark:border-amber-800 dark:bg-amber-900/40 dark:text-amber-300">
-                    Other than PYQ
+                    {t("otherThanPyq", language)}
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  Curated chapter-wise practice sets — Science tests, key schemes, newspapers and more, kept separate from PYQ.
+                  {t("topicTestsDesc", language)}
                 </p>
                 <div className="mt-4 flex items-center text-xs font-semibold text-amber-500 dark:text-amber-400">
-                  Browse Tests
+                  {t("browseTests", language)}
                   <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -510,7 +515,7 @@ export default function HomeClient() {
                   <div className="min-w-0 flex-1">
                     <div className="mb-1.5 flex flex-wrap items-center gap-2">
                       <h3 className="text-xl font-bold bg-gradient-to-r from-slate-700 via-slate-800 to-slate-600 bg-clip-text text-transparent dark:from-slate-100 dark:via-white dark:to-slate-300 sm:text-2xl">
-                        GK 2025-26 Marathon
+                        {t("gkMarathon", language)}
                       </h3>
                       {/* Pulsing NEW badge */}
                       <span className="relative inline-flex items-center gap-1 rounded-full bg-slate-700 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
@@ -518,33 +523,31 @@ export default function HomeClient() {
                           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
                           <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
                         </span>
-                        New
+                        {t("newBadge", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-full border border-slate-300/80 bg-slate-100/80 px-2 py-0.5 text-[10px] font-semibold text-slate-700 dark:border-slate-600 dark:bg-slate-800/60 dark:text-slate-200">
-                        📰 Current Affairs
+                        📰 {t("currentAffairs", language)}
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-slate-800 dark:text-slate-200">Last 6 months</strong> Current Affairs (2025-26) — the
-                      most-asked GK MCQs covering sports, science, awards, politics,
-                      schemes and economy. Practice in 5-question sets.
+                      {t("gkDesc", language)}
                     </p>
 
                     {/* stats row */}
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-slate-200/70 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-slate-700/50">
-                        ✅ 264 verified
+                        ✅ {t("verified", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-slate-200/70 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-slate-700/50">
-                        ⚡ 5-Q sets
+                        ⚡ {t("fiveQSets", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-slate-200/70 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-slate-700/50">
-                        🎯 Exam-ready
+                        🎯 {t("examReady", language)}
                       </span>
                     </div>
 
                     <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-slate-700 to-slate-900 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-slate-400/40 transition-all group-hover:shadow-lg group-hover:shadow-slate-500/50 dark:shadow-slate-950/40">
-                      Start the marathon
+                      {t("startMarathon", language)}
                       <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -568,20 +571,20 @@ export default function HomeClient() {
                   <div className="min-w-0 flex-1">
                     <div className="mb-1 flex flex-wrap items-center gap-2">
                       <h3 className="text-xl font-bold text-blue-700 dark:text-blue-300">
-                        🚗 RTO AMVI
+                        {t("rtoAmvi", language)}
                       </h3>
                       <span className="rounded-full bg-blue-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
-                        New
+                        {t("newBadge", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[10px] font-semibold text-emerald-700 dark:border-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">
-                        Free
+                        {t("free", language)}
                       </span>
                     </div>
                     <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Assistant Motor Vehicle Inspector exam preparation. Section: <strong>Automobile Engineering</strong> — practice past paper MCQs covering IC engines, fuels, gears, brakes, fluid mechanics, vehicle layout and more.
+                      {t("rtoDesc", language)}
                     </p>
                     <div className="mt-3 flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400">
-                      Open RTO AMVI section
+                      {t("openRto", language)}
                       <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -605,24 +608,23 @@ export default function HomeClient() {
                   <div className="min-w-0 flex-1">
                     <div className="mb-1 flex flex-wrap items-center gap-2">
                       <h3 className="text-xl font-bold text-orange-700 dark:text-orange-300">
-                        📝 Notes
+                        {t("notesTitle", language)}
                       </h3>
                       <span className="rounded-full bg-orange-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-orange-700 dark:bg-orange-900/40 dark:text-orange-300">
-                        New
+                        {t("newBadge", language)}
                       </span>
                       <span
                         className="hidden items-center gap-1 rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-700 sm:inline-flex dark:border-amber-800 dark:bg-amber-900/30 dark:text-amber-300"
                         title="Read-only — copy disabled"
                       >
-                        🔒 Read-only
+                        🔒 {t("readOnly", language)}
                       </span>
                     </div>
                     <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Curated revision notes by Don&apos;t know Academy. First in the series:
-                      <strong> वर्तमानपत्र — संस्थापक व संपादक</strong> (70+ newspapers, 50+ editors, 100 MCQs with answers).
+                      {t("notesDesc", language)}
                     </p>
                     <div className="mt-3 flex items-center text-xs font-semibold text-orange-500 dark:text-orange-400">
-                      Open Notes
+                      {t("openNotes", language)}
                       <svg className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -646,39 +648,36 @@ export default function HomeClient() {
                     </span>
                     <div className="flex flex-col items-center leading-none text-sky-900">
                       <span className="text-2xl font-black tracking-tight drop-shadow-sm">20</span>
-                      <span className="text-[8px] font-semibold uppercase tracking-wider opacity-80">Topics</span>
+                      <span className="text-[8px] font-semibold uppercase tracking-wider opacity-80">{t("topicsLabel", language)}</span>
                     </div>
                   </div>
 
                   <div className="min-w-0 flex-1">
                     <div className="mb-1.5 flex flex-wrap items-center gap-2">
                       <h3 className="text-xl font-bold bg-gradient-to-r from-sky-600 via-blue-500 to-indigo-500 bg-clip-text text-transparent dark:from-sky-300 dark:via-blue-300 dark:to-indigo-300 sm:text-2xl">
-                        CSAT &amp; Aptitude
+                        {t("csatTitle", language)}
                       </h3>
                       <span className="relative inline-flex items-center gap-1 rounded-full bg-sky-400 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
                         <span className="relative flex h-2 w-2">
                           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
                           <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
                         </span>
-                        New
+                        {t("newBadge", language)}
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-sky-700 dark:text-sky-300">For MPSC and UPSC CSAT.</strong>{" "}
-                      Every CSAT topic explained in depth — concepts, formulas, shortcuts and traps —
-                      followed by 2,000+ solved practice questions in Marathi and English, plus a
-                      timed combined speed test for the qualifying aptitude paper.
+                      {t("csatDesc", language)}
                     </p>
 
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
-                        📖 Deep topic lessons
+                        📖 {t("deepLessons", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
-                        ✍️ Topic-wise practice
+                        ✍️ {t("topicPractice", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
-                        ⏱️ Combined speed test
+                        ⏱️ {t("speedTest", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-md bg-white/70 px-2 py-0.5 text-slate-700 ring-1 ring-sky-200/60 dark:bg-slate-900/50 dark:text-slate-300 dark:ring-sky-900/40">
                         MPSC + UPSC CSAT
@@ -686,7 +685,7 @@ export default function HomeClient() {
                     </div>
 
                     <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-sky-400 to-indigo-400 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-sky-200/50 transition-all group-hover:shadow-lg group-hover:shadow-sky-300/50 dark:shadow-sky-950/40">
-                      Open CSAT training
+                      {t("openCsat", language)}
                       <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -719,28 +718,24 @@ export default function HomeClient() {
                   <div className="min-w-0 flex-1">
                     <div className="mb-1.5 flex flex-wrap items-center gap-2">
                       <h3 className="text-xl font-bold bg-gradient-to-r from-cyan-700 via-teal-700 to-emerald-700 bg-clip-text text-transparent dark:from-cyan-300 dark:via-teal-300 dark:to-emerald-300 sm:text-2xl">
-                        Rivers of Maharashtra
+                        {t("riversTitle", language)}
                       </h3>
                       <span className="relative inline-flex items-center gap-1 rounded-full bg-cyan-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
                         <span className="relative flex h-2 w-2">
                           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
                           <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
                         </span>
-                        New
+                        {t("newBadge", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-full border border-teal-300/80 bg-teal-100/80 px-2 py-0.5 text-[10px] font-semibold text-teal-800 dark:border-teal-700 dark:bg-teal-900/40 dark:text-teal-200">
-                        🗺️ District-wise 2D map
+                        🗺️ {t("districtMap", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-full border border-emerald-300/80 bg-emerald-100/80 px-2 py-0.5 text-[10px] font-semibold text-emerald-800 dark:border-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-200">
-                        📜 MPSC PYQs
+                        📜 {t("mpscPyqs", language)}
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-teal-700 dark:text-teal-300">Every major river plotted with names</strong> on
-                      a clean district-aware 2D map — Godavari, Krishna, Tapi &amp;
-                      14 Konkan rivers, basin-colour-coded. Plus a curated{" "}
-                      <strong>MPSC Previous-Year Questions quiz</strong> on
-                      Maharashtra rivers from 2010 – 2025 papers, tagged by exam &amp; year.
+                      {t("riversDesc", language)}
                     </p>
 
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
@@ -759,7 +754,7 @@ export default function HomeClient() {
                     </div>
 
                     <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-cyan-600 to-teal-500 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-cyan-300/40 transition-all group-hover:shadow-lg group-hover:shadow-cyan-400/50 dark:shadow-cyan-900/40">
-                      Open map &amp; take the quiz
+                      {t("openMapQuiz", language)}
                       <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -792,23 +787,21 @@ export default function HomeClient() {
                   <div className="min-w-0 flex-1">
                     <div className="mb-1.5 flex flex-wrap items-center gap-2">
                       <h3 className="text-xl font-bold bg-gradient-to-r from-sky-700 via-cyan-700 to-blue-700 bg-clip-text text-transparent dark:from-sky-300 dark:via-cyan-300 dark:to-blue-300 sm:text-2xl">
-                        Census 2011 Memory Game
+                        {t("censusTitle", language)}
                       </h3>
                       <span className="relative inline-flex items-center gap-1 rounded-full bg-sky-600 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
                         <span className="relative flex h-2 w-2">
                           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
                           <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
                         </span>
-                        New
+                        {t("newBadge", language)}
                       </span>
                       <span className="inline-flex items-center gap-1 rounded-full border border-cyan-300/80 bg-cyan-100/80 px-2 py-0.5 text-[10px] font-semibold text-cyan-800 dark:border-cyan-700 dark:bg-cyan-900/40 dark:text-cyan-200">
                         🎓 Maharashtra GS
                       </span>
                     </div>
                     <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-                      <strong className="font-semibold text-sky-700 dark:text-sky-300">Memorize all 35 districts</strong> — population,
-                      sex ratio, child sex ratio (0–6), literacy, density &amp; decadal growth. 4 game modes:
-                      Top-10/Bottom-10 reveal, Rank Race, MCQ Quiz and Flashcards.
+                      {t("censusDesc", language)}
                     </p>
 
                     <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
@@ -827,7 +820,7 @@ export default function HomeClient() {
                     </div>
 
                     <div className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-sky-300/40 transition-all group-hover:shadow-lg group-hover:shadow-sky-400/50 dark:shadow-sky-900/40">
-                      Play the game
+                      {t("playGame", language)}
                       <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                       </svg>
@@ -838,7 +831,7 @@ export default function HomeClient() {
             </div>
 
             <p className="text-xs text-slate-400 dark:text-slate-600 text-center max-w-md">
-              💡 Click the logo at any time to return to this screen
+              {t("logoTip", language)}
             </p>
           </div>
         ) : appMode === "leaderboard" ? (
@@ -850,7 +843,7 @@ export default function HomeClient() {
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
               </svg>
-              Back to Home
+              {t("backToHome", language)}
             </button>
             <Leaderboard guestUserId={guestIdentity?.userId} />
           </div>
@@ -872,7 +865,7 @@ export default function HomeClient() {
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
               </svg>
-              Back to Home
+              {t("backToHome", language)}
             </button>
             <div className="rounded-2xl border border-amber-200/70 bg-gradient-to-r from-amber-50 via-white to-yellow-50 p-5 dark:border-amber-800/70 dark:from-amber-950/30 dark:via-slate-900 dark:to-yellow-950/30">
               <div className="flex items-center gap-3">
@@ -889,7 +882,7 @@ export default function HomeClient() {
                 </div>
               </div>
             </div>
-            <StudentView language="english" challenge={null} homeKey={homeKey} topicMode={false} guestUser={guestIdentity} directTopic={null} examFilter="RTO_AMVI" />
+            <StudentView language={language} challenge={null} homeKey={homeKey} topicMode={false} guestUser={guestIdentity} directTopic={null} examFilter="RTO_AMVI" />
           </div>
         ) : appMode === "mock" ? (
           <MockTestView
@@ -898,6 +891,10 @@ export default function HomeClient() {
         ) : appMode === "csat" ? (
           <CsatView
             language={language}
+            onLanguageChange={(next) => {
+              setLanguage(next);
+              saveLanguage(next);
+            }}
             onExit={() => { setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
           />
         ) : (
@@ -915,39 +912,39 @@ export default function HomeClient() {
               MPSC PYQ QUIZ &middot; Don&apos;t know Academy
             </p>
             <p className="text-[10px] text-slate-300 dark:text-slate-600">
-              Free PYQ practice for MPSC aspirants
+              {t("footerTagline", language)}
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-4">
               <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                About
+                {t("about", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/contact" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Contact
+                {t("contact", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/exams" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Exams
+                {t("exams", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/map" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Map
+                {t("map", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/study-guides" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Study guides
+                {t("studyGuides", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Privacy
+                {t("privacy", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/terms" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Terms
+                {t("terms", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/disclaimer" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                Disclaimer
+                {t("disclaimer", language)}
               </a>
             </div>
           </div>
@@ -957,7 +954,15 @@ export default function HomeClient() {
   );
 }
 
-function LeaderboardTile({ onClick, className = "" }: { onClick: () => void; className?: string }) {
+function LeaderboardTile({
+  onClick,
+  className = "",
+  language,
+}: {
+  onClick: () => void;
+  className?: string;
+  language: Language;
+}) {
   return (
     <button
       onClick={onClick}
@@ -971,14 +976,14 @@ function LeaderboardTile({ onClick, className = "" }: { onClick: () => void; cla
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2 mb-0.5">
             <h3 className="text-lg sm:text-xl font-bold text-amber-700 dark:text-amber-300">
-              Today&apos;s Leaderboard
+              {t("leaderboardTileTitle", language)}
             </h3>
             <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
-              ● LIVE
+              {t("live", language)}
             </span>
           </div>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            See today&apos;s top 5 scorers and check your rank.
+            {t("leaderboardTileDesc", language)}
           </p>
         </div>
         <svg className="h-5 w-5 shrink-0 text-amber-500 transition-transform group-hover:translate-x-1 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
