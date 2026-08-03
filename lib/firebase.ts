@@ -3,7 +3,11 @@ import {
   getAuth,
   GoogleAuthProvider,
   OAuthProvider,
+  EmailAuthProvider,
   signInWithPopup,
+  signInWithEmailAndPassword,
+  reauthenticateWithCredential,
+  updatePassword,
   signOut as fbSignOut,
   onAuthStateChanged,
   type User,
@@ -12,6 +16,7 @@ import {
   getFirestore,
   collection,
   addDoc,
+  getDoc,
   getDocs,
   deleteDoc,
   updateDoc,
@@ -59,13 +64,88 @@ export function onAuthChange(cb: (user: User | null) => void) {
   return onAuthStateChanged(auth, cb);
 }
 
+/* ── Admin authentication ── */
+
+/**
+ * The admin allow-list: `admin_users/config` holds a `uids` array. Firestore
+ * rules expose this document only to the accounts it names, so a successful
+ * read is itself proof of admin status and no UID needs to live in this bundle.
+ */
+const ADMIN_ALLOWLIST_DOC = () => doc(db, "admin_users", "config");
+
+/** Signs an admin in with the email and password held in Firebase Auth. */
+export async function signInAdminWithEmail(email: string, password: string): Promise<User> {
+  const result = await signInWithEmailAndPassword(auth, email.trim(), password);
+  return result.user;
+}
+
+/**
+ * True when the currently signed-in user is on the admin allow-list. A
+ * permission-denied read means "not an admin", which is an expected outcome
+ * here rather than a failure, so it resolves to false instead of throwing.
+ */
+export async function isAllowlistedAdmin(): Promise<boolean> {
+  if (!auth.currentUser) return false;
+  try {
+    const snap = await getDoc(ADMIN_ALLOWLIST_DOC());
+    return snap.exists();
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Changes the signed-in admin's Firebase password. Firebase only allows this
+ * shortly after a sign-in, so the current password is used to re-authenticate
+ * first. Returns null on success or a human-readable message on failure.
+ */
+export async function changeAdminPasswordInFirebase(
+  currentPw: string,
+  newPw: string,
+): Promise<string | null> {
+  const user = auth.currentUser;
+  if (!user?.email) return "No admin is signed in.";
+  if (newPw.length < 6) return "New password must be at least 6 characters.";
+  try {
+    await reauthenticateWithCredential(user, EmailAuthProvider.credential(user.email, currentPw));
+  } catch {
+    return "Current password is incorrect.";
+  }
+  try {
+    await updatePassword(user, newPw);
+    return null;
+  } catch (e) {
+    const code = (e as { code?: string })?.code;
+    if (code === "auth/weak-password") return "That password is too weak. Please choose a longer one.";
+    return "Could not update the password. Please try again.";
+  }
+}
+
 /* ── Question Reports (Firestore) ── */
+
+/** What the aspirant says is wrong, so reports can be triaged without reading every note. */
+export type ReportIssueType =
+  | "wrong-answer"
+  | "wrong-explanation"
+  | "unclear"
+  | "typo"
+  | "other";
+
+export const REPORT_ISSUE_LABELS: Record<ReportIssueType, string> = {
+  "wrong-answer": "Wrong answer marked",
+  "wrong-explanation": "Explanation is wrong",
+  unclear: "Question or options unclear",
+  typo: "Typo or formatting problem",
+  other: "Something else",
+};
 
 export interface QuestionReport {
   id: string;
   questionId: string;
   questionText: string;
   quizTitle: string;
+  /** Absent on reports created before the issue-type selector existed. */
+  issueType?: ReportIssueType;
   reason: string;
   reporterName: string;
   reporterEmail: string;
@@ -79,21 +159,26 @@ export async function submitReport(data: {
   questionId: string;
   questionText: string;
   quizTitle: string;
+  issueType: ReportIssueType;
   reason: string;
   reporterName: string;
   reporterEmail: string;
 }): Promise<"ok" | "duplicate" | "error"> {
+  // Stored lower-cased so the duplicate check below can't be defeated by
+  // capitalisation, and so the admin list groups one person's reports together.
+  const reporterEmail = data.reporterEmail.trim().toLowerCase();
   try {
     const existing = query(
       collection(db, REPORTS_COLLECTION),
       where("questionId", "==", data.questionId),
-      where("reporterEmail", "==", data.reporterEmail),
+      where("reporterEmail", "==", reporterEmail),
     );
     const snap = await getDocs(existing);
     if (!snap.empty) return "duplicate";
 
     await addDoc(collection(db, REPORTS_COLLECTION), {
       ...data,
+      reporterEmail,
       createdAt: serverTimestamp(),
       status: "pending",
     });

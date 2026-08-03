@@ -24,6 +24,16 @@ import { db } from "./firebase";
 
 const COLLECTION = "leaderboard";
 
+/** Safety cap so one day's fetch stays small even if traffic grows. */
+const DAILY_FETCH_LIMIT = 1000;
+
+/**
+ * How long an idle day-stream stays open before it is torn down. Navigating
+ * away and back, or React re-running an effect, then reuses the open listener
+ * instead of paying to read the day again.
+ */
+const STREAM_GRACE_MS = 60_000;
+
 /** Day partition key: YYYY-MM-DD in Asia/Kolkata (IST), same boundary for all users. */
 export function todayKey(date: Date = new Date()): string {
   return new Intl.DateTimeFormat("en-CA", {
@@ -141,26 +151,7 @@ export function subscribeLeaderboardByDate(
   callback: (rows: LeaderboardRow[]) => void,
   onError?: (err: Error) => void,
 ): () => void {
-  const q = query(
-    collection(db, COLLECTION),
-    where("dateKey", "==", dateKey),
-    limit(1000),
-  );
-  return onSnapshot(
-    q,
-    (snap) => {
-      const all: LeaderboardEntry[] = snap.docs.map((d) => ({
-        id: d.id,
-        ...(d.data() as Omit<LeaderboardEntry, "id">),
-      }));
-      callback(aggregatePerUser(all));
-    },
-    (err) => {
-      console.warn("subscribeLeaderboardByDate:", err);
-      onError?.(err);
-      callback([]);
-    },
-  );
+  return subscribeDayEntries(dateKey, (entries) => callback(aggregatePerUser(entries)), onError);
 }
 
 /**
@@ -174,26 +165,101 @@ export function subscribeAttemptsByDate(
   callback: (entries: LeaderboardEntry[]) => void,
   onError?: (err: Error) => void,
 ): () => void {
-  const q = query(
-    collection(db, COLLECTION),
-    where("dateKey", "==", dateKey),
-    limit(1000),
-  );
-  return onSnapshot(
-    q,
+  return subscribeDayEntries(dateKey, callback, onError);
+}
+
+/* ── Shared per-day streams ──────────────────────────────────────────────
+ * Firestore bills one document read per matching document each time a
+ * listener attaches, so two components asking for the same day separately
+ * pay for that day twice. These streams keep at most one listener per day
+ * and fan its snapshots out to every subscriber, which makes a duplicate
+ * subscription free.
+ */
+
+type EntriesListener = (entries: LeaderboardEntry[]) => void;
+type ErrorListener = (err: Error) => void;
+
+interface DayStream {
+  /** Latest snapshot, or null until the first one arrives. */
+  entries: LeaderboardEntry[] | null;
+  listeners: Set<EntriesListener>;
+  errorListeners: Set<ErrorListener>;
+  detach: () => void;
+  idleTimer: ReturnType<typeof setTimeout> | null;
+}
+
+const dayStreams = new Map<string, DayStream>();
+
+function openDayStream(dateKey: string): DayStream {
+  const open = dayStreams.get(dateKey);
+  if (open) {
+    if (open.idleTimer) {
+      clearTimeout(open.idleTimer);
+      open.idleTimer = null;
+    }
+    return open;
+  }
+
+  const stream: DayStream = {
+    entries: null,
+    listeners: new Set(),
+    errorListeners: new Set(),
+    detach: () => {},
+    idleTimer: null,
+  };
+  dayStreams.set(dateKey, stream);
+
+  stream.detach = onSnapshot(
+    query(
+      collection(db, COLLECTION),
+      where("dateKey", "==", dateKey),
+      limit(DAILY_FETCH_LIMIT),
+    ),
     (snap) => {
-      const all: LeaderboardEntry[] = snap.docs.map((d) => ({
+      const entries: LeaderboardEntry[] = snap.docs.map((d) => ({
         id: d.id,
         ...(d.data() as Omit<LeaderboardEntry, "id">),
       }));
-      callback(all);
+      stream.entries = entries;
+      for (const listener of [...stream.listeners]) listener(entries);
     },
     (err) => {
-      console.warn("subscribeAttemptsByDate:", err);
-      onError?.(err);
-      callback([]);
+      console.warn("leaderboard day stream:", dateKey, err);
+      stream.entries = [];
+      for (const listener of [...stream.errorListeners]) listener(err);
+      for (const listener of [...stream.listeners]) listener([]);
     },
   );
+
+  return stream;
+}
+
+function subscribeDayEntries(
+  dateKey: string,
+  onEntries: EntriesListener,
+  onError?: ErrorListener,
+): () => void {
+  const stream = openDayStream(dateKey);
+  stream.listeners.add(onEntries);
+  if (onError) stream.errorListeners.add(onError);
+
+  // A later subscriber is served the snapshot already in hand, at no cost.
+  if (stream.entries) onEntries(stream.entries);
+
+  let released = false;
+  return () => {
+    if (released) return;
+    released = true;
+    stream.listeners.delete(onEntries);
+    if (onError) stream.errorListeners.delete(onError);
+    if (stream.listeners.size > 0 || stream.idleTimer) return;
+
+    stream.idleTimer = setTimeout(() => {
+      if (stream.listeners.size > 0) return; // someone re-subscribed meanwhile
+      stream.detach();
+      dayStreams.delete(dateKey);
+    }, STREAM_GRACE_MS);
+  };
 }
 
 /**
@@ -210,7 +276,7 @@ export function subscribeAttemptsByDate(
  *
  * Sort: scorePct desc → totalQuestions desc → earliestAt asc.
  */
-function aggregatePerUser(entries: LeaderboardEntry[]): LeaderboardRow[] {
+export function aggregatePerUser(entries: LeaderboardEntry[]): LeaderboardRow[] {
   type Acc = LeaderboardRow & { latestAt: number };
   const byUser = new Map<string, Acc>();
 

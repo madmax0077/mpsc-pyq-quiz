@@ -6,7 +6,7 @@ import { isQuestionCancelled, countScoredQuestions, optionText, normalizeQuiz } 
 import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
 import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { markAttempted, getCategoryProgress } from "@/lib/progress";
-import { submitReport } from "@/lib/firebase";
+import { submitReport, REPORT_ISSUE_LABELS, type ReportIssueType } from "@/lib/firebase";
 import { submitScore } from "@/lib/leaderboard";
 import { useAuth } from "@/lib/auth-context";
 import { recordStreak, getStreak } from "@/lib/streak";
@@ -28,6 +28,28 @@ const QUIZ_BOTTOM_AD_SLOT = "9336007499";
 
 const REGULAR_QUIZ_PAGE_SIZE = 10;
 const CATEGORY_QUIZ_PAGE_SIZE = 5;
+
+/**
+ * Deliberately permissive: rejects blanks, missing @ and missing TLD, which is
+ * what actually goes wrong when someone types an address in a hurry. Anything
+ * stricter starts refusing valid addresses.
+ */
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
+
+/** Question ids already reported from this browser, so the button stays disabled after a reload. */
+const REPORTED_IDS_KEY = "mcq_reported_question_ids";
+
+function readReportedIds(): Set<string> {
+  if (typeof window === "undefined") return new Set();
+  try {
+    const raw = localStorage.getItem(REPORTED_IDS_KEY);
+    if (!raw) return new Set();
+    const parsed: unknown = JSON.parse(raw);
+    return Array.isArray(parsed) ? new Set(parsed.filter((v): v is string => typeof v === "string")) : new Set();
+  } catch {
+    return new Set();
+  }
+}
 const TOPIC_QUIZ_PAGE_SIZE = 5;
 
 function seededShuffle<T>(arr: T[], seed: string): T[] {
@@ -181,6 +203,9 @@ export default function StudentView({
   const [reportToast, setReportToast] = useState("");
   const [reportModal, setReportModal] = useState<{ qId: string; qText: string } | null>(null);
   const [reportReason, setReportReason] = useState("");
+  const [reportIssueType, setReportIssueType] = useState<ReportIssueType>("wrong-answer");
+  const [reportEmail, setReportEmail] = useState("");
+  const [reportEmailError, setReportEmailError] = useState("");
   const [reportSubmitting, setReportSubmitting] = useState(false);
   const [streak, setStreak] = useState(0);
   const [showAnalytics, setShowAnalytics] = useState(false);
@@ -650,6 +675,22 @@ export default function StudentView({
     setTopicCategory(null);
   }, [topicSource]);
 
+  useEffect(() => {
+    setReportedIds(readReportedIds());
+  }, []);
+
+  const markReported = (qId: string) => {
+    setReportedIds((prev) => {
+      const next = new Set(prev).add(qId);
+      try {
+        localStorage.setItem(REPORTED_IDS_KEY, JSON.stringify([...next]));
+      } catch {
+        /* storage full or blocked — the in-memory set still works for this session */
+      }
+      return next;
+    });
+  };
+
   const openReportModal = (qId: string, qText: string) => {
     if (reportedIds.has(qId)) {
       setReportToast("You already reported this question.");
@@ -658,26 +699,36 @@ export default function StudentView({
     }
     setReportModal({ qId, qText });
     setReportReason("");
+    setReportIssueType("wrong-answer");
+    setReportEmail(studentUser?.email || "");
+    setReportEmailError("");
   };
 
   const handleReportSubmit = async () => {
     if (!reportModal || !reportReason.trim()) return;
+    const email = reportEmail.trim();
+    if (!EMAIL_PATTERN.test(email)) {
+      setReportEmailError("Please enter a valid email address so we can reply to you.");
+      return;
+    }
+    setReportEmailError("");
     setReportSubmitting(true);
     try {
-      const user = (await import("@/lib/firebase")).auth.currentUser;
       const result = await submitReport({
         questionId: reportModal.qId,
         questionText: reportModal.qText,
         quizTitle: selectedQuiz?.title || "",
+        issueType: reportIssueType,
         reason: reportReason.trim(),
-        reporterName: user?.displayName || "Anonymous",
-        reporterEmail: user?.email || "unknown",
+        reporterName: studentUser?.displayName || guestUser?.displayName || email.split("@")[0],
+        reporterEmail: email,
       });
       if (result === "ok") {
-        setReportedIds((prev) => new Set(prev).add(reportModal.qId));
-        setReportToast("Thanks for reporting! We'll review this question.");
+        markReported(reportModal.qId);
+        setReportToast("Thanks for reporting! We'll review this question and email you.");
         setTimeout(() => setReportToast(""), 3000);
       } else {
+        markReported(reportModal.qId);
         setReportToast("You already reported this question.");
         setTimeout(() => setReportToast(""), 2000);
       }
@@ -1103,8 +1154,8 @@ export default function StudentView({
 
       {/* Report Modal */}
       {reportModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
-          <div className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-slate-700 dark:bg-slate-800">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4 py-6">
+          <div className="max-h-full w-full max-w-md overflow-y-auto rounded-2xl border border-slate-200 bg-white p-6 shadow-2xl dark:border-slate-700 dark:bg-slate-800">
             <div className="mb-4 flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-red-100 dark:bg-red-900/30">
                 <svg className="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -1116,17 +1167,72 @@ export default function StudentView({
             <p className="mb-4 rounded-lg bg-indigo-50 p-3 text-sm text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">
               We are still in the initial phase of our project. Please help us by reporting wrong answers — we will take action ASAP!
             </p>
+
+            <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+              What is wrong?
+            </label>
+            <select
+              value={reportIssueType}
+              onChange={(e) => setReportIssueType(e.target.value as ReportIssueType)}
+              className="mb-4 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200"
+            >
+              {(Object.keys(REPORT_ISSUE_LABELS) as ReportIssueType[]).map((key) => (
+                <option key={key} value={key}>
+                  {REPORT_ISSUE_LABELS[key]}
+                </option>
+              ))}
+            </select>
+
             <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
               Describe the issue
             </label>
             <textarea
               value={reportReason}
               onChange={(e) => setReportReason(e.target.value)}
-              placeholder="e.g. Wrong answer marked, question is unclear, options are incorrect..."
+              placeholder="e.g. The correct answer should be option C because..."
               rows={3}
               className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm text-slate-700 placeholder:text-slate-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200 dark:placeholder:text-slate-500"
               autoFocus
             />
+
+            <label
+              htmlFor="report-email"
+              className="mb-1.5 mt-4 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400"
+            >
+              Your email <span className="text-red-500">*</span>
+            </label>
+            <input
+              id="report-email"
+              type="email"
+              inputMode="email"
+              autoComplete="email"
+              value={reportEmail}
+              onChange={(e) => {
+                setReportEmail(e.target.value);
+                if (reportEmailError) setReportEmailError("");
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleReportSubmit();
+              }}
+              placeholder="you@example.com"
+              aria-invalid={reportEmailError ? true : undefined}
+              aria-describedby={reportEmailError ? "report-email-error" : "report-email-help"}
+              className={`w-full rounded-lg border px-3 py-2 text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 dark:bg-slate-700 dark:text-slate-200 dark:placeholder:text-slate-500 ${
+                reportEmailError
+                  ? "border-red-300 focus:border-red-400 focus:ring-red-100 dark:border-red-700"
+                  : "border-slate-200 focus:border-indigo-400 focus:ring-indigo-100 dark:border-slate-600"
+              }`}
+            />
+            {reportEmailError ? (
+              <p id="report-email-error" className="mt-1.5 text-xs font-medium text-red-600 dark:text-red-400">
+                {reportEmailError}
+              </p>
+            ) : (
+              <p id="report-email-help" className="mt-1.5 text-xs text-slate-400 dark:text-slate-500">
+                Required — our team will get back to you on this address once we review the question.
+              </p>
+            )}
+
             <div className="mt-4 flex items-center justify-end gap-3">
               <button
                 onClick={() => setReportModal(null)}
@@ -1137,7 +1243,7 @@ export default function StudentView({
               </button>
               <button
                 onClick={handleReportSubmit}
-                disabled={reportSubmitting || !reportReason.trim()}
+                disabled={reportSubmitting || !reportReason.trim() || !reportEmail.trim()}
                 className="rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {reportSubmitting ? "Submitting..." : "Submit Report"}

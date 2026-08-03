@@ -92,7 +92,30 @@ export default function PrivacyPolicy() {
             — never your email address.
           </p>
 
-          <h3>3.3 Device and log information</h3>
+          <h3>3.3 Question reports</h3>
+          <p>
+            Every question carries a <strong>Report</strong> button you can use to tell us that an
+            answer, explanation or option looks wrong. When you submit a report we store, in our
+            Firestore database:
+          </p>
+          <ul>
+            <li>The question and the quiz set it belongs to.</li>
+            <li>The type of problem you selected and the description you wrote.</li>
+            <li>
+              <strong>Your email address</strong>, which is required, so that we can ask you for
+              clarification and tell you what we changed.
+            </li>
+            <li>Your display name, if you have set one or are signed in.</li>
+          </ul>
+          <p>
+            Report details are visible only to our internal admin team and are never published on
+            the site or shared with advertisers. We use the email address you give here solely to
+            reply about the question you reported. If you would like a report and its email address
+            deleted, write to us at{" "}
+            <a href="mailto:dontknowacademy@gmail.com">dontknowacademy@gmail.com</a>.
+          </p>
+
+          <h3>3.4 Device and log information</h3>
           <p>
             Like every web server, ours automatically receives certain technical information when
             you visit a page: your IP address, the browser type and version, the operating system,
@@ -101,7 +124,7 @@ export default function PrivacyPolicy() {
             then deleted.
           </p>
 
-          <h3>3.4 Cookies and similar technologies</h3>
+          <h3>3.5 Cookies and similar technologies</h3>
           <p>
             We use the following cookies and similar technologies:
           </p>

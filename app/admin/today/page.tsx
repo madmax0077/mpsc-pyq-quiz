@@ -4,8 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useAuth } from "@/lib/auth-context";
 import {
+  aggregatePerUser,
   subscribeAttemptsByDate,
-  subscribeLeaderboardByDate,
   todayKey,
   type LeaderboardEntry,
   type LeaderboardRow,
@@ -21,63 +21,47 @@ import {
  */
 export default function AdminTodayPage() {
   const { loading, isAdmin, loginAdmin, logoutAdmin } = useAuth();
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [loggingIn, setLoggingIn] = useState(false);
   const [password, setPassword] = useState("");
   const [adminError, setAdminError] = useState("");
 
   const [selectedDate, setSelectedDate] = useState<string>(todayKey());
-  const [rows, setRows] = useState<LeaderboardRow[]>([]);
   const [attempts, setAttempts] = useState<LeaderboardEntry[]>([]);
   const [loadingData, setLoadingData] = useState(true);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [search, setSearch] = useState("");
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
 
+  // One subscription for the day. The ranked table is derived from the same
+  // attempts below, so the day is never read twice.
   useEffect(() => {
     if (!isAdmin) return;
     setLoadingData(true);
     setErrorMsg(null);
 
-    let firstRowsArrived = false;
-    let firstAttemptsArrived = false;
-
-    const unsubRows = subscribeLeaderboardByDate(
-      selectedDate,
-      (next) => {
-        setRows(next);
-        firstRowsArrived = true;
-        if (firstRowsArrived && firstAttemptsArrived) setLoadingData(false);
-      },
-      (err) => {
-        setErrorMsg(err.message || "Could not load leaderboard.");
-        setLoadingData(false);
-      },
-    );
-
-    const unsubAttempts = subscribeAttemptsByDate(
+    return subscribeAttemptsByDate(
       selectedDate,
       (next) => {
         setAttempts(next);
-        firstAttemptsArrived = true;
-        if (firstRowsArrived && firstAttemptsArrived) setLoadingData(false);
+        setLoadingData(false);
       },
       (err) => {
-        setErrorMsg(err.message || "Could not load attempts.");
+        setErrorMsg(err.message || "Could not load activity.");
         setLoadingData(false);
       },
     );
-
-    return () => {
-      unsubRows();
-      unsubAttempts();
-    };
   }, [isAdmin, selectedDate]);
 
-  const handleAdminLogin = (e: React.FormEvent) => {
+  const rows = useMemo(() => aggregatePerUser(attempts), [attempts]);
+
+  const handleAdminLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setAdminError("");
-    const ok = loginAdmin(username.trim(), password);
-    if (!ok) setAdminError("Invalid credentials. Please try again.");
+    setLoggingIn(true);
+    const err = await loginAdmin(email.trim(), password);
+    setLoggingIn(false);
+    if (err) setAdminError(err);
   };
 
   const attemptsByUser = useMemo(() => {
@@ -196,14 +180,15 @@ export default function AdminTodayPage() {
             <form onSubmit={handleAdminLogin} className="space-y-4">
               <div>
                 <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                  Username
+                  Email
                 </label>
                 <input
-                  type="text"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  type="email"
+                  autoComplete="username"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 transition-all focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100"
-                  placeholder="Enter admin username"
+                  placeholder="Enter admin email"
                   required
                 />
               </div>
@@ -213,6 +198,7 @@ export default function AdminTodayPage() {
                 </label>
                 <input
                   type="password"
+                  autoComplete="current-password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 transition-all focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100"
@@ -223,9 +209,10 @@ export default function AdminTodayPage() {
               {adminError && <p className="text-sm text-red-500">{adminError}</p>}
               <button
                 type="submit"
-                className="w-full rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 hover:shadow-md"
+                disabled={loggingIn}
+                className="w-full rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 hover:shadow-md disabled:opacity-60"
               >
-                Sign In
+                {loggingIn ? "Signing in..." : "Sign In"}
               </button>
             </form>
             <Link

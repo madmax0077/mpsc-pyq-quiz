@@ -15,12 +15,36 @@ rules_version = '2';
 //                      YYYY-MM-DD and falls within ±1 day of server time).
 //                      Append-only.
 //   question_reports — public create (matches existing app behavior); read
-//                      access kept open for the admin dashboard.
+//                      access kept open for the admin dashboard; resolve and
+//                      delete restricted to allow-listed admin accounts.
+//   admin_users      — the admin allow-list. Readable only by the admins it
+//                      names, which is how the app decides whether to show
+//                      the admin UI. Writable only from the Firebase Console.
 //   settings         — public read (for live quiz-bundle revision); only
 //                      Firebase Console can write.
 
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    // True when the caller is signed in as an allow-listed admin. Declared
+    // here rather than at file scope because it needs the {database} binding.
+    // Fails closed: an anonymous caller, or a missing `admin_users/config`,
+    // yields false.
+    function isAdminUser() {
+      return request.auth != null
+        && request.auth.uid in get(/databases/$(database)/documents/admin_users/config).data.uids;
+    }
+
+    // --- Admin allow-list -----------------------------------------------
+    // Single document `admin_users/config` with an array field `uids`
+    // holding the Firebase Auth UID of every admin. Create and edit it from
+    // the Firebase Console only. An admin can read it (that read is what the
+    // app uses to confirm admin status); nobody else can read or write it.
+    match /admin_users/config {
+      allow read: if request.auth != null
+        && request.auth.uid in resource.data.uids;
+      allow write: if false; // only Firebase Console
+    }
 
     // --- Leaderboard ----------------------------------------------------
     match /leaderboard/{doc} {
@@ -39,8 +63,12 @@ service cloud.firestore {
         && request.resource.data.reason is string
         && request.resource.data.reason.size() > 0
         && request.resource.data.reason.size() < 1000
-        && request.resource.data.reporterEmail is string;
-      allow update, delete: if false; // only admin SDK / console
+        && request.resource.data.reporterEmail is string
+        && request.resource.data.reporterEmail.size() <= 200;
+
+      // Resolve / delete from the admin panel. Restricted to allow-listed
+      // admins so a visitor cannot clear the report queue.
+      allow update, delete: if isAdminUser();
     }
 
     // --- App-wide settings (e.g. quiz_data revision) --------------------

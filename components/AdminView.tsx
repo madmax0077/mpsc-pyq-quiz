@@ -409,7 +409,7 @@ export default function AdminView() {
     return () => clearTimeout(timer);
   }, [scrollToQuestionId, questions]);
 
-  const handleChangePassword = () => {
+  const handleChangePassword = async () => {
     if (!currentPw || !newPw || !confirmPw) {
       showToast("Please fill all password fields.");
       return;
@@ -418,7 +418,7 @@ export default function AdminView() {
       showToast("New passwords do not match.");
       return;
     }
-    const err = changeAdminPassword(currentPw, newPw);
+    const err = await changeAdminPassword(currentPw, newPw);
     if (err) {
       showToast(err);
       return;

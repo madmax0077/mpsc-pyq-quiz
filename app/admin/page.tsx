@@ -7,15 +7,18 @@ import AdminView from "@/components/AdminView";
 
 export default function AdminPage() {
   const { loading, isAdmin, loginAdmin, logoutAdmin } = useAuth();
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [adminError, setAdminError] = useState("");
+  const [loggingIn, setLoggingIn] = useState(false);
 
-  const handleAdminLogin = (e: React.FormEvent) => {
+  const handleAdminLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setAdminError("");
-    const ok = loginAdmin(username.trim(), password);
-    if (!ok) setAdminError("Invalid credentials. Please try again.");
+    setLoggingIn(true);
+    const err = await loginAdmin(email.trim(), password);
+    setLoggingIn(false);
+    if (err) setAdminError(err);
   };
 
   if (loading) {
@@ -113,14 +116,15 @@ export default function AdminPage() {
           <form onSubmit={handleAdminLogin} className="space-y-4">
             <div>
               <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                Username
+                Email
               </label>
               <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                type="email"
+                autoComplete="username"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 transition-all focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
-                placeholder="Enter admin username"
+                placeholder="Enter admin email"
                 required
               />
             </div>
@@ -130,6 +134,7 @@ export default function AdminPage() {
               </label>
               <input
                 type="password"
+                autoComplete="current-password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm text-slate-800 transition-all focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-100 dark:bg-slate-700 dark:border-slate-600 dark:text-slate-100 dark:placeholder:text-slate-500"
@@ -144,9 +149,10 @@ export default function AdminPage() {
 
             <button
               type="submit"
-              className="w-full rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 hover:shadow-md"
+              disabled={loggingIn}
+              className="w-full rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-indigo-700 hover:shadow-md disabled:opacity-60"
             >
-              Sign In
+              {loggingIn ? "Signing in..." : "Sign In"}
             </button>
           </form>
 
