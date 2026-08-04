@@ -244,7 +244,9 @@ export default function StudentView({
 
     (async () => {
       try {
-        const res = await fetch("/quizzes.json", { cache: "no-store" });
+        // Cacheable fetch — Cloudflare/browser can reuse the ~8MB bundle.
+        // Bust with Firestore settings/quiz_data.revision after each deploy.
+        const res = await fetch(`/quizzes.json?v=${quizBundleRevision}`);
         if (!res.ok) throw new Error(`quizzes.json ${res.status}`);
         const raw = (await res.json()) as Quiz[];
         if (!Array.isArray(raw)) throw new Error("invalid quizzes.json shape");

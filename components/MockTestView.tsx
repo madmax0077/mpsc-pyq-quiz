@@ -136,7 +136,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     let alive = true;
     (async () => {
       try {
-        const res = await fetch("/quizzes.json", { cache: "no-store" });
+        const res = await fetch("/quizzes.json");
         const raw = (await res.json()) as Quiz[];
         const bundled = raw.map(normalizeQuiz);
         const merged = mergeBundledAndLocal(bundled, getAllQuizzes());

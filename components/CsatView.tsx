@@ -219,7 +219,7 @@ export default function CsatView({
     let alive = true;
     (async () => {
       try {
-        const res = await fetch("/quizzes.json", { cache: "no-store" });
+        const res = await fetch("/quizzes.json");
         const raw = (await res.json()) as Quiz[];
         const bundled = raw.map(normalizeQuiz);
         const merged = mergeBundledAndLocal(bundled, getAllQuizzes());
@@ -230,7 +230,7 @@ export default function CsatView({
     })();
     (async () => {
       try {
-        const res = await fetch("/csat-questions.json", { cache: "no-store" });
+        const res = await fetch("/csat-questions.json");
         const raw = (await res.json()) as CsatBank;
         if (alive && raw?.questions?.length) setBank(raw);
       } catch {
