@@ -274,6 +274,15 @@ export default function MpscGroupCSyllabusGuide() {
             </li>
             <li>Read the <Link href="/study-guides/mpsc-negative-marking">MPSC Negative Marking</Link> guide to stop losing marks to guessing.</li>
             <li>Compare all exams in the <Link href="/study-guides/mpsc-exam-pattern">MPSC Exam Pattern</Link> guide.</li>
+            <li>
+              For search-focused pages, see{" "}
+              <Link href="/study-guides/mpsc-group-c-exam-pattern-2026">Group C Exam Pattern 2026</Link>{" "}
+              and{" "}
+              <Link href="/study-guides/mpsc-group-c-subject-wise-weightage">
+                Subject Wise Weightage
+              </Link>
+              .
+            </li>
           </ul>
         </article>
       </main>

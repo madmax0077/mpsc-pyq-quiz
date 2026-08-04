@@ -96,6 +96,26 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.85,
   },
+  {
+    path: "/study-guides/mpsc-group-c-exam-pattern-2026",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/study-guides/mpsc-group-c-subject-wise-weightage",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/study-guides/mpsc-group-b-previous-year-question-paper",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/study-guides/mpsc-combine-question-paper",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
 ];
 
 function toAbsoluteUrl(path: string): string {

@@ -20,6 +20,10 @@ export const metadata: Metadata = {
     "Talithi exam",
     "UPSC CSAT practice",
     "UPSC CSAT Paper 2",
+    "MPSC Group C exam pattern 2026",
+    "MPSC Group C subject wise weightage",
+    "MPSC Group B previous year question paper",
+    "MPSC Combine question paper",
   ],
   alternates: { canonical: "/study-guides" },
 };
@@ -64,6 +68,38 @@ const GUIDES = [
     blurb:
       "Complete Group C Combined syllabus and exam pattern — prelims (100 questions/100 marks/1 hour), subject-wise weightage, detailed topics, mains, skill test and cut-off trends.",
     minutes: 10,
+  },
+  {
+    href: "/study-guides/mpsc-group-c-exam-pattern-2026",
+    emoji: "📌",
+    title: "MPSC Group C Exam Pattern 2026",
+    blurb:
+      "Focused 2026 pattern page — prelims marks/time, negative marking, mains & skill-test stages, plus free PYQ and mock links for Combined Group C.",
+    minutes: 9,
+  },
+  {
+    href: "/study-guides/mpsc-group-c-subject-wise-weightage",
+    emoji: "📊",
+    title: "MPSC Group C Subject Wise Weightage",
+    blurb:
+      "Approximate marks map for Marathi, English, GK, Aptitude, Polity, History, Geography, Economics and Science — with a practical scoring plan.",
+    minutes: 8,
+  },
+  {
+    href: "/study-guides/mpsc-group-b-previous-year-question-paper",
+    emoji: "📄",
+    title: "MPSC Group B Previous Year Question Paper",
+    blurb:
+      "Group B Combined Pre PYQ hub — practise papers with answers online, PSI/STI/ASO path overview, and a 7-day revision plan.",
+    minutes: 7,
+  },
+  {
+    href: "/study-guides/mpsc-combine-question-paper",
+    emoji: "🧩",
+    title: "MPSC Combine Question Paper",
+    blurb:
+      "What “Combine / GAT C / GAT K” searches mean, Group B vs Group C Combined practice paths, and free online PYQ + mock workflow.",
+    minutes: 8,
   },
   {
     href: "/study-guides/mpsc-talathi-exam",
