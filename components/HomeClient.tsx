@@ -868,18 +868,27 @@ export default function HomeClient() {
               {t("backToHome", language)}
             </button>
             <div className="rounded-2xl border border-amber-200/70 bg-gradient-to-r from-amber-50 via-white to-yellow-50 p-5 dark:border-amber-800/70 dark:from-amber-950/30 dark:via-slate-900 dark:to-yellow-950/30">
-              <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0M19.5 18.75a1.5 1.5 0 01-3 0M2.25 15.75v-6A2.25 2.25 0 014.5 7.5h15a2.25 2.25 0 012.25 2.25v6a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25zM5.25 11.25h13.5" />
-                  </svg>
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md">
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0M19.5 18.75a1.5 1.5 0 01-3 0M2.25 15.75v-6A2.25 2.25 0 014.5 7.5h15a2.25 2.25 0 012.25 2.25v6a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25zM5.25 11.25h13.5" />
+                    </svg>
+                  </div>
+                  <div className="min-w-0">
+                    <h2 className="text-lg font-bold text-amber-700 dark:text-amber-300">RTO AMVI</h2>
+                    <p className="text-xs text-slate-600 dark:text-slate-400">
+                      Assistant Motor Vehicle Inspector · past papers + 2020-pattern mock
+                    </p>
+                  </div>
                 </div>
-                <div className="min-w-0">
-                  <h2 className="text-lg font-bold text-amber-700 dark:text-amber-300">RTO AMVI</h2>
-                  <p className="text-xs text-slate-600 dark:text-slate-400">
-                    Assistant Motor Vehicle Inspector exam · Section: Automobile Engineering
-                  </p>
-                </div>
+                <button
+                  type="button"
+                  onClick={() => { setAppMode("mock"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="shrink-0 rounded-xl bg-orange-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-700"
+                >
+                  RTO Mock Test
+                </button>
               </div>
             </div>
             <StudentView language={language} challenge={null} homeKey={homeKey} topicMode={false} guestUser={guestIdentity} directTopic={null} examFilter="RTO_AMVI" />

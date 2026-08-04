@@ -102,10 +102,11 @@ export interface MockQuestion {
   /** Stable local key (1..N) used for answer state and display numbering. */
   key: number;
   questionId: string;
-  category: Category;
+  /** MPSC Category or RTO section label (e.g. Mechanical & Automobile). */
+  category: string;
   correctAnswer: OptionKey;
   english: MockText;
-  /** Marathi version; null when unavailable (e.g. Current Affairs). */
+  /** Marathi version; null when unavailable (e.g. Current Affairs / RTO). */
   marathi: MockText | null;
   sourceTitle: string;
 }
@@ -271,17 +272,18 @@ export function buildMockTest(quizzes: Quiz[], config: MockConfig): BuildResult 
 }
 
 export interface MockScore {
+  /** Max marks (= question count × marksPerQuestion). */
   total: number;
   answered: number;
   correct: number;
   wrong: number;
   skipped: number;
-  /** correct - NEGATIVE_MARK * wrong */
+  /** correct*marks − negativeMark*wrong */
   net: number;
   /** net as a percentage of total (can be negative; not clamped). */
   percent: number;
   bySubject: Array<{
-    category: Category;
+    category: string;
     total: number;
     correct: number;
     wrong: number;
@@ -289,15 +291,25 @@ export interface MockScore {
   }>;
 }
 
+export interface ScoreMockOptions {
+  /** Marks awarded per correct answer (default 1). RTO 2020 uses 2. */
+  marksPerQuestion?: number;
+  /** Marks deducted per wrong answer (default NEGATIVE_MARK). */
+  negativeMark?: number;
+}
+
 export function scoreMock(
   questions: MockQuestion[],
   answers: Record<number, OptionKey>,
+  opts: ScoreMockOptions = {},
 ): MockScore {
+  const marksPerQuestion = opts.marksPerQuestion ?? 1;
+  const negativeMark = opts.negativeMark ?? NEGATIVE_MARK;
   let correct = 0;
   let wrong = 0;
   let skipped = 0;
   const subj = new Map<
-    Category,
+    string,
     { total: number; correct: number; wrong: number; skipped: number }
   >();
 
@@ -318,8 +330,8 @@ export function scoreMock(
     subj.set(q.category, s);
   }
 
-  const total = questions.length;
-  const net = correct - NEGATIVE_MARK * wrong;
+  const total = questions.length * marksPerQuestion;
+  const net = correct * marksPerQuestion - negativeMark * wrong;
   const percent = total > 0 ? (net / total) * 100 : 0;
 
   return {

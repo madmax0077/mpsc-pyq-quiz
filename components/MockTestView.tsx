@@ -17,8 +17,27 @@ import {
   type MockScore,
   type MockText,
 } from "@/lib/mockTest";
+import {
+  RTO_MARKS_PER_QUESTION,
+  RTO_MOCK_DURATION_MIN,
+  RTO_MOCK_TOTAL,
+  buildRtoMockTest,
+  makeRtoMockConfig,
+  type RtoBranch,
+  type RtoMockConfig,
+} from "@/lib/rtoMockTest";
 
 type Stage = "select" | "running" | "reveal" | "result";
+
+/** Active mock metadata for MPSC GS or RTO AMVI. */
+type ActiveMock = {
+  label: string;
+  shortLabel: string;
+  durationMinutes: number;
+  marksPerQuestion: number;
+  negativeMark: number;
+  kind: "mpsc" | "rto";
+};
 
 /**
  * Display ad shown on the interstitial before results.
@@ -119,7 +138,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   const [quizzes, setQuizzes] = useState<Quiz[] | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
 
-  const [config, setConfig] = useState<MockConfig | null>(null);
+  const [config, setConfig] = useState<ActiveMock | null>(null);
   const [test, setTest] = useState<MockQuestion[]>([]);
   const [answers, setAnswers] = useState<Record<number, OptionKey>>({});
   const [current, setCurrent] = useState(1);
@@ -127,6 +146,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   const [result, setResult] = useState<MockScore | null>(null);
   const [confirmSubmit, setConfirmSubmit] = useState(false);
   const [revealLeft, setRevealLeft] = useState(REVEAL_SECONDS);
+  const [rtoBranch, setRtoBranch] = useState<RtoBranch>("mechanical");
   const submittedRef = useRef(false);
   /** Wall-clock time (ms) at which the result unlocks. */
   const revealEndRef = useRef(0);
@@ -150,15 +170,24 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     };
   }, []);
 
-  const finishTest = useCallback((questions: MockQuestion[], ans: Record<number, OptionKey>) => {
-    if (submittedRef.current) return;
-    submittedRef.current = true;
-    setResult(scoreMock(questions, ans));
-    revealEndRef.current = Date.now() + REVEAL_SECONDS * 1000;
-    setRevealLeft(REVEAL_SECONDS);
-    setStage("reveal");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, []);
+  const finishTest = useCallback(
+    (questions: MockQuestion[], ans: Record<number, OptionKey>, active?: ActiveMock | null) => {
+      if (submittedRef.current) return;
+      submittedRef.current = true;
+      const meta = active ?? config;
+      setResult(
+        scoreMock(questions, ans, {
+          marksPerQuestion: meta?.marksPerQuestion ?? 1,
+          negativeMark: meta?.negativeMark ?? NEGATIVE_MARK,
+        }),
+      );
+      revealEndRef.current = Date.now() + REVEAL_SECONDS * 1000;
+      setRevealLeft(REVEAL_SECONDS);
+      setStage("reveal");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    [config],
+  );
 
   // Countdown on the ad interstitial before the result unlocks. Uses a fixed
   // wall-clock end time so it always waits the full REVEAL_SECONDS, immune to
@@ -191,19 +220,51 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     return () => clearInterval(id);
   }, [stage, test, answers, finishTest]);
 
-  const startMock = (cfg: MockConfig) => {
-    if (!quizzes) return;
-    const { questions } = buildMockTest(quizzes, cfg);
+  const beginRun = (active: ActiveMock, questions: MockQuestion[]) => {
     submittedRef.current = false;
-    setConfig(cfg);
+    setConfig(active);
     setTest(questions);
     setAnswers({});
     setCurrent(1);
     setResult(null);
     setConfirmSubmit(false);
-    setRemaining(cfg.durationMinutes * 60);
+    setRemaining(active.durationMinutes * 60);
     setStage("running");
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const startMock = (cfg: MockConfig) => {
+    if (!quizzes) return;
+    const { questions } = buildMockTest(quizzes, cfg);
+    beginRun(
+      {
+        label: cfg.label,
+        shortLabel: cfg.shortLabel,
+        durationMinutes: cfg.durationMinutes,
+        marksPerQuestion: 1,
+        negativeMark: NEGATIVE_MARK,
+        kind: "mpsc",
+      },
+      questions,
+    );
+  };
+
+  const startRtoMock = (branch: RtoBranch) => {
+    if (!quizzes) return;
+    const cfg: RtoMockConfig = makeRtoMockConfig(branch);
+    const { questions } = buildRtoMockTest(quizzes, branch);
+    beginRun(
+      {
+        label: cfg.label,
+        shortLabel: cfg.shortLabel,
+        durationMinutes: cfg.durationMinutes,
+        marksPerQuestion: cfg.marksPerQuestion,
+        // 1/4 of marks per question (2 × 0.25 = 0.5)
+        negativeMark: RTO_MARKS_PER_QUESTION * NEGATIVE_MARK,
+        kind: "rto",
+      },
+      questions,
+    );
   };
 
   const backToSelect = () => {
@@ -237,10 +298,9 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
             Full-Length Mock Test
           </h2>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
-            A {TOTAL_QUESTIONS}-question timed test built to mirror the real MPSC Set&nbsp;A pattern. Every
-            question is shown in <strong>Marathi and English</strong>. Questions are drawn fresh each attempt
-            from previous-year papers, with Current Affairs from the GK Marathon set. Negative marking of{" "}
-            {NEGATIVE_MARK} is applied for each wrong answer.
+            Timed mocks for <strong>MPSC GS prelims</strong> (bilingual) and{" "}
+            <strong>RTO AMVI Mains</strong> (English, 2020 pattern). Questions are drawn fresh each
+            attempt from previous-year papers on this site. Negative marking applies on wrong answers.
           </p>
         </div>
 
@@ -250,8 +310,8 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
           </div>
         )}
 
-        <p className="mb-3 text-sm font-semibold text-slate-700 dark:text-slate-200">Choose your mock:</p>
-        <div className="space-y-4">
+        <p className="mb-3 text-sm font-semibold text-slate-700 dark:text-slate-200">MPSC GS Prelims</p>
+        <div className="mb-8 space-y-4">
           {MOCK_CONFIGS.map((cfg) => (
             <div
               key={cfg.id}
@@ -283,6 +343,68 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
               </div>
             </div>
           ))}
+        </div>
+
+        <p className="mb-3 text-sm font-semibold text-slate-700 dark:text-slate-200">RTO AMVI</p>
+        <div className="space-y-4">
+          <div className="rounded-2xl border border-orange-200 bg-white p-5 shadow-sm dark:border-orange-900/50 dark:bg-slate-800">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">
+                  RTO AMVI Mains Mock (2020 pattern)
+                </h3>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+                  120 common Mechanical &amp; Automobile + 30 from your branch. Mixed from all RTO AMVI
+                  papers (2011–2020 + auto-engg sets). English only · 300 marks.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2 text-xs font-semibold">
+                  <span className="rounded-full bg-orange-50 px-3 py-1 text-orange-800 dark:bg-orange-900/40 dark:text-orange-200">
+                    {RTO_MOCK_TOTAL} questions
+                  </span>
+                  <span className="rounded-full bg-amber-50 px-3 py-1 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
+                    {RTO_MOCK_DURATION_MIN} min
+                  </span>
+                  <span className="rounded-full bg-rose-50 px-3 py-1 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300">
+                    −{RTO_MARKS_PER_QUESTION * NEGATIVE_MARK} per wrong
+                  </span>
+                </div>
+                <div className="mt-4">
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                    Optional branch (Q 121–150)
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {(
+                      [
+                        ["mechanical", "Mechanical Engineering"],
+                        ["automobile", "Automobile Engineering"],
+                      ] as const
+                    ).map(([id, label]) => (
+                      <button
+                        key={id}
+                        type="button"
+                        onClick={() => setRtoBranch(id)}
+                        className={
+                          "rounded-lg border px-3 py-1.5 text-xs font-semibold transition-colors " +
+                          (rtoBranch === id
+                            ? "border-orange-500 bg-orange-50 text-orange-800 dark:border-orange-400 dark:bg-orange-900/40 dark:text-orange-200"
+                            : "border-slate-200 bg-white text-slate-600 hover:border-orange-300 dark:border-slate-600 dark:bg-slate-900/40 dark:text-slate-300")
+                        }
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={() => startRtoMock(rtoBranch)}
+                disabled={!quizzes}
+                className="shrink-0 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                {quizzes ? "Start Test" : "Loading…"}
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -495,11 +617,20 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
           <div className="space-y-4">
             {q.marathi ? (
               <LanguageBlock tag="मराठी" content={q.marathi} selected={answers[q.key]} correctAnswer={q.correctAnswer} showResult={false} onSelect={selectOption} />
-            ) : (
-              <p className="text-xs italic text-slate-400 dark:text-slate-500">Current Affairs question — available in English only.</p>
+            ) : config.kind === "rto" ? null : (
+              <p className="text-xs italic text-slate-400 dark:text-slate-500">
+                Current Affairs question — available in English only.
+              </p>
             )}
             <div className={q.marathi ? "border-t border-dashed border-slate-200 pt-4 dark:border-slate-700" : ""}>
-              <LanguageBlock tag="English" content={q.english} selected={answers[q.key]} correctAnswer={q.correctAnswer} showResult={false} onSelect={selectOption} />
+              <LanguageBlock
+                tag={config.kind === "rto" ? "Question" : "English"}
+                content={q.english}
+                selected={answers[q.key]}
+                correctAnswer={q.correctAnswer}
+                showResult={false}
+                onSelect={selectOption}
+              />
             </div>
           </div>
 
