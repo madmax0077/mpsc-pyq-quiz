@@ -1182,8 +1182,8 @@
           "C": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
           "D": "(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)"
         },
-        "correctAnswer": "D",
-        "explanation": "This one resolves to option D. Per the official key the correct set of phylum-character pairs is option (D). (Platyhelminthes are flatworms, Coelenterata have a hollow gut, Echinodermata have spiny skin and Molluscs are soft-bodied.) The three wrong options are close-fitting distractors, so re-read the stem once before finalising.",
+        "correctAnswer": "A",
+        "explanation": "Straight to the answer: option A — Platyhelminthes are flatworms (iii), Coelenterata have a hollow gut/gastrovascular cavity (iv), Echinodermata have spiny skin (ii), and Mollusca are soft-bodied (i).",
         "category": "Science",
         "number": 79,
         "topic": "Zoology (Animal Biology)"
@@ -2689,8 +2689,8 @@
           "C": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)",
           "D": "(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)"
         },
-        "correctAnswer": "D",
-        "explanation": "हा प्रश्न पर्याय D वर स्थिरावतो. अधिकृत उत्तरतालिकेनुसार योग्य जोड्यांचा संच पर्याय (D). (Platyhelminthes-चपटे कृमी, Coelenterata-पोकळ आतडे, Echinodermata-काटेरी त्वचा, Mollusca-मऊ शरीर.) तीन चुकीचे पर्याय जवळपासचे विचलक आहेत, म्हणून अंतिम करण्यापूर्वी स्टेम पुन्हा वाचा.",
+        "correctAnswer": "A",
+        "explanation": "थेट उत्तर — पर्याय A. चपटकृमी/पट्टकृमी = Flatworms (iii), आंतरदेहगुही/Coelenterata = पोकळ आतडे (iv), कंटकचर्मी = काटेरी त्वचा (ii), मृदुकाय/Mollusca = मऊ शरीर (i).",
         "category": "Science",
         "number": 79,
         "topic": "Zoology (Animal Biology)"
