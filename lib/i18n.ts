@@ -224,6 +224,7 @@ const UI = {
   exams: { en: "Exams", mr: "परीक्षा" },
   about: { en: "About", mr: "आमच्याबद्दल" },
   contact: { en: "Contact", mr: "संपर्क" },
+  donate: { en: "Donate", mr: "दान करा" },
   guestMode: { en: "Guest mode", mr: "अतिथी मोड" },
   logout: { en: "Logout", mr: "बाहेर पडा" },
   name: { en: "Name", mr: "नाव" },

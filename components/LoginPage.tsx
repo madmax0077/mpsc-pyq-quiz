@@ -125,6 +125,8 @@ export default function LoginPage() {
           <span>|</span>
           <Link href="/contact" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Contact</Link>
           <span>|</span>
+          <Link href="/donate" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Donate</Link>
+          <span>|</span>
           <Link href="/exams" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Exams</Link>
           <span>|</span>
           <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy</Link>

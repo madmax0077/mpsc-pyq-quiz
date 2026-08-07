@@ -932,6 +932,10 @@ export default function HomeClient() {
                 {t("contact", language)}
               </a>
               <span className="text-slate-300 dark:text-slate-600">|</span>
+              <a href="/donate" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                {t("donate", language)}
+              </a>
+              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/exams" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("exams", language)}
               </a>

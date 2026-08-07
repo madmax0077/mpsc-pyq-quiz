@@ -98,6 +98,10 @@ export default function StudyGuideShell({
             <Link href="/exams" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">
               Exams
             </Link>
+            <span>|</span>
+            <Link href="/donate" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">
+              Donate
+            </Link>
           </div>
         </div>
       </footer>
