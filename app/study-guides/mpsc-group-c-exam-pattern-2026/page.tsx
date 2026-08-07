@@ -66,8 +66,8 @@ export default function MpscGroupCExamPattern2026Guide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">
               MPSC Group C Exam Pattern 2026
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~9 min read</p>
@@ -99,6 +99,7 @@ export default function MpscGroupCExamPattern2026Guide() {
           </p>
 
           <h3>1. Selection stages at a glance</h3>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -125,8 +126,10 @@ export default function MpscGroupCExamPattern2026Guide() {
               </tr>
             </tbody>
           </table>
+          </div>
 
           <h3>2. Group C Combined prelims pattern 2026</h3>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -165,6 +168,7 @@ export default function MpscGroupCExamPattern2026Guide() {
               </tr>
             </tbody>
           </table>
+          </div>
           <p>
             Subject areas and approximate{" "}
             <Link href="/study-guides/mpsc-group-c-subject-wise-weightage">

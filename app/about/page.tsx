@@ -26,7 +26,7 @@ export default function About() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">About MPSC PYQ QUIZ</h1>
+          <h1 className="min-w-0 flex-1 break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">About MPSC PYQ QUIZ</h1>
         </div>
       </header>
 

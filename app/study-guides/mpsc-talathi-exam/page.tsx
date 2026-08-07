@@ -76,8 +76,8 @@ export default function MpscTalathiExamGuide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC Talathi Exam</h1>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">MPSC Talathi Exam</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~11 min read</p>
           </div>
         </div>
@@ -124,6 +124,7 @@ export default function MpscTalathiExamGuide() {
             candidates prepare for looks like this (exact marks and duration follow the year&apos;s
             notification):
           </p>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -150,6 +151,7 @@ export default function MpscTalathiExamGuide() {
               </tr>
             </tbody>
           </table>
+          </div>
           <p>
             If the notification uses a combined Group C prelims paper, also read our{" "}
             <Link href="/study-guides/mpsc-group-c-syllabus">Group C Syllabus</Link> and{" "}

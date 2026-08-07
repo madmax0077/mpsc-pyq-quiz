@@ -85,9 +85,9 @@ export default function Analytics({ streak, onClose }: { streak: number; onClose
               <div className="space-y-2.5">
                 {sortedCats.map(([cat, data]) => (
                   <div key={cat}>
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-xs font-medium text-slate-600 dark:text-slate-300">{cat}</span>
-                      <span className="text-xs font-bold text-slate-500 dark:text-slate-400">{data.pct}% ({data.correct}/{data.total})</span>
+                    <div className="mb-1 flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between">
+                      <span className="min-w-0 break-words text-xs font-medium text-slate-600 dark:text-slate-300">{cat}</span>
+                      <span className="shrink-0 text-xs font-bold text-slate-500 dark:text-slate-400">{data.pct}% ({data.correct}/{data.total})</span>
                     </div>
                     <div className="h-2.5 rounded-full bg-slate-100 dark:bg-slate-700 overflow-hidden">
                       <div

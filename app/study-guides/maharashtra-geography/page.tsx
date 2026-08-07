@@ -35,8 +35,8 @@ export default function MaharashtraGeographyGuide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">Maharashtra Geography</h1>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">Maharashtra Geography</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~14 min read</p>
           </div>
         </div>

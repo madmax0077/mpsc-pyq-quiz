@@ -88,10 +88,11 @@ export default function MapPage() {
             </svg>
           </Link>
           <div className="min-w-0 flex-1">
-            <h1 className="flex items-center gap-2 text-lg font-bold text-slate-800 dark:text-slate-100">
-              <span aria-hidden>🗺️</span> Maharashtra — Interactive Map
+            <h1 className="flex items-start gap-2 text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">
+              <span aria-hidden className="shrink-0">🗺️</span>
+              <span className="min-w-0 break-words">Maharashtra — Interactive Map</span>
             </h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
+            <p className="break-words text-xs text-slate-500 dark:text-slate-400">
               Rivers · Dams · Waterfalls · Ghats · Nuclear / Hydro / Thermal plants · Forts · UNESCO · Minerals
             </p>
           </div>

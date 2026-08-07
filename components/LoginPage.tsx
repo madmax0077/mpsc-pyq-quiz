@@ -57,7 +57,7 @@ export default function LoginPage() {
         </Link>
 
         {/* Card */}
-        <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-xl shadow-slate-200/50 dark:bg-slate-800 dark:border-slate-700 dark:shadow-slate-900/50">
+        <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xl shadow-slate-200/50 sm:p-8 dark:bg-slate-800 dark:border-slate-700 dark:shadow-slate-900/50">
           <h2 className="mb-6 text-center text-lg font-semibold text-slate-700 dark:text-slate-200">
             Welcome, Aspirant
           </h2>

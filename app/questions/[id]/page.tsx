@@ -455,7 +455,7 @@ export default function QuestionSeoPage({ params }: PageProps) {
           )}
         </div>
 
-        <h1 className="text-2xl font-black leading-tight text-slate-950 sm:text-3xl">
+        <h1 className="break-words text-xl font-black leading-snug text-slate-950 sm:text-3xl sm:leading-tight">
           {question.text}
         </h1>
 
@@ -468,7 +468,7 @@ export default function QuestionSeoPage({ params }: PageProps) {
               className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6"
             >
               <span className="mr-2 font-bold text-indigo-600">{key}.</span>
-              {value}
+              <span className="break-words whitespace-pre-line">{value}</span>
             </div>
           ))}
         </section>

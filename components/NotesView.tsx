@@ -138,11 +138,11 @@ export default function NotesView({ onBack }: { onBack: () => void }) {
         <div className="min-w-0 flex-1">
           <h2
             lang={activeEntry ? "mr" : undefined}
-            className="font-devanagari-serif truncate text-xl font-bold text-slate-800 dark:text-slate-100"
+            className="font-devanagari-serif break-words text-lg font-bold leading-snug text-slate-800 sm:text-xl dark:text-slate-100"
           >
             {activeEntry ? activeEntry.title : "📝 Notes"}
           </h2>
-          <p className="truncate text-xs text-slate-500 dark:text-slate-400">
+          <p className="break-words text-xs text-slate-500 dark:text-slate-400">
             {activeEntry
               ? activeEntry.subtitle
               : "Curated study notes · read-only · copy disabled"}
@@ -200,7 +200,7 @@ export default function NotesView({ onBack }: { onBack: () => void }) {
                   <div className="min-w-0 flex-1">
                     <h3
                       lang="mr"
-                      className="font-devanagari-serif text-lg font-bold text-slate-800 group-hover:text-orange-700 dark:text-slate-100 dark:group-hover:text-orange-300"
+                      className="font-devanagari-serif break-words text-lg font-bold leading-snug text-slate-800 group-hover:text-orange-700 dark:text-slate-100 dark:group-hover:text-orange-300"
                     >
                       {n.title}
                     </h3>

@@ -39,6 +39,7 @@ export default function HomeClient() {
   const [guestName, setGuestName] = useState("");
   const [guestId, setGuestId] = useState("");
   const [guestNameInput, setGuestNameInput] = useState("");
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
     // Stop the browser from restoring the previous scroll position on reload,
@@ -81,6 +82,15 @@ export default function HomeClient() {
       window.history.replaceState({}, "", window.location.pathname);
     }
   }, []);
+
+  useEffect(() => {
+    if (!mobileNavOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [mobileNavOpen]);
 
   // NOTE (AdSense fix): we used to hide the #seo-landing section from real
   // users after mount, keeping it visible only to search-engine crawlers.
@@ -176,15 +186,15 @@ export default function HomeClient() {
       {/* ---- Top Navigation Bar ---- */}
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
-          <button onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0 shrink-0">
-            <img src="/logo.png" alt="MPSC PYQ QUIZ logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
-            <div className="text-left">
-              <h1 className="text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
-              <p className="text-[9px] sm:text-[10px] font-medium text-slate-400 dark:text-slate-500">Don&apos;t know Academy</p>
+          <button onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex min-w-0 items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0">
+            <img src="/logo.png" alt="MPSC PYQ QUIZ logo" className="h-8 w-8 sm:h-10 sm:w-10 shrink-0 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
+            <div className="min-w-0 text-left">
+              <h1 className="truncate text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
+              <p className="truncate text-[9px] sm:text-[10px] font-medium text-slate-400 dark:text-slate-500">Don&apos;t know Academy</p>
             </div>
           </button>
 
-          <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-3">
             <nav className="hidden sm:flex items-center gap-1 text-xs font-semibold">
               <button
                 onClick={() => { setAppMode("notes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
@@ -293,13 +303,117 @@ export default function HomeClient() {
             </div>
             <button
               onClick={studentUser ? logoutStudent : resetGuestName}
-              className="shrink-0 rounded-lg px-2 py-1 sm:px-3 sm:py-1.5 text-[11px] sm:text-xs font-medium text-slate-500 transition-colors hover:bg-red-50 hover:text-red-600 dark:text-slate-400 dark:hover:bg-red-900/30 dark:hover:text-red-400"
+              aria-label={studentUser ? t("logout", language) : t("name", language)}
+              className="shrink-0 rounded-lg p-1.5 sm:px-3 sm:py-1.5 text-[11px] sm:text-xs font-medium text-slate-500 transition-colors hover:bg-red-50 hover:text-red-600 dark:text-slate-400 dark:hover:bg-red-900/30 dark:hover:text-red-400"
             >
-              {studentUser ? t("logout", language) : t("name", language)}
+              <span className="sm:hidden" aria-hidden="true">
+                {studentUser ? (
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                  </svg>
+                ) : (
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                  </svg>
+                )}
+              </span>
+              <span className="hidden sm:inline">{studentUser ? t("logout", language) : t("name", language)}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setMobileNavOpen((o) => !o)}
+              className="shrink-0 rounded-lg p-1.5 text-slate-600 hover:bg-slate-100 sm:hidden dark:text-slate-300 dark:hover:bg-slate-800"
+              aria-expanded={mobileNavOpen}
+              aria-controls="mobile-nav-panel"
+              aria-label={mobileNavOpen ? "Close menu" : "Open menu"}
+            >
+              {mobileNavOpen ? (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              )}
             </button>
           </div>
         </div>
+
       </header>
+
+      {/* Mobile slide-over nav */}
+      {mobileNavOpen && (
+        <div className="fixed inset-0 z-50 sm:hidden" role="dialog" aria-modal="true" aria-label="Site menu">
+          <button
+            type="button"
+            className="absolute inset-0 bg-slate-950/45 backdrop-blur-[1px]"
+            aria-label="Close menu"
+            onClick={() => setMobileNavOpen(false)}
+          />
+          <div
+            id="mobile-nav-panel"
+            className="absolute inset-y-0 right-0 flex w-[min(100%,20rem)] flex-col border-l border-slate-200 bg-white shadow-2xl dark:border-slate-700 dark:bg-slate-900"
+          >
+            <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3 dark:border-slate-700">
+              <p className="text-sm font-bold text-slate-800 dark:text-slate-100">Menu</p>
+              <button
+                type="button"
+                onClick={() => setMobileNavOpen(false)}
+                className="rounded-lg p-1.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
+                aria-label="Close menu"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <nav className="flex-1 overflow-y-auto px-3 py-3 text-sm font-semibold">
+              <div className="grid gap-1">
+                <button
+                  type="button"
+                  onClick={() => { setAppMode("notes"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="rounded-xl px-3 py-2.5 text-left text-slate-700 hover:bg-orange-50 dark:text-slate-200 dark:hover:bg-orange-900/30"
+                >
+                  📝 {t("notes", language)}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setAppMode("leaderboard"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                  className="rounded-xl px-3 py-2.5 text-left text-slate-700 hover:bg-amber-50 dark:text-slate-200 dark:hover:bg-amber-900/30"
+                >
+                  🏆 {t("leaderboard", language)}
+                </button>
+                <a href="/map" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-emerald-50 dark:text-slate-200 dark:hover:bg-emerald-900/30">
+                  🗺️ {t("map", language)}
+                </a>
+                <a href="/census-2011-maharashtra" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-sky-50 dark:text-slate-200 dark:hover:bg-sky-900/30">
+                  📊 {t("census", language)}
+                </a>
+                <a href="/rivers-maharashtra" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-cyan-50 dark:text-slate-200 dark:hover:bg-cyan-900/30">
+                  🏞️ {t("rivers", language)}
+                </a>
+                <a href="/exams" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
+                  {t("exams", language)}
+                </a>
+                <a href="/study-guides" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
+                  {t("studyGuides", language)}
+                </a>
+                <a href="/about" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
+                  {t("about", language)}
+                </a>
+                <a href="/contact" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
+                  {t("contact", language)}
+                </a>
+                <a href="/donate" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
+                  {t("donate", language)}
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      )}
 
       {/* ---- Main Content ---- */}
       <main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
@@ -311,11 +425,11 @@ export default function HomeClient() {
               <div className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                 <div className="text-center lg:text-left">
                   {/* Brand / USP hero stays English in both languages. */}
-                  <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.22em] text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300 lg:mx-0">
+                  <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-indigo-700 sm:tracking-[0.22em] dark:border-indigo-800 dark:bg-indigo-950/60 dark:text-indigo-300 lg:mx-0">
                     <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
                     Live Study Arena
                   </div>
-                  <h2 className="text-3xl font-black tracking-tight text-slate-900 dark:text-white sm:text-5xl">
+                  <h2 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white sm:text-5xl">
                     LET THE BRAIN BATTLE BEGIN
                   </h2>
                   <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-slate-600 dark:text-slate-300 sm:text-base lg:mx-0">
@@ -338,7 +452,7 @@ export default function HomeClient() {
               {/* Mock Test — full-length timed test (Set A pattern) */}
               <button
                 onClick={() => { setAppMode("mock"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                className="group relative overflow-hidden rounded-3xl border border-violet-200/80 bg-gradient-to-br from-violet-50 via-white to-purple-50 p-7 text-left shadow-sm ring-1 ring-violet-100/50 transition-all hover:-translate-y-1 hover:border-violet-400 hover:shadow-xl hover:shadow-violet-200/60 dark:border-violet-900/70 dark:from-violet-950/40 dark:via-slate-900 dark:to-purple-950/40 dark:ring-violet-900/30 dark:hover:border-violet-600 dark:hover:shadow-black/40 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-violet-200/80 bg-gradient-to-br from-violet-50 via-white to-purple-50 p-4 text-left sm:p-7 shadow-sm ring-1 ring-violet-100/50 transition-all hover:-translate-y-1 hover:border-violet-400 hover:shadow-xl hover:shadow-violet-200/60 dark:border-violet-900/70 dark:from-violet-950/40 dark:via-slate-900 dark:to-purple-950/40 dark:ring-violet-900/30 dark:hover:border-violet-600 dark:hover:shadow-black/40 sm:col-span-2"
               >
                 <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-violet-300/60 via-purple-300/40 to-fuchsia-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-violet-500/15 dark:via-purple-500/10 dark:to-fuchsia-500/15" />
                 <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
@@ -397,11 +511,11 @@ export default function HomeClient() {
               </button>
 
               {/* Study modes — aligned in one row of three equal tiles */}
-              <div className="grid gap-5 sm:col-span-2 sm:grid-cols-3">
+              <div className="grid gap-5 sm:col-span-2 md:grid-cols-3">
               {/* Subject Wise */}
               <button
                 onClick={() => setAppMode("subject")}
-                className="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-100 dark:border-indigo-800 dark:from-indigo-950/50 dark:via-slate-900 dark:to-purple-950/50 dark:hover:border-indigo-600 dark:hover:shadow-black/20"
+                className="group relative overflow-hidden rounded-3xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-4 text-left sm:p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-100 dark:border-indigo-800 dark:from-indigo-950/50 dark:via-slate-900 dark:to-purple-950/50 dark:hover:border-indigo-600 dark:hover:shadow-black/20"
               >
                 <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-indigo-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-indigo-500/10" />
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-md mb-4">
@@ -426,7 +540,7 @@ export default function HomeClient() {
               {/* Topic Wise */}
               <button
                 onClick={() => { setPendingDirectTopic(null); setAppMode("topic"); }}
-                className="group relative overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-white to-cyan-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-100 dark:border-emerald-800 dark:from-emerald-950/50 dark:via-slate-900 dark:to-cyan-950/50 dark:hover:border-emerald-600 dark:hover:shadow-black/20"
+                className="group relative overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-white to-cyan-50 p-4 text-left sm:p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-100 dark:border-emerald-800 dark:from-emerald-950/50 dark:via-slate-900 dark:to-cyan-950/50 dark:hover:border-emerald-600 dark:hover:shadow-black/20"
               >
                 <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-emerald-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-emerald-500/10" />
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-md mb-4">
@@ -451,7 +565,7 @@ export default function HomeClient() {
               {/* Topic Tests — curated chapter-wise sets (other than PYQ) */}
               <button
                 onClick={() => { setPendingDirectTopic(null); setAppMode("topic-tests"); }}
-                className="group relative overflow-hidden rounded-3xl border border-amber-100 bg-gradient-to-br from-amber-50 via-white to-orange-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl hover:shadow-amber-100 dark:border-amber-800 dark:from-amber-950/50 dark:via-slate-900 dark:to-orange-950/50 dark:hover:border-amber-600 dark:hover:shadow-black/20"
+                className="group relative overflow-hidden rounded-3xl border border-amber-100 bg-gradient-to-br from-amber-50 via-white to-orange-50 p-4 text-left sm:p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl hover:shadow-amber-100 dark:border-amber-800 dark:from-amber-950/50 dark:via-slate-900 dark:to-orange-950/50 dark:hover:border-amber-600 dark:hover:shadow-black/20"
               >
                 <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-amber-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-amber-500/10" />
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md mb-4">
@@ -491,7 +605,7 @@ export default function HomeClient() {
                   setAppMode("topic");
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
-                className="group relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-br from-slate-50 via-white to-slate-100 p-7 text-left shadow-sm ring-1 ring-slate-200/50 transition-all hover:-translate-y-1 hover:border-slate-400 hover:shadow-xl hover:shadow-slate-200/60 dark:border-slate-700/70 dark:from-slate-900/60 dark:via-slate-900 dark:to-slate-800/60 dark:ring-slate-700/30 dark:hover:border-slate-500 dark:hover:shadow-black/40 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-br from-slate-50 via-white to-slate-100 p-4 text-left sm:p-7 shadow-sm ring-1 ring-slate-200/50 transition-all hover:-translate-y-1 hover:border-slate-400 hover:shadow-xl hover:shadow-slate-200/60 dark:border-slate-700/70 dark:from-slate-900/60 dark:via-slate-900 dark:to-slate-800/60 dark:ring-slate-700/30 dark:hover:border-slate-500 dark:hover:shadow-black/40 sm:col-span-2"
               >
                 {/* subtle graphite glow corners */}
                 <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-slate-300/60 via-slate-200/40 to-slate-400/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-slate-600/20 dark:via-slate-500/10 dark:to-slate-700/20" />
@@ -559,7 +673,7 @@ export default function HomeClient() {
               {/* RTO AMVI — separate exam section */}
               <button
                 onClick={() => { setAppMode("rto-amvi"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                className="group relative overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-100 dark:border-blue-800 dark:from-blue-950/40 dark:via-slate-900 dark:to-sky-950/40 dark:hover:border-blue-500 dark:hover:shadow-black/20 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-4 text-left sm:p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-100 dark:border-blue-800 dark:from-blue-950/40 dark:via-slate-900 dark:to-sky-950/40 dark:hover:border-blue-500 dark:hover:shadow-black/20 sm:col-span-2"
               >
                 <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-blue-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-blue-500/10" />
                 <div className="flex items-start gap-4">
@@ -596,7 +710,7 @@ export default function HomeClient() {
               {/* Notes */}
               <button
                 onClick={() => setAppMode("notes")}
-                className="group relative overflow-hidden rounded-3xl border border-orange-100 bg-gradient-to-br from-orange-50 via-white to-rose-50 p-7 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-orange-300 hover:shadow-xl hover:shadow-orange-100 dark:border-orange-800 dark:from-orange-950/50 dark:via-slate-900 dark:to-rose-950/50 dark:hover:border-orange-600 dark:hover:shadow-black/20 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-orange-100 bg-gradient-to-br from-orange-50 via-white to-rose-50 p-4 text-left sm:p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-orange-300 hover:shadow-xl hover:shadow-orange-100 dark:border-orange-800 dark:from-orange-950/50 dark:via-slate-900 dark:to-rose-950/50 dark:hover:border-orange-600 dark:hover:shadow-black/20 sm:col-span-2"
               >
                 <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-orange-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-orange-500/10" />
                 <div className="flex items-start gap-4">
@@ -636,7 +750,7 @@ export default function HomeClient() {
               {/* CSAT & Aptitude — training, topic practice and speed tests */}
               <button
                 onClick={() => { setAppMode("csat"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                className="group relative overflow-hidden rounded-3xl border border-sky-200/80 bg-gradient-to-br from-sky-50 via-white to-indigo-50 p-7 text-left shadow-sm ring-1 ring-sky-100/50 transition-all hover:-translate-y-1 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-200/60 dark:border-sky-900/70 dark:from-sky-950/40 dark:via-slate-900 dark:to-indigo-950/40 dark:ring-sky-900/30 dark:hover:border-sky-600 dark:hover:shadow-black/40 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-sky-200/80 bg-gradient-to-br from-sky-50 via-white to-indigo-50 p-4 text-left sm:p-7 shadow-sm ring-1 ring-sky-100/50 transition-all hover:-translate-y-1 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-200/60 dark:border-sky-900/70 dark:from-sky-950/40 dark:via-slate-900 dark:to-indigo-950/40 dark:ring-sky-900/30 dark:hover:border-sky-600 dark:hover:shadow-black/40 sm:col-span-2"
               >
                 <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-sky-300/60 via-blue-300/40 to-indigo-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-sky-500/15 dark:via-blue-500/10 dark:to-indigo-500/15" />
                 <div className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-all duration-1000 group-hover:translate-x-full group-hover:opacity-100 dark:via-white/10" />
@@ -697,7 +811,7 @@ export default function HomeClient() {
               {/* Rivers of Maharashtra — district-wise 2D map + MPSC PYQ quiz */}
               <a
                 href="/rivers-maharashtra"
-                className="group relative overflow-hidden rounded-3xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50 via-teal-50 to-emerald-50 p-7 text-left shadow-sm ring-1 ring-cyan-100/50 transition-all hover:-translate-y-1 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-200/60 dark:border-cyan-900/70 dark:from-cyan-950/40 dark:via-teal-950/40 dark:to-emerald-950/40 dark:ring-cyan-900/30 dark:hover:border-cyan-600 dark:hover:shadow-black/40 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50 via-teal-50 to-emerald-50 p-4 text-left sm:p-7 shadow-sm ring-1 ring-cyan-100/50 transition-all hover:-translate-y-1 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-200/60 dark:border-cyan-900/70 dark:from-cyan-950/40 dark:via-teal-950/40 dark:to-emerald-950/40 dark:ring-cyan-900/30 dark:hover:border-cyan-600 dark:hover:shadow-black/40 sm:col-span-2"
               >
                 <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-cyan-300/60 via-teal-300/40 to-emerald-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-cyan-500/15 dark:via-teal-500/10 dark:to-emerald-500/15" />
                 <div className="absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-gradient-to-tr from-emerald-300/40 via-teal-200/40 to-cyan-200/30 blur-3xl dark:from-emerald-500/15 dark:via-teal-500/10 dark:to-cyan-500/10" />
@@ -766,7 +880,7 @@ export default function HomeClient() {
               {/* Census 2011 Memory Game (placed last per user request) */}
               <a
                 href="/census-2011-maharashtra"
-                className="group relative overflow-hidden rounded-3xl border border-sky-200/80 bg-gradient-to-br from-sky-50 via-cyan-50 to-blue-50 p-7 text-left shadow-sm ring-1 ring-sky-100/50 transition-all hover:-translate-y-1 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-200/60 dark:border-sky-900/70 dark:from-sky-950/40 dark:via-cyan-950/40 dark:to-blue-950/40 dark:ring-sky-900/30 dark:hover:border-sky-600 dark:hover:shadow-black/40 sm:col-span-2"
+                className="group relative overflow-hidden rounded-3xl border border-sky-200/80 bg-gradient-to-br from-sky-50 via-cyan-50 to-blue-50 p-4 text-left sm:p-7 shadow-sm ring-1 ring-sky-100/50 transition-all hover:-translate-y-1 hover:border-sky-400 hover:shadow-xl hover:shadow-sky-200/60 dark:border-sky-900/70 dark:from-sky-950/40 dark:via-cyan-950/40 dark:to-blue-950/40 dark:ring-sky-900/30 dark:hover:border-sky-600 dark:hover:shadow-black/40 sm:col-span-2"
               >
                 <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-gradient-to-br from-sky-300/60 via-cyan-300/40 to-blue-300/40 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-sky-500/15 dark:via-cyan-500/10 dark:to-blue-500/15" />
                 <div className="absolute -bottom-12 -left-10 h-40 w-40 rounded-full bg-gradient-to-tr from-blue-300/40 via-sky-200/40 to-cyan-200/30 blur-3xl dark:from-blue-500/15 dark:via-sky-500/10 dark:to-cyan-500/10" />
@@ -923,39 +1037,31 @@ export default function HomeClient() {
             <p className="text-[10px] text-slate-300 dark:text-slate-600">
               {t("footerTagline", language)}
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
               <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("about", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/contact" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("contact", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/donate" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("donate", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/exams" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("exams", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/map" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("map", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/study-guides" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("studyGuides", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("privacy", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/terms" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("terms", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a href="/disclaimer" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("disclaimer", language)}
               </a>
@@ -987,11 +1093,11 @@ function LeaderboardTile({
           🏆
         </div>
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-2 mb-0.5">
-            <h3 className="text-lg sm:text-xl font-bold text-amber-700 dark:text-amber-300">
+          <div className="mb-0.5 flex flex-wrap items-center gap-2">
+            <h3 className="min-w-0 break-words text-lg font-bold text-amber-700 sm:text-xl dark:text-amber-300">
               {t("leaderboardTileTitle", language)}
             </h3>
-            <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
+            <span className="shrink-0 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
               {t("live", language)}
             </span>
           </div>

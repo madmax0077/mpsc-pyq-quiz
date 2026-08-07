@@ -214,7 +214,7 @@ export default function RiverTributaryQuiz() {
               <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-current text-xs font-bold">
                 {L}
               </span>
-              <span className="flex-1 whitespace-pre-line">{q.options[L]}</span>
+              <span className="min-w-0 flex-1 break-words whitespace-pre-line">{q.options[L]}</span>
               {submitted && isCorrect && <span className="mt-1 text-emerald-600 dark:text-emerald-300">✓</span>}
               {submitted && isPicked && !isCorrect && <span className="mt-1 text-rose-600 dark:text-rose-300">✗</span>}
             </button>

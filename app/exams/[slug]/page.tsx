@@ -141,7 +141,7 @@ export default function ExamPaperPage({ params }: PageProps) {
             <span className="mx-1.5">/</span>
             <Link href="/exams" className="hover:text-indigo-600">Exam Papers</Link>
             <span className="mx-1.5">/</span>
-            <span className="text-slate-700 dark:text-slate-300">{paper.title}</span>
+            <span className="break-words text-slate-700 dark:text-slate-300">{paper.title}</span>
           </nav>
         </div>
       </header>
@@ -156,8 +156,11 @@ export default function ExamPaperPage({ params }: PageProps) {
           <span className="rounded-full bg-amber-50 px-3 py-1 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">Official Set A Key</span>
         </div>
 
-        <h1 className="text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl dark:text-slate-100">
-          {paper.title} — Question Paper with Answer Key &amp; Explanations
+        <h1 className="break-words text-xl font-extrabold leading-snug text-slate-900 sm:text-3xl sm:leading-tight dark:text-slate-100">
+          <span className="block sm:inline">{paper.title}</span>
+          <span className="mt-1 block text-base font-bold text-slate-600 sm:mt-0 sm:inline sm:text-3xl sm:font-extrabold sm:text-slate-900 dark:text-slate-300 dark:sm:text-slate-100">
+            {" "}— Question Paper with Answer Key &amp; Explanations
+          </span>
         </h1>
 
         <p className="mt-4 leading-7 text-slate-600 dark:text-slate-300">
@@ -202,10 +205,10 @@ export default function ExamPaperPage({ params }: PageProps) {
               {paper.subjects.map((s) => (
                 <div
                   key={s.name}
-                  className="flex items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm dark:border-slate-700 dark:bg-slate-800"
+                  className="flex flex-col gap-1 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm sm:flex-row sm:items-center sm:justify-between dark:border-slate-700 dark:bg-slate-800"
                 >
-                  <span className="font-medium text-slate-700 dark:text-slate-200">{s.name}</span>
-                  <span className="rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
+                  <span className="min-w-0 break-words font-medium text-slate-700 dark:text-slate-200">{s.name}</span>
+                  <span className="w-fit shrink-0 rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
                     {s.count} {s.count === 1 ? "question" : "questions"}
                   </span>
                 </div>

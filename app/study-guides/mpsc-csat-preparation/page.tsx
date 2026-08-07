@@ -131,8 +131,8 @@ export default function MpscCsatGuide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC &amp; UPSC CSAT</h1>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">MPSC &amp; UPSC CSAT</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">Study Guide · ~12 min read</p>
           </div>
         </div>
@@ -183,6 +183,7 @@ export default function MpscCsatGuide() {
             short{" "}
             <Link href="/study-guides/upsc-csat-practice">UPSC CSAT practice landing page</Link>.
           </p>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -200,6 +201,7 @@ export default function MpscCsatGuide() {
               <tr><td>Counted in merit?</td><td>No — the mains cut-off uses Paper I marks alone</td></tr>
             </tbody>
           </table>
+          </div>
           <p>
             Read that last row twice. Scoring 190 in CSAT earns you nothing over a candidate who
             scored 70. But scoring 64 wipes out your General Studies paper completely. CSAT is not a
@@ -318,6 +320,7 @@ export default function MpscCsatGuide() {
             topics that appear most often, so even an interrupted plan leaves you with the useful
             half.
           </p>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -369,6 +372,7 @@ export default function MpscCsatGuide() {
               </tr>
             </tbody>
           </table>
+          </div>
 
           <h3>6. Five mistakes that cost qualified candidates their year</h3>
           <ul>

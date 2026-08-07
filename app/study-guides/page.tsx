@@ -176,16 +176,16 @@ export default function StudyGuidesHub() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC Study Guides</h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400">Free long-form notes for MPSC aspirants</p>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">MPSC Study Guides</h1>
+            <p className="break-words text-xs text-slate-500 dark:text-slate-400">Free long-form notes for MPSC aspirants</p>
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
         <section>
-          <h2 className="text-3xl font-extrabold text-slate-900 dark:text-slate-100">
+          <h2 className="text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl dark:text-slate-100">
             Free MPSC Study Guides
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-300">
@@ -214,7 +214,7 @@ export default function StudyGuidesHub() {
               <div className="flex items-start gap-3">
                 <span className="text-3xl" aria-hidden>{g.emoji}</span>
                 <div className="min-w-0 flex-1">
-                  <h3 className="font-bold text-slate-800 group-hover:text-indigo-700 dark:text-slate-100 dark:group-hover:text-indigo-400">
+                  <h3 className="break-words font-bold text-slate-800 group-hover:text-indigo-700 dark:text-slate-100 dark:group-hover:text-indigo-400">
                     {g.title}
                   </h3>
                   <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{g.blurb}</p>

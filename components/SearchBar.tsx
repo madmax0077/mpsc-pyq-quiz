@@ -102,7 +102,7 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion, navigate
               setExpandedKey(null);
             }}
             placeholder="Search questions by keyword..."
-            className="flex-1 bg-transparent text-sm text-slate-800 placeholder-slate-400 outline-none dark:text-slate-100 dark:placeholder-slate-500"
+            className="min-w-0 flex-1 bg-transparent text-sm text-slate-800 placeholder-slate-400 outline-none dark:text-slate-100 dark:placeholder-slate-500"
           />
           <button
             type="button"
@@ -136,10 +136,10 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion, navigate
                         onClick={() => setExpandedKey(isExpanded ? null : rowKey)}
                         className="min-w-0 flex-1 text-left"
                       >
-                        <p className="text-sm text-slate-700 dark:text-slate-200 line-clamp-2">
+                        <p className="break-words text-sm text-slate-700 dark:text-slate-200 line-clamp-2">
                           {highlightMatch(r.question.text.split("\n")[0], query)}
                         </p>
-                        <p className="mt-0.5 text-[10px] text-slate-400 dark:text-slate-500">
+                        <p className="mt-0.5 break-words text-[10px] text-slate-400 dark:text-slate-500">
                           {r.quizTitle}
                           {r.question.category && (
                             <span className="ml-1.5 rounded bg-indigo-100 px-1.5 py-0.5 text-indigo-600 dark:bg-indigo-900/40 dark:text-indigo-400">
@@ -152,10 +152,12 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion, navigate
                         <button
                           type="button"
                           title="Go to this question"
+                          aria-label="Go to this question"
                           onClick={() => navigate(r)}
-                          className="shrink-0 rounded-lg bg-indigo-600 px-2.5 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700"
+                          className="shrink-0 rounded-lg bg-indigo-600 px-2 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700 sm:px-2.5"
                         >
-                          Go
+                          <span className="sm:hidden" aria-hidden="true">→</span>
+                          <span className="hidden sm:inline">Go</span>
                         </button>
                       )}
                       <button
@@ -193,7 +195,7 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion, navigate
                             }`}
                           >
                             <span className="font-bold shrink-0">{k}.</span>
-                            <span>{optionText(r.question, k)}</span>
+                            <span className="min-w-0 flex-1 break-words">{optionText(r.question, k)}</span>
                             {!isQuestionCancelled(r.question) && k === r.question.correctAnswer && (
                               <span className="ml-auto shrink-0">✓</span>
                             )}
@@ -203,7 +205,7 @@ export default function SearchBar({ allQuestions, onNavigateToQuestion, navigate
                           <button
                             type="button"
                             onClick={() => navigate(r)}
-                            className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-xs font-semibold text-white hover:bg-indigo-700 transition-colors"
+                            className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-lg bg-indigo-600 px-3 py-2 text-center text-xs font-semibold text-white hover:bg-indigo-700 transition-colors break-words whitespace-normal"
                           >
                             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />

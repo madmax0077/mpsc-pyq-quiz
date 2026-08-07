@@ -73,8 +73,8 @@ export default function MpscNegativeMarkingGuide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC Negative Marking</h1>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">MPSC Negative Marking</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~8 min read</p>
           </div>
         </div>
@@ -113,6 +113,7 @@ export default function MpscNegativeMarkingGuide() {
           </ul>
 
           <h3>2. Negative marking by exam</h3>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -132,6 +133,7 @@ export default function MpscNegativeMarkingGuide() {
               <tr><td>Gazetted Technical Services</td><td>100</td><td>200</td><td>2</td><td>0.50</td></tr>
             </tbody>
           </table>
+          </div>
           <p>
             The CSAT paper (Paper II of the Gazetted Civil Services prelims) is{" "}
             <strong>qualifying only</strong> — you must score 33% to qualify, but the marks are not

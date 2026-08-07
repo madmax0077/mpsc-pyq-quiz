@@ -257,12 +257,51 @@ body {
  * scrolls horizontally instead of pushing the whole page sideways.
  * Desktop keeps the normal full-width rendering.
  * -------------------------------------------------------------------- */
+/* Prefer an explicit wrapper (StudyGuideTable / .prose-table-wrap).
+ * Fallback for legacy raw <table> inside .prose: scroll without clipping. */
+.prose-table-wrap {
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose-table-wrap > table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+}
+
 @media (max-width: 640px) {
   .prose table {
     display: block;
     width: 100%;
+    max-width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .prose table thead,
+  .prose table tbody {
+    display: table;
+    width: max-content;
+    min-width: 100%;
+  }
+
+  /* StudyGuideTable already scrolls via .prose-table-wrap — keep real table layout */
+  .prose-table-wrap table {
+    display: table;
+    width: 100%;
+    min-width: 480px;
+    overflow: visible;
+  }
+
+  .prose-table-wrap table thead,
+  .prose-table-wrap table tbody {
+    display: table-header-group;
+    width: auto;
+    min-width: 0;
+  }
+
+  .prose-table-wrap table tbody {
+    display: table-row-group;
   }
 }
 

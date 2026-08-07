@@ -74,8 +74,8 @@ export default function MpscGroupCSyllabusGuide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC Group C Syllabus</h1>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">MPSC Group C Syllabus</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~10 min read</p>
           </div>
         </div>
@@ -100,6 +100,7 @@ export default function MpscGroupCSyllabusGuide() {
           </p>
 
           <h3>1. MPSC Group C prelims pattern</h3>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -117,6 +118,7 @@ export default function MpscGroupCSyllabusGuide() {
               <tr><td>Nature</td><td>Screening — decides who advances to Mains</td></tr>
             </tbody>
           </table>
+          </div>
           <p>
             Because every question is worth exactly one mark, disciplined attempting matters. See
             our <Link href="/study-guides/mpsc-negative-marking">MPSC Negative Marking</Link> guide
@@ -130,6 +132,7 @@ export default function MpscGroupCSyllabusGuide() {
             confirm against the latest official syllabus PDF on{" "}
             <a href="https://mpsc.gov.in" target="_blank" rel="noopener">mpsc.gov.in</a>.
           </p>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -150,6 +153,7 @@ export default function MpscGroupCSyllabusGuide() {
               <tr><td>General Science</td><td>~10</td><td>Medium</td></tr>
             </tbody>
           </table>
+          </div>
           <p>
             The four <em>scoring</em> blocks — Marathi, English, Aptitude/Reasoning and Polity —
             together carry close to 45 marks and are almost entirely memory- or logic-based. A

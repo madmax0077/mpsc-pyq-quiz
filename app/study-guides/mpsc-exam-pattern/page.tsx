@@ -34,8 +34,8 @@ export default function MpscExamPatternGuide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC Exam Pattern</h1>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">MPSC Exam Pattern</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~12 min read</p>
           </div>
         </div>
@@ -59,6 +59,7 @@ export default function MpscExamPatternGuide() {
           </p>
 
           <h3>1. The five MPSC exams at a glance</h3>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -77,6 +78,7 @@ export default function MpscExamPatternGuide() {
               <tr><td>Sub Inspector State Excise (under Group B)</td><td>Pre + Mains + Physical + Interview</td><td>100</td><td>1/4 mark</td><td>Offline OMR</td></tr>
             </tbody>
           </table>
+          </div>
           <p>
             Note: From 2025 onwards, MPSC has moved to a unified UPSC-style pattern for the
             <strong> Rajyaseva (Gazetted CS)</strong> mains — nine descriptive papers, including an

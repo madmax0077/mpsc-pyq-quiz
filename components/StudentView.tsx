@@ -789,8 +789,8 @@ export default function StudentView({
                             <path strokeLinecap="round" strokeLinejoin="round" d={colors.icon} />
                           </svg>
                         </div>
-                        <div>
-                          <h3 className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
+                        <div className="min-w-0 flex-1">
+                          <h3 className="break-words font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
                             {categoryLabel(cat, language)}
                           </h3>
                           <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -847,7 +847,7 @@ export default function StudentView({
             </div>
 
             {topicList.length === 0 ? (
-              <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-16 text-center dark:bg-slate-800 dark:border-slate-600">
+              <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center sm:p-16 dark:bg-slate-800 dark:border-slate-600">
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-700">
                   <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
@@ -872,7 +872,7 @@ export default function StudentView({
                     <div className="p-5">
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex-1 min-w-0">
-                          <h3 className="font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors dark:text-slate-100 dark:group-hover:text-emerald-400">
+                          <h3 className="break-words font-semibold text-slate-800 group-hover:text-emerald-600 transition-colors dark:text-slate-100 dark:group-hover:text-emerald-400">
                             {topicLabel(item.name, language)}
                           </h3>
                         </div>
@@ -880,8 +880,8 @@ export default function StudentView({
                           <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                         </svg>
                       </div>
-                      <div className="mt-3 flex items-center gap-2">
-                        <span className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${colors.badge}`}>
+                      <div className="mt-3 flex flex-wrap items-center gap-2">
+                        <span className={`break-words rounded-full px-2.5 py-0.5 text-xs font-medium ${colors.badge}`}>
                           {categoryLabel(topicCategory, language)}
                         </span>
                         <span className="text-xs text-slate-400 dark:text-slate-500">
@@ -903,7 +903,7 @@ export default function StudentView({
     return (
       <div className="space-y-8">
         {!hasAny ? (
-          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-16 text-center dark:bg-slate-800 dark:border-slate-600">
+          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center sm:p-16 dark:bg-slate-800 dark:border-slate-600">
             <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-slate-100">
               <svg className="h-8 w-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -920,9 +920,9 @@ export default function StudentView({
           <>
             {/* Language tip */}
             {showLangTip && language === "english" && (
-              <div className="flex items-center gap-2 rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-2.5 dark:border-indigo-800 dark:bg-indigo-950/40">
+              <div className="flex flex-wrap items-start gap-2 rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-2.5 dark:border-indigo-800 dark:bg-indigo-950/40">
                 <span className="text-base">🌐</span>
-                <p className="flex-1 text-xs sm:text-sm text-indigo-700 dark:text-indigo-300">
+                <p className="min-w-0 flex-1 text-xs sm:text-sm text-indigo-700 dark:text-indigo-300">
                   मराठी मध्ये तयारी करायची आहे? वरील dropdown मधून <span className="font-bold">मराठी</span> भाषा निवडा.
                 </p>
                 <button
@@ -938,7 +938,7 @@ export default function StudentView({
             )}
 
             {/* Streak + Search + My Stats row */}
-            <div className="flex items-center justify-between gap-2 flex-wrap min-w-0">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between min-w-0">
               {streak > 0 ? (
                 <div className="flex items-center gap-2 rounded-full bg-indigo-50 px-4 py-2 ring-1 ring-indigo-200 dark:bg-indigo-950/50 dark:ring-indigo-800">
                   <span className="text-xl">🔥</span>
@@ -950,7 +950,7 @@ export default function StudentView({
                   <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Take a quiz to start your streak!</span>
                 </div>
               )}
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 self-stretch sm:self-auto">
                 <SearchBar allQuestions={allSearchableQuestions} onNavigateToQuestion={navigateToQuestion} />
                 <button
                   onClick={() => setShowAnalytics(true)}
@@ -997,7 +997,7 @@ export default function StudentView({
                     </svg>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg font-bold text-indigo-700 group-hover:text-indigo-800 transition-colors dark:text-indigo-300 dark:group-hover:text-indigo-200">
+                    <h3 className="break-words text-lg font-bold text-indigo-700 group-hover:text-indigo-800 transition-colors dark:text-indigo-300 dark:group-hover:text-indigo-200">
                       {dailyQuiz.title}
                     </h3>
                     <p className="text-sm text-slate-500 dark:text-slate-400">
@@ -1050,8 +1050,8 @@ export default function StudentView({
                                 <span className="text-[10px] font-bold text-slate-600 dark:text-slate-300">{progressPct}%</span>
                               </div>
                             </div>
-                            <div>
-                              <h3 className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
+                            <div className="min-w-0 flex-1">
+                              <h3 className="break-words font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
                                 {categoryLabel(cq.title, language)}
                               </h3>
                               <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -1103,7 +1103,7 @@ export default function StudentView({
                         </svg>
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h3 className="text-sm sm:text-base font-semibold text-slate-800 leading-snug group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
+                        <h3 className="break-words text-sm sm:text-base font-semibold text-slate-800 leading-snug group-hover:text-indigo-600 transition-colors dark:text-slate-100 dark:group-hover:text-indigo-400">
                           {quiz.title}
                         </h3>
                         <p className="mt-0.5 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
@@ -1162,9 +1162,9 @@ export default function StudentView({
     <div className="space-y-6">
       {showConfetti && <Confetti />}
 
-      {/* Report Toast */}
+      {/* Report Toast — above sticky submit on mobile */}
       {reportToast && (
-        <div className="animate-slide-up fixed bottom-6 right-6 z-50 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-lg">
+        <div className="animate-slide-up fixed bottom-24 left-4 right-4 z-50 rounded-lg bg-indigo-600 px-5 py-3 text-center text-sm font-medium text-white shadow-lg sm:left-auto sm:right-6 sm:bottom-24 sm:text-left">
           {reportToast}
         </div>
       )}
@@ -1428,8 +1428,9 @@ export default function StudentView({
         </div>
       )}
 
-      {/* Questions */}
-      <div className="space-y-4">
+      {/* Questions + ad + pagination share bottom padding so sticky submit doesn't cover them */}
+      <div className="space-y-4 pb-[calc(6.5rem+env(safe-area-inset-bottom))]">
+        <div className="space-y-4">
         {pageQuestions.map((q, localIdx) => {
           const globalIdx = currentPage * perPage + localIdx;
           const userAnswer = answers[q.id];
@@ -1463,7 +1464,7 @@ export default function StudentView({
                     {q.sourceTag}
                   </span>
                 )}
-                <div className="mb-4 flex items-start gap-2 sm:gap-3">
+                <div className={`mb-4 flex items-start gap-2 sm:gap-3${isCategoryQuiz && q.sourceTag ? " sm:pr-[48%]" : ""}`}>
                   <span className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${
                     qSubmitted && qCancelled
                       ? "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200"
@@ -1479,7 +1480,7 @@ export default function StudentView({
                   }`}>
                     {q.number ?? globalIdx + 1}
                   </span>
-                  <p className="select-text font-medium text-slate-800 leading-relaxed whitespace-pre-line dark:text-slate-100">{q.text}</p>
+                  <p className="min-w-0 flex-1 select-text break-words font-medium text-slate-800 leading-relaxed whitespace-pre-line dark:text-slate-100">{q.text}</p>
                 </div>
 
                 {q.imageUrl && (
@@ -1498,7 +1499,7 @@ export default function StudentView({
                     const isThisCorrect = !qCancelled && q.correctAnswer === key;
 
                     let classes =
-                      "flex items-center gap-2 sm:gap-3 rounded-lg border px-3 py-2.5 sm:px-4 sm:py-3 text-sm transition-all ";
+                      "flex items-start gap-2 sm:gap-3 rounded-lg border px-3 py-2.5 sm:px-4 sm:py-3 text-sm transition-all ";
 
                     if (qCancelled) {
                       classes += qSubmitted
@@ -1529,7 +1530,7 @@ export default function StudentView({
                           disabled={qSubmitted || qCancelled}
                           className="sr-only"
                         />
-                        <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-xs font-bold ${
+                        <span className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-xs font-bold ${
                           qCancelled
                             ? "border-slate-300 bg-slate-100 text-slate-500 dark:border-slate-600 dark:bg-slate-700 dark:text-slate-400"
                             : qSubmitted && isThisCorrect
@@ -1552,7 +1553,7 @@ export default function StudentView({
                             key
                           )}
                         </span>
-                        <span className="select-text leading-snug whitespace-pre-line">{optionText(q, key)}</span>
+                        <span className="min-w-0 flex-1 select-text break-words leading-snug whitespace-pre-line">{optionText(q, key)}</span>
                       </label>
                     );
                   })}
@@ -1598,7 +1599,7 @@ export default function StudentView({
                                 : `Incorrect — the answer is ${q.correctAnswer}.`}
                         </p>
                         {q.explanation ? (
-                          <p className="mt-1 text-sm text-slate-600 whitespace-pre-line dark:text-slate-300">{q.explanation}</p>
+                          <p className="mt-1 break-words text-sm text-slate-600 whitespace-pre-line dark:text-slate-300">{q.explanation}</p>
                         ) : null}
                       </div>
                     </div>
@@ -1621,7 +1622,7 @@ export default function StudentView({
             </div>
           );
         })}
-      </div>
+        </div>
 
       {/* In-content ad — directly below the last question on the first page
           only, separated from the questions above to avoid accidental clicks. */}
@@ -1633,7 +1634,7 @@ export default function StudentView({
 
       {/* Pagination - only for regular quizzes */}
       {!isCategoryQuiz && totalPages > 1 && (
-        <div className="flex items-center justify-center gap-1.5 sm:gap-2 overflow-x-auto px-1 py-1">
+        <div className="flex items-center justify-center gap-1.5 sm:gap-2 px-1 py-1">
           <button
             onClick={() => { setCurrentPage((p) => Math.max(0, p - 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             disabled={currentPage === 0}
@@ -1641,19 +1642,24 @@ export default function StudentView({
           >
             Prev
           </button>
-          {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i}
-              onClick={() => { setCurrentPage(i); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className={`h-8 w-8 sm:h-9 sm:w-9 shrink-0 rounded-lg text-xs sm:text-sm font-medium transition-colors ${
-                currentPage === i
-                  ? "bg-indigo-600 text-white shadow-sm"
-                  : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
-              }`}
-            >
-              {i + 1}
-            </button>
-          ))}
+          <span className="px-2 text-xs font-medium text-slate-600 sm:hidden dark:text-slate-300">
+            Page {currentPage + 1} of {totalPages}
+          </span>
+          <div className="hidden items-center gap-1.5 sm:flex sm:gap-2">
+            {Array.from({ length: totalPages }, (_, i) => (
+              <button
+                key={i}
+                onClick={() => { setCurrentPage(i); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                className={`h-8 w-8 sm:h-9 sm:w-9 shrink-0 rounded-lg text-xs sm:text-sm font-medium transition-colors ${
+                  currentPage === i
+                    ? "bg-indigo-600 text-white shadow-sm"
+                    : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
+                }`}
+              >
+                {i + 1}
+              </button>
+            ))}
+          </div>
           <button
             onClick={() => { setCurrentPage((p) => Math.min(totalPages - 1, p + 1)); window.scrollTo({ top: 0, behavior: "smooth" }); }}
             disabled={currentPage === totalPages - 1}
@@ -1695,20 +1701,23 @@ export default function StudentView({
           })}
         </div>
       )}
+      </div>
 
       {/* Submit / Retake — Regular quizzes */}
       {!isCategoryQuiz && (
         <>
           {!submitted ? (
-            <div className="sticky bottom-4 z-10">
+            <div className="sticky bottom-0 z-10 border-t border-slate-200/80 bg-white/95 pb-[env(safe-area-inset-bottom)] pt-2 backdrop-blur dark:border-slate-700/80 dark:bg-slate-900/95">
               <button
                 onClick={handleSubmit}
                 className="w-full rounded-xl bg-indigo-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
               >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                {t("submitQuiz", language)} ({answeredCount}/{total} {t("answered", language)})
+                <span className="min-w-0 truncate text-center sm:whitespace-normal">
+                  {t("submitQuiz", language)} ({answeredCount}/{total} {t("answered", language)})
+                </span>
               </button>
             </div>
           ) : (
@@ -1742,15 +1751,17 @@ export default function StudentView({
       {isCategoryQuiz && (
         <>
           {!isPageSubmitted ? (
-            <div className="sticky bottom-4 z-10">
+            <div className="sticky bottom-0 z-10 border-t border-slate-200/80 bg-white/95 pb-[env(safe-area-inset-bottom)] pt-2 backdrop-blur dark:border-slate-700/80 dark:bg-slate-900/95">
               <button
                 onClick={handleSubmitPage}
                 className="w-full rounded-xl bg-indigo-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
               >
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <svg className="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                {t("submitSet", language)} {currentPage + 1} ({pageAnsweredCount}/{pageQuestions.length} {t("answered", language)})
+                <span className="min-w-0 truncate text-center sm:whitespace-normal">
+                  {t("submitSet", language)} {currentPage + 1} ({pageAnsweredCount}/{pageQuestions.length} {t("answered", language)})
+                </span>
               </button>
             </div>
           ) : (

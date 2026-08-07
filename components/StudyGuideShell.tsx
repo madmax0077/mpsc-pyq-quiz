@@ -42,15 +42,15 @@ export default function StudyGuideShell({
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">{title}</h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400">{subtitle}</p>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">{title}</h1>
+            <p className="break-words text-xs text-slate-500 dark:text-slate-400">{subtitle}</p>
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10">
-        <article className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800 sm:p-9">
+        <article className="overflow-x-clip rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800 sm:p-9">
           {children}
 
           {faq && faq.length > 0 ? (

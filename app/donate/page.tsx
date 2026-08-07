@@ -24,9 +24,9 @@ export default function DonatePage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">Donate</h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400">Support mpscs.in</p>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">Donate</h1>
+            <p className="break-words text-xs text-slate-500 dark:text-slate-400">Support mpscs.in</p>
           </div>
         </div>
       </header>

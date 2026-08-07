@@ -66,8 +66,8 @@ export default function MpscGroupBPyqHub() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">
               MPSC Group B Previous Year Question Paper
             </h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~7 min read</p>
@@ -119,6 +119,7 @@ export default function MpscGroupBPyqHub() {
             list follows that year’s notification). The prelims is a common objective screen; mains,
             physical tests and interviews diverge by post.
           </p>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr>
@@ -145,6 +146,7 @@ export default function MpscGroupBPyqHub() {
               </tr>
             </tbody>
           </table>
+          </div>
           <p>
             For the cross-exam comparison table, read{" "}
             <Link href="/study-guides/mpsc-exam-pattern">MPSC Exam Pattern</Link>. For the penalty

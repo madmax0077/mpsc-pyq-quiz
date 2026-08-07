@@ -22,12 +22,12 @@ export default function DisclaimerPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">Disclaimer</h1>
+          <h1 className="min-w-0 flex-1 break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">Disclaimer</h1>
         </div>
       </header>
 
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-        <div className="prose prose-slate max-w-none rounded-2xl border border-slate-200 bg-white p-8 shadow-sm dark:prose-invert dark:border-slate-700 dark:bg-slate-800">
+        <div className="prose prose-slate max-w-none rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-8 dark:prose-invert dark:border-slate-700 dark:bg-slate-800">
           <p className="text-sm text-slate-500 dark:text-slate-400">Last updated: 18 July 2026</p>
 
           <h2>Editorial disclaimer</h2>

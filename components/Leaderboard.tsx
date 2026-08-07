@@ -91,12 +91,13 @@ export default function Leaderboard({ guestUserId }: { guestUserId?: string | nu
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm dark:bg-slate-800 dark:border-slate-700">
       {/* Header */}
-      <div className="flex items-start justify-between gap-3 mb-5">
-        <div>
-          <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-extrabold text-slate-800 dark:text-slate-100">
-            <span aria-hidden>🏆</span> Today&apos;s Top Scorers
+      <div className="mb-5 flex items-start justify-between gap-3">
+        <div className="min-w-0 flex-1">
+          <h2 className="flex flex-wrap items-center gap-2 text-xl font-extrabold text-slate-800 sm:text-2xl dark:text-slate-100">
+            <span aria-hidden className="shrink-0">🏆</span>
+            <span className="min-w-0 break-words">Today&apos;s Top Scorers</span>
           </h2>
-          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+          <p className="mt-0.5 break-words text-xs text-slate-500 sm:text-sm dark:text-slate-400">
             {todayLabel} &middot; aggregate of all your tests today &middot; resets midnight IST
           </p>
         </div>
@@ -133,19 +134,19 @@ export default function Leaderboard({ guestUserId }: { guestUserId?: string | nu
           {studentUser || guestUserId ? (
             <div className="mt-6 rounded-xl border border-indigo-100 bg-indigo-50/60 p-4 dark:border-indigo-900/60 dark:bg-indigo-900/20">
               {myRank ? (
-                <div className="flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-3 min-w-0">
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="flex min-w-0 items-center gap-3">
                     <Avatar name={myRank.row.displayName} src={myRank.row.photoURL} size={40} />
                     <div className="min-w-0">
-                      <p className="text-sm font-semibold text-slate-800 dark:text-slate-100 truncate">
+                      <p className="truncate text-sm font-semibold text-slate-800 dark:text-slate-100">
                         You — {myRank.row.displayName}
                       </p>
-                      <p className="text-xs text-slate-500 dark:text-slate-400 truncate">
+                      <p className="break-words text-xs text-slate-500 dark:text-slate-400">
                         {myRank.row.attemptCount} {myRank.row.attemptCount === 1 ? "test" : "tests"} today &middot; latest: {myRank.row.latestQuizTitle}
                       </p>
                     </div>
                   </div>
-                  <div className="text-right shrink-0">
+                  <div className="shrink-0 text-left sm:text-right">
                     <p className="text-base font-bold text-slate-800 dark:text-slate-100">
                       {myRank.row.scorePct}%{" "}
                       <span className="text-xs font-medium text-slate-500 dark:text-slate-400">

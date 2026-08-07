@@ -86,10 +86,11 @@ export default function CensusGamePage() {
             </svg>
           </Link>
           <div className="min-w-0 flex-1">
-            <h1 className="flex items-center gap-2 text-lg font-bold text-slate-800 dark:text-slate-100">
-              <span aria-hidden>📊</span> Maharashtra Census 2011 — Memorize-it Game
+            <h1 className="flex items-start gap-2 text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">
+              <span aria-hidden className="shrink-0">📊</span>
+              <span className="min-w-0 break-words">Maharashtra Census 2011 — Memorize-it Game</span>
             </h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
+            <p className="break-words text-xs text-slate-500 dark:text-slate-400">
               All 35 districts · Population · Sex Ratio · Child Sex Ratio · Literacy · Density · Decadal Growth
             </p>
           </div>

@@ -34,8 +34,8 @@ export default function MpscPrepStrategyGuide() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <div>
-            <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">MPSC Preparation Strategy</h1>
+          <div className="min-w-0 flex-1">
+            <h1 className="break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">MPSC Preparation Strategy</h1>
             <p className="text-xs text-slate-500 dark:text-slate-400">MPSC Study Guide · ~15 min read</p>
           </div>
         </div>
@@ -193,6 +193,7 @@ export default function MpscPrepStrategyGuide() {
           </p>
 
           <h3>6. Subject-wise weightage (last 5 prelims, indicative)</h3>
+          <div className="prose-table-wrap my-4 -mx-1 overflow-x-auto rounded-xl">
           <table>
             <thead>
               <tr><th>Subject</th><th>Group B / C</th><th>Gazetted CS Pre Paper I</th></tr>
@@ -208,6 +209,7 @@ export default function MpscPrepStrategyGuide() {
               <tr><td>Marathi + English (Group B/C only)</td><td>20–25%</td><td>—</td></tr>
             </tbody>
           </table>
+          </div>
 
           <h3>7. Mock-test strategy</h3>
           <ul>

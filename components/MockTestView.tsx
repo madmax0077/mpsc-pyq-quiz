@@ -87,7 +87,7 @@ function LanguageBlock({
           {tag}
         </span>
       </div>
-      <p className="text-[15px] font-semibold leading-7 text-slate-900 dark:text-slate-100">{content.text}</p>
+      <p className="break-words text-[15px] font-semibold leading-7 text-slate-900 dark:text-slate-100">{content.text}</p>
       <div className="mt-3 grid gap-2">
         {OPTION_KEYS.map((k) => {
           const isSelected = selected === k;
@@ -124,7 +124,7 @@ function LanguageBlock({
               >
                 {k}
               </span>
-              <span className="leading-6">{content.options[k]}</span>
+              <span className="min-w-0 flex-1 break-words leading-6">{content.options[k]}</span>
             </button>
           );
         })}
@@ -282,7 +282,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   /* ----------------------------- SELECT STAGE ----------------------------- */
   if (stage === "select") {
     return (
-      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <div className="mx-auto max-w-3xl py-8">
         <button
           onClick={onExit}
           className="mb-6 inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400"
@@ -414,7 +414,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   if (stage === "reveal" && result && config) {
     const ready = revealLeft <= 0;
     return (
-      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <div className="mx-auto max-w-3xl py-8">
         <div className="rounded-3xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-violet-50 p-6 text-center shadow-sm dark:border-indigo-800 dark:from-indigo-950/40 dark:to-violet-950/40">
           <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-300">
             {config.label}
@@ -453,7 +453,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     const pct = result.percent;
     const pctLabel = `${pct >= 0 ? "" : "−"}${Math.abs(pct).toFixed(1)}%`;
     return (
-      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <div className="mx-auto max-w-3xl py-8">
         <div className="rounded-3xl border border-indigo-200 bg-gradient-to-br from-indigo-50 to-violet-50 p-6 text-center shadow-sm dark:border-indigo-800 dark:from-indigo-950/40 dark:to-violet-950/40">
           <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600 dark:text-indigo-300">
             {config.label} — Result
@@ -485,29 +485,31 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
         {/* Subject-wise breakdown */}
         <section className="mt-6">
           <h3 className="mb-3 text-lg font-bold text-slate-800 dark:text-slate-100">Subject-wise performance</h3>
-          <div className="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700">
-            <table className="w-full text-sm">
-              <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500 dark:bg-slate-800 dark:text-slate-400">
-                <tr>
-                  <th className="px-4 py-2">Subject</th>
-                  <th className="px-3 py-2 text-center">Correct</th>
-                  <th className="px-3 py-2 text-center">Wrong</th>
-                  <th className="px-3 py-2 text-center">Skipped</th>
-                  <th className="px-3 py-2 text-center">Total</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-700">
-                {result.bySubject.map((s) => (
-                  <tr key={s.category} className="bg-white dark:bg-slate-900/40">
-                    <td className="px-4 py-2 font-medium text-slate-700 dark:text-slate-200">{s.category}</td>
-                    <td className="px-3 py-2 text-center text-emerald-600 dark:text-emerald-400">{s.correct}</td>
-                    <td className="px-3 py-2 text-center text-rose-600 dark:text-rose-400">{s.wrong}</td>
-                    <td className="px-3 py-2 text-center text-slate-500">{s.skipped}</td>
-                    <td className="px-3 py-2 text-center text-slate-500">{s.total}</td>
+          <div className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
+            <div className="overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700">
+              <table className="w-full min-w-[480px] text-sm">
+                <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+                  <tr>
+                    <th className="px-4 py-2">Subject</th>
+                    <th className="px-3 py-2 text-center">Correct</th>
+                    <th className="px-3 py-2 text-center">Wrong</th>
+                    <th className="px-3 py-2 text-center">Skipped</th>
+                    <th className="px-3 py-2 text-center">Total</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-700">
+                  {result.bySubject.map((s) => (
+                    <tr key={s.category} className="bg-white dark:bg-slate-900/40">
+                      <td className="break-words px-4 py-2 font-medium text-slate-700 dark:text-slate-200">{s.category}</td>
+                      <td className="px-3 py-2 text-center text-emerald-600 dark:text-emerald-400">{s.correct}</td>
+                      <td className="px-3 py-2 text-center text-rose-600 dark:text-rose-400">{s.wrong}</td>
+                      <td className="px-3 py-2 text-center text-slate-500">{s.skipped}</td>
+                      <td className="px-3 py-2 text-center text-slate-500">{s.total}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 
@@ -545,8 +547,8 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
                   </div>
                   {(q.marathi?.explanation || q.english.explanation) && (
                     <div className="mt-3 space-y-1 rounded-lg bg-slate-50 px-3 py-2 text-sm leading-6 text-slate-600 dark:bg-slate-900/40 dark:text-slate-300">
-                      {q.marathi?.explanation && <p className="whitespace-pre-line">{q.marathi.explanation}</p>}
-                      {q.english.explanation && <p className="whitespace-pre-line">{q.english.explanation}</p>}
+                      {q.marathi?.explanation && <p className="break-words whitespace-pre-line">{q.marathi.explanation}</p>}
+                      {q.english.explanation && <p className="break-words whitespace-pre-line">{q.english.explanation}</p>}
                     </div>
                   )}
                 </div>
@@ -573,9 +575,9 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     const lowTime = remaining <= 300; // last 5 minutes
     const selectOption = (k: OptionKey) => setAnswers((prev) => ({ ...prev, [q.key]: k }));
     return (
-      <div className="mx-auto max-w-3xl px-4 py-6 sm:px-6">
+      <div className="mx-auto max-w-3xl py-6">
         {/* Sticky status bar */}
-        <div className="sticky top-2 z-10 mb-5 flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/95 px-4 py-2.5 shadow-sm backdrop-blur dark:border-slate-700 dark:bg-slate-800/95">
+        <div className="sticky top-14 z-30 mb-5 flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white/95 px-3 py-2.5 shadow-sm backdrop-blur sm:px-4 dark:border-slate-700 dark:bg-slate-800/95">
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-bold text-slate-800 dark:text-slate-100">{config.shortLabel}</p>
             <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -605,7 +607,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
 
         {/* Current question (bilingual) */}
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-700 dark:bg-slate-800">
-          <div className="mb-3 flex items-center gap-2">
+          <div className="mb-3 flex flex-wrap items-center gap-2">
             <span className="rounded-md bg-indigo-100 px-2.5 py-1 text-sm font-bold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
               Q{q.key}
             </span>
@@ -634,26 +636,26 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
             </div>
           </div>
 
-          <div className="mt-4 flex items-center justify-between">
+          <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <button
               onClick={() => setAnswers((prev) => { const n = { ...prev }; delete n[q.key]; return n; })}
               disabled={!answers[q.key]}
-              className="text-xs font-semibold text-slate-500 hover:text-rose-600 disabled:opacity-40 dark:text-slate-400"
+              className="order-last text-left text-xs font-semibold text-slate-500 hover:text-rose-600 disabled:opacity-40 sm:order-first dark:text-slate-400"
             >
               Clear response
             </button>
-            <div className="flex gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:flex">
               <button
                 onClick={() => setCurrent((c) => Math.max(1, c - 1))}
                 disabled={current === 1}
-                className="rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 disabled:opacity-40 dark:border-slate-600 dark:text-slate-200"
+                className="rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 disabled:opacity-40 dark:border-slate-600 dark:text-slate-200"
               >
                 Previous
               </button>
               <button
                 onClick={() => setCurrent((c) => Math.min(test.length, c + 1))}
                 disabled={current === test.length}
-                className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white disabled:opacity-40 hover:bg-indigo-700"
+                className="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white disabled:opacity-40 hover:bg-indigo-700"
               >
                 Next
               </button>
@@ -725,7 +727,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
 
   // Fallback (e.g. building) — should be brief.
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 text-center text-slate-500 dark:text-slate-400">
+    <div className="mx-auto max-w-3xl py-16 text-center text-slate-500 dark:text-slate-400">
       Preparing your mock test…
     </div>
   );

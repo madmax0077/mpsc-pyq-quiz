@@ -89,10 +89,11 @@ export default function RiversMaharashtraPage() {
             </svg>
           </Link>
           <div className="min-w-0 flex-1">
-            <h1 className="flex items-center gap-2 text-lg font-bold text-slate-800 dark:text-slate-100">
-              <span aria-hidden>🏞️</span> Rivers of Maharashtra
+            <h1 className="flex items-start gap-2 text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">
+              <span aria-hidden className="shrink-0">🏞️</span>
+              <span className="min-w-0 break-words">Rivers of Maharashtra</span>
             </h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
+            <p className="break-words text-xs text-slate-500 dark:text-slate-400">
               District-wise 2D map · 50+ rivers · MPSC PYQ quiz (2010–2025)
             </p>
           </div>

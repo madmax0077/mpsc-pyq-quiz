@@ -82,9 +82,9 @@ export default function ExamsPage() {
                   const card = (
                     <>
                       <div className="flex items-start justify-between gap-3">
-                        <div>
-                          <h4 className="font-semibold text-slate-800 dark:text-slate-100">{exam.title}</h4>
-                          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{exam.description}</p>
+                        <div className="min-w-0 flex-1">
+                          <h4 className="break-words font-semibold text-slate-800 dark:text-slate-100">{exam.title}</h4>
+                          <p className="mt-1 break-words text-sm text-slate-600 dark:text-slate-300">{exam.description}</p>
                         </div>
                         <span className="shrink-0 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
                           {exam.questions} Qs
@@ -95,7 +95,7 @@ export default function ExamsPage() {
                         <span>English + Marathi</span>
                         <span>Official Answer Key (Set A)</span>
                         {slug && (
-                          <span className="ml-auto font-semibold text-indigo-600 dark:text-indigo-400">View paper &amp; answers →</span>
+                          <span className="w-full font-semibold text-indigo-600 sm:ml-auto sm:w-auto dark:text-indigo-400">View paper &amp; answers →</span>
                         )}
                       </div>
                     </>
@@ -201,17 +201,12 @@ export default function ExamsPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="flex flex-col items-center gap-2">
             <p className="text-xs text-slate-400 dark:text-slate-500">MPSC PYQ QUIZ &middot; Don&apos;t know Academy</p>
-            <div className="flex items-center gap-4 text-xs text-slate-400 dark:text-slate-500">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400 dark:text-slate-500">
               <Link href="/" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Home</Link>
-              <span>|</span>
               <Link href="/about" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">About</Link>
-              <span>|</span>
               <Link href="/contact" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Contact</Link>
-              <span>|</span>
               <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy</Link>
-              <span>|</span>
               <Link href="/terms" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Terms</Link>
-              <span>|</span>
               <Link href="/disclaimer" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Disclaimer</Link>
             </div>
           </div>

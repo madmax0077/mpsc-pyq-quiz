@@ -199,7 +199,7 @@ function ChapterCard({
       <p className="mt-3 line-clamp-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
         💡 {ch.tip}
       </p>
-      <div className="mt-auto flex items-center justify-between pt-3 text-[11px] font-medium text-slate-400 dark:text-slate-500">
+      <div className="mt-auto flex flex-wrap items-center justify-between gap-2 pt-3 text-[11px] font-medium text-slate-400 dark:text-slate-500">
         <span>
           {pageCount} {pageCount === 1 ? "page" : "pages"} · pp.{" "}
           {ch.pageStart}–{ch.pageEnd}

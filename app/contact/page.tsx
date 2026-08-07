@@ -22,7 +22,7 @@ export default function Contact() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
           </Link>
-          <h1 className="text-lg font-bold text-slate-800 dark:text-slate-100">Contact Us</h1>
+          <h1 className="min-w-0 flex-1 break-words text-lg font-bold leading-snug text-slate-800 dark:text-slate-100">Contact Us</h1>
         </div>
       </header>
 
@@ -46,7 +46,7 @@ export default function Contact() {
             <p className="text-xs uppercase tracking-wide text-indigo-700 dark:text-indigo-300">Primary contact</p>
             <a
               href="mailto:dontknowacademy@gmail.com"
-              className="mt-1 block text-2xl font-bold text-indigo-700 hover:underline dark:text-indigo-300"
+              className="mt-1 block break-all text-xl font-bold text-indigo-700 hover:underline sm:text-2xl dark:text-indigo-300"
             >
               dontknowacademy@gmail.com
             </a>

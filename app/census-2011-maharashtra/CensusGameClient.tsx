@@ -358,7 +358,7 @@ function RankRaceMode() {
       </div>
 
       {/* Player slots */}
-      <div className="mt-4 grid grid-cols-5 gap-2">
+      <div className="mt-4 grid grid-cols-3 gap-2 sm:grid-cols-5">
         {Array.from({ length: 5 }).map((_, i) => {
           const picked = picks[i];
           const correctName = correctOrder[i]?.name;
@@ -367,7 +367,7 @@ function RankRaceMode() {
             <div
               key={i}
               className={
-                "flex h-20 flex-col items-center justify-center rounded-xl border-2 border-dashed p-1 text-center text-[10px] sm:text-xs " +
+                "flex min-h-20 flex-col items-center justify-center rounded-xl border-2 border-dashed p-1.5 text-center text-[10px] sm:text-xs " +
                 (!picked
                   ? "border-slate-300 bg-slate-50 text-slate-400 dark:border-slate-600 dark:bg-slate-700/50"
                   : finished
@@ -378,9 +378,9 @@ function RankRaceMode() {
               }
             >
               <span className="text-[9px] font-bold uppercase opacity-70">#{i + 1}</span>
-              <span className="px-1 font-bold leading-tight">{picked || "—"}</span>
+              <span className="break-words px-1 font-bold leading-tight">{picked || "—"}</span>
               {finished && !isRight && (
-                <span className="text-[9px] opacity-80">→ {correctName}</span>
+                <span className="break-words text-[9px] opacity-80">→ {correctName}</span>
               )}
             </div>
           );
@@ -406,13 +406,13 @@ function RankRaceMode() {
                     : "border-slate-200 bg-white text-slate-700 hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow dark:border-slate-600 dark:bg-slate-700 dark:text-slate-200")
               }
             >
-              <span className="flex items-center gap-2">
+              <span className="flex min-w-0 items-center gap-2">
                 {isPicked && (
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-indigo-500 text-[10px] font-black text-white">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-indigo-500 text-[10px] font-black text-white">
                     {order + 1}
                   </span>
                 )}
-                <span>{d.name}</span>
+                <span className="min-w-0 flex-1 break-words">{d.name}</span>
               </span>
               {finished && (
                 <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400">
@@ -580,9 +580,9 @@ function QuizMode() {
 
   return (
     <section className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-800 sm:p-6">
-      <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-slate-400">
-        <span>Question {idx + 1} of {questions.length}</span>
-        <span>Score {score}</span>
+      <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+        <span className="shrink-0">Question {idx + 1} of {questions.length}</span>
+        <span className="shrink-0">Score {score}</span>
       </div>
       <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-slate-700">
         <div
@@ -679,9 +679,9 @@ function FlashMode() {
 
   return (
     <section className="rounded-3xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-slate-800 sm:p-6">
-      <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-slate-400">
-        <span>Card {idx + 1} of {order.length}</span>
-        <span>{card.tag}</span>
+      <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+        <span className="shrink-0">Card {idx + 1} of {order.length}</span>
+        <span className="min-w-0 break-words text-right">{card.tag}</span>
       </div>
 
       <button
