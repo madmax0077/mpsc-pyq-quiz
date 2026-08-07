@@ -116,6 +116,16 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.85,
   },
+  {
+    path: "/study-guides/mpsc-talathi-bharti-2026",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/study-guides/mpsc-rto-amvi-exam",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
 ];
 
 function toAbsoluteUrl(path: string): string {

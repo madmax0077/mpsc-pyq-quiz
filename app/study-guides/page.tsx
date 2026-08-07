@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     "MPSC Group C subject wise weightage",
     "MPSC Group B previous year question paper",
     "MPSC Combine question paper",
+    "Talathi Bharti 2026",
+    "RTO AMVI exam",
+    "MPSC AMVI",
   ],
   alternates: { canonical: "/study-guides" },
 };
@@ -108,6 +111,22 @@ const GUIDES = [
     blurb:
       "Talathi (तलाठी) Bharti 2026 — syllabus blocks, exam pattern, land-revenue focus, a four-week plan, and how it overlaps with Group C. Also covers the common “Talithi exam” search spelling.",
     minutes: 11,
+  },
+  {
+    href: "/study-guides/mpsc-talathi-bharti-2026",
+    emoji: "🌾",
+    title: "Talathi Bharti 2026 — तलाठी भरती",
+    blurb:
+      "English + मराठी strategy blog: 1,539 posts, Combined-gate reality, Land Revenue edge, cut-off thinking and a 90-day plan. Toggle language on the page.",
+    minutes: 16,
+  },
+  {
+    href: "/study-guides/mpsc-rto-amvi-exam",
+    emoji: "🚗",
+    title: "RTO AMVI Exam — आरटीओ एएमव्हीआय",
+    blurb:
+      "English + मराठी AMVI guide — prelims trap vs technical mains, Section A/B/C, Motor Vehicle Act focus, PYQ method and free RTO practice. Language toggle on page.",
+    minutes: 17,
   },
   {
     href: "/study-guides/mpsc-csat-preparation",

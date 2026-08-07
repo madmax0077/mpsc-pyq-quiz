@@ -1,0 +1,49 @@
+---
+description: Formatting, grammar and structure rules for MPSC study-guide blogs
+globs: app/study-guides/**/*.tsx
+alwaysApply: false
+---
+
+# Study guide / blog standards
+
+When creating or editing pages under `app/study-guides/`:
+
+## Always use shared components
+- `StudyGuideShell` for page chrome (header, article card, FAQ, footer)
+- `StudyGuideLangTabs` for English + Marathi bilingual posts
+- `StudyGuideTable` for tables (never raw unstyled `<table>` in new blogs)
+- `StudyGuideCallout` for key tip boxes
+- `STUDY_GUIDE_PROSE_CLASS` from `lib/studyGuideStyles.ts` if writing single-language prose
+
+## Readability / spacing
+- Never wrap the article body in `not-prose` — that kills Tailwind list/bullet styles for all descendants. Put `not-prose` only on chrome (tabs, ads, custom widgets).
+- Use `study-guide-prose` + `STUDY_GUIDE_PROSE_CLASS` for normal readable bullets/numbers with light spacing (not card-style lists)
+- For topic breakdowns (e.g. Land Revenue points), prefer `h4` header + short paragraph instead of stuffing title and detail into one bullet
+- Prefer short paragraphs (2–4 sentences)
+- Use full sentences in lists and FAQs — no telegram fragments
+- Section headings (`h3`) should breathe: leave normal paragraph space before/after
+- FAQ cards use `space-y-4`; do not pack FAQ items tightly
+
+## Language quality
+- Polish English grammar before shipping (no slang fragments like “bubble the OMR”)
+- Marathi should read naturally for Maharashtra aspirants — not word-for-word machine translation
+- FAQ answers should be complete in both languages when the page is bilingual
+- Prefer “practise for free” / clear exam English over hype copy
+
+## Content structure for new blogs
+1. Strong opening (1–3 paragraphs)
+2. One callout with the key takeaway
+3. Numbered sections with scannable lists/tables
+4. Free practice links back to `/exams`, mocks, related guides
+5. FAQ + schema when useful for SEO
+
+## Ads
+Use:
+```tsx
+<DisplayAd adsenseSlot={IN_CONTENT_AD_SLOT} ezoicKey="contentInline" className="my-8 not-prose" />
+```
+Never invent a `slot=` prop.
+
+## Wire-up
+- Add card to `app/study-guides/page.tsx`
+- Append path to `ADDITIONAL_DISCOVERY_ENTRIES` in `app/sitemap.ts`
