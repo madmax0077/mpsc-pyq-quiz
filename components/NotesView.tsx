@@ -4,6 +4,15 @@ import { useEffect, useState, type SyntheticEvent } from "react";
 import NewspaperNotes from "@/components/notes/NewspaperNotes";
 import MhHistoryNotes from "@/components/notes/MhHistoryNotes";
 import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
+import PanchvarshikPlansNotes from "@/components/notes/PanchvarshikPlansNotes";
+import type { Category } from "@/lib/types";
+
+export type NotesPracticeTarget = {
+  category: Category;
+  topic: string;
+  /** topic-tests = curated non-PYQ pack; topic = PYQ topic map */
+  source: "catalog" | "pyq";
+};
 
 /**
  * NotesView
@@ -24,7 +33,8 @@ import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
 type NoteSlug =
   | "newspapers"
   | "mh-history"
-  | "economics-yojana";
+  | "economics-yojana"
+  | "panchvarshik-plans";
 
 type NoteEntry = {
   slug: NoteSlug;
@@ -37,6 +47,16 @@ type NoteEntry = {
 };
 
 const NOTES_INDEX: NoteEntry[] = [
+  {
+    slug: "panchvarshik-plans",
+    emoji: "📊",
+    title: "पंचवार्षिक योजना",
+    subtitle: "Five-Year Plans — 12 Plans · Flowcharts · Revision Cards",
+    blurb:
+      "१२ पंचवार्षिक + ७ वार्षिक (सुट्टी १९६६–६९, Rolling १९७८–८०, १९९०–९२). flowchart, revision cards आणि Topic Tests मध्ये १०० practice MCQ + Topic Wise मध्ये PYQ.",
+    meta: "MPSC · Rajyaseva · STI · PSI · ASO · UPSC · ~20 min revision · 100 MCQ",
+    accent: "from-teal-300 via-emerald-200 to-amber-200",
+  },
   {
     slug: "mh-history",
     emoji: "🏛️",
@@ -69,7 +89,15 @@ const NOTES_INDEX: NoteEntry[] = [
   },
 ];
 
-export default function NotesView({ onBack }: { onBack: () => void }) {
+export default function NotesView({
+  onBack,
+  onOpenTopicPractice,
+  language = "english",
+}: {
+  onBack: () => void;
+  onOpenTopicPractice?: (target: NotesPracticeTarget) => void;
+  language?: "english" | "marathi";
+}) {
   const [active, setActive] = useState<NoteSlug | null>(null);
 
   /* ---- Copy / selection / shortcut blockers (active only while mounted) ---- */
@@ -173,7 +201,11 @@ export default function NotesView({ onBack }: { onBack: () => void }) {
 
       {/* Hub OR active note */}
       {activeEntry ? (
-        <NoteContent slug={activeEntry.slug} />
+        <NoteContent
+          slug={activeEntry.slug}
+          onOpenTopicPractice={onOpenTopicPractice}
+          language={language}
+        />
       ) : (
         <>
           <p className="text-sm text-slate-600 dark:text-slate-300">
@@ -232,7 +264,15 @@ export default function NotesView({ onBack }: { onBack: () => void }) {
   );
 }
 
-function NoteContent({ slug }: { slug: NoteSlug }) {
+function NoteContent({
+  slug,
+  onOpenTopicPractice,
+  language,
+}: {
+  slug: NoteSlug;
+  onOpenTopicPractice?: (target: NotesPracticeTarget) => void;
+  language: "english" | "marathi";
+}) {
   switch (slug) {
     case "newspapers":
       return <NewspaperNotes />;
@@ -240,6 +280,13 @@ function NoteContent({ slug }: { slug: NoteSlug }) {
       return <MhHistoryNotes />;
     case "economics-yojana":
       return <EconomicsYojanaNotes />;
+    case "panchvarshik-plans":
+      return (
+        <PanchvarshikPlansNotes
+          onOpenTopicPractice={onOpenTopicPractice}
+          language={language}
+        />
+      );
     default:
       return null;
   }

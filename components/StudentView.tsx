@@ -290,13 +290,13 @@ export default function StudentView({
       return !t || t === "MPSC";
     });
 
-    // Topic-only quizzes (Topic Wise tab) are language-agnostic — they expose
-    // a topic-by-category catalogue that should be browsable in any UI
-    // language. Only language-filter the regular exam papers.
+    // Match UI language for both exam papers and Topic Tests (topicOnly).
+    // Parallel packs (e.g. Marathi + English Five Year Plans) must not leak
+    // into the other language view.
     if (language === "marathi") {
-      return byExam.filter((q) => q.topicOnly || q.language === "marathi");
+      return byExam.filter((q) => q.language === "marathi");
     }
-    return byExam.filter((q) => q.topicOnly || q.language !== "marathi");
+    return byExam.filter((q) => q.language !== "marathi");
   }, [quizzes, language, examFilter]);
 
   const examQuizzes = useMemo(() => filteredQuizzes.filter((q) => !q.topicOnly), [filteredQuizzes]);

@@ -71,6 +71,8 @@ export default function HomeClient() {
       return;
     }
     const mode = params.get("mode");
+    const cat = params.get("cat") as Category | null;
+    const topic = params.get("topic");
     if (mode === "leaderboard") {
       setAppMode("leaderboard");
       window.history.replaceState({}, "", window.location.pathname);
@@ -78,6 +80,9 @@ export default function HomeClient() {
       setAppMode("notes");
       window.history.replaceState({}, "", window.location.pathname);
     } else if (mode === "subject" || mode === "topic" || mode === "topic-tests" || mode === "rto-amvi" || mode === "mock" || mode === "csat") {
+      if ((mode === "topic" || mode === "topic-tests") && cat && topic) {
+        setPendingDirectTopic({ category: cat, topic });
+      }
       setAppMode(mode);
       window.history.replaceState({}, "", window.location.pathname);
     }
@@ -964,8 +969,14 @@ export default function HomeClient() {
         ) : appMode === "notes" ? (
           <div className="py-2 sm:py-4">
             <NotesView
+              language={language}
               onBack={() => {
                 setAppMode("home");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              onOpenTopicPractice={({ category, topic, source }) => {
+                setPendingDirectTopic({ category, topic });
+                setAppMode(source === "pyq" ? "topic" : "topic-tests");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             />

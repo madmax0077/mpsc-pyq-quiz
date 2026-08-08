@@ -7411,7 +7411,7 @@
       },
       {
         "id": "gcm24-93",
-        "text": "Identify the correct pairs from the given options.\n'A'\ni. Economic Planning\nii. XIIth Five Year Plan\niii. NITI Aayog\niv. NITI Aayog Vice-chairperson\n'B'\na. Selection by Prime Minister\nb. Think Tank group of Indian Government\nc. Fast and sustainable growth\nd. Time bound programme",
+        "text": "Identify the correct pairs from the given options.\n\nList-I\ni. Economic Planning\nii. XIIth Five Year Plan\niii. NITI Aayog\niv. NITI Aayog Vice-chairperson\n\nList-II\na. Selection by Prime Minister\nb. Think Tank group of Indian Government\nc. Fast and sustainable growth\nd. Time bound programme",
         "options": {
           "A": "i – c, ii – a, iii – d, iv – b",
           "B": "i – d, ii – b, iii – a, iv – c",
@@ -7419,7 +7419,7 @@
           "D": "i – b, ii – d, iii – c, iv – a"
         },
         "correctAnswer": "C",
-        "explanation": "The right pick is option C. Economic planning is a time-bound programme; the Twelfth Plan focused on fast, sustainable growth; NITI Aayog is the government's policy think tank; and its vice-chairperson is chosen by the Prime Minister.",
+        "explanation": "Correct matching (option C):\ni. Economic Planning → d. Time bound programme\nii. XIIth Five Year Plan → c. Fast and sustainable growth\niii. NITI Aayog → b. Think Tank group of Indian Government\niv. NITI Aayog Vice-chairperson → a. Selection by Prime Minister\n\nAs per the official answer key, option C.",
         "category": "Economics",
         "number": 93,
         "topic": "Economic Planning & Five Year Plans"
@@ -8918,7 +8918,7 @@
       },
       {
         "id": "gcm24-mr-93",
-        "text": "योग्य पर्यायांची जोडी ओळखा.\n'अ'\ni. आर्थिक नियोजन\nii. १२ वी पंचवार्षिक योजना\niii. नीति आयोग\niv. नीति आयोगाचे उपाध्यक्ष\n'ब'\nअ. पंतप्रधानांकडून निवड\nब. भारत सरकारचे धोरण राबविणारा विचार गट\nक. जलद व शाश्वत वृद्धी\nड. कालबद्ध कार्यक्रम",
+        "text": "योग्य पर्यायांची जोडी ओळखा.\n\nसूची-I\ni. आर्थिक नियोजन\nii. १२ वी पंचवार्षिक योजना\niii. नीति आयोग\niv. नीति आयोगाचे उपाध्यक्ष\n\nसूची-II\nअ. पंतप्रधानांकडून निवड\nब. भारत सरकारचे धोरण राबविणारा विचार गट\nक. जलद व शाश्वत वृद्धी\nड. कालबद्ध कार्यक्रम",
         "options": {
           "A": "i – क, ii – अ, iii – ड, iv – ब",
           "B": "i – ड, ii – ब, iii – अ, iv – क",
@@ -8926,7 +8926,7 @@
           "D": "i – ब, ii – ड, iii – क, iv – अ"
         },
         "correctAnswer": "C",
-        "explanation": "योग्य उत्तर पर्याय C आहे. आर्थिक नियोजन — कालबद्ध कार्यक्रम; 12वी योजना — जलद व शाश्वत वृद्धी; नीति आयोग — सरकारचा विचार गट; उपाध्यक्ष — पंतप्रधान निवडतात.",
+        "explanation": "योग्य जोडी (पर्याय C):\ni. आर्थिक नियोजन → ड. कालबद्ध कार्यक्रम\nii. १२ वी पंचवार्षिक योजना → क. जलद व शाश्वत वृद्धी\niii. नीति आयोग → ब. भारत सरकारचे धोरण राबविणारा विचार गट (थिंक टँक)\niv. नीति आयोगाचे उपाध्यक्ष → अ. पंतप्रधानांकडून निवड\n\nअधिकृत उत्तर키नुसार पर्याय C.",
         "category": "Economics",
         "number": 93,
         "topic": "Economic Planning & Five Year Plans"
@@ -123707,6 +123707,3026 @@
         "category": "Aptitude",
         "number": 100,
         "topic": "Direction Sense"
+      }
+    ]
+  },
+  {
+    "id": "topic-panchvarshik-marathi",
+    "title": "पंचवार्षिक योजना",
+    "createdAt": "2026-08-08T20:00:00.000Z",
+    "language": "marathi",
+    "topicOnly": true,
+    "tag": "पंचवार्षिक योजना · Five Year Plans",
+    "questions": [
+      {
+        "id": "topic-panchvarshik-marathi-q1",
+        "text": "१९५१ ते २०१७ दरम्यान भारतात एकूण किती पंचवार्षिक योजना राबवल्या गेल्या?",
+        "options": {
+          "A": "१०",
+          "B": "११",
+          "C": "१२",
+          "D": "१५"
+        },
+        "correctAnswer": "C",
+        "explanation": "१९५१–२०१७ दरम्यान एकूण १२ पंचवार्षिक योजना. १२वी (२०१२–१७) शेवटची.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q2",
+        "text": "पंचवार्षिक योजनेव्यतिरिक्त एकूण किती वार्षिक योजना राबवल्या गेल्या?",
+        "options": {
+          "A": "५",
+          "B": "७",
+          "C": "९",
+          "D": "३"
+        },
+        "correctAnswer": "B",
+        "explanation": "एकूण ७ वार्षिक योजना — योजना-सुट्टी (३) + राजकीय अस्थिरता काळ (४).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q3",
+        "text": "योजना-सुट्टी (Plan Holiday) कोणत्या कालावधीत होती?",
+        "options": {
+          "A": "१९७८–८०",
+          "B": "१९९०–९२",
+          "C": "१९६१–६४",
+          "D": "१९६६–६९"
+        },
+        "correctAnswer": "D",
+        "explanation": "१९६६–१९६९ मध्ये तीन वार्षिक योजना (योजना-सुट्टी).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q4",
+        "text": "सरकती / Rolling Plan कोणत्या कालावधीत लागू होती?",
+        "options": {
+          "A": "१९७४–७८",
+          "B": "१९७८–८०",
+          "C": "१९८०–८५",
+          "D": "१९६६–६९"
+        },
+        "correctAnswer": "B",
+        "explanation": "१९७८–८० मध्ये Rolling Plan (सरकती योजना).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q5",
+        "text": "नियोजन आयोगाऐवजी NITI Aayog ची स्थापना कोणत्या वर्षी झाली?",
+        "options": {
+          "A": "२०१४",
+          "B": "२०१५",
+          "C": "२०१७",
+          "D": "२०१२"
+        },
+        "correctAnswer": "B",
+        "explanation": "२०१५ मध्ये NITI Aayog; १२वी नंतर पारंपरिक पंचवार्षिक रचना बंद.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q6",
+        "text": "राजकीय अस्थिरतेमुळे वार्षिक योजना कोणत्या दोन कालावधीत आल्या?",
+        "options": {
+          "A": "१९५१–५६ व १९५६–६१",
+          "B": "१९६६–६९ व १९७४–७८",
+          "C": "१९७८–८० व १९९०–९२",
+          "D": "१९८५–९० व १९९२–९७"
+        },
+        "correctAnswer": "C",
+        "explanation": "१९७८–८० आणि १९९०–९२ हे दोन अस्थिरतेचे वार्षिक-योजना काळ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q7",
+        "text": "ग्रामीण वेतन-रोजगार योजनांची योग्य उत्क्रांती कोणती?",
+        "options": {
+          "A": "IRDP → NREP → MGNREGA",
+          "B": "NREP → RLEGP → JRY → SGRY → NREGA/MGNREGS",
+          "C": "TRYSEM → IRDP → NREGA",
+          "D": "DPAP → RRB → NREGA"
+        },
+        "correctAnswer": "B",
+        "explanation": "NREP (१९८०) → RLEGP (१९८३) → JRY (१९८९) → SGRY (२००१) → NREGA (२००५) → MGNREGS (२००९).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q8",
+        "text": "SJGSY (सुवर्ण जयंती ग्राम स्वरोजगार) कोणत्या दिवशी सुरू झाली?",
+        "options": {
+          "A": "२ फेब्रुवारी २००६",
+          "B": "१ एप्रिल १९९७",
+          "C": "१ एप्रिल १९९९",
+          "D": "२ ऑक्टोबर २००१"
+        },
+        "correctAnswer": "C",
+        "explanation": "१ एप्रिल १९९९ — सहा स्वयंरोजगार योजनांचे विलीनीकरण.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q9",
+        "text": "खालीलपैकी कोणती योजना SJGSY मध्ये विलीन झाली नव्हती?",
+        "options": {
+          "A": "DWCRA",
+          "B": "TRYSEM",
+          "C": "IRDP",
+          "D": "NREP"
+        },
+        "correctAnswer": "D",
+        "explanation": "NREP वेतन-रोजगार योजना; SJGSY मध्ये स्वयंरोजगार योजना विलीन.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q10",
+        "text": "Hindu Rate of Growth ही संकल्पना कोणाची?",
+        "options": {
+          "A": "मनमोहन सिंह",
+          "B": "अमर्त्य सेन",
+          "C": "राजकृष्ण",
+          "D": "महालनोबीस"
+        },
+        "correctAnswer": "C",
+        "explanation": "राजकृष्ण — १९५०–८० च्या सुमारे ३.५% वाढीला Hindu Rate of Growth.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q11",
+        "text": "पहिल्या पंचवार्षिक योजनेचा कालावधी कोणता?",
+        "options": {
+          "A": "१९४७–५२",
+          "B": "१९५१–५६",
+          "C": "१९५६–६१",
+          "D": "१९६१–६६"
+        },
+        "correctAnswer": "B",
+        "explanation": "पहिली पंचवार्षिक योजना १९५१–१९५६.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q12",
+        "text": "पहिल्या पंचवार्षिक योजनेला कोणते नाव/ओळख दिली जाते?",
+        "options": {
+          "A": "शिक्षण योजना",
+          "B": "भौतिकवादी योजना",
+          "C": "पुनरुत्थान योजना",
+          "D": "स्वावलंबन योजना"
+        },
+        "correctAnswer": "C",
+        "explanation": "पुनरुत्थान योजना — अर्थव्यवस्था पुन्हा उभी करणे.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q13",
+        "text": "पहिल्या योजनेचा मुख्य भर कशावर होता?",
+        "options": {
+          "A": "रोजगार",
+          "B": "निर्यात",
+          "C": "जड उद्योग",
+          "D": "कृषी"
+        },
+        "correctAnswer": "D",
+        "explanation": "पहिल्या योजनेचा भर कृषी व अन्नधान्य/सिंचनावर.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q14",
+        "text": "पहिल्या योजनेचे आर्थिक प्रतिमान कोणते?",
+        "options": {
+          "A": "हॅरॉड–डोमर",
+          "B": "गाडगीळ फ्रेमवर्क",
+          "C": "फेल्डमन",
+          "D": "महालनोबीस"
+        },
+        "correctAnswer": "A",
+        "explanation": "हॅरॉड–डोमर प्रतिमान.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q15",
+        "text": "पहिल्या योजनेत अपेक्षित व साध्य वृद्धीदर सुमारे काय होते?",
+        "options": {
+          "A": "२.१% व ३.६%",
+          "B": "३.६% व २.१%",
+          "C": "५.२% व ५.७%",
+          "D": "८.२% व ६.९%"
+        },
+        "correctAnswer": "A",
+        "explanation": "अपेक्षित २.१%; साध्य सुमारे ३.६%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q16",
+        "text": "दामोदर खोरे प्रकल्प कोणाच्या शिफारशीनुसार व कोणत्या मॉडेलवर?",
+        "options": {
+          "A": "नेहरू — व्हॉल्टा",
+          "B": "मेघनाद साहा — टेनेसी व्हॅली",
+          "C": "गाडगीळ — डॅन्यूब",
+          "D": "स्वामीनाथन — नील"
+        },
+        "correctAnswer": "B",
+        "explanation": "मेघनाद साहा शिफारस; टेनेसी व्हॅली (TVA) मॉडेल.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q17",
+        "text": "भाक्रा–नांगल प्रकल्प कोणत्या नदीवर आहे?",
+        "options": {
+          "A": "सतलज",
+          "B": "ब्यास",
+          "C": "रावी",
+          "D": "यमुना"
+        },
+        "correctAnswer": "A",
+        "explanation": "भाक्रा व नांगल दोन्ही सतलज नदीवर.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q18",
+        "text": "हिराकुड धरण कोणत्या नदीवर व कोणत्या राज्यात?",
+        "options": {
+          "A": "महानदी — ओडिशा",
+          "B": "नर्मदा — मध्य प्रदेश",
+          "C": "कोसी — बिहार",
+          "D": "गोदावरी — महाराष्ट्र"
+        },
+        "correctAnswer": "A",
+        "explanation": "हिराकुड — महानदी, संबलपूर (ओडिशा).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q19",
+        "text": "सिंद्री खत कारखाना कोणत्या वर्षी व कुठे सुरू झाला?",
+        "options": {
+          "A": "१९५१ — धनबाद (झारखंड)",
+          "B": "१९५६ — भिलाई",
+          "C": "१९६४ — मुंबई",
+          "D": "१९७२ — बोकारो"
+        },
+        "correctAnswer": "A",
+        "explanation": "सिंद्री १९५१, धनबाद (झारखंड).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q20",
+        "text": "हिंदुस्तान अँटीबायोटिक्स (पिंपरी) कोणत्या वर्षी व कोणाच्या मदतीने?",
+        "options": {
+          "A": "१९५१ — IMF",
+          "B": "१९५४ — WHO व UNICEF",
+          "C": "१९५६ — रशिया",
+          "D": "१९६४ — जागतिक बँक"
+        },
+        "correctAnswer": "B",
+        "explanation": "१९५४, पिंपरी — WHO व UNICEF मदत.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q21",
+        "text": "रेल्वे इंजिन कारखाना चित्तरंजन व रेल्वे डबे कारखाना अनुक्रमे कोठे?",
+        "options": {
+          "A": "गुजरात व राजस्थान",
+          "B": "पुणे व नाशिक",
+          "C": "पश्चिम बंगाल व तमिळनाडू (पेरांबुर)",
+          "D": "बिहार व ओडिशा"
+        },
+        "correctAnswer": "C",
+        "explanation": "इंजिन — चित्तरंजन; डबे — पेरांबुर (तमिळनाडू).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q22",
+        "text": "पहिल्या योजनेबाबत खालीलपैकी कोणते विधान बरोबर?",
+        "options": {
+          "A": "चलनवाढ प्रचंड वाढली",
+          "B": "चलनवाढ निर्देशांक सुमारे १३% नी कमी झाला",
+          "C": "शेती पूर्णपणे दुर्लक्षित",
+          "D": "साध्य दर अपेक्षितपेक्षा कमी"
+        },
+        "correctAnswer": "B",
+        "explanation": "चलनवाढ निर्देशांक सुमारे १३% नी कमी — या योजनेचे वैशिष्ट्य.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q23",
+        "text": "दुसऱ्या पंचवार्षिक योजनेचा कालावधी?",
+        "options": {
+          "A": "१९५६–६१",
+          "B": "१९६१–६६",
+          "C": "१९६९–७४",
+          "D": "१९५१–५६"
+        },
+        "correctAnswer": "A",
+        "explanation": "दुसरी योजना १९५६–१९६१.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q24",
+        "text": "दुसऱ्या योजनेला कोणते नाव दिले जाते?",
+        "options": {
+          "A": "भौतिकवादी योजना",
+          "B": "शिक्षण योजना",
+          "C": "सरकती योजना",
+          "D": "पुनरुत्थान"
+        },
+        "correctAnswer": "A",
+        "explanation": "भौतिकवादी योजना — जड/पायाभूत उद्योग.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q25",
+        "text": "दुसऱ्या योजनेचे प्रमुख प्रतिमान कोणाचे?",
+        "options": {
+          "A": "पी. सी. महालनोबीस",
+          "B": "ॲलन मान",
+          "C": "लकडवाला",
+          "D": "हॅरॉड–डोमर"
+        },
+        "correctAnswer": "A",
+        "explanation": "पी. सी. महालनोबीस प्रतिमान.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q26",
+        "text": "दुसऱ्या योजनेतील लोहपोलाद — योग्य जोडी कोणती?",
+        "options": {
+          "A": "भिलाई–ब्रिटन; दुर्गापूर–रशिया; रुरकेला–जर्मनी",
+          "B": "दुर्गापूर–ब्रिटन; भिलाई–रशिया; रुरकेला–जर्मनी",
+          "C": "रुरकेला–ब्रिटन; भिलाई–जर्मनी; दुर्गापूर–रशिया",
+          "D": "सर्व रशिया"
+        },
+        "correctAnswer": "B",
+        "explanation": "दुर्गापूर–ब्रिटन; भिलाई–रशिया; रुरकेला–जर्मनी.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q27",
+        "text": "LIC ची स्थापना कोणत्या दिवशी?",
+        "options": {
+          "A": "२६ जानेवारी १९५०",
+          "B": "१ एप्रिल १९६९",
+          "C": "१५ ऑगस्ट १९४७",
+          "D": "१ सप्टेंबर १९५६"
+        },
+        "correctAnswer": "D",
+        "explanation": "१ सप्टेंबर १९५६ — LIC स्थापना.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q28",
+        "text": "अणुऊर्जा आयोग (१९५८) चे पहिले अध्यक्ष कोण?",
+        "options": {
+          "A": "अब्दुल कलाम",
+          "B": "विक्रम साराभाई",
+          "C": "होमी भाभा",
+          "D": "राजा रामण्णा"
+        },
+        "correctAnswer": "C",
+        "explanation": "पहिले अध्यक्ष होमी जे. भाभा.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q29",
+        "text": "दुसऱ्या योजनेतील प्रमुख तोटा कोणता?",
+        "options": {
+          "A": "चलनवाढ शून्य",
+          "B": "निर्यात प्रचंड वाढ",
+          "C": "जड उद्योग पूर्ण अपयशी",
+          "D": "शेतीकडे दुर्लक्ष → पुरवठा कमी, किंमती/चलनवाढ वाढ"
+        },
+        "correctAnswer": "D",
+        "explanation": "कृषीकडे दुर्लक्ष → किंमती/चलनवाढ सुमारे ३०%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q30",
+        "text": "Licence–Quota पद्धतीची सुरुवात मुख्यतः कोणत्या धोरणानंतर?",
+        "options": {
+          "A": "१९४८ औद्योगिक धोरण",
+          "B": "१९५६ औद्योगिक धोरण",
+          "C": "१९९१ औद्योगिक धोरण",
+          "D": "१९७७ औद्योगिक धोरण"
+        },
+        "correctAnswer": "B",
+        "explanation": "१९५६ औद्योगिक धोरण — परवाना/कोटा सुरुवात.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q31",
+        "text": "बलवंतराय मेहता समिती (१९५७) कशाशी संबंधित?",
+        "options": {
+          "A": "लोकशाही विकेंद्रीकरण / पंचायत राज",
+          "B": "हरितक्रांती",
+          "C": "FRBM",
+          "D": "बँक राष्ट्रीयकरण"
+        },
+        "correctAnswer": "A",
+        "explanation": "लोकशाही विकेंद्रीकरण — पंचायत राज शिफारस.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q32",
+        "text": "आवडी अधिवेशनाशी संबंधित मुख्य मुद्दा?",
+        "options": {
+          "A": "NITI Aayog",
+          "B": "हरित GDP",
+          "C": "उदारीकरण",
+          "D": "समाजवादी आकृती स्वीकार व खाजगी क्षेत्र संकोच"
+        },
+        "correctAnswer": "D",
+        "explanation": "आवडी — समाजवादी धोरण; खाजगी क्षेत्र संकोच.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q33",
+        "text": "भोपाळ येथील हेवी इलेक्ट्रिकल्स कारखाना कोणत्या योजनेच्या काळात?",
+        "options": {
+          "A": "पाचवी",
+          "B": "आठवी",
+          "C": "पहिली",
+          "D": "दुसरी"
+        },
+        "correctAnswer": "D",
+        "explanation": "दुसऱ्या योजनेत भोपाळ हेवी इलेक्ट्रिकल्स संदर्भ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q34",
+        "text": "दुसऱ्या योजनेतील खत कारखाना स्थान — योग्य जोडी?",
+        "options": {
+          "A": "बोकारो व सालेम",
+          "B": "विशाखा व बर्नमपुर",
+          "C": "सिंद्री व पिंपरी",
+          "D": "नांगल व रुरकेला"
+        },
+        "correctAnswer": "D",
+        "explanation": "नांगल (पंजाब) व रुरकेला (ओडिशा).",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q35",
+        "text": "तिसऱ्या पंचवार्षिक योजनेचा कालावधी?",
+        "options": {
+          "A": "१९६९–७४",
+          "B": "१९५६–६१",
+          "C": "१९६१–६६",
+          "D": "१९६६–६९"
+        },
+        "correctAnswer": "C",
+        "explanation": "तिसरी योजना १९६१–१९६६.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q36",
+        "text": "तिसऱ्या योजनेचे नाव/भर काय?",
+        "options": {
+          "A": "कृषी व उद्योग",
+          "B": "केवळ निर्यात",
+          "C": "केवळ शिक्षण",
+          "D": "केवळ जड उद्योग"
+        },
+        "correctAnswer": "A",
+        "explanation": "कृषी व उद्योग योजना.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q37",
+        "text": "तिसऱ्या योजनेत १९६४ नंतर अध्यक्ष कोण?",
+        "options": {
+          "A": "मोरारजी देसाई",
+          "B": "नेहरू",
+          "C": "लालबहादूर शास्त्री",
+          "D": "इंदिरा गांधी"
+        },
+        "correctAnswer": "C",
+        "explanation": "१९६४ पासून लालबहादूर शास्त्री.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q38",
+        "text": "तिसरी योजना सर्वात अयशस्वी का मानली जाते?",
+        "options": {
+          "A": "चीन १९६२ व पाक १९६५ युद्धे तसेच दुष्काळ",
+          "B": "LIC बंद",
+          "C": "हरितक्रांती अपयश",
+          "D": "औद्योगिक वाढ शून्य"
+        },
+        "correctAnswer": "A",
+        "explanation": "चीन १९६२, पाक १९६५ आणि भीषण दुष्काळ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q39",
+        "text": "कृषी किंमत आयोग (१९६५) — शिफारस व अध्यक्ष?",
+        "options": {
+          "A": "गाडगीळ — नेहरू",
+          "B": "एल. के. झा — दंतवाला",
+          "C": "रंगराजन — मनमोहन",
+          "D": "कठारी — राजीव"
+        },
+        "correctAnswer": "B",
+        "explanation": "एल. के. झा शिफारस; अध्यक्ष दंतवाला — MSP.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q40",
+        "text": "भारतीय अन्न महामंडळ (FCI) स्थापना वर्ष?",
+        "options": {
+          "A": "१९६४",
+          "B": "१९६९",
+          "C": "१९७५",
+          "D": "१९५६"
+        },
+        "correctAnswer": "A",
+        "explanation": "FCI १९६४.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q41",
+        "text": "UTI ची स्थापना वर्ष व वैशिष्ट्य?",
+        "options": {
+          "A": "१९६४ — पहिला म्युच्युअल फंड स्वरूप",
+          "B": "१९८२ — NABARD",
+          "C": "१९९२ — SEBI",
+          "D": "१९५६ — पहिली बँक"
+        },
+        "correctAnswer": "A",
+        "explanation": "UTI १९६४ — पहिला MF स्वरूप.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q42",
+        "text": "१९६५ पाक युद्धात भारताचे संरक्षण मंत्री कोण?",
+        "options": {
+          "A": "जॉर्ज फर्नांडिस",
+          "B": "जगजीवन राम",
+          "C": "व्ही. के. मेनन",
+          "D": "यशवंतराव चव्हाण"
+        },
+        "correctAnswer": "D",
+        "explanation": "१९६५ — यशवंतराव चव्हाण; चीन १९६२ — व्ही. के. मेनन.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q43",
+        "text": "तिसऱ्या योजनेत औद्योगिक उत्पादन वाढ सुमारे किती?",
+        "options": {
+          "A": "१५%",
+          "B": "२%",
+          "C": "५%",
+          "D": "९%"
+        },
+        "correctAnswer": "D",
+        "explanation": "औद्योगिक वाढ सुमारे ९%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q44",
+        "text": "सुखमॉय चक्रवर्ती यांचा उल्लेख कशासाठी?",
+        "options": {
+          "A": "तिसऱ्या योजनेचा आराखडा/प्रतिमान",
+          "B": "Rolling Plan",
+          "C": "FRBM",
+          "D": "हरितक्रांती"
+        },
+        "correctAnswer": "A",
+        "explanation": "महालनोबीस / सुखमॉय चक्रवर्ती आराखडा.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q45",
+        "text": "योजना-सुट्टी कालावधीतील योजनेला कोणते नाव?",
+        "options": {
+          "A": "समावेशक विकास",
+          "B": "भौतिकवादी",
+          "C": "स्वावलंबन",
+          "D": "शिक्षण"
+        },
+        "correctAnswer": "C",
+        "explanation": "स्वावलंबन योजना.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q46",
+        "text": "योजना-सुट्टी काळात उपाध्यक्ष कोण (महाराष्ट्रीयन)?",
+        "options": {
+          "A": "मधु दंडवते",
+          "B": "शंकरराव चव्हाण",
+          "C": "धनंजय गाडगीळ",
+          "D": "लकडवाला"
+        },
+        "correctAnswer": "C",
+        "explanation": "उपाध्यक्ष धनंजय गाडगीळ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q47",
+        "text": "रुपयाचे अवमूल्यन (~३६.५%) कोणत्या दिवशी?",
+        "options": {
+          "A": "१५ ऑगस्ट १९४७",
+          "B": "६ जून १९६६",
+          "C": "१ जुलै १९९१",
+          "D": "१ एप्रिल १९६९"
+        },
+        "correctAnswer": "B",
+        "explanation": "६ जून १९६६ — सुमारे ३६.५% अवमूल्यन.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q48",
+        "text": "भारतातील हरितक्रांतीशी संबंधित शास्त्रज्ञ?",
+        "options": {
+          "A": "बोरलॉग (जागतिक) व स्वामिनाथन (भारत)",
+          "B": "फक्त राजकृष्ण",
+          "C": "फक्त नॉर्मन बोरलॉग",
+          "D": "फक्त एम. एस. स्वामिनाथन"
+        },
+        "correctAnswer": "A",
+        "explanation": "बोरलॉग जागतिक; भारतात स्वामिनाथन.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q49",
+        "text": "हरितक्रांतीत आयात केलेले गहू वाण?",
+        "options": {
+          "A": "बासमती व जिरेसाळ",
+          "B": "Hybrid-4 व शंकर",
+          "C": "IR-8 व BT कपाशी",
+          "D": "Lerma Rojo 64A व Sonora 64"
+        },
+        "correctAnswer": "D",
+        "explanation": "Lerma Rojo 64A व Sonora 64.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q50",
+        "text": "१९६६ मध्ये कोणती दोन राज्ये अस्तित्वात आली?",
+        "options": {
+          "A": "तेलंगणा–आंध्र",
+          "B": "गुजरात–महाराष्ट्र",
+          "C": "पंजाब–हरियाणा",
+          "D": "छत्तीसगड–झारखंड"
+        },
+        "correctAnswer": "C",
+        "explanation": "पंजाब व हरियाणा — १९६६.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q51",
+        "text": "योजना-सुट्टी काळातील अध्यक्ष कोण?",
+        "options": {
+          "A": "मोरारजी देसाई",
+          "B": "नरसिंह राव",
+          "C": "लालबहादूर शास्त्री",
+          "D": "इंदिरा गांधी"
+        },
+        "correctAnswer": "D",
+        "explanation": "इंदिरा गांधी अध्यक्ष.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q52",
+        "text": "अवमूल्यनानंतर अपेक्षित परिणाम?",
+        "options": {
+          "A": "केवळ चलनवाढ शून्य",
+          "B": "आयात वाढ, निर्यात घट",
+          "C": "आयात कमी होणे व निर्यात वाढणे",
+          "D": "दोन्ही शून्य"
+        },
+        "correctAnswer": "C",
+        "explanation": "अवमूल्यन → आयात महाग/कमी; निर्यात स्पर्धात्मक.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q53",
+        "text": "चौथ्या पंचवार्षिक योजनेचा कालावधी?",
+        "options": {
+          "A": "१९७८–८३",
+          "B": "१९६६–७१",
+          "C": "१९६९–७४",
+          "D": "१९७४–७९"
+        },
+        "correctAnswer": "C",
+        "explanation": "चौथी योजना १९६९–१९७४.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q54",
+        "text": "चौथ्या योजनेचे नाव/उद्दिष्ट?",
+        "options": {
+          "A": "गतिशील शाश्वत विकास",
+          "B": "रोजगार जनक",
+          "C": "पुनरुत्थान",
+          "D": "स्थैर्यासह आर्थिक वाढ"
+        },
+        "correctAnswer": "D",
+        "explanation": "स्थैर्यासह आर्थिक वाढ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q55",
+        "text": "चौथ्या योजनेचे प्रतिमान?",
+        "options": {
+          "A": "ॲलन मान व अशोक रुद्र / गाडगीळ फ्रेमवर्क",
+          "B": "लकडवाला",
+          "C": "जॉन मिलर",
+          "D": "हॅरॉड–डोमर"
+        },
+        "correctAnswer": "A",
+        "explanation": "ॲलन मान + अशोक रुद्र; गाडगीळ फ्रेमवर्क.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q56",
+        "text": "«गरीबी हटाओ» घोषणा कोणत्या वर्षी?",
+        "options": {
+          "A": "१९८०",
+          "B": "१९६९",
+          "C": "१९७१",
+          "D": "१९७५"
+        },
+        "correctAnswer": "C",
+        "explanation": "१९७१ निवडणुकीत — गरीबी हटाओ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q57",
+        "text": "Operation Flood / NDDB शी संबंधित व्यक्तिमत्त्व?",
+        "options": {
+          "A": "शिवरमन",
+          "B": "एम. एस. स्वामिनाथन",
+          "C": "वर्गीस कुरियन",
+          "D": "होमी भाभा"
+        },
+        "correctAnswer": "C",
+        "explanation": "वर्गीस कुरियन — दूध महापूर / Operation Flood.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q58",
+        "text": "१४ बँकांचे राष्ट्रीयकरण कोणत्या वर्षी?",
+        "options": {
+          "A": "१९६९",
+          "B": "१९८०",
+          "C": "१९९१",
+          "D": "१९५६"
+        },
+        "correctAnswer": "A",
+        "explanation": "१९६९ — १४ बँकांचे राष्ट्रीयकरण.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q59",
+        "text": "SAIL ची स्थापना कोणत्या वर्षी?",
+        "options": {
+          "A": "१९५६",
+          "B": "१९६४",
+          "C": "१९७३",
+          "D": "१९८२"
+        },
+        "correctAnswer": "C",
+        "explanation": "SAIL १९७३.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q60",
+        "text": "MRTP कायदा कोणत्या वर्षी?",
+        "options": {
+          "A": "१९९१",
+          "B": "१९५६",
+          "C": "१९६९",
+          "D": "१९७३"
+        },
+        "correctAnswer": "C",
+        "explanation": "MRTP १९६९.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q61",
+        "text": "१९७३ तेल धक्क्याचे प्रमुख कारण?",
+        "options": {
+          "A": "योम किपूर / इजिप्त–इस्रायल युद्ध",
+          "B": "आखाती युद्ध",
+          "C": "सुएझ १९५६",
+          "D": "इराण क्रांती"
+        },
+        "correctAnswer": "A",
+        "explanation": "१९७३ — योम किपूर युद्ध; ~४००% वाढ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q62",
+        "text": "बोकारो लोहपोलाद प्रकल्प (१९७२) कोणाच्या मदतीने?",
+        "options": {
+          "A": "जर्मनी",
+          "B": "रशिया",
+          "C": "अमेरिका",
+          "D": "ब्रिटन"
+        },
+        "correctAnswer": "B",
+        "explanation": "बोकारो — रशिया मदत.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q63",
+        "text": "पाचव्या योजनेचा अंमल कालावधी?",
+        "options": {
+          "A": "१९८०–८५",
+          "B": "१९६९–७४",
+          "C": "१९७४–७८",
+          "D": "१९७८–८३"
+        },
+        "correctAnswer": "C",
+        "explanation": "पाचवी १९७४–१९७८; एक वर्ष अगोदर बंद.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q64",
+        "text": "पाचव्या योजनेचे मुख्य उद्दिष्ट?",
+        "options": {
+          "A": "निर्यात वाढ",
+          "B": "हरित GDP",
+          "C": "केवळ जड उद्योग",
+          "D": "स्वावलंबन व दारिद्र्य निर्मूलन"
+        },
+        "correctAnswer": "D",
+        "explanation": "स्वावलंबन, दारिद्र्य व बेरोजगारी निर्मूलन.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q65",
+        "text": "ICDS योजना कोणत्या वर्षी सुरू?",
+        "options": {
+          "A": "१९६४",
+          "B": "१९६९",
+          "C": "१९७५",
+          "D": "१९८२"
+        },
+        "correctAnswer": "C",
+        "explanation": "ICDS १९७५ — ०–६ वयोगट.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q66",
+        "text": "RRB ची मालकी रचना योग्य कोणती?",
+        "options": {
+          "A": "केंद्र १५ · राज्य ३५ · बँक ५०",
+          "B": "१००% केंद्र",
+          "C": "केंद्र ३५ · राज्य ५० · बँक १५",
+          "D": "केंद्र ५० · राज्य १५ · स्पॉन्सर बँक ३५"
+        },
+        "correctAnswer": "D",
+        "explanation": "केंद्र ५०%, राज्य १५%, स्पॉन्सर बँक ३५%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q67",
+        "text": "पोखरण-१ चाचणी वर्ष व कोडनेम?",
+        "options": {
+          "A": "१९९८ — शक्ति",
+          "B": "२०१६ — प्रहार",
+          "C": "१९६४ — चक्रवात",
+          "D": "१९७४ — बुद्ध हसला"
+        },
+        "correctAnswer": "D",
+        "explanation": "१९७४ — Smiling Buddha / बुद्ध हसला.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q68",
+        "text": "राष्ट्रीय आणीबाणी कोणत्या दिवशी?",
+        "options": {
+          "A": "१५ ऑगस्ट १९७५",
+          "B": "२ ऑक्टोबर १९७५",
+          "C": "२६ जानेवारी १९७५",
+          "D": "२५ जून १९७५"
+        },
+        "correctAnswer": "D",
+        "explanation": "२५ जून १९७५ — आणीबाणी; २० कलमी कार्यक्रम.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q69",
+        "text": "Rolling Plan चे प्रतिमान / उपाध्यक्ष?",
+        "options": {
+          "A": "अहलुवालिया",
+          "B": "महालनोबीस",
+          "C": "डी. टी. लकडवाला",
+          "D": "गाडगीळ"
+        },
+        "correctAnswer": "C",
+        "explanation": "डी. टी. लकडवाला; अध्यक्ष मोरारजी देसाई.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q70",
+        "text": "TRYSEM योजना वर्ष व उद्देश?",
+        "options": {
+          "A": "१९७९ — ग्रामीण युवक स्वयंरोजगार प्रशिक्षण",
+          "B": "१९८९ — शहरी रोजगार",
+          "C": "२००५ — NREGA",
+          "D": "१९६९ — MSP"
+        },
+        "correctAnswer": "A",
+        "explanation": "TRYSEM १९७९ — १८–३५ स्वयंरोजगार प्रशिक्षण.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q71",
+        "text": "सिक्किमला राज्यदर्जा कोणत्या घटनादुरुस्तीने?",
+        "options": {
+          "A": "३६वी — १९७४",
+          "B": "७३वी — १९९२",
+          "C": "८६वी — २००२",
+          "D": "४२वी — १९७६"
+        },
+        "correctAnswer": "A",
+        "explanation": "३६वी घटनादुरुस्ती १९७४ — सिक्किम राज्य.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q72",
+        "text": "Rolling Plan ची मध्यवर्ती कल्पना?",
+        "options": {
+          "A": "केवळ कृषी योजना",
+          "B": "केवळ संरक्षण",
+          "C": "१० वर्षांचा एक आराखडा",
+          "D": "वर्षा–वर्षाचे आराखडे → मूल्यमापन सोपे"
+        },
+        "correctAnswer": "D",
+        "explanation": "१–१ वर्षाच्या आराखड्यांची मालिका.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q73",
+        "text": "सहाव्या योजनेचा कालावधी व साध्य वृद्धी?",
+        "options": {
+          "A": "१९७४–७९ · ३%",
+          "B": "१९८०–८५ · ५.७% (अपेक्षित ५.२%)",
+          "C": "१९८५–९० · २%",
+          "D": "१९९२–९७ · ९%"
+        },
+        "correctAnswer": "B",
+        "explanation": "१९८०–८५; अपेक्षित ५.२%, साध्य ५.७%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q74",
+        "text": "सहाव्या योजनेत महाराष्ट्रीयन उपाध्यक्ष कोण?",
+        "options": {
+          "A": "धनंजय गाडगीळ",
+          "B": "शंकरराव चव्हाण",
+          "C": "यशवंतराव चव्हाण",
+          "D": "मधु दंडवते"
+        },
+        "correctAnswer": "B",
+        "explanation": "उपाध्यक्ष शंकरराव चव्हाण.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q75",
+        "text": "IRDP व NREP अनुक्रमे कशा प्रकारच्या?",
+        "options": {
+          "A": "दोन्ही वेतन रोजगार",
+          "B": "स्वयंरोजगार व वेतन रोजगार",
+          "C": "दोन्ही स्वयंरोजगार",
+          "D": "केवळ पेन्शन"
+        },
+        "correctAnswer": "B",
+        "explanation": "IRDP — स्वयंरोजगार; NREP — वेतन रोजगार.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q76",
+        "text": "NABARD स्थापना — समिती व तारीख?",
+        "options": {
+          "A": "गोरवाला — १९५५",
+          "B": "शिवरमन (CRAFICARD) — १२ जुलै १९८२",
+          "C": "रंगराजन — १९९३",
+          "D": "केळकर — २००३"
+        },
+        "correctAnswer": "B",
+        "explanation": "शिवरमन (CRAFICARD); NABARD १२ जुलै १९८२.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q77",
+        "text": "भोपाळ वायुगळती दिनांक व वायू?",
+        "options": {
+          "A": "३ जून १९८४ — क्लोरीन",
+          "B": "२ डिसेंबर १९८४ — Methyl Isocyanate",
+          "C": "२५ जून १९७५ — अमोनिया",
+          "D": "१ एप्रिल १९८२ — मिथेन"
+        },
+        "correctAnswer": "B",
+        "explanation": "२ डिसेंबर १९८४ — MIC / Union Carbide.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q78",
+        "text": "सातव्या योजनेचा कालावधी व नाव?",
+        "options": {
+          "A": "१९९२–९७ — मनुष्यबळ",
+          "B": "२००२–०७ — शिक्षण",
+          "C": "१९८०–८५ — दारिद्र्य निर्मूलन",
+          "D": "१९८५–९० — रोजगार निर्मिती जनक"
+        },
+        "correctAnswer": "D",
+        "explanation": "सातवी १९८५–१९९० — रोजगार निर्मिती जनक.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q79",
+        "text": "जवाहर रोजगार योजना (१९८९) कशाच्या विलीनीकरणाने?",
+        "options": {
+          "A": "NREP + RLEGP",
+          "B": "ICDS + DPAP",
+          "C": "SEBI + RBI",
+          "D": "IRDP + TRYSEM"
+        },
+        "correctAnswer": "A",
+        "explanation": "NREP + RLEGP = जवाहर रोजगार योजना १९८९.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q80",
+        "text": "राष्ट्रीय साक्षरता मिशन (१९८८) कुठून सुरू?",
+        "options": {
+          "A": "पुणे",
+          "B": "एर्नाकुलम (केरळ)",
+          "C": "दिल्ली",
+          "D": "कोलकाता"
+        },
+        "correctAnswer": "B",
+        "explanation": "एर्नाकुलम (केरळ) पासून.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q81",
+        "text": "१९८७ मध्ये राज्यदर्जा मिळालेली राज्ये?",
+        "options": {
+          "A": "मिझोराम, अरुणाचल, गोवा",
+          "B": "छत्तीसगड, झारखंड, उत्तराखंड",
+          "C": "तेलंगणा, छत्तीसगड, गोवा",
+          "D": "सिक्किम, गोवा, मणिपूर"
+        },
+        "correctAnswer": "A",
+        "explanation": "मिझोराम, अरुणाचल प्रदेश, गोवा — १९८७.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q82",
+        "text": "सातव्या योजनेचे प्रतिमान (मजुरी–वस्तू / लघु उद्योग)?",
+        "options": {
+          "A": "महालनोबीस",
+          "B": "प्रभाकरनंद / वकील",
+          "C": "हॅरॉड–डोमर",
+          "D": "जॉन मिलर"
+        },
+        "correctAnswer": "B",
+        "explanation": "प्रभाकरनंद व वकील.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q83",
+        "text": "EXIM बँक स्थापना वर्ष?",
+        "options": {
+          "A": "१९९२",
+          "B": "१९६४",
+          "C": "१९६९",
+          "D": "१९८२"
+        },
+        "correctAnswer": "D",
+        "explanation": "EXIM बँक १९८२.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q84",
+        "text": "DWCRA योजना वर्ष व उद्देश?",
+        "options": {
+          "A": "१९८२ — ग्रामीण महिला व बाल विकास",
+          "B": "१९९९ — SJGSY",
+          "C": "२००५ — NRHM",
+          "D": "१९७५ — ICDS"
+        },
+        "correctAnswer": "A",
+        "explanation": "DWCRA १९८२ — ग्रामीण महिला व बाल.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q85",
+        "text": "१९९०–९२ वार्षिक योजना का आल्या?",
+        "options": {
+          "A": "हरितक्रांती अपयश",
+          "B": "राजकीय अल्पमत/अस्थिरता व आर्थिक तणाव",
+          "C": "चीन युद्ध",
+          "D": "Rolling Plan यश"
+        },
+        "correctAnswer": "B",
+        "explanation": "अल्पमत सरकार व आर्थिक अडचणी.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q86",
+        "text": "१९९१ आर्थिक सुधारणांचे तीन स्तंभ?",
+        "options": {
+          "A": "उदारीकरण–खाजगीकरण–जागतिकीकरण",
+          "B": "MSP–FCI–NABARD",
+          "C": "ICDS–RRB–TRYSEM",
+          "D": "नियोजन–राष्ट्रीयकरण–परवाना"
+        },
+        "correctAnswer": "A",
+        "explanation": "LPG — उदारीकरण, खाजगीकरण, जागतिकीकरण.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q87",
+        "text": "आठव्या योजनेचा कालावधी व नाव?",
+        "options": {
+          "A": "२००२–०७ — समावेशक",
+          "B": "१९८५–९० — रोजगार",
+          "C": "१९९२–९७ — मनुष्यबळ/मानव संसाधन विकास",
+          "D": "१९९७–२००२ — शिक्षण"
+        },
+        "correctAnswer": "C",
+        "explanation": "आठवी १९९२–१९९७ — मनुष्यबळ विकास.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q88",
+        "text": "आठव्या योजनेत निर्यात-आधारित वाढ प्रतिमान कोणाचे?",
+        "options": {
+          "A": "लकडवाला",
+          "B": "राजकृष्ण",
+          "C": "हॅरॉड–डोमर",
+          "D": "जॉन डब्ल्यू. मिलर"
+        },
+        "correctAnswer": "D",
+        "explanation": "जॉन डब्ल्यू. मिलर — निर्यात-आधारित वाढ.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q89",
+        "text": "SEBI ला वैधानिक दर्जा कोणत्या वर्षी?",
+        "options": {
+          "A": "१९९९",
+          "B": "२००३",
+          "C": "१९८८",
+          "D": "१९९२"
+        },
+        "correctAnswer": "D",
+        "explanation": "स्थापना १९८८; वैधानिक दर्जा १९९२.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q90",
+        "text": "७३वी व ७४वी घटनादुरुस्ती कशाशी?",
+        "options": {
+          "A": "शिक्षण अधिकार",
+          "B": "पंचायत राज व नगरपालिका",
+          "C": "GST",
+          "D": "NITI Aayog"
+        },
+        "correctAnswer": "B",
+        "explanation": "७३वी पंचायत; ७४वी नगरपालिका.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q91",
+        "text": "आश्वासित रोजगार योजना (१९९३) मुख्य वैशिष्ट्य?",
+        "options": {
+          "A": "सेबी परवाना",
+          "B": "शहरी पेन्शन",
+          "C": "दुर्गम भागात कुटुंबातील २ जणांना १०० दिवस रोजगार",
+          "D": "केवळ महिला बचत गट"
+        },
+        "correctAnswer": "C",
+        "explanation": "दुर्गम भागात २ व्यक्ती × १०० दिवस.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q92",
+        "text": "आठव्या योजनेत अपेक्षित व साध्य वृद्धी?",
+        "options": {
+          "A": "२.१% व ३.६%",
+          "B": "५.६% व ६.८%",
+          "C": "८.२% व ६.९%",
+          "D": "५.०% व ४.०%"
+        },
+        "correctAnswer": "B",
+        "explanation": "अपेक्षित ५.६%; साध्य ६.८%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q93",
+        "text": "नवव्या योजनेचा कालावधी व नाव?",
+        "options": {
+          "A": "१९९२–९७ — मनुष्यबळ",
+          "B": "१९९७–२००२ — सामाजिक न्याय व समानतेसह सुधारणा",
+          "C": "२००२–०७ — शाश्वत",
+          "D": "२००७–१२ — शिक्षण"
+        },
+        "correctAnswer": "B",
+        "explanation": "नववी १९९७–२००२ — सामाजिक न्याय व समानतेसह सुधारणा.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q94",
+        "text": "PMGSY सुरूवात दिनांक?",
+        "options": {
+          "A": "२५ डिसेंबर २०००",
+          "B": "२ फेब्रुवारी २००६",
+          "C": "२ ऑक्टोबर २००९",
+          "D": "१ एप्रिल १९९९"
+        },
+        "correctAnswer": "A",
+        "explanation": "२५ डिसेंबर २००० — प्रधानमंत्री ग्राम सडक योजना.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q95",
+        "text": "NREGA कायदा व MGNREGS नामकरण — योग्य क्रम?",
+        "options": {
+          "A": "१९९९ कायदा → २००५ MGNREGS",
+          "B": "२००२ कायदा → २००८ MGNREGS",
+          "C": "२००९ कायदा → २००५ MGNREGS",
+          "D": "२००५ कायदा → २००६ अंमल → २००९ MGNREGS"
+        },
+        "correctAnswer": "D",
+        "explanation": "कायदा २००५; २००६ अंमल; २ ऑक्टो. २००९ MGNREGS.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q96",
+        "text": "दहाव्या योजनेचे नाव (ओळख) व FRBM वर्ष?",
+        "options": {
+          "A": "स्वावलंबन · FRBM १९९१",
+          "B": "रोजगार · FRBM २०१५",
+          "C": "शाश्वत · FRBM १९६९",
+          "D": "शिक्षण योजना · FRBM २००३"
+        },
+        "correctAnswer": "D",
+        "explanation": "दहावी — शिक्षण योजना; FRBM २००३.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q97",
+        "text": "८६वी घटनादुरुस्ती (२००२) मुख्य तरतूद?",
+        "options": {
+          "A": "सिक्किम राज्य",
+          "B": "GST",
+          "C": "कलम २१अ — ६–१४ वयोगट मोफत शिक्षण अधिकार",
+          "D": "Panchayat राज"
+        },
+        "correctAnswer": "C",
+        "explanation": "कलम २१अ मोफत व सक्तीचे शिक्षण.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q98",
+        "text": "अकराव्या योजनेचे नाव व GDP साध्य दर (सुमारे)?",
+        "options": {
+          "A": "पुनरुत्थान · ३.६%",
+          "B": "रोजगार जनक · ५%",
+          "C": "शाश्वत विकास · ९%",
+          "D": "गतिशील व अधिक समावेशक विकास · ७.९%"
+        },
+        "correctAnswer": "D",
+        "explanation": "२००७–१२ — समावेशक विकास; साध्य ~७.९%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q99",
+        "text": "बाराव्या योजनेचे नाव व कालावधी?",
+        "options": {
+          "A": "भौतिकवादी · १९५६–६१",
+          "B": "शिक्षण · २००२–०७",
+          "C": "गतिशील, अधिक समावेशक व शाश्वत विकास · २०१२–१७",
+          "D": "स्वावलंबन · १९६६–६९"
+        },
+        "correctAnswer": "C",
+        "explanation": "बारावी २०१२–२०१७ — Faster, More Inclusive and Sustainable Growth.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-marathi-q100",
+        "text": "बाराव्या योजनेत GDP नियोजित व साध्य सुमारे?",
+        "options": {
+          "A": "९% व ९%",
+          "B": "८.२% व ६.९%",
+          "C": "५.६% व ६.८%",
+          "D": "२.१% व ३.६%"
+        },
+        "correctAnswer": "B",
+        "explanation": "नियोजित ८.२%; साध्य सुमारे ६.९%.",
+        "category": "Economics",
+        "topic": "पंचवार्षिक योजना",
+        "sourceTag": "Don't know Academy — पंचवार्षिक योजना Topic Pack"
+      }
+    ]
+  },
+  {
+    "id": "topic-panchvarshik-english",
+    "title": "Five Year Plans",
+    "createdAt": "2026-08-08T20:00:00.000Z",
+    "language": "english",
+    "topicOnly": true,
+    "tag": "Five Year Plans · पंचवार्षिक योजना",
+    "questions": [
+      {
+        "id": "topic-panchvarshik-english-q1",
+        "text": "How many Five-Year Plans were implemented in India between 1951 and 2017?",
+        "options": {
+          "A": "10",
+          "B": "11",
+          "C": "12",
+          "D": "15"
+        },
+        "correctAnswer": "C",
+        "explanation": "Twelve Five-Year Plans ran from 1951–2017; the 12th (2012–17) was the last.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q2",
+        "text": "Apart from Five-Year Plans, how many Annual Plans were implemented in total?",
+        "options": {
+          "A": "5",
+          "B": "7",
+          "C": "9",
+          "D": "3"
+        },
+        "correctAnswer": "B",
+        "explanation": "Seven Annual Plans in all — Plan Holiday (3) plus political instability periods (4).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q3",
+        "text": "In which period did the Plan Holiday take place?",
+        "options": {
+          "A": "1978–80",
+          "B": "1990–92",
+          "C": "1961–64",
+          "D": "1966–69"
+        },
+        "correctAnswer": "D",
+        "explanation": "Three Annual Plans were run during the Plan Holiday of 1966–1969.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q4",
+        "text": "In which period was the Rolling Plan in force?",
+        "options": {
+          "A": "1974–78",
+          "B": "1978–80",
+          "C": "1980–85",
+          "D": "1966–69"
+        },
+        "correctAnswer": "B",
+        "explanation": "The Rolling Plan was implemented during 1978–80.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q5",
+        "text": "In which year was NITI Aayog established in place of the Planning Commission?",
+        "options": {
+          "A": "2014",
+          "B": "2015",
+          "C": "2017",
+          "D": "2012"
+        },
+        "correctAnswer": "B",
+        "explanation": "NITI Aayog was set up in 2015; the traditional Five-Year Plan framework ended after the 12th Plan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q6",
+        "text": "In which two periods were Annual Plans adopted due to political instability?",
+        "options": {
+          "A": "1951–56 and 1956–61",
+          "B": "1966–69 and 1974–78",
+          "C": "1978–80 and 1990–92",
+          "D": "1985–90 and 1992–97"
+        },
+        "correctAnswer": "C",
+        "explanation": "1978–80 and 1990–92 were the two Annual-Plan phases linked to political instability.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q7",
+        "text": "Which is the correct evolution of rural wage-employment programmes?",
+        "options": {
+          "A": "IRDP → NREP → MGNREGA",
+          "B": "NREP → RLEGP → JRY → SGRY → NREGA/MGNREGS",
+          "C": "TRYSEM → IRDP → NREGA",
+          "D": "DPAP → RRB → NREGA"
+        },
+        "correctAnswer": "B",
+        "explanation": "NREP (1980) → RLEGP (1983) → JRY (1989) → SGRY (2001) → NREGA (2005) → MGNREGS (2009).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q8",
+        "text": "On which date was SJGSY (Swarnajayanti Gram Swarozgar Yojana) launched?",
+        "options": {
+          "A": "2 February 2006",
+          "B": "1 April 1997",
+          "C": "1 April 1999",
+          "D": "2 October 2001"
+        },
+        "correctAnswer": "C",
+        "explanation": "SJGSY began on 1 April 1999 by merging six self-employment schemes.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q9",
+        "text": "Which of the following schemes was NOT merged into SJGSY?",
+        "options": {
+          "A": "DWCRA",
+          "B": "TRYSEM",
+          "C": "IRDP",
+          "D": "NREP"
+        },
+        "correctAnswer": "D",
+        "explanation": "NREP was a wage-employment scheme; SJGSY merged self-employment schemes.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q10",
+        "text": "Who coined the idea of the Hindu Rate of Growth?",
+        "options": {
+          "A": "Manmohan Singh",
+          "B": "Amartya Sen",
+          "C": "Raj Krishna",
+          "D": "Mahalanobis"
+        },
+        "correctAnswer": "C",
+        "explanation": "Economist Raj Krishna labelled the roughly 3.5% growth of 1950–80 the Hindu Rate of Growth.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q11",
+        "text": "What was the period of the First Five-Year Plan?",
+        "options": {
+          "A": "1947–52",
+          "B": "1951–56",
+          "C": "1956–61",
+          "D": "1961–66"
+        },
+        "correctAnswer": "B",
+        "explanation": "The First Five-Year Plan covered 1951–1956.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q12",
+        "text": "By which name is the First Five-Year Plan commonly identified?",
+        "options": {
+          "A": "Education Plan",
+          "B": "Materialistic Plan",
+          "C": "Rehabilitation / Revival Plan",
+          "D": "Self-reliance Plan"
+        },
+        "correctAnswer": "C",
+        "explanation": "It is known as the Rehabilitation (Punarutthan) Plan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q13",
+        "text": "What was the main focus of the First Plan?",
+        "options": {
+          "A": "Employment",
+          "B": "Exports",
+          "C": "Heavy industry",
+          "D": "Agriculture"
+        },
+        "correctAnswer": "D",
+        "explanation": "The First Plan prioritised agriculture, foodgrain and irrigation.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q14",
+        "text": "Which growth model underpinned the First Plan?",
+        "options": {
+          "A": "Harrod–Domar",
+          "B": "Gadgil framework",
+          "C": "Feldman",
+          "D": "Mahalanobis"
+        },
+        "correctAnswer": "A",
+        "explanation": "The First Plan used the Harrod–Domar model.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q15",
+        "text": "What were the approximate target and achieved growth rates in the First Plan?",
+        "options": {
+          "A": "2.1% and 3.6%",
+          "B": "3.6% and 2.1%",
+          "C": "5.2% and 5.7%",
+          "D": "8.2% and 6.9%"
+        },
+        "correctAnswer": "A",
+        "explanation": "Target about 2.1%; achievement about 3.6%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q16",
+        "text": "Damodar Valley Project was recommended by whom and modelled on what?",
+        "options": {
+          "A": "Nehru — Volta",
+          "B": "Meghnad Saha — Tennessee Valley",
+          "C": "Gadgil — Danube",
+          "D": "Swaminathan — Nile"
+        },
+        "correctAnswer": "B",
+        "explanation": "Recommended by Meghnad Saha; modelled on the US TVA.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q17",
+        "text": "On which river is the Bhakra–Nangal project located?",
+        "options": {
+          "A": "Sutlej",
+          "B": "Beas",
+          "C": "Ravi",
+          "D": "Yamuna"
+        },
+        "correctAnswer": "A",
+        "explanation": "Both Bhakra and Nangal are on the Sutlej.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q18",
+        "text": "Hirakud Dam is on which river and in which state?",
+        "options": {
+          "A": "Mahanadi — Odisha",
+          "B": "Narmada — Madhya Pradesh",
+          "C": "Kosi — Bihar",
+          "D": "Godavari — Maharashtra"
+        },
+        "correctAnswer": "A",
+        "explanation": "Hirakud is on the Mahanadi at Sambalpur, Odisha.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q19",
+        "text": "When and where was the Sindri fertiliser plant started?",
+        "options": {
+          "A": "1951 — Dhanbad (Jharkhand)",
+          "B": "1956 — Bhilai",
+          "C": "1964 — Mumbai",
+          "D": "1972 — Bokaro"
+        },
+        "correctAnswer": "A",
+        "explanation": "Sindri fertiliser plant began in 1951 at Dhanbad (Jharkhand).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q20",
+        "text": "Hindustan Antibiotics (Pimpri) began in which year and with whose help?",
+        "options": {
+          "A": "1951 — IMF",
+          "B": "1954 — WHO and UNICEF",
+          "C": "1956 — USSR",
+          "D": "1964 — World Bank"
+        },
+        "correctAnswer": "B",
+        "explanation": "Started in 1954 at Pimpri with WHO and UNICEF assistance.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q21",
+        "text": "Chittaranjan locomotive works and Perambur coach factory are in which states?",
+        "options": {
+          "A": "Gujarat and Rajasthan",
+          "B": "Pune and Nashik",
+          "C": "West Bengal and Tamil Nadu",
+          "D": "Bihar and Odisha"
+        },
+        "correctAnswer": "C",
+        "explanation": "Locomotives — Chittaranjan (West Bengal); coaches — Perambur (Tamil Nadu).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q22",
+        "text": "Which statement about the First Plan is correct?",
+        "options": {
+          "A": "Inflation rose sharply",
+          "B": "The inflation index fell by about 13%",
+          "C": "Agriculture was completely neglected",
+          "D": "Achieved growth was below target"
+        },
+        "correctAnswer": "B",
+        "explanation": "The inflation index fell by about 13% — a distinctive feature of this Plan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q23",
+        "text": "What was the period of the Second Five-Year Plan?",
+        "options": {
+          "A": "1956–61",
+          "B": "1961–66",
+          "C": "1969–74",
+          "D": "1951–56"
+        },
+        "correctAnswer": "A",
+        "explanation": "The Second Plan covered 1956–1961.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q24",
+        "text": "By which name is the Second Plan commonly known?",
+        "options": {
+          "A": "Materialistic Plan",
+          "B": "Education Plan",
+          "C": "Rolling Plan",
+          "D": "Rehabilitation Plan"
+        },
+        "correctAnswer": "A",
+        "explanation": "It is called the Materialistic Plan — focus on heavy and basic industries.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q25",
+        "text": "Whose model mainly guided the Second Plan?",
+        "options": {
+          "A": "P. C. Mahalanobis",
+          "B": "Alan Manne",
+          "C": "Lakdawala",
+          "D": "Harrod–Domar"
+        },
+        "correctAnswer": "A",
+        "explanation": "The Second Plan followed the P. C. Mahalanobis model.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q26",
+        "text": "Which steel-plant pairing for the Second Plan is correct?",
+        "options": {
+          "A": "Bhilai–Britain; Durgapur–USSR; Rourkela–Germany",
+          "B": "Durgapur–Britain; Bhilai–USSR; Rourkela–Germany",
+          "C": "Rourkela–Britain; Bhilai–Germany; Durgapur–USSR",
+          "D": "All with the USSR"
+        },
+        "correctAnswer": "B",
+        "explanation": "Durgapur–Britain; Bhilai–USSR; Rourkela–Germany.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q27",
+        "text": "On which date was LIC established?",
+        "options": {
+          "A": "26 January 1950",
+          "B": "1 April 1969",
+          "C": "15 August 1947",
+          "D": "1 September 1956"
+        },
+        "correctAnswer": "D",
+        "explanation": "LIC was established on 1 September 1956.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q28",
+        "text": "Who was the first chairman of the Atomic Energy Commission (1958)?",
+        "options": {
+          "A": "A. P. J. Abdul Kalam",
+          "B": "Vikram Sarabhai",
+          "C": "Homi Bhabha",
+          "D": "Raja Ramanna"
+        },
+        "correctAnswer": "C",
+        "explanation": "Homi J. Bhabha was the first chairman.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q29",
+        "text": "What was a major drawback of the Second Plan?",
+        "options": {
+          "A": "Inflation became zero",
+          "B": "Exports rose sharply",
+          "C": "Heavy industry totally failed",
+          "D": "Neglect of agriculture → shortages and price/inflation rise"
+        },
+        "correctAnswer": "D",
+        "explanation": "Agriculture was neglected, causing shortages and roughly 30% price/inflation rise.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q30",
+        "text": "Licence–Quota practice mainly began after which policy?",
+        "options": {
+          "A": "1948 Industrial Policy",
+          "B": "1956 Industrial Policy",
+          "C": "1991 Industrial Policy",
+          "D": "1977 Industrial Policy"
+        },
+        "correctAnswer": "B",
+        "explanation": "The 1956 Industrial Policy ushered in the Licence–Quota regime.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q31",
+        "text": "The Balwantrai Mehta Committee (1957) is associated with?",
+        "options": {
+          "A": "Democratic decentralisation / Panchayati Raj",
+          "B": "Green Revolution",
+          "C": "FRBM",
+          "D": "Bank nationalisation"
+        },
+        "correctAnswer": "A",
+        "explanation": "It recommended democratic decentralisation and Panchayati Raj.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q32",
+        "text": "What was the key outcome linked with the Avadi session?",
+        "options": {
+          "A": "NITI Aayog",
+          "B": "Green GDP",
+          "C": "Liberalisation",
+          "D": "Acceptance of a socialist pattern and contraction of the private sector"
+        },
+        "correctAnswer": "D",
+        "explanation": "Avadi endorsed a socialist pattern; private sector space was narrowed.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q33",
+        "text": "Heavy Electricals at Bhopal belongs to which Plan period?",
+        "options": {
+          "A": "Fifth",
+          "B": "Eighth",
+          "C": "First",
+          "D": "Second"
+        },
+        "correctAnswer": "D",
+        "explanation": "Bhopal Heavy Electricals is associated with the Second Plan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q34",
+        "text": "Which pair correctly lists Second-Plan fertiliser plant locations?",
+        "options": {
+          "A": "Bokaro and Salem",
+          "B": "Visakhapatnam and Burnpur",
+          "C": "Sindri and Pimpri",
+          "D": "Nangal and Rourkela"
+        },
+        "correctAnswer": "D",
+        "explanation": "Nangal (Punjab) and Rourkela (Odisha).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q35",
+        "text": "What was the period of the Third Five-Year Plan?",
+        "options": {
+          "A": "1969–74",
+          "B": "1956–61",
+          "C": "1961–66",
+          "D": "1966–69"
+        },
+        "correctAnswer": "C",
+        "explanation": "The Third Plan covered 1961–1966.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q36",
+        "text": "What was the focus/name of the Third Plan?",
+        "options": {
+          "A": "Agriculture and industry",
+          "B": "Exports only",
+          "C": "Education only",
+          "D": "Heavy industry only"
+        },
+        "correctAnswer": "A",
+        "explanation": "It emphasised both agriculture and industry.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q37",
+        "text": "Who became Plan chairman after 1964 during the Third Plan?",
+        "options": {
+          "A": "Morarji Desai",
+          "B": "Nehru",
+          "C": "Lal Bahadur Shastri",
+          "D": "Indira Gandhi"
+        },
+        "correctAnswer": "C",
+        "explanation": "After Nehru, Lal Bahadur Shastri took over in 1964.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q38",
+        "text": "Why is the Third Plan often called the most unsuccessful?",
+        "options": {
+          "A": "China 1962 and Pakistan 1965 wars plus drought",
+          "B": "LIC was shut down",
+          "C": "Green Revolution failed",
+          "D": "Industrial growth was zero"
+        },
+        "correctAnswer": "A",
+        "explanation": "Wars with China (1962) and Pakistan (1965) and severe drought undermined the Plan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q39",
+        "text": "Agricultural Prices Commission (1965) — recommendation and first chairman?",
+        "options": {
+          "A": "Gadgil — Nehru",
+          "B": "L. K. Jha — Dantwala",
+          "C": "Rangarajan — Manmohan",
+          "D": "Kothari — Rajiv"
+        },
+        "correctAnswer": "B",
+        "explanation": "Recommended on L. K. Jha’s advice; Dantwala was chairman (MSP).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q40",
+        "text": "In which year was the Food Corporation of India (FCI) set up?",
+        "options": {
+          "A": "1964",
+          "B": "1969",
+          "C": "1975",
+          "D": "1956"
+        },
+        "correctAnswer": "A",
+        "explanation": "FCI was established in 1964.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q41",
+        "text": "UTI was set up in which year and for what role?",
+        "options": {
+          "A": "1964 — first mutual-fund type institution",
+          "B": "1982 — NABARD",
+          "C": "1992 — SEBI",
+          "D": "1956 — first bank"
+        },
+        "correctAnswer": "A",
+        "explanation": "UTI (1964) was India’s first mutual-fund style vehicle for small savers.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q42",
+        "text": "Who was India’s Defence Minister during the 1965 Pakistan war?",
+        "options": {
+          "A": "George Fernandes",
+          "B": "Jagjivan Ram",
+          "C": "V. K. Menon",
+          "D": "Yashwantrao Chavan"
+        },
+        "correctAnswer": "D",
+        "explanation": "Yashwantrao Chavan in 1965; V. K. Menon during the 1962 China war.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q43",
+        "text": "Industrial production growth during the Third Plan was about?",
+        "options": {
+          "A": "15%",
+          "B": "2%",
+          "C": "5%",
+          "D": "9%"
+        },
+        "correctAnswer": "D",
+        "explanation": "Industrial growth was about 9%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q44",
+        "text": "Sukhamoy Chakravarty is mentioned in connection with?",
+        "options": {
+          "A": "Third Plan framework/model",
+          "B": "Rolling Plan",
+          "C": "FRBM",
+          "D": "Green Revolution"
+        },
+        "correctAnswer": "A",
+        "explanation": "Mahalanobis / Sukhamoy Chakravarty framework for the Third Plan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q45",
+        "text": "What name is given to the Plan-Holiday period’s thrust?",
+        "options": {
+          "A": "Inclusive growth",
+          "B": "Materialistic",
+          "C": "Self-reliance",
+          "D": "Education"
+        },
+        "correctAnswer": "C",
+        "explanation": "It is called the Self-reliance Plan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q46",
+        "text": "Who was the Maharashtrian Deputy Chairman during the Plan Holiday?",
+        "options": {
+          "A": "Madhu Dandavate",
+          "B": "Shankarrao Chavan",
+          "C": "Dhananjay Gadgil",
+          "D": "Lakdawala"
+        },
+        "correctAnswer": "C",
+        "explanation": "Deputy Chairman Dhananjay Gadgil (Maharashtrian).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q47",
+        "text": "On which date was the rupee devalued by about 36.5%?",
+        "options": {
+          "A": "15 August 1947",
+          "B": "6 June 1966",
+          "C": "1 July 1991",
+          "D": "1 April 1969"
+        },
+        "correctAnswer": "B",
+        "explanation": "Rupee devaluation of about 36.5% on 6 June 1966.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q48",
+        "text": "Scientists associated with the Green Revolution (global and India)?",
+        "options": {
+          "A": "Borlaug (global) and Swaminathan (India)",
+          "B": "Only Raj Krishna",
+          "C": "Only Norman Borlaug",
+          "D": "Only M. S. Swaminathan"
+        },
+        "correctAnswer": "A",
+        "explanation": "Borlaug internationally; Swaminathan in India.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q49",
+        "text": "Which wheat varieties were imported during the Green Revolution?",
+        "options": {
+          "A": "Basmati and Jiresaal",
+          "B": "Hybrid-4 and Shankar",
+          "C": "IR-8 and Bt cotton",
+          "D": "Lerma Rojo 64A and Sonora 64"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mexican wheat varieties Lerma Rojo 64A and Sonora 64.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q50",
+        "text": "Which two states were created in 1966?",
+        "options": {
+          "A": "Telangana–Andhra",
+          "B": "Gujarat–Maharashtra",
+          "C": "Punjab–Haryana",
+          "D": "Chhattisgarh–Jharkhand"
+        },
+        "correctAnswer": "C",
+        "explanation": "Punjab and Haryana were formed in 1966.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q51",
+        "text": "Who was the Planning Commission chairman during the Plan Holiday?",
+        "options": {
+          "A": "Morarji Desai",
+          "B": "Narasimha Rao",
+          "C": "Lal Bahadur Shastri",
+          "D": "Indira Gandhi"
+        },
+        "correctAnswer": "D",
+        "explanation": "Indira Gandhi was chairman.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q52",
+        "text": "Expected effect after devaluation?",
+        "options": {
+          "A": "Only inflation becomes zero",
+          "B": "Imports rise, exports fall",
+          "C": "Imports tend to fall and exports become more competitive",
+          "D": "Both become zero"
+        },
+        "correctAnswer": "C",
+        "explanation": "Devaluation makes imports costlier and exports more competitive.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q53",
+        "text": "What was the period of the Fourth Five-Year Plan?",
+        "options": {
+          "A": "1978–83",
+          "B": "1966–71",
+          "C": "1969–74",
+          "D": "1974–79"
+        },
+        "correctAnswer": "C",
+        "explanation": "The Fourth Plan covered 1969–1974.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q54",
+        "text": "What was the objective/name of the Fourth Plan?",
+        "options": {
+          "A": "Faster sustainable growth",
+          "B": "Employment generator",
+          "C": "Rehabilitation",
+          "D": "Growth with stability"
+        },
+        "correctAnswer": "D",
+        "explanation": "Growth with stability after the war years.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q55",
+        "text": "Which model guided the Fourth Plan?",
+        "options": {
+          "A": "Alan Manne & Ashok Rudra / Gadgil framework",
+          "B": "Lakdawala",
+          "C": "John Miller",
+          "D": "Harrod–Domar"
+        },
+        "correctAnswer": "A",
+        "explanation": "Alan Manne and Ashok Rudra; Gadgil framework.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q56",
+        "text": "In which year was the ‘Garibi Hatao’ slogan announced?",
+        "options": {
+          "A": "1980",
+          "B": "1969",
+          "C": "1971",
+          "D": "1975"
+        },
+        "correctAnswer": "C",
+        "explanation": "‘Garibi Hatao’ featured in the 1971 elections.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q57",
+        "text": "Who is associated with Operation Flood / NDDB?",
+        "options": {
+          "A": "Shivaraman",
+          "B": "M. S. Swaminathan",
+          "C": "Verghese Kurien",
+          "D": "Homi Bhabha"
+        },
+        "correctAnswer": "C",
+        "explanation": "Verghese Kurien led the White Revolution / Operation Flood.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q58",
+        "text": "In which year were 14 banks nationalised?",
+        "options": {
+          "A": "1969",
+          "B": "1980",
+          "C": "1991",
+          "D": "1956"
+        },
+        "correctAnswer": "A",
+        "explanation": "Fourteen major banks were nationalised in 1969.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q59",
+        "text": "In which year was SAIL established?",
+        "options": {
+          "A": "1956",
+          "B": "1964",
+          "C": "1973",
+          "D": "1982"
+        },
+        "correctAnswer": "C",
+        "explanation": "SAIL was set up in 1973.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q60",
+        "text": "In which year was the MRTP Act enacted?",
+        "options": {
+          "A": "1991",
+          "B": "1956",
+          "C": "1969",
+          "D": "1973"
+        },
+        "correctAnswer": "C",
+        "explanation": "MRTP Act — 1969.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q61",
+        "text": "What mainly triggered the 1973 oil shock?",
+        "options": {
+          "A": "Yom Kippur / Egypt–Israel war",
+          "B": "Gulf War",
+          "C": "Suez 1956",
+          "D": "Iranian Revolution"
+        },
+        "correctAnswer": "A",
+        "explanation": "The 1973 Yom Kippur war; prices rose by about 400%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q62",
+        "text": "Bokaro steel project (1972) was aided by which country?",
+        "options": {
+          "A": "Germany",
+          "B": "USSR / Russia",
+          "C": "USA",
+          "D": "Britain"
+        },
+        "correctAnswer": "B",
+        "explanation": "Bokaro was built with Soviet assistance.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q63",
+        "text": "What was the implementation period of the Fifth Plan?",
+        "options": {
+          "A": "1980–85",
+          "B": "1969–74",
+          "C": "1974–78",
+          "D": "1978–83"
+        },
+        "correctAnswer": "C",
+        "explanation": "Fifth Plan ran 1974–1978 and was ended a year early.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q64",
+        "text": "What was the main objective of the Fifth Plan?",
+        "options": {
+          "A": "Export growth",
+          "B": "Green GDP",
+          "C": "Heavy industry only",
+          "D": "Self-reliance and poverty removal"
+        },
+        "correctAnswer": "D",
+        "explanation": "Self-reliance plus removal of poverty and unemployment.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q65",
+        "text": "In which year was ICDS launched?",
+        "options": {
+          "A": "1964",
+          "B": "1969",
+          "C": "1975",
+          "D": "1982"
+        },
+        "correctAnswer": "C",
+        "explanation": "ICDS began in 1975 for the 0–6 age group.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q66",
+        "text": "What is the correct ownership pattern of RRBs?",
+        "options": {
+          "A": "Centre 15 · State 35 · Bank 50",
+          "B": "100% Centre",
+          "C": "Centre 35 · State 50 · Bank 15",
+          "D": "Centre 50 · State 15 · Sponsor bank 35"
+        },
+        "correctAnswer": "D",
+        "explanation": "Centre 50%, State 15%, Sponsor bank 35%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q67",
+        "text": "Pokhran-I test year and code name?",
+        "options": {
+          "A": "1998 — Shakti",
+          "B": "2016 — Prahar",
+          "C": "1964 — Cyclone",
+          "D": "1974 — Smiling Buddha"
+        },
+        "correctAnswer": "D",
+        "explanation": "1974 Pokhran-I — Smiling Buddha.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q68",
+        "text": "On which date was the National Emergency declared?",
+        "options": {
+          "A": "15 August 1975",
+          "B": "2 October 1975",
+          "C": "26 January 1975",
+          "D": "25 June 1975"
+        },
+        "correctAnswer": "D",
+        "explanation": "Emergency was declared on 25 June 1975; 20-point programme followed.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q69",
+        "text": "Who shaped the Rolling Plan model / served as Deputy Chairman?",
+        "options": {
+          "A": "Ahluwalia",
+          "B": "Mahalanobis",
+          "C": "D. T. Lakdawala",
+          "D": "Gadgil"
+        },
+        "correctAnswer": "C",
+        "explanation": "D. T. Lakdawala; chairman Morarji Desai.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q70",
+        "text": "TRYSEM — year and purpose?",
+        "options": {
+          "A": "1979 — rural youth self-employment training",
+          "B": "1989 — urban employment",
+          "C": "2005 — NREGA",
+          "D": "1969 — MSP"
+        },
+        "correctAnswer": "A",
+        "explanation": "TRYSEM (1979) trained rural youth (18–35) for self-employment.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q71",
+        "text": "Which amendment granted statehood to Sikkim?",
+        "options": {
+          "A": "36th — 1974",
+          "B": "73rd — 1992",
+          "C": "86th — 2002",
+          "D": "42nd — 1976"
+        },
+        "correctAnswer": "A",
+        "explanation": "36th Amendment (1974) made Sikkim a state.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q72",
+        "text": "Core idea of the Rolling Plan?",
+        "options": {
+          "A": "Agriculture-only plans",
+          "B": "Defence-only plans",
+          "C": "One ten-year blueprint",
+          "D": "Year-by-year plans for easier appraisal"
+        },
+        "correctAnswer": "D",
+        "explanation": "A sequence of annual plans instead of one rigid five-year block.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q73",
+        "text": "Sixth Plan period and achieved growth?",
+        "options": {
+          "A": "1974–79 · 3%",
+          "B": "1980–85 · 5.7% (target 5.2%)",
+          "C": "1985–90 · 2%",
+          "D": "1992–97 · 9%"
+        },
+        "correctAnswer": "B",
+        "explanation": "1980–85; target 5.2%, achieved about 5.7%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q74",
+        "text": "Who was the Maharashtrian Deputy Chairman in the Sixth Plan?",
+        "options": {
+          "A": "Dhananjay Gadgil",
+          "B": "Shankarrao Chavan",
+          "C": "Yashwantrao Chavan",
+          "D": "Madhu Dandavate"
+        },
+        "correctAnswer": "B",
+        "explanation": "Deputy Chairman Shankarrao Chavan.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q75",
+        "text": "IRDP and NREP are respectively types of?",
+        "options": {
+          "A": "Both wage employment",
+          "B": "Self-employment and wage employment",
+          "C": "Both self-employment",
+          "D": "Pension only"
+        },
+        "correctAnswer": "B",
+        "explanation": "IRDP — self-employment; NREP — wage employment.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q76",
+        "text": "NABARD — committee and establishment date?",
+        "options": {
+          "A": "Gorwala — 1955",
+          "B": "Shivaraman (CRAFICARD) — 12 July 1982",
+          "C": "Rangarajan — 1993",
+          "D": "Kelkar — 2003"
+        },
+        "correctAnswer": "B",
+        "explanation": "Shivaraman (CRAFICARD); NABARD set up on 12 July 1982.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q77",
+        "text": "Bhopal gas tragedy — date and gas?",
+        "options": {
+          "A": "3 June 1984 — Chlorine",
+          "B": "2 December 1984 — Methyl Isocyanate",
+          "C": "25 June 1975 — Ammonia",
+          "D": "1 April 1982 — Methane"
+        },
+        "correctAnswer": "B",
+        "explanation": "2 December 1984 — MIC leak at Union Carbide.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q78",
+        "text": "Seventh Plan period and name?",
+        "options": {
+          "A": "1992–97 — Human resources",
+          "B": "2002–07 — Education",
+          "C": "1980–85 — Poverty removal",
+          "D": "1985–90 — Employment generation"
+        },
+        "correctAnswer": "D",
+        "explanation": "Seventh Plan 1985–1990 — Employment generation.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q79",
+        "text": "Jawahar Rozgar Yojana (1989) was formed by merging?",
+        "options": {
+          "A": "NREP + RLEGP",
+          "B": "ICDS + DPAP",
+          "C": "SEBI + RBI",
+          "D": "IRDP + TRYSEM"
+        },
+        "correctAnswer": "A",
+        "explanation": "NREP + RLEGP = Jawahar Rozgar Yojana (1989).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q80",
+        "text": "National Literacy Mission (1988) started from where?",
+        "options": {
+          "A": "Pune",
+          "B": "Ernakulam (Kerala)",
+          "C": "Delhi",
+          "D": "Kolkata"
+        },
+        "correctAnswer": "B",
+        "explanation": "It began from Ernakulam, Kerala.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q81",
+        "text": "Which states got statehood in 1987?",
+        "options": {
+          "A": "Mizoram, Arunachal Pradesh, Goa",
+          "B": "Chhattisgarh, Jharkhand, Uttarakhand",
+          "C": "Telangana, Chhattisgarh, Goa",
+          "D": "Sikkim, Goa, Manipur"
+        },
+        "correctAnswer": "A",
+        "explanation": "Mizoram, Arunachal Pradesh and Goa in 1987.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q82",
+        "text": "Whose wage-goods / small-industry model guided the Seventh Plan?",
+        "options": {
+          "A": "Mahalanobis",
+          "B": "Prabhakaranand / Vakil",
+          "C": "Harrod–Domar",
+          "D": "John Miller"
+        },
+        "correctAnswer": "B",
+        "explanation": "Prabhakaranand and Vakil — wage-goods model with small industry focus.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q83",
+        "text": "In which year was EXIM Bank established?",
+        "options": {
+          "A": "1992",
+          "B": "1964",
+          "C": "1969",
+          "D": "1982"
+        },
+        "correctAnswer": "D",
+        "explanation": "EXIM Bank — 1982.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q84",
+        "text": "DWCRA — year and purpose?",
+        "options": {
+          "A": "1982 — Development of Women and Children in Rural Areas",
+          "B": "1999 — SJGSY",
+          "C": "2005 — NRHM",
+          "D": "1975 — ICDS"
+        },
+        "correctAnswer": "A",
+        "explanation": "DWCRA (1982) focused on rural women and children.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q85",
+        "text": "Why were Annual Plans used in 1990–92?",
+        "options": {
+          "A": "Green Revolution failure",
+          "B": "Political minority/instability and economic stress",
+          "C": "China war",
+          "D": "Success of Rolling Plan"
+        },
+        "correctAnswer": "B",
+        "explanation": "Weak coalition politics and economic strain led to Annual Plans.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q86",
+        "text": "What are the three pillars of the 1991 reforms?",
+        "options": {
+          "A": "Liberalisation–Privatisation–Globalisation",
+          "B": "MSP–FCI–NABARD",
+          "C": "ICDS–RRB–TRYSEM",
+          "D": "Planning–Nationalisation–Licensing"
+        },
+        "correctAnswer": "A",
+        "explanation": "LPG — Liberalisation, Privatisation, Globalisation.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q87",
+        "text": "Eighth Plan period and name?",
+        "options": {
+          "A": "2002–07 — Inclusive",
+          "B": "1985–90 — Employment",
+          "C": "1992–97 — Human resource development",
+          "D": "1997–2002 — Education"
+        },
+        "correctAnswer": "C",
+        "explanation": "Eighth Plan 1992–1997 — human resource / manpower development.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q88",
+        "text": "Whose export-led growth idea is linked with the Eighth Plan?",
+        "options": {
+          "A": "Lakdawala",
+          "B": "Raj Krishna",
+          "C": "Harrod–Domar",
+          "D": "John W. Miller"
+        },
+        "correctAnswer": "D",
+        "explanation": "John W. Miller — export-oriented growth (Rao–Manmohan context).",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q89",
+        "text": "In which year did SEBI get statutory status?",
+        "options": {
+          "A": "1999",
+          "B": "2003",
+          "C": "1988",
+          "D": "1992"
+        },
+        "correctAnswer": "D",
+        "explanation": "SEBI was set up in 1988; statutory status in 1992.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q90",
+        "text": "73rd and 74th Amendments deal with?",
+        "options": {
+          "A": "Right to education",
+          "B": "Panchayati Raj and municipalities",
+          "C": "GST",
+          "D": "NITI Aayog"
+        },
+        "correctAnswer": "B",
+        "explanation": "73rd — Panchayats; 74th — urban local bodies.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q91",
+        "text": "Key feature of the Employment Assurance Scheme (1993)?",
+        "options": {
+          "A": "SEBI licence",
+          "B": "Urban pensions",
+          "C": "100 days’ work for 2 persons per family in remote areas",
+          "D": "Women SHGs only"
+        },
+        "correctAnswer": "C",
+        "explanation": "Assured 100 days for two persons per family in remote areas.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q92",
+        "text": "Eighth Plan — target and achieved growth?",
+        "options": {
+          "A": "2.1% and 3.6%",
+          "B": "5.6% and 6.8%",
+          "C": "8.2% and 6.9%",
+          "D": "5.0% and 4.0%"
+        },
+        "correctAnswer": "B",
+        "explanation": "Target 5.6%; achieved about 6.8%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q93",
+        "text": "Ninth Plan period and theme?",
+        "options": {
+          "A": "1992–97 — Human resources",
+          "B": "1997–2002 — Growth with social justice and equality",
+          "C": "2002–07 — Sustainability",
+          "D": "2007–12 — Education"
+        },
+        "correctAnswer": "B",
+        "explanation": "Ninth Plan 1997–2002 — economic reforms with social justice and equality.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q94",
+        "text": "PMGSY launch date?",
+        "options": {
+          "A": "25 December 2000",
+          "B": "2 February 2006",
+          "C": "2 October 2009",
+          "D": "1 April 1999"
+        },
+        "correctAnswer": "A",
+        "explanation": "PMGSY began on 25 December 2000.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q95",
+        "text": "Correct sequence for NREGA / MGNREGS?",
+        "options": {
+          "A": "1999 Act → 2005 MGNREGS",
+          "B": "2002 Act → 2008 MGNREGS",
+          "C": "2009 Act → 2005 MGNREGS",
+          "D": "2005 Act → 2006 rollout → 2009 MGNREGS"
+        },
+        "correctAnswer": "D",
+        "explanation": "Act 2005; rollout 2006; renamed MGNREGS on 2 October 2009.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q96",
+        "text": "Tenth Plan identity and FRBM year?",
+        "options": {
+          "A": "Self-reliance · FRBM 1991",
+          "B": "Employment · FRBM 2015",
+          "C": "Sustainability · FRBM 1969",
+          "D": "Education Plan · FRBM 2003"
+        },
+        "correctAnswer": "D",
+        "explanation": "Tenth Plan is tagged as the Education Plan; FRBM Act 2003.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q97",
+        "text": "Main provision of the 86th Amendment (2002)?",
+        "options": {
+          "A": "Sikkim statehood",
+          "B": "GST",
+          "C": "Article 21A — free education for ages 6–14",
+          "D": "Panchayati Raj"
+        },
+        "correctAnswer": "C",
+        "explanation": "Article 21A made free and compulsory education a fundamental right.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q98",
+        "text": "Eleventh Plan theme and approximate achieved GDP growth?",
+        "options": {
+          "A": "Rehabilitation · 3.6%",
+          "B": "Employment generator · 5%",
+          "C": "Sustainable growth · 9%",
+          "D": "Faster and more inclusive growth · 7.9%"
+        },
+        "correctAnswer": "D",
+        "explanation": "2007–12 — faster & more inclusive growth; achieved about 7.9%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q99",
+        "text": "Twelfth Plan theme and period?",
+        "options": {
+          "A": "Materialistic · 1956–61",
+          "B": "Education · 2002–07",
+          "C": "Faster, more inclusive and sustainable growth · 2012–17",
+          "D": "Self-reliance · 1966–69"
+        },
+        "correctAnswer": "C",
+        "explanation": "Twelfth Plan 2012–2017 — Faster, More Inclusive and Sustainable Growth.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
+      },
+      {
+        "id": "topic-panchvarshik-english-q100",
+        "text": "Twelfth Plan — planned vs achieved GDP growth (approx.)?",
+        "options": {
+          "A": "9% and 9%",
+          "B": "8.2% and 6.9%",
+          "C": "5.6% and 6.8%",
+          "D": "2.1% and 3.6%"
+        },
+        "correctAnswer": "B",
+        "explanation": "Planned about 8.2%; achieved about 6.9%.",
+        "category": "Economics",
+        "topic": "Five Year Plans",
+        "sourceTag": "Don't know Academy — Five Year Plans Topic Pack"
       }
     ]
   }
