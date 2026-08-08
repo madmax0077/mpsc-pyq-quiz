@@ -81,6 +81,11 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.8,
   },
+  {
+    path: "/study-guides/mpsc-salary-pay-scale",
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
   { path: "/?mode=csat", changeFrequency: "weekly", priority: 0.9 },
   {
     path: "/study-guides/mpsc-csat-preparation",

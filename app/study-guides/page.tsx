@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     "Talathi Bharti 2026",
     "RTO AMVI exam",
     "MPSC AMVI",
+    "MPSC salary",
+    "MPSC pay scale",
   ],
   alternates: { canonical: "/study-guides" },
 };
@@ -159,6 +161,14 @@ const GUIDES = [
     blurb:
       "A practical 6-month plan: book list, daily routine, how to use PYQs, subject-wise weightage, mock-test strategy and last-month revision blueprint.",
     minutes: 15,
+  },
+  {
+    href: "/study-guides/mpsc-salary-pay-scale",
+    emoji: "💰",
+    title: "MPSC Salary & Pay Scale — एमपीएससी पगार",
+    blurb:
+      "English + मराठी: how pay works for PSI, STI, ASO, Tax Assistant, Clerk-Typist and Rajyaseva posts — pay levels, DA/HRA, career growth and a real comparison with private-sector pay. Language toggle on the page.",
+    minutes: 9,
   },
 ];
 

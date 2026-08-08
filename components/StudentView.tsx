@@ -348,6 +348,18 @@ export default function StudentView({
       }));
   }, [examQuizzes]);
 
+  /**
+   * A handful of other quizzes to suggest once the current one is finished,
+   * so a session doesn't dead-end at the score screen. Topic/category quizzes
+   * suggest other topics; exam papers suggest other exam papers. Keeps every
+   * completed quiz feeding the next one instead of ending the visit.
+   */
+  const relatedQuizzes = useMemo<DisplayQuiz[]>(() => {
+    if (!selectedQuiz) return [];
+    const pool = selectedQuiz.isCategory ? categoryQuizzes : regularQuizzes;
+    return pool.filter((q) => q.id !== selectedQuiz.id).slice(0, 4);
+  }, [selectedQuiz, categoryQuizzes, regularQuizzes]);
+
   const dailyQuiz = useMemo<DisplayQuiz | null>(() => {
     const pool: Question[] = [];
     for (const quiz of examQuizzes) {
@@ -1425,6 +1437,26 @@ export default function StudentView({
               </div>
             </div>
           )}
+        </div>
+      )}
+
+      {/* Related quizzes — after score banner so layout stays: score → next quiz → questions */}
+      {((submitted && !isCategoryQuiz) || (isCategoryQuiz && isPageSubmitted)) && relatedQuizzes.length > 0 && (
+        <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 dark:border-slate-700 dark:bg-slate-800">
+          <p className="text-sm font-bold text-slate-900 dark:text-slate-100">
+            {selectedQuiz.isCategory ? "Practice another topic" : "Try another exam paper"}
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {relatedQuizzes.map((q) => (
+              <button
+                key={q.id}
+                onClick={() => selectQuiz(q)}
+                className="rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1.5 text-xs font-medium text-indigo-700 transition-colors hover:bg-indigo-100 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300 dark:hover:bg-indigo-900/50"
+              >
+                {q.title}
+              </button>
+            ))}
+          </div>
         </div>
       )}
 
