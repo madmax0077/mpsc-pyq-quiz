@@ -637,7 +637,7 @@
         "id": "gbm25-43",
         "text": "Match the following (Committee – Date):\nList I → List II\n(a) Vasantrao Naik Committee - (i) 1977\n(b) Ashok Mehta Committee - (ii) 26 June 1960\n(c) Bongirwar Committee - (iii) 18 June 1984\n(d) P.B. Patil Committee - (iv) 2 April 1970",
         "options": {
-          "A": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)",
+          "A": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)",
           "B": "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)",
           "C": "(a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)",
           "D": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)"
@@ -740,14 +740,14 @@
       },
       {
         "id": "gbm25-50",
-        "text": "Select the correct statements about the Councils of Ministers of the NCT of Delhi and Puducherry (appointment, tenure and responsibility to the legislature). [Statements involve subtle constitutional distinctions.]",
+        "text": "Select the correct statements about the Councils of Ministers of the NCT of Delhi and Puducherry (appointment, tenure and responsibility to the legislature).\n(a) The Chief Minister is appointed by the President and the other Ministers are appointed by the President on the advice of the Chief Minister.\n(b) The Ministers hold office during the pleasure of the President.\n(c) The Council of Ministers is collectively responsible to the Legislative Assembly of the Union Territory.",
         "options": {
           "A": "Only (a), (b)",
           "B": "Only (b), (c)",
           "C": "Only (a), (c)",
           "D": "(a), (b) and (c)"
         },
-        "explanation": "Straight to the answer — option D. Per the official key, the three statements on the appointment, tenure and legislative responsibility of the Delhi and Puducherry Councils of Ministers are all correct.",
+        "explanation": "Straight to the answer — option D. Under Art. 239AA (Delhi) and the UT Act framework (Puducherry), the CM and other Ministers are appointed by the President (others on the CM's advice), they hold office during the pleasure of the President, and the Council is collectively responsible to the UT Legislative Assembly — so (a), (b) and (c) are all correct.",
         "category": "Indian Polity",
         "correctAnswer": "D",
         "number": 50,
@@ -2144,7 +2144,7 @@
         "id": "gbm25-mr-43",
         "text": "योग्य जोड्या जुळवा:\n'अ' गट → 'ब' गट\n(a) वसंतराव नाईक समिती - (i) 1977\n(b) अशोक मेहता समिती - (ii) 26 जून 1960\n(c) बोंगीरवार समिती - (iii) 18 जून 1984\n(d) पी.बी. पाटील समिती - (iv) 2 एप्रिल 1970",
         "options": {
-          "A": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)",
+          "A": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)",
           "B": "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)",
           "C": "(a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)",
           "D": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)"
@@ -2247,7 +2247,7 @@
       },
       {
         "id": "gbm25-mr-50",
-        "text": "राष्ट्रीय राजधानी प्रदेश व पाँडिचेरी यांच्या मंत्रिमंडळांविषयी (नियुक्ती, पदावधी व कायदेमंडळाप्रती जबाबदारी) योग्य कथने ओळखा.",
+        "text": "राष्ट्रीय राजधानी प्रदेश व पाँडिचेरी यांच्या मंत्रिमंडळांविषयी (नियुक्ती, पदावधी व कायदेमंडळाप्रती जबाबदारी) योग्य कथने ओळखा.\n(a) मुख्यमंत्र्यांची नियुक्ती राष्ट्रपतींकडून केली जाते आणि इतर मंत्र्यांची नियुक्ती मुख्यमंत्र्यांच्या सल्ल्याने राष्ट्रपतींकडून केली जाते.\n(b) मंत्री राष्ट्रपतींच्या मर्जीनुसार पदावर राहतात.\n(c) मंत्रिमंडळ संबंधित केंद्रशासित प्रदेशाच्या कायदेमंडळाप्रती सामूहिकरीत्या जबाबदार असते.",
         "options": {
           "A": "फक्त (a), (b)",
           "B": "फक्त (b), (c)",
@@ -2255,7 +2255,7 @@
           "D": "(a), (b) आणि (c)"
         },
         "correctAnswer": "D",
-        "explanation": "थेट उत्तर — पर्याय D. अधिकृत उत्तरतालिकेनुसार दिल्ली व पुद्दुचेरी मंत्रिमंडळांविषयीची तिन्ही विधाने बरोबर.",
+        "explanation": "थेट उत्तर — पर्याय D. कलम 239AA (दिल्ली) व केंद्रशासित प्रदेश कायद्याच्या चौकटीनुसार (पुद्दुचेरी), मुख्यमंत्री व इतर मंत्र्यांची नियुक्ती राष्ट्रपतींकडून होते (इतर मंत्री मुख्यमंत्र्यांच्या सल्ल्याने), ते राष्ट्रपतींच्या मर्जीनुसार पदावर राहतात आणि मंत्रिमंडळ कायदेमंडळाप्रती सामूहिकरीत्या जबाबदार असते — म्हणून (a), (b) व (c) तिन्ही बरोबर.",
         "category": "Indian Polity",
         "number": 50,
         "topic": "State Government"
