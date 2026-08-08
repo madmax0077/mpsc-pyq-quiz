@@ -60,7 +60,7 @@ const NOTES_INDEX: NoteEntry[] = [
   {
     slug: "newspapers",
     emoji: "🗞️",
-    title: "वर्तमानपत्र — संस्थापक व संपादक",
+    title: "वृत्तपत्र — संस्थापक व संपादक",
     subtitle: "Newspapers — Founders, Editors & 100 MCQs",
     blurb:
       "70+ Indian newspapers and 50+ founders/editors organised in 6 historical groups (British / early period, Bengal Renaissance, Maharashtra press, Nationalist Congress era, Revolutionary press, Gandhi era), followed by 100 read-only MCQs with answers.",

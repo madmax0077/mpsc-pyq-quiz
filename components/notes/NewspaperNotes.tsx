@@ -21,7 +21,7 @@ export default function NewspaperNotes() {
           Don&apos;t know Academy · Notes
         </p>
         <h2 className="mt-3 text-3xl font-extrabold leading-tight sm:text-4xl">
-          वर्तमानपत्र — संस्थापक व संपादक
+          वृत्तपत्र — संस्थापक व संपादक
         </h2>
         <p className="mt-2 text-base font-medium text-orange-50 sm:text-lg">
           संदर्भ तक्ता आणि <strong>100 बहुपर्यायी प्रश्न</strong> (उत्तरांसह)

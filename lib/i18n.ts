@@ -278,7 +278,7 @@ const UI = {
   notesTitle: { en: "📝 Notes", mr: "📝 नोट्स" },
   readOnly: { en: "Read-only", mr: "केवळ वाचनासाठी" },
   notesDesc: {
-    en: "Curated revision notes by Don't know Academy. First in the series: वर्तमानपत्र — संस्थापक व संपादक (70+ newspapers, 50+ editors, 100 MCQs with answers).",
+    en: "Curated revision notes by Don't know Academy. First in the series: वृत्तपत्र — संस्थापक व संपादक (70+ newspapers, 50+ editors, 100 MCQs with answers).",
     mr: "Don't know Academy यांच्या निवडक पुनरावृत्ती नोट्स. मालिकेतील पहिला भाग: वृत्तपत्र — संस्थापक व संपादक (७०+ वृत्तपत्रे, ५०+ संपादक, १०० MCQ उत्तरांसह).",
   },
   openNotes: { en: "Open Notes", mr: "नोट्स उघडा" },
@@ -291,7 +291,7 @@ const UI = {
   topicPractice: { en: "Topic-wise practice", mr: "टॉपिकनुसार सराव" },
   speedTest: { en: "Combined speed test", mr: "एकत्रित स्पीड टेस्ट" },
   openCsat: { en: "Open CSAT training", mr: "CSAT प्रशिक्षण उघडा" },
-  topicsLabel: { en: "Topics", mr: "टॉपिक" },
+  topicsLabel: { en: "Topics", mr: "विषय" },
   riversTitle: { en: "Rivers of Maharashtra", mr: "महाराष्ट्राच्या नद्या" },
   districtMap: { en: "District-wise 2D map", mr: "जिल्हानिहाय २D नकाशा" },
   mpscPyqs: { en: "MPSC PYQs", mr: "MPSC मागील प्रश्न" },
@@ -350,7 +350,7 @@ const UI = {
     en: "See today's top 5 scorers and check your rank.",
     mr: "आजचे अव्वल ५ विद्यार्थी पहा आणि आपली क्रमवारी तपासा.",
   },
-  live: { en: "● LIVE", mr: "● लाइव्ह" },
+  live: { en: "● LIVE", mr: "● थेट" },
   csatHomeIntro: {
     en: "A complete CSAT workshop for MPSC and UPSC — topic lessons, practice sets and timed speed tests covering what CSAT (Prelims Paper II) expects for the qualifying paper.",
     mr: "MPSC आणि UPSC साठी संपूर्ण CSAT कार्यशाळा — विषयधडे, सराव संच आणि वेळेनुसार स्पीड टेस्ट. यात CSAT (प्रारंभिक पेपर II) पात्रता पेपरसाठी आवश्यक कौशल्ये समाविष्ट आहेत.",
