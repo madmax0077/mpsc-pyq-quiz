@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 import DisplayAd from "@/components/DisplayAd";
 import StudyGuideCallout from "@/components/StudyGuideCallout";
@@ -36,7 +36,7 @@ const FAQ: Array<{ q: string; a: string }> = [
     a: "The mains usually has about 150 questions for 300 marks in 90 minutes. Section A covers common Mechanical and Automobile topics. Candidates choose Section B (Mechanical) or Section C (Automobile). मुख्य परीक्षेत साधारणतः १५० प्रश्न, ३०० गुण आणि ९० मिनिटे असतात. विभाग अ सर्वांसाठी समान असतो. विभाग ब (Mechanical) किंवा विभाग क (Automobile) निवडावा लागतो.",
   },
   {
-    q: "Is there negative marking? / नकारात्मक गुणदान आहे का?",
+    q: "Is there negative marking? / नकारात्मक गुणांकन आहे का?",
     a: "Yes. Objective papers usually follow MPSC’s one-fourth (0.25) penalty for each wrong answer. होय. वस्तुनिष्ठ पेपर्समध्ये साधारणतः प्रत्येक चुकीच्या उत्तरासाठी एक चतुर्थांश (०.२५) गुण कपात होते.",
   },
   {
@@ -268,8 +268,8 @@ function MarathiBody() {
         <strong>एएमव्हीआय (AMVI)</strong>.
       </p>
       <p>
-        <strong>सहाय्यक मोटार वाहन निरीक्षक</strong> हे अभियांत्रिकी पदवीधरांसाठी सोपे सांत्वनपद
-        नाही. ही अशी दुर्मिळ गट-क तांत्रिक जागा आहे जिथे Strength of Materials, Thermal Engineering,
+        <strong>सहाय्यक मोटार वाहन निरीक्षक</strong> हे अभियांत्रिकी पदवीधरांसाठी फक्त समाधान
+        देणारे सोपे पद नाही. ही अशी दुर्मिळ गट-क तांत्रिक जागा आहे जिथे Strength of Materials, Thermal Engineering,
         Theory of Machines, automobile systems आणि industrial electronics हे विषय निवडीसाठी खरे
         उपयुक्त ठरतात. जाहिराती “RTO जॉब” असे सांगतात. परीक्षा मात्र वेळेच्या दबावाखाली अभियांत्रिकी
         संकल्पना आणि Motor Vehicles नियम लागू करता येतात का, हे तपासते.
@@ -293,7 +293,7 @@ function MarathiBody() {
 
       <h3>१. उमेदवार सहसा काय शोधतात</h3>
       <ul>
-        <li>जाहीरनामा, जागा आणि अर्ज तारखा</li>
+        <li>जाहिरात, जागा आणि अर्ज तारखा</li>
         <li>पूर्व आणि मुख्य परीक्षेची पद्धत</li>
         <li>Mechanical आणि Automobile अभ्यासक्रम PDF</li>
         <li>मागील वर्षांचे पेपर्स</li>
@@ -324,7 +324,7 @@ function MarathiBody() {
           ],
           [
             "एएमव्हीआय मुख्य परीक्षा",
-            "खोल Mechanical आणि Automobile बहुपर्यायी प्रश्न, नकारात्मक गुणदान",
+            "खोल Mechanical आणि Automobile बहुपर्यायी प्रश्न, नकारात्मक गुणांकन",
             "कच्च्या संकल्पना आणि बेजबाबदार अंदाज",
           ],
         ]}
@@ -401,7 +401,7 @@ function MarathiBody() {
         <li>आठवड्यातून एकदा पूर्ण १५० प्रश्नांची सिम्युलेशन चाचणी</li>
       </ul>
       <p>
-        <Link href="/study-guides/mpsc-negative-marking">नकारात्मक गुणदान</Link> मार्गदर्शक वाचा आणि
+        <Link href="/study-guides/mpsc-negative-marking">नकारात्मक गुणांकन</Link> मार्गदर्शक वाचा आणि
         चुकांची वही नियमित ठेवा.
       </p>
 

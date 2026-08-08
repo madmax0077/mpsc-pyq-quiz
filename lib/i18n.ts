@@ -22,8 +22,8 @@ export const CATEGORY_LABELS: Record<Category, { en: string; mr: string }> = {
 
 /** Common PYQ / catalog topic display names (English storage key → labels). */
 export const TOPIC_LABELS: Record<string, { en: string; mr: string }> = {
-  "Acid, Base and Salt": { en: "Acid, Base and Salt", mr: "आम्ल, आम्लारी आणि क्षार" },
-  "Acids, Bases & Salts": { en: "Acids, Bases & Salts", mr: "आम्ल, आम्लारी आणि क्षार" },
+  "Acid, Base and Salt": { en: "Acid, Base and Salt", mr: "आम्ल, आम्लधर्मी आणि क्षार" },
+  "Acids, Bases & Salts": { en: "Acids, Bases & Salts", mr: "आम्ल, आम्लधर्मी आणि क्षार" },
   "Agriculture & Soils": { en: "Agriculture & Soils", mr: "कृषी आणि मृदा" },
   "Agriculture Economy": { en: "Agriculture Economy", mr: "कृषी अर्थव्यवस्था" },
   "Algebra & Equations": { en: "Algebra & Equations", mr: "बीजगणित आणि समीकरणे" },
@@ -66,7 +66,7 @@ export const TOPIC_LABELS: Record<string, { en: string; mr: string }> = {
   Electricity: { en: "Electricity", mr: "विद्युत" },
   "Electricity & Magnetism": { en: "Electricity & Magnetism", mr: "विद्युत आणि चुंबकत्व" },
   "Electricity Numerical Worksheet": { en: "Electricity Numerical Worksheet", mr: "विद्युत संख्यात्मक सराव" },
-  "Environmental Laws & Conventions": { en: "Environmental Laws & Conventions", mr: "पर्यावरण कायदे आणि अधिवेशने" },
+  "Environmental Laws & Conventions": { en: "Environmental Laws & Conventions", mr: "पर्यावरण कायदे आणि आंतरराष्ट्रीय करार" },
   "Fundamental Rights": { en: "Fundamental Rights", mr: "मूलभूत अधिकार" },
   "GK 2025-26 Marathon": { en: "GK 2025-26 Marathon", mr: "GK २०२५-२६ मॅरेथॉन" },
   "Gandhian Mass Movements": { en: "Gandhian Mass Movements", mr: "गांधीवादी जनआंदोलने" },
@@ -207,15 +207,15 @@ export const CSAT_TOPIC_LABELS: Record<string, { en: string; mr: string }> = {
 };
 
 const UI = {
-  liveStudyArena: { en: "Live Study Arena", mr: "Live Study Arena" },
-  heroTitle: { en: "LET THE BRAIN BATTLE BEGIN", mr: "LET THE BRAIN BATTLE BEGIN" },
+  liveStudyArena: { en: "Live Study Arena", mr: "थेट अभ्यास कक्ष" },
+  heroTitle: { en: "LET THE BRAIN BATTLE BEGIN", mr: "सराव सुरु करा, प्रगती वाढवा" },
   heroSubtitle: {
     en: "Pick a mode, solve focused sets, and watch your preparation turn into daily momentum. PYQs, topic tests, notes and leaderboard now feel like one clean study cockpit.",
-    mr: "Pick a mode, solve focused sets, and watch your preparation turn into daily momentum. PYQs, topic tests, notes and leaderboard now feel like one clean study cockpit.",
+    mr: "मोड निवडा, लक्ष केंद्रित संच सोडवा आणि रोजच्या सरावातून गती वाढवा. मागील प्रश्न, टॉपिक चाचण्या, नोट्स आणि लीडरबोर्ड — एकाच स्वच्छ अभ्यास मंचावर.",
   },
-  chipTopicSets: { en: "5-question topic sets", mr: "5-question topic sets" },
-  chipLang: { en: "Marathi + English", mr: "Marathi + English" },
-  chipRank: { en: "Daily rank push", mr: "Daily rank push" },
+  chipTopicSets: { en: "5-question topic sets", mr: "५-प्रश्नांचे विषय संच" },
+  chipLang: { en: "Marathi + English", mr: "मराठी + इंग्रजी" },
+  chipRank: { en: "Daily rank push", mr: "दैनिक क्रमवारी" },
   notes: { en: "Notes", mr: "नोट्स" },
   leaderboard: { en: "Leaderboard", mr: "लीडरबोर्ड" },
   map: { en: "Map", mr: "नकाशा" },
@@ -237,7 +237,7 @@ const UI = {
     en: "Full-length 100-question mock in real exam conditions — choose Rajyaseva, Combine Group B or Group C. Real subject weightage, a countdown timer and 1/4 negative marking. Current Affairs comes from the GK Marathon set.",
     mr: "खऱ्या परीक्षेसारखी पूर्ण १०० प्रश्नांची मॉक टेस्ट — राज्यसेवा, एकत्रित गट B किंवा गट C निवडा. खरे विषयवार वजन, काउंटडाउन टाइमर आणि १/४ नकारात्मक गुणांकन. चालू घडामोडी GK मॅरेथॉन संचातून घेतल्या जातात.",
   },
-  mockStart: { en: "Start a mock test", mr: "मॉक टेस्ट सुरू करा" },
+  mockStart: { en: "Start a mock test", mr: "मॉक टेस्ट सुरु करा" },
   negativeMarking: { en: "Negative marking", mr: "नकारात्मक गुणांकन" },
   randomised: { en: "Randomised each attempt", mr: "प्रत्येक प्रयत्नात वेगळे प्रश्न" },
   subjectWise: { en: "📚 Subject Wise", mr: "📚 विषयनिहाय" },
@@ -245,7 +245,7 @@ const UI = {
     en: "Practice by full exam papers or subjects like History, Geography, Polity, Science and more.",
     mr: "पूर्ण प्रश्नपत्रिकांचा किंवा इतिहास, भूगोल, राज्यव्यवस्था, विज्ञान अशा विषयांचा सराव करा.",
   },
-  startPracticing: { en: "Start Practicing", mr: "सराव सुरू करा" },
+  startPracticing: { en: "Start Practicing", mr: "सराव सुरु करा" },
   topicWisePyq: { en: "🎯 Topic Wise (PYQ)", mr: "🎯 टॉपिकनुसार (मागील प्रश्न)" },
   topicWiseDesc: {
     en: "Previous-year questions segregated into granular topics. Pick a subject, then drill into a specific topic.",
@@ -268,7 +268,7 @@ const UI = {
   verified: { en: "264 verified", mr: "२६४ पडताळलेले" },
   fiveQSets: { en: "5-Q sets", mr: "५-प्रश्न संच" },
   examReady: { en: "Exam-ready", mr: "परीक्षेसाठी तयार" },
-  startMarathon: { en: "Start the marathon", mr: "मॅरेथॉन सुरू करा" },
+  startMarathon: { en: "Start the marathon", mr: "मॅरेथॉन सुरु करा" },
   rtoAmvi: { en: "🚗 RTO AMVI", mr: "🚗 आरटीओ AMVI" },
   rtoDesc: {
     en: "Assistant Motor Vehicle Inspector exam preparation. Section: Automobile Engineering — practice past paper MCQs covering IC engines, fuels, gears, brakes, fluid mechanics, vehicle layout and more.",
@@ -279,7 +279,7 @@ const UI = {
   readOnly: { en: "Read-only", mr: "केवळ वाचनासाठी" },
   notesDesc: {
     en: "Curated revision notes by Don't know Academy. First in the series: वर्तमानपत्र — संस्थापक व संपादक (70+ newspapers, 50+ editors, 100 MCQs with answers).",
-    mr: "Don't know Academy यांच्या निवडक पुनरावृत्ती नोट्स. मालिकेतील पहिला भाग: वर्तमानपत्र — संस्थापक व संपादक (७०+ वृत्तपत्रे, ५०+ संपादक, १०० MCQ उत्तरे).",
+    mr: "Don't know Academy यांच्या निवडक पुनरावृत्ती नोट्स. मालिकेतील पहिला भाग: वृत्तपत्र — संस्थापक व संपादक (७०+ वृत्तपत्रे, ५०+ संपादक, १०० MCQ उत्तरांसह).",
   },
   openNotes: { en: "Open Notes", mr: "नोट्स उघडा" },
   csatTitle: { en: "CSAT & Aptitude", mr: "CSAT आणि बुद्धिमत्ता चाचणी" },
@@ -305,11 +305,11 @@ const UI = {
   autoPastPapers: { en: "Automobile Engineering — Past Papers", mr: "ऑटोमोबाइल अभियांत्रिकी — मागील प्रश्नपत्रिका" },
   topicWisePractice: { en: "Topic Wise Practice", mr: "टॉपिकनुसार सराव" },
   topicTestsHeading: { en: "Topic Tests", mr: "टॉपिक चाचण्या" },
-  startPractice: { en: "Start Practice", mr: "सराव सुरू करा" },
+  startPractice: { en: "Start Practice", mr: "सराव सुरु करा" },
   reviewAll: { en: "Review All", mr: "सर्व पुन्हा पहा" },
   myStats: { en: "My Stats", mr: "माझी प्रगती" },
   submitQuiz: { en: "Submit Quiz", mr: "क्विझ जमा करा" },
-  answered: { en: "answered", mr: "उत्तरे दिली" },
+  answered: { en: "answered", mr: "उत्तरे दिले" },
   backToQuizzes: { en: "Back to Quizzes", mr: "प्रश्नसंचकडे परत जा" },
   submitSet: { en: "Submit Set", mr: "संच जमा करा" },
   submitReport: { en: "Submit Report", mr: "तक्रार जमा करा" },
@@ -335,7 +335,7 @@ const UI = {
     en: "Memorize all 35 districts — population, sex ratio, child sex ratio (0–6), literacy, density & decadal growth. 4 game modes: Top-10/Bottom-10 reveal, Rank Race, MCQ Quiz and Flashcards.",
     mr: "सर्व ३५ जिल्हे लक्षात ठेवा — लोकसंख्या, लिंगगुणोत्तर, बाल लिंगगुणोत्तर (०–६), साक्षरता, घनता आणि दशकीय वाढ. ४ गेम मोड: टॉप/बॉटम १०, रँक रेस, MCQ क्विझ आणि फ्लॅशकार्ड.",
   },
-  playGame: { en: "Play the game", mr: "खेळ सुरू करा" },
+  playGame: { en: "Play the game", mr: "खेळ सुरु करा" },
   logoTip: {
     en: "💡 Click the logo at any time to return to this screen",
     mr: "💡 कधीही लोगोवर क्लिक करून या पडद्यावर परत या",

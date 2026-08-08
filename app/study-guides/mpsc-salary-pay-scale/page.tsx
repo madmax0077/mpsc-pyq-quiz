@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 import DisplayAd from "@/components/DisplayAd";
 import StudyGuideCallout from "@/components/StudyGuideCallout";
@@ -40,7 +40,7 @@ const FAQ: Array<{ q: string; a: string }> = [
   },
   {
     q: "Is the in-hand MPSC salary lower than the advertised pay scale? / हातात मिळणारा पगार जाहिरातीतील आकड्यापेक्षा कमी असतो का?",
-    a: "Yes. The advertised figure is usually the basic pay band. In-hand (net) pay is basic pay + Dearness Allowance (DA) + House Rent Allowance (HRA), minus NPS contribution and professional tax. Gross can be higher than basic once DA and HRA are added; net is lower after deductions. होय. जाहिरातीतील आकडा बहुतेक वेळा मूळ वेतनाची श्रेणी असतो. हातात मिळणारा पगार = मूळ वेतन + महागाई भत्ता + घरभाडे भत्ता − राष्ट्रीय पेन्शन प्रणाली योगदान आणि व्यवसाय कर. भत्ते मिळाल्यावर एकूण (gross) पगार वाढतो; कपात झाल्यावर निव्वळ (net) पगार कमी असतो.",
+    a: "Yes. The advertised figure is usually the basic pay band. In-hand (net) pay is basic pay + Dearness Allowance (DA) + House Rent Allowance (HRA), minus NPS contribution and professional tax. Gross can be higher than basic once DA and HRA are added; net is lower after deductions. होय. जाहिरातीतील आकडा बहुतेक वेळा मूळ वेतनाची श्रेणी असतो. हातात मिळणारा पगार = मूळ वेतन + महागाई भत्ता + घरभाडे भत्ता − राष्ट्रीय पेन्शन प्रणाली योगदान आणि व्यावसायिक कर. भत्ते मिळाल्यावर एकूण (gross) पगार वाढतो; कपात झाल्यावर निव्वळ (net) पगार कमी असतो.",
   },
   {
     q: "Does MPSC salary increase automatically every year? / एमपीएससी पगार दरवर्षी आपोआप वाढतो का?",
@@ -311,7 +311,7 @@ function MarathiBody() {
           लहान आणि निश्चित किंवा श्रेणीबद्ध असतो.
         </li>
         <li>
-          <strong>− कपात</strong> — राष्ट्रीय पेन्शन प्रणाली (NPS) योगदान आणि व्यवसाय कर बँक
+          <strong>− कपात</strong> — राष्ट्रीय पेन्शन प्रणाली (NPS) योगदान आणि व्यावसायिक कर बँक
           खात्यात पैसे येण्यापूर्वी वजा होतात. म्हणून हातात मिळणारा (निव्वळ) पगार नेहमी एकूण
           पगारापेक्षा कमी असतो.
         </li>
@@ -391,14 +391,15 @@ function MarathiBody() {
           लागू होतात. त्यामुळे एकूण पगार हळूहळू मूळ वेतनापेक्षा पुढे जातो.
         </li>
         <li>
-          <strong>पदोन्नतीमुळे वेतनस्तर बदलणे.</strong> सुनिश्चित करिअर प्रगती योजना आणि विभागीय
-          पदोन्नती तुम्हाला पूर्णपणे उच्च वेतनस्तरावर नेतात — करिअरमधील सर्वात मोठी एकरकमी वाढ
-          सहसा हीच असते.
+          <strong>पदोन्नतीमुळे वेतनस्तर बदलणे.</strong> सुनिश्चित करिअर प्रगती (ACP) योजना आणि
+          विभागीय पदोन्नती तुम्हाला पूर्णपणे उच्च वेतनस्तरावर नेतात — करिअरमधील सर्वात मोठी एकरकमी
+          वाढ सहसा हीच असते.
         </li>
         <li>
-          <strong>पदातील प्रगती.</strong> पोलीस उपनिरीक्षक निरीक्षक आणि पुढे जाऊ शकतो; राज्य कर
-          निरीक्षक / सहाय्यक विभाग अधिकारी उप/सहाय्यक आयुक्त श्रेणीत जाऊ शकतात; गट-क पदांनाही
-          स्वतःची शिडी असते. चांगल्या कामगिरीसाठी राज्यसेवेची प्रगती मर्यादा सर्वाधिक उंच असते.
+          <strong>पदातील प्रगती.</strong> पोलीस उपनिरीक्षक → पोलीस निरीक्षक → आणि पुढील श्रेणी;
+          राज्य कर निरीक्षक / सहाय्यक विभाग अधिकारी उप/सहाय्यक आयुक्त श्रेणीत जाऊ शकतात; गट-क
+          पदांनाही स्वतःचा पदोन्नती मार्ग असतो. चांगल्या कामगिरीसाठी राज्यसेवेची प्रगती मर्यादा
+          सर्वाधिक उंच असते.
         </li>
       </ul>
 

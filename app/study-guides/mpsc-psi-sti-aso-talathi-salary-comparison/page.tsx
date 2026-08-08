@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 import DisplayAd from "@/components/DisplayAd";
 import StudyGuideCallout from "@/components/StudyGuideCallout";
@@ -235,7 +235,7 @@ function MarathiBody() {
       <h3>२. गणित (S-14 + DA ६०%)</h3>
       <p>
         मूळ <strong>₹३८,६००</strong>. DA ६०% = <strong>₹२३,१६०</strong>. HRA आधी उपयोग{" "}
-        <strong>₹६१,७६०</strong>. नंतर HRA/TA मिळवा आणि NPS व व्यवसाय कर वजा करा. म्हणून नव्या
+        <strong>₹६१,७६०</strong>. नंतर HRA/TA मिळवा आणि NPS व व्यावसायिक कर वजा करा. म्हणून नव्या
         गट-ब अधिकाऱ्यांसाठी <strong>₹५५,०००–₹७०,००० हातात</strong> ही श्रेणी वास्तववादी ठरते —
         फक्त मूळ वेतन किंवा मॅट्रिक्सच्या शेवटच्या ₹१,२२,८०० कक्षेइतके नाही.
       </p>

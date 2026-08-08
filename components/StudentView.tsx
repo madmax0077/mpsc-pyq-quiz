@@ -777,7 +777,7 @@ export default function StudentView({
                     ? "प्रकरणनिहाय सराव संच — विषय निवडा आणि चाचण्या पहा"
                     : "Curated chapter-wise practice sets — select a subject to browse tests")
                   : (language === "marathi"
-                    ? "मागील वर्षांचे प्रश्न टॉपिकनुसार विभागलेले आहेत — विषय निवडून सुरू करा"
+                    ? "मागील वर्षांचे प्रश्न टॉपिकनुसार विभागलेले आहेत — विषय निवडून सुरु करा"
                     : "Previous-year questions grouped by topic — select a subject to begin")}
               </p>
             </div>
@@ -935,7 +935,7 @@ export default function StudentView({
               <div className="flex flex-wrap items-start gap-2 rounded-lg border border-indigo-200 bg-indigo-50 px-4 py-2.5 dark:border-indigo-800 dark:bg-indigo-950/40">
                 <span className="text-base">🌐</span>
                 <p className="min-w-0 flex-1 text-xs sm:text-sm text-indigo-700 dark:text-indigo-300">
-                  मराठी मध्ये तयारी करायची आहे? वरील dropdown मधून <span className="font-bold">मराठी</span> भाषा निवडा.
+                  मराठीत तयारी करायची आहे? वरील dropdown मधून <span className="font-bold">मराठी</span> भाषा निवडा.
                 </p>
                 <button
                   onClick={() => { setShowLangTip(false); localStorage.setItem("mcq_lang_tip_dismissed", "1"); }}

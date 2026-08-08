@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 import DisplayAd from "@/components/DisplayAd";
 import StudyGuideCallout from "@/components/StudyGuideCallout";
@@ -257,7 +257,7 @@ function MarathiBody() {
         headers={["पद / वर्ष", "Open General", "Open Female", "अर्थ"]}
         rows={[
           ["ASO पूर्व २०२४", "५३.७५ / १००", "४९.०० / १००", "त्या वर्षी Open ASO साठी mid-५०s पुरेसे"],
-          ["STI पूर्व २०२४", "४६.५० / १००", "४१.०० / १००", "ASO पेक्षा कमी; नकारात्मक गुणदानानंतरही सोपा नाही"],
+          ["STI पूर्व २०२४", "४६.५० / १००", "४१.०० / १००", "ASO पेक्षा कमी; नकारात्मक गुणांकनानंतरही सोपा नाही"],
           ["PSI पूर्व २०२४", "४८.२५ / १००", "४१.७५ / १००", "STI आणि ASO च्या मध्ये"],
           [
             "गट-ब पूर्व २०२५ (Reported Open)",
@@ -317,7 +317,7 @@ function MarathiBody() {
         </li>
         <li>
           फक्त स्कोअर नव्हे, <strong>अचूकता</strong> (बरोबर ÷ प्रयत्न) पाहा —{" "}
-          <Link href="/study-guides/mpsc-negative-marking">नकारात्मक गुणदान</Link> मार्गदर्शक
+          <Link href="/study-guides/mpsc-negative-marking">नकारात्मक गुणांकन</Link> मार्गदर्शक
           वाचा.
         </li>
       </ul>
