@@ -322,19 +322,24 @@ export default function RootLayout({
         />
         {/*
           Ezoic connection + analytics scripts.
-          Always present so Ezoic can DETECT the integration and connect the
-          site. These serve NO ads on their own — Ezoic only fills placeholders
-          we explicitly show (none are configured yet), so this is safe to run
-          alongside AdSense during setup with no double-serving.
+          Only loaded when NEXT_PUBLIC_AD_PROVIDER=ezoic is actually set — see
+          lib/adsConfig.ts. Loading these unconditionally cost every visitor
+          two extra third-party scripts for zero revenue while Ezoic sits
+          dormant (all EZOIC_PLACEHOLDERS are 0). Re-enable by flipping the
+          env var once placeholders are configured in the Ezoic dashboard.
         */}
-        <script async src="//www.ezojs.com/ezoic/sa.min.js" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "window.ezstandalone=window.ezstandalone||{};ezstandalone.cmd=ezstandalone.cmd||[];",
-          }}
-        />
-        <script async src="//ezoicanalytics.com/analytics.js" />
+        {IS_EZOIC && (
+          <>
+            <script async src="//www.ezojs.com/ezoic/sa.min.js" />
+            <script
+              dangerouslySetInnerHTML={{
+                __html:
+                  "window.ezstandalone=window.ezstandalone||{};ezstandalone.cmd=ezstandalone.cmd||[];",
+              }}
+            />
+            <script async src="//ezoicanalytics.com/analytics.js" />
+          </>
+        )}
 
         {/*
           Google AdSense loader — Auto Ads. Stays ON while provider is
