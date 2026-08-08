@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     "MPSC AMVI",
     "MPSC salary",
     "MPSC pay scale",
+    "MPSC cut off",
+    "PSI STI ASO salary comparison",
+    "government job vs private job",
+    "MPSC promotion",
+    "MPSC document verification",
   ],
   alternates: { canonical: "/study-guides" },
 };
@@ -169,6 +174,46 @@ const GUIDES = [
     blurb:
       "English + मराठी: how pay works for PSI, STI, ASO, Tax Assistant, Clerk-Typist and Rajyaseva posts — pay levels, DA/HRA, career growth and a real comparison with private-sector pay. Language toggle on the page.",
     minutes: 9,
+  },
+  {
+    href: "/study-guides/mpsc-cut-off-trends",
+    emoji: "📈",
+    title: "MPSC Cut Off Trends — कट ऑफ",
+    blurb:
+      "English + मराठी: real Group B prelims cut-offs for ASO/STI/PSI (2022–2025 cycles), how to read Group C mains scales, and practical target scores. Language toggle on the page.",
+    minutes: 11,
+  },
+  {
+    href: "/study-guides/mpsc-psi-sti-aso-talathi-salary-comparison",
+    emoji: "⚖️",
+    title: "PSI · STI · ASO · Talathi Salary Comparison",
+    blurb:
+      "English + मराठी: side-by-side pay using S-14 ₹38,600 and Talathi Level-4 ₹25,500 anchors, with DA ~60% (Jan 2026) in-hand bands. Language toggle on the page.",
+    minutes: 10,
+  },
+  {
+    href: "/study-guides/government-job-vs-private-job",
+    emoji: "🏢",
+    title: "Government Job vs Private Job",
+    blurb:
+      "English + मराठी: year-one cash vs 25-year security — MPSC Group B/C packages compared with metro private bands, DA growth and NPS. Language toggle on the page.",
+    minutes: 9,
+  },
+  {
+    href: "/study-guides/mpsc-promotion-path-after-selection",
+    emoji: "🪜",
+    title: "Promotion Path After Selection — पदोन्नती",
+    blurb:
+      "English + मराठी: PSI/STI/ASO ladders plus Talathi → Naib Tehsildar (S-14) → Tehsildar (S-19) with a real Nov 2025 revenue order anchor. Language toggle on the page.",
+    minutes: 10,
+  },
+  {
+    href: "/study-guides/mpsc-interview-document-verification",
+    emoji: "📁",
+    title: "Interview & Document Verification — मुलाखत व DV",
+    blurb:
+      "English + मराठी: which posts have interview (PSI) vs DV-only (ASO/STI), physical/medical notes, and a practical Maharashtra certificate checklist. Language toggle on the page.",
+    minutes: 10,
   },
 ];
 

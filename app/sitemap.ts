@@ -86,6 +86,31 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.8,
   },
+  {
+    path: "/study-guides/mpsc-cut-off-trends",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/study-guides/mpsc-psi-sti-aso-talathi-salary-comparison",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/study-guides/government-job-vs-private-job",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
+  {
+    path: "/study-guides/mpsc-promotion-path-after-selection",
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    path: "/study-guides/mpsc-interview-document-verification",
+    changeFrequency: "monthly",
+    priority: 0.85,
+  },
   { path: "/?mode=csat", changeFrequency: "weekly", priority: 0.9 },
   {
     path: "/study-guides/mpsc-csat-preparation",
