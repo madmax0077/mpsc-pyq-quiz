@@ -180,7 +180,7 @@ const GUIDES = [
     emoji: "📈",
     title: "MPSC Cut Off Trends — कट ऑफ",
     blurb:
-      "English + मराठी: real Group B prelims cut-offs for ASO/STI/PSI (2022–2025 cycles), how to read Group C mains scales, and practical target scores. Language toggle on the page.",
+      "English + मराठी: real Group B prelims cut-offs for ASO/STI/PSI (2022–2025 cycles), how to read Group C main-exam (मुख्य परीक्षा) scales, and practical target scores. Language toggle on the page.",
     minutes: 11,
   },
   {

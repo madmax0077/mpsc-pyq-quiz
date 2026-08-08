@@ -183,7 +183,7 @@ function MarathiBody() {
       </p>
 
       <StudyGuideCallout>
-        <strong>आधार आकडे:</strong> Combined गट-ब सुरूवातीचे मूळ वेतन सहसा{" "}
+        <strong>आधार आकडे:</strong> Combined गट-ब सुरुवातीचे मूळ वेतन सहसा{" "}
         <strong>₹३८,६०० (S-14)</strong>; १ जानेवारी २०२६ पासून नोंदवलेला राज्य DA{" "}
         <strong>६०%</strong> असल्यास मूळ+DA ≈ <strong>₹६१,७६०</strong> (HRA आधी). तलाठी मूळ{" "}
         <strong>₹२५,५००</strong>. खाजगी आकडे शहरातील उदाहरण श्रेणी आहेत, एका कंपनीची ऑफर नाहीत.

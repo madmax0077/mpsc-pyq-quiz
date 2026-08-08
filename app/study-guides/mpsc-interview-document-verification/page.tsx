@@ -30,11 +30,11 @@ export const metadata: Metadata = {
 const FAQ: Array<{ q: string; a: string }> = [
   {
     q: "Do ASO and STI have an interview? / ASO आणि STI ला मुलाखत असते का?",
-    a: "In the usual recent Combined Group B pattern, ASO and STI are selected on mains merit followed by document verification — not a personality interview. PSI has additional physical test and interview stages. अलीकडील Combined नमुन्यात ASO/STI साठी सहसा मुलाखत नसते; मेन्स + कागदपत्रे. PSI साठी शारीरिक चाचणी आणि मुलाखत अतिरिक्त असते.",
+    a: "In the usual recent Combined Group B pattern, ASO and STI are selected on mains merit followed by document verification — not a personality interview. PSI has additional physical test and interview stages. अलीकडील Combined नमुन्यात ASO/STI साठी सहसा मुलाखत नसते; मुख्य परीक्षा + कागदपत्रे. PSI साठी शारीरिक चाचणी आणि मुलाखत अतिरिक्त असते.",
   },
   {
     q: "How are PSI interview marks counted? / PSI मुलाखत गुण कसे मोजले जातात?",
-    a: "Recruitment explainers for recent Combined cycles describe PSI interview as 40 marks, with final merit often framed as Mains (400) + Interview (40), after qualifying the physical test (commonly described as 100 marks with a minimum qualifying score such as 60/100 — confirm in that year’s notification). अलीकडील चक्रांच्या स्पष्टीकरणात मुलाखत ४० गुण; मेन्स ४०० + मुलाखत ४० — शारीरिक चाचणी पात्रतेनंतर. त्या वर्षाच्या जाहिरातीत खात्री करा.",
+    a: "Recruitment explainers for recent Combined cycles describe PSI interview as 40 marks, with final merit often framed as Mains (400) + Interview (40), after qualifying the physical test (commonly described as 100 marks with a minimum qualifying score such as 60/100 — confirm in that year’s notification). अलीकडील चक्रांच्या स्पष्टीकरणात मुलाखत ४० गुण; मुख्य परीक्षा ४०० + मुलाखत ४० — शारीरिक चाचणी पात्रतेनंतर. त्या वर्षाच्या जाहिरातीत खात्री करा.",
   },
 ];
 
@@ -62,7 +62,7 @@ function EnglishBody() {
 
       <h3>1. Stage map by post</h3>
       <StudyGuideTable
-        headers={["Post family", "After mains", "Interview?", "Other gates"]}
+        headers={["Post family", "After main exam", "Interview?", "Other gates"]}
         rows={[
           ["ASO", "Document verification", "Usually no", "Eligibility / certificate scrutiny"],
           ["STI", "Document verification", "Usually no", "Eligibility / certificate scrutiny"],
@@ -153,7 +153,7 @@ function EnglishBody() {
 function MarathiBody() {
   return (
     <>
-      <h2>एमपीएससी मुलाखत व कागदपत्र पडताळणी — मेन्सनंतर काय होते</h2>
+      <h2>एमपीएससी मुलाखत व कागदपत्र पडताळणी — मुख्य परीक्षेनंतर काय होते</h2>
       <p className="!mt-2 !text-sm !text-slate-500 dark:!text-slate-400">
         अद्यतन: ऑगस्ट २०२६ · अंदाजे वाचन वेळ: १० मिनिटे
       </p>
@@ -167,14 +167,14 @@ function MarathiBody() {
 
       <StudyGuideCallout>
         <strong>लक्षात ठेवा (तुमच्या जाहिरातीत खात्री करा):</strong> Combined गट-ब मध्ये ASO व
-        STI → मेन्स + कागदपत्र पडताळणी. PSI → मेन्स + शारीरिक चाचणी + मुलाखत (अनेकदा ४० गुण)
-        + वैद्यकीय/कागदपत्रे. गट-क टायपिंग लागणाऱ्या पदांसाठी कौशल्य चाचणी अंतिम औपचारिकतेपूर्वी
-        असते.
+        STI → मुख्य परीक्षा + कागदपत्र पडताळणी. PSI → मुख्य परीक्षा + शारीरिक चाचणी + मुलाखत
+        (अनेकदा ४० गुण) + वैद्यकीय/कागदपत्रे. गट-क टायपिंग लागणाऱ्या पदांसाठी कौशल्य चाचणी
+        अंतिम औपचारिकतेपूर्वी असते.
       </StudyGuideCallout>
 
       <h3>१. पदानुसार टप्पे</h3>
       <StudyGuideTable
-        headers={["पद कुटुंब", "मेन्सनंतर", "मुलाखत?", "इतर दरवाजे"]}
+        headers={["पद कुटुंब", "मुख्य परीक्षेनंतर", "मुलाखत?", "इतर दरवाजे"]}
         rows={[
           ["ASO", "कागदपत्र पडताळणी", "सहसा नाही", "पात्रता / प्रमाणपत्र तपासणी"],
           ["STI", "कागदपत्र पडताळणी", "सहसा नाही", "पात्रता / प्रमाणपत्र तपासणी"],
@@ -210,14 +210,14 @@ function MarathiBody() {
           स्पष्टता तपासते — दुसरी GS पेपर नसते.
         </li>
         <li>
-          अलीकडील स्पष्टीकरणांत अंतिम PSI गुणवत्ता अनेकदा शारीरिक पात्रतेनंतर मेन्स + मुलाखत
-          गुण एकत्र करून मांडली जाते.
+          अलीकडील स्पष्टीकरणांत अंतिम PSI गुणवत्ता अनेकदा शारीरिक पात्रतेनंतर मुख्य परीक्षा +
+          मुलाखत गुण एकत्र करून मांडली जाते.
         </li>
       </ul>
 
       <h3>३. कागदपत्र यादी (मूळ + स्वप्रमाणित प्रती)</h3>
       <ul>
-        <li>अर्ज प्रिंट आणि पूर्व/मेन्स प्रवेशपत्रे (विनंतीनुसार)</li>
+        <li>अर्ज प्रिंट आणि पूर्व/मुख्य परीक्षा प्रवेशपत्रे (विनंतीनुसार)</li>
         <li>फोटो ओळखपत्र (आधार / पॅन / पासपोर्ट / मतदार)</li>
         <li>दहावी (जन्मतारीख) + बारावी + पदवी प्रमाणपत्रे / गुणपत्रके</li>
         <li>महाराष्ट्र अधिवास प्रमाणपत्र</li>
@@ -238,9 +238,9 @@ function MarathiBody() {
 
       <h3>५. वेळेची मानसिकता</h3>
       <p>
-        वैधता / अधिवास / NCL कागदपत्रे <strong>मेन्स देत असतानाच</strong> गोळा करायला सुरुवात
-        करा, निकाल आल्यानंतर नव्हे. तलाठी कार्यालय आपल्या गतीने चालते; एमपीएससी DV तारखा
-        थांबत नाहीत.
+        वैधता / अधिवास / NCL कागदपत्रे <strong>मुख्य परीक्षा देत असतानाच</strong> गोळा करायला
+        सुरुवात करा, निकाल आल्यानंतर नव्हे. तलाठी कार्यालय आपल्या गतीने चालते; एमपीएससी DV
+        तारखा थांबत नाहीत.
       </p>
 
       <h3>पुढची पावले</h3>
