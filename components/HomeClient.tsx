@@ -189,7 +189,7 @@ export default function HomeClient() {
       )}
 
       {/* ---- Top Navigation Bar ---- */}
-      <header className="sticky top-0 z-[60] border-b border-slate-200/80 bg-white/90 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/90">
+      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/90">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
           <button onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex min-w-0 items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0">
             <img
