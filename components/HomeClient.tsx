@@ -189,83 +189,92 @@ export default function HomeClient() {
       )}
 
       {/* ---- Top Navigation Bar ---- */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/90">
-        <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
-          <button onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex min-w-0 items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0">
+      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/95">
+        <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-3 py-2.5 sm:px-6 sm:py-3">
+          {/* Brand must never shrink — nav was collapsing logo + name to 0 width */}
+          <button
+            type="button"
+            onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+            className="flex shrink-0 items-center gap-2.5 cursor-pointer bg-transparent border-none p-0"
+            aria-label="MPSC PYQ QUIZ — Don't know Academy home"
+          >
             <img
               src="/logo-mark.png"
-              alt="MPSC PYQ QUIZ logo"
-              width={40}
-              height={40}
+              alt=""
+              width={44}
+              height={44}
               decoding="async"
-              className="h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-full bg-white object-contain p-0.5 shadow-sm ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-600"
+              onError={(e) => {
+                const el = e.currentTarget;
+                if (el.dataset.fallback === "1") return;
+                el.dataset.fallback = "1";
+                el.src = "/logo.png";
+              }}
+              className="h-10 w-10 sm:h-11 sm:w-11 shrink-0 rounded-full bg-white object-contain p-0.5 shadow-sm ring-1 ring-slate-300 dark:bg-slate-800 dark:ring-slate-600"
             />
-            <div className="min-w-0 text-left">
-              <h1 className="truncate text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
-              <p className="truncate text-[9px] sm:text-[10px] font-medium text-slate-400 dark:text-slate-500">Don&apos;t know Academy</p>
+            <div className="text-left leading-tight">
+              <h1 className="whitespace-nowrap text-sm sm:text-base font-extrabold text-slate-900 dark:text-white">
+                MPSC PYQ QUIZ
+              </h1>
+              <p className="whitespace-nowrap text-[10px] sm:text-[11px] font-semibold text-indigo-600 dark:text-indigo-300">
+                Don&apos;t know Academy
+              </p>
             </div>
           </button>
 
-          <div className="flex shrink-0 items-center gap-1 sm:gap-3">
-            <nav className="hidden sm:flex items-center gap-1 text-xs font-semibold">
+          <div className="ml-auto flex min-w-0 items-center gap-1 sm:gap-2">
+            <nav className="hidden min-w-0 items-center gap-0.5 overflow-x-auto text-xs font-semibold lg:flex">
               <button
                 onClick={() => { setAppMode("notes"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-orange-50 hover:text-orange-600 transition-colors dark:text-slate-300 dark:hover:bg-orange-900/30 dark:hover:text-orange-400"
+                className="rounded-lg px-2.5 py-2 text-slate-600 hover:bg-orange-50 hover:text-orange-600 transition-colors dark:text-slate-300 dark:hover:bg-orange-900/30 dark:hover:text-orange-400"
               >
                 📝 {t("notes", language)}
               </button>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <button
                 onClick={() => { setAppMode("leaderboard"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-amber-50 hover:text-amber-600 transition-colors dark:text-slate-300 dark:hover:bg-amber-900/30 dark:hover:text-amber-400"
+                className="rounded-lg px-2.5 py-2 text-slate-600 hover:bg-amber-50 hover:text-amber-600 transition-colors dark:text-slate-300 dark:hover:bg-amber-900/30 dark:hover:text-amber-400"
               >
                 🏆 {t("leaderboard", language)}
               </button>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/map"
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 transition-colors dark:text-slate-300 dark:hover:bg-emerald-900/30 dark:hover:text-emerald-400"
+                className="rounded-lg px-2.5 py-2 text-slate-600 hover:bg-emerald-50 hover:text-emerald-600 transition-colors dark:text-slate-300 dark:hover:bg-emerald-900/30 dark:hover:text-emerald-400"
               >
                 🗺️ {t("map", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/census-2011-maharashtra"
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-600 transition-colors dark:text-slate-300 dark:hover:bg-sky-900/30 dark:hover:text-sky-400"
+                className="hidden xl:inline-flex rounded-lg px-2.5 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-600 transition-colors dark:text-slate-300 dark:hover:bg-sky-900/30 dark:hover:text-sky-400"
               >
                 📊 {t("census", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/rivers-maharashtra"
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-cyan-50 hover:text-cyan-600 transition-colors dark:text-slate-300 dark:hover:bg-cyan-900/30 dark:hover:text-cyan-400"
+                className="hidden xl:inline-flex rounded-lg px-2.5 py-2 text-slate-600 hover:bg-cyan-50 hover:text-cyan-600 transition-colors dark:text-slate-300 dark:hover:bg-cyan-900/30 dark:hover:text-cyan-400"
               >
                 🏞️ {t("rivers", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/exams"
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
+                className="rounded-lg px-2.5 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
                 {t("exams", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/about"
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
+                className="rounded-lg px-2.5 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
                 {t("about", language)}
               </a>
-              <span className="text-slate-300 dark:text-slate-600">|</span>
               <a
                 href="/contact"
-                className="rounded-lg px-3 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
+                className="rounded-lg px-2.5 py-2 text-slate-600 hover:bg-indigo-50 hover:text-indigo-600 transition-colors dark:text-slate-300 dark:hover:bg-indigo-900/30 dark:hover:text-indigo-400"
               >
                 {t("contact", language)}
               </a>
             </nav>
 
-            <div className="h-5 w-px bg-slate-200 dark:bg-slate-700 hidden sm:block" />
+            <div className="h-5 w-px bg-slate-200 dark:bg-slate-700 hidden lg:block" />
 
             <button
               onClick={toggleDark}
