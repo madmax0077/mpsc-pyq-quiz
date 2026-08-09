@@ -189,10 +189,17 @@ export default function HomeClient() {
       )}
 
       {/* ---- Top Navigation Bar ---- */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/80">
+      <header className="sticky top-0 z-[60] border-b border-slate-200/80 bg-white/90 backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/90">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
           <button onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex min-w-0 items-center gap-2 sm:gap-3 cursor-pointer bg-transparent border-none p-0">
-            <img src="/logo.png" alt="MPSC PYQ QUIZ logo" className="h-8 w-8 sm:h-10 sm:w-10 shrink-0 rounded-full object-cover shadow-sm ring-1 ring-slate-200 dark:ring-slate-700" />
+            <img
+              src="/logo-mark.png"
+              alt="MPSC PYQ QUIZ logo"
+              width={40}
+              height={40}
+              decoding="async"
+              className="h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-full bg-white object-contain p-0.5 shadow-sm ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-600"
+            />
             <div className="min-w-0 text-left">
               <h1 className="truncate text-sm sm:text-base font-bold leading-tight text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
               <p className="truncate text-[9px] sm:text-[10px] font-medium text-slate-400 dark:text-slate-500">Don&apos;t know Academy</p>
