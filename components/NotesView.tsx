@@ -5,6 +5,7 @@ import NewspaperNotes from "@/components/notes/NewspaperNotes";
 import MhHistoryNotes from "@/components/notes/MhHistoryNotes";
 import EconomicsYojanaNotes from "@/components/notes/EconomicsYojanaNotes";
 import PanchvarshikPlansNotes from "@/components/notes/PanchvarshikPlansNotes";
+import SamajsudharakNotes from "@/components/notes/SamajsudharakNotes";
 import type { Category } from "@/lib/types";
 
 export type NotesPracticeTarget = {
@@ -34,11 +35,14 @@ type NoteSlug =
   | "newspapers"
   | "mh-history"
   | "economics-yojana"
-  | "panchvarshik-plans";
+  | "panchvarshik-plans"
+  | "samajsudharak";
 
 type NoteEntry = {
   slug: NoteSlug;
   emoji: string;
+  /** Optional cover portrait (used instead of emoji when set) */
+  coverImage?: string;
   title: string;
   subtitle: string;
   blurb: string;
@@ -47,6 +51,17 @@ type NoteEntry = {
 };
 
 const NOTES_INDEX: NoteEntry[] = [
+  {
+    slug: "samajsudharak",
+    emoji: "",
+    coverImage: "/notes/samajsudharak/phule.jpg",
+    title: "समाजसुधारक",
+    subtitle: "२१ सुधारक · तारखा · संस्था · ग्रंथ · पुनरावृत्ती",
+    blurb:
+      "आंबेडकर, फुले, वि. रा. शिंदे, कर्वे, रानडे, आगरकर, पंडिता रमाबाई, लोकहितवादी, जांभेकर, भाऊराव पाटील आणि इतर — तारखा, संस्था, वृत्तपत्रे, सत्याग्रह व ग्रंथसंपदा एकत्र. प्रत्येक सुधारकाचे चित्रासह नोट्स.",
+    meta: "एमपीएससी · राज्यसेवा · एसटीआय · पीएसआय · एएसओ · यूपीएससी · २१ सुधारक",
+    accent: "from-violet-500 via-fuchsia-400 to-amber-300",
+  },
   {
     slug: "panchvarshik-plans",
     emoji: "📊",
@@ -226,9 +241,20 @@ export default function NotesView({
                   className={`absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r ${n.accent}`}
                 />
                 <div className="flex items-start gap-3">
-                  <span className="text-3xl" aria-hidden>
-                    {n.emoji}
-                  </span>
+                  {n.coverImage ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={n.coverImage}
+                      alt=""
+                      width={48}
+                      height={48}
+                      className="h-12 w-12 shrink-0 rounded-xl object-cover ring-1 ring-black/10"
+                    />
+                  ) : (
+                    <span className="text-3xl" aria-hidden>
+                      {n.emoji}
+                    </span>
+                  )}
                   <div className="min-w-0 flex-1">
                     <h3
                       lang="mr"
@@ -287,6 +313,8 @@ function NoteContent({
           language={language}
         />
       );
+    case "samajsudharak":
+      return <SamajsudharakNotes />;
     default:
       return null;
   }
