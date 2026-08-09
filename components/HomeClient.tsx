@@ -195,7 +195,7 @@ export default function HomeClient() {
           <button
             type="button"
             onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-            className="flex min-w-0 max-w-[58%] shrink-0 items-center gap-2 cursor-pointer bg-transparent border-none p-0 sm:max-w-none sm:gap-2.5"
+            className="flex max-w-[58%] shrink-0 items-center gap-2 cursor-pointer overflow-hidden bg-transparent border-none p-0 sm:max-w-none sm:gap-2.5"
             aria-label="MPSC PYQ QUIZ — Don't know Academy home"
           >
             <img
