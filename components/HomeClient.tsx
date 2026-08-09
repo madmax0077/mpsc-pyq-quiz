@@ -195,7 +195,7 @@ export default function HomeClient() {
           <button
             type="button"
             onClick={() => { setHomeKey((k) => k + 1); setPendingDirectTopic(null); setAppMode("home"); setMobileNavOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-            className="flex shrink-0 items-center gap-2.5 cursor-pointer bg-transparent border-none p-0"
+            className="flex min-w-0 max-w-[58%] shrink-0 items-center gap-2 cursor-pointer bg-transparent border-none p-0 sm:max-w-none sm:gap-2.5"
             aria-label="MPSC PYQ QUIZ — Don't know Academy home"
           >
             <img
@@ -210,13 +210,13 @@ export default function HomeClient() {
                 el.dataset.fallback = "1";
                 el.src = "/logo.png";
               }}
-              className="h-10 w-10 sm:h-11 sm:w-11 shrink-0 rounded-full bg-white object-contain p-0.5 shadow-sm ring-1 ring-slate-300 dark:bg-slate-800 dark:ring-slate-600"
+              className="h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-full bg-white object-contain p-0.5 shadow-sm ring-1 ring-slate-300 dark:bg-slate-800 dark:ring-slate-600"
             />
-            <div className="text-left leading-tight">
-              <h1 className="whitespace-nowrap text-sm sm:text-base font-extrabold text-slate-900 dark:text-white">
+            <div className="min-w-0 text-left leading-tight">
+              <h1 className="truncate text-[13px] sm:text-base font-extrabold text-slate-900 dark:text-white">
                 MPSC PYQ QUIZ
               </h1>
-              <p className="whitespace-nowrap text-[10px] sm:text-[11px] font-semibold text-indigo-600 dark:text-indigo-300">
+              <p className="truncate text-[9px] sm:text-[11px] font-semibold text-indigo-600 dark:text-indigo-300">
                 Don&apos;t know Academy
               </p>
             </div>
@@ -344,7 +344,7 @@ export default function HomeClient() {
             <button
               type="button"
               onClick={() => setMobileNavOpen((o) => !o)}
-              className="shrink-0 rounded-lg p-1.5 text-slate-600 hover:bg-slate-100 sm:hidden dark:text-slate-300 dark:hover:bg-slate-800"
+              className="shrink-0 rounded-lg p-1.5 text-slate-600 hover:bg-slate-100 lg:hidden dark:text-slate-300 dark:hover:bg-slate-800"
               aria-expanded={mobileNavOpen}
               aria-controls="mobile-nav-panel"
               aria-label={mobileNavOpen ? "Close menu" : "Open menu"}
@@ -364,9 +364,9 @@ export default function HomeClient() {
 
       </header>
 
-      {/* Mobile slide-over nav */}
+      {/* Mobile / tablet slide-over nav (matches lg:hidden hamburger) */}
       {mobileNavOpen && (
-        <div className="fixed inset-0 z-50 sm:hidden" role="dialog" aria-modal="true" aria-label="Site menu">
+        <div className="fixed inset-0 z-50 lg:hidden" role="dialog" aria-modal="true" aria-label="Site menu">
           <button
             type="button"
             className="absolute inset-0 bg-slate-950/45 backdrop-blur-[1px]"
