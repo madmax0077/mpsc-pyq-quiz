@@ -69,8 +69,8 @@ export default function DonateUpiCard() {
   }
 
   return (
-    <div className="rounded-2xl border border-indigo-200 bg-indigo-50/70 p-5 dark:border-indigo-800/60 dark:bg-indigo-950/30 sm:p-6">
-      <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">Pay via UPI</p>
+    <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 dark:border-slate-600 dark:bg-slate-900/40 sm:p-6">
+      <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">☕ Pay via UPI</p>
       <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
         Choose an amount, then open your UPI app or scan the QR code.
       </p>

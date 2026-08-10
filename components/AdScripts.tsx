@@ -4,19 +4,18 @@ import { useEffect, useState } from "react";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { ADSENSE_CLIENT, IS_EZOIC } from "@/lib/adsConfig";
-import { allowPublicTracking } from "@/lib/trackingGuard";
+import { allowAdScripts } from "@/lib/trackingGuard";
 
 /**
  * Loads AdSense / Ezoic scripts only on the public production site.
- * Skips localhost, preview hosts, and /admin* (admin is private; ads there
- * only burn page quality and attract scanners).
+ * Skips localhost, /admin*, /donate, and /feedback.
  */
 export default function AdScripts() {
   const pathname = usePathname() || "";
   const [allowed, setAllowed] = useState(false);
 
   useEffect(() => {
-    setAllowed(allowPublicTracking(pathname));
+    setAllowed(allowAdScripts(pathname));
   }, [pathname]);
 
   if (!allowed) return null;

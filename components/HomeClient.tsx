@@ -461,8 +461,11 @@ export default function HomeClient() {
                 <a href="/contact" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
                   {t("contact", language)}
                 </a>
-                <a href="/donate" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
-                  {t("donate", language)}
+                <a href="/feedback" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-amber-50 dark:text-slate-200 dark:hover:bg-amber-900/30">
+                  {t("feedback", language)}
+                </a>
+                <a href="/donate" className="rounded-xl px-3 py-2.5 font-bold text-amber-800 hover:bg-amber-50 dark:text-amber-200 dark:hover:bg-amber-900/30">
+                  ☕ {t("donate", language)}
                 </a>
                 {!studentUser && (
                   <a
@@ -742,7 +745,50 @@ export default function HomeClient() {
               </button>
               </div>
 
-              {/* In-flow ad — centered, below the Topic Tests (non-PYQ) section */}
+              {/* Feedback + Buy us a coffee — below Topic Tests */}
+              <div className="grid gap-4 sm:col-span-2 sm:grid-cols-2">
+                <a
+                  href="/feedback"
+                  className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 via-white to-indigo-50/60 p-5 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md dark:border-slate-700 dark:from-slate-900 dark:via-slate-900 dark:to-indigo-950/40"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-indigo-600 text-xl text-white shadow-sm">
+                      💬
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-base font-bold text-slate-800 dark:text-slate-100">{t("feedback", language)}</h3>
+                      <span className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-indigo-600 dark:text-indigo-300">
+                        {language === "marathi" ? "अभिप्राय द्या" : "Open"}
+                        <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="/donate"
+                  className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 via-white to-slate-100 p-5 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:border-slate-400 hover:shadow-md dark:border-slate-700 dark:from-slate-900 dark:via-slate-900 dark:to-slate-800"
+                >
+                  <div className="relative flex items-start gap-3">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-slate-700 text-2xl text-white shadow-sm dark:bg-slate-600">
+                      ☕
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-base font-bold text-slate-800 dark:text-slate-100">{t("donate", language)}</h3>
+                      <p className="mt-1 text-xs leading-5 text-slate-500 dark:text-slate-400">
+                        {language === "marathi"
+                          ? "ऐच्छिक UPI सपोर्ट — साइट मोफत ठेवण्यास मदत"
+                          : "Optional UPI support — keep the site free for every aspirant"}
+                      </p>
+                      <span className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-slate-700 dark:text-slate-300">
+                        {language === "marathi" ? "समर्थन करा" : "Support us"}
+                        <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              {/* In-flow ad — centered, below Feedback / coffee */}
               <div className="sm:col-span-2">
                 <DisplayAd adsenseSlot={LANDING_AD_SLOT} ezoicKey="landing" minHeight={250} className="w-full" />
               </div>
@@ -1199,8 +1245,11 @@ export default function HomeClient() {
               <a href="/contact" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("contact", language)}
               </a>
-              <a href="/donate" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
-                {t("donate", language)}
+              <a href="/feedback" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
+                {t("feedback", language)}
+              </a>
+              <a href="/donate" className="text-xs font-semibold text-amber-700 underline-offset-2 hover:text-amber-800 hover:underline dark:text-amber-300 dark:hover:text-amber-200">
+                ☕ {t("donate", language)}
               </a>
               <a href="/exams" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("exams", language)}
@@ -1240,27 +1289,77 @@ function LeaderboardTile({
   return (
     <button
       onClick={onClick}
-      className={`group relative overflow-hidden rounded-3xl border border-amber-200 bg-gradient-to-br from-amber-50 via-white to-orange-50 p-5 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-100 dark:border-amber-800 dark:from-amber-950/40 dark:via-slate-900 dark:to-orange-950/40 dark:hover:border-amber-600 dark:hover:shadow-black/20 sm:p-6 ${className}`}
+      className={`group relative overflow-hidden rounded-3xl border border-rose-200/80 bg-gradient-to-br from-rose-50 via-orange-50 to-amber-50 p-5 text-left shadow-sm transition-all hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg hover:shadow-rose-100/60 dark:border-rose-900/50 dark:from-rose-950/30 dark:via-slate-900 dark:to-amber-950/20 dark:hover:border-rose-700 dark:hover:shadow-black/20 sm:p-6 ${className}`}
     >
-      <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-amber-200/50 blur-2xl transition-transform group-hover:scale-125 dark:bg-amber-500/10" />
-      <div className="flex items-center gap-4">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 text-3xl text-white shadow-md">
-          🏆
+      <div className="absolute right-0 top-0 h-24 w-24 rounded-bl-full bg-rose-200/40 blur-2xl transition-transform group-hover:scale-125 dark:bg-rose-500/10" />
+      <div className="relative flex items-center gap-4">
+        <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-300 via-orange-200 to-amber-200 shadow-md shadow-rose-200/50 ring-1 ring-white/70 dark:from-rose-400/80 dark:via-orange-300/70 dark:to-amber-300/70 dark:shadow-rose-950/30">
+          <svg
+            className="h-8 w-8"
+            viewBox="0 0 48 48"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M16 10h16v8c0 4.4-3.6 8-8 8s-8-3.6-8-8v-8z"
+              fill="#FFF7ED"
+              stroke="#FDBA74"
+              strokeWidth="1.4"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M16 12H11c0 4.5 2.8 7.2 5.5 8.2"
+              stroke="#FB7185"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+            />
+            <path
+              d="M32 12h5c0 4.5-2.8 7.2-5.5 8.2"
+              stroke="#FB7185"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+            />
+            <path d="M16 10h16v3H16V10z" fill="#FECDD3" />
+            <path
+              d="M24 26v5"
+              stroke="#FDBA74"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+            />
+            <path
+              d="M18 36h12l-1.5-5h-9L18 36z"
+              fill="#FECACA"
+              stroke="#FDBA74"
+              strokeWidth="1.2"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M15 38h18v2.5a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 0115 40.5V38z"
+              fill="#FFEDD5"
+              stroke="#FDBA74"
+              strokeWidth="1.2"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M24 14.4l.6 1.2 1.3.2-.95.9.22 1.3L24 17.3l-1.17.7.22-1.3-.95-.9 1.3-.2.6-1.2z"
+              fill="#FBBF24"
+            />
+          </svg>
         </div>
         <div className="min-w-0 flex-1">
           <div className="mb-0.5 flex flex-wrap items-center gap-2">
-            <h3 className="min-w-0 break-words text-lg font-bold text-amber-700 sm:text-xl dark:text-amber-300">
+            <h3 className="min-w-0 break-words text-lg font-bold text-rose-900/90 sm:text-xl dark:text-rose-100">
               {t("leaderboardTileTitle", language)}
             </h3>
             <span className="shrink-0 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
               {t("live", language)}
             </span>
           </div>
-          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+          <p className="text-xs sm:text-sm leading-relaxed text-rose-900/55 dark:text-rose-100/60">
             {t("leaderboardTileDesc", language)}
           </p>
         </div>
-        <svg className="h-5 w-5 shrink-0 text-amber-500 transition-transform group-hover:translate-x-1 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <svg className="h-5 w-5 shrink-0 text-rose-300 transition-transform group-hover:translate-x-1 group-hover:text-rose-400 dark:text-rose-500 dark:group-hover:text-rose-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
         </svg>
       </div>

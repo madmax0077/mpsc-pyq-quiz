@@ -82,6 +82,53 @@ service cloud.firestore {
     match /users/{uid} {
       allow read, write: if request.auth != null && request.auth.uid == uid;
     }
+
+    // --- Community feedback (reviews + Reddit-style replies) ------------
+    // Public read. Signed-in users create posts/comments as themselves.
+    // Admins may create comments with isAdminReply=true (published as
+    // "Don't know Academy"). Append-only for normal users.
+    function isValidFeedbackPost(d) {
+      return request.auth != null
+        && d.authorUid == request.auth.uid
+        && d.authorName is string && d.authorName.size() > 0 && d.authorName.size() <= 60
+        && (d.authorPhoto == null || (d.authorPhoto is string && d.authorPhoto.size() <= 2000))
+        && d.title is string && d.title.size() <= 120
+        && d.body is string && d.body.size() >= 3 && d.body.size() <= 2000
+        && d.createdAt == request.time;
+    }
+
+    function isValidFeedbackComment(d) {
+      return request.auth != null
+        && d.authorUid == request.auth.uid
+        && d.body is string && d.body.size() > 0 && d.body.size() <= 1000
+        && d.createdAt == request.time
+        && d.isAdminReply is bool
+        && (
+          (
+            d.isAdminReply == false
+            && d.authorName is string && d.authorName.size() > 0 && d.authorName.size() <= 60
+            && (d.authorPhoto == null || (d.authorPhoto is string && d.authorPhoto.size() <= 2000))
+          )
+          || (
+            d.isAdminReply == true
+            && isAdminUser()
+            && d.authorName == "Don't know Academy"
+            && d.authorPhoto == null
+          )
+        );
+    }
+
+    match /feedback_posts/{postId} {
+      allow read: if true;
+      allow create: if isValidFeedbackPost(request.resource.data);
+      allow update, delete: if isAdminUser();
+
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if isValidFeedbackComment(request.resource.data);
+        allow update, delete: if isAdminUser();
+      }
+    }
   }
 }
 

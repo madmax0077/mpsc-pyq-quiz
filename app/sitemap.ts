@@ -61,6 +61,7 @@ const LEGACY_SITEMAP_ENTRIES: SitemapEntryConfig[] = [
   { path: "/about", changeFrequency: "monthly", priority: 0.6 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.5 },
   { path: "/donate", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/feedback", changeFrequency: "weekly", priority: 0.6 },
   { path: "/privacy", changeFrequency: "yearly", priority: 0.4 },
   { path: "/terms", changeFrequency: "yearly", priority: 0.4 },
   { path: "/disclaimer", changeFrequency: "yearly", priority: 0.4 },
