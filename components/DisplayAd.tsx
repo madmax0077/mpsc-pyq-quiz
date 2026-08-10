@@ -1,8 +1,10 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import AdUnit from "./AdUnit";
 import EzoicAd from "./EzoicAd";
 import { IS_EZOIC, EZOIC_PLACEHOLDERS, type EzoicPlaceholderKey } from "@/lib/adsConfig";
+import { isAdminPath } from "@/lib/trackingGuard";
 
 /**
  * Provider-aware display ad.
@@ -26,6 +28,9 @@ export default function DisplayAd({
   className?: string;
   minHeight?: number;
 }) {
+  const pathname = usePathname() || "";
+  if (isAdminPath(pathname)) return null;
+
   if (IS_EZOIC) {
     return (
       <EzoicAd id={EZOIC_PLACEHOLDERS[ezoicKey]} className={className} minHeight={minHeight} />

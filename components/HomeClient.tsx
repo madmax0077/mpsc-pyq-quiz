@@ -9,7 +9,10 @@ import Leaderboard from "@/components/Leaderboard";
 import NotesView from "@/components/NotesView";
 import MockTestView from "@/components/MockTestView";
 import CsatView from "@/components/CsatView";
+import Analytics from "@/components/Analytics";
 import DisplayAd from "@/components/DisplayAd";
+import { getStreak } from "@/lib/streak";
+import { getSummary } from "@/lib/analytics";
 
 type AppMode = "home" | "subject" | "topic" | "topic-tests" | "leaderboard" | "notes" | "rto-amvi" | "mock" | "csat";
 
@@ -40,6 +43,9 @@ export default function HomeClient() {
   const [guestId, setGuestId] = useState("");
   const [guestNameInput, setGuestNameInput] = useState("");
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [showAnalytics, setShowAnalytics] = useState(false);
+  const [streak, setStreak] = useState(0);
+  const [statsPreview, setStatsPreview] = useState({ totalQuizzes: 0, accuracy: 0 });
 
   useEffect(() => {
     // Stop the browser from restoring the previous scroll position on reload,
@@ -96,6 +102,14 @@ export default function HomeClient() {
       document.body.style.overflow = prev;
     };
   }, [mobileNavOpen]);
+
+  // Refresh streak / attempt counts whenever the user returns to home.
+  useEffect(() => {
+    if (appMode !== "home") return;
+    setStreak(getStreak());
+    const summary = getSummary();
+    setStatsPreview({ totalQuizzes: summary.totalQuizzes, accuracy: summary.accuracy });
+  }, [appMode, homeKey]);
 
   // NOTE (AdSense fix): we used to hide the #seo-landing section from real
   // users after mount, keeping it visible only to search-engine crawlers.
@@ -156,7 +170,7 @@ export default function HomeClient() {
             </div>
             <h2 className="text-2xl font-black text-slate-900 dark:text-white">What should we call you?</h2>
             <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
-              No login needed. Your name is only used for quiz progress and the daily leaderboard.
+              No login needed to practice. Your name is used for the daily leaderboard. Sign in anytime to sync progress across devices.
             </p>
             <input
               value={guestNameInput}
@@ -184,6 +198,12 @@ export default function HomeClient() {
             >
               Continue as Aspirant
             </button>
+            <a
+              href="/login"
+              className="mt-4 block text-center text-sm font-semibold text-indigo-600 hover:underline dark:text-indigo-400"
+            >
+              Sign in to sync progress
+            </a>
           </div>
         </div>
       )}
@@ -305,6 +325,15 @@ export default function HomeClient() {
               <option value="english">EN</option>
               <option value="marathi">मराठी</option>
             </select>
+
+            {!studentUser && (
+              <a
+                href="/login"
+                className="shrink-0 rounded-lg bg-indigo-600 px-2.5 py-1.5 text-[11px] sm:px-3 sm:text-xs font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700"
+              >
+                {t("signIn", language)}
+              </a>
+            )}
 
             {studentUser?.photoURL && (
               <img
@@ -430,6 +459,15 @@ export default function HomeClient() {
                 <a href="/donate" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
                   {t("donate", language)}
                 </a>
+                {!studentUser && (
+                  <a
+                    href="/login"
+                    className="mt-2 rounded-xl bg-indigo-600 px-3 py-2.5 text-center text-white hover:bg-indigo-700"
+                    onClick={() => setMobileNavOpen(false)}
+                  >
+                    {t("signIn", language)}
+                  </a>
+                )}
               </div>
             </nav>
           </div>
@@ -468,6 +506,89 @@ export default function HomeClient() {
             </section>
 
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
+              {/* My Stats — home landing (covers subject / topic / CSAT / mock) */}
+              <section className="sm:col-span-2 space-y-3">
+                <button
+                  type="button"
+                  onClick={() => setShowAnalytics((v) => !v)}
+                  aria-expanded={showAnalytics}
+                  className={`group relative w-full overflow-hidden rounded-3xl border p-4 text-left shadow-sm transition-all sm:p-5 ${
+                    showAnalytics
+                      ? "border-indigo-300 bg-gradient-to-br from-indigo-100 via-white to-violet-100 ring-2 ring-indigo-200/70 dark:border-indigo-600 dark:from-indigo-950/60 dark:via-slate-900 dark:to-violet-950/50 dark:ring-indigo-800/60"
+                      : "border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-violet-50 hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-lg hover:shadow-indigo-100/70 dark:border-indigo-900/50 dark:from-indigo-950/40 dark:via-slate-900 dark:to-violet-950/30 dark:hover:border-indigo-600 dark:hover:shadow-black/30"
+                  }`}
+                >
+                  <div className="pointer-events-none absolute -right-8 -top-10 h-36 w-36 rounded-full bg-gradient-to-br from-indigo-300/50 via-violet-300/35 to-fuchsia-300/30 blur-3xl transition-transform duration-500 group-hover:scale-125 dark:from-indigo-500/15 dark:via-violet-500/10 dark:to-fuchsia-500/10" />
+                  <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex min-w-0 items-start gap-3.5">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 text-white shadow-md shadow-indigo-200/60 ring-2 ring-white/70 dark:shadow-indigo-950/40 dark:ring-indigo-500/20">
+                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                        </svg>
+                      </div>
+                      <div className="min-w-0">
+                        <div className="mb-1 flex flex-wrap items-center gap-2">
+                          <h3 className="text-base font-bold text-slate-800 dark:text-slate-100 sm:text-lg">
+                            {t("myStats", language)}
+                          </h3>
+                          {streak > 0 && (
+                            <span className="inline-flex items-center gap-1 rounded-full bg-orange-50 px-2.5 py-0.5 text-[11px] font-bold text-orange-700 ring-1 ring-orange-200 dark:bg-orange-950/40 dark:text-orange-300 dark:ring-orange-800">
+                              🔥 {streak} day{streak !== 1 ? "s" : ""}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-xs leading-5 text-slate-500 dark:text-slate-400 sm:text-sm">
+                          {statsPreview.totalQuizzes > 0
+                            ? language === "marathi"
+                              ? `${statsPreview.totalQuizzes} प्रयत्न · ${statsPreview.accuracy}% अचूकता — विषय, टॉपिक, CSAT आणि मॉक`
+                              : `${statsPreview.totalQuizzes} attempts · ${statsPreview.accuracy}% accuracy — subject, topic, CSAT & mock`
+                            : language === "marathi"
+                              ? "क्विझ, टॉपिक, CSAT किंवा मॉक पूर्ण केल्यावर येथे प्रगती दिसेल"
+                              : "Finish a quiz, topic set, CSAT or mock to unlock score history here"}
+                        </p>
+                        {statsPreview.totalQuizzes > 0 && (
+                          <div className="mt-2.5 flex flex-wrap gap-1.5">
+                            <span className="rounded-md bg-white/80 px-2 py-0.5 text-[10px] font-semibold text-slate-600 ring-1 ring-indigo-100 dark:bg-slate-900/60 dark:text-slate-300 dark:ring-indigo-900/50">
+                              {statsPreview.totalQuizzes} {language === "marathi" ? "प्रयत्न" : "attempts"}
+                            </span>
+                            <span className="rounded-md bg-white/80 px-2 py-0.5 text-[10px] font-semibold text-slate-600 ring-1 ring-indigo-100 dark:bg-slate-900/60 dark:text-slate-300 dark:ring-indigo-900/50">
+                              {statsPreview.accuracy}% {language === "marathi" ? "अचूकता" : "accuracy"}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    <span
+                      className={`inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-2xl px-4 py-3 text-sm font-bold shadow-md transition-all sm:w-auto ${
+                        showAnalytics
+                          ? "bg-white text-indigo-700 ring-1 ring-indigo-200 group-hover:bg-indigo-50 dark:bg-slate-800 dark:text-indigo-300 dark:ring-indigo-700"
+                          : "bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-indigo-200/60 group-hover:from-indigo-500 group-hover:to-violet-500 group-hover:shadow-lg dark:shadow-indigo-950/40"
+                      }`}
+                    >
+                      {showAnalytics ? (
+                        <>
+                          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                          </svg>
+                          {language === "marathi" ? "आकडेवारी लपवा" : "Hide stats"}
+                        </>
+                      ) : (
+                        <>
+                          {language === "marathi" ? "आकडेवारी पहा" : "View stats"}
+                          <svg className="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                          </svg>
+                        </>
+                      )}
+                    </span>
+                  </div>
+                </button>
+                {showAnalytics && (
+                  <Analytics streak={streak} onClose={() => setShowAnalytics(false)} />
+                )}
+              </section>
+
               <LeaderboardTile language={language} onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
 
               {/* Mock Test — full-length timed test (Set A pattern) */}

@@ -1,6 +1,6 @@
 const KEY = "mcq_streak";
 
-interface StreakData {
+export interface StreakData {
   lastDate: string;
   count: number;
 }
@@ -47,4 +47,17 @@ export function getStreak(): number {
   const t = today();
   if (data.lastDate === t || data.lastDate === yesterday()) return data.count;
   return 0;
+}
+
+export function getStreakData(): StreakData {
+  if (typeof window === "undefined") return { lastDate: "", count: 0 };
+  return load();
+}
+
+export function setStreakData(data: StreakData): void {
+  if (typeof window === "undefined") return;
+  save({
+    lastDate: typeof data?.lastDate === "string" ? data.lastDate : "",
+    count: typeof data?.count === "number" && data.count > 0 ? data.count : 0,
+  });
 }

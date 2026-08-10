@@ -21,3 +21,13 @@ export function getCategoryProgress(category: string): number {
   const data = getAttemptedIds();
   return (data[category] || []).length;
 }
+
+/** Replace full attempted-id map (used by cloud sync merge). */
+export function replaceAttemptedIds(data: Record<string, string[]>): void {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data || {}));
+  } catch {
+    /* storage full */
+  }
+}

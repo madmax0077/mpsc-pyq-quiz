@@ -9,11 +9,11 @@ import { markAttempted, getCategoryProgress } from "@/lib/progress";
 import { submitReport, REPORT_ISSUE_LABELS, type ReportIssueType } from "@/lib/firebase";
 import { submitScore } from "@/lib/leaderboard";
 import { useAuth } from "@/lib/auth-context";
-import { recordStreak, getStreak } from "@/lib/streak";
-import { recordResult } from "@/lib/analytics";
+import { recordStreak } from "@/lib/streak";
+import { recordResult, type PracticeMode } from "@/lib/analytics";
+import { pushProgressToCloud } from "@/lib/user-progress";
 import ShareButton from "./ShareButton";
 import Confetti from "./Confetti";
-import Analytics from "./Analytics";
 import SearchBar, { type SearchNavigatePayload } from "./SearchBar";
 import DisplayAd from "./DisplayAd";
 import { categoryLabel, topicLabel, t } from "@/lib/i18n";
@@ -191,6 +191,11 @@ export default function StudentView({
   examFilter?: string | null;
 }) {
   const { studentUser } = useAuth();
+  const practiceMode: PracticeMode = topicMode
+    ? topicSource === "catalog"
+      ? "topic-tests"
+      : "topic-pyq"
+    : "subject";
   const [quizzes, setQuizzes] = useState<Quiz[]>([]);
   const [selectedQuiz, setSelectedQuiz] = useState<DisplayQuiz | null>(null);
   const [answers, setAnswers] = useState<Record<string, OptionKey>>({});
@@ -208,8 +213,6 @@ export default function StudentView({
   const [reportEmail, setReportEmail] = useState("");
   const [reportEmailError, setReportEmailError] = useState("");
   const [reportSubmitting, setReportSubmitting] = useState(false);
-  const [streak, setStreak] = useState(0);
-  const [showAnalytics, setShowAnalytics] = useState(false);
   // Search → navigate to question
   const [scrollToQuestionId, setScrollToQuestionId] = useState<string | null>(null);
   // Topic-wise navigation state
@@ -262,10 +265,6 @@ export default function StudentView({
       cancelled = true;
     };
   }, [homeKey, quizBundleRevision]);
-
-  useEffect(() => {
-    setStreak(getStreak());
-  }, [submitted, submittedPages]);
 
   useEffect(() => {
     setSelectedQuiz(null);
@@ -590,7 +589,16 @@ export default function StudentView({
       markAttempted(selectedQuiz.category, selectedQuiz.questions.filter((q) => answers[q.id]).map((q) => q.id));
     }
     recordStreak();
-    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz.id, quizTitle: selectedQuiz.title, category: selectedQuiz.category, score: correct, total: scoredTotal });
+    recordResult({
+      date: new Date().toISOString().slice(0, 10),
+      quizId: selectedQuiz.id,
+      quizTitle: selectedQuiz.title,
+      category: selectedQuiz.category,
+      mode: practiceMode,
+      score: correct,
+      total: scoredTotal,
+    });
+    if (studentUser) void pushProgressToCloud(studentUser.uid);
     const leaderboardUser = studentUser
       ? { userId: studentUser.uid, displayName: studentUser.displayName, photoURL: studentUser.photoURL }
       : guestUser;
@@ -636,7 +644,16 @@ export default function StudentView({
       markAttempted(selectedQuiz.category, pageQs.filter((q) => answers[q.id]).map((q) => q.id));
     }
     recordStreak();
-    recordResult({ date: new Date().toISOString().slice(0, 10), quizId: selectedQuiz!.id, quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`, category: selectedQuiz?.category, score: correct, total: pageTotal });
+    recordResult({
+      date: new Date().toISOString().slice(0, 10),
+      quizId: selectedQuiz!.id,
+      quizTitle: `${selectedQuiz!.title} (Set ${currentPage + 1})`,
+      category: selectedQuiz?.category,
+      mode: practiceMode,
+      score: correct,
+      total: pageTotal,
+    });
+    if (studentUser) void pushProgressToCloud(studentUser.uid);
     const leaderboardUser = studentUser
       ? { userId: studentUser.uid, displayName: studentUser.displayName, photoURL: studentUser.photoURL }
       : guestUser;
@@ -949,37 +966,10 @@ export default function StudentView({
               </div>
             )}
 
-            {/* Streak + Search + My Stats row */}
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between min-w-0">
-              {streak > 0 ? (
-                <div className="flex items-center gap-2 rounded-full bg-indigo-50 px-4 py-2 ring-1 ring-indigo-200 dark:bg-indigo-950/50 dark:ring-indigo-800">
-                  <span className="text-xl">🔥</span>
-                  <span className="text-sm font-bold text-indigo-700 dark:text-indigo-300">{streak} day{streak !== 1 ? "s" : ""} streak!</span>
-                </div>
-              ) : (
-                <div className="flex items-center gap-2 rounded-full bg-slate-50 px-4 py-2 ring-1 ring-slate-200 dark:bg-slate-800 dark:ring-slate-700">
-                  <span className="text-lg">🔥</span>
-                  <span className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Take a quiz to start your streak!</span>
-                </div>
-              )}
-              <div className="flex items-center gap-2 self-stretch sm:self-auto">
-                <SearchBar allQuestions={allSearchableQuestions} onNavigateToQuestion={navigateToQuestion} />
-                <button
-                  onClick={() => setShowAnalytics(true)}
-                  className="flex items-center gap-1.5 rounded-lg border border-indigo-200 bg-white px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 transition-colors dark:bg-slate-800 dark:border-indigo-700 dark:text-indigo-400 dark:hover:bg-slate-700"
-                >
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-                  </svg>
-                  <span className="hidden sm:inline">{t("myStats", language)}</span>
-                </button>
-              </div>
+            {/* Search row (My Stats lives on the home page) */}
+            <div className="flex min-w-0 items-center justify-end">
+              <SearchBar allQuestions={allSearchableQuestions} onNavigateToQuestion={navigateToQuestion} />
             </div>
-
-            {/* Analytics Dashboard */}
-            {showAnalytics && (
-              <Analytics streak={streak} onClose={() => setShowAnalytics(false)} />
-            )}
 
             {/* Daily Motivation Quote */}
             <div className="rounded-xl border border-amber-200/60 bg-gradient-to-r from-amber-50 to-orange-50 px-5 py-4 dark:from-amber-950/20 dark:to-orange-950/20 dark:border-amber-800/40">

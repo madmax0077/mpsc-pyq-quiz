@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { signInWithGoogle, signInWithApple } from "@/lib/firebase";
+import { useAuth } from "@/lib/auth-context";
 
 export default function LoginPage() {
+  const router = useRouter();
+  const { studentUser, loading } = useAuth();
   const [googleError, setGoogleError] = useState("");
   const [signingIn, setSigningIn] = useState<"google" | "apple" | null>(null);
+
+  useEffect(() => {
+    if (!loading && studentUser) {
+      router.replace("/");
+    }
+  }, [loading, studentUser, router]);
 
   const handleGoogleSignIn = async () => {
     setGoogleError("");
@@ -45,25 +55,31 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-slate-50 px-4 dark:from-slate-900 dark:via-slate-900 dark:to-slate-950">
       <div className="w-full max-w-md">
-        {/* Header */}
         <Link href="/" className="mb-8 block text-center no-underline">
           <img
-            src="/logo.png"
+            src="/logo-mark.png"
             alt="MPSC PYQ QUIZ logo"
-            className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white"
+            className="mx-auto mb-4 h-20 w-20 rounded-full object-cover shadow-lg ring-4 ring-white dark:ring-slate-700"
+            onError={(e) => {
+              const el = e.currentTarget;
+              if (el.dataset.fallback === "1") return;
+              el.dataset.fallback = "1";
+              el.src = "/logo.png";
+            }}
           />
           <h1 className="text-2xl font-bold text-slate-800 dark:text-slate-100">MPSC PYQ QUIZ</h1>
           <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Don&apos;t know Academy</p>
         </Link>
 
-        {/* Card */}
         <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xl shadow-slate-200/50 sm:p-8 dark:bg-slate-800 dark:border-slate-700 dark:shadow-slate-900/50">
-          <h2 className="mb-6 text-center text-lg font-semibold text-slate-700 dark:text-slate-200">
-            Welcome, Aspirant
+          <h2 className="mb-2 text-center text-lg font-semibold text-slate-700 dark:text-slate-200">
+            Sign in to sync progress
           </h2>
+          <p className="mb-6 text-center text-sm text-slate-500 dark:text-slate-400">
+            Save attempted questions, streak and history across devices. You can still practice as a guest anytime.
+          </p>
 
           <div className="space-y-3">
-            {/* Google Sign-In */}
             <button
               onClick={handleGoogleSignIn}
               disabled={!!signingIn}
@@ -94,7 +110,6 @@ export default function LoginPage() {
               {signingIn === "google" ? "Signing in..." : "Sign in with Google"}
             </button>
 
-            {/* Apple Sign-In */}
             <button
               onClick={handleAppleSignIn}
               disabled={!!signingIn}
@@ -114,10 +129,17 @@ export default function LoginPage() {
           {googleError && (
             <p className="mt-3 text-center text-sm text-red-500">{googleError}</p>
           )}
+
+          <p className="mt-6 text-center text-sm text-slate-500 dark:text-slate-400">
+            Prefer guest mode?{" "}
+            <Link href="/" className="font-semibold text-indigo-600 hover:underline dark:text-indigo-400">
+              Continue without signing in
+            </Link>
+          </p>
         </div>
 
         <p className="mt-4 text-center text-xs text-slate-400 dark:text-slate-500">
-          Secure access &middot; Your data stays in your browser
+          Secure Google / Apple sign-in · Progress syncs to your account
         </p>
 
         <nav className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs text-slate-400 dark:text-slate-500">
@@ -125,15 +147,9 @@ export default function LoginPage() {
           <span>|</span>
           <Link href="/contact" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Contact</Link>
           <span>|</span>
-          <Link href="/donate" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Donate</Link>
-          <span>|</span>
-          <Link href="/exams" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Exams</Link>
-          <span>|</span>
           <Link href="/privacy" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Privacy</Link>
           <span>|</span>
           <Link href="/terms" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Terms</Link>
-          <span>|</span>
-          <Link href="/disclaimer" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">Disclaimer</Link>
         </nav>
       </div>
     </div>

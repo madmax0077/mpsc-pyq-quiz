@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import AdScripts from "@/components/AdScripts";
 import { Inter, Noto_Sans_Devanagari, Noto_Serif_Devanagari } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/lib/auth-context";
 import { getQuizMeta } from "@/lib/quizMeta";
-import { IS_EZOIC, ADSENSE_CLIENT } from "@/lib/adsConfig";
 
 /**
  * Site-wide typography
@@ -321,56 +321,13 @@ export default function RootLayout({
           }}
         />
         {/*
-          Ezoic connection + analytics scripts.
-          Only loaded when NEXT_PUBLIC_AD_PROVIDER=ezoic is actually set — see
-          lib/adsConfig.ts. Loading these unconditionally cost every visitor
-          two extra third-party scripts for zero revenue while Ezoic sits
-          dormant (all EZOIC_PLACEHOLDERS are 0). Re-enable by flipping the
-          env var once placeholders are configured in the Ezoic dashboard.
+          AdSense / Ezoic loaders are injected client-side via <AdScripts />
+          so /admin and non-production hosts never pull ad tags.
         */}
-        {IS_EZOIC && (
-          <>
-            <script async src="//www.ezojs.com/ezoic/sa.min.js" />
-            <script
-              dangerouslySetInnerHTML={{
-                __html:
-                  "window.ezstandalone=window.ezstandalone||{};ezstandalone.cmd=ezstandalone.cmd||[];",
-              }}
-            />
-            <script async src="//ezoicanalytics.com/analytics.js" />
-          </>
-        )}
-
-        {/*
-          Google AdSense loader — Auto Ads. Stays ON while provider is
-          "adsense" (current). When we later switch NEXT_PUBLIC_AD_PROVIDER to
-          "ezoic", this is dropped and Auto Ads must be turned OFF in the
-          AdSense dashboard so the two systems never double-serve.
-        */}
-        {!IS_EZOIC && (
-          <>
-            <script
-              async
-              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-              crossOrigin="anonymous"
-            />
-            {/* AdSense Privacy & messaging → Ad blocking recovery → Tagging */}
-            <script
-              async
-              src="https://fundingchoicesmessages.google.com/i/pub-5084738834329206?ers=1"
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `(function(){function signalGooglefcPresent(){if(!window.frames['googlefcPresent']){if(document.body){const iframe=document.createElement('iframe');iframe.style='width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';iframe.style.display='none';iframe.name='googlefcPresent';document.body.appendChild(iframe);}else{setTimeout(signalGooglefcPresent,0);}}}signalGooglefcPresent();})();`,
-              }}
-            />
-            {/* Optional error-protection fallback when recovery tag itself is blocked */}
-            <script src="/adsense-ad-blocking-error-protection.js" />
-          </>
-        )}
       </head>
       <body className="font-sans dark:bg-slate-900">
         <AuthProvider>{children}</AuthProvider>
+        <AdScripts />
         <Analytics />
         <GoogleAnalytics />
       </body>

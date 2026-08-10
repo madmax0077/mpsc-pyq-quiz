@@ -226,6 +226,7 @@ const UI = {
   contact: { en: "Contact", mr: "संपर्क" },
   donate: { en: "Donate", mr: "दान करा" },
   guestMode: { en: "Guest mode", mr: "अतिथी मोड" },
+  signIn: { en: "Sign in", mr: "साइन इन" },
   logout: { en: "Logout", mr: "बाहेर पडा" },
   name: { en: "Name", mr: "नाव" },
   backToHome: { en: "Back to Home", mr: "मुख्यपृष्ठावर जा" },

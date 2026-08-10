@@ -15,6 +15,7 @@ import {
   changeAdminPasswordInFirebase,
   type User,
 } from "./firebase";
+import { syncProgressOnSignIn } from "./user-progress";
 
 const STUDENT_SESSION_KEY = "mpsc_student_session";
 
@@ -70,6 +71,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         STUDENT_SESSION_KEY,
         JSON.stringify({ name: user.displayName, email: user.email, photo: user.photoURL }),
       );
+      // Merge localStorage ↔ Firestore so progress follows the account.
+      void syncProgressOnSignIn(user.uid);
       setLoading(false);
     });
 

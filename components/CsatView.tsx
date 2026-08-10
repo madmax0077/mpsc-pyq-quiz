@@ -7,6 +7,10 @@ import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { getAllQuizzes } from "@/lib/storage";
 import DisplayAd from "@/components/DisplayAd";
 import { IN_CONTENT_AD_SLOT } from "@/lib/adsConfig";
+import { useAuth } from "@/lib/auth-context";
+import { recordResult } from "@/lib/analytics";
+import { recordStreak } from "@/lib/streak";
+import { pushProgressToCloud } from "@/lib/user-progress";
 import {
   CSAT_NEGATIVE_MARK,
   CSAT_STREAMS,
@@ -212,6 +216,7 @@ export default function CsatView({
   // every run so the "attempted so far" figures refresh.
   const [coverageTick, setCoverageTick] = useState(0);
   const submittedRef = useRef(false);
+  const { studentUser } = useAuth();
 
   // Load the previous-year catalogue and the generated practice bank once.
   // The bank is optional — if it fails to load, practice falls back to PYQs.
@@ -265,11 +270,34 @@ export default function CsatView({
     (questions: CsatQuestion[], ans: Record<number, OptionKey>, timed: boolean) => {
       if (submittedRef.current) return;
       submittedRef.current = true;
-      setResult(scoreCsat(questions, ans, timed));
+      const scored = scoreCsat(questions, ans, timed);
+      setResult(scored);
+      recordStreak();
+      const topic = activeTopicId ? getCsatTopic(activeTopicId) : undefined;
+      const title = timed
+        ? `CSAT Speed Test (${questions.length} Qs)`
+        : `CSAT · ${
+            topic
+              ? csatTopicLabel(topic.id, topic.name, language)
+              : "Practice"
+          }`;
+      recordResult({
+        date: new Date().toISOString().slice(0, 10),
+        quizId: timed
+          ? `csat-speed-${questions.length}`
+          : `csat-${activeTopicId || "practice"}`,
+        quizTitle: title,
+        category: "CSAT",
+        mode: "csat",
+        score: Math.max(0, Math.round(scored.net)),
+        total: scored.total,
+        pct: Math.max(0, Math.round(scored.percent)),
+      });
+      if (studentUser) void pushProgressToCloud(studentUser.uid);
       setStage(timed ? "speed-result" : "practice-result");
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-    [],
+    [activeTopicId, language, studentUser],
   );
 
   // Speed-test countdown.

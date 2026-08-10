@@ -6,6 +6,10 @@ import { normalizeQuiz } from "@/lib/questionUtils";
 import { mergeBundledAndLocal } from "@/lib/quizCatalog";
 import { getAllQuizzes } from "@/lib/storage";
 import DisplayAd from "@/components/DisplayAd";
+import { useAuth } from "@/lib/auth-context";
+import { recordResult } from "@/lib/analytics";
+import { recordStreak } from "@/lib/streak";
+import { pushProgressToCloud } from "@/lib/user-progress";
 import {
   MOCK_CONFIGS,
   NEGATIVE_MARK,
@@ -150,6 +154,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   const submittedRef = useRef(false);
   /** Wall-clock time (ms) at which the result unlocks. */
   const revealEndRef = useRef(0);
+  const { studentUser } = useAuth();
 
   // Load the merged quiz catalog once.
   useEffect(() => {
@@ -175,18 +180,30 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
       if (submittedRef.current) return;
       submittedRef.current = true;
       const meta = active ?? config;
-      setResult(
-        scoreMock(questions, ans, {
-          marksPerQuestion: meta?.marksPerQuestion ?? 1,
-          negativeMark: meta?.negativeMark ?? NEGATIVE_MARK,
-        }),
-      );
+      const scored = scoreMock(questions, ans, {
+        marksPerQuestion: meta?.marksPerQuestion ?? 1,
+        negativeMark: meta?.negativeMark ?? NEGATIVE_MARK,
+      });
+      setResult(scored);
+      recordStreak();
+      const slug = (meta?.shortLabel || "mock").toLowerCase().replace(/\s+/g, "-");
+      recordResult({
+        date: new Date().toISOString().slice(0, 10),
+        quizId: `mock-${meta?.kind || "mpsc"}-${slug}`,
+        quizTitle: meta?.label || "Mock Test",
+        category: "Mock Test",
+        mode: "mock",
+        score: Math.max(0, Math.round(scored.net)),
+        total: scored.total,
+        pct: Math.max(0, Math.round(scored.percent)),
+      });
+      if (studentUser) void pushProgressToCloud(studentUser.uid);
       revealEndRef.current = Date.now() + REVEAL_SECONDS * 1000;
       setRevealLeft(REVEAL_SECONDS);
       setStage("reveal");
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-    [config],
+    [config, studentUser],
   );
 
   // Countdown on the ad interstitial before the result unlocks. Uses a fixed
