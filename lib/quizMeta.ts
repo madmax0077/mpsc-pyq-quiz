@@ -128,10 +128,19 @@ export function getQuizMeta(): QuizMeta {
 
   const totalQuestions = quizzes.reduce((s, q) => s + q.questions.length, 0);
 
+  /** Hidden from the public subject-wise count chips (RTO branch + language papers). */
+  const HIDDEN_SUBJECTS = new Set([
+    "English",
+    "Marathi",
+    "Mechanical Engineering",
+    "Automobile Engineering",
+  ]);
+
   const subjectCounts: Record<string, number> = {};
   for (const q of quizzes) {
     for (const question of q.questions) {
       const cat = normalizeCategory(question.category || "General");
+      if (HIDDEN_SUBJECTS.has(cat)) continue;
       subjectCounts[cat] = (subjectCounts[cat] || 0) + 1;
     }
   }
