@@ -109,7 +109,12 @@ export default function HomeClient() {
     setStreak(getStreak());
     const summary = getSummary();
     setStatsPreview({ totalQuizzes: summary.totalQuizzes, accuracy: summary.accuracy });
-  }, [appMode, homeKey]);
+  }, [appMode, homeKey, studentUser?.uid]);
+
+  // My Stats is signed-in only — close the panel on logout.
+  useEffect(() => {
+    if (!studentUser) setShowAnalytics(false);
+  }, [studentUser]);
 
   // NOTE (AdSense fix): we used to hide the #seo-landing section from real
   // users after mount, keeping it visible only to search-engine crawlers.
@@ -506,7 +511,8 @@ export default function HomeClient() {
             </section>
 
             <div className="grid w-full max-w-3xl gap-5 sm:grid-cols-2">
-              {/* My Stats — home landing (covers subject / topic / CSAT / mock) */}
+              {/* My Stats — signed-in only (hidden after logout / for guests) */}
+              {studentUser && (
               <section className="sm:col-span-2 space-y-3">
                 <button
                   type="button"
@@ -588,6 +594,7 @@ export default function HomeClient() {
                   <Analytics streak={streak} onClose={() => setShowAnalytics(false)} />
                 )}
               </section>
+              )}
 
               <LeaderboardTile language={language} onClick={() => setAppMode("leaderboard")} className="sm:col-span-2" />
 
