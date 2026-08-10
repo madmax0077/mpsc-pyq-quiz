@@ -3,22 +3,21 @@
 import { useEffect, useRef, useState } from "react";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
-import { allowPublicTracking } from "@/lib/trackingGuard";
+import { allowPublicTracking, isProductionHost } from "@/lib/trackingGuard";
 
 /**
  * Google Analytics 4 (GA4) loader.
  *
- * Protections against the continuous Session source = "(not set)" junk we
- * diagnosed (0% engagement scrapers + localhost + Translate):
- *  - Production host only (www.mpscs.in / mpscs.in) — no localhost
+ * Protections against Session source = "(not set)" junk:
+ *  - Production host only (www.mpscs.in / mpscs.in) — no localhost / translate proxies
  *  - No /admin*
- *  - Load only after a real human signal (or 3s visible) so hit-and-run
- *    scrapers never create empty sessions
+ *  - Load ONLY after a real human gesture (pointer / key / touch).
+ *    No timed auto-arm — that was still letting scrapers create empty sessions.
  */
 const DEFAULT_GA_ID = "G-TPCNK01N4L";
 
 const BOT_UA =
-  /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embedly|quora link preview|outbrain|pinterest|vkshare|whatsapp|telegram|discordbot|preview|headless|phantom|selenium|puppeteer|playwright|httpclient|python-requests|curl|wget|go-http|java\/|libwww|scrapy/i;
+  /bot|crawl|spider|slurp|bingpreview|facebookexternalhit|embedly|quora link preview|outbrain|pinterest|vkshare|whatsapp|telegram|discordbot|preview|headless|phantom|selenium|puppeteer|playwright|httpclient|python-requests|curl|wget|go-http|java\/|libwww|scrapy|bytespider|gptbot|claudebot|anthropic|semrush|ahrefs|mj12bot|dotbot|petalbot|yandexbot|baiduspider|sogou|duckduckbot/i;
 
 declare global {
   interface Window {
@@ -32,7 +31,19 @@ function looksLikeBot(): boolean {
   if ((navigator as Navigator & { webdriver?: boolean }).webdriver) return true;
   const ua = navigator.userAgent || "";
   if (!ua || BOT_UA.test(ua)) return true;
+  // Headless / automation fingerprints
+  if (navigator.languages?.length === 0) return true;
   return false;
+}
+
+/** Reject Google Translate / unexpected hosts that pollute attribution. */
+function isAllowedTrackingHost(): boolean {
+  if (typeof window === "undefined") return false;
+  const host = window.location.hostname.toLowerCase();
+  if (!isProductionHost(host)) return false;
+  if (host.includes("translate.goog")) return false;
+  if (host.includes("googleusercontent")) return false;
+  return true;
 }
 
 export default function GoogleAnalytics() {
@@ -47,37 +58,27 @@ export default function GoogleAnalytics() {
 
     if (!gaId) return;
     if (!allowPublicTracking(pathname)) return;
+    if (!isAllowedTrackingHost()) return;
     if (looksLikeBot()) return;
 
     const arm = () => {
       if (armed.current) return;
+      if (!isAllowedTrackingHost()) return;
       armed.current = true;
       setReady(true);
       cleanup();
     };
 
-    const onVisibility = () => {
-      if (document.visibilityState === "visible") arm();
-    };
-
     const cleanup = () => {
       window.removeEventListener("pointerdown", arm);
       window.removeEventListener("keydown", arm);
-      window.removeEventListener("scroll", arm, true);
       window.removeEventListener("touchstart", arm);
-      document.removeEventListener("visibilitychange", onVisibility);
-      window.clearTimeout(timer);
     };
 
+    // Real gestures only — no scroll timer / visibility timeout (scrapers fake those).
     window.addEventListener("pointerdown", arm, { once: true, passive: true });
     window.addEventListener("keydown", arm, { once: true });
-    window.addEventListener("scroll", arm, { once: true, passive: true, capture: true });
     window.addEventListener("touchstart", arm, { once: true, passive: true });
-    document.addEventListener("visibilitychange", onVisibility);
-
-    const timer = window.setTimeout(() => {
-      if (document.visibilityState === "visible") arm();
-    }, 3000);
 
     return cleanup;
   }, [gaId, pathname]);
