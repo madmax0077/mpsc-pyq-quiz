@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { allowPublicTracking, isProductionHost } from "@/lib/trackingGuard";
@@ -8,11 +8,12 @@ import { allowPublicTracking, isProductionHost } from "@/lib/trackingGuard";
 /**
  * Google Analytics 4 (GA4) loader.
  *
- * Protections against Session source = "(not set)" junk:
- *  - Production host only (www.mpscs.in / mpscs.in) — no localhost / translate proxies
- *  - No /admin*
- *  - Load ONLY after a real human gesture (pointer / key / touch).
- *    No timed auto-arm — that was still letting scrapers create empty sessions.
+ * Keep attribution healthy (avoid Unassigned from delayed tags):
+ *  - Load immediately on production public pages
+ *  - Skip localhost, /admin*, translate proxies, obvious bot UAs
+ *
+ * Do NOT delay until click — late gtag config is a common cause of
+ * Session primary channel = Unassigned / (not set).
  */
 const DEFAULT_GA_ID = "G-TPCNK01N4L";
 
@@ -31,12 +32,10 @@ function looksLikeBot(): boolean {
   if ((navigator as Navigator & { webdriver?: boolean }).webdriver) return true;
   const ua = navigator.userAgent || "";
   if (!ua || BOT_UA.test(ua)) return true;
-  // Headless / automation fingerprints
   if (navigator.languages?.length === 0) return true;
   return false;
 }
 
-/** Reject Google Translate / unexpected hosts that pollute attribution. */
 function isAllowedTrackingHost(): boolean {
   if (typeof window === "undefined") return false;
   const host = window.location.hostname.toLowerCase();
@@ -50,37 +49,13 @@ export default function GoogleAnalytics() {
   const gaId = process.env.NEXT_PUBLIC_GA_ID || DEFAULT_GA_ID;
   const pathname = usePathname() || "";
   const [ready, setReady] = useState(false);
-  const armed = useRef(false);
 
   useEffect(() => {
-    armed.current = false;
-    setReady(false);
-
     if (!gaId) return;
     if (!allowPublicTracking(pathname)) return;
     if (!isAllowedTrackingHost()) return;
     if (looksLikeBot()) return;
-
-    const arm = () => {
-      if (armed.current) return;
-      if (!isAllowedTrackingHost()) return;
-      armed.current = true;
-      setReady(true);
-      cleanup();
-    };
-
-    const cleanup = () => {
-      window.removeEventListener("pointerdown", arm);
-      window.removeEventListener("keydown", arm);
-      window.removeEventListener("touchstart", arm);
-    };
-
-    // Real gestures only — no scroll timer / visibility timeout (scrapers fake those).
-    window.addEventListener("pointerdown", arm, { once: true, passive: true });
-    window.addEventListener("keydown", arm, { once: true });
-    window.addEventListener("touchstart", arm, { once: true, passive: true });
-
-    return cleanup;
+    setReady(true);
   }, [gaId, pathname]);
 
   if (!gaId || !ready) return null;
