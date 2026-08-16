@@ -118096,7 +118096,7 @@
         },
         "correctAnswer": "A",
         "sourceTag": "RTO-AMVI-MAINS-2013",
-        "explanation": "Reading the stem carefully, option A fits because producer's risk α is the probability of accepting a batch that should have been rejected, matching “Purchaser’s risk”. MPSC revisits this idea across RTO cycles, so lock the underlying relation, not just the letter.",
+        "explanation": "Option A is correct — Purchaser's risk (also called Consumer's risk, β). It is the probability that a defective/bad batch is accepted by sampling when it should have been rejected. Producer's risk (α) is the opposite idea: rejecting a good batch that meets AQL. So C is wrong. AQL (option B) is a quality level, not a risk probability. Option D mixes both risks incorrectly. MPSC RTO AMVI Mains 2013 key also marks A.",
         "number": 147,
         "category": "Mechanical Engineering"
       },
