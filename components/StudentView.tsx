@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import { Quiz, Question, OptionKey, CATEGORIES, Category, Language, SubjectTopics } from "@/lib/types";
 import { isQuestionCancelled, countScoredQuestions, optionText, normalizeQuiz } from "@/lib/questionUtils";
 import { getAllQuizzes, getSubjectTopics } from "@/lib/storage";
@@ -222,6 +222,8 @@ export default function StudentView({
     if (typeof window !== "undefined") return localStorage.getItem("mcq_lang_tip_dismissed") !== "1";
     return true;
   });
+  /** Scroll target so score is visible after submit on long quizzes. */
+  const scoreBannerRef = useRef<HTMLDivElement | null>(null);
 
   /** Mirrors Firestore `settings/quiz_data.revision` so all clients refetch when it changes. */
   const [quizBundleRevision, setQuizBundleRevision] = useState(0);
@@ -613,7 +615,6 @@ export default function StudentView({
         total: scoredTotal,
       });
     }
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleSubmitPage = () => {
@@ -668,7 +669,9 @@ export default function StudentView({
         total: pageTotal,
       });
     }
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    requestAnimationFrame(() => {
+      scoreBannerRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   };
 
   const handleNextSet = () => {
@@ -1344,6 +1347,7 @@ export default function StudentView({
       {/* Score Banner - Regular quiz (full submit) */}
       {submitted && !isCategoryQuiz && (
         <div
+          ref={scoreBannerRef}
           className={`animate-slide-up rounded-2xl p-4 sm:p-6 text-center shadow-sm ${
             pct >= 70
               ? "bg-gradient-to-br from-emerald-50 to-green-50 border border-emerald-200 dark:from-emerald-950 dark:to-green-950 dark:border-emerald-800"
@@ -1392,6 +1396,7 @@ export default function StudentView({
       {/* Score Banner - Category quiz (per-page submit) */}
       {isCategoryQuiz && isPageSubmitted && currentPageScore && (
         <div
+          ref={scoreBannerRef}
           className={`animate-slide-up rounded-2xl p-5 shadow-sm ${
             (() => {
               const pagePct = Math.round((currentPageScore.correct / currentPageScore.total) * 100);

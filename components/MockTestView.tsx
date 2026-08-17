@@ -209,12 +209,18 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
   // Countdown on the ad interstitial before the result unlocks. Uses a fixed
   // wall-clock end time so it always waits the full REVEAL_SECONDS, immune to
   // re-renders, dev double-invokes and background-tab timer throttling.
+  // When the timer hits 0, auto-open the scorecard so users are not stuck on
+  // the interstitial thinking "result can't show".
   useEffect(() => {
     if (stage !== "reveal") return;
     const tick = () => {
       const left = Math.max(0, Math.ceil((revealEndRef.current - Date.now()) / 1000));
       setRevealLeft(left);
-      if (left <= 0) clearInterval(id);
+      if (left <= 0) {
+        clearInterval(id);
+        setStage("result");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     };
     const id = setInterval(tick, 250);
     tick();
@@ -439,10 +445,18 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
           <h2 className="mt-2 text-2xl font-extrabold text-slate-900 dark:text-slate-100">
             Your result is ready!
           </h2>
+          {/* Show the net score immediately so users never think results failed. */}
+          <p className="mt-3 text-4xl font-black text-slate-900 dark:text-slate-100">
+            {result.net.toFixed(2)}
+            <span className="text-xl font-bold text-slate-400"> / {result.total}</span>
+          </p>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+            Net marks · {result.correct} correct · {result.wrong} wrong · {result.skipped} skipped
+          </p>
+          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
             {ready
-              ? "Tap below to see your detailed scorecard."
-              : `Preparing your scorecard… please wait ${revealLeft}s.`}
+              ? "Opening detailed scorecard…"
+              : `Detailed review unlocks in ${revealLeft}s.`}
           </p>
         </div>
 
@@ -458,7 +472,7 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
             disabled={!ready}
             className="rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-700 disabled:cursor-not-allowed disabled:opacity-50"
           >
-            {ready ? "View my result" : `View my result in ${revealLeft}s`}
+            {ready ? "View detailed scorecard" : `View detailed scorecard in ${revealLeft}s`}
           </button>
         </div>
       </div>
@@ -742,7 +756,32 @@ export default function MockTestView({ onExit }: MockTestViewProps) {
     );
   }
 
-  // Fallback (e.g. building) — should be brief.
+  // Fallback — recover if stage/result/config get out of sync (blank screen feel).
+  if (result) {
+    return (
+      <div className="mx-auto max-w-3xl py-16 text-center">
+        <p className="text-lg font-bold text-slate-800 dark:text-slate-100">Your score is ready</p>
+        <p className="mt-2 text-3xl font-black text-indigo-600 dark:text-indigo-400">
+          {result.net.toFixed(2)} / {result.total}
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            if (!config) {
+              backToSelect();
+              return;
+            }
+            setStage("result");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="mt-6 rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white hover:bg-indigo-700"
+        >
+          {config ? "View detailed scorecard" : "Back to mock tests"}
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="mx-auto max-w-3xl py-16 text-center text-slate-500 dark:text-slate-400">
       Preparing your mock test…
