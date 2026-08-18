@@ -343,6 +343,14 @@ const UI = {
     mr: "💡 कधीही लोगोवर क्लिक करून या पडद्यावर परत या",
   },
   footerTagline: { en: "Free PYQ practice for MPSC aspirants", mr: "MPSC उमेदवारांसाठी मोफत PYQ सराव" },
+  globalItineraryCta: {
+    en: "Explore Global Itinerary →",
+    mr: "Global Itinerary पाहा →",
+  },
+  globalItineraryHint: {
+    en: "Travel ideas from our sister project",
+    mr: "आमच्या दुसऱ्या प्रकल्पावरील प्रवास कल्पना",
+  },
   studyGuides: { en: "Study guides", mr: "अभ्यास मार्गदर्शिका" },
   privacy: { en: "Privacy", mr: "गोपनीयता" },
   terms: { en: "Terms", mr: "अटी" },

@@ -1231,13 +1231,26 @@ export default function HomeClient() {
       {/* ---- Footer ---- */}
       <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-3">
             <p className="text-xs text-slate-400 dark:text-slate-500">
               MPSC PYQ QUIZ &middot; Don&apos;t know Academy
             </p>
             <p className="text-[10px] text-slate-300 dark:text-slate-600">
               {t("footerTagline", language)}
             </p>
+            <a
+              href="https://globalitinerary.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-col items-center gap-0.5 rounded-xl bg-teal-600 px-5 py-2.5 text-center shadow-sm transition-colors hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500"
+            >
+              <span className="text-sm font-semibold text-white">
+                {t("globalItineraryCta", language)}
+              </span>
+              <span className="text-[10px] font-medium text-teal-100">
+                {t("globalItineraryHint", language)}
+              </span>
+            </a>
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
               <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("about", language)}

@@ -79,10 +79,19 @@ export default function StudyGuideShell({
       </main>
 
       <footer className="border-t border-slate-200/80 py-6 dark:border-slate-700/80">
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-2 px-4 sm:px-6">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-3 px-4 sm:px-6">
           <p className="text-xs text-slate-400 dark:text-slate-500">
             MPSC PYQ QUIZ &middot; Don&apos;t know Academy
           </p>
+          <a
+            href="https://globalitinerary.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex flex-col items-center gap-0.5 rounded-xl bg-teal-600 px-5 py-2.5 text-center shadow-sm transition-colors hover:bg-teal-700"
+          >
+            <span className="text-sm font-semibold text-white">Explore Global Itinerary →</span>
+            <span className="text-[10px] font-medium text-teal-100">Travel ideas from our sister project</span>
+          </a>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400 dark:text-slate-500">
             <Link href="/" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">
               Home
