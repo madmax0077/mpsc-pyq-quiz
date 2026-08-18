@@ -13,7 +13,6 @@
 import {
   addDoc,
   collection,
-  limit,
   onSnapshot,
   query,
   serverTimestamp,
@@ -23,9 +22,6 @@ import {
 import { db } from "./firebase";
 
 const COLLECTION = "leaderboard";
-
-/** Safety cap so one day's fetch stays small even if traffic grows. */
-const DAILY_FETCH_LIMIT = 1000;
 
 /**
  * How long an idle day-stream stays open before it is torn down. Navigating
@@ -129,9 +125,9 @@ export async function submitScore(args: SubmitScoreArgs): Promise<"ok" | "skippe
  *
  * Implementation note: we deliberately use a single-field equality filter
  * (no orderBy on a different field) so Firestore can serve this with the
- * auto-created index — no composite index is required. Sorting and limiting
- * happen client-side. A safety limit caps the daily fetch so the snapshot
- * stays small even if traffic grows.
+ * auto-created index — no composite index is required. Sorting happens
+ * client-side after aggregating. All attempts for the day are fetched (no
+ * hard cap) so busy days are not truncated at 1000 rows.
  */
 export function subscribeTodayLeaderboard(
   callback: (rows: LeaderboardRow[]) => void,
@@ -210,11 +206,7 @@ function openDayStream(dateKey: string): DayStream {
   dayStreams.set(dateKey, stream);
 
   stream.detach = onSnapshot(
-    query(
-      collection(db, COLLECTION),
-      where("dateKey", "==", dateKey),
-      limit(DAILY_FETCH_LIMIT),
-    ),
+    query(collection(db, COLLECTION), where("dateKey", "==", dateKey)),
     (snap) => {
       const entries: LeaderboardEntry[] = snap.docs.map((d) => ({
         id: d.id,
