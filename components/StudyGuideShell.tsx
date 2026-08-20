@@ -83,17 +83,30 @@ export default function StudyGuideShell({
           <p className="text-xs text-slate-400 dark:text-slate-500">
             MPSC PYQ QUIZ &middot; Don&apos;t know Academy
           </p>
-          <a
-            href="https://globalitinerary.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex flex-col items-center gap-0.5 rounded-xl bg-teal-600 px-5 py-2.5 text-center shadow-sm transition-colors hover:bg-teal-700"
-          >
-            <span className="text-sm font-semibold text-white">Plan your world tour →</span>
-            <span className="text-[10px] font-medium text-teal-100">
-              After you get selected, explore the world with our sister site Global Itinerary
-            </span>
-          </a>
+          <div className="flex w-full max-w-xl flex-col gap-2 sm:flex-row sm:justify-center">
+            <a
+              href="https://globalitinerary.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-1 flex-col items-center gap-0.5 rounded-xl bg-teal-600 px-4 py-2.5 text-center shadow-sm transition-colors hover:bg-teal-700"
+            >
+              <span className="text-sm font-semibold text-white">Plan your world tour →</span>
+              <span className="text-[10px] font-medium leading-snug text-teal-100">
+                After you get selected, explore the world with our sister site Global Itinerary
+              </span>
+            </a>
+            <a
+              href="https://tirthayatraonline.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-1 flex-col items-center gap-0.5 rounded-xl bg-amber-700 px-4 py-2.5 text-center shadow-sm transition-colors hover:bg-amber-800"
+            >
+              <span className="text-sm font-semibold text-white">Wanna pray before the exam? →</span>
+              <span className="text-[10px] font-medium leading-snug text-amber-100">
+                Visit our sister site Tirtha Yatra Online for darshan &amp; yatra guidance
+              </span>
+            </a>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400 dark:text-slate-500">
             <Link href="/" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">
               Home
