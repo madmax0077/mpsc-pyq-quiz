@@ -89,8 +89,10 @@ export default function StudyGuideShell({
             rel="noopener noreferrer"
             className="inline-flex flex-col items-center gap-0.5 rounded-xl bg-teal-600 px-5 py-2.5 text-center shadow-sm transition-colors hover:bg-teal-700"
           >
-            <span className="text-sm font-semibold text-white">Explore Global Itinerary →</span>
-            <span className="text-[10px] font-medium text-teal-100">Travel ideas from our sister project</span>
+            <span className="text-sm font-semibold text-white">Plan your world tour →</span>
+            <span className="text-[10px] font-medium text-teal-100">
+              After you get selected, explore the world with our sister site Global Itinerary
+            </span>
           </a>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400 dark:text-slate-500">
             <Link href="/" className="hover:text-indigo-600 hover:underline dark:hover:text-indigo-400">
