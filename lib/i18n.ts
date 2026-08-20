@@ -351,6 +351,14 @@ const UI = {
     en: "After you get selected, explore the world with our sister site Global Itinerary",
     mr: "निवड झाल्यावर आमच्या sister site Global Itinerary वरून जग एक्सप्लोर करा",
   },
+  tirthaYatraCta: {
+    en: "Wanna pray before the exam? →",
+    mr: "परीक्षेपूर्वी प्रार्थना करायची आहे? →",
+  },
+  tirthaYatraHint: {
+    en: "Visit our sister site Tirtha Yatra Online for darshan & yatra guidance",
+    mr: "दर्शन व यात्रा मार्गदर्शनासाठी आमची sister site Tirtha Yatra Online भेट द्या",
+  },
   studyGuides: { en: "Study guides", mr: "अभ्यास मार्गदर्शिका" },
   privacy: { en: "Privacy", mr: "गोपनीयता" },
   terms: { en: "Terms", mr: "अटी" },

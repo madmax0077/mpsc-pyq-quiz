@@ -1238,19 +1238,34 @@ export default function HomeClient() {
             <p className="text-[10px] text-slate-300 dark:text-slate-600">
               {t("footerTagline", language)}
             </p>
-            <a
-              href="https://globalitinerary.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex flex-col items-center gap-0.5 rounded-xl bg-teal-600 px-5 py-2.5 text-center shadow-sm transition-colors hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500"
-            >
-              <span className="text-sm font-semibold text-white">
-                {t("globalItineraryCta", language)}
-              </span>
-              <span className="text-[10px] font-medium text-teal-100">
-                {t("globalItineraryHint", language)}
-              </span>
-            </a>
+            <div className="flex w-full max-w-xl flex-col gap-2 sm:flex-row sm:justify-center">
+              <a
+                href="https://globalitinerary.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex flex-1 flex-col items-center gap-0.5 rounded-xl bg-teal-600 px-4 py-2.5 text-center shadow-sm transition-colors hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500"
+              >
+                <span className="text-sm font-semibold text-white">
+                  {t("globalItineraryCta", language)}
+                </span>
+                <span className="text-[10px] font-medium leading-snug text-teal-100">
+                  {t("globalItineraryHint", language)}
+                </span>
+              </a>
+              <a
+                href="https://tirthayatraonline.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex flex-1 flex-col items-center gap-0.5 rounded-xl bg-amber-700 px-4 py-2.5 text-center shadow-sm transition-colors hover:bg-amber-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
+              >
+                <span className="text-sm font-semibold text-white">
+                  {t("tirthaYatraCta", language)}
+                </span>
+                <span className="text-[10px] font-medium leading-snug text-amber-100">
+                  {t("tirthaYatraHint", language)}
+                </span>
+              </a>
+            </div>
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
               <a href="/about" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("about", language)}
