@@ -167,7 +167,7 @@ function toAbsoluteUrl(routePath: string): string {
 }
 
 /**
- * Study-guide routes discovered from `app/study-guides/*/page.tsx`.
+ * Study-guide routes discovered from app/study-guides (each folder with page.tsx).
  * Keeps the sitemap in sync when new guides are added without editing
  * the hard-coded lists above (those lists still cover legacy URLs).
  */
