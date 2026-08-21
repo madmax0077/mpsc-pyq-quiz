@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { MetadataRoute } from "next";
 import { getSeoQuestions } from "@/lib/questionSeo";
 import { getExamPapers } from "@/lib/examPapers";
@@ -160,22 +162,39 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
   },
 ];
 
-function toAbsoluteUrl(path: string): string {
-  return path === "/" ? SITE_URL : `${SITE_URL}${path}`;
+function toAbsoluteUrl(routePath: string): string {
+  return routePath === "/" ? SITE_URL : `${SITE_URL}${routePath}`;
 }
 
 /**
- * Question pages that are eligible for the sitemap.  We include every
- * question that has at least a short explanation (>= 40 chars).  The
- * `/questions/[id]` template itself now adds ~1,500 words of unique
- * per-page content (category deep-dive rotated by question-id hash,
- * why-this-matters + how-to-attempt from 5 and 6 variant pools, a
- * source-and-editorial paragraph, related study-guide links and an
- * about block), so the total rendered content easily clears Google's
- * "Low value content" bar regardless of explanation length -- what
- * matters is that the page is genuinely useful.  This mirrors the
- * `canIndex` threshold in `app/questions/[id]/page.tsx`.  Questions
- * without any explanation stay noindex and excluded from the sitemap.
+ * Study-guide routes discovered from `app/study-guides/*/page.tsx`.
+ * Keeps the sitemap in sync when new guides are added without editing
+ * the hard-coded lists above (those lists still cover legacy URLs).
+ */
+function getStudyGuideEntries(): SitemapEntryConfig[] {
+  const guidesDir = path.join(process.cwd(), "app", "study-guides");
+  if (!fs.existsSync(guidesDir)) return [];
+
+  const entries: SitemapEntryConfig[] = [];
+  for (const entry of fs.readdirSync(guidesDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    if (!fs.existsSync(path.join(guidesDir, entry.name, "page.tsx"))) continue;
+    entries.push({
+      path: "/study-guides/" + entry.name,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    });
+  }
+  return entries;
+}
+
+/**
+ * Question pages that are eligible for the sitemap. We include every
+ * question that has at least a short explanation (>= 40 chars). The
+ * /questions/[id] template itself adds unique per-page content, so these
+ * pages clear Google's low-value bar. This mirrors the canIndex threshold
+ * in app/questions/[id]/page.tsx. Questions without any explanation stay
+ * noindex and excluded from the sitemap.
  */
 function getIndexableQuestions() {
   return getSeoQuestions().filter(
@@ -184,9 +203,9 @@ function getIndexableQuestions() {
 }
 
 /**
- * `generateSitemaps` runs once at build time and returns the list of chunk
- * ids. Next.js then invokes `sitemap({ id })` for each id and writes the
- * result to `out/sitemap/{id}.xml`.
+ * generateSitemaps runs once at build time and returns the list of chunk
+ * ids. Next.js then invokes sitemap({ id }) for each id and writes the
+ * result to out/sitemap/{id}.xml.
  *
  * Chunk id 0            -> static pages (home, /exams, /map, /about, ...).
  * Chunk id 1, 2, ...    -> question pages that have substantive
@@ -206,9 +225,10 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
   const now = new Date();
 
   if (id === 0) {
-    // Per-paper landing pages (/exams/<slug>) — generated from quizzes.json.
+    // Per-paper landing pages (/exams/<slug>) — regenerated from quizzes.json
+    // on every build (includes new Rajyaseva / Group B / Group C Pre papers).
     const paperEntries: SitemapEntryConfig[] = getExamPapers().map((p) => ({
-      path: `/exams/${p.slug}`,
+      path: "/exams/" + p.slug,
       changeFrequency: "monthly",
       priority: 0.7,
     }));
@@ -216,6 +236,7 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
     const staticEntries = [
       ...LEGACY_SITEMAP_ENTRIES,
       ...ADDITIONAL_DISCOVERY_ENTRIES,
+      ...getStudyGuideEntries(),
       ...paperEntries,
     ];
     const seen = new Set<string>();
@@ -225,8 +246,8 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
         seen.add(entry.path);
         return true;
       })
-      .map(({ path, changeFrequency, priority }) => ({
-        url: toAbsoluteUrl(path),
+      .map(({ path: routePath, changeFrequency, priority }) => ({
+        url: toAbsoluteUrl(routePath),
         lastModified: now,
         changeFrequency,
         priority,
@@ -238,7 +259,7 @@ export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
   const start = chunkIndex * QUESTIONS_PER_SITEMAP;
   const slice = indexable.slice(start, start + QUESTIONS_PER_SITEMAP);
   return slice.map((question) => ({
-    url: `${SITE_URL}/questions/${question.id}`,
+    url: SITE_URL + "/questions/" + question.id,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.5,
