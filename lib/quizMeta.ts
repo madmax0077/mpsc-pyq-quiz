@@ -45,6 +45,13 @@ export function extractType(title: string): string {
   )
     return "Gazetted TS";
   if (
+    t.includes("rajyaseva") ||
+    t.includes("राज्यसेवा") ||
+    t.includes("state service") ||
+    t.includes("state services")
+  )
+    return "Gazetted CS";
+  if (
     (t.includes("gazetted") || t.includes("राजपत्रित")) &&
     (t.includes("civil") || /\bcs\b/i.test(t))
   )
