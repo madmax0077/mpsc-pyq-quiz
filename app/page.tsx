@@ -307,9 +307,13 @@ export default function Home() {
                 <p className="font-semibold text-slate-800">📋 MPSC Exam Pattern</p>
                 <p className="mt-1 text-xs text-slate-500">Group B, Group C, PSI, Gazetted CS &amp; TS prelims — marks, syllabus, negative marking, cut-offs.</p>
               </a>
-              <a href="/study-guides/mpsc-preparation-strategy" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50 sm:col-span-2">
+              <a href="/study-guides/mpsc-preparation-strategy" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50">
                 <p className="font-semibold text-slate-800">🎯 MPSC Preparation Strategy</p>
                 <p className="mt-1 text-xs text-slate-500">A practical 6-month study plan — book list, daily routine, PYQ analysis, mock-test approach, last-month revision blueprint.</p>
+              </a>
+              <a href="/study-guides/state-psc-exams-india" className="rounded-lg border border-slate-200 bg-white px-4 py-3 hover:border-indigo-300 hover:bg-indigo-50">
+                <p className="font-semibold text-slate-800">🗺️ State PSC Exams Across India</p>
+                <p className="mt-1 text-xs text-slate-500">UPPSC, BPSC, RPSC, TNPSC, KPSC, MPPSC, WBPSC &amp; more — free CSAT practice that helps every state prelims.</p>
               </a>
             </div>
             <p className="mt-6 text-sm">

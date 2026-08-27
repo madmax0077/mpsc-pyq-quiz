@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     "Talithi exam",
     "UPSC CSAT practice",
     "UPSC CSAT Paper 2",
+    "state PSC exams India",
+    "UPPSC BPSC RPSC TNPSC",
     "MPSC Group C exam pattern 2026",
     "MPSC Group C subject wise weightage",
     "MPSC Group B previous year question paper",
@@ -150,6 +152,14 @@ const GUIDES = [
     blurb:
       "Free UPSC CSAT Paper II aptitude practice — topic lessons, 3,800+ questions with worked explanations and timed speed tests in English and Marathi.",
     minutes: 4,
+  },
+  {
+    href: "/study-guides/state-psc-exams-india",
+    emoji: "🗺️",
+    title: "State PSC Exams Across India",
+    blurb:
+      "Complete list of State Public Service Commission exams — UPPSC, BPSC, RPSC, TNPSC, KPSC, MPPSC, WBPSC, GPSC, TSPSC and more — plus free CSAT practice for every state.",
+    minutes: 6,
   },
   {
     href: "/study-guides/mpsc-negative-marking",

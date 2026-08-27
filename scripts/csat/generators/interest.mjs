@@ -12,9 +12,9 @@ const siBasic = {
   difficulty: "moderate",
   cases() {
     const out = [];
-    for (const p of [4000, 5000, 6400, 7500, 9000, 12000, 15000, 24000]) {
-      for (const r of [5, 6, 7.5, 8, 9, 10, 12]) {
-        for (const t of [2, 3, 4, 5]) out.push({ p, r, t });
+    for (const p of [5000, 7500, 12000, 15000]) {
+      for (const r of [6, 8, 10, 12]) {
+        for (const t of [2, 3, 5]) out.push({ p, r, t });
       }
     }
     return out;
@@ -50,9 +50,9 @@ const siFindRate = {
   difficulty: "moderate",
   cases() {
     const out = [];
-    for (const p of [2500, 4000, 5000, 6000, 8000, 12500]) {
-      for (const r of [4, 5, 6, 8, 9, 12]) {
-        for (const t of [2, 3, 4, 5]) out.push({ p, r, t });
+    for (const p of [4000, 5000, 8000, 12500]) {
+      for (const r of [5, 6, 8, 12]) {
+        for (const t of [2, 3, 4]) out.push({ p, r, t });
       }
     }
     return out;

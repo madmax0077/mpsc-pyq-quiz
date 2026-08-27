@@ -164,6 +164,17 @@ export default function ExamsPage() {
               language versions appear on this platform for every paper archived.
             </p>
             <p>
+              Preparing outside Maharashtra? See the full{" "}
+              <Link href="/study-guides/state-psc-exams-india" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700 dark:text-indigo-400">
+                State PSC exams across India
+              </Link>{" "}
+              list (UPPSC, BPSC, RPSC, TNPSC, KPSC and more). Free{" "}
+              <Link href="/?mode=csat" className="text-indigo-600 underline underline-offset-2 hover:text-indigo-700 dark:text-indigo-400">
+                CSAT &amp; Aptitude practice
+              </Link>{" "}
+              on this site transfers to most state prelims even while our PYQ archive stays MPSC-focused.
+            </p>
+            <p>
               Practising previous-year papers is widely acknowledged to be the single most
               productive activity in MPSC preparation. Three reasons make PYQ practice
               disproportionately valuable: (i) MPSC recycles roughly 20 to 30 percent of its

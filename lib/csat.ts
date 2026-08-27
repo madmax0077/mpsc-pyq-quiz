@@ -1512,7 +1512,7 @@ export function shuffleCsat<T>(input: T[]): T[] {
  * so the next cycle starts fresh.
  * ------------------------------------------------------------------ */
 
-const SEEN_KEY = "mcq_csat_seen_v1";
+const SEEN_KEY = "mcq_csat_seen_v2";
 
 type SeenStore = Record<string, string[]>;
 
@@ -1576,9 +1576,14 @@ function recordSeen(bucket: string, uids: string[], poolSize: number): void {
  */
 function drawUnseenFirst(pool: CsatQuestion[], bucket: string, limit: number): CsatQuestion[] {
   const seen = new Set(readSeenStore()[bucket] || []);
-  const fresh = shuffleCsat(pool.filter((q) => !seen.has(q.uid)));
+  const preferHard = (items: CsatQuestion[]) => {
+    const hard = shuffleCsat(items.filter((q) => q.difficulty === "hard"));
+    const rest = shuffleCsat(items.filter((q) => q.difficulty !== "hard"));
+    return [...hard, ...rest];
+  };
+  const fresh = preferHard(pool.filter((q) => !seen.has(q.uid)));
   if (fresh.length >= limit) return fresh.slice(0, limit);
-  const repeats = shuffleCsat(pool.filter((q) => seen.has(q.uid)));
+  const repeats = preferHard(pool.filter((q) => seen.has(q.uid)));
   return [...fresh, ...repeats.slice(0, limit - fresh.length)];
 }
 

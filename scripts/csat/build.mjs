@@ -35,9 +35,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
 const OUT = path.join(ROOT, "public", "csat-questions.json");
 
-const SEED = 20260801;
+const SEED = 20260827;
 /** Bank size per practice topic (EN+MR share the same items). Was 100; raised to 200. */
 const TARGET_PER_TOPIC = 200;
+/**
+ * Cap any single archetype so the bank does not flood with easy plug-and-play
+ * templates (e.g. plain SI, ranking both-ends, fixed letter-shift coding).
+ * Forces variety across harder multi-step patterns.
+ */
+const MAX_PER_ARCHETYPE = 16;
 
 const GENERATORS = [
   percentageProfitLoss,
@@ -67,65 +73,90 @@ const MIN_GAP = 0.02;
 function buildTopic(mod, rng) {
   const { topicId, archetypes } = mod;
 
+  // Prefer hard archetypes first in the round-robin so the bank skews harder.
+  const ordered = [...archetypes].sort((a, b) => {
+    const rank = (d) => (d === "hard" ? 0 : 1);
+    return rank(a.difficulty) - rank(b.difficulty);
+  });
+
   // Shuffle each archetype's parameter list once, then draw round-robin so the
   // final bank is an even mix rather than 30 of one kind followed by 30 of the next.
-  const queues = archetypes.map((a) => ({
+  const queues = ordered.map((a) => ({
     archetype: a,
     cases: shuffle(rng, a.cases()),
     cursor: 0,
+    taken: 0,
   }));
 
   const out = [];
   const seenSignature = new Set();
   const seenText = new Set();
 
-  let guard = 0;
-  while (out.length < TARGET_PER_TOPIC) {
-    guard += 1;
-    if (guard > 100000) break;
+  const tryDraw = (maxPerArchetype) => {
+    let guard = 0;
+    while (out.length < TARGET_PER_TOPIC) {
+      guard += 1;
+      if (guard > 100000) break;
 
-    let progressed = false;
-    for (const q of queues) {
-      if (out.length >= TARGET_PER_TOPIC) break;
-      if (q.cursor >= q.cases.length) continue;
+      let progressed = false;
+      for (const q of queues) {
+        if (out.length >= TARGET_PER_TOPIC) break;
+        if (q.taken >= maxPerArchetype) continue;
+        if (q.cursor >= q.cases.length) continue;
 
-      const params = q.cases[q.cursor];
-      q.cursor += 1;
-      progressed = true;
+        const params = q.cases[q.cursor];
+        q.cursor += 1;
+        progressed = true;
 
-      const sig = signature(q.archetype.id, params);
-      if (seenSignature.has(sig)) continue;
+        const sig = signature(q.archetype.id, params);
+        if (seenSignature.has(sig)) continue;
 
-      let payload;
-      try {
-        payload = q.archetype.make(params);
-      } catch {
-        continue;
+        let payload;
+        try {
+          payload = q.archetype.make(params);
+        } catch {
+          continue;
+        }
+        if (!payload) continue;
+
+        const built = buildOptions(rng, payload.correct, payload.distractors, {
+          minGap: MIN_GAP,
+        });
+        if (!built) continue;
+
+        const textKey = payload.en.text.replace(/\s+/g, " ").trim().toLowerCase();
+        if (seenText.has(textKey)) continue;
+
+        seenSignature.add(sig);
+        seenText.add(textKey);
+        q.taken += 1;
+
+        out.push({
+          id: "",
+          topicId,
+          archetype: q.archetype.id,
+          difficulty: q.archetype.difficulty,
+          params,
+          options: built.options,
+          correctAnswer: built.correctAnswer,
+          en: payload.en,
+          mr: payload.mr,
+        });
       }
-      if (!payload) continue;
-
-      const built = buildOptions(rng, payload.correct, payload.distractors, { minGap: MIN_GAP });
-      if (!built) continue;
-
-      const textKey = payload.en.text.replace(/\s+/g, " ").trim().toLowerCase();
-      if (seenText.has(textKey)) continue;
-
-      seenSignature.add(sig);
-      seenText.add(textKey);
-
-      out.push({
-        id: "",
-        topicId,
-        archetype: q.archetype.id,
-        difficulty: q.archetype.difficulty,
-        params,
-        options: built.options,
-        correctAnswer: built.correctAnswer,
-        en: payload.en,
-        mr: payload.mr,
-      });
+      if (!progressed) break;
     }
-    if (!progressed) break; // every archetype exhausted
+  };
+
+  // Phase 1: strict variety (hard-first queues already ordered).
+  tryDraw(MAX_PER_ARCHETYPE);
+  // Phase 2: raise the per-archetype cap and keep drawing unused cases
+  // so every topic still reaches TARGET without cloning duplicates.
+  if (out.length < TARGET_PER_TOPIC) {
+    const fillCap = Math.max(
+      MAX_PER_ARCHETYPE * 2,
+      Math.ceil(TARGET_PER_TOPIC / Math.max(1, archetypes.length)),
+    );
+    tryDraw(fillCap);
   }
 
   out.forEach((item, i) => {

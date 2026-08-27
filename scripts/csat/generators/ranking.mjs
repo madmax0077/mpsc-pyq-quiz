@@ -15,8 +15,8 @@ const bothEnds = {
   difficulty: "moderate",
   cases() {
     const out = [];
-    for (let left = 5; left <= 22; left += 1) {
-      for (let right = 6; right <= 24; right += 2) out.push({ left, right });
+    for (let left = 7; left <= 18; left += 2) {
+      for (let right = 8; right <= 20; right += 3) out.push({ left, right });
     }
     return out;
   },

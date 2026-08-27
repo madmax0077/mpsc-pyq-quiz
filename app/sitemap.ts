@@ -160,6 +160,11 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.85,
   },
+  {
+    path: "/study-guides/state-psc-exams-india",
+    changeFrequency: "monthly",
+    priority: 0.9,
+  },
 ];
 
 function toAbsoluteUrl(routePath: string): string {
