@@ -455,6 +455,9 @@ export default function HomeClient() {
                 <a href="/study-guides" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
                   {t("studyGuides", language)}
                 </a>
+                <a href="/news" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-rose-50 dark:text-slate-200 dark:hover:bg-rose-900/30">
+                  MPSC News
+                </a>
                 <a href="/about" className="rounded-xl px-3 py-2.5 text-slate-700 hover:bg-indigo-50 dark:text-slate-200 dark:hover:bg-indigo-900/30">
                   {t("about", language)}
                 </a>
@@ -1287,6 +1290,9 @@ export default function HomeClient() {
               </a>
               <a href="/study-guides" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("studyGuides", language)}
+              </a>
+              <a href="/news" className="text-xs text-slate-400 underline-offset-2 hover:text-rose-600 hover:underline dark:text-slate-500 dark:hover:text-rose-400">
+                MPSC News
               </a>
               <a href="/privacy" className="text-xs text-slate-400 underline-offset-2 hover:text-indigo-600 hover:underline dark:text-slate-500 dark:hover:text-indigo-400">
                 {t("privacy", language)}

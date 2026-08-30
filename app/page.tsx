@@ -53,6 +53,13 @@ export default function Home() {
               <span className="block text-xs text-slate-500">Browse {totalPapers} exam papers ({minYear}–{maxYear})</span>
             </a>
             <a
+              href="/news"
+              className="rounded-lg border border-rose-200 bg-gradient-to-r from-rose-50 to-orange-50 px-3 py-2 text-sm hover:border-rose-400 hover:from-rose-100 hover:to-orange-100"
+            >
+              <span className="block font-semibold text-rose-800">📰 MPSC News</span>
+              <span className="block text-xs text-rose-700">Paper leak alerts &amp; aspirant reality checks</span>
+            </a>
+            <a
               href="/study-guides"
               className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm hover:border-indigo-300 hover:bg-indigo-50"
             >
@@ -415,6 +422,8 @@ export default function Home() {
           </p>
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-slate-400">
             <a href="/exams" className="hover:text-indigo-600 hover:underline">Exam Papers</a>
+            <span>|</span>
+            <a href="/news" className="hover:text-indigo-600 hover:underline">MPSC News</a>
             <span>|</span>
             <a href="/study-guides" className="hover:text-indigo-600 hover:underline">Study Guides</a>
             <span>|</span>

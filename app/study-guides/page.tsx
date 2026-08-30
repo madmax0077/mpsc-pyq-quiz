@@ -42,6 +42,14 @@ export const metadata: Metadata = {
 
 const GUIDES = [
   {
+    href: "/news/mpsc-drug-inspector-paper-leak-2026",
+    emoji: "📰",
+    title: "MPSC News: Drug Inspector Paper Leak",
+    blurb:
+      "Goosebumps timeline + reality check — why the Drug Inspector recruitment was cancelled, and what honest aspirants must do next.",
+    minutes: 8,
+  },
+  {
     href: "/study-guides/maharashtra-geography",
     emoji: "🗺️",
     title: "Maharashtra Geography",

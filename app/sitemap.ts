@@ -165,6 +165,12 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
     changeFrequency: "monthly",
     priority: 0.9,
   },
+  { path: "/news", changeFrequency: "daily", priority: 0.9 },
+  {
+    path: "/news/mpsc-drug-inspector-paper-leak-2026",
+    changeFrequency: "weekly",
+    priority: 0.85,
+  },
 ];
 
 function toAbsoluteUrl(routePath: string): string {
