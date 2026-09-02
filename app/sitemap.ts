@@ -167,6 +167,11 @@ const ADDITIONAL_DISCOVERY_ENTRIES: SitemapEntryConfig[] = [
   },
   { path: "/news", changeFrequency: "daily", priority: 0.9 },
   {
+    path: "/news/mpsc-mains-optional-marks-controversy-2026",
+    changeFrequency: "daily",
+    priority: 0.9,
+  },
+  {
     path: "/news/mpsc-drug-inspector-paper-leak-2026",
     changeFrequency: "weekly",
     priority: 0.85,

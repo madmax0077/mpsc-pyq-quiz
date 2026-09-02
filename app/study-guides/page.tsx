@@ -42,6 +42,14 @@ export const metadata: Metadata = {
 
 const GUIDES = [
   {
+    href: "/news/mpsc-mains-optional-marks-controversy-2026",
+    emoji: "📰",
+    title: "MPSC News: Mains Optional Marks Storm",
+    blurb:
+      "Trending — optional papers with 2/6/11 out of 250, language qualifying knockouts, Pune re-evaluation demand, and what aspirants should do.",
+    minutes: 7,
+  },
+  {
     href: "/news/mpsc-drug-inspector-paper-leak-2026",
     emoji: "📰",
     title: "MPSC News: Drug Inspector Paper Leak",

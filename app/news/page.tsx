@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "MPSC paper leak",
     "MPSC Drug Inspector",
     "MPSC exam cancelled",
+    "MPSC optional marks",
+    "MPSC mains result controversy",
     "Maharashtra PSC news",
     "MPSC latest update",
   ],
@@ -18,8 +20,17 @@ export const metadata: Metadata = {
 
 const STORIES = [
   {
+    href: "/news/mpsc-mains-optional-marks-controversy-2026",
+    badge: "Trending",
+    title: "MPSC Mains Optional Marks: When 250 Marks Feel Like a Lottery",
+    blurb:
+      "2, 6, 11 out of 250 in optionals, qualifying language knockouts by 1–2 marks, Pune protests for re-evaluation — and the reality check every aspirant needs.",
+    date: "2 Sep 2026",
+    minutes: 7,
+  },
+  {
     href: "/news/mpsc-drug-inspector-paper-leak-2026",
-    badge: "Breaking",
+    badge: "Update",
     title: "MPSC Drug Inspector Paper Leak: When Trust Collapses Overnight",
     blurb:
       "A goosebumps timeline of the March 2026 screening exam leak, cancelled recruitment, and the hard reality check every honest aspirant must face.",
